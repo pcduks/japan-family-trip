@@ -14,7 +14,7 @@ import { loadEnv, need } from "./env";
 
 loadEnv();
 const args = new Set(process.argv.slice(2));
-const sb = createClient(need("NEXT_PUBLIC_SUPABASE_URL"), need("SUPABASE_SERVICE_ROLE_KEY"), {
+const sb = createClient(process.env.SUPABASE_URL || need("NEXT_PUBLIC_SUPABASE_URL"), need("SUPABASE_SERVICE_ROLE_KEY"), {
   auth: { persistSession: false },
 });
 const trip = bundledTrip();
