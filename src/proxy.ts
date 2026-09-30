@@ -5,8 +5,8 @@ const PUBLIC_PATHS = ["/login", "/auth/"];
 
 /** Refresh the Supabase session cookie and keep signed-out visitors on /login. */
 export async function proxy(request: NextRequest) {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
+  const anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY;
   if (!url || !anon) return NextResponse.next();
 
   let response = NextResponse.next({ request });
