@@ -189,7 +189,7 @@ function DayPanel({
         ) : null}
         {board ? (
           <details className="text-sm">
-            <summary className="cursor-pointer font-medium">Ideias para {place?.name}</summary>
+            <summary className="flex cursor-pointer list-none items-center justify-between font-medium [&::-webkit-details-marker]:hidden">Ideias para {place?.name} <span aria-hidden="true" className="text-muted">⌄</span></summary>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               {board.highlights.map((h) => (
                 <li key={h}>{h}</li>

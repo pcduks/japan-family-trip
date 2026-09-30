@@ -8,7 +8,6 @@ export function CalendarStrip({
   route,
   places,
   color,
-  onColor,
   onSelect,
 }: {
   route: Route;
@@ -37,7 +36,7 @@ export function CalendarStrip({
           </li>
         </ul>
       </div>
-      <ol className="no-scrollbar -mx-4 flex snap-x gap-1 overflow-x-auto px-4 pb-1" aria-label="Calendário da viagem">
+      <ol className="no-scrollbar -mx-4 flex snap-x scroll-px-4 gap-1.5 overflow-x-auto px-4 pb-1" aria-label="Calendário da viagem">
         {dates.map((d, i) => {
           const stay = stayOnNight(route, d);
           const place = stay ? places.get(stay.place) : null;
@@ -60,20 +59,20 @@ export function CalendarStrip({
                 aria-label={label}
                 title={label}
                 onClick={() => place && onSelect(place.slug)}
-                className="grid w-[4.25rem] gap-1 rounded-xl border border-rule p-1.5 text-left"
+                className="grid w-[4.6rem] gap-0.5 rounded-xl border border-rule p-1.5 text-left"
                 style={{ background: closure ? "var(--closure)" : "var(--card)", borderStyle: closure ? "dashed" : "solid" }}
               >
-                <span className="flex items-center justify-between font-mono text-[0.68rem] text-muted">
-                  {weekday(d)}
+                <span className="flex items-center justify-between text-[0.7rem] text-muted uppercase">
+                  {weekday(d).slice(0, 3)}
                   {peak ? <span className="text-accent" aria-hidden="true">▲</span> : null}
                 </span>
-                <span className="font-display text-lg leading-none">{formatDay(d)}</span>
-                <span
-                  className="truncate rounded px-1 text-[0.7rem] leading-5 font-medium"
-                  style={place ? { background: color, color: onColor } : { background: "var(--soft)" }}
-                >
-                  {moving ? "→ " : ""}
-                  {place ? place.name.replace(/ \(.*\)$/, "").replace(/^Lake /, "") : "✈ Casa"}
+                <span className="font-display text-[1.15rem] leading-tight">{formatDay(d)}</span>
+                <span className="flex min-w-0 items-center gap-1 text-[0.7rem]">
+                  <span className="size-2 shrink-0 rounded-full" style={{ background: place ? color : "var(--rule)" }} aria-hidden="true" />
+                  <span className="truncate">
+                    {moving ? "→ " : ""}
+                    {place ? place.name.replace(/ \(.*\)$/, "").replace(/^Lake /, "") : "✈ Casa"}
+                  </span>
                 </span>
               </button>
             </li>

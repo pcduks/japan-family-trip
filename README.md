@@ -17,6 +17,8 @@ A private trip-planning web app for six travellers (20 Dec 2026 – 9 Jan 2027),
   - Socorro: 119/110, the English hotline, maternity hospitals near each base, and phrases.
   - Also the guides, Documentos, and the planner's "Mesa do Pedro".
 
+**Illustrations.** The woodblock route covers in `public/illustrations/` were made once with Gemini (`npx tsx scripts/illustrate.ts`, needs `GEMINI_API_KEY`) and are committed, so the app never calls Gemini at runtime.
+
 **Sign-in: "Quem é você?"** Tap your name and you get an email with a 6-digit code (plus a link as a fallback). The server looks up the email by traveller id, so emails never reach the browser (`src/app/auth/code/route.ts`).
 
 **Earlier phases (still there):**

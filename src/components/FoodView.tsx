@@ -127,7 +127,7 @@ export function FoodView({ initialPlace }: { initialPlace: string | null }) {
             </button>
           ))}
         </div>
-        <div className="no-scrollbar -mx-5 flex gap-2 overflow-x-auto px-5" role="group" aria-label="Tipo">
+        <div className="no-scrollbar -mx-5 flex gap-2 overflow-x-auto px-5 [mask-image:linear-gradient(to_right,black_85%,transparent)]" role="group" aria-label="Tipo">
           {GROUPS.map((g) => (
             <button key={g} className="chip !min-h-9 text-sm" aria-pressed={group === g} onClick={() => setGroup(g)}>
               {g}
@@ -164,7 +164,7 @@ export function FoodView({ initialPlace }: { initialPlace: string | null }) {
                     <div className="flex shrink-0 gap-1 pt-0.5">
                       <button
                         className="grid size-10 place-items-center rounded-full border text-lg"
-                        style={m?.status === "want" ? { background: "var(--vermilion)", borderColor: "var(--vermilion)", color: "var(--accent-ink)" } : { borderColor: "color-mix(in srgb, var(--vermilion) 40%, var(--rule))", color: "var(--vermilion)" }}
+                        style={m?.status === "want" ? { background: "var(--vermilion)", borderColor: "var(--vermilion)", color: "var(--accent-ink)" } : { borderColor: "color-mix(in srgb, var(--vermilion) 70%, var(--rule))", color: "var(--vermilion)" }}
                         aria-pressed={m?.status === "want"}
                         aria-label={`Quero ir: ${p.name}`}
                         onClick={() => mark(p.slug, m?.status === "want" ? null : "want")}
@@ -173,7 +173,7 @@ export function FoodView({ initialPlace }: { initialPlace: string | null }) {
                       </button>
                       <button
                         className="grid size-10 place-items-center rounded-full border text-lg"
-                        style={m?.status === "been" ? { background: "var(--pine)", borderColor: "var(--pine)", color: "var(--paper)" } : { borderColor: "color-mix(in srgb, var(--pine) 40%, var(--rule))", color: "var(--pine)" }}
+                        style={m?.status === "been" ? { background: "var(--pine)", borderColor: "var(--pine)", color: "var(--paper)" } : { borderColor: "color-mix(in srgb, var(--pine) 70%, var(--rule))", color: "var(--pine)" }}
                         aria-pressed={m?.status === "been"}
                         aria-label={`Já fui: ${p.name}`}
                         onClick={() => mark(p.slug, m?.status === "been" ? null : "been", m?.rating ?? null)}

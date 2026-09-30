@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { onRouteColor, routeColor } from "@/lib/colors";
@@ -114,6 +115,17 @@ export function ExploreView({ initialRoute, initialPlace }: { initialRoute: stri
         </button>
       </div>
 
+      {route && ["A", "B", "C", "D"].includes(route.code) ? (
+        <Image
+          src={`/illustrations/route-${route.code}.webp`}
+          alt=""
+          width={1200}
+          height={660}
+          priority
+          sizes="(max-width: 72rem) 100vw, 72rem"
+          className="-mx-5 aspect-[16/8] w-[calc(100%+2.5rem)] max-w-none object-cover sm:mx-0 sm:w-full sm:rounded-2xl"
+        />
+      ) : null}
       <header className="grid gap-3">
         <div className="flex items-start gap-4">
           <div className="grid min-w-0 flex-1 gap-1">
@@ -149,10 +161,8 @@ export function ExploreView({ initialRoute, initialPlace }: { initialRoute: stri
             ))}
           </div>
         ) : null}
-        <p className="text-sm text-muted">
-          {route
-            ? `${route.stays.length} bases${route.exitAirport ? ` · volta por ${route.exitAirport}` : ""}. Toque num lugar para ver fotos, avaliações e vídeos.`
-            : "Toque num lugar para ver."}
+        <p className="text-[0.95rem] text-ink-2">
+          {route ? `${route.stays.length} bases${route.exitAirport ? ` · volta por ${route.exitAirport}` : ""}` : "Toque num lugar para ver."}
         </p>
         {route?.isCandidate && !chosen ? (
           <Link href="/votar" className="btn btn-accent justify-self-start no-underline">

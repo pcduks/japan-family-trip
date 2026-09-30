@@ -49,7 +49,7 @@ export function ViagemView() {
         <StampCard wide href="/socorro" motif="cross" ink="var(--danger)" title="Socorro" status="Emergências, maternidades, frases úteis" />
       </Group>
       <Group title="Privado">
-        <StampCard wide href="/documents" motif="passport" ink="var(--indigo)" title="Documentos" status="Passaportes, seguro, atestado de voo" />
+        <StampCard wide href="/documents" motif="passport" ink="var(--indigo)" title="Documentos" status="Passaportes, seguro, atestado" />
         {me?.role === "planner" ? (
           <StampCard wide href="/plan" motif="map" ink="var(--ink)" title="Mesa do Pedro" status="Planos, reservas, orçamento" />
         ) : null}

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useMemo } from "react";
 import { planDays, todayInJapan } from "@/lib/plan";
@@ -123,6 +124,9 @@ function Decide({ votes, meId }: { votes: { travellerId: string; routeId: string
   );
 }
 
+/** Routes with a woodblock cover in public/illustrations (made by scripts/illustrate.ts). */
+const ILLUSTRATED = new Set(["A", "B", "C", "D"]);
+
 function RouteCover({
   route,
   nye,
@@ -141,9 +145,12 @@ function RouteCover({
   const ink = ROUTE_INK[route.code] ?? "var(--ink)";
   const c = comfort.value ?? 0;
   return (
-    <Link href={`/rotas/${route.code}`} className="card group grid gap-3 p-4 no-underline transition-transform hover:-translate-y-0.5">
-      <div className="flex items-center gap-4">
-        <EkiStamp motif={ROUTE_MOTIF[route.code] ?? "torii"} ink={ink} top={route.name} bottom={`Rota ${route.code}`} size={76} rotate={route.code.charCodeAt(0) % 2 ? 7 : -7} seed={route.code.charCodeAt(0)} label="" />
+    <Link href={`/rotas/${route.code}`} className="card group grid gap-3 overflow-hidden p-4 pt-0 no-underline transition-transform hover:-translate-y-0.5">
+      {ILLUSTRATED.has(route.code) ? (
+        <Image src={`/illustrations/route-${route.code}.webp`} alt="" width={1200} height={660} sizes="(max-width: 48rem) 100vw, 48rem" className="-mx-4 aspect-[2/1] w-[calc(100%+2rem)] max-w-none object-cover" />
+      ) : null}
+      <div className={`flex items-start gap-4 ${ILLUSTRATED.has(route.code) ? "" : "pt-4"}`}>
+        <EkiStamp className={ILLUSTRATED.has(route.code) ? "-mt-9 rounded-full bg-card p-1 shadow-sm" : ""} motif={ROUTE_MOTIF[route.code] ?? "torii"} ink={ink} top={route.name} bottom={`Rota ${route.code}`} size={80} rotate={route.code.charCodeAt(0) % 2 ? 7 : -7} seed={route.code.charCodeAt(0)} label="" />
         <div className="grid min-w-0 flex-1 gap-0.5">
           <p className="eyebrow" style={{ color: ink }}>
             Rota {route.code}
@@ -152,7 +159,7 @@ function RouteCover({
           <h3 className="text-[1.9rem] leading-none">{route.name}</h3>
           <p className="text-sm text-ink-2">{route.title}</p>
         </div>
-        <span aria-hidden="true" className="text-xl text-muted transition-transform group-hover:translate-x-0.5">
+        <span aria-hidden="true" className="self-center text-xl text-muted transition-transform group-hover:translate-x-0.5">
           →
         </span>
       </div>

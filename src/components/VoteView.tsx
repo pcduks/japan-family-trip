@@ -57,7 +57,7 @@ export function VoteView() {
 
       <fieldset className="grid gap-3">
         <legend className="sr-only">Sua favorita</legend>
-        {!first ? <p className="hand text-lg text-vermilion">Comece pela favorita; a 2ª opção vem depois.</p> : null}
+        {!first ? <p className="text-sm text-muted">Comece pela favorita; a 2ª opção vem depois.</p> : null}
         {routes.map((r) => {
           const ink = ROUTE_INK[r.code];
           const isFirst = first === r.id;

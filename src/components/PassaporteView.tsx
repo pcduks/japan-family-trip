@@ -53,8 +53,8 @@ export function PassaporteView() {
     { key: "pack", motif: "suitcase", ink: "var(--pine)", top: "Mala pronta", bottom: "80%", done: packedPct >= 0.8, hint: "Marque 80% da sua mala" },
     { key: "note", motif: "brush", ink: "var(--plum)", top: "Primeira nota", bottom: "Caderno", done: notes.some((n) => n.traveller_id === id), hint: "Escreva sua primeira anotação" },
     { key: "food", motif: "bowl", ink: "var(--amber)", top: "Bom de garfo", bottom: `${Math.min(ate, 5)} de 5`, done: ate >= 5, hint: "Marque 5 lugares onde comeu", shape: "square" },
-    { key: "nye", motif: "bell", ink: "var(--vermilion)", top: "Joya no kane", bottom: "31 · XII", done: today >= "2027-01-01", hint: "Na virada do ano" },
-    { key: "home", motif: "fuji", ink: "var(--indigo)", top: "Okaeri", bottom: "9 · I · 2027", done: today >= "2027-01-09", hint: "Na volta para casa" },
+    { key: "nye", motif: "bell", ink: "var(--vermilion)", top: "Joya no kane", bottom: "31 · XII", done: today >= "2027-01-01", hint: "O sino do Ano-Novo, na virada" },
+    { key: "home", motif: "fuji", ink: "var(--indigo)", top: "Okaeri", bottom: "9 · I · 2027", done: today >= "2027-01-09", hint: "“Bem-vindos de volta”, em casa" },
   ];
 
   const nextKey = milestones.find((m) => !m.done)?.key;

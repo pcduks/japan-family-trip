@@ -186,6 +186,11 @@
     color: var(--accent-ink);
     border-color: var(--vermilion);
   }
+  .btn-primary:hover,
+  .btn-accent:hover {
+    border-color: var(--vermilion);
+    filter: brightness(1.06);
+  }
   .btn-sm {
     min-height: 2.3rem;
     padding: 0.25rem 0.8rem;
