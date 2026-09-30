@@ -21,8 +21,11 @@ export const PEAK_DATES = [
   "2027-01-09",
 ];
 
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const MONTHS = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+const MONTHS_LONG = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+const WEEKDAYS = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
+const WEEKDAYS_LONG = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
+const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
 
 function parseISO(iso: string): Date {
   const [y, m, d] = iso.split("-").map(Number);
@@ -42,6 +45,22 @@ export function formatDay(iso: string): string {
 
 export function weekday(iso: string): string {
   return WEEKDAYS[parseISO(iso).getUTCDay()];
+}
+
+/** "sábado, 20 de dezembro" */
+export function formatLong(iso: string): string {
+  const d = parseISO(iso);
+  return `${WEEKDAYS_LONG[d.getUTCDay()]}, ${d.getUTCDate()} de ${MONTHS_LONG[d.getUTCMonth()]}`;
+}
+
+/** Stamp-style date: "20 · XII · 2026" */
+export function stampDate(iso: string): string {
+  const d = parseISO(iso);
+  return `${d.getUTCDate()} · ${ROMAN[d.getUTCMonth()]} · ${d.getUTCFullYear()}`;
+}
+
+export function daysBetween(from: string, to: string): number {
+  return Math.round((parseISO(to).getTime() - parseISO(from).getTime()) / 86_400_000);
 }
 
 export function tripDates(): string[] {
@@ -158,6 +177,7 @@ export function bundledTrip(): Trip {
       id: `demo-${i}`,
       name,
       role: i === 0 ? "planner" : "member",
+      couple: ["pedro", "irmao", "pais"][Math.floor(i / 2)] ?? null,
     })),
   };
 }
@@ -282,7 +302,7 @@ export function landCostPerPerson(code: string): [number, number] | null {
 }
 
 export function yen(n: number): string {
-  return "¥" + (Math.round(n / 1000) * 1000).toLocaleString("en-US");
+  return "¥" + (Math.round(n / 1000) * 1000).toLocaleString("pt-BR");
 }
 
 export function compareRows(trip: Trip, routes: Route[]): CompareRow[] {
@@ -296,15 +316,15 @@ export function compareRows(trip: Trip, routes: Route[]): CompareRow[] {
   ): CompareRow => ({ key, label, better, cells: Object.fromEntries(routes.map((r) => [r.id, f(r)])) });
 
   return [
-    row("nights", "Nights per base", null, (r) => ({
+    row("nights", "Noites por base", null, (r) => ({
       value: r.stays.length,
       text: r.stays.map((s) => `${name(s.place)} ${s.nights}`).join(" · "),
     })),
-    row("changes", "Base changes", "low", (r) => ({
+    row("changes", "Trocas de base", "low", (r) => ({
       value: r.stays.length - 1,
       text: String(r.stays.length - 1),
     })),
-    row("longest", "Longest travel day", "low", (r) => {
+    row("longest", "Dia de viagem mais longo", "low", (r) => {
       let best: { h: number; stay: Route["stays"][number] } | null = null;
       for (const s of r.stays.slice(1)) {
         const h = parseLegHours(s.legNote);
@@ -314,11 +334,11 @@ export function compareRows(trip: Trip, routes: Route[]): CompareRow[] {
         ? {
             value: best.h,
             text: `~${formatHours(best.h)}`,
-            detail: `${formatDay(best.stay.startDate)} to ${name(best.stay.place)}`,
+            detail: `${formatDay(best.stay.startDate)} até ${name(best.stay.place)}`,
           }
         : { value: null, text: "—" };
     }),
-    row("peakMoves", "Moves on peak travel days", "low", (r) => {
+    row("peakMoves", "Mudanças em dias de pico", "low", (r) => {
       const moves = r.stays.slice(1).filter((s) => isPeak(s.startDate));
       return {
         value: moves.length,
@@ -326,23 +346,23 @@ export function compareRows(trip: Trip, routes: Route[]): CompareRow[] {
         detail: moves.map((s) => `${formatDay(s.startDate)} → ${name(s.place)}`).join(", ") || undefined,
       };
     }),
-    row("snow", "Snow likelihood", null, (r) => {
+    row("snow", "Chance de neve", null, (r) => {
       const n = NOTES.routes[r.code]?.snow;
-      return n ? { value: n.score, text: ["", "Low", "Some", "Likely", "High"][n.score] ?? "", detail: n.label } : { value: null, text: "—" };
+      return n ? { value: n.score, text: ["", "Baixa", "Alguma", "Provável", "Alta"][n.score] ?? "", detail: n.label } : { value: null, text: "—" };
     }),
-    row("comfort", "Comfort for pregnancy", "high", (r) => {
+    row("comfort", "Conforto para ela", "high", (r) => {
       const n = NOTES.routes[r.code]?.comfort;
       return n ? { value: n.score, text: "●".repeat(n.score) + "○".repeat(5 - n.score), detail: n.label } : { value: null, text: "—" };
     }),
-    row("nye", "New Year's Eve", null, (r) => {
+    row("nye", "Réveillon", null, (r) => {
       const s = stayOnNight(r, "2026-12-31");
       return { value: null, text: s ? name(s.place) : "—" };
     }),
-    row("exit", "Exit airport", null, (r) => ({ value: null, text: r.exitAirport })),
-    row("cost", "Land cost per person", "low", (r) => {
+    row("exit", "Aeroporto de volta", null, (r) => ({ value: null, text: r.exitAirport })),
+    row("cost", "Custo em terra por pessoa", "low", (r) => {
       const c = landCostPerPerson(r.code);
       return c
-        ? { value: (c[0] + c[1]) / 2, text: yen((c[0] + c[1]) / 2), detail: `${yen(c[0])} – ${yen(c[1])}, flights excluded` }
+        ? { value: (c[0] + c[1]) / 2, text: yen((c[0] + c[1]) / 2), detail: `${yen(c[0])} – ${yen(c[1])}, sem passagens aéreas` }
         : { value: null, text: "—" };
     }),
   ];

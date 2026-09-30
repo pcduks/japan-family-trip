@@ -1,7 +1,5 @@
-import { VoteView } from "@/components/VoteView";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Vote · Six Across Japan" };
-
-export default function VotePage() {
-  return <VoteView />;
+export default function OldVote() {
+  redirect("/votar");
 }

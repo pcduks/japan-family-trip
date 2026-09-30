@@ -20,8 +20,8 @@ export function StayList({
 }) {
   return (
     <section aria-labelledby="stays-h" className="grid gap-3">
-      <h2 id="stays-h" className="text-lg font-extrabold">
-        {route.isCandidate ? `Stays on route ${route.code}` : `Stays on ${route.name}`}
+      <h2 id="stays-h" className="text-[1.75rem]">
+        Onde dormimos
       </h2>
       <ol className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
         {route.stays.map((s, i) => {
@@ -32,21 +32,21 @@ export function StayList({
           return (
             <li key={s.id}>
               <div
-                className="card grid h-full gap-1 p-3"
+                className="card grid h-full gap-1 p-4"
                 style={{ borderLeft: `5px solid ${color}`, outline: selected === p.slug ? "2px solid var(--ink)" : undefined, outlineOffset: -1 }}
               >
                 <button type="button" onClick={() => onSelect(p.slug)} className="grid gap-0.5 text-left">
                   <span className="font-mono text-xs text-muted">
-                    {i + 1} · {formatDay(s.startDate)} – {formatDay(addDays(s.startDate, s.nights))} · {s.nights} night{s.nights > 1 ? "s" : ""}
+                    {i + 1} · {formatDay(s.startDate)} – {formatDay(addDays(s.startDate, s.nights))} · {s.nights} noite{s.nights > 1 ? "s" : ""}
                   </span>
-                  <span className="text-base font-bold">
+                  <span className="font-display text-[1.45rem] leading-tight">
                     {p.name}
-                    {hearts ? <span className="ml-2 text-sm font-medium text-accent">♥ {hearts}</span> : null}
+                    {hearts ? <span className="ml-2 font-sans text-sm font-medium text-accent">♥ {hearts}</span> : null}
                   </span>
                 </button>
                 {s.legNote ? (
                   <p className="text-sm text-muted">
-                    {isPeak(s.startDate) && i > 0 ? <span className="mr-1 text-accent" title="Travel peak">▲</span> : null}
+                    {isPeak(s.startDate) && i > 0 ? <span className="mr-1 text-accent" title="Pico de viagem">▲</span> : null}
                     {s.legNote}
                   </p>
                 ) : null}
@@ -54,7 +54,7 @@ export function StayList({
                   <div className="mt-1 flex flex-wrap gap-1.5">
                     {extras.map((x) => (
                       <button key={x.slug} type="button" className="chip !min-h-8 !px-2.5 !py-0.5 text-sm" onClick={() => onSelect(x.slug)}>
-                        {x.via ? "On the way: " : "Day trip: "}
+                        {x.via ? "No caminho: " : "Bate-volta: "}
                         {places.get(x.slug)?.name ?? x.slug}
                       </button>
                     ))}

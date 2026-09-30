@@ -1,11 +1,16 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { onRouteColor, routeColor } from "@/lib/colors";
+import { BOARD } from "@/lib/guides";
+import { ROUTE_INK, ROUTE_MOTIF } from "@/lib/stamps";
 import { placeMap, routePlaces, routeSequence } from "@/lib/trip";
+import { EkiStamp } from "./EkiStamp";
 import { CalendarStrip } from "./CalendarStrip";
 import { PlaceSheet } from "./PlaceSheet";
 import { useStore } from "./providers";
+import { Pill } from "./ui";
 import { RouteMap, type MapLine, type MapMarker } from "./RouteMap";
 import { StayList } from "./StayList";
 import { usePlans } from "./usePlans";
@@ -84,36 +89,77 @@ export function ExploreView({ initialRoute, initialPlace }: { initialRoute: stri
 
   const heartCount = useCallback((placeId: string) => hearts.filter((h) => h.placeId === placeId).length, [hearts]);
 
+  const board = route ? BOARD.find((b) => b.code === route.code) : null;
+  const ink = route ? ROUTE_INK[route.code] ?? route.color : ROUTE_INK[ADDONS];
+
   return (
-    <main className="mx-auto grid max-w-6xl gap-4 px-4">
-      <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 py-1" role="group" aria-label="Choose a route">
+    <main className="mx-auto grid max-w-6xl gap-5 px-5 pb-12">
+      <div className="no-scrollbar -mx-5 flex gap-2 overflow-x-auto px-5 py-1" role="group" aria-label="Escolha uma rota">
         {candidates.map((r) => (
-          <button key={r.code} className="chip" aria-pressed={r.code === route?.code} onClick={() => setCode(r.code)}>
+          <button key={r.code} className="chip shrink-0" aria-pressed={r.code === route?.code} onClick={() => setCode(r.code)}>
             <span className="inline-block size-3 rounded-full" style={{ background: routeColor(r.code, r.color, resolvedTheme) }} />
             {r.code} · {r.name}
           </button>
         ))}
         {planRoutes.map((r) => (
-          <button key={r.code} className="chip" aria-pressed={r.code === route?.code} onClick={() => setCode(r.code)}>
+          <button key={r.code} className="chip shrink-0" aria-pressed={r.code === route?.code} onClick={() => setCode(r.code)}>
             <span className="inline-block size-3 rounded-sm" style={{ background: r.color }} />
             {r.id === chosen?.id ? "★ " : ""}
             {r.name}
           </button>
         ))}
-        <button className="chip" aria-pressed={code === ADDONS} onClick={() => setCode(ADDONS)}>
+        <button className="chip shrink-0" aria-pressed={code === ADDONS} onClick={() => setCode(ADDONS)}>
           <span className="inline-block size-3 rounded-full" style={{ background: routeColor(ADDONS, "#6b5b95", resolvedTheme) }} />
-          Add-ons
+          Extras
         </button>
       </div>
 
-      <div>
-        <h1 className="text-2xl font-extrabold">{route ? route.title : "Optional add-ons"}</h1>
+      <header className="grid gap-3">
+        <div className="flex items-start gap-4">
+          <div className="grid min-w-0 flex-1 gap-1">
+            <p className="eyebrow" style={{ color: ink }}>
+              {route ? (route.isCandidate ? `Rota ${route.code}` : route.id === chosen?.id ? "Nosso plano" : "Rascunho") : "Opcionais"}
+            </p>
+            <h1 className="text-[2.6rem] leading-[1.02] sm:text-5xl">{route ? route.name : "Extras"}</h1>
+            <p className="text-[1.05rem] text-ink-2">{route ? route.title : "Lugares que podem entrar numa rota"}</p>
+          </div>
+          <EkiStamp
+            motif={route ? ROUTE_MOTIF[route.code] ?? "train" : "leaf"}
+            ink={ink}
+            top={route ? route.name : "Extras"}
+            bottom={route ? `${route.stays.length} bases` : "Japão"}
+            size={92}
+            rotate={9}
+            seed={(route?.code ?? ADDONS).charCodeAt(0)}
+            label=""
+          />
+        </div>
+        {board ? <p className="text-[1.05rem] text-ink-2">{board.pitch}</p> : null}
+        {board ? (
+          <div className="flex flex-wrap gap-1.5">
+            {board.good.slice(0, 2).map((g) => (
+              <Pill key={g} tone="ok">
+                {g}
+              </Pill>
+            ))}
+            {board.warn.slice(0, 1).map((w) => (
+              <Pill key={w} tone="warn">
+                {w}
+              </Pill>
+            ))}
+          </div>
+        ) : null}
         <p className="text-sm text-muted">
           {route
-            ? `${route.isCandidate ? "" : "Our plan · "}${route.stays.length} bases${route.exitAirport ? ` · fly home from ${route.exitAirport}` : ""}. Tap a place for photos, reviews and videos.`
-            : "Places that could be swapped into a route. Tap one to see it."}
+            ? `${route.stays.length} bases${route.exitAirport ? ` · volta por ${route.exitAirport}` : ""}. Toque num lugar para ver fotos, avaliações e vídeos.`
+            : "Toque num lugar para ver."}
         </p>
-      </div>
+        {route?.isCandidate && !chosen ? (
+          <Link href="/votar" className="btn btn-accent justify-self-start no-underline">
+            Votar nas rotas
+          </Link>
+        ) : null}
+      </header>
 
       <div className="grid items-start gap-4 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
         <RouteMap
@@ -124,7 +170,7 @@ export function ExploreView({ initialRoute, initialPlace }: { initialRoute: stri
           selected={selected}
           onSelect={select}
           theme={resolvedTheme}
-          label={route ? `Map of route ${route.code}, ${route.name}` : "Map of optional add-ons"}
+          label={route ? `Mapa da rota ${route.code}, ${route.name}` : "Mapa dos extras"}
         />
         <div className="grid gap-4">
           {route ? (
@@ -135,8 +181,8 @@ export function ExploreView({ initialRoute, initialPlace }: { initialRoute: stri
                 const p = P.get(slug)!;
                 return (
                   <li key={slug}>
-                    <button type="button" onClick={() => select(slug)} className="card grid w-full gap-0.5 p-3 text-left">
-                      <span className="font-bold">{p.name}</span>
+                    <button type="button" onClick={() => select(slug)} className="card grid w-full gap-0.5 p-4 text-left">
+                      <span className="font-display text-[1.35rem] leading-tight">{p.name}</span>
                       <span className="text-sm text-muted">{p.blurb}</span>
                     </button>
                   </li>

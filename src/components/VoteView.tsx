@@ -1,176 +1,183 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
-import { routeColor } from "@/lib/colors";
+import { useState } from "react";
+import { todayInJapan } from "@/lib/plan";
+import { ROUTE_INK, ROUTE_MOTIF } from "@/lib/stamps";
+import { daysBetween } from "@/lib/trip";
+import { EkiStamp } from "./EkiStamp";
+import { VOTE_DEADLINE } from "./HomeView";
+import { voteTally } from "@/lib/vote";
 import { useStore } from "./providers";
+import { Avatar, PageHeader, firstName } from "./ui";
 
-/** P1.5: rank the routes, see live totals, hearts per place and who hasn't voted. */
+/**
+ * Majority vote: everyone picks a favourite (rank 1) and, optionally, a
+ * second choice (rank 2) that breaks ties. Results are visible live.
+ */
 export function VoteView() {
-  const { trip, me, votes, hearts, submitRanking, resolvedTheme } = useStore();
+  const { trip, me, votes, submitRanking } = useStore();
   const routes = trip.routes.filter((r) => r.isCandidate);
-  const n = routes.length;
+  const mine = votes.filter((v) => v.travellerId === me?.travellerId).sort((a, b) => a.rank - b.rank);
+  const savedFirst = mine.find((v) => v.rank === 1)?.routeId ?? null;
+  const savedSecond = mine.find((v) => v.rank === 2)?.routeId ?? null;
 
-  const mine = useMemo(
-    () =>
-      votes
-        .filter((v) => v.travellerId === me?.travellerId)
-        .sort((a, b) => a.rank - b.rank)
-        .map((v) => v.routeId),
-    [votes, me],
-  );
-  // A local draft while reordering; otherwise show my saved ranking (live).
-  const [draft, setDraft] = useState<string[] | null>(null);
+  const [draft, setDraft] = useState<{ first: string | null; second: string | null } | null>(null);
+  const first = draft ? draft.first : savedFirst;
+  const second = draft ? draft.second : savedSecond;
+  const dirty = draft !== null && (draft.first !== savedFirst || draft.second !== savedSecond);
   const [saving, setSaving] = useState(false);
-  const [announce, setAnnounce] = useState("");
-  const saved = mine.length ? [...mine, ...routes.map((r) => r.id).filter((id) => !mine.includes(id))] : routes.map((r) => r.id);
-  const order = draft ?? saved;
-  const dirty = draft !== null;
+  const [justVoted, setJustVoted] = useState(false);
 
-  const move = (i: number, dir: -1 | 1) => {
-    const j = i + dir;
-    if (j < 0 || j >= order.length) return;
-    const next = [...order];
-    [next[i], next[j]] = [next[j], next[i]];
-    setDraft(next);
-    const r = routes.find((x) => x.id === next[j])!;
-    setAnnounce(`${r.code} ${r.name} moved to choice ${j + 1}`);
-  };
+  const firsts = (routeId: string) => votes.filter((v) => v.routeId === routeId && v.rank === 1).map((v) => v.travellerId);
+  const voters = new Set(votes.filter((v) => v.rank === 1).map((v) => v.travellerId));
+  const { ranking, leader, majority, seconds } = voteTally(routes, votes, trip.travellers.length);
+  const idx = new Map(trip.travellers.map((t, i) => [t.id, i]));
+  const names = new Map(trip.travellers.map((t) => [t.id, t.name]));
+  const daysLeft = daysBetween(todayInJapan(), VOTE_DEADLINE);
 
-  const save = async () => {
+  async function save() {
+    if (!first) return;
     setSaving(true);
-    await submitRanking(order);
+    await submitRanking(second && second !== first ? [first, second] : [first]);
     setSaving(false);
     setDraft(null);
-    setAnnounce("Ranking saved");
-  };
-
-  const results = routes
-    .map((r) => {
-      const rv = votes.filter((v) => v.routeId === r.id);
-      return {
-        route: r,
-        points: rv.reduce((a, v) => a + (n + 1 - v.rank), 0),
-        firsts: rv.filter((v) => v.rank === 1).length,
-      };
-    })
-    .sort((a, b) => b.points - a.points || b.firsts - a.firsts);
-  const maxPoints = Math.max(1, ...results.map((r) => r.points));
-  const voted = new Set(votes.map((v) => v.travellerId));
-  const waiting = trip.travellers.filter((t) => !voted.has(t.id));
-
-  const P = new Map(trip.places.map((p) => [p.id, p]));
-  const names = new Map(trip.travellers.map((t) => [t.id, t.name]));
-  const hearted = [...hearts.reduce((m, h) => m.set(h.placeId, [...(m.get(h.placeId) ?? []), h.travellerId]), new Map<string, string[]>())]
-    .map(([placeId, who]) => ({ place: P.get(placeId), who }))
-    .filter((x) => x.place)
-    .sort((a, b) => b.who.length - a.who.length);
+    setJustVoted(true);
+  }
 
   return (
-    <main className="mx-auto grid max-w-3xl gap-5 px-4">
-      <h1 className="text-2xl font-extrabold">Vote</h1>
+    <main className="mx-auto grid max-w-3xl gap-8 px-5 pb-12">
+      <PageHeader
+        eyebrow="Votação da família"
+        title="Qual é a sua favorita?"
+        hand={daysLeft > 0 ? `fecha em ${daysLeft} dia${daysLeft === 1 ? "" : "s"}` : "votação encerrada"}
+      >
+        Escolha a rota que você mais quer. Se quiser, marque também uma segunda opção: ela só conta para desempatar. A maioria decide.
+      </PageHeader>
 
-      <section className="card grid gap-3 p-4" aria-labelledby="rank-h">
-        <div>
-          <h2 id="rank-h" className="text-lg font-extrabold">
-            {me ? `${me.name}, rank the routes` : "Rank the routes"}
-          </h2>
-          <p className="text-sm text-muted">1 is your favourite. First place earns {n} points, last place 1.</p>
+      <fieldset className="grid gap-3">
+        <legend className="sr-only">Sua favorita</legend>
+        {!first ? <p className="hand text-lg text-vermilion">Comece pela favorita; a 2ª opção vem depois.</p> : null}
+        {routes.map((r) => {
+          const ink = ROUTE_INK[r.code];
+          const isFirst = first === r.id;
+          const isSecond = second === r.id;
+          const who = firsts(r.id);
+          return (
+            <div key={r.id} className="card grid gap-3 p-4" style={isFirst ? { borderColor: ink, boxShadow: `0 0 0 2px ${ink}`, borderTop: `6px solid ${ink}` } : isSecond ? { borderTop: `4px dashed ${ink}` } : undefined}>
+              <button
+                type="button"
+                role="radio"
+                aria-checked={isFirst}
+                onClick={() => setDraft({ first: r.id, second: second === r.id ? null : second })}
+                className="flex items-center gap-4 text-left"
+              >
+                <EkiStamp motif={ROUTE_MOTIF[r.code]} ink={ink} top={isFirst ? "Minha escolha" : r.name} bottom={`Rota ${r.code}`} size={80} rotate={isFirst ? -8 : 4} inked={isFirst || !first} animate={isFirst} seed={r.code.charCodeAt(0)} label="" />
+                <span className="grid min-w-0 gap-0.5">
+                  <span className="eyebrow" style={{ color: ink }}>
+                    Rota {r.code}
+                  </span>
+                  <span className="font-display text-[1.9rem] leading-none">{r.name}</span>
+                  <span className="text-sm text-muted">{r.title}</span>
+                </span>
+              </button>
+              <div className="flex flex-wrap items-center gap-2 border-t border-dashed border-rule pt-3">
+                <button
+                  type="button"
+                  aria-pressed={isFirst}
+                  className="btn btn-sm"
+                  style={isFirst ? { background: ink, borderColor: ink, color: "var(--paper)" } : undefined}
+                  onClick={() => setDraft({ first: r.id, second: second === r.id ? null : second })}
+                >
+                  {isFirst ? "★ Minha favorita" : "☆ Favorita"}
+                </button>
+                {!isFirst ? (
+                  <button
+                    type="button"
+                    aria-pressed={isSecond}
+                    disabled={!first}
+                    title={first ? undefined : "Escolha a favorita primeiro"}
+                    className="btn btn-sm disabled:!opacity-50"
+                    style={isSecond ? { borderColor: ink, color: ink, borderStyle: "dashed" } : undefined}
+                    onClick={() => first && setDraft({ first, second: isSecond ? null : r.id })}
+                  >
+                    {isSecond ? "✓ 2ª opção" : "2ª opção"}
+                  </button>
+                ) : null}
+                {who.length ? (
+                  <ul className="ml-auto flex -space-x-1.5" aria-label={`Escolheram ${r.name}: ${who.map((id) => names.get(id)).join(", ")}`}>
+                    {who.map((id) => (
+                      <li key={id}>
+                        <Avatar name={names.get(id) ?? "?"} index={idx.get(id) ?? 0} size={30} />
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+                <Link href={`/rotas/${r.code}`} className={`text-sm ${who.length ? "" : "ml-auto"}`}>
+                  Ver a rota →
+                </Link>
+              </div>
+            </div>
+          );
+        })}
+      </fieldset>
+
+      {first && (dirty || !savedFirst) ? (
+        <div className="sticky bottom-24 z-10 grid">
+          <button className="btn btn-accent text-base shadow-lg" disabled={saving} onClick={save}>
+            {saving ? "Carimbando…" : savedFirst ? "Atualizar meu voto" : "Votar"}
+          </button>
+        </div>
+      ) : null}
+      <span className="sr-only" role="status">
+        {justVoted ? "Voto registrado" : ""}
+      </span>
+
+      <section className="card grid gap-4 p-5" aria-labelledby="res-h">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <p className="eyebrow">Ao vivo</p>
+            <h2 id="res-h" className="text-[1.9rem] leading-tight">
+              {leader ? (majority ? `${leader.name} tem a maioria` : `${leader.name} está na frente`) : "Ninguém votou ainda"}
+            </h2>
+          </div>
+          {justVoted || savedFirst ? <EkiStamp motif="ballot" ink="var(--vermilion)" top="Votei" bottom="2026" size={76} rotate={10} animate={justVoted} label="Você votou" /> : null}
         </div>
         <ol className="grid gap-2">
-          {order.map((id, i) => {
-            const r = routes.find((x) => x.id === id);
-            if (!r) return null;
+          {ranking.map((r) => {
+            const n = firsts(r.id).length;
             return (
-              <li key={id} className="flex items-center gap-3 rounded-lg border border-line bg-paper p-2 pl-3">
-                <span className="font-display text-2xl font-extrabold tabular-nums">{i + 1}</span>
-                <span className="inline-block h-8 w-1.5 rounded-full" style={{ background: routeColor(r.code, r.color, resolvedTheme) }} />
-                <span className="min-w-0 flex-1">
-                  <span className="block font-bold">
-                    {r.code} · {r.name}
+              <li key={r.id} className="grid gap-1">
+                <div className="flex justify-between text-sm">
+                  <span className="font-bold">{r.name}</span>
+                  <span className="tabular-nums text-muted">
+                    {n} voto{n === 1 ? "" : "s"}
+                    {seconds(r.id) ? ` · ${seconds(r.id)} como 2ª` : ""}
                   </span>
-                  <span className="block truncate text-xs text-muted">{r.title}</span>
-                </span>
-                <span className="flex gap-1">
-                  <button className="btn btn-sm !min-w-11" onClick={() => move(i, -1)} disabled={i === 0} aria-label={`Move ${r.name} up`}>
-                    ↑
-                  </button>
-                  <button className="btn btn-sm !min-w-11" onClick={() => move(i, 1)} disabled={i === order.length - 1} aria-label={`Move ${r.name} down`}>
-                    ↓
-                  </button>
-                </span>
+                </div>
+                <div className="h-2.5 overflow-hidden rounded-full bg-paper-2" aria-hidden="true">
+                  <div className="h-full rounded-full" style={{ width: `${(n / trip.travellers.length) * 100}%`, background: ROUTE_INK[r.code] }} />
+                </div>
               </li>
             );
           })}
         </ol>
-        <div className="flex flex-wrap items-center gap-3">
-          <button className="btn btn-primary" onClick={save} disabled={!me || saving || (!dirty && mine.length === n)}>
-            {saving ? "Saving…" : mine.length ? "Update my ranking" : "Save my ranking"}
-          </button>
-          <span className="text-sm text-muted">{!dirty && mine.length === n ? "Saved ✓" : dirty ? "Not saved yet" : ""}</span>
-          <span className="sr-only" role="status">
-            {announce}
-          </span>
-        </div>
-      </section>
-
-      <section className="card grid gap-3 p-4" aria-labelledby="res-h">
-        <div className="flex items-baseline justify-between gap-2">
-          <h2 id="res-h" className="text-lg font-extrabold">
-            Family results
-          </h2>
-          <span className="text-xs text-muted">Updates live</span>
-        </div>
-        <ul className="grid gap-2">
-          {results.map(({ route: r, points, firsts }) => (
-            <li key={r.id} className="grid gap-1">
-              <div className="flex justify-between text-sm">
-                <span className="font-bold">
-                  {r.code} · {r.name}
-                </span>
-                <span className="tabular-nums">
-                  {points} pts{firsts ? ` · ${firsts} first choice${firsts > 1 ? "s" : ""}` : ""}
-                </span>
-              </div>
-              <div className="h-3 overflow-hidden rounded-full bg-soft" aria-hidden="true">
-                <div className="h-full rounded-full" style={{ width: `${(points / maxPoints) * 100}%`, background: routeColor(r.code, r.color, resolvedTheme) }} />
-              </div>
-            </li>
-          ))}
-        </ul>
-        <p className="text-sm">
-          {waiting.length === 0 ? (
-            <span className="font-bold text-ok">Everyone has voted.</span>
-          ) : (
-            <>
-              <span className="text-muted">Still to vote: </span>
-              {waiting.map((t) => t.name).join(", ")}
-            </>
-          )}
+        <p className="text-sm text-muted">
+          {voters.size === trip.travellers.length
+            ? "Todo mundo votou."
+            : missingLine(trip.travellers.filter((t) => !voters.has(t.id)).map((t) => ({ id: t.id, name: firstName(t.name) })), me?.travellerId ?? null)}
         </p>
-      </section>
-
-      <section className="card grid gap-3 p-4" aria-labelledby="hearts-h">
-        <h2 id="hearts-h" className="text-lg font-extrabold">
-          Most hearted places
-        </h2>
-        {hearted.length ? (
-          <ul className="grid gap-2">
-            {hearted.slice(0, 25).map(({ place, who }) => (
-              <li key={place!.id} className="flex items-baseline justify-between gap-3 text-sm">
-                <Link href={place!.kind === "food" ? `/food?p=${place!.slug}` : `/?p=${place!.slug}`} className="font-bold">
-                  {place!.name}
-                </Link>
-                <span className="text-right text-muted">
-                  <span className="font-bold text-accent">♥ {who.length}</span> {who.map((id) => names.get(id) ?? "?").join(", ")}
-                </span>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p className="text-sm text-muted">No hearts yet. Open any place on the map and tap ♡.</p>
-        )}
       </section>
     </main>
   );
+}
+
+/** "Falta você e mais 5." / "Faltam Mãe e Pai." */
+function missingLine(missing: { id: string; name: string }[], meId: string | null): string {
+  const others = missing.filter((m) => m.id !== meId);
+  const meToo = others.length < missing.length;
+  if (meToo) return others.length ? `Falta você e mais ${others.length}.` : "Só falta você.";
+  const names = others.map((m) => m.name);
+  const list = names.length > 1 ? `${names.slice(0, -1).join(", ")} e ${names.at(-1)}` : names[0];
+  return `${names.length > 1 ? "Faltam" : "Falta"} ${list}.`;
 }

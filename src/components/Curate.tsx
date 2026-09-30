@@ -5,6 +5,7 @@ import { useState } from "react";
 import type { Place } from "@/lib/types";
 import { curatedPhotos } from "./PlaceSheet";
 import { useStore } from "./providers";
+import { PageHeader, Section } from "./ui";
 import { photoSrc, usePlaceDetails } from "./usePlaceDetails";
 
 interface VideoResult {
@@ -34,14 +35,14 @@ export function CurateIndex() {
         const ph = count(p, "photo");
         return (
           <li key={p.id}>
-            <Link href={`/curate/${p.slug}`} className="card flex items-center justify-between gap-3 p-3 no-underline hover:border-ink">
+            <Link href={`/curate/${p.slug}`} className="card flex items-center justify-between gap-3 p-3 no-underline transition-transform hover:-translate-y-0.5">
               <span className="min-w-0">
                 <span className="block truncate font-bold">{p.name}</span>
                 <span className="block text-xs text-muted">{p.kind === "food" ? p.category : p.region}</span>
               </span>
-              <span className={`shrink-0 text-sm tabular-nums ${v >= TARGET_VIDEOS ? "font-bold text-ok" : "text-muted"}`}>
-                ▶ {v}
-                {ph ? ` · 📷 ${ph}` : ""}
+              <span className={`shrink-0 font-mono text-xs tabular-nums ${v >= TARGET_VIDEOS ? "font-bold text-pine" : "text-muted"}`}>
+                {v} vídeo{v === 1 ? "" : "s"}
+                {ph ? ` · ${ph} foto${ph === 1 ? "" : "s"}` : ""}
               </span>
             </Link>
           </li>
@@ -51,18 +52,17 @@ export function CurateIndex() {
   );
 
   return (
-    <main className="mx-auto grid max-w-5xl gap-4 px-4">
-      <div>
-        <h1 className="text-2xl font-extrabold">Curate media</h1>
-        <p className="text-sm text-muted">
-          {done} of {tripPlaces.length} trip places have at least {TARGET_VIDEOS} videos. Each YouTube search uses about 200 of the
-          10,000 daily quota units.
-        </p>
-      </div>
-      <h2 className="text-lg font-extrabold">Trip places</h2>
-      {list(tripPlaces)}
-      <h2 className="text-lg font-extrabold">Tokyo food list</h2>
-      {list(food)}
+    <main className="mx-auto grid max-w-5xl gap-8 px-5 pb-12">
+      <PageHeader eyebrow="Mesa do Pedro" title="Curadoria">
+        {done} de {tripPlaces.length} lugares da viagem já têm pelo menos {TARGET_VIDEOS} vídeos. Cada busca no YouTube gasta cerca de 200
+        das 10.000 unidades diárias da cota.
+      </PageHeader>
+      <Section title="Lugares da viagem" id="trip-h">
+        {list(tripPlaces)}
+      </Section>
+      <Section title="Comida em Tokyo" id="food-h">
+        {list(food)}
+      </Section>
     </main>
   );
 }
@@ -90,9 +90,9 @@ export function CuratePlace({ slug }: { slug: string }) {
 
   if (!place)
     return (
-      <main className="mx-auto max-w-md px-4 py-16">
-        <h1 className="text-2xl font-extrabold">Unknown place</h1>
-        <Link href="/curate">Back to the list</Link>
+      <main className="mx-auto grid max-w-md gap-3 px-5 py-16">
+        <h1 className="text-[2.6rem] leading-none">Lugar desconhecido</h1>
+        <Link href="/curate">Voltar à lista</Link>
       </main>
     );
 
@@ -110,7 +110,7 @@ export function CuratePlace({ slug }: { slug: string }) {
     try {
       const res = await fetch(`/api/videos/search?q=${encodeURIComponent(query)}`);
       const body = await res.json();
-      if (!res.ok) throw new Error(body.error ?? `Search failed (${res.status})`);
+      if (!res.ok) throw new Error(body.error ?? `A busca falhou (${res.status})`);
       setResults(body);
     } catch (e) {
       setError((e as Error).message);
@@ -120,18 +120,19 @@ export function CuratePlace({ slug }: { slug: string }) {
   }
 
   return (
-    <main className="mx-auto grid max-w-5xl gap-6 px-4">
-      <div>
+    <main className="mx-auto grid max-w-5xl gap-8 px-5 pb-12">
+      <div className="grid gap-1">
         <Link href="/curate" className="text-sm">
-          ← All places
+          ← Todos os lugares
         </Link>
-        <h1 className="text-2xl font-extrabold">{place.name}</h1>
-        <p className="text-sm text-muted">{place.blurb}</p>
+        <PageHeader eyebrow="Curadoria" title={place.name}>
+          {place.blurb}
+        </PageHeader>
       </div>
 
       <section className="grid gap-3" aria-labelledby="pinned-h">
-        <h2 id="pinned-h" className="text-lg font-extrabold">
-          Pinned videos ({pinned.length})
+        <h2 id="pinned-h" className="text-[1.75rem]">
+          Vídeos fixados ({pinned.length})
         </h2>
         {pinned.length ? (
           <ol className="grid gap-2">
@@ -141,27 +142,27 @@ export function CuratePlace({ slug }: { slug: string }) {
                 <img src={`https://i.ytimg.com/vi/${m.sourceRef}/mqdefault.jpg`} alt="" width={120} height={68} className="h-[68px] w-[120px] rounded object-cover" />
                 <span className="min-w-0 flex-1 text-sm font-medium">{m.title ?? m.sourceRef}</span>
                 <span className="flex shrink-0 gap-1">
-                  <button className="btn btn-sm" onClick={() => moveMedia(m.id, -1)} disabled={i === 0} aria-label="Move up">
+                  <button className="btn btn-sm" onClick={() => moveMedia(m.id, -1)} disabled={i === 0} aria-label="Subir">
                     ↑
                   </button>
-                  <button className="btn btn-sm" onClick={() => moveMedia(m.id, 1)} disabled={i === pinned.length - 1} aria-label="Move down">
+                  <button className="btn btn-sm" onClick={() => moveMedia(m.id, 1)} disabled={i === pinned.length - 1} aria-label="Descer">
                     ↓
                   </button>
                   <button className="btn btn-sm" onClick={() => removeMedia(m.id)}>
-                    Unpin
+                    Soltar
                   </button>
                 </span>
               </li>
             ))}
           </ol>
         ) : (
-          <p className="text-sm text-muted">None yet. Search below and pin 2–4 videos.</p>
+          <p className="text-sm text-muted">Nenhum ainda. Busque abaixo e fixe de 2 a 4 vídeos.</p>
         )}
       </section>
 
       <section className="grid gap-3" aria-labelledby="search-h">
-        <h2 id="search-h" className="text-lg font-extrabold">
-          Find videos
+        <h2 id="search-h" className="text-[1.75rem]">
+          Buscar vídeos
         </h2>
         <form
           className="flex gap-2"
@@ -171,11 +172,11 @@ export function CuratePlace({ slug }: { slug: string }) {
           }}
         >
           <label className="sr-only" htmlFor="yt-q">
-            YouTube search
+            Busca no YouTube
           </label>
-          <input id="yt-q" className="input" value={q} onChange={(e) => setQ(e.target.value)} />
+          <input id="yt-q" className="input min-w-0" value={q} onChange={(e) => setQ(e.target.value)} />
           <button className="btn btn-primary shrink-0" disabled={searching}>
-            {searching ? "Searching…" : "Search"}
+            {searching ? "Buscando…" : "Buscar"}
           </button>
         </form>
         <div className="flex flex-wrap gap-2">
@@ -202,10 +203,10 @@ export function CuratePlace({ slug }: { slug: string }) {
                       <span className="line-clamp-2 text-sm font-bold">{v.title}</span>
                       <span className="text-xs text-muted">
                         {v.channel} · {v.publishedAt.slice(0, 4)}
-                        {v.views != null ? ` · ${Intl.NumberFormat("en", { notation: "compact" }).format(v.views)} views` : ""}
+                        {v.views != null ? ` · ${Intl.NumberFormat("pt-BR", { notation: "compact" }).format(v.views)} visualizações` : ""}
                       </span>
                       <button className="btn btn-sm" disabled={isPinned} onClick={() => pinVideo(place.id, v.id, v.title)}>
-                        {isPinned ? "Pinned ✓" : "Pin"}
+                        {isPinned ? "Fixado ✓" : "Fixar"}
                       </button>
                     </div>
                   </li>
@@ -213,16 +214,16 @@ export function CuratePlace({ slug }: { slug: string }) {
               })}
             </ul>
           ) : (
-            <p className="text-sm text-muted">No embeddable videos found. Try another search.</p>
+            <p className="text-sm text-muted">Nenhum vídeo incorporável encontrado. Tente outra busca.</p>
           )
         ) : null}
       </section>
 
       <section className="grid gap-3" aria-labelledby="photos-h">
-        <h2 id="photos-h" className="text-lg font-extrabold">
-          Photos
+        <h2 id="photos-h" className="text-[1.75rem]">
+          Fotos
         </h2>
-        <p className="text-sm text-muted">Pin puts a photo first in the carousel; Hide removes it.</p>
+        <p className="text-sm text-muted">Fixar põe a foto em primeiro no carrossel; Esconder tira ela de lá.</p>
         {details.status === "ok" ? (
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {[...curatedPhotos(details.data.photos, photoMedia.filter((m) => m.pinned), place.id), ...details.data.photos.filter((p) => photoState(p.name) === "hidden")].map(
@@ -235,10 +236,10 @@ export function CuratePlace({ slug }: { slug: string }) {
                     <span className="truncate px-2 text-xs text-muted">© {p.authorAttributions[0]?.displayName}</span>
                     <div className="flex gap-1 px-2 pb-2">
                       <button className="btn btn-sm flex-1" aria-pressed={st === "pinned"} onClick={() => setPhotoState(place.id, p.name, st === "pinned" ? "default" : "pinned")}>
-                        {st === "pinned" ? "★ Pinned" : "Pin"}
+                        {st === "pinned" ? "★ Fixada" : "Fixar"}
                       </button>
                       <button className="btn btn-sm flex-1" aria-pressed={st === "hidden"} onClick={() => setPhotoState(place.id, p.name, st === "hidden" ? "default" : "hidden")}>
-                        {st === "hidden" ? "Show" : "Hide"}
+                        {st === "hidden" ? "Mostrar" : "Esconder"}
                       </button>
                     </div>
                   </li>
@@ -249,7 +250,7 @@ export function CuratePlace({ slug }: { slug: string }) {
         ) : details.status === "error" ? (
           <p className="text-sm text-danger">{details.error}</p>
         ) : (
-          <p className="text-sm text-muted">Loading photos…</p>
+          <p className="text-sm text-muted">Carregando fotos…</p>
         )}
       </section>
     </main>
@@ -258,9 +259,9 @@ export function CuratePlace({ slug }: { slug: string }) {
 
 export function PlannerOnly() {
   return (
-    <main className="mx-auto max-w-md px-4 py-16">
-      <h1 className="text-2xl font-extrabold">Planner only</h1>
-      <p className="text-muted">Media curation is limited to the trip planner.</p>
+    <main className="mx-auto grid max-w-md gap-3 px-5 py-16">
+      <h1 className="text-[2.6rem] leading-none">Só para o Pedro</h1>
+      <p className="text-ink-2">A curadoria de fotos e vídeos fica na mesa de quem planeja a viagem.</p>
     </main>
   );
 }

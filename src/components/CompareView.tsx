@@ -5,8 +5,12 @@ import { useMemo, useState } from "react";
 import { routeColor } from "@/lib/colors";
 import { planBudget } from "@/lib/plan";
 import { useTable } from "@/lib/tables";
+import { ROUTE_INK, ROUTE_MOTIF } from "@/lib/stamps";
 import { compareRows, yen, type CompareRow } from "@/lib/trip";
+import type { Route } from "@/lib/types";
+import { EkiStamp } from "./EkiStamp";
 import { useStore } from "./providers";
+import { PageHeader } from "./ui";
 import { usePlans } from "./usePlans";
 
 /** P1.3: side-by-side table of the candidate routes. */
@@ -25,7 +29,7 @@ export function CompareView() {
     const cost = out.find((r) => r.key === "cost")!;
     for (const p of withPlans ? plans : []) {
       const total = planBudget(p, bookings).reduce((a, l) => a + l.projected, 0);
-      cost.cells[p.id] = { value: total, text: yen(total), detail: "From this plan's budget" };
+      cost.cells[p.id] = { value: total, text: yen(total), detail: "Pelo orçamento deste plano" };
     }
     return out;
   }, [trip, routes, plans, bookings, withPlans]);
@@ -61,22 +65,21 @@ export function CompareView() {
 
   const shown = onlyDiff ? rows.filter(differs) : rows;
 
-  return (
-    <main className="mx-auto grid max-w-6xl gap-4 px-4">
-      <div>
-        <h1 className="text-2xl font-extrabold">Compare the routes</h1>
-        <p className="text-sm text-muted">
-          Best value in each row is marked <span className="font-bold text-ok">✓</span>. Snow and comfort are our own estimates; costs are
-          per person for 20 nights, excluding flights.
-        </p>
-      </div>
+  const inkOf = (r: Route) => (r.isCandidate ? ROUTE_INK[r.code] : undefined) ?? routeColor(r.code, r.color, resolvedTheme);
 
-      <div className="flex flex-wrap items-end gap-3">
+  return (
+    <main className="mx-auto grid max-w-6xl gap-6 px-5 pb-12">
+      <PageHeader eyebrow="As quatro rotas" title="Lado a lado">
+        O melhor valor de cada linha leva um <span className="font-bold text-pine">✓</span>. Neve e conforto são estimativas nossas; os
+        custos são por pessoa, para 20 noites, sem passagens aéreas.
+      </PageHeader>
+
+      <div className="flex flex-wrap items-end gap-x-4 gap-y-2">
         <label className="grid gap-1 text-sm font-medium">
-          Sort routes by
-          <select className="input !w-auto" value={sortKey} onChange={(e) => setSortKey(e.target.value)}>
-            <option value="">Route letter</option>
-            <option value="votes">Family votes</option>
+          <span className="eyebrow">Ordenar por</span>
+          <select className="input !w-auto max-w-full" value={sortKey} onChange={(e) => setSortKey(e.target.value)}>
+            <option value="">Letra da rota</option>
+            <option value="votes">Votos da família</option>
             {rows
               .filter((r) => r.better)
               .map((r) => (
@@ -87,52 +90,63 @@ export function CompareView() {
           </select>
         </label>
         <label className="flex min-h-11 items-center gap-2 text-sm">
-          <input type="checkbox" className="size-5 accent-[var(--accent)]" checked={onlyDiff} onChange={(e) => setOnlyDiff(e.target.checked)} />
-          Only rows that differ
+          <input type="checkbox" className="size-5 accent-[var(--ink)]" checked={onlyDiff} onChange={(e) => setOnlyDiff(e.target.checked)} />
+          Só as linhas que mudam
         </label>
         {plans.length ? (
           <label className="flex min-h-11 items-center gap-2 text-sm">
-            <input type="checkbox" className="size-5 accent-[var(--accent)]" checked={withPlans} onChange={(e) => setWithPlans(e.target.checked)} />
-            Include our plans
+            <input type="checkbox" className="size-5 accent-[var(--ink)]" checked={withPlans} onChange={(e) => setWithPlans(e.target.checked)} />
+            Incluir nossos planos
           </label>
         ) : null}
       </div>
 
       {/* Cards on phones */}
-      <div className="grid gap-3 md:hidden">
-        {ordered.map((r) => (
-          <section key={r.id} className="card overflow-hidden" aria-labelledby={`cmp-${r.id}`}>
-            <div className="flex items-center gap-2 px-4 py-3" style={{ borderTop: `6px solid ${routeColor(r.code, r.color, resolvedTheme)}` }}>
-              <h2 id={`cmp-${r.id}`} className="text-lg font-extrabold">
-                {r.isCandidate ? `${r.code} · ${r.name}` : r.name}
-              </h2>
-              <span className="ml-auto text-sm text-muted">{score(r.id)} pts</span>
-            </div>
-            <dl className="grid divide-y divide-line border-t border-line">
-              {shown.map((row) => {
-                const c = row.cells[r.id];
-                const isBest = best(row).has(r.id);
-                return (
-                  <div key={row.key} className="grid grid-cols-[8.5rem_1fr] gap-3 px-4 py-2 text-sm">
-                    <dt className="text-muted">{row.label}</dt>
-                    <dd>
-                      <span className={isBest ? "font-bold text-ok" : ""}>
-                        {c.text}
-                        {isBest ? " ✓" : ""}
-                      </span>
-                      {c.detail ? <span className="block text-xs text-muted">{c.detail}</span> : null}
-                    </dd>
-                  </div>
-                );
-              })}
-            </dl>
-            <div className="px-4 py-3">
-              <Link href={`/?r=${r.code}`} className="btn btn-sm w-full">
-                See route {r.code} on the map
-              </Link>
-            </div>
-          </section>
-        ))}
+      <div className="grid gap-4 md:hidden">
+        {ordered.map((r) => {
+          const ink = inkOf(r);
+          return (
+            <section key={r.id} className="card overflow-hidden" aria-labelledby={`cmp-${r.id}`} style={{ borderTop: `4px solid ${ink}` }}>
+              <div className="flex items-center gap-3 px-4 pt-4 pb-3">
+                {r.isCandidate ? (
+                  <EkiStamp motif={ROUTE_MOTIF[r.code] ?? "torii"} ink={ink} size={48} rotate={-6} seed={r.code.charCodeAt(0)} label="" />
+                ) : null}
+                <div className="min-w-0 flex-1">
+                  <p className="eyebrow" style={{ color: ink }}>
+                    {r.isCandidate ? `Rota ${r.code}` : "Nosso plano"}
+                  </p>
+                  <h2 id={`cmp-${r.id}`} className="text-[1.75rem] leading-none">
+                    {r.name}
+                  </h2>
+                </div>
+                <span className="shrink-0 font-mono text-xs text-muted">{score(r.id)} pts</span>
+              </div>
+              <dl className="grid divide-y divide-rule border-t border-rule">
+                {shown.map((row) => {
+                  const c = row.cells[r.id];
+                  const isBest = best(row).has(r.id);
+                  return (
+                    <div key={row.key} className="grid grid-cols-[7.5rem_minmax(0,1fr)] gap-3 px-4 py-2 text-sm">
+                      <dt className="text-muted">{row.label}</dt>
+                      <dd>
+                        <span className={isBest ? "font-bold text-pine" : ""}>
+                          {c.text}
+                          {isBest ? " ✓" : ""}
+                        </span>
+                        {c.detail ? <span className="block text-xs text-muted">{c.detail}</span> : null}
+                      </dd>
+                    </div>
+                  );
+                })}
+              </dl>
+              <div className="px-4 py-3">
+                <Link href={`/rotas/${r.code}`} className="btn btn-sm w-full">
+                  {r.isCandidate ? `Ver a rota ${r.code} no mapa` : "Ver no mapa"}
+                </Link>
+              </div>
+            </section>
+          );
+        })}
       </div>
 
       {/* Table on wider screens */}
@@ -140,15 +154,18 @@ export function CompareView() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr>
-              <th scope="col" className="w-40 p-3 text-left align-bottom font-mono text-xs font-medium tracking-wider text-muted uppercase">
-                Route
+              <th scope="col" className="w-40 p-3 text-left align-bottom">
+                <span className="eyebrow">Rota</span>
               </th>
               {ordered.map((r) => (
-                <th key={r.id} scope="col" className="p-3 text-left align-bottom" style={{ borderTop: `6px solid ${routeColor(r.code, r.color, resolvedTheme)}` }}>
-                  <Link href={`/?r=${r.code}`} className="text-base font-extrabold no-underline hover:underline">
-                    {r.isCandidate ? `${r.code} · ${r.name}` : r.name}
+                <th key={r.id} scope="col" className="p-3 text-left align-bottom font-normal" style={{ borderTop: `4px solid ${inkOf(r)}` }}>
+                  <span className="eyebrow block" style={{ color: inkOf(r) }}>
+                    {r.isCandidate ? `Rota ${r.code}` : "Nosso plano"}
+                  </span>
+                  <Link href={`/rotas/${r.code}`} className="font-display text-[1.5rem] leading-tight no-underline hover:underline">
+                    {r.name}
                   </Link>
-                  <span className="block text-xs font-normal text-muted">{score(r.id)} vote points</span>
+                  <span className="block text-xs text-muted">{score(r.id)} pontos na votação</span>
                 </th>
               ))}
             </tr>
@@ -158,7 +175,7 @@ export function CompareView() {
               const b = best(row);
               const diff = differs(row);
               return (
-                <tr key={row.key} className="border-t border-line" style={!diff ? { opacity: 0.7 } : undefined}>
+                <tr key={row.key} className="border-t border-rule" style={!diff ? { opacity: 0.7 } : undefined}>
                   <th scope="row" className="p-3 text-left align-top font-medium text-muted">
                     {row.label}
                   </th>
@@ -169,9 +186,9 @@ export function CompareView() {
                       <td
                         key={r.id}
                         className="p-3 align-top"
-                        style={row.key === sortKey ? { background: "var(--soft)" } : undefined}
+                        style={row.key === sortKey ? { background: "var(--paper-2)" } : undefined}
                       >
-                        <span className={isBest ? "font-bold text-ok" : ""}>
+                        <span className={isBest ? "font-bold text-pine" : ""}>
                           {c.text}
                           {isBest ? " ✓" : ""}
                         </span>

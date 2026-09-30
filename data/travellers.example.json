@@ -1,8 +1,40 @@
 [
-  { "name": "Planner", "email": "planner@example.com", "role": "planner", "docs_access": true },
-  { "name": "Partner", "email": "partner@example.com", "role": "member", "docs_access": true },
-  { "name": "Brother", "email": "brother@example.com", "role": "member" },
-  { "name": "Sister-in-law", "email": "sister@example.com", "role": "member" },
-  { "name": "Mum", "email": "mum@example.com", "role": "member" },
-  { "name": "Dad", "email": "dad@example.com", "role": "member" }
+  {
+    "name": "Planner",
+    "email": "planner@example.com",
+    "role": "planner",
+    "docs_access": true,
+    "couple": "pedro"
+  },
+  {
+    "name": "Partner",
+    "email": "partner@example.com",
+    "role": "member",
+    "docs_access": true,
+    "couple": "pedro"
+  },
+  {
+    "name": "Brother",
+    "email": "brother@example.com",
+    "role": "member",
+    "couple": "irmao"
+  },
+  {
+    "name": "Sister-in-law",
+    "email": "sister@example.com",
+    "role": "member",
+    "couple": "irmao"
+  },
+  {
+    "name": "Mum",
+    "email": "mum@example.com",
+    "role": "member",
+    "couple": "pais"
+  },
+  {
+    "name": "Dad",
+    "email": "dad@example.com",
+    "role": "member",
+    "couple": "pais"
+  }
 ]

@@ -1,7 +1,7 @@
 import { DocumentsView } from "@/components/DocumentsView";
 import { getViewer, serverSupabase } from "@/lib/supabase/server";
 
-export const metadata = { title: "Documents · Six Across Japan" };
+export const metadata = { title: "Documentos · Seis pelo Japão" };
 
 export default async function DocumentsPage() {
   const viewer = await getViewer();

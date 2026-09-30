@@ -43,7 +43,7 @@ export function guideFor(slug: string | null | undefined): Guide | null {
   return slug === "tokyo" || slug === "kyoto" ? GUIDES[slug] : null;
 }
 
-export const WHO_LABEL: Record<GuideSlot["who"], string> = { all: "Everyone", early: "Early crew", bump: "Easy option" };
+export const WHO_LABEL: Record<GuideSlot["who"], string> = { all: "Todos", early: "Turma da madrugada", bump: "Opção tranquila" };
 
 export interface BoardStop {
   name: string;

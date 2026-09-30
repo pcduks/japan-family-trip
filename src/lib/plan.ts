@@ -98,6 +98,10 @@ export interface Setting {
 
 export const STATUS_ORDER: BookingStatus[] = ["idea", "held", "booked", "paid"];
 
+/** PT-BR labels; the stored values stay in English. */
+export const STATUS_LABEL: Record<BookingStatus, string> = { idea: "ideia", held: "segurada", booked: "reservada", paid: "paga" };
+export const KIND_LABEL: Record<BookingKind, string> = { lodging: "Hospedagem", transport: "Transporte", activity: "Passeio", other: "Outro" };
+
 /* ------------------------------------------------------------- plans */
 
 export function newId(): string {
@@ -110,18 +114,19 @@ export function inferLegMode(note: string | null | undefined): LegMode | null {
   if (!note) return null;
   const n = note.toLowerCase();
   // Rail first: "Fuji Excursion ...; pick up van" is a train leg.
-  if (/shinkansen|express|train|\bline\b|romancecar|thunderbird|excursion|railway/.test(n)) return "train";
-  if (/\bdrive|\bvan\b|\bcar\b/.test(n)) return "drive";
-  if (/\bfly|flight|plane/.test(n)) return "flight";
-  if (/\bbus\b/.test(n)) return "bus";
-  if (/ferry|boat/.test(n)) return "ferry";
+  // English and Portuguese (\b is ASCII-only in JS, so accented words use explicit boundaries).
+  if (/shinkansen|express|train|\bline\b|romancecar|thunderbird|excursion|railway|\btrem\b|\blinha\b|nankai|ferrovi/.test(n)) return "train";
+  if (/\bdrive|\bvan\b|\bcar\b|\bcarro\b|\bdirig/.test(n)) return "drive";
+  if (/\bfly|flight|plane|\bvoo\b|avi[ãa]o/.test(n)) return "flight";
+  if (/\bbus\b|(?:^|[^\p{L}])[ôo]nibus/u.test(n)) return "bus";
+  if (/ferry|boat|\bbalsa\b|\bbarco/.test(n)) return "ferry";
   return null;
 }
 
 /** Copy a candidate route into an editable plan. */
 export function planFromRoute(route: Route, name?: string): Omit<Plan, "id"> {
   return {
-    name: name ?? `My ${route.name}`,
+    name: name ?? `Plano ${route.name}`,
     color: route.color,
     based_on: route.code,
     is_chosen: false,
@@ -178,10 +183,12 @@ export function legHours(stay: Pick<PlanStay, "legHours" | "legNote">): number |
 /** Dates the PRD says not to change cities (P2.2). */
 export const NO_MOVE_DATES = ["2026-12-29", "2026-12-30", "2026-12-31", "2027-01-02", "2027-01-03", "2027-01-04"];
 export const LONG_TRAVEL_HOURS = 4;
-const CLOSED_ON_NEW_YEAR = /market|museum|gallery|castle|aquarium|department store|depachika|arcade/i;
+const CLOSED_ON_NEW_YEAR =
+  /market|museum|gallery|castle|aquarium|department store|depachika|arcade|mercado|museu|galeria|castelo|aqu[áa]rio|loja de departamento/i;
 const NEW_YEAR_DAYS = ["2027-01-01", "2027-01-02", "2027-01-03"];
-const STAIRS = /stairs|steps|climb|steep/i;
-const ICY = /\bicy\b|\bice\b|fall risk/i;
+// English and Portuguese; "escada rolante" (escalator) is not stairs.
+const STAIRS = /stairs|steps|climb|steep|degraus|escada(?!s?\s+rolante)|subida|[íi]ngreme/i;
+const ICY = /\bicy\b|\bice\b|fall risk|gelo|escorregadi|risco de queda|congelad/i;
 
 export interface Warning {
   level: "error" | "warn" | "info";
@@ -197,12 +204,12 @@ export function planWarnings(plan: Plan, places: Map<string, Place>, activities:
   const name = (slug: string) => places.get(slug)?.name ?? slug;
   const total = planNights(plan);
 
-  if (!plan.stays.length) out.push({ level: "error", code: "empty", message: "Add at least one stay." });
+  if (!plan.stays.length) out.push({ level: "error", code: "empty", message: "Adicione pelo menos uma base." });
   else if (total !== TRIP_NIGHTS)
     out.push({
       level: "error",
       code: "nights",
-      message: `Nights add up to ${total}; the trip is ${TRIP_NIGHTS} nights (${total > TRIP_NIGHTS ? "remove" : "add"} ${Math.abs(total - TRIP_NIGHTS)}).`,
+      message: `A soma dá ${total} noites; a viagem tem ${TRIP_NIGHTS} (${total > TRIP_NIGHTS ? "tire" : "acrescente"} ${Math.abs(total - TRIP_NIGHTS)}).`,
     });
 
   const route = planToRoute(plan);
@@ -215,8 +222,8 @@ export function planWarnings(plan: Plan, places: Map<string, Place>, activities:
         stayId: s.id,
         date: s.startDate,
         message: ps.overridePeak
-          ? `Moving to ${name(s.place)} on ${formatDay(s.startDate)}, a peak travel day (accepted).`
-          : `Moving to ${name(s.place)} on ${formatDay(s.startDate)}, a peak travel day. Trains are packed; book seats the day they open or change the dates.`,
+          ? `Mudança para ${name(s.place)} em ${formatDay(s.startDate)}, dia de pico (aceito).`
+          : `Mudança para ${name(s.place)} em ${formatDay(s.startDate)}, dia de pico. Os trens lotam: reserve os assentos no dia em que abrirem ou mude as datas.`,
       });
     }
     const h = i > 0 ? legHours(ps) : null;
@@ -226,7 +233,7 @@ export function planWarnings(plan: Plan, places: Map<string, Place>, activities:
         code: "long-leg",
         stayId: s.id,
         date: s.startDate,
-        message: `Long travel day to ${name(s.place)} on ${formatDay(s.startDate)}: about ${formatHours(h)}. Plan rest stops for her.`,
+        message: `Dia longo de viagem até ${name(s.place)} em ${formatDay(s.startDate)}: cerca de ${formatHours(h)}. Planeje paradas para ela descansar.`,
       });
   });
 
@@ -251,7 +258,7 @@ export function planWarnings(plan: Plan, places: Map<string, Place>, activities:
         code: "closure",
         activityId: a.id,
         date: a.date,
-        message: `“${a.title}” on ${formatDay(a.date)}: markets and museums are often closed 1–3 Jan. Check opening days.`,
+        message: `“${a.title}” em ${formatDay(a.date)}: mercados e museus costumam fechar de 1 a 3 de janeiro. Confira os dias de funcionamento.`,
       });
   }
 
@@ -324,8 +331,8 @@ export function railReminders(plan: Plan, bookings: Booking[], places: Map<strin
       return {
         kind: "rail" as const,
         date: addMonths(l.date, -1),
-        title: `Book seats: ${places.get(l.from)?.name ?? l.from} → ${places.get(l.to)?.name ?? l.to}`,
-        detail: `Travel ${formatDay(l.date)}. Seats open 10:00 JST${peak ? "; peak day, book the moment they open" : ""}.${l.note ? " " + l.note : ""}`,
+        title: `Reservar assentos: ${places.get(l.from)?.name ?? l.from} → ${places.get(l.to)?.name ?? l.to}`,
+        detail: `Viagem em ${formatDay(l.date)}. As vendas abrem às 10:00 (horário do Japão)${peak ? "; dia de pico, reserve assim que abrirem" : ""}.${l.note ? " " + l.note : ""}`,
         stayId: l.stayId,
         done: booked,
       };
@@ -338,8 +345,8 @@ export function deadlineReminders(bookings: Booking[]): Reminder[] {
     .map((b) => ({
       kind: "deadline" as const,
       date: b.cancel_by!,
-      title: `Free cancellation ends: ${b.name}`,
-      detail: `Status: ${b.status}${b.price_jpy ? ` · ¥${b.price_jpy.toLocaleString("en-US")}` : ""}`,
+      title: `Fim do cancelamento grátis: ${b.name}`,
+      detail: `Situação: ${STATUS_LABEL[b.status]}${b.price_jpy ? ` · ¥${b.price_jpy.toLocaleString("pt-BR")}` : ""}`,
       bookingId: b.id,
       stayId: b.stay_id ?? undefined,
       done: b.status === "paid",
@@ -408,35 +415,35 @@ export function planBudget(plan: Plan, bookings: Booking[], opts: { foodPerDay?:
   return [
     {
       category: "lodging",
-      label: "Lodging",
+      label: "Hospedagem",
       estimate: lodgingEstimate,
       booked: lodgingBooked,
       projected: lodgingBooked + unbookedNights * lodgingPerNight,
-      note: `${nights - unbookedNights} of ${nights} nights priced from bookings`,
+      note: `${nights - unbookedNights} de ${nights} noites com preço de reservas`,
     },
     {
       category: "transport",
-      label: "Trains, buses, taxis",
+      label: "Trens, ônibus e táxis",
       estimate: transportEstimate,
       booked: transportBooked,
       projected: Math.max(transportEstimate, transportBooked),
-      note: "Estimate until tickets exceed it",
+      note: "Estimativa, até as passagens passarem dela",
     },
     {
       category: "food",
-      label: "Food",
+      label: "Comida",
       estimate: foodEstimate,
       booked: 0,
       projected: foodEstimate,
-      note: opts.foodPerDay ? `¥${opts.foodPerDay.toLocaleString("en-US")} a day` : "Middle of ¥7–12k a day",
+      note: opts.foodPerDay ? `¥${opts.foodPerDay.toLocaleString("pt-BR")} por dia` : "Meio-termo de ¥7–12 mil por dia",
     },
     {
       category: "activities",
-      label: "Activities",
+      label: "Passeios",
       estimate: expEstimate,
       booked: expBooked,
       projected: Math.max(expEstimate, expBooked),
-      note: "Classes, museums, ropeways, tea",
+      note: "Aulas, museus, teleféricos, chá",
     },
   ];
 }
