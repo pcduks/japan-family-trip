@@ -1,0 +1,29 @@
+{
+  "_comment": "Curated judgement fields for the compare view. Edit freely. Budget ranges are ¥ thousands per person for the whole trip [low, high], copied from the Route Explorer prototype.",
+  "budget": {
+    "A": { "lodge": [230, 380], "move": [55, 70] },
+    "B": { "lodge": [260, 420], "move": [55, 70] },
+    "C": { "lodge": [260, 420], "move": [65, 80] },
+    "D": { "lodge": [300, 470], "move": [90, 110] },
+    "food": [140, 240],
+    "exp": [30, 60]
+  },
+  "routes": {
+    "A": {
+      "snow": { "score": 3, "label": "Likely in Takayama, Shirakawa-go and Kanazawa" },
+      "comfort": { "score": 3, "label": "One 5–6 h day (26 Dec); Koyasan temple night is cold" }
+    },
+    "B": {
+      "snow": { "score": 4, "label": "Very likely for 8 nights in the Alps and Hokuriku" },
+      "comfort": { "score": 2, "label": "Icy monkey-park path, farmhouse night with shared baths" }
+    },
+    "C": {
+      "snow": { "score": 1, "label": "Unlikely; mild coast and Kyushu" },
+      "comfort": { "score": 4, "label": "Mild weather, private onsen baths in Yufuin; two ~4 h days" }
+    },
+    "D": {
+      "snow": { "score": 2, "label": "Possible at Tsumago and Koyasan" },
+      "comfort": { "score": 2, "label": "Five driving days of 2.5–4 h; mountain roads in winter" }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+[
+  { "name": "Planner", "email": "planner@example.com", "role": "planner" },
+  { "name": "Partner", "email": "partner@example.com", "role": "member" },
+  { "name": "Brother", "email": "brother@example.com", "role": "member" },
+  { "name": "Sister-in-law", "email": "sister@example.com", "role": "member" },
+  { "name": "Mum", "email": "mum@example.com", "role": "member" },
+  { "name": "Dad", "email": "dad@example.com", "role": "member" }
+]
