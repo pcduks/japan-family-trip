@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#1c2331"/>
+  <circle cx="256" cy="226" r="118" fill="#b5432d"/>
+  <path d="M96 392 L196 262 L256 332 L316 262 L416 392 Z" fill="#f3f5f6"/>
+  <path d="M236 290 L256 262 L276 290 L256 312 Z" fill="#1c2331" opacity=".25"/>
+  <text x="256" y="462" text-anchor="middle" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#f3f5f6">六人旅</text>
+</svg>

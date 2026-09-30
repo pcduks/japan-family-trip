@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, Shippori_Mincho, Zen_Kaku_Gothic_New } from "next/font/google";
 import { AppHeader, BottomNav, Gate } from "@/components/AppChrome";
 import { PREFS_BOOT_SCRIPT, Providers } from "@/components/providers";
+import { OfflineBanner, ServiceWorker } from "@/components/ServiceWorker";
 import { loadTrip } from "@/lib/data";
 import { getViewer, serverSupabase } from "@/lib/supabase/server";
 import "./globals.css";
@@ -40,6 +41,8 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body className="min-h-dvh antialiased">
         <Providers trip={trip} viewer={me}>
+          <OfflineBanner />
+          <ServiceWorker signedIn={!!me} />
           {me ? <AppHeader /> : null}
           <div className="pb-24">
             <Gate>{children}</Gate>

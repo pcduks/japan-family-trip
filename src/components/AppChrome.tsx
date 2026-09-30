@@ -4,13 +4,16 @@ import * as Dialog from "@radix-ui/react-dialog";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useStore, type ThemePref } from "./providers";
+import { clearOfflineData } from "./ServiceWorker";
 
 const NAV = [
+  { href: "/today", label: "Today", icon: "M4 6h16v14H4zM4 10h16M9 3v4m6-4v4" },
   { href: "/", label: "Routes", icon: "M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2V6zm6-2v14m6-12v14" },
-  { href: "/compare", label: "Compare", icon: "M4 5h16M4 12h16M4 19h16M9 3v18M15 3v18" },
-  { href: "/vote", label: "Vote", icon: "M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10z" },
-  { href: "/food", label: "Tokyo food", icon: "M7 3v8a2 2 0 0 0 2 2v8M11 3v8M15 3c2 0 3 2 3 5s-1 5-3 5v8" },
+  { href: "/plan", label: "Plan", icon: "M5 4h14v16H5zM9 8h6M9 12h6M9 16h4" },
+  { href: "/food", label: "Food", icon: "M7 3v8a2 2 0 0 0 2 2v8M11 3v8M15 3c2 0 3 2 3 5s-1 5-3 5v8" },
+  { href: "/more", label: "More", icon: "M5 12h.01M12 12h.01M19 12h.01" },
 ];
+const MORE_PATHS = ["/more", "/compare", "/vote", "/guides", "/documents", "/curate"];
 
 function Icon({ d }: { d: string }) {
   return (
@@ -22,8 +25,7 @@ function Icon({ d }: { d: string }) {
 
 export function BottomNav() {
   const path = usePathname();
-  const { me } = useStore();
-  const items = me?.role === "planner" ? [...NAV, { href: "/curate", label: "Curate", icon: "M4 20h4L19 9l-4-4L4 16v4zM14 6l4 4" }] : NAV;
+  const items = NAV;
   return (
     <nav
       aria-label="Main"
@@ -32,7 +34,8 @@ export function BottomNav() {
     >
       <ul className="mx-auto flex max-w-3xl justify-around">
         {items.map((n) => {
-          const active = n.href === "/" ? path === "/" : path.startsWith(n.href);
+          const active =
+            n.href === "/" ? path === "/" : n.href === "/more" ? MORE_PATHS.some((m) => path.startsWith(m)) : path.startsWith(n.href);
           return (
             <li key={n.href} className="flex-1">
               <Link
@@ -109,7 +112,7 @@ export function AppHeader() {
 
             <div className="flex justify-between gap-2">
               {!demo ? (
-                <form action="/auth/signout" method="post">
+                <form action="/auth/signout" method="post" onSubmit={clearOfflineData}>
                   <button className="btn btn-sm">Sign out</button>
                 </form>
               ) : (

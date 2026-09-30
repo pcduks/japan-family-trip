@@ -2,7 +2,8 @@
 
 import { useMemo, useState } from "react";
 import type { Place } from "@/lib/types";
-import { PlaceSheet } from "./PlaceSheet";
+import { insertRow, useTable } from "@/lib/tables";
+import { PlaceSheet, sourceLabel } from "./PlaceSheet";
 import { useStore } from "./providers";
 
 /** Group the saved list's free-text categories into a few filters. */
@@ -107,6 +108,8 @@ export function FoodView({ initialPlace }: { initialPlace: string | null }) {
         })}
       </ul>
 
+      <TipsInbox food={food} onOpen={setOpen} />
+
       <PlaceSheet place={open} route={null} onClose={() => setOpen(null)} />
     </main>
   );
@@ -115,4 +118,84 @@ export function FoodView({ initialPlace }: { initialPlace: string | null }) {
 function areaKey(area: string | null | undefined): string {
   if (!area) return "Check on map";
   return area.split(/\s[/(]/)[0].trim();
+}
+
+/**
+ * Paste a link from Instagram (or anywhere) with a short note. Scraping
+ * Instagram breaks its terms, so tips come in by hand and link back to the post.
+ */
+function TipsInbox({ food, onOpen }: { food: Place[]; onOpen: (p: Place) => void }) {
+  const { me, trip } = useStore();
+  const { rows } = useTable("tips");
+  const [url, setUrl] = useState("");
+  const [text, setText] = useState("");
+  const [slug, setSlug] = useState("");
+  const P = new Map(trip.places.map((p) => [p.slug, p]));
+  const tips = [...rows].sort((a, b) => (b.created_at ?? "").localeCompare(a.created_at ?? "")).slice(0, 30);
+  return (
+    <section className="grid gap-3" aria-labelledby="tips-h">
+      <div>
+        <h2 id="tips-h" className="text-lg font-extrabold">
+          Tips inbox
+        </h2>
+        <p className="text-sm text-muted">Saw a good spot on Instagram? Paste the post link and what to order. Link it to a place if it&apos;s on our list.</p>
+      </div>
+      {me ? (
+        <form
+          className="card grid gap-2 p-3 sm:grid-cols-[1fr_1fr_12rem_auto] sm:items-end"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            if (!url.trim() && !text.trim()) return;
+            await insertRow("tips", {
+              place_slug: slug || null,
+              url: url.trim() || null,
+              text: text.trim(),
+              source: url.trim() ? sourceLabel(url.trim()) : null,
+              created_by: me.travellerId,
+              created_at: new Date().toISOString(),
+            });
+            setUrl("");
+            setText("");
+            setSlug("");
+          }}
+        >
+          <input className="input" type="url" placeholder="https://www.instagram.com/p/…" value={url} onChange={(e) => setUrl(e.target.value)} aria-label="Link" />
+          <input className="input" placeholder="The tip" value={text} onChange={(e) => setText(e.target.value)} aria-label="Tip" />
+          <select className="input" value={slug} onChange={(e) => setSlug(e.target.value)} aria-label="Place">
+            <option value="">No place yet</option>
+            {food.map((p) => (
+              <option key={p.slug} value={p.slug}>
+                {p.name}
+              </option>
+            ))}
+          </select>
+          <button className="btn btn-primary">Save</button>
+        </form>
+      ) : null}
+      {tips.length ? (
+        <ul className="grid gap-2 sm:grid-cols-2">
+          {tips.map((t) => {
+            const place = t.place_slug ? P.get(t.place_slug) : null;
+            return (
+              <li key={t.id} className="card grid gap-1 p-3 text-sm">
+                {place ? (
+                  <button type="button" className="text-left font-bold underline" onClick={() => onOpen(place)}>
+                    {place.name}
+                  </button>
+                ) : null}
+                {t.text ? <p>{t.text}</p> : null}
+                {t.url ? (
+                  <a href={t.url} target="_blank" rel="noreferrer" className="text-xs underline">
+                    {t.source ?? sourceLabel(t.url)}
+                  </a>
+                ) : null}
+              </li>
+            );
+          })}
+        </ul>
+      ) : (
+        <p className="text-sm text-muted">No tips yet.</p>
+      )}
+    </section>
+  );
 }

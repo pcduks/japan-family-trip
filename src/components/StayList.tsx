@@ -21,7 +21,7 @@ export function StayList({
   return (
     <section aria-labelledby="stays-h" className="grid gap-3">
       <h2 id="stays-h" className="text-lg font-extrabold">
-        Stays on route {route.code}
+        {route.isCandidate ? `Stays on route ${route.code}` : `Stays on ${route.name}`}
       </h2>
       <ol className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
         {route.stays.map((s, i) => {

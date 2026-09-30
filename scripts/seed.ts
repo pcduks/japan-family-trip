@@ -30,8 +30,8 @@ async function travellers() {
     console.warn("! data/travellers.json not found; copy data/travellers.example.json and add the six emails. Skipping travellers.");
     return;
   }
-  const list = JSON.parse(readFileSync(file, "utf8")) as { name: string; email: string; role: "planner" | "member" }[];
-  const rows = list.map((t) => ({ ...t, email: t.email.trim().toLowerCase() }));
+  const list = JSON.parse(readFileSync(file, "utf8")) as { name: string; email: string; role: "planner" | "member"; docs_access?: boolean }[];
+  const rows = list.map((t) => ({ name: t.name, role: t.role, docs_access: !!t.docs_access, email: t.email.trim().toLowerCase() }));
   check("travellers", await sb.from("travellers").upsert(rows, { onConflict: "email" }));
   // Pre-create auth users so magic links work with sign-ups disabled.
   for (const t of rows) {

@@ -8,17 +8,19 @@ import { PlaceSheet } from "./PlaceSheet";
 import { useStore } from "./providers";
 import { RouteMap, type MapLine, type MapMarker } from "./RouteMap";
 import { StayList } from "./StayList";
+import { usePlans } from "./usePlans";
 
 const ADDONS = "M";
 
 export function ExploreView({ initialRoute, initialPlace }: { initialRoute: string | null; initialPlace: string | null }) {
   const { trip, resolvedTheme, hearts, me } = useStore();
   const candidates = useMemo(() => trip.routes.filter((r) => r.isCandidate), [trip.routes]);
+  const { routes: planRoutes, chosen } = usePlans();
+  const all = useMemo(() => [...candidates, ...planRoutes], [candidates, planRoutes]);
   const P = useMemo(() => placeMap(trip), [trip]);
 
-  const [code, setCode] = useState(
-    initialRoute && (initialRoute === ADDONS || candidates.some((r) => r.code === initialRoute)) ? initialRoute : candidates[0]?.code ?? ADDONS,
-  );
+  // Plans load after first render, so an unknown ?r= is kept until they arrive.
+  const [code, setCode] = useState(initialRoute ?? candidates[0]?.code ?? ADDONS);
   const [selected, setSelected] = useState<string | null>(initialPlace && P.has(initialPlace) ? initialPlace : null);
   const [sheetOpen, setSheetOpen] = useState(!!selected);
 
@@ -31,8 +33,8 @@ export function ExploreView({ initialRoute, initialPlace }: { initialRoute: stri
     window.history.replaceState(null, "", u);
   }, [code, selected, sheetOpen]);
 
-  const route = candidates.find((r) => r.code === code) ?? null;
-  const color = routeColor(code, route?.color ?? "#6b5b95", resolvedTheme);
+  const route = code === ADDONS ? null : all.find((r) => r.code === code) ?? candidates[0] ?? null;
+  const color = routeColor(route?.code ?? ADDONS, route?.color ?? "#6b5b95", resolvedTheme);
   const onColor = onRouteColor(resolvedTheme);
 
   const select = useCallback((slug: string) => {
@@ -46,10 +48,11 @@ export function ExploreView({ initialRoute, initialPlace }: { initialRoute: stri
   );
 
   const { lines, markers } = useMemo(() => {
-    const lines: MapLine[] = candidates.map((r) => ({
+    const shown = route && !route.isCandidate ? [...candidates, route] : candidates;
+    const lines: MapLine[] = shown.map((r) => ({
       code: r.code,
       color: routeColor(r.code, r.color, resolvedTheme),
-      active: r.code === code,
+      active: r.code === route?.code,
       path: routeSequence(r)
         .map((s) => P.get(s))
         .filter((p) => p?.lat != null && p?.lng != null)
@@ -77,7 +80,7 @@ export function ExploreView({ initialRoute, initialPlace }: { initialRoute: stri
       });
     }
     return { lines: route ? lines : lines.map((l) => ({ ...l, active: false })), markers };
-  }, [candidates, code, route, trip.modules, P, resolvedTheme, myHearts]);
+  }, [candidates, route, trip.modules, P, resolvedTheme, myHearts]);
 
   const heartCount = useCallback((placeId: string) => hearts.filter((h) => h.placeId === placeId).length, [hearts]);
 
@@ -85,9 +88,16 @@ export function ExploreView({ initialRoute, initialPlace }: { initialRoute: stri
     <main className="mx-auto grid max-w-6xl gap-4 px-4">
       <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 py-1" role="group" aria-label="Choose a route">
         {candidates.map((r) => (
-          <button key={r.code} className="chip" aria-pressed={r.code === code} onClick={() => setCode(r.code)}>
+          <button key={r.code} className="chip" aria-pressed={r.code === route?.code} onClick={() => setCode(r.code)}>
             <span className="inline-block size-3 rounded-full" style={{ background: routeColor(r.code, r.color, resolvedTheme) }} />
             {r.code} · {r.name}
+          </button>
+        ))}
+        {planRoutes.map((r) => (
+          <button key={r.code} className="chip" aria-pressed={r.code === route?.code} onClick={() => setCode(r.code)}>
+            <span className="inline-block size-3 rounded-sm" style={{ background: r.color }} />
+            {r.id === chosen?.id ? "★ " : ""}
+            {r.name}
           </button>
         ))}
         <button className="chip" aria-pressed={code === ADDONS} onClick={() => setCode(ADDONS)}>
@@ -100,7 +110,7 @@ export function ExploreView({ initialRoute, initialPlace }: { initialRoute: stri
         <h1 className="text-2xl font-extrabold">{route ? route.title : "Optional add-ons"}</h1>
         <p className="text-sm text-muted">
           {route
-            ? `${route.stays.length} bases · fly home from ${route.exitAirport}. Tap a place for photos, reviews and videos.`
+            ? `${route.isCandidate ? "" : "Our plan · "}${route.stays.length} bases${route.exitAirport ? ` · fly home from ${route.exitAirport}` : ""}. Tap a place for photos, reviews and videos.`
             : "Places that could be swapped into a route. Tap one to see it."}
         </p>
       </div>

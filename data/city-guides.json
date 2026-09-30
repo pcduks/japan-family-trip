@@ -1,0 +1,1194 @@
+{
+  "tokyo": {
+    "city": "tokyo",
+    "mapSuffix": "Tokyo",
+    "flagLabel": "new",
+    "days": [
+      {
+        "label": "Sun 20 Dec",
+        "title": "Arrival evening",
+        "summary": "Land, check in, and keep it simple. The markets are closed on Sundays, so tonight is about an easy dinner and the Christmas lights.",
+        "slots": [
+          {
+            "time": "Afternoon",
+            "title": "Check in, drop bags",
+            "text": "Use a luggage delivery counter at the airport if the flat isn't ready. Buy Suica or PASMO cards on your phones for trains.",
+            "alt": null,
+            "query": null,
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "17:30",
+            "title": "Marunouchi lights and Tokyo Station",
+            "text": "Tree-lined street lit in gold, a flat walk, right by Tokyo Station.",
+            "alt": null,
+            "query": "Marunouchi Naka-dori",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "18:30",
+            "title": "Depachika dinner or Yūrakuchō under the tracks",
+            "text": "If everyone's tired, buy a picnic of bento, yakitori and sweets in the Daimaru or Tokyo Station food halls. If not, walk to the izakaya under the Yūrakuchō railway arches.",
+            "alt": "Easy: dinner delivered to the flat from the food halls.",
+            "query": "Yurakucho Sangyo Gado-shita",
+            "query2": null,
+            "who": "all"
+          }
+        ]
+      },
+      {
+        "label": "Mon 21 Dec",
+        "title": "Market day: Toyosu, Tsukiji, the river to Asakusa",
+        "summary": "The early market day. The early crew sees the tuna auction; everyone meets for a big temple breakfast, grazes Tsukiji's side streets, then takes the river boat to old Asakusa and Kuramae.",
+        "slots": [
+          {
+            "time": "04:45",
+            "title": "Taxi to Toyosu Market",
+            "text": "Trains don't run early enough. The upper gallery above the tuna auction opens at 5:00; the auction runs roughly 5:30–6:30.",
+            "alt": null,
+            "query": "Toyosu Market Fish Wholesale Market Building",
+            "query2": null,
+            "who": "early"
+          },
+          {
+            "time": "06:45",
+            "title": "Breakfast inside Toyosu",
+            "text": "The restaurant rows in the fish building serve sushi, kaisendon and fried seafood from dawn. Skip the counters with two-hour queues; the shorter lines next door use the same fish. Tonkatsu Yachiyo's fried horse mackerel and shrimp are cooked options.",
+            "alt": null,
+            "query": "Toyosu Market Building 6 restaurants",
+            "query2": null,
+            "who": "early"
+          },
+          {
+            "time": "08:30",
+            "title": "Everyone: 18-dish breakfast at Tsukiji Honganji",
+            "text": "An Indian-style Buddhist temple with a café serving a tray of 16 small dishes plus rice and miso. Almost all cooked, so good for her. Book online ahead.",
+            "alt": "The early crew can have coffee here and eat light.",
+            "query": "Tsukiji Honganji Cafe Tsumugi",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "09:30",
+            "title": "Graze the Tsukiji Outer Market",
+            "text": "Go for the back lanes: tamagoyaki (sweet rolled omelette) on a stick, grilled scallops, dashi and katsuobushi shops, Aritsugu for kitchen knives. It gets crowded by 10:30.",
+            "alt": null,
+            "query": "Tsukiji Outer Market",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "11:00",
+            "title": "Matcha in Hama-rikyū Gardens",
+            "text": "A tidal Edo-period garden with skyscrapers behind it. The teahouse on the pond serves matcha and a sweet. Flat paths.",
+            "alt": null,
+            "query": "Hamarikyu Gardens Nakajima no Ochaya",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "12:15",
+            "title": "Water bus up the Sumida River to Asakusa",
+            "text": "About 35 minutes, seated, under a dozen bridges. Check the day's timetable; winter services are fewer.",
+            "alt": null,
+            "query": "Hamarikyu Pier",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "13:00",
+            "title": "Asakusa: Sensō-ji and the side streets",
+            "text": "Lunch on the backstreets (tempura, soba, or monjayaki). Kappabashi kitchen street is 10 minutes' walk for plates, knives and plastic food samples.",
+            "alt": null,
+            "query": "Senso-ji",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "15:00",
+            "title": "Rest at the flat",
+            "text": "A two-hour break before dinner.",
+            "alt": null,
+            "query": null,
+            "query2": null,
+            "who": "bump"
+          },
+          {
+            "time": "17:30",
+            "title": "Kuramae: makers and river views",
+            "text": "Design shops, Kakimori (build your own notebook, mix your own ink), chocolate and coffee roasters. Walk to the river for Skytree lit up.",
+            "alt": null,
+            "query": "Kuramae Tokyo",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "19:00",
+            "title": "Dinner: Monzen-nakachō izakaya",
+            "text": "A locals' drinking district by Tomioka Hachimangū shrine. Old-school izakaya, yakitori and oden. Book a table for six.",
+            "alt": null,
+            "query": "Monzen-nakacho izakaya",
+            "query2": null,
+            "who": "all"
+          }
+        ]
+      },
+      {
+        "label": "Tue 22 Dec",
+        "title": "West side: shrines, fashion streets, Fuji at sunset",
+        "summary": "Forest shrine in the morning, the best shopping streets at midday, then Mount Fuji's silhouette from Shibuya's rooftop at sunset and a noisy food-hall dinner.",
+        "slots": [
+          {
+            "time": "08:30",
+            "title": "Meiji Jingū",
+            "text": "A long gravel walk through the forest to the shrine. Quiet before 9:30. Flat but about 1 km each way.",
+            "alt": "Easy: taxi to the north entrance, which is closer to the shrine.",
+            "query": "Meiji Jingu",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "10:00",
+            "title": "Harajuku backstreets and Cat Street",
+            "text": "Skip Takeshita Street. Cat Street and Ura-Harajuku have the streetwear and vintage shops.",
+            "alt": null,
+            "query": "Cat Street Harajuku",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "11:30",
+            "title": "Omotesandō and Aoyama",
+            "text": "Architecture walk along the avenue. The Nezu Museum's garden is one of the best in Tokyo (closed Mondays, open today).",
+            "alt": null,
+            "query": "Omotesando",
+            "query2": "Nezu Museum",
+            "who": "all"
+          },
+          {
+            "time": "13:00",
+            "title": "Lunch in Oku-Shibuya (Tomigaya)",
+            "text": "The quiet neighbourhood behind Shibuya with small restaurants, Fuglen coffee, and Shibuya Publishing & Booksellers.",
+            "alt": null,
+            "query": "Tomigaya Shibuya",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "14:30",
+            "title": "Rest",
+            "text": "Back to the flat or a long coffee stop.",
+            "alt": null,
+            "query": null,
+            "query2": null,
+            "who": "bump"
+          },
+          {
+            "time": "16:00",
+            "title": "Shibuya Sky at sunset",
+            "text": "Sunset is around 16:30 in late December. On clear winter days you can see Mount Fuji. Book the sunset slot as soon as tickets open; it sells out.",
+            "alt": "Free alternative: Tokyo Metropolitan Government Building observatory in Shinjuku.",
+            "query": "Shibuya Sky",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "17:30",
+            "title": "Shibuya Crossing and Miyashita Park",
+            "text": "Watch the crossing from above, then walk the rooftop park.",
+            "alt": null,
+            "query": "Miyashita Park Shibuya",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "18:30",
+            "title": "Dinner: Shibuya Yokochō",
+            "text": "A long food hall of regional izakaya stalls under Miyashita Park. Loud and fun, with food from every region of Japan and space for six.",
+            "alt": "Quieter: Ebisu Yokochō, then the Christmas chandelier at Yebisu Garden Place.",
+            "query": "Shibuya Yokocho",
+            "query2": "Yebisu Garden Place",
+            "who": "all"
+          }
+        ]
+      },
+      {
+        "label": "Wed 23 Dec",
+        "title": "Route A bonus: old Tokyo and a sumo hotpot",
+        "summary": "Only in Route A. The oldest-feeling neighbourhood in the city, the national museum, and a chanko nabe dinner in the sumo district. In Routes B, C and D, this is your travel day to Fuji or Hakone.",
+        "slots": [
+          {
+            "time": "09:00",
+            "title": "Yanaka, Nezu and Sendagi",
+            "text": "Wooden houses, temples, cats and craft shops. Nezu Shrine's red gate tunnel is a short, flat walk. Kayaba Coffee for egg sandwiches.",
+            "alt": null,
+            "query": "Yanaka Ginza",
+            "query2": "Nezu Shrine",
+            "who": "all"
+          },
+          {
+            "time": "11:00",
+            "title": "Ueno Park and the Tokyo National Museum",
+            "text": "Japan's best collection of samurai armour, swords, kimono and Buddhist art. Plenty of benches. Closed Mondays; closed for year-end from 26 Dec.",
+            "alt": null,
+            "query": "Tokyo National Museum",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "13:00",
+            "title": "Ameyoko market street",
+            "text": "Loud, cheap market street under the tracks. Snacks, dried seafood, and year-end shopping crowds.",
+            "alt": null,
+            "query": "Ameyoko",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "14:30",
+            "title": "Rest",
+            "text": null,
+            "alt": null,
+            "query": null,
+            "query2": null,
+            "who": "bump"
+          },
+          {
+            "time": "16:00",
+            "title": "Kiyosumi-Shirakawa: garden and coffee",
+            "text": "A stroll garden with stepping stones over the pond, then the coffee roasters that made this neighbourhood known. The Museum of Contemporary Art Tokyo is nearby.",
+            "alt": null,
+            "query": "Kiyosumi Gardens",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "18:30",
+            "title": "Dinner: chanko nabe in Ryōgoku",
+            "text": "The sumo wrestlers' hotpot, cooked at the table. Filling, all cooked, and suited to a big group. The Edo-Tokyo Museum next door reopened in March 2026.",
+            "alt": null,
+            "query": "Ryogoku chanko nabe",
+            "query2": null,
+            "who": "all"
+          }
+        ]
+      }
+    ],
+    "nights": [
+      {
+        "name": "Yūrakuchō / Shimbashi",
+        "fit": "All six · easy · central",
+        "text": "Office workers' izakaya built into the railway arches. Plastic stools, yakitori smoke, big tables. Very Tokyo, and easy to find space for six on a weekday.",
+        "query": "Yurakucho Gado-shita"
+      },
+      {
+        "name": "Shibuya Yokochō",
+        "fit": "All six · loud · walk-in",
+        "text": "A food hall of regional izakaya stalls in Miyashita Park. Walk-in, space for groups, everyone can order different things.",
+        "query": "Shibuya Yokocho"
+      },
+      {
+        "name": "Ebisu Yokochō",
+        "fit": "Split into 3 + 3 · lively",
+        "text": "A covered alley of small stalls with a young crowd. Go as two groups and swap halfway.",
+        "query": "Ebisu Yokocho"
+      },
+      {
+        "name": "Monzen-nakachō",
+        "fit": "All six · locals · book ahead",
+        "text": "A traditional drinking district by a shrine, few tourists. Best for a proper sit-down izakaya dinner.",
+        "query": "Monzen-nakacho"
+      },
+      {
+        "name": "Kagurazaka",
+        "fit": "All six · calm · dinner",
+        "text": "Stone-paved lanes that used to be a geisha district, now full of small restaurants, some French-Japanese. Good for a quieter dinner with your parents.",
+        "query": "Kagurazaka"
+      },
+      {
+        "name": "Omoide Yokochō and Golden Gai",
+        "fit": "Brothers only · late",
+        "text": "Tiny, famous and crowded. Many Golden Gai bars seat 6–8 people and charge a cover. A good late drink for the brothers after dinner.",
+        "query": "Omoide Yokocho"
+      },
+      {
+        "name": "Sangenjaya (Sankaku Chitai)",
+        "fit": "Brothers or couples · locals",
+        "text": "A triangle of back alleys packed with small bars, two stops from Shibuya. Almost no tourists.",
+        "query": "Sankaku Chitai Sangenjaya"
+      },
+      {
+        "name": "Tsukishima Monja Street",
+        "fit": "All six · cooked at the table",
+        "text": "Dozens of monjayaki restaurants. You cook a runny savoury pancake on a hot plate at your table. Fun for a group and fully cooked.",
+        "query": "Tsukishima Monja Street"
+      }
+    ],
+    "hoods": [
+      {
+        "name": "Asakusa & Kuramae",
+        "area": "East · old town + makers",
+        "tags": [
+          "culture",
+          "shopping",
+          "food",
+          "gems"
+        ],
+        "vibe": "Tokyo's oldest temple, and next door, the craft and design district some call Tokyo's Brooklyn.",
+        "do": "Sensō-ji at 7am before the crowds; river walk; Kappabashi kitchen street; Kakimori notebooks and ink.",
+        "eat": "Tempura, soba, monjayaki; Hoppy Street stew stalls.",
+        "shop": "Kuramae leather, stationery and ceramics; Kappabashi knives and plates.",
+        "forHer": "Flat. Sensō-ji gets very crowded after 10:00.",
+        "query": "Kuramae",
+        "flag": false
+      },
+      {
+        "name": "Yanaka, Nezu & Sendagi",
+        "area": "North-east · old wooden town",
+        "tags": [
+          "culture",
+          "calm",
+          "gems",
+          "food"
+        ],
+        "vibe": "The area that survived the war and the earthquake. Temples, cats, small shops, old houses.",
+        "do": "Yanaka Ginza shopping street, Yanaka Cemetery, Nezu Shrine, SCAI The Bathhouse gallery in an old bathhouse.",
+        "eat": "Menchi-katsu croquettes on Yanaka Ginza; Kayaba Coffee.",
+        "shop": "Handmade crafts, washi paper, tenugui towels.",
+        "forHer": "Mostly flat, a few slopes.",
+        "query": "Yanaka Ginza",
+        "flag": false
+      },
+      {
+        "name": "Ueno",
+        "area": "North-east · museums and markets",
+        "tags": [
+          "culture",
+          "food",
+          "calm"
+        ],
+        "vibe": "The big park with Tokyo's main museums and the loud Ameyoko market street.",
+        "do": "Tokyo National Museum, National Museum of Western Art, Ueno Park, Shinobazu Pond.",
+        "eat": "Ameyoko street food, izakaya under the tracks.",
+        "shop": "Ameyoko for snacks and cheap sneakers.",
+        "forHer": "Lots of benches; museums have lifts.",
+        "query": "Ueno Park",
+        "flag": false
+      },
+      {
+        "name": "Tsukiji, Ginza & Nihonbashi",
+        "area": "Centre · markets and department stores",
+        "tags": [
+          "food",
+          "shopping"
+        ],
+        "vibe": "The outer fish market, the best department store food halls, and old merchant shops that have run for centuries.",
+        "do": "Tsukiji Outer Market; Hama-rikyū garden; Nihonbashi bridge; Itoya stationery in Ginza.",
+        "eat": "Depachika food halls at Mitsukoshi Nihonbashi and Ginza; Tsukiji tamagoyaki; tempura counters.",
+        "shop": "Ginza Six, Dover Street Market Ginza, Uniqlo Ginza flagship, Itoya.",
+        "forHer": "Very easy. Department stores have lifts, seating and good toilets.",
+        "query": "Mitsukoshi Nihonbashi",
+        "flag": false
+      },
+      {
+        "name": "Kiyosumi-Shirakawa",
+        "area": "East · coffee and gardens",
+        "tags": [
+          "calm",
+          "gems",
+          "food"
+        ],
+        "vibe": "Quiet warehouse district turned coffee town, with a classic stroll garden and the contemporary art museum.",
+        "do": "Kiyosumi Gardens, Museum of Contemporary Art Tokyo, Fukagawa Edo Museum.",
+        "eat": "Fukagawa-meshi (clams on rice), specialty coffee roasters.",
+        "shop": "Small design and homeware shops.",
+        "forHer": "Flat and calm.",
+        "query": "Kiyosumi Shirakawa",
+        "flag": false
+      },
+      {
+        "name": "Ryōgoku",
+        "area": "East · sumo district",
+        "tags": [
+          "culture",
+          "food",
+          "gems"
+        ],
+        "vibe": "Home of the sumo stadium and many sumo stables.",
+        "do": "Edo-Tokyo Museum (reopened 31 Mar 2026), Kokugikan area, Sumida Hokusai Museum.",
+        "eat": "Chanko nabe, the sumo hotpot.",
+        "shop": "Sumo souvenirs.",
+        "forHer": "Flat, museum has lifts.",
+        "query": "Ryogoku",
+        "flag": true
+      },
+      {
+        "name": "Harajuku, Omotesandō & Aoyama",
+        "area": "West · fashion and architecture",
+        "tags": [
+          "shopping",
+          "culture",
+          "calm"
+        ],
+        "vibe": "Tokyo's fashion streets, from streetwear on Cat Street to flagship buildings by famous architects on Omotesandō.",
+        "do": "Meiji Jingū, Nezu Museum garden, Omotesandō architecture, weekend farmers' market at UNU.",
+        "eat": "Small cafés on the Aoyama backstreets.",
+        "shop": "Cat Street streetwear, Ura-Harajuku vintage, Omotesandō Hills, Aoyama designer stores.",
+        "forHer": "Long walks; take taxis between areas.",
+        "query": "Cat Street Harajuku",
+        "flag": false
+      },
+      {
+        "name": "Shibuya & Oku-Shibuya",
+        "area": "West · energy and small labels",
+        "tags": [
+          "night",
+          "shopping",
+          "food"
+        ],
+        "vibe": "The crossing, rooftop views, a big food hall at night, and a quiet backstreet neighbourhood with small labels and cafés.",
+        "do": "Shibuya Sky at sunset, Miyashita Park, Shibuya Sakura Stage, Tomigaya backstreets.",
+        "eat": "Shibuya Yokochō; Nonbei Yokochō; Tomigaya bistros.",
+        "shop": "Tomigaya independent shops, Shibuya Parco (Nintendo, Pokémon, designer floors).",
+        "forHer": "Crowded around the station; Tomigaya is quiet.",
+        "query": "Tomigaya",
+        "flag": false
+      },
+      {
+        "name": "Daikanyama, Nakameguro & Ebisu",
+        "area": "South-west · select shops",
+        "tags": [
+          "shopping",
+          "food",
+          "night",
+          "calm"
+        ],
+        "vibe": "Tree-lined streets with Tokyo's best select shops, a canal lined with cafés, and a lively food alley in Ebisu.",
+        "do": "Daikanyama T-Site bookstore, Log Road, Meguro River walk, Yebisu Garden Place winter illumination.",
+        "eat": "Ebisu Yokochō; Nakameguro izakaya under the tracks.",
+        "shop": "Select shops and Japanese labels in Daikanyama and Nakameguro.",
+        "forHer": "Gentle walks, many cafés to stop in.",
+        "query": "Daikanyama T-Site",
+        "flag": false
+      },
+      {
+        "name": "Shimokitazawa",
+        "area": "West · vintage and music",
+        "tags": [
+          "shopping",
+          "night",
+          "gems"
+        ],
+        "vibe": "Tokyo's vintage capital, rebuilt around new low-rise complexes along the old railway line.",
+        "do": "Reload and Bonus Track complexes, Mikan Shimokita, small live-music venues.",
+        "eat": "Soup curry, small bars.",
+        "shop": "Dozens of vintage shops; independent labels at Reload.",
+        "forHer": "Compact and flat.",
+        "query": "Shimokitazawa Reload",
+        "flag": false
+      },
+      {
+        "name": "Kōenji & Nakano",
+        "area": "West · cheaper vintage, collectors",
+        "tags": [
+          "shopping",
+          "gems",
+          "night"
+        ],
+        "vibe": "Where Tokyo's vintage and punk scene lives, plus Nakano Broadway, a mall of collectors' shops.",
+        "do": "Kōenji backstreets; Nakano Broadway for anime, watches, cameras and toys.",
+        "eat": "Standing bars and cheap izakaya in Kōenji.",
+        "shop": "Kōenji vintage is cheaper than Shimokitazawa; Nakano for collectibles.",
+        "forHer": "Flat.",
+        "query": "Nakano Broadway",
+        "flag": false
+      },
+      {
+        "name": "Kichijōji",
+        "area": "West · park and alleys",
+        "tags": [
+          "calm",
+          "night",
+          "food"
+        ],
+        "vibe": "A favourite of Tokyo residents: a lake park, a lively alley of tiny bars, and good local shopping.",
+        "do": "Inokashira Park and the swan boats; Ghibli Museum (book months ahead).",
+        "eat": "Harmonica Yokochō alley; menchi-katsu from Satou.",
+        "shop": "Local boutiques, homeware.",
+        "forHer": "Easy park paths.",
+        "query": "Harmonica Yokocho Kichijoji",
+        "flag": false
+      },
+      {
+        "name": "Shinjuku",
+        "area": "West · big-city night",
+        "tags": [
+          "night",
+          "calm",
+          "food",
+          "shopping"
+        ],
+        "vibe": "Neon, the busiest station in the world, and one of Tokyo's best gardens.",
+        "do": "Shinjuku Gyoen (closed Mondays), free city views from the Metropolitan Government Building.",
+        "eat": "Isetan's food hall, Omoide Yokochō, Golden Gai.",
+        "shop": "Isetan for Japanese designers.",
+        "forHer": "Station is hard work; use exits carefully and taxis.",
+        "query": "Shinjuku Gyoen",
+        "flag": false
+      },
+      {
+        "name": "Azabudai Hills & Roppongi",
+        "area": "Centre · art and new towers",
+        "tags": [
+          "culture",
+          "night"
+        ],
+        "vibe": "Newer towers with the art museums and immersive digital art.",
+        "do": "teamLab Borderless (Azabudai Hills), Mori Art Museum, Roppongi Hills Keyakizaka illumination.",
+        "eat": "Food halls in Azabudai Hills.",
+        "shop": "Azabudai Hills and Roppongi Hills shops.",
+        "forHer": "Indoor, lifts everywhere. teamLab has some dark rooms and slopes.",
+        "query": "teamLab Borderless Azabudai Hills",
+        "flag": true
+      },
+      {
+        "name": "Takanawa Gateway City",
+        "area": "South · newest district",
+        "tags": [
+          "culture",
+          "shopping"
+        ],
+        "vibe": "A new district built around Takanawa Gateway Station, with the MoN Takanawa museum (opened 28 Mar 2026).",
+        "do": "MoN Takanawa: Museum of Narratives, new shops and restaurants.",
+        "eat": "New restaurant floors.",
+        "shop": "New retail.",
+        "forHer": "All new, step-free.",
+        "query": "Takanawa Gateway City",
+        "flag": true
+      },
+      {
+        "name": "Toyosu",
+        "area": "Bay · market and onsen",
+        "tags": [
+          "food",
+          "calm"
+        ],
+        "vibe": "The wholesale fish market, and next to it an Edo-style food village with a hot-spring spa.",
+        "do": "Tuna auction gallery; Senkyaku Banrai food village, which stays open when the market is closed; rooftop foot bath with bay views.",
+        "eat": "Market restaurants from dawn.",
+        "shop": "Kitchen and food souvenirs.",
+        "forHer": "The foot bath is a good rest stop for her.",
+        "query": "Toyosu Senkyaku Banrai",
+        "flag": true
+      },
+      {
+        "name": "Shibamata",
+        "area": "Far east · Shōwa-era town",
+        "tags": [
+          "gems",
+          "culture",
+          "calm",
+          "food"
+        ],
+        "vibe": "A slow old temple town on the edge of Tokyo that feels decades behind the centre.",
+        "do": "Taishakuten temple and its carved wooden panels, Yamamoto-tei house and garden, Yagiri ferry across the Edo River.",
+        "eat": "Kusa-dango (mugwort rice dumplings), eel.",
+        "shop": "Old sweet shops and toys.",
+        "forHer": "Flat and quiet.",
+        "query": "Shibamata Taishakuten",
+        "flag": false
+      },
+      {
+        "name": "Kagurazaka",
+        "area": "Centre · stone lanes",
+        "tags": [
+          "gems",
+          "food",
+          "night",
+          "calm"
+        ],
+        "vibe": "A former geisha district with stone-paved lanes and small restaurants.",
+        "do": "Akagi Shrine, the back lanes off the main slope, Bishamonten temple.",
+        "eat": "Kaiseki, French-Japanese bistros, old sweet shops.",
+        "shop": "Small craft shops.",
+        "forHer": "The main street is a slope; the lanes are flat.",
+        "query": "Kagurazaka",
+        "flag": false
+      },
+      {
+        "name": "Gōtokuji & Setagaya",
+        "area": "West · residential",
+        "tags": [
+          "gems",
+          "calm"
+        ],
+        "vibe": "The temple with hundreds of beckoning-cat figures, and a small tram line through quiet neighbourhoods.",
+        "do": "Gōtokuji temple; the Setagaya Line tram.",
+        "eat": "Neighbourhood cafés.",
+        "shop": "Lucky-cat figures.",
+        "forHer": "Flat.",
+        "query": "Gotokuji Temple",
+        "flag": false
+      },
+      {
+        "name": "Sunamachi Ginza",
+        "area": "East · local shopping street",
+        "tags": [
+          "gems",
+          "food"
+        ],
+        "vibe": "A 670-metre shopping street where locals buy daily food. No tourists, great snacks.",
+        "do": "Walk the street end to end.",
+        "eat": "Oden, yakitori, croquettes, rice crackers, all from small shops.",
+        "shop": "Everyday Tokyo shopping.",
+        "forHer": "Flat.",
+        "query": "Sunamachi Ginza Shopping Street",
+        "flag": false
+      },
+      {
+        "name": "Parks and gardens",
+        "area": "Across the city",
+        "tags": [
+          "calm"
+        ],
+        "vibe": "Winter is clear and cold, with good light for gardens.",
+        "do": "Rikugien and Koishikawa Kōrakuen (classic Edo gardens), Hama-rikyū, Kiyosumi, Shinjuku Gyoen, Inokashira, Yoyogi.",
+        "eat": "Teahouses in Hama-rikyū and Rikugien.",
+        "shop": null,
+        "forHer": "All have flat paths and benches.",
+        "query": "Rikugien",
+        "flag": false
+      }
+    ]
+  },
+  "kyoto": {
+    "city": "kyoto",
+    "mapSuffix": "Kyoto",
+    "flagLabel": "gem",
+    "days": [
+      {
+        "label": "Day 1",
+        "title": "Higashiyama: temples, old lanes and Gion at night",
+        "summary": "The classic first day. Kiyomizu-dera and the stone-paved lanes below it in the morning, a quiet break, then Gion and a Pontochō dinner as the lanterns come on.",
+        "slots": [
+          {
+            "time": "08:30",
+            "title": "Kiyomizu-dera",
+            "text": "Arrive at opening to get the wooden stage and valley view without the crowds. Steep approach street, some stairs inside the temple grounds.",
+            "alt": null,
+            "query": "Kiyomizudera",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "10:00",
+            "title": "Sannen-zaka & Ninen-zaka",
+            "text": "Stone-paved lanes lined with old shops, sweets and pottery. Slopes and shallow steps throughout.",
+            "alt": null,
+            "query": "Ninenzaka Kyoto",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "11:00",
+            "title": "Kōdai-ji and Ishibe-kōji",
+            "text": "A quieter temple garden, and the small stone lane behind it that feels like a film set. Good photo stop.",
+            "alt": null,
+            "query": "Kodaiji Temple",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "12:15",
+            "title": "Lunch: kaiseki at lunch prices",
+            "text": "Several kaiseki restaurants around Higashiyama offer a lunch course at roughly half the dinner price. Book ahead for six.",
+            "alt": null,
+            "query": "Higashiyama kaiseki lunch",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "14:00",
+            "title": "Rest",
+            "text": "Back to the flat, or a long coffee stop.",
+            "alt": null,
+            "query": null,
+            "query2": null,
+            "who": "bump"
+          },
+          {
+            "time": "16:00",
+            "title": "Yasaka Shrine and Maruyama Park",
+            "text": "Flat approach from Gion. The park behind it is a pleasant, quiet walk.",
+            "alt": null,
+            "query": "Yasaka Shrine",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "17:00",
+            "title": "Gion, respectfully",
+            "text": "Walk Hanami-kōji at dusk. Don't photograph geisha or maiko on the small side streets — it's a ¥10,000 fine — and ask before photographing anyone directly, even on the main street.",
+            "alt": null,
+            "query": "Hanamikoji Street",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "18:30",
+            "title": "Dinner in Pontochō",
+            "text": "A narrow lantern-lit alley of restaurants along the river. Book ahead; most seat small groups. Ask for a riverside kawadoko table if the season allows.",
+            "alt": null,
+            "query": "Pontocho Alley",
+            "query2": null,
+            "who": "all"
+          }
+        ]
+      },
+      {
+        "label": "Day 2",
+        "title": "Arashiyama and the northwest",
+        "summary": "The bamboo grove before the tour buses arrive, a riverside temple garden, then two of Kyoto's most famous northern sights in the afternoon.",
+        "slots": [
+          {
+            "time": "08:00",
+            "title": "Arashiyama Bamboo Grove",
+            "text": "Arrive before 9:00 for empty photos; it's a short, flat, five-minute walk that gets very crowded by mid-morning.",
+            "alt": null,
+            "query": "Arashiyama Bamboo Grove",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "08:30",
+            "title": "Tenryū-ji garden",
+            "text": "A Zen garden built around a pond, right at the bamboo grove's entrance. Flat gravel paths, benches throughout.",
+            "alt": null,
+            "query": "Tenryuji Temple",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "09:30",
+            "title": "Riverside walk to Togetsukyō Bridge",
+            "text": "A flat walk along the Katsura River. Rent a rowboat if the group wants, or just enjoy the mountain backdrop.",
+            "alt": "Optional: the Iwatayama monkey park across the bridge involves a steep 20-minute climb.",
+            "query": "Togetsukyo Bridge",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "11:00",
+            "title": "Sagano Toriimoto",
+            "text": "A quieter thatched-roof street past the bamboo grove, with far fewer visitors.",
+            "alt": null,
+            "query": "Saga Toriimoto Preserved Street",
+            "query2": null,
+            "who": "early"
+          },
+          {
+            "time": "12:00",
+            "title": "Lunch: yudōfu in Arashiyama",
+            "text": "Simmered tofu hotpot, a Kyoto specialty, often served in a temple garden setting. Fully cooked and vegetarian.",
+            "alt": null,
+            "query": "Arashiyama yudofu",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "14:00",
+            "title": "Rest or travel to the north",
+            "text": "Arashiyama to Kinkaku-ji is about 30 minutes by bus or taxi.",
+            "alt": null,
+            "query": null,
+            "query2": null,
+            "who": "bump"
+          },
+          {
+            "time": "15:00",
+            "title": "Kinkaku-ji, the Golden Pavilion",
+            "text": "A single loop path around the pond, flat and short but often busy. Photos, not lingering.",
+            "alt": null,
+            "query": "Kinkakuji",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "16:00",
+            "title": "Ryōan-ji rock garden",
+            "text": "The famous 15-stone Zen garden, viewed seated from a wooden veranda. Calm and a good rest stop.",
+            "alt": null,
+            "query": "Ryoanji Temple",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "18:30",
+            "title": "Dinner downtown",
+            "text": "Back to Kiyamachi or Shijō for dinner; taxis for six from the north side of the city.",
+            "alt": null,
+            "query": "Kiyamachi Street Kyoto",
+            "query2": null,
+            "who": "all"
+          }
+        ]
+      },
+      {
+        "label": "Day 3",
+        "title": "Fushimi Inari at sunrise, then the market and downtown",
+        "summary": "The famous torii gates before the crowds, a morning at Nishiki Market, and an afternoon in the covered shopping arcades and Nijō Castle.",
+        "slots": [
+          {
+            "time": "06:30",
+            "title": "Fushimi Inari-taisha",
+            "text": "Go before 8:00; crowds build fast from 9:00 and peak 11:00–15:00. Most visitors turn back after 30–45 minutes at the Yotsutsuji viewpoint — go that far for the view over Kyoto, then decide whether to continue.",
+            "alt": null,
+            "query": "Fushimi Inari Taisha",
+            "query2": null,
+            "who": "early"
+          },
+          {
+            "time": "08:30",
+            "title": "Everyone: breakfast near the shrine or downtown",
+            "text": "Coffee and a light breakfast, either near the shrine or after the train back downtown.",
+            "alt": null,
+            "query": "Fushimi Inari",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "10:00",
+            "title": "Nishiki Market",
+            "text": "Kyoto's covered food market: pickles, skewers, sweets, knives and tea. Late December (27–30 Dec) is packed with locals buying New Year food. Some stalls close 31 Dec–3 Jan.",
+            "alt": null,
+            "query": "Nishiki Market",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "11:30",
+            "title": "Teramachi and Shinkyōgoku arcades",
+            "text": "Covered shopping streets just off the market for souvenirs, stationery and pottery.",
+            "alt": null,
+            "query": "Teramachi Street Kyoto",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "12:30",
+            "title": "Lunch downtown",
+            "text": "Plenty of counter seating around the market and arcades.",
+            "alt": null,
+            "query": "Nishiki Market restaurants",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "14:00",
+            "title": "Rest",
+            "text": null,
+            "alt": null,
+            "query": null,
+            "query2": null,
+            "who": "bump"
+          },
+          {
+            "time": "15:30",
+            "title": "Nijō Castle",
+            "text": "A shogun's palace with famous 'nightingale floors' that chirp as you walk. Flat grounds, some stairs. Usually closed through the New Year holiday — check the dates.",
+            "alt": null,
+            "query": "Nijo Castle",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "18:30",
+            "title": "Dinner: obanzai counter",
+            "text": "Kyoto's home-style small dishes, cooked, served one at a time. Calmer than an izakaya, good for a mixed group.",
+            "alt": null,
+            "query": "Obanzai Kyoto restaurant",
+            "query2": null,
+            "who": "all"
+          }
+        ]
+      },
+      {
+        "label": "Day 4",
+        "title": "Philosopher's Path and a hidden-gem afternoon (bonus day)",
+        "summary": "Only if your route gives you a fourth full day, as Route A's does. A flat canal walk between two temples in the morning, then a choice: the tea town of Uji or the quiet valley of Ōhara.",
+        "slots": [
+          {
+            "time": "09:00",
+            "title": "Nanzenji and its brick aqueduct",
+            "text": "A grand temple with a Roman-style brick aqueduct running through the grounds. Some stone steps.",
+            "alt": null,
+            "query": "Nanzenji Temple",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "10:15",
+            "title": "Philosopher's Path",
+            "text": "A flat, canal-side walking path lined with cherry trees, connecting Nanzenji to Ginkaku-ji. About 2 km, 40 minutes at an easy pace, cafés along the way.",
+            "alt": null,
+            "query": "Philosopher's Path Kyoto",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "11:30",
+            "title": "Hōnen-in",
+            "text": "A free, mossy, little-visited temple just off the path. Flat approach, a real quiet moment.",
+            "alt": null,
+            "query": "Honen-in Temple",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "12:15",
+            "title": "Ginkaku-ji, the Silver Pavilion",
+            "text": "A raked-sand garden and a quieter counterpart to Kinkaku-ji. Some gravel paths and a short hillside loop.",
+            "alt": null,
+            "query": "Ginkakuji",
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "13:30",
+            "title": "Lunch nearby, then choose",
+            "text": "Split here depending on energy and interest.",
+            "alt": null,
+            "query": null,
+            "query2": null,
+            "who": "all"
+          },
+          {
+            "time": "14:30",
+            "title": "Option A: Uji day trip",
+            "text": "30 minutes by train. Byōdō-in temple (on the 10-yen coin) and the birthplace of Japanese green tea. Flat, calm, good matcha sweets.",
+            "alt": "Option B: Ōhara, a rural valley with Sanzen-in temple's mossy garden — 40 minutes by bus, very few tourists.",
+            "query": "Byodoin Uji",
+            "query2": "Ohara Kyoto Sanzenin",
+            "who": "all"
+          },
+          {
+            "time": "18:30",
+            "title": "Farewell dinner",
+            "text": "Back downtown for a last Kyoto dinner, Pontochō or Kiyamachi.",
+            "alt": null,
+            "query": "Pontocho Alley",
+            "query2": null,
+            "who": "all"
+          }
+        ]
+      }
+    ],
+    "nights": [
+      {
+        "name": "Pontochō",
+        "fit": "All six · book ahead · atmospheric",
+        "text": "A narrow lantern-lit alley along the river, Kyoto's best-known dining street. Small restaurants and bars; reserve for six.",
+        "query": "Pontocho Alley"
+      },
+      {
+        "name": "Kiyamachi-dōri",
+        "fit": "All six · more casual",
+        "text": "A canal-side street parallel to Pontochō, more relaxed and easier to walk into without a booking.",
+        "query": "Kiyamachi Street Kyoto"
+      },
+      {
+        "name": "Gion's Hanami-kōji",
+        "fit": "All six · special occasion",
+        "text": "Kyoto's most traditional dinner setting, best for one splurge night with your parents. Book weeks ahead.",
+        "query": "Hanamikoji Street"
+      },
+      {
+        "name": "Fushimi sake district",
+        "fit": "All six · calm, daytime",
+        "text": "A canal-side district south of the centre with historic sake breweries. Tastings at Gekkeikan's museum; better as a late-afternoon stop than a night out.",
+        "query": "Gekkeikan Okura Sake Museum"
+      },
+      {
+        "name": "Nishiki-kōji in the evening",
+        "fit": "All six · quiet browse",
+        "text": "Most food stalls close by early evening, leaving a quiet covered street for a slow walk.",
+        "query": "Nishiki Market"
+      }
+    ],
+    "hoods": [
+      {
+        "name": "Higashiyama",
+        "area": "East · temples and old lanes",
+        "tags": [
+          "culture",
+          "shopping",
+          "food"
+        ],
+        "vibe": "Kyoto's most atmospheric district: Kiyomizu-dera above stone-paved lanes lined with shops from another century.",
+        "do": "Kiyomizu-dera, Sannen-zaka and Ninen-zaka, Kōdai-ji, Ishibe-kōji lane, Yasaka Shrine.",
+        "eat": "Kaiseki lunch, matcha sweets, yatsuhashi (cinnamon rice cakes).",
+        "shop": "Kiyomizu-yaki pottery around Gojō-zaka, tenugui towels, folding fans.",
+        "forHer": "Slopes and shallow stone steps throughout; crowded by mid-morning.",
+        "query": "Kiyomizudera",
+        "flag": false
+      },
+      {
+        "name": "Gion & Pontochō",
+        "area": "Central · geisha district and nightlife",
+        "tags": [
+          "culture",
+          "night",
+          "food"
+        ],
+        "vibe": "The wooden teahouse streets where geisha and maiko still work, and Kyoto's main dining alley along the river.",
+        "do": "Hanami-kōji street, Shirakawa canal lane, Yasaka Shrine, Gion Corner for a taste of traditional arts.",
+        "eat": "Pontochō and Kiyamachi restaurants, a kaiseki dinner.",
+        "shop": "Small craft shops on Shirakawa-dōri.",
+        "forHer": "Flat, easy walking. Photography of geisha is banned on the private side streets — ¥10,000 fine.",
+        "query": "Gion Kyoto",
+        "flag": false
+      },
+      {
+        "name": "Arashiyama & Sagano",
+        "area": "West · bamboo and river",
+        "tags": [
+          "culture",
+          "calm",
+          "food"
+        ],
+        "vibe": "A river valley on Kyoto's edge with the famous bamboo grove, temple gardens, and a quieter preserved street beyond it.",
+        "do": "Bamboo Grove (before 9am), Tenryū-ji garden, Togetsukyō Bridge, Sagano Toriimoto preserved street.",
+        "eat": "Yudōfu (tofu hotpot) restaurants in temple gardens.",
+        "shop": "Small craft and tea shops near the station.",
+        "forHer": "Flat throughout; very crowded by mid-morning, calm at dawn.",
+        "query": "Arashiyama Kyoto",
+        "flag": false
+      },
+      {
+        "name": "Fushimi Inari & Fushimi",
+        "area": "South · torii gates and sake",
+        "tags": [
+          "culture",
+          "gems",
+          "calm"
+        ],
+        "vibe": "The mountain of a thousand orange gates, and beyond it a quiet canal town of historic sake breweries.",
+        "do": "Fushimi Inari-taisha (arrive by 7:00), Gekkeikan sake museum, the Fushimi canal boat ride.",
+        "eat": "Sake tastings, simple riverside cafés.",
+        "shop": "Sake and sake-related gifts.",
+        "forHer": "The lower gates are flat; the full loop is 2–3 hours of stairs and slopes. Very crowded during New Year hatsumōde.",
+        "query": "Fushimi Inari Taisha",
+        "flag": false
+      },
+      {
+        "name": "Downtown (Shijō–Kawaramachi)",
+        "area": "Central · market and shopping arcades",
+        "tags": [
+          "food",
+          "shopping"
+        ],
+        "vibe": "Kyoto's covered food market and its old shopping arcades, all walkable from most machiya stays.",
+        "do": "Nishiki Market, Teramachi and Shinkyōgoku arcades, Nijō Castle (10 minutes by bus).",
+        "eat": "Market snacks, department store food halls, obanzai counters.",
+        "shop": "Ichizawa Shinzaburō canvas bags, Shoyeido incense, SOU•SOU (a Kyoto-founded fashion label), Kyoto Handicraft Center.",
+        "forHer": "Flat and easy, with plenty of seating and toilets.",
+        "query": "Nishiki Market",
+        "flag": false
+      },
+      {
+        "name": "Northwest: Kinkaku-ji & Ryōan-ji",
+        "area": "Northwest · gold and gravel",
+        "tags": [
+          "culture",
+          "calm"
+        ],
+        "vibe": "Two of Kyoto's most famous gardens, best combined with the Arashiyama day since they're on the same side of the city.",
+        "do": "Kinkaku-ji (Golden Pavilion), Ryōan-ji's 15-stone rock garden, Ninna-ji.",
+        "eat": "Simple noodle shops near the temples.",
+        "shop": "Temple charms and incense.",
+        "forHer": "Short, flat loop paths; Ryōan-ji has seated veranda viewing.",
+        "query": "Kinkakuji",
+        "flag": false
+      },
+      {
+        "name": "Philosopher's Path & Nanzenji",
+        "area": "East · canal walk",
+        "tags": [
+          "culture",
+          "calm",
+          "gems"
+        ],
+        "vibe": "A flat, tree-lined canal path linking two major temples, with a free hidden-gem temple along the way.",
+        "do": "Nanzenji and its brick aqueduct, the Philosopher's Path, Hōnen-in, Ginkaku-ji.",
+        "eat": "Small cafés along the path.",
+        "shop": "A few craft shops near Ginkaku-ji.",
+        "forHer": "Flat path, about 2 km; the easiest full morning in Kyoto for tired legs.",
+        "query": "Philosophers Path Kyoto",
+        "flag": false
+      },
+      {
+        "name": "Uji",
+        "area": "South, day trip · tea town",
+        "tags": [
+          "gems",
+          "calm",
+          "food"
+        ],
+        "vibe": "The birthplace of Japanese green tea, 30 minutes from central Kyoto by train.",
+        "do": "Byōdō-in temple (the building on the 10-yen coin), tea-ceremony experiences, riverside walks.",
+        "eat": "The best matcha desserts in the region.",
+        "shop": "Uji-cha (tea) shops.",
+        "forHer": "Flat and quiet.",
+        "query": "Byodoin Uji",
+        "flag": true
+      },
+      {
+        "name": "Ōhara",
+        "area": "North, day trip · rural valley",
+        "tags": [
+          "gems",
+          "calm"
+        ],
+        "vibe": "A farming valley 40 minutes north of the city, with one of Kyoto's most peaceful moss gardens and almost no tourists.",
+        "do": "Sanzen-in temple's moss garden, a walk through the valley's rice fields and pickle shops.",
+        "eat": "Local pickles and soba.",
+        "shop": "Shiba-zuke pickles, a valley speciality.",
+        "forHer": "Some garden paths have steps; the village itself is flat.",
+        "query": "Ohara Kyoto Sanzenin",
+        "flag": true
+      },
+      {
+        "name": "Kurama & Kibune",
+        "area": "North, day trip · mountain and onsen",
+        "tags": [
+          "gems",
+          "calm"
+        ],
+        "vibe": "A wooded mountain temple and a hot spring village in the next valley, connected by a forest hiking trail.",
+        "do": "Kurama-dera temple, Kurama Onsen (open-air bath with mountain views), the trail over to Kibune.",
+        "eat": "Kibune's famous riverside dining platforms close for winter, but its restaurants stay open indoors.",
+        "shop": null,
+        "forHer": "The Kurama–Kibune trail is a real hike with roots and steps; take the train to whichever side you want if energy is short.",
+        "query": "Kurama Onsen",
+        "flag": true
+      },
+      {
+        "name": "Kyoto Station area & Tō-ji",
+        "area": "South · practical and one great pagoda",
+        "tags": [
+          "culture",
+          "shopping"
+        ],
+        "vibe": "Not a place to linger, but Tō-ji's five-storey pagoda, Japan's tallest wooden tower, is worth the stop on the way through.",
+        "do": "Tō-ji temple and pagoda, the Kyoto Tower observation deck, the station's own shopping and food floors.",
+        "eat": "Station department store food halls.",
+        "shop": "Isetan Kyoto, station gift shops for last-minute souvenirs.",
+        "forHer": "All flat and step-free.",
+        "query": "Toji Temple Kyoto",
+        "flag": false
+      }
+    ]
+  }
+}

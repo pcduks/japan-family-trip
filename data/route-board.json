@@ -1,0 +1,473 @@
+[
+  {
+    "code": "A",
+    "pitch": "Tokyo and Kyoto for the first-time visitors, then the Japanese Alps, which are new to you two. One night in a mountain temple, and the trip ends in Osaka.",
+    "good": [
+      "Balanced mix",
+      "Kyoto New Year traditions",
+      "Snow crab season"
+    ],
+    "warn": [
+      "One long travel day (Fuji to Takayama)"
+    ],
+    "stops": [
+      {
+        "name": "Tokyo",
+        "dates": "20–24 Dec",
+        "nights": 4,
+        "lodging": "city",
+        "how": "Land at Haneda or Narita. Base in Asakusa or Ningyōchō (quieter, central).",
+        "highlights": [
+          "Asakusa's Sensō-ji early, then the old Yanaka neighbourhood",
+          "Tsukiji outer market breakfast; depachika crawl at Mitsukoshi Nihonbashi",
+          "Sunset over Fuji from Shibuya Sky (winter air is clear)",
+          "Christmas Eve lights; a day in Kamakura or Nikkō for your parents"
+        ],
+        "eat": "Sushi counter lunch, monjayaki in Tsukishima, Ebisu Yokochō izakaya",
+        "bump": "Large stations involve a lot of walking. Two taxis (GO app) fit six people"
+      },
+      {
+        "name": "Lake Kawaguchiko",
+        "dates": "24–26 Dec",
+        "nights": 2,
+        "lodging": "ryokan",
+        "how": "Fuji Excursion limited express from Shinjuku, ~2 h.",
+        "highlights": [
+          "Christmas at Fuji, with morning views from the north shore",
+          "Oshino Hakkai spring village; Saiko Iyashi-no-Sato thatched village",
+          "Chūreitō Pagoda for those who want the climb"
+        ],
+        "eat": "Hōtō miso noodle hotpot, Yoshida udon",
+        "bump": "Book a Fuji-view room with a private bath"
+      },
+      {
+        "name": "Takayama",
+        "dates": "26–28 Dec",
+        "nights": 2,
+        "lodging": "ryokan",
+        "how": "Train to Matsumoto (stop for the castle and lunch), then bus to Takayama. About 5–6 h, the longest travel day.",
+        "highlights": [
+          "Miyagawa morning market and Sanmachi merchant streets",
+          "Sake brewery tastings (amazake for her)",
+          "Hida Folk Village under snow; the festival float hall"
+        ],
+        "eat": "Hida beef sushi, hoba-miso, mitarashi dango",
+        "bump": null
+      },
+      {
+        "name": "Shirakawa-go → Kanazawa",
+        "dates": "28–30 Dec",
+        "nights": 2,
+        "lodging": "city",
+        "how": "Nōhi bus with a 2–3 h stop in Shirakawa-go, then continue to Kanazawa.",
+        "highlights": [
+          "Gasshō farmhouses in the snow",
+          "Kenroku-en garden, with ropes supporting the pine branches against snow",
+          "Higashi Chaya geisha teahouses; gold-leaf workshop"
+        ],
+        "eat": "Snow crab and nodoguro at Ōmichō market (you leave before it closes for New Year)",
+        "bump": null
+      },
+      {
+        "name": "Kyoto",
+        "dates": "30 Dec–4 Jan",
+        "nights": 5,
+        "lodging": "city",
+        "how": "Shinkansen to Tsuruga + Thunderbird, ~2 h 15. 30 Dec is a peak day, so book as soon as seats go on sale.",
+        "highlights": [
+          "Nishiki Market on 30 Dec, when people shop for New Year",
+          "New Year's Eve at the large bell of Chion-in, then the Okera-mairi fire at Yasaka Shrine",
+          "1 Jan osechi breakfast; 2 Jan early hatsumōde at Fushimi Inari (lower gates)",
+          "3 Jan karuta-hajime; tea ceremony; Arashiyama; day trip to Uji"
+        ],
+        "eat": "Kaiseki lunch, yudōfu, obanzai home cooking",
+        "bump": "Rent a whole machiya for six people, with a living room and kitchen"
+      },
+      {
+        "name": "Kōyasan",
+        "dates": "4–5 Jan",
+        "nights": 1,
+        "lodging": "temple",
+        "how": "Nankai line from Osaka plus cable car, ~3 h from Kyoto.",
+        "highlights": [
+          "Lantern walk through Okunoin's forest cemetery at dusk",
+          "Dawn chanting and goma fire ritual with the monks"
+        ],
+        "eat": "Shōjin ryōri temple feast",
+        "bump": "Temperatures are below freezing and corridors are cold. Choose a temple with heated rooms"
+      },
+      {
+        "name": "Osaka",
+        "dates": "5–9 Jan",
+        "nights": 4,
+        "lodging": "city",
+        "how": "~1.5 h down the mountain. Fly out of Kansai on 9 Jan.",
+        "highlights": [
+          "Dōtonbori and Kuromon for the parents",
+          "Day trip to Nara: deer and the Great Buddha",
+          "Day trip to Himeji Castle or Kobe beef lunch",
+          "Sakai knife-forging workshop"
+        ],
+        "eat": "Kushikatsu in Shinsekai, takoyaki, a proper Osaka kappō counter",
+        "bump": null
+      }
+    ]
+  },
+  {
+    "code": "B",
+    "pitch": "More ryokan nights and more snow than the other routes. One night in a thatched gasshō farmhouse and a quiet New Year in Takayama. Kyoto and Osaka come after the holiday, when shops and museums have reopened.",
+    "good": [
+      "Most snow",
+      "Most onsen",
+      "Kyoto without New Year crowds"
+    ],
+    "warn": [
+      "Icy paths",
+      "More packing and unpacking"
+    ],
+    "stops": [
+      {
+        "name": "Tokyo",
+        "dates": "20–23 Dec",
+        "nights": 3,
+        "lodging": "city",
+        "how": "Land and base in Asakusa or Ningyōchō.",
+        "highlights": [
+          "Asakusa, Yanaka, Tsukiji outer market",
+          "A depachika crawl and Shibuya at night"
+        ],
+        "eat": "Sushi, yakitori under the tracks in Yūrakuchō",
+        "bump": null
+      },
+      {
+        "name": "Lake Kawaguchiko",
+        "dates": "23–25 Dec",
+        "nights": 2,
+        "lodging": "ryokan",
+        "how": "Fuji Excursion from Shinjuku, ~2 h.",
+        "highlights": [
+          "Fuji at dawn; Oshino Hakkai",
+          "Christmas Eve at a ryokan"
+        ],
+        "eat": "Hōtō noodles",
+        "bump": null
+      },
+      {
+        "name": "Yudanaka / Shibu Onsen",
+        "dates": "25–27 Dec",
+        "nights": 2,
+        "lodging": "ryokan",
+        "how": "Back via Tokyo and the Hokuriku shinkansen to Nagano, then local train. ~4–5 h.",
+        "highlights": [
+          "Jigokudani snow monkeys, reached by a 30-minute forest path each way (flat but icy)",
+          "Shibu Onsen's lantern-lit street and its nine public baths",
+          "Zenkō-ji temple and its dark underground passage",
+          "Chestnut sweets and the Hokusai museum in Obuse"
+        ],
+        "eat": "Shinshū soba, oyaki dumplings",
+        "bump": "She can decide on the day whether to walk to the monkeys. The town and Zenkō-ji are easy"
+      },
+      {
+        "name": "Kanazawa",
+        "dates": "27–29 Dec",
+        "nights": 2,
+        "lodging": "city",
+        "how": "Nagano → Kanazawa by shinkansen, ~1 h.",
+        "highlights": [
+          "Kenroku-en in snow; Higashi Chaya teahouses",
+          "Nagamachi samurai lanes; 21st Century Museum"
+        ],
+        "eat": "Snow crab at Ōmichō, Kanazawa oden",
+        "bump": null
+      },
+      {
+        "name": "Shirakawa-go",
+        "dates": "29–30 Dec",
+        "nights": 1,
+        "lodging": "village",
+        "how": "Bus, ~75 min.",
+        "highlights": [
+          "Stay in a gasshō farmhouse inn (minshuku) with dinner by the hearth and futon beds",
+          "A quiet evening in the village after day visitors leave"
+        ],
+        "eat": "Hearth-grilled river fish, hoba-miso",
+        "bump": "Baths are shared and stairs are steep. Ask for a ground-floor room"
+      },
+      {
+        "name": "Takayama",
+        "dates": "30 Dec–1 Jan",
+        "nights": 2,
+        "lodging": "ryokan",
+        "how": "Bus, ~50 min.",
+        "highlights": [
+          "Toshikoshi soba on New Year's Eve and midnight at a local shrine",
+          "New Year's Day osechi at the ryokan",
+          "Sanmachi streets and sake breweries"
+        ],
+        "eat": "Hida beef, New Year osechi",
+        "bump": null
+      },
+      {
+        "name": "Kyoto",
+        "dates": "1–5 Jan",
+        "nights": 4,
+        "lodging": "city",
+        "how": "1 Jan is a quiet travel day. Hida express to Nagoya, then shinkansen, about 3.5 h.",
+        "highlights": [
+          "Early-morning hatsumōde at Fushimi Inari on 2 Jan",
+          "Karuta-hajime at Yasaka on 3 Jan",
+          "Tea ceremony, Arashiyama, Kinkaku-ji in winter light"
+        ],
+        "eat": "Kaiseki lunch; Nishiki Market stalls reopen in early January",
+        "bump": null
+      },
+      {
+        "name": "Osaka",
+        "dates": "5–9 Jan",
+        "nights": 4,
+        "lodging": "city",
+        "how": "~15 min. Fly out of Kansai.",
+        "highlights": [
+          "Nara and Himeji day trips",
+          "Dōtonbori, Kuromon, Shinsekai"
+        ],
+        "eat": "Osaka street food, Kobe beef",
+        "bump": null
+      }
+    ]
+  },
+  {
+    "code": "C",
+    "pitch": "Milder weather and the least walking of the four routes. It visits Hiroshima and Miyajima, spends New Year in a Yufuin ryokan with a private onsen, and ends in Nagasaki and Fukuoka. You fly home from Fukuoka.",
+    "good": [
+      "Easiest on the bump",
+      "Best food variety",
+      "Mild weather"
+    ],
+    "warn": [
+      "Fuji only from Hakone",
+      "Moves on 29 Dec"
+    ],
+    "stops": [
+      {
+        "name": "Tokyo",
+        "dates": "20–23 Dec",
+        "nights": 3,
+        "lodging": "city",
+        "how": "Land and base centrally.",
+        "highlights": [
+          "Asakusa, Yanaka, Tsukiji, depachika"
+        ],
+        "eat": "Sushi, izakaya",
+        "bump": null
+      },
+      {
+        "name": "Hakone",
+        "dates": "23–25 Dec",
+        "nights": 2,
+        "lodging": "ryokan",
+        "how": "Romancecar from Shinjuku, ~85 min.",
+        "highlights": [
+          "The Hakone loop by mountain train, ropeway over the sulphur vents and boat on Lake Ashi",
+          "Fuji across the lake on clear mornings",
+          "Open-Air Museum"
+        ],
+        "eat": "Black eggs at Ōwakudani; kaiseki at the ryokan",
+        "bump": null
+      },
+      {
+        "name": "Kyoto",
+        "dates": "25–29 Dec",
+        "nights": 4,
+        "lodging": "city",
+        "how": "Shinkansen from Odawara, ~2 h. Sit on the E side for Fuji.",
+        "highlights": [
+          "Kiyomizu-dera, Gion and Arashiyama, before New Year closures",
+          "Tea ceremony and kimono for your parents",
+          "Nara day trip"
+        ],
+        "eat": "Kaiseki lunch, Nishiki",
+        "bump": null
+      },
+      {
+        "name": "Miyajima & Hiroshima",
+        "dates": "29–31 Dec",
+        "nights": 2,
+        "lodging": "ryokan",
+        "how": "Shinkansen, ~1 h 40. 29 Dec is a peak day, so book early.",
+        "highlights": [
+          "Stay on Miyajima overnight and see the torii gate lit up at night",
+          "Peace Memorial Park and museum"
+        ],
+        "eat": "Grilled oysters (in season), Hiroshima okonomiyaki",
+        "bump": null
+      },
+      {
+        "name": "Yufuin",
+        "dates": "31 Dec–2 Jan",
+        "nights": 2,
+        "lodging": "ryokan",
+        "how": "Shinkansen to Hakata, then the Yufuin no Mori train, about 4 h. Trains are quieter on 31 Dec.",
+        "highlights": [
+          "New Year's Eve in a ryokan with its own open-air bath",
+          "Morning mist on Kinrin Lake",
+          "Day trip to Beppu for the hot-spring 'hells' and steam-cooked food"
+        ],
+        "eat": "Bungo beef, osechi",
+        "bump": "Many Yufuin inns have private onsen baths"
+      },
+      {
+        "name": "Nagasaki",
+        "dates": "2–5 Jan",
+        "nights": 3,
+        "lodging": "city",
+        "how": "Via Hakata and the Nishi-Kyūshū shinkansen, ~4 h.",
+        "highlights": [
+          "Dejima Dutch trading post; Glover Garden",
+          "Peace Park; night view from Inasayama ropeway",
+          "Chinatown"
+        ],
+        "eat": "Champon noodles, castella cake",
+        "bump": null
+      },
+      {
+        "name": "Fukuoka",
+        "dates": "5–9 Jan",
+        "nights": 4,
+        "lodging": "city",
+        "how": "~1.5 h. Fly home from Fukuoka.",
+        "highlights": [
+          "Dazaifu Tenmangū shrine",
+          "Kotatsu boat ride on Yanagawa's canals",
+          "Karatsu or Arita pottery towns"
+        ],
+        "eat": "Hakata ramen, motsunabe, mentaiko, yatai stalls, winter fugu",
+        "bump": null
+      }
+    ]
+  },
+  {
+    "code": "D",
+    "pitch": "Almost all of this route is new to you two. A rented van takes you to an Edo-period post town, Ise Jingū, the Kumano pilgrimage area and Kōyasan for New Year's Eve at a temple. Kyoto and Osaka come at the end for the first-time visitors.",
+    "good": [
+      "Least-visited places",
+      "Traditional towns",
+      "Sennin-buro river onsen"
+    ],
+    "warn": [
+      "Long drives",
+      "Coldest nights",
+      "Needs a driver"
+    ],
+    "stops": [
+      {
+        "name": "Tokyo",
+        "dates": "20–23 Dec",
+        "nights": 3,
+        "lodging": "city",
+        "how": "Land and base centrally.",
+        "highlights": [
+          "Asakusa, Yanaka, Tsukiji, a day in Kamakura"
+        ],
+        "eat": "Sushi, izakaya",
+        "bump": null
+      },
+      {
+        "name": "Lake Kawaguchiko",
+        "dates": "23–25 Dec",
+        "nights": 2,
+        "lodging": "ryokan",
+        "how": "Fuji Excursion, ~2 h. Pick up a 10-seat van on 25 Dec.",
+        "highlights": [
+          "Fuji at dawn; Oshino Hakkai",
+          "Chūreitō for the active four"
+        ],
+        "eat": "Hōtō noodles",
+        "bump": null
+      },
+      {
+        "name": "Tsumago (Kiso Valley)",
+        "dates": "25–26 Dec",
+        "nights": 1,
+        "lodging": "village",
+        "how": "Drive ~3 h.",
+        "highlights": [
+          "Walk the Nakasendō trail from Magome to Tsumago, 8 km",
+          "The others explore Magome and drive the van to Tsumago",
+          "Lanterns on the post-town street at night"
+        ],
+        "eat": "Gohei-mochi, soba, river fish",
+        "bump": "She travels in the van"
+      },
+      {
+        "name": "Ise",
+        "dates": "26–28 Dec",
+        "nights": 2,
+        "lodging": "city",
+        "how": "Drive ~3.5 h via Nagoya.",
+        "highlights": [
+          "Ise Jingū's outer and inner shrines, on flat gravel paths among old cedars",
+          "Oharai-machi pilgrim street",
+          "Meoto Iwa wedded rocks at sunrise"
+        ],
+        "eat": "Akafuku mochi, Ise udon, Matsusaka beef, spiny lobster",
+        "bump": "You visit a few days before the New Year crowds"
+      },
+      {
+        "name": "Kawayu Onsen (Kumano)",
+        "dates": "28–31 Dec",
+        "nights": 3,
+        "lodging": "ryokan",
+        "how": "Drive ~3 h.",
+        "highlights": [
+          "Sennin-buro, a large bath dug into the riverbed (winter only)",
+          "Kumano Hongū Taisha and the giant torii at Ōyunohara",
+          "Kumano Kodō from Hosshinmon to Hongū, 7 km. She can walk the last section",
+          "Nachi Falls (drive to the top, skip the stone stairs)",
+          "Tsuboyu, a small UNESCO-listed bath booked in 30-minute slots"
+        ],
+        "eat": "Katsuura fresh tuna, mehari-zushi",
+        "bump": "Sennin-buro is shallow and cooler at the edges"
+      },
+      {
+        "name": "Kōyasan",
+        "dates": "31 Dec–2 Jan",
+        "nights": 2,
+        "lodging": "temple",
+        "how": "Drive ~4 h on mountain roads; winter tyres essential.",
+        "highlights": [
+          "New Year's Eve temple bells; Kōyasan has more than 100 temples",
+          "Dawn service on 1 Jan; Okunoin lantern walk"
+        ],
+        "eat": "Shōjin ryōri, New Year temple food",
+        "bump": "These are the coldest nights of the trip. Choose heated rooms"
+      },
+      {
+        "name": "Kyoto",
+        "dates": "2–6 Jan",
+        "nights": 4,
+        "lodging": "city",
+        "how": "Drop the van in Osaka or Kyoto (one-way fee), ~2.5 h.",
+        "highlights": [
+          "Fushimi Inari, Kiyomizu, Gion, Arashiyama",
+          "Karuta-hajime on 3 Jan; tea ceremony"
+        ],
+        "eat": "Kaiseki lunch, Nishiki as it reopens",
+        "bump": null
+      },
+      {
+        "name": "Osaka",
+        "dates": "6–9 Jan",
+        "nights": 3,
+        "lodging": "city",
+        "how": "~15 min. Fly out of Kansai.",
+        "highlights": [
+          "Nara day trip",
+          "Dōtonbori, Kuromon, Shinsekai"
+        ],
+        "eat": "Kushikatsu, takoyaki, okonomiyaki",
+        "bump": null
+      }
+    ]
+  }
+]

@@ -1,7 +1,10 @@
 "use client";
 
 import * as Dialog from "@radix-ui/react-dialog";
-import { useMemo } from "react";
+import Link from "next/link";
+import { useMemo, useState } from "react";
+import { boardStop, boardStopForPlace, guideFor } from "@/lib/guides";
+import { deleteRow, insertRow, useTable } from "@/lib/tables";
 import { directionsUrl, mapsSearchUrl, youtubeSearchUrl } from "@/lib/links";
 import { formatDay, placeInRoute, previousStop } from "@/lib/trip";
 import type { GooglePhoto, MediaItem, Place, PlaceDetails, Route } from "@/lib/types";
@@ -60,6 +63,10 @@ function SheetBody({ place, route }: { place: Place; route: Route | null }) {
   const prev = prevSlug ? P.get(prevSlug) : null;
   const stay = route?.stays.find((s) => s.place === place.slug);
   const isFood = place.kind === "food";
+  const stayIndex = route?.stays.findIndex((s) => s.place === place.slug) ?? -1;
+  const board =
+    stayIndex >= 0 && route?.isCandidate ? boardStop(route.code, stayIndex) : place.kind !== "food" ? boardStopForPlace(place.slug, place.name) : null;
+  const guide = guideFor(place.slug);
 
   return (
     <>
@@ -147,6 +154,34 @@ function SheetBody({ place, route }: { place: Place; route: Route | null }) {
             </div>
           </section>
         ) : null}
+
+        {board ? (
+          <section className="simple-hide grid gap-2" aria-label="Ideas">
+            <h3 className="text-lg font-extrabold">Ideas while you&apos;re here</h3>
+            <ul className="list-disc space-y-1 pl-5 text-sm">
+              {board.highlights.map((h) => (
+                <li key={h}>{h}</li>
+              ))}
+            </ul>
+            {board.eat ? (
+              <p className="text-sm">
+                <b>Eat:</b> {board.eat}
+              </p>
+            ) : null}
+            {board.bump ? (
+              <p className="text-sm">
+                <b>For her:</b> {board.bump}
+              </p>
+            ) : null}
+          </section>
+        ) : null}
+        {guide ? (
+          <Link href={`/guides/${guide.city}`} className="btn">
+            Open our {guide.mapSuffix} guide: day plans and neighbourhoods
+          </Link>
+        ) : null}
+
+        <Tips slug={place.slug} />
 
         <Reviews details={details} />
       </div>
@@ -325,4 +360,87 @@ function kindLabel(k: Place["kind"]): string {
       food: "Food",
     } as const
   )[k];
+}
+
+/** Tips pasted from Instagram posts, friends or articles. */
+function Tips({ slug }: { slug: string }) {
+  const { me, trip } = useStore();
+  const { rows } = useTable("tips");
+  const [open, setOpen] = useState(false);
+  const [url, setUrl] = useState("");
+  const [text, setText] = useState("");
+  const tips = rows.filter((t) => t.place_slug === slug).sort((a, b) => (b.created_at ?? "").localeCompare(a.created_at ?? ""));
+  const names = new Map(trip.travellers.map((t) => [t.id, t.name]));
+  return (
+    <section className="simple-hide grid gap-2" aria-label="Tips">
+      <div className="flex items-baseline justify-between">
+        <h3 className="text-lg font-extrabold">Tips{tips.length ? ` (${tips.length})` : ""}</h3>
+        {me && !open ? (
+          <button type="button" className="text-sm underline" onClick={() => setOpen(true)}>
+            + Add a tip
+          </button>
+        ) : null}
+      </div>
+      {tips.map((t) => (
+        <div key={t.id} className="card grid gap-1 p-3 text-sm">
+          {t.text ? <p className="whitespace-pre-line">{t.text}</p> : null}
+          <p className="flex flex-wrap gap-3 text-xs text-muted">
+            {t.url ? (
+              <a href={t.url} target="_blank" rel="noreferrer" className="underline">
+                {sourceLabel(t.url)}
+              </a>
+            ) : null}
+            {t.created_by ? <span>{names.get(t.created_by) ?? ""}</span> : null}
+            {me && (me.role === "planner" || me.travellerId === t.created_by) ? (
+              <button type="button" className="underline" onClick={() => deleteRow("tips", t.id)}>
+                Delete
+              </button>
+            ) : null}
+          </p>
+        </div>
+      ))}
+      {open ? (
+        <form
+          className="card grid gap-2 p-3"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            if (!text.trim() && !url.trim()) return;
+            await insertRow("tips", {
+              place_slug: slug,
+              url: url.trim() || null,
+              text: text.trim(),
+              source: url.trim() ? sourceLabel(url.trim()) : null,
+              created_by: me?.travellerId ?? null,
+              created_at: new Date().toISOString(),
+            });
+            setUrl("");
+            setText("");
+            setOpen(false);
+          }}
+        >
+          <input className="input" type="url" placeholder="Link (Instagram post, article…)" value={url} onChange={(e) => setUrl(e.target.value)} aria-label="Link" />
+          <textarea className="input min-h-16" placeholder="What's the tip? e.g. order the special rib cut" value={text} onChange={(e) => setText(e.target.value)} aria-label="Tip" />
+          <div className="flex gap-2">
+            <button className="btn btn-sm btn-primary">Save tip</button>
+            <button type="button" className="btn btn-sm" onClick={() => setOpen(false)}>
+              Cancel
+            </button>
+          </div>
+        </form>
+      ) : null}
+    </section>
+  );
+}
+
+export function sourceLabel(url: string): string {
+  try {
+    const h = new URL(url).hostname.replace(/^www\./, "");
+    if (h.endsWith("instagram.com")) return "Instagram";
+    if (h.endsWith("tiktok.com")) return "TikTok";
+    if (h.endsWith("youtube.com") || h === "youtu.be") return "YouTube";
+    if (h.includes("google.")) return "Google Maps";
+    return h;
+  } catch {
+    return "Link";
+  }
 }

@@ -3,14 +3,32 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { routeColor } from "@/lib/colors";
-import { compareRows, type CompareRow } from "@/lib/trip";
+import { planBudget } from "@/lib/plan";
+import { useTable } from "@/lib/tables";
+import { compareRows, yen, type CompareRow } from "@/lib/trip";
 import { useStore } from "./providers";
+import { usePlans } from "./usePlans";
 
 /** P1.3: side-by-side table of the candidate routes. */
 export function CompareView() {
   const { trip, resolvedTheme, votes } = useStore();
-  const routes = trip.routes.filter((r) => r.isCandidate);
-  const rows = useMemo(() => compareRows(trip, routes), [trip, routes]);
+  const { plans, routeFor } = usePlans();
+  const { rows: bookings } = useTable("bookings");
+  const [withPlans, setWithPlans] = useState(true);
+  const routes = useMemo(
+    () => [...trip.routes.filter((r) => r.isCandidate), ...(withPlans ? plans.map(routeFor) : [])],
+    [trip.routes, plans, routeFor, withPlans],
+  );
+  const rows = useMemo(() => {
+    const out = compareRows(trip, routes);
+    // Plans: cost from their own budget (bookings + estimates); exit airport isn't tracked.
+    const cost = out.find((r) => r.key === "cost")!;
+    for (const p of withPlans ? plans : []) {
+      const total = planBudget(p, bookings).reduce((a, l) => a + l.projected, 0);
+      cost.cells[p.id] = { value: total, text: yen(total), detail: "From this plan's budget" };
+    }
+    return out;
+  }, [trip, routes, plans, bookings, withPlans]);
   const [sortKey, setSortKey] = useState<string>("");
   const [onlyDiff, setOnlyDiff] = useState(false);
 
@@ -72,6 +90,12 @@ export function CompareView() {
           <input type="checkbox" className="size-5 accent-[var(--accent)]" checked={onlyDiff} onChange={(e) => setOnlyDiff(e.target.checked)} />
           Only rows that differ
         </label>
+        {plans.length ? (
+          <label className="flex min-h-11 items-center gap-2 text-sm">
+            <input type="checkbox" className="size-5 accent-[var(--accent)]" checked={withPlans} onChange={(e) => setWithPlans(e.target.checked)} />
+            Include our plans
+          </label>
+        ) : null}
       </div>
 
       {/* Cards on phones */}
@@ -80,7 +104,7 @@ export function CompareView() {
           <section key={r.id} className="card overflow-hidden" aria-labelledby={`cmp-${r.id}`}>
             <div className="flex items-center gap-2 px-4 py-3" style={{ borderTop: `6px solid ${routeColor(r.code, r.color, resolvedTheme)}` }}>
               <h2 id={`cmp-${r.id}`} className="text-lg font-extrabold">
-                {r.code} · {r.name}
+                {r.isCandidate ? `${r.code} · ${r.name}` : r.name}
               </h2>
               <span className="ml-auto text-sm text-muted">{score(r.id)} pts</span>
             </div>
@@ -122,7 +146,7 @@ export function CompareView() {
               {ordered.map((r) => (
                 <th key={r.id} scope="col" className="p-3 text-left align-bottom" style={{ borderTop: `6px solid ${routeColor(r.code, r.color, resolvedTheme)}` }}>
                   <Link href={`/?r=${r.code}`} className="text-base font-extrabold no-underline hover:underline">
-                    {r.code} · {r.name}
+                    {r.isCandidate ? `${r.code} · ${r.name}` : r.name}
                   </Link>
                   <span className="block text-xs font-normal text-muted">{score(r.id)} vote points</span>
                 </th>

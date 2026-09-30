@@ -1,6 +1,11 @@
 # Six Across Japan
 
-A private trip-planning web app for six travellers (20 Dec 2026 – 9 Jan 2027). **Phase 1 (“Decide”)** from the PRD is built here: a live route map, place sheets with Google photos, reviews and YouTube videos, a compare view, voting and hearts, a calendar strip, media curation for the planner, and the group's Tokyo food list.
+A private trip-planning web app for six travellers (20 Dec 2026 – 9 Jan 2027). All three PRD phases are built:
+
+- **Decide:** a live route map, place sheets with Google photos, reviews and YouTube videos, a compare view, voting and hearts, a calendar strip, and media curation for the planner.
+- **Plan:** a route builder that enforces 20 nights and checks every edit against the rules (peak days, long legs, stairs, New Year closures). Also a day planner with a "who's going" split and one-tap import from the Tokyo and Kyoto guides, bookings with a deadline dashboard and shinkansen reminders, and a per-person budget in yen and SGD.
+- **Travel:** a Today screen with the hotel address in Japanese for taxi drivers, the next move, today's plan and the weather. The app works offline as a PWA after one online visit, and private documents are limited to the owner and partner.
+- **Extras:** the Tokyo food list and a tips inbox (paste Instagram links), plus the "Tokyo for Six" and "Kyoto for Six" guides.
 
 Stack: Next.js 16 (App Router), TypeScript, Tailwind 4, Radix UI, `@vis.gl/react-google-maps`, Supabase (Postgres, RLS, magic links, Realtime), Vercel.
 
@@ -13,7 +18,8 @@ npm run dev   # http://localhost:3000
 
 With no Supabase keys the app runs in **demo mode**:
 - There's no sign-in. Pick “I am…” under Settings.
-- Votes, hearts and pinned media are kept in this browser only.
+- Votes, hearts, pinned media, plans, days, bookings and tips are kept in this browser only.
+- Everyone is treated as the planner, and Documents is switched off.
 - A sketch map stands in for Google Maps.
 - Photos and reviews stay empty until `GOOGLE_PLACES_API_KEY` is set.
 
@@ -25,12 +31,12 @@ Demo mode is disabled in production builds unless `DEMO_MODE=1`, so a deploy wit
    - Create a *browser key* limited to Maps JavaScript API with HTTP-referrer restrictions (`localhost:3000/*` and your Vercel domain).
    - Create a *server key* limited to Places, Routes and YouTube.
    - Create a Map ID with a muted style. Optionally create a second one for dark mode. Set a USD 10 billing budget alert.
-2. **Supabase**: create a project, then run `supabase/migrations/0001_init.sql` in the SQL editor (or `supabase db push`). Then:
+2. **Supabase**: create a project, then run `supabase/migrations/0001_init.sql` and `0002_plan_travel.sql` in the SQL editor, in order (or use `supabase db push`). Both are safe to re-run. `0002` also creates the private `documents` storage bucket. Then:
    - Auth → Providers → Email: turn **off** “Allow new users to sign up”.
    - Auth → Hooks: optionally add *Before User Created* → `public.hook_before_user_created` as a second guard.
    - Auth → URL configuration: set the Site URL and add `http://localhost:3000/auth/confirm` and `https://<your-domain>/auth/confirm` as redirect URLs.
 3. `cp .env.example .env.local` and fill in the keys.
-4. `cp data/travellers.example.json data/travellers.json` and enter the six names and emails. Make one of them `"planner"`. This file is git-ignored.
+4. `cp data/travellers.example.json data/travellers.json` and enter the six names and emails. Make one of them `"planner"`, and set `"docs_access": true` for the owner and partner. This file is git-ignored.
 5. `npm run seed`. It is idempotent: it upserts travellers (and pre-creates their auth users), places, routes, stays and add-ons, and resolves each place's `google_place_id` with an IDs-only Text Search, which is billed at the cheapest Text Search tier.
    - `--reset-routes` rewrites the stays of routes A–D.
    - `--no-resolve` skips the Google lookups.
@@ -55,12 +61,23 @@ Demo mode is disabled in production builds unless `DEMO_MODE=1`, so a deploy wit
 | `src/app/api/photo/[...name]` | Redirects to Google's short-lived photo URL, so the Places key stays server-side |
 | `src/app/api/videos/search` | Planner-only YouTube search (embeddable, medium + long; ~201 quota units) |
 | `src/components/providers.tsx` | Client store for votes, hearts and media with Supabase Realtime (or localStorage in demo mode), plus theme, large-text and “just photos” preferences |
+| `data/city-guides.json`, `data/route-board.json` | Tokyo and Kyoto day plans, nights out and neighbourhoods, plus per-stop highlights, imported from the "Tokyo for Six", "Kyoto for Six" and "Six Across Japan" artifacts (F1a) |
+| `src/lib/plan.ts` | Plans, rules engine (P2.2), legs, rail reminders, deadlines, budget. Unit-tested in `plan.test.ts` |
+| `src/lib/tables.ts` | Generic table store for plans, activities, bookings, tips and settings. It follows Realtime updates, keeps a localStorage snapshot for offline use, and writes optimistically |
+| `src/app/api/legs` | Planner-only Routes API lookup (drive or transit) for a leg's duration; when Google has no route, the curated time stays |
+| `public/sw.js` | Service worker. Static assets are cache-first; pages and place details are network-first with a cache fallback. Key pages are pre-saved after sign-in, and everything is cleared on sign-out |
 
 Decisions on the PRD's open questions:
 - Supabase for data and sign-in.
 - Vote totals are visible live from the start.
 - Parents get a “Just show me the photos” toggle (Settings) as well as large text.
-- Rail transit data: pending the spike result.
+- Rail transit data: curated leg times plus Google Maps transit links. The planner's "Ask Google" button tries the Routes API; if it has no transit data for Japan, the curated time stays.
+- Instagram tips: scraping Instagram breaks its terms, so tips arrive through a paste-a-link inbox (Food page and each place sheet).
+
+Who can do what:
+- Everyone can read everything, vote, heart places, add activities to days, and add tips.
+- Only the planner edits plans, bookings, budget settings and media.
+- Documents are limited to travellers with `docs_access`, enforced by RLS on the storage bucket.
 
 Compliance (PRD §8):
 - Photos show author attribution and reviews link to the author and Google Maps.

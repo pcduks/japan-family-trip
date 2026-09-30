@@ -3,6 +3,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { localStore, useLocalStore, useSystemDark } from "@/lib/localStore";
 import { browserSupabase } from "@/lib/supabase/client";
+import { configureTables } from "@/lib/tables";
 import type { Heart, MediaItem, Traveller, Trip, Vote } from "@/lib/types";
 
 /* ------------------------------------------------------------ prefs */
@@ -77,6 +78,7 @@ export function Providers({
 }) {
   const demo = viewer === "demo";
   const sb = demo ? null : browserSupabase();
+  configureTables(sb);
 
   /* prefs */
   const prefs = useLocalStore(prefsStore);
