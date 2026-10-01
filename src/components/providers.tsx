@@ -29,6 +29,10 @@ export interface Me {
   travellerId: string;
   name: string;
   role: "planner" | "member";
+  /** The planner can switch to any traveller ("Ver como") without an email code. */
+  canSwitch?: boolean;
+  /** Set while the planner is acting as someone else: who the planner really is. */
+  actingFor?: { id: string; name: string } | null;
 }
 
 interface Store {
