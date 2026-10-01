@@ -42,7 +42,8 @@ export function DesejosView() {
   const deck = useMemo(() => deckCards(catalog), [catalog]);
   const { rows: wishes } = useTable("wishes");
   const { rows: profiles } = useTable("wish_profiles");
-  const [nyOptions] = useSetting<{ base: string; title: string; line: string }[]>("ny_options", DEFAULT_NY);
+  const [nySetting] = useSetting<{ base: string; title: string; line: string }[]>("ny_options", []);
+  const nyOptions = nySetting.length ? nySetting : DEFAULT_NY;
   const myId = me?.travellerId ?? "";
   const mine = useMemo(() => new Map(wishes.filter((w) => w.traveller_id === myId).map((w) => [w.card_id, w.answer])), [wishes, myId]);
   const profile = profiles.find((p) => p.id === myId);

@@ -8,9 +8,9 @@ export type { Base, Catalog, ExperienceCard, TransitLeg } from "./types";
 /** The researched catalog, bundled read-only like trip-data.json. */
 export function loadCatalog(): Catalog {
   return {
-    cards: cards as ExperienceCard[],
-    bases: bases as Base[],
-    transit: transit as TransitLeg[],
+    cards: cards as unknown as ExperienceCard[],
+    bases: bases as unknown as Base[],
+    transit: transit as unknown as TransitLeg[],
     generated_at: "",
   };
 }
