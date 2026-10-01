@@ -109,7 +109,7 @@ describe("legs, reminders and bookings", () => {
     const r = railReminders(p, [], P);
     const kyoto = r.find((x) => x.title.includes("Kyoto"))!;
     expect(kyoto.date).toBe("2026-11-30");
-    expect(kyoto.detail).toMatch(/peak day/);
+    expect(kyoto.detail).toMatch(/dia de pico/);
   });
 
   it("marks a rail reminder done once a transport booking is booked", () => {

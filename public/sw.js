@@ -1,5 +1,5 @@
-/* Six Across Japan service worker (P3.2): the itinerary works offline after one online visit. */
-const VERSION = "v1";
+/* Seis pelo Japão service worker (P3.2): the itinerary works offline after one online visit. */
+const VERSION = "v2";
 const STATIC = `static-${VERSION}`;
 const PAGES = `pages-${VERSION}`;
 const DATA = `data-${VERSION}`;

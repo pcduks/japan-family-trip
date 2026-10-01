@@ -57,6 +57,8 @@ export interface Traveller {
   name: string;
   email?: string;
   role: "planner" | "member";
+  /** Couple key for splitting costs, e.g. "pedro", "irmao", "pais". */
+  couple?: string | null;
 }
 
 export interface Trip {

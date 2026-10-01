@@ -3,52 +3,67 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Avatar, firstName } from "./ui";
 import { useStore, type ThemePref } from "./providers";
 import { clearOfflineData } from "./ServiceWorker";
 
-const NAV = [
-  { href: "/today", label: "Today", icon: "M4 6h16v14H4zM4 10h16M9 3v4m6-4v4" },
-  { href: "/", label: "Routes", icon: "M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2V6zm6-2v14m6-12v14" },
-  { href: "/plan", label: "Plan", icon: "M5 4h14v16H5zM9 8h6M9 12h6M9 16h4" },
-  { href: "/food", label: "Food", icon: "M7 3v8a2 2 0 0 0 2 2v8M11 3v8M15 3c2 0 3 2 3 5s-1 5-3 5v8" },
-  { href: "/more", label: "More", icon: "M5 12h.01M12 12h.01M19 12h.01" },
-];
-const MORE_PATHS = ["/more", "/compare", "/vote", "/guides", "/documents", "/curate"];
+const I = {
+  home: "M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13zM11 4h7.5c.8 0 1.5.7 1.5 1.5v13c0 .8-.7 1.5-1.5 1.5H11",
+  today: "M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z",
+  trip: "M8 7V5.5C8 4.7 8.7 4 9.5 4h5c.8 0 1.5.7 1.5 1.5V7M5 7h14a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zm4 0v13m6-13v13",
+  passport: "M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm6 5.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM9 17.5h6",
+};
 
-function Icon({ d }: { d: string }) {
+const TRIP_PATHS = ["/viagem", "/food", "/mala", "/contas", "/guides", "/documents", "/plan", "/mesa", "/compare", "/curate", "/more"];
+
+function NavItem({ href, label, icon, active }: { href: string; label: string; icon: string; active: boolean }) {
   return (
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d={d} />
-    </svg>
+    <li className="flex-1">
+      <Link
+        href={href}
+        aria-current={active ? "page" : undefined}
+        className={`relative flex min-h-[3.75rem] flex-col items-center justify-center gap-1 text-[0.72rem] no-underline ${active ? "font-bold text-ink" : "text-muted"}`}
+      >
+        {active ? <span className="absolute top-0 h-[3px] w-8 rounded-b bg-vermilion" aria-hidden="true" /> : null}
+        <svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d={icon} />
+        </svg>
+        {label}
+      </Link>
+    </li>
   );
 }
 
 export function BottomNav() {
   const path = usePathname();
-  const items = NAV;
+  const is = (p: string) => path === p || path.startsWith(p + "/");
+  const home = path === "/" || is("/rotas") || is("/votar");
+  if (is("/login")) return null;
   return (
     <nav
-      aria-label="Main"
-      className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-card/95 backdrop-blur"
+      aria-label="Principal"
+      className="fixed inset-x-0 bottom-0 z-30 border-t border-rule bg-paper/95 backdrop-blur"
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
     >
-      <ul className="mx-auto flex max-w-3xl justify-around">
-        {items.map((n) => {
-          const active =
-            n.href === "/" ? path === "/" : n.href === "/more" ? MORE_PATHS.some((m) => path.startsWith(m)) : path.startsWith(n.href);
-          return (
-            <li key={n.href} className="flex-1">
-              <Link
-                href={n.href}
-                aria-current={active ? "page" : undefined}
-                className={`flex min-h-14 flex-col items-center justify-center gap-0.5 text-xs no-underline ${active ? "font-bold text-ink" : "text-muted"}`}
-              >
-                <Icon d={n.icon} />
-                {n.label}
-              </Link>
-            </li>
-          );
-        })}
+      <ul className="mx-auto flex max-w-xl items-stretch justify-around px-1">
+        <NavItem href="/" label="Início" icon={I.home} active={home} />
+        <NavItem href="/today" label="Hoje" icon={I.today} active={is("/today")} />
+        <li className="flex flex-1 items-center justify-center">
+          <Link
+            href="/anotar"
+            aria-label="Anotar"
+            aria-current={is("/anotar") ? "page" : undefined}
+            className="grid h-12 w-16 place-items-center rounded-full bg-ink text-paper no-underline shadow-md transition-transform active:scale-95"
+          >
+            <span className="flex items-center gap-1 text-sm font-bold text-paper">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" />
+              </svg>
+            </span>
+          </Link>
+        </li>
+        <NavItem href="/viagem" label="Viagem" icon={I.trip} active={TRIP_PATHS.some(is)} />
+        <NavItem href="/passaporte" label="Passaporte" icon={I.passport} active={is("/passaporte")} />
       </ul>
     </nav>
   );
@@ -56,69 +71,87 @@ export function BottomNav() {
 
 export function AppHeader() {
   const { me, demo, trip, setDemoMe, prefs, setPrefs, error } = useStore();
+  const path = usePathname();
+  const idx = trip.travellers.findIndex((t) => t.id === me?.travellerId);
+  if (path.startsWith("/login")) return null;
   return (
-    <header className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 pt-4 pb-2" style={{ paddingTop: "max(1rem, env(safe-area-inset-top))" }}>
-      <div className="min-w-0">
-        <p className="eyebrow">20 Dec – 9 Jan · six travellers</p>
-        <p className="font-display text-xl font-extrabold">Six Across Japan</p>
-      </div>
+    <header className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-5 pb-1" style={{ paddingTop: "max(0.9rem, env(safe-area-inset-top))" }}>
+      {path === "/" ? (
+        <span />
+      ) : (
+        <Link href="/" className="font-display text-xl no-underline">
+          Seis pelo Japão
+        </Link>
+      )}
       <Dialog.Root>
-        <Dialog.Trigger className="btn btn-sm" aria-label="Settings">
-          <span className="max-w-[9rem] truncate">{me?.name ?? "Settings"}</span>
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-            <circle cx="12" cy="12" r="3" />
-            <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" />
-          </svg>
+        <Dialog.Trigger className="flex items-center gap-2 rounded-full border border-rule bg-card py-1 pr-3 pl-1 text-sm" aria-label="Você e ajustes">
+          <Avatar name={me?.name ?? "?"} index={Math.max(idx, 0)} size={28} />
+          <span>
+            {me ? firstName(me.name) : "Quem é você?"} <span className="text-muted">· trocar</span>
+          </span>
         </Dialog.Trigger>
         <Dialog.Portal>
           <Dialog.Overlay className="fixed inset-0 z-40 bg-black/40" />
-          <Dialog.Content className="card fixed inset-x-3 top-16 z-50 mx-auto grid max-w-sm gap-5 p-5 shadow-xl">
-            <Dialog.Title className="text-xl font-extrabold">Settings</Dialog.Title>
-            <Dialog.Description className="sr-only">Display settings and account</Dialog.Description>
+          <Dialog.Content className="card fixed inset-x-3 top-16 z-50 mx-auto grid max-w-sm gap-5 p-5">
+            <Dialog.Title className="text-3xl">Ajustes</Dialog.Title>
+            <Dialog.Description className="sr-only">Quem você é, tema e tamanho do texto</Dialog.Description>
 
             {demo ? (
-              <label className="grid gap-1 text-sm font-medium">
-                I am (demo mode)
-                <select className="input" value={me?.travellerId ?? ""} onChange={(e) => setDemoMe(e.target.value)}>
-                  {trip.travellers.map((t) => (
-                    <option key={t.id} value={t.id}>
-                      {t.name}
-                    </option>
+              <fieldset className="grid gap-2">
+                <legend className="mb-1 text-sm font-bold">Quem é você? (modo demonstração)</legend>
+                <div className="grid grid-cols-3 gap-2">
+                  {trip.travellers.map((t, i) => (
+                    <button
+                      key={t.id}
+                      type="button"
+                      aria-pressed={me?.travellerId === t.id}
+                      onClick={() => setDemoMe(t.id)}
+                      className="grid justify-items-center gap-1 rounded-xl border border-rule p-2 text-sm aria-pressed:border-ink aria-pressed:bg-paper-2"
+                    >
+                      <Avatar name={t.name} index={i} size={36} />
+                      <span className="truncate">{firstName(t.name)}</span>
+                    </button>
                   ))}
-                </select>
-              </label>
+                </div>
+              </fieldset>
             ) : (
               <p className="text-sm">
-                Signed in as <b>{me?.name}</b>
-                {me?.role === "planner" ? " (planner)" : ""}
+                Você entrou como <b>{me?.name}</b>
+                {me?.role === "planner" ? " (quem organiza)" : ""}.
               </p>
             )}
 
             <fieldset className="grid gap-2">
-              <legend className="mb-1 text-sm font-medium">Theme</legend>
+              <legend className="mb-1 text-sm font-bold">Tema</legend>
               <div className="flex gap-2" role="radiogroup">
-                {(["system", "light", "dark"] as ThemePref[]).map((t) => (
-                  <button key={t} role="radio" aria-checked={prefs.theme === t} className="chip flex-1 justify-center capitalize" onClick={() => setPrefs({ theme: t })}>
-                    {t}
+                {(
+                  [
+                    ["system", "Automático"],
+                    ["light", "Claro"],
+                    ["dark", "Escuro"],
+                  ] as [ThemePref, string][]
+                ).map(([t, label]) => (
+                  <button key={t} role="radio" aria-checked={prefs.theme === t} className="chip flex-1 justify-center" onClick={() => setPrefs({ theme: t })}>
+                    {label}
                   </button>
                 ))}
               </div>
             </fieldset>
 
-            <Toggle label="Large text" hint="Bigger type and buttons everywhere." checked={prefs.largeText} onChange={(v) => setPrefs({ largeText: v })} />
-            <Toggle label="Just show me the photos" hint="Big photos and the short description; reviews and videos fold away." checked={prefs.simple} onChange={(v) => setPrefs({ simple: v })} />
+            <Toggle label="Letras grandes" hint="Texto e botões maiores em todas as telas." checked={prefs.largeText} onChange={(v) => setPrefs({ largeText: v })} />
+            <Toggle label="Só as fotos" hint="Fotos grandes e o essencial; avaliações e vídeos ficam recolhidos." checked={prefs.simple} onChange={(v) => setPrefs({ simple: v })} />
 
-            {error ? <p className="text-sm text-danger">Sync problem: {error}</p> : null}
+            {error ? <p className="text-sm text-danger">Problema ao sincronizar: {error}</p> : null}
 
             <div className="flex justify-between gap-2">
               {!demo ? (
                 <form action="/auth/signout" method="post" onSubmit={clearOfflineData}>
-                  <button className="btn btn-sm">Sign out</button>
+                  <button className="btn btn-sm">Sair</button>
                 </form>
               ) : (
                 <span />
               )}
-              <Dialog.Close className="btn btn-sm btn-primary">Done</Dialog.Close>
+              <Dialog.Close className="btn btn-sm btn-primary">Pronto</Dialog.Close>
             </div>
           </Dialog.Content>
         </Dialog.Portal>
@@ -131,10 +164,10 @@ function Toggle({ label, hint, checked, onChange }: { label: string; hint: strin
   return (
     <label className="flex cursor-pointer items-start justify-between gap-4">
       <span>
-        <span className="block text-sm font-medium">{label}</span>
+        <span className="block text-sm font-bold">{label}</span>
         <span className="block text-xs text-muted">{hint}</span>
       </span>
-      <input type="checkbox" role="switch" className="mt-1 size-5 accent-[var(--accent)]" checked={checked} onChange={(e) => onChange(e.target.checked)} />
+      <input type="checkbox" role="switch" className="mt-1 size-5 accent-[var(--vermilion)]" checked={checked} onChange={(e) => onChange(e.target.checked)} />
     </label>
   );
 }
@@ -142,11 +175,11 @@ function Toggle({ label, hint, checked, onChange }: { label: string; hint: strin
 /** Signed in to Supabase but not on the travellers list. */
 export function NotInvited() {
   return (
-    <main className="mx-auto grid max-w-sm gap-4 px-4 py-24">
-      <h1 className="text-2xl font-extrabold">You&apos;re not on the trip list</h1>
-      <p className="text-muted">This app is private to six invited travellers. Ask the planner to add your email.</p>
+    <main className="mx-auto grid max-w-sm gap-4 px-5 py-24">
+      <h1 className="text-4xl">Você não está na lista da viagem</h1>
+      <p className="text-muted">Este app é só para as seis pessoas da viagem. Peça ao Pedro para incluir o seu e-mail.</p>
       <form action="/auth/signout" method="post">
-        <button className="btn">Sign out</button>
+        <button className="btn">Sair</button>
       </form>
     </main>
   );

@@ -5,14 +5,14 @@
     "end": "2027-01-09",
     "nights": 20,
     "travellers": [
-      "You",
-      "Your wife",
-      "Brother",
-      "Sister-in-law",
-      "Mom",
-      "Dad"
+      "Pedro",
+      "Esposa",
+      "Irmão",
+      "Cunhada",
+      "Mãe",
+      "Pai"
     ],
-    "notes": "Wife 29 weeks pregnant at departure, ~32 weeks at return. New Year closures ~29 Dec–4 Jan. Travel peaks 29–31 Dec and 2–4 Jan; 9–11 Jan Nozomi all-reserved."
+    "notes": "Esposa com 29 semanas de gestação na ida, ~32 semanas na volta. Fechamentos de Ano-Novo ~29 dez–4 jan. Picos de viagem em 29–31 dez e 2–4 jan; de 9 a 11 jan o Nozomi só tem assentos reservados."
   },
   "places": [
     {
@@ -23,9 +23,9 @@
       "lng": 139.7967,
       "region": "Kanto",
       "kind": "city",
-      "blurb": "Asakusa and Yanaka old town, Tsukiji outer market, depachika food halls, Christmas Eve lights.",
-      "winter": "Dry, sunny, 3–11°C. Best Fuji views from rooftops.",
-      "bump": "Big stations mean lots of walking. Two taxis fit six."
+      "blurb": "Asakusa e o bairro antigo de Yanaka, mercado externo de Tsukiji, praças de alimentação das depachika, luzes da véspera de Natal.",
+      "winter": "Seco e ensolarado, 3–11°C. As melhores vistas do Fuji são dos terraços.",
+      "bump": "Estações grandes significam muita caminhada. Dois táxis levam as seis pessoas."
     },
     {
       "id": "kamakura",
@@ -35,9 +35,9 @@
       "lng": 139.5358,
       "region": "Kanto",
       "kind": "daytrip",
-      "blurb": "Great Buddha, bamboo temple, seaside day trip from Tokyo.",
-      "winter": "Mild and clear.",
-      "bump": "Some temple stairs; the Great Buddha is flat."
+      "blurb": "Grande Buda, templo de bambu, bate-volta à beira-mar saindo de Tokyo.",
+      "winter": "Ameno e com céu limpo.",
+      "bump": "Alguns degraus nos templos; o Grande Buda fica no plano."
     },
     {
       "id": "kawaguchiko",
@@ -47,9 +47,9 @@
       "lng": 138.7519,
       "region": "Fuji Five Lakes",
       "kind": "ryokan",
-      "blurb": "Ryokan with Fuji-view rooms, Oishi Park, Oshino Hakkai spring village, Chureito Pagoda.",
-      "winter": "Clearest Fuji of the year, -5 to 8°C, early mornings best.",
-      "bump": "Chureito has ~400 steps; the lakeside is flat."
+      "blurb": "Ryokan com quartos de frente para o Fuji, Parque Oishi, a vila das fontes de Oshino Hakkai, Pagode Chureito.",
+      "winter": "O Fuji mais nítido do ano, de -5 a 8°C; o começo da manhã é o melhor horário.",
+      "bump": "O Chureito tem ~400 degraus; a beira do lago é plana."
     },
     {
       "id": "hakone",
@@ -59,9 +59,9 @@
       "lng": 139.0253,
       "region": "Kanagawa",
       "kind": "ryokan",
-      "blurb": "Mountain train, ropeway over Owakudani sulphur vents, Lake Ashi boat, Open-Air Museum, onsen ryokan.",
-      "winter": "Fuji visible on clear mornings; ropeway can pause in wind.",
-      "bump": "Easy loop with seated transport."
+      "blurb": "Trem de montanha, teleférico sobre as fumarolas de enxofre de Owakudani, barco no Lago Ashi, Museu a Céu Aberto, ryokan com onsen.",
+      "winter": "Fuji visível nas manhãs limpas; o teleférico pode parar com vento.",
+      "bump": "Circuito tranquilo, sempre sentados no transporte."
     },
     {
       "id": "matsumoto",
@@ -71,9 +71,9 @@
       "lng": 137.969,
       "region": "Nagano",
       "kind": "stopover",
-      "blurb": "Original black castle. Lunch stop between Fuji and Takayama.",
-      "winter": "Cold, often snowy.",
-      "bump": "Castle interior stairs are very steep; grounds are flat."
+      "blurb": "Castelo negro original. Parada para almoço entre o Fuji e Takayama.",
+      "winter": "Frio, muitas vezes com neve.",
+      "bump": "As escadas internas do castelo são muito íngremes; os jardins são planos."
     },
     {
       "id": "takayama",
@@ -83,9 +83,9 @@
       "lng": 137.2596,
       "region": "Gifu (Hida)",
       "kind": "ryokan",
-      "blurb": "Edo-period merchant streets, morning markets, sake breweries, Hida beef, Hida Folk Village.",
-      "winter": "Snow likely, -5 to 5°C.",
-      "bump": "Flat old town; icy lanes, bring cleats."
+      "blurb": "Ruas de mercadores do período Edo, feiras matinais, destilarias de saquê, carne Hida, Vila Folclórica de Hida.",
+      "winter": "Neve provável, de -5 a 5°C.",
+      "bump": "Centro antigo plano; vielas com gelo, levem grampos antiderrapantes."
     },
     {
       "id": "shirakawago",
@@ -95,9 +95,9 @@
       "lng": 136.906,
       "region": "Gifu",
       "kind": "village",
-      "blurb": "UNESCO village of thatched gassho farmhouses, often under a metre of snow. Farmhouse inns available.",
-      "winter": "Deep snow. 2027 light-up nights (11, 17, 24, 31 Jan) fall after the trip.",
-      "bump": "Shared baths and steep stairs in farmhouse inns; ask for ground floor."
+      "blurb": "Vila da UNESCO com casas de fazenda gassho de telhado de palha, muitas vezes sob um metro de neve. Dá para se hospedar nas casas de fazenda.",
+      "winter": "Neve funda. As noites de iluminação de 2027 (11, 17, 24 e 31 jan) caem depois da viagem.",
+      "bump": "Banheiros compartilhados e escadas íngremes nas casas de fazenda; peça quarto no térreo."
     },
     {
       "id": "kanazawa",
@@ -107,9 +107,9 @@
       "lng": 136.6627,
       "region": "Ishikawa",
       "kind": "city",
-      "blurb": "Kenroku-en garden with snow ropes, Higashi Chaya geisha district, Omicho market snow crab, samurai district.",
-      "winter": "Wet and snowy, 1–8°C. Snow crab season.",
-      "bump": "Flat, compact city."
+      "blurb": "Jardim Kenroku-en com as cordas que protegem os pinheiros da neve, bairro das gueixas Higashi Chaya, caranguejo-das-neves no mercado Omicho, bairro dos samurais.",
+      "winter": "Úmido e com neve, 1–8°C. Temporada do caranguejo-das-neves.",
+      "bump": "Cidade plana e compacta."
     },
     {
       "id": "yudanaka",
@@ -119,9 +119,9 @@
       "lng": 138.4312,
       "region": "Nagano",
       "kind": "ryokan",
-      "blurb": "Lantern-lit onsen street with nine public baths. Base for the snow monkeys.",
-      "winter": "Snowy, -8 to 3°C.",
-      "bump": "Choose a ryokan with private baths."
+      "blurb": "Rua de onsen iluminada por lanternas, com nove banhos públicos. Base para ver os macacos-da-neve.",
+      "winter": "Com neve, de -8 a 3°C.",
+      "bump": "Escolha um ryokan com banho privativo."
     },
     {
       "id": "jigokudani",
@@ -131,9 +131,9 @@
       "lng": 138.4623,
       "region": "Nagano",
       "kind": "daytrip",
-      "blurb": "Wild macaques bathing in a hot spring, reached by a 1.6 km forest path.",
-      "winter": "Peak season for monkeys in the water.",
-      "bump": "Flat but icy path, ~30 min each way. Decide on the day."
+      "blurb": "Macacos selvagens se banhando numa fonte termal, a 1,6 km de trilha pela floresta.",
+      "winter": "Alta temporada para ver os macacos dentro da água.",
+      "bump": "Trilha plana, mas com gelo, ~30 min para cada lado. Decidam no dia."
     },
     {
       "id": "nagano",
@@ -143,9 +143,9 @@
       "lng": 138.1875,
       "region": "Nagano",
       "kind": "daytrip",
-      "blurb": "Major temple with a pitch-dark underground passage; Obuse chestnut town nearby.",
-      "winter": "Cold, snowy.",
-      "bump": "Easy."
+      "blurb": "Grande templo com uma passagem subterrânea em total escuridão; perto fica Obuse, a cidade das castanhas.",
+      "winter": "Frio, com neve.",
+      "bump": "Tranquilo."
     },
     {
       "id": "kyoto",
@@ -155,9 +155,9 @@
       "lng": 135.7788,
       "region": "Kansai",
       "kind": "city",
-      "blurb": "Temples, Nishiki Market, tea ceremony, Arashiyama. New Year's Eve bell at Chion-in and Okera-mairi fire at Yasaka.",
-      "winter": "0–9°C, occasional snow on temples.",
-      "bump": "Rent a whole machiya. Fushimi Inari lower gates only."
+      "blurb": "Templos, Mercado Nishiki, cerimônia do chá, Arashiyama. O sino da véspera de Ano-Novo em Chion-in e o fogo do Okera-mairi em Yasaka.",
+      "winter": "0–9°C, de vez em quando neva sobre os templos.",
+      "bump": "Alugue uma machiya inteira. No Fushimi Inari, só os portões de baixo."
     },
     {
       "id": "uji",
@@ -167,9 +167,9 @@
       "lng": 135.8077,
       "region": "Kansai",
       "kind": "daytrip",
-      "blurb": "Byodo-in temple and the home of Japanese green tea.",
-      "winter": "Mild.",
-      "bump": "Flat."
+      "blurb": "Templo Byodo-in e a terra do chá verde japonês.",
+      "winter": "Ameno.",
+      "bump": "Plano."
     },
     {
       "id": "nara",
@@ -179,9 +179,9 @@
       "lng": 135.8398,
       "region": "Kansai",
       "kind": "daytrip",
-      "blurb": "Deer park, Todai-ji Great Buddha, Kasuga lanterns.",
-      "winter": "Mild, crowds lighter.",
-      "bump": "Flat park paths."
+      "blurb": "Parque dos cervos, Grande Buda do Todai-ji, lanternas de Kasuga.",
+      "winter": "Ameno, com menos gente.",
+      "bump": "Caminhos planos no parque."
     },
     {
       "id": "koyasan",
@@ -191,9 +191,9 @@
       "lng": 135.586,
       "region": "Wakayama",
       "kind": "temple",
-      "blurb": "Mountain monastery town. Temple lodging, morning chanting and fire ritual, Okunoin forest cemetery.",
-      "winter": "Below freezing, snow possible.",
-      "bump": "Cold corridors. Pick a temple with heated rooms."
+      "blurb": "Cidade-mosteiro na montanha. Hospedagem em templo, cânticos matinais e ritual do fogo, cemitério-floresta de Okunoin.",
+      "winter": "Abaixo de zero, pode nevar.",
+      "bump": "Corredores frios. Escolha um templo com quartos aquecidos."
     },
     {
       "id": "osaka",
@@ -203,9 +203,9 @@
       "lng": 135.5013,
       "region": "Kansai",
       "kind": "city",
-      "blurb": "Dotonbori, Kuromon market, Shinsekai kushikatsu, base for Nara and Himeji.",
-      "winter": "Mild, 3–10°C.",
-      "bump": "Easy base near KIX for the flight home."
+      "blurb": "Dotonbori, mercado Kuromon, kushikatsu em Shinsekai, base para Nara e Himeji.",
+      "winter": "Ameno, 3–10°C.",
+      "bump": "Base tranquila perto do KIX para o voo de volta."
     },
     {
       "id": "himeji",
@@ -215,9 +215,9 @@
       "lng": 134.6939,
       "region": "Hyogo",
       "kind": "daytrip",
-      "blurb": "Japan's best-preserved original castle.",
-      "winter": "Mild.",
-      "bump": "Steep stairs inside; grounds are easy."
+      "blurb": "O castelo original mais bem conservado do Japão.",
+      "winter": "Ameno.",
+      "bump": "Escadas íngremes por dentro; os jardins são tranquilos."
     },
     {
       "id": "hiroshima",
@@ -227,9 +227,9 @@
       "lng": 132.4536,
       "region": "Chugoku",
       "kind": "city",
-      "blurb": "Peace Memorial Park and museum, okonomiyaki.",
-      "winter": "Mild.",
-      "bump": "Flat."
+      "blurb": "Parque e Museu Memorial da Paz, okonomiyaki.",
+      "winter": "Ameno.",
+      "bump": "Plano."
     },
     {
       "id": "miyajima",
@@ -239,9 +239,9 @@
       "lng": 132.3198,
       "region": "Hiroshima",
       "kind": "ryokan",
-      "blurb": "Island shrine with the floating torii. Quiet at night after day visitors leave. Oyster season.",
-      "winter": "Mild, 2–10°C.",
-      "bump": "Flat waterfront; the mountain ropeway is optional."
+      "blurb": "Santuário na ilha com o torii flutuante. Tranquila à noite, depois que os visitantes do dia vão embora. Temporada de ostras.",
+      "winter": "Ameno, 2–10°C.",
+      "bump": "Orla plana; o teleférico da montanha é opcional."
     },
     {
       "id": "yufuin",
@@ -251,9 +251,9 @@
       "lng": 131.369,
       "region": "Oita (Kyushu)",
       "kind": "ryokan",
-      "blurb": "Onsen town known for ryokan with private open-air baths. Morning mist on Kinrin Lake.",
-      "winter": "Cold mornings, 0–10°C.",
-      "bump": "Private baths are standard here."
+      "blurb": "Cidade de onsen famosa pelos ryokan com banho privativo ao ar livre. Névoa da manhã no Lago Kinrin.",
+      "winter": "Manhãs frias, 0–10°C.",
+      "bump": "Banho privativo é o padrão por aqui."
     },
     {
       "id": "beppu",
@@ -263,9 +263,9 @@
       "lng": 131.4734,
       "region": "Oita (Kyushu)",
       "kind": "daytrip",
-      "blurb": "Steaming hot-spring 'hells' and steam-cooked food.",
-      "winter": "Steam is most dramatic in cold air.",
-      "bump": "Easy, drivable between sites."
+      "blurb": "Os 'infernos' fumegantes das fontes termais e comida cozida no vapor.",
+      "winter": "O vapor fica mais impressionante no ar frio.",
+      "bump": "Tranquilo, dá para ir de carro entre os pontos."
     },
     {
       "id": "nagasaki",
@@ -275,9 +275,9 @@
       "lng": 129.8687,
       "region": "Kyushu",
       "kind": "city",
-      "blurb": "Dejima, Glover Garden, Peace Park, Inasayama night view, champon and castella.",
-      "winter": "Mild.",
-      "bump": "Hilly; Glover Garden has outdoor escalators."
+      "blurb": "Dejima, Glover Garden, Parque da Paz, vista noturna do Inasayama, champon e castella.",
+      "winter": "Ameno.",
+      "bump": "Cidade de morros; o Glover Garden tem escadas rolantes ao ar livre."
     },
     {
       "id": "fukuoka",
@@ -287,9 +287,9 @@
       "lng": 130.4017,
       "region": "Kyushu",
       "kind": "city",
-      "blurb": "Hakata ramen, yatai stalls, motsunabe. Fly home from FUK.",
-      "winter": "Mild.",
-      "bump": "Flat, compact."
+      "blurb": "Ramen de Hakata, barraquinhas yatai, motsunabe. Voo de volta saindo do FUK.",
+      "winter": "Ameno.",
+      "bump": "Plana e compacta."
     },
     {
       "id": "dazaifu",
@@ -299,9 +299,9 @@
       "lng": 130.5349,
       "region": "Kyushu",
       "kind": "daytrip",
-      "blurb": "Major shrine with umegae mochi street.",
-      "winter": "Very crowded 1–3 Jan.",
-      "bump": "Flat."
+      "blurb": "Grande santuário com a rua do umegae mochi.",
+      "winter": "Muito cheio de 1 a 3 jan.",
+      "bump": "Plano."
     },
     {
       "id": "yanagawa",
@@ -311,9 +311,9 @@
       "lng": 130.4059,
       "region": "Kyushu",
       "kind": "daytrip",
-      "blurb": "Canal boat rides with a heated kotatsu table in winter; steamed eel.",
-      "winter": "Kotatsu boats run in winter.",
-      "bump": "Seated, easy."
+      "blurb": "Passeios de barco pelos canais com mesa kotatsu aquecida no inverno; enguia no vapor.",
+      "winter": "Os barcos com kotatsu funcionam no inverno.",
+      "bump": "Sentados, tranquilo."
     },
     {
       "id": "tsumago",
@@ -323,9 +323,9 @@
       "lng": 137.5957,
       "region": "Nagano (Kiso)",
       "kind": "village",
-      "blurb": "Edo-period post town on the Nakasendo. 8 km walk from Magome.",
-      "winter": "Cold, quiet, occasional snow.",
-      "bump": "Van meets walkers; she can skip the walk."
+      "blurb": "Cidade-posto do período Edo na Nakasendo. Caminhada de 8 km desde Magome.",
+      "winter": "Frio, silencioso, às vezes neva.",
+      "bump": "A van encontra quem caminha; ela pode pular a caminhada."
     },
     {
       "id": "ise",
@@ -335,9 +335,9 @@
       "lng": 136.7255,
       "region": "Mie",
       "kind": "city",
-      "blurb": "Ise Jingu, Japan's most sacred shrine, and the Oharai-machi pilgrim street.",
-      "winter": "Huge crowds 1–3 Jan; late Dec is calmer.",
-      "bump": "Flat gravel paths."
+      "blurb": "Ise Jingu, o santuário mais sagrado do Japão, e a rua de peregrinos Oharai-machi.",
+      "winter": "Multidões enormes de 1 a 3 jan; o fim de dezembro é mais calmo.",
+      "bump": "Caminhos planos de cascalho."
     },
     {
       "id": "kawayu",
@@ -347,9 +347,9 @@
       "lng": 135.777,
       "region": "Wakayama",
       "kind": "ryokan",
-      "blurb": "Sennin-buro river bath (Dec–Feb), Kumano Hongu Taisha, Kumano Kodo walks, Nachi Falls.",
-      "winter": "Cold; the river bath only runs in winter.",
-      "bump": "Shallow bath; walk only the last stretch of the Kodo."
+      "blurb": "Banho de rio Sennin-buro (dez–fev), Kumano Hongu Taisha, caminhadas no Kumano Kodo, Cachoeira Nachi.",
+      "winter": "Frio; o banho de rio só funciona no inverno.",
+      "bump": "Banho raso; caminhe só o último trecho do Kodo."
     },
     {
       "id": "kinosaki",
@@ -359,9 +359,9 @@
       "lng": 134.8082,
       "region": "Hyogo",
       "kind": "module",
-      "blurb": "Canal onsen town with seven public baths; snow crab season. Alternative New Year base.",
-      "winter": "Snowy, crab season.",
-      "bump": "Most inns have private baths."
+      "blurb": "Cidade de onsen à beira do canal, com sete banhos públicos; temporada do caranguejo-das-neves. Alternativa de base para o Ano-Novo.",
+      "winter": "Com neve, temporada do caranguejo.",
+      "bump": "A maioria das pousadas tem banho privativo."
     },
     {
       "id": "sapporo",
@@ -371,9 +371,9 @@
       "lng": 140.9947,
       "region": "Hokkaido",
       "kind": "module",
-      "blurb": "Deep snow, seafood markets, miso ramen, Otaru canal.",
-      "winter": "-7 to 0°C, heavy snow.",
-      "bump": "Icy pavements: highest fall risk."
+      "blurb": "Neve funda, mercados de frutos do mar, ramen de missô, canal de Otaru.",
+      "winter": "De -7 a 0°C, muita neve.",
+      "bump": "Calçadas com gelo: o maior risco de queda."
     },
     {
       "id": "ginzan",
@@ -383,9 +383,9 @@
       "lng": 140.5306,
       "region": "Yamagata",
       "kind": "module",
-      "blurb": "Wooden onsen inns on a gas-lamp street under snow.",
-      "winter": "Evening visitor access is controlled.",
-      "bump": "Hard to book; stairs in old inns."
+      "blurb": "Pousadas de madeira com onsen numa rua de lampiões a gás sob a neve.",
+      "winter": "O acesso de visitantes à noite é controlado.",
+      "bump": "Difícil de reservar; escadas nas pousadas antigas."
     },
     {
       "id": "nikko",
@@ -395,9 +395,9 @@
       "lng": 139.5988,
       "region": "Tochigi",
       "kind": "module",
-      "blurb": "Toshogu shrine in cedar forest, yuba dishes, Kegon Falls.",
-      "winter": "Cold, sometimes snowy.",
-      "bump": "Many stone stairs at the shrine."
+      "blurb": "Santuário Toshogu em meio a uma floresta de cedros, pratos de yuba, Cachoeira Kegon.",
+      "winter": "Frio, às vezes com neve.",
+      "bump": "Muitas escadas de pedra no santuário."
     },
     {
       "id": "naoshima",
@@ -407,16 +407,16 @@
       "lng": 133.9955,
       "region": "Kagawa",
       "kind": "module",
-      "blurb": "Art island with Tadao Ando museums.",
-      "winter": "Check New Year museum closures.",
-      "bump": "Easy by bus."
+      "blurb": "Ilha da arte com museus de Tadao Ando.",
+      "winter": "Confira os fechamentos dos museus no Ano-Novo.",
+      "bump": "Tranquilo de ônibus."
     }
   ],
   "routes": [
     {
       "id": "A",
-      "name": "Grand Loop",
-      "title": "Fuji, the Alps and a Kyoto New Year",
+      "name": "Grande Volta",
+      "title": "Fuji, os Alpes e um Ano-Novo em Kyoto",
       "color": "#2f5d9e",
       "exit": "KIX",
       "stays": [
@@ -432,7 +432,7 @@
           "place": "kawaguchiko",
           "from": "2026-12-24",
           "nights": 2,
-          "leg": "Fuji Excursion ltd express from Shinjuku, ~2 h"
+          "leg": "Expresso limitado Fuji Excursion saindo de Shinjuku, ~2 h"
         },
         {
           "place": "takayama",
@@ -441,7 +441,7 @@
           "via": [
             "matsumoto"
           ],
-          "leg": "Train to Matsumoto + bus, ~5–6 h"
+          "leg": "Trem até Matsumoto + ônibus, ~5–6 h"
         },
         {
           "place": "kanazawa",
@@ -450,7 +450,7 @@
           "via": [
             "shirakawago"
           ],
-          "leg": "Nohi bus with 2–3 h stop in Shirakawa-go"
+          "leg": "Ônibus Nohi com parada de 2–3 h em Shirakawa-go"
         },
         {
           "place": "kyoto",
@@ -459,13 +459,13 @@
           "daytrips": [
             "uji"
           ],
-          "leg": "Hokuriku shinkansen + Thunderbird via Tsuruga, ~2 h 15 (peak day)"
+          "leg": "Hokuriku shinkansen + Thunderbird via Tsuruga, ~2 h 15 (dia de pico)"
         },
         {
           "place": "koyasan",
           "from": "2027-01-04",
           "nights": 1,
-          "leg": "Nankai line + cable car, ~3 h"
+          "leg": "Linha Nankai + funicular, ~3 h"
         },
         {
           "place": "osaka",
@@ -481,8 +481,8 @@
     },
     {
       "id": "B",
-      "name": "Snow Country",
-      "title": "Snow monkeys, onsen towns and a mountain New Year",
+      "name": "País da Neve",
+      "title": "Macacos-da-neve, cidades de onsen e um Ano-Novo nas montanhas",
       "color": "#3f7d5c",
       "exit": "KIX",
       "stays": [
@@ -505,31 +505,31 @@
             "jigokudani",
             "nagano"
           ],
-          "leg": "Via Tokyo + shinkansen to Nagano + local train, ~4–5 h"
+          "leg": "Via Tokyo + shinkansen até Nagano + trem local, ~4–5 h"
         },
         {
           "place": "kanazawa",
           "from": "2026-12-27",
           "nights": 2,
-          "leg": "Nagano to Kanazawa shinkansen, ~1 h"
+          "leg": "Shinkansen de Nagano a Kanazawa, ~1 h"
         },
         {
           "place": "shirakawago",
           "from": "2026-12-29",
           "nights": 1,
-          "leg": "Bus, ~75 min"
+          "leg": "Ônibus, ~75 min"
         },
         {
           "place": "takayama",
           "from": "2026-12-30",
           "nights": 2,
-          "leg": "Bus, ~50 min"
+          "leg": "Ônibus, ~50 min"
         },
         {
           "place": "kyoto",
           "from": "2027-01-01",
           "nights": 4,
-          "leg": "Hida express + shinkansen via Nagoya, ~3.5 h"
+          "leg": "Expresso Hida + shinkansen via Nagoya, ~3.5 h"
         },
         {
           "place": "osaka",
@@ -545,8 +545,8 @@
     },
     {
       "id": "C",
-      "name": "Southwest",
-      "title": "Hakone, Hiroshima and a Kyushu onsen New Year",
+      "name": "Sudoeste",
+      "title": "Hakone, Hiroshima e um Ano-Novo de onsen em Kyushu",
       "color": "#b5432d",
       "exit": "FUK",
       "stays": [
@@ -559,7 +559,7 @@
           "place": "hakone",
           "from": "2026-12-23",
           "nights": 2,
-          "leg": "Romancecar from Shinjuku, ~85 min"
+          "leg": "Romancecar saindo de Shinjuku, ~85 min"
         },
         {
           "place": "kyoto",
@@ -568,7 +568,7 @@
           "daytrips": [
             "nara"
           ],
-          "leg": "Shinkansen from Odawara, ~2 h"
+          "leg": "Shinkansen saindo de Odawara, ~2 h"
         },
         {
           "place": "miyajima",
@@ -577,7 +577,7 @@
           "daytrips": [
             "hiroshima"
           ],
-          "leg": "Shinkansen + ferry, ~2 h (peak day)"
+          "leg": "Shinkansen + balsa, ~2 h (dia de pico)"
         },
         {
           "place": "yufuin",
@@ -586,13 +586,13 @@
           "daytrips": [
             "beppu"
           ],
-          "leg": "Shinkansen to Hakata + Yufuin no Mori, ~4 h"
+          "leg": "Shinkansen até Hakata + Yufuin no Mori, ~4 h"
         },
         {
           "place": "nagasaki",
           "from": "2027-01-02",
           "nights": 3,
-          "leg": "Via Hakata + Nishi-Kyushu shinkansen, ~4 h"
+          "leg": "Via Hakata + shinkansen Nishi-Kyushu, ~4 h"
         },
         {
           "place": "fukuoka",
@@ -608,8 +608,8 @@
     },
     {
       "id": "D",
-      "name": "Sacred Mountains",
-      "title": "Old roads, Ise and a monastery New Year",
+      "name": "Montanhas Sagradas",
+      "title": "Estradas antigas, Ise e um Ano-Novo no mosteiro",
       "color": "#9c7726",
       "exit": "KIX",
       "stays": [
@@ -625,37 +625,37 @@
           "place": "kawaguchiko",
           "from": "2026-12-23",
           "nights": 2,
-          "leg": "Fuji Excursion, ~2 h; pick up van 25 Dec"
+          "leg": "Fuji Excursion, ~2 h; retirada da van em 25 dez"
         },
         {
           "place": "tsumago",
           "from": "2026-12-25",
           "nights": 1,
-          "leg": "Drive ~3 h"
+          "leg": "De carro, ~3 h"
         },
         {
           "place": "ise",
           "from": "2026-12-26",
           "nights": 2,
-          "leg": "Drive ~3.5 h via Nagoya"
+          "leg": "De carro, ~3.5 h via Nagoya"
         },
         {
           "place": "kawayu",
           "from": "2026-12-28",
           "nights": 3,
-          "leg": "Drive ~3 h"
+          "leg": "De carro, ~3 h"
         },
         {
           "place": "koyasan",
           "from": "2026-12-31",
           "nights": 2,
-          "leg": "Drive ~4 h, winter tyres"
+          "leg": "De carro, ~4 h, pneus de inverno"
         },
         {
           "place": "kyoto",
           "from": "2027-01-02",
           "nights": 4,
-          "leg": "Drive ~2.5 h, return van"
+          "leg": "De carro, ~2.5 h, devolução da van"
         },
         {
           "place": "osaka",

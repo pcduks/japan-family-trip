@@ -1,21 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Offline · Six Across Japan</title>
+<title>Sem internet · Seis pelo Japão</title>
 <style>
-  :root { color-scheme: light dark; --paper:#f3f5f6; --ink:#1c2331; --muted:#535c6e; }
-  @media (prefers-color-scheme: dark) { :root { --paper:#11151c; --ink:#e5e8ee; --muted:#a3acbb; } }
-  body { margin:0; min-height:100dvh; display:grid; place-content:center; gap:12px; padding:24px; background:var(--paper); color:var(--ink); font:17px/1.5 system-ui, sans-serif; }
-  h1 { font-family: Georgia, serif; margin:0; }
+  :root { color-scheme: light dark; --paper:#f4efe4; --ink:#1e2229; --muted:#625d52; --red:#bb3b27; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#12161e; --ink:#ece5d6; --muted:#a79f8e; --red:#ec8a72; } }
+  body { margin:0; min-height:100dvh; display:grid; place-content:center; gap:14px; padding:24px; background:var(--paper); color:var(--ink); font:17px/1.5 system-ui, sans-serif; }
+  .eyebrow { font:12px/1 ui-monospace, monospace; letter-spacing:.2em; text-transform:uppercase; color:var(--red); margin:0; }
+  h1 { font:400 2.4rem/1.05 Georgia, serif; margin:0; }
   p { margin:0; color:var(--muted); max-width:34ch; }
   a { color:inherit; }
 </style>
 </head>
 <body>
-  <h1>You're offline</h1>
-  <p>This page hasn't been saved on this phone yet. Pages you opened while online (Today, Days, Bookings, Food) still work.</p>
-  <p><a href="/today">Open Today</a> · <a href="/plan/days">Days</a> · <a href="/plan/bookings">Bookings</a></p>
+  <p class="eyebrow">Seis pelo Japão</p>
+  <h1>Sem internet</h1>
+  <p>Esta página ainda não foi salva neste celular. As que você abriu com internet continuam funcionando, e as anotações ficam guardadas até voltar o sinal.</p>
+  <p><a href="/today">Hoje</a> · <a href="/anotar">Anotar</a> · <a href="/socorro">Socorro</a> · <a href="/viagem">Viagem</a></p>
 </body>
 </html>

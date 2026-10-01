@@ -41,10 +41,10 @@ export function RouteMap(props: MapModel) {
       </div>
       <div className="pointer-events-none absolute bottom-2 left-2 flex flex-wrap gap-3 rounded-md border border-line bg-card/90 px-2.5 py-1 text-xs text-muted">
         <span className="flex items-center gap-1.5">
-          <span className="inline-block size-3 rounded-full" style={{ background: props.color }} /> Where you sleep
+          <span className="inline-block size-3 rounded-full" style={{ background: props.color }} /> Onde dormimos
         </span>
         <span className="flex items-center gap-1.5">
-          <span className="inline-block size-3 rounded-full border-2" style={{ borderColor: props.color }} /> Day trip or stop
+          <span className="inline-block size-3 rounded-full border-2" style={{ borderColor: props.color }} /> Bate-volta ou parada
         </span>
       </div>
     </div>
@@ -168,7 +168,7 @@ function SketchMap(m: MapModel) {
   }, [focus]);
 
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} className="size-full" role="group" aria-label={`${m.label} (sketch map, add a Google Maps key for the live map)`}>
+    <svg viewBox={`0 0 ${W} ${H}`} className="size-full" role="group" aria-label={`${m.label} (mapa esboçado; com a chave do Google Maps vira o mapa real)`}>
       {m.lines.map((l) => (
         <polyline
           key={l.code}

@@ -5,7 +5,7 @@ import { guideFor } from "@/lib/guides";
 export async function generateMetadata({ params }: PageProps<"/guides/[city]">) {
   const { city } = await params;
   const g = guideFor(city);
-  return { title: g ? `${g.mapSuffix} for Six` : "Guide" };
+  return { title: g ? `Guia de ${g.mapSuffix} · Seis pelo Japão` : "Guia · Seis pelo Japão" };
 }
 
 export default async function GuidePage({ params }: PageProps<"/guides/[city]">) {

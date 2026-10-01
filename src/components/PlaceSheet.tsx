@@ -8,6 +8,8 @@ import { deleteRow, insertRow, useTable } from "@/lib/tables";
 import { directionsUrl, mapsSearchUrl, youtubeSearchUrl } from "@/lib/links";
 import { formatDay, placeInRoute, previousStop } from "@/lib/trip";
 import type { GooglePhoto, MediaItem, Place, PlaceDetails, Route } from "@/lib/types";
+import { placeStamp } from "@/lib/stamps";
+import { EkiStamp } from "./EkiStamp";
 import { useStore } from "./providers";
 import { photoSrc, usePlaceDetails } from "./usePlaceDetails";
 
@@ -38,7 +40,7 @@ export function PlaceSheet({
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 z-40 bg-black/45" />
         <Dialog.Content
-          className="fixed inset-x-0 bottom-0 z-50 flex max-h-[92dvh] flex-col rounded-t-2xl border border-line bg-paper shadow-2xl sm:inset-y-0 sm:right-0 sm:left-auto sm:max-h-none sm:w-[30rem] sm:rounded-none sm:rounded-l-2xl"
+          className="fixed inset-x-0 bottom-0 z-50 flex max-h-[92dvh] flex-col rounded-t-3xl border border-rule bg-paper shadow-2xl sm:inset-y-0 sm:right-0 sm:left-auto sm:max-h-none sm:w-[30rem] sm:rounded-none sm:rounded-l-2xl"
           aria-describedby={undefined}
         >
           {place ? <SheetBody place={place} route={route} /> : null}
@@ -67,32 +69,34 @@ function SheetBody({ place, route }: { place: Place; route: Route | null }) {
   const board =
     stayIndex >= 0 && route?.isCandidate ? boardStop(route.code, stayIndex) : place.kind !== "food" ? boardStopForPlace(place.slug, place.name) : null;
   const guide = guideFor(place.slug);
+  const stamp = placeStamp(place.slug, place.kind);
 
   return (
     <>
-      <div className="flex items-start justify-between gap-3 border-b border-line px-4 pt-3 pb-3">
+      <div className="flex items-start justify-between gap-3 border-b border-rule px-5 pt-3 pb-3">
         <div className="min-w-0">
-          <div className="mx-auto mb-2 h-1 w-10 rounded-full bg-line sm:hidden" aria-hidden="true" />
+          <div className="mx-auto mb-2 h-1 w-10 rounded-full bg-rule sm:hidden" aria-hidden="true" />
           <p className="eyebrow">
-            {isFood ? `${place.category ?? "Food"}${place.area ? " · " + place.area : ""}` : `${place.region} · ${kindLabel(place.kind)}`}
+            {isFood ? `${place.category ?? "Comida"}${place.area ? " · " + place.area : ""}` : `${place.region} · ${kindLabel(place.kind)}`}
           </p>
-          <Dialog.Title className="text-2xl font-extrabold">{place.name}</Dialog.Title>
+          <Dialog.Title className="text-[2rem] leading-tight">{place.name}</Dialog.Title>
           {google?.rating ? (
             <p className="mt-0.5 text-sm">
               <span className="font-bold">★ {google.rating.toFixed(1)}</span>{" "}
-              <span className="text-muted">({google.userRatingCount?.toLocaleString("en-US")} Google reviews)</span>
+              <span className="text-muted">({google.userRatingCount?.toLocaleString("pt-BR")} avaliações no Google)</span>
             </p>
           ) : null}
         </div>
-        <Dialog.Close className="btn btn-sm shrink-0" aria-label="Close">
+        <EkiStamp motif={stamp.motif} ink={stamp.ink} size={58} rotate={-8} seed={place.slug.length} label="" className="ml-auto shrink-0" />
+        <Dialog.Close className="btn btn-sm shrink-0" aria-label="Fechar">
           ✕
         </Dialog.Close>
       </div>
 
-      <div className="grid gap-5 overflow-y-auto overscroll-contain px-4 pt-4 pb-[max(1.5rem,env(safe-area-inset-bottom))]">
+      <div className="grid gap-5 overflow-y-auto overscroll-contain px-5 pt-4 pb-[max(1.5rem,env(safe-area-inset-bottom))]">
         <Photos place={place} details={details} photos={photos} />
 
-        {place.closedNote ? <p className="rounded-lg border border-danger p-3 text-sm text-danger">{place.closedNote}</p> : null}
+        {place.closedNote ? <p className="rounded-xl border border-danger p-3 text-sm text-danger">{place.closedNote}</p> : null}
         {place.blurb ? <p className="text-[1.05rem]">{place.blurb}</p> : null}
 
         <div className="grid grid-cols-2 gap-2">
@@ -103,38 +107,38 @@ function SheetBody({ place, route }: { place: Place; route: Route | null }) {
             className="btn col-span-2"
             style={hearted ? { background: "var(--accent)", borderColor: "var(--accent)", color: "var(--accent-ink)" } : undefined}
           >
-            {hearted ? "♥ Hearted" : "♡ Heart this place"}
+            {hearted ? "♥ Quero ir" : "♡ Quero ir"}
             {heartCount ? <span className="font-normal opacity-80">· {heartCount}</span> : null}
           </button>
           <a className="btn" href={google?.googleMapsUri ?? mapsSearchUrl(withGoogleId)} target="_blank" rel="noreferrer">
-            Open in Google Maps
+            Abrir no Google Maps
           </a>
           {prev ? (
             <a className="btn" href={directionsUrl(prev, withGoogleId)} target="_blank" rel="noreferrer">
-              Directions from {prev.name.replace(/ \(.*\)$/, "")}
+              Rota desde {prev.name.replace(/ \(.*\)$/, "")}
             </a>
           ) : (
             <a className="btn" href={youtubeSearchUrl(`${place.name} Japan winter`)} target="_blank" rel="noreferrer">
-              More on YouTube
+              Mais no YouTube
             </a>
           )}
         </div>
 
-        <section className="simple-hide grid gap-2" aria-label="Our notes">
-          <h3 className="text-lg font-extrabold">Our notes</h3>
+        <section className="simple-hide grid gap-2" aria-label="Nossas notas">
+          <h3 className="text-[1.4rem]">Nossas notas</h3>
           <dl className="grid gap-2 text-sm">
             {isFood ? (
               <>
-                {place.note ? <Fact k="Tip">{place.note}</Fact> : null}
-                {place.listRating ? <Fact k="Saved list">★ {place.listRating} when we saved it</Fact> : null}
-                {!place.area ? <Fact k="Area">Check the exact branch on the map</Fact> : null}
+                {place.note ? <Fact k="Dica">{place.note}</Fact> : null}
+                {place.listRating ? <Fact k="Na lista">★ {place.listRating} quando salvamos</Fact> : null}
+                {!place.area ? <Fact k="Área">Confira a unidade certa no mapa</Fact> : null}
               </>
             ) : (
               <>
-                {place.winter ? <Fact k="Winter">{place.winter}</Fact> : null}
-                {place.bump ? <Fact k="Bump">{place.bump}</Fact> : null}
-                {stay?.legNote ? <Fact k="Getting there">{stay.legNote}</Fact> : null}
-                <Fact k="Dates">
+                {place.winter ? <Fact k="Inverno">{place.winter}</Fact> : null}
+                {place.bump ? <Fact k="Para ela">{place.bump}</Fact> : null}
+                {stay?.legNote ? <Fact k="Como chegar">{stay.legNote}</Fact> : null}
+                <Fact k="Datas">
                   <RouteDates place={place} routes={trip.routes} modules={trip.modules} />
                 </Fact>
               </>
@@ -143,10 +147,10 @@ function SheetBody({ place, route }: { place: Place; route: Route | null }) {
         </section>
 
         {videos.length ? (
-          <section className="grid gap-3" aria-label="Videos">
-            <h3 className="text-lg font-extrabold">Videos</h3>
+          <section className="grid gap-3" aria-label="Vídeos">
+            <h3 className="text-[1.4rem]">Vídeos</h3>
             <details className="simple-only">
-              <summary className="btn btn-sm w-full">Show {videos.length} videos</summary>
+              <summary className="btn btn-sm w-full">Ver {videos.length} vídeos</summary>
               <VideoList videos={videos} />
             </details>
             <div className="simple-hide">
@@ -156,8 +160,8 @@ function SheetBody({ place, route }: { place: Place; route: Route | null }) {
         ) : null}
 
         {board ? (
-          <section className="simple-hide grid gap-2" aria-label="Ideas">
-            <h3 className="text-lg font-extrabold">Ideas while you&apos;re here</h3>
+          <section className="simple-hide grid gap-2" aria-label="Ideias">
+            <h3 className="text-[1.4rem]">Ideias para aproveitar</h3>
             <ul className="list-disc space-y-1 pl-5 text-sm">
               {board.highlights.map((h) => (
                 <li key={h}>{h}</li>
@@ -165,19 +169,19 @@ function SheetBody({ place, route }: { place: Place; route: Route | null }) {
             </ul>
             {board.eat ? (
               <p className="text-sm">
-                <b>Eat:</b> {board.eat}
+                <b>Comer:</b> {board.eat}
               </p>
             ) : null}
             {board.bump ? (
               <p className="text-sm">
-                <b>For her:</b> {board.bump}
+                <b className="text-plum">Para ela:</b> {board.bump}
               </p>
             ) : null}
           </section>
         ) : null}
         {guide ? (
           <Link href={`/guides/${guide.city}`} className="btn">
-            Open our {guide.mapSuffix} guide: day plans and neighbourhoods
+            Nosso guia de {guide.mapSuffix}: roteiros e bairros
           </Link>
         ) : null}
 
@@ -193,11 +197,11 @@ function VideoList({ videos }: { videos: MediaItem[] }) {
   return (
     <div className="mt-2 grid gap-3">
       {videos.map((v) => (
-        <div key={v.id} className="overflow-hidden rounded-lg border border-line bg-black">
+        <div key={v.id} className="overflow-hidden rounded-xl border border-rule bg-black">
           <iframe
             className="aspect-video w-full"
             src={`https://www.youtube.com/embed/${encodeURIComponent(v.sourceRef)}?rel=0&playsinline=1`}
-            title={v.title ?? "YouTube video"}
+            title={v.title ?? "Vídeo do YouTube"}
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
@@ -211,30 +215,32 @@ function VideoList({ videos }: { videos: MediaItem[] }) {
 
 function Photos({ place, details, photos }: { place: Place; details: ReturnType<typeof usePlaceDetails>; photos: GooglePhoto[] }) {
   if (details.status === "loading" || details.status === "idle")
-    return <div className="aspect-[4/3] w-full animate-pulse rounded-xl bg-soft" aria-label="Loading photos" />;
+    return <div className="aspect-[4/3] w-full animate-pulse rounded-xl bg-soft" aria-label="Carregando fotos" />;
+  // No Google key yet: stay quiet instead of showing a config error to the family.
+  if (details.status === "error" && /not set|not configured/i.test(details.error)) return null;
   if (details.status === "error")
     return (
-      <p className="rounded-lg border border-line bg-soft p-3 text-sm text-muted">
-        Photos and reviews aren&apos;t available right now ({details.error}).
+      <p className="rounded-xl border border-rule bg-soft p-3 text-sm text-muted">
+        Fotos e avaliações não estão disponíveis agora ({details.error}).
       </p>
     );
   if (!photos.length) return null;
   return (
     <figure className="-mx-4 grid gap-1">
-      <ul className="no-scrollbar flex snap-x snap-mandatory gap-2 overflow-x-auto px-4" aria-label={`Photos of ${place.name}`}>
+      <ul className="no-scrollbar flex snap-x snap-mandatory gap-2 overflow-x-auto px-4" aria-label={`Fotos de ${place.name}`}>
         {photos.map((p, i) => (
           <li key={p.name} className="w-[88%] shrink-0 snap-center sm:w-[92%]">
             {/* eslint-disable-next-line @next/next/no-img-element -- redirects to Google's photo host */}
             <img
               src={photoSrc(p.name, 900)}
-              alt={i === 0 && place.blurb ? `${place.name}: ${place.blurb}` : `${place.name}, photo ${i + 1} of ${photos.length}`}
+              alt={i === 0 && place.blurb ? `${place.name}: ${place.blurb}` : `${place.name}, foto ${i + 1} de ${photos.length}`}
               loading={i < 2 ? "eager" : "lazy"}
               className="aspect-[4/3] w-full rounded-xl bg-soft object-cover"
               width={900}
               height={675}
             />
             <figcaption className="mt-1 truncate text-xs text-muted">
-              Photo:{" "}
+              Foto:{" "}
               {p.authorAttributions.map((a, k) => (
                 <span key={k}>
                   {k ? ", " : ""}
@@ -260,13 +266,13 @@ function Reviews({ details }: { details: ReturnType<typeof usePlaceDetails> }) {
   if (details.status !== "ok" || !details.data.reviews.length) return null;
   const d: PlaceDetails = details.data;
   return (
-    <section className="grid gap-3" aria-label="Google reviews">
+    <section className="grid gap-3" aria-label="Avaliações do Google">
       <details className="simple-only">
-        <summary className="btn btn-sm w-full">Show reviews</summary>
+        <summary className="btn btn-sm w-full">Ver avaliações</summary>
         <ReviewList d={d} />
       </details>
       <div className="simple-hide">
-        <h3 className="text-lg font-extrabold">Recent reviews</h3>
+        <h3 className="text-[1.4rem]">Avaliações recentes</h3>
         <ReviewList d={d} />
       </div>
     </section>
@@ -291,7 +297,7 @@ function ReviewList({ d }: { d: PlaceDetails }) {
               ) : (
                 <span className="font-bold">{r.author.displayName}</span>
               )}
-              <span className="ml-auto text-muted" aria-label={`${r.rating} out of 5 stars`}>
+              <span className="ml-auto text-muted" aria-label={`${r.rating} de 5 estrelas`}>
                 {"★".repeat(Math.round(r.rating))}
               </span>
             </div>
@@ -299,17 +305,17 @@ function ReviewList({ d }: { d: PlaceDetails }) {
             <p className="whitespace-pre-line">{r.text}</p>
             {r.googleMapsUri ? (
               <a href={r.googleMapsUri} target="_blank" rel="noreferrer" className="text-xs underline">
-                View on Google Maps
+                Ver no Google Maps
               </a>
             ) : null}
           </li>
         ))}
       </ul>
       <p className="mt-2 text-xs text-muted">
-        Reviews from Google Maps.{" "}
+        Avaliações do Google Maps (em inglês).{" "}
         {d.googleMapsUri ? (
           <a href={d.googleMapsUri} target="_blank" rel="noreferrer" className="underline">
-            See all {d.userRatingCount?.toLocaleString("en-US")} reviews
+            Ver todas as {d.userRatingCount?.toLocaleString("pt-BR")} avaliações
           </a>
         ) : null}
       </p>
@@ -331,13 +337,13 @@ function RouteDates({ place, routes, modules }: { place: Place; routes: Route[];
     .filter((r) => r.isCandidate)
     .flatMap((r) =>
       placeInRoute(r, place.slug).map((x) => {
-        const what = x.role === "base" ? "stay" : x.role === "via" ? "stop on the way" : "day trip";
+        const what = x.role === "base" ? "base" : x.role === "via" ? "parada no caminho" : "bate-volta";
         const when =
           x.role === "via" ? formatDay(x.from) : `${formatDay(x.from)} – ${formatDay(x.to)}`;
         return `${r.code}: ${what}, ${when}`;
       }),
     );
-  if (!rows.length) return <>{modules.includes(place.slug) ? "Optional add-on; not in any route yet" : "Not in any route"}</>;
+  if (!rows.length) return <>{modules.includes(place.slug) ? "Extra opcional; ainda fora das rotas" : "Fora das rotas"}</>;
   return (
     <ul>
       {rows.map((r) => (
@@ -350,14 +356,14 @@ function RouteDates({ place, routes, modules }: { place: Place; routes: Route[];
 function kindLabel(k: Place["kind"]): string {
   return (
     {
-      city: "City",
-      daytrip: "Day trip",
-      ryokan: "Ryokan stay",
-      stopover: "Stop on the way",
-      village: "Village",
-      temple: "Temple stay",
-      module: "Optional add-on",
-      food: "Food",
+      city: "Cidade",
+      daytrip: "Bate-volta",
+      ryokan: "Noite em ryokan",
+      stopover: "Parada no caminho",
+      village: "Vilarejo",
+      temple: "Noite em templo",
+      module: "Extra opcional",
+      food: "Comida",
     } as const
   )[k];
 }
@@ -372,12 +378,12 @@ function Tips({ slug }: { slug: string }) {
   const tips = rows.filter((t) => t.place_slug === slug).sort((a, b) => (b.created_at ?? "").localeCompare(a.created_at ?? ""));
   const names = new Map(trip.travellers.map((t) => [t.id, t.name]));
   return (
-    <section className="simple-hide grid gap-2" aria-label="Tips">
+    <section className="simple-hide grid gap-2" aria-label="Dicas">
       <div className="flex items-baseline justify-between">
-        <h3 className="text-lg font-extrabold">Tips{tips.length ? ` (${tips.length})` : ""}</h3>
+        <h3 className="text-[1.4rem]">Dicas{tips.length ? ` (${tips.length})` : ""}</h3>
         {me && !open ? (
           <button type="button" className="text-sm underline" onClick={() => setOpen(true)}>
-            + Add a tip
+            + Dar uma dica
           </button>
         ) : null}
       </div>
@@ -393,7 +399,7 @@ function Tips({ slug }: { slug: string }) {
             {t.created_by ? <span>{names.get(t.created_by) ?? ""}</span> : null}
             {me && (me.role === "planner" || me.travellerId === t.created_by) ? (
               <button type="button" className="underline" onClick={() => deleteRow("tips", t.id)}>
-                Delete
+                Apagar
               </button>
             ) : null}
           </p>
@@ -418,12 +424,12 @@ function Tips({ slug }: { slug: string }) {
             setOpen(false);
           }}
         >
-          <input className="input" type="url" placeholder="Link (Instagram post, article…)" value={url} onChange={(e) => setUrl(e.target.value)} aria-label="Link" />
-          <textarea className="input min-h-16" placeholder="What's the tip? e.g. order the special rib cut" value={text} onChange={(e) => setText(e.target.value)} aria-label="Tip" />
+          <input className="input" type="url" placeholder="Link (post do Instagram, matéria…)" value={url} onChange={(e) => setUrl(e.target.value)} aria-label="Link" />
+          <textarea className="input min-h-16" placeholder="Qual é a dica? Ex.: peça o corte especial" value={text} onChange={(e) => setText(e.target.value)} aria-label="Dica" />
           <div className="flex gap-2">
-            <button className="btn btn-sm btn-primary">Save tip</button>
+            <button className="btn btn-sm btn-primary">Salvar dica</button>
             <button type="button" className="btn btn-sm" onClick={() => setOpen(false)}>
-              Cancel
+              Cancelar
             </button>
           </div>
         </form>

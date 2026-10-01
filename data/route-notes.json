@@ -10,20 +10,20 @@
   },
   "routes": {
     "A": {
-      "snow": { "score": 3, "label": "Likely in Takayama, Shirakawa-go and Kanazawa" },
-      "comfort": { "score": 3, "label": "One 5–6 h day (26 Dec); Koyasan temple night is cold" }
+      "snow": { "score": 3, "label": "Provável em Takayama, Shirakawa-go e Kanazawa" },
+      "comfort": { "score": 3, "label": "Um dia de 5–6 h (26 dez); a noite no templo em Koyasan é fria, então peça quarto aquecido para ela" }
     },
     "B": {
-      "snow": { "score": 4, "label": "Very likely for 8 nights in the Alps and Hokuriku" },
-      "comfort": { "score": 2, "label": "Icy monkey-park path, farmhouse night with shared baths" }
+      "snow": { "score": 4, "label": "Muito provável nas 8 noites nos Alpes e em Hokuriku" },
+      "comfort": { "score": 2, "label": "Trilha com gelo até os macacos (ela decide no dia); noite na casa de fazenda com banheiro compartilhado" }
     },
     "C": {
-      "snow": { "score": 1, "label": "Unlikely; mild coast and Kyushu" },
-      "comfort": { "score": 4, "label": "Mild weather, private onsen baths in Yufuin; two ~4 h days" }
+      "snow": { "score": 1, "label": "Improvável; litoral ameno e Kyushu" },
+      "comfort": { "score": 4, "label": "Clima ameno e onsen privativo em Yufuin, ótimo para ela; dois dias de ~4 h" }
     },
     "D": {
-      "snow": { "score": 2, "label": "Possible at Tsumago and Koyasan" },
-      "comfort": { "score": 2, "label": "Five driving days of 2.5–4 h; mountain roads in winter" }
+      "snow": { "score": 2, "label": "Possível em Tsumago e Koyasan" },
+      "comfort": { "score": 2, "label": "Cinco dias de estrada, de 2,5 a 4 h cada, por serras no inverno; planejem paradas para ela" }
     }
   }
 }

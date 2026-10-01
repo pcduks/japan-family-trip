@@ -12,14 +12,15 @@ import type { Place } from "@/lib/types";
 import { PlaceSheet } from "./PlaceSheet";
 import { useStore } from "./providers";
 import { RouteMap } from "./RouteMap";
+import { Pill } from "./ui";
 import { usePlans } from "./usePlans";
 
 const MODES: { v: LegMode; label: string }[] = [
-  { v: "train", label: "Train" },
-  { v: "bus", label: "Bus" },
-  { v: "drive", label: "Drive" },
-  { v: "ferry", label: "Ferry" },
-  { v: "flight", label: "Flight" },
+  { v: "train", label: "Trem" },
+  { v: "bus", label: "Ônibus" },
+  { v: "drive", label: "Carro" },
+  { v: "ferry", label: "Balsa" },
+  { v: "flight", label: "Avião" },
 ];
 
 /** P2.1 route builder with the P2.2 warnings engine running on every edit (F8). */
@@ -37,10 +38,10 @@ export function PlanEditor({ id }: { id: string }) {
       <main className="py-10 text-center text-muted">
         {loaded ? (
           <>
-            This plan doesn&apos;t exist any more. <Link href="/plan">Back to plans</Link>
+            Este plano não existe mais. <Link href="/plan">Voltar aos planos</Link>
           </>
         ) : (
-          "Loading…"
+          "Carregando…"
         )}
       </main>
     );
@@ -68,38 +69,39 @@ export function PlanEditor({ id }: { id: string }) {
 
   return (
     <main className="grid gap-5">
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div className="grid min-w-0 flex-1 gap-2">
-          <Link href="/plan" className="text-sm">
-            ← All plans
+      <div className="grid gap-3">
+        <div className="grid min-w-0 gap-2">
+          <Link href="/plan" className="justify-self-start text-sm">
+            ← Todos os planos
           </Link>
+          {plan.based_on ? <p className="eyebrow">Plano a partir da rota {plan.based_on}</p> : null}
           <div className="flex items-center gap-2">
             <input
               type="color"
-              aria-label="Plan colour"
+              aria-label="Cor do plano"
               value={plan.color}
               disabled={!planner}
               onChange={(e) => save({ color: e.target.value })}
-              className="size-10 shrink-0 cursor-pointer rounded border border-line bg-card"
+              className="size-11 shrink-0 cursor-pointer rounded-xl border border-rule bg-card p-1"
             />
             <CommitInput
-              ariaLabel="Plan name"
+              ariaLabel="Nome do plano"
               value={plan.name}
               disabled={!planner}
               onCommit={(v) => v.trim() && save({ name: v.trim() })}
-              className="input !text-xl font-extrabold"
+              className="input min-w-0 flex-1 font-display !text-[1.6rem]"
             />
           </div>
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <span className={`tag !text-sm ${nights === TRIP_NIGHTS ? "!text-ok" : "!text-danger"}`}>
-            {nights} / {TRIP_NIGHTS} nights
-          </span>
+          <Pill tone={nights === TRIP_NIGHTS ? "ok" : "accent"}>
+            {nights} de {TRIP_NIGHTS} noites
+          </Pill>
           {plan.is_chosen ? (
-            <span className="tag !text-sm !text-ok">Chosen plan</span>
+            <Pill tone="ok">Nosso plano</Pill>
           ) : planner ? (
             <button className="btn btn-sm" disabled={warnings.some((w) => w.level === "error")} onClick={() => choosePlan(plan.id)}>
-              Make this our plan
+              Escolher como nosso plano
             </button>
           ) : null}
         </div>
@@ -115,13 +117,13 @@ export function PlanEditor({ id }: { id: string }) {
             selected={sheet}
             onSelect={setSheet}
             theme={resolvedTheme}
-            label={`Map of ${plan.name}`}
+            label={`Mapa de ${plan.name}`}
           />
           <Warnings warnings={warnings} />
         </div>
 
         <fieldset disabled={!planner} className="grid min-w-0 gap-3">
-          <legend className="sr-only">Stays</legend>
+          <legend className="sr-only">Bases</legend>
           <ol className="grid gap-3">
             {plan.stays.map((s, i) => {
               const start = route.stays[i].startDate;
@@ -130,18 +132,18 @@ export function PlanEditor({ id }: { id: string }) {
               const sw = byStay(s.id);
               const peak = sw.find((w) => w.code === "peak-move");
               return (
-                <li key={s.id} className="card grid gap-3 p-3" style={{ borderLeft: `5px solid ${color}` }}>
+                <li key={s.id} className="card grid gap-3 p-3" style={{ borderLeft: `4px solid ${color}` }}>
                   {i > 0 ? (
-                    <div className="grid gap-2 rounded-lg bg-soft p-2 text-sm">
+                    <div className="grid gap-2 rounded-xl bg-paper-2 p-2.5 text-sm">
                       <div className="flex flex-wrap items-center gap-2">
-                        <span className="font-mono text-xs text-muted">{formatDay(start)} · travel</span>
+                        <span className="font-mono text-xs text-muted">{formatDay(start)} · viagem</span>
                         <select
-                          aria-label="How you travel"
+                          aria-label="Como vão viajar"
                           className="input !min-h-9 !w-auto !py-1"
                           value={s.legMode ?? ""}
                           onChange={(e) => patchStay(i, { legMode: (e.target.value || null) as LegMode | null })}
                         >
-                          <option value="">Mode…</option>
+                          <option value="">Meio…</option>
                           {MODES.map((m) => (
                             <option key={m.v} value={m.v}>
                               {m.label}
@@ -150,7 +152,7 @@ export function PlanEditor({ id }: { id: string }) {
                         </select>
                         <label className="flex items-center gap-1">
                           <CommitInput
-                            ariaLabel="Hours door to door"
+                            ariaLabel="Horas de porta a porta"
                             type="number"
                             value={s.legHours?.toString() ?? ""}
                             placeholder="h"
@@ -169,18 +171,18 @@ export function PlanEditor({ id }: { id: string }) {
                             target="_blank"
                             rel="noreferrer"
                           >
-                            Google Maps directions
+                            Rota no Google Maps
                           </a>
                         ) : null}
                       </div>
                       <CommitInput
-                        ariaLabel="Travel notes"
+                        ariaLabel="Notas da viagem"
                         value={s.legNote ?? ""}
-                        placeholder="e.g. Hokuriku shinkansen + Thunderbird via Tsuruga, ~2 h 15"
+                        placeholder="ex.: Hokuriku shinkansen + Thunderbird via Tsuruga, ~2 h 15"
                         className="input !min-h-9 !py-1"
                         onCommit={(v) => patchStay(i, { legNote: v.trim() || null })}
                       />
-                      {peak && !s.overridePeak ? <p className="text-xs text-accent">▲ {peak.message}</p> : null}
+                      {peak && !s.overridePeak ? <p className="text-xs text-vermilion">▲ {peak.message}</p> : null}
                       {peak ? (
                         <label className="flex items-start gap-2 text-xs">
                           <input
@@ -189,16 +191,16 @@ export function PlanEditor({ id }: { id: string }) {
                             checked={!!s.overridePeak}
                             onChange={(e) => patchStay(i, { overridePeak: e.target.checked })}
                           />
-                          <span>Move on this peak day anyway (we&apos;ll book seats the moment they open)</span>
+                          <span>Mudar neste dia de pico mesmo assim (reservamos os assentos assim que abrirem)</span>
                         </label>
                       ) : null}
                     </div>
                   ) : null}
 
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="font-display text-xl font-extrabold tabular-nums">{i + 1}</span>
+                    <span className="font-display text-[1.6rem] leading-none tabular-nums" style={{ color }}>{i + 1}</span>
                     <select
-                      aria-label="Place"
+                      aria-label="Lugar"
                       className="input !w-auto min-w-0 flex-1 font-bold"
                       value={s.place}
                       onChange={(e) => patchStay(i, { place: e.target.value })}
@@ -206,12 +208,12 @@ export function PlanEditor({ id }: { id: string }) {
                       {bases.map((p) => (
                         <option key={p.slug} value={p.slug}>
                           {p.name}
-                          {p.kind === "module" ? " (add-on)" : ""}
+                          {p.kind === "module" ? " (extra)" : ""}
                         </option>
                       ))}
                     </select>
                     <button type="button" className="btn btn-sm" onClick={() => setSheet(s.place)}>
-                      Info
+                      Sobre
                     </button>
                   </div>
 
@@ -219,21 +221,21 @@ export function PlanEditor({ id }: { id: string }) {
                     <span className="font-mono text-xs text-muted">
                       {formatDay(start)} – {formatDay(addDays(start, s.nights))}
                     </span>
-                    <div className="flex items-center gap-1" role="group" aria-label="Nights">
-                      <button type="button" className="btn btn-sm !min-w-10" aria-label="One night fewer" disabled={s.nights <= 1} onClick={() => patchStay(i, { nights: s.nights - 1 })}>
+                    <div className="flex items-center gap-1" role="group" aria-label="Noites">
+                      <button type="button" className="btn btn-sm !min-w-10" aria-label="Uma noite a menos" disabled={s.nights <= 1} onClick={() => patchStay(i, { nights: s.nights - 1 })}>
                         −
                       </button>
                       <span className="w-20 text-center text-sm font-bold" aria-live="polite">
-                        {s.nights} night{s.nights > 1 ? "s" : ""}
+                        {s.nights} noite{s.nights > 1 ? "s" : ""}
                       </span>
-                      <button type="button" className="btn btn-sm !min-w-10" aria-label="One night more" onClick={() => patchStay(i, { nights: s.nights + 1 })}>
+                      <button type="button" className="btn btn-sm !min-w-10" aria-label="Uma noite a mais" onClick={() => patchStay(i, { nights: s.nights + 1 })}>
                         +
                       </button>
                     </div>
                   </div>
 
                   <PlaceChips
-                    label="Day trips"
+                    label="Bate-voltas"
                     slugs={s.daytrips}
                     options={tripPlaces}
                     places={P}
@@ -241,7 +243,7 @@ export function PlanEditor({ id }: { id: string }) {
                     onChange={(daytrips) => patchStay(i, { daytrips })}
                   />
                   <PlaceChips
-                    label="Stops on the way in"
+                    label="Paradas no caminho"
                     slugs={s.via}
                     options={tripPlaces}
                     places={P}
@@ -254,7 +256,7 @@ export function PlanEditor({ id }: { id: string }) {
                       {sw
                         .filter((w) => w.code !== "peak-move")
                         .map((w, k) => (
-                          <li key={k} className={w.level === "warn" ? "text-accent" : "text-muted"}>
+                          <li key={k} className={w.level === "warn" ? "text-vermilion" : "text-muted"}>
                             {w.level === "warn" ? "▲ " : "ⓘ "}
                             {w.message}
                           </li>
@@ -263,19 +265,19 @@ export function PlanEditor({ id }: { id: string }) {
                   ) : null}
 
                   <div className="flex flex-wrap gap-1">
-                    <button type="button" className="btn btn-sm" onClick={() => move(i, -1)} disabled={i === 0} aria-label={`Move ${here?.name} earlier`}>
-                      ↑ Earlier
+                    <button type="button" className="btn btn-sm" onClick={() => move(i, -1)} disabled={i === 0} aria-label={`Mover ${here?.name} para antes`}>
+                      ↑ Antes
                     </button>
-                    <button type="button" className="btn btn-sm" onClick={() => move(i, 1)} disabled={i === plan.stays.length - 1} aria-label={`Move ${here?.name} later`}>
-                      ↓ Later
+                    <button type="button" className="btn btn-sm" onClick={() => move(i, 1)} disabled={i === plan.stays.length - 1} aria-label={`Mover ${here?.name} para depois`}>
+                      ↓ Depois
                     </button>
                     <button
                       type="button"
                       className="btn btn-sm ml-auto"
                       onClick={() => setStays(plan.stays.filter((_, k) => k !== i))}
-                      aria-label={`Remove ${here?.name}`}
+                      aria-label={`Tirar ${here?.name}`}
                     >
-                      Remove
+                      Tirar
                     </button>
                   </div>
                 </li>
@@ -307,10 +309,10 @@ function AskGoogle({ from, to, mode, date, onHours }: { from: string; to: string
           if (res.ok) {
             onHours(body.hours);
             setState(`${body.km} km`);
-          } else setState(body.error ?? "No answer");
+          } else setState(body.error ?? "Sem resposta");
         }}
       >
-        Ask Google
+        Perguntar ao Google
       </button>
       {state ? <span className="text-muted">{state}</span> : null}
     </span>
@@ -319,22 +321,24 @@ function AskGoogle({ from, to, mode, date, onHours }: { from: string; to: string
 
 function Warnings({ warnings }: { warnings: Warning[] }) {
   if (!warnings.length)
-    return <p className="card p-3 text-sm text-ok">No warnings. Every move avoids the peak days and no travel day is over 4 hours.</p>;
+    return <p className="card p-4 text-sm text-pine">Nenhum alerta. Nenhuma mudança cai em dia de pico e nenhum dia de viagem passa de 4 horas.</p>;
   const counts = { error: 0, warn: 0, info: 0 };
   warnings.forEach((w) => counts[w.level]++);
   return (
-    <section className="card grid gap-2 p-3" aria-labelledby="warn-h" aria-live="polite">
-      <h2 id="warn-h" className="text-base font-extrabold">
-        Checks{" "}
-        <span className="text-sm font-normal text-muted">
-          {counts.error ? `${counts.error} to fix · ` : ""}
-          {counts.warn} warning{counts.warn === 1 ? "" : "s"} · {counts.info} note{counts.info === 1 ? "" : "s"}
+    <section className="card grid gap-2 p-4" aria-labelledby="warn-h" aria-live="polite">
+      <div className="flex flex-wrap items-baseline justify-between gap-x-3">
+        <h2 id="warn-h" className="text-[1.6rem] leading-tight">
+          Conferências
+        </h2>
+        <span className="text-sm text-muted">
+          {counts.error ? `${counts.error} a corrigir · ` : ""}
+          {counts.warn} alerta{counts.warn === 1 ? "" : "s"} · {counts.info} nota{counts.info === 1 ? "" : "s"}
         </span>
-      </h2>
+      </div>
       <ul className="grid gap-1.5 text-sm">
         {warnings.map((w, i) => (
           <li key={i} className={`flex gap-2 ${w.level === "error" ? "font-bold text-danger" : w.level === "warn" ? "text-ink" : "text-muted"}`}>
-            <span aria-hidden="true" className={w.level === "warn" ? "text-accent" : ""}>
+            <span aria-hidden="true" className={w.level === "warn" ? "text-vermilion" : ""}>
               {w.level === "error" ? "✕" : w.level === "warn" ? "▲" : "ⓘ"}
             </span>
             <span>{w.message}</span>
@@ -368,18 +372,18 @@ function PlaceChips({
           <button type="button" onClick={() => onOpen(slug)} className="underline-offset-2 hover:underline">
             {places.get(slug)?.name ?? slug}
           </button>
-          <button type="button" aria-label={`Remove ${places.get(slug)?.name}`} className="grid size-6 place-items-center rounded-full hover:bg-soft" onClick={() => onChange(slugs.filter((x) => x !== slug))}>
+          <button type="button" aria-label={`Tirar ${places.get(slug)?.name}`} className="grid size-6 place-items-center rounded-full hover:bg-paper-2" onClick={() => onChange(slugs.filter((x) => x !== slug))}>
             ×
           </button>
         </span>
       ))}
       <select
-        aria-label={`Add to ${label.toLowerCase()}`}
+        aria-label={`Adicionar em ${label.toLowerCase()}`}
         className="input !min-h-8 !w-auto !py-0 text-sm"
         value=""
         onChange={(e) => e.target.value && onChange([...slugs, e.target.value])}
       >
-        <option value="">+ Add</option>
+        <option value="">+ Adicionar</option>
         {options
           .filter((p) => !slugs.includes(p.slug))
           .map((p) => (
@@ -397,8 +401,8 @@ function AddStay({ bases, modules, onAdd }: { bases: Place[]; modules: Place[]; 
   return (
     <div className="card grid gap-3 p-3">
       <div className="flex flex-wrap gap-2">
-        <select className="input !w-auto min-w-0 flex-1" aria-label="Place to add" value={slug} onChange={(e) => setSlug(e.target.value)}>
-          <option value="">Add a stay…</option>
+        <select className="input !w-auto min-w-0 flex-1" aria-label="Lugar para adicionar" value={slug} onChange={(e) => setSlug(e.target.value)}>
+          <option value="">Adicionar uma base…</option>
           {bases.map((p) => (
             <option key={p.slug} value={p.slug}>
               {p.name}
@@ -414,11 +418,11 @@ function AddStay({ bases, modules, onAdd }: { bases: Place[]; modules: Place[]; 
             setSlug("");
           }}
         >
-          Add
+          Adicionar
         </button>
       </div>
       <div className="flex flex-wrap items-center gap-1.5">
-        <span className="text-xs text-muted">Add-ons:</span>
+        <span className="text-xs text-muted">Extras:</span>
         {modules.map((m) => (
           <button key={m.slug} type="button" className="chip !min-h-8 text-sm" onClick={() => onAdd(m.slug, 2)}>
             + {m.name}

@@ -1,6 +1,6 @@
 import { FoodView } from "@/components/FoodView";
 
-export const metadata = { title: "Tokyo food · Six Across Japan" };
+export const metadata = { title: "Comida · Seis pelo Japão" };
 
 export default async function FoodPage({ searchParams }: PageProps<"/food">) {
   const sp = await searchParams;

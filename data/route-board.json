@@ -1,260 +1,260 @@
 [
   {
     "code": "A",
-    "pitch": "Tokyo and Kyoto for the first-time visitors, then the Japanese Alps, which are new to you two. One night in a mountain temple, and the trip ends in Osaka.",
+    "pitch": "Tokyo e Kyoto para quem vem pela primeira vez, depois os Alpes Japoneses, que são novidade para vocês dois. Uma noite num templo na montanha, e a viagem termina em Osaka.",
     "good": [
-      "Balanced mix",
-      "Kyoto New Year traditions",
-      "Snow crab season"
+      "Mistura equilibrada",
+      "Tradições de Ano-Novo em Kyoto",
+      "Temporada do caranguejo-das-neves"
     ],
     "warn": [
-      "One long travel day (Fuji to Takayama)"
+      "Um dia longo de viagem (do Fuji a Takayama)"
     ],
     "stops": [
       {
         "name": "Tokyo",
-        "dates": "20–24 Dec",
+        "dates": "20–24 dez",
         "nights": 4,
         "lodging": "city",
-        "how": "Land at Haneda or Narita. Base in Asakusa or Ningyōchō (quieter, central).",
+        "how": "Chegada em Haneda ou Narita. Base em Asakusa ou Ningyōchō (mais tranquilos e centrais).",
         "highlights": [
-          "Asakusa's Sensō-ji early, then the old Yanaka neighbourhood",
-          "Tsukiji outer market breakfast; depachika crawl at Mitsukoshi Nihonbashi",
-          "Sunset over Fuji from Shibuya Sky (winter air is clear)",
-          "Christmas Eve lights; a day in Kamakura or Nikkō for your parents"
+          "O Sensō-ji de Asakusa bem cedo, depois o antigo bairro de Yanaka",
+          "Café da manhã no mercado externo de Tsukiji; passeio pelas depachika da Mitsukoshi Nihonbashi",
+          "Pôr do sol sobre o Fuji visto do Shibuya Sky (o ar de inverno é limpo)",
+          "Luzes da véspera de Natal; um dia em Kamakura ou Nikkō para os seus pais"
         ],
-        "eat": "Sushi counter lunch, monjayaki in Tsukishima, Ebisu Yokochō izakaya",
-        "bump": "Large stations involve a lot of walking. Two taxis (GO app) fit six people"
+        "eat": "Almoço no balcão de sushi, monjayaki em Tsukishima, izakaya no Ebisu Yokochō",
+        "bump": "As estações grandes exigem muita caminhada. Dois táxis (app GO) levam as seis pessoas"
       },
       {
         "name": "Lake Kawaguchiko",
-        "dates": "24–26 Dec",
+        "dates": "24–26 dez",
         "nights": 2,
         "lodging": "ryokan",
-        "how": "Fuji Excursion limited express from Shinjuku, ~2 h.",
+        "how": "Expresso limitado Fuji Excursion saindo de Shinjuku, ~2 h.",
         "highlights": [
-          "Christmas at Fuji, with morning views from the north shore",
-          "Oshino Hakkai spring village; Saiko Iyashi-no-Sato thatched village",
-          "Chūreitō Pagoda for those who want the climb"
+          "Natal no Fuji, com vistas matinais da margem norte",
+          "A vila das fontes de Oshino Hakkai; a vila de casas de palha Saiko Iyashi-no-Sato",
+          "Pagode Chūreitō para quem quiser encarar a subida"
         ],
-        "eat": "Hōtō miso noodle hotpot, Yoshida udon",
-        "bump": "Book a Fuji-view room with a private bath"
+        "eat": "Hōtō, cozido de macarrão com missô, e udon de Yoshida",
+        "bump": "Reserve um quarto com vista para o Fuji e banho privativo"
       },
       {
         "name": "Takayama",
-        "dates": "26–28 Dec",
+        "dates": "26–28 dez",
         "nights": 2,
         "lodging": "ryokan",
-        "how": "Train to Matsumoto (stop for the castle and lunch), then bus to Takayama. About 5–6 h, the longest travel day.",
+        "how": "Trem até Matsumoto (parada para o castelo e o almoço), depois ônibus até Takayama. Cerca de 5–6 h, o dia de viagem mais longo.",
         "highlights": [
-          "Miyagawa morning market and Sanmachi merchant streets",
-          "Sake brewery tastings (amazake for her)",
-          "Hida Folk Village under snow; the festival float hall"
+          "Feira matinal de Miyagawa e as ruas de mercadores de Sanmachi",
+          "Degustação em destilarias de saquê (amazake para ela)",
+          "A Vila Folclórica de Hida sob a neve; o pavilhão dos carros alegóricos do festival"
         ],
-        "eat": "Hida beef sushi, hoba-miso, mitarashi dango",
+        "eat": "Sushi de carne Hida, hoba-miso, mitarashi dango",
         "bump": null
       },
       {
         "name": "Shirakawa-go → Kanazawa",
-        "dates": "28–30 Dec",
+        "dates": "28–30 dez",
         "nights": 2,
         "lodging": "city",
-        "how": "Nōhi bus with a 2–3 h stop in Shirakawa-go, then continue to Kanazawa.",
+        "how": "Ônibus Nōhi com parada de 2–3 h em Shirakawa-go, depois segue até Kanazawa.",
         "highlights": [
-          "Gasshō farmhouses in the snow",
-          "Kenroku-en garden, with ropes supporting the pine branches against snow",
-          "Higashi Chaya geisha teahouses; gold-leaf workshop"
+          "Casas de fazenda gasshō na neve",
+          "Jardim Kenroku-en, com cordas que sustentam os galhos dos pinheiros contra a neve",
+          "Casas de chá das gueixas em Higashi Chaya; oficina de folha de ouro"
         ],
-        "eat": "Snow crab and nodoguro at Ōmichō market (you leave before it closes for New Year)",
+        "eat": "Caranguejo-das-neves e nodoguro no mercado Ōmichō (vocês saem antes de ele fechar para o Ano-Novo)",
         "bump": null
       },
       {
         "name": "Kyoto",
-        "dates": "30 Dec–4 Jan",
+        "dates": "30 dez–4 jan",
         "nights": 5,
         "lodging": "city",
-        "how": "Shinkansen to Tsuruga + Thunderbird, ~2 h 15. 30 Dec is a peak day, so book as soon as seats go on sale.",
+        "how": "Shinkansen até Tsuruga + Thunderbird, ~2 h 15. 30 dez é dia de pico, então reserve assim que os assentos forem liberados.",
         "highlights": [
-          "Nishiki Market on 30 Dec, when people shop for New Year",
-          "New Year's Eve at the large bell of Chion-in, then the Okera-mairi fire at Yasaka Shrine",
-          "1 Jan osechi breakfast; 2 Jan early hatsumōde at Fushimi Inari (lower gates)",
-          "3 Jan karuta-hajime; tea ceremony; Arashiyama; day trip to Uji"
+          "Mercado Nishiki em 30 dez, quando todo mundo faz as compras de Ano-Novo",
+          "Véspera de Ano-Novo no grande sino de Chion-in, depois o fogo do Okera-mairi no Santuário Yasaka",
+          "Café da manhã de osechi em 1º jan; hatsumōde bem cedo no Fushimi Inari em 2 jan (portões de baixo)",
+          "Karuta-hajime em 3 jan; cerimônia do chá; Arashiyama; bate-volta a Uji"
         ],
-        "eat": "Kaiseki lunch, yudōfu, obanzai home cooking",
-        "bump": "Rent a whole machiya for six people, with a living room and kitchen"
+        "eat": "Almoço kaiseki, yudōfu, obanzai (comida caseira de Kyoto)",
+        "bump": "Alugue uma machiya inteira para seis pessoas, com sala de estar e cozinha"
       },
       {
         "name": "Kōyasan",
-        "dates": "4–5 Jan",
+        "dates": "4–5 jan",
         "nights": 1,
         "lodging": "temple",
-        "how": "Nankai line from Osaka plus cable car, ~3 h from Kyoto.",
+        "how": "Linha Nankai saindo de Osaka mais funicular, ~3 h desde Kyoto.",
         "highlights": [
-          "Lantern walk through Okunoin's forest cemetery at dusk",
-          "Dawn chanting and goma fire ritual with the monks"
+          "Caminhada entre lanternas pelo cemitério-floresta de Okunoin ao entardecer",
+          "Cânticos do amanhecer e ritual do fogo goma com os monges"
         ],
-        "eat": "Shōjin ryōri temple feast",
-        "bump": "Temperatures are below freezing and corridors are cold. Choose a temple with heated rooms"
+        "eat": "Banquete de shōjin ryōri no templo",
+        "bump": "Temperaturas abaixo de zero e corredores frios. Escolha um templo com quartos aquecidos"
       },
       {
         "name": "Osaka",
-        "dates": "5–9 Jan",
+        "dates": "5–9 jan",
         "nights": 4,
         "lodging": "city",
-        "how": "~1.5 h down the mountain. Fly out of Kansai on 9 Jan.",
+        "how": "~1.5 h descendo a montanha. Voo de volta saindo de Kansai em 9 jan.",
         "highlights": [
-          "Dōtonbori and Kuromon for the parents",
-          "Day trip to Nara: deer and the Great Buddha",
-          "Day trip to Himeji Castle or Kobe beef lunch",
-          "Sakai knife-forging workshop"
+          "Dōtonbori e Kuromon para os pais",
+          "Bate-volta a Nara: os cervos e o Grande Buda",
+          "Bate-volta ao Castelo de Himeji ou almoço de carne de Kobe",
+          "Oficina de forja de facas em Sakai"
         ],
-        "eat": "Kushikatsu in Shinsekai, takoyaki, a proper Osaka kappō counter",
+        "eat": "Kushikatsu em Shinsekai, takoyaki, um bom balcão de kappō de Osaka",
         "bump": null
       }
     ]
   },
   {
     "code": "B",
-    "pitch": "More ryokan nights and more snow than the other routes. One night in a thatched gasshō farmhouse and a quiet New Year in Takayama. Kyoto and Osaka come after the holiday, when shops and museums have reopened.",
+    "pitch": "Mais noites em ryokan e mais neve do que nas outras rotas. Uma noite numa casa de fazenda gasshō de telhado de palha e um Ano-Novo tranquilo em Takayama. Kyoto e Osaka ficam para depois do feriado, quando lojas e museus já reabriram.",
     "good": [
-      "Most snow",
-      "Most onsen",
-      "Kyoto without New Year crowds"
+      "Mais neve",
+      "Mais onsen",
+      "Kyoto sem as multidões do Ano-Novo"
     ],
     "warn": [
-      "Icy paths",
-      "More packing and unpacking"
+      "Caminhos com gelo",
+      "Mais arruma e desarruma mala"
     ],
     "stops": [
       {
         "name": "Tokyo",
-        "dates": "20–23 Dec",
+        "dates": "20–23 dez",
         "nights": 3,
         "lodging": "city",
-        "how": "Land and base in Asakusa or Ningyōchō.",
+        "how": "Chegada e base em Asakusa ou Ningyōchō.",
         "highlights": [
-          "Asakusa, Yanaka, Tsukiji outer market",
-          "A depachika crawl and Shibuya at night"
+          "Asakusa, Yanaka, mercado externo de Tsukiji",
+          "Um passeio pelas depachika e Shibuya à noite"
         ],
-        "eat": "Sushi, yakitori under the tracks in Yūrakuchō",
+        "eat": "Sushi, yakitori embaixo dos trilhos em Yūrakuchō",
         "bump": null
       },
       {
         "name": "Lake Kawaguchiko",
-        "dates": "23–25 Dec",
+        "dates": "23–25 dez",
         "nights": 2,
         "lodging": "ryokan",
-        "how": "Fuji Excursion from Shinjuku, ~2 h.",
+        "how": "Fuji Excursion saindo de Shinjuku, ~2 h.",
         "highlights": [
-          "Fuji at dawn; Oshino Hakkai",
-          "Christmas Eve at a ryokan"
+          "O Fuji ao amanhecer; Oshino Hakkai",
+          "Véspera de Natal num ryokan"
         ],
-        "eat": "Hōtō noodles",
+        "eat": "Macarrão hōtō",
         "bump": null
       },
       {
         "name": "Yudanaka / Shibu Onsen",
-        "dates": "25–27 Dec",
+        "dates": "25–27 dez",
         "nights": 2,
         "lodging": "ryokan",
-        "how": "Back via Tokyo and the Hokuriku shinkansen to Nagano, then local train. ~4–5 h.",
+        "how": "Volta via Tokyo e Hokuriku shinkansen até Nagano, depois trem local. ~4–5 h.",
         "highlights": [
-          "Jigokudani snow monkeys, reached by a 30-minute forest path each way (flat but icy)",
-          "Shibu Onsen's lantern-lit street and its nine public baths",
-          "Zenkō-ji temple and its dark underground passage",
-          "Chestnut sweets and the Hokusai museum in Obuse"
+          "Os macacos-da-neve de Jigokudani, a 30 minutos de trilha pela floresta para cada lado (plana, mas com gelo)",
+          "A rua de Shibu Onsen iluminada por lanternas e seus nove banhos públicos",
+          "O templo Zenkō-ji e sua passagem subterrânea escura",
+          "Doces de castanha e o museu Hokusai em Obuse"
         ],
-        "eat": "Shinshū soba, oyaki dumplings",
-        "bump": "She can decide on the day whether to walk to the monkeys. The town and Zenkō-ji are easy"
+        "eat": "Soba de Shinshū, bolinhos oyaki",
+        "bump": "Ela pode decidir no dia se vai caminhar até os macacos. A cidade e o Zenkō-ji são tranquilos"
       },
       {
         "name": "Kanazawa",
-        "dates": "27–29 Dec",
+        "dates": "27–29 dez",
         "nights": 2,
         "lodging": "city",
-        "how": "Nagano → Kanazawa by shinkansen, ~1 h.",
+        "how": "Nagano → Kanazawa de shinkansen, ~1 h.",
         "highlights": [
-          "Kenroku-en in snow; Higashi Chaya teahouses",
-          "Nagamachi samurai lanes; 21st Century Museum"
+          "Kenroku-en na neve; casas de chá de Higashi Chaya",
+          "As vielas samurais de Nagamachi; Museu do Século 21"
         ],
-        "eat": "Snow crab at Ōmichō, Kanazawa oden",
+        "eat": "Caranguejo-das-neves no Ōmichō, oden de Kanazawa",
         "bump": null
       },
       {
         "name": "Shirakawa-go",
-        "dates": "29–30 Dec",
+        "dates": "29–30 dez",
         "nights": 1,
         "lodging": "village",
-        "how": "Bus, ~75 min.",
+        "how": "Ônibus, ~75 min.",
         "highlights": [
-          "Stay in a gasshō farmhouse inn (minshuku) with dinner by the hearth and futon beds",
-          "A quiet evening in the village after day visitors leave"
+          "Pernoite numa casa de fazenda gasshō (minshuku), com jantar ao pé do fogo e camas de futon",
+          "Uma noite tranquila na vila depois que os visitantes do dia vão embora"
         ],
-        "eat": "Hearth-grilled river fish, hoba-miso",
-        "bump": "Baths are shared and stairs are steep. Ask for a ground-floor room"
+        "eat": "Peixe de rio assado no fogo de chão, hoba-miso",
+        "bump": "Os banheiros são compartilhados e as escadas são íngremes. Peça um quarto no térreo"
       },
       {
         "name": "Takayama",
-        "dates": "30 Dec–1 Jan",
+        "dates": "30 dez–1º jan",
         "nights": 2,
         "lodging": "ryokan",
-        "how": "Bus, ~50 min.",
+        "how": "Ônibus, ~50 min.",
         "highlights": [
-          "Toshikoshi soba on New Year's Eve and midnight at a local shrine",
-          "New Year's Day osechi at the ryokan",
-          "Sanmachi streets and sake breweries"
+          "Toshikoshi soba na véspera de Ano-Novo e a meia-noite num santuário do bairro",
+          "Osechi de Ano-Novo no ryokan",
+          "As ruas de Sanmachi e as destilarias de saquê"
         ],
-        "eat": "Hida beef, New Year osechi",
+        "eat": "Carne Hida, osechi de Ano-Novo",
         "bump": null
       },
       {
         "name": "Kyoto",
-        "dates": "1–5 Jan",
+        "dates": "1º–5 jan",
         "nights": 4,
         "lodging": "city",
-        "how": "1 Jan is a quiet travel day. Hida express to Nagoya, then shinkansen, about 3.5 h.",
+        "how": "1º jan é um dia calmo para viajar. Expresso Hida até Nagoya, depois shinkansen, cerca de 3.5 h.",
         "highlights": [
-          "Early-morning hatsumōde at Fushimi Inari on 2 Jan",
-          "Karuta-hajime at Yasaka on 3 Jan",
-          "Tea ceremony, Arashiyama, Kinkaku-ji in winter light"
+          "Hatsumōde de manhã cedo no Fushimi Inari em 2 jan",
+          "Karuta-hajime em Yasaka em 3 jan",
+          "Cerimônia do chá, Arashiyama, Kinkaku-ji na luz de inverno"
         ],
-        "eat": "Kaiseki lunch; Nishiki Market stalls reopen in early January",
+        "eat": "Almoço kaiseki; as barracas do Mercado Nishiki reabrem no começo de janeiro",
         "bump": null
       },
       {
         "name": "Osaka",
-        "dates": "5–9 Jan",
+        "dates": "5–9 jan",
         "nights": 4,
         "lodging": "city",
-        "how": "~15 min. Fly out of Kansai.",
+        "how": "~15 min. Voo de volta saindo de Kansai.",
         "highlights": [
-          "Nara and Himeji day trips",
+          "Bate-voltas a Nara e Himeji",
           "Dōtonbori, Kuromon, Shinsekai"
         ],
-        "eat": "Osaka street food, Kobe beef",
+        "eat": "Comida de rua de Osaka, carne de Kobe",
         "bump": null
       }
     ]
   },
   {
     "code": "C",
-    "pitch": "Milder weather and the least walking of the four routes. It visits Hiroshima and Miyajima, spends New Year in a Yufuin ryokan with a private onsen, and ends in Nagasaki and Fukuoka. You fly home from Fukuoka.",
+    "pitch": "Clima mais ameno e a menor caminhada das quatro rotas. Passa por Hiroshima e Miyajima, celebra o Ano-Novo num ryokan em Yufuin com onsen privativo e termina em Nagasaki e Fukuoka. A volta para casa sai de Fukuoka.",
     "good": [
-      "Easiest on the bump",
-      "Best food variety",
-      "Mild weather"
+      "A mais tranquila para a gravidez",
+      "Maior variedade de comida",
+      "Clima ameno"
     ],
     "warn": [
-      "Fuji only from Hakone",
-      "Moves on 29 Dec"
+      "Fuji só a partir de Hakone",
+      "Mudança de cidade em 29 dez"
     ],
     "stops": [
       {
         "name": "Tokyo",
-        "dates": "20–23 Dec",
+        "dates": "20–23 dez",
         "nights": 3,
         "lodging": "city",
-        "how": "Land and base centrally.",
+        "how": "Chegada e base num lugar central.",
         "highlights": [
           "Asakusa, Yanaka, Tsukiji, depachika"
         ],
@@ -263,206 +263,206 @@
       },
       {
         "name": "Hakone",
-        "dates": "23–25 Dec",
+        "dates": "23–25 dez",
         "nights": 2,
         "lodging": "ryokan",
-        "how": "Romancecar from Shinjuku, ~85 min.",
+        "how": "Romancecar saindo de Shinjuku, ~85 min.",
         "highlights": [
-          "The Hakone loop by mountain train, ropeway over the sulphur vents and boat on Lake Ashi",
-          "Fuji across the lake on clear mornings",
-          "Open-Air Museum"
+          "O circuito de Hakone de trem de montanha, teleférico sobre as fumarolas de enxofre e barco no Lago Ashi",
+          "O Fuji do outro lado do lago nas manhãs limpas",
+          "Museu a Céu Aberto"
         ],
-        "eat": "Black eggs at Ōwakudani; kaiseki at the ryokan",
+        "eat": "Ovos pretos em Ōwakudani; kaiseki no ryokan",
         "bump": null
       },
       {
         "name": "Kyoto",
-        "dates": "25–29 Dec",
+        "dates": "25–29 dez",
         "nights": 4,
         "lodging": "city",
-        "how": "Shinkansen from Odawara, ~2 h. Sit on the E side for Fuji.",
+        "how": "Shinkansen saindo de Odawara, ~2 h. Sente do lado E para ver o Fuji.",
         "highlights": [
-          "Kiyomizu-dera, Gion and Arashiyama, before New Year closures",
-          "Tea ceremony and kimono for your parents",
-          "Nara day trip"
+          "Kiyomizu-dera, Gion e Arashiyama, antes dos fechamentos de Ano-Novo",
+          "Cerimônia do chá e quimono para os seus pais",
+          "Bate-volta a Nara"
         ],
-        "eat": "Kaiseki lunch, Nishiki",
+        "eat": "Almoço kaiseki, Nishiki",
         "bump": null
       },
       {
         "name": "Miyajima & Hiroshima",
-        "dates": "29–31 Dec",
+        "dates": "29–31 dez",
         "nights": 2,
         "lodging": "ryokan",
-        "how": "Shinkansen, ~1 h 40. 29 Dec is a peak day, so book early.",
+        "how": "Shinkansen, ~1 h 40. 29 dez é dia de pico, então reserve cedo.",
         "highlights": [
-          "Stay on Miyajima overnight and see the torii gate lit up at night",
-          "Peace Memorial Park and museum"
+          "Durma em Miyajima e veja o portão torii iluminado à noite",
+          "Parque e Museu Memorial da Paz"
         ],
-        "eat": "Grilled oysters (in season), Hiroshima okonomiyaki",
+        "eat": "Ostras grelhadas (na temporada), okonomiyaki de Hiroshima",
         "bump": null
       },
       {
         "name": "Yufuin",
-        "dates": "31 Dec–2 Jan",
+        "dates": "31 dez–2 jan",
         "nights": 2,
         "lodging": "ryokan",
-        "how": "Shinkansen to Hakata, then the Yufuin no Mori train, about 4 h. Trains are quieter on 31 Dec.",
+        "how": "Shinkansen até Hakata, depois o trem Yufuin no Mori, cerca de 4 h. Os trens ficam mais vazios em 31 dez.",
         "highlights": [
-          "New Year's Eve in a ryokan with its own open-air bath",
-          "Morning mist on Kinrin Lake",
-          "Day trip to Beppu for the hot-spring 'hells' and steam-cooked food"
+          "Véspera de Ano-Novo num ryokan com banho ao ar livre próprio",
+          "Névoa da manhã no Lago Kinrin",
+          "Bate-volta a Beppu para ver os 'infernos' das fontes termais e comer comida cozida no vapor"
         ],
-        "eat": "Bungo beef, osechi",
-        "bump": "Many Yufuin inns have private onsen baths"
+        "eat": "Carne Bungo, osechi",
+        "bump": "Muitas pousadas de Yufuin têm banho de onsen privativo"
       },
       {
         "name": "Nagasaki",
-        "dates": "2–5 Jan",
+        "dates": "2–5 jan",
         "nights": 3,
         "lodging": "city",
-        "how": "Via Hakata and the Nishi-Kyūshū shinkansen, ~4 h.",
+        "how": "Via Hakata e o shinkansen Nishi-Kyūshū, ~4 h.",
         "highlights": [
-          "Dejima Dutch trading post; Glover Garden",
-          "Peace Park; night view from Inasayama ropeway",
-          "Chinatown"
+          "O entreposto comercial holandês de Dejima; Glover Garden",
+          "Parque da Paz; vista noturna do teleférico do Inasayama",
+          "Bairro chinês"
         ],
-        "eat": "Champon noodles, castella cake",
+        "eat": "Macarrão champon, bolo castella",
         "bump": null
       },
       {
         "name": "Fukuoka",
-        "dates": "5–9 Jan",
+        "dates": "5–9 jan",
         "nights": 4,
         "lodging": "city",
-        "how": "~1.5 h. Fly home from Fukuoka.",
+        "how": "~1.5 h. Voo de volta saindo de Fukuoka.",
         "highlights": [
-          "Dazaifu Tenmangū shrine",
-          "Kotatsu boat ride on Yanagawa's canals",
-          "Karatsu or Arita pottery towns"
+          "Santuário Dazaifu Tenmangū",
+          "Passeio de barco com kotatsu pelos canais de Yanagawa",
+          "As cidades de cerâmica de Karatsu ou Arita"
         ],
-        "eat": "Hakata ramen, motsunabe, mentaiko, yatai stalls, winter fugu",
+        "eat": "Ramen de Hakata, motsunabe, mentaiko, barraquinhas yatai, fugu de inverno",
         "bump": null
       }
     ]
   },
   {
     "code": "D",
-    "pitch": "Almost all of this route is new to you two. A rented van takes you to an Edo-period post town, Ise Jingū, the Kumano pilgrimage area and Kōyasan for New Year's Eve at a temple. Kyoto and Osaka come at the end for the first-time visitors.",
+    "pitch": "Quase tudo nesta rota é novidade para vocês dois. Uma van alugada leva vocês a uma cidade-posto do período Edo, ao Ise Jingū, à região de peregrinação de Kumano e a Kōyasan, para a véspera de Ano-Novo num templo. Kyoto e Osaka ficam para o fim, para quem vem pela primeira vez.",
     "good": [
-      "Least-visited places",
-      "Traditional towns",
-      "Sennin-buro river onsen"
+      "Lugares menos visitados",
+      "Cidades tradicionais",
+      "Onsen de rio Sennin-buro"
     ],
     "warn": [
-      "Long drives",
-      "Coldest nights",
-      "Needs a driver"
+      "Trechos longos de carro",
+      "As noites mais frias",
+      "Precisa de motorista"
     ],
     "stops": [
       {
         "name": "Tokyo",
-        "dates": "20–23 Dec",
+        "dates": "20–23 dez",
         "nights": 3,
         "lodging": "city",
-        "how": "Land and base centrally.",
+        "how": "Chegada e base num lugar central.",
         "highlights": [
-          "Asakusa, Yanaka, Tsukiji, a day in Kamakura"
+          "Asakusa, Yanaka, Tsukiji, um dia em Kamakura"
         ],
         "eat": "Sushi, izakaya",
         "bump": null
       },
       {
         "name": "Lake Kawaguchiko",
-        "dates": "23–25 Dec",
+        "dates": "23–25 dez",
         "nights": 2,
         "lodging": "ryokan",
-        "how": "Fuji Excursion, ~2 h. Pick up a 10-seat van on 25 Dec.",
+        "how": "Fuji Excursion, ~2 h. Retirada de uma van de 10 lugares em 25 dez.",
         "highlights": [
-          "Fuji at dawn; Oshino Hakkai",
-          "Chūreitō for the active four"
+          "O Fuji ao amanhecer; Oshino Hakkai",
+          "Chūreitō para os quatro mais animados"
         ],
-        "eat": "Hōtō noodles",
+        "eat": "Macarrão hōtō",
         "bump": null
       },
       {
         "name": "Tsumago (Kiso Valley)",
-        "dates": "25–26 Dec",
+        "dates": "25–26 dez",
         "nights": 1,
         "lodging": "village",
-        "how": "Drive ~3 h.",
+        "how": "De carro, ~3 h.",
         "highlights": [
-          "Walk the Nakasendō trail from Magome to Tsumago, 8 km",
-          "The others explore Magome and drive the van to Tsumago",
-          "Lanterns on the post-town street at night"
+          "Caminhada pela trilha Nakasendō de Magome a Tsumago, 8 km",
+          "Os outros passeiam por Magome e levam a van até Tsumago",
+          "Lanternas na rua da cidade-posto à noite"
         ],
-        "eat": "Gohei-mochi, soba, river fish",
-        "bump": "She travels in the van"
+        "eat": "Gohei-mochi, soba, peixe de rio",
+        "bump": "Ela vai de van"
       },
       {
         "name": "Ise",
-        "dates": "26–28 Dec",
+        "dates": "26–28 dez",
         "nights": 2,
         "lodging": "city",
-        "how": "Drive ~3.5 h via Nagoya.",
+        "how": "De carro, ~3.5 h via Nagoya.",
         "highlights": [
-          "Ise Jingū's outer and inner shrines, on flat gravel paths among old cedars",
-          "Oharai-machi pilgrim street",
-          "Meoto Iwa wedded rocks at sunrise"
+          "Os santuários externo e interno do Ise Jingū, por caminhos planos de cascalho entre cedros antigos",
+          "A rua de peregrinos Oharai-machi",
+          "As rochas casadas Meoto Iwa ao nascer do sol"
         ],
-        "eat": "Akafuku mochi, Ise udon, Matsusaka beef, spiny lobster",
-        "bump": "You visit a few days before the New Year crowds"
+        "eat": "Akafuku mochi, udon de Ise, carne de Matsusaka, lagosta",
+        "bump": "Vocês visitam poucos dias antes das multidões do Ano-Novo"
       },
       {
         "name": "Kawayu Onsen (Kumano)",
-        "dates": "28–31 Dec",
+        "dates": "28–31 dez",
         "nights": 3,
         "lodging": "ryokan",
-        "how": "Drive ~3 h.",
+        "how": "De carro, ~3 h.",
         "highlights": [
-          "Sennin-buro, a large bath dug into the riverbed (winter only)",
-          "Kumano Hongū Taisha and the giant torii at Ōyunohara",
-          "Kumano Kodō from Hosshinmon to Hongū, 7 km. She can walk the last section",
-          "Nachi Falls (drive to the top, skip the stone stairs)",
-          "Tsuboyu, a small UNESCO-listed bath booked in 30-minute slots"
+          "Sennin-buro, uma grande banheira cavada no leito do rio (só no inverno)",
+          "Kumano Hongū Taisha e o torii gigante de Ōyunohara",
+          "Kumano Kodō de Hosshinmon a Hongū, 7 km. Ela pode caminhar o último trecho",
+          "Cachoeira Nachi (vá de carro até o alto e pule as escadas de pedra)",
+          "Tsuboyu, um pequeno banho tombado pela UNESCO, reservado em horários de 30 minutos"
         ],
-        "eat": "Katsuura fresh tuna, mehari-zushi",
-        "bump": "Sennin-buro is shallow and cooler at the edges"
+        "eat": "Atum fresco de Katsuura, mehari-zushi",
+        "bump": "O Sennin-buro é raso e mais fresco nas bordas"
       },
       {
         "name": "Kōyasan",
-        "dates": "31 Dec–2 Jan",
+        "dates": "31 dez–2 jan",
         "nights": 2,
         "lodging": "temple",
-        "how": "Drive ~4 h on mountain roads; winter tyres essential.",
+        "how": "De carro, ~4 h por estradas de montanha; pneus de inverno são indispensáveis.",
         "highlights": [
-          "New Year's Eve temple bells; Kōyasan has more than 100 temples",
-          "Dawn service on 1 Jan; Okunoin lantern walk"
+          "Sinos de templo na véspera de Ano-Novo; Kōyasan tem mais de 100 templos",
+          "Cerimônia do amanhecer em 1º jan; caminhada entre as lanternas de Okunoin"
         ],
-        "eat": "Shōjin ryōri, New Year temple food",
-        "bump": "These are the coldest nights of the trip. Choose heated rooms"
+        "eat": "Shōjin ryōri, comida de templo de Ano-Novo",
+        "bump": "São as noites mais frias da viagem. Escolha quartos aquecidos"
       },
       {
         "name": "Kyoto",
-        "dates": "2–6 Jan",
+        "dates": "2–6 jan",
         "nights": 4,
         "lodging": "city",
-        "how": "Drop the van in Osaka or Kyoto (one-way fee), ~2.5 h.",
+        "how": "Devolução da van em Osaka ou Kyoto (taxa de devolução em outra cidade), ~2.5 h.",
         "highlights": [
           "Fushimi Inari, Kiyomizu, Gion, Arashiyama",
-          "Karuta-hajime on 3 Jan; tea ceremony"
+          "Karuta-hajime em 3 jan; cerimônia do chá"
         ],
-        "eat": "Kaiseki lunch, Nishiki as it reopens",
+        "eat": "Almoço kaiseki, Nishiki quando reabrir",
         "bump": null
       },
       {
         "name": "Osaka",
-        "dates": "6–9 Jan",
+        "dates": "6–9 jan",
         "nights": 3,
         "lodging": "city",
-        "how": "~15 min. Fly out of Kansai.",
+        "how": "~15 min. Voo de volta saindo de Kansai.",
         "highlights": [
-          "Nara day trip",
+          "Bate-volta a Nara",
           "Dōtonbori, Kuromon, Shinsekai"
         ],
         "eat": "Kushikatsu, takoyaki, okonomiyaki",

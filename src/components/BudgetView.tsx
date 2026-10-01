@@ -6,9 +6,10 @@ import { useSetting, useTable } from "@/lib/tables";
 import { NoPlanYet, PlanPicker } from "./PlanTabs";
 import { CommitInput } from "./PlanEditor";
 import { useStore } from "./providers";
+import { PageHeader, Section } from "./ui";
 import { pickPlan, usePlans } from "./usePlans";
 
-const yen = (n: number) => "¥" + (Math.round(n / 100) * 100).toLocaleString("en-US");
+const yen = (n: number) => "¥" + (Math.round(n / 100) * 100).toLocaleString("pt-BR");
 
 /** P2.6: per-person budget by category, updated from bookings, in yen and SGD. */
 export function BudgetView() {
@@ -22,84 +23,75 @@ export function BudgetView() {
   const [people, setPeople] = useSetting<number>("travellers", 6);
   const planner = me?.role === "planner";
 
-  if (!state.loaded) return <p className="text-muted">Loading…</p>;
+  if (!state.loaded) return <p className="text-muted">Carregando…</p>;
   if (!plan) return <NoPlanYet />;
 
   const lines = planBudget(plan, bookings, { foodPerDay });
   const total = lines.reduce((a, l) => a + l.projected, 0);
   const booked = lines.reduce((a, l) => a + l.booked, 0);
   const days = planNights(plan) + 1;
-  const sgd = (n: number) => "S$" + (Math.round(n / fx / 10) * 10).toLocaleString("en-US");
+  const sgd = (n: number) => "S$" + (Math.round(n / fx / 10) * 10).toLocaleString("pt-BR");
   const max = Math.max(...lines.map((l) => l.projected), 1);
 
   return (
-    <main className="grid gap-5">
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h1 className="text-2xl font-extrabold">Budget</h1>
-        <PlanPicker plans={state.plans} current={plan} />
-      </div>
-      <p className="text-sm text-muted">
-        Per person, flights excluded. Bookings replace estimates as they come in; anything still at &ldquo;idea&rdquo; is left out.
-      </p>
+    <main className="grid gap-6">
+      <PageHeader title="Orçamento">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <span>Por pessoa, sem passagens aéreas. As reservas substituem as estimativas conforme chegam; o que ainda é &ldquo;ideia&rdquo; fica de fora.</span>
+          <PlanPicker plans={state.plans} current={plan} />
+        </div>
+      </PageHeader>
 
-      <section className="grid gap-3 sm:grid-cols-3" aria-label="Totals">
-        <Big label="Per person, whole trip" value={yen(total)} sub={`about ${sgd(total)}`} />
-        <Big label="Per person per day" value={yen(total / days)} sub={`about ${sgd(total / days)}`} />
-        <Big label={`Group of ${people}`} value={yen(total * people)} sub={`${yen(booked)} each already booked`} />
+      <section className="grid gap-3 sm:grid-cols-3" aria-label="Totais">
+        <Big label="Por pessoa, a viagem toda" value={yen(total)} sub={`cerca de ${sgd(total)}`} strong />
+        <div className="grid grid-cols-2 gap-3 sm:contents">
+          <Big label="Por pessoa, por dia" value={yen(total / days)} sub={`cerca de ${sgd(total / days)}`} />
+          <Big label={`Grupo de ${people}`} value={yen(total * people)} sub={`${yen(booked)} por pessoa já reservado`} />
+        </div>
       </section>
 
-      <div className="card overflow-x-auto">
-        <table className="w-full border-collapse text-sm">
-          <thead>
-            <tr className="text-left font-mono text-xs tracking-wider text-muted uppercase">
-              <th className="p-3 font-medium">Category</th>
-              <th className="p-3 text-right font-medium">Estimate</th>
-              <th className="p-3 text-right font-medium">Booked</th>
-              <th className="p-3 text-right font-medium">Expected</th>
-              <th className="hidden p-3 font-medium sm:table-cell" style={{ width: "22%" }}>
-                <span className="sr-only">Share</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {lines.map((l) => (
-              <tr key={l.category} className="border-t border-line">
-                <td className="p-3">
-                  <span className="font-bold">{l.label}</span>
-                  <span className="block text-xs text-muted">{l.note}</span>
-                </td>
-                <td className="p-3 text-right tabular-nums">{yen(l.estimate)}</td>
-                <td className="p-3 text-right tabular-nums">{l.booked ? yen(l.booked) : "—"}</td>
-                <td className="p-3 text-right tabular-nums">
-                  <span className="font-bold">{yen(l.projected)}</span>
-                  <span className="block text-xs text-muted">{sgd(l.projected)}</span>
-                </td>
-                <td className="hidden p-3 sm:table-cell">
-                  <span className="block h-2 rounded-full bg-accent/80" style={{ width: `${(l.projected / max) * 100}%` }} />
-                </td>
-              </tr>
-            ))}
-          </tbody>
-          <tfoot>
-            <tr className="border-t border-line font-bold">
-              <td className="p-3">Total per person</td>
-              <td className="p-3 text-right tabular-nums">{yen(lines.reduce((a, l) => a + l.estimate, 0))}</td>
-              <td className="p-3 text-right tabular-nums">{yen(booked)}</td>
-              <td className="p-3 text-right tabular-nums">
-                {yen(total)}
-                <span className="block text-xs font-normal text-muted">{sgd(total)}</span>
-              </td>
-              <td className="hidden sm:table-cell" />
-            </tr>
-          </tfoot>
-        </table>
-      </div>
+      <Section title="Por categoria" aside="por pessoa" id="cat-h">
+        <ul className="card grid divide-y divide-rule">
+          {lines.map((l) => (
+            <li key={l.category} className="grid gap-2 p-4">
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0">
+                  <p className="font-bold">{l.label}</p>
+                  <p className="text-xs text-muted">{l.note}</p>
+                </div>
+                <div className="shrink-0 text-right">
+                  <p className="font-display text-[1.5rem] leading-none tabular-nums">{yen(l.projected)}</p>
+                  <p className="text-xs text-muted tabular-nums">{sgd(l.projected)}</p>
+                </div>
+              </div>
+              <span className="block h-1.5 rounded-full bg-paper-2" aria-hidden="true">
+                <span className="block h-full rounded-full bg-vermilion/80" style={{ width: `${(l.projected / max) * 100}%` }} />
+              </span>
+              <p className="font-mono text-[0.72rem] text-muted tabular-nums">
+                estimativa {yen(l.estimate)} · reservado {l.booked ? yen(l.booked) : "—"}
+              </p>
+            </li>
+          ))}
+          <li className="flex items-baseline justify-between gap-3 p-4">
+            <span className="font-bold">Total por pessoa</span>
+            <span className="text-right">
+              <span className="block font-display text-[1.75rem] leading-none tabular-nums">{yen(total)}</span>
+              <span className="font-mono text-[0.72rem] text-muted tabular-nums">
+                estimativa {yen(lines.reduce((a, l) => a + l.estimate, 0))} · reservado {yen(booked)}
+              </span>
+            </span>
+          </li>
+        </ul>
+      </Section>
 
-      <section className="card grid gap-3 p-4 sm:grid-cols-3" aria-label="Budget settings">
+      <section className="card grid gap-3 p-4 sm:grid-cols-3" aria-labelledby="set-h">
+        <h2 id="set-h" className="text-[1.5rem] leading-tight sm:col-span-3">
+          Ajustes
+        </h2>
         <label className="grid gap-1 text-sm">
-          Yen per SGD (enter today&apos;s rate)
+          Ienes por dólar de Singapura (cotação de hoje)
           <CommitInput
-            ariaLabel="Yen per SGD"
+            ariaLabel="Ienes por dólar de Singapura"
             type="number"
             value={String(fx)}
             disabled={!planner}
@@ -108,9 +100,9 @@ export function BudgetView() {
           />
         </label>
         <label className="grid gap-1 text-sm">
-          Food per person per day (¥)
+          Comida por pessoa por dia (¥)
           <CommitInput
-            ariaLabel="Food per day"
+            ariaLabel="Comida por dia"
             type="number"
             value={String(foodPerDay)}
             disabled={!planner}
@@ -119,9 +111,9 @@ export function BudgetView() {
           />
         </label>
         <label className="grid gap-1 text-sm">
-          People sharing costs
+          Pessoas dividindo os custos
           <CommitInput
-            ariaLabel="People"
+            ariaLabel="Pessoas"
             type="number"
             value={String(people)}
             disabled={!planner}
@@ -134,11 +126,11 @@ export function BudgetView() {
   );
 }
 
-function Big({ label, value, sub }: { label: string; value: string; sub: string }) {
+function Big({ label, value, sub, strong = false }: { label: string; value: string; sub: string; strong?: boolean }) {
   return (
-    <div className="card grid gap-0.5 p-4">
-      <span className="font-mono text-xs tracking-wider text-muted uppercase">{label}</span>
-      <span className="font-display text-3xl font-extrabold">{value}</span>
+    <div className="card grid content-start gap-1 p-4">
+      <span className="eyebrow">{label}</span>
+      <span className={`font-display leading-none tabular-nums ${strong ? "text-[2.6rem]" : "text-[1.75rem]"}`}>{value}</span>
       <span className="text-sm text-muted">{sub}</span>
     </div>
   );

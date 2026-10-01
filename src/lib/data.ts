@@ -19,7 +19,7 @@ export async function loadTrip(sb: SupabaseClient | null): Promise<Trip> {
     sb.from("stays").select("*").order("sort"),
     sb.from("stay_daytrips").select("*").order("sort"),
     sb.from("trip_modules").select("*").order("sort"),
-    sb.from("travellers").select("id,name,role").order("created_at"),
+    sb.from("travellers").select("id,name,role,couple").order("created_at"),
   ]);
   const err = [places, routes, stays, extras, modules, travellers].find((r) => r.error)?.error;
   if (err) throw new Error(`Supabase: ${err.message}`);
@@ -85,6 +85,7 @@ export async function loadTrip(sb: SupabaseClient | null): Promise<Trip> {
       id: t.id as string,
       name: t.name as string,
       role: t.role as "planner" | "member",
+      couple: (t.couple as string | null) ?? null,
     })),
   };
 }

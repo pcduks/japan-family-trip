@@ -20,7 +20,7 @@ export async function GET(req: NextRequest) {
 
   if (error) {
     const login = new URL("/login", req.url);
-    login.searchParams.set("error", "That sign-in link has expired or was already used. Ask for a new one.");
+    login.searchParams.set("error", "Esse link venceu ou já foi usado. Peça um novo.");
     return NextResponse.redirect(login);
   }
   return NextResponse.redirect(new URL(next, req.url));

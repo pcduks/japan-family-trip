@@ -3,7 +3,7 @@
 import { useEffect, useSyncExternalStore } from "react";
 
 /** Pages saved for offline use as soon as the app is opened online. */
-const WARM = ["/today", "/plan/days", "/plan/bookings", "/plan/budget", "/food", "/", "/guides/tokyo", "/guides/kyoto"];
+const WARM = ["/", "/today", "/viagem", "/food", "/mala", "/anotar", "/passaporte", "/socorro", "/contas", "/votar", "/plan/days", "/plan/bookings", "/guides/tokyo", "/guides/kyoto"];
 
 export function ServiceWorker({ signedIn }: { signedIn: boolean }) {
   useEffect(() => {
