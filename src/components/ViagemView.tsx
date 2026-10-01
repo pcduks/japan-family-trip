@@ -38,7 +38,8 @@ export function ViagemView() {
       <Group title="Antes de ir">
         <StampCard wide href="/food" motif="bowl" ink="var(--amber)" title="Comida" status={`${food.length} lugares de Tokyo${wantCount ? ` · você quer ir a ${wantCount}` : ""}`} />
         <StampCard href="/mala" motif="suitcase" ink="var(--pine)" title="Mala" status={myPacking.length ? `${packed} de ${myPacking.length} na mala` : "Monte sua lista"} />
-        <StampCard href="/compare" motif="train" ink="var(--indigo)" title="Rotas" status="As quatro, lado a lado" />
+        <StampCard href="/desejos" motif="ballot" ink="var(--vermilion)" title="Desejos" status="O que você quer viver" />
+        <StampCard href="/compare" motif="train" ink="var(--indigo)" title="Rotas" status="Lado a lado" />
       </Group>
       <Group title="Lá no Japão">
         <StampCard href="/guides/tokyo" motif="tower" ink="var(--vermilion)" title="Tokyo" status="Dias, bairros e noites" />

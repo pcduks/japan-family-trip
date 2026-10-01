@@ -53,6 +53,8 @@ interface Store {
   hearts: Heart[];
   media: MediaItem[];
   submitRanking: (routeIds: string[]) => Promise<void>;
+  /** Vote on generated plans (candidate plans); votes carry the plan id as routeId. */
+  submitPlanRanking: (planIds: string[]) => Promise<void>;
   toggleHeart: (placeId: string) => Promise<void>;
   pinVideo: (placeId: string, videoId: string, title: string) => Promise<void>;
   removeMedia: (id: string) => Promise<void>;
@@ -127,19 +129,21 @@ export function Providers({
 
   const refresh = useCallback(async () => {
     if (!sb) return;
-    const [v, h, m] = await Promise.all([
+    const [v, pv, h, m] = await Promise.all([
       sb.from("votes").select("traveller_id,route_id,rank"),
+      sb.from("plan_votes").select("traveller_id,plan_id,rank"),
       sb.from("hearts").select("traveller_id,place_id"),
       sb.from("place_media").select("id,place_id,type,source_ref,pinned,sort,title").order("sort"),
     ]);
     const err = v.error ?? h.error ?? m.error;
+    const planVotes = pv.error ? [] : pv.data!.map((r) => ({ travellerId: r.traveller_id, routeId: r.plan_id, rank: r.rank }));
     if (err) {
       setError(err.message);
       return;
     }
     setError(null);
     setRemote({
-      votes: v.data!.map((r) => ({ travellerId: r.traveller_id, routeId: r.route_id, rank: r.rank })),
+      votes: [...v.data!.map((r) => ({ travellerId: r.traveller_id, routeId: r.route_id, rank: r.rank })), ...planVotes],
       hearts: h.data!.map((r) => ({ travellerId: r.traveller_id, placeId: r.place_id })),
       media: m.data!.map((r) => ({
         id: r.id,
@@ -165,6 +169,7 @@ export function Providers({
     const channel = sb
       .channel("trip-live")
       .on("postgres_changes", { event: "*", schema: "public", table: "votes" }, bump)
+      .on("postgres_changes", { event: "*", schema: "public", table: "plan_votes" }, bump)
       .on("postgres_changes", { event: "*", schema: "public", table: "hearts" }, bump)
       .on("postgres_changes", { event: "*", schema: "public", table: "place_media" }, bump)
       .subscribe();
@@ -196,6 +201,20 @@ export function Providers({
       await run(sb.rpc("submit_ranking", { route_codes: codes }));
     },
     [me, sb, votes, trip.routes, run],
+  );
+
+  const submitPlanRanking = useCallback(
+    async (planIds: string[]) => {
+      if (!me) return;
+      if (!sb) {
+        const others = votes.filter((v) => v.travellerId !== me.travellerId);
+        const mine = planIds.map((routeId, i) => ({ travellerId: me.travellerId, routeId, rank: i + 1 }));
+        local.votes.set([...others, ...mine]);
+        return;
+      }
+      await run(sb.rpc("submit_plan_ranking", { plan_ids: planIds }));
+    },
+    [me, sb, votes, run],
   );
 
   const toggleHeart = useCallback(
@@ -306,6 +325,7 @@ export function Providers({
     hearts,
     media,
     submitRanking,
+    submitPlanRanking,
     toggleHeart,
     pinVideo,
     removeMedia,

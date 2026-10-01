@@ -1,0 +1,88 @@
+{
+  "_comment": "Hand fixes merged last by scripts/import-catalog.ts. Card fields replace the parsed value (valid replaces whole; ny_status/booking/tags/needs_review merge). clear_review removes needs_review entries by prefix ('*' = all).",
+  "cards": {
+    "KS-16": {
+      "name_en": "Kinosaki Onsen crab + 6 sotoyu circuit",
+      "name_pt": "Kinosaki: caranguejo e os 6 banhos",
+      "cost_note": "Crab kaiseki ¥35–60k pp at top inns; 'half crab' plans ¥25k. 6 public baths this winter: Satono-yu closed until ~2030, Kō-no-yu back 30 Oct 2026; NY rota closes 1–2 baths a day (notice mid-Dec).",
+      "photo_query": "Kinosaki Onsen willow canal snow yukata Japan winter",
+      "tags": ["crab", "flat", "ny-safe"],
+      "clear_review": ["*"]
+    },
+    "NW-FUJ-08": {
+      "name_pt": "Yamanakako: Fuji vermelho e Diamond Fuji",
+      "name_en": "Yamanakako dawn Fuji + Diamond Fuji sunset (Hana no Miyako Park)",
+      "uniqueness": 4,
+      "cost_note": "Diamond Fuji (sun setting on the summit) is visible late Nov–mid Jan ONLY from the Hana no Miyako Park / Nagaike shore, ~15:23–15:46; the village posts a daily chart. Kawaguchiko shore does not get it in this window.",
+      "photo_query": "Diamond Fuji sunset Lake Yamanaka Hana no Miyako Park",
+      "tags": ["view", "fuji"],
+      "needs_review": ["confirm December date"]
+    },
+    "NW-MAT-01": {
+      "valid": { "closed": ["2026-12-29", "2026-12-30", "2026-12-31"] },
+      "ny_status": { "2026-12-28": "open", "2027-01-04": "open", "2027-01-05": "open" },
+      "cost_note": "1–3 Jan special opening 10:00–15:30 (reduced); keep is 6 floors of steep stairs (not for her)"
+    },
+    "NW-KAN-02": {
+      "valid": {},
+      "ny_status": { "2027-01-01": "reduced", "2027-01-02": "reduced", "2027-01-03": "reduced", "2027-01-04": "reduced" },
+      "cost_note": "Officially closed 1–4 Jan but 20–40 of ~170 shops (mainly restaurants) open; full reopening Tue 5 Jan; kōbako (female) crab until 31 Dec only"
+    },
+    "NW-KAN-04": {
+      "valid": {},
+      "ny_status": { "2026-12-28": "open", "2026-12-29": "open", "2026-12-30": "open", "2026-12-31": "open", "2027-01-01": "reduced", "2027-01-02": "reduced", "2027-01-03": "open", "2027-01-04": "open", "2027-01-05": "open" },
+      "cost_note": "District always open; Nomura house closed 26–27 Dec & 1–2 Jan"
+    },
+    "NW-KAN-05": {
+      "valid": { "closed": ["2026-12-29", "2026-12-30", "2026-12-31", "2027-01-01", "2027-01-04"] },
+      "ny_status": { "2027-01-02": "open", "2027-01-03": "open" },
+      "cost_note": "Closed 29 Dec–1 Jan and Mondays (4 Jan); reopens 2 Jan"
+    },
+    "NW-KAN-12": {
+      "valid": {},
+      "ny_status": { "2026-12-28": "event", "2026-12-29": "event", "2026-12-30": "event", "2026-12-31": "event", "2027-01-01": "event", "2027-01-02": "event", "2027-01-03": "event", "2027-01-04": "open", "2027-01-05": "open" },
+      "cost_note": "Castle park evening lighting runs nightly 27 Dec–3 Jan (02-closures); otherwise Fri/Sat/holiday evenings",
+      "clear_review": ["*"]
+    },
+    "NW-TAK-01": {
+      "ny_status": { "2026-12-31": "reduced", "2027-01-01": "reduced" },
+      "needs_review": ["Wada House may close 31 Dec–1 Jan (irregular); village and shuttle run — ask tourist office 05769-6-1013"]
+    },
+    "ST-01": {
+      "needs_review": ["Benesse year-end days (31 Dec–1 Jan) posted Oct–Nov; Chichu closed 12 Jan–19 Mar 2027 (after trip)"]
+    },
+    "KY-06": {
+      "needs_review": ["confirm which hamlet dances on Sat 26 Dec / 2 Jan (Takachiho tourism calendar, Nov)"]
+    },
+    "KY-02": {
+      "valid": {},
+      "bump_ok": 5,
+      "bump_ok_alt": 2,
+      "ny_status": { "2027-01-01": "event", "2027-01-02": "event", "2027-01-03": "event" },
+      "cost_note": "bump 5 on 31 Dec / 4–5 Jan, bump 2 on 1–3 Jan (2 M crush; gate open continuously 31 Dec 06:30 → 4 Jan 21:00)"
+    },
+    "TK-04": { "ny_status": { "2027-01-01": "event" }, "booking": { "lead_days": 30, "how": "online first-come early Dec (2 Dec in 2025), 540 seats, sells out in minutes" } },
+    "TK-01": { "booking": { "lead_days": 30, "deadline": "2026-12-01", "how": "ringing tickets at the temple office 1 Dec 09:00 (few, same-morning sell-out); watching is free" } },
+    "TK-08": { "booking": { "lead_days": 30, "deadline": "2026-12-10", "how": "Lawson Ticket 10 Dec 10:00 JST for January; 3–9 Jan slots go in minutes" } },
+    "KS-01": { "booking": { "lead_days": 30, "deadline": "2026-12-01", "how": "viewing-area form opens 1 Dec 14:00, first-come, 4 × 500, ¥3,000 (2025 pattern); trial ringing Sun 27 Dec 14:00 free" } },
+    "KS-05": {
+      "ny_status": { "2026-12-28": "open", "2026-12-29": "open", "2026-12-30": "open", "2026-12-31": "open", "2027-01-01": "open", "2027-01-02": "open", "2027-01-03": "open", "2027-01-04": "open", "2027-01-05": "open" },
+      "booking": { "lead_days": 90, "deadline": "2026-10-31", "how": "Nintendo Museum lottery for 4–9 Jan visits: apply 1–31 Oct 2026 (results 1 Nov); museum closed 30 Dec–3 Jan + Tuesdays" },
+      "cost_note": "Byōdō-in ¥700 (open 1 Jan); Nintendo Museum ¥3,300 lottery-only",
+      "clear_review": ["ny:"]
+    },
+    "NW-FUJ-06": {
+      "valid": {},
+      "ny_status": { "2027-01-02": "reduced", "2027-01-03": "reduced" },
+      "cost_note": "Hakone Ekiden 2–3 Jan closes the R1 road and fills hotels; ropeway annual inspection normally mid-Jan–Feb (2026: 13 Jan–20 Feb)",
+      "clear_review": ["dates: verify"],
+      "needs_review": ["verify Hakone Ropeway Jan 2027 maintenance window (Odakyu notice ~Nov 2026)"]
+    },
+    "ST-03": { "clear_review": ["*"] },
+    "NW-NII-05": { "clear_review": ["*"] },
+    "NW-FUJ-12": { "clear_review": ["*"] },
+    "NW-TAK-02": { "cost_note": "¥12–18k pp with 2 meals; 2 rooms per house fits six; NY gone, 20–27 Dec realistic via village reservation line" },
+    "NW-TOH-05": { "cost_note": "Light-up ran 27 Dec–22 Feb last season (nightly 27 Dec–4 Jan); monsters only half-formed in late Dec" }
+  },
+  "bases": {}
+}

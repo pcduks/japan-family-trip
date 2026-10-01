@@ -9,6 +9,7 @@ const TABS = [
   { href: "/plan/days", label: "Dias" },
   { href: "/plan/bookings", label: "Reservas" },
   { href: "/plan/budget", label: "Orçamento" },
+  { href: "/plan/regras", label: "Regras" },
 ];
 
 export function PlanTabs() {

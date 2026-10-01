@@ -178,3 +178,41 @@ export function parseMapsUrl(url: string): { name: string | null; lat: number | 
   } catch {}
   return { name, lat, lng, placeId };
 }
+
+/* ------------------------------------------------------------ desejos */
+
+export type WishAnswer = "no" | "like" | "must";
+
+/** One row per traveller and card; id = `${traveller_id}:${card_id}`. */
+export interface Wish {
+  id: string;
+  traveller_id: string;
+  card_id: string;
+  answer: WishAnswer;
+  updated_at?: string;
+}
+
+export interface WishFacts {
+  walk_km?: "bairro" | "cidade" | "trilha";
+  stairs?: boolean;
+  midday_rest?: "need" | "sometimes" | "no";
+  food_limits?: string[];
+  early?: boolean;
+  /** The forced Réveillon choice: a base slug. */
+  ny_choice?: string;
+  /** Answered together with the planner ("Fazer junto"). */
+  with_help?: boolean;
+  /** Optional free text from the finish screen. */
+  missing?: string;
+}
+
+/** id = traveller id. finished_at reveals nothing by itself; answers unlock when all have finished. */
+export interface WishProfile {
+  id: string;
+  facts: WishFacts;
+  finished_at: string | null;
+  updated_at?: string;
+}
+
+export const wishId = (travellerId: string, cardId: string) => `${travellerId}:${cardId}`;
+export const MAX_MUST = 3;

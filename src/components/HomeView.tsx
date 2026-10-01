@@ -9,6 +9,7 @@ import { TRIP_END, TRIP_START, compareRows, daysBetween, formatDay, placeMap, st
 import type { Route } from "@/lib/types";
 import { voteTally } from "@/lib/vote";
 import { EkiStamp } from "./EkiStamp";
+import { useWishesRevealed } from "./RetratoView";
 import { useStore } from "./providers";
 import { Avatar, PageHeader, firstName } from "./ui";
 import { usePlans } from "./usePlans";
@@ -70,7 +71,7 @@ function Decide({ votes, meId }: { votes: { travellerId: string; routeId: string
   const voted = new Set(votes.map((v) => v.travellerId));
   const iVoted = !!meId && voted.has(meId);
   const daysLeft = daysBetween(todayInJapan(), VOTE_DEADLINE);
-  const { leader, firsts, majority } = voteTally(candidates, votes, trip.travellers.length);
+  const { firsts } = voteTally(candidates, votes, trip.travellers.length);
   const rows = useMemo(() => compareRows(trip, candidates), [trip, candidates]);
 
   return (
@@ -96,10 +97,11 @@ function Decide({ votes, meId }: { votes: { travellerId: string; routeId: string
         <p className="text-sm text-muted">
           {voted.size} de {trip.travellers.length} votaram ·{" "}
           {daysLeft > 0 ? `a votação fecha em ${daysLeft} dia${daysLeft === 1 ? "" : "s"} (15 out)` : "a votação fechou"}
-          {leader ? ` · ${majority ? "maioria" : "na frente"}: ${leader.name}` : ""}
+
         </p>
+        <DesejosCta />
         <Link href="/votar" className={`btn ${iVoted ? "" : "btn-accent"} text-base`}>
-          {iVoted ? "Ver resultado ou mudar meu voto" : "Dar meu voto"}
+          {iVoted ? "Mudar meu voto" : "Dar meu voto"}
         </Link>
       </section>
 
@@ -219,5 +221,28 @@ function Chapters({ route, places, planId }: { route: Route; places: Map<string,
         })}
       </ol>
     </section>
+  );
+}
+
+/** Desejos come before the vote: one line of state and the right button. */
+function DesejosCta() {
+  const { me } = useStore();
+  const { revealed, done, missing } = useWishesRevealed();
+  const iDid = done.some((t) => t.id === me?.travellerId);
+  if (revealed)
+    return (
+      <Link href="/retrato" className="btn text-base no-underline">
+        Ver o retrato da família
+      </Link>
+    );
+  return (
+    <div className="grid gap-2">
+      <Link href="/desejos" className={`btn ${iDid ? "" : "btn-primary"} text-base no-underline`}>
+        {iDid ? "Rever meus desejos" : "Dizer o que eu quero viver"}
+      </Link>
+      <p className="text-xs text-muted">
+        {done.length} de {done.length + missing.length} já entregaram os desejos. As rotas nascem deles.
+      </p>
+    </div>
   );
 }

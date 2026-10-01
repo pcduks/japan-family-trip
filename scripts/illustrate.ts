@@ -18,6 +18,13 @@ const SCENES: Record<string, string> = {
   C: "Southwest Japan in winter: the vermilion floating torii of Miyajima at high tide, a small onsen town with rising steam in the hills of Kyushu, soft mist over the Seto Inland Sea.",
   D: "Sacred mountains: a moss and snow temple path on Koyasan lined with stone lanterns and tall cedars, a quiet post-town street of wooden houses, New Year's shimenawa rope on a gate.",
   M: "A calm winter scene of a Japanese old town street at dusk with paper lanterns and light snow.",
+  // Desejos deck groups (data/experiences.json deck_group), 16:9 covers.
+  "deck-noite-tranquila": "A quiet ryokan room at night: futon laid out, a low table with a tea set, paper screens glowing, snow falling outside the window over a small garden with a stone lantern.",
+  "deck-dia-de-rua": "A lively old Tokyo shopping street in winter at dusk: lanterns, a temple gate at the end of the street, shoppers in coats, steam from a food stall, a tram in the distance.",
+  "deck-natureza": "Mount Fuji above a still lake at winter dawn, a small boat on the shore, bare trees with frost, mist on the water, snowy peaks on the horizon.",
+  "deck-comida": "A winter feast on a Japanese table seen from above: a steaming nabe hot pot, a plate of snow crab, grilled oysters, mikan oranges, cups of hot sake, chopsticks.",
+  "deck-reveillon": "A great temple bell being rung at midnight on New Year's Eve, a crowd with paper lanterns in a snowy courtyard, a pine and bamboo kadomatsu decoration at the gate, first light on the horizon.",
+  "deck-neve": "A snow-covered mountain village of thatched gassho farmhouses at twilight, warm windows, deep snow on the roofs, a hot spring steaming at the edge of the village, snow monkeys bathing.",
 };
 
 async function generate(code: string) {
@@ -36,7 +43,7 @@ async function generate(code: string) {
   const part = json.candidates?.[0]?.content?.parts?.find((p: { inlineData?: { data: string; mimeType: string } }) => p.inlineData);
   if (!part) throw new Error(`${code}: no image returned`);
   const ext = part.inlineData.mimeType.includes("jpeg") ? "jpg" : "png";
-  const out = `public/illustrations/route-${code}.${ext}`;
+  const out = `public/illustrations/${code.startsWith("deck-") ? code : `route-${code}`}.${ext}`;
   writeFileSync(out, Buffer.from(part.inlineData.data, "base64"));
   console.log("wrote", out);
 }

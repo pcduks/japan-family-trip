@@ -39,7 +39,7 @@ function NavItem({ href, label, icon, active }: { href: string; label: string; i
 export function BottomNav() {
   const path = usePathname();
   const is = (p: string) => path === p || path.startsWith(p + "/");
-  const home = path === "/" || is("/rotas") || is("/votar");
+  const home = path === "/" || is("/rotas") || is("/votar") || is("/desejos") || is("/retrato");
   if (is("/login")) return null;
   return (
     <nav
