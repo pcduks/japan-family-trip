@@ -3,6 +3,7 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 import { Avatar, firstName } from "./ui";
 import { useStore, type ThemePref } from "./providers";
 import { clearOfflineData } from "./ServiceWorker";
@@ -115,10 +116,13 @@ export function AppHeader() {
                 </div>
               </fieldset>
             ) : (
-              <p className="text-sm">
-                Você entrou como <b>{me?.name}</b>
-                {me?.role === "planner" ? " (quem organiza)" : ""}.
-              </p>
+              <>
+                <p className="text-sm">
+                  Você entrou como <b>{me?.name}</b>
+                  {me?.role === "planner" ? " (quem organiza)" : ""}.
+                </p>
+                {me?.canSwitch ? <SwitchPerson /> : null}
+              </>
             )}
 
             <fieldset className="grid gap-2">
@@ -157,6 +161,80 @@ export function AppHeader() {
         </Dialog.Portal>
       </Dialog.Root>
     </header>
+  );
+}
+
+/** Planner-only "Ver como": become another traveller to test, no email code. */
+async function switchTo(id: string): Promise<string | null> {
+  const res = await fetch("/auth/switch", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id }) }).catch(() => null);
+  if (res?.ok) {
+    // Full reload: the server must re-render with the new session cookie.
+    // eslint-disable-next-line @next/next/no-location-assign-relative-destination
+    window.location.assign("/");
+    return null;
+  }
+  return (await res?.json().catch(() => null))?.error ?? "Não deu para trocar.";
+}
+
+/** Shown while the planner is testing as someone else. */
+export function ActingBanner() {
+  const { me } = useStore();
+  const [busy, setBusy] = useState(false);
+  if (!me?.actingFor) return null;
+  return (
+    <div className="sticky top-0 z-40 flex items-center justify-center gap-3 bg-plum px-4 py-1.5 text-sm text-paper">
+      <span>
+        Vendo como <b>{firstName(me.name)}</b>
+      </span>
+      <button
+        type="button"
+        disabled={busy}
+        className="rounded-full border border-paper/60 px-2.5 py-0.5 text-xs font-bold"
+        onClick={async () => {
+          setBusy(true);
+          if (await switchTo(me.actingFor!.id)) setBusy(false);
+        }}
+      >
+        {busy ? "Voltando…" : `Voltar para ${firstName(me.actingFor.name)}`}
+      </button>
+    </div>
+  );
+}
+
+function SwitchPerson() {
+  const { trip, me } = useStore();
+  const [busy, setBusy] = useState<string | null>(null);
+  const [err, setErr] = useState<string | null>(null);
+  async function go(id: string) {
+    setBusy(id);
+    setErr(null);
+    const e = await switchTo(id);
+    if (e) {
+      setBusy(null);
+      setErr(e);
+    }
+  }
+  return (
+    <fieldset className="grid gap-2">
+      <legend className="mb-1 text-sm font-bold">Ver como (para testar)</legend>
+      <div className="grid grid-cols-3 gap-2">
+        {trip.travellers.map((t, i) => (
+          <button
+            key={t.id}
+            type="button"
+            disabled={!!busy}
+            aria-pressed={me?.travellerId === t.id}
+            onClick={() => me?.travellerId !== t.id && go(t.id)}
+            className="grid justify-items-center gap-1 rounded-xl border border-rule p-2 text-sm aria-pressed:border-ink aria-pressed:bg-paper-2 disabled:opacity-60"
+          >
+            <Avatar name={t.name} index={i} size={36} />
+            <span className="truncate">{busy === t.id ? "…" : firstName(t.name)}</span>
+          </button>
+        ))}
+      </div>
+      <p className="text-xs text-muted">Sem código. O que você fizer fica no nome da pessoa escolhida.</p>
+      {err ? <p className="text-xs text-danger">{err}</p> : null}
+    </fieldset>
   );
 }
 

@@ -1,10 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { IBM_Plex_Mono, Instrument_Serif, Klee_One, Zen_Kaku_Gothic_New, Zen_Maru_Gothic } from "next/font/google";
-import { AppHeader, BottomNav, Gate } from "@/components/AppChrome";
+import { ActingBanner, AppHeader, BottomNav, Gate } from "@/components/AppChrome";
 import { PREFS_BOOT_SCRIPT, Providers } from "@/components/providers";
 import { OfflineBanner, ServiceWorker } from "@/components/ServiceWorker";
 import { loadTrip } from "@/lib/data";
+import { cookies } from "next/headers";
+import { ACTING_COOKIE, plannerFromCookie } from "@/lib/supabase/acting";
 import { getViewer, serverSupabase } from "@/lib/supabase/server";
 import "./globals.css";
 
@@ -35,7 +37,14 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   const sb = await serverSupabase();
   // Signed-out visitors only ever see /login (the proxy redirects the rest).
   const trip = await loadTrip(viewer && viewer !== "demo" ? sb : null);
-  const me = viewer === "demo" ? "demo" : viewer ? { travellerId: viewer.travellerId, name: viewer.name, role: viewer.role } : null;
+  const plannerId = viewer && viewer !== "demo" ? plannerFromCookie((await cookies()).get(ACTING_COOKIE)?.value) : null;
+  const actingFor = plannerId && viewer && viewer !== "demo" && plannerId !== viewer.travellerId ? { id: plannerId, name: trip.travellers.find((t) => t.id === plannerId)?.name ?? "Pedro" } : null;
+  const me =
+    viewer === "demo"
+      ? "demo"
+      : viewer
+        ? { travellerId: viewer.travellerId, name: viewer.name, role: viewer.role, canSwitch: viewer.role === "planner" || !!actingFor, actingFor }
+        : null;
 
   return (
     <html lang="pt-BR" suppressHydrationWarning className={`${display.variable} ${body.variable} ${mono.variable} ${stamp.variable} ${hand.variable}`}>
@@ -46,6 +55,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body className="min-h-dvh antialiased">
         <Providers trip={trip} viewer={me}>
+          <ActingBanner />
           <OfflineBanner />
           <ServiceWorker signedIn={!!me} />
           {me ? <AppHeader /> : null}
