@@ -2,7 +2,7 @@
 
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { useEffect, useSyncExternalStore } from "react";
-import type { Expense, FoodMark, Note, PackingItem } from "./family";
+import type { Expense, FoodMark, Note, PackingItem, Wish, WishProfile } from "./family";
 import type { Activity, Booking, Plan, Setting, Tip } from "./plan";
 import { newId } from "./plan";
 
@@ -22,6 +22,8 @@ export interface TableRows {
   packing_items: PackingItem;
   expenses: Expense;
   food_marks: FoodMark;
+  wishes: Wish;
+  wish_profiles: WishProfile;
 }
 export type TableName = keyof TableRows;
 

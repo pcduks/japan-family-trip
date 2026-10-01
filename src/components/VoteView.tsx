@@ -13,7 +13,8 @@ import { Avatar, PageHeader, firstName } from "./ui";
 
 /**
  * Majority vote: everyone picks a favourite (rank 1) and, optionally, a
- * second choice (rank 2) that breaks ties. Results are visible live.
+ * second choice (rank 2) that breaks ties. The tally stays hidden until the
+ * deadline so late voters are not herded; the planner votes last.
  */
 export function VoteView() {
   const { trip, me, votes, submitRanking } = useStore();
@@ -35,6 +36,10 @@ export function VoteView() {
   const idx = new Map(trip.travellers.map((t, i) => [t.id, i]));
   const names = new Map(trip.travellers.map((t) => [t.id, t.name]));
   const daysLeft = daysBetween(todayInJapan(), VOTE_DEADLINE);
+  const closed = daysLeft <= 0;
+  // The planner votes last: everyone else first, so his pick can't anchor the family.
+  const othersPending = trip.travellers.filter((t) => t.id !== me?.travellerId && !voters.has(t.id)).length;
+  const plannerWaits = me?.role === "planner" && othersPending > 0 && !closed;
 
   async function save() {
     if (!first) return;
@@ -104,7 +109,7 @@ export function VoteView() {
                     {isSecond ? "✓ 2ª opção" : "2ª opção"}
                   </button>
                 ) : null}
-                {who.length ? (
+                {closed && who.length ? (
                   <ul className="ml-auto flex -space-x-1.5" aria-label={`Escolheram ${r.name}: ${who.map((id) => names.get(id)).join(", ")}`}>
                     {who.map((id) => (
                       <li key={id}>
@@ -113,7 +118,7 @@ export function VoteView() {
                     ))}
                   </ul>
                 ) : null}
-                <Link href={`/rotas/${r.code}`} className={`text-sm ${who.length ? "" : "ml-auto"}`}>
+                <Link href={`/rotas/${r.code}`} className={`text-sm ${closed && who.length ? "" : "ml-auto"}`}>
                   Ver a rota →
                 </Link>
               </div>
@@ -122,7 +127,10 @@ export function VoteView() {
         })}
       </fieldset>
 
-      {first && (dirty || !savedFirst) ? (
+      {plannerWaits ? (
+        <p className="card p-4 text-sm text-ink-2">Pedro vota por último: o botão abre quando os outros {othersPending} tiverem votado.</p>
+      ) : null}
+      {first && (dirty || !savedFirst) && !plannerWaits ? (
         <div className="sticky bottom-24 z-10 grid">
           <button className="btn btn-accent text-base shadow-lg" disabled={saving} onClick={save}>
             {saving ? "Carimbando…" : savedFirst ? "Atualizar meu voto" : "Votar"}
@@ -136,9 +144,9 @@ export function VoteView() {
       <section className="card grid gap-4 p-5" aria-labelledby="res-h">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <p className="eyebrow">Ao vivo</p>
+            <p className="eyebrow">{closed ? "Resultado" : "Até o fechamento"}</p>
             <h2 id="res-h" className="text-[1.9rem] leading-tight">
-              {leader ? (majority ? `${leader.name} tem a maioria` : `${leader.name} está na frente`) : "Ninguém votou ainda"}
+              {!closed ? `${voters.size} de ${trip.travellers.length} votaram` : leader ? (majority ? `${leader.name} tem a maioria` : `${leader.name} está na frente`) : "Ninguém votou"}
             </h2>
           </div>
           {justVoted || savedFirst ? <EkiStamp motif="ballot" ink="var(--vermilion)" top="Votei" bottom="2026" size={76} rotate={10} animate={justVoted} label="Você votou" /> : null}
