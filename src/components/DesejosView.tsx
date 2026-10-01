@@ -1,6 +1,7 @@
 "use client";
 
 import * as Dialog from "@radix-ui/react-dialog";
+import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { deckCards, loadCatalog, type ExperienceCard } from "@/lib/catalog";
@@ -233,7 +234,8 @@ function Card({ card, group }: { card: ExperienceCard; group: (typeof GROUPS)[nu
   const walk = card.effort <= 2 ? "pouca" : card.effort === 3 ? "média" : "muita";
   const cost = card.cost_pp_jpy == null ? "—" : card.cost_pp_jpy === 0 ? "grátis" : card.cost_pp_jpy < 3000 ? "¥" : card.cost_pp_jpy < 10000 ? "¥¥" : "¥¥¥";
   return (
-    <article className="card grid gap-3 overflow-hidden p-5">
+    <article className="card grid gap-3 overflow-hidden p-5 pt-0">
+      <Image src={`/illustrations/deck-${group.key}.webp`} alt="" width={1200} height={660} sizes="(max-width: 28rem) 100vw, 28rem" className="-mx-5 aspect-[2/1] w-[calc(100%+2.5rem)] max-w-none object-cover" priority />
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <p className="eyebrow">{group.title}</p>
