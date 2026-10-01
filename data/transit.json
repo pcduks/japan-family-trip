@@ -1,0 +1,1300 @@
+[
+  {
+    "from": "tokyo",
+    "to": "hakone",
+    "mode": "Romancecar from Shinjuku",
+    "hours_d2d": 1.75,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 2470,
+    "flags": [
+      "ekiden"
+    ],
+    "note": "onward buses/cablecar bump 2; avoid 2–3 Jan (Ekiden)"
+  },
+  {
+    "from": "tokyo",
+    "to": "kawaguchiko",
+    "mode": "Fuji Excursion from Shinjuku",
+    "hours_d2d": 2.33,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 4130,
+    "flags": [],
+    "note": "sells out; fallback highway bus bump 3"
+  },
+  {
+    "from": "tokyo",
+    "to": "nikko",
+    "mode": "Spacia X / Spacia from Asakusa",
+    "hours_d2d": 2.25,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 4000,
+    "flags": [],
+    "note": "Tōshōgū steps; 1–3 Jan crowds"
+  },
+  {
+    "from": "tokyo",
+    "to": "kamakura",
+    "mode": "JR Yokosuka line (Green Car +¥1,000)",
+    "hours_d2d": 1.25,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 950,
+    "flags": [],
+    "note": "Hachiman-gū hatsumōde 1–3 Jan: avoid"
+  },
+  {
+    "from": "tokyo",
+    "to": "karuizawa",
+    "mode": "Asama / Hakutaka",
+    "hours_d2d": 1.5,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 6400,
+    "flags": []
+  },
+  {
+    "from": "tokyo",
+    "to": "kusatsu",
+    "mode": "Kusatsu-Shima ltd exp + JR bus",
+    "hours_d2d": 3.5,
+    "transfers": 1,
+    "bump": 2,
+    "yen_pp": 5980,
+    "flags": [
+      "BUS"
+    ]
+  },
+  {
+    "from": "tokyo",
+    "to": "matsumoto",
+    "mode": "Azusa from Shinjuku",
+    "hours_d2d": 3,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 7000,
+    "flags": []
+  },
+  {
+    "from": "tokyo",
+    "to": "nagano",
+    "mode": "Kagayaki / Hakutaka / Asama",
+    "hours_d2d": 2,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 8800,
+    "flags": [],
+    "note": "Kagayaki all-reserved; Asama has unreserved cars"
+  },
+  {
+    "from": "nagano",
+    "to": "yudanaka",
+    "mode": "Nagaden Snow Monkey express / bus",
+    "hours_d2d": 1.25,
+    "transfers": 0,
+    "bump": 3,
+    "yen_pp": 1600,
+    "flags": [],
+    "note": "monkey park path 1.6 km snowy walk: bump 1 for her"
+  },
+  {
+    "from": "nagano",
+    "to": "nozawa",
+    "mode": "Shinkansen to Iiyama + Nozawa Liner bus",
+    "hours_d2d": 1.25,
+    "transfers": 1,
+    "bump": 3,
+    "yen_pp": 2100,
+    "flags": [
+      "BUS"
+    ],
+    "note": "icy village slopes"
+  },
+  {
+    "from": "nagano",
+    "to": "hakuba",
+    "mode": "Alpico express bus",
+    "hours_d2d": 1.5,
+    "transfers": 0,
+    "bump": 3,
+    "yen_pp": 2200,
+    "flags": [
+      "BUS"
+    ]
+  },
+  {
+    "from": "matsumoto",
+    "to": "hakuba",
+    "mode": "Ōito line local / bus",
+    "hours_d2d": 2,
+    "transfers": 1,
+    "bump": 2,
+    "yen_pp": 1600,
+    "flags": [],
+    "note": "infrequent"
+  },
+  {
+    "from": "matsumoto",
+    "to": "nagano",
+    "mode": "Shinano ltd exp",
+    "hours_d2d": 1.33,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 2900,
+    "flags": []
+  },
+  {
+    "from": "matsumoto",
+    "to": "takayama",
+    "mode": "Nohi/Alpico bus (reserve)",
+    "hours_d2d": 3,
+    "transfers": 0,
+    "bump": 2,
+    "yen_pp": 3700,
+    "flags": [
+      "BUS"
+    ],
+    "note": "winter mountain road"
+  },
+  {
+    "from": "karuizawa",
+    "to": "nagano",
+    "mode": "Shinkansen 25 min",
+    "hours_d2d": 1,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 3500,
+    "flags": []
+  },
+  {
+    "from": "karuizawa",
+    "to": "kusatsu",
+    "mode": "Kusakaru bus",
+    "hours_d2d": 2,
+    "transfers": 0,
+    "bump": 2,
+    "yen_pp": 2240,
+    "flags": [
+      "BUS"
+    ]
+  },
+  {
+    "from": "tokyo",
+    "to": "takayama",
+    "mode": "Nozomi to Nagoya + Hida",
+    "hours_d2d": 5,
+    "transfers": 1,
+    "bump": 2,
+    "yen_pp": 17500,
+    "flags": [
+      "LD",
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "tokyo",
+    "to": "kanazawa",
+    "mode": "Kagayaki",
+    "hours_d2d": 3.25,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 15000,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "nagano",
+    "to": "kanazawa",
+    "mode": "Kagayaki / Hakutaka",
+    "hours_d2d": 1.75,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 9000,
+    "flags": []
+  },
+  {
+    "from": "kanazawa",
+    "to": "shirakawago",
+    "mode": "Nohi/Hokutetsu bus (reserve)",
+    "hours_d2d": 1.75,
+    "transfers": 0,
+    "bump": 3,
+    "yen_pp": 2800,
+    "flags": [
+      "BUS"
+    ]
+  },
+  {
+    "from": "shirakawago",
+    "to": "takayama",
+    "mode": "Nohi bus (reserve)",
+    "hours_d2d": 1.25,
+    "transfers": 0,
+    "bump": 3,
+    "yen_pp": 2800,
+    "flags": [
+      "BUS"
+    ]
+  },
+  {
+    "from": "takayama",
+    "to": "kanazawa",
+    "mode": "Nohi bus direct (reserve)",
+    "hours_d2d": 2.75,
+    "transfers": 0,
+    "bump": 3,
+    "yen_pp": 3600,
+    "flags": [
+      "BUS"
+    ],
+    "note": "or via Toyama by rail 2h30, bump 4, ¥7,000"
+  },
+  {
+    "from": "kanazawa",
+    "to": "kyoto",
+    "mode": "Tsurugi/Hakutaka to Tsuruga + Thunderbird",
+    "hours_d2d": 2.75,
+    "transfers": 1,
+    "bump": 3,
+    "yen_pp": 9500,
+    "flags": [],
+    "note": "vertical transfer at Tsuruga, elevator"
+  },
+  {
+    "from": "kanazawa",
+    "to": "osaka",
+    "mode": "Tsurugi to Tsuruga + Thunderbird",
+    "hours_d2d": 3.17,
+    "transfers": 1,
+    "bump": 3,
+    "yen_pp": 10000,
+    "flags": []
+  },
+  {
+    "from": "takayama",
+    "to": "kyoto",
+    "mode": "Hida to Nagoya + Nozomi",
+    "hours_d2d": 4.25,
+    "transfers": 1,
+    "bump": 2,
+    "yen_pp": 12600,
+    "flags": [
+      "LD",
+      "all_reserved"
+    ],
+    "note": "borderline LD"
+  },
+  {
+    "from": "takayama",
+    "to": "osaka",
+    "mode": "Hida 25/36 direct to Osaka",
+    "hours_d2d": 4.25,
+    "transfers": 0,
+    "bump": 2,
+    "yen_pp": 12600,
+    "flags": [
+      "LD"
+    ],
+    "note": "borderline LD"
+  },
+  {
+    "from": "kanazawa",
+    "to": "toyama",
+    "mode": "Tsurugi 20 min",
+    "hours_d2d": 0.75,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 1500,
+    "flags": []
+  },
+  {
+    "from": "kanazawa",
+    "to": "fukui",
+    "mode": "Hokuriku shinkansen 20 min",
+    "hours_d2d": 0.75,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 1500,
+    "flags": []
+  },
+  {
+    "from": "tokyo",
+    "to": "fukui",
+    "mode": "Kagayaki direct",
+    "hours_d2d": 3.5,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 16000,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "tokyo",
+    "to": "toyama",
+    "mode": "Kagayaki",
+    "hours_d2d": 2.75,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 13500,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "toyama",
+    "to": "takayama",
+    "mode": "Hida ltd exp north route",
+    "hours_d2d": 2,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 4000,
+    "flags": []
+  },
+  {
+    "from": "tokyo",
+    "to": "kyoto",
+    "mode": "Nozomi (Hikari 2h40)",
+    "hours_d2d": 3,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 14200,
+    "flags": [
+      "all_reserved"
+    ],
+    "note": "Nozomi all-reserved 25 Dec–5 Jan, 9–11 Jan; Green 5"
+  },
+  {
+    "from": "tokyo",
+    "to": "osaka",
+    "mode": "Nozomi",
+    "hours_d2d": 3.25,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 14720,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "kyoto",
+    "to": "osaka",
+    "mode": "JR Special Rapid / Thunderbird",
+    "hours_d2d": 1,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 580,
+    "flags": [],
+    "note": "3 at rush hour"
+  },
+  {
+    "from": "kyoto",
+    "to": "nara",
+    "mode": "Kintetsu ltd exp (reserved) / JR Miyakoji",
+    "hours_d2d": 1.25,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 1280,
+    "flags": []
+  },
+  {
+    "from": "osaka",
+    "to": "nara",
+    "mode": "Kintetsu from Namba",
+    "hours_d2d": 1.17,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 1200,
+    "flags": []
+  },
+  {
+    "from": "osaka",
+    "to": "koyasan",
+    "mode": "Nankai Kōya + cable car + bus",
+    "hours_d2d": 2.25,
+    "transfers": 2,
+    "bump": 2,
+    "yen_pp": 3010,
+    "flags": [
+      "BUS"
+    ],
+    "note": "cold, steps at temples"
+  },
+  {
+    "from": "kyoto",
+    "to": "koyasan",
+    "mode": "via Osaka Namba",
+    "hours_d2d": 3,
+    "transfers": 3,
+    "bump": 1,
+    "yen_pp": 3500,
+    "flags": []
+  },
+  {
+    "from": "kyoto",
+    "to": "kinosaki",
+    "mode": "Kinosaki ltd exp",
+    "hours_d2d": 3,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 5500,
+    "flags": [],
+    "note": "snow delays"
+  },
+  {
+    "from": "osaka",
+    "to": "kinosaki",
+    "mode": "Kounotori ltd exp",
+    "hours_d2d": 3.33,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 6140,
+    "flags": []
+  },
+  {
+    "from": "kinosaki",
+    "to": "himeji",
+    "mode": "Hamakaze ltd exp (few/day)",
+    "hours_d2d": 2.5,
+    "transfers": 0,
+    "bump": 3,
+    "yen_pp": 4500,
+    "flags": []
+  },
+  {
+    "from": "kyoto",
+    "to": "himeji",
+    "mode": "Nozomi/Hikari/Sakura",
+    "hours_d2d": 1.5,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 5500,
+    "flags": []
+  },
+  {
+    "from": "osaka",
+    "to": "himeji",
+    "mode": "Shinkansen / JR Special Rapid",
+    "hours_d2d": 1.25,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 3500,
+    "flags": []
+  },
+  {
+    "from": "kyoto",
+    "to": "kobe",
+    "mode": "JR Special Rapid",
+    "hours_d2d": 1,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 1100,
+    "flags": []
+  },
+  {
+    "from": "osaka",
+    "to": "kobe",
+    "mode": "JR Special Rapid",
+    "hours_d2d": 0.75,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 420,
+    "flags": []
+  },
+  {
+    "from": "kobe",
+    "to": "himeji",
+    "mode": "JR Special Rapid",
+    "hours_d2d": 1,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 1000,
+    "flags": []
+  },
+  {
+    "from": "kyoto",
+    "to": "okayama",
+    "mode": "Nozomi / Sakura",
+    "hours_d2d": 1.67,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 7700,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "osaka",
+    "to": "okayama",
+    "mode": "Shinkansen 45 min",
+    "hours_d2d": 1.33,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 6500,
+    "flags": []
+  },
+  {
+    "from": "okayama",
+    "to": "kurashiki",
+    "mode": "JR local 17 min",
+    "hours_d2d": 0.75,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 330,
+    "flags": []
+  },
+  {
+    "from": "okayama",
+    "to": "naoshima",
+    "mode": "Uno line + ferry Uno–Miyanoura",
+    "hours_d2d": 1.75,
+    "transfers": 2,
+    "bump": 3,
+    "yen_pp": 890,
+    "flags": [],
+    "note": "ferry step-free; island buses crowded, bump 2 on island"
+  },
+  {
+    "from": "takamatsu",
+    "to": "naoshima",
+    "mode": "Ferry 50 min",
+    "hours_d2d": 1.25,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 1200,
+    "flags": []
+  },
+  {
+    "from": "okayama",
+    "to": "takamatsu",
+    "mode": "Marine Liner 55 min",
+    "hours_d2d": 1.5,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 1660,
+    "flags": []
+  },
+  {
+    "from": "okayama",
+    "to": "hiroshima",
+    "mode": "Nozomi / Sakura",
+    "hours_d2d": 1.25,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 6500,
+    "flags": []
+  },
+  {
+    "from": "okayama",
+    "to": "onomichi",
+    "mode": "Shinkansen + local",
+    "hours_d2d": 1.75,
+    "transfers": 1,
+    "bump": 4,
+    "yen_pp": 3500,
+    "flags": []
+  },
+  {
+    "from": "onomichi",
+    "to": "hiroshima",
+    "mode": "Shinkansen + local",
+    "hours_d2d": 1.75,
+    "transfers": 1,
+    "bump": 4,
+    "yen_pp": 3500,
+    "flags": []
+  },
+  {
+    "from": "himeji",
+    "to": "hiroshima",
+    "mode": "Shinkansen",
+    "hours_d2d": 1.67,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 8500,
+    "flags": []
+  },
+  {
+    "from": "kyoto",
+    "to": "hiroshima",
+    "mode": "Nozomi",
+    "hours_d2d": 2.33,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 11500,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "hiroshima",
+    "to": "miyajima",
+    "mode": "JR San'yō line + JR ferry",
+    "hours_d2d": 1.25,
+    "transfers": 1,
+    "bump": 4,
+    "yen_pp": 620,
+    "flags": [],
+    "note": "island: deer, steps at Daishō-in"
+  },
+  {
+    "from": "hiroshima",
+    "to": "matsuyama",
+    "mode": "Super Jet ferry from Hiroshima Port",
+    "hours_d2d": 2.75,
+    "transfers": 2,
+    "bump": 3,
+    "yen_pp": 9800,
+    "flags": [],
+    "note": "boat; mild seas usually"
+  },
+  {
+    "from": "matsuyama",
+    "to": "okayama",
+    "mode": "Shiokaze ltd exp",
+    "hours_d2d": 3.25,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 6800,
+    "flags": []
+  },
+  {
+    "from": "hiroshima",
+    "to": "fukuoka",
+    "mode": "Nozomi / Mizuho / Sakura",
+    "hours_d2d": 1.75,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 9300,
+    "flags": []
+  },
+  {
+    "from": "kyoto",
+    "to": "fukuoka",
+    "mode": "Nozomi / Mizuho",
+    "hours_d2d": 3.25,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 15500,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "osaka",
+    "to": "fukuoka",
+    "mode": "Nozomi / Mizuho",
+    "hours_d2d": 3.25,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 15000,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "tokyo",
+    "to": "hiroshima",
+    "mode": "Nozomi 3h50",
+    "hours_d2d": 4.67,
+    "transfers": 0,
+    "bump": 3,
+    "yen_pp": 19500,
+    "flags": [
+      "LD",
+      "all_reserved"
+    ],
+    "note": "or fly HIJ–HND 1h25 + 50 min to airport, bump 4"
+  },
+  {
+    "from": "tokyo",
+    "to": "fukuoka",
+    "mode": "Fly HND–FUK (subway 5 min to Hakata)",
+    "hours_d2d": 4,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 25000,
+    "flags": [
+      "flight"
+    ],
+    "note": "rail 5 h: LD, bump 2"
+  },
+  {
+    "from": "tokyo",
+    "to": "matsuyama",
+    "mode": "Fly MYJ–HND",
+    "hours_d2d": 3.5,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 25000,
+    "flags": [
+      "flight"
+    ]
+  },
+  {
+    "from": "fukuoka",
+    "to": "yufuin",
+    "mode": "Yufuin no Mori / Yufu",
+    "hours_d2d": 2.83,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 5700,
+    "flags": [
+      "all_reserved"
+    ],
+    "note": "Yufuin no Mori all-reserved, steps inside; Yufu flatter; bus 1h45"
+  },
+  {
+    "from": "fukuoka",
+    "to": "beppu",
+    "mode": "Sonic ltd exp",
+    "hours_d2d": 2.67,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 6500,
+    "flags": []
+  },
+  {
+    "from": "yufuin",
+    "to": "beppu",
+    "mode": "Yufu / bus",
+    "hours_d2d": 1.5,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 2400,
+    "flags": []
+  },
+  {
+    "from": "fukuoka",
+    "to": "kurokawa",
+    "mode": "Highway bus (reserve 30 d)",
+    "hours_d2d": 3.5,
+    "transfers": 0,
+    "bump": 2,
+    "yen_pp": 4000,
+    "flags": [
+      "BUS"
+    ],
+    "note": "no rail"
+  },
+  {
+    "from": "kurokawa",
+    "to": "yufuin",
+    "mode": "Kyushu Ōdan bus (reserve)",
+    "hours_d2d": 2,
+    "transfers": 0,
+    "bump": 2,
+    "yen_pp": 2400,
+    "flags": [
+      "BUS"
+    ]
+  },
+  {
+    "from": "kurokawa",
+    "to": "beppu",
+    "mode": "Kyushu Ōdan bus (reserve)",
+    "hours_d2d": 3,
+    "transfers": 0,
+    "bump": 2,
+    "yen_pp": 3000,
+    "flags": [
+      "BUS"
+    ]
+  },
+  {
+    "from": "kurokawa",
+    "to": "kumamoto",
+    "mode": "Bus 1h50",
+    "hours_d2d": 2.5,
+    "transfers": 0,
+    "bump": 2,
+    "yen_pp": 2500,
+    "flags": [
+      "BUS"
+    ]
+  },
+  {
+    "from": "fukuoka",
+    "to": "nagasaki",
+    "mode": "Relay Kamome + Kamome",
+    "hours_d2d": 2.17,
+    "transfers": 1,
+    "bump": 4,
+    "yen_pp": 6050,
+    "flags": [],
+    "note": "cross-platform transfer"
+  },
+  {
+    "from": "fukuoka",
+    "to": "kumamoto",
+    "mode": "Sakura / Tsubame",
+    "hours_d2d": 1.33,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 5500,
+    "flags": []
+  },
+  {
+    "from": "kumamoto",
+    "to": "kagoshima",
+    "mode": "Sakura / Mizuho",
+    "hours_d2d": 1.5,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 7200,
+    "flags": []
+  },
+  {
+    "from": "fukuoka",
+    "to": "kagoshima",
+    "mode": "Mizuho / Sakura",
+    "hours_d2d": 2.25,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 12150,
+    "flags": []
+  },
+  {
+    "from": "nagasaki",
+    "to": "kumamoto",
+    "mode": "Kamome + Relay + Sakura",
+    "hours_d2d": 2.75,
+    "transfers": 2,
+    "bump": 3,
+    "yen_pp": 9000,
+    "flags": []
+  },
+  {
+    "from": "beppu",
+    "to": "kumamoto",
+    "mode": "Kyushu Ōdan bus via Aso",
+    "hours_d2d": 5,
+    "transfers": 0,
+    "bump": 1,
+    "yen_pp": 4000,
+    "flags": [
+      "LD",
+      "BUS"
+    ]
+  },
+  {
+    "from": "kumamoto",
+    "to": "takachiho",
+    "mode": "Bus 3h10 (1/day) or car 2 h",
+    "hours_d2d": 3.5,
+    "transfers": 0,
+    "bump": 2,
+    "yen_pp": 2500,
+    "flags": [
+      "BUS"
+    ],
+    "note": "rent a car realistically"
+  },
+  {
+    "from": "kagoshima",
+    "to": "yakushima",
+    "mode": "JAC flight 35 min / jetfoil 1h50",
+    "hours_d2d": 2.5,
+    "transfers": 0,
+    "bump": 3,
+    "yen_pp": 15000,
+    "flags": [
+      "flight"
+    ],
+    "note": "cancels in rough seas"
+  },
+  {
+    "from": "tokyo",
+    "to": "kagoshima",
+    "mode": "Fly KOJ–HND",
+    "hours_d2d": 4,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 30000,
+    "flags": [
+      "flight"
+    ],
+    "note": "rail 7 h: never"
+  },
+  {
+    "from": "tokyo",
+    "to": "nagasaki",
+    "mode": "Fly NGS–HND",
+    "hours_d2d": 4,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 30000,
+    "flags": [
+      "flight"
+    ],
+    "note": "rail 6 h+: never"
+  },
+  {
+    "from": "tokyo",
+    "to": "kumamoto",
+    "mode": "Fly KMJ–HND",
+    "hours_d2d": 4,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 30000,
+    "flags": [
+      "flight"
+    ]
+  },
+  {
+    "from": "tokyo",
+    "to": "sendai",
+    "mode": "Hayabusa",
+    "hours_d2d": 2.25,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 11500,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "sendai",
+    "to": "matsushima",
+    "mode": "Senseki line",
+    "hours_d2d": 1.17,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 420,
+    "flags": []
+  },
+  {
+    "from": "sendai",
+    "to": "yamagata",
+    "mode": "Senzan line / bus",
+    "hours_d2d": 1.67,
+    "transfers": 0,
+    "bump": 3,
+    "yen_pp": 1170,
+    "flags": []
+  },
+  {
+    "from": "tokyo",
+    "to": "yamagata",
+    "mode": "Tsubasa",
+    "hours_d2d": 3.33,
+    "transfers": 0,
+    "bump": 4,
+    "yen_pp": 12000,
+    "flags": [
+      "all_reserved"
+    ],
+    "note": "nearly full peaks"
+  },
+  {
+    "from": "yamagata",
+    "to": "zao",
+    "mode": "Bus 40 min hourly",
+    "hours_d2d": 1,
+    "transfers": 0,
+    "bump": 3,
+    "yen_pp": 1000,
+    "flags": [
+      "BUS"
+    ],
+    "note": "snow"
+  },
+  {
+    "from": "yamagata",
+    "to": "ginzan",
+    "mode": "Tsubasa to Ōishida + Hanagasa bus",
+    "hours_d2d": 1.5,
+    "transfers": 1,
+    "bump": 2,
+    "yen_pp": 2000,
+    "flags": [
+      "BUS"
+    ],
+    "note": "bus overfull in winter; ice"
+  },
+  {
+    "from": "tokyo",
+    "to": "ginzan",
+    "mode": "Tsubasa to Ōishida + bus",
+    "hours_d2d": 4.25,
+    "transfers": 1,
+    "bump": 2,
+    "yen_pp": 13500,
+    "flags": [
+      "LD",
+      "BUS",
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "tokyo",
+    "to": "aizu",
+    "mode": "Tōbu Revaty from Asakusa / Kōriyama + Ban'etsu-West",
+    "hours_d2d": 3.5,
+    "transfers": 1,
+    "bump": 4,
+    "yen_pp": 7000,
+    "flags": []
+  },
+  {
+    "from": "nikko",
+    "to": "aizu",
+    "mode": "Tōbu Revaty to Aizu-Tajima + Aizu line",
+    "hours_d2d": 3,
+    "transfers": 1,
+    "bump": 3,
+    "yen_pp": 4500,
+    "flags": [],
+    "note": "single-car diesel last leg"
+  },
+  {
+    "from": "tokyo",
+    "to": "morioka",
+    "mode": "Hayabusa",
+    "hours_d2d": 2.75,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 15000,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "sendai",
+    "to": "morioka",
+    "mode": "Hayabusa 40 min",
+    "hours_d2d": 1.2,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 7000,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "morioka",
+    "to": "nyuto",
+    "mode": "Komachi to Tazawako + bus",
+    "hours_d2d": 2,
+    "transfers": 1,
+    "bump": 2,
+    "yen_pp": 4000,
+    "flags": [
+      "BUS"
+    ],
+    "note": "snow road"
+  },
+  {
+    "from": "tokyo",
+    "to": "nyuto",
+    "mode": "Komachi to Tazawako + bus",
+    "hours_d2d": 4.25,
+    "transfers": 1,
+    "bump": 2,
+    "yen_pp": 18000,
+    "flags": [
+      "LD",
+      "BUS",
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "tokyo",
+    "to": "hachinohe",
+    "mode": "Hayabusa",
+    "hours_d2d": 3.25,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 17000,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "hachinohe",
+    "to": "towada",
+    "mode": "Hotel shuttle 1h30",
+    "hours_d2d": 1.5,
+    "transfers": 0,
+    "bump": 3,
+    "yen_pp": 0,
+    "flags": [
+      "BUS"
+    ]
+  },
+  {
+    "from": "tokyo",
+    "to": "aomori",
+    "mode": "Hayabusa to Shin-Aomori",
+    "hours_d2d": 3.75,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 21100,
+    "flags": [
+      "all_reserved"
+    ]
+  },
+  {
+    "from": "tokyo",
+    "to": "yuzawa",
+    "mode": "Jōetsu shinkansen",
+    "hours_d2d": 1.5,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 6500,
+    "flags": []
+  },
+  {
+    "from": "tokyo",
+    "to": "niigata",
+    "mode": "Jōetsu shinkansen",
+    "hours_d2d": 2.5,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 10500,
+    "flags": []
+  },
+  {
+    "from": "yuzawa",
+    "to": "niigata",
+    "mode": "Shinkansen 50 min",
+    "hours_d2d": 1.2,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 5000,
+    "flags": []
+  },
+  {
+    "from": "tokyo",
+    "to": "atami",
+    "mode": "Kodama / Hikari",
+    "hours_d2d": 1.25,
+    "transfers": 0,
+    "bump": 5,
+    "yen_pp": 4000,
+    "flags": []
+  },
+  {
+    "from": "atami",
+    "to": "hakone",
+    "mode": "JR to Odawara + Hakone Tozan",
+    "hours_d2d": 1,
+    "transfers": 1,
+    "bump": 4,
+    "yen_pp": 800,
+    "flags": []
+  },
+  {
+    "from": "kawaguchiko",
+    "to": "hakone",
+    "mode": "Bus via Gotemba",
+    "hours_d2d": 2.5,
+    "transfers": 1,
+    "bump": 3,
+    "yen_pp": 2500,
+    "flags": [
+      "BUS"
+    ]
+  },
+  {
+    "from": "koyasan",
+    "to": "kinosaki",
+    "mode": "none",
+    "hours_d2d": 8,
+    "transfers": 3,
+    "bump": 1,
+    "yen_pp": null,
+    "flags": [
+      "LD"
+    ],
+    "no_route": true,
+    "note": "~5 h, 3 transfers; sleep in Osaka/Kyoto between"
+  },
+  {
+    "from": "takayama",
+    "to": "hiroshima",
+    "mode": "none",
+    "hours_d2d": 8,
+    "transfers": 3,
+    "bump": 1,
+    "yen_pp": null,
+    "flags": [
+      "LD"
+    ],
+    "no_route": true,
+    "note": "Takayama ↔ anything south of Nagoya is not one hop"
+  },
+  {
+    "from": "takayama",
+    "to": "fukuoka",
+    "mode": "none",
+    "hours_d2d": 8,
+    "transfers": 3,
+    "bump": 1,
+    "yen_pp": null,
+    "flags": [
+      "LD"
+    ],
+    "no_route": true,
+    "note": "Takayama ↔ Kyushu: break in Kyoto/Osaka"
+  },
+  {
+    "from": "kurokawa",
+    "to": "nagasaki",
+    "mode": "none",
+    "hours_d2d": 8,
+    "transfers": 3,
+    "bump": 1,
+    "yen_pp": null,
+    "flags": [
+      "LD"
+    ],
+    "no_route": true,
+    "note": "5 h+ by bus and rail"
+  },
+  {
+    "from": "sendai",
+    "to": "kyoto",
+    "mode": "none",
+    "hours_d2d": 8,
+    "transfers": 3,
+    "bump": 1,
+    "yen_pp": null,
+    "flags": [
+      "LD"
+    ],
+    "no_route": true,
+    "note": "Tōhoku ↔ Kansai: fly or break in Tokyo"
+  },
+  {
+    "from": "sendai",
+    "to": "osaka",
+    "mode": "none",
+    "hours_d2d": 8,
+    "transfers": 3,
+    "bump": 1,
+    "yen_pp": null,
+    "flags": [
+      "LD"
+    ],
+    "no_route": true,
+    "note": "Tōhoku ↔ Kansai: fly or break in Tokyo"
+  },
+  {
+    "from": "kanazawa",
+    "to": "fukuoka",
+    "mode": "none",
+    "hours_d2d": 8,
+    "transfers": 3,
+    "bump": 1,
+    "yen_pp": null,
+    "flags": [
+      "LD"
+    ],
+    "no_route": true,
+    "note": "break in Kyoto/Osaka"
+  }
+]

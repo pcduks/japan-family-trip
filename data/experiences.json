@@ -1,0 +1,8211 @@
+[
+  {
+    "id": "NW-NIK-01",
+    "name_pt": "Santuários de Nikkō na neve",
+    "name_en": "Nikkō shrines (Tōshō-gū etc.)",
+    "promise_pt": "Portões dourados sob cedros e neve; a gestante para no Yōmeimon.",
+    "region": "Nikkō",
+    "place_slug": "nikko",
+    "bases": [
+      "nikko"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 3,
+    "indoor": "out",
+    "cost_pp_jpy": 1600,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "shrine",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Nikkō shrines Japan winter",
+    "confidence": "B",
+    "source": "visitnikko.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NIK-02",
+    "name_pt": "Passeio Kanmangafuchi",
+    "name_en": "Kanmangafuchi Abyss Jizō walk",
+    "promise_pt": "Trilha plana à beira do rio com 70 Jizō cobertos de neve.",
+    "region": "Nikkō",
+    "place_slug": null,
+    "bases": [
+      "nikko"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "walk"
+    ],
+    "deck_group": null,
+    "photo_query": "Kanmangafuchi Abyss Jizō walk Japan winter",
+    "confidence": "C",
+    "source": "nikko-kankou.org",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NIK-03",
+    "name_pt": "Lago Chūzenji e Kegon congelada",
+    "name_en": "Lake Chūzenji & Kegon Falls (elevator)",
+    "promise_pt": "Lago gelado e a cascata Kegon congelada, vista por elevador.",
+    "region": "Nikkō",
+    "place_slug": null,
+    "bases": [
+      "nikko"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 570,
+    "cost_note": "570+bus",
+    "hours": 4,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "view"
+    ],
+    "deck_group": null,
+    "photo_query": "Lake Chūzenji & Kegon Falls Japan winter",
+    "confidence": "C",
+    "source": "japan-guide",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NIK-04",
+    "name_pt": "Raquetes de neve Senjōgahara",
+    "name_en": "Senjōgahara snowshoe",
+    "promise_pt": "Raquetes de neve no pântano plano de Senjōgahara (só os quatro).",
+    "region": "Nikkō",
+    "place_slug": null,
+    "bases": [
+      "nikko"
+    ],
+    "valid": {
+      "from": "2026-12-25"
+    },
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "reduced",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 1,
+    "effort": 3,
+    "indoor": "out",
+    "cost_pp_jpy": 7000,
+    "hours": 4,
+    "booking": {
+      "lead_days": 14,
+      "how": "1–2 wk"
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Senjōgahara snowshoe Japan winter",
+    "confidence": "C",
+    "source": "local guides",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NIK-05",
+    "name_pt": "Yumoto Onsen",
+    "name_en": "Yumoto Onsen sulphur baths",
+    "promise_pt": "Banho de enxofre leitoso a 1.500 m, com neve garantida.",
+    "region": "Nikkō",
+    "place_slug": null,
+    "bases": [
+      "nikko"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 1000,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "onsen",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Yumoto Onsen sulphur baths Japan winter",
+    "confidence": "C",
+    "source": "nikko-kankou.org",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NIK-06",
+    "name_pt": "Edo Wonderland",
+    "name_en": "Edo Wonderland Nikkō Edomura",
+    "promise_pt": "Parque temático samurai: shows cobertos, caminhos planos, diversão boba.",
+    "region": "Nikkō",
+    "place_slug": null,
+    "bases": [
+      "nikko"
+    ],
+    "valid": {
+      "weekdays": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "closed",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 5800,
+    "hours": 4,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [],
+    "deck_group": null,
+    "photo_query": "Edo Wonderland Nikkō Edomura Japan winter",
+    "confidence": "C",
+    "source": "edowonderland.net",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NIK-07",
+    "name_pt": "Ryokan de rio em Kinugawa",
+    "name_en": "Kinugawa riverside ryokan w/ private bath",
+    "promise_pt": "Ryokan à beira do rio Kinugawa com banho privativo e kaiseki.",
+    "region": "Nikkō",
+    "place_slug": null,
+    "bases": [
+      "nikko"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 30000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 180,
+      "how": "3–6 mo"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "overnight"
+    ],
+    "deck_group": null,
+    "photo_query": "Kinugawa riverside ryokan w/ private bath Japan winter",
+    "confidence": "C",
+    "source": "ryokan sites",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NIK-08",
+    "name_pt": "Almoço de yuba",
+    "name_en": "Yuba cuisine lunch",
+    "promise_pt": "Almoço de yuba, a especialidade de Nikkō, perto da ponte.",
+    "region": "Nikkō",
+    "place_slug": null,
+    "bases": [
+      "nikko"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "reduced",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 2000,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food"
+    ],
+    "deck_group": null,
+    "photo_query": "Yuba cuisine lunch Japan winter",
+    "confidence": "B",
+    "source": "local",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KUS-01",
+    "name_pt": "Yubatake iluminado",
+    "name_en": "Yubatake & illumination",
+    "promise_pt": "O campo de água quente fumegante de Kusatsu iluminado ao anoitecer.",
+    "region": "Kusatsu",
+    "place_slug": null,
+    "bases": [
+      "kusatsu"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "food",
+      "lights"
+    ],
+    "deck_group": "neve",
+    "deck_order": 4,
+    "photo_query": "Yubatake & illumination Japan winter",
+    "confidence": "C",
+    "source": "visit-gunma.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KUS-02",
+    "name_pt": "Show de yumomi",
+    "name_en": "Yumomi performance",
+    "promise_pt": "Show de 20 min sentado e aquecido: mulheres mexendo a água cantando.",
+    "region": "Kusatsu",
+    "place_slug": null,
+    "bases": [
+      "kusatsu"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 700,
+    "hours": 0.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [],
+    "deck_group": null,
+    "photo_query": "Yumomi performance Japan winter",
+    "confidence": "C",
+    "source": "kusatsu-onsen.ne.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KUS-03",
+    "name_pt": "Sainokawara rotenburo",
+    "name_en": "Sainokawara open-air bath",
+    "promise_pt": "Banho ao ar livre num parque nevado; a gestante fica nos pés.",
+    "region": "Kusatsu",
+    "place_slug": null,
+    "bases": [
+      "kusatsu"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 800,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": false,
+    "tags": [
+      "onsen",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Sainokawara open-air bath Japan winter",
+    "confidence": "C",
+    "source": "kusatsu-onsen.ne.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KUS-04",
+    "name_pt": "Banho privativo ryokan Kusatsu",
+    "name_en": "Kusatsu ryokan kashikiri night",
+    "promise_pt": "Noite em ryokan de Kusatsu com banho privativo reservável.",
+    "region": "Kusatsu",
+    "place_slug": null,
+    "bases": [
+      "kusatsu"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 35000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 180,
+      "how": "6 mo"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "night",
+      "overnight"
+    ],
+    "deck_group": null,
+    "photo_query": "Kusatsu ryokan kashikiri night Japan winter",
+    "confidence": "C",
+    "source": "ryokan sites",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KUS-05",
+    "name_pt": "Esqui Kusatsu Kokusai",
+    "name_en": "Kusatsu ski day",
+    "promise_pt": "Dia de esqui pequeno e fácil a 5 min do centro (irmão e cunhada).",
+    "region": "Kusatsu",
+    "place_slug": null,
+    "bases": [
+      "kusatsu"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 1,
+    "bump_ok_alt": 4,
+    "effort": 4,
+    "indoor": "out",
+    "cost_pp_jpy": 5500,
+    "hours": 5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": true,
+    "suits_default": [
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "ski",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Kusatsu ski day Japan winter",
+    "confidence": "C",
+    "source": "resort site",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KUS-06",
+    "name_pt": "Sekizenkan (Shima)",
+    "name_en": "Sekizenkan historic bathhouse",
+    "promise_pt": "Casa de banho de 1691 que parece Spirited Away, em Shima Onsen.",
+    "region": "Shima",
+    "place_slug": null,
+    "bases": [
+      "kusatsu"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "in",
+    "cost_pp_jpy": 1500,
+    "hours": 4,
+    "booking": {
+      "lead_days": 90,
+      "how": "3 mo (stay)"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen"
+    ],
+    "deck_group": null,
+    "photo_query": "Sekizenkan historic bathhouse Japan winter",
+    "confidence": "C",
+    "source": "sekizenkan.co.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KUS-07",
+    "name_pt": "Degraus de Ikaho",
+    "name_en": "Ikaho stone steps",
+    "promise_pt": "365 degraus de pedra e arcades retrô; só para os quatro em forma.",
+    "region": "Ikaho",
+    "place_slug": null,
+    "bases": [
+      "kusatsu"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 1,
+    "effort": 3,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": false,
+    "tags": [
+      "split",
+      "cut"
+    ],
+    "deck_group": null,
+    "photo_query": "Ikaho stone steps Japan winter",
+    "confidence": "C",
+    "source": "visit-gunma.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KAR-01",
+    "name_pt": "Esqui/tubing Karuizawa Prince",
+    "name_en": "Karuizawa Prince ski & snow-play",
+    "promise_pt": "Esqui e tubing a 10 min do shinkansen; a gestante lê no shopping.",
+    "region": "Karuizawa",
+    "place_slug": null,
+    "bases": [
+      "karuizawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 1,
+    "bump_ok_alt": 4,
+    "effort": 3,
+    "indoor": "out",
+    "cost_pp_jpy": 6500,
+    "hours": 5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "ski",
+      "split"
+    ],
+    "deck_group": "neve",
+    "deck_order": 5,
+    "photo_query": "Karuizawa Prince ski & snow-play Japan winter",
+    "confidence": "C",
+    "source": "princehotels.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KAR-02",
+    "name_pt": "Iluminação de inverno Karuizawa",
+    "name_en": "Karuizawa Winter Festival lights",
+    "promise_pt": "Luzes de inverno planas e cafés em Karuizawa.",
+    "region": "Karuizawa",
+    "place_slug": null,
+    "bases": [
+      "karuizawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "lights"
+    ],
+    "deck_group": null,
+    "photo_query": "Karuizawa Winter Festival lights Japan winter",
+    "confidence": "C",
+    "source": "karuizawa-kankokyokai",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KAR-03",
+    "name_pt": "Harunire Terrace + Tombo-no-yu",
+    "name_en": "Harunire Terrace + Tombo-no-yu bath",
+    "promise_pt": "Terraço na floresta com lojas e onsen moderno morno.",
+    "region": "Karuizawa",
+    "place_slug": null,
+    "bases": [
+      "karuizawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 1350,
+    "hours": 4,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen"
+    ],
+    "deck_group": null,
+    "photo_query": "Harunire Terrace + Tombo-no-yu bath Japan winter",
+    "confidence": "C",
+    "source": "hoshino-area.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KAR-04",
+    "name_pt": "Cataratas Shiraito no gelo",
+    "name_en": "Shiraito Falls winter",
+    "promise_pt": "Cascata em cortina meio congelada, 5 min de caminho plano.",
+    "region": "Karuizawa",
+    "place_slug": null,
+    "bases": [
+      "karuizawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "snow",
+      "view"
+    ],
+    "deck_group": null,
+    "photo_query": "Shiraito Falls winter Japan winter",
+    "confidence": "C",
+    "source": "karuizawa-kankokyokai",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NAG-01",
+    "name_pt": "Macacos da neve",
+    "name_en": "Jigokudani snow monkeys",
+    "promise_pt": "Macacos de banho na neve; 1,6 km de trilha gelada (os quatro vão).",
+    "region": "Nagano",
+    "place_slug": "jigokudani",
+    "bases": [
+      "nagano",
+      "yudanaka"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 2,
+    "effort": 3,
+    "indoor": "out",
+    "cost_pp_jpy": 800,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 5,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "split"
+    ],
+    "deck_group": "natureza",
+    "deck_order": 1,
+    "photo_query": "Jigokudani snow monkeys Japan winter",
+    "confidence": "B",
+    "source": "jigokudani-yaenkoen.co.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NAG-02",
+    "name_pt": "Zenkō-ji ao amanhecer",
+    "name_en": "Zenkō-ji o-asaji & o-kaidan",
+    "promise_pt": "Cerimônia ao amanhecer e o túnel escuro da 'chave do paraíso'.",
+    "region": "Nagano",
+    "place_slug": "nagano",
+    "bases": [
+      "nagano"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "reduced",
+      "2027-01-01": "event",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 600,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "temple",
+      "night"
+    ],
+    "deck_group": null,
+    "photo_query": "Zenkō-ji o-asaji & o-kaidan Japan winter",
+    "confidence": "A",
+    "source": "zenkoji.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NAG-03",
+    "name_pt": "Shibu 9 banhos",
+    "name_en": "Shibu Onsen nine-bath walk",
+    "promise_pt": "Nove banhinhos de madeira numa viela de 400 m, de yukata e geta.",
+    "region": "Nagano",
+    "place_slug": "yudanaka",
+    "bases": [
+      "yudanaka"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": null,
+      "how": "ryokan stay"
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "walk",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Shibu Onsen nine-bath walk Japan winter",
+    "confidence": "C",
+    "source": "shibuonsen.net",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NAG-04",
+    "name_pt": "Esqui Nozawa",
+    "name_en": "Nozawa Onsen ski day",
+    "promise_pt": "Pistas longas entre árvores com gôndola saindo da vila (os quatro).",
+    "region": "Nagano",
+    "place_slug": null,
+    "bases": [
+      "nozawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 1,
+    "bump_ok_alt": 4,
+    "effort": 4,
+    "indoor": "out",
+    "cost_pp_jpy": 7500,
+    "hours": 6,
+    "booking": {
+      "lead_days": 7,
+      "how": "lift none; rentals 1 wk"
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "snow",
+      "ski",
+      "split"
+    ],
+    "deck_group": "neve",
+    "deck_order": 1,
+    "photo_query": "Nozawa Onsen ski day Japan winter",
+    "confidence": "B",
+    "source": "nozawaski.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NAG-05",
+    "name_pt": "13 soto-yu de Nozawa",
+    "name_en": "Nozawa free village bathhouses",
+    "promise_pt": "Treze banhos públicos gratuitos de madeira numa vila íngreme.",
+    "region": "Nagano",
+    "place_slug": null,
+    "bases": [
+      "nozawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 2,
+    "effort": 2,
+    "indoor": "in",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "walk",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Nozawa free village bathhouses Japan winter",
+    "confidence": "B",
+    "source": "nozawakanko.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NAG-06",
+    "name_pt": "Snowshoe Nozawa",
+    "name_en": "Nozawa snowshoe tour",
+    "promise_pt": "Caminhada guiada suave de raquetes pelos arrozais nevados.",
+    "region": "Nagano",
+    "place_slug": null,
+    "bases": [
+      "nozawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 6000,
+    "hours": 2.5,
+    "booking": {
+      "lead_days": 7,
+      "how": "1 wk"
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "parents"
+    ],
+    "anchor": false,
+    "tags": [
+      "snow",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Nozawa snowshoe tour Japan winter",
+    "confidence": "C",
+    "source": "local operators",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NAG-07",
+    "name_pt": "Ryokan Kanaguya",
+    "name_en": "Kanaguya ryokan night",
+    "promise_pt": "Ryokan de madeira de 1758 que inspirou Spirited Away.",
+    "region": "Nagano",
+    "place_slug": "yudanaka",
+    "bases": [
+      "yudanaka"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "reduced",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 3,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 38000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 360,
+      "how": "12 mo"
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "night",
+      "overnight"
+    ],
+    "deck_group": null,
+    "photo_query": "Kanaguya ryokan night Japan winter",
+    "confidence": "C",
+    "source": "kanaguya.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NAG-08",
+    "name_pt": "Esqui Hakuba Happō-one",
+    "name_en": "Hakuba Happō-one ski day",
+    "promise_pt": "O maior vale de esqui do Japão, bate-volta de ônibus de Nagano.",
+    "region": "Nagano",
+    "place_slug": null,
+    "bases": [
+      "nagano"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 1,
+    "bump_ok_alt": 4,
+    "effort": 4,
+    "indoor": "out",
+    "cost_pp_jpy": 7500,
+    "hours": 9,
+    "booking": {
+      "lead_days": 30,
+      "how": "bus reserve 1 mo"
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "ski",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Hakuba Happō-one ski day Japan winter",
+    "confidence": "B",
+    "source": "hakuba-happo.or.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NAG-09",
+    "name_pt": "Myōkō Arai \"tudo-dentro\"",
+    "name_en": "Lotte/Arai resort all-weather day",
+    "promise_pt": "Resort onde os seis ficam num prédio: tirolesa, tubing, spa, neve.",
+    "region": "Myōkō",
+    "place_slug": null,
+    "bases": [
+      "nagano"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 3000,
+    "cost_note": "3000–8000",
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 90,
+      "how": "3 mo"
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "overnight",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Lotte/Arai resort all-weather day Japan winter",
+    "confidence": "C",
+    "source": "lottehotel/arai",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NAG-10",
+    "name_pt": "Togakushi na neve",
+    "name_en": "Togakushi Okusha cedar avenue",
+    "promise_pt": "Avenida plana de cedros de 400 anos coberta de neve até o Okusha.",
+    "region": "Nagano",
+    "place_slug": null,
+    "bases": [
+      "nagano"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 2,
+    "effort": 3,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "shrine",
+      "walk",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Togakushi Okusha cedar avenue Japan winter",
+    "confidence": "C",
+    "source": "togakushi-jinja.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NAG-11",
+    "name_pt": "Soba de Togakushi",
+    "name_en": "Togakushi/Nagano soba lunch",
+    "promise_pt": "Soba gelado de Togakushi, o prato da região, em 1 hora.",
+    "region": "Nagano",
+    "place_slug": null,
+    "bases": [
+      "nagano"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "reduced",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 1500,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food",
+      "shrine"
+    ],
+    "deck_group": null,
+    "photo_query": "Togakushi/Nagano soba lunch Japan winter",
+    "confidence": "B",
+    "source": "local",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NAG-12",
+    "name_pt": "Trem Snow Monkey Nagaden",
+    "name_en": "Nagaden Snow Monkey express",
+    "promise_pt": "Trem retrô de poltronas largas entre pomares até Yudanaka.",
+    "region": "Nagano",
+    "place_slug": null,
+    "bases": [
+      "nagano"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 1300,
+    "hours": 0.8,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "snow",
+      "ride"
+    ],
+    "deck_group": null,
+    "photo_query": "Nagaden Snow Monkey express Japan winter",
+    "confidence": "C",
+    "source": "nagaden-net.co.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-MAT-01",
+    "name_pt": "Castelo de Matsumoto",
+    "name_en": "Matsumoto Castle",
+    "promise_pt": "Castelo negro com os Alpes atrás; a gestante fica no jardim plano.",
+    "region": "Matsumoto",
+    "place_slug": "matsumoto",
+    "bases": [
+      "matsumoto"
+    ],
+    "valid": {
+      "closed": [
+        "2026-12-29",
+        "2026-12-30",
+        "2026-12-31"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 3,
+    "indoor": "mixed",
+    "cost_pp_jpy": 700,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "castle",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Matsumoto Castle Japan winter",
+    "confidence": "B",
+    "source": "matsumoto-castle.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": [],
+    "cost_note": "1–3 Jan special opening 10:00–15:30 (reduced); keep is 6 floors of steep stairs (not for her)"
+  },
+  {
+    "id": "NW-MAT-02",
+    "name_pt": "Nakamachi e Nawate",
+    "name_en": "Nakamachi & Nawate streets",
+    "promise_pt": "Ruas planas de armazéns, cafés, lojas de missô e saquê.",
+    "region": "Matsumoto",
+    "place_slug": null,
+    "bases": [
+      "matsumoto"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "walk"
+    ],
+    "deck_group": null,
+    "photo_query": "Nakamachi & Nawate streets Japan winter",
+    "confidence": "B",
+    "source": "welcome-matsumoto",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-MAT-03",
+    "name_pt": "Shirahone Onsen",
+    "name_en": "Shirahone milky baths",
+    "promise_pt": "Banhos leitosos a 1.400 m com neve funda, 1 h de ônibus.",
+    "region": "Matsumoto",
+    "place_slug": null,
+    "bases": [
+      "matsumoto"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 1000,
+    "hours": 5,
+    "booking": {
+      "lead_days": 90,
+      "how": "3 mo stay"
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Shirahone milky baths Japan winter",
+    "confidence": "C",
+    "source": "shirahone.org",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-MAT-04",
+    "name_pt": "Museu de arte (Kusama)",
+    "name_en": "Matsumoto City Museum of Art",
+    "promise_pt": "Uma hora quente com as salas de Yayoi Kusama.",
+    "region": "Matsumoto",
+    "place_slug": null,
+    "bases": [
+      "matsumoto"
+    ],
+    "valid": {
+      "closed": [
+        "2026-12-29",
+        "2026-12-30",
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 410,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "art"
+    ],
+    "deck_group": null,
+    "photo_query": "Matsumoto City Museum of Art Japan winter",
+    "confidence": "B",
+    "source": "matsumoto-artmuse.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TAK-01",
+    "name_pt": "Shirakawa-gō de dia",
+    "name_en": "Shirakawa-gō daytime",
+    "promise_pt": "A aldeia de telhados de palha sob neve funda, de dia, com ônibus.",
+    "region": "Hida",
+    "place_slug": "shirakawago",
+    "bases": [
+      "takayama",
+      "kanazawa",
+      "shirakawago"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 400,
+    "cost_note": "400+bus",
+    "hours": 4,
+    "booking": {
+      "lead_days": 30,
+      "how": "bus 1 mo"
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [],
+    "deck_group": "neve",
+    "deck_order": 3,
+    "photo_query": "Shirakawa-gō daytime Japan winter",
+    "confidence": "C",
+    "source": "shirakawa-go.gr.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": [
+      "Wada House may close 31 Dec–1 Jan (irregular); village and shuttle run — ask tourist office 05769-6-1013"
+    ]
+  },
+  {
+    "id": "NW-TAK-02",
+    "name_pt": "Noite numa casa gasshō",
+    "name_en": "Gasshō farmhouse overnight",
+    "promise_pt": "Dormir numa casa gasshō: jantar na lareira, futon sob o telhado.",
+    "region": "Hida",
+    "place_slug": "shirakawago",
+    "bases": [
+      "shirakawago"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "reduced",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 3,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 15000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 360,
+      "how": "6–12 mo"
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "night",
+      "overnight"
+    ],
+    "deck_group": "noite-tranquila",
+    "deck_order": 2,
+    "photo_query": "Gasshō farmhouse overnight Japan winter",
+    "confidence": "C",
+    "source": "shirakawa-go.gr.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": [],
+    "cost_note": "¥12–18k pp with 2 meals; 2 rooms per house fits six; NY gone, 20–27 Dec realistic via village reservation line"
+  },
+  {
+    "id": "NW-TAK-03",
+    "name_pt": "Mercados matinais",
+    "name_en": "Takayama morning markets",
+    "promise_pt": "Barracas à beira do rio: maçãs, picles e amazake quente.",
+    "region": "Hida",
+    "place_slug": "takayama",
+    "bases": [
+      "takayama"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "market"
+    ],
+    "deck_group": null,
+    "photo_query": "Takayama morning markets Japan winter",
+    "confidence": "B",
+    "source": "hida.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TAK-04",
+    "name_pt": "Sanmachi e saquê",
+    "name_en": "Sanmachi streets & sake breweries",
+    "promise_pt": "Três ruas planas de madeira escura com degustação de saquê.",
+    "region": "Hida",
+    "place_slug": "takayama",
+    "bases": [
+      "takayama"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "reduced",
+      "2026-12-31": "reduced",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 500,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food",
+      "walk"
+    ],
+    "deck_group": "dia-de-rua",
+    "deck_order": 6,
+    "photo_query": "Sanmachi streets & sake breweries Japan winter",
+    "confidence": "B",
+    "source": "hida.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TAK-05",
+    "name_pt": "Carne de Hida",
+    "name_en": "Hida beef dinner",
+    "promise_pt": "Carne de Hida: hoba-miso, sushi de rua ou yakiniku.",
+    "region": "Hida",
+    "place_slug": null,
+    "bases": [
+      "takayama"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 6000,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 14,
+      "how": "1–2 wk"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food"
+    ],
+    "deck_group": "comida",
+    "deck_order": 2,
+    "photo_query": "Hida beef dinner Japan winter",
+    "confidence": "C",
+    "source": "local",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TAK-06",
+    "name_pt": "Takayama Jinya",
+    "name_en": "Takayama Jinya",
+    "promise_pt": "Único escritório de governador Edo que sobrou; tatami e 20 degraus.",
+    "region": "Hida",
+    "place_slug": null,
+    "bases": [
+      "takayama"
+    ],
+    "valid": {
+      "closed": [
+        "2026-12-29",
+        "2026-12-30",
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 440,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "castle"
+    ],
+    "deck_group": null,
+    "photo_query": "Takayama Jinya Japan winter",
+    "confidence": "B",
+    "source": "pref.gifu",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TAK-07",
+    "name_pt": "Hida no Sato",
+    "name_en": "Hida Folk Village",
+    "promise_pt": "Trinta casas de fazenda numa encosta nevada, sem multidão.",
+    "region": "Hida",
+    "place_slug": null,
+    "bases": [
+      "takayama"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 2,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 700,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "walk"
+    ],
+    "deck_group": null,
+    "photo_query": "Hida Folk Village Japan winter",
+    "confidence": "C",
+    "source": "hidanosato-tpo.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TAK-08",
+    "name_pt": "Teleférico Shin-Hotaka",
+    "name_en": "Shin-Hotaka ropeway",
+    "promise_pt": "Teleférico de dois andares até um terraço de neve a 2.156 m.",
+    "region": "Okuhida",
+    "place_slug": null,
+    "bases": [
+      "takayama"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 3800,
+    "hours": 5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "view",
+      "ride"
+    ],
+    "deck_group": "natureza",
+    "deck_order": 5,
+    "photo_query": "Shin-Hotaka ropeway Japan winter",
+    "confidence": "C",
+    "source": "shinhotaka-ropeway.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TAK-09",
+    "name_pt": "Gokayama Ainokura",
+    "name_en": "Gokayama Ainokura",
+    "promise_pt": "Vinte casas gasshō com um décimo das multidões.",
+    "region": "Gokayama",
+    "place_slug": null,
+    "bases": [
+      "shirakawago",
+      "kanazawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 500,
+    "hours": 3,
+    "booking": {
+      "lead_days": 30,
+      "how": "bus 1 mo"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [],
+    "deck_group": null,
+    "photo_query": "Gokayama Ainokura Japan winter",
+    "confidence": "C",
+    "source": "gokayama-info.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TAK-10",
+    "name_pt": "Hida-Furukawa",
+    "name_en": "Hida-Furukawa canal town",
+    "promise_pt": "Cidade de canais, muros brancos e cenários de 'Your Name'.",
+    "region": "Hida",
+    "place_slug": null,
+    "bases": [
+      "takayama"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "walk"
+    ],
+    "deck_group": null,
+    "photo_query": "Hida-Furukawa canal town Japan winter",
+    "confidence": "C",
+    "source": "hida-kankou.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KAN-01",
+    "name_pt": "Kenroku-en com yukitsuri",
+    "name_en": "Kenroku-en with snow ropes",
+    "promise_pt": "Jardim com cordas de neve, chá quente e caminhos de cascalho planos.",
+    "region": "Kanazawa",
+    "place_slug": "kanazawa",
+    "bases": [
+      "kanazawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "event",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 320,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "garden"
+    ],
+    "deck_group": "reveillon",
+    "deck_order": 6,
+    "photo_query": "Kenroku-en with snow ropes Japan winter",
+    "confidence": "B",
+    "source": "pref.ishikawa",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KAN-02",
+    "name_pt": "Mercado Ōmichō",
+    "name_en": "Ōmichō market crab lunch",
+    "promise_pt": "Caranguejo grelhado e buri no mercado de 170 barracas.",
+    "region": "Kanazawa",
+    "place_slug": null,
+    "bases": [
+      "kanazawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "event"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 3500,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "food",
+      "market"
+    ],
+    "deck_group": "comida",
+    "deck_order": 1,
+    "photo_query": "Ōmichō market crab lunch Japan winter",
+    "confidence": "C",
+    "source": "ohmicho-ichiba.com",
+    "verified_at": "2026-10-01",
+    "needs_review": [],
+    "cost_note": "Officially closed 1–4 Jan but 20–40 of ~170 shops (mainly restaurants) open; full reopening Tue 5 Jan; kōbako (female) crab until 31 Dec only"
+  },
+  {
+    "id": "NW-KAN-03",
+    "name_pt": "Higashi Chaya + folha de ouro",
+    "name_en": "Higashi Chaya + gold-leaf class",
+    "promise_pt": "Vielas de gueixas e uma aula de folha de ouro de 30 min.",
+    "region": "Kanazawa",
+    "place_slug": null,
+    "bases": [
+      "kanazawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 1500,
+    "hours": 2,
+    "booking": {
+      "lead_days": 7,
+      "how": "class 1 wk"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [],
+    "deck_group": "dia-de-rua",
+    "deck_order": 2,
+    "photo_query": "Higashi Chaya + gold-leaf class Japan winter",
+    "confidence": "C",
+    "source": "visitkanazawa.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KAN-04",
+    "name_pt": "Bairro samurai Nagamachi",
+    "name_en": "Nagamachi samurai district",
+    "promise_pt": "Muros de terra protegidos com esteiras de palha; casa de samurai.",
+    "region": "Kanazawa",
+    "place_slug": null,
+    "bases": [
+      "kanazawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 550,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "walk"
+    ],
+    "deck_group": null,
+    "photo_query": "Nagamachi samurai district Japan winter",
+    "confidence": "B",
+    "source": "visitkanazawa.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": [],
+    "cost_note": "District always open; Nomura house closed 26–27 Dec & 1–2 Jan"
+  },
+  {
+    "id": "NW-KAN-05",
+    "name_pt": "Museu do Século 21",
+    "name_en": "21st Century Museum",
+    "promise_pt": "Museu quente com a piscina falsa; precisa de horário marcado.",
+    "region": "Kanazawa",
+    "place_slug": null,
+    "bases": [
+      "kanazawa"
+    ],
+    "valid": {
+      "closed": [
+        "2026-12-29",
+        "2026-12-30",
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-04"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "closed",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 1200,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 7,
+      "how": "timed ticket"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "art"
+    ],
+    "deck_group": null,
+    "photo_query": "21st Century Museum Japan winter",
+    "confidence": "B",
+    "source": "kanazawa21.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": [],
+    "cost_note": "Closed 29 Dec–1 Jan and Mondays (4 Jan); reopens 2 Jan"
+  },
+  {
+    "id": "NW-KAN-06",
+    "name_pt": "Himi kan-buri",
+    "name_en": "Himi winter yellowtail at Banya-gai",
+    "promise_pt": "Olhete de inverno no porto de Himi, com os Alpes sobre a baía.",
+    "region": "Toyama",
+    "place_slug": null,
+    "bases": [
+      "toyama",
+      "kanazawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "closed",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 4000,
+    "hours": 5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "food"
+    ],
+    "deck_group": null,
+    "photo_query": "Himi winter yellowtail at Banya-gai Japan winter",
+    "confidence": "B",
+    "source": "himi-banya.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": [
+      "ny: closed 1 Jan (verify)"
+    ]
+  },
+  {
+    "id": "NW-KAN-07",
+    "name_pt": "Museu do vidro + sushi Toyama",
+    "name_en": "Toyama Glass Museum + bay sushi",
+    "promise_pt": "Museu de vidro de Kengo Kuma e sushi de camarão branco.",
+    "region": "Toyama",
+    "place_slug": null,
+    "bases": [
+      "toyama"
+    ],
+    "valid": {
+      "closed": [
+        "2026-12-29",
+        "2026-12-30",
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 3000,
+    "hours": 4,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "food",
+      "art",
+      "view"
+    ],
+    "deck_group": null,
+    "photo_query": "Toyama Glass Museum + bay sushi Japan winter",
+    "confidence": "B",
+    "source": "toyama-glass-art-museum.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KAN-08",
+    "name_pt": "Eihei-ji na neve",
+    "name_en": "Eihei-ji monastery",
+    "promise_pt": "Mosteiro zen de 70 prédios ligados por escadas cobertas.",
+    "region": "Fukui",
+    "place_slug": null,
+    "bases": [
+      "fukui"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 3,
+    "indoor": "in",
+    "cost_pp_jpy": 700,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "temple",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Eihei-ji monastery Japan winter",
+    "confidence": "C",
+    "source": "daihonzan-eiheiji.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KAN-09",
+    "name_pt": "Jantar de caranguejo Echizen",
+    "name_en": "Echizen crab kaiseki",
+    "promise_pt": "O caranguejo imperial inteiro, em kaiseki ou set de almoço.",
+    "region": "Fukui",
+    "place_slug": null,
+    "bases": [
+      "fukui"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 30000,
+    "hours": 2,
+    "booking": {
+      "lead_days": 90,
+      "how": "1–3 mo"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "food"
+    ],
+    "deck_group": null,
+    "photo_query": "Echizen crab kaiseki Japan winter",
+    "confidence": "C",
+    "source": "fuku-e.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KAN-10",
+    "name_pt": "Museu dos Dinossauros",
+    "name_en": "Fukui Dinosaur Museum",
+    "promise_pt": "Um dos três melhores museus de dinossauros do mundo, todo coberto.",
+    "region": "Fukui",
+    "place_slug": null,
+    "bases": [
+      "fukui"
+    ],
+    "valid": {
+      "closed": [
+        "2026-12-29",
+        "2026-12-30",
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-02"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 1000,
+    "hours": 3,
+    "booking": {
+      "lead_days": 7,
+      "how": "timed ticket"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "art"
+    ],
+    "deck_group": null,
+    "photo_query": "Fukui Dinosaur Museum Japan winter",
+    "confidence": "B",
+    "source": "dinosaur.pref.fukui.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KAN-11",
+    "name_pt": "Noto: dia de apoio",
+    "name_en": "Noto support day (Wakura/Wajima/Senmaida)",
+    "promise_pt": "Dia longo de apoio a Noto: mercado provisório e terraços de luz.",
+    "region": "Noto",
+    "place_slug": null,
+    "bases": [
+      "kanazawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "reduced",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 2,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 2000,
+    "hours": 10,
+    "booking": {
+      "lead_days": 30,
+      "how": "bus 1 mo"
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "split",
+      "cut"
+    ],
+    "deck_group": null,
+    "photo_query": "Noto support day Japan winter",
+    "confidence": "C",
+    "source": "ttgasia/gov-online",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-KAN-12",
+    "name_pt": "Castelo + Gyokusen'inmaru",
+    "name_en": "Kanazawa Castle park & garden light-up",
+    "promise_pt": "Luzes à noite no jardim do castelo, grátis e plano.",
+    "region": "Kanazawa",
+    "place_slug": null,
+    "bases": [
+      "kanazawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "event",
+      "2026-12-29": "event",
+      "2026-12-30": "event",
+      "2026-12-31": "event",
+      "2027-01-01": "event",
+      "2027-01-02": "event",
+      "2027-01-03": "event",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "lights",
+      "castle",
+      "garden"
+    ],
+    "deck_group": null,
+    "photo_query": "Kanazawa Castle park & garden light-up Japan winter",
+    "confidence": "B",
+    "source": "pref.ishikawa",
+    "verified_at": "2026-10-01",
+    "needs_review": [],
+    "cost_note": "Castle park evening lighting runs nightly 27 Dec–3 Jan (02-closures); otherwise Fri/Sat/holiday evenings"
+  },
+  {
+    "id": "NW-TOH-01",
+    "name_pt": "Pageant of Starlight",
+    "name_en": "Sendai Pageant of Starlight",
+    "promise_pt": "Avenida de zelkovas com 600 mil luzes, até 27 dez.",
+    "region": "Sendai",
+    "place_slug": null,
+    "bases": [
+      "sendai"
+    ],
+    "valid": {
+      "to": "2026-12-27"
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "lights"
+    ],
+    "deck_group": null,
+    "photo_query": "Sendai Pageant of Starlight Japan winter",
+    "confidence": "B",
+    "source": "sendaihikape.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TOH-02",
+    "name_pt": "Gyūtan",
+    "name_en": "Sendai beef-tongue dinner",
+    "promise_pt": "Língua grelhada de Sendai, set de ¥2–3 mil.",
+    "region": "Sendai",
+    "place_slug": null,
+    "bases": [
+      "sendai"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 2500,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food"
+    ],
+    "deck_group": null,
+    "photo_query": "Sendai beef-tongue dinner Japan winter",
+    "confidence": "C",
+    "source": "local",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TOH-03",
+    "name_pt": "Cruzeiro Matsushima + Zuigan-ji",
+    "name_en": "Matsushima cruise & Zuigan-ji",
+    "promise_pt": "Cruzeiro sentado de 50 min pelas ilhas e templo de cedros.",
+    "region": "Matsushima",
+    "place_slug": null,
+    "bases": [
+      "sendai"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "event",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 2200,
+    "hours": 4,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "food",
+      "temple",
+      "view",
+      "ride"
+    ],
+    "deck_group": null,
+    "photo_query": "Matsushima cruise & Zuigan-ji Japan winter",
+    "confidence": "B",
+    "source": "matsushima-kanko.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TOH-04",
+    "name_pt": "Yamadera no gelo",
+    "name_en": "Yamadera 1,015 steps",
+    "promise_pt": "1.015 degraus gelados até o templo; só os quatro em forma.",
+    "region": "Yamagata",
+    "place_slug": null,
+    "bases": [
+      "sendai",
+      "yamagata"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 1,
+    "effort": 4,
+    "indoor": "out",
+    "cost_pp_jpy": 300,
+    "hours": 2.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "temple",
+      "split",
+      "cut"
+    ],
+    "deck_group": null,
+    "photo_query": "Yamadera 1,015 steps Japan winter",
+    "confidence": "B",
+    "source": "yamaderakankou.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TOH-05",
+    "name_pt": "Teleférico Zaō iluminado",
+    "name_en": "Zaō ropeway & juhyō light-up",
+    "promise_pt": "Gôndola até 1.660 m e árvores de gelo iluminadas, sem caminhar.",
+    "region": "Zaō",
+    "place_slug": null,
+    "bases": [
+      "zao",
+      "yamagata"
+    ],
+    "valid": {
+      "from": "2026-12-27"
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 4400,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0,
+      "how": "none (special fare)"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "view",
+      "lights",
+      "ride"
+    ],
+    "deck_group": "neve",
+    "deck_order": 2,
+    "photo_query": "Zaō ropeway & juhyō light-up Japan winter",
+    "confidence": "B",
+    "source": "zaoropeway.co.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": [
+      "dates: TBC"
+    ],
+    "cost_note": "Light-up ran 27 Dec–22 Feb last season (nightly 27 Dec–4 Jan); monsters only half-formed in late Dec"
+  },
+  {
+    "id": "NW-TOH-06",
+    "name_pt": "Banhos de Zaō",
+    "name_en": "Zaō Onsen acidic baths",
+    "promise_pt": "Banhos ácidos fortes de Zaō; a gestante só um mergulho morno.",
+    "region": "Zaō",
+    "place_slug": null,
+    "bases": [
+      "zao"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 800,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": false,
+    "tags": [
+      "onsen",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Zaō Onsen acidic baths Japan winter",
+    "confidence": "C",
+    "source": "zao-spa.or.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TOH-07",
+    "name_pt": "Esqui Zaō",
+    "name_en": "Zaō ski day",
+    "promise_pt": "Esqui entre os monstros de neve, a 5 min do onsen.",
+    "region": "Zaō",
+    "place_slug": null,
+    "bases": [
+      "zao"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 1,
+    "bump_ok_alt": 4,
+    "effort": 4,
+    "indoor": "out",
+    "cost_pp_jpy": 6500,
+    "hours": 6,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "ski",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Zaō ski day Japan winter",
+    "confidence": "B",
+    "source": "zao-ski.or.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TOH-08",
+    "name_pt": "Ginzan de dia",
+    "name_en": "Ginzan Onsen daytime (9–16)",
+    "promise_pt": "Rua de ryokan de madeira na neve, de dia, com shuttle.",
+    "region": "Ginzan",
+    "place_slug": "ginzan",
+    "bases": [
+      "yamagata",
+      "sendai"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 5,
+    "booking": {
+      "lead_days": 0,
+      "how": "shuttle none"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen"
+    ],
+    "deck_group": null,
+    "photo_query": "Ginzan Onsen daytime Japan winter",
+    "confidence": "C",
+    "source": "ginzanonsen.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TOH-09",
+    "name_pt": "Ginzan ao anoitecer",
+    "name_en": "Ginzan evening ticket (17–20)",
+    "promise_pt": "Lampiões a gás e neve ao anoitecer, com ingresso limitado.",
+    "region": "Ginzan",
+    "place_slug": "ginzan",
+    "bases": [
+      "yamagata"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 1150,
+    "hours": 4,
+    "booking": {
+      "lead_days": 30,
+      "how": "book ~Nov; sells out"
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "night"
+    ],
+    "deck_group": null,
+    "photo_query": "Ginzan evening ticket Japan winter",
+    "confidence": "C",
+    "source": "ginzanonsen.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": [
+      "dates: TBC 26–27"
+    ]
+  },
+  {
+    "id": "NW-TOH-10",
+    "name_pt": "Noite em Ginzan",
+    "name_en": "Ginzan overnight (Ginzanso/2 rooms)",
+    "promise_pt": "Noite em Ginzan: a vila é sua depois das 20h.",
+    "region": "Ginzan",
+    "place_slug": "ginzan",
+    "bases": [
+      "ginzan"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 35000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 360,
+      "how": "6–12 mo"
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "night",
+      "overnight"
+    ],
+    "deck_group": "noite-tranquila",
+    "deck_order": 6,
+    "photo_query": "Ginzan overnight Japan winter",
+    "confidence": "C",
+    "source": "ginzanonsen.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TOH-11",
+    "name_pt": "Carne de Yonezawa",
+    "name_en": "Yonezawa beef sukiyaki",
+    "promise_pt": "Sukiyaki de carne de Yonezawa numa parada de 30 min.",
+    "region": "Yonezawa",
+    "place_slug": null,
+    "bases": [
+      "yamagata"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 6000,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 7,
+      "how": "1 wk"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food"
+    ],
+    "deck_group": null,
+    "photo_query": "Yonezawa beef sukiyaki Japan winter",
+    "confidence": "B",
+    "source": "local",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TOH-12",
+    "name_pt": "Ōuchi-juku na neve",
+    "name_en": "Ōuchi-juku post town",
+    "promise_pt": "Rua de 300 m de casas de palha; soba comido com um alho-poró.",
+    "region": "Aizu",
+    "place_slug": null,
+    "bases": [
+      "aizu"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "reduced",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 1300,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0,
+      "how": "taxi/none"
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "walk",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Ōuchi-juku post town Japan winter",
+    "confidence": "C",
+    "source": "fukushima.travel",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TOH-13",
+    "name_pt": "Castelo Tsuruga + Higashiyama",
+    "name_en": "Tsuruga Castle & Higashiyama Onsen",
+    "promise_pt": "Castelo de telhas vermelhas na neve e onsen antigo.",
+    "region": "Aizu",
+    "place_slug": null,
+    "bases": [
+      "aizu"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 410,
+    "hours": 3,
+    "booking": {
+      "lead_days": 90,
+      "how": "3 mo ryokan"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "castle"
+    ],
+    "deck_group": null,
+    "photo_query": "Tsuruga Castle & Higashiyama Onsen Japan winter",
+    "confidence": "C",
+    "source": "tsurugajo.com",
+    "verified_at": "2026-10-01",
+    "needs_review": [
+      "ny: open (verify)"
+    ]
+  },
+  {
+    "id": "NW-TOH-14",
+    "name_pt": "Trem Revaty Asakusa→Aizu",
+    "name_en": "Tōbu Revaty to Aizu",
+    "promise_pt": "Trem direto e reservado de Asakusa até Aizu, via Nikkō.",
+    "region": "Nikkō→Aizu",
+    "place_slug": null,
+    "bases": [
+      "nikko",
+      "aizu"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 4500,
+    "hours": 3.2,
+    "booking": {
+      "lead_days": 30,
+      "how": "1 mo"
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "ride"
+    ],
+    "deck_group": null,
+    "photo_query": "Tōbu Revaty to Aizu Japan winter",
+    "confidence": "C",
+    "source": "tobu.co.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TON-01",
+    "name_pt": "Tsuru-no-yu",
+    "name_en": "Tsuru-no-yu milky bath in snow",
+    "promise_pt": "Banho leitoso ao ar livre numa estalagem de palha dos anos 1600.",
+    "region": "Nyūtō",
+    "place_slug": null,
+    "bases": [
+      "nyuto"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "reduced",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 2,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 700,
+    "cost_note": "700 / 20000",
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 180,
+      "how": "6 mo to the day"
+    },
+    "uniqueness": 5,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "snow",
+      "overnight",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Tsuru-no-yu milky bath in snow Japan winter",
+    "confidence": "C",
+    "source": "tsurunoyu.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TON-02",
+    "name_pt": "Nyūtō yumeguri",
+    "name_en": "Nyūtō onsen-hopping pass",
+    "promise_pt": "Passe para sete estalagens de onsen com shuttle; o céu dos pais.",
+    "region": "Nyūtō",
+    "place_slug": null,
+    "bases": [
+      "nyuto"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 2,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 2500,
+    "hours": 4,
+    "booking": {
+      "lead_days": null,
+      "how": "stay"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen"
+    ],
+    "deck_group": null,
+    "photo_query": "Nyūtō onsen-hopping pass Japan winter",
+    "confidence": "C",
+    "source": "nyuto-onsenkyo.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TON-03",
+    "name_pt": "Kakunodate samurai",
+    "name_en": "Kakunodate samurai street",
+    "promise_pt": "Cercas pretas e cerejeiras nuas sob a neve; rua plana.",
+    "region": "Akita",
+    "place_slug": null,
+    "bases": [
+      "morioka",
+      "nyuto"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "reduced",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 500,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "walk"
+    ],
+    "deck_group": null,
+    "photo_query": "Kakunodate samurai street Japan winter",
+    "confidence": "C",
+    "source": "kakunodate-kanko.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TON-04",
+    "name_pt": "Oirase gelo iluminado",
+    "name_en": "Frozen Oirase night tour",
+    "promise_pt": "Ônibus aquecido até cascatas congeladas iluminadas.",
+    "region": "Towada",
+    "place_slug": null,
+    "bases": [
+      "towada",
+      "hachinohe"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 4000,
+    "hours": 2,
+    "booking": {
+      "lead_days": 28,
+      "how": "2–4 wk"
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "lights",
+      "night"
+    ],
+    "deck_group": "neve",
+    "deck_order": 6,
+    "photo_query": "Frozen Oirase night tour Japan winter",
+    "confidence": "C",
+    "source": "frozen-oirase.com",
+    "verified_at": "2026-10-01",
+    "needs_review": [
+      "dates: TBC"
+    ]
+  },
+  {
+    "id": "NW-TON-05",
+    "name_pt": "Hotel Oirase Keiryū",
+    "name_en": "Hoshino Oirase Keiryū hotel",
+    "promise_pt": "Hotel grande com cascata de gelo iluminada no jardim.",
+    "region": "Towada",
+    "place_slug": null,
+    "bases": [
+      "towada"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 32000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 180,
+      "how": "3–6 mo"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "overnight"
+    ],
+    "deck_group": null,
+    "photo_query": "Hoshino Oirase Keiryū hotel Japan winter",
+    "confidence": "C",
+    "source": "hoshinoresorts.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TON-06",
+    "name_pt": "Morioka wanko-soba",
+    "name_en": "Morioka wanko-soba + city",
+    "promise_pt": "Desafio de wanko-soba e passeio pela cidade de tijolos.",
+    "region": "Morioka",
+    "place_slug": null,
+    "bases": [
+      "morioka"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 3500,
+    "hours": 4,
+    "booking": {
+      "lead_days": 7,
+      "how": "1 wk"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "food"
+    ],
+    "deck_group": null,
+    "photo_query": "Morioka wanko-soba + city Japan winter",
+    "confidence": "C",
+    "source": "local",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TON-07",
+    "name_pt": "Castelo de Hirosaki + tortas",
+    "name_en": "Hirosaki Castle park & apple pies",
+    "promise_pt": "Parque do castelo na neve e 40 cafés de torta de maçã.",
+    "region": "Hirosaki",
+    "place_slug": null,
+    "bases": [
+      "aomori"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food",
+      "castle"
+    ],
+    "deck_group": null,
+    "photo_query": "Hirosaki Castle park & apple pies Japan winter",
+    "confidence": "C",
+    "source": "hirosaki-kanko.or.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TON-08",
+    "name_pt": "Museu Nebuta Warasse",
+    "name_en": "Nebuta Warasse museum",
+    "promise_pt": "Os carros alegóricos gigantes de Nebuta, cobertos e quentes.",
+    "region": "Aomori",
+    "place_slug": null,
+    "bases": [
+      "aomori"
+    ],
+    "valid": {
+      "closed": [
+        "2026-12-31",
+        "2027-01-01"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 620,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "art"
+    ],
+    "deck_group": null,
+    "photo_query": "Nebuta Warasse museum Japan winter",
+    "confidence": "B",
+    "source": "nebuta.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TON-09",
+    "name_pt": "Miroku Yokochō",
+    "name_en": "Hachinohe yatai alley",
+    "promise_pt": "Beco de 26 barraquinhas com sopa de senbei e saquê.",
+    "region": "Hachinohe",
+    "place_slug": null,
+    "bases": [
+      "hachinohe"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 3000,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food",
+      "market"
+    ],
+    "deck_group": null,
+    "photo_query": "Hachinohe yatai alley Japan winter",
+    "confidence": "C",
+    "source": "36yokocho.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-TON-10",
+    "name_pt": "Lago Towada inverno",
+    "name_en": "Lake Towada winter shore",
+    "promise_pt": "Lago de caldeira silencioso na neve.",
+    "region": "Towada",
+    "place_slug": null,
+    "bases": [
+      "towada"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "view"
+    ],
+    "deck_group": null,
+    "photo_query": "Lake Towada winter shore Japan winter",
+    "confidence": "C",
+    "source": "towada.travel",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NII-01",
+    "name_pt": "Esqui GALA Yuzawa",
+    "name_en": "GALA Yuzawa ski from shinkansen",
+    "promise_pt": "Gôndola de esqui direto da estação de shinkansen.",
+    "region": "Niigata",
+    "place_slug": null,
+    "bases": [
+      "yuzawa",
+      "tokyo"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 1,
+    "bump_ok_alt": 4,
+    "effort": 3,
+    "indoor": "out",
+    "cost_pp_jpy": 6500,
+    "hours": 6,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "snow",
+      "ski",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "GALA Yuzawa ski from shinkansen Japan winter",
+    "confidence": "C",
+    "source": "gala.co.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": [
+      "dates: TBC"
+    ]
+  },
+  {
+    "id": "NW-NII-02",
+    "name_pt": "Ponshukan",
+    "name_en": "Ponshukan sake wall + sake bath",
+    "promise_pt": "Parede de 125 saquês e banho de saquê, tudo dentro da estação.",
+    "region": "Niigata",
+    "place_slug": null,
+    "bases": [
+      "yuzawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 1300,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "onsen",
+      "food",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Ponshukan sake wall + sake bath Japan winter",
+    "confidence": "C",
+    "source": "ponshukan.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NII-03",
+    "name_pt": "Takaragawa Onsen",
+    "name_en": "Takaragawa riverside rotenburo",
+    "promise_pt": "Quatro banhos gigantes ao ar livre num rio nevado (os quatro).",
+    "region": "Minakami",
+    "place_slug": null,
+    "bases": [
+      "yuzawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 2,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 2000,
+    "hours": 5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Takaragawa riverside rotenburo Japan winter",
+    "confidence": "C",
+    "source": "takaragawa.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NII-04",
+    "name_pt": "Hegi-soba",
+    "name_en": "Hegi-soba lunch",
+    "promise_pt": "Soba com alga marinha, o prato de Niigata.",
+    "region": "Niigata",
+    "place_slug": null,
+    "bases": [
+      "yuzawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 1500,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food"
+    ],
+    "deck_group": null,
+    "photo_query": "Hegi-soba lunch Japan winter",
+    "confidence": "C",
+    "source": "local",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-NII-05",
+    "name_pt": "Sado no inverno (cortar)",
+    "name_en": "Sado Island winter (cut)",
+    "promise_pt": "Ilha de Sado no inverno: balsa brava, dois dias por um sítio. Cortado.",
+    "region": "Sado",
+    "place_slug": null,
+    "bases": [
+      "niigata"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "unknown",
+      "2026-12-29": "unknown",
+      "2026-12-30": "unknown",
+      "2026-12-31": "unknown",
+      "2027-01-01": "unknown",
+      "2027-01-02": "unknown",
+      "2027-01-03": "unknown",
+      "2027-01-04": "unknown",
+      "2027-01-05": "unknown"
+    },
+    "bump_ok": 2,
+    "effort": 3,
+    "indoor": "mixed",
+    "cost_pp_jpy": 8000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 30,
+      "how": "1 mo"
+    },
+    "uniqueness": 2,
+    "split_group": true,
+    "suits_default": [],
+    "anchor": true,
+    "tags": [
+      "overnight",
+      "split",
+      "cut"
+    ],
+    "deck_group": null,
+    "photo_query": "Sado Island winter Japan winter",
+    "confidence": "C",
+    "source": "sadokisen.co.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-FUJ-01",
+    "name_pt": "Teleférico Panorâmico do Fuji",
+    "name_en": "Mt Fuji Panoramic Ropeway",
+    "promise_pt": "Cabine de 3 min até a vista do Fuji e do lago, deck plano.",
+    "region": "Fuji",
+    "place_slug": "kawaguchiko",
+    "bases": [
+      "kawaguchiko"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 1000,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "view",
+      "ride"
+    ],
+    "deck_group": null,
+    "photo_query": "Mt Fuji Panoramic Ropeway Japan winter",
+    "confidence": "B",
+    "source": "kachikachiyama-ropeway.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-FUJ-02",
+    "name_pt": "Oshino Hakkai",
+    "name_en": "Oshino Hakkai springs",
+    "promise_pt": "Oito nascentes cristalinas com o Fuji atrás, caminhos planos.",
+    "region": "Fuji",
+    "place_slug": null,
+    "bases": [
+      "kawaguchiko"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 300,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [],
+    "deck_group": null,
+    "photo_query": "Oshino Hakkai springs Japan winter",
+    "confidence": "C",
+    "source": "oshino.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-FUJ-03",
+    "name_pt": "Casa com vista do Fuji",
+    "name_en": "Fuji-view holiday house for 6",
+    "promise_pt": "Casa para seis com cozinha, banho privativo e o Fuji vermelho ao amanhecer.",
+    "region": "Fuji",
+    "place_slug": null,
+    "bases": [
+      "kawaguchiko"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "reduced",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 12000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 180,
+      "how": "6+ mo"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "view",
+      "overnight"
+    ],
+    "deck_group": "noite-tranquila",
+    "deck_order": 5,
+    "photo_query": "Fuji-view holiday house for 6 Japan winter",
+    "confidence": "C",
+    "source": "rental platforms",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-FUJ-04",
+    "name_pt": "Margem norte Kawaguchiko",
+    "name_en": "Northern-shore lakeside walk",
+    "promise_pt": "Três km planos da margem norte com os melhores reflexos do Fuji.",
+    "region": "Fuji",
+    "place_slug": "kawaguchiko",
+    "bases": [
+      "kawaguchiko"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "view",
+      "walk"
+    ],
+    "deck_group": null,
+    "photo_query": "Northern-shore lakeside walk Japan winter",
+    "confidence": "C",
+    "source": "fujisan.ne.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-FUJ-05",
+    "name_pt": "Hōtō",
+    "name_en": "Hōtō noodle stew",
+    "promise_pt": "Hōtō: sopa de massa e abóbora, o prato de inverno do Fuji.",
+    "region": "Fuji",
+    "place_slug": null,
+    "bases": [
+      "kawaguchiko"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 1500,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food"
+    ],
+    "deck_group": null,
+    "photo_query": "Hōtō noodle stew Japan winter",
+    "confidence": "C",
+    "source": "houtou-fudou.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-FUJ-06",
+    "name_pt": "Circuito de Hakone",
+    "name_en": "Hakone loop (ropeway etc.)",
+    "promise_pt": "Trem, cabo, teleférico e navio pirata: tudo sentado com o Fuji.",
+    "region": "Hakone",
+    "place_slug": "hakone",
+    "bases": [
+      "hakone"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "open",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 6100,
+    "hours": 8,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "view",
+      "ride"
+    ],
+    "deck_group": null,
+    "photo_query": "Hakone loop Japan winter",
+    "confidence": "B",
+    "source": "hakonenavi.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": [
+      "verify Hakone Ropeway Jan 2027 maintenance window (Odakyu notice ~Nov 2026)"
+    ],
+    "cost_note": "Hakone Ekiden 2–3 Jan closes the R1 road and fills hotels; ropeway annual inspection normally mid-Jan–Feb (2026: 13 Jan–20 Feb)"
+  },
+  {
+    "id": "NW-FUJ-07",
+    "name_pt": "Museu ao Ar Livre de Hakone",
+    "name_en": "Hakone Open-Air Museum",
+    "promise_pt": "Esculturas ao ar livre, Picasso e um banho de pés.",
+    "region": "Hakone",
+    "place_slug": null,
+    "bases": [
+      "hakone"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 2000,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "art"
+    ],
+    "deck_group": null,
+    "photo_query": "Hakone Open-Air Museum Japan winter",
+    "confidence": "C",
+    "source": "hakone-oam.or.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-FUJ-08",
+    "name_pt": "Yamanakako: Fuji vermelho e Diamond Fuji",
+    "name_en": "Yamanakako dawn Fuji + Diamond Fuji sunset (Hana no Miyako Park)",
+    "promise_pt": "Fuji enorme sobre o lago dos cisnes; Diamond Fuji ~15h30 no parque.",
+    "region": "Fuji",
+    "place_slug": null,
+    "bases": [
+      "kawaguchiko"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "view",
+      "night",
+      "fuji"
+    ],
+    "deck_group": "natureza",
+    "deck_order": 2,
+    "photo_query": "Diamond Fuji sunset Lake Yamanaka Hana no Miyako Park",
+    "confidence": "C",
+    "source": "yamanakako.gr.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": [
+      "confirm December date"
+    ],
+    "cost_note": "Diamond Fuji (sun setting on the summit) is visible late Nov–mid Jan ONLY from the Hana no Miyako Park / Nagaike shore, ~15:23–15:46; the village posts a daily chart. Kawaguchiko shore does not get it in this window."
+  },
+  {
+    "id": "NW-FUJ-09",
+    "name_pt": "Fogos de Atami 25 Dez",
+    "name_en": "Atami fireworks 25 Dec 2026",
+    "promise_pt": "Vinte minutos de fogos na baía de Atami, no Natal.",
+    "region": "Izu",
+    "place_slug": null,
+    "bases": [
+      "atami"
+    ],
+    "valid": {
+      "only": [
+        "2026-12-25"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 1,
+    "booking": {
+      "lead_days": 90,
+      "how": "hotel 3 mo"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "lights"
+    ],
+    "deck_group": null,
+    "photo_query": "Atami fireworks 25 Dec 2026 Japan winter",
+    "confidence": "B",
+    "source": "ataminews.gr.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-FUJ-10",
+    "name_pt": "MOA + Atami quente",
+    "name_en": "MOA Museum + Atami seafront",
+    "promise_pt": "Museu por escadas rolantes com vista do mar e passeio quente.",
+    "region": "Izu",
+    "place_slug": null,
+    "bases": [
+      "atami"
+    ],
+    "valid": {
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "closed",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 1600,
+    "hours": 4,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "art"
+    ],
+    "deck_group": null,
+    "photo_query": "MOA Museum + Atami seafront Japan winter",
+    "confidence": "C",
+    "source": "moaart.or.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-FUJ-11",
+    "name_pt": "Shuzenji bambu",
+    "name_en": "Shuzenji bamboo path & temple",
+    "promise_pt": "Caminho de bambu, banho de pés e soba numa vila de onsen.",
+    "region": "Izu",
+    "place_slug": null,
+    "bases": [
+      "atami"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 90,
+      "how": "ryokan 3 mo"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "temple",
+      "walk"
+    ],
+    "deck_group": null,
+    "photo_query": "Shuzenji bamboo path & temple Japan winter",
+    "confidence": "C",
+    "source": "shuzenji-kankou.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "NW-FUJ-12",
+    "name_pt": "Shimoda (cortar)",
+    "name_en": "Shimoda (cut)",
+    "promise_pt": "Shimoda: porto agradável a 2h40 de Tokyo. Cortado.",
+    "region": "Izu",
+    "place_slug": null,
+    "bases": [
+      "atami"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 0,
+    "hours": 8,
+    "booking": {
+      "lead_days": null,
+      "how": "—"
+    },
+    "uniqueness": 2,
+    "split_group": true,
+    "suits_default": [],
+    "anchor": true,
+    "tags": [
+      "split",
+      "cut"
+    ],
+    "deck_group": null,
+    "photo_query": "Shimoda Japan winter",
+    "confidence": "C",
+    "source": "shimoda-city.info",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-01",
+    "name_pt": "Sino de Ano Novo no Chion-in",
+    "name_en": "Chion-in Joya-no-Kane",
+    "promise_pt": "Dezessete monges tocam o maior sino do Japão; 3 h em pé no frio.",
+    "region": "Kansai",
+    "place_slug": null,
+    "bases": [
+      "kyoto"
+    ],
+    "valid": {
+      "only": [
+        "2026-12-31"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "event",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 2,
+    "effort": 3,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 4,
+    "booking": {
+      "lead_days": 30,
+      "deadline": "2026-12-01",
+      "how": "viewing-area form opens 1 Dec 14:00, first-come, 4 × 500, ¥3,000 (2025 pattern); trial ringing Sun 27 Dec 14:00 free"
+    },
+    "uniqueness": 5,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "temple",
+      "ny",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Chion-in Joya-no-Kane Japan winter",
+    "confidence": "B",
+    "source": "iwafu.com/en/events/1026526",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-02",
+    "name_pt": "Okera-mairi no Santuário Yasaka",
+    "name_en": "Yasaka Shrine Okera-mairi",
+    "promise_pt": "Acender uma corda no fogo sagrado e girá-la até em casa por Gion.",
+    "region": "Kansai",
+    "place_slug": null,
+    "bases": [
+      "kyoto"
+    ],
+    "valid": {
+      "only": [
+        "2026-12-31",
+        "2027-01-01"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "event",
+      "2027-01-01": "event",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 500,
+    "hours": 1,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "shrine",
+      "ny"
+    ],
+    "deck_group": "reveillon",
+    "deck_order": 1,
+    "photo_query": "Yasaka Shrine Okera-mairi Japan winter",
+    "confidence": "B",
+    "source": "kyoto-np.com/en/articles/-/1306",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-03",
+    "name_pt": "Hatsumōde em Fushimi Inari",
+    "name_en": "Fushimi Inari New Year",
+    "promise_pt": "Túneis de torii abertos a noite toda; a volta baixa serve a todos.",
+    "region": "Kansai",
+    "place_slug": null,
+    "bases": [
+      "kyoto"
+    ],
+    "valid": {
+      "only": [
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 4,
+    "effort": 4,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "shrine",
+      "ny",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Fushimi Inari New Year Japan winter",
+    "confidence": "B",
+    "source": "japanactivity.com/new-year-in-kyoto",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-04",
+    "name_pt": "Mercado Nishiki na véspera",
+    "name_en": "Nishiki Market year-end",
+    "promise_pt": "Kyoto comprando osechi; chegar às 9h do dia 30, beliscar e sair.",
+    "region": "Kansai",
+    "place_slug": null,
+    "bases": [
+      "kyoto"
+    ],
+    "valid": {
+      "only": [
+        "2026-12-29",
+        "2026-12-30",
+        "2026-12-31"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "reduced",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 3,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 3000,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "market"
+    ],
+    "deck_group": "dia-de-rua",
+    "deck_order": 1,
+    "photo_query": "Nishiki Market year-end Japan winter",
+    "confidence": "C",
+    "source": "general",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-05",
+    "name_pt": "Uji: Byōdō-in e matcha (+Nintendo)",
+    "name_en": "Uji Byōdō-in + Nintendo Museum",
+    "promise_pt": "Salão da Fênix, rua do matchá e, com sorte na loteria, o Museu Nintendo.",
+    "region": "Kansai",
+    "place_slug": "uji",
+    "bases": [
+      "kyoto"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 700,
+    "cost_note": "Byōdō-in ¥700 (open 1 Jan); Nintendo Museum ¥3,300 lottery-only",
+    "hours": 4,
+    "booking": {
+      "lead_days": 90,
+      "how": "Nintendo Museum lottery for 4–9 Jan visits: apply 1–31 Oct 2026 (results 1 Nov); museum closed 30 Dec–3 Jan + Tuesdays",
+      "deadline": "2026-10-31"
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "temple",
+      "art",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Uji Byōdō-in + Nintendo Museum Japan winter",
+    "confidence": "C",
+    "source": "museum-tickets.nintendo.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-06",
+    "name_pt": "Ōhara no inverno",
+    "name_en": "Ōhara Sanzen-in + Jakkō-in",
+    "promise_pt": "Jardim de musgo com neve e caminhada plana no campo, quieto no Ano-Novo.",
+    "region": "Kansai",
+    "place_slug": null,
+    "bases": [
+      "kyoto"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 1300,
+    "hours": 4,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "temple"
+    ],
+    "deck_group": "natureza",
+    "deck_order": 6,
+    "photo_query": "Ōhara Sanzen-in + Jakkō-in Japan winter",
+    "confidence": "C",
+    "source": "japan-experience.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-07",
+    "name_pt": "Kurama–Kibune + Kurama Onsen",
+    "name_en": "Kurama–Kibune walk + onsen",
+    "promise_pt": "Caminhada íngreme entre templos e um onsen no fim (os quatro).",
+    "region": "Kansai",
+    "place_slug": null,
+    "bases": [
+      "kyoto"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 1,
+    "bump_ok_alt": 3,
+    "effort": 4,
+    "indoor": "out",
+    "cost_pp_jpy": 2000,
+    "hours": 4,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "walk",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Kurama-Kibune walk + onsen Japan winter",
+    "confidence": "C",
+    "source": "japan-guide.com/e/e3933",
+    "verified_at": "2026-10-01",
+    "needs_review": [
+      "ny: temple open; onsen confirm"
+    ]
+  },
+  {
+    "id": "KS-08",
+    "name_pt": "Tōdai-ji à meia-noite",
+    "name_en": "Tōdai-ji New Year opening",
+    "promise_pt": "Portão abre à meia-noite e a janela mostra o rosto do Buda: uma vez por ano.",
+    "region": "Kansai",
+    "place_slug": "nara",
+    "bases": [
+      "kyoto",
+      "nara"
+    ],
+    "valid": {
+      "only": [
+        "2027-01-01"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "event",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 3,
+    "bump_ok_alt": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "temple",
+      "night",
+      "ny"
+    ],
+    "deck_group": "reveillon",
+    "deck_order": 2,
+    "photo_query": "Tōdai-ji New Year opening Japan winter",
+    "confidence": "A",
+    "source": "x.com/todaiji",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-09",
+    "name_pt": "Cervos de Nara e Kasuga Taisha",
+    "name_en": "Nara Park + Kasuga Taisha",
+    "promise_pt": "Cervos, lanternas de pedra e caminhos planos de Nara.",
+    "region": "Kansai",
+    "place_slug": "nara",
+    "bases": [
+      "kyoto",
+      "nara"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "event",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 700,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "shrine"
+    ],
+    "deck_group": null,
+    "photo_query": "Nara Park + Kasuga Taisha Japan winter",
+    "confidence": "B",
+    "source": "narashikanko.or.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-10",
+    "name_pt": "Yoshino no inverno",
+    "name_en": "Mt Yoshino winter",
+    "promise_pt": "Monte Yoshino vazio no inverno; vila íngreme. Cortado.",
+    "region": "Kansai",
+    "place_slug": null,
+    "bases": [
+      "kyoto"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 2,
+    "effort": 3,
+    "indoor": "out",
+    "cost_pp_jpy": 1250,
+    "hours": 8,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": true,
+    "suits_default": [
+      "parents"
+    ],
+    "anchor": true,
+    "tags": [
+      "split",
+      "cut"
+    ],
+    "deck_group": null,
+    "photo_query": "Mt Yoshino winter Japan winter",
+    "confidence": "C",
+    "source": "visitnara.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-11",
+    "name_pt": "Kuromon e Dōtonbori na virada",
+    "name_en": "Kuromon + Dōtonbori",
+    "promise_pt": "Caranguejo e fugu no Kuromon, depois o letreiro Glico de Dōtonbori.",
+    "region": "Kansai",
+    "place_slug": "osaka",
+    "bases": [
+      "osaka"
+    ],
+    "valid": {
+      "only": [
+        "2026-12-29",
+        "2026-12-30",
+        "2026-12-31"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "reduced",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 3,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 4000,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "market"
+    ],
+    "deck_group": null,
+    "photo_query": "Kuromon + Dōtonbori Japan winter",
+    "confidence": "C",
+    "source": "kuromon.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-12",
+    "name_pt": "Tōka Ebisu",
+    "name_en": "Tōka Ebisu (Imamiya Ebisu)",
+    "promise_pt": "Festival dos comerciantes de Osaka; só o dia 9 cabe. Cortado.",
+    "region": "Kansai",
+    "place_slug": null,
+    "bases": [
+      "osaka"
+    ],
+    "valid": {
+      "only": [
+        "2027-01-09"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 2,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "shrine",
+      "cut"
+    ],
+    "deck_group": null,
+    "photo_query": "Tōka Ebisu Japan winter",
+    "confidence": "B",
+    "source": "japancheapo.com/events/osaka-toka-ebisu",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-13",
+    "name_pt": "Cachoeira de Minoo",
+    "name_en": "Minoo Falls walk",
+    "promise_pt": "2,7 km planos até uma cascata; tempurá de folha de bordo.",
+    "region": "Kansai",
+    "place_slug": null,
+    "bases": [
+      "osaka"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 500,
+    "hours": 2.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "view",
+      "walk"
+    ],
+    "deck_group": null,
+    "photo_query": "Minoo Falls walk Japan winter",
+    "confidence": "C",
+    "source": "jeepe.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-14",
+    "name_pt": "USJ Countdown 2027",
+    "name_en": "USJ NO LIMIT! Countdown",
+    "promise_pt": "Parque aberto 26 h com Nintendo World e contagem regressiva (irmão e cunhada).",
+    "region": "Kansai",
+    "place_slug": null,
+    "bases": [
+      "osaka"
+    ],
+    "valid": {
+      "only": [
+        "2026-12-31",
+        "2027-01-01"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "event",
+      "2027-01-01": "event",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 1,
+    "effort": 3,
+    "indoor": "mixed",
+    "cost_pp_jpy": 16900,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 30,
+      "how": "general sale Oct–Nov"
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "ny",
+      "overnight",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "USJ NO LIMIT! Countdown Japan winter",
+    "confidence": "A",
+    "source": "usj.co.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-15",
+    "name_pt": "Noite em templo em Kōyasan + Okunoin",
+    "name_en": "Kōyasan shukubō + Okunoin night",
+    "promise_pt": "Noite em templo, jantar vegetariano, cemitério à noite e ritual do fogo às 6h.",
+    "region": "Kansai",
+    "place_slug": "koyasan",
+    "bases": [
+      "koyasan"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 25000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 120,
+      "how": "3–4 mo"
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "temple",
+      "night",
+      "overnight"
+    ],
+    "deck_group": "noite-tranquila",
+    "deck_order": 3,
+    "photo_query": "Kōyasan shukubō + Okunoin night Japan winter",
+    "confidence": "C",
+    "source": "sites.google.com/view/ekoin-en",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-16",
+    "name_pt": "Kinosaki: caranguejo e os 6 banhos",
+    "name_en": "Kinosaki Onsen crab + 6 sotoyu circuit",
+    "promise_pt": "Cidade plana de yukata, seis banhos públicos e caranguejo no ryokan.",
+    "region": "Kansai",
+    "place_slug": "kinosaki",
+    "bases": [
+      "kinosaki"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 45000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 180,
+      "how": "3–6 mo"
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "food",
+      "overnight",
+      "crab",
+      "flat",
+      "ny-safe"
+    ],
+    "deck_group": "noite-tranquila",
+    "deck_order": 1,
+    "photo_query": "Kinosaki Onsen willow canal snow yukata Japan winter",
+    "confidence": "C",
+    "source": "hotspringstays.com",
+    "verified_at": "2026-10-01",
+    "needs_review": [],
+    "cost_note": "Crab kaiseki ¥35–60k pp at top inns; 'half crab' plans ¥25k. 6 public baths this winter: Satono-yu closed until ~2030, Kō-no-yu back 30 Oct 2026; NY rota closes 1–2 baths a day (notice mid-Dec)."
+  },
+  {
+    "id": "KS-17",
+    "name_pt": "Castelo de Himeji",
+    "name_en": "Himeji Castle",
+    "promise_pt": "Castelo branco; os quatro sobem a torre, a gestante fica no jardim.",
+    "region": "Kansai",
+    "place_slug": "himeji",
+    "bases": [
+      "himeji"
+    ],
+    "valid": {
+      "closed": [
+        "2026-12-29",
+        "2026-12-30"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 4,
+    "indoor": "mixed",
+    "cost_pp_jpy": 1000,
+    "hours": 2.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "castle",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Himeji Castle Japan winter",
+    "confidence": "B",
+    "source": "visit-himeji.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-18",
+    "name_pt": "Arima: Kin-no-yu / Gin-no-yu",
+    "name_en": "Arima Onsen baths",
+    "promise_pt": "O onsen mais antigo do Japão: água dourada e prateada perto de Kobe.",
+    "region": "Kansai",
+    "place_slug": null,
+    "bases": [
+      "kobe"
+    ],
+    "valid": {
+      "closed": [
+        "2027-01-01"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "closed",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "in",
+    "cost_pp_jpy": 800,
+    "hours": 4,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen"
+    ],
+    "deck_group": null,
+    "photo_query": "Arima Onsen baths Japan winter",
+    "confidence": "B",
+    "source": "gekkoen.co.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KS-19",
+    "name_pt": "Carne de Kobe",
+    "name_en": "Kobe beef dinner",
+    "promise_pt": "Teppanyaki de carne de Kobe para seis no balcão.",
+    "region": "Kansai",
+    "place_slug": null,
+    "bases": [
+      "kobe"
+    ],
+    "valid": {
+      "closed": [
+        "2027-01-01",
+        "2027-01-02"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "reduced",
+      "2026-12-29": "reduced",
+      "2026-12-30": "reduced",
+      "2026-12-31": "reduced",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "reduced",
+      "2027-01-04": "reduced",
+      "2027-01-05": "reduced"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 15000,
+    "hours": 2,
+    "booking": {
+      "lead_days": 28,
+      "how": "2–4 wk"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food"
+    ],
+    "deck_group": "comida",
+    "deck_order": 5,
+    "photo_query": "Kobe beef dinner Japan winter",
+    "confidence": "B",
+    "source": "general",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "ST-01",
+    "name_pt": "Naoshima: dia de arte",
+    "name_en": "Naoshima art day",
+    "promise_pt": "Monet sob a terra, abóboras de Kusama e museu novo de Ando numa ilha.",
+    "region": "Setouchi",
+    "place_slug": "naoshima",
+    "bases": [
+      "okayama",
+      "takamatsu"
+    ],
+    "valid": {
+      "closed": [
+        "2027-01-01"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "unknown",
+      "2027-01-01": "closed",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "closed",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 7000,
+    "hours": 8,
+    "booking": {
+      "lead_days": 60,
+      "how": "1–2 mo (Chichu)"
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "art"
+    ],
+    "deck_group": null,
+    "photo_query": "Naoshima art day Japan winter",
+    "confidence": "A",
+    "source": "benesse-artsite.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": [
+      "Benesse year-end days (31 Dec–1 Jan) posted Oct–Nov; Chichu closed 12 Jan–19 Mar 2027 (after trip)"
+    ]
+  },
+  {
+    "id": "ST-02",
+    "name_pt": "Museu de Arte de Teshima",
+    "name_en": "Teshima Art Museum",
+    "promise_pt": "Concha de concreto com gotas d'água; silêncio e pés descalços.",
+    "region": "Setouchi",
+    "place_slug": null,
+    "bases": [
+      "takamatsu",
+      "naoshima"
+    ],
+    "valid": {
+      "weekdays": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "closed": [
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-02"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "closed",
+      "2026-12-30": "open",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "in",
+    "cost_pp_jpy": 1570,
+    "hours": 4,
+    "booking": {
+      "lead_days": 60,
+      "how": "1–2 mo"
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "art"
+    ],
+    "deck_group": null,
+    "photo_query": "Teshima Art Museum Japan winter",
+    "confidence": "C",
+    "source": "benesse-artsite.jp/en/news/20251223-3386",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "ST-03",
+    "name_pt": "Inujima Seirensho",
+    "name_en": "Inujima Seirensho",
+    "promise_pt": "Refinaria de cobre virada museu numa ilha minúscula. Cortado.",
+    "region": "Setouchi",
+    "place_slug": null,
+    "bases": [
+      "naoshima"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 2,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 2100,
+    "hours": 4,
+    "booking": {
+      "lead_days": null,
+      "how": "check"
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "split",
+      "cut"
+    ],
+    "deck_group": null,
+    "photo_query": "Inujima Seirensho Japan winter",
+    "confidence": "C",
+    "source": "benesse-artsite.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "ST-04",
+    "name_pt": "Kurashiki Bikan + Ōhara",
+    "name_en": "Kurashiki canal + Ōhara Museum",
+    "promise_pt": "Canal plano de salgueiros, armazéns Edo e El Greco.",
+    "region": "Setouchi",
+    "place_slug": null,
+    "bases": [
+      "okayama"
+    ],
+    "valid": {
+      "closed": [
+        "2026-12-28",
+        "2026-12-29",
+        "2026-12-30",
+        "2026-12-31"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "reduced",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 2000,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "temple",
+      "art",
+      "walk"
+    ],
+    "deck_group": "dia-de-rua",
+    "deck_order": 3,
+    "photo_query": "Kurashiki canal + Ōhara Museum Japan winter",
+    "confidence": "C",
+    "source": "gltjp.com/en/directory/item/11411",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "ST-05",
+    "name_pt": "Kōrakuen de Ano Novo",
+    "name_en": "Okayama Kōrakuen NY festival",
+    "promise_pt": "Grous soltos no jardim e entrada grátis em 1 de janeiro.",
+    "region": "Setouchi",
+    "place_slug": null,
+    "bases": [
+      "okayama"
+    ],
+    "valid": {
+      "only": [
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "event",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "garden",
+      "ny"
+    ],
+    "deck_group": "reveillon",
+    "deck_order": 4,
+    "photo_query": "Okayama Kōrakuen NY festival Japan winter",
+    "confidence": "B",
+    "source": "okayama-korakuen.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "ST-06",
+    "name_pt": "Shimanami Kaidō (trecho curto)",
+    "name_en": "Shimanami Kaidō ride",
+    "promise_pt": "Trinta km de pontes e ilhas de bicicleta (os quatro); a gestante vai de balsa.",
+    "region": "Setouchi",
+    "place_slug": null,
+    "bases": [
+      "onomichi"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 1,
+    "effort": 4,
+    "indoor": "out",
+    "cost_pp_jpy": 5000,
+    "hours": 8,
+    "booking": {
+      "lead_days": 28,
+      "how": "2–4 wk"
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Shimanami Kaidō ride Japan winter",
+    "confidence": "C",
+    "source": "cyclonoie.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "ST-07",
+    "name_pt": "Onomichi: ladeira dos templos",
+    "name_en": "Onomichi temple walk + ropeway",
+    "promise_pt": "Teleférico até o alto e vielas de gatos ladeira abaixo.",
+    "region": "Setouchi",
+    "place_slug": null,
+    "bases": [
+      "onomichi"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 3,
+    "indoor": "out",
+    "cost_pp_jpy": 700,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "temple",
+      "view",
+      "ride",
+      "walk"
+    ],
+    "deck_group": null,
+    "photo_query": "Onomichi temple walk + ropeway Japan winter",
+    "confidence": "C",
+    "source": "general",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "ST-08",
+    "name_pt": "Parque e Museu da Paz",
+    "name_en": "Hiroshima Peace Park + Museum",
+    "promise_pt": "Parque e museu da paz, planos e com bancos; abre em 1 de janeiro.",
+    "region": "Setouchi",
+    "place_slug": "hiroshima",
+    "bases": [
+      "hiroshima"
+    ],
+    "valid": {
+      "closed": [
+        "2026-12-30",
+        "2026-12-31"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 200,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "art"
+    ],
+    "deck_group": null,
+    "photo_query": "Hiroshima Peace Park + Museum Japan winter",
+    "confidence": "A",
+    "source": "hpmmuseum.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "ST-09",
+    "name_pt": "Miyajima: Itsukushima e ostras",
+    "name_en": "Miyajima + oysters",
+    "promise_pt": "Torii flutuante, cervos e ostras grelhadas na ilha.",
+    "region": "Setouchi",
+    "place_slug": "miyajima",
+    "bases": [
+      "hiroshima"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 3500,
+    "hours": 6,
+    "booking": {
+      "lead_days": 120,
+      "how": "ryokan 3–4 mo"
+    },
+    "uniqueness": 5,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "food",
+      "shrine",
+      "split"
+    ],
+    "deck_group": "natureza",
+    "deck_order": 3,
+    "photo_query": "Miyajima + oysters Japan winter",
+    "confidence": "B",
+    "source": "dive-hiroshima.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "ST-10",
+    "name_pt": "Ponte Kintai-kyō",
+    "name_en": "Iwakuni Kintai-kyō",
+    "promise_pt": "Cinco arcos de madeira; a gestante vê da margem.",
+    "region": "Setouchi",
+    "place_slug": null,
+    "bases": [
+      "hiroshima"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 3,
+    "indoor": "out",
+    "cost_pp_jpy": 310,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Iwakuni Kintai-kyō Japan winter",
+    "confidence": "C",
+    "source": "general",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "ST-11",
+    "name_pt": "Dōgo Onsen Honkan",
+    "name_en": "Dōgo Onsen Honkan",
+    "promise_pt": "A casa de banho de Spirited Away, restaurada, com salas privativas mornas.",
+    "region": "Setouchi",
+    "place_slug": null,
+    "bases": [
+      "matsuyama"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 1500,
+    "hours": 4,
+    "booking": {
+      "lead_days": 30,
+      "how": "1 mo private rooms"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen"
+    ],
+    "deck_group": null,
+    "photo_query": "Dōgo Onsen Honkan Japan winter",
+    "confidence": "C",
+    "source": "japan-travel-note.com/posts/553",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "ST-12",
+    "name_pt": "Jardim Ritsurin de Ano Novo",
+    "name_en": "Ritsurin Garden NY + udon",
+    "promise_pt": "Jardim de cascalho plano com barco no lago e udon depois.",
+    "region": "Setouchi",
+    "place_slug": null,
+    "bases": [
+      "takamatsu"
+    ],
+    "valid": {
+      "only": [
+        "2027-01-01"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "event",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 410,
+    "hours": 2.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food",
+      "garden",
+      "ny"
+    ],
+    "deck_group": "comida",
+    "deck_order": 4,
+    "photo_query": "Ritsurin Garden NY + udon Japan winter",
+    "confidence": "B",
+    "source": "setouchiexplorer.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "ST-13",
+    "name_pt": "Kotohira-gū (785 degraus)",
+    "name_en": "Kotohira Kompira-san",
+    "promise_pt": "785 degraus até o santuário; a gestante fica na rua de lojas.",
+    "region": "Setouchi",
+    "place_slug": null,
+    "bases": [
+      "takamatsu"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 1,
+    "bump_ok_alt": 3,
+    "effort": 4,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 4,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Kotohira Kompira-san Japan winter",
+    "confidence": "C",
+    "source": "general",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KY-01",
+    "name_pt": "Yatai de Fukuoka",
+    "name_en": "Fukuoka yatai crawl",
+    "promise_pt": "Barraquinhas de ramen e yakitori à beira do rio, seis em duas barracas.",
+    "region": "Kyushu",
+    "place_slug": "fukuoka",
+    "bases": [
+      "fukuoka"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "reduced",
+      "2027-01-01": "closed",
+      "2027-01-02": "reduced",
+      "2027-01-03": "reduced",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 4000,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "food",
+      "market"
+    ],
+    "deck_group": "comida",
+    "deck_order": 3,
+    "photo_query": "Fukuoka yatai crawl Japan winter",
+    "confidence": "C",
+    "source": "japanactivity.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KY-02",
+    "name_pt": "Hatsumōde em Dazaifu",
+    "name_en": "Dazaifu Tenmangu NY",
+    "promise_pt": "Santuário das ameixeiras com 2 milhões de pessoas em 1–3 jan; ir dia 31.",
+    "region": "Kyushu",
+    "place_slug": "dazaifu",
+    "bases": [
+      "fukuoka"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "open",
+      "2027-01-01": "event",
+      "2027-01-02": "event",
+      "2027-01-03": "event",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "bump_ok_alt": 2,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 2.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "shrine",
+      "ny"
+    ],
+    "deck_group": "reveillon",
+    "deck_order": 5,
+    "photo_query": "Dazaifu Tenmangu NY Japan winter",
+    "confidence": "B",
+    "source": "dazaifu.org",
+    "verified_at": "2026-10-01",
+    "needs_review": [],
+    "cost_note": "bump 5 on 31 Dec / 4–5 Jan, bump 2 on 1–3 Jan (2 M crush; gate open continuously 31 Dec 06:30 → 4 Jan 21:00)"
+  },
+  {
+    "id": "KY-03",
+    "name_pt": "Yufuin pelo Yufuin-no-Mori",
+    "name_en": "Yufuin via Yufuin no Mori",
+    "promise_pt": "Trem panorâmico reservado até uma vila plana com lago de neblina.",
+    "region": "Kyushu",
+    "place_slug": "yufuin",
+    "bases": [
+      "yufuin"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "mixed",
+    "cost_pp_jpy": 45000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 120,
+      "how": "train 1 mo; ryokan 3–4 mo"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "overnight"
+    ],
+    "deck_group": null,
+    "photo_query": "Yufuin via Yufuin no Mori Japan winter",
+    "confidence": "B",
+    "source": "jrpass.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KY-04",
+    "name_pt": "Infernos de Beppu",
+    "name_en": "Beppu Jigoku Meguri",
+    "promise_pt": "Sete 'infernos' fumegantes e almoço cozido no vapor.",
+    "region": "Kyushu",
+    "place_slug": "beppu",
+    "bases": [
+      "beppu",
+      "yufuin"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 3900,
+    "hours": 4,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [],
+    "deck_group": null,
+    "photo_query": "Beppu Jigoku Meguri Japan winter",
+    "confidence": "B",
+    "source": "general",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KY-05",
+    "name_pt": "Kurokawa + lanternas Yu Akari",
+    "name_en": "Kurokawa Onsen + Yu Akari",
+    "promise_pt": "Aldeia de ryokan à beira do rio com lanternas de bambu acesas.",
+    "region": "Kyushu",
+    "place_slug": null,
+    "bases": [
+      "kurokawa"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "reduced",
+      "2027-01-01": "reduced",
+      "2027-01-02": "reduced",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 40000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 120,
+      "how": "3–4 mo"
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "lights",
+      "overnight"
+    ],
+    "deck_group": "noite-tranquila",
+    "deck_order": 4,
+    "photo_query": "Kurokawa Onsen + Yu Akari Japan winter",
+    "confidence": "C",
+    "source": "travel.rakuten.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KY-06",
+    "name_pt": "Yokagura de Takachiho (aldeia)",
+    "name_en": "Takachiho village Yokagura",
+    "promise_pt": "Noite inteira de danças num casarão com os moradores (os quatro).",
+    "region": "Kyushu",
+    "place_slug": null,
+    "bases": [
+      "takachiho"
+    ],
+    "valid": {
+      "weekdays": [
+        6
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "unknown",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 2,
+    "bump_ok_alt": 4,
+    "effort": 3,
+    "indoor": "in",
+    "cost_pp_jpy": 3000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 90,
+      "how": "2–3 mo lodging"
+    },
+    "uniqueness": 5,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "walk",
+      "overnight",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Takachiho village Yokagura Japan winter",
+    "confidence": "C",
+    "source": "takachiho-kanko.info",
+    "verified_at": "2026-10-01",
+    "needs_review": [
+      "confirm which hamlet dances on Sat 26 Dec / 2 Jan (Takachiho tourism calendar, Nov)"
+    ]
+  },
+  {
+    "id": "KY-07",
+    "name_pt": "Garganta de Takachiho",
+    "name_en": "Takachiho Gorge boat",
+    "promise_pt": "Barco a remo sob a cascata e passarela de 1 km.",
+    "region": "Kyushu",
+    "place_slug": null,
+    "bases": [
+      "takachiho"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 1500,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0,
+      "how": "same day"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "view",
+      "ride"
+    ],
+    "deck_group": "natureza",
+    "deck_order": 4,
+    "photo_query": "Takachiho Gorge boat Japan winter",
+    "confidence": "C",
+    "source": "takachihogorge.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KY-08",
+    "name_pt": "Caldeira de Aso",
+    "name_en": "Aso caldera (no crater)",
+    "promise_pt": "Caldeira e campos com neve; a cratera segue fechada. Cortado.",
+    "region": "Kyushu",
+    "place_slug": null,
+    "bases": [
+      "kumamoto"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 1100,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "temple",
+      "view",
+      "cut"
+    ],
+    "deck_group": null,
+    "photo_query": "Aso caldera Japan winter",
+    "confidence": "C",
+    "source": "watabi.org/en/articles/aso-nakadake-crater-guide",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KY-09",
+    "name_pt": "Castelo de Kumamoto 1 Jan",
+    "name_en": "Kumamoto Castle NY opening",
+    "promise_pt": "Portão aberto por samurais e entrada grátis em 1 de janeiro; tem elevador.",
+    "region": "Kyushu",
+    "place_slug": null,
+    "bases": [
+      "kumamoto"
+    ],
+    "valid": {
+      "closed": [
+        "2026-12-29"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "event",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 800,
+    "cost_note": "800 (0 on 1 Jan)",
+    "hours": 2.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "castle",
+      "ny"
+    ],
+    "deck_group": null,
+    "photo_query": "Kumamoto Castle NY opening Japan winter",
+    "confidence": "C",
+    "source": "x.com/kumamoto_castle",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KY-10",
+    "name_pt": "Nagasaki: Glover, Dejima, champon",
+    "name_en": "Nagasaki city day",
+    "promise_pt": "Jardim Glover, Dejima, bonde, champon e a vista do monte Inasa.",
+    "region": "Kyushu",
+    "place_slug": "nagasaki",
+    "bases": [
+      "nagasaki"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 1500,
+    "hours": 8,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "food"
+    ],
+    "deck_group": "dia-de-rua",
+    "deck_order": 4,
+    "photo_query": "Nagasaki city day Japan winter",
+    "confidence": "C",
+    "source": "japan-guide.com/e/e4406",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KY-11",
+    "name_pt": "Gunkanjima",
+    "name_en": "Hashima cruise",
+    "promise_pt": "Ilha-navio abandonada; desembarque acontece 1 em 3 no inverno. Cortado.",
+    "region": "Kyushu",
+    "place_slug": null,
+    "bases": [
+      "nagasaki"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 2,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 4500,
+    "hours": 3,
+    "booking": {
+      "lead_days": 28,
+      "how": "2–4 wk"
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "view",
+      "ride",
+      "split",
+      "cut"
+    ],
+    "deck_group": null,
+    "photo_query": "Hashima cruise Japan winter",
+    "confidence": "C",
+    "source": "gunkanjima-cruise.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KY-12",
+    "name_pt": "Sakurajima e Sengan-en",
+    "name_en": "Sakurajima + Sengan-en",
+    "promise_pt": "Balsa de 15 min até o vulcão e jardim de frente para ele.",
+    "region": "Kyushu",
+    "place_slug": null,
+    "bases": [
+      "kagoshima"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 1850,
+    "hours": 6,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "view",
+      "garden"
+    ],
+    "deck_group": null,
+    "photo_query": "Sakurajima + Sengan-en Japan winter",
+    "confidence": "B",
+    "source": "visitor.sakurajima.gr.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KY-13",
+    "name_pt": "Banho de areia de Ibusuki",
+    "name_en": "Ibusuki sand bath",
+    "promise_pt": "Enterrado em areia quente por 10 min (os cinco; não a gestante).",
+    "region": "Kyushu",
+    "place_slug": null,
+    "bases": [
+      "kagoshima"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 1,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 1300,
+    "hours": 1,
+    "booking": {
+      "lead_days": 1,
+      "how": "call ahead"
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "onsen",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Ibusuki sand bath Japan winter",
+    "confidence": "C",
+    "source": "samurai-sauna-magazine.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "KY-14",
+    "name_pt": "Yakushima no inverno",
+    "name_en": "Yakushima Shiratani / Jōmon Sugi",
+    "promise_pt": "Floresta de musgo de Mononoke; 2–3 noites e chuva (os quatro).",
+    "region": "Kyushu",
+    "place_slug": null,
+    "bases": [
+      "yakushima"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 2,
+    "bump_ok_alt": 4,
+    "effort": 5,
+    "indoor": "out",
+    "cost_pp_jpy": 40000,
+    "hours": "overnight",
+    "booking": {
+      "lead_days": 90,
+      "how": "2–3 mo"
+    },
+    "uniqueness": 5,
+    "split_group": true,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "overnight",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Yakushima Shiratani / Jōmon Sugi Japan winter",
+    "confidence": "C",
+    "source": "hiddenjapan-gems.com",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-01",
+    "name_pt": "Sino de Zōjō-ji e Tokyo Tower",
+    "name_en": "Zōjō-ji Joya-no-Kane & hatsumōde (31 Dec night)",
+    "promise_pt": "Sino da meia-noite com a Tokyo Tower atrás e barracas de comida.",
+    "region": "Tokyo",
+    "place_slug": null,
+    "bases": [
+      "tokyo"
+    ],
+    "valid": {
+      "only": [
+        "2026-12-31",
+        "2027-01-01"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "event",
+      "2027-01-01": "open",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 30,
+      "how": "ringing tickets at the temple office 1 Dec 09:00 (few, same-morning sell-out); watching is free",
+      "deadline": "2026-12-01"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "shrine",
+      "temple",
+      "night",
+      "ny"
+    ],
+    "deck_group": null,
+    "photo_query": "Zōjō-ji Joya-no-Kane & hatsumōde Japan winter",
+    "confidence": "B",
+    "source": "zojoji.or.jp; rurubu.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-02",
+    "name_pt": "Sensō-ji ao amanhecer de 1 Jan",
+    "name_en": "Sensō-ji hatsumōde at dawn",
+    "promise_pt": "A primeira visita do ano no Sensō-ji, cedo, com a Nakamise aberta.",
+    "region": "Tokyo",
+    "place_slug": "tokyo",
+    "bases": [
+      "tokyo"
+    ],
+    "valid": {
+      "only": [
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 3,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "shrine",
+      "temple",
+      "night",
+      "ny"
+    ],
+    "deck_group": null,
+    "photo_query": "Sensō-ji hatsumōde at dawn Japan winter",
+    "confidence": "B",
+    "source": "senso-ji.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-03",
+    "name_pt": "Saudação de Ano-Novo no Palácio Imperial",
+    "name_en": "Imperial Palace New Year greeting (2 Jan)",
+    "promise_pt": "A família imperial na sacada: o único dia em que o palácio abre.",
+    "region": "Tokyo",
+    "place_slug": null,
+    "bases": [
+      "tokyo"
+    ],
+    "valid": {
+      "only": [
+        "2027-01-02"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "event",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 5,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "ny"
+    ],
+    "deck_group": "reveillon",
+    "deck_order": 3,
+    "photo_query": "Imperial Palace New Year greeting Japan winter",
+    "confidence": "B",
+    "source": "kunaicho.go.jp/visit/sanga",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-04",
+    "name_pt": "Primeiro nascer do sol na Skytree",
+    "name_en": "Tokyo Skytree first-sunrise opening (1 Jan)",
+    "promise_pt": "O primeiro sol de 2027 a 350 m, quente e sentado.",
+    "region": "Tokyo",
+    "place_slug": null,
+    "bases": [
+      "tokyo"
+    ],
+    "valid": {
+      "only": [
+        "2027-01-01"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "event",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 9000,
+    "hours": 2,
+    "booking": {
+      "lead_days": 30,
+      "how": "online first-come early Dec (2 Dec in 2025), 540 seats, sells out in minutes"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "view",
+      "night",
+      "ny"
+    ],
+    "deck_group": null,
+    "photo_query": "Tokyo Skytree first-sunrise opening Japan winter",
+    "confidence": "B",
+    "source": "tokyo-skytree.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-05",
+    "name_pt": "Kabuki de Ano-Novo (um ato)",
+    "name_en": "Kabuki-za New Year single-act seat",
+    "promise_pt": "Um ato de kabuki de Ano-Novo por ¥1–2 mil, com guia em inglês.",
+    "region": "Tokyo",
+    "place_slug": null,
+    "bases": [
+      "tokyo"
+    ],
+    "valid": {
+      "from": "2027-01-02",
+      "closed": [
+        "2027-01-08"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 2000,
+    "hours": 1.5,
+    "booking": {
+      "lead_days": 1,
+      "how": "day before online (makumi)"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "art",
+      "ny"
+    ],
+    "deck_group": "dia-de-rua",
+    "deck_order": 5,
+    "photo_query": "Kabuki-za New Year single-act seat Japan winter",
+    "confidence": "C",
+    "source": "kabukiweb.net",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-06",
+    "name_pt": "teamLab Planets",
+    "name_en": "teamLab Planets Toyosu",
+    "promise_pt": "Salas de água e luz descalço; indoor para dia de chuva.",
+    "region": "Tokyo",
+    "place_slug": null,
+    "bases": [
+      "tokyo"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 4200,
+    "hours": 2,
+    "booking": {
+      "lead_days": 42,
+      "how": "3–6 wk timed ticket"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "art",
+      "market"
+    ],
+    "deck_group": null,
+    "photo_query": "teamLab Planets Toyosu Japan winter",
+    "confidence": "B",
+    "source": "teamlab.art",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-07",
+    "name_pt": "Primeiro leilão de atum em Toyosu",
+    "name_en": "Toyosu first tuna auction (5 Jan)",
+    "promise_pt": "O primeiro leilão de atum do ano às 5h; a gestante vê do 2º andar.",
+    "region": "Tokyo",
+    "place_slug": null,
+    "bases": [
+      "tokyo"
+    ],
+    "valid": {
+      "only": [
+        "2027-01-05"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "event"
+    },
+    "bump_ok": 3,
+    "bump_ok_alt": 4,
+    "effort": 2,
+    "indoor": "in",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 30,
+      "how": "deck lottery early Dec; 2F window none"
+    },
+    "uniqueness": 4,
+    "split_group": true,
+    "suits_default": [
+      "parents",
+      "bros"
+    ],
+    "anchor": true,
+    "tags": [
+      "food",
+      "market",
+      "split"
+    ],
+    "deck_group": null,
+    "photo_query": "Toyosu first tuna auction Japan winter",
+    "confidence": "A",
+    "source": "shijou.metro.tokyo.lg.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-08",
+    "name_pt": "Museu Ghibli",
+    "name_en": "Ghibli Museum Mitaka",
+    "promise_pt": "O museu do Totoro; só 3–9 jan, ingressos em 10 dez.",
+    "region": "Tokyo",
+    "place_slug": null,
+    "bases": [
+      "tokyo"
+    ],
+    "valid": {
+      "from": "2027-01-03"
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 1000,
+    "hours": 2.5,
+    "booking": {
+      "lead_days": 30,
+      "how": "Lawson Ticket 10 Dec 10:00 JST for January; 3–9 Jan slots go in minutes",
+      "deadline": "2026-12-10"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "art"
+    ],
+    "deck_group": null,
+    "photo_query": "Ghibli Museum Mitaka Japan winter",
+    "confidence": "A",
+    "source": "ghibli-museum.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-09",
+    "name_pt": "Semana de luzes de Natal em Tokyo",
+    "name_en": "Tokyo Christmas lights week (Marunouchi, Yebisu, Roppongi)",
+    "promise_pt": "A semana de luzes de Natal: Marunouchi, Yebisu, Roppongi, até 25 dez.",
+    "region": "Tokyo",
+    "place_slug": null,
+    "bases": [
+      "tokyo"
+    ],
+    "valid": {
+      "to": "2026-12-25"
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "shrine",
+      "lights"
+    ],
+    "deck_group": null,
+    "photo_query": "Tokyo Christmas lights week Japan winter",
+    "confidence": "B",
+    "source": "gotokyo.org",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-10",
+    "name_pt": "Café da manhã em Tsukiji",
+    "name_en": "Tsukiji outer market breakfast",
+    "promise_pt": "Café da manhã de sushi e tamagoyaki no mercado externo.",
+    "region": "Tokyo",
+    "place_slug": "tokyo",
+    "bases": [
+      "tokyo"
+    ],
+    "valid": {
+      "closed": [
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "reduced",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "reduced",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 3000,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "food",
+      "market"
+    ],
+    "deck_group": "comida",
+    "deck_order": 6,
+    "photo_query": "Tsukiji outer market breakfast Japan winter",
+    "confidence": "A",
+    "source": "tsukiji.or.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-11",
+    "name_pt": "Dezomeshiki dos bombeiros",
+    "name_en": "Tokyo Fire Department Dezomeshiki (6 Jan)",
+    "promise_pt": "Acrobacias em escadas e 100 carros de bombeiro, no dia 6.",
+    "region": "Tokyo",
+    "place_slug": null,
+    "bases": [
+      "tokyo"
+    ],
+    "valid": {
+      "only": [
+        "2027-01-06"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "closed",
+      "2027-01-03": "closed",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "mixed",
+    "cost_pp_jpy": 0,
+    "hours": 3,
+    "booking": {
+      "lead_days": 0,
+      "how": "none (indoor free; outdoor seats lottery closed)"
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [],
+    "deck_group": null,
+    "photo_query": "Tokyo Fire Department Dezomeshiki Japan winter",
+    "confidence": "B",
+    "source": "tfd.metro.tokyo.lg.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-12",
+    "name_pt": "Grande Buda de Kamakura e Enoshima",
+    "name_en": "Kamakura Daibutsu + Hase-dera + Enoshima",
+    "promise_pt": "Grande Buda, Hase-dera e a ilha de Enoshima com Fuji ao fundo.",
+    "region": "Kamakura",
+    "place_slug": "kamakura",
+    "bases": [
+      "kamakura"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 4,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 1500,
+    "hours": 6,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 3,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [
+      "temple"
+    ],
+    "deck_group": null,
+    "photo_query": "Kamakura Daibutsu + Hase-dera + Enoshima Japan winter",
+    "confidence": "B",
+    "source": "kotoku-in.jp",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-13",
+    "name_pt": "Hakone Ekiden à beira da estrada",
+    "name_en": "Hakone Ekiden roadside at Hakone-Yumoto (2–3 Jan)",
+    "promise_pt": "A maratona que para o Japão passa na porta do ryokan em Hakone.",
+    "region": "Hakone",
+    "place_slug": "hakone",
+    "bases": [
+      "hakone"
+    ],
+    "valid": {
+      "only": [
+        "2027-01-02",
+        "2027-01-03"
+      ]
+    },
+    "ny_status": {
+      "2026-12-28": "closed",
+      "2026-12-29": "closed",
+      "2026-12-30": "closed",
+      "2026-12-31": "closed",
+      "2027-01-01": "closed",
+      "2027-01-02": "event",
+      "2027-01-03": "event",
+      "2027-01-04": "closed",
+      "2027-01-05": "closed"
+    },
+    "bump_ok": 3,
+    "effort": 2,
+    "indoor": "out",
+    "cost_pp_jpy": 0,
+    "hours": 2,
+    "booking": {
+      "lead_days": 360,
+      "how": "hotel 12 mo"
+    },
+    "uniqueness": 4,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": true,
+    "tags": [],
+    "deck_group": null,
+    "photo_query": "Hakone Ekiden roadside at Hakone-Yumoto Japan winter",
+    "confidence": "B",
+    "source": "hakonenavi.jp; kgrr.org",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  },
+  {
+    "id": "TK-14",
+    "name_pt": "Mori Art Museum e Tokyo City View",
+    "name_en": "Mori Art Museum + City View (open 1 Jan)",
+    "promise_pt": "Arte contemporânea e vista da cidade, aberto até em 1 de janeiro.",
+    "region": "Tokyo",
+    "place_slug": null,
+    "bases": [
+      "tokyo"
+    ],
+    "valid": {},
+    "ny_status": {
+      "2026-12-28": "open",
+      "2026-12-29": "open",
+      "2026-12-30": "open",
+      "2026-12-31": "open",
+      "2027-01-01": "open",
+      "2027-01-02": "open",
+      "2027-01-03": "open",
+      "2027-01-04": "open",
+      "2027-01-05": "open"
+    },
+    "bump_ok": 5,
+    "effort": 1,
+    "indoor": "in",
+    "cost_pp_jpy": 2300,
+    "hours": 2,
+    "booking": {
+      "lead_days": 0
+    },
+    "uniqueness": 2,
+    "split_group": false,
+    "suits_default": [
+      "her",
+      "parents",
+      "bros",
+      "pedro"
+    ],
+    "anchor": false,
+    "tags": [
+      "art",
+      "view",
+      "ny"
+    ],
+    "deck_group": null,
+    "photo_query": "Mori Art Museum + City View Japan winter",
+    "confidence": "B",
+    "source": "mori.art.museum",
+    "verified_at": "2026-10-01",
+    "needs_review": []
+  }
+]

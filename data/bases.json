@@ -1,0 +1,1569 @@
+[
+  {
+    "slug": "tokyo",
+    "name": "Tokyo",
+    "lat": 35.7148,
+    "lng": 139.7967,
+    "region": "Kanto",
+    "hospital": {
+      "name": "St. Luke's International Hospital",
+      "minutes": 20,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": "HND",
+    "cost_night_6": [
+      45000,
+      150000
+    ],
+    "to_hnd_minutes": 45,
+    "tags": [
+      "city",
+      "hub",
+      "lights",
+      "ny-safe",
+      "apartment"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "kamakura",
+    "name": "Kamakura",
+    "lat": 35.3167,
+    "lng": 139.5358,
+    "region": "Kanto",
+    "hospital": {
+      "name": "Shonan Kamakura General Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": "HND",
+    "cost_night_6": [
+      60000,
+      150000
+    ],
+    "to_hnd_minutes": 90,
+    "tags": [
+      "sea",
+      "temple",
+      "daytrip"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "hakone",
+    "name": "Hakone",
+    "lat": 35.2046,
+    "lng": 139.0253,
+    "region": "Kanagawa",
+    "hospital": {
+      "name": "Odawara Municipal Hospital",
+      "minutes": 30,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": "HND",
+    "cost_night_6": [
+      90000,
+      300000
+    ],
+    "to_hnd_minutes": 120,
+    "tags": [
+      "onsen",
+      "fuji",
+      "ekiden"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "kawaguchiko",
+    "name": "Lake Kawaguchiko",
+    "lat": 35.5163,
+    "lng": 138.7519,
+    "region": "Fuji Five Lakes",
+    "hospital": {
+      "name": "Fujiyoshida Municipal Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": "HND",
+    "cost_night_6": [
+      80000,
+      250000
+    ],
+    "to_hnd_minutes": 150,
+    "tags": [
+      "fuji",
+      "house",
+      "lake"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "atami",
+    "name": "Atami (Izu)",
+    "lat": 35.0956,
+    "lng": 139.0718,
+    "region": "Izu",
+    "hospital": {
+      "name": "Odawara Municipal Hospital",
+      "minutes": 35,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": "HND",
+    "cost_night_6": [
+      60000,
+      180000
+    ],
+    "to_hnd_minutes": 90,
+    "tags": [
+      "sea",
+      "warm",
+      "onsen"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "nikko",
+    "name": "Nikkō / Kinugawa",
+    "lat": 36.758,
+    "lng": 139.5988,
+    "region": "Tochigi",
+    "hospital": {
+      "name": "Dokkyo Medical University Nikko Medical Center",
+      "minutes": 25,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": "HND",
+    "cost_night_6": [
+      60000,
+      200000
+    ],
+    "to_hnd_minutes": 150,
+    "tags": [
+      "shrine",
+      "snow",
+      "onsen",
+      "kominka"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "kusatsu",
+    "name": "Kusatsu Onsen",
+    "lat": 36.6207,
+    "lng": 138.5964,
+    "region": "Gunma",
+    "hospital": {
+      "name": "Haramachi Red Cross Hospital",
+      "minutes": 50,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": true,
+    "airport": "HND",
+    "cost_night_6": [
+      90000,
+      260000
+    ],
+    "to_hnd_minutes": 240,
+    "tags": [
+      "onsen",
+      "snow",
+      "bus"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "karuizawa",
+    "name": "Karuizawa",
+    "lat": 36.3425,
+    "lng": 138.6349,
+    "region": "Nagano",
+    "hospital": {
+      "name": "Saku Central Hospital (Saku Medical Center)",
+      "minutes": 35,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": "HND",
+    "cost_night_6": [
+      60000,
+      200000
+    ],
+    "to_hnd_minutes": 150,
+    "tags": [
+      "villa",
+      "ski",
+      "lights",
+      "outlet"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "matsumoto",
+    "name": "Matsumoto",
+    "lat": 36.2383,
+    "lng": 137.969,
+    "region": "Nagano",
+    "hospital": {
+      "name": "Shinshu University Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": "HND",
+    "cost_night_6": [
+      50000,
+      200000
+    ],
+    "to_hnd_minutes": 210,
+    "tags": [
+      "castle",
+      "city",
+      "transit"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "nagano",
+    "name": "Nagano (Zenkō-ji)",
+    "lat": 36.6614,
+    "lng": 138.1875,
+    "region": "Nagano",
+    "hospital": {
+      "name": "Nagano Red Cross Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": "HND",
+    "cost_night_6": [
+      60000,
+      240000
+    ],
+    "to_hnd_minutes": 165,
+    "tags": [
+      "temple",
+      "hub",
+      "apartment",
+      "ny-safe"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "yudanaka",
+    "name": "Yudanaka / Shibu Onsen",
+    "lat": 36.7337,
+    "lng": 138.4312,
+    "region": "Nagano",
+    "hospital": {
+      "name": "Nagano Red Cross Hospital",
+      "minutes": 50,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": "HND",
+    "cost_night_6": [
+      60000,
+      240000
+    ],
+    "to_hnd_minutes": 230,
+    "tags": [
+      "onsen",
+      "monkeys",
+      "ryokan"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "nozawa",
+    "name": "Nozawa Onsen",
+    "lat": 36.9218,
+    "lng": 138.4407,
+    "region": "Nagano",
+    "hospital": {
+      "name": "Nagano Red Cross Hospital",
+      "minutes": 70,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 2,
+    "ny_tier": 3,
+    "bus_dependent": true,
+    "airport": "HND",
+    "cost_night_6": [
+      60000,
+      220000
+    ],
+    "to_hnd_minutes": 240,
+    "tags": [
+      "ski",
+      "onsen",
+      "snow",
+      "steep"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "hakuba",
+    "name": "Hakuba",
+    "lat": 36.698,
+    "lng": 137.862,
+    "region": "Nagano",
+    "hospital": {
+      "name": "Shinshu University Hospital",
+      "minutes": 75,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": true,
+    "airport": "HND",
+    "cost_night_6": [
+      50000,
+      200000
+    ],
+    "to_hnd_minutes": 270,
+    "tags": [
+      "ski",
+      "chalet",
+      "snow"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "yuzawa",
+    "name": "Echigo-Yuzawa",
+    "lat": 36.9346,
+    "lng": 138.8104,
+    "region": "Niigata",
+    "hospital": {
+      "name": "Uonuma Kikan Hospital",
+      "minutes": 40,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": "HND",
+    "cost_night_6": [
+      80000,
+      200000
+    ],
+    "to_hnd_minutes": 150,
+    "tags": [
+      "ski",
+      "onsen",
+      "sake",
+      "snow"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "niigata",
+    "name": "Niigata city",
+    "lat": 37.9162,
+    "lng": 139.0364,
+    "region": "Niigata",
+    "hospital": {
+      "name": "Niigata University Medical & Dental Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": "HND",
+    "cost_night_6": [
+      45000,
+      110000
+    ],
+    "to_hnd_minutes": 200,
+    "tags": [
+      "city",
+      "sake"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "takayama",
+    "name": "Takayama / Hida",
+    "lat": 36.1408,
+    "lng": 137.2596,
+    "region": "Gifu (Hida)",
+    "hospital": {
+      "name": "Takayama Red Cross Hospital",
+      "minutes": 10,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      60000,
+      150000
+    ],
+    "to_hnd_minutes": 330,
+    "tags": [
+      "machiya",
+      "old-town",
+      "snow",
+      "food"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "shirakawago",
+    "name": "Shirakawa-gō",
+    "lat": 36.2578,
+    "lng": 136.906,
+    "region": "Gifu",
+    "hospital": {
+      "name": "Takayama Red Cross Hospital",
+      "minutes": 55,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 3,
+    "ny_tier": 3,
+    "bus_dependent": true,
+    "airport": null,
+    "cost_night_6": [
+      90000,
+      110000
+    ],
+    "to_hnd_minutes": 360,
+    "tags": [
+      "village",
+      "snow",
+      "gassho",
+      "bus"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "kanazawa",
+    "name": "Kanazawa",
+    "lat": 36.5621,
+    "lng": 136.6627,
+    "region": "Ishikawa",
+    "hospital": {
+      "name": "Kanazawa University Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      50000,
+      160000
+    ],
+    "to_hnd_minutes": 240,
+    "tags": [
+      "city",
+      "machiya",
+      "garden",
+      "crab",
+      "ny-safe"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "toyama",
+    "name": "Toyama",
+    "lat": 36.7014,
+    "lng": 137.2132,
+    "region": "Toyama",
+    "hospital": {
+      "name": "Toyama University Hospital",
+      "minutes": 20,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      40000,
+      100000
+    ],
+    "to_hnd_minutes": 230,
+    "tags": [
+      "city",
+      "transit",
+      "buri"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "fukui",
+    "name": "Fukui / Awara Onsen",
+    "lat": 36.0617,
+    "lng": 136.2229,
+    "region": "Fukui",
+    "hospital": {
+      "name": "University of Fukui Hospital",
+      "minutes": 30,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      60000,
+      250000
+    ],
+    "to_hnd_minutes": 270,
+    "tags": [
+      "crab",
+      "temple",
+      "onsen"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "kinosaki",
+    "name": "Kinosaki Onsen",
+    "lat": 35.6257,
+    "lng": 134.8082,
+    "region": "Hyogo",
+    "hospital": {
+      "name": "Toyooka Public Hospital (Tajima Perinatal Center)",
+      "minutes": 18,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      120000,
+      320000
+    ],
+    "to_hnd_minutes": 330,
+    "tags": [
+      "onsen",
+      "crab",
+      "flat",
+      "ryokan"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "kyoto",
+    "name": "Kyoto",
+    "lat": 35.0037,
+    "lng": 135.7788,
+    "region": "Kansai",
+    "hospital": {
+      "name": "Kyoto University Hospital",
+      "minutes": 20,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": "KIX",
+    "cost_night_6": [
+      45000,
+      170000
+    ],
+    "to_hnd_minutes": 240,
+    "tags": [
+      "city",
+      "machiya",
+      "temple",
+      "ny-event",
+      "ny-safe"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "osaka",
+    "name": "Osaka",
+    "lat": 34.6687,
+    "lng": 135.5013,
+    "region": "Kansai",
+    "hospital": {
+      "name": "Yodogawa Christian Hospital",
+      "minutes": 20,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": "KIX",
+    "cost_night_6": [
+      45000,
+      140000
+    ],
+    "to_hnd_minutes": 240,
+    "tags": [
+      "city",
+      "apartment",
+      "food",
+      "ny-safe"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "nara",
+    "name": "Nara",
+    "lat": 34.689,
+    "lng": 135.8398,
+    "region": "Kansai",
+    "hospital": {
+      "name": "Nara Prefecture General Medical Center",
+      "minutes": 20,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": "KIX",
+    "cost_night_6": [
+      50000,
+      180000
+    ],
+    "to_hnd_minutes": 270,
+    "tags": [
+      "temple",
+      "deer",
+      "daytrip"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "koyasan",
+    "name": "Kōyasan",
+    "lat": 34.213,
+    "lng": 135.586,
+    "region": "Wakayama",
+    "hospital": {
+      "name": "Hashimoto Municipal Hospital",
+      "minutes": 60,
+      "perinatal": false
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": true,
+    "airport": "KIX",
+    "cost_night_6": [
+      110000,
+      220000
+    ],
+    "to_hnd_minutes": 330,
+    "tags": [
+      "temple",
+      "shukubo",
+      "cold",
+      "stairs"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "himeji",
+    "name": "Himeji",
+    "lat": 34.8394,
+    "lng": 134.6939,
+    "region": "Hyogo",
+    "hospital": {
+      "name": "Himeji Red Cross Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": "ITM",
+    "cost_night_6": [
+      45000,
+      140000
+    ],
+    "to_hnd_minutes": 270,
+    "tags": [
+      "castle",
+      "transit"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "kobe",
+    "name": "Kobe / Arima",
+    "lat": 34.6901,
+    "lng": 135.1956,
+    "region": "Hyogo",
+    "hospital": {
+      "name": "Kobe University Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": "ITM",
+    "cost_night_6": [
+      50000,
+      150000
+    ],
+    "to_hnd_minutes": 240,
+    "tags": [
+      "city",
+      "beef",
+      "onsen"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "hiroshima",
+    "name": "Hiroshima",
+    "lat": 34.3955,
+    "lng": 132.4536,
+    "region": "Chugoku",
+    "hospital": {
+      "name": "Hiroshima University Hospital",
+      "minutes": 20,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      50000,
+      180000
+    ],
+    "to_hnd_minutes": 240,
+    "tags": [
+      "city",
+      "peace",
+      "oysters",
+      "ny-safe",
+      "flight"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "miyajima",
+    "name": "Miyajima",
+    "lat": 34.296,
+    "lng": 132.3198,
+    "region": "Hiroshima",
+    "hospital": {
+      "name": "Hiroshima University Hospital",
+      "minutes": 60,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 3,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      130000,
+      330000
+    ],
+    "to_hnd_minutes": 300,
+    "tags": [
+      "island",
+      "shrine",
+      "ryokan"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "onomichi",
+    "name": "Onomichi",
+    "lat": 34.4089,
+    "lng": 133.2053,
+    "region": "Hiroshima",
+    "hospital": {
+      "name": "JA Onomichi General Hospital",
+      "minutes": 10,
+      "perinatal": false
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      50000,
+      140000
+    ],
+    "to_hnd_minutes": 320,
+    "tags": [
+      "sea",
+      "cycling",
+      "hill"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "okayama",
+    "name": "Okayama",
+    "lat": 34.6617,
+    "lng": 133.935,
+    "region": "Setouchi",
+    "hospital": {
+      "name": "Okayama University Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      45000,
+      120000
+    ],
+    "to_hnd_minutes": 270,
+    "tags": [
+      "city",
+      "hub",
+      "garden"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "kurashiki",
+    "name": "Kurashiki",
+    "lat": 34.5956,
+    "lng": 133.772,
+    "region": "Setouchi",
+    "hospital": {
+      "name": "Kurashiki Central Hospital",
+      "minutes": 10,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      45000,
+      120000
+    ],
+    "to_hnd_minutes": 300,
+    "tags": [
+      "canal",
+      "art",
+      "flat"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "naoshima",
+    "name": "Naoshima",
+    "lat": 34.4605,
+    "lng": 133.9955,
+    "region": "Kagawa",
+    "hospital": {
+      "name": "Okayama University Hospital",
+      "minutes": 90,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 3,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      150000,
+      280000
+    ],
+    "to_hnd_minutes": 330,
+    "tags": [
+      "art",
+      "island",
+      "ferry"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "takamatsu",
+    "name": "Takamatsu",
+    "lat": 34.3428,
+    "lng": 134.0466,
+    "region": "Kagawa",
+    "hospital": {
+      "name": "Takamatsu Red Cross Hospital",
+      "minutes": 10,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      45000,
+      120000
+    ],
+    "to_hnd_minutes": 300,
+    "tags": [
+      "city",
+      "ferry",
+      "udon",
+      "garden"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "matsuyama",
+    "name": "Matsuyama / Dōgo",
+    "lat": 33.8392,
+    "lng": 132.7657,
+    "region": "Ehime",
+    "hospital": {
+      "name": "Ehime Prefectural Central Hospital",
+      "minutes": 10,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      60000,
+      200000
+    ],
+    "to_hnd_minutes": 240,
+    "tags": [
+      "onsen",
+      "castle",
+      "flight"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "fukuoka",
+    "name": "Fukuoka",
+    "lat": 33.5904,
+    "lng": 130.4017,
+    "region": "Kyushu",
+    "hospital": {
+      "name": "Kyushu University Hospital",
+      "minutes": 20,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": "FUK",
+    "cost_night_6": [
+      40000,
+      140000
+    ],
+    "to_hnd_minutes": 240,
+    "tags": [
+      "city",
+      "hub",
+      "food",
+      "ny-safe",
+      "flight",
+      "apartment"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "yufuin",
+    "name": "Yufuin",
+    "lat": 33.2659,
+    "lng": 131.369,
+    "region": "Oita (Kyushu)",
+    "hospital": {
+      "name": "Oita University Hospital",
+      "minutes": 30,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 3,
+    "bus_dependent": false,
+    "airport": "FUK",
+    "cost_night_6": [
+      120000,
+      360000
+    ],
+    "to_hnd_minutes": 300,
+    "tags": [
+      "onsen",
+      "ryokan",
+      "flat"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "beppu",
+    "name": "Beppu",
+    "lat": 33.3155,
+    "lng": 131.4734,
+    "region": "Oita (Kyushu)",
+    "hospital": {
+      "name": "Oita University Hospital",
+      "minutes": 30,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": "FUK",
+    "cost_night_6": [
+      150000,
+      320000
+    ],
+    "to_hnd_minutes": 300,
+    "tags": [
+      "onsen",
+      "hotel",
+      "lift",
+      "ny-safe"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "kurokawa",
+    "name": "Kurokawa Onsen",
+    "lat": 33.089,
+    "lng": 131.154,
+    "region": "Kumamoto (Kyushu)",
+    "hospital": {
+      "name": "Kumamoto University Hospital",
+      "minutes": 90,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 3,
+    "bus_dependent": true,
+    "airport": "FUK",
+    "cost_night_6": [
+      140000,
+      330000
+    ],
+    "to_hnd_minutes": 330,
+    "tags": [
+      "onsen",
+      "lanterns",
+      "bus",
+      "steep"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "kumamoto",
+    "name": "Kumamoto",
+    "lat": 32.8031,
+    "lng": 130.7079,
+    "region": "Kyushu",
+    "hospital": {
+      "name": "Kumamoto University Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      45000,
+      120000
+    ],
+    "to_hnd_minutes": 240,
+    "tags": [
+      "city",
+      "castle",
+      "car-hub",
+      "flight"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "takachiho",
+    "name": "Takachiho",
+    "lat": 32.7111,
+    "lng": 131.3086,
+    "region": "Miyazaki (Kyushu)",
+    "hospital": {
+      "name": "Miyazaki Prefectural Nobeoka Hospital",
+      "minutes": 70,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 3,
+    "bus_dependent": true,
+    "airport": null,
+    "cost_night_6": [
+      60000,
+      120000
+    ],
+    "to_hnd_minutes": 360,
+    "tags": [
+      "gorge",
+      "kagura",
+      "car"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "nagasaki",
+    "name": "Nagasaki",
+    "lat": 32.7348,
+    "lng": 129.8687,
+    "region": "Kyushu",
+    "hospital": {
+      "name": "Nagasaki University Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      45000,
+      150000
+    ],
+    "to_hnd_minutes": 250,
+    "tags": [
+      "city",
+      "tram",
+      "flight"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "kagoshima",
+    "name": "Kagoshima",
+    "lat": 31.5966,
+    "lng": 130.5571,
+    "region": "Kyushu",
+    "hospital": {
+      "name": "Kagoshima University Hospital",
+      "minutes": 20,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      45000,
+      130000
+    ],
+    "to_hnd_minutes": 250,
+    "tags": [
+      "city",
+      "volcano",
+      "flight"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "yakushima",
+    "name": "Yakushima",
+    "lat": 30.3853,
+    "lng": 130.6627,
+    "region": "Kagoshima (Kyushu)",
+    "hospital": {
+      "name": "Yakushima Tokushukai Hospital",
+      "minutes": 15,
+      "perinatal": false
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      60000,
+      180000
+    ],
+    "to_hnd_minutes": 360,
+    "tags": [
+      "island",
+      "forest",
+      "rain",
+      "weather"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "sendai",
+    "name": "Sendai",
+    "lat": 38.2682,
+    "lng": 140.8694,
+    "region": "Tōhoku",
+    "hospital": {
+      "name": "Tohoku University Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": true,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      50000,
+      160000
+    ],
+    "to_hnd_minutes": 165,
+    "tags": [
+      "city",
+      "hub",
+      "apartment",
+      "ny-safe"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "matsushima",
+    "name": "Matsushima",
+    "lat": 38.3689,
+    "lng": 141.064,
+    "region": "Tōhoku",
+    "hospital": {
+      "name": "Tohoku University Hospital",
+      "minutes": 45,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 2,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      110000,
+      280000
+    ],
+    "to_hnd_minutes": 210,
+    "tags": [
+      "bay",
+      "hotel",
+      "lift"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "yamagata",
+    "name": "Yamagata city",
+    "lat": 38.2554,
+    "lng": 140.3396,
+    "region": "Tōhoku",
+    "hospital": {
+      "name": "Yamagata University Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      40000,
+      100000
+    ],
+    "to_hnd_minutes": 230,
+    "tags": [
+      "city",
+      "hub",
+      "cheap"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "zao",
+    "name": "Zaō Onsen",
+    "lat": 38.166,
+    "lng": 140.399,
+    "region": "Tōhoku",
+    "hospital": {
+      "name": "Yamagata University Hospital",
+      "minutes": 45,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": true,
+    "airport": null,
+    "cost_night_6": [
+      90000,
+      260000
+    ],
+    "to_hnd_minutes": 270,
+    "tags": [
+      "ski",
+      "onsen",
+      "snow",
+      "ropeway",
+      "steep"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "ginzan",
+    "name": "Ginzan Onsen",
+    "lat": 38.5697,
+    "lng": 140.5306,
+    "region": "Tōhoku",
+    "hospital": {
+      "name": "Yamagata University Hospital",
+      "minutes": 75,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 3,
+    "ny_tier": 3,
+    "bus_dependent": true,
+    "airport": null,
+    "cost_night_6": [
+      150000,
+      400000
+    ],
+    "to_hnd_minutes": 300,
+    "tags": [
+      "onsen",
+      "snow",
+      "lamps",
+      "stairs"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "aizu",
+    "name": "Aizu-Wakamatsu",
+    "lat": 37.4947,
+    "lng": 139.9298,
+    "region": "Tōhoku",
+    "hospital": {
+      "name": "Aizu Chuo Hospital",
+      "minutes": 10,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      50000,
+      180000
+    ],
+    "to_hnd_minutes": 240,
+    "tags": [
+      "castle",
+      "snow",
+      "post-town"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "nyuto",
+    "name": "Nyūtō Onsen / Tazawako",
+    "lat": 39.7978,
+    "lng": 140.8126,
+    "region": "Tōhoku",
+    "hospital": {
+      "name": "Omagari Kosei Medical Center",
+      "minutes": 60,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 3,
+    "ny_tier": 3,
+    "bus_dependent": true,
+    "airport": null,
+    "cost_night_6": [
+      90000,
+      150000
+    ],
+    "to_hnd_minutes": 300,
+    "tags": [
+      "onsen",
+      "snow",
+      "remote"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "morioka",
+    "name": "Morioka",
+    "lat": 39.702,
+    "lng": 141.1545,
+    "region": "Tōhoku",
+    "hospital": {
+      "name": "Iwate Medical University Hospital",
+      "minutes": 20,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      40000,
+      100000
+    ],
+    "to_hnd_minutes": 200,
+    "tags": [
+      "city",
+      "hub",
+      "food"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "towada",
+    "name": "Lake Towada / Oirase",
+    "lat": 40.428,
+    "lng": 140.9018,
+    "region": "Tōhoku",
+    "hospital": {
+      "name": "Towada City Central Hospital",
+      "minutes": 50,
+      "perinatal": false
+    },
+    "kitchen": false,
+    "lodging_tier": 2,
+    "ny_tier": 2,
+    "bus_dependent": true,
+    "airport": null,
+    "cost_night_6": [
+      150000,
+      240000
+    ],
+    "to_hnd_minutes": 330,
+    "tags": [
+      "hotel",
+      "ice",
+      "remote"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "hachinohe",
+    "name": "Hachinohe",
+    "lat": 40.5124,
+    "lng": 141.4884,
+    "region": "Tōhoku",
+    "hospital": {
+      "name": "Hachinohe City Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      40000,
+      100000
+    ],
+    "to_hnd_minutes": 240,
+    "tags": [
+      "city",
+      "yatai"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  },
+  {
+    "slug": "aomori",
+    "name": "Aomori / Hirosaki",
+    "lat": 40.8222,
+    "lng": 140.7474,
+    "region": "Tōhoku",
+    "hospital": {
+      "name": "Hirosaki University Hospital",
+      "minutes": 15,
+      "perinatal": true
+    },
+    "kitchen": false,
+    "lodging_tier": 1,
+    "ny_tier": 1,
+    "bus_dependent": false,
+    "airport": null,
+    "cost_night_6": [
+      40000,
+      110000
+    ],
+    "to_hnd_minutes": 270,
+    "tags": [
+      "city",
+      "snow",
+      "castle"
+    ],
+    "source": "07-lodging.md; 08-pregnancy.md §4"
+  }
+]
