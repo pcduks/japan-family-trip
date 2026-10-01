@@ -204,6 +204,12 @@ export interface WishFacts {
   with_help?: boolean;
   /** Optional free text from the finish screen. */
   missing?: string;
+  /** Chapter answers (the top-down step): chapter id → yes/meh/no. */
+  chapters?: Record<string, "yes" | "meh" | "no">;
+  /** The chapters that call them, best first (up to three). */
+  chapter_rank?: string[];
+  /** True when the person chose to skip the card deck. */
+  deck_skipped?: boolean;
 }
 
 /** id = traveller id. finished_at reveals nothing by itself; answers unlock when all have finished. */

@@ -4,6 +4,7 @@
  * and the booking deadlines. No I/O; the caller writes the rows, so this works
  * in demo mode (localStorage) and against Supabase alike.
  */
+import { loadChapters, type Chapter } from "../catalog/chapters";
 import type { Catalog, Who } from "../catalog/types";
 import type { WishProfile, Wish as WishRow } from "../family";
 import type { Activity, Booking, GeneratedPlan, LegMode, Plan, PlanStay } from "../plan";
@@ -63,6 +64,8 @@ export interface GeneratedBundle {
 
 export interface GenerateOptions {
   catalog: Catalog;
+  /** Defaults to data/chapters.json; tests pass their own. */
+  chapters?: Chapter[];
   travellers: Traveller[];
   wishes: WishRow[];
   profiles: WishProfile[];
@@ -79,12 +82,26 @@ export function generatePlans(o: GenerateOptions): GeneratedBundle[] {
   const facts: Record<string, Facts> = {};
   for (const t of travellers) facts[t.id] = factsFor(o.profiles.find((p) => p.id === t.id));
   const rules: ComfortRules = { ...DEFAULT_RULES, ...stripRules(o.rules) };
-  const wishes = o.wishes.map((w) => ({ traveller_id: w.traveller_id, card_id: w.card_id, answer: w.answer }));
+  const wishes = impliedWishes(
+    o.wishes.map((w) => ({ traveller_id: w.traveller_id, card_id: w.card_id, answer: w.answer })),
+    o.profiles,
+    o.chapters ?? loadChapters(),
+  );
   const drafts = buildRoutes({ catalog: o.catalog, travellers, wishes, facts, rules, today: o.today, nyChoice: nyChoiceFor(o.profiles, travellers) });
   const ix = indexCatalog(o.catalog);
   const wm = wishMap(wishes);
   const used = new Map<string, number>();
-  return drafts.map((d) => {
+  const chapters = o.chapters ?? loadChapters();
+  // The family's chapter order breaks ties in how the routes are presented: the route sleeping in higher-ranked chapters comes first.
+  const points = new Map<string, number>();
+  for (const p of o.profiles) (p.facts.chapter_rank ?? []).forEach((id, i) => points.set(id, (points.get(id) ?? 0) + (3 - i)));
+  const affinity = (d: Draft) =>
+    d.stays.reduce((acc, st) => {
+      const ch = chapters.find((c) => c.bases.includes(st.place));
+      return acc + (ch ? (points.get(ch.id) ?? 0) * st.nights : 0);
+    }, 0);
+  const ordered = [...drafts].sort((a, b) => affinity(b) - affinity(a) || b.score - a.score);
+  return ordered.map((d) => {
     const n = (used.get(d.name_axis) ?? 0) + 1;
     used.set(d.name_axis, n);
     const planId = newId();
@@ -221,6 +238,30 @@ export function generatePlans(o: GenerateOptions): GeneratedBundle[] {
     };
     return { plan, activities, bookings, narrative };
   });
+}
+
+/**
+ * Chapter answers stand in for card answers the person did not give: "Me chama"
+ * likes every card of that chapter, "Não é pra mim" says no to them, and a card
+ * the person answered explicitly always wins. Nothing becomes a must this way.
+ */
+export function impliedWishes(explicit: { traveller_id: string; card_id: string; answer: "no" | "like" | "must" }[], profiles: WishProfile[], chapters: Chapter[]): typeof explicit {
+  const out = [...explicit];
+  const seen = new Set(explicit.map((w) => `${w.traveller_id}:${w.card_id}`));
+  for (const p of profiles) {
+    const answers = p.facts.chapters ?? {};
+    for (const ch of chapters) {
+      const a = answers[ch.id];
+      if (a !== "yes" && a !== "no") continue;
+      for (const card_id of ch.cards) {
+        const key = `${p.id}:${card_id}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        out.push({ traveller_id: p.id, card_id, answer: a === "yes" ? "like" : "no" });
+      }
+    }
+  }
+  return out;
 }
 
 function perPerson(d: Draft, id: string, wm: ReturnType<typeof wishMap>, cardName: (id: string) => string) {

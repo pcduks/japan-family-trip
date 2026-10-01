@@ -25,6 +25,14 @@ const SCENES: Record<string, string> = {
   "deck-comida": "A winter feast on a Japanese table seen from above: a steaming nabe hot pot, a plate of snow crab, grilled oysters, mikan oranges, cups of hot sake, chopsticks.",
   "deck-reveillon": "A great temple bell being rung at midnight on New Year's Eve, a crowd with paper lanterns in a snowy courtyard, a pine and bamboo kadomatsu decoration at the gate, first light on the horizon.",
   "deck-neve": "A snow-covered mountain village of thatched gassho farmhouses at twilight, warm windows, deep snow on the roofs, a hot spring steaming at the edge of the village, snow monkeys bathing.",
+  // Chapters (data/chapters.json), the top-down step before the deck.
+  "chapter-alpes": "The Japanese Alps in deep winter: thatched gassho farmhouses of Shirakawa-go under heavy snow at twilight, snow monkeys in a steaming hot spring in the foreground, Kenroku-en's pine trees held by yukitsuri rope cones, warm lantern light.",
+  "chapter-kyoto": "Kyoto in winter at dusk: a quiet temple garden with a thin dusting of snow on moss and stone lanterns, a wooden teahouse street with paper lanterns, the great bell of a temple ready for New Year's Eve, deer resting under a pagoda in the distance.",
+  "chapter-kyushu": "Warm southern Kyushu in winter: steaming open-air onsen pools in a river gorge with paper lanterns hung along the water, street food stalls with glowing lanterns by a city river at night, camellias in bloom, mild mist.",
+  "chapter-setouchi": "The Seto Inland Sea in winter: the vermilion floating torii of Miyajima at high tide at dawn, white canal-side storehouses of Kurashiki with willows, a bright white castle on a hill, small islands in soft mist.",
+  "chapter-fuji": "Mount Fuji snow-capped above a still lake at winter sunset with the sun touching the summit, a holiday house with warm windows on the shore, a red torii by the water, bare trees with frost, a small ropeway in the hills.",
+  "chapter-tohoku": "Deep snow country of Tohoku: an old wooden onsen town of tall ryokan along a river with gas lamps glowing in falling snow, frost-covered 'snow monster' trees on a mountain ridge under a cable car, an icy forest stream lit at night.",
+  "chapter-tokyo": "Tokyo over the New Year: the outer market at dawn with steam from food stalls, the imperial palace moat with pines and a stone bridge, a kabuki theatre facade with lanterns, a shrine gate crowded with first-visit lanterns, the city skyline soft in winter light.",
 };
 
 async function generate(code: string) {
@@ -43,7 +51,7 @@ async function generate(code: string) {
   const part = json.candidates?.[0]?.content?.parts?.find((p: { inlineData?: { data: string; mimeType: string } }) => p.inlineData);
   if (!part) throw new Error(`${code}: no image returned`);
   const ext = part.inlineData.mimeType.includes("jpeg") ? "jpg" : "png";
-  const out = `public/illustrations/${code.startsWith("deck-") ? code : `route-${code}`}.${ext}`;
+  const out = `public/illustrations/${code.startsWith("deck-") || code.startsWith("chapter-") ? code : `route-${code}`}.${ext}`;
   writeFileSync(out, Buffer.from(part.inlineData.data, "base64"));
   console.log("wrote", out);
 }

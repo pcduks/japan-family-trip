@@ -5,8 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { deckCards, loadCatalog, type ExperienceCard } from "@/lib/catalog";
+import { loadChapters, type ChapterAnswer } from "@/lib/catalog/chapters";
 import { MAX_MUST, wishId, type WishAnswer, type WishFacts } from "@/lib/family";
 import { useSetting, useTable, upsertRow } from "@/lib/tables";
+import { ChapterCard, ChapterRank } from "./Capitulos";
 import { EkiStamp, type Motif } from "./EkiStamp";
 import { useStore } from "./providers";
 import { Avatar, PageHeader, firstName } from "./ui";
@@ -34,13 +36,14 @@ const DEFAULT_NY: { base: string; title: string; line: string }[] = [
   { base: "fukuoka", title: "Fukuoka", line: "Mais quente, barraquinhas de comida, onsen por perto. Volta de avião. Hospital a 10 min." },
 ];
 
-type Step = "intro" | "facts" | "deck" | "ny" | "done";
+type Step = "intro" | "facts" | "chapters" | "rank" | "ny" | "ask" | "deck" | "done";
 
-/** Desejos: five quick facts, 36 cards, one forced choice, a stamp. Private until everyone finishes. */
+/** Desejos: five quick facts, seven chapters, one forced choice, then (optionally) the cards. Private until everyone finishes. */
 export function DesejosView() {
   const { trip, me, demo } = useStore();
   const catalog = useMemo(() => loadCatalog(), []);
-  const deck = useMemo(() => deckCards(catalog), [catalog]);
+  const chapters = useMemo(() => loadChapters(), []);
+  const fullDeck = useMemo(() => deckCards(catalog), [catalog]);
   const { rows: wishes } = useTable("wishes");
   const { rows: profiles } = useTable("wish_profiles");
   const [nySetting] = useSetting<{ base: string; title: string; line: string }[]>("ny_options", []);
@@ -50,13 +53,37 @@ export function DesejosView() {
   const profile = profiles.find((p) => p.id === myId);
   const facts: WishFacts = profile?.facts ?? {};
   const finished = !!profile?.finished_at;
+  const chapterAnswers = facts.chapters ?? {};
+  const chaptersAnswered = chapters.filter((c) => chapterAnswers[c.id]).length;
+  const called = chapters.filter((c) => chapterAnswers[c.id] === "yes");
+  const rank = (facts.chapter_rank ?? []).filter((id) => called.some((c) => c.id === id));
+  // The deck shrinks to the chapters that called; with none, the whole deck stays available.
+  const calledIds = new Set(called.flatMap((c) => c.cards));
+  const subDeck = calledIds.size ? fullDeck.filter((c) => calledIds.has(c.id)) : fullDeck;
+  const deck = subDeck.length ? subDeck : fullDeck;
   const answered = deck.filter((c) => mine.has(c.id)).length;
-  const musts = deck.filter((c) => mine.get(c.id) === "must");
+  const musts = fullDeck.filter((c) => mine.get(c.id) === "must");
   const factsDone = !!(facts.walk_km && facts.midday_rest && facts.stairs !== undefined && facts.early !== undefined);
 
   const [step, setStep] = useState<Step | null>(null);
   const [index, setIndex] = useState(() => 0);
-  const current: Step = step ?? (finished ? "done" : !factsDone ? "intro" : answered < deck.length ? "deck" : !facts.ny_choice ? "ny" : "done");
+  const current: Step =
+    step ??
+    (finished
+      ? "done"
+      : !factsDone
+        ? "intro"
+        : chaptersAnswered < chapters.length
+          ? "chapters"
+          : called.length > 1 && !rank.length
+            ? "rank"
+            : !facts.ny_choice
+              ? "ny"
+              : facts.deck_skipped || answered >= deck.length
+                ? "done"
+                : answered > 0
+                  ? "deck"
+                  : "ask");
 
   async function saveFacts(patch: Partial<WishFacts>) {
     if (!myId) return;
@@ -84,18 +111,21 @@ export function DesejosView() {
   if (current === "intro")
     return (
       <main className="mx-auto grid max-w-md gap-6 px-5 pb-12">
-        <PageHeader eyebrow="Primeiro, você" title="O que você quer viver no Japão?" hand="cinco perguntas e 36 cartas">
-          Ninguém vê suas respostas até todo mundo terminar, nem o Pedro. Leva uns dez minutos. Dá para parar e voltar.
+        <PageHeader eyebrow="Primeiro, você" title="Que Japão você quer?" hand="cinco perguntas e sete capítulos">
+          Ninguém vê suas respostas até todo mundo terminar, nem o Pedro. Leva uns oito minutos. Dá para parar e voltar.
         </PageHeader>
         <ul className="grid gap-2 text-[1.02rem]">
           <li className="flex gap-3">
             <span className="font-display text-2xl text-vermilion">1</span> Cinco perguntas rápidas sobre o seu ritmo.
           </li>
           <li className="flex gap-3">
-            <span className="font-display text-2xl text-vermilion">2</span> 36 cartas: para cada uma, <b>Pode pular</b>, <b>Quero</b> ou <b>Não abro mão</b>.
+            <span className="font-display text-2xl text-vermilion">2</span> Sete capítulos do Japão no inverno, cada um com a noite de Natal e a virada do ano explicadas. Para cada um: <b>Não é pra mim</b>, <b>Tanto faz</b> ou <b>Me chama</b>.
           </li>
           <li className="flex gap-3">
             <span className="font-display text-2xl text-vermilion">3</span> Uma escolha: onde passar o Réveillon.
+          </li>
+          <li className="flex gap-3">
+            <span className="font-display text-2xl text-vermilion">4</span> Se quiser, afinar com cartas de experiências dos capítulos que você escolheu. Opcional.
           </li>
         </ul>
         <button className="btn btn-primary text-base" onClick={() => setStep("facts")}>
@@ -104,7 +134,82 @@ export function DesejosView() {
       </main>
     );
 
-  if (current === "facts") return <Facts facts={facts} onSave={saveFacts} onDone={() => setStep("deck")} />;
+  if (current === "facts") return <Facts facts={facts} onSave={saveFacts} onDone={() => { setIndex(0); setStep("chapters"); }} />;
+
+  if (current === "chapters") {
+    const i = Math.min(index, chapters.length - 1);
+    const ch = chapters[i];
+    return (
+      <main className="mx-auto grid max-w-md gap-4 px-5 pb-12">
+        <div className="flex items-center justify-between">
+          <p className="eyebrow">
+            Capítulo {i + 1} de {chapters.length}
+          </p>
+          <ol className="flex gap-1" aria-label="Progresso">
+            {chapters.map((c, k) => (
+              <li key={c.id} className={`h-1.5 w-5 rounded-full ${chapterAnswers[c.id] ? "bg-pine" : k === i ? "bg-vermilion" : "bg-rule"}`} />
+            ))}
+          </ol>
+        </div>
+        <ChapterCard
+          chapter={ch}
+          value={chapterAnswers[ch.id]}
+          onAnswer={async (a: ChapterAnswer) => {
+            const next = { ...chapterAnswers, [ch.id]: a };
+            await saveFacts({ chapters: next, chapter_rank: (facts.chapter_rank ?? []).filter((id) => next[id] === "yes") });
+            if (i + 1 < chapters.length) {
+              setIndex(i + 1);
+              window.scrollTo({ top: 0 });
+            } else {
+              const yes = chapters.filter((c) => next[c.id] === "yes");
+              setStep(yes.length > 1 ? "rank" : facts.ny_choice ? "ask" : "ny");
+            }
+          }}
+        />
+        <div className="flex justify-between text-sm">
+          <button type="button" className="underline disabled:opacity-40" disabled={i === 0} onClick={() => setIndex(i - 1)}>
+            ← Voltar um
+          </button>
+          <span className="text-muted">
+            {chaptersAnswered} de {chapters.length}
+          </span>
+        </div>
+      </main>
+    );
+  }
+
+  if (current === "rank")
+    return (
+      <main className="mx-auto grid max-w-md gap-5 px-5 pb-12">
+        <PageHeader eyebrow="Agora em ordem" title="Dos que te chamam, qual vem primeiro?" hand="até três">
+          Toque na ordem. Ela aparece no retrato da família e desempata quando as rotas forem montadas.
+        </PageHeader>
+        <ChapterRank chapters={called} rank={rank} onChange={(r) => saveFacts({ chapter_rank: r })} onDone={() => setStep(facts.ny_choice ? "ask" : "ny")} />
+      </main>
+    );
+
+  if (current === "ask")
+    return (
+      <main className="mx-auto grid max-w-md gap-5 px-5 pb-12">
+        <PageHeader eyebrow="Opcional" title="Quer afinar?" hand={`${deck.length} cartas`}>
+          {called.length
+            ? `Dentro de ${called.map((c) => c.name_pt).join(", ")} há ${deck.length} experiências concretas. Dá para dizer, uma a uma, o que você quer e do que não abre mão. Ou entregar já.`
+            : `Nenhum capítulo te chamou, então as ${deck.length} cartas ficam disponíveis se quiser olhar uma a uma. Ou entregar já.`}
+        </PageHeader>
+        <button className="btn btn-primary text-base" onClick={() => { setIndex(0); setStep("deck"); }}>
+          Ver as cartas
+        </button>
+        <button
+          className="btn text-base"
+          onClick={async () => {
+            await saveFacts({ deck_skipped: true });
+            await finish();
+          }}
+        >
+          Entregar já
+        </button>
+      </main>
+    );
 
   if (current === "deck") {
     const i = Math.min(index, deck.length - 1);
@@ -125,13 +230,13 @@ export function DesejosView() {
           onAnswer={async (a) => {
             await answer(card, a);
             if (i + 1 < deck.length) setIndex(i + 1);
-            else setStep(facts.ny_choice ? "done" : "ny");
+            else await finish();
           }}
           onSwap={async (swapOut, a) => {
             await answer(swapOut, "like");
             await answer(card, a);
             if (i + 1 < deck.length) setIndex(i + 1);
-            else setStep(facts.ny_choice ? "done" : "ny");
+            else await finish();
           }}
         />
         <div className="flex justify-between text-sm">
@@ -167,8 +272,8 @@ export function DesejosView() {
             </li>
           ))}
         </ul>
-        <button className="btn btn-primary text-base" disabled={!facts.ny_choice} onClick={finish}>
-          Entregar meus desejos
+        <button className="btn btn-primary text-base" disabled={!facts.ny_choice} onClick={() => setStep(answered > 0 ? "deck" : "ask")}>
+          Continuar
         </button>
       </main>
     );
@@ -180,6 +285,19 @@ export function DesejosView() {
         <EkiStamp motif="brush" ink="var(--vermilion)" top="Desejos" bottom="entregues" size={128} rotate={-7} animate label="Desejos entregues" />
         <h1 className="text-[2.2rem] leading-tight">Obrigado, {firstName(me.name)}.</h1>
       </div>
+      {rank.length || called.length ? (
+        <section className="card grid gap-2 p-4">
+          <p className="eyebrow">Te chamam</p>
+          <ol className="grid gap-1 text-[1.05rem]">
+            {(rank.length ? rank.map((id) => called.find((c) => c.id === id)!) : called).filter(Boolean).map((c, i) => (
+              <li key={c.id}>
+                {rank.length ? `${i + 1}. ` : "· "}
+                {c.name_pt}
+              </li>
+            ))}
+          </ol>
+        </section>
+      ) : null}
       {musts.length ? (
         <section className="card grid gap-2 p-4">
           <p className="eyebrow">Você não abre mão de</p>
@@ -197,9 +315,14 @@ export function DesejosView() {
       </p>
       <MissingBox value={facts.missing ?? ""} onSave={(v) => saveFacts({ missing: v })} />
       <div className="flex flex-wrap gap-2">
-        <button type="button" className="btn" onClick={() => { setIndex(0); setStep("deck"); }}>
+        <button type="button" className="btn" onClick={() => { setIndex(0); setStep("chapters"); }}>
           Mudar algo
         </button>
+        {facts.deck_skipped || answered < deck.length ? (
+          <button type="button" className="btn" onClick={() => { setIndex(0); setStep("deck"); }}>
+            Afinar com as cartas
+          </button>
+        ) : null}
         {!others.length ? (
           <Link href="/retrato" className="btn btn-primary no-underline">
             Ver o retrato da família
@@ -215,7 +338,7 @@ function Progress({ deck, index }: { deck: ExperienceCard[]; index: number }) {
   const group = deck[index].deck_group;
   return (
     <ol className="flex gap-1" aria-label="Progresso">
-      {GROUPS.map((g) => {
+      {GROUPS.filter((g) => deck.some((c) => c.deck_group === g.key)).map((g) => {
         const cards = deck.filter((c) => c.deck_group === g.key);
         const first = deck.indexOf(cards[0]);
         const done = index >= first + cards.length;
@@ -233,9 +356,19 @@ function Progress({ deck, index }: { deck: ExperienceCard[]; index: number }) {
 function Card({ card, group }: { card: ExperienceCard; group: (typeof GROUPS)[number] }) {
   const walk = card.effort <= 2 ? "pouca" : card.effort === 3 ? "média" : "muita";
   const cost = card.cost_pp_jpy == null ? "—" : card.cost_pp_jpy === 0 ? "grátis" : card.cost_pp_jpy < 3000 ? "¥" : card.cost_pp_jpy < 10000 ? "¥¥" : "¥¥¥";
+  const [photoFailed, setPhotoFailed] = useState<string | null>(null);
+  const photo = photoFailed !== card.id;
   return (
     <article className="card grid gap-3 overflow-hidden p-5 pt-0">
-      <Image src={`/illustrations/deck-${group.key}.webp`} alt="" width={1200} height={660} sizes="(max-width: 28rem) 100vw, 28rem" className="-mx-5 aspect-[2/1] w-[calc(100%+2.5rem)] max-w-none object-cover" priority />
+      {photo ? (
+        <div className="relative -mx-5 aspect-[2/1] w-[calc(100%+2.5rem)] max-w-none bg-paper-2">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img key={card.id} src={`/api/card-photo/${card.id}?w=1000`} alt="" className="size-full object-cover" onError={() => setPhotoFailed(card.id)} />
+          <span className="absolute right-2 bottom-1 text-[0.6rem] text-white/80 [text-shadow:0_0_3px_#000]">foto: Google</span>
+        </div>
+      ) : (
+        <Image src={`/illustrations/deck-${group.key}.webp`} alt="" width={1200} height={660} sizes="(max-width: 28rem) 100vw, 28rem" className="-mx-5 aspect-[2/1] w-[calc(100%+2.5rem)] max-w-none object-cover" priority />
+      )}
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <p className="eyebrow">{group.title}</p>
@@ -418,7 +551,7 @@ function Facts({ facts, onSave, onDone }: { facts: WishFacts; onSave: (p: Partia
             })}
           </div>
           <button className="btn btn-primary text-base" onClick={onDone}>
-            {facts.food_limits?.length ? "Pronto, vamos às cartas" : "Como tudo. Vamos às cartas"}
+            {facts.food_limits?.length ? "Pronto, vamos aos capítulos" : "Como tudo. Vamos aos capítulos"}
           </button>
         </>
       )}
