@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { Traveller } from "../types";
 import { fixtureCatalog } from "./fixtures/catalog";
 import { fixtureFacts, fixtureTravellers, fixtureWishes } from "./fixtures/family";
-import { generatePlans, nyChoiceFor, whoFor } from "./generate";
+import { generatePlans, impliedWishes, nyChoiceFor, whoFor } from "./generate";
 
 const COUPLE: Record<string, string> = { pedro: "pedro", her: "pedro", parents: "pais", bros: "irmao" };
 const travellers: Traveller[] = fixtureTravellers.map((t) => ({ id: t.id, name: t.name, role: t.who === "pedro" ? "planner" : "member", couple: COUPLE[t.who] }));
@@ -31,7 +31,7 @@ describe("nyChoiceFor", () => {
 });
 
 describe("generatePlans", () => {
-  const bundles = generatePlans({ catalog: fixtureCatalog, travellers, wishes: fixtureWishes.map((w) => ({ id: `${w.traveller_id}:${w.card_id}`, ...w })), profiles, today: "2026-10-01" });
+  const bundles = generatePlans({ catalog: fixtureCatalog, chapters: [], travellers, wishes: fixtureWishes.map((w) => ({ id: `${w.traveller_id}:${w.card_id}`, ...w })), profiles, today: "2026-10-01" });
   it("returns up to three plans with 20 nights, generated facts, activities per placement and deadline bookings", () => {
     expect(bundles.length).toBeGreaterThan(0);
     expect(bundles.length).toBeLessThanOrEqual(3);
@@ -55,5 +55,18 @@ describe("generatePlans", () => {
   });
   it("gives plans distinct names", () => {
     expect(new Set(bundles.map((b) => b.plan.name)).size).toBe(bundles.length);
+  });
+});
+
+describe("impliedWishes", () => {
+  const chapters = [{ id: "a", cards: ["X", "Y"] }, { id: "b", cards: ["Z"] }] as unknown as import("../catalog/chapters").Chapter[];
+  it("likes the cards of a chapter that calls, says no to one that doesn't, and never overrides an explicit answer", () => {
+    const out = impliedWishes([{ traveller_id: "t", card_id: "X", answer: "must" }], [{ id: "t", facts: { chapters: { a: "yes", b: "no" } }, finished_at: null }], chapters);
+    expect(out).toEqual([
+      { traveller_id: "t", card_id: "X", answer: "must" },
+      { traveller_id: "t", card_id: "Y", answer: "like" },
+      { traveller_id: "t", card_id: "Z", answer: "no" },
+    ]);
+    expect(impliedWishes([], [{ id: "t", facts: { chapters: { a: "meh" } }, finished_at: null }], chapters)).toEqual([]);
   });
 });

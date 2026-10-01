@@ -1,0 +1,383 @@
+[
+  {
+    "id": "alpes",
+    "name_pt": "Alpes e neve",
+    "promise_pt": "Neve quase garantida, macacos no onsen, aldeias de telhado de palha.\nRéveillon numa cidade com cozinha, hospital e jardim aberto a noite toda.",
+    "typical_day_pt": [
+      "De manhã, mercado ou templo com neve nas ruas: Zenkō-ji ao amanhecer em Nagano, o mercado matinal de Takayama ou o Ōmichō em Kanazawa.",
+      "À tarde o grupo se divide: os quatro sobem para os macacos de Jigokudani ou para as pistas de Nozawa, ela fica no ryokan, no café de Shibu ou num museu aquecido.",
+      "À noite, ryokan ou machiya com cozinha, carne de Hida ou caranguejo, e um banho privativo antes de dormir."
+    ],
+    "tradeoffs": {
+      "cold": 3,
+      "train": 3,
+      "her": 3,
+      "note_pt": "Ônibus de montanha reservados e neve no chão; ela fica nas bases (Nagano, Kanazawa, Takayama) e os quatro sobem para macacos, esqui e Shirakawa-gō."
+    },
+    "bases": [
+      "nagano",
+      "yudanaka",
+      "takayama",
+      "shirakawago",
+      "kanazawa",
+      "matsumoto",
+      "nozawa",
+      "karuizawa",
+      "kusatsu"
+    ],
+    "ny_base": "kanazawa",
+    "xmas_eve": {
+      "where_pt": "Em Nagano (hotel-apartamento perto da estação ou ryokan em Yudanaka/Shibu), 2 h de Tokyo pelo Hokuriku Shinkansen; se a mudança for só no dia 25, a noite de 24 ainda é em Tokyo.",
+      "open_pt": "Natal não é feriado: tudo funciona em horário normal ou estendido (02-closures). Zenkō-ji abre todos os dias e o parque dos macacos funciona 09:00–16:00; as pistas de Nozawa estão abertas desde 28 Nov, mas o ryokan Kiriya já está lotado a partir de 23 Dez, e uma noite numa casa gasshō em Shirakawa-gō é realista entre 20 e 27 Dez. Neve no chão em Nagano cidade é intermitente; no cinturão de neve (Nozawa, Shirakawa-gō, Takayama) é quase certa até 25 Dez. A pesquisa não cobre iluminações ou ceias de Natal em Nagano; assuma uma noite comum de inverno com restaurantes abertos (em Kusatsu o Yubatake tem iluminação com árvore de Natal 17:00–23:00, em Karuizawa o Winter Festival ilumina as ruas até 28 Fev).",
+      "evening_pt": "Uma noite de montanha silenciosa, com frio seco ou neve fina, jantar no ryokan ou soba perto da estação, e o templo iluminado a um quarteirão. Nada de festa: o clima é de chegada."
+    },
+    "nye": {
+      "where_pt": "Em Kanazawa, numa machiya para seis com cozinha (Ainotsuji, Hanatsume) ou no Hyatt House com cozinhas e quartos conectados; Kanazawa University Hospital a 15 min, hospedagem ainda aberta em outubro.",
+      "open_pt": "Kenroku-en é gratuito de 31 Dez a 3 Jan e fica aberto a noite inteira de 31 Dez até 08:00 de 1 Jan, sem iluminação especial; o parque do castelo tem iluminação noturna de 27 Dez a 3 Jan. O mercado Ōmichō está no pico de 28 a 31 Dez (caranguejo kōbako só até 31 Dez), fecha oficialmente de 1 a 4 Jan com 20–40 das ~170 lojas abertas, e reabre de vez em 5 Jan. O Museu do Século 21 fecha de 29 Dez a 1 Jan, a casa Nomura de 26 Dez a 2 Jan, a casa de chá Shigure-tei de 29 Dez a 3 Jan; Higashi Chaya tem metade das lojas fechadas 1–2 Jan. Supermercado Life fecha 1–3 Jan: compras no dia 30. O Kagayaki para Tokyo é todo reservado e quase lotado em 2–4 Jan. A pesquisa não cobre sino de Ano-Novo nem hatsumōde em Kanazawa; assuma um santuário de bairro de manhã cedo.",
+      "evening_pt": "Chuva fria ou neve molhada é o normal em Kanazawa no fim de dezembro, então a virada é em casa: soba de passagem de ano na cozinha da machiya, uma caminhada curta até o Kenroku-en depois da meia-noite e o jardim quase vazio com as cordas de yukitsuri. Dia 1 é o dia morto da cidade."
+    },
+    "cards": [
+      "NW-NAG-01",
+      "NW-NAG-04",
+      "NW-TAK-01",
+      "NW-TAK-02",
+      "NW-TAK-04",
+      "NW-TAK-05",
+      "NW-TAK-08",
+      "NW-KAN-01",
+      "NW-KAN-02",
+      "NW-KAN-03",
+      "NW-KUS-01",
+      "NW-KAR-01"
+    ],
+    "examples_pt": [
+      "Noite numa casa gasshō em Shirakawa-gō antes do Réveillon (20–27 Dez)",
+      "Teleférico Shin-Hotaka a 2.156 m, sem escadas, com onsen em Hirayu",
+      "Almoço de caranguejo no Ōmichō antes de 31 Dez"
+    ],
+    "photo_queries": [
+      "Shirakawa-go Ogimachi village",
+      "Shinhotaka Ropeway",
+      "Omicho Market Kanazawa"
+    ],
+    "cost_pt": "Médio: machiya ou hotel-apartamento ¥50–160k/noite para seis em Kanazawa e Nagano; sobe com ryokan em Nozawa/Shibu (¥30–45k por pessoa) e ônibus reservados.",
+    "order": 1
+  },
+  {
+    "id": "kyoto",
+    "name_pt": "Kyoto e Nara devagar",
+    "promise_pt": "O Ano-Novo mais tradicional do Japão, a pé e no plano.\nTemplos, mercado de véspera, fogo sagrado de Yasaka e o Buda de Nara à meia-noite.",
+    "typical_day_pt": [
+      "De manhã, um templo antes das 09:00 ou o mercado Nishiki quando ainda dá para andar, com café numa machiya aquecida.",
+      "À tarde, um bairro de cada vez: Ōhara com musgo e neve fina, Uji com matcha, ou Nara com os cervos; ela senta a cada hora e a bengala de apoio é o ônibus.",
+      "À noite, jantar reservado com antecedência (muita coisa fecha 31 Dez–3 Jan) e caminhada curta por Gion, ou uma noite de caranguejo em Kinosaki quando a agenda deixa."
+    ],
+    "tradeoffs": {
+      "cold": 1,
+      "train": 2,
+      "her": 1,
+      "note_pt": "Uma só perna longa (Nozomi 2h15, todo reservado de 25 Dez a 5 Jan) e depois tudo é trem local; Kōyasan e Kinosaki são as únicas saídas que cansam."
+    },
+    "bases": [
+      "kyoto",
+      "nara",
+      "osaka",
+      "kobe",
+      "kinosaki",
+      "koyasan"
+    ],
+    "ny_base": "kyoto",
+    "xmas_eve": {
+      "where_pt": "Em Kyoto, numa machiya para seis ou em dois quartos conectados num hotel com elevador (Mitsui Garden, Celestine Gion); se a mudança for só no dia 25, a noite de 24 é em Tokyo e o Nozomi do dia 25 já cai no período todo reservado.",
+      "open_pt": "Natal não é feriado e tudo funciona em horário normal. A iluminação Rohm (Gojō) costuma ir até 25 Dez e a da estação de Kyoto até 31 Mar; em Osaka, a Hikari-Renaissance de Nakanoshima termina 25 Dez e a Midōsuji vai até 31 Dez. Nishiki, Nijō, Fushimi Inari e Kinkaku-ji abertos normalmente. Atenção: alguns operadores de machiya bloqueiam 25 Dez–8 Jan ou exigem 3+ noites, e a casa precisa estar reservada até meados de outubro. A pesquisa não cobre ceias de Natal em Kyoto; assuma restaurantes abertos e cheios, com reserva.",
+      "evening_pt": "Noite seca e fria (2–10 °C), Gion com lanternas e pouca gente de Natal porque a cidade não celebra; o jantar é o programa, e a machiya com aquecedor é o resto."
+    },
+    "nye": {
+      "where_pt": "Em Kyoto, na mesma machiya ou hotel (Kyoto University Hospital a 20 min); Nara é bate-e-volta de 35–45 min pelo Kintetsu, que roda a noite toda em 31 Dez.",
+      "open_pt": "Nishiki fecha cedo em 31 Dez (~15–16:00) e fica quase vazio em 1 Jan, com ~20 % das barracas em 2–3 Jan. Nijō fecha 29–31 Dez (jardim abre 1–3 Jan), o Museu Nacional fecha 29 Dez–1 Jan, as casas de chá de Gion fecham 31 Dez–3 Jan, Takashimaya fecha 1–2 Jan e as outras lojas de departamento reabrem 2 Jan com os depachika. Kiyomizu-dera fecha às 18:00 em 31 Dez, sem sino. Os programas que funcionam porque é Réveillon: Okera-mairi no santuário Yasaka das ~19:00 de 31 Dez às ~05:00 de 1 Jan (corda ¥500–800, plano, dá para sair a qualquer hora); sino de Chion-in a partir das ~22:40, só para assistir, área paga ¥3.000 com inscrição em 1 Dez 14:00, 1–2 h em pé no frio (os quatro); Tōdai-ji abre o portão à meia-noite com entrada gratuita 00:00–08:00 e a janela do rosto do Buda aberta, senhas do sino distribuídas das ~22:30 (ou ir às 07:00, calmo); Fushimi Inari recebe ~2,7 M em 1–3 Jan, só antes das 07:00. Restaurantes bons fecham ou esgotam em outubro; semana mais cara do ano na cidade.",
+      "evening_pt": "A virada mais rica do Japão a pé: fogo sagrado em Yasaka às 19:00, kaiseki tardio, ela de volta à machiya enquanto os quatro assistem ao sino de Chion-in; de madrugada o Kintetsu leva quem quiser ver o Buda de Nara iluminado. Dia 1 é de osechi, mochi em pedaços pequenos e Ōhara vazia."
+    },
+    "cards": [
+      "KS-02",
+      "KS-04",
+      "KS-06",
+      "KS-08",
+      "KS-15",
+      "KS-16",
+      "KS-19"
+    ],
+    "examples_pt": [
+      "Okera-mairi em Yasaka às 19:00 de 31 Dez, com a corda acesa girando até a casa",
+      "Noite em templo em Kōyasan com ritual de fogo às 06:00 e o Okunoin à noite",
+      "Caranguejo matsuba e seis banhos públicos em Kinosaki, cidade plana"
+    ],
+    "photo_queries": [
+      "Yasaka Shrine Kyoto",
+      "Okunoin Cemetery Koyasan",
+      "Kinosaki Onsen"
+    ],
+    "cost_pt": "Alto na virada: Kyoto é a semana mais cara do ano (machiya ¥90–170k/noite para seis em 30 Dez–3 Jan); Kinosaki com caranguejo ¥45k por pessoa; Kōyasan ¥25k por pessoa.",
+    "order": 2
+  },
+  {
+    "id": "kyushu",
+    "name_pt": "Kyushu quente",
+    "promise_pt": "O inverno mais ameno do roteiro: barracas de rua, infernos de vapor, lanternas.\nUm voo de 2 h abre a ilha; Fukuoka segura a virada.",
+    "typical_day_pt": [
+      "De manhã, um lugar que não fecha: os sete infernos de Beppu, o Glover Garden de Nagasaki com escadas rolantes, ou o santuário Dazaifu em 31 Dez antes da multidão.",
+      "À tarde, um ônibus ou trem curto para o próximo vale, com a garganta de Takachiho ou o lago Kinrin de Yufuin no fim do dia.",
+      "À noite, yatai em Nakasu com seis pessoas em duas barracas, ou um ryokan em Kurokawa com banho privativo e lanternas acesas até as 22:00."
+    ],
+    "tradeoffs": {
+      "cold": 1,
+      "train": 2,
+      "her": 2,
+      "note_pt": "Voo HND–FUK de 1h55 e trens reservados dentro da ilha; Kurokawa e Takachiho só por ônibus ou carro, então ela fica em Fukuoka ou Beppu e os quatro fazem o interior."
+    },
+    "bases": [
+      "fukuoka",
+      "beppu",
+      "yufuin",
+      "kurokawa",
+      "nagasaki",
+      "kumamoto",
+      "takachiho"
+    ],
+    "ny_base": "fukuoka",
+    "xmas_eve": {
+      "where_pt": "Em Fukuoka (Tenjin/Hakata), num apartamento Mimaru para seis ou três quartos de hotel, depois do voo HND–FUK (4 h porta a porta); se a mudança for só no dia 25, a noite de 24 é em Tokyo.",
+      "open_pt": "Natal não é feriado e tudo funciona normalmente. As yatai de Nakasu abrem das 18:00 às 02:00 à escolha do dono e em dezembro estão em ritmo normal; Canal City e os prédios da estação Hakata abertos; os infernos de Beppu funcionam 365 dias; as lanternas Yu Akari de Kurokawa acendem a partir de ~19–20 Dez. A pesquisa não cobre iluminações ou ceias de Natal em Fukuoka; assuma uma noite comum de inverno ameno (4–12 °C) com tudo aberto.",
+      "evening_pt": "Primeira noite num clima que não exige luva: ramen e yakitori nas barracas à beira do rio, ela na ponta do banco, e volta a pé para o apartamento."
+    },
+    "nye": {
+      "where_pt": "Em Fukuoka, no mesmo apartamento ou hotel (Kyushu University Hospital a 20 min; hotéis de Hakata são de negócios e ficam calmos na virada); Kurokawa, Yufuin e Takachiho só antes de 29 Dez ou depois de 3 Jan.",
+      "open_pt": "Yatai: poucas abertas em 31 Dez, quase todas fechadas em 1 Jan, metade em 2–3 Jan, normal de 4 Jan em diante; os donos anunciam no Instagram em meados de dezembro. Canal City abre 31 Dez 10:00–19:00 e 1 Jan 10:00–21:00 com hatsu-uri; Iwataya e Mitsukoshi Tenjin fecham 1 Jan e abrem 2 Jan. Dazaifu Tenmangū fica com o portão aberto sem parar de 31 Dez 06:30 até 4 Jan 21:00, com ~2 M de visitantes em 1–3 Jan e salão principal em reforma até 2027: ir na manhã de 31 Dez (barracas montadas, calmo) ou 4–5 Jan. Kurokawa prioriza hóspedes e suspende banhos de dia 31 Dez–2 Jan; o kagura de Takachiho não acontece em 31 Dez nem 1 Jan; Castelo de Kumamoto gratuito em 1 Jan 09:00–17:00 com cerimônia; infernos de Beppu e Glover Garden (até 20:00) abertos todos os dias. A pesquisa não cobre sino de Ano-Novo nem primeiro nascer do sol em Fukuoka; assuma um santuário de bairro de manhã cedo em 1 Jan.",
+      "evening_pt": "Uma virada de cidade grande e ritmo baixo: soba de passagem de ano no apartamento ou numa das poucas yatai abertas, o rio Naka iluminado, e manhã de 1 Jan com Canal City aberto enquanto o resto da cidade dorme. O Dazaifu fica para o dia 31 de manhã, não para a noite."
+    },
+    "cards": [
+      "KY-01",
+      "KY-02",
+      "KY-05",
+      "KY-07",
+      "KY-10"
+    ],
+    "examples_pt": [
+      "Yatai de Nakasu em 28–30 Dez ou 3–5 Jan, ramen e oden a céu aberto",
+      "Lanternas de bambu em Kurokawa e um ryokan com banho privativo",
+      "Garganta de Takachiho de barco, o irmão rema, inverno sem fila"
+    ],
+    "photo_queries": [
+      "Nakasu Yatai Fukuoka",
+      "Kurokawa Onsen",
+      "Takachiho Gorge"
+    ],
+    "cost_pt": "O mais barato nas cidades (Fukuoka ¥40–65k/noite para seis) e caro nas noites de ryokan: Kurokawa ¥40k por pessoa, Yufuin ¥120–180k para seis; voo ¥15–35k por pessoa cada perna.",
+    "order": 3
+  },
+  {
+    "id": "setouchi",
+    "name_pt": "Mar Interior",
+    "promise_pt": "A parte mais ensolarada do inverno japonês: ilhas, canais, ostras grelhadas.\nJardins de graça em 1 Jan, grous em Kōrakuen, Miyajima à meia-noite.",
+    "typical_day_pt": [
+      "De manhã, um jardim ou canal plano: Kōrakuen, o bairro Bikan de Kurashiki a 15 min de trem, ou o Parque da Paz em Hiroshima.",
+      "À tarde, uma balsa curta (Miyajima 10 min, Naoshima 20 min) e ostras grelhadas num kakigoya; ela pula as cruas e o cume do Misen fica para os quatro.",
+      "À noite, hotel de cidade com elevador em Okayama ou Hiroshima, Dreamination acesa até ~3 Jan, udon ou okonomiyaki perto da estação."
+    ],
+    "tradeoffs": {
+      "cold": 1,
+      "train": 2,
+      "her": 1,
+      "note_pt": "Uma perna longa de Nozomi na ida (~4 h até Okayama) e outra na volta, depois saltos de 35–60 min; Naoshima quebra na virada (museus fechados 31 Dez–1 Jan), então arte só em 27–29 Dez ou 3–5 Jan."
+    },
+    "bases": [
+      "okayama",
+      "kurashiki",
+      "hiroshima",
+      "miyajima",
+      "himeji",
+      "takamatsu",
+      "naoshima"
+    ],
+    "ny_base": "okayama",
+    "xmas_eve": {
+      "where_pt": "Em Okayama (hotéis de negócios, hub de trem) ou Hiroshima (apartamentos Mimaru/Candeo para seis) depois do Nozomi; se a mudança for só no dia 25, a noite de 24 é em Tokyo e o Nozomi do dia 25 já é todo reservado.",
+      "open_pt": "Natal não é feriado e tudo funciona normalmente. Em Hiroshima a Dreamination (1,4 M de luzes na Peace Boulevard) deve correr de ~17 Nov a ~3 Jan como em 2025–26; o museu da Paz abre até 29 Dez. O Museu Ōhara de Kurashiki historicamente fecha ~23–27 Dez para limpeza (02-closures), embora o 06 cite 28–31 Dez: confirmar no calendário 2026 do museu antes de marcar Kurashiki para esses dias. Naoshima e Benesse House funcionam bem em 20–28 Dez. Castelo de Himeji abre até 28 Dez. A pesquisa não cobre ceias ou mercados de Natal em Okayama/Hiroshima; assuma uma noite comum de inverno seco (3–11 °C) com restaurantes abertos.",
+      "evening_pt": "A noite mais amena das sete: passeio pela avenida iluminada de Hiroshima ou um jantar de ostras grelhadas em Okayama, sem frio de montanha e sem multidão de Natal."
+    },
+    "nye": {
+      "where_pt": "Em Okayama, em três quartos de hotel de negócios perto da estação (Okayama University Hospital a 15 min; hospedagem aberta); Miyajima na virada está esgotada (Iwasō, Kinsuikan) e Naoshima provavelmente fechada.",
+      "open_pt": "Kōrakuen abre 365 dias, é gratuito em 1 Jan e tem eventos 1–3 Jan (grous soltos no jardim 11:00–14:00, concerto de koto, kyōgen em 2 Jan, chá em 3 Jan); o Castelo de Okayama fecha 29–31 Dez e reabre 1 Jan. Ōhara abre 28 Dez–5 Jan, só a galeria principal em 1 Jan, 09:00–15:00; muitas lojas do Bikan fecham 31 Dez–2 Jan. Ritsurin (Takamatsu, 55 min pelo Marine Liner) gratuito em 1 Jan 07:00–17:00. Museu da Paz de Hiroshima fechado 30–31 Dez, aberto 1 Jan; o parque sempre aberto. Itsukushima: Chinka-sai (festival do fogo) em 31 Dez às 18:00 na vila, santuário aberto de 00:00 a 18:30 em 1 Jan, balsas JR a noite toda e teleférico do Misen desde ~05:00 para o nascer do sol; barracas de ostra fecham ~31 Dez–3 Jan. Castelo de Himeji aberto 31 Dez e 1–3 Jan (fechado só 29–30 Dez). Chichu, Lee Ufan e Benesse House Museum fecham 31 Dez e 1 Jan no padrão recente; Teshima 31 Dez–2 Jan e sem ônibus na ilha. A pesquisa não cobre sino, hatsumōde ou primeiro nascer do sol em Okayama; assuma soba no hotel e jardim de manhã.",
+      "evening_pt": "Uma virada tranquila e sem gelo: jantar cedo em Okayama, a cidade quieta, e no dia 1 o Kōrakuen de graça com grous andando no gramado. Quem quiser a noite grande pega o Sanyō até Hiroshima e a balsa para ver Itsukushima abrir à meia-noite, mas isso é programa dos quatro, não dela."
+    },
+    "cards": [
+      "ST-04",
+      "ST-05",
+      "ST-09",
+      "ST-12"
+    ],
+    "examples_pt": [
+      "Grous soltos no Kōrakuen em 1 Jan, entrada gratuita",
+      "Ostras grelhadas em Miyajima e o torii flutuante na maré alta",
+      "Dia de arte em Naoshima em 27–29 Dez, com táxi reservado para ela"
+    ],
+    "photo_queries": [
+      "Korakuen Garden Okayama",
+      "Itsukushima Shrine Miyajima",
+      "Chichu Art Museum Naoshima"
+    ],
+    "cost_pt": "Entre os mais baratos: hotéis de negócios em Okayama/Hiroshima ¥35–80k/noite para seis; o que pesa é o Nozomi de ida e volta (~¥19,5k por pessoa cada perna até Hiroshima).",
+    "order": 4
+  },
+  {
+    "id": "fuji",
+    "name_pt": "Fuji e Hakone",
+    "promise_pt": "O Fuji no mês mais limpo do ano, a 2 h de Tokyo, numa casa com vista e banho.\nA virada em Tokyo: sino, soba e o primeiro sol de um deck aquecido.",
+    "typical_day_pt": [
+      "De manhã, o 'Fuji vermelho' da varanda da casa em Kawaguchiko ou da margem do Yamanakako, depois o teleférico panorâmico antes da fila das 10:00.",
+      "À tarde, Oshino Hakkai ou a margem norte do lago a pé, tudo plano; em Hakone, o circuito sentado de trem, cabo, teleférico e barco (sem descer em Ōwakudani).",
+      "À noite, hōtō numa casa grande, banho privativo com o vulcão escurecendo, e cedo para a cama."
+    ],
+    "tradeoffs": {
+      "cold": 2,
+      "train": 1,
+      "her": 1,
+      "note_pt": "Tudo a 1h45–2h20 de Shinjuku em trem reservado (Fuji Excursion esgota semanas antes); Hakone é bom só fora de 1–3 Jan, quando o Ekiden fecha a estrada e a hospedagem foi vendida há um ano."
+    },
+    "bases": [
+      "kawaguchiko",
+      "hakone",
+      "kamakura",
+      "atami"
+    ],
+    "ny_base": "tokyo",
+    "xmas_eve": {
+      "where_pt": "Em Kawaguchiko, numa casa de 3 quartos com vista do Fuji e banho privativo (¥50–90k/noite) ou no Konansou com elevador; se a mudança for só no dia 25, a noite de 24 é em Tokyo.",
+      "open_pt": "Natal não é feriado e tudo funciona normalmente: teleférico panorâmico 09:30–16:30, Oshino Hakkai, Fuji-Q aberto, Museu ao Ar Livre de Hakone 365 dias, teleférico de Hakone sem manutenção até meados de janeiro. Fim de dezembro é a época de maior visibilidade do Fuji, com neve no cume e tempo seco. A pesquisa não cobre iluminações ou ceias de Natal em Kawaguchiko; o único evento datado é o fogos de Atami em 25 Dez, 20:20–20:40, na noite seguinte (precisa dormir em Atami ou pegar o último Kodama ~22:30).",
+      "evening_pt": "Noite seca, muito fria e estrelada, com o Fuji ainda visível ao pôr do sol; hōtō quente, banho na casa e a varanda para o amanhecer vermelho. Clima de refúgio, não de festa."
+    },
+    "nye": {
+      "where_pt": "Ela dorme em Tokyo (St. Luke's a 20 min, hospedagem aberta em todas as faixas). Kawaguchiko tem o Fujiyoshida Municipal Hospital a 15 min, centro perinatal regional com pronto-atendimento obstétrico (08-pregnancy §4.3, bases.json), então uma noite de 31 no lago seria defensável pelo hospital; o capítulo escolhe Tokyo porque a hospedagem de 31 Dez em Kawaguchiko está apertada (hatsuhinode sobre o Fuji é ritual japonês), os ônibus de Shinjuku esgotam 29 Dez–3 Jan e a regra do 08 prefere cidade com centro perinatal universitário para 29 Dez–3 Jan.",
+      "open_pt": "Em Tokyo: Zōjō-ji toca o sino à meia-noite com a Tokyo Tower atrás (senhas para tocar vendidas 1 Dez de manhã e esgotadas no mesmo dia; assistir é livre); Sensō-ji abre 00:00–20:00 em 1 Jan com a Nakamise a noite toda; Meiji Jingū fica aberto a noite inteira mas é a maior multidão do Japão, proibido para ela em 31 Dez à noite e 1–3 Jan de dia. Tokyo Tower não faz contagem regressiva e apaga às 23:00; Skytree vende 540 lugares online para o nascer do sol de 1 Jan no início de dezembro (¥9.000, esgota em minutos); Shibuya Sky fecha ao público em 1 Jan. Tsukiji fecha cedo em 31 Dez e fica fechado 1–3 Jan; lojas de departamento fecham 1 Jan e abrem 2 Jan (Takashimaya 3 Jan). JR East roda a noite toda em 6 linhas; metrô, Odakyū e Tōkyū não. Soba de passagem de ano em restaurante famoso é fila de 1–2 h; o hotel serve sem fila. Em Kawaguchiko, Fuji-Q vai até ~01:00 em 31 Dez com fogos e tem evento de nascer do sol em 1 Jan; em Hakone, o Ekiden passa em 2–3 Jan e fecha a R1.",
+      "evening_pt": "Uma virada urbana e fácil: soba no hotel às 21:30, caminhada até Zōjō-ji para ouvir o sino sob a torre, ou simplesmente dormir cedo para o primeiro sol de um deck aquecido. Dia 2 traz o Palácio Imperial e o Ekiden na TV."
+    },
+    "cards": [
+      "NW-FUJ-03",
+      "NW-FUJ-08"
+    ],
+    "examples_pt": [
+      "Amanhecer vermelho do Fuji da varanda da casa em Kawaguchiko",
+      "Circuito de Hakone sentado, com ovos pretos em Ōwakudani para os quatro",
+      "Fogos de Atami em 25 Dez, 20 minutos sobre a baía"
+    ],
+    "photo_queries": [
+      "Lake Kawaguchiko Mount Fuji",
+      "Hakone Ropeway Owakudani",
+      "Atami Sun Beach"
+    ],
+    "cost_pt": "Médio: casa para seis em Kawaguchiko ¥50–90k/noite, Konansou ¥150–250k com meia pensão; Hakone é o pior valor da região na virada.",
+    "order": 5
+  },
+  {
+    "id": "tohoku",
+    "name_pt": "Tōhoku branco",
+    "promise_pt": "O Japão mais branco e menos visitado: árvores de gelo, baía de Matsushima, Ginzan.\nSendai segura a virada com hospital universitário a 15 min.",
+    "typical_day_pt": [
+      "De manhã, um trem curto ou ônibus para a neve: Matsushima a 40 min com o cruzeiro sentado e o templo Zuigan-ji, ou Yamagata para o teleférico de Zaō.",
+      "À tarde, os quatro sobem (Yamadera, esqui em Zaō, caminhada em Ginzan) e ela fica num banho morno ou num café de estação.",
+      "À noite, gyūtan em Sendai ou ryokan grande com elevador (Taikansō, Takamiya), e a iluminação de Zaō vista do teleférico a partir de ~27 Dez."
+    ],
+    "tradeoffs": {
+      "cold": 3,
+      "train": 2,
+      "her": 2,
+      "note_pt": "Hayabusa de 1h30 todo reservado e quase lotado 27–30 Dez e 2–4 Jan; Zaō e Ginzan são ônibus com gelo, então ela fica em Sendai/Yamagata e os quatro vão à neve."
+    },
+    "bases": [
+      "sendai",
+      "yamagata",
+      "zao",
+      "ginzan",
+      "towada",
+      "hachinohe",
+      "aomori",
+      "matsushima"
+    ],
+    "ny_base": "sendai",
+    "xmas_eve": {
+      "where_pt": "Em Sendai, em três quartos de hotel ou apartamento (Westin, Metropolitan, Dormy Inn), 2h15 de Tokyo pelo Hayabusa; se a mudança for só no dia 25, a noite de 24 é em Tokyo.",
+      "open_pt": "A Pageant of Starlight ilumina a avenida Jōzenji com ~600 mil luzes, de ~4 a ~27 Dez (site ainda 'em preparação'), com apagões de 'reinício' às 18:00, 19:00 e 20:00: é o programa de Natal da região. Gyūtan aberto; museus de Sendai funcionam até 27 Dez (fecham 28 Dez–4 Jan). Ginzan é viável para dormir em 20–27 Dez no Ginzanso (o único com elevador); a iluminação de Zaō só começa ~27 Dez, e os monstros de neve ainda estão pela metade. Natal não é feriado, tudo em horário normal. Neve em Sendai é intermitente; em Zaō, Ginzan e Nyūtō é certa.",
+      "evening_pt": "A única noite de 24 das sete com luzes de Natal de verdade: a avenida de zelkovas acesa, frio seco, jantar de língua grelhada e ruas cheias de gente da cidade. Depois do dia 27 as luzes somem e a região vira silêncio branco."
+    },
+    "nye": {
+      "where_pt": "Em Sendai, no mesmo hotel (Tohoku University Hospital a 15 min; hospedagem aberta); Matsushima no Taikansō está apertado para 31 Dez (nascer do sol sobre a baía é clássico), bom em 29–30 Dez ou 2–3 Jan.",
+      "open_pt": "Zuigan-ji em Matsushima abre em 31 Dez 08:30–15:30 com leitura de sutras a noite toda a partir das 21:00, e em 1 Jan das 00:01 às ~04:00 e de novo às 08:30; o cruzeiro Marubun tem saída de primeiro nascer do sol só em 1 Jan. O teleférico de Zaō roda 08:30–17:00 e a iluminação dos juhyō vai noite após noite de 27 Dez a 4 Jan (padrão 2025–26), mas os passeios noturnos de 31 Dez e 1 Jan foram cancelados no ano passado por gelo. Museus de Sendai fechados 28 Dez–4 Jan; Nebuta Warasse em Aomori fechado 31 Dez–1 Jan; Yamadera aberto (1.015 degraus de gelo, só os quatro). Ginzan só recebe hóspedes depois das 20:00 e a virada esgotou há um ano. Restaurantes de gyūtan abertos a maior parte do Ano-Novo; Yonezawa fecha 31 Dez–2 Jan. A pesquisa não cobre sino nem hatsumōde na cidade de Sendai; assuma um santuário de bairro de manhã.",
+      "evening_pt": "Uma virada de hotel aquecido numa cidade de grade moderna: soba, gyūtan e uma noite tranquila; quem quiser madrugar vai de trem a Matsushima para os sutras e o primeiro sol sobre as ilhas, programa plano e sentado que ela também consegue fazer."
+    },
+    "cards": [
+      "NW-TOH-05",
+      "NW-TOH-10",
+      "NW-TON-04"
+    ],
+    "examples_pt": [
+      "Teleférico de Zaō à noite, árvores de gelo iluminadas, sem andar",
+      "Noite em Ginzan no Ginzanso antes de 27 Dez, a vila só para os hóspedes depois das 20:00",
+      "Cascatas congeladas de Oirase vistas de um ônibus aquecido"
+    ],
+    "photo_queries": [
+      "Zao Ropeway Yamagata",
+      "Ginzan Onsen",
+      "Oirase Gorge"
+    ],
+    "cost_pt": "Médio-alto: Sendai barato (¥50–80k/noite para seis), mas Ginzan ¥150–220k, Zaō ¥90–140k e Oirase Keiryū ¥32k por pessoa; transfers longos somam.",
+    "order": 6
+  },
+  {
+    "id": "tokyo",
+    "name_pt": "Tokyo a fundo",
+    "promise_pt": "Ficar, em vez de correr: semana de luzes, virada com sino e soba, Imperador em 2 Jan.\nKabuki, leilão de atum, hospital a 20 min.",
+    "typical_day_pt": [
+      "De manhã, um bairro a pé e no plano: Asakusa antes das 09:00, Tsukiji até 30 Dez, o Palácio em 2 Jan, Toyosu em 5 Jan.",
+      "À tarde, um lugar aquecido e sentado: teamLab, Mori Art Museum, um ato de kabuki no 4º andar com guia em inglês.",
+      "À noite, iluminação de Marunouchi (até 14 Fev) ou Yebisu, jantar perto do hotel, e Kamakura ou Nikkō como bate-e-volta de 1h15–2h15 fora de 1–3 Jan."
+    ],
+    "tradeoffs": {
+      "cold": 1,
+      "train": 1,
+      "her": 1,
+      "note_pt": "Nenhuma perna longa; o custo é a hospedagem de 31 Dez em Shinjuku/Shibuya (a noite de hotel mais cara do ano) e os dias 2–3 Jan, quando lojas de departamento e Ekiden puxam multidões."
+    },
+    "bases": [
+      "tokyo",
+      "kamakura",
+      "nikko"
+    ],
+    "ny_base": "tokyo",
+    "xmas_eve": {
+      "where_pt": "Em Tokyo, no mesmo apartamento desde o dia 20 (Mimaru conectado em Asakusa/Hatchōbori/Nihombashi, ou Oakwood em Marunouchi); neste capítulo não há mudança de base no dia 24 ou 25.",
+      "open_pt": "Natal não é feriado e tudo funciona em horário normal ou estendido. A semana de chegada é a semana das luzes, e a maioria termina em 25 Dez: Roppongi Hills Keyakizaka com mercado de Natal (até 25 Dez, 17:00–22:00), Ao no Dōkutsu em Shibuya (até 25 Dez, padrão), Tokyo Christmas Market em Shin-Toyosu e Shiba Park (até 25 Dez, ingresso com caneca), Yokohama Red Brick (até 25 Dez). Sobrevivem: Marunouchi (até 14 Fev), Yebisu Baccarat (até ~11 Jan), Tokyo Mega Illumi (até 10 Jan, fechado 26–27 Dez e 1 Jan). Museu Nacional de Tokyo parcial 22–25 Dez e fechado de 26 Dez; Ghibli fecha de 27 Dez.",
+      "evening_pt": "A noite de 24 é a última das grandes iluminações: Keyakizaka e o mercado de Roppongi ou a avenida de Marunouchi, jantar reservado (restaurantes cheios, não fechados) e volta de metrô. Dia 25 as luzes apagam e a cidade começa a esvaziar para o Ano-Novo."
+    },
+    "nye": {
+      "where_pt": "Em Tokyo, no mesmo apartamento (St. Luke's a 20 min); Asakusa e Ginza/Nihombashi são mais calmos e baratos que Shinjuku/Shibuya em 31 Dez.",
+      "open_pt": "Zōjō-ji: sino à meia-noite com a Tokyo Tower atrás, senhas para tocar (¥2.000) vendidas 1 Dez às 09:00 e esgotadas na mesma manhã, assistir é livre, barracas de comida até ~7 Jan. Sensō-ji: 1 Jan 00:00–20:00, Nakamise a noite toda; ir ao amanhecer ou depois de 4 Jan. Meiji Jingū aberto a noite inteira, ~3 M em 1–3 Jan, filas de 2–3 h: não para ela. Tokyo Tower sem contagem regressiva, apaga 23:00; Skytree aberto, nascer do sol de 1 Jan com 540 lugares online no início de dezembro (¥9.000, o deck mais confortável para ela); Shibuya Sky fechado ao público em 1 Jan; Disney sem evento de virada. teamLab (os dois) e Mori Art abertos 31 Dez e 1 Jan; Museu Nacional de Tokyo fechado 26–31 Dez, 1 Jan 'a definir'. Tsukiji fecha ~14–15:00 em 31 Dez e fica fechado 1–3 Jan; Toyosu fechado 31 Dez–4 Jan, primeiro leilão 5 Jan; Ameyoko fecha ~17–18:00 em 31 Dez. Lojas de departamento: reduzido até ~18:00 em 31 Dez, fechadas 1 Jan, Isetan/Mitsukoshi abrem 2 Jan às 10:00, Takashimaya e GINZA SIX 3 Jan. Comiket 29–31 Dez entope Odaiba/Toyosu de manhã. JR East roda a noite toda em 6 linhas; metrô, Odakyū e Tōkyū não. Palácio Imperial em 2 Jan (entrada 09:30–14:10, horários de 13:30/14:20 com menos fila); Kabuki-za de 2 Jan; Ekiden 2–3 Jan.",
+      "evening_pt": "Soba de passagem de ano no hotel (Palace Hotel serve 21:30–22:30) ou comprada cedo, caminhada até Zōjō-ji para o sino sob a torre, e dormir antes das 02:00 para o primeiro sol do Skytree ou um Sensō-ji de madrugada. Dia 1 é o único dia morto; dia 2 é o dia do Imperador, das sacolas da sorte e do Ekiden."
+    },
+    "cards": [
+      "TK-03",
+      "TK-05",
+      "TK-10"
+    ],
+    "examples_pt": [
+      "Saudação do Imperador em 2 Jan, horário das 13:30, sem ingresso",
+      "Um ato de kabuki no Kabuki-za (¥1.000–2.500) com tablet de legendas",
+      "Primeiro leilão de atum em Toyosu em 5 Jan, pela janela do 2º andar"
+    ],
+    "photo_queries": [
+      "Imperial Palace Tokyo Nijubashi",
+      "Kabukiza Theatre Ginza",
+      "Toyosu Market Tokyo"
+    ],
+    "cost_pt": "Médio e previsível: apartamento Mimaru para seis ¥50–70k/noite, ¥70–120k em 31 Dez; sem trens longos nem ryokan, o dinheiro vai para ingressos e jantares.",
+    "order": 7
+  }
+]

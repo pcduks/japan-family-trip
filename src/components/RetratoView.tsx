@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo } from "react";
 import { deckCards, loadCatalog } from "@/lib/catalog";
+import { loadChapters } from "@/lib/catalog/chapters";
 import type { Wish } from "@/lib/family";
 import { useSetting, useTable } from "@/lib/tables";
 import { EkiStamp } from "./EkiStamp";
@@ -27,6 +28,7 @@ export function RetratoView() {
   const [, setForced] = useSetting<boolean>("wishes_reveal", false);
   const catalog = useMemo(() => loadCatalog(), []);
   const deck = useMemo(() => deckCards(catalog), [catalog]);
+  const chapters = useMemo(() => loadChapters(), []);
   const idx = new Map(trip.travellers.map((t, i) => [t.id, i]));
   const name = (id: string) => firstName(trip.travellers.find((t) => t.id === id)?.name ?? "?");
   const planner = me?.role === "planner";
@@ -70,6 +72,19 @@ export function RetratoView() {
     const no = ws.filter((w) => w.answer === "no").map((w) => w.traveller_id);
     return { card: c, must, like, no, yes: [...must, ...like] };
   });
+  // Chapters: who it calls, who passes, and rank points (3/2/1) for the order.
+  const chapterRows = chapters
+    .map((c) => {
+      const yes = profiles.filter((p) => p.facts.chapters?.[c.id] === "yes").map((p) => p.id);
+      const no = profiles.filter((p) => p.facts.chapters?.[c.id] === "no").map((p) => p.id);
+      const points = profiles.reduce((acc, p) => {
+        const i = (p.facts.chapter_rank ?? []).indexOf(c.id);
+        return acc + (i >= 0 ? 3 - i : 0);
+      }, 0);
+      const firsts = profiles.filter((p) => p.facts.chapter_rank?.[0] === c.id).map((p) => p.id);
+      return { chapter: c, yes, no, points, firsts };
+    })
+    .sort((a, b) => b.points - a.points || b.yes.length - a.yes.length || a.no.length - b.no.length);
   const everyone = rows.filter((r) => r.yes.length >= Math.max(n - 1, 1) && r.no.length === 0).sort((a, b) => b.must.length - a.must.length);
   const split = rows.filter((r) => r.yes.length >= 2 && r.no.length >= 2).sort((a, b) => b.must.length - a.must.length);
   const nyVotes = new Map<string, string[]>();
@@ -90,6 +105,25 @@ export function RetratoView() {
   return (
     <main className="mx-auto grid max-w-3xl gap-8 px-5 pb-12">
       <PageHeader eyebrow="Retrato da família" title="O que a família quer" hand="o calendário já decidiu metade; vocês decidem o resto" />
+
+      <Section title="Que Japão" id="capitulos" aside="os capítulos, na ordem da família">
+        <ol className="grid gap-2">
+          {chapterRows.map((r, i) => (
+            <li key={r.chapter.id} className="card flex items-center gap-3 p-3">
+              <span className={`grid size-9 shrink-0 place-items-center rounded-full font-display text-xl ${i < 3 && r.points ? "bg-vermilion text-paper" : "bg-paper-2 text-muted"}`}>{i + 1}</span>
+              <span className="min-w-0 flex-1">
+                <span className="block font-display text-[1.3rem] leading-tight">{r.chapter.name_pt}</span>
+                <span className="block text-sm text-muted">
+                  {r.yes.length ? `chama ${list(r.yes)}` : "não chama ninguém"}
+                  {r.firsts.length ? `; primeiro para ${list(r.firsts)}` : ""}
+                  {r.no.length ? `; ${list(r.no)} ${r.no.length === 1 ? "passa" : "passam"}` : ""}.
+                </span>
+              </span>
+              <Faces ids={r.yes} />
+            </li>
+          ))}
+        </ol>
+      </Section>
 
       <Section title="Todo mundo quer" id="todos">
         {everyone.length ? (
