@@ -38,8 +38,37 @@ export interface Plan {
   based_on: string | null;
   stays: PlanStay[];
   is_chosen: boolean;
+  /** "generated" plans come from the wishes builder and carry their rationale. */
+  source?: "manual" | "generated";
+  generated?: GeneratedPlan | null;
+  /** On the family's ballot. Only plans whose New Year nights are held should be. */
+  is_candidate?: boolean;
   created_at?: string;
   updated_at?: string;
+}
+
+/** What the builder stores with a generated plan, for the route card and the vote. */
+export interface GeneratedPlan {
+  axis: string;
+  pitch_pt: string;
+  per_person: Record<string, { ganha: string[]; abre_mao: string[] }>;
+  coverage: Record<string, { must: { card_id: string; name_pt: string; hit: boolean }[]; like: number; no: number }>;
+  numbers: {
+    nights_per_base: { base: string; name: string; nights: number }[];
+    rest_days: number;
+    longest_leg_hours: number;
+    heaviest_walk_km: number;
+    cost_per_couple_jpy: number;
+    ny_base: string;
+    ny_base_name: string;
+    ny_hospital_minutes: number;
+  };
+  deadlines: { date: string; what: string }[];
+  placements: { date: string; card_id: string; name_pt: string; who: string[]; split_group: boolean; parallel_card_id?: string }[];
+  violations: { code: string; message_pt: string }[];
+  score: number;
+  generated_at: string;
+  model?: string;
 }
 
 export interface Activity {
@@ -474,4 +503,16 @@ export const inNewYearClosures = (iso: string) => iso >= CLOSURE_ZONE[0] && iso 
 /** Today's date in Japan. */
 export function todayInJapan(now = new Date()): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Tokyo" }).format(now);
+}
+
+/** The New Year nights (29 Dec – 3 Jan) that still have no held/booked lodging. A plan may only go on the ballot when this is empty. */
+export function nyNightsUnheld(plan: Plan, bookings: Booking[]): string[] {
+  const good = new Set<BookingStatus>(["held", "booked", "paid"]);
+  const nights = ["2026-12-29", "2026-12-30", "2026-12-31", "2027-01-01", "2027-01-02", "2027-01-03"];
+  const days = planDays(plan);
+  return nights.filter((n) => {
+    const stay = days.find((d) => d.date === n)?.stay;
+    if (!stay) return true;
+    return !bookings.some((b) => b.plan_id === plan.id && b.kind === "lodging" && b.stay_id === stay.id && good.has(b.status));
+  });
 }
