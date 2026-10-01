@@ -3,10 +3,11 @@
 import { useMemo, useState } from "react";
 import { coupleBalances, settleUp } from "@/lib/family";
 import { todayInJapan } from "@/lib/plan";
-import { deleteRow, insertRow, useSetting, useTable } from "@/lib/tables";
+import { deleteRow, insertRow, useTable } from "@/lib/tables";
 import { formatDay } from "@/lib/trip";
 import { EkiStamp } from "./EkiStamp";
 import { useStore } from "./providers";
+import { useMoney } from "./useMoney";
 import { Avatar, PageHeader, Section, firstName } from "./ui";
 
 const yen = (n: number) => "¥" + Math.round(n).toLocaleString("pt-BR");
@@ -15,7 +16,6 @@ const yen = (n: number) => "¥" + Math.round(n).toLocaleString("pt-BR");
 export function ContasView() {
   const { trip, me } = useStore();
   const { rows } = useTable("expenses");
-  const [brl] = useSetting<number>("fx_jpy_per_brl", 27);
   const coupleOf = useMemo(() => new Map(trip.travellers.map((t) => [t.id, t.couple ?? t.id])), [trip.travellers]);
   const couples = useMemo(() => [...new Set(trip.travellers.map((t) => t.couple ?? t.id))], [trip.travellers]);
   const coupleName = (c: string) =>
@@ -36,7 +36,7 @@ export function ContasView() {
   const [picked, setPicked] = useState<string[] | null>(null);
   const split = picked ?? couples;
   const paidBy = payer || me?.travellerId || "";
-  const brlOf = (n: number) => `R$ ${(n / brl).toLocaleString("pt-BR", { maximumFractionDigits: 0 })}`;
+  const { home: homeOf } = useMoney();
 
   async function add(e: React.FormEvent) {
     e.preventDefault();
@@ -74,7 +74,7 @@ export function ContasView() {
                   <b>{coupleName(t.from)}</b> → <b>{coupleName(t.to)}</b>
                 </span>
                 <span className="tabular-nums">
-                  {yen(t.amount)} <span className="text-sm text-muted">· {brlOf(t.amount)}</span>
+                  {yen(t.amount)} <span className="text-sm text-muted">· {homeOf(t.amount)}</span>
                 </span>
               </li>
             ))}
@@ -101,7 +101,7 @@ export function ContasView() {
         <h2 className="text-[1.6rem]">Novo gasto</h2>
         <div className="grid grid-cols-[8rem_1fr] gap-2">
           <label className="grid gap-1 text-xs text-muted">
-            Valor (¥) · ≈ {brlOf(Number(amount.replace(/\D/g, "")) || 0)}
+            Valor (¥) · ≈ {homeOf(Number(amount.replace(/\D/g, "")) || 0)}
             <input className="input tabular-nums" inputMode="numeric" placeholder="3.000" value={amount} onChange={(e) => setAmount(e.target.value)} />
           </label>
           <label className="grid gap-1 text-xs text-muted">
@@ -158,7 +158,7 @@ export function ContasView() {
                   </span>
                   <span className="text-right tabular-nums">
                     {yen(e.amount_jpy)}
-                    <span className="block text-xs text-muted">{brlOf(e.amount_jpy)}</span>
+                    <span className="block text-xs text-muted">{homeOf(e.amount_jpy)}</span>
                   </span>
                   {me && (me.travellerId === e.created_by || me.role === "planner") ? (
                     <button type="button" aria-label={`Apagar ${e.description}`} className="text-muted" onClick={() => confirm("Apagar este gasto?") && deleteRow("expenses", e.id)}>

@@ -2,6 +2,7 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { localStore, useLocalStore, useSystemDark } from "@/lib/localStore";
+import { isCurrency, type Currency } from "@/lib/money";
 import { browserSupabase } from "@/lib/supabase/client";
 import { configureTables } from "@/lib/tables";
 import type { Heart, MediaItem, Traveller, Trip, Vote } from "@/lib/types";
@@ -13,14 +14,19 @@ export interface Prefs {
   theme: ThemePref;
   largeText: boolean;
   simple: boolean;
+  /** Home currency for the "≈" hint next to yen amounts. */
+  currency: Currency;
 }
-const DEFAULT_PREFS: Prefs = { theme: "system", largeText: false, simple: false };
+const DEFAULT_PREFS: Prefs = { theme: "system", largeText: false, simple: false, currency: "BRL" };
 const PREFS_KEY = "saj-prefs";
 
 /** Inline script run before paint so the theme and text size never flash. */
 export const PREFS_BOOT_SCRIPT = `(function(){try{var p=JSON.parse(localStorage.getItem("${PREFS_KEY}")||"{}");var r=document.documentElement;var t=p.theme==="light"||p.theme==="dark"?p.theme:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");r.dataset.theme=t;if(p.largeText)r.dataset.text="large";if(p.simple)r.dataset.simple="1"}catch(e){}})()`;
 
-const prefsStore = localStore<Prefs>(PREFS_KEY, DEFAULT_PREFS, (raw) => ({ ...DEFAULT_PREFS, ...(raw as Partial<Prefs>) }));
+const prefsStore = localStore<Prefs>(PREFS_KEY, DEFAULT_PREFS, (raw) => {
+  const p = { ...DEFAULT_PREFS, ...(raw as Partial<Prefs>) };
+  return isCurrency(p.currency) ? p : { ...p, currency: DEFAULT_PREFS.currency };
+});
 const arr = <T,>(raw: unknown) => (Array.isArray(raw) ? (raw as T[]) : []);
 
 /* ------------------------------------------------------------ store */

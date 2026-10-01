@@ -1,27 +1,30 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
+import { rateLine } from "@/lib/money";
 import { planBudget, planNights } from "@/lib/plan";
 import { useSetting, useTable } from "@/lib/tables";
+import { formatDay } from "@/lib/trip";
 import { NoPlanYet, PlanPicker } from "./PlanTabs";
 import { CommitInput } from "./PlanEditor";
 import { useStore } from "./providers";
 import { PageHeader, Section } from "./ui";
+import { useMoney } from "./useMoney";
 import { pickPlan, usePlans } from "./usePlans";
 
 const yen = (n: number) => "¥" + (Math.round(n / 100) * 100).toLocaleString("pt-BR");
 
-/** P2.6: per-person budget by category, updated from bookings, in yen and SGD. */
+/** P2.6: per-person budget by category, updated from bookings, in yen and the viewer's home currency. */
 export function BudgetView() {
   const { me } = useStore();
   const state = usePlans();
   const sp = useSearchParams();
   const plan = pickPlan(state, sp.get("plan"));
   const { rows: bookings } = useTable("bookings");
-  const [fx, setFx] = useSetting<number>("fx_jpy_per_sgd", 115);
   const [foodPerDay, setFoodPerDay] = useSetting<number>("food_per_day", 9500);
   const [people, setPeople] = useSetting<number>("travellers", 6);
   const planner = me?.role === "planner";
+  const { home, fx, currency } = useMoney();
 
   if (!state.loaded) return <p className="text-muted">Carregando…</p>;
   if (!plan) return <NoPlanYet />;
@@ -30,7 +33,6 @@ export function BudgetView() {
   const total = lines.reduce((a, l) => a + l.projected, 0);
   const booked = lines.reduce((a, l) => a + l.booked, 0);
   const days = planNights(plan) + 1;
-  const sgd = (n: number) => "S$" + (Math.round(n / fx / 10) * 10).toLocaleString("pt-BR");
   const max = Math.max(...lines.map((l) => l.projected), 1);
 
   return (
@@ -43,9 +45,9 @@ export function BudgetView() {
       </PageHeader>
 
       <section className="grid gap-3 sm:grid-cols-3" aria-label="Totais">
-        <Big label="Por pessoa, a viagem toda" value={yen(total)} sub={`cerca de ${sgd(total)}`} strong />
+        <Big label="Por pessoa, a viagem toda" value={yen(total)} sub={`cerca de ${home(total)}`} strong />
         <div className="grid grid-cols-2 gap-3 sm:contents">
-          <Big label="Por pessoa, por dia" value={yen(total / days)} sub={`cerca de ${sgd(total / days)}`} />
+          <Big label="Por pessoa, por dia" value={yen(total / days)} sub={`cerca de ${home(total / days)}`} />
           <Big label={`Grupo de ${people}`} value={yen(total * people)} sub={`${yen(booked)} por pessoa já reservado`} />
         </div>
       </section>
@@ -61,7 +63,7 @@ export function BudgetView() {
                 </div>
                 <div className="shrink-0 text-right">
                   <p className="font-display text-[1.5rem] leading-none tabular-nums">{yen(l.projected)}</p>
-                  <p className="text-xs text-muted tabular-nums">{sgd(l.projected)}</p>
+                  <p className="text-xs text-muted tabular-nums">{home(l.projected)}</p>
                 </div>
               </div>
               <span className="block h-1.5 rounded-full bg-paper-2" aria-hidden="true">
@@ -88,17 +90,11 @@ export function BudgetView() {
         <h2 id="set-h" className="text-[1.5rem] leading-tight sm:col-span-3">
           Ajustes
         </h2>
-        <label className="grid gap-1 text-sm">
-          Ienes por dólar de Singapura (cotação de hoje)
-          <CommitInput
-            ariaLabel="Ienes por dólar de Singapura"
-            type="number"
-            value={String(fx)}
-            disabled={!planner}
-            className="input"
-            onCommit={(v) => Number(v) >= 50 && Number(v) <= 250 && setFx(Number(v))}
-          />
-        </label>
+        <div className="grid gap-1 text-sm">
+          Câmbio {fx.date ? `de ${formatDay(fx.date)} (Banco Central Europeu)` : "aproximado (sem internet)"}
+          <span className="input flex items-center tabular-nums">{rateLine(currency, fx)}</span>
+          <span className="text-xs text-muted">Troque a moeda em Ajustes.</span>
+        </div>
         <label className="grid gap-1 text-sm">
           Comida por pessoa por dia (¥)
           <CommitInput

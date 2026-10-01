@@ -4,6 +4,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { CURRENCIES, type Currency } from "@/lib/money";
 import { Avatar, firstName } from "./ui";
 import { useStore, type ThemePref } from "./providers";
 import { clearOfflineData } from "./ServiceWorker";
@@ -140,6 +141,18 @@ export function AppHeader() {
                   </button>
                 ))}
               </div>
+            </fieldset>
+
+            <fieldset className="grid gap-2">
+              <legend className="mb-1 text-sm font-bold">Moeda de casa</legend>
+              <div className="flex gap-2" role="radiogroup">
+                {(Object.keys(CURRENCIES) as Currency[]).map((c) => (
+                  <button key={c} role="radio" aria-checked={prefs.currency === c} title={CURRENCIES[c].label} className="chip flex-1 justify-center" onClick={() => setPrefs({ currency: c })}>
+                    {CURRENCIES[c].symbol}
+                  </button>
+                ))}
+              </div>
+              <p className="text-xs text-muted">Os valores em ienes mostram ao lado quanto dá nessa moeda, pela cotação do dia.</p>
             </fieldset>
 
             <Toggle label="Letras grandes" hint="Texto e botões maiores em todas as telas." checked={prefs.largeText} onChange={(v) => setPrefs({ largeText: v })} />
