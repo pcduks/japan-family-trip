@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Light: warm paper. Dark: deep slate. Region colours live in src/lib/colors.ts. */
+:root {
+  --bg: #f7f5f0;
+  --bg-2: #efece4;
+  --card: #ffffff;
+  --ink: #1b1d22;
+  --ink-2: #44474f;
+  --muted: #6b6e76;
+  --rule: #dedbd2;
+  --accent: #2b4c7e;
+  --accent-ink: #ffffff;
+  --ok: #2f9e44;
+  --warn: #e67700;
+  --danger: #c92a2a;
+  --info: #1971c2;
+  --ny: rgba(201, 42, 42, 0.09);
+  --shadow: 0 1px 2px rgba(27, 29, 34, 0.05), 0 8px 24px -16px rgba(27, 29, 34, 0.3);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #15171c;
+  --bg-2: #1d2027;
+  --card: #1f232b;
+  --ink: #ecebe6;
+  --ink-2: #c9c8c2;
+  --muted: #9a9ca3;
+  --rule: #343944;
+  --accent: #8fb0ea;
+  --accent-ink: #15171c;
+  --ok: #69db7c;
+  --warn: #ffa94d;
+  --danger: #ff8787;
+  --info: #74c0fc;
+  --ny: rgba(255, 135, 135, 0.12);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 24px -16px rgba(0, 0, 0, 0.8);
+  color-scheme: dark;
+}
+
+/* Large-text mode: everything is rem-based, so this scales the whole UI. */
+:root[data-text="large"] {
+  font-size: 120%;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --color-info: var(--info);
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    background: var(--bg);
+    color: var(--ink);
+  }
+  html {
+    /* Keep focused and scrolled-to elements clear of the fixed bottom nav. */
+    scroll-padding-bottom: 6rem;
+  }
+  body {
+    overflow-x: clip;
+  }
+  /* A single-column grid must never grow past its container (large text, long words). */
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+  }
+  h1,
+  h2,
+  h3 {
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  a {
+    color: inherit;
+    text-underline-offset: 3px;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+    color: inherit;
+  }
+  input,
+  select,
+  textarea {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 0.55rem 0.75rem;
+    min-height: 2.75rem;
+  }
+}
+
+@layer components {
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    min-height: 2.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    background: var(--card);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.08s ease, background 0.15s ease;
+  }
+  .btn:active {
+    transform: scale(0.98);
+  }
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-ink);
+    border-color: transparent;
+  }
+  .btn-sm {
+    min-height: 2.25rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.92rem;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid var(--rule);
+    background: var(--bg-2);
+  }
+  .eyebrow {
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .seg {
+    display: inline-flex;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--bg-2);
+    padding: 3px;
+  }
+  .seg > button {
+    white-space: nowrap;
+    border-radius: 999px;
+    padding: 0.35rem 0.85rem;
+    min-height: 2.25rem;
+    font-weight: 600;
+    color: var(--muted);
+  }
+  .seg > button[aria-pressed="true"] {
+    background: var(--card);
+    color: var(--ink);
+    box-shadow: var(--shadow);
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
