@@ -10,6 +10,7 @@ const TABS = [
   { href: "/plan/bookings", label: "Reservas" },
   { href: "/plan/budget", label: "Orçamento" },
   { href: "/plan/regras", label: "Regras" },
+  { href: "/plan/familia", label: "Família" },
 ];
 
 export function PlanTabs() {
