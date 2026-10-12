@@ -60,7 +60,7 @@ Demo mode is disabled in production builds unless `DEMO_MODE=1`, so a deploy wit
    - Auth → Email: set the OTP length to 6. To put the code in the email you need custom SMTP (Resend, or Gmail with an app password); then paste `supabase/email/magic-link.html` into the Magic Link template. Without SMTP the email carries only the link, and signing in still works.
    - Auth → URL configuration: set the Site URL and add `http://localhost:3000/auth/confirm` and `https://<your-domain>/auth/confirm` as redirect URLs.
 3. `cp .env.example .env.local` and fill in the keys.
-4. `cp data/travellers.example.json data/travellers.json` and enter the six names, emails and `couple` keys (the two people in a couple share a key). Make one of them `"planner"`, and set `"docs_access": true` for the owner and partner. This file is git-ignored.
+4. Add the family: once you are signed in as the planner, Mesa do Pedro → Família adds each person (name, email, couple, Documentos access), creates their sign-in, and gives you an invite text for WhatsApp. Alternatively `cp data/travellers.example.json data/travellers.json` and enter the six names, emails and `couple` keys (the two people in a couple share a key). Make one of them `"planner"`, and set `"docs_access": true` for the owner and partner. This file is git-ignored.
 5. `npm run seed`. It is idempotent: it upserts travellers (and pre-creates their auth users), places, routes, stays and add-ons, and resolves each place's `google_place_id` with an IDs-only Text Search, which is billed at the cheapest Text Search tier.
    - `--reset-routes` rewrites the stays of routes A–D.
    - `--no-resolve` skips the Google lookups.
