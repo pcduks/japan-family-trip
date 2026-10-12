@@ -1,12 +1,10 @@
-# PRD: Japan trip planner
-
-> **This is the product definition for the rebuild and the single source of truth.** The code on `main` before this PR ("Seis pelo Japão") is the previous attempt. Treat it as a reference to borrow from (Appendix D), not as a spec. Where anything in the repo disagrees with this document about what the product is, this document wins. For facts about Japan and her pregnancy, the research in `docs/research/` wins (§7).
+# PRD: Japan trip planner (v2)
 
 **Owner:** pc.duks@gmail.com
-**Status:** v2, 12 Oct 2026. Replaces every earlier PRD.
+**Status:** Draft 2, 12 Oct 2026. Replaces Draft 1 (27 Sep 2026).
 **Trip:** 20 Dec 2026 to 9 Jan 2027, 20 nights, 6 travellers plus possibly a 7th
-**Data:** `data/research/trip-data.v2.json` (schema v2), plus the catalog already in `data/` (`experiences.json`: 158 cards; `bases.json`: 55 bases with hospital minutes; `transit.json`: 113 door-to-door legs; `tokyo-foodlist.json`). `trip-data.v2.json` It holds the place library (109 places, 26 regions), 6 trip versions, the pace model, calendar rules, booking deadlines, the 4 legacy routes and the family's own Tokyo food list.
-**Research source:** the shared doc "Japan for Six (or Seven): the plan and the reasoning" (https://claude.ai/code/artifact/8af68e4b-aa1e-42c9-ad88-2a4dbdc396f7). Its tabs are the plan, why each stay is this long, what we're missing, and one tab per region. Its full text, tab by tab, is in `docs/research/plan-doc/`. It is summarised in `docs/research/10-plan-doc-2026-10-12.md`, along with where it conflicts with `docs/research/00-synthesis.md`.
+**Companion file:** `trip-data.json` (schema v2). It holds the place library (109 places, 26 regions), 6 trip versions, the pace model, calendar rules, booking deadlines, the 4 legacy routes and the family's own Tokyo food list.
+**Research source:** the shared doc "Japan for Six (or Seven): the plan and the reasoning" (https://claude.ai/code/artifact/8af68e4b-aa1e-42c9-ad88-2a4dbdc396f7). Its tabs are the plan, why each stay is this long, what we're missing, and one tab per region.
 
 ---
 
@@ -44,7 +42,7 @@ The old routes A to D are kept as `legacy_routes` for reference. They break the 
 **Who the design has to work for:**
 
 - **Pregnant traveller (29 to 32 weeks).** Every place shows its effort for her (stairs, ice, walking, raw food), and the app warns when a day plan includes something flagged for her.
-- **Parents.** They are very fit (10 km a day is easy, per 00-synthesis) but use phones only and prefer large text. They get a simple "today" view and a photo-first browse mode. The pace limits come from her, not from them.
+- **Parents.** They use phones only and need large text. A simple "today" view and a photo-first browse mode.
 - **First-timers.** They need photos, videos and a one-line "why go" for every place.
 
 ## 4. Core concepts
@@ -135,17 +133,11 @@ The goal: anyone sees a restaurant on someone's Instagram, a reel, a friend's me
 
 Rules run on every edit of any version and on every day plan. They are defined in `trip-data.json` → `calendar.rules`.
 
-Where `trip-data.v2.json` and `docs/research/00-synthesis.md` disagree on a fact (peak days, closures, her limits), use 00-synthesis. The six versions in `trip-data.v2.json` were written before these rules were reconciled. The plan version, for example, moves on 28 and 30 Dec and spends New Year's Eve in Gero. The rules engine should flag them, and the plan must be revised (see doc 10).
-
 | Rule | Severity | Check |
 |---|---|---|
 | Stays cover the trip | Error | Stays run 20 Dec to 9 Jan with no gaps or overlaps (20 nights) |
 | Two-night minimum | Warn | Any stay under 2 nights |
-| Peak-day moves | Warn | Any intercity move on the worst train days, **27–30 Dec and 2–4 Jan** (JR data, 00-synthesis). 31 Dec and 1 Jan are calm. Short local hops (under 1 h) are allowed with a note |
-| New Year city | Warn | The nights of 29 Dec – 3 Jan should be in a city with a perinatal or university hospital, not a rural onsen town (08-pregnancy rule 8) |
-| Hospital distance | Warn | Every base is within about 30 min of a 24-hour obstetrics hospital (`bases.json` hospital minutes) |
-| Her travel day | Warn | Over 4 h door to door, more than one rail leg over 2 h, or no rest day after a travel day of 3 h or more |
-| Last night | Error | The night of 8 Jan is within 60–90 min of the departure airport. No intercity move on 9 Jan |
+| Peak-day moves | Warn | Any intercity move on 29 to 31 Dec or 2 to 4 Jan. Short local hops (under 1 h) are allowed with a note |
 | Closures | Warn | An activity planned on a date in its place's `closures` or on a `closed_weekdays` day |
 | New Year's Eve dinner | Info | 31 Dec is not at a ryokan with dinner included |
 | Pregnancy flags | Info | A day includes an item with `effort_for_her: high` or `status: avoid_for_her` |
@@ -180,9 +172,7 @@ Each warning says why in one sentence and links to the source.
 
 ## 9. Features by phase
 
-### Phase 1: Align
-
-The route decision and the New Year lodging can't wait for the rebuild: they are being made now, through the doc and the current app (vote by 15 Oct, bookings locked around 20 Oct). In the rebuild, Align still matters, because it is how changes get proposed and agreed until departure.
+### Phase 1: Align (target: live by 25 Oct 2026; the ryokan bookings depend on it)
 
 | ID | Feature | Acceptance |
 |---|---|---|
@@ -277,7 +267,8 @@ Row-level security:
 
 ## 14. Success measures
 
-- The rebuild is live for the family by 2 Nov 2026, with the chosen plan and its bookings carried over.
+- All seven have voted on pace and named must-dos by 25 Oct 2026.
+- The plan is agreed, and the New Year's Eve ryokan is booked, by 31 Oct 2026.
 - At least 20 drops from at least 4 different people before departure.
 - No booked activity on a date its place is closed. No intercity move on a peak day without an explicit override.
 - During the trip, the parents use the Today view without help.
@@ -295,10 +286,10 @@ Row-level security:
 
 | Week of | Milestone |
 |---|---|
-| 12–20 Oct | Outside the rebuild: the family agrees the route and the New Year lodging is held (doc and current app) |
-| 19 Oct | Rebuild spike: keys, Places details and photos for 3 places, a YouTube embed, an Anthropic vision call on one Instagram screenshot, a Routes API transit test. Data import from `trip-data.v2.json` and `data/*.json` |
-| 26 Oct | Version board, my versions and suggestions, place pages, map, the rules engine |
-| 2 Nov | Drops live; the family moves to the rebuild |
+| 12 Oct | Spike: keys, Places details and photos for 3 places, a YouTube embed, an Anthropic vision call on one Instagram screenshot, a Routes API transit test |
+| 19 Oct | Phase 1 live: version board, votes, my versions, place pages, map |
+| 26 Oct | Family votes; plan agreed; ryokan booked |
+| 2 Nov | Drops live |
 | 9 Nov | Day planner, bookings, deadlines, budget |
 | 16 Nov | Import and Claude connector APIs |
 | Late Nov | Claude re-check of New Year hours imported |
@@ -308,14 +299,10 @@ Row-level security:
 
 ## Appendix A: kickoff prompt for Claude Code
 
-Paste this into a new Claude Code session on this repo:
+Paste this into a new Claude Code session in an empty workspace containing `PRD.md` and `trip-data.json`:
 
 ```
-Read docs/PRD.md (the spec), data/research/trip-data.v2.json, data/*.json and
-docs/research/00-synthesis.md, 07-lodging.md, 08-pregnancy.md, 10-plan-doc-2026-10-12.md
-and docs/research/plan-doc/ (the itinerary options, why each stay is this long, and the region guides).
-The code on main is the previous attempt: read Appendix D before deciding what to reuse.
-Work on a new branch `rebuild`. Build the app in the PRD, Phase 1 first.
+Read PRD.md and trip-data.json (schema v2). Build the app in the PRD, Phase 1 first.
 
 1. Run the §16 spike:
    - scaffold Next.js + TypeScript + Tailwind with @vis.gl/react-google-maps;
@@ -365,23 +352,3 @@ Ask me before deciding anything listed in §15.
 | `legacy_routes` | Old routes A to D, for reference only |
 | `tokyo_personal_food_list` | The 58 places from the family's own Google Maps list |
 | `related_docs` | Links to the plan doc, the Tokyo and Kyoto guides, and the route explorer |
-
-## Appendix D: the previous app on `main`, and what to carry over
-
-The previous app grew feature by feature on top of the four-route idea. These parts are worth keeping, or worth deciding on explicitly, rather than rebuilding from nothing:
-
-| Keep or reuse | Why |
-|---|---|
-| Sign-in "Quem é você?": tap your name, get a 6-digit email code; emails never reach the browser | Simple for the parents; already works with Supabase |
-| The Supabase project, RLS patterns, `travellers` and "Ver como" (planner acts as someone) | Proven setup |
-| Research and catalog: `docs/research/01–10`, `data/experiences.json`, `bases.json` (hospital minutes), `transit.json` (door-to-door legs), `tokyo-foodlist.json` | The deepest research the family has. The rebuild's place library merges these with `trip-data.v2.json` |
-| Offline write outbox (Anotar) and the service worker | Needed for Travel |
-| Contas (shared expenses by couple), Mala (packing), Socorro (119/110, maternity hospitals near each base, phrases) | Self-contained and useful during the trip |
-| Google Places, photo and video proxies that keep keys server-side | Same compliance needs |
-| The eki-stamp visual identity and Portuguese UI | Pedro to decide: keep, or restart the design |
-
-| Decide before reusing | Question |
-|---|---|
-| Desejos → Retrato → generated routes (wish cards, hidden answers, the builder) | Does the family still need the wish deck, or do versions plus pace votes (§5, §9) replace it? The builder's skeleton rules (`src/lib/builder/`) are useful as the rules engine either way |
-| The four fixed routes A–D and route pages | Superseded by versions; keep only as `legacy_routes` |
-| Passaporte stamps | Nice to have, so Phase 3 or later |

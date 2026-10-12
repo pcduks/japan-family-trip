@@ -2,8 +2,6 @@
 
 ## Project context
 
-- How the previous app runs: `README.md`.
-- Research the catalog is built from: `docs/research/00-synthesis.md` and the reports `01`–`09`.
-- **The product definition is `docs/PRD.md`.** The app is being rebuilt from it. The code on `main` is the previous attempt; Appendix D of the PRD says what to reuse from it.
-- The 12 Oct plan doc, and where it conflicts with 00-synthesis: `docs/research/10-plan-doc-2026-10-12.md`. Its full text, tab by tab, is in `docs/research/plan-doc/`, and its data is in `data/research/trip-data.v2.json`. That file is research input only and is not read by `npm run seed`.
-- When research files disagree, follow `00-synthesis.md`, `08-pregnancy.md` and `07-lodging.md` unless Pedro has decided otherwise. Ask him about any open conflict.
+- **The product definition is `PRD.md`, at the repo root.** Its data is `trip-data.json`, also at the root. Build from these. Appendix A of the PRD is the kickoff prompt.
+- The research behind them is in `docs/research/plan-doc/`. It covers the itinerary options, why each stay is this long, what we're missing, and the region guides.
+- The code already on `main`, `README.md` and the other files in `docs/research/` and `data/` come from the previous version of the app.

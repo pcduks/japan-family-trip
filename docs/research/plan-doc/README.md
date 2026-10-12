@@ -2,7 +2,7 @@
 
 These files are the full text of the shared doc "Japan for Six (or Seven): the plan and the reasoning", exported tab by tab. The live doc is at https://claude.ai/code/artifact/8af68e4b-aa1e-42c9-ad88-2a4dbdc396f7 (Pedro's account). If the two disagree, the live doc is newer.
 
-**Read first:** `../10-plan-doc-2026-10-12.md`. It summarises the plan doc and lists where it conflicts with `../00-synthesis.md`. The two main conflicts are New Year's Eve in Gero against the perinatal-city rule, and the 28 and 30 Dec moves against the worst train days of 27–30 Dec. When the two sources disagree, 00-synthesis wins until Pedro decides otherwise.
+The product definition built from this research is `/PRD.md`, and its data is `/trip-data.json`.
 
 | File | What it holds |
 |---|---|
@@ -15,6 +15,6 @@ These files are the full text of the shared doc "Japan for Six (or Seven): the p
 | `13-kyoto-and-nara.md` | What's open 1–4 Jan in Kyoto. Sights and museums. The Nara day on Mon 4 Jan. Food likely open 2–4 Jan. Links. |
 | `14-hakone-and-fuji.md` | Hakone or Kawaguchiko, compared. Sights and museums. Ryokan with private baths. Food and links. |
 
-The structured version of the same content (places, regions, versions, pace model, rules and deadlines) is `../../../data/research/trip-data.v2.json`.
+The structured version of the same content (places, regions, versions, pace model, rules and deadlines) is `/trip-data.json`.
 
 The earlier "Tokyo for Six", "Kyoto for Six" and "Six Across Japan" guides were already imported into `data/city-guides.json` and `data/route-board.json`.
