@@ -6,7 +6,7 @@
 **Status:** v2, 12 Oct 2026. Replaces every earlier PRD.
 **Trip:** 20 Dec 2026 to 9 Jan 2027, 20 nights, 6 travellers plus possibly a 7th
 **Data:** `data/research/trip-data.v2.json` (schema v2), plus the catalog already in `data/` (`experiences.json`: 158 cards; `bases.json`: 55 bases with hospital minutes; `transit.json`: 113 door-to-door legs; `tokyo-foodlist.json`). `trip-data.v2.json` It holds the place library (109 places, 26 regions), 6 trip versions, the pace model, calendar rules, booking deadlines, the 4 legacy routes and the family's own Tokyo food list.
-**Research source:** the shared doc "Japan for Six (or Seven): the plan and the reasoning" (https://claude.ai/code/artifact/8af68e4b-aa1e-42c9-ad88-2a4dbdc396f7). Its tabs are the plan, why each stay is this long, what we're missing, and one tab per region. It is summarised in `docs/research/10-plan-doc-2026-10-12.md`, along with where it conflicts with `docs/research/00-synthesis.md`.
+**Research source:** the shared doc "Japan for Six (or Seven): the plan and the reasoning" (https://claude.ai/code/artifact/8af68e4b-aa1e-42c9-ad88-2a4dbdc396f7). Its tabs are the plan, why each stay is this long, what we're missing, and one tab per region. Its full text, tab by tab, is in `docs/research/plan-doc/`. It is summarised in `docs/research/10-plan-doc-2026-10-12.md`, along with where it conflicts with `docs/research/00-synthesis.md`.
 
 ---
 
@@ -312,7 +312,8 @@ Paste this into a new Claude Code session on this repo:
 
 ```
 Read docs/PRD.md (the spec), data/research/trip-data.v2.json, data/*.json and
-docs/research/00-synthesis.md, 07-lodging.md, 08-pregnancy.md and 10-plan-doc-2026-10-12.md.
+docs/research/00-synthesis.md, 07-lodging.md, 08-pregnancy.md, 10-plan-doc-2026-10-12.md
+and docs/research/plan-doc/ (the itinerary options, why each stay is this long, and the region guides).
 The code on main is the previous attempt: read Appendix D before deciding what to reuse.
 Work on a new branch `rebuild`. Build the app in the PRD, Phase 1 first.
 
