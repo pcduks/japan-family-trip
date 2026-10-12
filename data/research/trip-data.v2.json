@@ -79,9 +79,10 @@
    "end": "2027-01-03"
   },
   "peak_travel_days": [
+   "2026-12-27",
+   "2026-12-28",
    "2026-12-29",
    "2026-12-30",
-   "2026-12-31",
    "2027-01-02",
    "2027-01-03",
    "2027-01-04"
@@ -116,6 +117,21 @@
     "id": "pregnancy_flags",
     "severity": "info",
     "text": "Show effort_for_her and avoid_for_her on every planned item"
+   },
+   {
+    "id": "new_year_city",
+    "severity": "warn",
+    "text": "Nights of 29 Dec - 3 Jan in a city with a perinatal or university hospital, not a rural onsen town (08-pregnancy rule 8)"
+   },
+   {
+    "id": "her_travel_day",
+    "severity": "warn",
+    "text": "No day over 4 h door to door; at most one rail leg over 2 h; a rest day after any travel day of 3 h or more"
+   },
+   {
+    "id": "last_night",
+    "severity": "error",
+    "text": "Night of 8 Jan within 60-90 min of the departure airport; no intercity move on 9 Jan"
    }
   ],
   "facts": [
@@ -127,7 +143,12 @@
     "text": "Sumo January tournament runs 10-24 Jan 2027",
     "source": "https://selfguidejapan.com/blog/grand-sumo-january-2027"
    }
-  ]
+  ],
+  "calm_travel_days": [
+   "2026-12-31",
+   "2027-01-01"
+  ],
+  "peak_source": "docs/research/00-synthesis.md (JR data)"
  },
  "deadlines": [
   {
@@ -4492,5 +4513,6 @@
   "tokyo_guide": "https://claude.ai/artifact/WGmgutnpVdHdwH9iAmxuyi",
   "kyoto_guide": "https://claude.ai/artifact/R5h7gGy8NcavyHmpNRJ68u",
   "route_explorer": "https://claude.ai/artifact/PKwiteu1DMN61MaxZJj7qp"
- }
+ },
+ "note": "Versions were written before the 00-synthesis rules were reconciled; the rules engine should flag the plan's 28 and 30 Dec moves and the Gero New Year's Eve. See docs/research/10-plan-doc-2026-10-12.md."
 }
