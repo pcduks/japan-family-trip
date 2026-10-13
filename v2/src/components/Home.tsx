@@ -1,9 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import { art } from "@/lib/art";
 import { daysBetween, fmtDay, fmtRange } from "@/lib/dates";
 import { movesOf, paceLabel, statsOf } from "@/lib/versions";
 import type { PaceVote } from "@/lib/types";
+import { EkiStamp, type Motif } from "./EkiStamp";
 import { useStore } from "./providers";
 import { RegionCover } from "./RegionCover";
 import { Avatar, Page } from "./ui";
@@ -18,14 +21,14 @@ export function Home({ today }: { today: string }) {
   const myRank = snapshot.votes.find((v) => v.kind === "rank" && v.traveller_id === me?.travellerId);
   const openSuggestions = snapshot.suggestions.filter((s) => s.status === "open").length;
   const next = !myPace
-    ? { href: "/vote", title: "Pick your pace", blurb: "Gentle, Balanced or Full: it decides how many nights each place gets." }
+    ? { href: "/vote", title: "Pick your pace", blurb: "Gentle, Balanced or Full: it decides how many nights each place gets.", motif: "ballot" as Motif }
     : myMust.length < 2
-      ? { href: "/vote", title: myMust.length ? "Name one more must-do" : "Name two must-dos", blurb: "The two things you would be sad to miss. They shape the days." }
+      ? { href: "/vote", title: myMust.length ? "Name one more must-do" : "Name two must-dos", blurb: "The two things you would be sad to miss. They shape the days.", motif: "pin" as Motif }
       : !myRank
-        ? { href: "/vote", title: "Rank the versions", blurb: "Six ways to spend the same 20 nights. Put them in your order." }
+        ? { href: "/vote", title: "Rank the versions", blurb: "Six ways to spend the same 20 nights. Put them in your order.", motif: "ballot" as Motif }
         : isPlanner && openSuggestions
-          ? { href: `/versions/${plan?.id ?? "plan"}`, title: `${openSuggestions} suggestion${openSuggestions > 1 ? "s" : ""} to decide`, blurb: "Accept them into the plan or decline with a note." }
-          : { href: "/places", title: "Browse the places", blurb: "Photos, reviews and videos for everything we researched." };
+          ? { href: `/versions/${plan?.id ?? "plan"}`, title: `${openSuggestions} suggestion${openSuggestions > 1 ? "s" : ""} to decide`, blurb: "Accept them into the plan or decline with a note.", motif: "brush" as Motif }
+          : { href: "/places", title: "Browse the places", blurb: "Photos, reviews and videos for everything we researched.", motif: "lantern" as Motif };
   const paceVotes = snapshot.votes.filter((v) => v.kind === "pace") as PaceVote[];
   const stats = plan ? statsOf(plan, snapshot) : null;
   const moves = plan ? movesOf(plan.stays, snapshot.regions) : [];
@@ -33,22 +36,26 @@ export function Home({ today }: { today: string }) {
 
   return (
     <Page wide>
-      <section className="grid gap-3 pt-2">
+      <section className="grid gap-3 pt-1">
         <p className="eyebrow">{fmtDay(snapshot.trip.start, false)} – {fmtDay(snapshot.trip.end, false)} · {snapshot.trip.nights} nights · {snapshot.travellers.length} of us</p>
         <h1 className="display text-[2.6rem] leading-[1.02] sm:text-6xl">
           Our winter <em className="text-accent not-italic">in Japan</em>
         </h1>
-        <p className="max-w-prose text-[1.05rem] text-ink-2">
-          {days > 0 ? (
-            <>
-              <span className="display text-[2rem] leading-none text-ink">{days}</span> days to go{first ? `, ${first}` : ""}. Snow country, crab season, a ryokan New Year and the first clear mornings of January.
-            </>
-          ) : days === 0 ? (
-            "Today is the day. 行ってらっしゃい!"
-          ) : (
-            "We’re in Japan."
-          )}
-        </p>
+        <div className="relative -mx-4 aspect-[16/9] overflow-hidden sm:mx-0 sm:rounded-2xl sm:shadow-[var(--glow)]">
+          <Image src={art("chapter-alpes")} alt="Snow-roped pines, thatched farmhouses and snow monkeys in a hot spring" fill priority sizes="(max-width: 1024px) 100vw, 1024px" className="object-cover" />
+          <p className="absolute bottom-3 left-4 rounded-full bg-black/50 px-3 py-1 text-sm font-semibold text-white backdrop-blur">
+            {days > 0 ? (
+              <>
+                <span className="display text-[1.3rem] leading-none">{days}</span> days to go{first ? `, ${first}` : ""}
+              </>
+            ) : days === 0 ? (
+              "Today is the day. 行ってらっしゃい"
+            ) : (
+              "We’re in Japan"
+            )}
+          </p>
+        </div>
+        <p className="max-w-prose text-[1.05rem] text-ink-2">Snow country, crab season, a ryokan New Year and the first clear mornings of January. Three weeks, seven of us, one plan to agree on.</p>
       </section>
 
       {plan ? (
@@ -94,19 +101,22 @@ export function Home({ today }: { today: string }) {
         </section>
       ) : null}
 
-      <Link href={next.href} className="card grid gap-1 border-accent/40 p-5 no-underline">
-        <span className="eyebrow text-accent">Your next step</span>
-        <span className="display text-[1.5rem] leading-tight">{next.title}</span>
-        <span className="text-ink-2">{next.blurb}</span>
+      <Link href={next.href} className="card flex items-center gap-4 border-accent/40 p-4 no-underline">
+        <EkiStamp motif={next.motif} ink="var(--accent)" size={72} rotate={-8} label="" />
+        <span className="grid min-w-0 gap-0.5">
+          <span className="eyebrow text-accent">Your next step</span>
+          <span className="display text-[1.4rem] leading-tight">{next.title}</span>
+          <span className="text-sm text-ink-2">{next.blurb}</span>
+        </span>
       </Link>
 
       <section className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-        <Tile href="/board" title="Board" blurb={`${snapshot.versions.filter((v) => v.status !== "legacy").length} versions side by side`} glyph="☰" />
-        <Tile href="/vote" title="Vote" blurb={`${paceVotes.length}/${snapshot.travellers.length} picked a pace`} glyph="✓" />
-        <Tile href="/places" title="Places" blurb={`${snapshot.places.length} researched`} glyph="◎" />
-        <Tile href="/map" title="Map" blurb="route, stays, candidates" glyph="⌖" />
-        <Tile href="/missing" title="What we’re missing" blurb="candidates and swaps" glyph="✦" />
-        <Tile href="/versions/new" title="My version" blurb="copy, change, suggest" glyph="+" />
+        <Tile href="/board" title="Board" blurb={`${snapshot.versions.filter((v) => v.status !== "legacy").length} versions side by side`} motif="train" />
+        <Tile href="/vote" title="Vote" blurb={`${paceVotes.length}/${snapshot.travellers.length} picked a pace`} motif="ballot" />
+        <Tile href="/places" title="Places" blurb={`${snapshot.places.length} researched`} motif="pin" />
+        <Tile href="/map" title="Map" blurb="route, stays, candidates" motif="map" />
+        <Tile href="/missing" title="What we’re missing" blurb="candidates and swaps" motif="onsen" />
+        <Tile href="/versions/new" title="My version" blurb="copy, change, suggest" motif="suitcase" />
       </section>
 
       <section className="grid gap-3 sm:grid-cols-2">
@@ -143,12 +153,10 @@ export function Home({ today }: { today: string }) {
   );
 }
 
-function Tile({ href, title, blurb, glyph }: { href: string; title: string; blurb: string; glyph: string }) {
+function Tile({ href, title, blurb, motif }: { href: string; title: string; blurb: string; motif: Motif }) {
   return (
     <Link href={href} className="card grid gap-1 p-4 no-underline transition-transform hover:-translate-y-0.5">
-      <span className="display text-[1.4rem] leading-none text-accent" aria-hidden="true">
-        {glyph}
-      </span>
+      <EkiStamp motif={motif} ink="var(--indigo)" size={52} rotate={-6} label="" />
       <span className="font-semibold">{title}</span>
       <span className="text-xs text-muted">{blurb}</span>
     </Link>

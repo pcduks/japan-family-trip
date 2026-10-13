@@ -92,7 +92,7 @@ export function PlaceView({ id }: { id: string }) {
       ) : detailsError ? (
         <p className="text-sm text-muted">Google details unavailable: {detailsError}</p>
       ) : (
-        <RegionCover regionId={p.region} className="aspect-[4/3] w-full rounded-2xl" credit={false} />
+        <RegionCover regionId={p.region} className="aspect-[4/3] w-full rounded-2xl" />
       )}
 
       <div className="card grid gap-3 p-4">

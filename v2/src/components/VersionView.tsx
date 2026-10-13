@@ -198,7 +198,7 @@ export function VersionView({ id }: { id: string }) {
                   </p>
                 ) : null}
                 <div className={`card flex gap-3 overflow-hidden ${activeStay === i ? "ring-2 ring-ink" : ""}`} onClick={() => setActiveStay(i)}>
-                  <RegionCover regionId={s.region} className="w-24 shrink-0 self-stretch sm:w-32" credit={false} />
+                  <RegionCover regionId={s.region} className="w-24 shrink-0 self-stretch sm:w-32" sizes="160px" />
                   <div className="grid min-w-0 flex-1 gap-2 py-3 pr-3">
                   <div className="flex items-start justify-between gap-2">
                     <div className="flex items-center gap-2">

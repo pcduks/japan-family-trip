@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import { PACE_ART, art } from "@/lib/art";
 import { useState } from "react";
 import type { MustDoVote, Pace, PaceVote, RankVote, Version } from "@/lib/types";
 import { paceLabel } from "@/lib/versions";
@@ -62,7 +64,11 @@ export function Vote() {
       <Section title="1 · Your pace" aside={myPace ? `you chose ${paceLabel(myPace.value.pace)}` : "not answered"}>
         <div className="grid gap-2">
           {(["gentle", "balanced", "full"] as Pace[]).map((p) => (
-            <button key={p} className={`card grid gap-1 p-4 text-left ${myPace?.value.pace === p ? "ring-2 ring-accent" : ""}`} onClick={() => setVote("pace", { pace: p })} disabled={busy} aria-pressed={myPace?.value.pace === p}>
+            <button key={p} className={`card grid gap-1 overflow-hidden text-left ${myPace?.value.pace === p ? "ring-2 ring-accent" : ""}`} onClick={() => setVote("pace", { pace: p })} disabled={busy} aria-pressed={myPace?.value.pace === p}>
+              <span className="relative block aspect-[3/1] w-full">
+                <Image src={art(PACE_ART[p])} alt="" fill sizes="(max-width: 640px) 100vw, 640px" className="object-cover" />
+              </span>
+              <span className="grid gap-1 p-4 pt-3">
               <span className="flex items-center justify-between">
                 <b className="text-[1.05rem]">{paceLabel(p)}</b>
                 <span className="text-xs text-muted">{snapshot.pace.levels[p].walking_km} km a day</span>
@@ -74,6 +80,7 @@ export function Vote() {
                   .map((v) => (
                     <Avatar key={v.traveller_id} traveller={v.traveller_id} travellers={snapshot.travellers} size={22} />
                   ))}
+              </span>
               </span>
             </button>
           ))}

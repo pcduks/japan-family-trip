@@ -8,6 +8,7 @@ import { suggestNights } from "@/lib/nights";
 import type { Region } from "@/lib/types";
 import { swapInRegion } from "@/lib/versions";
 import { useStore } from "./providers";
+import { RegionCover } from "./RegionCover";
 import { Page, PageHeader, Section } from "./ui";
 
 const GROUPS: { status: Region["status"][]; title: string; blurb: string }[] = [
@@ -46,9 +47,10 @@ export function Missing() {
                 const placeCount = snapshot.places.filter((p) => p.region === r.id).length;
                 const nights = r.suggested_nights ? suggestNights(r, "balanced", snapshot.places, snapshot.pace) : null;
                 return (
-                  <li key={r.id} className="card grid gap-2 p-4">
+                  <li key={r.id} className="card grid gap-2 overflow-hidden p-4">
+                    <RegionCover regionId={r.id} className="-mx-4 -mt-4 aspect-[3/1]" sizes="(max-width: 640px) 100vw, 640px" />
                     <div className="flex items-center justify-between gap-2">
-                      <h3 className="text-[1.1rem]">{r.name}</h3>
+                      <h3 className="text-[1.25rem]">{r.name}</h3>
                       <span className="chip" style={{ color: fitColor(r.status), borderColor: fitColor(r.status) }}>
                         {fitLabel(r.status)}
                       </span>

@@ -71,6 +71,7 @@
   --color-info: var(--info);
   --font-sans: var(--font-body), "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
   --font-display: var(--font-display-face), "Hiragino Mincho ProN", "Iowan Old Style", Georgia, serif;
+  --font-stamp: var(--font-body), system-ui, sans-serif;
 }
 
 @layer base {
@@ -241,6 +242,22 @@
   scrollbar-width: none;
 }
 
+@keyframes stamp-in {
+  0% {
+    opacity: 0;
+    transform: rotate(var(--stamp-rot, -5deg)) scale(1.5);
+  }
+  70% {
+    opacity: 1;
+    transform: rotate(var(--stamp-rot, -5deg)) scale(0.96);
+  }
+  100% {
+    transform: rotate(var(--stamp-rot, -5deg)) scale(1);
+  }
+}
+.stamp-in {
+  animation: stamp-in 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
 @keyframes rise {
   from {
     opacity: 0;
