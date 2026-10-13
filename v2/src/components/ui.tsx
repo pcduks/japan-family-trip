@@ -13,7 +13,7 @@ export function PageHeader({ eyebrow, title, children, action }: { eyebrow?: Rea
     <header className="grid gap-1.5">
       {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
       <div className="flex items-start justify-between gap-3">
-        <h1 className="text-[1.9rem]">{title}</h1>
+        <h1 className="display text-[2.1rem] leading-[1.05]">{title}</h1>
         {action}
       </div>
       {children ? <div className="text-ink-2">{children}</div> : null}
@@ -25,7 +25,7 @@ export function Section({ title, aside, children, id }: { title: ReactNode; asid
   return (
     <section className="grid gap-3" aria-labelledby={id}>
       <div className="flex items-baseline justify-between gap-3">
-        <h2 id={id} className="text-[1.3rem]">
+        <h2 id={id} className="text-[1.35rem]">
           {title}
         </h2>
         {aside ? <div className="text-sm text-muted">{aside}</div> : null}

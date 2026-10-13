@@ -60,7 +60,7 @@ export function LoginForm({ travellers, next, error: initialError }: { traveller
     <div className="grid gap-3">
       <div className="grid grid-cols-2 gap-3">
         {travellers.map((t) => (
-          <button key={t.id} className="card min-h-16 px-4 text-lg font-semibold" disabled={busy} onClick={() => send(t)}>
+          <button key={t.id} className="card display min-h-18 px-4 text-[1.35rem]" disabled={busy} onClick={() => send(t)}>
             {t.name}
           </button>
         ))}

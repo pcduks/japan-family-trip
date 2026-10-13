@@ -1,5 +1,6 @@
-import { Board } from "@/components/Board";
+import { Home } from "@/components/Home";
 
 export default function HomePage() {
-  return <Board />;
+  const today = new Date().toISOString().slice(0, 10);
+  return <Home today={today} />;
 }

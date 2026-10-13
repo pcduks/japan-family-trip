@@ -8,6 +8,7 @@ import { useStore, type ThemePref } from "./providers";
 import { Avatar } from "./ui";
 
 const I = {
+  home: "M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z",
   board: "M4 6h16M4 12h10M4 18h13",
   vote: "M5 13l4 4L19 7",
   versions: "M8 4h12v12M4 8h12v12H4z",
@@ -36,8 +37,8 @@ export function BottomNav() {
   return (
     <nav aria-label="Main" className="fixed inset-x-0 bottom-0 z-30 border-t border-rule bg-bg/95 backdrop-blur" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
       <ul className="mx-auto flex max-w-xl items-stretch justify-around px-1">
-        <NavItem href="/" label="Board" icon={I.board} active={path === "/" || is("/missing")} />
-        <NavItem href="/versions" label="Versions" icon={I.versions} active={is("/versions")} />
+        <NavItem href="/" label="Home" icon={I.home} active={path === "/" || is("/missing") || is("/family")} />
+        <NavItem href="/board" label="Board" icon={I.board} active={is("/board") || is("/versions")} />
         <NavItem href="/vote" label="Vote" icon={I.vote} active={is("/vote")} />
         <NavItem href="/places" label="Places" icon={I.places} active={is("/places") || is("/regions")} />
         <NavItem href="/map" label="Map" icon={I.map} active={is("/map")} />
@@ -54,8 +55,11 @@ export function AppHeader() {
   return (
     <header className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 pb-1" style={{ paddingTop: "max(0.75rem, env(safe-area-inset-top))" }}>
       <Link href="/" className="flex items-center gap-2 no-underline">
-        <span className="grid size-8 place-items-center rounded-lg bg-accent text-sm font-bold text-accent-ink">日</span>
-        <span className="font-bold">Japan trip</span>
+        <span className="grid size-8 place-items-center rounded-lg bg-accent text-sm font-bold text-accent-ink">冬</span>
+        <span className="display text-[1.15rem] whitespace-nowrap">
+          <span className="sm:hidden">Japan ’26</span>
+          <span className="hidden sm:inline">Japan, winter 2026</span>
+        </span>
         {demo ? <span className="chip">demo</span> : null}
       </Link>
       <Dialog.Root open={open} onOpenChange={setOpen}>

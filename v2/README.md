@@ -16,6 +16,8 @@ This folder is a separate Next.js app. The earlier app ("Seis pelo Japão") stay
 | A6 | **Map** `/map` | Google Map with the selected version's route, numbered stays, library places and candidate regions coloured by fit; a sketch map without a key |
 | A7 | **What we're missing** `/missing` | Candidate regions with the fit verdict and "Make a version with this swap" |
 
+The look: Fraunces for titles, Figtree for text, snow-paper light theme and night-sky dark theme, one colour per region everywhere, Google photos as postcards for each stay (home page and version pages). Large-text mode scales the whole UI.
+
 Plus: the §7 rules engine (`src/lib/rules.ts`) runs on every edit; the nights suggestion with a plain-language reason (`src/lib/nights.ts`); large-text mode; light and dark themes; sign-in by tapping your name (6-digit code by email); the `/api/import` and `/api/connector/*` endpoints for Claude (PRD §8), token-scoped.
 
 ## Spike results (12 Oct 2026, `npm run spike`)

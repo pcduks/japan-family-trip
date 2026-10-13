@@ -85,6 +85,9 @@ export function Board() {
       </PageHeader>
 
       <div className="flex flex-wrap gap-2 text-sm">
+        <Link href="/versions" className="btn btn-sm">
+          All versions
+        </Link>
         <Link href="/vote" className="btn btn-sm">
           Vote · {paceVotes}/{snapshot.travellers.length} pace, {rankVotes}/{snapshot.travellers.length} ranked
         </Link>

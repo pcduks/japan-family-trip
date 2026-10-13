@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { youtubeId } from "@/lib/google/ids";
 import type { PlaceDetails, Size } from "@/lib/types";
 import { Comments } from "./Comments";
+import { RegionCover } from "./RegionCover";
 import { useStore } from "./providers";
 import { Avatar, Back, Checked, Page, PageHeader, RegionDot, Section } from "./ui";
 
@@ -73,9 +74,9 @@ export function PlaceView({ id }: { id: string }) {
       </PageHeader>
 
       {details?.photos.length ? (
-        <div className="no-scrollbar -mx-4 flex snap-x gap-2 overflow-x-auto px-4">
+        <div className="no-scrollbar -mx-4 -mt-2 flex snap-x gap-2 overflow-x-auto px-4">
           {details.photos.map((ph) => (
-            <figure key={ph.name} className="relative w-[85%] shrink-0 snap-center overflow-hidden rounded-xl bg-bg-2 sm:w-[60%]">
+            <figure key={ph.name} className="relative w-[85%] shrink-0 snap-center overflow-hidden rounded-2xl bg-bg-2 shadow-[var(--glow)] sm:w-[60%]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={`/api/photo/${ph.name}?w=800`} alt={`${p.name} photo`} className="aspect-[4/3] w-full object-cover" loading="lazy" />
               <figcaption className="absolute right-1 bottom-1 rounded bg-black/55 px-1.5 py-0.5 text-[0.65rem] text-white">
@@ -91,7 +92,7 @@ export function PlaceView({ id }: { id: string }) {
       ) : detailsError ? (
         <p className="text-sm text-muted">Google details unavailable: {detailsError}</p>
       ) : (
-        <div className="aspect-[4/3] w-full animate-pulse rounded-xl bg-bg-2" aria-hidden="true" />
+        <RegionCover regionId={p.region} className="aspect-[4/3] w-full rounded-2xl" credit={false} />
       )}
 
       <div className="card grid gap-3 p-4">

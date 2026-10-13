@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
+import { RegionCover } from "./RegionCover";
 import { fmtDay, fmtRange } from "@/lib/dates";
 import { transitLink } from "@/lib/legs";
 import { checkVersion } from "@/lib/rules";
@@ -29,7 +30,7 @@ export function VersionView({ id }: { id: string }) {
   if (!v)
     return (
       <Page>
-        <Back href="/">Board</Back>
+        <Back href="/board">Board</Back>
         <Empty>No such version.</Empty>
       </Page>
     );
@@ -38,7 +39,7 @@ export function VersionView({ id }: { id: string }) {
     const legacy = v as (typeof snapshot.legacy_routes)[number];
     return (
       <Page>
-        <Back href="/">Board</Back>
+        <Back href="/board">Board</Back>
         <PageHeader eyebrow="Legacy, for reference" title={legacy.name}>
           {legacy.title}. {legacy.note}.
         </PageHeader>
@@ -90,7 +91,7 @@ export function VersionView({ id }: { id: string }) {
 
   return (
     <Page>
-      <Back href={version.status === "personal" ? "/versions" : "/"}>{version.status === "personal" ? "Versions" : "Board"}</Back>
+      <Back href={version.status === "personal" ? "/versions" : "/board"}>{version.status === "personal" ? "Versions" : "Board"}</Back>
       <PageHeader
         eyebrow={
           <span className="flex items-center gap-2">
@@ -196,11 +197,13 @@ export function VersionView({ id }: { id: string }) {
                     ) : null}
                   </p>
                 ) : null}
-                <div className={`card grid gap-2 p-4 ${activeStay === i ? "ring-2 ring-ink" : ""}`} onClick={() => setActiveStay(i)}>
+                <div className={`card flex gap-3 overflow-hidden ${activeStay === i ? "ring-2 ring-ink" : ""}`} onClick={() => setActiveStay(i)}>
+                  <RegionCover regionId={s.region} className="w-24 shrink-0 self-stretch sm:w-32" credit={false} />
+                  <div className="grid min-w-0 flex-1 gap-2 py-3 pr-3">
                   <div className="flex items-start justify-between gap-2">
                     <div className="flex items-center gap-2">
-                      <RegionDot id={s.region} size={14} />
-                      <h3 className="text-[1.1rem]">
+                      <RegionDot id={s.region} size={12} />
+                      <h3 className="text-[1.25rem]">
                         <Link href={`/places?region=${s.region}`} className="no-underline">
                           {region?.name ?? s.region}
                         </Link>
@@ -218,6 +221,7 @@ export function VersionView({ id }: { id: string }) {
                   </p>
                   <StayNights stay={s} pace={version.pace} allStays={version.stays} mustDos={myMustDos} />
                   {stayFindings.length ? <FindingList findings={stayFindings} compact /> : null}
+                  </div>
                 </div>
               </li>
             );
