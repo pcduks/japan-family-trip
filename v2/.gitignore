@@ -8,3 +8,4 @@ next-env.d.ts
 /data/travellers.json
 .vercel
 /src/data/trip-data.json
+/src/data/plan-doc.json

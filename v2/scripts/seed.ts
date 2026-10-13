@@ -10,6 +10,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { createClient } from "@supabase/supabase-js";
 import type { DB } from "../src/lib/supabase/types";
+import { bundledPlanDays } from "../src/lib/data/file";
 import { importTripData, type ImportPayload } from "../src/lib/import";
 import type { Region, Traveller } from "../src/lib/types";
 import { loadEnv, need } from "./env";
@@ -57,6 +58,23 @@ async function importData() {
       `closures ${report.closures.updated.length} places, versions +${report.versions.added.length}/~${report.versions.changed.length} (skipped ${report.versions.skipped.join(", ") || "none"}), deadlines ${report.deadlines.added}`,
   );
   if (report.places.changed.length) for (const c of report.places.changed.slice(0, 20)) console.log(`  ~ ${c.id}: ${c.fields.join(", ")}`);
+}
+
+/** The plan's day-by-day (data/plan-days.json), only when the plan has no days yet: planners own them after that. */
+async function planDays() {
+  const { data: plan } = await sb.from("versions").select("id").eq("status", "plan").maybeSingle();
+  if (!plan) return console.log("- no plan version yet; skipping days");
+  const { count } = await sb.from("days").select("*", { count: "exact", head: true }).eq("version_id", plan.id);
+  if (count) return console.log(`- plan already has ${count} days; left as they are`);
+  let items = 0;
+  for (const d of bundledPlanDays()) {
+    const day = check<{ id: string }>("day", await sb.from("days").insert({ version_id: plan.id, date: d.date, title: `${d.kind} · ${d.title}` }).select("id").single());
+    if (d.items.length) {
+      check("day items", await sb.from("day_items").insert(d.items.map((it, i) => ({ day_id: day.id, place_id: it.place_id, slot: it.slot, crew: it.crew, note: it.note ?? null, sort: i }))));
+      items += d.items.length;
+    }
+  }
+  console.log(`✓ plan day by day: ${bundledPlanDays().length} days, ${items} items`);
 }
 
 /** Resolve google_place_id and coordinates with Text Search biased to the region's centre. */
@@ -110,6 +128,7 @@ async function resolvePlaceIds() {
 async function main() {
   await travellers();
   await importData();
+  await planDays();
   await resolvePlaceIds();
   console.log("Done.");
 }

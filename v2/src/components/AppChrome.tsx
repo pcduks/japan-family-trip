@@ -101,11 +101,19 @@ export function AppHeader() {
               </div>
             </fieldset>
 
-            {isPlanner ? (
-              <Link href="/family" className="btn btn-sm" onClick={() => setOpen(false)}>
-                Family · who can sign in
+            <div className="flex flex-wrap gap-2">
+              <Link href="/guide" className="btn btn-sm" onClick={() => setOpen(false)}>
+                How this works
               </Link>
-            ) : null}
+              <Link href="/plan" className="btn btn-sm" onClick={() => setOpen(false)}>
+                The report
+              </Link>
+              {isPlanner ? (
+                <Link href="/family" className="btn btn-sm" onClick={() => setOpen(false)}>
+                  Family
+                </Link>
+              ) : null}
+            </div>
             {demo ? (
               <fieldset className="grid gap-2">
                 <legend className="eyebrow">I am… (demo mode, this browser only)</legend>

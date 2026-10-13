@@ -6,6 +6,8 @@ import { youtubeId } from "@/lib/google/ids";
 import type { PlaceDetails, Size } from "@/lib/types";
 import { Comments } from "./Comments";
 import { RegionCover } from "./RegionCover";
+import { reportTabForRegion } from "./PlanReport";
+import { fmtDay } from "@/lib/dates";
 import { useStore } from "./providers";
 import { Avatar, Back, Checked, Page, PageHeader, RegionDot, Section } from "./ui";
 
@@ -48,6 +50,8 @@ export function PlaceView({ id }: { id: string }) {
   const mustBy = snapshot.votes.filter((v) => v.kind === "mustdo" && ((v.value as { places?: string[] }).places ?? []).includes(p.id)).map((v) => v.traveller_id);
   const vid = video ?? youtubeId(p.links?.video) ?? youtubeId(region?.videos?.[0]);
   const staysHere = snapshot.versions.find((v) => v.status === "plan")?.stays.filter((s) => s.region === p.region) ?? [];
+  const plannedOn = snapshot.days.filter((d) => d.version_id === "plan").flatMap((d) => d.items.filter((it) => it.place_id === p.id).map((it) => ({ date: d.date, slot: it.slot, crew: it.crew, note: it.note })));
+  const guideTab = reportTabForRegion(p.region);
 
   async function searchVideos() {
     const r = await fetch(`/api/videos/search?q=${encodeURIComponent(videoQ || `${p!.name} ${region?.name ?? ""} Japan`)}`);
@@ -71,6 +75,18 @@ export function PlaceView({ id }: { id: string }) {
         }
       >
         {p.why ? <p className="text-[1.05rem]">{p.why}</p> : null}
+        <p className="flex flex-wrap gap-1.5 pt-1 text-sm">
+          {plannedOn.length ? (
+            plannedOn.map((x, i) => (
+              <span key={i} className="chip text-ok">
+                In the plan · {fmtDay(x.date)} {x.slot === "early" ? "dawn" : x.slot}
+                {x.crew !== "everyone" ? ` · ${x.crew} crew` : ""}
+              </span>
+            ))
+          ) : (
+            <span className="chip text-muted">Not in the plan yet · a candidate near {region?.name ?? "our base"}</span>
+          )}
+        </p>
       </PageHeader>
 
       {details?.photos.length ? (
@@ -139,10 +155,26 @@ export function PlaceView({ id }: { id: string }) {
           {p.price ? <Row k="Price">{p.price}</Row> : null}
           {p.booking ? <Row k="Booking">{p.booking}</Row> : null}
           {p.food ? (
-            <Row k="Food">
-              {[p.food.type, p.food.price_band, p.food.recommended_by ? `recommended by ${p.food.recommended_by}` : null, p.food.group_of_6 ? `group of 6: ${p.food.group_of_6}` : null].filter(Boolean).join(" · ")}
-              {p.food.pregnancy_note ? <span className="block text-warn">{p.food.pregnancy_note}</span> : null}
-            </Row>
+            <>
+              <Row k="What">{[p.food.type, p.food.price_band].filter(Boolean).join(" · ") || "—"}</Row>
+              <Row k="Says who">
+                {p.food.recommended_by ? <b>{p.food.recommended_by}</b> : <span className="text-muted">source not recorded</span>}
+                {p.links?.source ? (
+                  <>
+                    {" "}
+                    <a href={p.links.source} target="_blank" rel="noreferrer" className="text-muted">
+                      read the recommendation
+                    </a>
+                  </>
+                ) : null}
+              </Row>
+              {p.food.group_of_6 ? <Row k="Six of us">{p.food.group_of_6}</Row> : null}
+              {p.food.pregnancy_note ? (
+                <Row k={/raw|pregnan|her\b|sushi|sashimi|alcohol|smok/i.test(p.food.pregnancy_note) ? "For her" : "Note"}>
+                  <span className="text-warn">{p.food.pregnancy_note}</span>
+                </Row>
+              ) : null}
+            </>
           ) : null}
           {staysHere.length ? (
             <Row k="We’re here">
@@ -261,6 +293,12 @@ export function PlaceView({ id }: { id: string }) {
       <Comments targetType="place" targetId={p.id} />
       <p className="text-xs text-muted">
         <Link href={`/map?region=${p.region}`}>Map</Link> · <Link href={`/places?region=${p.region}`}>More in {region?.name}</Link>
+        {guideTab ? (
+          <>
+            {" "}
+            · <Link href={`/plan?tab=${guideTab}`}>Read the {region?.name} guide</Link>
+          </>
+        ) : null}
       </p>
     </Page>
   );

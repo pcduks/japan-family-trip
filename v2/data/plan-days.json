@@ -1,0 +1,109 @@
+{
+  "version": "plan",
+  "source": "docs/research/plan-doc/01-the-plan.md, day-by-day table (13 Oct 2026)",
+  "days": [
+    { "date": "2026-12-20", "kind": "Arrive", "title": "Check in, a short walk, an easy dinner nearby", "items": [] },
+    { "date": "2026-12-21", "kind": "Explore", "title": "Museums are closed on Mondays, so: Tsukiji outer market, Hama-rikyu garden, Ginza and a depachika food hall",
+      "items": [
+        { "place_id": "tokyo-toyosu-auction", "slot": "early", "crew": "early", "note": "About 5am, with a guide" },
+        { "place_id": "tokyo-tsukiji", "slot": "morning", "crew": "everyone" },
+        { "place_id": "tokyo-hamarikyu", "slot": "afternoon", "crew": "everyone" },
+        { "place_id": null, "slot": "afternoon", "crew": "everyone", "note": "Ginza and a depachika food hall" }
+      ] },
+    { "date": "2026-12-22", "kind": "Explore", "title": "Nezu Museum and garden (book a time slot), Meiji Jingu, Harajuku, an izakaya night",
+      "items": [
+        { "place_id": "tokyo-meiji", "slot": "morning", "crew": "everyone" },
+        { "place_id": "tokyo-nezu", "slot": "afternoon", "crew": "everyone", "note": "Book a time slot" },
+        { "place_id": null, "slot": "evening", "crew": "everyone", "note": "Harajuku, then an izakaya night" }
+      ] },
+    { "date": "2026-12-23", "kind": "Explore", "title": "Edo-Tokyo Museum (reopened 2026) and Sumida Hokusai Museum, then Asakusa. Send the big bags ahead",
+      "items": [
+        { "place_id": "tokyo-edo-tokyo", "slot": "morning", "crew": "everyone" },
+        { "place_id": "tokyo-hokusai", "slot": "afternoon", "crew": "everyone" },
+        { "place_id": "tokyo-asakusa", "slot": "afternoon", "crew": "everyone" },
+        { "place_id": null, "slot": "evening", "crew": "everyone", "note": "Send the suitcases ahead to Kanazawa (takkyubin)" }
+      ] },
+    { "date": "2026-12-24", "kind": "Move · 2.5 h", "title": "Hokuriku shinkansen; afternoon at the 21st Century Museum (open to 18:00)",
+      "items": [ { "place_id": "kz-21c", "slot": "afternoon", "crew": "everyone" } ] },
+    { "date": "2026-12-25", "kind": "Explore", "title": "Kenroku-en, Castle Park, Nomura samurai house, D.T. Suzuki Museum",
+      "items": [
+        { "place_id": "kz-kenrokuen", "slot": "early", "crew": "early", "note": "Free from 6:00" },
+        { "place_id": "kz-kenrokuen", "slot": "morning", "crew": "everyone" },
+        { "place_id": "kz-castle", "slot": "morning", "crew": "everyone" },
+        { "place_id": "kz-nomura", "slot": "afternoon", "crew": "everyone" },
+        { "place_id": "kz-dtsuzuki", "slot": "afternoon", "crew": "everyone" }
+      ] },
+    { "date": "2026-12-26", "kind": "Explore", "title": "Higashi Chaya teahouse district, gold-leaf workshop, Omicho market, crab dinner",
+      "items": [
+        { "place_id": "kz-higashi", "slot": "morning", "crew": "everyone" },
+        { "place_id": "kz-goldleaf", "slot": "afternoon", "crew": "everyone" },
+        { "place_id": "kz-geiko", "slot": "afternoon", "crew": "everyone", "note": "Book by 31 Oct" },
+        { "place_id": "kz-omicho", "slot": "afternoon", "crew": "everyone" },
+        { "place_id": null, "slot": "evening", "crew": "everyone", "note": "Crab dinner" }
+      ] },
+    { "date": "2026-12-27", "kind": "Easy", "title": "Free morning. Optional half day at Kaga Onsen (20 min by shinkansen), or the Prefectural Museum of Art",
+      "items": [
+        { "place_id": "kz-kaga", "slot": "afternoon", "crew": "early", "note": "Optional" },
+        { "place_id": "kz-artmuseum", "slot": "afternoon", "crew": "easy", "note": "Optional" }
+      ] },
+    { "date": "2026-12-28", "kind": "Move", "title": "8:40 bus, 2.5 hours in Shirakawa-go, Takayama at 13:25. Takayama Jinya in the afternoon",
+      "items": [
+        { "place_id": "sg-village", "slot": "morning", "crew": "everyone" },
+        { "place_id": "tk-jinya", "slot": "afternoon", "crew": "everyone", "note": "Closes 29 Dec – 3 Jan, so today" }
+      ] },
+    { "date": "2026-12-29", "kind": "Explore", "title": "Morning market, old town and sake breweries, Festival Floats hall, Hida Folk Village",
+      "items": [
+        { "place_id": "tk-markets", "slot": "morning", "crew": "everyone" },
+        { "place_id": "tk-breweries", "slot": "morning", "crew": "everyone" },
+        { "place_id": "tk-floats", "slot": "afternoon", "crew": "everyone" },
+        { "place_id": "tk-folkvillage", "slot": "afternoon", "crew": "everyone" },
+        { "place_id": "ok-ropeway", "slot": "morning", "crew": "early", "note": "Okuhida ropeway day trip instead, for the early crew" }
+      ] },
+    { "date": "2026-12-30", "kind": "Move · 45 min", "title": "Limited express to Gero, footbaths, check in at the ryokan",
+      "items": [ { "place_id": "gr-baths", "slot": "afternoon", "crew": "everyone" }, { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Ryokan afternoon" } ] },
+    { "date": "2026-12-31", "kind": "Easy", "title": "Gassho Village (9:00–16:00), onsen-hopping pass, New Year's Eve dinner and toshikoshi soba",
+      "items": [
+        { "place_id": "gr-gassho", "slot": "morning", "crew": "everyone" },
+        { "place_id": "gr-baths", "slot": "afternoon", "crew": "everyone", "note": "Onsen-hopping pass" },
+        { "place_id": null, "slot": "evening", "crew": "everyone", "note": "New Year's Eve dinner at the ryokan, toshikoshi soba" }
+      ] },
+    { "date": "2027-01-01", "kind": "Move · 1.5–2.5 h", "title": "New Year breakfast at the ryokan, then the afternoon train; trains are quiet today", "items": [ { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Nothing planned after arriving" } ] },
+    { "date": "2027-01-02", "kind": "Explore", "title": "Kyoto National Museum (New Year show), Higashiyama, Gion at dusk",
+      "items": [
+        { "place_id": "ky-fushimi", "slot": "early", "crew": "early" },
+        { "place_id": "ky-higashiyama", "slot": "morning", "crew": "everyone" },
+        { "place_id": "ky-knm", "slot": "afternoon", "crew": "everyone" },
+        { "place_id": null, "slot": "evening", "crew": "everyone", "note": "Gion at dusk" }
+      ] },
+    { "date": "2027-01-03", "kind": "Explore", "title": "Arashiyama early, Nanzen-ji garden and a yudōfu lunch",
+      "items": [
+        { "place_id": "ky-arashiyama", "slot": "morning", "crew": "everyone" },
+        { "place_id": "ky-okutan", "slot": "afternoon", "crew": "everyone", "note": "Yudōfu lunch" },
+        { "place_id": "ky-nanzenji", "slot": "afternoon", "crew": "everyone" }
+      ] },
+    { "date": "2027-01-04", "kind": "Explore", "title": "Nara: Tōdai-ji, Kasuga Taisha, the deer park and Naramachi. Nishiki market reopens in Kyoto",
+      "items": [
+        { "place_id": "nara-todaiji", "slot": "morning", "crew": "everyone" },
+        { "place_id": "nara-kasuga", "slot": "morning", "crew": "everyone" },
+        { "place_id": "nara-naramachi", "slot": "afternoon", "crew": "everyone" },
+        { "place_id": "ky-nishiki", "slot": "evening", "crew": "easy", "note": "Reopens today, for whoever stays in Kyoto" }
+      ] },
+    { "date": "2027-01-05", "kind": "Move · 3–3.5 h", "title": "Hikari to Odawara with seats on the Fuji side; Hatsuhana soba (open Tuesdays), onsen",
+      "items": [ { "place_id": "hk-hatsuhana", "slot": "afternoon", "crew": "everyone" }, { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Onsen at the ryokan" } ] },
+    { "date": "2027-01-06", "kind": "Explore", "title": "Hakone Open-Air Museum or Pola Museum, ropeway, Lake Ashi boat",
+      "items": [
+        { "place_id": null, "slot": "early", "crew": "early", "note": "Sunrise for Fuji" },
+        { "place_id": "hk-oam", "slot": "morning", "crew": "everyone" },
+        { "place_id": "hk-pola", "slot": "morning", "crew": "everyone", "note": "Or this, if it rains" },
+        { "place_id": "hk-loop", "slot": "afternoon", "crew": "everyone" }
+      ] },
+    { "date": "2027-01-07", "kind": "Move · 80 min", "title": "Romancecar to Shinjuku; afternoon free", "items": [ { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Afternoon free" } ] },
+    { "date": "2027-01-08", "kind": "Free", "title": "Late opening to 20:00 at Tokyo National Museum and Western Art; shopping, farewell dinner",
+      "items": [
+        { "place_id": "tokyo-tnm", "slot": "afternoon", "crew": "everyone" },
+        { "place_id": "tokyo-nmwa", "slot": "afternoon", "crew": "everyone" },
+        { "place_id": null, "slot": "evening", "crew": "everyone", "note": "Farewell dinner" }
+      ] },
+    { "date": "2027-01-09", "kind": "Fly", "title": "Airport", "items": [] }
+  ]
+}

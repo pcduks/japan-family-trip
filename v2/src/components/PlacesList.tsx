@@ -70,7 +70,10 @@ export function PlacesList() {
   const region = picked && picked.forParam === regionParam ? picked.region : (regionParam ?? "");
   const setRegion = (r: string) => setPicked({ forParam: regionParam, region: r });
   const [size, setSize] = useState<string>("");
+  const [inPlan, setInPlan] = useState<"" | "yes" | "no">("");
   const [q, setQ] = useState("");
+  const plannedDates = new Map<string, string[]>();
+  for (const d of snapshot.days) if (d.version_id === "plan") for (const it of d.items) if (it.place_id) plannedDates.set(it.place_id, [...(plannedDates.get(it.place_id) ?? []), d.date]);
   const [photosPref, setPhotosPref] = useState<boolean | null>(null);
   const photos = photosPref ?? Boolean(region);
   const setPhotos = (b: boolean) => setPhotosPref(b);
@@ -86,13 +89,18 @@ export function PlacesList() {
   const myMust = ((snapshot.votes.find((v) => v.kind === "mustdo" && v.traveller_id === me?.travellerId)?.value as { places?: string[] } | undefined)?.places ?? []);
 
   const list = snapshot.places.filter(
-    (p) => (!region || p.region === region) && (!size || p.size === size) && (!q.trim() || `${p.name} ${p.kind} ${p.why ?? ""} ${p.food?.type ?? ""}`.toLowerCase().includes(q.toLowerCase())),
+    (p) =>
+      (!region || p.region === region) &&
+      (!size || p.size === size) &&
+      (!inPlan || (inPlan === "yes") === plannedDates.has(p.id)) &&
+      (!q.trim() || `${p.name} ${p.kind} ${p.why ?? ""} ${p.food?.type ?? ""} ${p.food?.recommended_by ?? ""}`.toLowerCase().includes(q.toLowerCase())),
   );
+  const plannedCount = snapshot.places.filter((p) => plannedDates.has(p.id)).length;
 
   return (
     <Page wide>
-      <PageHeader eyebrow={`${snapshot.places.length} places · ${regions.length} regions`} title="Places">
-        Everything we researched, with hours, closures and effort for her. Photos and reviews come from Google when you open a place.
+      <PageHeader eyebrow={`${snapshot.places.length} places · ${regions.length} regions · ${plannedCount} in the plan`} title="Places">
+        Everything we researched, with hours, closures and effort for her. A green badge means it is in the plan’s day by day; the rest are candidates near our bases. Photos and reviews come from Google when you open a place.
       </PageHeader>
       <div className="grid gap-2">
         <input placeholder="Search… ramen, museum, snow, onsen" value={q} onChange={(e) => setQ(e.target.value)} aria-label="Search places" />
@@ -111,6 +119,13 @@ export function PlacesList() {
             {(["", "main", "short", "day_trip", "meal"] as const).map((s) => (
               <button key={s} aria-pressed={size === s} onClick={() => setSize(s)}>
                 {s ? SIZE_LABEL[s as Size].split(" ")[0] : "Any"}
+              </button>
+            ))}
+          </div>
+          <div className="seg" role="group" aria-label="In the plan">
+            {(["", "yes", "no"] as const).map((v) => (
+              <button key={v} aria-pressed={inPlan === v} onClick={() => setInPlan(v)}>
+                {v === "" ? "All" : v === "yes" ? "In the plan" : "Not yet"}
               </button>
             ))}
           </div>
@@ -136,7 +151,14 @@ export function PlacesList() {
                     </p>
                     <h3 className="text-[1.05rem] leading-tight">{p.name}</h3>
                     {p.why ? <p className="line-clamp-2 text-sm text-ink-2">{p.why}</p> : null}
+                    {p.food?.recommended_by ? (
+                      <p className="text-xs text-muted">
+                        {p.food.type ? `${p.food.type} · ` : ""}
+                        {p.food.price_band ? `${p.food.price_band} · ` : ""}recommended by {p.food.recommended_by}
+                      </p>
+                    ) : null}
                     <p className="flex flex-wrap gap-1 pt-1 text-xs">
+                      {plannedDates.has(p.id) ? <span className="chip text-ok">in the plan · {plannedDates.get(p.id)!.map((d) => d.slice(5).replace("-", "/")).join(", ")}</span> : null}
                       {p.status === "avoid_for_her" ? <span className="chip text-danger">avoid for her</span> : p.effort_for_her !== "low" ? <span className={`chip ${p.effort_for_her === "high" ? "text-danger" : "text-warn"}`}>{EFFORT[p.effort_for_her]}</span> : null}
                       {p.closures.length ? <span className="chip">closed {p.closures.map((c) => `${c.start.slice(8)}–${c.end.slice(5).replace("-", "/")}`).join(", ")}</span> : null}
                       {p.closed_weekdays.length ? <span className="chip">closed {p.closed_weekdays.join("/")}</span> : null}

@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { RegionCover } from "./RegionCover";
+import { reportTabForRegion } from "./PlanReport";
+import { DayByDay } from "./DayByDay";
 import { fmtDay, fmtRange } from "@/lib/dates";
 import { transitLink } from "@/lib/legs";
 import { checkVersion } from "@/lib/rules";
@@ -60,6 +62,7 @@ export function VersionView({ id }: { id: string }) {
   const moves = movesOf(version.stays, snapshot.regions);
   const st = statsOf(version, snapshot);
   const openSuggestions = snapshot.suggestions.filter((s) => s.status === "open");
+  const days = snapshot.days.filter((d) => d.version_id === version.id);
   const diffVsPlan = plan && version.id !== plan.id ? describeDiff(plan.stays, version.stays, snapshot.regions) : [];
 
   async function copy() {
@@ -218,6 +221,14 @@ export function VersionView({ id }: { id: string }) {
                   <p className="text-sm text-ink-2">
                     {s.lodging ? <span className="chip mr-1">{s.lodging}</span> : null}
                     {s.note}
+                    {reportTabForRegion(s.region) ? (
+                      <>
+                        {" "}
+                        <Link href={`/plan?tab=${reportTabForRegion(s.region)}`} className="text-muted">
+                          guide
+                        </Link>
+                      </>
+                    ) : null}
                   </p>
                   <StayNights stay={s} pace={version.pace} allStays={version.stays} mustDos={myMustDos} />
                   {stayFindings.length ? <FindingList findings={stayFindings} compact /> : null}
@@ -228,6 +239,13 @@ export function VersionView({ id }: { id: string }) {
           })}
         </ol>
       </Section>
+
+      {days.length ? (
+        <Section title="Day by day" aside={`${days.length} days · from the plan doc`}>
+          <p className="text-sm text-ink-2">The main thing each day, planned around what is open. “Early crew” is optional: whoever wants more goes early; the others join for breakfast.</p>
+          <DayByDay days={days} />
+        </Section>
+      ) : null}
 
       {version.status === "plan" ? (
         <>
