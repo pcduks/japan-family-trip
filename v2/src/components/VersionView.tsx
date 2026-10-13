@@ -7,6 +7,9 @@ import { RegionCover } from "./RegionCover";
 import { reportTabForRegion } from "./PlanReport";
 import { DayByDay } from "./DayByDay";
 import { fmtDay, fmtRange } from "@/lib/dates";
+import { stayNote, versionGuide } from "@/lib/guide";
+import { BudgetCard } from "./Budget";
+import { StayLodging } from "./StayLodging";
 import { transitLink } from "@/lib/legs";
 import { checkVersion } from "@/lib/rules";
 import type { Version } from "@/lib/types";
@@ -64,6 +67,8 @@ export function VersionView({ id }: { id: string }) {
   const openSuggestions = snapshot.suggestions.filter((s) => s.status === "open");
   const days = snapshot.days.filter((d) => d.version_id === version.id);
   const diffVsPlan = plan && version.id !== plan.id ? describeDiff(plan.stays, version.stays, snapshot.regions) : [];
+  const guide = versionGuide(version.id);
+  const regionName = (id: string) => snapshot.regions.find((r) => r.id === id)?.name ?? id;
 
   async function copy() {
     if (!me) return;
@@ -94,7 +99,7 @@ export function VersionView({ id }: { id: string }) {
 
   return (
     <Page>
-      <Back href={version.status === "personal" ? "/versions" : "/board"}>{version.status === "personal" ? "Versions" : "Board"}</Back>
+      <Back href={version.status === "personal" ? "/versions" : "/trip"}>{version.status === "personal" ? "Versions" : "The trip"}</Back>
       <PageHeader
         eyebrow={
           <span className="flex items-center gap-2">
@@ -110,6 +115,11 @@ export function VersionView({ id }: { id: string }) {
         }
         action={<span className="chip shrink-0">{paceLabel(version.pace)}</span>}
       >
+        {guide ? (
+          <p className="display text-[1.35rem] leading-tight text-ink">
+            {guide.theme}. <span className="text-ink-2">{guide.tagline}</span>
+          </p>
+        ) : null}
         {version.gains ? (
           <p>
             <b className="text-ok">Gains:</b> {version.gains}
@@ -177,18 +187,50 @@ export function VersionView({ id }: { id: string }) {
         </div>
       ) : null}
 
+      {guide ? (
+        <Section title="What it feels like">
+          <p className="max-w-prose text-[1.02rem] leading-relaxed text-ink-2">{guide.feel}</p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-2">
+              <p className="eyebrow">What it contemplates</p>
+              <ul className="grid gap-1.5 text-sm text-ink-2">
+                {guide.activities.map((a, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span aria-hidden="true" className="text-accent">
+                      ●
+                    </span>
+                    <span>{a}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="grid content-start gap-2 text-sm text-ink-2">
+              <p className="eyebrow">Why, and for whom</p>
+              <p>{guide.why}</p>
+              <p>
+                <b>Suits:</b> {guide.suits}
+              </p>
+              <p>
+                <b>The trade:</b> {guide.trade}
+              </p>
+            </div>
+          </div>
+        </Section>
+      ) : null}
+
       <Section title="Rules check" aside={`${findings.length ? `${findings.length} finding${findings.length === 1 ? "" : "s"}` : "all clear"}`}>
         <FindingList findings={findings} />
       </Section>
 
-      <Section title="Stays" aside={`${st.nights} nights · ${st.bases} bases`}>
+      <Section title="Where we sleep, for how long, and why" aside={`${st.nights} nights · ${st.bases} bases`}>
+        <p className="text-sm text-ink-2">Each stay says why it is this long, what kind of place suits it, the named candidates from the lodging research with prices for six, and search links with our dates filled in.</p>
         <ol className="grid gap-2">
           {version.stays.map((s, i) => {
             const region = snapshot.regions.find((r) => r.id === s.region);
             const move = moves.find((m) => m.index === i);
             const stayFindings = findings.filter((f) => f.stayIndex === i);
             return (
-              <li key={s.id ?? i} className="grid gap-2">
+              <li key={s.id ?? i} id={`stay-${i}`} className="grid gap-2 scroll-mt-20">
                 {move ? (
                   <p className="flex flex-wrap items-center gap-x-2 pl-3 text-sm text-muted">
                     ↓ {move.hours}
@@ -230,14 +272,20 @@ export function VersionView({ id }: { id: string }) {
                       </>
                     ) : null}
                   </p>
+                  {stayNote(version.id, version.stays, i) ? <p className="text-sm text-ink-2"><b>Why {s.nights} night{s.nights === 1 ? "" : "s"}:</b> {stayNote(version.id, version.stays, i)}</p> : null}
                   <StayNights stay={s} pace={version.pace} allStays={version.stays} mustDos={myMustDos} />
                   {stayFindings.length ? <FindingList findings={stayFindings} compact /> : null}
                   </div>
                 </div>
+                <StayLodging stay={s} region={region} />
               </li>
             );
           })}
         </ol>
+      </Section>
+
+      <Section title="What it costs" aside="per couple, flights excluded">
+        <BudgetCard v={version} regions={snapshot.regions} regionName={regionName} />
       </Section>
 
       {days.length ? (
