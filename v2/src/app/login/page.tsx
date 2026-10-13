@@ -8,8 +8,9 @@ export default async function LoginPage({ searchParams }: PageProps<"/login">) {
   if (viewer) redirect("/");
   const sp = await searchParams;
   const admin = adminSupabase();
-  const { data } = admin ? await admin.from("travellers").select("id,name").order("id") : { data: [] };
-  const names = (data ?? []) as { id: string; name: string }[];
+  const { data } = admin ? await admin.from("travellers").select("id,name").neq("id", "claude") : { data: [] };
+  const order = ["pedro", "wife", "brother", "sister_in_law", "father", "mother", "sister"];
+  const names = ((data ?? []) as { id: string; name: string }[]).sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
   return (
     <main className="mx-auto grid max-w-md gap-6 px-4 pt-14 pb-10">
       <div className="grid gap-2">

@@ -52,8 +52,10 @@ With no Supabase keys the app runs in demo mode: no sign-in, pick "I am…" unde
    - Auth → Email: set the OTP length to 6, and put `{{ .Token }}` in the Magic Link template so the code is in the email (custom SMTP is needed for that; without it the email carries only the link, which also works).
    - Auth → URL configuration: Site URL plus `http://localhost:3000/auth/confirm` and `https://<your-domain>/auth/confirm` as redirect URLs.
 4. `cp .env.example .env.local` and fill in the keys. `CLAUDE_CONNECTOR_TOKEN` is any long random string.
-5. `cp data/travellers.example.json data/travellers.json` and put in the seven names and emails (ids must match `trip.travellers` in `trip-data.json`). The file is git-ignored.
+5. Travellers: either `cp data/travellers.example.json data/travellers.json` with the seven names and emails (ids must match `trip.travellers` in `trip-data.json`; the file is git-ignored), or add them later from the app: sign in as the planner, open the name at the top right → **Family**. Each person added there gets a sign-in user and can tap their name on the login screen.
 6. `npm run seed`. It is idempotent: it upserts travellers (and pre-creates their auth users), imports `trip-data.json` by id, and resolves each place's `google_place_id` and coordinates with a Text Search biased to the region's centre. The plan version is created once and never overwritten by later imports. `--no-resolve` skips Google; `--file=path` imports another schema-v2 file.
+
+Without a machine at hand, the GitHub Actions workflow **Supabase setup (v2)** (`.github/workflows/supabase-setup.yml`) does steps 3 and 6 from repository secrets; see the comment at the top of the file.
 
 ## Deploy to Vercel
 

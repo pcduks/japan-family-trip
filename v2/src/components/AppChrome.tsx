@@ -47,7 +47,7 @@ export function BottomNav() {
 }
 
 export function AppHeader() {
-  const { me, demo, snapshot, setDemoMe, prefs, setPrefs, error } = useStore();
+  const { me, demo, snapshot, setDemoMe, prefs, setPrefs, error, isPlanner } = useStore();
   const path = usePathname();
   const [open, setOpen] = useState(false);
   if (path.startsWith("/login")) return null;
@@ -97,6 +97,11 @@ export function AppHeader() {
               </div>
             </fieldset>
 
+            {isPlanner ? (
+              <Link href="/family" className="btn btn-sm" onClick={() => setOpen(false)}>
+                Family · who can sign in
+              </Link>
+            ) : null}
             {demo ? (
               <fieldset className="grid gap-2">
                 <legend className="eyebrow">I am… (demo mode, this browser only)</legend>
