@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated": "2026-10-12",
+ "generated": "2026-10-13",
  "trip": {
   "name": "Japan winter trip",
   "start": "2026-12-20",
@@ -333,6 +333,33 @@
    "instagram_official": null,
    "hashtags": [],
    "videos": []
+  },
+  {
+   "id": "kawaguchiko",
+   "name": "Kawaguchiko",
+   "lat": 35.5171,
+   "lng": 138.751,
+   "status": "candidate_fits",
+   "summary": "Fuji straight across the lake, lakeside ryokan, hoto noodles",
+   "fit": "Swap for Hakone when the postcard view matters more than the museums; 4-4.5 h from Kyoto, 2 h to Tokyo; fewer indoor options on a cloudy day",
+   "suggested_nights": {
+    "gentle": "2-3",
+    "balanced": 2,
+    "full": 2
+   },
+   "sources": [
+    "https://isfujivisible.com/blog/hakone-vs-kawaguchiko",
+    "https://www.japan-guide.com/e/e6900.html",
+    "https://isfujivisible.com/blog/mount-fuji-in-winter"
+   ],
+   "instagram_official": null,
+   "hashtags": [
+    "kawaguchiko",
+    "fujisan"
+   ],
+   "videos": [
+    "https://www.youtube.com/watch?v=xBL2p3ctp7w"
+   ]
   },
   {
    "id": "yudanaka",
@@ -3548,6 +3575,205 @@
     "video": null
    },
    "google_place_id": null
+  },
+  {
+   "id": "kw-oishi",
+   "region": "kawaguchiko",
+   "name": "Oishi Park",
+   "kind": "viewpoint",
+   "size": "short",
+   "why": "A flat, free lakeside promenade with Fuji straight across the water; the easiest Fuji view of the trip for her",
+   "hours": "Always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat paths along the north shore",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://en.kawaguchiko.net/park-en/oishi-park",
+    "map": "https://www.google.com/maps/search/?api=1&query=Oishi%20Park%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Oishi%20Park%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-ropeway",
+   "region": "kawaguchiko",
+   "name": "Mt Fuji Panoramic Ropeway",
+   "kind": "nature",
+   "size": "main",
+   "why": "Three minutes up to the Kachi Kachi viewpoint over the lake and Fuji; the main outing, with the lake cruise",
+   "hours": "9:00-17:00 in winter; stops in strong wind",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Seated; a few steps at the top deck",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6905.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Mt%20Fuji%20Panoramic%20Ropeway%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Mt%20Fuji%20Panoramic%20Ropeway%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-cruise",
+   "region": "kawaguchiko",
+   "name": "Lake Kawaguchi sightseeing boat",
+   "kind": "nature",
+   "size": "short",
+   "why": "Twenty minutes on the lake with the Fuji view from the water",
+   "hours": "9:00-16:30",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6900.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Lake%20Kawaguchi%20sightseeing%20boat%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Lake%20Kawaguchi%20sightseeing%20boat%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-chureito",
+   "region": "kawaguchiko",
+   "name": "Chureito Pagoda",
+   "kind": "viewpoint",
+   "size": "short",
+   "why": "The postcard shot: the red pagoda with Fuji behind. 398 steps, so for the early crew only",
+   "hours": "Always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "398 steps; she stays below or at the shrine",
+   "status": "avoid_for_her",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6917.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Chureito%20Pagoda%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Chureito%20Pagoda%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-kubota",
+   "region": "kawaguchiko",
+   "name": "Itchiku Kubota Art Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Kimono painted as Fuji landscapes, in a Gaudi-like building; the cloudy-day option",
+   "hours": "10:00-16:30; January closing days differ between sources, check",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6927.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Itchiku%20Kubota%20Art%20Museum%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Itchiku%20Kubota%20Art%20Museum%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-onsen-foot",
+   "region": "kawaguchiko",
+   "name": "Lakeside footbaths and the Kawaguchiko Music Forest",
+   "kind": "experience",
+   "size": "short",
+   "why": "Free footbaths on the north shore and a small European music-box museum; gentle afternoons",
+   "hours": "Music Forest 10:00-17:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6900.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Lakeside%20footbaths%20and%20the%20Kawaguchiko%20Music%20Forest%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Lakeside%20footbaths%20and%20the%20Kawaguchiko%20Music%20Forest%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-hoto-fudou",
+   "region": "kawaguchiko",
+   "name": "Hoto Fudou (Higashi-Koiji)",
+   "kind": "food",
+   "size": "meal",
+   "why": "Hoto, the thick flat noodle stew of Yamanashi, in a big white dome; about 300 seats, so six is easy",
+   "hours": "11:00-20:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥1,320, cash",
+   "booking": null,
+   "links": {
+    "source": "https://livejapan.com/en/in-tokyo/in-pref-fuji_mountain/in-mount_fuji/article-a0005559/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hoto%20Fudou%20(Higashi-Koiji)%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hoto%20Fudou%20(Higashi-Koiji)%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "food": {
+    "type": "Hoto noodle stew",
+    "price_band": "¥",
+    "recommended_by": "LIVE JAPAN",
+    "group_of_6": "Yes, about 300 seats",
+    "pregnancy_note": "All cooked; the pot is a vegetable and miso stew"
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-kosaku",
+   "region": "kawaguchiko",
+   "name": "Hoto Kosaku Kawaguchiko",
+   "kind": "food",
+   "size": "meal",
+   "why": "The other hoto house, by the lake, with pork and bean hoto and a long tatami room",
+   "hours": "11:00-19:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥1,500-2,000",
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6900.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hoto%20Kosaku%20Kawaguchiko%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hoto%20Kosaku%20Kawaguchiko%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "food": {
+    "type": "Hoto noodle stew",
+    "price_band": "¥",
+    "recommended_by": "japan-guide",
+    "group_of_6": "Large tatami rooms; walk in",
+    "pregnancy_note": "All cooked"
+   },
+   "google_place_id": null
   }
  ],
  "versions": [
@@ -3968,6 +4194,74 @@
    ],
    "gains": "A classic onsen town in crab season",
    "gives_up": "Hakone and Fuji; 5-6 h back to Tokyo",
+   "moves": 6
+  },
+  {
+   "id": "fuji-lake",
+   "name": "Fuji across the lake instead of Hakone",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-24",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": null
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-24",
+     "to": "2026-12-28",
+     "nights": 4,
+     "lodging": "rental",
+     "note": null
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-28",
+     "to": "2026-12-30",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Via Shirakawa-go on the 8:40 bus"
+    },
+    {
+     "region": "gero",
+     "from": "2026-12-30",
+     "to": "2027-01-01",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": "New Year's Eve"
+    },
+    {
+     "region": "kyoto",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": "rental",
+     "note": "Nara on 4 Jan"
+    },
+    {
+     "region": "kawaguchiko",
+     "from": "2027-01-05",
+     "to": "2027-01-07",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": "Fuji across the lake; via Mishima"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-07",
+     "to": "2027-01-09",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": null
+    }
+   ],
+   "gains": "The postcard Fuji view from a lakeside ryokan, hoto noodles, a new place for the two of you",
+   "gives_up": "Hakone's five museums on a cloudy day; about an hour more from Kyoto",
    "moves": 6
   }
  ],

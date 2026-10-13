@@ -117,7 +117,8 @@ export function VersionView({ id }: { id: string }) {
       >
         {guide ? (
           <p className="display text-[1.35rem] leading-tight text-ink">
-            {guide.theme}. <span className="text-ink-2">{guide.tagline}</span>
+            {guide.theme.toLowerCase() === version.name.toLowerCase() ? null : <>{guide.theme}. </>}
+            <span className="text-ink-2">{guide.tagline}</span>
           </p>
         ) : null}
         {version.gains ? (

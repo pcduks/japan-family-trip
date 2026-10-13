@@ -20,7 +20,7 @@ const TABS: { id: string; file: string; label: string; region?: string }[] = [
 
 /** The tab for a region id, so stays and place lists can link straight to its guide. */
 export function reportTabForRegion(regionId: string): string | null {
-  const map: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", hakone: "hakone" };
+  const map: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", hakone: "hakone", kawaguchiko: "hakone" };
   return map[regionId] ?? null;
 }
 

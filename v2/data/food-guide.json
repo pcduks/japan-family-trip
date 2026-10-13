@@ -1,112 +1,333 @@
 {
   "_about": "The food research, region by region: what each place is about at the table, what she can eat, what is open on our dates, the guides each pick came from, and the picks that are not (yet) in the places library. Restaurants that are in the library carry their own 'who recommends it' and link. Sources: the plan doc's region guides (docs/research/plan-doc/1x-*.md) and the pregnancy research (docs/research/08-pregnancy.md §7.2).",
   "how_we_eat": [
-    { "title": "Tables for six are the hard part", "text": "Most of the places we want seat 20 to 40. Book dinner wherever a page says 'reserve'; for the small ramen and soba counters, split into two tables of three or go at 11:30. Where a restaurant books only up to four, we walk in early or split." },
-    { "title": "Ryokan nights are dinner and breakfast", "text": "In Gero and Hakone the kaiseki dinner and the breakfast are part of the stay, served at a set time (usually 18:00 or 18:30). On those days we only need lunch and snacks. Tell the ryokan about her when booking: they swap the sashimi courses for cooked ones with three days' notice." },
-    { "title": "New Year closes the restaurants", "text": "Most restaurants in Kyoto close 1–3 Jan; department-store food halls reopen on 2 Jan. Convenience stores and station bakeries stay open. The Kyoto house gets stocked on arrival on 1 Jan from a convenience store; proper meals start again on the 2nd with the places marked 'open over New Year'." },
-    { "title": "Lunch is the cheap kaiseki", "text": "The same kitchen charges a third at lunch. Ukihashi in Kyoto, Tsunahachi in Tokyo and the Fujiya dining room in Hakone are all best at midday. Dinners go to the izakaya-style places: oden in Kanazawa, yakiniku in Takayama." },
-    { "title": "Depachika for the easy nights", "text": "Department-store basements (Isetan in Shinjuku, Daimaru in Kyoto, Kanazawa's Omicho market stalls) make a hotel-room dinner for six in ten minutes: bento, tempura, fruit, sweets. Good for the arrival night and the night before an early train." },
-    { "title": "Cash, and a note in Japanese", "text": "Soba shops and old places take cash. Carry ¥20,000 each. For her, a note to show: 「妊娠中です。生もの抜きでお願いします」 (I am pregnant, nothing raw please)." }
+    {
+      "title": "Tables for six are the hard part",
+      "text": "Most of the places we want seat 20 to 40. Book dinner wherever a page says 'reserve'; for the small ramen and soba counters, split into two tables of three or go at 11:30. Where a restaurant books only up to four, we walk in early or split."
+    },
+    {
+      "title": "Ryokan nights are dinner and breakfast",
+      "text": "In Gero and Hakone the kaiseki dinner and the breakfast are part of the stay, served at a set time (usually 18:00 or 18:30). On those days we only need lunch and snacks. Tell the ryokan about her when booking: they swap the sashimi courses for cooked ones with three days' notice."
+    },
+    {
+      "title": "New Year closes the restaurants",
+      "text": "Most restaurants in Kyoto close 1–3 Jan; department-store food halls reopen on 2 Jan. Convenience stores and station bakeries stay open. The Kyoto house gets stocked on arrival on 1 Jan from a convenience store; proper meals start again on the 2nd with the places marked 'open over New Year'."
+    },
+    {
+      "title": "Lunch is the cheap kaiseki",
+      "text": "The same kitchen charges a third at lunch. Ukihashi in Kyoto, Tsunahachi in Tokyo and the Fujiya dining room in Hakone are all best at midday. Dinners go to the izakaya-style places: oden in Kanazawa, yakiniku in Takayama."
+    },
+    {
+      "title": "Depachika for the easy nights",
+      "text": "Department-store basements (Isetan in Shinjuku, Daimaru in Kyoto, Kanazawa's Omicho market stalls) make a hotel-room dinner for six in ten minutes: bento, tempura, fruit, sweets. Good for the arrival night and the night before an early train."
+    },
+    {
+      "title": "Cash, and a note in Japanese",
+      "text": "Soba shops and old places take cash. Carry ¥20,000 each. For her, a note to show: 「妊娠中です。生もの抜きでお願いします」 (I am pregnant, nothing raw please)."
+    }
   ],
   "for_her": {
     "summary": "Japanese obstetric advice does not ban raw fish outright: fresh fish at a reputable counter is fine in moderation. The real risks are food poisoning and mercury in big predatory fish. We keep it simple on this trip: cooked or seared freely, raw fish only at a proper sushi counter, nothing raw at convenience stores, no raw shellfish, no raw egg, no rare meat, no liver.",
-    "fine": ["Tempura, tonkatsu, karaage", "Sukiyaki and shabu-shabu, with the beef cooked through and no raw-egg dip", "Yakitori ordered well done (よく焼き)", "Oden, nabe, hot pot, kamameshi", "Soba, udon, ramen (go easy on the broth for the salt)", "Cooked crab, grilled fish, grilled eel without the liver", "Yudofu, tofu kaiseki, miso soup, natto", "Wagashi, mochi, matcha (one or two cups a day), pasteurised dairy"],
-    "careful": ["Raw fish: only at a reputable counter, same day, a few pieces; skip bluefin and bigeye tuna, swordfish and kinmedai (mercury); yellowfin, salmon, mackerel and shrimp are unrestricted", "Kobako crab: eat the cooked meat, skip the raw roe and innards", "Kaiseki at the ryokan: tell them when booking and the sashimi course becomes a cooked one", "Caffeine: about two small coffees a day in total; matcha counts"],
-    "avoid": ["Raw shellfish and oysters", "Raw egg: tamago-kake-gohan, the sukiyaki dip, raw-egg sauces", "Rare or raw meat: yukke, tataki, basashi, Hida beef sushi, rare steak", "Liver: eel liver (kimoyaki), ankimo, foie gras, grilled liver", "Cold-smoked salmon, raw ham, pâté, unpasteurised imported soft cheese", "Alcohol"],
+    "fine": [
+      "Tempura, tonkatsu, karaage",
+      "Sukiyaki and shabu-shabu, with the beef cooked through and no raw-egg dip",
+      "Yakitori ordered well done (よく焼き)",
+      "Oden, nabe, hot pot, kamameshi",
+      "Soba, udon, ramen (go easy on the broth for the salt)",
+      "Cooked crab, grilled fish, grilled eel without the liver",
+      "Yudofu, tofu kaiseki, miso soup, natto",
+      "Wagashi, mochi, matcha (one or two cups a day), pasteurised dairy"
+    ],
+    "careful": [
+      "Raw fish: only at a reputable counter, same day, a few pieces; skip bluefin and bigeye tuna, swordfish and kinmedai (mercury); yellowfin, salmon, mackerel and shrimp are unrestricted",
+      "Kobako crab: eat the cooked meat, skip the raw roe and innards",
+      "Kaiseki at the ryokan: tell them when booking and the sashimi course becomes a cooked one",
+      "Caffeine: about two small coffees a day in total; matcha counts"
+    ],
+    "avoid": [
+      "Raw shellfish and oysters",
+      "Raw egg: tamago-kake-gohan, the sukiyaki dip, raw-egg sauces",
+      "Rare or raw meat: yukke, tataki, basashi, Hida beef sushi, rare steak",
+      "Liver: eel liver (kimoyaki), ankimo, foie gras, grilled liver",
+      "Cold-smoked salmon, raw ham, pâté, unpasteurised imported soft cheese",
+      "Alcohol"
+    ],
     "sources": [
-      { "label": "MHLW: mercury in fish for pregnant women", "url": "https://www.mhlw.go.jp/content/000533682.pdf" },
-      { "label": "MHLW: listeria", "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000055260.html" },
-      { "label": "Dr Daisuke Shigemi on sushi in pregnancy (Japanese)", "url": "https://news.yahoo.co.jp/expert/articles/0579957961a8eb6dfbc9b1a79a2236662d38da54" },
-      { "label": "Mynavi, doctor-reviewed (Japanese)", "url": "https://kosodate.mynavi.jp/articles/7089" },
-      { "label": "NHS: foods to avoid in pregnancy", "url": "https://www.nhs.uk/pregnancy/keeping-well/foods-to-avoid/" }
+      {
+        "label": "MHLW: mercury in fish for pregnant women",
+        "url": "https://www.mhlw.go.jp/content/000533682.pdf"
+      },
+      {
+        "label": "MHLW: listeria",
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000055260.html"
+      },
+      {
+        "label": "Dr Daisuke Shigemi on sushi in pregnancy (Japanese)",
+        "url": "https://news.yahoo.co.jp/expert/articles/0579957961a8eb6dfbc9b1a79a2236662d38da54"
+      },
+      {
+        "label": "Mynavi, doctor-reviewed (Japanese)",
+        "url": "https://kosodate.mynavi.jp/articles/7089"
+      },
+      {
+        "label": "NHS: foods to avoid in pregnancy",
+        "url": "https://www.nhs.uk/pregnancy/keeping-well/foods-to-avoid/"
+      }
     ]
   },
   "ryokan_meals": {
     "text": "Two ryokan stays, four dinners, four breakfasts. The New Year's Eve dinner in Gero is a kaiseki with toshikoshi soba at the end; breakfast on 1 Jan is osechi (the lacquer boxes), ozoni soup and a sip of otoso. In Hakone the dinner is the house kaiseki, usually with a hot pot or a grilled course, and breakfast is grilled fish, rice, miso soup and pickles. Both ryokan can serve dinner in the room for her if asked.",
-    "ask_for": ["2 rooms × 3, same plan, same dinner sitting", "Cooked courses instead of sashimi for one guest (妊娠中)", "Dinner in the room, or a table with chairs rather than the floor", "Whether the New Year plan is mandatory and its minimum nights"]
+    "ask_for": [
+      "2 rooms × 3, same plan, same dinner sitting",
+      "Cooked courses instead of sashimi for one guest (妊娠中)",
+      "Dinner in the room, or a table with chairs rather than the floor",
+      "Whether the New Year plan is mandatory and its minimum nights"
+    ]
   },
   "regions": {
     "tokyo": {
       "title": "Tokyo",
-      "dishes": ["Tonkatsu", "Tempura", "Sukiyaki and shabu-shabu", "Yakitori", "Soba", "Grilled eel", "Depachika bento"],
+      "dishes": [
+        "Tonkatsu",
+        "Tempura",
+        "Sukiyaki and shabu-shabu",
+        "Yakitori",
+        "Soba",
+        "Grilled eel",
+        "Depachika bento"
+      ],
       "intro": "Tokyo is the easiest city in the world to eat well in and the hardest to choose in. The research picks cooked food at old houses so the whole table, including her, eats the same thing: tonkatsu in a converted bathhouse, tempura from 1923, sukiyaki in private rooms, Tokyo's oldest yakitori, soba from 1884. The family's own list of 56 saved places (bars, ramen, izakaya) is at the bottom; those are ours, not researched for this trip.",
       "for_her": "All the researched picks are cooked. At Unafuji skip the eel-liver add-on. At Imahan, no raw-egg dip with the sukiyaki.",
       "dates": "Four nights from 20 Dec and two from 7 Jan. Everything is open in December; Imahan closes over New Year but we are back on 7 Jan. Isehiro and Kanda Matsuya close on Sundays (20 Dec is a Sunday, so they are for the weekdays).",
       "guides": [
-        { "label": "Michelin Guide Tokyo 2026: the 114 Bib Gourmands are the affordable picks", "url": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-tokyo-2026-stars-reveal" },
-        { "label": "Tabelog Award 2026", "url": "https://award.tabelog.com/en" },
-        { "label": "Time Out: the best kissaten", "url": "https://www.timeout.com/tokyo/restaurants/best-kissaten-coffee-shops-in-tokyo" },
-        { "label": "JNTO: a guide to depachika", "url": "https://www.japan.travel/en/story/depachika-guide/" },
-        { "label": "The family's Tokyo for Six guide", "url": "https://claude.ai/artifact/WGmgutnpVdHdwH9iAmxuyi" }
+        {
+          "label": "Michelin Guide Tokyo 2026: the 114 Bib Gourmands are the affordable picks",
+          "url": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-tokyo-2026-stars-reveal"
+        },
+        {
+          "label": "Tabelog Award 2026",
+          "url": "https://award.tabelog.com/en"
+        },
+        {
+          "label": "Time Out: the best kissaten",
+          "url": "https://www.timeout.com/tokyo/restaurants/best-kissaten-coffee-shops-in-tokyo"
+        },
+        {
+          "label": "JNTO: a guide to depachika",
+          "url": "https://www.japan.travel/en/story/depachika-guide/"
+        },
+        {
+          "label": "The family's Tokyo for Six guide",
+          "url": "https://claude.ai/artifact/WGmgutnpVdHdwH9iAmxuyi"
+        }
       ],
       "extras": []
     },
     "kanazawa": {
       "title": "Kanazawa",
-      "dishes": ["Kobako crab (Nov–Dec only)", "Kanazawa oden", "Jibuni duck stew", "Nodoguro", "Kaga kaiseki", "Gold-leaf soft-serve"],
+      "dishes": [
+        "Kobako crab (Nov–Dec only)",
+        "Kanazawa oden",
+        "Jibuni duck stew",
+        "Nodoguro",
+        "Kaga kaiseki",
+        "Gold-leaf soft-serve"
+      ],
       "intro": "Kanazawa in late December is crab season. The female kobako crab is in season only in November and December, so our four nights land on its last week. The town's other dish is oden, cooked slowly in a dashi broth: there are three famous oden houses and a station one, and oden is the best thing on the list for her because everything in the pot is cooked. Tsubajin, a 270-year-old ryotei, is the celebration dinner if we want one.",
       "for_her": "Oden, jibuni, tempura, katsu curry and cooked crab. Ask for nama-mono nashi (nothing raw). At the crab table she takes the cooked meat and skips the raw roe and innards.",
       "dates": "24–28 Dec. Akadama closes Mondays (28 Dec, our leaving day), Miyuki Sundays (27 Dec), Tsubajin Wednesdays. Omicho market is open on our dates; it closes 1–3 Jan.",
       "guides": [
-        { "label": "Visit Kanazawa: the cuisine of Kanazawa", "url": "https://visitkanazawa.jp/en/feature/detail_239.html" },
-        { "label": "Tabelog: Kanazawa oden", "url": "https://tabelog.com/en/matome/32286/" },
-        { "label": "Magical Trip: 16 Kanazawa restaurants", "url": "https://www.magical-trip.com/media/top-16-must-try-restaurants-in-kanazawa-2025-sushi-kaiseki-local-favorites/" },
-        { "label": "japan.travel: kobako crab", "url": "https://www.japan.travel/en/articles-from-2020/kobakogani-snow-crab-of-kaga" }
+        {
+          "label": "Visit Kanazawa: the cuisine of Kanazawa",
+          "url": "https://visitkanazawa.jp/en/feature/detail_239.html"
+        },
+        {
+          "label": "Tabelog: Kanazawa oden",
+          "url": "https://tabelog.com/en/matome/32286/"
+        },
+        {
+          "label": "Magical Trip: 16 Kanazawa restaurants",
+          "url": "https://www.magical-trip.com/media/top-16-must-try-restaurants-in-kanazawa-2025-sushi-kaiseki-local-favorites/"
+        },
+        {
+          "label": "japan.travel: kobako crab",
+          "url": "https://www.japan.travel/en/articles-from-2020/kobakogani-snow-crab-of-kaga"
+        }
       ],
       "extras": [
-        { "name": "Hakuichi", "url": "https://visitkanazawa.jp/en/restaurants/detail_20037.html", "what": "Gold-leaf soft-serve by Kenroku-en, ¥", "who": "Visit Kanazawa", "six": "Walk in", "hours": "Not confirmed", "map": "https://www.google.com/maps/search/?api=1&query=Hakuichi+Kenrokuen" }
+        {
+          "name": "Hakuichi",
+          "url": "https://visitkanazawa.jp/en/restaurants/detail_20037.html",
+          "what": "Gold-leaf soft-serve by Kenroku-en, ¥",
+          "who": "Visit Kanazawa",
+          "six": "Walk in",
+          "hours": "Not confirmed",
+          "map": "https://www.google.com/maps/search/?api=1&query=Hakuichi+Kenrokuen"
+        }
       ]
     },
     "takayama": {
       "title": "Takayama and Gero",
-      "dishes": ["Hida beef, grilled or in shabu-shabu", "Hoba miso on a magnolia leaf", "Takayama ramen", "Stone-milled soba", "Sake from the old-town breweries"],
+      "dishes": [
+        "Hida beef, grilled or in shabu-shabu",
+        "Hoba miso on a magnolia leaf",
+        "Takayama ramen",
+        "Stone-milled soba",
+        "Sake from the old-town breweries"
+      ],
       "intro": "Takayama is Hida beef country: yakiniku, shabu-shabu, steak on the teppan, burgers, and skewers at the morning market. Hoba miso, grilled on a magnolia leaf, is the local vegetable dish. The ramen is a thin soy broth. The six breweries in the old town run tasting bars. In Gero the ryokan feeds us; the town adds footbath cafés and a Gassho Village snack stall.",
       "for_her": "Skip Hida beef sushi, rare steak and the raw-egg dip with sukiyaki. Cooked yakiniku, shabu-shabu, hoba miso, soba and ramen are all fine; the burgers come well done on request.",
       "dates": "28–30 Dec. On Tue 29 Dec, Kyoya, Menya Shirakawa and Heianraku are closed; that leaves Maruaki, Kitchen Hida and the soba places. Maruaki closes only on New Year's Day. In Gero on 30–31 Dec the ryokan covers dinner.",
       "guides": [
-        { "label": "Inside Kyoto: where to eat in Takayama", "url": "https://www.insidekyoto.com/best-places-to-eat-in-takayama" },
-        { "label": "Japan Alps: Takayama food", "url": "https://www.japan-alps.com/takayama-food/" },
-        { "label": "Machiya Inn: the best ramen", "url": "https://machiya-inn-japan.com/blog/?p=10209" },
-        { "label": "Savor Japan: Hida beef", "url": "https://savorjapan.com/index.php/contents/discover-oishii-japan/5-restaurants-where-you-can-taste-the-brand-wagyu-hida-beef-gifu" },
-        { "label": "Tabelog: Takayama izakaya", "url": "https://tabelog.com/en/matome/30383/" }
+        {
+          "label": "Inside Kyoto: where to eat in Takayama",
+          "url": "https://www.insidekyoto.com/best-places-to-eat-in-takayama"
+        },
+        {
+          "label": "Japan Alps: Takayama food",
+          "url": "https://www.japan-alps.com/takayama-food/"
+        },
+        {
+          "label": "Machiya Inn: the best ramen",
+          "url": "https://machiya-inn-japan.com/blog/?p=10209"
+        },
+        {
+          "label": "Savor Japan: Hida beef",
+          "url": "https://savorjapan.com/index.php/contents/discover-oishii-japan/5-restaurants-where-you-can-taste-the-brand-wagyu-hida-beef-gifu"
+        },
+        {
+          "label": "Tabelog: Takayama izakaya",
+          "url": "https://tabelog.com/en/matome/30383/"
+        }
       ],
       "extras": [
-        { "name": "Funasaka Sake Brewery", "url": "https://www.japan.travel/en/spot/153/", "what": "Tasting bar and a Hida beef restaurant, ¥–¥¥", "who": "JNTO", "six": "Walk in", "hours": "Not confirmed", "map": "https://www.google.com/maps/search/?api=1&query=Funasaka%20Sake%20Brewery%20Takayama" },
-        { "name": "Ranka Coffee", "url": "https://www.fun-japan.jp/en/articles/9938", "what": "Stone-milled coffee, matcha cappuccino, ¥", "who": "FUN! JAPAN", "six": "Small", "hours": "Not confirmed", "map": "https://www.google.com/maps/search/?api=1&query=Ranka%20Coffee%20Takayama" }
+        {
+          "name": "Funasaka Sake Brewery",
+          "url": "https://www.japan.travel/en/spot/153/",
+          "what": "Tasting bar and a Hida beef restaurant, ¥–¥¥",
+          "who": "JNTO",
+          "six": "Walk in",
+          "hours": "Not confirmed",
+          "map": "https://www.google.com/maps/search/?api=1&query=Funasaka%20Sake%20Brewery%20Takayama"
+        },
+        {
+          "name": "Ranka Coffee",
+          "url": "https://www.fun-japan.jp/en/articles/9938",
+          "what": "Stone-milled coffee, matcha cappuccino, ¥",
+          "who": "FUN! JAPAN",
+          "six": "Small",
+          "hours": "Not confirmed",
+          "map": "https://www.google.com/maps/search/?api=1&query=Ranka%20Coffee%20Takayama"
+        }
       ]
     },
     "kyoto": {
       "title": "Kyoto and Nara",
-      "dishes": ["Yudofu by the temples", "Kaiseki at lunch", "Obanzai home cooking", "Udon", "Kobe beef", "Wagashi and matcha", "Kamameshi and fresh mochi in Nara"],
+      "dishes": [
+        "Yudofu by the temples",
+        "Kaiseki at lunch",
+        "Obanzai home cooking",
+        "Udon",
+        "Kobe beef",
+        "Wagashi and matcha",
+        "Kamameshi and fresh mochi in Nara"
+      ],
       "intro": "Kyoto's food is quieter than Tokyo's: simmered tofu in a temple garden, a kaiseki lunch that costs a third of the dinner, udon, and sweets with matcha. The research picked places that were open over New Year last year, because we arrive on 1 Jan and most of the city's restaurants close until the 3rd. Nara on 4 Jan adds rice cooked in an iron pot and mochi pounded in front of you.",
       "for_her": "Wagyu well done. Yudofu, soba, udon and kamameshi are all cooked. The kaiseki lunch at Ukihashi can be ordered without raw courses when booking.",
       "dates": "1–5 Jan. On 1 Jan: convenience stores and the hotel. Mouriya is open 1–3 Jan with a 10% surcharge; Ukihashi was open over New Year last year; Inoda is open all year from 7:00. Okutan and Omen close Thursdays; Kagizen Mondays (4 Jan, our Nara day). Kamameshi Shizuka in Nara closes Tuesdays, so it works on Mon 4 Jan.",
       "guides": [
-        { "label": "The Tokyo Chapter: what's open in Kyoto 1–3 Jan", "url": "https://www.thetokyochapter.com/?p=19044" },
-        { "label": "Inside Kyoto: New Year's in Kyoto", "url": "https://www.insidekyoto.com/new-years-in-kyoto" },
-        { "label": "Leaf Kyoto: hatsumode guide", "url": "https://leafkyoto.net/en/221125-kyoto-hatsumode" },
-        { "label": "japan-guide: New Year closures", "url": "https://www.japan-guide.com/e/e2276.html" },
-        { "label": "The family's Kyoto guide", "url": "https://claude.ai/artifact/R5h7gGy8NcavyHmpNRJ68u" }
+        {
+          "label": "The Tokyo Chapter: what's open in Kyoto 1–3 Jan",
+          "url": "https://www.thetokyochapter.com/?p=19044"
+        },
+        {
+          "label": "Inside Kyoto: New Year's in Kyoto",
+          "url": "https://www.insidekyoto.com/new-years-in-kyoto"
+        },
+        {
+          "label": "Leaf Kyoto: hatsumode guide",
+          "url": "https://leafkyoto.net/en/221125-kyoto-hatsumode"
+        },
+        {
+          "label": "japan-guide: New Year closures",
+          "url": "https://www.japan-guide.com/e/e2276.html"
+        },
+        {
+          "label": "The family's Kyoto guide",
+          "url": "https://claude.ai/artifact/R5h7gGy8NcavyHmpNRJ68u"
+        }
       ],
       "extras": [
-        { "name": "Nanzenji Junsei", "url": "https://tablejourney.com/japan/kyoto/restaurants/nanzenji-junsei/", "what": "Yudofu in a garden, ¥¥–¥¥¥", "who": "Table Journey", "six": "Books 2–4 only, so walk in or split", "hours": "Check", "map": "https://www.google.com/maps/search/?api=1&query=Nanzenji+Junsei+Kyoto" },
-        { "name": "Kamameshi Shizuka (Nara)", "url": "https://narashikanko.or.jp/en/spot/cuisine/shiduka-koen", "what": "Rice cooked in an iron pot, ¥¥", "who": "Nara Visitors Bureau", "six": "Check", "hours": "Closed Tuesdays", "map": "https://www.google.com/maps/search/?api=1&query=Kamameshi+Shizuka+Nara+Park" },
-        { "name": "Nakatanidou (Nara)", "url": "https://www.gltjp.com/en/directory/item/13285/", "what": "Fresh-pounded mochi, from ¥200", "who": "GLTJP", "six": "Takeaway", "hours": "10:00–19:00", "map": "https://www.google.com/maps/search/?api=1&query=Nakatanidou+Nara" }
+        {
+          "name": "Nanzenji Junsei",
+          "url": "https://tablejourney.com/japan/kyoto/restaurants/nanzenji-junsei/",
+          "what": "Yudofu in a garden, ¥¥–¥¥¥",
+          "who": "Table Journey",
+          "six": "Books 2–4 only, so walk in or split",
+          "hours": "Check",
+          "map": "https://www.google.com/maps/search/?api=1&query=Nanzenji+Junsei+Kyoto"
+        },
+        {
+          "name": "Kamameshi Shizuka (Nara)",
+          "url": "https://narashikanko.or.jp/en/spot/cuisine/shiduka-koen",
+          "what": "Rice cooked in an iron pot, ¥¥",
+          "who": "Nara Visitors Bureau",
+          "six": "Check",
+          "hours": "Closed Tuesdays",
+          "map": "https://www.google.com/maps/search/?api=1&query=Kamameshi+Shizuka+Nara+Park"
+        },
+        {
+          "name": "Nakatanidou (Nara)",
+          "url": "https://www.gltjp.com/en/directory/item/13285/",
+          "what": "Fresh-pounded mochi, from ¥200",
+          "who": "GLTJP",
+          "six": "Takeaway",
+          "hours": "10:00–19:00",
+          "map": "https://www.google.com/maps/search/?api=1&query=Nakatanidou+Nara"
+        }
       ]
     },
     "hakone": {
-      "title": "Hakone",
-      "dishes": ["Yumoto soba", "The ryokan kaiseki", "The Fujiya Hotel's 1930 dining room", "Tofu and mountain yam"],
-      "intro": "Hakone eats at the ryokan. Dinner and breakfast are included on both nights, so the research covers the lunches: the famous soba house in Yumoto on the day we arrive, the Fujiya Hotel's French dining room from 1930 or its Japanese villa from 1895, and a tofu house for a light day.",
+      "title": "Hakone, or Kawaguchiko",
+      "dishes": [
+        "Yumoto soba",
+        "The ryokan kaiseki",
+        "The Fujiya Hotel's 1930 dining room",
+        "Tofu and mountain yam",
+        "Hoto noodles, if Kawaguchiko"
+      ],
+      "intro": "Hakone eats at the ryokan. Dinner and breakfast are included on both nights, so the research covers the lunches: the famous soba house in Yumoto on the day we arrive, the Fujiya Hotel's French dining room from 1930 or its Japanese villa from 1895, and a tofu house for a light day. If the family swaps Hakone for Kawaguchiko, the lunch is hoto: Yamanashi's thick flat noodles stewed with pumpkin and vegetables in miso, served in an iron pot, all cooked, and the two big hoto houses seat six without booking.",
       "for_her": "Ask the ryokan for a cooked-only kaiseki when booking; the house menus usually include sashimi.",
-      "dates": "5–7 Jan. Hatsuhana closes Wednesdays (6 Jan), so go on arrival, Tue 5 Jan. Yamasoba closes Thursdays.",
+      "dates": "5–7 Jan. Hatsuhana closes Wednesdays (6 Jan), so go on arrival, Tue 5 Jan. Yamasoba closes Thursdays. In Kawaguchiko, Hoto Fudou is open daily 11:00–20:00 and takes cash.",
       "guides": [
-        { "label": "LIVE JAPAN: dining in Hakone", "url": "https://livejapan.com/ja/in-tokyo/in-pref-kanagawa/in-hakone_odawara/article-a0005610/" },
-        { "label": "LIVE JAPAN: hoto in Kawaguchiko", "url": "https://livejapan.com/en/in-tokyo/in-pref-fuji_mountain/in-mount_fuji/article-a0005559/" }
+        {
+          "label": "LIVE JAPAN: dining in Hakone",
+          "url": "https://livejapan.com/ja/in-tokyo/in-pref-kanagawa/in-hakone_odawara/article-a0005610/"
+        },
+        {
+          "label": "LIVE JAPAN: hoto in Kawaguchiko",
+          "url": "https://livejapan.com/en/in-tokyo/in-pref-fuji_mountain/in-mount_fuji/article-a0005559/"
+        }
       ],
       "extras": [
-        { "name": "Shika Jaya", "url": "https://livejapan.com/ja/in-tokyo/in-pref-kanagawa/in-hakone_odawara/article-a0005610/", "what": "Tofu and mountain-yam dishes", "who": "LIVE JAPAN", "six": "Book the upstairs room", "hours": "Lunch to 14:00, dinner to 19:30", "map": "https://www.google.com/maps/search/?api=1&query=Shika%20Jaya%20Hakone%20Yumoto" },
-        { "name": "Hakone Jinenjo Yamasoba", "url": "https://livejapan.com/ja/in-tokyo/in-pref-kanagawa/in-hakone_odawara/article-a0005610/", "what": "Soba, 90+ seats", "who": "LIVE JAPAN", "six": "Yes", "hours": "Closed Thursdays", "map": "https://www.google.com/maps/search/?api=1&query=Hakone%20Jinenjo%20Yamasoba" }
+        {
+          "name": "Shika Jaya",
+          "url": "https://livejapan.com/ja/in-tokyo/in-pref-kanagawa/in-hakone_odawara/article-a0005610/",
+          "what": "Tofu and mountain-yam dishes",
+          "who": "LIVE JAPAN",
+          "six": "Book the upstairs room",
+          "hours": "Lunch to 14:00, dinner to 19:30",
+          "map": "https://www.google.com/maps/search/?api=1&query=Shika%20Jaya%20Hakone%20Yumoto"
+        },
+        {
+          "name": "Hakone Jinenjo Yamasoba",
+          "url": "https://livejapan.com/ja/in-tokyo/in-pref-kanagawa/in-hakone_odawara/article-a0005610/",
+          "what": "Soba, 90+ seats",
+          "who": "LIVE JAPAN",
+          "six": "Yes",
+          "hours": "Closed Thursdays",
+          "map": "https://www.google.com/maps/search/?api=1&query=Hakone%20Jinenjo%20Yamasoba"
+        }
       ]
     }
   }

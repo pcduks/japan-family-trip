@@ -59,3 +59,15 @@ describe("lodging data", () => {
     expect(links.some((l) => l.label === "Airbnb")).toBe(true);
   });
 });
+
+describe("Fuji across the lake", () => {
+  it("swaps Hakone for Kawaguchiko, still counts as Fuji, and stays under the target", () => {
+    const v = data.versions.find((x) => x.id === "fuji-lake")!;
+    expect(v.stays.some((s) => s.region === "kawaguchiko")).toBe(true);
+    expect(v.stays.some((s) => s.region === "hakone")).toBe(false);
+    expect(v.stays.reduce((a, s) => a + s.nights, 0)).toBe(20);
+    expect(budgetOf(v, data.regions).perCoupleSgd).toBeLessThan(15000);
+    expect(farePerPerson("kyoto", "kawaguchiko", data.regions)).toBe(13300);
+    expect(lodgingFor("kawaguchiko")?.candidates.some((c) => c.name === "Konansou")).toBe(true);
+  });
+});

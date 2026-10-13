@@ -28,7 +28,7 @@ const GUIDE = foodGuide as unknown as {
 };
 
 /** Which region's food section covers a place's region (Gero sits with Takayama, Nara with Kyoto). */
-const FOOD_REGION: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", hakone: "hakone" };
+const FOOD_REGION: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", hakone: "hakone", kawaguchiko: "hakone" };
 
 /** Where a meal sits in the plan's day by day, if it does. */
 export function plannedOn(placeId: string, days: { version_id: string; date: string; items: { place_id: string | null; slot: string }[] }[], versionId = "plan"): { date: string; slot: string }[] {
