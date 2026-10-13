@@ -69,7 +69,7 @@ export function statsOf(v: Version, data: Pick<TripData, "regions" | "pace">): V
     shortestStay: v.stays.length ? Math.min(...v.stays.map((s) => s.nights)) : 0,
     restDays,
     newYearsEve: nye ? { region: nye.region, lodging: nye.lodging } : null,
-    fuji: v.stays.some((s) => s.region === "hakone"),
+    fuji: v.stays.some((s) => s.region === "hakone" || s.region === "kawaguchiko"),
     bases: new Set(v.stays.map((s) => s.region)).size,
   };
 }

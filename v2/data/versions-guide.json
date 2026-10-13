@@ -118,6 +118,25 @@
       "stay_notes": {
         "kinosaki": "Two nights, the usual minimum for its New Year and crab-season plans. Book a ryokan with a private bath for her; the Nishimuraya houses have Western beds and a lift."
       }
+    },
+    "fuji-lake": {
+      "theme": "Fuji across the lake instead of Hakone",
+      "tagline": "The postcard view from a lakeside ryokan; the rest of the plan unchanged.",
+      "feel": "Identical to the plan until Kyoto. Then the shinkansen to Mishima and the Fujikyu bus over the pass to Lake Kawaguchi, about four and a quarter hours door to door, an hour more than Hakone. The reward is the view: Fuji stands straight across the water, with nothing in the way, from the room, the bath, the north-shore promenade and the boat. One full day for the ropeway and the lake, a bowl of hoto noodles, and a dawn or two with the mountain pink. Then two hours on the Fuji Excursion train straight into Shinjuku for the last Tokyo days. Fuji shows fully on about six January mornings in ten.",
+      "activities": [
+        "Oishi Park: the flat lakeside promenade with Fuji straight ahead, the easiest Fuji view of the trip for her",
+        "The Panoramic Ropeway and the lake boat: the main outing",
+        "Chureito Pagoda for the early crew (398 steps), with the classic pagoda-and-Fuji shot",
+        "Hoto noodles at Hoto Fudou or Kosaku; footbaths on the north shore",
+        "The Itchiku Kubota kimono museum if it clouds over",
+        "Everything in the plan up to Kyoto, and the two Tokyo days after"
+      ],
+      "why": "The two of you have done Hakone together. Kawaguchiko is new for everyone, and the guide says it has the better Fuji view: straight across the lake, not over a ridge. For a family that mostly wants the mountain, that is the point of the stay.",
+      "suits": "Anyone whose must-do is Fuji itself. Flat shoreline for her and the parents; the pagoda steps are optional.",
+      "trade": "Hakone's five museums for a cloudy day, the ryokan-with-private-bath culture of Hakone (lake hotels are more hotel than inn), and about an hour more on the way from Kyoto. On a cloudy day there is less to do.",
+      "stay_notes": {
+        "kawaguchiko": "Two nights, like Hakone: one full day for the ropeway and the lake, and two dawns to catch Fuji clear. Arrival from Kyoto is mid-afternoon, so day one is the promenade and the bath."
+      }
     }
   }
 }

@@ -8,6 +8,7 @@ const REGION_COLORS: Record<string, string> = {
   kyoto: "#7048e8",
   nara: "#f08c00",
   hakone: "#0ca678",
+  kawaguchiko: "#0b7285",
   okuhida: "#1098ad",
   yudanaka: "#c2255c",
   okayama: "#5c940d",

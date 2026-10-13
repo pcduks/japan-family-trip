@@ -13,6 +13,7 @@ export const REGION_ART: Record<string, string> = {
   kyoto: "chapter-kyoto",
   nara: "chapter-kyoto",
   hakone: "chapter-fuji",
+  kawaguchiko: "chapter-fuji",
   yudanaka: "route-B",
   okayama: "chapter-setouchi",
   kinosaki: "chapter-tohoku",
