@@ -9,6 +9,11 @@
 name: Supabase setup (v2)
 
 on:
+  # Runs when this file is pushed to the setup branch (GitHub only lists
+  # workflow_dispatch workflows that already exist on the default branch).
+  push:
+    branches: [ccr-57489b00-8hd97m]
+    paths: [.github/workflows/supabase-setup.yml]
   workflow_dispatch:
     inputs:
       travellers_map:
