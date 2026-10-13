@@ -1,0 +1,115 @@
+# Japan trip planner (v2)
+
+The private planning app from `PRD.md` (Draft 2, 12 Oct 2026) for the family's winter trip, 20 Dec 2026 – 9 Jan 2027. The data is `trip-data.json` (schema v2) at the repository root: 109 places, 26 regions, 6 versions, the pace model, calendar rules and deadlines.
+
+This folder is a separate Next.js app. The earlier app ("Seis pelo Japão") stays at the repository root, untouched, until you decide what to keep.
+
+**Phase 1 (Align) is built:**
+
+| | Screen | What it does |
+|---|---|---|
+| A1 | **Board** `/` | Every version side by side: a timeline lane per version (same colour = same region, New Year window shaded), moves, travel hours, shortest stay, rest days, New Year's Eve, Fuji, gains and gives-up, rule warnings |
+| A2 | **Vote** `/vote` | Each person picks a pace and two must-dos from the library; the dashboard shows agreement and who hasn't answered |
+| A3 | **Vote** `/vote` | Ranking of the versions. Totals (Borda count) stay hidden, in the database too, until everyone has ranked or a planner reveals them |
+| A4 | **Versions** `/versions` | Copy any version, drag stays, change nights and lodging, rules check live, save, share, "Suggest to the plan". Planners accept or decline suggestions; every change to the plan is logged and can be reverted |
+| A5 | **Places** `/places` | The library with filters, photo-first browsing, and a page per place: Google photos, rating and reviews, YouTube embed, why go, hours, closures with source and checked date, effort for her, food details, hearts and comments |
+| A6 | **Map** `/map` | Google Map with the selected version's route, numbered stays, library places and candidate regions coloured by fit; a sketch map without a key |
+| A7 | **What we're missing** `/missing` | Candidate regions with the fit verdict and "Make a version with this swap" |
+
+The look: Fraunces for titles, Figtree for text, snow-paper light theme and night-sky dark theme, one colour per region everywhere, and the woodblock illustrations made for the earlier app as postcards for each region (home, version pages, candidates, the pace vote and the login screen); Google photos stay on the place pages. Station-stamp icons (`EkiStamp`) mark the home tiles. Large-text mode scales the whole UI.
+
+Plus: the §7 rules engine (`src/lib/rules.ts`) runs on every edit; the nights suggestion with a plain-language reason (`src/lib/nights.ts`); large-text mode; light and dark themes; sign-in by tapping your name (6-digit code by email); the `/api/import` and `/api/connector/*` endpoints for Claude (PRD §8), token-scoped.
+
+## Spike results (12 Oct 2026, `npm run spike`)
+
+| Check | Result |
+|---|---|
+| Places API (New) details + photos for Kenroku-en, Takayama Jinya, Kyoto National Museum | ✓ all three resolve; ratings, 5 reviews, 10 photos and opening hours each |
+| YouTube IFrame embed | ✓ embeddable video found; the standard player is used (`youtube-nocookie.com`) |
+| Anthropic vision → structured JSON | code in `src/lib/anthropic/extract.ts` (structured output with a JSON schema); run `npm run spike` with `ANTHROPIC_API_KEY` set to see it on a screenshot at `scripts/spike-sample.png` or on sample text |
+| Routes API TRANSIT, Tokyo Station → Kanazawa Station | ✗ returns no route (DRIVE works). So travel times stay curated in `src/lib/legs.ts`, and every move links to Google Maps transit directions (open question 5) |
+
+## Run it without any keys (demo mode)
+
+```bash
+cd v2
+npm install
+npm run dev        # http://localhost:3000
+```
+
+With no Supabase keys the app runs in demo mode: no sign-in, pick "I am…" under the name at the top right, and versions, votes, suggestions and comments stay in that browser. Google photos and reviews appear once `GOOGLE_PLACES_API_KEY` is set; the map once `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` is set. Demo mode is off in production builds unless `DEMO_MODE=1`.
+
+## Setup
+
+1. **Google Cloud** (PRD Appendix B): enable Maps JavaScript API, Places API (New), Routes API and YouTube Data API v3. Make a *browser key* limited to Maps JavaScript API with HTTP-referrer restrictions (`localhost:3000/*` and your Vercel domain), a *server key* limited to Places, Routes and YouTube, and a Map ID (optionally a dark one). Set a USD 10 budget alert.
+2. **Anthropic**: an API key with a monthly spend limit. `ANTHROPIC_MODEL` picks the model for drop extraction.
+3. **Supabase**: create a project (or reuse one), then apply `supabase/migrations/0100_trip_v2.sql` in the SQL editor, or
+   ```bash
+   SUPABASE_ACCESS_TOKEN=sbp_… SUPABASE_PROJECT_REF=… npm run db:push
+   ```
+   Everything lives in its own schema, `trip`, so it can share a project with the earlier app. The migration is safe to re-run. Then:
+   - Settings → API → **Exposed schemas**: make sure `trip` is listed (the migration tries to add it; check).
+   - Auth → Providers → Email: turn **off** "Allow new users to sign up".
+   - Auth → Hooks: add *Before User Created* → `trip.hook_before_user_created` as a second guard.
+   - Auth → Email: set the OTP length to 6, and put `{{ .Token }}` in the Magic Link template so the code is in the email (custom SMTP is needed for that; without it the email carries only the link, which also works).
+   - Auth → URL configuration: Site URL plus `http://localhost:3000/auth/confirm` and `https://<your-domain>/auth/confirm` as redirect URLs.
+4. `cp .env.example .env.local` and fill in the keys. `CLAUDE_CONNECTOR_TOKEN` is any long random string.
+5. Travellers: either `cp data/travellers.example.json data/travellers.json` with the seven names and emails (ids must match `trip.travellers` in `trip-data.json`; the file is git-ignored), or add them later from the app: sign in as the planner, open the name at the top right → **Family**. Each person added there gets a sign-in user and can tap their name on the login screen.
+6. `npm run seed`. It is idempotent: it upserts travellers (and pre-creates their auth users), imports `trip-data.json` by id, and resolves each place's `google_place_id` and coordinates with a Text Search biased to the region's centre. The plan version is created once and never overwritten by later imports. `--no-resolve` skips Google; `--file=path` imports another schema-v2 file.
+
+Without a machine at hand, the GitHub Actions workflow **Supabase setup (v2)** (`.github/workflows/supabase-setup.yml`) does steps 3 and 6 from repository secrets; see the comment at the top of the file.
+
+## Deploy to Vercel
+
+1. Import the GitHub repo. Set **Root Directory** to `v2` (keep "Include source files outside of the Root Directory" on: the build copies `../trip-data.json` in).
+2. Add every variable from `.env.example` under Settings → Environment Variables.
+3. Deploy. Add the production URL to the Maps key's referrer list and to Supabase's redirect URLs.
+
+## Claude updates (PRD §8)
+
+Both endpoints take `Authorization: Bearer $CLAUDE_CONNECTOR_TOKEN` (a planner session works too).
+
+```bash
+# Import a full or partial schema-v2 file; upserts by id, returns a change report
+curl -X POST https://<app>/api/import -H "Authorization: Bearer $CLAUDE_CONNECTOR_TOKEN" \
+  -H "Content-Type: application/json" --data @trip-data.json
+
+# Read
+curl -H "Authorization: Bearer $T" https://<app>/api/connector/versions
+curl -H "Authorization: Bearer $T" "https://<app>/api/connector/places?region=kyoto"
+# Write places, notes and drops (never the plan, votes or bookings)
+curl -X POST -H "Authorization: Bearer $T" https://<app>/api/connector/notes \
+  -d '{"target_type":"place","target_id":"ky-knm","body":"Re-checked: open 2–3 Jan."}'
+```
+
+Every record carries `source`, `checked_at`, `updated_by` and `verified`; the place page shows "checked 12 Oct by claude · unverified".
+
+## Decisions taken (PRD §15)
+
+1. Rank totals are hidden until everyone has voted; a planner can reveal them early. Pace and must-dos show live.
+2. Personal versions are visible to everyone by default; "Visible to the family" can be switched off while drafting.
+3. Drops: not yet built (Phase 2). Default stays "auto-added, marked dropped by X".
+4. Email-in for drops: not planned; upload and paste are enough.
+5. Routes API: no transit in Japan, so curated times plus Google Maps links.
+6. Supabase.
+
+## Scripts and layout
+
+| | |
+|---|---|
+| `npm run dev` / `build` / `start` | the app (each copies `../trip-data.json` into `src/data/` first) |
+| `npm run test` | vitest: rules engine, nights model, version helpers |
+| `npm run typecheck` / `lint` | `next typegen && tsc`, eslint |
+| `npm run spike` | the §16 spike |
+| `npm run seed` | idempotent seed/import |
+| `npm run db:push` | apply the migrations through the Supabase Management API |
+| `src/lib/rules.ts` | §7 rules on stays and day items |
+| `src/lib/nights.ts` | nights suggestion from the pace model |
+| `src/lib/legs.ts` | curated travel times between regions |
+| `src/lib/import.ts` | upsert-by-id import shared by the seed and `/api/import` |
+| `src/lib/anthropic/extract.ts` | screenshot/text → structured places (Phase 2 drops) |
+| `supabase/migrations/0100_trip_v2.sql` | the §10 model, RLS, auth hook, accept/revert functions |
+
+## Compliance (PRD §12)
+
+Google photos carry the author's name and link; reviews are shown with the author's link and "Reviews from Google"; only `place_id` is stored, details are cached for an hour. YouTube uses the standard embeddable player. No public pages: sign-in is restricted to the invited emails, and the app sends `noindex`.

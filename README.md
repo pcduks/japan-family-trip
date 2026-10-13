@@ -1,3 +1,5 @@
+> **New app (PRD v2):** the rebuild defined in `PRD.md` and `trip-data.json` lives in [`v2/`](v2/README.md), as its own Next.js project. Everything below describes the earlier app, which is unchanged.
+
 # Seis pelo Japão
 
 A private trip-planning web app for six travellers (20 Dec 2026 – 9 Jan 2027), formerly "Six Across Japan". The UI is in Portuguese; place names, the food list and Google reviews stay in English.
