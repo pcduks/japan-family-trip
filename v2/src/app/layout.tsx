@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { AppHeader, BottomNav } from "@/components/AppChrome";
+import { Gate } from "@/components/Gate";
 import { PREFS_BOOT_SCRIPT, Providers, type Me } from "@/components/providers";
 import { loadSnapshot } from "@/lib/data/loader";
 import { getViewer, serverSupabase } from "@/lib/supabase/server";
@@ -38,7 +39,9 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-dvh antialiased">
         <Providers snapshot={snapshot} viewer={me}>
           {me ? <AppHeader /> : null}
-          <div className={me ? "pb-24" : ""}>{children}</div>
+          <div className={me ? "pb-24" : ""}>
+            <Gate signedIn={!!me}>{children}</Gate>
+          </div>
           {me ? <BottomNav /> : null}
         </Providers>
       </body>
