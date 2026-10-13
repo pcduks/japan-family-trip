@@ -101,6 +101,35 @@ export function Home({ today }: { today: string }) {
         </section>
       ) : null}
 
+      <section className="card grid gap-3 p-4">
+        <div className="flex items-baseline justify-between">
+          <h2 className="text-[1.2rem]">New here? Start with these</h2>
+          <Link href="/guide" className="text-sm text-muted">
+            How it works →
+          </Link>
+        </div>
+        <ol className="grid gap-2 text-sm sm:grid-cols-3">
+          <li>
+            <Link href="/plan" className="block rounded-xl bg-bg-2 p-3 no-underline">
+              <b>1 · Read the report</b>
+              <span className="block text-ink-2">The plan and why, stay by stay, with a guide to each place.</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/versions/plan" className="block rounded-xl bg-bg-2 p-3 no-underline">
+              <b>2 · See the day by day</b>
+              <span className="block text-ink-2">What we do each day, what’s open, who goes early.</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/vote" className="block rounded-xl bg-bg-2 p-3 no-underline">
+              <b>3 · Vote</b>
+              <span className="block text-ink-2">Your pace, two must-dos, your ranking. By 25 Oct.</span>
+            </Link>
+          </li>
+        </ol>
+      </section>
+
       <Link href={next.href} className="card flex items-center gap-4 border-accent/40 p-4 no-underline">
         <EkiStamp motif={next.motif} ink="var(--accent)" size={72} rotate={-8} label="" />
         <span className="grid min-w-0 gap-0.5">
@@ -110,7 +139,9 @@ export function Home({ today }: { today: string }) {
         </span>
       </Link>
 
-      <section className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+      <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <Tile href="/plan" title="The report" blurb="the plan and the reasoning" motif="brush" />
+        <Tile href="/food" title="Food" blurb="who recommends what, and why" motif="bowl" />
         <Tile href="/board" title="Board" blurb={`${snapshot.versions.filter((v) => v.status !== "legacy").length} versions side by side`} motif="train" />
         <Tile href="/vote" title="Vote" blurb={`${paceVotes.length}/${snapshot.travellers.length} picked a pace`} motif="ballot" />
         <Tile href="/places" title="Places" blurb={`${snapshot.places.length} researched`} motif="pin" />

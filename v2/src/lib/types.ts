@@ -251,6 +251,28 @@ export interface PlanHistoryEntry {
   at: string;
 }
 
+export type DaySlot = "early" | "morning" | "afternoon" | "evening" | "rest";
+export type Crew = "everyone" | "early" | "easy";
+
+export interface DayItem {
+  id?: string;
+  place_id: string | null;
+  slot: DaySlot;
+  crew: Crew;
+  note?: string | null;
+  sort?: number;
+}
+
+/** One day of a version's day plan (PRD §4.5). `kind` is Arrive, Explore, Move…, Easy, Free or Fly. */
+export interface Day {
+  id?: string;
+  version_id: string;
+  date: string;
+  kind: string | null;
+  title: string | null;
+  items: DayItem[];
+}
+
 export interface Snapshot {
   trip: TripData["trip"];
   pace: PaceModel;
@@ -266,6 +288,8 @@ export interface Snapshot {
   comments: Comment[];
   reactions: Reaction[];
   history: PlanHistoryEntry[];
+  days: Day[];
+  food_list: FoodListItem[];
   related_docs: Record<string, string>;
   /** Where the data came from, so the UI can say so. */
   source: "supabase" | "file";

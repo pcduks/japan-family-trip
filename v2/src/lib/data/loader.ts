@@ -5,8 +5,8 @@
  */
 import type { DB } from "../supabase/types";
 import { daysBetween } from "../dates";
-import type { Comment, Place, PlanHistoryEntry, Reaction, Region, Snapshot, Stay, Suggestion, Traveller, Version, Vote } from "../types";
-import { tripData } from "./file";
+import type { Comment, Day, Place, PlanHistoryEntry, Reaction, Region, Snapshot, Stay, Suggestion, Traveller, Version, Vote } from "../types";
+import { bundledPlanDays, splitDayTitle, tripData } from "./file";
 
 type Row = Record<string, unknown>;
 
@@ -33,6 +33,8 @@ export function fileSnapshot(): Snapshot {
     comments: [],
     reactions: [],
     history: [],
+    days: bundledPlanDays(),
+    food_list: d.tokyo_personal_food_list,
     related_docs: d.related_docs,
     source: "file",
   };
@@ -139,7 +141,7 @@ export function rowToRegion(r: Row): Region {
 export async function loadSnapshot(sb: DB | null): Promise<Snapshot> {
   const base = fileSnapshot();
   if (!sb) return base;
-  const [travellers, regions, places, versions, stays, votes, suggestions, comments, reactions, history, deadlines] = await Promise.all([
+  const [travellers, regions, places, versions, stays, votes, suggestions, comments, reactions, history, deadlines, days] = await Promise.all([
     sb.from("travellers").select("id,name,role,notes").order("id"),
     sb.from("regions").select("*"),
     sb.from("places").select("*, closures(*)").order("sort"),
@@ -151,6 +153,7 @@ export async function loadSnapshot(sb: DB | null): Promise<Snapshot> {
     sb.from("reactions").select("*"),
     sb.from("plan_history").select("*").order("at", { ascending: false }).limit(50),
     sb.from("deadlines").select("*").order("date"),
+    sb.from("days").select("*, day_items(*)").order("date"),
   ]);
   const regionRows = check<Row[]>("regions", regions);
   const placeRows = check<Row[]>("places", places);
@@ -180,6 +183,23 @@ export async function loadSnapshot(sb: DB | null): Promise<Snapshot> {
     deadlines: (() => {
       const rows = check<Row[]>("deadlines", deadlines);
       return rows.length ? rows.map((d) => ({ id: d.id as string, date: d.date as string, item: d.item as string, source: (d.source as string | null) ?? null, done: (d.done as boolean) ?? false })) : base.deadlines;
+    })(),
+    days: (() => {
+      const rows = check<Row[]>("days", days);
+      if (!rows.length) return base.days;
+      return rows.map((r): Day => {
+        const { kind, title } = splitDayTitle((r.title as string | null) ?? null);
+        return {
+          id: r.id as string,
+          version_id: r.version_id as string,
+          date: r.date as string,
+          kind,
+          title,
+          items: ((r.day_items as Row[] | undefined) ?? [])
+            .sort((a, b) => (a.sort as number) - (b.sort as number))
+            .map((it) => ({ id: it.id as string, place_id: (it.place_id as string | null) ?? null, slot: it.slot as Day["items"][number]["slot"], crew: it.crew as Day["items"][number]["crew"], note: (it.note as string | null) ?? null, sort: it.sort as number })),
+        };
+      });
     })(),
     source: "supabase",
   };

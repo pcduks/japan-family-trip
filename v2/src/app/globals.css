@@ -276,3 +276,89 @@
     animation: none;
   }
 }
+
+/* Rendered markdown (the plan report). */
+.prose {
+  line-height: 1.6;
+}
+.prose > * + * {
+  margin-top: 0.9em;
+}
+.prose h1 {
+  font-size: 1.9rem;
+  margin-top: 0;
+}
+.prose h2 {
+  font-size: 1.45rem;
+  margin-top: 1.8em;
+}
+.prose h3 {
+  font-size: 1.15rem;
+  margin-top: 1.4em;
+}
+.prose a {
+  color: var(--indigo);
+  text-decoration: underline;
+}
+.prose ul,
+.prose ol {
+  padding-left: 1.3em;
+}
+.prose ul {
+  list-style: disc;
+}
+.prose ol {
+  list-style: decimal;
+}
+.prose li + li {
+  margin-top: 0.25em;
+}
+.prose blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 0.9em;
+  color: var(--ink-2);
+}
+.prose strong {
+  font-weight: 700;
+}
+.prose em {
+  color: var(--ink-2);
+}
+.prose .table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-inline: -1rem;
+  padding-inline: 1rem;
+}
+.prose table {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 100%;
+}
+.prose th,
+.prose td {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.45rem 0.6rem;
+  vertical-align: top;
+  text-align: left;
+  min-width: 7rem;
+}
+.prose th {
+  font-weight: 700;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.prose td:first-child {
+  font-weight: 600;
+}
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+.prose input[type="checkbox"] {
+  min-height: 0;
+  margin-right: 0.4em;
+}

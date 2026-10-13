@@ -18,6 +18,8 @@ This folder is a separate Next.js app. The earlier app ("Seis pelo Japão") stay
 
 The look: Fraunces for titles, Figtree for text, snow-paper light theme and night-sky dark theme, one colour per region everywhere, and the woodblock illustrations made for the earlier app as postcards for each region (home, version pages, candidates, the pace vote and the login screen); Google photos stay on the place pages. Station-stamp icons (`EkiStamp`) mark the home tiles. Large-text mode scales the whole UI.
 
+Reading before voting: **How this works** (`/guide`) explains the app to the family; **The report** (`/plan`) renders the whole plan doc (`docs/research/plan-doc/*.md`, copied in at build time) tab by tab; **Food** (`/food`) lists every researched restaurant with who recommends it, the source link, the table-for-six and pregnancy notes, plus the family's own Tokyo list. The plan's day by day (`data/plan-days.json`, from the plan doc) is seeded once into `trip.days`, shown on the plan page, and every place says whether and when it is in the plan.
+
 Plus: the §7 rules engine (`src/lib/rules.ts`) runs on every edit; the nights suggestion with a plain-language reason (`src/lib/nights.ts`); large-text mode; light and dark themes; sign-in by tapping your name (6-digit code by email); the `/api/import` and `/api/connector/*` endpoints for Claude (PRD §8), token-scoped.
 
 ## Spike results (12 Oct 2026, `npm run spike`)
