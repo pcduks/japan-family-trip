@@ -14,6 +14,8 @@ const I = {
   versions: "M8 4h12v12M4 8h12v12H4z",
   places: "M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z",
   map: "M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14",
+  trip: "M4 15V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v8M4 15h16M4 15l-1 4M20 15l1 4M8 19h8M8 8h8",
+  food: "M4 11h16a8 8 0 0 1-16 0zM8 4l1 4M12 3v5M16 4l-1 4M9 19h6",
 };
 
 function NavItem({ href, label, icon, active }: { href: string; label: string; icon: string; active: boolean }) {
@@ -37,11 +39,11 @@ export function BottomNav() {
   return (
     <nav aria-label="Main" className="fixed inset-x-0 bottom-0 z-30 border-t border-rule bg-bg/95 backdrop-blur" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
       <ul className="mx-auto flex max-w-xl items-stretch justify-around px-1">
-        <NavItem href="/" label="Home" icon={I.home} active={path === "/" || is("/missing") || is("/family")} />
-        <NavItem href="/board" label="Board" icon={I.board} active={is("/board") || is("/versions")} />
+        <NavItem href="/" label="Home" icon={I.home} active={path === "/" || is("/family") || is("/guide")} />
+        <NavItem href="/trip" label="Trip" icon={I.trip} active={is("/trip") || is("/board") || is("/versions") || is("/missing") || is("/plan")} />
+        <NavItem href="/food" label="Food" icon={I.food} active={is("/food")} />
+        <NavItem href="/places" label="Places" icon={I.places} active={is("/places") || is("/regions") || is("/map")} />
         <NavItem href="/vote" label="Vote" icon={I.vote} active={is("/vote")} />
-        <NavItem href="/places" label="Places" icon={I.places} active={is("/places") || is("/regions")} />
-        <NavItem href="/map" label="Map" icon={I.map} active={is("/map")} />
       </ul>
     </nav>
   );
@@ -107,6 +109,12 @@ export function AppHeader() {
               </Link>
               <Link href="/plan" className="btn btn-sm" onClick={() => setOpen(false)}>
                 The report
+              </Link>
+              <Link href="/board" className="btn btn-sm" onClick={() => setOpen(false)}>
+                Board
+              </Link>
+              <Link href="/map" className="btn btn-sm" onClick={() => setOpen(false)}>
+                Map
               </Link>
               {isPlanner ? (
                 <Link href="/family" className="btn btn-sm" onClick={() => setOpen(false)}>

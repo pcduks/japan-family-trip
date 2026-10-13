@@ -15,20 +15,20 @@ export function Guide() {
 
       <Section title="What you’re looking at">
         <ol className="grid gap-3">
-          <Step n={1} title="The plan" href="/versions/plan">
-            Where we sleep, for how many nights, and what we do each day. Only {planners.join(" and ")} can change it, so there is always exactly one plan.
+          <Step n={1} title="The trip" href="/trip">
+            What the plan feels like, where we sleep, for how long and why, with named places to book, what it costs per couple against the S$15,000 target, and the alternatives with the same detail. Only {planners.join(" and ")} can change the plan, so there is always exactly one.
           </Step>
           <Step n={2} title="The report" href="/plan">
             The full research behind it: why these places, why each stay is this long, what we left out, and a guide to every base with hours, prices and where to eat.
           </Step>
-          <Step n={3} title="Versions" href="/board">
-            Other ways to spend the same 20 nights: a gentler one, a fuller one, snow monkeys, art instead of Fuji, crab and onsen instead of Fuji. The board shows them side by side with the same numbers, so you can compare.
+          <Step n={3} title="The alternatives" href="/board">
+            Other ways to spend the same 20 nights: a gentler one, a fuller one, snow monkeys, art instead of Fuji, crab and onsen instead of Fuji. Each has its theme, what it feels like, what it does and why, and its budget. The board shows them side by side with the same numbers.
           </Step>
           <Step n={4} title="Places" href="/places">
             Everything we researched: {snapshot.places.length} places. Each page says why it’s worth it, when it’s open or closed over New Year, how hard it is for a pregnant traveller, and shows Google photos and reviews. A badge says whether it’s in the plan, and on which day.
           </Step>
           <Step n={5} title="Food" href="/food">
-            The restaurants, with who recommends each one and why, plus our own saved Tokyo list.
+            Its own section: how we eat as six, what each place is about at the table, every researched restaurant with who recommends it and a link, what she can eat, the ryokan meals, and our own saved Tokyo list.
           </Step>
         </ol>
       </Section>
@@ -68,7 +68,7 @@ export function Guide() {
       <Section title="Getting around">
         <ul className="grid gap-2 text-ink-2">
           <li><b className="text-ink">Home</b> is the countdown, the plan as postcards, your next step and what’s coming up.</li>
-          <li><b className="text-ink">Board</b> compares the versions. <b className="text-ink">Vote</b> is where you answer. <b className="text-ink">Places</b> and <b className="text-ink">Map</b> are the library.</li>
+          <li><b className="text-ink">Trip</b> is the plan, the alternatives and the budget; the board that compares them is inside it. <b className="text-ink">Food</b> is where we eat. <b className="text-ink">Places</b> is the library, with the map. <b className="text-ink">Vote</b> is where you answer.</li>
           <li>Tap your name, top right, for large text, dark mode{isPlanner ? ", the Family list" : ""} and sign out.</li>
           <li>Signing in: tap your name on the first screen and type the 6-digit code from the email. No password.</li>
         </ul>

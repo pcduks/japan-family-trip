@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { useMemo } from "react";
+import { budgetOf } from "@/lib/budget";
 import { checkVersion } from "@/lib/rules";
 import type { Version } from "@/lib/types";
 import { paceLabel, statsOf } from "@/lib/versions";
+import { BudgetLine } from "./Budget";
 import { useStore } from "./providers";
 import { RegionLegend, TimelineAxis, TimelineLane } from "./Timeline";
 import { Avatar, Page, PageHeader, RuleBadges, Section } from "./ui";
@@ -36,6 +38,8 @@ export function VersionCard({ v, href }: { v: Version; href: string }) {
   const { snapshot, rules, me } = useStore();
   const findings = useMemo(() => checkVersion(v, rules), [v, rules]);
   const owner = v.owner === "planners" ? null : snapshot.travellers.find((t) => t.id === v.owner);
+  const plan = snapshot.versions.find((x) => x.status === "plan");
+  const planBudget = plan && plan.id !== v.id ? budgetOf(plan, snapshot.regions).perCoupleSgd : undefined;
   return (
     <Link href={href} className="card grid gap-3 p-4 no-underline transition-transform hover:-translate-y-0.5">
       <div className="flex items-center justify-between gap-2">
@@ -52,6 +56,7 @@ export function VersionCard({ v, href }: { v: Version; href: string }) {
       </div>
       <TimelineLane stays={v.stays} trip={snapshot.trip} calendar={snapshot.calendar} regions={snapshot.regions} />
       <VersionStatsRow v={v} />
+      <BudgetLine v={v} regions={snapshot.regions} compareTo={planBudget} />
       {v.gains || v.gives_up ? (
         <p className="text-sm text-ink-2">
           {v.gains ? (
@@ -81,7 +86,7 @@ export function Board() {
   return (
     <Page wide>
       <PageHeader eyebrow={`${snapshot.trip.nights} nights · ${snapshot.travellers.length} travellers · 20 Dec – 9 Jan`} title="Version board">
-        Every version side by side. Same colour, same place. Tap one for the stays, the rules check and the reasons.
+        Every version side by side. Same colour, same place. Tap one for the stays, where to sleep, the budget, the rules check and the reasons. <Link href="/trip">Back to the trip</Link>.
       </PageHeader>
 
       <div className="flex flex-wrap gap-2 text-sm">

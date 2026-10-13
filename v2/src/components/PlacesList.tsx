@@ -70,7 +70,7 @@ export function PlacesList() {
   const region = picked && picked.forParam === regionParam ? picked.region : (regionParam ?? "");
   const setRegion = (r: string) => setPicked({ forParam: regionParam, region: r });
   const [size, setSize] = useState<string>("");
-  const [inPlan, setInPlan] = useState<"" | "yes" | "no">("");
+  const [inPlan, setInPlan] = useState<"" | "yes" | "no">(params.get("in") === "plan" ? "yes" : "");
   const [q, setQ] = useState("");
   const plannedDates = new Map<string, string[]>();
   for (const d of snapshot.days) if (d.version_id === "plan") for (const it of d.items) if (it.place_id) plannedDates.set(it.place_id, [...(plannedDates.get(it.place_id) ?? []), d.date]);

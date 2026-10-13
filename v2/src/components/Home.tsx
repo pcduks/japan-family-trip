@@ -64,8 +64,8 @@ export function Home({ today }: { today: string }) {
             <h2 id="journey" className="text-[1.35rem]">
               The plan, stop by stop
             </h2>
-            <Link href={`/versions/${plan.id}`} className="text-sm text-muted">
-              Details →
+            <Link href="/trip" className="text-sm text-muted">
+              The whole trip →
             </Link>
           </div>
           <div className="no-scrollbar -mx-4 flex snap-x gap-3 overflow-x-auto px-4 pb-1">
@@ -110,15 +110,15 @@ export function Home({ today }: { today: string }) {
         </div>
         <ol className="grid gap-2 text-sm sm:grid-cols-3">
           <li>
-            <Link href="/plan" className="block rounded-xl bg-bg-2 p-3 no-underline">
-              <b>1 · Read the report</b>
-              <span className="block text-ink-2">The plan and why, stay by stay, with a guide to each place.</span>
+            <Link href="/trip" className="block rounded-xl bg-bg-2 p-3 no-underline">
+              <b>1 · Read the trip</b>
+              <span className="block text-ink-2">What it feels like, where we sleep and why, what it costs, and the alternatives.</span>
             </Link>
           </li>
           <li>
-            <Link href="/versions/plan" className="block rounded-xl bg-bg-2 p-3 no-underline">
-              <b>2 · See the day by day</b>
-              <span className="block text-ink-2">What we do each day, what’s open, who goes early.</span>
+            <Link href="/food" className="block rounded-xl bg-bg-2 p-3 no-underline">
+              <b>2 · Look at the food</b>
+              <span className="block text-ink-2">What each place is about at the table, who recommends what, what she can eat.</span>
             </Link>
           </li>
           <li>
@@ -140,14 +140,14 @@ export function Home({ today }: { today: string }) {
       </Link>
 
       <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Tile href="/plan" title="The report" blurb="the plan and the reasoning" motif="brush" />
+        <Tile href="/trip" title="The trip" blurb="the plan, the alternatives, the budget" motif="train" />
         <Tile href="/food" title="Food" blurb="who recommends what, and why" motif="bowl" />
-        <Tile href="/board" title="Board" blurb={`${snapshot.versions.filter((v) => v.status !== "legacy").length} versions side by side`} motif="train" />
         <Tile href="/vote" title="Vote" blurb={`${paceVotes.length}/${snapshot.travellers.length} picked a pace`} motif="ballot" />
         <Tile href="/places" title="Places" blurb={`${snapshot.places.length} researched`} motif="pin" />
+        <Tile href="/board" title="Board" blurb={`${snapshot.versions.filter((v) => v.status !== "legacy").length} versions side by side`} motif="suitcase" />
         <Tile href="/map" title="Map" blurb="route, stays, candidates" motif="map" />
+        <Tile href="/plan" title="The report" blurb="the research in full" motif="brush" />
         <Tile href="/missing" title="What we’re missing" blurb="candidates and swaps" motif="onsen" />
-        <Tile href="/versions/new" title="My version" blurb="copy, change, suggest" motif="suitcase" />
       </section>
 
       <section className="grid gap-3 sm:grid-cols-2">
