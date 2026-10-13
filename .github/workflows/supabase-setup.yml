@@ -5,6 +5,8 @@
 #   SUPABASE_PROJECT_REF      the project ref (the part before .supabase.co)
 #   SUPABASE_SERVICE_ROLE_KEY Project → Settings → API Keys → service_role
 #   GOOGLE_PLACES_API_KEY     optional; resolves Google place ids during the seed
+# It also sets the Auth settings the README asks for (sign-ups off, the
+# before-user-created hook, 6-digit codes, redirect URLs) via the Management API.
 # Every step is idempotent, so the workflow can be re-run.
 name: Supabase setup (v2)
 
@@ -47,6 +49,8 @@ jobs:
         run: npx tsx scripts/travellers-from-v1.ts ${{ inputs.travellers_map }}
       - name: Seed (travellers, auth users, trip-data.json, place ids)
         run: npm run seed
+      - name: Auth settings (sign-ups off, sign-in hook, 6-digit codes, redirect URLs)
+        run: npx tsx scripts/configure-auth.ts
       - name: Row counts
         run: |
           node -e '
