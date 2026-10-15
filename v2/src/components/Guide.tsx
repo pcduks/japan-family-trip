@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { useStore } from "./providers";
-import { Page, PageHeader, Section } from "./ui";
+import { Back, Page, PageHeader, Section } from "./ui";
 
 export function Guide() {
   const { snapshot, isPlanner } = useStore();
   const planners = snapshot.travellers.filter((t) => t.role === "planner").map((t) => t.name.split(" ")[0]);
   return (
     <Page>
+      <Back href="/">Why these places</Back>
       <PageHeader eyebrow="Start here" title="How this works">
         Three weeks in Japan over New Year, seven of us, one plan to agree on by 25 October. This app holds the research, lets everyone say what they want, and shows what each choice costs.
       </PageHeader>
@@ -67,8 +68,7 @@ export function Guide() {
 
       <Section title="Getting around">
         <ul className="grid gap-2 text-ink-2">
-          <li><b className="text-ink">Home</b> is the countdown, the plan as postcards, your next step and what’s coming up.</li>
-          <li><b className="text-ink">Trip</b> is the plan, the alternatives and the budget; the board that compares them is inside it. <b className="text-ink">Food</b> is where we eat. <b className="text-ink">Places</b> is the library, with the map. <b className="text-ink">Vote</b> is where you answer.</li>
+          <li>Four tabs. <b className="text-ink">Why</b> is the case for the trip: how the places were chosen, for whom, and how sure we are. <b className="text-ink">Trip</b> is the plan, the alternatives, where we sleep and the budget; move the stops there. <b className="text-ink">Food</b> is where we eat. <b className="text-ink">Vote</b> is where you answer. Places, the map and the full report sit under your name at the top right, and under “Dig deeper” on the Trip tab.</li>
           <li>Tap your name, top right, for large text, dark mode{isPlanner ? ", the Family list" : ""} and sign out.</li>
           <li>Getting in: type the family code once, then tap your name. No password, no email. Tap your name at the top right to switch person on a shared phone.</li>
         </ul>

@@ -39,10 +39,9 @@ export function BottomNav() {
   return (
     <nav aria-label="Main" className="fixed inset-x-0 bottom-0 z-30 border-t border-rule bg-bg/95 backdrop-blur" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
       <ul className="mx-auto flex max-w-xl items-stretch justify-around px-1">
-        <NavItem href="/" label="Home" icon={I.home} active={path === "/" || is("/family") || is("/guide")} />
-        <NavItem href="/trip" label="Trip" icon={I.trip} active={is("/trip") || is("/board") || is("/versions") || is("/missing") || is("/plan")} />
+        <NavItem href="/" label="Why" icon={I.home} active={path === "/" || is("/family") || is("/guide") || is("/missing") || is("/plan")} />
+        <NavItem href="/trip" label="Trip" icon={I.trip} active={is("/trip") || is("/board") || is("/versions") || is("/places") || is("/map")} />
         <NavItem href="/food" label="Food" icon={I.food} active={is("/food")} />
-        <NavItem href="/places" label="Places" icon={I.places} active={is("/places") || is("/regions") || is("/map")} />
         <NavItem href="/vote" label="Vote" icon={I.vote} active={is("/vote")} />
       </ul>
     </nav>
@@ -110,25 +109,28 @@ export function AppHeader() {
               </div>
             </fieldset>
 
-            <div className="flex flex-wrap gap-2">
-              <Link href="/guide" className="btn btn-sm" onClick={() => setOpen(false)}>
-                How this works
-              </Link>
-              <Link href="/plan" className="btn btn-sm" onClick={() => setOpen(false)}>
-                The report
-              </Link>
-              <Link href="/board" className="btn btn-sm" onClick={() => setOpen(false)}>
-                Board
-              </Link>
-              <Link href="/map" className="btn btn-sm" onClick={() => setOpen(false)}>
-                Map
-              </Link>
-              {isPlanner ? (
-                <Link href="/family" className="btn btn-sm" onClick={() => setOpen(false)}>
-                  Family
+            <fieldset className="grid gap-2">
+              <legend className="eyebrow">More</legend>
+              <div className="flex flex-wrap gap-2">
+                <Link href="/places" className="btn btn-sm" onClick={() => setOpen(false)}>
+                  Places
                 </Link>
-              ) : null}
-            </div>
+                <Link href="/map" className="btn btn-sm" onClick={() => setOpen(false)}>
+                  Map
+                </Link>
+                <Link href="/plan" className="btn btn-sm" onClick={() => setOpen(false)}>
+                  Full report
+                </Link>
+                <Link href="/guide" className="btn btn-sm" onClick={() => setOpen(false)}>
+                  How this works
+                </Link>
+                {isPlanner ? (
+                  <Link href="/family" className="btn btn-sm" onClick={() => setOpen(false)}>
+                    Family
+                  </Link>
+                ) : null}
+              </div>
+            </fieldset>
             {demo ? (
               <fieldset className="grid gap-2">
                 <legend className="eyebrow">I am… (demo mode, this browser only)</legend>

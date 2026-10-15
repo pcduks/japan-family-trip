@@ -17,7 +17,7 @@ import { TimelineLane } from "./Timeline";
 import { Page, PageHeader, RegionDot, RuleBadges, Section } from "./ui";
 
 export function TripOverview() {
-  const { snapshot, me, rules } = useStore();
+  const { snapshot, me } = useStore();
   const plan = snapshot.versions.find((v) => v.status === "plan");
   const alternatives = snapshot.versions.filter((v) => v.status === "alternative");
   const personal = snapshot.versions.filter((v) => v.status === "personal" && (v.shared !== false || v.owner === me?.travellerId || me?.role === "planner"));
@@ -129,7 +129,7 @@ export function TripOverview() {
       ) : null}
 
       <Section title="The alternatives" aside={`${alternatives.length} from the research`}>
-        <p className="text-ink-2">The same 20 nights spent differently. Each one trades something the plan has for something it lacks. Rank them on the Vote page; copy any of them to make your own.</p>
+        <p className="text-ink-2">The same 20 nights spent differently. Each one trades something the plan has for something it lacks. Rank them on the Vote page, or open one and move its stops around: it becomes your own version to suggest.</p>
         <ul className="grid gap-3 sm:grid-cols-2">
           {alternatives.map((v) => (
             <AlternativeCard key={v.id} v={v} planBudget={planBudget} />
@@ -142,14 +142,7 @@ export function TripOverview() {
           <Link href="/vote" className="btn btn-sm btn-primary">
             Rank them
           </Link>
-          <Link href="/missing" className="btn btn-sm">
-            What we’re missing
-          </Link>
-          <Link href="/versions/new" className="btn btn-sm">
-            + My version
-          </Link>
         </div>
-        {rules && alternatives.length ? null : null}
       </Section>
 
       {personal.length ? (
@@ -161,6 +154,23 @@ export function TripOverview() {
           </ul>
         </Section>
       ) : null}
+
+      <Section title="Dig deeper">
+        <div className="flex flex-wrap gap-2">
+          <Link href="/places" className="btn btn-sm">
+            Every place we researched
+          </Link>
+          <Link href="/map" className="btn btn-sm">
+            The map
+          </Link>
+          <Link href="/plan" className="btn btn-sm">
+            The full report
+          </Link>
+          <Link href="/missing" className="btn btn-sm">
+            Swaps that work
+          </Link>
+        </div>
+      </Section>
     </Page>
   );
 }

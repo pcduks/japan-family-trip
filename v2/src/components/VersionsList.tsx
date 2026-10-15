@@ -7,7 +7,7 @@ import type { Version } from "@/lib/types";
 import { copyVersion } from "@/lib/versions";
 import { VersionCard } from "./Board";
 import { useStore } from "./providers";
-import { Empty, Page, PageHeader, Section } from "./ui";
+import { Back, Empty, Page, PageHeader, Section } from "./ui";
 
 export function VersionsList() {
   const { snapshot, me, isPlanner } = useStore();
@@ -18,7 +18,8 @@ export function VersionsList() {
   const family = snapshot.versions.filter((v) => v.status === "personal" && v.owner !== me?.travellerId && visible(v));
   return (
     <Page wide>
-      <PageHeader eyebrow="Copy any version, change it, suggest it" title="Versions" action={<Link href="/versions/new" className="btn btn-sm btn-primary shrink-0">+ New</Link>}>
+      <Back href="/trip">The trip</Back>
+      <PageHeader eyebrow="Move the stops on any version and it becomes yours" title="Versions" action={<Link href="/versions/new" className="btn btn-sm shrink-0">+ Blank copy</Link>}>
         There is exactly one plan. Everyone can make their own versions; planners accept suggestions into the plan.
       </PageHeader>
       <Section title="The plan">
@@ -54,6 +55,7 @@ export function NewVersion() {
   }
   return (
     <Page>
+      <Back href="/trip">The trip</Back>
       <PageHeader eyebrow="My versions" title="New version">
         Pick a starting point. Then drag the stops, tap a name to swap it, use +/− for nights; the rules check runs as you go and every change saves on its own.
       </PageHeader>

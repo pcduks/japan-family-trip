@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import docs from "@/data/plan-doc.json";
 import { Markdown } from "./Markdown";
-import { Page } from "./ui";
+import { Back, Page } from "./ui";
 
 const TABS: { id: string; file: string; label: string; region?: string }[] = [
   { id: "plan", file: "01-the-plan.md", label: "The plan" },
@@ -33,6 +33,7 @@ export function PlanReport() {
   const source = (docs as Record<string, string>)[tab.file] ?? "";
   return (
     <Page>
+      <Back href="/">Why these places</Back>
       <header className="grid gap-1.5">
         <p className="eyebrow">The research, in full</p>
         <h1 className="display text-[2.1rem] leading-[1.05]">The plan and the reasoning</h1>

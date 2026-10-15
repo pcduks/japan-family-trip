@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Place, Size } from "@/lib/types";
 import { useStore } from "./providers";
-import { Empty, Page, PageHeader, RegionDot } from "./ui";
+import { Back, Empty, Page, PageHeader, RegionDot } from "./ui";
 
 const SIZE_LABEL: Record<Size, string> = { main: "Main outing", short: "Short visit", day_trip: "Day trip", evening: "Evening", meal: "Meal" };
 const EFFORT: Record<string, string> = { low: "easy for her", moderate: "moderate for her", high: "hard for her" };
@@ -99,6 +99,7 @@ export function PlacesList() {
 
   return (
     <Page wide>
+      <Back href="/trip">The trip</Back>
       <PageHeader eyebrow={`${snapshot.places.length} places · ${regions.length} regions · ${plannedCount} in the plan`} title="Places">
         Everything we researched, with hours, closures and effort for her. A green badge means it is in the plan’s day by day; the rest are candidates near our bases. Photos and reviews come from Google when you open a place.
       </PageHeader>

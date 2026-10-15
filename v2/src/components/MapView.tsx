@@ -10,7 +10,7 @@ import { env, hasMaps } from "@/lib/env";
 import type { Place, Region, Version } from "@/lib/types";
 import { swapInRegion } from "@/lib/versions";
 import { useStore } from "./providers";
-import { Page, PageHeader, RegionDot } from "./ui";
+import { Back, Page, PageHeader, RegionDot } from "./ui";
 
 interface Model {
   version: Version | null;
@@ -54,6 +54,7 @@ export function MapView() {
 
   return (
     <Page wide>
+      <Back href="/trip">The trip</Back>
       <PageHeader eyebrow="Route, stays, places and candidates" title="Map" />
       <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4">
         {visible.map((v) => (
