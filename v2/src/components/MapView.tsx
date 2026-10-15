@@ -54,7 +54,7 @@ export function MapView() {
 
   return (
     <Page wide>
-      <Back href="/trip">The trip</Back>
+      <Back href="/route">The route</Back>
       <PageHeader eyebrow="Route, stays, places and candidates" title="Map" />
       <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4">
         {visible.map((v) => (

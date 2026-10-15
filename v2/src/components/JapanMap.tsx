@@ -1,0 +1,89 @@
+"use client";
+
+import { motion } from "motion/react";
+import { useRouter } from "next/navigation";
+import { useMemo, useState } from "react";
+import { regionColor } from "@/lib/colors";
+import { MAP, project, REGION_PREFECTURES } from "@/lib/map";
+import type { Region, Stay } from "@/lib/types";
+
+/** Label nudges for the crowded middle of Honshu, in viewBox units. */
+const NUDGE: Record<string, [number, number]> = {
+  shirakawago: [-26, -4], takayama: [10, -6], gero: [10, 6], okuhida: [12, -14], kanazawa: [-30, 2], kyoto: [-22, 2], nara: [8, 9], osaka: [-24, 8], hakone: [8, 8], kawaguchiko: [-4, -9], tokyo: [10, -2], kamakura: [8, 7], nikko: [8, -2], kusatsu: [-26, -2], karuizawa: [10, -2], yudanaka: [-32, -3], matsumoto: [10, 4], "echigo-yuzawa": [10, -3], shuzenji: [2, 10], kinosaki: [-30, -2], okayama: [-4, 10], hiroshima: [-4, 10], koyasan: [6, 8], kumano: [6, 8], ginzan: [8, -2], "south-tohoku": [8, 4], "north-tohoku": [8, 0], hokkaido: [6, 8], kyushu: [-8, 12], shikoku: [-6, 10], okinawa: [20, -8],
+};
+const SHORT: Record<string, string> = { shirakawago: "Shirakawa-go", yudanaka: "Snow monkeys", okayama: "Okayama & Naoshima", "south-tohoku": "Sendai & Zao", "north-tohoku": "N. Tohoku", "echigo-yuzawa": "Yuzawa", kumano: "Kumano", kyushu: "Kyushu", shikoku: "Shikoku", hokkaido: "Hokkaido" };
+
+export const VIEWS = { japan: "0 0 438 516", heart: "138 163 236 180" } as const;
+
+interface Props {
+  regions: Region[];
+  /** Stays to draw as the route (numbered, joined by an ink line). */
+  stays?: Stay[];
+  /** Region ids to glow; the rest dim. Null means no filter. */
+  highlight?: Set<string> | null;
+  /** Weight 1–3 for the stamp size. */
+  weight?: (id: string) => number;
+  view?: keyof typeof VIEWS;
+  selected?: string | null;
+  onPick?: (id: string) => void;
+  className?: string;
+}
+
+/** The illustrated map: ink coastlines on paper, a stamp per researched area, the route as a line. */
+export function JapanMap({ regions, stays, highlight = null, weight, view = "heart", selected = null, onPick, className = "" }: Props) {
+  const router = useRouter();
+  const [hover, setHover] = useState<string | null>(null);
+  const pick = (id: string) => (onPick ? onPick(id) : router.push(`/areas/${id}`));
+  const points = useMemo(() => regions.map((r) => ({ r, ...project(r.lat, r.lng) })), [regions]);
+  const route = useMemo(() => (stays ?? []).map((s) => ({ s, ...project(regions.find((r) => r.id === s.region)?.lat ?? 35, regions.find((r) => r.id === s.region)?.lng ?? 135) })), [stays, regions]);
+  const lit = new Set((hover ?? selected) ? REGION_PREFECTURES[(hover ?? selected)!] ?? [] : []);
+  const routeIds = new Set(route.map((p) => p.s.region));
+  const dimmed = (id: string) => (highlight && !highlight.has(id)) || (stays && stays.length > 0 && !routeIds.has(id) && !highlight);
+
+  return (
+    <div className={`relative overflow-hidden rounded-2xl ${className}`} style={{ background: "radial-gradient(120% 90% at 30% 20%, color-mix(in srgb, var(--card) 70%, transparent), transparent 60%), var(--bg-2)" }}>
+      <svg viewBox={VIEWS[view]} className="block h-auto w-full select-none" role="img" aria-label="Map of Japan with the areas we researched">
+        <defs>
+          <filter id="paper" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n" />
+            <feColorMatrix in="n" type="saturate" values="0" result="g" />
+            <feComponentTransfer in="g" result="t">
+              <feFuncA type="table" tableValues="0 0.06" />
+            </feComponentTransfer>
+            <feComposite in="SourceGraphic" in2="t" operator="over" />
+          </filter>
+        </defs>
+        <g filter="url(#paper)">
+          {MAP.locations.map((p) => (
+            <path key={p.id} d={p.path} fill={lit.has(p.id) ? "color-mix(in srgb, var(--accent) 22%, var(--card))" : "var(--card)"} stroke="color-mix(in srgb, var(--ink) 45%, transparent)" strokeWidth={0.5} strokeLinejoin="round" style={{ transition: "fill 0.25s" }} />
+          ))}
+        </g>
+        {route.length > 1 ? (
+          <motion.polyline points={route.map((p) => `${p.x},${p.y}`).join(" ")} fill="none" stroke="var(--ink)" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" strokeDasharray="3 2.2" initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 0.85 }} transition={{ duration: 1.2, ease: "easeInOut" }} />
+        ) : null}
+        {points.map(({ r, x, y }) => {
+          const w = weight?.(r.id) ?? 1;
+          const rad = 2.6 + w * 1.1;
+          const dim = dimmed(r.id);
+          const [dx, dy] = NUDGE[r.id] ?? [8, 0];
+          const label = SHORT[r.id] ?? r.name.replace(/,.*$/, "").replace(/ \(.*\)$/, "").replace(" Onsen", "");
+          const idx = route.findIndex((p) => p.s.region === r.id);
+          return (
+            <g key={r.id} className="cursor-pointer" onClick={() => pick(r.id)} onPointerEnter={() => setHover(r.id)} onPointerLeave={() => setHover(null)} style={{ opacity: dim ? 0.28 : 1, transition: "opacity 0.25s" }}>
+              <circle cx={x} cy={y} r={rad + 3} fill="var(--card)" opacity={0.9} />
+              <motion.circle cx={x} cy={y} r={rad} fill={regionColor(r.id)} stroke="var(--card)" strokeWidth={0.8} initial={false} animate={{ r: selected === r.id || hover === r.id ? rad * 1.35 : rad }} transition={{ type: "spring", stiffness: 300, damping: 18 }} />
+              {idx >= 0 ? (
+                <text x={x} y={y + 1.5} textAnchor="middle" fontSize={4.2} fontWeight={700} fill="#fff" style={{ pointerEvents: "none" }}>
+                  {idx + 1}
+                </text>
+              ) : null}
+              <text x={x + dx} y={y + dy + 1.6} textAnchor={dx < 0 ? "end" : "start"} fontSize={5.2} fontWeight={600} fill="var(--ink)" stroke="var(--card)" strokeWidth={1.4} paintOrder="stroke" style={{ fontFamily: "var(--font-sans)", pointerEvents: "none" }}>
+                {label}
+              </text>
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+  );
+}

@@ -39,10 +39,9 @@ export function BottomNav() {
   return (
     <nav aria-label="Main" className="fixed inset-x-0 bottom-0 z-30 border-t border-rule bg-bg/95 backdrop-blur" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
       <ul className="mx-auto flex max-w-xl items-stretch justify-around px-1">
-        <NavItem href="/" label="Why" icon={I.home} active={path === "/" || is("/family") || is("/guide") || is("/missing") || is("/plan")} />
-        <NavItem href="/trip" label="Trip" icon={I.trip} active={is("/trip") || is("/board") || is("/versions") || is("/places") || is("/map")} />
+        <NavItem href="/" label="Explore" icon={I.map} active={path === "/" || is("/areas") || is("/places") || is("/map") || is("/missing")} />
+        <NavItem href="/route" label="Route" icon={I.trip} active={is("/route") || is("/trip") || is("/board") || is("/versions") || is("/plan") || is("/guide")} />
         <NavItem href="/food" label="Food" icon={I.food} active={is("/food")} />
-        <NavItem href="/vote" label="Vote" icon={I.vote} active={is("/vote")} />
       </ul>
     </nav>
   );
@@ -123,6 +122,9 @@ export function AppHeader() {
                 </Link>
                 <Link href="/guide" className="btn btn-sm" onClick={() => setOpen(false)}>
                   How this works
+                </Link>
+                <Link href="/vote" className="btn btn-sm" onClick={() => setOpen(false)}>
+                  Vote
                 </Link>
                 {isPlanner ? (
                   <Link href="/family" className="btn btn-sm" onClick={() => setOpen(false)}>

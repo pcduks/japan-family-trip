@@ -27,7 +27,7 @@ export function VersionView({ id }: { id: string }) {
   if (!v)
     return (
       <Page>
-        <Back href="/trip">The trip</Back>
+        <Back href="/route">The route</Back>
         <Empty>No such version.</Empty>
       </Page>
     );
@@ -36,7 +36,7 @@ export function VersionView({ id }: { id: string }) {
     const legacy = v as (typeof snapshot.legacy_routes)[number];
     return (
       <Page>
-        <Back href="/trip">The trip</Back>
+        <Back href="/route">The route</Back>
         <PageHeader eyebrow="Legacy, for reference" title={legacy.name}>
           {legacy.title}. {legacy.note}.
         </PageHeader>
@@ -83,7 +83,7 @@ export function VersionView({ id }: { id: string }) {
 
   return (
     <Page>
-      <Back href="/trip">The trip</Back>
+      <Back href="/route">The route</Back>
       <PageHeader
         eyebrow={
           <span className="flex items-center gap-2">

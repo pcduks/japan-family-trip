@@ -84,7 +84,7 @@ export function Board() {
   const rankVotes = snapshot.votes.filter((v) => v.kind === "rank").length;
   return (
     <Page wide>
-      <Back href="/trip">The trip</Back>
+      <Back href="/route">The route</Back>
       <PageHeader eyebrow={`${snapshot.trip.nights} nights · ${snapshot.travellers.length} travellers · 20 Dec – 9 Jan`} title="Side by side">
         Every version on the same calendar. Same colour, same place. Tap one for the stops, where to sleep, the budget and the reasons.
       </PageHeader>

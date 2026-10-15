@@ -9,3 +9,4 @@ next-env.d.ts
 .vercel
 /src/data/trip-data.json
 /src/data/plan-doc.json
+/src/data/catalog.json

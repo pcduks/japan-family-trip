@@ -33,7 +33,7 @@ export function PlanReport() {
   const source = (docs as Record<string, string>)[tab.file] ?? "";
   return (
     <Page>
-      <Back href="/">Why these places</Back>
+      <Back href="/">Explore</Back>
       <header className="grid gap-1.5">
         <p className="eyebrow">The research, in full</p>
         <h1 className="display text-[2.1rem] leading-[1.05]">The plan and the reasoning</h1>

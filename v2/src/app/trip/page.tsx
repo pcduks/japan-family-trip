@@ -1,7 +1,5 @@
-import { TripOverview } from "@/components/TripOverview";
-
-export const metadata = { title: "The trip" };
+import { redirect } from "next/navigation";
 
 export default function TripPage() {
-  return <TripOverview />;
+  redirect("/route");
 }

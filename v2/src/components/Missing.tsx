@@ -34,7 +34,7 @@ export function Missing() {
 
   return (
     <Page>
-      <Back href="/">Why these places</Back>
+      <Back href="/">Explore</Back>
       <PageHeader eyebrow="Candidates" title="What we’re missing">
         Regions we researched but left out, with the fit verdict. One tap makes you a version with the swap, which you can then edit and suggest.{" "}
         <Link href="/plan?tab=missing">The full write-up is in the report.</Link>
