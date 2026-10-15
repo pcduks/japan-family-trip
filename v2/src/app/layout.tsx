@@ -5,7 +5,7 @@ import { AppHeader, BottomNav } from "@/components/AppChrome";
 import { Gate } from "@/components/Gate";
 import { PREFS_BOOT_SCRIPT, Providers, type Me } from "@/components/providers";
 import { loadSnapshot } from "@/lib/data/loader";
-import { getViewer, serverSupabase } from "@/lib/supabase/server";
+import { adminSupabase, getViewer } from "@/lib/supabase/server";
 import "./globals.css";
 
 const display = Fraunces({ subsets: ["latin"], axes: ["opsz", "SOFT"], weight: "variable", style: ["normal", "italic"], variable: "--font-display-face", display: "swap" });
@@ -29,7 +29,7 @@ export const viewport: Viewport = {
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {
   const viewer = await getViewer();
-  const sb = viewer && viewer !== "demo" ? await serverSupabase() : null;
+  const sb = viewer && viewer !== "demo" ? adminSupabase() : null;
   const snapshot = await loadSnapshot(sb);
   const me: Me | null | "demo" = viewer === "demo" ? "demo" : viewer ? { travellerId: viewer.travellerId, name: viewer.name, role: viewer.role } : null;
 

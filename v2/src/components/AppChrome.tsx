@@ -2,7 +2,7 @@
 
 import * as Dialog from "@radix-ui/react-dialog";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { useStore, type ThemePref } from "./providers";
 import { Avatar } from "./ui";
@@ -52,8 +52,15 @@ export function BottomNav() {
 export function AppHeader() {
   const { me, demo, snapshot, setDemoMe, prefs, setPrefs, error, isPlanner } = useStore();
   const path = usePathname();
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   if (path.startsWith("/login")) return null;
+  const leave = async (scope: "me" | "all") => {
+    await fetch("/api/family", { method: "DELETE", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ scope }) });
+    setOpen(false);
+    router.push("/login");
+    router.refresh();
+  };
   return (
     <header className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 pb-1" style={{ paddingTop: "max(0.75rem, env(safe-area-inset-top))" }}>
       <Link href="/" className="flex items-center gap-2 no-underline">
@@ -138,11 +145,16 @@ export function AppHeader() {
             ) : (
               <div className="grid gap-2">
                 <p className="text-sm text-muted">
-                  Signed in as {me?.name} ({me?.role}).
+                  You are {me?.name} ({me?.role}). Wrong person? Switch below.
                 </p>
-                <form action="/auth/signout" method="post">
-                  <button className="btn btn-sm">Sign out</button>
-                </form>
+                <div className="flex gap-2">
+                  <button className="btn btn-sm" onClick={() => leave("me")}>
+                    Switch person
+                  </button>
+                  <button className="btn btn-sm" onClick={() => leave("all")}>
+                    Forget this phone
+                  </button>
+                </div>
               </div>
             )}
             {error ? <p className="text-sm text-danger">{error}</p> : null}

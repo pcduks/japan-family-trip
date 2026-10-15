@@ -10,7 +10,8 @@
 import { existsSync, readFileSync } from "node:fs";
 import { createClient } from "@supabase/supabase-js";
 import type { DB } from "../src/lib/supabase/types";
-import { bundledPlanDays } from "../src/lib/data/file";
+import { DEMO_NAMES } from "../src/lib/data/loader";
+import { bundledPlanDays, tripData } from "../src/lib/data/file";
 import { importTripData, type ImportPayload } from "../src/lib/import";
 import type { Region, Traveller } from "../src/lib/types";
 import { loadEnv, need } from "./env";
@@ -32,21 +33,20 @@ function check<T>(label: string, r: { data: T | null; error: { message: string }
 
 async function travellers() {
   const file = existsSync("data/travellers.json") ? "data/travellers.json" : null;
-  if (!file) {
-    console.warn("! data/travellers.json not found; copy data/travellers.example.json and add the real names and emails. Skipping travellers.");
-    return;
+  let rows: { id: string; name: string; role: Traveller["role"]; notes: string | null; email: string | null }[];
+  if (file) {
+    const list = JSON.parse(readFileSync(file, "utf8")) as (Traveller & { email?: string })[];
+    rows = list.map((t) => ({ id: t.id, name: t.name, role: t.role, notes: t.notes ?? null, email: t.email?.trim().toLowerCase() || null }));
+  } else {
+    // Beta: the seven slots with placeholder names; each person types their own on first visit.
+    rows = tripData().trip.travellers.map((t) => ({ id: t.id, name: DEMO_NAMES[t.id] ?? t.id, role: t.role, notes: t.notes ?? null, email: null }));
   }
-  const list = JSON.parse(readFileSync(file, "utf8")) as (Traveller & { email: string })[];
-  const rows = list.map((t) => ({ id: t.id, name: t.name, role: t.role, notes: t.notes ?? null, email: t.email.trim().toLowerCase() }));
-  check("travellers", await sb.from("travellers").upsert(rows, { onConflict: "id" }));
-  // Pre-create auth users so magic links and codes work with sign-ups disabled.
-  if (!flag("--no-auth-users")) {
-    for (const t of rows) {
-      const { error } = await sb.auth.admin.createUser({ email: t.email, email_confirm: true });
-      if (error && !/already|registered|exists/i.test(error.message)) console.warn(`! auth user ${t.email}: ${error.message}`);
-    }
-  }
-  console.log(`✓ ${rows.length} travellers`);
+  // Never overwrite a name someone has already typed in the app.
+  const { data: existing } = await sb.from("travellers").select("id,name");
+  const named = new Set(((existing ?? []) as { id: string; name: string }[]).filter((t) => t.name && t.name !== (DEMO_NAMES[t.id] ?? t.id)).map((t) => t.id));
+  const fresh = rows.filter((r) => !named.has(r.id) || file);
+  if (fresh.length) check("travellers", await sb.from("travellers").upsert(fresh, { onConflict: "id" }));
+  console.log(`✓ ${rows.length} travellers${file ? "" : " (placeholder names; people name themselves in the app)"}`);
 }
 
 async function importData() {

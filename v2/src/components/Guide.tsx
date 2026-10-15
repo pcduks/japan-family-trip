@@ -44,8 +44,8 @@ export function Guide() {
           <Step n={3} title="Rank the versions" href="/vote">
             Put the versions in your order. Nobody sees the totals until everyone has voted, so vote honestly.
           </Step>
-          <Step n={4} title="Say what you’d change (optional)" href="/versions/new">
-            Copy any version, drag the stays around, change the nights, and the app checks the rules as you go. Then “Suggest to the plan”. The planners accept or decline, and every change is logged.
+          <Step n={4} title="Move things around (optional)" href="/versions/plan#stops">
+            On any version, drag a stop by its handle to reorder, tap its name to swap the place, use +/− for the nights, or add a stop from the list. The rules check runs as you go and changes save on their own. If it is not your version, your first change makes it yours; when you like it, tap “Suggest this to the plan”. The planners accept or decline, and every change to the plan is logged with a revert.
           </Step>
           <Step n={5} title="Comment anywhere">
             Every version, stay and place has comments. A heart on a place says “me too”.
@@ -70,7 +70,7 @@ export function Guide() {
           <li><b className="text-ink">Home</b> is the countdown, the plan as postcards, your next step and what’s coming up.</li>
           <li><b className="text-ink">Trip</b> is the plan, the alternatives and the budget; the board that compares them is inside it. <b className="text-ink">Food</b> is where we eat. <b className="text-ink">Places</b> is the library, with the map. <b className="text-ink">Vote</b> is where you answer.</li>
           <li>Tap your name, top right, for large text, dark mode{isPlanner ? ", the Family list" : ""} and sign out.</li>
-          <li>Signing in: tap your name on the first screen and type the 6-digit code from the email. No password.</li>
+          <li>Getting in: type the family code once, then tap your name. No password, no email. Tap your name at the top right to switch person on a shared phone.</li>
         </ul>
       </Section>
 

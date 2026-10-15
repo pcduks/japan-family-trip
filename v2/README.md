@@ -20,9 +20,11 @@ The look: Fraunces for titles, Figtree for text, snow-paper light theme and nigh
 
 Reading before voting: **How this works** (`/guide`) explains the app to the family; **The report** (`/plan`) renders the whole plan doc (`docs/research/plan-doc/*.md`, copied in at build time) tab by tab; **Food** (`/food`) lists every researched restaurant with who recommends it, the source link, the table-for-six and pregnancy notes, plus the family's own Tokyo list. The plan's day by day (`data/plan-days.json`, from the plan doc) is seeded once into `trip.days`, shown on the plan page, and every place says whether and when it is in the plan.
 
+**Editing is drag and drop.** On any version page the stops are cards: drag the handle to reorder, tap the name to swap the place from a sheet of regions, +/− for nights, lodging chips, “Add a stop”, “Fit to 20”, undo. The timeline, the rules check and the budget move live and every change saves on its own (planners on the plan, with a history line; owners on their versions). Anyone else who changes something gets their own copy on the spot and a “Suggest this to the plan” button. Ranking on the Vote page is drag and drop too. Built with `motion` (Reorder) and Radix.
+
 **The trip** (`/trip`) is the plan's story: its theme, what it feels like, what it contemplates and why, each stay with why it is this long, the kind of place to book and named candidates with prices for six and booking links (`data/lodging.json`, from `docs/research/07-lodging.md`), the budget per couple against the S$15,000 target without flights (`data/budget.json` holds every rate; `src/lib/budget.ts` does the sums), and the alternatives with the same detail (`data/versions-guide.json`). **Food** is its own section: how we eat as six, what each base is about at the table, what she can eat, the ryokan meals, every researched restaurant with its source, and the family's own list (`data/food-guide.json`).
 
-Plus: the §7 rules engine (`src/lib/rules.ts`) runs on every edit; the nights suggestion with a plain-language reason (`src/lib/nights.ts`); large-text mode; light and dark themes; sign-in by tapping your name (6-digit code by email); the `/api/import` and `/api/connector/*` endpoints for Claude (PRD §8), token-scoped.
+Plus: the §7 rules engine (`src/lib/rules.ts`) runs on every edit; the nights suggestion with a plain-language reason (`src/lib/nights.ts`); large-text mode; light and dark themes; getting in with one shared family code and a tap on your name (beta; `FAMILY_CODE`); the `/api/import` and `/api/connector/*` endpoints for Claude (PRD §8), token-scoped.
 
 ## Spike results (12 Oct 2026, `npm run spike`)
 
@@ -53,13 +55,10 @@ With no Supabase keys the app runs in demo mode: no sign-in, pick "I am…" unde
    ```
    Everything lives in its own schema, `trip`, so it can share a project with the earlier app. The migration is safe to re-run. Then:
    - Settings → API → **Exposed schemas**: make sure `trip` is listed (the migration tries to add it; check).
-   - Auth → Providers → Email: turn **off** "Allow new users to sign up".
-   - Auth → Hooks: add *Before User Created* → `trip.hook_before_user_created` as a second guard.
-   - Auth → Email: set the OTP length to 6, and put `{{ .Token }}` in the Magic Link template so the code is in the email (custom SMTP is needed for that; without it the email carries only the link, which also works).
-   - Auth → URL configuration: Site URL plus `http://localhost:3000/auth/confirm` and `https://<your-domain>/auth/confirm` as redirect URLs.
+   - No Auth setup: the beta gate is the family code (`FAMILY_CODE`), checked on the server; the browser never holds a database key.
 4. `cp .env.example .env.local` and fill in the keys. `CLAUDE_CONNECTOR_TOKEN` is any long random string.
-5. Travellers: either `cp data/travellers.example.json data/travellers.json` with the seven names and emails (ids must match `trip.travellers` in `trip-data.json`; the file is git-ignored), or add them later from the app: sign in as the planner, open the name at the top right → **Family**. Each person added there gets a sign-in user and can tap their name on the login screen.
-6. `npm run seed`. It is idempotent: it upserts travellers (and pre-creates their auth users), imports `trip-data.json` by id, and resolves each place's `google_place_id` and coordinates with a Text Search biased to the region's centre. The plan version is created once and never overwritten by later imports. `--no-resolve` skips Google; `--file=path` imports another schema-v2 file.
+5. Travellers: the seed creates the seven slots with placeholder names (Brother, Dad, Mum…); each person types their own name the first time they pick their slot. `data/travellers.json` (git-ignored, see the example) still works if you want to set names up front. Planners can also rename or remove people under the name at the top right → **Family**.
+6. `npm run seed`. It is idempotent: it upserts travellers (placeholder names unless `data/travellers.json` exists), imports `trip-data.json` by id, and resolves each place's `google_place_id` and coordinates with a Text Search biased to the region's centre. The plan version is created once and never overwritten by later imports. `--no-resolve` skips Google; `--file=path` imports another schema-v2 file.
 
 Without a machine at hand, the GitHub Actions workflow **Supabase setup (v2)** (`.github/workflows/supabase-setup.yml`) does steps 3 and 6 from repository secrets; see the comment at the top of the file.
 
@@ -116,4 +115,4 @@ Every record carries `source`, `checked_at`, `updated_by` and `verified`; the pl
 
 ## Compliance (PRD §12)
 
-Google photos carry the author's name and link; reviews are shown with the author's link and "Reviews from Google"; only `place_id` is stored, details are cached for an hour. YouTube uses the standard embeddable player. No public pages: sign-in is restricted to the invited emails, and the app sends `noindex`.
+Google photos carry the author's name and link; reviews are shown with the author's link and "Reviews from Google"; only `place_id` is stored, details are cached for an hour. YouTube uses the standard embeddable player. No public pages: everything sits behind the family code, the browser never holds a database key (reads and writes go through `/api/state` and `/api/act` on the server), and the app sends `noindex`.

@@ -4,6 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { PACE_ART, art } from "@/lib/art";
 import { useState } from "react";
+import { closestCenter, DndContext, KeyboardSensor, PointerSensor, useSensor, useSensors, type DragEndEvent } from "@dnd-kit/core";
+import { restrictToVerticalAxis } from "@dnd-kit/modifiers";
+import { arrayMove, SortableContext, sortableKeyboardCoordinates, useSortable, verticalListSortingStrategy } from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
 import type { MustDoVote, Pace, PaceVote, RankVote, Version } from "@/lib/types";
 import { paceLabel } from "@/lib/versions";
 import { useStore } from "./providers";
@@ -26,6 +30,10 @@ export function Vote() {
     return [...saved.filter((id) => rankable.some((v) => v.id === id)), ...rankable.filter((v) => !saved.includes(v.id)).map((v) => v.id)];
   });
   const [q, setQ] = useState("");
+  const sensors = useSensors(
+    useSensor(PointerSensor, { activationConstraint: { distance: 3 } }),
+    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates }),
+  );
   const must = myMust?.value.places ?? [];
 
   const paceVotes = snapshot.votes.filter((v) => v.kind === "pace") as PaceVote[];
@@ -40,13 +48,6 @@ export function Vote() {
   const places = snapshot.places.filter((p) => p.size !== "meal");
   const filtered = q.trim() ? places.filter((p) => `${p.name} ${p.region} ${p.kind}`.toLowerCase().includes(q.toLowerCase())) : [];
 
-  function moveRank(i: number, dir: -1 | 1) {
-    const j = i + dir;
-    if (j < 0 || j >= order.length) return;
-    const next = [...order];
-    [next[i], next[j]] = [next[j], next[i]];
-    setOrder(next);
-  }
 
   const toggleMust = (id: string) => {
     const next = must.includes(id) ? must.filter((x) => x !== id) : must.length >= 2 ? [must[1], id] : [...must, id];
@@ -126,22 +127,25 @@ export function Vote() {
       </Section>
 
       <Section title="3 · Rank the versions" aside={myRank ? "saved" : "not ranked"}>
-        <ol className="grid gap-2">
-          {order.map((id, i) => (
-            <li key={id} className="card flex items-center gap-2 p-3">
-              <span className="w-6 text-center font-bold text-muted">{i + 1}</span>
-              <Link href={`/versions/${id}`} className="flex-1 font-semibold no-underline">
-                {versionName(id)}
-              </Link>
-              <button className="btn btn-sm" onClick={() => moveRank(i, -1)} disabled={i === 0} aria-label="Move up">
-                ↑
-              </button>
-              <button className="btn btn-sm" onClick={() => moveRank(i, 1)} disabled={i === order.length - 1} aria-label="Move down">
-                ↓
-              </button>
-            </li>
-          ))}
-        </ol>
+        <p className="text-sm text-muted">Drag the handle to put them in your order, favourite first. Then save.</p>
+        <DndContext
+          sensors={sensors}
+          collisionDetection={closestCenter}
+          modifiers={[restrictToVerticalAxis]}
+          autoScroll={false}
+          onDragEnd={({ active, over }: DragEndEvent) => {
+            if (!over || active.id === over.id) return;
+            setOrder((o) => arrayMove(o, o.indexOf(String(active.id)), o.indexOf(String(over.id))));
+          }}
+        >
+          <SortableContext items={order} strategy={verticalListSortingStrategy}>
+            <ol className="grid gap-2 select-none" style={{ overflowAnchor: "none" }}>
+              {order.map((id, i) => (
+                <RankRow key={id} id={id} index={i} name={versionName(id)} />
+              ))}
+            </ol>
+          </SortableContext>
+        </DndContext>
         <button className="btn btn-primary" onClick={() => setVote("rank", { order })} disabled={busy}>
           {myRank ? "Update my ranking" : "Save my ranking"}
         </button>
@@ -242,4 +246,26 @@ export function rankTotals(rankVotes: RankVote[], rankable: Version[]): { v: Ver
     });
   }
   return rankable.map((v) => ({ v, score: score.get(v.id) ?? 0, firsts: firsts.get(v.id) ?? 0 })).sort((a, b) => b.score - a.score);
+}
+
+function RankRow({ id, index, name }: { id: string; index: number; name: string }) {
+  const { attributes, listeners, setNodeRef, setActivatorNodeRef, transform, transition, isDragging } = useSortable({ id });
+  return (
+    <li ref={setNodeRef} className="card flex items-center gap-2 p-3" style={{ transform: CSS.Transform.toString(transform), transition, zIndex: isDragging ? 20 : undefined, boxShadow: isDragging ? "0 18px 40px -18px rgba(0,0,0,.5)" : undefined, position: "relative" }}>
+      <span className="display w-7 text-center text-[1.3rem] text-accent">{index + 1}</span>
+      <Link href={`/versions/${id}`} className="min-w-0 flex-1 truncate font-semibold no-underline">
+        {name}
+      </Link>
+      <button ref={setActivatorNodeRef} {...attributes} {...listeners} className="flex min-h-11 w-11 shrink-0 cursor-grab items-center justify-center text-muted active:cursor-grabbing" style={{ touchAction: "none" }} aria-label={`Drag ${name}`}>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+          <circle cx="9" cy="6" r="1.8" />
+          <circle cx="15" cy="6" r="1.8" />
+          <circle cx="9" cy="12" r="1.8" />
+          <circle cx="15" cy="12" r="1.8" />
+          <circle cx="9" cy="18" r="1.8" />
+          <circle cx="15" cy="18" r="1.8" />
+        </svg>
+      </button>
+    </li>
+  );
 }

@@ -3,34 +3,26 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
-import { RegionCover } from "./RegionCover";
-import { reportTabForRegion } from "./PlanReport";
 import { DayByDay } from "./DayByDay";
-import { fmtDay, fmtRange } from "@/lib/dates";
-import { stayNote, versionGuide } from "@/lib/guide";
+import { versionGuide } from "@/lib/guide";
 import { BudgetCard } from "./Budget";
-import { StayLodging } from "./StayLodging";
-import { transitLink } from "@/lib/legs";
 import { checkVersion } from "@/lib/rules";
 import type { Version } from "@/lib/types";
-import { copyVersion, describeDiff, movesOf, paceLabel, statsOf } from "@/lib/versions";
+import { copyVersion, describeDiff, paceLabel, statsOf } from "@/lib/versions";
 import { VersionStatsRow } from "./Board";
 import { Comments } from "./Comments";
 import { useStore } from "./providers";
-import { StayNights } from "./StayNights";
-import { TimelineLane } from "./Timeline";
+import { Planner } from "./Planner";
 import { Avatar, Back, Empty, FindingList, Page, PageHeader, RegionDot, Section } from "./ui";
 
 export function VersionView({ id }: { id: string }) {
   const { snapshot, rules, me, isPlanner, saveVersion, deleteVersion, suggest, decideSuggestion, withdrawSuggestion, revertHistory, busy } = useStore();
   const router = useRouter();
   const v = snapshot.versions.find((x) => x.id === id) ?? snapshot.legacy_routes.find((x) => x.id === id);
-  const [activeStay, setActiveStay] = useState<number | null>(null);
   const [comment, setComment] = useState("");
   const [suggesting, setSuggesting] = useState(false);
   const version = v && "pace" in v ? (v as Version) : null;
   const findings = useMemo(() => (version ? checkVersion(version, rules) : []), [version, rules]);
-  const myMustDos = (snapshot.votes.find((x) => x.kind === "mustdo" && x.traveller_id === me?.travellerId)?.value as { places?: string[] } | undefined)?.places;
 
   if (!v)
     return (
@@ -62,7 +54,6 @@ export function VersionView({ id }: { id: string }) {
   const plan = snapshot.versions.find((x) => x.status === "plan");
   const canEdit = isPlanner || (version.status === "personal" && version.owner === me?.travellerId);
   const owner = version.owner === "planners" ? null : snapshot.travellers.find((t) => t.id === version.owner);
-  const moves = movesOf(version.stays, snapshot.regions);
   const st = statsOf(version, snapshot);
   const openSuggestions = snapshot.suggestions.filter((s) => s.status === "open");
   const days = snapshot.days.filter((d) => d.version_id === version.id);
@@ -74,7 +65,7 @@ export function VersionView({ id }: { id: string }) {
     if (!me) return;
     const mine = copyVersion(version!, me.travellerId, `${me.name.split(" ")[0]}’s ${version!.status === "personal" ? "copy of " + version!.name : version!.name.toLowerCase()}`, snapshot.trip.start);
     await saveVersion(mine);
-    router.push(`/versions/${mine.id}/edit`);
+    router.push(`/versions/${mine.id}`);
   }
 
   async function sendSuggestion() {
@@ -133,15 +124,9 @@ export function VersionView({ id }: { id: string }) {
         ) : null}
       </PageHeader>
 
-      <TimelineLane stays={version.stays} trip={snapshot.trip} calendar={snapshot.calendar} regions={snapshot.regions} height={44} activeIndex={activeStay} onStayClick={(i) => setActiveStay(activeStay === i ? null : i)} />
       <VersionStatsRow v={version} />
 
       <div className="flex flex-wrap gap-2">
-        {canEdit ? (
-          <Link href={`/versions/${version.id}/edit`} className="btn btn-sm btn-primary">
-            Edit
-          </Link>
-        ) : null}
         <button className="btn btn-sm" onClick={copy} disabled={busy || !me}>
           Copy to my versions
         </button>
@@ -172,7 +157,7 @@ export function VersionView({ id }: { id: string }) {
       </div>
 
       {suggesting && plan ? (
-        <div className="card grid gap-3 p-4">
+        <div className="card grid gap-3 p-4" id="suggest-box">
           <h2 className="text-[1.1rem]">Suggest this to the plan</h2>
           <p className="text-sm text-ink-2">The planners will see: {diffVsPlan.join("; ")}.</p>
           <FindingList findings={findings} compact />
@@ -223,66 +208,8 @@ export function VersionView({ id }: { id: string }) {
         <FindingList findings={findings} />
       </Section>
 
-      <Section title="Where we sleep, for how long, and why" aside={`${st.nights} nights · ${st.bases} bases`}>
-        <p className="text-sm text-ink-2">Each stay says why it is this long, what kind of place suits it, the named candidates from the lodging research with prices for six, and search links with our dates filled in.</p>
-        <ol className="grid gap-2">
-          {version.stays.map((s, i) => {
-            const region = snapshot.regions.find((r) => r.id === s.region);
-            const move = moves.find((m) => m.index === i);
-            const stayFindings = findings.filter((f) => f.stayIndex === i);
-            return (
-              <li key={s.id ?? i} id={`stay-${i}`} className="grid gap-2 scroll-mt-20">
-                {move ? (
-                  <p className="flex flex-wrap items-center gap-x-2 pl-3 text-sm text-muted">
-                    ↓ {move.hours}
-                    {move.curated ? "" : "~"} h · {move.how} · {fmtDay(move.date)}
-                    {region && snapshot.regions.find((r) => r.id === move.from) ? (
-                      <a href={transitLink(snapshot.regions.find((r) => r.id === move.from)!, region)} target="_blank" rel="noreferrer">
-                        transit directions
-                      </a>
-                    ) : null}
-                  </p>
-                ) : null}
-                <div className={`card flex gap-3 overflow-hidden ${activeStay === i ? "ring-2 ring-ink" : ""}`} onClick={() => setActiveStay(i)}>
-                  <RegionCover regionId={s.region} className="w-24 shrink-0 self-stretch sm:w-32" sizes="160px" />
-                  <div className="grid min-w-0 flex-1 gap-2 py-3 pr-3">
-                  <div className="flex items-start justify-between gap-2">
-                    <div className="flex items-center gap-2">
-                      <RegionDot id={s.region} size={12} />
-                      <h3 className="text-[1.25rem]">
-                        <Link href={`/places?region=${s.region}`} className="no-underline">
-                          {region?.name ?? s.region}
-                        </Link>
-                      </h3>
-                    </div>
-                    <span className="shrink-0 text-right text-sm">
-                      <b>{s.nights}</b> night{s.nights === 1 ? "" : "s"}
-                      <br />
-                      <span className="text-muted">{fmtRange(s.from, s.to)}</span>
-                    </span>
-                  </div>
-                  <p className="text-sm text-ink-2">
-                    {s.lodging ? <span className="chip mr-1">{s.lodging}</span> : null}
-                    {s.note}
-                    {reportTabForRegion(s.region) ? (
-                      <>
-                        {" "}
-                        <Link href={`/plan?tab=${reportTabForRegion(s.region)}`} className="text-muted">
-                          guide
-                        </Link>
-                      </>
-                    ) : null}
-                  </p>
-                  {stayNote(version.id, version.stays, i) ? <p className="text-sm text-ink-2"><b>Why {s.nights} night{s.nights === 1 ? "" : "s"}:</b> {stayNote(version.id, version.stays, i)}</p> : null}
-                  <StayNights stay={s} pace={version.pace} allStays={version.stays} mustDos={myMustDos} />
-                  {stayFindings.length ? <FindingList findings={stayFindings} compact /> : null}
-                  </div>
-                </div>
-                <StayLodging stay={s} region={region} />
-              </li>
-            );
-          })}
-        </ol>
+      <Section title="The stops" aside={`${st.nights} nights · ${st.bases} bases`} id="stops">
+        <Planner key={version.id} version={version} onSuggest={plan && version.status === "personal" ? () => { setSuggesting(true); document.getElementById("suggest-box")?.scrollIntoView({ behavior: "smooth", block: "center" }); } : undefined} />
       </Section>
 
       <Section title="What it costs" aside="per couple, flights excluded">
