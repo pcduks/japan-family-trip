@@ -1,6 +1,5 @@
-import { Home } from "@/components/Home";
+import { Explore } from "@/components/Explore";
 
 export default function HomePage() {
-  const today = new Date().toISOString().slice(0, 10);
-  return <Home today={today} />;
+  return <Explore />;
 }

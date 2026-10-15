@@ -15,3 +15,6 @@ const docSrc = path.join(here, "..", "..", "docs", "research", "plan-doc");
 const docs = {};
 for (const f of readdirSync(docSrc).sort()) if (f.endsWith(".md")) docs[f] = readFileSync(path.join(docSrc, f), "utf8");
 writeFileSync(path.join(here, "..", "src", "data", "plan-doc.json"), JSON.stringify(docs));
+
+// The research catalogues (docs/research/05, 06) become src/data/catalog.json.
+await import("./build-catalog.mjs");

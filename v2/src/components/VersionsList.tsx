@@ -18,7 +18,7 @@ export function VersionsList() {
   const family = snapshot.versions.filter((v) => v.status === "personal" && v.owner !== me?.travellerId && visible(v));
   return (
     <Page wide>
-      <Back href="/trip">The trip</Back>
+      <Back href="/route">The route</Back>
       <PageHeader eyebrow="Move the stops on any version and it becomes yours" title="Versions" action={<Link href="/versions/new" className="btn btn-sm shrink-0">+ Blank copy</Link>}>
         There is exactly one plan. Everyone can make their own versions; planners accept suggestions into the plan.
       </PageHeader>
@@ -55,7 +55,7 @@ export function NewVersion() {
   }
   return (
     <Page>
-      <Back href="/trip">The trip</Back>
+      <Back href="/route">The route</Back>
       <PageHeader eyebrow="My versions" title="New version">
         Pick a starting point. Then drag the stops, tap a name to swap it, use +/− for nights; the rules check runs as you go and every change saves on its own.
       </PageHeader>

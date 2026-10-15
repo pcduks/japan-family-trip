@@ -9,7 +9,7 @@ export function Guide() {
   const planners = snapshot.travellers.filter((t) => t.role === "planner").map((t) => t.name.split(" ")[0]);
   return (
     <Page>
-      <Back href="/">Why these places</Back>
+      <Back href="/">Explore</Back>
       <PageHeader eyebrow="Start here" title="How this works">
         Three weeks in Japan over New Year, seven of us, one plan to agree on by 25 October. This app holds the research, lets everyone say what they want, and shows what each choice costs.
       </PageHeader>
@@ -68,7 +68,7 @@ export function Guide() {
 
       <Section title="Getting around">
         <ul className="grid gap-2 text-ink-2">
-          <li>Four tabs. <b className="text-ink">Why</b> is the case for the trip: how the places were chosen, for whom, and how sure we are. <b className="text-ink">Trip</b> is the plan, the alternatives, where we sleep and the budget; move the stops there. <b className="text-ink">Food</b> is where we eat. <b className="text-ink">Vote</b> is where you answer. Places, the map and the full report sit under your name at the top right, and under “Dig deeper” on the Trip tab.</li>
+          <li>Three tabs. <b className="text-ink">Explore</b> is the map of everything we researched; tap an area for what it is known for, what it is like in our window, what we would do there, and why it is in or out. <b className="text-ink">Route</b> is the route that came out of it, the facts and the whys, the alternatives drawn on the same map, the cost, and a quiet way to try a change. <b className="text-ink">Food</b> is where we eat. The full report, the places list and the vote sit under your name at the top right.</li>
           <li>Tap your name, top right, for large text, dark mode{isPlanner ? ", the Family list" : ""} and sign out.</li>
           <li>Getting in: type the family code once, then tap your name. No password, no email. Tap your name at the top right to switch person on a shared phone.</li>
         </ul>

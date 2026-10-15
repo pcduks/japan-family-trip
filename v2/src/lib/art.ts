@@ -31,6 +31,10 @@ export const REGION_ART: Record<string, string> = {
   kyushu: "chapter-kyushu",
   shikoku: "chapter-setouchi",
   okinawa: "chapter-setouchi",
+  osaka: "chapter-kyoto",
+  matsumoto: "deck-neve",
+  karuizawa: "deck-natureza",
+  "south-tohoku": "chapter-tohoku",
 };
 
 export const PACE_ART = { gentle: "deck-noite-tranquila", balanced: "deck-comida", full: "deck-dia-de-rua" } as const;

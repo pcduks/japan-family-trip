@@ -175,7 +175,7 @@ export function TripOverview() {
   );
 }
 
-function AlternativeCard({ v, planBudget }: { v: Version; planBudget?: number }) {
+export function AlternativeCard({ v, planBudget, onShow }: { v: Version; planBudget?: number; onShow?: () => void }) {
   const { snapshot, rules } = useStore();
   const g = versionGuide(v.id);
   const owner = v.owner === "planners" ? null : snapshot.travellers.find((t) => t.id === v.owner);
@@ -214,7 +214,14 @@ function AlternativeCard({ v, planBudget }: { v: Version; planBudget?: number })
       </Link>
       <div className="grid gap-2 px-4 pb-4">
         <BudgetLine v={v} regions={snapshot.regions} compareTo={planBudget} />
-        <RuleBadges findings={findings} />
+        <div className="flex flex-wrap items-center gap-2">
+          <RuleBadges findings={findings} />
+          {onShow ? (
+            <button className="btn btn-sm ml-auto" onClick={onShow}>
+              Draw it on the map
+            </button>
+          ) : null}
+        </div>
       </div>
     </li>
   );

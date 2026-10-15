@@ -27,6 +27,10 @@ const REGION_COLORS: Record<string, string> = {
   kyushu: "#495057",
   shikoku: "#495057",
   okinawa: "#495057",
+  osaka: "#e8590c",
+  matsumoto: "#5c7cfa",
+  karuizawa: "#2b8a3e",
+  "south-tohoku": "#495057",
 };
 
 const FALLBACK = ["#4c6ef5", "#f76707", "#12b886", "#be4bdb", "#fab005", "#15aabf", "#fa5252", "#82c91e"];

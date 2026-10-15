@@ -644,6 +644,72 @@
    "instagram_official": null,
    "hashtags": [],
    "videos": []
+  },
+  {
+   "id": "osaka",
+   "name": "Osaka",
+   "lat": 34.69,
+   "lng": 135.5,
+   "status": "day_trip",
+   "summary": "Street food, Kuromon market, bunraku; 15 min from Kyoto",
+   "fit": "An evening out from Kyoto, not a base; you two know it",
+   "suggested_nights": null,
+   "sources": [
+    "https://www.japan-guide.com/e/e2157.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "matsumoto",
+   "name": "Matsumoto",
+   "lat": 36.24,
+   "lng": 137.97,
+   "status": "candidate_maybe",
+   "summary": "A black original castle and the Alps behind it",
+   "fit": "A day on the way to Takayama only with the snow-monkeys swap; the keep's stairs are very steep",
+   "suggested_nights": {
+    "balanced": 1
+   },
+   "sources": [
+    "https://www.japan-guide.com/e/e6051.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "karuizawa",
+   "name": "Karuizawa",
+   "lat": 36.34,
+   "lng": 138.63,
+   "status": "day_trip",
+   "summary": "Mountain resort town an hour from Tokyo; outlets, forest, a small ski hill",
+   "fit": "A day trip from Tokyo for the fit four; little for her in winter",
+   "suggested_nights": null,
+   "sources": [
+    "https://www.japan-guide.com/e/e6030.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "south-tohoku",
+   "name": "Sendai, Matsushima and Zao",
+   "lat": 38.27,
+   "lng": 140.87,
+   "status": "not_this_trip",
+   "summary": "The Pageant of Starlight, Matsushima bay, the Zao ropeway at night",
+   "fit": "The snow monsters are at full size in late January; a loop of its own",
+   "suggested_nights": null,
+   "sources": [
+    "https://www.japan-guide.com/e/e5100.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
   }
  ],
  "places": [
