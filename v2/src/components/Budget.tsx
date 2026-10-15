@@ -104,7 +104,7 @@ export function BudgetCard({ v, regions, regionName, title = "Budget per couple"
           </p>
           <p className="text-muted">
             Assumptions: ¥{BUDGET_RATES.currency.jpy_per_sgd} per S$ (as of {BUDGET_RATES.currency.as_of}); mid-tier nightly rates for six from the lodging research of 1 Oct 2026; ryokan nights include dinner and breakfast; New Year nights at +{Math.round(BUDGET_RATES.new_year_uplift.full.ryokan * 100)}% (ryokan) or +{Math.round(BUDGET_RATES.new_year_uplift.full.hotel * 100)}% (hotel) on 31 Dec and 1 Jan, half that on 30 Dec and 2 Jan; the
-            sister, if she joins, pays her own share and is not counted. Treat the total as ±15%. The numbers live in <code>v2/data/budget.json</code>.{" "}
+            figure is per couple; Pedro’s sister, travelling single, lands at roughly 60% of it (her own share of rooms, one person’s food and tickets). Treat the total as ±15%. The numbers live in <code>v2/data/budget.json</code>.{" "}
             <Link href="/plan?tab=nights">Why each stay is this long</Link>
           </p>
         </div>

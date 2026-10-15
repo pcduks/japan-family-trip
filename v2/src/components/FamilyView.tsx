@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useStore } from "./providers";
-import { Avatar, Page, PageHeader, Section } from "./ui";
+import { Avatar, Back, Page, PageHeader, Section } from "./ui";
 
 const IDS: { id: string; label: string; notes?: string }[] = [
   { id: "pedro", label: "Pedro" },
@@ -66,6 +66,7 @@ export function FamilyView() {
 
   return (
     <Page>
+      <Back href="/">Why these places</Back>
       <PageHeader eyebrow="Planners" title="Family">
         Everyone on this list gets in with the family code and their name. Names that nobody has claimed yet show as “Brother”, “Dad” and so on until that person types their own.
       </PageHeader>

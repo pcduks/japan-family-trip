@@ -8,7 +8,7 @@ import { versionGuide } from "@/lib/guide";
 import { BudgetCard } from "./Budget";
 import { checkVersion } from "@/lib/rules";
 import type { Version } from "@/lib/types";
-import { copyVersion, describeDiff, paceLabel, statsOf } from "@/lib/versions";
+import { describeDiff, paceLabel, statsOf } from "@/lib/versions";
 import { VersionStatsRow } from "./Board";
 import { Comments } from "./Comments";
 import { useStore } from "./providers";
@@ -16,7 +16,7 @@ import { Planner } from "./Planner";
 import { Avatar, Back, Empty, FindingList, Page, PageHeader, RegionDot, Section } from "./ui";
 
 export function VersionView({ id }: { id: string }) {
-  const { snapshot, rules, me, isPlanner, saveVersion, deleteVersion, suggest, decideSuggestion, withdrawSuggestion, revertHistory, busy } = useStore();
+  const { snapshot, rules, me, isPlanner, deleteVersion, suggest, decideSuggestion, withdrawSuggestion, revertHistory, busy } = useStore();
   const router = useRouter();
   const v = snapshot.versions.find((x) => x.id === id) ?? snapshot.legacy_routes.find((x) => x.id === id);
   const [comment, setComment] = useState("");
@@ -27,7 +27,7 @@ export function VersionView({ id }: { id: string }) {
   if (!v)
     return (
       <Page>
-        <Back href="/board">Board</Back>
+        <Back href="/trip">The trip</Back>
         <Empty>No such version.</Empty>
       </Page>
     );
@@ -36,7 +36,7 @@ export function VersionView({ id }: { id: string }) {
     const legacy = v as (typeof snapshot.legacy_routes)[number];
     return (
       <Page>
-        <Back href="/board">Board</Back>
+        <Back href="/trip">The trip</Back>
         <PageHeader eyebrow="Legacy, for reference" title={legacy.name}>
           {legacy.title}. {legacy.note}.
         </PageHeader>
@@ -61,13 +61,6 @@ export function VersionView({ id }: { id: string }) {
   const guide = versionGuide(version.id);
   const regionName = (id: string) => snapshot.regions.find((r) => r.id === id)?.name ?? id;
 
-  async function copy() {
-    if (!me) return;
-    const mine = copyVersion(version!, me.travellerId, `${me.name.split(" ")[0]}’s ${version!.status === "personal" ? "copy of " + version!.name : version!.name.toLowerCase()}`, snapshot.trip.start);
-    await saveVersion(mine);
-    router.push(`/versions/${mine.id}`);
-  }
-
   async function sendSuggestion() {
     if (!plan) return;
     const summary = describeDiff(plan.stays, version!.stays, snapshot.regions);
@@ -90,7 +83,7 @@ export function VersionView({ id }: { id: string }) {
 
   return (
     <Page>
-      <Back href={version.status === "personal" ? "/versions" : "/trip"}>{version.status === "personal" ? "Versions" : "The trip"}</Back>
+      <Back href="/trip">The trip</Back>
       <PageHeader
         eyebrow={
           <span className="flex items-center gap-2">
@@ -127,17 +120,9 @@ export function VersionView({ id }: { id: string }) {
       <VersionStatsRow v={version} />
 
       <div className="flex flex-wrap gap-2">
-        <button className="btn btn-sm" onClick={copy} disabled={busy || !me}>
-          Copy to my versions
-        </button>
         <button className="btn btn-sm" onClick={share}>
           Share
         </button>
-        {version.status === "personal" && plan && diffVsPlan.length ? (
-          <button className="btn btn-sm" onClick={() => setSuggesting((s) => !s)}>
-            Suggest to the plan
-          </button>
-        ) : null}
         <Link href={`/map?version=${version.id}`} className="btn btn-sm">
           Map
         </Link>
@@ -147,7 +132,7 @@ export function VersionView({ id }: { id: string }) {
             onClick={async () => {
               if (confirm(`Delete “${version.name}”?`)) {
                 await deleteVersion(version.id);
-                router.push("/versions");
+                router.push("/trip");
               }
             }}
           >

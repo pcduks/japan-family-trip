@@ -9,7 +9,7 @@ import { paceLabel, statsOf } from "@/lib/versions";
 import { BudgetLine } from "./Budget";
 import { useStore } from "./providers";
 import { RegionLegend, TimelineAxis, TimelineLane } from "./Timeline";
-import { Avatar, Page, PageHeader, RuleBadges, Section } from "./ui";
+import { Avatar, Back, Page, PageHeader, RuleBadges, Section } from "./ui";
 
 export function VersionStatsRow({ v }: { v: Version }) {
   const { snapshot } = useStore();
@@ -81,26 +81,17 @@ export function Board() {
   const { snapshot, me } = useStore();
   const versions = snapshot.versions.filter((v) => v.status !== "legacy" && (v.shared !== false || v.owner === me?.travellerId || me?.role === "planner"));
   const regionIds = Array.from(new Set(versions.flatMap((v) => v.stays.map((s) => s.region))));
-  const paceVotes = snapshot.votes.filter((v) => v.kind === "pace").length;
   const rankVotes = snapshot.votes.filter((v) => v.kind === "rank").length;
   return (
     <Page wide>
-      <PageHeader eyebrow={`${snapshot.trip.nights} nights · ${snapshot.travellers.length} travellers · 20 Dec – 9 Jan`} title="Version board">
-        Every version side by side. Same colour, same place. Tap one for the stays, where to sleep, the budget, the rules check and the reasons. <Link href="/trip">Back to the trip</Link>.
+      <Back href="/trip">The trip</Back>
+      <PageHeader eyebrow={`${snapshot.trip.nights} nights · ${snapshot.travellers.length} travellers · 20 Dec – 9 Jan`} title="Side by side">
+        Every version on the same calendar. Same colour, same place. Tap one for the stops, where to sleep, the budget and the reasons.
       </PageHeader>
 
       <div className="flex flex-wrap gap-2 text-sm">
-        <Link href="/versions" className="btn btn-sm">
-          All versions
-        </Link>
-        <Link href="/vote" className="btn btn-sm">
-          Vote · {paceVotes}/{snapshot.travellers.length} pace, {rankVotes}/{snapshot.travellers.length} ranked
-        </Link>
-        <Link href="/missing" className="btn btn-sm">
-          What we’re missing
-        </Link>
-        <Link href="/versions/new" className="btn btn-sm btn-primary">
-          + My version
+        <Link href="/vote" className="btn btn-sm btn-primary">
+          Rank them · {rankVotes}/{snapshot.travellers.length} have
         </Link>
       </div>
 

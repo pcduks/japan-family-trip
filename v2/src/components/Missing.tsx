@@ -9,7 +9,7 @@ import type { Region } from "@/lib/types";
 import { swapInRegion } from "@/lib/versions";
 import { useStore } from "./providers";
 import { RegionCover } from "./RegionCover";
-import { Page, PageHeader, Section } from "./ui";
+import { Back, Page, PageHeader, Section } from "./ui";
 
 const GROUPS: { status: Region["status"][]; title: string; blurb: string }[] = [
   { status: ["candidate_fits", "option"], title: "Fits the dates", blurb: "These could replace a stay or add to one." },
@@ -29,11 +29,12 @@ export function Missing() {
     setBusyId(region.id);
     const { version } = swapInRegion(plan, region, snapshot.versions, me.travellerId, snapshot.trip.start);
     await saveVersion(version);
-    router.push(`/versions/${version.id}/edit`);
+    router.push(`/versions/${version.id}#stops`);
   }
 
   return (
     <Page>
+      <Back href="/">Why these places</Back>
       <PageHeader eyebrow="Candidates" title="What we’re missing">
         Regions we researched but left out, with the fit verdict. One tap makes you a version with the swap, which you can then edit and suggest.{" "}
         <Link href="/plan?tab=missing">The full write-up is in the report.</Link>
