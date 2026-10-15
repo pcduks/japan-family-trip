@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { tripData } from "@/lib/data/file";
 import { GoogleApiError, placeDetails, textSearch } from "@/lib/google/places";
-import { adminSupabase, getViewer, serverSupabase } from "@/lib/supabase/server";
+import { adminSupabase, getViewer } from "@/lib/supabase/server";
 
 /**
  * GET /api/places/{id}          → Google Place Details (cached server-side)
@@ -12,7 +12,7 @@ export async function GET(req: NextRequest, ctx: RouteContext<"/api/places/[id]"
   const { id } = await ctx.params;
   const viewer = await getViewer();
   if (!viewer) return NextResponse.json({ error: "Sign in first" }, { status: 401 });
-  const sb = viewer === "demo" ? null : await serverSupabase();
+  const sb = viewer === "demo" ? null : adminSupabase();
   let place: { id: string; name: string; region_id: string; google_place_id: string | null } | null = null;
   if (sb) {
     const { data } = await sb.from("places").select("id,name,region_id,google_place_id").eq("id", id).maybeSingle();

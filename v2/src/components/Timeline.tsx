@@ -51,6 +51,7 @@ export function TimelineLane({ stays, trip, calendar, regions, height = 34, acti
               opacity: activeIndex != null && !active ? 0.45 : 1,
               boxShadow: active ? "inset 0 0 0 2px var(--ink)" : undefined,
               textShadow: "0 1px 2px rgba(0,0,0,.35)",
+              transition: "left 0.35s cubic-bezier(.2,.8,.2,1), width 0.35s cubic-bezier(.2,.8,.2,1), opacity 0.2s",
             }}
             title={`${r?.name ?? s.region} · ${s.nights} nights`}
           >

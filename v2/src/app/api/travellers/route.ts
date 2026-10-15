@@ -4,9 +4,9 @@ import { adminSupabase, getViewer } from "@/lib/supabase/server";
 const IDS = ["pedro", "wife", "brother", "sister_in_law", "father", "mother", "sister"];
 
 /**
- * Planners manage the family here (PRD §3). POST upserts a traveller and
- * pre-creates their sign-in user so the email code works with sign-ups off.
- * DELETE removes a traveller (their votes and versions go with them).
+ * Planners manage the family here (PRD §3). POST upserts a traveller (name,
+ * role, optional email); in the beta everyone gets in with the family code
+ * and picks their name. DELETE removes a traveller (votes and versions too).
  */
 export async function POST(req: NextRequest) {
   const viewer = await getViewer();
@@ -19,13 +19,12 @@ export async function POST(req: NextRequest) {
   const email = String(body?.email ?? "").trim().toLowerCase();
   const role = body?.role === "planner" ? "planner" : "member";
   if (!IDS.includes(id)) return NextResponse.json({ error: `id must be one of ${IDS.join(", ")}` }, { status: 400 });
-  if (!name || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return NextResponse.json({ error: "A name and a valid email are required" }, { status: 400 });
+  if (!name) return NextResponse.json({ error: "A name is required" }, { status: 400 });
+  if (email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return NextResponse.json({ error: "That email does not look right" }, { status: 400 });
 
-  const { error } = await admin.from("travellers").upsert({ id, name, email, role, notes: body?.notes ?? null }, { onConflict: "id" });
+  const { error } = await admin.from("travellers").upsert({ id, name, email: email || null, role, notes: body?.notes ?? null }, { onConflict: "id" });
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-  const created = await admin.auth.admin.createUser({ email, email_confirm: true });
-  const authNote = created.error && !/already|registered|exists/i.test(created.error.message) ? created.error.message : null;
-  return NextResponse.json({ ok: true, authNote });
+  return NextResponse.json({ ok: true });
 }
 
 export async function DELETE(req: NextRequest) {

@@ -1,38 +1,29 @@
-import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
+import { FAMILY_COOKIE, familyCookieOk, ME_COOKIE } from "./lib/family";
+import { demoAllowed, hasSupabase } from "./lib/env";
 
-const PUBLIC_PATHS = ["/login", "/auth/", "/api/import", "/api/connector", "/api/health"];
+const PUBLIC_PATHS = ["/login", "/api/family", "/api/import", "/api/connector", "/api/health"];
 
-/** Refresh the Supabase session cookie and keep signed-out visitors on /login. */
+/**
+ * Beta access: anyone with the family code cookie and a picked name gets in.
+ * Everyone else lands on /login. Demo mode (no Supabase) needs neither.
+ */
 export async function proxy(request: NextRequest) {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
-  const anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY;
-  if (!url || !anon) return NextResponse.next();
-
-  let response = NextResponse.next({ request });
-  const supabase = createServerClient(url, anon, {
-    cookies: {
-      getAll: () => request.cookies.getAll(),
-      setAll: (list) => {
-        list.forEach(({ name, value }) => request.cookies.set(name, value));
-        response = NextResponse.next({ request });
-        list.forEach(({ name, value, options }) => response.cookies.set(name, value, options));
-      },
-    },
-  });
-  const { data } = await supabase.auth.getUser();
-
   const path = request.nextUrl.pathname;
-  if (!data.user && !PUBLIC_PATHS.some((p) => path.startsWith(p))) {
-    if (path.startsWith("/api/")) return NextResponse.json({ error: "Sign in first" }, { status: 401 });
-    const login = request.nextUrl.clone();
-    login.pathname = "/login";
-    login.search = path === "/" ? "" : `?next=${encodeURIComponent(path)}`;
-    return NextResponse.redirect(login);
-  }
-  return response;
+  if (PUBLIC_PATHS.some((p) => path.startsWith(p))) return NextResponse.next();
+  if (!hasSupabase && demoAllowed()) return NextResponse.next();
+
+  const familyOk = await familyCookieOk(request.cookies.get(FAMILY_COOKIE)?.value);
+  const me = request.cookies.get(ME_COOKIE)?.value;
+  if (familyOk && me) return NextResponse.next();
+
+  if (path.startsWith("/api/")) return NextResponse.json({ error: familyOk ? "Pick who you are first" : "Enter the family code first" }, { status: 401 });
+  const login = request.nextUrl.clone();
+  login.pathname = "/login";
+  login.search = path === "/" ? "" : `?next=${encodeURIComponent(path)}`;
+  return NextResponse.redirect(login);
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|icon|apple-icon|manifest.webmanifest).*)"],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|icon|apple-icon|manifest.webmanifest|illustrations/).*)"],
 };

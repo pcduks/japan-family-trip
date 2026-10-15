@@ -1,56 +1,46 @@
 import "server-only";
-import { createServerClient } from "@supabase/ssr";
 import { createClient } from "@supabase/supabase-js";
 import type { DB } from "./types";
 import { cookies } from "next/headers";
 import { connection } from "next/server";
 import { DB_SCHEMA, demoAllowed, env, hasSupabase, serverEnv } from "../env";
+import { FAMILY_COOKIE, familyCookieOk, ME_COOKIE } from "../family";
 import type { Role } from "../types";
 
-/** Supabase client acting as the signed-in user (RLS applies). */
-export async function serverSupabase(): Promise<DB | null> {
-  if (!hasSupabase) return null;
-  const cookieStore = await cookies();
-  return createServerClient(env.supabaseUrl, env.supabaseAnonKey, {
-    db: { schema: DB_SCHEMA },
-    cookies: {
-      getAll: () => cookieStore.getAll(),
-      setAll: (list) => {
-        try {
-          list.forEach(({ name, value, options }) => cookieStore.set(name, value, options));
-        } catch {
-          // Called from a Server Component; the proxy refreshes the session instead.
-        }
-      },
-    },
-  }) as DB;
-}
-
-/** Service-role client for trusted server work (bypasses RLS). */
+/**
+ * The one database client the app uses on the server (service role, bypasses
+ * RLS). Access is gated by the family code and the picked name, checked in
+ * the proxy and again in getViewer(); the browser never talks to Supabase.
+ */
 export function adminSupabase(): DB | null {
   const key = serverEnv().serviceRoleKey;
   if (!hasSupabase || !key) return null;
   return createClient(env.supabaseUrl, key, { db: { schema: DB_SCHEMA }, auth: { persistSession: false } }) as DB;
 }
 
+/** Kept for callers that used to ask for a per-user client. */
+export async function serverSupabase(): Promise<DB | null> {
+  return adminSupabase();
+}
+
 export interface Viewer {
   travellerId: string;
   name: string;
-  email: string;
   role: Role;
 }
 
-/** The signed-in traveller, null when signed out, or "demo" without Supabase. */
+/** The person using the app (from the cookies), null when not through the gate, or "demo" without Supabase. */
 export async function getViewer(): Promise<Viewer | null | "demo"> {
   await connection();
-  const sb = await serverSupabase();
+  const sb = adminSupabase();
   if (!sb) return demoAllowed() ? "demo" : null;
-  const { data } = await sb.auth.getUser();
-  const email = data.user?.email;
-  if (!email) return null;
-  const { data: t } = await sb.from("travellers").select("id,name,email,role").ilike("email", email).maybeSingle();
+  const jar = await cookies();
+  if (!(await familyCookieOk(jar.get(FAMILY_COOKIE)?.value))) return null;
+  const id = jar.get(ME_COOKIE)?.value;
+  if (!id) return null;
+  const { data: t } = await sb.from("travellers").select("id,name,role").eq("id", id).maybeSingle();
   if (!t) return null;
-  return { travellerId: t.id, name: t.name, email: t.email, role: t.role };
+  return { travellerId: t.id, name: t.name, role: t.role };
 }
 
 export async function isPlannerRequest(): Promise<boolean> {

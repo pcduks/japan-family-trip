@@ -142,7 +142,7 @@ export async function loadSnapshot(sb: DB | null): Promise<Snapshot> {
   const base = fileSnapshot();
   if (!sb) return base;
   const [travellers, regions, places, versions, stays, votes, suggestions, comments, reactions, history, deadlines, days] = await Promise.all([
-    sb.from("travellers").select("id,name,role,notes").order("id"),
+    sb.from("travellers").select("id,name,role,notes").neq("id", "claude").order("id"),
     sb.from("regions").select("*"),
     sb.from("places").select("*, closures(*)").order("sort"),
     sb.from("versions").select("*").order("created_at"),

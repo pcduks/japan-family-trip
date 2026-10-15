@@ -31,7 +31,7 @@ export function FamilyView() {
     const j = await r.json();
     setBusy(false);
     if (!r.ok) return setMsg(j.error ?? "Could not add.");
-    setMsg(j.authNote ? `Added. Note: ${j.authNote}` : `Added ${name}. They can sign in by tapping their name.`);
+    setMsg(`Added ${name}. They get in with the family code and their name.`);
     setName("");
     setEmail("");
     await refresh();
@@ -47,7 +47,7 @@ export function FamilyView() {
   }
 
   async function invite() {
-    const text = `Our Japan trip planner is live: ${location.origin}\nTap your name, get a 6-digit code by email, and vote on the pace, your two must-dos and the versions before 25 Oct.`;
+    const text = `Our Japan trip planner is live: ${location.origin}\nType the family code I sent you, tap your name, and vote on the pace, your two must-dos and the versions before 25 Oct.`;
     try {
       if (navigator.share) await navigator.share({ text });
       else {
@@ -67,7 +67,7 @@ export function FamilyView() {
   return (
     <Page>
       <PageHeader eyebrow="Planners" title="Family">
-        Everyone on this list can sign in by tapping their name and typing the code from the email. Nobody else can.
+        Everyone on this list gets in with the family code and their name. Names that nobody has claimed yet show as “Brother”, “Dad” and so on until that person types their own.
       </PageHeader>
       <Section title="On the trip" aside={`${snapshot.travellers.length} of 7`}>
         <ul className="grid gap-2">
@@ -116,8 +116,8 @@ export function FamilyView() {
               <input value={name} onChange={(e) => setName(e.target.value)} required autoComplete="off" />
             </label>
             <label className="grid gap-1">
-              <span className="eyebrow">Email (for the sign-in code)</span>
-              <input type="email" inputMode="email" autoCapitalize="none" value={email} onChange={(e) => setEmail(e.target.value)} required />
+              <span className="eyebrow">Email (optional)</span>
+              <input type="email" inputMode="email" autoCapitalize="none" value={email} onChange={(e) => setEmail(e.target.value)} />
             </label>
             <div className="seg" role="group" aria-label="Role">
               <button type="button" aria-pressed={role === "member"} onClick={() => setRole("member")}>
@@ -127,7 +127,7 @@ export function FamilyView() {
                 Planner
               </button>
             </div>
-            <button className="btn btn-primary" disabled={busy || !name.trim() || !email.trim()}>
+            <button className="btn btn-primary" disabled={busy || !name.trim()}>
               Add
             </button>
           </form>

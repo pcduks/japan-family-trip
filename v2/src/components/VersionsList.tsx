@@ -50,12 +50,12 @@ export function NewVersion() {
     if (!src || !me) return;
     const v = copyVersion(src, me.travellerId, name.trim() || "My version", snapshot.trip.start);
     await saveVersion(v);
-    router.push(`/versions/${v.id}/edit`);
+    router.push(`/versions/${v.id}#stops`);
   }
   return (
     <Page>
       <PageHeader eyebrow="My versions" title="New version">
-        Pick a starting point. You can then drag stays, change nights and dates, and the rules check runs as you go.
+        Pick a starting point. Then drag the stops, tap a name to swap it, use +/− for nights; the rules check runs as you go and every change saves on its own.
       </PageHeader>
       <label className="grid gap-1">
         <span className="eyebrow">Name</span>

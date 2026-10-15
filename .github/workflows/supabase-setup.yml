@@ -5,9 +5,8 @@
 #   SUPABASE_PROJECT_REF      the project ref (the part before .supabase.co)
 #   SUPABASE_SERVICE_ROLE_KEY Project → Settings → API Keys → service_role
 #   GOOGLE_PLACES_API_KEY     optional; resolves Google place ids during the seed
-# It also sets the Auth settings the README asks for (sign-ups off, the
-# before-user-created hook, 6-digit codes, redirect URLs) via the Management API.
-# Every step is idempotent, so the workflow can be re-run.
+# Beta access is a shared family code (FAMILY_CODE on Vercel, default fuji2026),
+# so no Auth setup is needed. Every step is idempotent; re-run freely.
 name: Supabase setup (v2)
 
 on:
@@ -17,11 +16,6 @@ on:
     branches: [ccr-57489b00-8hd97m]
     paths: [.github/workflows/supabase-setup.yml]
   workflow_dispatch:
-    inputs:
-      travellers_map:
-        description: "Optional fixes to the traveller mapping, e.g. --map=someone@x.com=sister"
-        required: false
-        default: ""
 
 jobs:
   setup:
@@ -45,12 +39,8 @@ jobs:
       - run: npm ci
       - name: Apply the migration (trip schema, RLS, functions)
         run: npm run db:push
-      - name: Build data/travellers.json from the earlier app's travellers
-        run: npx tsx scripts/travellers-from-v1.ts ${{ inputs.travellers_map }}
-      - name: Seed (travellers, auth users, trip-data.json, place ids)
+      - name: Seed (travellers, trip-data.json, place ids)
         run: npm run seed
-      - name: Auth settings (sign-ups off, sign-in hook, 6-digit codes, redirect URLs)
-        run: npx tsx scripts/configure-auth.ts
       - name: Row counts
         run: |
           node -e '

@@ -1,6 +1,7 @@
-import { VersionEditor } from "@/components/VersionEditor";
+import { redirect } from "next/navigation";
 
-export default async function EditVersionPage({ params }: PageProps<"/versions/[id]/edit">) {
+/** Editing now happens on the version page itself (drag, tap, +/−). */
+export default async function EditRedirect({ params }: PageProps<"/versions/[id]/edit">) {
   const { id } = await params;
-  return <VersionEditor id={id} />;
+  redirect(`/versions/${id}#stops`);
 }

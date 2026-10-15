@@ -1,11 +1,10 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
-import { loadSnapshot } from "@/lib/data/loader";
 import { localStore, useLocalStore, useSystemDark } from "@/lib/localStore";
 import type { RulesContext } from "@/lib/rules";
-import { browserSupabase } from "@/lib/supabase/client";
-import type { Comment, PlanHistoryEntry, Reaction, Role, Snapshot, Stay, Suggestion, SuggestionDiff, Version, Vote, VoteKind } from "@/lib/types";
+import type { Comment, PlanHistoryEntry, Reaction, Role, Snapshot, Suggestion, SuggestionDiff, Version, Vote, VoteKind } from "@/lib/types";
 import { describeDiff, newId } from "@/lib/versions";
 
 /* ------------------------------------------------------------ prefs */
@@ -79,11 +78,22 @@ export function useStore(): Store {
   return s;
 }
 
-type Row = Record<string, unknown>;
+/** Posts one write to the server. Throws with the server's message on failure. */
+async function act(action: string, payload: Record<string, unknown>): Promise<void> {
+  const r = await fetch("/api/act", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action, ...payload }) });
+  if (!r.ok) {
+    const j = (await r.json().catch(() => ({}))) as { error?: string };
+    throw new Error(j.error ?? `${action} failed (${r.status})`);
+  }
+}
+
+const POLL_MS = 15000;
 
 export function Providers({ snapshot: initial, viewer, children }: { snapshot: Snapshot; viewer: Me | null | "demo"; children: React.ReactNode }) {
   const demo = viewer === "demo";
-  const sb = demo ? null : browserSupabase();
+  /** Shared mode: reads and writes go through the server, which holds the only database key. */
+  const sb = !demo && viewer !== null;
+  const router = useRouter();
 
   /* prefs */
   const prefs = useLocalStore(prefsStore);
@@ -116,30 +126,34 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
   const refresh = useCallback(async () => {
     if (!sb) return;
     try {
-      const [snap, settings] = await Promise.all([loadSnapshot(sb), sb.from("settings").select("value").eq("key", "votes").maybeSingle()]);
-      setRemote(snap);
-      setRankRevealedRemote(Boolean((settings.data?.value as { rank_revealed?: boolean } | null)?.rank_revealed));
+      const r = await fetch("/api/state", { cache: "no-store" });
+      if (r.status === 401) {
+        router.push("/login");
+        return;
+      }
+      const j = (await r.json()) as { snapshot?: Snapshot; rankRevealed?: boolean; error?: string };
+      if (!r.ok || !j.snapshot) throw new Error(j.error ?? "Could not load");
+      setRemote(j.snapshot);
+      setRankRevealedRemote(Boolean(j.rankRevealed));
       setError(null);
     } catch (e) {
       setError((e as Error).message);
     }
-  }, [sb]);
+  }, [sb, router]);
 
+  // No websockets in the beta: poll while the tab is visible and refetch when it comes back.
   useEffect(() => {
     if (!sb) return;
-    let t: ReturnType<typeof setTimeout> | undefined;
-    const bump = () => {
-      clearTimeout(t);
-      t = setTimeout(refresh, 200);
+    const tick = () => {
+      if (document.visibilityState === "visible") refresh();
     };
-    const channel = sb.channel("trip-live");
-    for (const table of ["votes", "versions", "stays", "suggestions", "comments", "reactions"]) {
-      channel.on("postgres_changes", { event: "*", schema: "trip", table }, bump);
-    }
-    channel.subscribe();
+    const id = setInterval(tick, POLL_MS);
+    document.addEventListener("visibilitychange", tick);
+    window.addEventListener("focus", tick);
     return () => {
-      clearTimeout(t);
-      sb.removeChannel(channel);
+      clearInterval(id);
+      document.removeEventListener("visibilitychange", tick);
+      window.removeEventListener("focus", tick);
     };
   }, [sb, refresh]);
 
@@ -162,12 +176,11 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
   const isPlanner = !!me && me.role === "planner";
 
   const run = useCallback(
-    async (fn: () => PromiseLike<{ error: { message: string } | null } | void> | { error: { message: string } | null }) => {
+    async (action: string, payload: Record<string, unknown>) => {
       setBusy(true);
       try {
-        const r = await fn();
-        if (r && r.error) setError(r.error.message);
-        else setError(null);
+        await act(action, payload);
+        setError(null);
         await refresh();
       } catch (e) {
         setError((e as Error).message);
@@ -196,31 +209,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
         });
         return;
       }
-      await run(async () => {
-        const row: Row = {
-          id: v.id,
-          name: v.name,
-          owner_id: v.status === "personal" ? v.owner : before && before.owner !== "planners" ? before.owner : null,
-          pace: v.pace,
-          status: v.status,
-          parent_version_id: v.parent_version_id ?? null,
-          gains: v.gains,
-          gives_up: v.gives_up,
-          shared: v.shared ?? true,
-          updated_at: new Date().toISOString(),
-        };
-        const up = await sb.from("versions").upsert(row, { onConflict: "id" });
-        if (up.error) return up;
-        const del = await sb.from("stays").delete().eq("version_id", v.id);
-        if (del.error) return del;
-        const ins = await sb.from("stays").insert(
-          v.stays.map((s: Stay, i: number) => ({ version_id: v.id, region_id: s.region, start_date: s.from, end_date: s.to, lodging_type: s.lodging, note: s.note, sort: i })),
-        );
-        if (ins.error) return ins;
-        if (isPlan && before) {
-          return sb.from("plan_history").insert({ version_id: v.id, actor_id: who.travellerId, change: { summary: note ? [note, ...summary] : summary, before: before.stays, after: v.stays } });
-        }
-      });
+      await run("saveVersion", { version: v, note });
     },
     [sb, run, snapshot.versions, snapshot.regions, me],
   );
@@ -228,7 +217,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
   const deleteVersion = useCallback(
     async (id: string) => {
       if (!sb) return patchDemo((d) => ({ ...d, versions: d.versions.filter((v) => v.id !== id) }));
-      await run(() => sb.from("versions").delete().eq("id", id));
+      await run("deleteVersion", { id });
     },
     [sb, run],
   );
@@ -239,14 +228,14 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
       if (!who) return;
       const vote: Vote = { traveller_id: who.travellerId, kind, value, updated_at: new Date().toISOString() };
       if (!sb) return patchDemo((d) => ({ ...d, votes: [...d.votes.filter((v) => !(v.traveller_id === who.travellerId && v.kind === kind)), vote] }));
-      await run(() => sb.from("votes").upsert(vote, { onConflict: "traveller_id,kind" }));
+      await run("setVote", { kind, value: vote.value });
     },
     [sb, run, me],
   );
 
   const revealRanks = useCallback(async () => {
     if (!sb) return patchDemo((d) => ({ ...d, rankRevealed: true }));
-    await run(() => sb.from("settings").upsert({ key: "votes", value: { rank_revealed: true }, updated_at: new Date().toISOString() }, { onConflict: "key" }));
+    await run("revealRanks", {});
   }, [sb, run]);
 
   const suggest = useCallback(
@@ -258,7 +247,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
           ...d,
           suggestions: [{ id: newId(), from_version_id: fromVersionId, author_id: who.travellerId, diff, comment, status: "open", created_at: new Date().toISOString() }, ...d.suggestions],
         }));
-      await run(() => sb.from("suggestions").insert({ from_version_id: fromVersionId, author_id: who.travellerId, diff, comment }));
+      await run("suggest", { fromVersionId, diff, comment });
     },
     [sb, run, me],
   );
@@ -284,10 +273,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
         });
         return;
       }
-      await run(async () => {
-        if (decision === "accepted") return sb.rpc("accept_suggestion", { sid: id });
-        return sb.from("suggestions").update({ status: "declined", decided_by: who.travellerId, decided_at: new Date().toISOString() }).eq("id", id);
-      });
+      await run("decideSuggestion", { id, decision });
     },
     [sb, run, snapshot.versions, me],
   );
@@ -295,7 +281,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
   const withdrawSuggestion = useCallback(
     async (id: string) => {
       if (!sb) return patchDemo((d) => ({ ...d, suggestions: d.suggestions.filter((s) => s.id !== id) }));
-      await run(() => sb.from("suggestions").delete().eq("id", id));
+      await run("withdrawSuggestion", { id });
     },
     [sb, run],
   );
@@ -315,7 +301,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
         }));
         return;
       }
-      await run(() => sb.rpc("revert_plan", { hid: id }));
+      await run("revertHistory", { id });
     },
     [sb, run, snapshot.versions, me],
   );
@@ -325,7 +311,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
       const who = me;
       if (!who || !body.trim()) return;
       if (!sb) return patchDemo((d) => ({ ...d, comments: [...d.comments, { id: newId(), author_id: who.travellerId, target_type: targetType, target_id: targetId, body: body.trim(), created_at: new Date().toISOString() }] }));
-      await run(() => sb.from("comments").insert({ author_id: who.travellerId, target_type: targetType, target_id: targetId, body: body.trim() }));
+      await run("addComment", { targetType, targetId, body: body.trim() });
     },
     [sb, run, me],
   );
@@ -340,7 +326,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
           ...d,
           reactions: existing ? d.reactions.filter((r) => r.id !== existing.id) : [...d.reactions, { id: newId(), traveller_id: who.travellerId, target_type: targetType, target_id: targetId, kind }],
         }));
-      await run(() => (existing ? sb.from("reactions").delete().eq("id", existing.id) : sb.from("reactions").insert({ traveller_id: who.travellerId, target_type: targetType, target_id: targetId, kind })));
+      await run("toggleReaction", { targetType, targetId, kind });
     },
     [sb, run, snapshot.reactions, me],
   );
