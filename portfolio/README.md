@@ -31,7 +31,7 @@ No keys are needed to run or build the site. The optional scripts below use `GEM
 | `src/scene/` | The globe: Natural Earth land rasterised to a dot field, flight arcs, markers, atmosphere, camera choreography |
 | `src/components/` | Hero and split-flap board, About, Log (boarding passes), Builds (luggage tags), Toolkit, Contact, Help |
 | `scripts/` | `fetch-github.ts`, `import-cv.ts`, `illustrate.ts` |
-| `deploy/github-pages.yml` | A ready-to-copy GitHub Actions workflow |
+| `.github/workflows/pages.yml` | GitHub Actions workflow that builds and deploys to GitHub Pages |
 
 ## Your CV
 
@@ -78,15 +78,15 @@ point `image` at it.
 
 Recommended: **GitHub Pages**, free, with a custom domain if you have one.
 
-1. Move this folder to its own repository (`pcduks/pcduks.github.io` gives you `https://pcduks.github.io/` with no base
-   path; any other name gives `https://pcduks.github.io/<repo>/` and needs `VITE_BASE=/<repo>/`).
-   From the root of this repository:
+1. Create an empty public repository named `pcduks.github.io` (that name gives `https://pcduks.github.io/` with no
+   base path; any other name gives `https://pcduks.github.io/<repo>/` and needs the `VITE_BASE` variable set to `/<repo>/`).
+2. Push this folder there with its history. From the root of `japan-family-trip`:
    ```bash
    git subtree split --prefix portfolio -b portfolio-only
-   # then push that branch to the new repository's main
+   git push https://github.com/pcduks/pcduks.github.io.git portfolio-only:main
    ```
-2. Copy `deploy/github-pages.yml` to `.github/workflows/pages.yml` in the new repository.
-3. GitHub → Settings → Pages → Source: *GitHub Actions*. Push to `main` and it deploys.
+3. The workflow in `.github/workflows/pages.yml` runs on that push and tries to enable Pages by itself. If the
+   first run fails at "configure-pages", enable it once by hand (Settings → Pages → Source: *GitHub Actions*) and re-run.
 
 Vercel works too (you already use it for the trip app): import the repo, framework preset *Vite*, output `dist`.
 Cloudflare Pages and Netlify are equally fine; the output is plain static files.

@@ -1,6 +1,6 @@
 # Your CV goes here
 
-Drop your PDF in this folder as `Pedro-Parra-CV.pdf` (or change `cv.file` in `content/profile.json`).
+`Pedro-Parra-CV.pdf` is a public-safe version of the September 2026 résumé (same text, no phone number). Replace it with any PDF of the same name, or change `cv.file` in `content/profile.json`.
 The "Download CV" button on the site links straight to it.
 
 Everything in `public/` is published as-is, so only put a version here that you are happy to have on the open web

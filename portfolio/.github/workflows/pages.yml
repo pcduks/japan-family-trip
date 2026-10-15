@@ -1,9 +1,11 @@
-# Copy this file to .github/workflows/pages.yml in the repository that holds the site.
-# Then in GitHub: Settings → Pages → Source: "GitHub Actions". Every push to main redeploys.
+# Deploys the site to GitHub Pages on every push to main.
+# First run: the configure-pages step tries to switch the repository to "GitHub Actions" as the Pages source.
+# If that step is refused, do it once by hand: Settings → Pages → Build and deployment → Source: GitHub Actions.
 #
-# If the site lives in a sub-folder (like portfolio/ here), set `working-directory` below accordingly.
-# If you deploy to a *project* site (https://<user>.github.io/<repo>/) set VITE_BASE to "/<repo>/".
-# For a user site (https://<user>.github.io/) or a custom domain, leave VITE_BASE empty.
+# This file is meant for the repository that holds the site at its root (pcduks.github.io). While the site
+# still lives in portfolio/ of japan-family-trip, GitHub ignores it there (workflows only run from the root .github/).
+# For a *project* site (https://<user>.github.io/<repo>/) set the VITE_BASE repository variable to "/<repo>/".
+# For a user site (https://<user>.github.io/) or a custom domain, leave it unset.
 
 name: Deploy portfolio to GitHub Pages
 
@@ -21,15 +23,14 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
-defaults:
-  run:
-    working-directory: .
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/setup-node@v4
         with:
           node-version: 22
