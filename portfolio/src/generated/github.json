@@ -1,0 +1,18 @@
+{
+  "fetchedAt": "2026-10-15T00:00:00.000Z",
+  "repos": [
+    {
+      "repo": "pcduks/japan-family-trip",
+      "name": "japan-family-trip",
+      "description": "Seis pelo Japão: a private trip-planning app for six travellers.",
+      "url": "https://github.com/pcduks/japan-family-trip",
+      "homepage": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "topics": [],
+      "pushedAt": "2026-10-15T10:24:17Z",
+      "private": false,
+      "archived": false
+    }
+  ]
+}

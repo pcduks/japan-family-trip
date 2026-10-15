@@ -1,0 +1,46 @@
+[
+  {
+    "repo": "pcduks/japan-family-trip",
+    "name": "Seis pelo Japão",
+    "kicker": "Trip planner for six",
+    "description": "A private trip-planning app for six travellers heading to Japan this winter. Washi paper, five inks and station-style stamps that get inked as things happen. Hidden preference votes, a ranked ballot over four routes, a route builder that enforces twenty nights and New Year closures, shared expenses in yen, an offline notebook, and a Today screen with the hotel address in Japanese for taxi drivers. Portuguese UI, English place names.",
+    "stack": ["Next.js 16", "TypeScript", "Tailwind 4", "Supabase", "Google Maps", "Gemini illustrations"],
+    "image": "illustrations/japan-family-trip.webp",
+    "status": "In use",
+    "year": "2026",
+    "tag": "NRT"
+  },
+  {
+    "repo": "pcduks/viagem-africa-do-sul",
+    "name": "Viagem África do Sul",
+    "kicker": "The trip before this one",
+    "description": "The family's South Africa trip planner, and the prototype for everything the Japan app does better. Private repository, Portuguese throughout.",
+    "stack": ["TypeScript", "Next.js"],
+    "image": "illustrations/viagem-africa-do-sul.webp",
+    "status": "Private",
+    "year": "2025",
+    "tag": "CPT"
+  },
+  {
+    "repo": "pcduks/portfolio-dashboard",
+    "name": "Portfolio Dashboard",
+    "kicker": "A dashboard for my own numbers",
+    "description": "A personal dashboard for tracking a portfolio of investments across currencies. Built because the spreadsheet had stopped being fun. Private repository.",
+    "stack": ["TypeScript"],
+    "image": "illustrations/portfolio-dashboard.webp",
+    "status": "Private",
+    "year": "2026",
+    "tag": "SIN"
+  },
+  {
+    "repo": "pcduks/formcoach",
+    "name": "FormCoach",
+    "kicker": "A camera that watches your form",
+    "description": "An experiment in using multimodal models and pose estimation to coach exercise form from a phone camera. Private repository.",
+    "stack": ["TypeScript", "Multimodal AI"],
+    "image": "illustrations/formcoach.webp",
+    "status": "Experiment",
+    "year": "2026",
+    "tag": "GYM"
+  }
+]

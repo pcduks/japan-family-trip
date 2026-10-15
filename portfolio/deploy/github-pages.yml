@@ -1,0 +1,55 @@
+# Copy this file to .github/workflows/pages.yml in the repository that holds the site.
+# Then in GitHub: Settings → Pages → Source: "GitHub Actions". Every push to main redeploys.
+#
+# If the site lives in a sub-folder (like portfolio/ here), set `working-directory` below accordingly.
+# If you deploy to a *project* site (https://<user>.github.io/<repo>/) set VITE_BASE to "/<repo>/".
+# For a user site (https://<user>.github.io/) or a custom domain, leave VITE_BASE empty.
+
+name: Deploy portfolio to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: .
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          VITE_BASE: ${{ vars.VITE_BASE }}
+          # The default token can read your public repos; add a fine-grained PAT as a secret to list private ones too.
+          GITHUB_TOKEN: ${{ secrets.PORTFOLIO_GITHUB_TOKEN || github.token }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

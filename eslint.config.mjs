@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // The portfolio site is its own Vite project with its own tooling.
+    "portfolio/**",
   ]),
 ]);
 

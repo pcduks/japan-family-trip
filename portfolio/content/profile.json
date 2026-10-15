@@ -1,0 +1,279 @@
+{
+  "name": "Pedro Parra",
+  "shortName": "Pedro",
+  "callsign": "PCP",
+  "role": "Lead, Applied AI & Commercial Operations (APAC) at Google",
+  "location": {
+    "city": "Singapore",
+    "lat": 1.3521,
+    "lon": 103.8198
+  },
+  "tagline": "I build agentic AI systems for Google's commercial teams across APAC. Brazilian in Singapore. Engineer by training, strategist by trade, and a compulsive builder of over-engineered apps for family trips.",
+  "boardLines": [
+    "BOARDING  PEDRO PARRA",
+    "APPLIED AI · GOOGLE",
+    "FROM  SAO PAULO  BR",
+    "BASED  SINGAPORE  SG",
+    "BUILDS THINGS FOR FUN"
+  ],
+  "intro": [
+    "Hi, I'm Pedro. I lead Applied AI & Commercial Operations for Google in APAC, where I design and ship agentic systems that replace the spreadsheets nobody loved. Before that I spent six years on the strategy side of Google's hardware business, three at LinkedIn, and two at McKinsey.",
+    "I'm an electrical engineer who took the long way round through consulting and go-to-market strategy and ended up back where I started: building things. These days that means stateful LLM orchestrators at work and, at home, a suspiciously elaborate trip planner for six people and a Portuguese-speaking dashboard or two.",
+    "I've worked out of São Paulo, Kansas City, Berkeley and, since 2016, Singapore. This site is laid out as a flight log because that's roughly how my career happened: a sequence of legs, each a little further from home, each with a story."
+  ],
+  "now": [
+    "Shipping the APAC Commercial Insights Agent, a multi-tier agentic framework built on stateful LLM orchestrators that automates commercial analysis across six retail markets.",
+    "Prototyping on-device AI for enterprise partners, including a multimodal edge diagnostics tool built on Gemini Nano.",
+    "Writing evals, governance playbooks and the occasional PRD so that agents can be trusted with real numbers.",
+    "Planning a winter trip to Japan for six, with the app I built to argue about it."
+  ],
+  "legs": [
+    {
+      "id": "google-ai",
+      "from": "2026",
+      "to": "now",
+      "company": "Google",
+      "title": "Lead, Applied AI & Commercial Operations, APAC",
+      "city": "Singapore",
+      "lat": 1.3521,
+      "lon": 103.8198,
+      "gate": "A1",
+      "summary": "Directing the strategy, architecture and deployment of agentic AI systems and enterprise prototypes across APAC commercial operations.",
+      "highlights": [
+        "Defined the roadmap for and deployed the APAC Commercial Insights Agent: a multi-tier agentic framework on stateful LLM orchestrators that automates multi-source analysis across six retail markets and cut manual data assembly by about 70%.",
+        "Built a roadmap of on-device AI prototypes for enterprise pitches, including a multimodal edge solution on Gemini Nano for Ather Energy field diagnostics, with acoustic and visual defect detection designed to cut diagnostic cycles by 40% and prevent more than $1.7M a year in operational leakage.",
+        "Set up regional AI governance, evaluation benchmarks and operational playbooks across commercial and finance teams, replacing spreadsheet analysis with auditable agent workflows."
+      ],
+      "tags": [
+        "Agentic systems",
+        "Gemini",
+        "AI evals",
+        "Edge AI",
+        "Governance"
+      ]
+    },
+    {
+      "id": "gpay-india",
+      "from": "2025",
+      "to": "2026",
+      "company": "Google Pay India",
+      "title": "Product Manager, Help & Education (20% rotation)",
+      "city": "Singapore, for India",
+      "lat": 12.9716,
+      "lon": 77.5946,
+      "gate": "B7",
+      "summary": "Led a cross-functional squad of engineering, operations, legal and UX to reverse a funnel decline and build the next generation of merchant compliance.",
+      "highlights": [
+        "Increased the merchant upgrade rate by 120% and the success rate by 53% for roughly 245,000 merchants.",
+        "Designed and launched data localization, video recording and geo-fencing pipelines that follow Reserve Bank of India guidelines, de-risking high-volume merchant acquiring.",
+        "Spearheaded an AI-first verification strategy: agents handle the objective pre-flight checks, humans handle the subjective edge cases. Directed engineering to a working prototype on Gemini Live for real-time OCR, liveness and physical store verification."
+      ],
+      "tags": [
+        "Product management",
+        "Payments",
+        "Regulation",
+        "Gemini Live"
+      ]
+    },
+    {
+      "id": "google-devices",
+      "from": "2019",
+      "to": "2026",
+      "company": "Google",
+      "title": "Strategy & Operations Manager, APAC Devices & Services",
+      "city": "Singapore",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "gate": "C3",
+      "summary": "Regional commercial governance and go-to-market strategy for a multi-billion dollar hardware portfolio: Pixel, Nest and friends.",
+      "highlights": [
+        "Shaped the APAC commercial strategy for more than ten product launches, led annual planning and designed new deal structures that drove double-digit growth in key markets.",
+        "Built and led the Category Business Management function as a people manager: hired, onboarded and coached a team of three and set the team's vision.",
+        "Led the region to Google's best 2022 results globally by enabling about $100M in additional revenue in Japan, where Pixel reached a record share of over 20%."
+      ],
+      "tags": [
+        "Go-to-market",
+        "Pixel",
+        "Nest",
+        "Japan",
+        "People management"
+      ]
+    },
+    {
+      "id": "linkedin",
+      "from": "2016",
+      "to": "2019",
+      "company": "LinkedIn",
+      "title": "Sales Operations & Strategy, LATAM & APAC",
+      "city": "São Paulo, then Singapore",
+      "lat": 1.3521,
+      "lon": 103.8198,
+      "gate": "D2",
+      "summary": "The leg that moved me from Brazil to Singapore. Multi-regional go-to-market strategy for a $250M business segment.",
+      "highlights": [
+        "Project-managed sales planning for the segment: top-down financial targets, headcount, territory segmentation and quotas.",
+        "Partnered with the LATAM sales leader on initiatives that drove 40% compound annual growth and an expansion to more than 100 reps across ten countries.",
+        "Designed and rolled out an SMB field sales operation in APAC against a $200M opportunity, and saved the team 50 hours a quarter by automating business reviews with SQL."
+      ],
+      "tags": [
+        "Sales strategy",
+        "SQL",
+        "LATAM",
+        "APAC"
+      ]
+    },
+    {
+      "id": "mckinsey",
+      "from": "2014",
+      "to": "2016",
+      "company": "McKinsey & Company",
+      "title": "Management Consultant",
+      "city": "São Paulo, with a stint in the Netherlands",
+      "lat": -23.5505,
+      "lon": -46.6333,
+      "gate": "E5",
+      "summary": "Advised technology, telecom and banking executives on market entry, digital channels and operational efficiency.",
+      "highlights": [
+        "Assessed the digital capabilities of a pioneering digital bank in Brazil and built the growth strategy behind a roughly $100M investment plan.",
+        "Modelled the replacement of physical branches with digital channels for a major Brazilian bank, cutting branch infrastructure costs by 30%.",
+        "Supported more than five private equity diligences and uncovered about $75M in technology synergies for European payments companies. Also a pro bono consultant for Ashoka's social entrepreneurs."
+      ],
+      "tags": [
+        "Strategy",
+        "Banking",
+        "Telecom",
+        "Pro bono"
+      ]
+    },
+    {
+      "id": "goldman",
+      "from": "2013",
+      "to": "2013",
+      "company": "Goldman Sachs",
+      "title": "Equity Research Intern",
+      "city": "São Paulo",
+      "lat": -23.5505,
+      "lon": -46.6333,
+      "gate": "F1",
+      "summary": "Six months of maintaining financial models and compiling market data on listed companies. I learned to love a clean spreadsheet, which made it easier to replace them later.",
+      "highlights": [],
+      "tags": [
+        "Finance",
+        "Modelling"
+      ]
+    },
+    {
+      "id": "poli-usp",
+      "from": "2008",
+      "to": "2014",
+      "company": "University of São Paulo, Escola Politécnica",
+      "title": "Bachelor of Electrical Engineering",
+      "city": "São Paulo, Kansas City and Berkeley",
+      "lat": 39.0997,
+      "lon": -94.5786,
+      "gate": "G0",
+      "summary": "An engineering degree with a year abroad on a full scholarship from the Brazilian Ministry of Education: Computer Engineering at the University of Missouri, Kansas City, and a summer of Social Media Sciences at UC Berkeley.",
+      "highlights": [
+        "Captain of the university futsal team for five years, after a season as a professional futsal player at Club Santa Barbara in 2007 and 2008.",
+        "Mentor in the Poli-USP alumni association's mentorship programme."
+      ],
+      "tags": [
+        "Engineering",
+        "Scholarship",
+        "Futsal"
+      ]
+    }
+  ],
+  "route": [
+    {
+      "name": "São Paulo",
+      "lat": -23.5505,
+      "lon": -46.6333
+    },
+    {
+      "name": "Kansas City",
+      "lat": 39.0997,
+      "lon": -94.5786
+    },
+    {
+      "name": "Berkeley",
+      "lat": 37.8716,
+      "lon": -122.2727
+    },
+    {
+      "name": "São Paulo",
+      "lat": -23.5505,
+      "lon": -46.6333
+    },
+    {
+      "name": "Amsterdam",
+      "lat": 52.3676,
+      "lon": 4.9041
+    },
+    {
+      "name": "Singapore",
+      "lat": 1.3521,
+      "lon": 103.8198
+    },
+    {
+      "name": "Tokyo",
+      "lat": 35.6762,
+      "lon": 139.6503
+    },
+    {
+      "name": "Bengaluru",
+      "lat": 12.9716,
+      "lon": 77.5946
+    }
+  ],
+  "toolkit": {
+    "building": [
+      "Agentic workflows",
+      "Multimodal models (Gemini)",
+      "AI evals",
+      "Edge and on-device AI",
+      "TypeScript and Next.js",
+      "SQL",
+      "Vibe coding, unapologetically"
+    ],
+    "leading": [
+      "Product strategy",
+      "PRDs and specs",
+      "Go-to-market",
+      "Cross-functional leadership",
+      "Financial modelling",
+      "Regulatory product requirements"
+    ],
+    "certifications": [
+      "AI Evals for Engineers & PMs, Parlance Labs",
+      "Machine Learning & AI, IIT Bombay",
+      "Big Data & Social Analytics, MIT",
+      "Certified Product Principles, Section4"
+    ],
+    "languages": [
+      "Portuguese (native)",
+      "English (fluent)"
+    ]
+  },
+  "links": [
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/pedro-parra/"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/pcduks"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:pc.duks@gmail.com"
+    }
+  ],
+  "cv": {
+    "file": "cv/Pedro-Parra-CV.pdf",
+    "label": "Download CV (PDF)"
+  },
+  "github": {
+    "user": "pcduks"
+  }
+}
