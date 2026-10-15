@@ -1,0 +1,4790 @@
+{
+ "schema_version": 2,
+ "generated": "2026-10-13",
+ "trip": {
+  "name": "Japan winter trip",
+  "start": "2026-12-20",
+  "end": "2027-01-09",
+  "nights": 20,
+  "travellers": [
+   {
+    "id": "pedro",
+    "role": "planner"
+   },
+   {
+    "id": "wife",
+    "role": "planner",
+    "notes": "29 weeks pregnant at departure, about 32 at return"
+   },
+   {
+    "id": "brother",
+    "role": "member"
+   },
+   {
+    "id": "sister_in_law",
+    "role": "member"
+   },
+   {
+    "id": "father",
+    "role": "member"
+   },
+   {
+    "id": "mother",
+    "role": "member"
+   },
+   {
+    "id": "sister",
+    "role": "member",
+    "notes": "May join; room sharing undecided"
+   }
+  ]
+ },
+ "pace": {
+  "rule": "nights = arrival day + full days needed for main outings at this pace + rest days; short visits fill afternoons; the calendar then adjusts",
+  "levels": {
+   "gentle": {
+    "main_per_day": 1,
+    "short_per_day": 0,
+    "travel_day": "travel only",
+    "rest_day_every": 4.5,
+    "walking_km": "5-6"
+   },
+   "balanced": {
+    "main_per_day": 1,
+    "short_per_day": 1,
+    "travel_day": "1 short visit",
+    "rest_window": "14:00-16:00",
+    "rest_day_every": 4.5,
+    "walking_km": "8-10"
+   },
+   "full": {
+    "main_per_day": 2,
+    "short_per_day": 1,
+    "travel_day": "1 main outing",
+    "rest_day_every": null,
+    "walking_km": "14-16"
+   }
+  },
+  "sizes": {
+   "main": "Half a day, 3-4 h",
+   "short": "1-2 h",
+   "evening": "Not counted",
+   "day_trip": "A whole day, replaces a main outing",
+   "meal": "Not counted"
+  }
+ },
+ "calendar": {
+  "new_year_closures": {
+   "start": "2026-12-29",
+   "end": "2027-01-03"
+  },
+  "peak_travel_days": [
+   "2026-12-29",
+   "2026-12-30",
+   "2026-12-31",
+   "2027-01-02",
+   "2027-01-03",
+   "2027-01-04"
+  ],
+  "rules": [
+   {
+    "id": "min_two_nights",
+    "severity": "warn",
+    "text": "Every stay is at least 2 nights"
+   },
+   {
+    "id": "no_peak_moves",
+    "severity": "warn",
+    "text": "No intercity move on a peak travel day; short local hops are allowed with a note"
+   },
+   {
+    "id": "closure_check",
+    "severity": "warn",
+    "text": "Flag any activity planned on a date its place is closed (closures and closed_weekdays)"
+   },
+   {
+    "id": "twenty_nights",
+    "severity": "error",
+    "text": "Stays must cover 20 Dec to 9 Jan without gaps"
+   },
+   {
+    "id": "new_years_eve_dinner",
+    "severity": "info",
+    "text": "31 Dec should be at a ryokan with dinner included"
+   },
+   {
+    "id": "pregnancy_flags",
+    "severity": "info",
+    "text": "Show effort_for_her and avoid_for_her on every planned item"
+   }
+  ],
+  "facts": [
+   {
+    "text": "Kyoto accommodation tax from 1 Mar 2026: ¥400 per person per night at ¥6,000-19,999, ¥1,000 at ¥20,000-49,999",
+    "source": "https://kyoto.travel/en/news/tax-change/"
+   },
+   {
+    "text": "Sumo January tournament runs 10-24 Jan 2027",
+    "source": "https://selfguidejapan.com/blog/grand-sumo-january-2027"
+   }
+  ]
+ },
+ "deadlines": [
+  {
+   "date": "2026-11-10",
+   "item": "Ghibli Museum tickets for December dates go on sale"
+  },
+  {
+   "date": "2026-11-28",
+   "item": "About now: book the Nohi bus Kanazawa → Shirakawa-go → Takayama for 28 Dec (two tickets)",
+   "source": "https://www.nouhibus.co.jp/route_bus/shirakawago_en/"
+  },
+  {
+   "date": "2026-12-05",
+   "item": "Sumo January tournament tickets on sale, if extending to 10 Jan"
+  },
+  {
+   "date": "2026-12-10",
+   "item": "Ghibli Museum tickets for January dates go on sale"
+  },
+  {
+   "date": "2026-11-24",
+   "item": "About a month ahead: reserve shinkansen seats for 24 Dec, then each later leg"
+  },
+  {
+   "date": "2026-10-31",
+   "item": "Book the New Year's Eve ryokan and the Kanazawa geiko afternoon (Sat 26 Dec)"
+  }
+ ],
+ "regions": [
+  {
+   "id": "tokyo",
+   "name": "Tokyo",
+   "lat": 35.68,
+   "lng": 139.77,
+   "status": "in_plan",
+   "summary": "Food, museums, gardens, neighbourhoods",
+   "fit": null,
+   "suggested_nights": {
+    "gentle": 5,
+    "balanced": 4,
+    "full": 3
+   },
+   "sources": [],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "kanazawa",
+   "name": "Kanazawa",
+   "lat": 36.56,
+   "lng": 136.65,
+   "status": "in_plan",
+   "summary": "Gardens, museums, samurai and geisha districts, crab",
+   "fit": null,
+   "suggested_nights": {
+    "gentle": "4-5",
+    "balanced": 4,
+    "full": 3
+   },
+   "sources": [
+    "https://japanstartshere.com/2023/05/31/how-many-days-in-kanazawa/"
+   ],
+   "instagram_official": "https://www.instagram.com/kanazawa_kankou/",
+   "hashtags": [
+    "金沢",
+    "kenrokuen"
+   ],
+   "videos": [
+    "https://www.youtube.com/watch?v=dMr_J65q12I"
+   ]
+  },
+  {
+   "id": "shirakawago",
+   "name": "Shirakawa-go",
+   "lat": 36.26,
+   "lng": 136.91,
+   "status": "in_plan",
+   "summary": "Thatched village in snow; a stop on the bus",
+   "fit": null,
+   "suggested_nights": {
+    "gentle": 0,
+    "balanced": 0,
+    "full": 0
+   },
+   "sources": [],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "takayama",
+   "name": "Takayama",
+   "lat": 36.14,
+   "lng": 137.25,
+   "status": "in_plan",
+   "summary": "Old town, Hida beef, folk village",
+   "fit": null,
+   "suggested_nights": {
+    "gentle": "3-4",
+    "balanced": 2,
+    "full": 2
+   },
+   "sources": [
+    "https://www.japan-guide.com/e/e5912_takayama_full.html",
+    "https://onedayawaytravel.com/?p=2688"
+   ],
+   "instagram_official": "https://www.instagram.com/visit.takayama/",
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "gero",
+   "name": "Gero Onsen",
+   "lat": 35.81,
+   "lng": 137.24,
+   "status": "in_plan",
+   "summary": "New Year's Eve onsen town",
+   "fit": null,
+   "suggested_nights": {
+    "gentle": 2,
+    "balanced": 2,
+    "full": 2
+   },
+   "sources": [
+    "https://www.japan-guide.com/e/e5990.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "okuhida",
+   "name": "Okuhida Onsen",
+   "lat": 36.24,
+   "lng": 137.56,
+   "status": "option",
+   "summary": "Snow baths and the Alps ropeway",
+   "fit": "Option B for New Year, or a day trip from Takayama",
+   "suggested_nights": {
+    "full": 2
+   },
+   "sources": [],
+   "instagram_official": "https://www.instagram.com/okuhidagram/",
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "kyoto",
+   "name": "Kyoto",
+   "lat": 35.01,
+   "lng": 135.77,
+   "status": "in_plan",
+   "summary": "Temples, New Year rites, gardens",
+   "fit": null,
+   "suggested_nights": {
+    "gentle": "5-6",
+    "balanced": 4,
+    "full": 3
+   },
+   "sources": [
+    "https://www.triptojapan.com/blog/how-many-days-to-spend-in-kyoto"
+   ],
+   "instagram_official": "https://www.instagram.com/visit_kyoto/",
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "nara",
+   "name": "Nara",
+   "lat": 34.69,
+   "lng": 135.8,
+   "status": "in_plan",
+   "summary": "Day trip from Kyoto on 4 Jan",
+   "fit": null,
+   "suggested_nights": {
+    "gentle": 0,
+    "balanced": 0,
+    "full": 0
+   },
+   "sources": [],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "hakone",
+   "name": "Hakone",
+   "lat": 35.23,
+   "lng": 139.03,
+   "status": "in_plan",
+   "summary": "Fuji, onsen ryokan, art museums",
+   "fit": null,
+   "suggested_nights": {
+    "gentle": "2-3",
+    "balanced": 2,
+    "full": 2
+   },
+   "sources": [
+    "https://www.japanryokanguide.com/en/blog/how-many-nights-ryokan-itinerary",
+    "https://isfujivisible.com/blog/hakone-vs-kawaguchiko"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "kawaguchiko",
+   "name": "Kawaguchiko",
+   "lat": 35.5171,
+   "lng": 138.751,
+   "status": "candidate_fits",
+   "summary": "Fuji straight across the lake, lakeside ryokan, hoto noodles",
+   "fit": "Swap for Hakone when the postcard view matters more than the museums; 4-4.5 h from Kyoto, 2 h to Tokyo; fewer indoor options on a cloudy day",
+   "suggested_nights": {
+    "gentle": "2-3",
+    "balanced": 2,
+    "full": 2
+   },
+   "sources": [
+    "https://isfujivisible.com/blog/hakone-vs-kawaguchiko",
+    "https://www.japan-guide.com/e/e6900.html",
+    "https://isfujivisible.com/blog/mount-fuji-in-winter"
+   ],
+   "instagram_official": null,
+   "hashtags": [
+    "kawaguchiko",
+    "fujisan"
+   ],
+   "videos": [
+    "https://www.youtube.com/watch?v=xBL2p3ctp7w"
+   ]
+  },
+  {
+   "id": "yudanaka",
+   "name": "Yudanaka, Shibu Onsen and the snow monkeys",
+   "lat": 36.74,
+   "lng": 138.42,
+   "status": "candidate_fits",
+   "summary": "Wild monkeys bathing in snow; lantern-lit onsen street",
+   "fit": "Swap: Tokyo 20-23, Yudanaka 23-25, Kanazawa 25-28",
+   "suggested_nights": {
+    "balanced": 2
+   },
+   "sources": [
+    "https://www.japan-guide.com/e/e6028.html",
+    "https://www.japan-guide.com/e/e6029.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": [
+    "https://www.youtube.com/watch?v=nGPxiYkMvwQ"
+   ]
+  },
+  {
+   "id": "okayama",
+   "name": "Okayama, Kurashiki and Naoshima",
+   "lat": 34.66,
+   "lng": 133.93,
+   "status": "candidate_fits",
+   "summary": "Art islands, Ohara Museum, Korakuen, Himeji on the way",
+   "fit": "Swap for Hakone 5-7 Jan; Chichu open Wed 6 Jan; Teshima closed Tue-Thu",
+   "suggested_nights": {
+    "balanced": 2
+   },
+   "sources": [
+    "https://benesse-artsite.jp/en/news/20260630-3559.html",
+    "https://okayama-korakuen.jp/section/english/event/index.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": [
+    "https://www.youtube.com/watch?v=WkRQGRnZS4A"
+   ]
+  },
+  {
+   "id": "kinosaki",
+   "name": "Kinosaki Onsen",
+   "lat": 35.63,
+   "lng": 134.82,
+   "status": "candidate_fits",
+   "summary": "Seven public baths, crab season",
+   "fit": "Swap for Hakone; repeats crab and onsen; 5-6 h to Tokyo",
+   "suggested_nights": {
+    "balanced": 2
+   },
+   "sources": [
+    "https://japan-guide.com/e/e3525.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": [
+    "https://www.youtube.com/watch?v=Mmw-va_nVVM"
+   ]
+  },
+  {
+   "id": "ginzan",
+   "name": "Ginzan Onsen",
+   "lat": 38.57,
+   "lng": 140.53,
+   "status": "candidate_maybe",
+   "summary": "The most photogenic snowy onsen street",
+   "fit": "Swap for Hakone only if rooms for 6-7 are free; day visits capped",
+   "suggested_nights": {
+    "balanced": "1-2"
+   },
+   "sources": [
+    "https://www.japan-guide.com/e/e7975.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": [
+    "https://www.youtube.com/watch?v=QytjUFgcmWw"
+   ]
+  },
+  {
+   "id": "shuzenji",
+   "name": "Shuzenji (Izu)",
+   "lat": 34.97,
+   "lng": 138.93,
+   "status": "candidate_fits",
+   "summary": "Gentle bamboo-grove onsen town",
+   "fit": "Calmer Hakone alternative, no snow",
+   "suggested_nights": {
+    "balanced": 2
+   },
+   "sources": [
+    "https://www.japan-guide.com/e/e6311.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "kusatsu",
+   "name": "Kusatsu Onsen",
+   "lat": 36.62,
+   "lng": 138.6,
+   "status": "candidate_maybe",
+   "summary": "Steaming hot-water field in snow",
+   "fit": "Hakone swap, but water too hot and acidic for her; long from Kyoto",
+   "suggested_nights": null,
+   "sources": [
+    "https://www.japan-guide.com/e/e7400.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "nikko",
+   "name": "Nikko",
+   "lat": 36.75,
+   "lng": 139.6,
+   "status": "day_trip",
+   "summary": "Lacquered shrines in cedar forest",
+   "fit": "Day trip from Tokyo 21-23 Dec or 8 Jan; stairs",
+   "suggested_nights": null,
+   "sources": [
+    "https://www.japan.travel/en/sports/snow/snow-travel/nikko-toshogu-shrine"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "kamakura",
+   "name": "Kamakura",
+   "lat": 35.32,
+   "lng": 139.55,
+   "status": "day_trip",
+   "summary": "Great Buddha and the sea",
+   "fit": "Day trip from Tokyo; avoid 1-3 Jan",
+   "suggested_nights": null,
+   "sources": [
+    "https://www.japan-guide.com/e/e3121_kamakura_full.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "echigo-yuzawa",
+   "name": "Echigo-Yuzawa",
+   "lat": 36.94,
+   "lng": 138.81,
+   "status": "day_trip",
+   "summary": "Deep snow 75 min from Tokyo; sake hall in the station",
+   "fit": "Day trip from Tokyo",
+   "suggested_nights": null,
+   "sources": [],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "hiroshima",
+   "name": "Hiroshima and Miyajima",
+   "lat": 34.39,
+   "lng": 132.46,
+   "status": "option",
+   "summary": "Peace Park and the floating torii; in the Full version only",
+   "fit": "Day trip from Okayama, or 2 nights in the Full version",
+   "suggested_nights": null,
+   "sources": [
+    "https://gethiroshima.com/features/all-you-need-to-know-about-miyajima-at-new-year/"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "hokkaido",
+   "name": "Hokkaido (Sapporo, Otaru, Biei)",
+   "lat": 43.06,
+   "lng": 141.35,
+   "status": "not_this_trip",
+   "summary": "Big winter events are in February",
+   "fit": null,
+   "suggested_nights": null,
+   "sources": [
+    "https://www.japan-guide.com/e/e2400_hokkaido_winter.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "north-tohoku",
+   "name": "Northern Tohoku (Aomori, Hirosaki, Nyuto)",
+   "lat": 40.82,
+   "lng": 140.74,
+   "status": "not_this_trip",
+   "summary": "Far; best as its own winter trip",
+   "fit": null,
+   "suggested_nights": null,
+   "sources": [],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "koyasan",
+   "name": "Koyasan",
+   "lat": 34.21,
+   "lng": 135.59,
+   "status": "not_this_trip",
+   "summary": "Cold temple lodgings, floor futons, icy paths",
+   "fit": null,
+   "suggested_nights": null,
+   "sources": [
+    "https://www.japan-guide.com/e/e4905.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "kumano",
+   "name": "Kumano Kodo and Nachi",
+   "lat": 33.67,
+   "lng": 135.89,
+   "status": "not_this_trip",
+   "summary": "Long buses and stone stairways",
+   "fit": null,
+   "suggested_nights": null,
+   "sources": [
+    "https://www.japan-guide.com/e/e4955.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "kyushu",
+   "name": "Kyushu (Beppu, Yufuin, Kurokawa)",
+   "lat": 33.28,
+   "lng": 131.49,
+   "status": "not_this_trip",
+   "summary": "Far and bathing-centred",
+   "fit": null,
+   "suggested_nights": null,
+   "sources": [],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "shikoku",
+   "name": "Shikoku (Iya, Dogo)",
+   "lat": 33.87,
+   "lng": 133.83,
+   "status": "not_this_trip",
+   "summary": "Iya vine bridges closed Dec-Mar",
+   "fit": null,
+   "suggested_nights": null,
+   "sources": [
+    "https://discovertokushima.net/en/spots/oku-iya-double-vine-bridge"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "okinawa",
+   "name": "Okinawa",
+   "lat": 26.21,
+   "lng": 127.68,
+   "status": "not_this_trip",
+   "summary": "Flights; boats not advised for her",
+   "fit": null,
+   "suggested_nights": null,
+   "sources": [],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  }
+ ],
+ "places": [
+  {
+   "id": "tokyo-tsukiji",
+   "region": "tokyo",
+   "name": "Tsukiji Outer Market",
+   "kind": "market",
+   "size": "main",
+   "why": "Street food and knife shops; pairs with Hama-rikyu and Ginza on museum-closed Mondays",
+   "hours": "Mornings",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Crowded, standing",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": null,
+    "map": "https://www.google.com/maps/search/?api=1&query=Tsukiji%20Outer%20Market%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tsukiji%20Outer%20Market%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/tsukiji/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-toyosu-auction",
+   "region": "tokyo",
+   "name": "Toyosu tuna auction tour",
+   "kind": "experience",
+   "size": "main",
+   "why": "The auction floor at 5am with a guide",
+   "hours": "About 05:00, 3 h; market closed Wed, Sun, holidays",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Very early, cold, standing",
+   "price": "From US$139",
+   "booking": "Weeks ahead",
+   "links": {
+    "source": "https://www.headout.com/walking-tours/tokyo-toyosu-tuna-auction-observation-walking-tour-with-breakfast-reservation-e-48830/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Toyosu%20tuna%20auction%20tour%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Toyosu%20tuna%20auction%20tour%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-hamarikyu",
+   "region": "tokyo",
+   "name": "Hama-rikyu Gardens",
+   "kind": "garden",
+   "size": "short",
+   "why": "Bayside Edo garden and teahouse, snow ropes on the pines",
+   "hours": "9:00-17:00",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-01",
+     "note": "Metropolitan gardens closed",
+     "source": "https://www.kensetsu.metro.tokyo.lg.jp/documents/d/kensetsu/070106teienpanhueigo"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥300",
+   "booking": null,
+   "links": {
+    "source": "https://www.tokyo-park.or.jp/teien/en/hama-rikyu/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hama-rikyu%20Gardens%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hama-rikyu%20Gardens%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/hamarikyu/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-rikugien",
+   "region": "tokyo",
+   "name": "Rikugien",
+   "kind": "garden",
+   "size": "short",
+   "why": "Late maple colour and camellias",
+   "hours": "9:00-17:00",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-01",
+     "note": "Metropolitan gardens closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥300",
+   "booking": null,
+   "links": {
+    "source": null,
+    "map": "https://www.google.com/maps/search/?api=1&query=Rikugien%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Rikugien%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/rikugien/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-koishikawa",
+   "region": "tokyo",
+   "name": "Koishikawa Korakuen",
+   "kind": "garden",
+   "size": "short",
+   "why": "Wintersweet in January",
+   "hours": "9:00-17:00",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-01",
+     "note": "Metropolitan gardens closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Steep bridges",
+   "price": "¥300",
+   "booking": null,
+   "links": {
+    "source": "https://www.tokyo-park.or.jp/teien/en/koishikawa/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Koishikawa%20Korakuen%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Koishikawa%20Korakuen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-shinjuku-gyoen",
+   "region": "tokyo",
+   "name": "Shinjuku Gyoen",
+   "kind": "garden",
+   "size": "short",
+   "why": "Huge park with a warm greenhouse",
+   "hours": "9:00-16:00",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-03",
+     "note": "Closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥500",
+   "booking": null,
+   "links": {
+    "source": "https://fng.or.jp/shinjuku/en",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shinjuku%20Gyoen%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shinjuku%20Gyoen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-meiji",
+   "region": "tokyo",
+   "name": "Meiji Jingu",
+   "kind": "sight",
+   "size": "main",
+   "why": "Shrine in a forest; pair with Harajuku",
+   "hours": "Sunrise to sunset",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Long gravel path",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.gotokyo.org/en/spot/ev110/index.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Meiji%20Jingu%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Meiji%20Jingu%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/meijijingu/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-nezu",
+   "region": "tokyo",
+   "name": "Nezu Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Tea-culture art and a hillside garden; winter tea gathering display to 17 Jan",
+   "hours": "10:00-17:00",
+   "closures": [],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "moderate",
+   "effort_note": "Garden has slopes",
+   "price": null,
+   "booking": "Timed online booking required",
+   "links": {
+    "source": "https://www.nezu-muse.or.jp/en/index.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Nezu%20Museum%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Nezu%20Museum%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/nezumuseum/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-edo-tokyo",
+   "region": "tokyo",
+   "name": "Edo-Tokyo Museum",
+   "kind": "museum",
+   "size": "main",
+   "why": "Reopened March 2026: life-size old Tokyo",
+   "hours": "9:30-17:30",
+   "closures": [],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥800, ¥400 over 65",
+   "booking": null,
+   "links": {
+    "source": "https://www.edo-tokyo-museum.or.jp/en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Edo-Tokyo%20Museum%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Edo-Tokyo%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-hokusai",
+   "region": "tokyo",
+   "name": "Sumida Hokusai Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Hokusai prints next to the Edo-Tokyo Museum",
+   "hours": "9:30-17:30",
+   "closures": [],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://hokusai-museum.jp/?lang=en",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sumida%20Hokusai%20Museum%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sumida%20Hokusai%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-nmwa",
+   "region": "tokyo",
+   "name": "National Museum of Western Art",
+   "kind": "museum",
+   "size": "short",
+   "why": "Turner: Painting the Sublime (24 Oct - 21 Feb)",
+   "hours": "To 20:00 on Fridays",
+   "closures": [
+    {
+     "start": "2026-12-28",
+     "end": "2027-01-01",
+     "note": "Closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥2,200 advance",
+   "booking": null,
+   "links": {
+    "source": "https://www.nmwa.go.jp/en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=National%20Museum%20of%20Western%20Art%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=National%20Museum%20of%20Western%20Art%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-tobikan",
+   "region": "tokyo",
+   "name": "Tokyo Metropolitan Art Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Masterworks from the Musée d'Orsay (14 Nov - 28 Mar)",
+   "hours": null,
+   "closures": [
+    {
+     "start": "2026-12-21",
+     "end": "2026-12-28",
+     "note": "Maintenance closure",
+     "source": "https://www.tobikan.jp/en/guide/index.html"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": "Book ahead",
+   "links": {
+    "source": "https://www.tobikan.jp/en/exhibition/index.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tokyo%20Metropolitan%20Art%20Museum%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tokyo%20Metropolitan%20Art%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-tnm",
+   "region": "tokyo",
+   "name": "Tokyo National Museum",
+   "kind": "museum",
+   "size": "main",
+   "why": "Japan's best collection of Japanese art",
+   "hours": "9:30-17:00, to 20:00 Fri",
+   "closures": [
+    {
+     "start": "2026-12-22",
+     "end": "2026-12-25",
+     "note": "Main building mostly closed",
+     "source": "https://www.tnm.jp/modules/r_free_page/index.php?id=113&lang=en"
+    }
+   ],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.tnm.jp/?lang=en",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tokyo%20National%20Museum%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tokyo%20National%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-mori",
+   "region": "tokyo",
+   "name": "Mori Art Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Mariko Mori: All That Shines; pair with Tokyo City View",
+   "hours": "10:00-22:00, to 17:00 Tue",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.mori.art.museum/en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Mori%20Art%20Museum%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Mori%20Art%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-2121",
+   "region": "tokyo",
+   "name": "21_21 Design Sight",
+   "kind": "museum",
+   "size": "short",
+   "why": "Small architecture show to 11 Jan",
+   "hours": null,
+   "closures": [
+    {
+     "start": "2026-12-27",
+     "end": "2027-01-03",
+     "note": "Closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [
+    "Tue"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://2121designsight.jp/en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=21_21%20Design%20Sight%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=21_21%20Design%20Sight%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-teamlab-borderless",
+   "region": "tokyo",
+   "name": "teamLab Borderless",
+   "kind": "museum",
+   "size": "short",
+   "why": "Digital art across dark rooms",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Dark, some sloped floors",
+   "price": null,
+   "booking": "Timed, online",
+   "links": {
+    "source": "https://www.teamlab.art/e/borderless-azabudai/",
+    "map": "https://www.google.com/maps/search/?api=1&query=teamLab%20Borderless%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=teamLab%20Borderless%20winter",
+    "instagram": null,
+    "video": "https://www.youtube.com/watch?v=GTCXx8Em-KY"
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-teamlab-planets",
+   "region": "tokyo",
+   "name": "teamLab Planets",
+   "kind": "museum",
+   "size": "short",
+   "why": "Immersive art walked barefoot through water",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "teamLab says pregnant women aren't permitted in some areas",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.teamlab.art/e/planets/",
+    "map": "https://www.google.com/maps/search/?api=1&query=teamLab%20Planets%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=teamLab%20Planets%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "status": "avoid_for_her"
+  },
+  {
+   "id": "tokyo-ghibli",
+   "region": "tokyo",
+   "name": "Ghibli Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Studio Ghibli's museum in Mitaka",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [
+    "Tue"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": "Lawson tickets on the 10th of the previous month",
+   "links": {
+    "source": "https://jw-webmagazine.com/tips/best-ways-to-get-ghibli-museum-tickets/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Ghibli%20Museum%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Ghibli%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-tmg",
+   "region": "tokyo",
+   "name": "Tokyo Metropolitan Government observatory",
+   "kind": "viewpoint",
+   "size": "short",
+   "why": "Free Fuji view on clear days",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.timeout.com/tokyo/museums/tokyo-metropolitan-government-building-observatories",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tokyo%20Metropolitan%20Government%20observatory%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tokyo%20Metropolitan%20Government%20observatory%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-takao",
+   "region": "tokyo",
+   "name": "Mt Takao",
+   "kind": "nature",
+   "size": "day_trip",
+   "why": "Fuji views; Diamond Fuji sunsets 16-26 Dec",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "Cable car then about 1 km to Yakuo-in; turn back there; ask her doctor",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://en.mttakaomagazine.com/spot/cablecar",
+    "map": "https://www.google.com/maps/search/?api=1&query=Mt%20Takao%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Mt%20Takao%20winter",
+    "instagram": null,
+    "video": "https://www.youtube.com/watch?v=FuhTEl5wpmA"
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-illuminations",
+   "region": "tokyo",
+   "name": "Winter illuminations (Marunouchi, Roppongi, Yebisu)",
+   "kind": "event",
+   "size": "evening",
+   "why": "Most ran through 24-25 Dec last season; 2026 dates due Oct-Nov",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://livejapan.com/en/in-tokyo/in-pref-tokyo/in-tokyo_train_station/article-a0000611/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Winter%20illuminations%20%28Marunouchi%2C%20Roppongi%2C%20Yebisu%29%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Winter%20illuminations%20%28Marunouchi%2C%20Roppongi%2C%20Yebisu%29%20winter",
+    "instagram": null,
+    "video": "https://www.youtube.com/watch?v=Kwlz8OvS0TY"
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-asakusa",
+   "region": "tokyo",
+   "name": "Asakusa",
+   "kind": "sight",
+   "size": "main",
+   "why": "Senso-ji and old streets",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": null,
+    "map": "https://www.google.com/maps/search/?api=1&query=Asakusa%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Asakusa%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-maisen",
+   "region": "tokyo",
+   "name": "Maisen Aoyama",
+   "kind": "food",
+   "size": "meal",
+   "why": "Tonkatsu",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.timeout.com/tokyo/restaurants/maisen",
+    "map": "https://www.google.com/maps/search/?api=1&query=Maisen%20Aoyama%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Maisen%20Aoyama%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Tonkatsu",
+    "price_band": "¥¥",
+    "recommended_by": "Time Out",
+    "group_of_6": "Large back room",
+    "pregnancy_note": null
+   }
+  },
+  {
+   "id": "tokyo-tsunahachi",
+   "region": "tokyo",
+   "name": "Tsunahachi Shinjuku",
+   "kind": "food",
+   "size": "meal",
+   "why": "Tempura since 1923",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://trulytokyo.com/tsunahachi/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tsunahachi%20Shinjuku%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tsunahachi%20Shinjuku%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Tempura since 1923",
+    "price_band": "¥",
+    "recommended_by": "Truly Tokyo",
+    "group_of_6": "Bookable",
+    "pregnancy_note": null
+   }
+  },
+  {
+   "id": "tokyo-imahan",
+   "region": "tokyo",
+   "name": "Ningyocho Imahan",
+   "kind": "food",
+   "size": "meal",
+   "why": "Wagyu sukiyaki and shabu-shabu",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://cdn.gltjp.com/en/directory/item/13270/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Ningyocho%20Imahan%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Ningyocho%20Imahan%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Wagyu sukiyaki and shabu-shabu",
+    "price_band": "¥¥¥¥",
+    "recommended_by": "GLTJP",
+    "group_of_6": "Private rooms",
+    "pregnancy_note": "Closed over New Year"
+   }
+  },
+  {
+   "id": "tokyo-isehiro",
+   "region": "tokyo",
+   "name": "Isehiro Kyobashi",
+   "kind": "food",
+   "size": "meal",
+   "why": "Yakitori since 1921",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://old-tokyo.info/isehiro-tokyos-oldest-yakitori-joint/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Isehiro%20Kyobashi%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Isehiro%20Kyobashi%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Yakitori since 1921",
+    "price_band": "¥¥¥",
+    "recommended_by": "Old Tokyo",
+    "group_of_6": "Small tatami room; phone",
+    "pregnancy_note": "Closed Sundays"
+   }
+  },
+  {
+   "id": "tokyo-matsuya",
+   "region": "tokyo",
+   "name": "Kanda Matsuya",
+   "kind": "food",
+   "size": "meal",
+   "why": "Soba since 1884",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://timeout.com/tokyo/restaurants/kanda-matsuya",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kanda%20Matsuya%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kanda%20Matsuya%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Soba since 1884",
+    "price_band": "¥",
+    "recommended_by": "Time Out",
+    "group_of_6": "Shared tables",
+    "pregnancy_note": "Closed Sundays"
+   }
+  },
+  {
+   "id": "tokyo-unafuji",
+   "region": "tokyo",
+   "name": "Sumiyaki Unafuji Midtown Yaesu",
+   "kind": "food",
+   "size": "meal",
+   "why": "Grilled eel",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.timeout.com/tokyo/restaurants/sumiyaki-unafuji-tokyo-midtown-yaesu",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sumiyaki%20Unafuji%20Midtown%20Yaesu%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sumiyaki%20Unafuji%20Midtown%20Yaesu%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Grilled eel",
+    "price_band": "¥¥¥",
+    "recommended_by": "Time Out; Michelin Bib Gourmand",
+    "group_of_6": "Check",
+    "pregnancy_note": "For her: skip the eel-liver add-on (vitamin A)"
+   }
+  },
+  {
+   "id": "tokyo-isetan",
+   "region": "tokyo",
+   "name": "Isetan Shinjuku food hall",
+   "kind": "food",
+   "size": "meal",
+   "why": "Depachika",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan.travel/en/story/depachika-guide/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Isetan%20Shinjuku%20food%20hall%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Isetan%20Shinjuku%20food%20hall%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Depachika",
+    "price_band": "¥",
+    "recommended_by": "JNTO",
+    "group_of_6": "Takeaway",
+    "pregnancy_note": null
+   }
+  },
+  {
+   "id": "tokyo-kayaba",
+   "region": "tokyo",
+   "name": "Kayaba Coffee",
+   "kind": "food",
+   "size": "meal",
+   "why": "Kissaten in Yanaka",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.timeout.com/tokyo/restaurants/best-kissaten-coffee-shops-in-tokyo",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kayaba%20Coffee%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kayaba%20Coffee%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Kissaten in Yanaka",
+    "price_band": "¥",
+    "recommended_by": "Time Out",
+    "group_of_6": "Small",
+    "pregnancy_note": null
+   }
+  },
+  {
+   "id": "kz-kenrokuen",
+   "region": "kanazawa",
+   "name": "Kenroku-en",
+   "kind": "garden",
+   "size": "main",
+   "why": "One of Japan's three great gardens; snow ropes on the pines",
+   "hours": "8:00-17:00; free 6:00 to opening Nov-Feb",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Gentle slopes, icy",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4200.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kenroku-en%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kenroku-en%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/kenrokuen/",
+    "video": "https://www.youtube.com/watch?v=s7Ec3dy2_qE"
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kz-castle",
+   "region": "kanazawa",
+   "name": "Kanazawa Castle Park",
+   "kind": "sight",
+   "size": "short",
+   "why": "Rebuilt turrets; evening light-up 28 Dec - 4 Jan (confirm)",
+   "hours": "Grounds 8:00-17:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4202.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kanazawa%20Castle%20Park%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kanazawa%20Castle%20Park%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/kanazawacastle/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kz-21c",
+   "region": "kanazawa",
+   "name": "21st Century Museum of Contemporary Art",
+   "kind": "museum",
+   "size": "short",
+   "why": "Contemporary art including the Swimming Pool",
+   "hours": "10:00-18:00, to 20:00 Fri-Sat",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-01",
+     "note": "Year-end closure",
+     "source": "https://www.kanazawa21.jp/data_list.php?g=7&d=1"
+    }
+   ],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": "Swimming Pool: same-day timed booking from 9:00",
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4209.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=21st%20Century%20Museum%20of%20Contemporary%20Art%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=21st%20Century%20Museum%20of%20Contemporary%20Art%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/kanazawa21/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kz-dtsuzuki",
+   "region": "kanazawa",
+   "name": "D.T. Suzuki Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Quiet Zen building and water garden",
+   "hours": "9:30-17:00",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-03",
+     "note": "Closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4211.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=D.T.%20Suzuki%20Museum%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=D.T.%20Suzuki%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kz-nomura",
+   "region": "kanazawa",
+   "name": "Nomura Samurai House",
+   "kind": "sight",
+   "size": "short",
+   "why": "Samurai home with a famous small garden",
+   "hours": "8:30-16:30",
+   "closures": [
+    {
+     "start": "2026-12-26",
+     "end": "2026-12-27",
+     "note": "Closed",
+     "source": "https://visitkanazawa.jp/en/feature/detail_532.html"
+    },
+    {
+     "start": "2027-01-01",
+     "end": "2027-01-02",
+     "note": "Closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4204.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Nomura%20Samurai%20House%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Nomura%20Samurai%20House%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kz-higashi",
+   "region": "kanazawa",
+   "name": "Higashi Chaya and Shima teahouse",
+   "kind": "sight",
+   "size": "main",
+   "why": "Edo-period geisha district",
+   "hours": "Shima 9:30-17:00 daily",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Shima has steep stairs",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4206.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Higashi%20Chaya%20and%20Shima%20teahouse%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Higashi%20Chaya%20and%20Shima%20teahouse%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/higashichaya/",
+    "video": "https://www.youtube.com/watch?v=d4fWBYMIc50"
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kz-artmuseum",
+   "region": "kanazawa",
+   "name": "Ishikawa Prefectural Museum of Art",
+   "kind": "museum",
+   "size": "short",
+   "why": "Kutani ceramics and national treasures",
+   "hours": null,
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-03",
+     "note": "Closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://visitkanazawa.jp/en/feature/detail_532.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Ishikawa%20Prefectural%20Museum%20of%20Art%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Ishikawa%20Prefectural%20Museum%20of%20Art%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kz-omicho",
+   "region": "kanazawa",
+   "name": "Omicho Market",
+   "kind": "market",
+   "size": "short",
+   "why": "Crab and seafood",
+   "hours": "About 9:00-16:00",
+   "closures": [
+    {
+     "start": "2027-01-01",
+     "end": "2027-01-04",
+     "note": "Closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4207.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Omicho%20Market%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Omicho%20Market%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/omicho/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kz-myoryuji",
+   "region": "kanazawa",
+   "name": "Myoryu-ji (Ninja temple)",
+   "kind": "sight",
+   "size": "short",
+   "why": "Trick doors and hidden stairs, guided",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "Steep narrow stairs",
+   "price": null,
+   "booking": "Book ahead",
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4205.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Myoryu-ji%20%28Ninja%20temple%29%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Myoryu-ji%20%28Ninja%20temple%29%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "status": "avoid_for_her"
+  },
+  {
+   "id": "kz-goldleaf",
+   "region": "kanazawa",
+   "name": "Hakuza gold-leaf workshop",
+   "kind": "experience",
+   "size": "short",
+   "why": "Decorate your own piece with gold leaf",
+   "hours": "10:00-15:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "From ¥1,980",
+   "booking": "Required",
+   "links": {
+    "source": "https://visitkanazawa.jp/en/activities/detail_2384.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hakuza%20gold-leaf%20workshop%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hakuza%20gold-leaf%20workshop%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kz-geiko",
+   "region": "kanazawa",
+   "name": "Kanazawa Geiko Experience",
+   "kind": "experience",
+   "size": "short",
+   "why": "Geiko dance and music in a Higashi Chaya teahouse; Sat 26 Dec 13:00",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Cushions on tatami, steep stairs",
+   "price": "¥5,000",
+   "booking": "Book now; max 10 per teahouse",
+   "links": {
+    "source": "https://visitkanazawa.jp/en/activities/detail_491.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kanazawa%20Geiko%20Experience%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kanazawa%20Geiko%20Experience%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kz-wagashi",
+   "region": "kanazawa",
+   "name": "Wagashi making, Koshiyama Kanseido",
+   "kind": "experience",
+   "size": "short",
+   "why": "Make Kanazawa sweets",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [
+    "Wed"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥1,800",
+   "booking": "Required",
+   "links": {
+    "source": "https://www.ishikawatravel.jp/en/spots/japanese-confectionary-experience/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Wagashi%20making%2C%20Koshiyama%20Kanseido%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Wagashi%20making%2C%20Koshiyama%20Kanseido%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kz-kaga",
+   "region": "kanazawa",
+   "name": "Kaga Onsen half day",
+   "kind": "onsen",
+   "size": "short",
+   "why": "Spa towns 20 min by shinkansen",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Short, cooler soaks only",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://visitkanazawa.jp/en/feature/detail_132.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kaga%20Onsen%20half%20day%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kaga%20Onsen%20half%20day%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kz-tsubajin",
+   "region": "kanazawa",
+   "name": "Tsubajin",
+   "kind": "food",
+   "size": "meal",
+   "why": "Kaga kaiseki in a 270-year-old ryotei",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.magical-trip.com/media/tsubajin-kanazawa-enjoy-kanazawas-oldest-ryotei-270-year-historic-kaga-cuisine-2025/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tsubajin%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tsubajin%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Kaga kaiseki in a 270-year-old ryotei",
+    "price_band": "¥¥¥¥",
+    "recommended_by": "Magical Trip",
+    "group_of_6": "Private rooms; 076-241-2181",
+    "pregnancy_note": "Closed Wed"
+   }
+  },
+  {
+   "id": "kz-akadama",
+   "region": "kanazawa",
+   "name": "Akadama Honten",
+   "kind": "food",
+   "size": "meal",
+   "why": "Kanazawa oden",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://visitkanazawa.jp/en/restaurants/detail_50237.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Akadama%20Honten%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Akadama%20Honten%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Kanazawa oden",
+    "price_band": "¥¥",
+    "recommended_by": "Visit Kanazawa; Tabelog",
+    "group_of_6": "87 seats",
+    "pregnancy_note": "Closed Mon"
+   }
+  },
+  {
+   "id": "kz-miyuki",
+   "region": "kanazawa",
+   "name": "Miyuki",
+   "kind": "food",
+   "size": "meal",
+   "why": "Oden izakaya since 1967",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.magical-trip.com/media/ultimate-guide-to-miyuki-kanazawa-historic-oden-restaurant-since-1967-best-menu-access-info/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Miyuki%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Miyuki%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Oden izakaya since 1967",
+    "price_band": "¥¥",
+    "recommended_by": "Magical Trip",
+    "group_of_6": "Queues",
+    "pregnancy_note": "Closed Sun"
+   }
+  },
+  {
+   "id": "kz-kuroyuri",
+   "region": "kanazawa",
+   "name": "Kuro Yuri",
+   "kind": "food",
+   "size": "meal",
+   "why": "Oden at the station",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://tabelog.com/en/ishikawa/A1701/A170101/17000022/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kuro%20Yuri%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kuro%20Yuri%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Oden at the station",
+    "price_band": "¥",
+    "recommended_by": "Tabelog",
+    "group_of_6": "Arrive early",
+    "pregnancy_note": null
+   }
+  },
+  {
+   "id": "kz-kagaya",
+   "region": "kanazawa",
+   "name": "Kagaya",
+   "kind": "food",
+   "size": "meal",
+   "why": "Cooked Kaga set meals",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.magical-trip.com/media/top-16-must-try-restaurants-in-kanazawa-2025-sushi-kaiseki-local-favorites/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kagaya%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kagaya%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Cooked Kaga set meals",
+    "price_band": "¥¥",
+    "recommended_by": "Magical Trip",
+    "group_of_6": "Call ahead",
+    "pregnancy_note": null
+   }
+  },
+  {
+   "id": "kz-morimori",
+   "region": "kanazawa",
+   "name": "Morimori Sushi Omicho",
+   "kind": "food",
+   "size": "meal",
+   "why": "Conveyor sushi plus tempura",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.magical-trip.com/media/mori-mori-sushi-omicho-kanazawa-seafood-guide-2025-enjoy-authentic-rotating-sushi-restaurant-in-kanazawa/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Morimori%20Sushi%20Omicho%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Morimori%20Sushi%20Omicho%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Conveyor sushi plus tempura",
+    "price_band": "¥",
+    "recommended_by": "Magical Trip",
+    "group_of_6": "Queue",
+    "pregnancy_note": "For her: cooked plates"
+   }
+  },
+  {
+   "id": "kz-otome",
+   "region": "kanazawa",
+   "name": "Otome Sushi",
+   "kind": "food",
+   "size": "meal",
+   "why": "Top-end sushi",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.magical-trip.com/media/top-16-must-try-restaurants-in-kanazawa-2025-sushi-kaiseki-local-favorites/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Otome%20Sushi%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Otome%20Sushi%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Top-end sushi",
+    "price_band": "¥¥¥¥",
+    "recommended_by": "Michelin 2 stars (2021)",
+    "group_of_6": "Counter: for two",
+    "pregnancy_note": "Raw; not for her"
+   }
+  },
+  {
+   "id": "kz-turban",
+   "region": "kanazawa",
+   "name": "Turban Curry",
+   "kind": "food",
+   "size": "meal",
+   "why": "Katsu curry",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.magical-trip.com/media/top-16-must-try-restaurants-in-kanazawa-2025-sushi-kaiseki-local-favorites/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Turban%20Curry%20Kanazawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Turban%20Curry%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Katsu curry",
+    "price_band": "¥",
+    "recommended_by": "Magical Trip",
+    "group_of_6": "Casual",
+    "pregnancy_note": null
+   }
+  },
+  {
+   "id": "sg-village",
+   "region": "shirakawago",
+   "name": "Shirakawa-go (Ogimachi)",
+   "kind": "sight",
+   "size": "main",
+   "why": "Snow-covered thatched farmhouses (UNESCO)",
+   "hours": "Wada House 9:00-17:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Icy paths; ladder stairs inside houses",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5951.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shirakawa-go%20%28Ogimachi%29%20Shirakawa-go",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shirakawa-go%20%28Ogimachi%29%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/shirakawago/",
+    "video": "https://www.youtube.com/watch?v=t3rGu4cPqSk"
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "sg-viewpoint",
+   "region": "shirakawago",
+   "name": "Shiroyama observation deck",
+   "kind": "viewpoint",
+   "size": "short",
+   "why": "Classic view; take the shuttle (10:00-14:40, none 12-13)",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://shirakawa-go.gr.jp/en/faq/5/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shiroyama%20observation%20deck%20Shirakawa-go",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shiroyama%20observation%20deck%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tk-folkvillage",
+   "region": "takayama",
+   "name": "Hida Folk Village",
+   "kind": "museum",
+   "size": "main",
+   "why": "Open-air museum of thatched farmhouses",
+   "hours": "8:30-17:00 every day",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Slopes, icy",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5901.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hida%20Folk%20Village%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hida%20Folk%20Village%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/hidanosato/",
+    "video": "https://www.youtube.com/watch?v=fs9C-9JjGe0"
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tk-jinya",
+   "region": "takayama",
+   "name": "Takayama Jinya",
+   "kind": "museum",
+   "size": "short",
+   "why": "Only surviving Edo-period government office of its kind",
+   "hours": null,
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-03",
+     "note": "Closed",
+     "source": "https://jinya.gifu.jp/en/guide/info/"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5902.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Takayama%20Jinya%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Takayama%20Jinya%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tk-floats",
+   "region": "takayama",
+   "name": "Festival Floats Exhibition Hall",
+   "kind": "museum",
+   "size": "short",
+   "why": "The real festival floats",
+   "hours": "9:00-16:30",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5905.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Festival%20Floats%20Exhibition%20Hall%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Festival%20Floats%20Exhibition%20Hall%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tk-kusakabe",
+   "region": "takayama",
+   "name": "Kusakabe Heritage House",
+   "kind": "museum",
+   "size": "short",
+   "why": "Merchant house with dramatic beams",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [
+    "Tue"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5903.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kusakabe%20Heritage%20House%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kusakabe%20Heritage%20House%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tk-markets",
+   "region": "takayama",
+   "name": "Morning markets (Miyagawa, Jinya-mae)",
+   "kind": "market",
+   "size": "short",
+   "why": "Pickles, miso and crafts; New Year decorations market 27-31 Dec",
+   "hours": "8:00-12:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5907.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Morning%20markets%20%28Miyagawa%2C%20Jinya-mae%29%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Morning%20markets%20%28Miyagawa%2C%20Jinya-mae%29%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tk-breweries",
+   "region": "takayama",
+   "name": "Sanmachi sake breweries",
+   "kind": "sight",
+   "size": "main",
+   "why": "Old town with seven breweries",
+   "hours": "Usually 9:00-17:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "No sake for her; amazake",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan.travel/en/spot/153/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sanmachi%20sake%20breweries%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sanmachi%20sake%20breweries%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tk-furukawa",
+   "region": "takayama",
+   "name": "Hida-Furukawa",
+   "kind": "sight",
+   "size": "day_trip",
+   "why": "Quieter canal town, 15 min by train",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5975.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hida-Furukawa%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hida-Furukawa%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ok-ropeway",
+   "region": "okuhida",
+   "name": "Shinhotaka Ropeway",
+   "kind": "nature",
+   "size": "day_trip",
+   "why": "Cable car to 2,156 m with Alps views",
+   "hours": "9:00-15:30 Dec-Mar",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Icy deck and altitude; ask her doctor",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://okuhida.or.jp/en/p/sightseeing/%e6%96%b0%e7%a9%82%e9%ab%98%e3%83%ad%e3%83%bc%e3%83%97%e3%82%a6%e3%82%a7%e3%82%a4/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shinhotaka%20Ropeway%20Okuhida",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shinhotaka%20Ropeway%20winter",
+    "instagram": null,
+    "video": "https://www.youtube.com/watch?v=x6XjH6KhveA"
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "gr-baths",
+   "region": "gero",
+   "name": "Gero footbaths and Yumeguri pass",
+   "kind": "onsen",
+   "size": "short",
+   "why": "Three ryokan baths for ¥1,300",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5990.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Gero%20footbaths%20and%20Yumeguri%20pass%20Gero",
+    "photos": "https://www.google.com/search?tbm=isch&q=Gero%20footbaths%20and%20Yumeguri%20pass%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "gr-gassho",
+   "region": "gero",
+   "name": "Gero Onsen Gassho Village",
+   "kind": "museum",
+   "size": "short",
+   "why": "Thatched houses; 9:00-16:00 on 31 Dec - 2 Jan",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.gero-gassho.jp/lg_en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Gero%20Onsen%20Gassho%20Village%20Gero",
+    "photos": "https://www.google.com/search?tbm=isch&q=Gero%20Onsen%20Gassho%20Village%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tk-maruaki",
+   "region": "takayama",
+   "name": "Maruaki",
+   "kind": "food",
+   "size": "meal",
+   "why": "Hida beef yakiniku and shabu-shabu",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.fun-japan.jp/en/articles/9937",
+    "map": "https://www.google.com/maps/search/?api=1&query=Maruaki%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Maruaki%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Hida beef yakiniku and shabu-shabu",
+    "price_band": "¥¥¥",
+    "recommended_by": "FUN! JAPAN",
+    "group_of_6": "Reserve",
+    "pregnancy_note": "Closed 1 Jan"
+   }
+  },
+  {
+   "id": "tk-kyoya",
+   "region": "takayama",
+   "name": "Kyoya",
+   "kind": "food",
+   "size": "meal",
+   "why": "Hida beef and hoba miso",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.insidekyoto.com/best-places-to-eat-in-takayama",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kyoya%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kyoya%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Hida beef and hoba miso",
+    "price_band": "¥¥",
+    "recommended_by": "Inside Kyoto",
+    "group_of_6": "Book",
+    "pregnancy_note": "Closed Tue"
+   }
+  },
+  {
+   "id": "tk-kitchenhida",
+   "region": "takayama",
+   "name": "Kitchen Hida",
+   "kind": "food",
+   "size": "meal",
+   "why": "Hida steak on the teppan",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.insidekyoto.com/best-places-to-eat-in-takayama",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kitchen%20Hida%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kitchen%20Hida%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Hida steak on the teppan",
+    "price_band": "¥¥¥",
+    "recommended_by": "Inside Kyoto",
+    "group_of_6": "Reserve",
+    "pregnancy_note": null
+   }
+  },
+  {
+   "id": "tk-menyashirakawa",
+   "region": "takayama",
+   "name": "Menya Shirakawa",
+   "kind": "food",
+   "size": "meal",
+   "why": "Takayama ramen",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://ssl.tabelog.com/en/gifu/A2104/A210401/21019966/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Menya%20Shirakawa%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Menya%20Shirakawa%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Takayama ramen",
+    "price_band": "¥",
+    "recommended_by": "Tabelog",
+    "group_of_6": "Small, queues",
+    "pregnancy_note": "Closed Tue"
+   }
+  },
+  {
+   "id": "tk-seto",
+   "region": "takayama",
+   "name": "Zaru Soba Seto",
+   "kind": "food",
+   "size": "meal",
+   "why": "Stone-milled soba",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.fun-japan.jp/en/articles/9937",
+    "map": "https://www.google.com/maps/search/?api=1&query=Zaru%20Soba%20Seto%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Zaru%20Soba%20Seto%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Stone-milled soba",
+    "price_band": "¥",
+    "recommended_by": "FUN! JAPAN",
+    "group_of_6": "Check",
+    "pregnancy_note": "Closed Wed"
+   }
+  },
+  {
+   "id": "tk-heianraku",
+   "region": "takayama",
+   "name": "Heianraku",
+   "kind": "food",
+   "size": "meal",
+   "why": "Home-style, all cooked",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.insidekyoto.com/best-places-to-eat-in-takayama",
+    "map": "https://www.google.com/maps/search/?api=1&query=Heianraku%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Heianraku%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Home-style, all cooked",
+    "price_band": "¥",
+    "recommended_by": "Inside Kyoto",
+    "group_of_6": "Small",
+    "pregnancy_note": "Closed Tue"
+   }
+  },
+  {
+   "id": "tk-center4",
+   "region": "takayama",
+   "name": "Center4 Hamburgers",
+   "kind": "food",
+   "size": "meal",
+   "why": "Hida beef burgers",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.insidekyoto.com/best-places-to-eat-in-takayama",
+    "map": "https://www.google.com/maps/search/?api=1&query=Center4%20Hamburgers%20Takayama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Center4%20Hamburgers%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Hida beef burgers",
+    "price_band": "¥",
+    "recommended_by": "Inside Kyoto",
+    "group_of_6": "Small",
+    "pregnancy_note": "Closed Wed"
+   }
+  },
+  {
+   "id": "ky-higashiyama",
+   "region": "kyoto",
+   "name": "Kiyomizu-dera and Higashiyama lanes",
+   "kind": "sight",
+   "size": "main",
+   "why": "The classic first Kyoto morning",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Slopes and stone steps",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": null,
+    "map": "https://www.google.com/maps/search/?api=1&query=Kiyomizu-dera%20and%20Higashiyama%20lanes%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kiyomizu-dera%20and%20Higashiyama%20lanes%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-arashiyama",
+   "region": "kyoto",
+   "name": "Arashiyama bamboo grove and Tenryu-ji",
+   "kind": "sight",
+   "size": "main",
+   "why": "Go before 9:00",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": null,
+    "map": "https://www.google.com/maps/search/?api=1&query=Arashiyama%20bamboo%20grove%20and%20Tenryu-ji%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Arashiyama%20bamboo%20grove%20and%20Tenryu-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-fushimi",
+   "region": "kyoto",
+   "name": "Fushimi Inari at dawn",
+   "kind": "sight",
+   "size": "main",
+   "why": "Torii tunnels; early crew",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "Stairs; turn back at Yotsutsuji",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": null,
+    "map": "https://www.google.com/maps/search/?api=1&query=Fushimi%20Inari%20at%20dawn%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Fushimi%20Inari%20at%20dawn%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-knm",
+   "region": "kyoto",
+   "name": "Kyoto National Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Year of the Sheep New Year exhibition",
+   "hours": "9:30-17:00",
+   "closures": [
+    {
+     "start": "2026-12-28",
+     "end": "2027-01-01",
+     "note": "Closed",
+     "source": null
+    },
+    {
+     "start": "2027-01-04",
+     "end": "2027-01-04",
+     "note": "Closed (Monday)",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.kyohaku.go.jp/eng/exhibitions/feature/b/2026_sheep/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kyoto%20National%20Museum%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kyoto%20National%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-railway",
+   "region": "kyoto",
+   "name": "Kyoto Railway Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Steam locomotives",
+   "hours": null,
+   "closures": [
+    {
+     "start": "2026-12-30",
+     "end": "2027-01-01",
+     "note": "Closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [
+    "Wed"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.kyotorailwaymuseum.jp/en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kyoto%20Railway%20Museum%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kyoto%20Railway%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-kyocera",
+   "region": "kyoto",
+   "name": "Kyocera Museum of Art",
+   "kind": "museum",
+   "size": "short",
+   "why": "Nitten exhibition; open 3 Jan only in the window",
+   "hours": null,
+   "closures": [
+    {
+     "start": "2026-12-28",
+     "end": "2027-01-02",
+     "note": "Closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://kyotocity-kyocera.museum/en/exhibition/20261219-20270116",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kyocera%20Museum%20of%20Art%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kyocera%20Museum%20of%20Art%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-nijo",
+   "region": "kyoto",
+   "name": "Nijo Castle",
+   "kind": "sight",
+   "size": "short",
+   "why": "Shogun's palace; palace buildings closed 1-3 Jan",
+   "hours": null,
+   "closures": [
+    {
+     "start": "2027-01-01",
+     "end": "2027-01-03",
+     "note": "Palace buildings closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://nijo-jocastle.city.kyoto.lg.jp/?lang=en",
+    "map": "https://www.google.com/maps/search/?api=1&query=Nijo%20Castle%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Nijo%20Castle%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-nanzenji",
+   "region": "kyoto",
+   "name": "Nanzen-ji",
+   "kind": "sight",
+   "size": "short",
+   "why": "Aqueduct and Zen gardens; open 1-4 Jan",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3905.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Nanzen-ji%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Nanzen-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-ginkakuji",
+   "region": "kyoto",
+   "name": "Ginkaku-ji and the Philosopher's Path",
+   "kind": "sight",
+   "size": "short",
+   "why": "Sand garden and canal walk",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.shokoku-ji.jp/en/ginkakuji/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Ginkaku-ji%20and%20the%20Philosopher%27s%20Path%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Ginkaku-ji%20and%20the%20Philosopher%27s%20Path%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-ohara",
+   "region": "kyoto",
+   "name": "Ohara, Sanzen-in",
+   "kind": "nature",
+   "size": "day_trip",
+   "why": "Moss garden in the hills, often snowy",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://japan-guide.com/e/e3955.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Ohara%2C%20Sanzen-in%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Ohara%2C%20Sanzen-in%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-nishiki",
+   "region": "kyoto",
+   "name": "Nishiki Market",
+   "kind": "market",
+   "size": "short",
+   "why": "Many shops closed 1-3 Jan",
+   "hours": null,
+   "closures": [
+    {
+     "start": "2027-01-01",
+     "end": "2027-01-03",
+     "note": "Many shops closed",
+     "source": "https://www.kyoto-nishiki.or.jp/en/contact/"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": null,
+    "map": "https://www.google.com/maps/search/?api=1&query=Nishiki%20Market%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Nishiki%20Market%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-newyear",
+   "region": "kyoto",
+   "name": "Kyoto New Year rites",
+   "kind": "event",
+   "size": "short",
+   "why": "Kitano calligraphy festival 2 Jan; Yasaka Okina Noh 9:00 and card game 13:00 on 3 Jan; lucky tea at Rokuharamitsu-ji 1-3 Jan",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://watabi.org/en/articles/kyoto-new-year-guide",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kyoto%20New%20Year%20rites%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kyoto%20New%20Year%20rites%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-shunkoin",
+   "region": "kyoto",
+   "name": "Zen and tea at Shunkoin",
+   "kind": "experience",
+   "size": "short",
+   "why": "Meditation with an English-speaking monk",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": "Required",
+   "links": {
+    "source": "https://shunkoin.com/?p=90",
+    "map": "https://www.google.com/maps/search/?api=1&query=Zen%20and%20tea%20at%20Shunkoin%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Zen%20and%20tea%20at%20Shunkoin%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-bunraku",
+   "region": "kyoto",
+   "name": "Bunraku New Year performance (Osaka)",
+   "kind": "event",
+   "size": "main",
+   "why": "Puppet theatre from about 3 Jan",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Fully seated",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.arc.ritsumei.ac.jp/lib/english/bunraku/eventinfo/bunraku_new_year_performance.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Bunraku%20New%20Year%20performance%20%28Osaka%29%20Osaka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Bunraku%20New%20Year%20performance%20%28Osaka%29%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-himeji",
+   "region": "kyoto",
+   "name": "Himeji Castle",
+   "kind": "sight",
+   "size": "day_trip",
+   "why": "Japan's finest original castle",
+   "hours": null,
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2026-12-30",
+     "note": "Closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Keep stairs inside the keep; she stays in the grounds",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.hyogo-tourism.jp/world/spot/detail_1054.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Himeji%20Castle%20Himeji",
+    "photos": "https://www.google.com/search?tbm=isch&q=Himeji%20Castle%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nara-todaiji",
+   "region": "nara",
+   "name": "Todai-ji",
+   "kind": "sight",
+   "size": "main",
+   "why": "The Great Buddha hall",
+   "hours": "8:00-17:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.todaiji.or.jp/en/?p=8117",
+    "map": "https://www.google.com/maps/search/?api=1&query=Todai-ji%20Nara",
+    "photos": "https://www.google.com/search?tbm=isch&q=Todai-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nara-kasuga",
+   "region": "nara",
+   "name": "Kasuga Taisha",
+   "kind": "sight",
+   "size": "short",
+   "why": "Shrine of lanterns",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4102.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kasuga%20Taisha%20Nara",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kasuga%20Taisha%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nara-naramachi",
+   "region": "nara",
+   "name": "Naramachi",
+   "kind": "sight",
+   "size": "short",
+   "why": "Merchant lanes",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4108.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Naramachi%20Nara",
+    "photos": "https://www.google.com/search?tbm=isch&q=Naramachi%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-ukihashi",
+   "region": "kyoto",
+   "name": "Washoku Ukihashi, Hotel Granvia",
+   "kind": "food",
+   "size": "meal",
+   "why": "Kaiseki lunch",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.tablecheck.com/en/shops/granvia-kyoto-ukihashi/reserve",
+    "map": "https://www.google.com/maps/search/?api=1&query=Washoku%20Ukihashi%2C%20Hotel%20Granvia%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Washoku%20Ukihashi%2C%20Hotel%20Granvia%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Kaiseki lunch",
+    "price_band": "¥¥-¥¥¥¥",
+    "recommended_by": "Tabelog",
+    "group_of_6": "Private rooms for 6",
+    "pregnancy_note": "Open over New Year"
+   }
+  },
+  {
+   "id": "ky-mouriya",
+   "region": "kyoto",
+   "name": "Mouriya Gion",
+   "kind": "food",
+   "size": "meal",
+   "why": "Kobe beef teppanyaki",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.tablecheck.com/en/shops/mouriya-gion/reserve",
+    "map": "https://www.google.com/maps/search/?api=1&query=Mouriya%20Gion%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Mouriya%20Gion%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Kobe beef teppanyaki",
+    "price_band": "¥¥¥¥",
+    "recommended_by": "byFood",
+    "group_of_6": "Online up to 8",
+    "pregnancy_note": "Open 1-3 Jan; well done for her"
+   }
+  },
+  {
+   "id": "ky-okutan",
+   "region": "kyoto",
+   "name": "Okutan Nanzen-ji",
+   "kind": "food",
+   "size": "meal",
+   "why": "Yudofu",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://bring-you.info/en/tofuokutan",
+    "map": "https://www.google.com/maps/search/?api=1&query=Okutan%20Nanzen-ji%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Okutan%20Nanzen-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Yudofu",
+    "price_band": "¥¥",
+    "recommended_by": "Frommer's",
+    "group_of_6": "Queues",
+    "pregnancy_note": "Closed Thu"
+   }
+  },
+  {
+   "id": "ky-omen",
+   "region": "kyoto",
+   "name": "Omen Ginkaku-ji",
+   "kind": "food",
+   "size": "meal",
+   "why": "Udon",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.leafkyoto.net/en/store/231120-kyoto-omen/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Omen%20Ginkaku-ji%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Omen%20Ginkaku-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Udon",
+    "price_band": "¥",
+    "recommended_by": "Inside Kyoto",
+    "group_of_6": "Walk in",
+    "pregnancy_note": "Closed Thu"
+   }
+  },
+  {
+   "id": "ky-shoraian",
+   "region": "kyoto",
+   "name": "Shoraian",
+   "kind": "food",
+   "size": "meal",
+   "why": "Tofu kaiseki in Arashiyama",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://japanjourneys.jp/kyoto/dining/restaurants/arashiyama/shoraian-tofu-kaiseki",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shoraian%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shoraian%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Tofu kaiseki in Arashiyama",
+    "price_band": "¥¥¥",
+    "recommended_by": "Japan Journeys",
+    "group_of_6": "Book",
+    "pregnancy_note": null
+   }
+  },
+  {
+   "id": "ky-inoda",
+   "region": "kyoto",
+   "name": "Inoda Coffee Honten",
+   "kind": "food",
+   "size": "meal",
+   "why": "Classic cafe",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.inoda-coffee.co.jp/english/shop/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Inoda%20Coffee%20Honten%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Inoda%20Coffee%20Honten%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Classic cafe",
+    "price_band": "¥¥",
+    "recommended_by": "Inside Kyoto",
+    "group_of_6": "211 seats",
+    "pregnancy_note": "Open all year"
+   }
+  },
+  {
+   "id": "ky-kagizen",
+   "region": "kyoto",
+   "name": "Kagizen Yoshifusa",
+   "kind": "food",
+   "size": "meal",
+   "why": "Wagashi and kuzukiri",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://cdn.gltjp.com/en/directory/item/15198/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kagizen%20Yoshifusa%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kagizen%20Yoshifusa%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Wagashi and kuzukiri",
+    "price_band": "¥",
+    "recommended_by": "Time Out",
+    "group_of_6": "Walk in",
+    "pregnancy_note": "Closed Mon"
+   }
+  },
+  {
+   "id": "hk-oam",
+   "region": "hakone",
+   "name": "Hakone Open-Air Museum",
+   "kind": "museum",
+   "size": "main",
+   "why": "Sculpture park and Picasso pavilion",
+   "hours": "9:00-17:00 every day",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.hakone-oam.or.jp/en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hakone%20Open-Air%20Museum%20Hakone",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hakone%20Open-Air%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hk-pola",
+   "region": "hakone",
+   "name": "Pola Museum of Art",
+   "kind": "museum",
+   "size": "short",
+   "why": "Monet and the Impressionists",
+   "hours": "9:00-17:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5214.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Pola%20Museum%20of%20Art%20Hakone",
+    "photos": "https://www.google.com/search?tbm=isch&q=Pola%20Museum%20of%20Art%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hk-okada",
+   "region": "hakone",
+   "name": "Okada Museum of Art",
+   "kind": "museum",
+   "size": "short",
+   "why": "Asian art and a footbath cafe",
+   "hours": null,
+   "closures": [
+    {
+     "start": "2026-12-31",
+     "end": "2027-01-01",
+     "note": "Closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5220.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Okada%20Museum%20of%20Art%20Hakone",
+    "photos": "https://www.google.com/search?tbm=isch&q=Okada%20Museum%20of%20Art%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hk-narukawa",
+   "region": "hakone",
+   "name": "Narukawa Art Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Lounge over Fuji and the lake",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5221.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Narukawa%20Art%20Museum%20Hakone",
+    "photos": "https://www.google.com/search?tbm=isch&q=Narukawa%20Art%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hk-loop",
+   "region": "hakone",
+   "name": "Hakone loop: ropeway, Owakudani, Lake Ashi boat",
+   "kind": "nature",
+   "size": "main",
+   "why": "Volcanic valley and Fuji views",
+   "hours": "Ropeway 9:00-16:15 in winter",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Volcanic gas: ask her doctor",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5223.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hakone%20loop%3A%20ropeway%2C%20Owakudani%2C%20Lake%20Ashi%20boat%20Hakone",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hakone%20loop%3A%20ropeway%2C%20Owakudani%2C%20Lake%20Ashi%20boat%20winter",
+    "instagram": null,
+    "video": "https://www.youtube.com/watch?v=W0BSUvmfs9o"
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hk-onshi",
+   "region": "hakone",
+   "name": "Onshi-Hakone Park",
+   "kind": "viewpoint",
+   "size": "short",
+   "why": "Classic Fuji-over-the-lake view",
+   "hours": null,
+   "closures": [
+    {
+     "start": "2026-12-19",
+     "end": "2027-01-03",
+     "note": "Closed",
+     "source": null
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "About 200 steps",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://hakone-japan.com/discover/national-park/area-information/onshi-hakone-koen-park/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Onshi-Hakone%20Park%20Hakone",
+    "photos": "https://www.google.com/search?tbm=isch&q=Onshi-Hakone%20Park%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hk-yosegi",
+   "region": "hakone",
+   "name": "Yosegi marquetry workshop",
+   "kind": "experience",
+   "size": "short",
+   "why": "Hakone-only craft",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://hakone-japan.com/yosegizaiku/experience/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Yosegi%20marquetry%20workshop%20Hakone",
+    "photos": "https://www.google.com/search?tbm=isch&q=Yosegi%20marquetry%20workshop%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hk-hatsuhana",
+   "region": "hakone",
+   "name": "Hatsuhana Soba",
+   "kind": "food",
+   "size": "meal",
+   "why": "Famous Yumoto soba",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [
+    "Wed"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.gltjp.com/en/directory/item/11669",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hatsuhana%20Soba%20Hakone",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hatsuhana%20Soba%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "Soba",
+    "price_band": "¥",
+    "recommended_by": "Japaholic",
+    "group_of_6": "Large shop",
+    "pregnancy_note": null
+   }
+  },
+  {
+   "id": "hk-fujiya",
+   "region": "hakone",
+   "name": "Fujiya Hotel restaurants",
+   "kind": "food",
+   "size": "meal",
+   "why": "French dining room from 1930",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://fhr.fujiyahotel.jp/restaurant/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Fujiya%20Hotel%20restaurants%20Hakone",
+    "photos": "https://www.google.com/search?tbm=isch&q=Fujiya%20Hotel%20restaurants%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null,
+   "food": {
+    "type": "French / Japanese",
+    "price_band": "¥¥¥",
+    "recommended_by": "Official",
+    "group_of_6": "Book dinner",
+    "pregnancy_note": null
+   }
+  },
+  {
+   "id": "tokyo-kabuki",
+   "region": "tokyo",
+   "name": "Kabuki-za single acts",
+   "kind": "event",
+   "size": "short",
+   "why": "Kabuki in about an hour",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥500-2,500",
+   "booking": null,
+   "links": {
+    "source": "https://japanroyalservice.com/blog/kabuki-single-act-tickets-tokyo",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kabuki-za%20single%20acts%20Hakone",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kabuki-za%20single%20acts%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-sumo",
+   "region": "tokyo",
+   "name": "Grand Sumo January tournament",
+   "kind": "event",
+   "size": "main",
+   "why": "Runs 10-24 Jan: one extra night buys the opening day",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": "On sale 5 Dec",
+   "links": {
+    "source": "https://selfguidejapan.com/blog/grand-sumo-january-2027",
+    "map": "https://www.google.com/maps/search/?api=1&query=Grand%20Sumo%20January%20tournament%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Grand%20Sumo%20January%20tournament%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-asageiko",
+   "region": "tokyo",
+   "name": "Sumo morning practice",
+   "kind": "experience",
+   "size": "main",
+   "why": "Watch a stable train",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "60-90 min on the floor",
+   "price": "From ¥14,000",
+   "booking": null,
+   "links": {
+    "source": "https://visit-sumida.jp/?p=9291",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sumo%20morning%20practice%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sumo%20morning%20practice%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-sushiclass",
+   "region": "tokyo",
+   "name": "Tsukiji tour and sushi class",
+   "kind": "experience",
+   "size": "main",
+   "why": "Market tour and hands-on sushi",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥24,200",
+   "booking": null,
+   "links": {
+    "source": "https://japan-food.guide/en/activities/59",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tsukiji%20tour%20and%20sushi%20class%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tsukiji%20tour%20and%20sushi%20class%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-indigo",
+   "region": "tokyo",
+   "name": "Indigo dyeing at Wanariya",
+   "kind": "experience",
+   "size": "short",
+   "why": "Dye your own piece",
+   "hours": null,
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.gotokyo.org/en/workshop/sd036/index.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Indigo%20dyeing%20at%20Wanariya%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Indigo%20dyeing%20at%20Wanariya%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-oishi",
+   "region": "kawaguchiko",
+   "name": "Oishi Park",
+   "kind": "viewpoint",
+   "size": "short",
+   "why": "A flat, free lakeside promenade with Fuji straight across the water; the easiest Fuji view of the trip for her",
+   "hours": "Always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat paths along the north shore",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://en.kawaguchiko.net/park-en/oishi-park",
+    "map": "https://www.google.com/maps/search/?api=1&query=Oishi%20Park%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Oishi%20Park%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-ropeway",
+   "region": "kawaguchiko",
+   "name": "Mt Fuji Panoramic Ropeway",
+   "kind": "nature",
+   "size": "main",
+   "why": "Three minutes up to the Kachi Kachi viewpoint over the lake and Fuji; the main outing, with the lake cruise",
+   "hours": "9:00-17:00 in winter; stops in strong wind",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Seated; a few steps at the top deck",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6905.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Mt%20Fuji%20Panoramic%20Ropeway%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Mt%20Fuji%20Panoramic%20Ropeway%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-cruise",
+   "region": "kawaguchiko",
+   "name": "Lake Kawaguchi sightseeing boat",
+   "kind": "nature",
+   "size": "short",
+   "why": "Twenty minutes on the lake with the Fuji view from the water",
+   "hours": "9:00-16:30",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6900.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Lake%20Kawaguchi%20sightseeing%20boat%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Lake%20Kawaguchi%20sightseeing%20boat%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-chureito",
+   "region": "kawaguchiko",
+   "name": "Chureito Pagoda",
+   "kind": "viewpoint",
+   "size": "short",
+   "why": "The postcard shot: the red pagoda with Fuji behind. 398 steps, so for the early crew only",
+   "hours": "Always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "398 steps; she stays below or at the shrine",
+   "status": "avoid_for_her",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6917.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Chureito%20Pagoda%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Chureito%20Pagoda%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-kubota",
+   "region": "kawaguchiko",
+   "name": "Itchiku Kubota Art Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Kimono painted as Fuji landscapes, in a Gaudi-like building; the cloudy-day option",
+   "hours": "10:00-16:30; January closing days differ between sources, check",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6927.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Itchiku%20Kubota%20Art%20Museum%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Itchiku%20Kubota%20Art%20Museum%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-onsen-foot",
+   "region": "kawaguchiko",
+   "name": "Lakeside footbaths and the Kawaguchiko Music Forest",
+   "kind": "experience",
+   "size": "short",
+   "why": "Free footbaths on the north shore and a small European music-box museum; gentle afternoons",
+   "hours": "Music Forest 10:00-17:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6900.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Lakeside%20footbaths%20and%20the%20Kawaguchiko%20Music%20Forest%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Lakeside%20footbaths%20and%20the%20Kawaguchiko%20Music%20Forest%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-hoto-fudou",
+   "region": "kawaguchiko",
+   "name": "Hoto Fudou (Higashi-Koiji)",
+   "kind": "food",
+   "size": "meal",
+   "why": "Hoto, the thick flat noodle stew of Yamanashi, in a big white dome; about 300 seats, so six is easy",
+   "hours": "11:00-20:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥1,320, cash",
+   "booking": null,
+   "links": {
+    "source": "https://livejapan.com/en/in-tokyo/in-pref-fuji_mountain/in-mount_fuji/article-a0005559/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hoto%20Fudou%20(Higashi-Koiji)%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hoto%20Fudou%20(Higashi-Koiji)%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "food": {
+    "type": "Hoto noodle stew",
+    "price_band": "¥",
+    "recommended_by": "LIVE JAPAN",
+    "group_of_6": "Yes, about 300 seats",
+    "pregnancy_note": "All cooked; the pot is a vegetable and miso stew"
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-kosaku",
+   "region": "kawaguchiko",
+   "name": "Hoto Kosaku Kawaguchiko",
+   "kind": "food",
+   "size": "meal",
+   "why": "The other hoto house, by the lake, with pork and bean hoto and a long tatami room",
+   "hours": "11:00-19:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥1,500-2,000",
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6900.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hoto%20Kosaku%20Kawaguchiko%20Kawaguchiko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hoto%20Kosaku%20Kawaguchiko%20Fuji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "food": {
+    "type": "Hoto noodle stew",
+    "price_band": "¥",
+    "recommended_by": "japan-guide",
+    "group_of_6": "Large tatami rooms; walk in",
+    "pregnancy_note": "All cooked"
+   },
+   "google_place_id": null
+  }
+ ],
+ "versions": [
+  {
+   "id": "plan",
+   "name": "The plan (Balanced)",
+   "pace": "balanced",
+   "status": "plan",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-24",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": null
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-24",
+     "to": "2026-12-28",
+     "nights": 4,
+     "lodging": "rental",
+     "note": null
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-28",
+     "to": "2026-12-30",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Via Shirakawa-go on the 8:40 bus"
+    },
+    {
+     "region": "gero",
+     "from": "2026-12-30",
+     "to": "2027-01-01",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": "New Year's Eve"
+    },
+    {
+     "region": "kyoto",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": "rental",
+     "note": "Nara on 4 Jan"
+    },
+    {
+     "region": "hakone",
+     "from": "2027-01-05",
+     "to": "2027-01-07",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": null
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-07",
+     "to": "2027-01-09",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": null
+    }
+   ],
+   "travel_hours_est": 14,
+   "gains": "Every interest covered, a rest each day",
+   "gives_up": "Okuhida and Hiroshima",
+   "moves": 6
+  },
+  {
+   "id": "gentle",
+   "name": "Gentle",
+   "pace": "gentle",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-24",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": null
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-24",
+     "to": "2026-12-28",
+     "nights": 4,
+     "lodging": "rental",
+     "note": null
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-28",
+     "to": "2027-01-01",
+     "nights": 4,
+     "lodging": "ryokan",
+     "note": "New Year's Eve at a Takayama ryokan"
+    },
+    {
+     "region": "kyoto",
+     "from": "2027-01-01",
+     "to": "2027-01-06",
+     "nights": 5,
+     "lodging": "rental",
+     "note": null
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-06",
+     "to": "2027-01-09",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": "Hakone as a day trip optional"
+    }
+   ],
+   "travel_hours_est": 12,
+   "gains": "Never rushed, fewest check-ins",
+   "gives_up": "Hakone and the onsen New Year's Eve",
+   "moves": 4
+  },
+  {
+   "id": "full",
+   "name": "Full",
+   "pace": "full",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-23",
+     "nights": 3,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-23",
+     "to": "2026-12-26",
+     "nights": 3,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-26",
+     "to": "2026-12-28",
+     "nights": 2,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "okuhida",
+     "from": "2026-12-28",
+     "to": "2026-12-30",
+     "nights": 2,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "gero",
+     "from": "2026-12-30",
+     "to": "2027-01-01",
+     "nights": 2,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "kyoto",
+     "from": "2027-01-01",
+     "to": "2027-01-04",
+     "nights": 3,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "hiroshima",
+     "from": "2027-01-04",
+     "to": "2027-01-06",
+     "nights": 2,
+     "lodging": null,
+     "note": "Hiroshima and Miyajima"
+    },
+    {
+     "region": "hakone",
+     "from": "2027-01-06",
+     "to": "2027-01-08",
+     "nights": 2,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-08",
+     "to": "2027-01-09",
+     "nights": 1,
+     "lodging": null,
+     "note": null
+    }
+   ],
+   "travel_hours_est": 18,
+   "gains": "Okuhida snow baths, Hiroshima and Miyajima",
+   "gives_up": "Rest days; peak-day travel on 30 Dec and 4 Jan; one night at the end",
+   "moves": 8
+  },
+  {
+   "id": "snow-monkeys",
+   "name": "Plan + snow monkeys",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-23",
+     "nights": 3,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "yudanaka",
+     "from": "2026-12-23",
+     "to": "2026-12-25",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": null
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-25",
+     "to": "2026-12-28",
+     "nights": 3,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-28",
+     "to": "2026-12-30",
+     "nights": 2,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "gero",
+     "from": "2026-12-30",
+     "to": "2027-01-01",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": null
+    },
+    {
+     "region": "kyoto",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "hakone",
+     "from": "2027-01-05",
+     "to": "2027-01-07",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": null
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-07",
+     "to": "2027-01-09",
+     "nights": 2,
+     "lodging": null,
+     "note": null
+    }
+   ],
+   "gains": "Snow monkeys and an onsen street",
+   "gives_up": "A Tokyo day and Kanazawa's fourth night",
+   "moves": 7
+  },
+  {
+   "id": "art-not-fuji",
+   "name": "Art instead of Fuji",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-24",
+     "nights": 4,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-24",
+     "to": "2026-12-28",
+     "nights": 4,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-28",
+     "to": "2026-12-30",
+     "nights": 2,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "gero",
+     "from": "2026-12-30",
+     "to": "2027-01-01",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": null
+    },
+    {
+     "region": "kyoto",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "okayama",
+     "from": "2027-01-05",
+     "to": "2027-01-07",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Himeji on 5 Jan; Naoshima Wed 6 Jan"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-07",
+     "to": "2027-01-09",
+     "nights": 2,
+     "lodging": null,
+     "note": null
+    }
+   ],
+   "gains": "Chichu Art Museum, Ohara Museum, Korakuen, Himeji",
+   "gives_up": "Hakone ryokan and Fuji dawns",
+   "moves": 6
+  },
+  {
+   "id": "kinosaki",
+   "name": "Crab and onsen instead of Fuji",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-24",
+     "nights": 4,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-24",
+     "to": "2026-12-28",
+     "nights": 4,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-28",
+     "to": "2026-12-30",
+     "nights": 2,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "gero",
+     "from": "2026-12-30",
+     "to": "2027-01-01",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": null
+    },
+    {
+     "region": "kyoto",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": null,
+     "note": null
+    },
+    {
+     "region": "kinosaki",
+     "from": "2027-01-05",
+     "to": "2027-01-07",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": null
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-07",
+     "to": "2027-01-09",
+     "nights": 2,
+     "lodging": null,
+     "note": null
+    }
+   ],
+   "gains": "A classic onsen town in crab season",
+   "gives_up": "Hakone and Fuji; 5-6 h back to Tokyo",
+   "moves": 6
+  },
+  {
+   "id": "fuji-lake",
+   "name": "Fuji across the lake instead of Hakone",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-24",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": null
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-24",
+     "to": "2026-12-28",
+     "nights": 4,
+     "lodging": "rental",
+     "note": null
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-28",
+     "to": "2026-12-30",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Via Shirakawa-go on the 8:40 bus"
+    },
+    {
+     "region": "gero",
+     "from": "2026-12-30",
+     "to": "2027-01-01",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": "New Year's Eve"
+    },
+    {
+     "region": "kyoto",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": "rental",
+     "note": "Nara on 4 Jan"
+    },
+    {
+     "region": "kawaguchiko",
+     "from": "2027-01-05",
+     "to": "2027-01-07",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": "Fuji across the lake; via Mishima"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-07",
+     "to": "2027-01-09",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": null
+    }
+   ],
+   "gains": "The postcard Fuji view from a lakeside ryokan, hoto noodles, a new place for the two of you",
+   "gives_up": "Hakone's five museums on a cloudy day; about an hour more from Kyoto",
+   "moves": 6
+  }
+ ],
+ "legacy_routes": [
+  {
+   "id": "legacy-A",
+   "name": "Old route A: Grand Loop",
+   "status": "legacy",
+   "title": "Fuji, the Alps and a Kyoto New Year",
+   "exit": "KIX",
+   "stays": [
+    {
+     "place": "tokyo",
+     "nights": 4
+    },
+    {
+     "place": "kawaguchiko",
+     "nights": 2
+    },
+    {
+     "place": "takayama",
+     "nights": 2
+    },
+    {
+     "place": "kanazawa",
+     "nights": 2
+    },
+    {
+     "place": "kyoto",
+     "nights": 5
+    },
+    {
+     "place": "koyasan",
+     "nights": 1
+    },
+    {
+     "place": "osaka",
+     "nights": 4
+    }
+   ],
+   "note": "Superseded; breaks the two-night minimum and/or the peak-day rule"
+  },
+  {
+   "id": "legacy-B",
+   "name": "Old route B: Snow Country",
+   "status": "legacy",
+   "title": "Snow monkeys, onsen towns and a mountain New Year",
+   "exit": "KIX",
+   "stays": [
+    {
+     "place": "tokyo",
+     "nights": 3
+    },
+    {
+     "place": "kawaguchiko",
+     "nights": 2
+    },
+    {
+     "place": "yudanaka",
+     "nights": 2
+    },
+    {
+     "place": "kanazawa",
+     "nights": 2
+    },
+    {
+     "place": "shirakawago",
+     "nights": 1
+    },
+    {
+     "place": "takayama",
+     "nights": 2
+    },
+    {
+     "place": "kyoto",
+     "nights": 4
+    },
+    {
+     "place": "osaka",
+     "nights": 4
+    }
+   ],
+   "note": "Superseded; breaks the two-night minimum and/or the peak-day rule"
+  },
+  {
+   "id": "legacy-C",
+   "name": "Old route C: Southwest",
+   "status": "legacy",
+   "title": "Hakone, Hiroshima and a Kyushu onsen New Year",
+   "exit": "FUK",
+   "stays": [
+    {
+     "place": "tokyo",
+     "nights": 3
+    },
+    {
+     "place": "hakone",
+     "nights": 2
+    },
+    {
+     "place": "kyoto",
+     "nights": 4
+    },
+    {
+     "place": "miyajima",
+     "nights": 2
+    },
+    {
+     "place": "yufuin",
+     "nights": 2
+    },
+    {
+     "place": "nagasaki",
+     "nights": 3
+    },
+    {
+     "place": "fukuoka",
+     "nights": 4
+    }
+   ],
+   "note": "Superseded; breaks the two-night minimum and/or the peak-day rule"
+  },
+  {
+   "id": "legacy-D",
+   "name": "Old route D: Sacred Mountains",
+   "status": "legacy",
+   "title": "Old roads, Ise and a monastery New Year",
+   "exit": "KIX",
+   "stays": [
+    {
+     "place": "tokyo",
+     "nights": 3
+    },
+    {
+     "place": "kawaguchiko",
+     "nights": 2
+    },
+    {
+     "place": "tsumago",
+     "nights": 1
+    },
+    {
+     "place": "ise",
+     "nights": 2
+    },
+    {
+     "place": "kawayu",
+     "nights": 3
+    },
+    {
+     "place": "koyasan",
+     "nights": 2
+    },
+    {
+     "place": "kyoto",
+     "nights": 4
+    },
+    {
+     "place": "osaka",
+     "nights": 3
+    }
+   ],
+   "note": "Superseded; breaks the two-night minimum and/or the peak-day rule"
+  }
+ ],
+ "tokyo_personal_food_list": [
+  {
+   "n": "Vesper",
+   "area": "Ginza",
+   "cat": "Cocktail bar",
+   "rating": "4.5 (1,304)"
+  },
+  {
+   "n": "Grill Swiss Ginza",
+   "area": "Ginza",
+   "cat": "Japanese-Western grill",
+   "rating": "4.0 (1,480)"
+  },
+  {
+   "n": "WOMB",
+   "area": "Shibuya",
+   "cat": "Night club",
+   "rating": "3.9 (1,262)"
+  },
+  {
+   "n": "DJ BAR Bridge SHIBUYA",
+   "area": "Shibuya",
+   "cat": "Night club",
+   "rating": "4.3 (307)"
+  },
+  {
+   "n": "Mikkeller Tokyo",
+   "area": "Naka-Meguro",
+   "cat": "Craft beer bar",
+   "rating": "4.5 (1,422)"
+  },
+  {
+   "n": "buri Stand Bar & Restaurant",
+   "area": "Shibuya",
+   "cat": "Standing bar",
+   "rating": "4.1 (279)"
+  },
+  {
+   "n": "Tachigui Sushi Yusho",
+   "area": "Verify on map",
+   "cat": "Standing sushi",
+   "rating": "3.9 (163)"
+  },
+  {
+   "n": "Kitchen Nankai Jinbocho",
+   "area": "Jinbōchō",
+   "cat": "Old-style Western-Japanese diner",
+   "rating": "4.3 (3,237)"
+  },
+  {
+   "n": "장군커피",
+   "area": "Verify on map (Korean café)",
+   "cat": "Cafe",
+   "rating": "—"
+  },
+  {
+   "n": "Sushi Mizukami",
+   "area": "Roppongi",
+   "cat": "Sushi",
+   "rating": "4.8 (240)"
+  },
+  {
+   "n": "The Bellwood",
+   "area": "Shibuya",
+   "cat": "Cocktail bar",
+   "rating": "4.6 (633)"
+  },
+  {
+   "n": "Sushidokoro Sei",
+   "area": "Verify on map",
+   "cat": "Sushi",
+   "rating": "4.4 (155)"
+  },
+  {
+   "n": "Ramen Kamo to Negi Ueno Okachimachi",
+   "area": "Ueno / Okachimachi",
+   "cat": "Ramen",
+   "rating": "4.5 (14,325)"
+  },
+  {
+   "n": "The SG Club",
+   "area": "Shibuya",
+   "cat": "Cocktail bar",
+   "rating": "4.5 (1,546)"
+  },
+  {
+   "n": "Tasogare Coffee Stand",
+   "area": "Naka-Meguro",
+   "cat": "Coffee shop",
+   "rating": "4.7 (517)"
+  },
+  {
+   "n": "Third Place Bar FIZZ",
+   "area": "Shibuya",
+   "cat": "Bar",
+   "rating": "4.9 (169)"
+  },
+  {
+   "n": "Bar Shiki",
+   "area": "Ginza",
+   "cat": "Bar",
+   "rating": "4.7 (299)"
+  },
+  {
+   "n": "Bar Nayuta",
+   "area": "Ginza",
+   "cat": "Cocktail bar",
+   "rating": "4.7 (1,466)"
+  },
+  {
+   "n": "CRAFTROOM",
+   "area": "Shibuya",
+   "cat": "Bar",
+   "rating": "4.4 (216)"
+  },
+  {
+   "n": "Kopimal coffee",
+   "area": "Harajuku / Omotesandō",
+   "cat": "Cafe",
+   "rating": "4.9 (850)"
+  },
+  {
+   "n": "GINZA TONKATSU SAITO",
+   "area": "Ginza",
+   "cat": "Tonkatsu",
+   "rating": "4.7 (495)"
+  },
+  {
+   "n": "Big Wine Freaks",
+   "area": "Ebisu",
+   "cat": "Wine bar",
+   "rating": "4.3 (236)"
+  },
+  {
+   "n": "YAKITORI MOE",
+   "area": "Verify on map",
+   "cat": "Yakitori",
+   "rating": "4.4 (328)"
+  },
+  {
+   "n": "Tempura Kondo",
+   "area": "Ginza",
+   "cat": "Tempura (Michelin)",
+   "rating": "4.4 (978)"
+  },
+  {
+   "n": "Korat Thai Cafe",
+   "area": "Verify on map",
+   "cat": "Thai restaurant",
+   "rating": "4.2 (1,045)"
+  },
+  {
+   "n": "Sabasu",
+   "area": "Naka-Meguro",
+   "cat": "Pizza",
+   "rating": "4.7 (442)"
+  },
+  {
+   "n": "Little Willy's",
+   "area": "Naka-Meguro",
+   "cat": "Cafe / brunch",
+   "rating": "4.8 (931)"
+  },
+  {
+   "n": "Ginza Furuta",
+   "area": "Ginza",
+   "cat": "Sushi (Michelin)",
+   "rating": "4.2 (82)",
+   "note": "Michelin-listed sushi."
+  },
+  {
+   "n": "Kushiyaki Bistro Fukumimi Ginza",
+   "area": "Ginza",
+   "cat": "Skewers",
+   "rating": "4.5 (2,854)",
+   "closed": "Temporarily closed — check before planning."
+  },
+  {
+   "n": "Han no daidokoro bettei shibuya",
+   "area": "Shibuya",
+   "cat": "Korean BBQ",
+   "rating": "4.6 (1,740)",
+   "note": "Yakiniku place."
+  },
+  {
+   "n": "Manten Sushi Hibiya Okuroji",
+   "area": "Hibiya / Yūrakuchō",
+   "cat": "Sushi",
+   "rating": "4.2 (713)"
+  },
+  {
+   "n": "NOBU Tokyo",
+   "area": "Roppongi / Toranomon",
+   "cat": "Japanese fine dining",
+   "rating": "4.3 (1,188)"
+  },
+  {
+   "n": "Trench",
+   "area": "Shibuya",
+   "cat": "Cocktail bar",
+   "rating": "4.7 (922)",
+   "note": "Best whisky sour I've ever had."
+  },
+  {
+   "n": "pizza marumo",
+   "area": "Naka-Meguro",
+   "cat": "Pizza",
+   "rating": "4.4 (1,440)",
+   "note": "Best pizza I've had in my life."
+  },
+  {
+   "n": "Anko Maruyamaten",
+   "area": "Shibuya (Maruyama-chō)",
+   "cat": "Izakaya",
+   "rating": "4.2 (147)",
+   "note": "Izakaya."
+  },
+  {
+   "n": "Tsujita Ginza",
+   "area": "Ginza",
+   "cat": "Ramen",
+   "rating": "4.7 (6,446)",
+   "note": "Amazing ramen."
+  },
+  {
+   "n": "Fukuzuka",
+   "area": "Verify on map",
+   "cat": "Sushi",
+   "rating": "4.6 (144)",
+   "note": "Incredible sushi, about US$250 per person."
+  },
+  {
+   "n": "Kitagawa",
+   "area": "Verify on map",
+   "cat": "Japanese fine dining",
+   "rating": "4.7 (115)",
+   "note": "Fine dining."
+  },
+  {
+   "n": "Bar SLUGS' 2",
+   "area": "Shinjuku",
+   "cat": "Bar",
+   "rating": "4.6 (14)",
+   "note": "Also a great cocktail bar."
+  },
+  {
+   "n": "Tonkatsu Aoki Ginza 8-chōme",
+   "area": "Ginza",
+   "cat": "Tonkatsu",
+   "rating": "4.4 (1,495)",
+   "note": "Another well-known tonkatsu option."
+  },
+  {
+   "n": "Fuunji Tokyo Ramen Yokochō",
+   "area": "Shinjuku",
+   "cat": "Ramen (tsukemen)",
+   "rating": "3.9 (511)",
+   "note": "Tsukemen — great, short line, quick to eat and go."
+  },
+  {
+   "n": "Bar TRIAD",
+   "area": "Shibuya",
+   "cat": "Cocktail bar",
+   "rating": "4.6 (259)",
+   "note": "One of the best cocktail bars I've been to."
+  },
+  {
+   "n": "Tonkatsu Suzuki",
+   "area": "Near Tokyo Station",
+   "cat": "Tonkatsu",
+   "rating": "4.5 (1,572)",
+   "note": "Best tonkatsu we had. Famous but the line moves fast — easy to fit in on arrival or on the way to the airport train. One of the best-value meals in Tokyo. Order: the special rib cut, the marinated fish, an extra shrimp, and the potato salad."
+  },
+  {
+   "n": "Harajuku Gyozarou",
+   "area": "Harajuku",
+   "cat": "Gyoza",
+   "rating": "4.0 (4,439)",
+   "note": "Cheap, good gyoza."
+  },
+  {
+   "n": "Udon Shin",
+   "area": "Roppongi (also Azabujuban)",
+   "cat": "Udon",
+   "rating": "3.9 (5,301)",
+   "note": "Amazing udon, but a long wait."
+  },
+  {
+   "n": "Sugoi Niboshi Ramen Nagi Shinjuku Golden Gai Honkan",
+   "area": "Shinjuku (Golden Gai)",
+   "cat": "Ramen",
+   "rating": "4.3 (7,222)"
+  },
+  {
+   "n": "Ramen-ya Toy Box",
+   "area": "Verify on map",
+   "cat": "Ramen",
+   "rating": "3.8 (1,872)"
+  },
+  {
+   "n": "Fuglen Tokyo",
+   "area": "Tomigaya (Shibuya)",
+   "cat": "Coffee / cocktail bar",
+   "rating": "4.3 (3,810)"
+  },
+  {
+   "n": "Bar TRAM",
+   "area": "Ginza",
+   "cat": "Cocktail bar",
+   "rating": "4.5 (636)"
+  },
+  {
+   "n": "Ebisu Yokochō",
+   "area": "Ebisu",
+   "cat": "Izakaya alley",
+   "rating": "3.8 (1,670)"
+  },
+  {
+   "n": "Shibuya Nonbei Yokochō",
+   "area": "Shibuya",
+   "cat": "Izakaya alley",
+   "rating": "4.1 (1,159)"
+  },
+  {
+   "n": "Breakfast Club Tokyo",
+   "area": "Harajuku / Omotesandō",
+   "cat": "Breakfast diner",
+   "rating": "3.7 (441)"
+  },
+  {
+   "n": "Fuunji Shinjuku",
+   "area": "Shinjuku",
+   "cat": "Ramen (tsukemen)",
+   "rating": "4.3 (5,710)"
+  },
+  {
+   "n": "Ginza Shimada",
+   "area": "Ginza",
+   "cat": "Japanese restaurant",
+   "rating": "4.3 (338)"
+  },
+  {
+   "n": "teamLab Planets TOKYO DMM",
+   "area": "Toyosu",
+   "cat": "Immersive art museum",
+   "rating": "4.5 (56,542)"
+  },
+  {
+   "n": "Butagumi",
+   "area": "Nishi-Azabu",
+   "cat": "Tonkatsu",
+   "rating": "4.4 (1,342)"
+  }
+ ],
+ "related_docs": {
+  "plan_doc": "https://claude.ai/code/artifact/8af68e4b-aa1e-42c9-ad88-2a4dbdc396f7",
+  "tokyo_guide": "https://claude.ai/artifact/WGmgutnpVdHdwH9iAmxuyi",
+  "kyoto_guide": "https://claude.ai/artifact/R5h7gGy8NcavyHmpNRJ68u",
+  "route_explorer": "https://claude.ai/artifact/PKwiteu1DMN61MaxZJj7qp"
+ }
+}

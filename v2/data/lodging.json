@@ -1,0 +1,748 @@
+{
+  "_about": "Where to stay, base by base, from docs/research/07-lodging.md (researched 1 Oct 2026) and the plan doc's Where to sleep. Prices are JPY per night for the whole group of six, rounded; ryokan prices include dinner and breakfast. 'Verified' means read on an official site, Ikyu, Rakuten or a current guide; otherwise it is the sector pattern. Live availability for 31 Dec must be checked in a browser.",
+  "researched": "2026-10-01",
+  "ground_rules": [
+    {
+      "title": "Decide the New Year anchor first",
+      "text": "The three New Year nights (31 Dec–2 Jan) are the only scarce resource; everything else is still open. Most small ryokan load rooms six months out and their New Year plans sell out within weeks of posting in September. City hotels, apartment hotels and machiya do not have that cliff."
+    },
+    {
+      "title": "New Year surcharge",
+      "text": "Ryokan: +50–100% on the normal per-person rate for 31 Dec–2 Jan, usually as a mandatory New Year plan with toshikoshi soba on the 31st and an osechi breakfast on 1 Jan (verified at Hakone Ginyu: +¥14,300 per person). City hotels: +30–80% on 31 Dec. Apartment hotels: roughly 1.5–2× the base rate."
+    },
+    {
+      "title": "Two rooms, never one",
+      "text": "Ryokan price per person. For six, ask for 2 rooms × 3 or 3 rooms × 2, the same plan and the same dinner sitting. One room for six adults including a pregnant woman and two older parents is not advisable."
+    },
+    {
+      "title": "Beds, lifts, ground floors",
+      "text": "Hotels always have lifts. Modern large ryokan do; small historic ones and machiya have steep stairs and bedrooms upstairs. Ask for a Japanese-Western room (和洋室): beds plus a tatami area. In a machiya, put her on the ground floor and check the bedrooms are heated."
+    },
+    {
+      "title": "Tell them she is pregnant",
+      "text": "Say one guest is pregnant (妊娠中) and two are seniors: rooms near the lift, cooked courses instead of sashimi, low-sodium if needed, in-room dining if offered. Ryokan handle this routinely with three days' notice."
+    },
+    {
+      "title": "Refundable first",
+      "text": "Hold city nights on official sites or Booking.com with free cancellation. Book the New Year ryokan on the strictest-but-still-refundable plan you can find (Ikyu and Rakuten show cancellation terms). Machiya brands charge in full at booking and refund to about 21–22 days out. Never hold more than two options per night."
+    },
+    {
+      "title": "The right channel",
+      "text": "Hotels: official site or Booking.com. Ryokan: Ikyu (English, shows New Year plans), Rakuten Travel (about 10% cheaper than Booking), Jalan (Japanese only, most listings). A ryokan that shows sold out online often still has rooms by email for 2 rooms × 3. Machiya: the brand's own site."
+    },
+    {
+      "title": "Send the suitcases ahead",
+      "text": "Yamato takkyubin hotel-to-hotel is about ¥2,000–2,800 per case, next day; allow an extra day from 28 Dec to 4 Jan. Travel the onsen nights with a daypack."
+    }
+  ],
+  "types": {
+    "hotel": {
+      "label": "Hotel",
+      "blurb": "Three rooms, or an apartment hotel with connecting units. A front desk for luggage forwarding and taxis."
+    },
+    "rental": {
+      "label": "Whole house",
+      "blurb": "A machiya or apartment for six: a living room for the evenings, a kitchen and a washing machine. Usually beats three hotel rooms for three nights or more."
+    },
+    "ryokan": {
+      "label": "Ryokan",
+      "blurb": "Dinner and breakfast included, a bath in the room. Priced per person. The nights where the stay itself is the point."
+    }
+  },
+  "regions": {
+    "tokyo": {
+      "type": "hotel",
+      "why": "Tokyo rentals are small and often far from stations. A front desk helps with luggage forwarding and taxis. Stay near a JR Yamanote line station; Asakusa, Ginza and Nihonbashi are calmer than Shinjuku over New Year.",
+      "fit": "Three double or twin rooms, two connecting apartments, or one 2–3 bedroom suite. Everything has lifts and beds.",
+      "outlook": "Open at all tiers.",
+      "tiers": {
+        "budget": [
+          45000,
+          75000
+        ],
+        "mid": [
+          90000,
+          150000
+        ],
+        "top": [
+          180000,
+          400000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "MIMARU Tokyo Hatchobori",
+          "url": "https://mimaruhotels.com/en/hotel/hatchobori/",
+          "tier": "budget",
+          "area": "Hatchobori, between Tokyo Station and Ginza",
+          "what": "6-person Japanese apartment (two twins, a bunk and futon), or two connecting units with a door between them. Kitchen, washer.",
+          "price": "¥50,000–70,000 for one 6-pax unit",
+          "fit": "Beds, lift, kitchen; the best fit for three couples who want one door between them.",
+          "verified": true
+        },
+        {
+          "name": "MIMARU SUITES Tokyo Asakusa",
+          "url": "https://mimaruhotels.com/en/hotel/suites-tokyo-asakusa/",
+          "tier": "mid",
+          "area": "3 min from Asakusa station",
+          "what": "Two-bedroom suites for six with a living room and kitchen.",
+          "price": "≈ ¥85,000 per suite (recent average US$570)",
+          "fit": "Beds, lift. Senso-ji on the doorstep.",
+          "verified": true
+        },
+        {
+          "name": "MIMARU SUITES Tokyo Nihombashi",
+          "url": "https://mimaruhotels.com/en/hotel/suites-tokyo-nihombashi/",
+          "tier": "mid",
+          "area": "Nihombashi",
+          "what": "Suites for 4–6 with kitchens, close to Tokyo Station for the 24 Dec shinkansen.",
+          "price": "¥90,000–150,000",
+          "fit": "Beds, lift.",
+          "verified": true
+        },
+        {
+          "name": "Tokyu Stay Ginza",
+          "url": "https://www.ikyu.com/en-us/00081487/",
+          "tier": "budget",
+          "area": "Ginza",
+          "what": "Rooms with a kitchenette and a washer-dryer, three rooms for six.",
+          "price": "¥20,000–55,000 per room",
+          "fit": "Beds, lift, laundry in the room.",
+          "verified": true
+        },
+        {
+          "name": "Oakwood Premier Tokyo",
+          "url": "https://www.oakwood.com/japan/tokyo/oakwood-premier-tokyo",
+          "tier": "top",
+          "area": "Marunouchi, on top of Tokyo Station",
+          "what": "Serviced 1–2 bedroom apartments.",
+          "price": "US$416–1,076 per apartment",
+          "fit": "Beds, lift, the station downstairs.",
+          "verified": true
+        }
+      ]
+    },
+    "kanazawa": {
+      "type": "rental",
+      "why": "The longest stay. A shared living room for the evenings, a kitchen and a washing machine make it the mid-trip reset. Hotels are the fallback if the good machiya are gone.",
+      "fit": "A machiya for exactly six with three bedrooms, or Hyatt House's kitchen rooms with connecting doors.",
+      "outlook": "Open for hotels; tight for the nicest machiya. Omicho market closes 1–3 Jan, so our dates (24–28 Dec) are fine.",
+      "tiers": {
+        "budget": [
+          50000,
+          80000
+        ],
+        "mid": [
+          90000,
+          160000
+        ],
+        "top": [
+          250000,
+          400000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Machiya Residence Inn · Ainotsuji",
+          "url": "https://www.kanazawa-machiya-inn.com/accommodations/ainotsuji/",
+          "tier": "mid",
+          "area": "6 min to Omicho market",
+          "what": "A house for six: three bedrooms, two semi-double beds plus four futon, two bathrooms.",
+          "price": "¥90,000–160,000 for the house",
+          "fit": "Stairs; beds upstairs, futon can be laid downstairs for her. Paid in full at booking, refundable to 22 days.",
+          "verified": true
+        },
+        {
+          "name": "Machiya Residence Inn · Hanatsume",
+          "url": "https://www.kanazawa-machiya-inn.com/accommodations/hanatsume/",
+          "tier": "mid",
+          "area": "Nagamachi samurai district",
+          "what": "Three bedrooms in the old samurai quarter.",
+          "price": "¥90,000–160,000 for the house",
+          "fit": "Stairs; ask for futon downstairs.",
+          "verified": true
+        },
+        {
+          "name": "Hyatt House Kanazawa",
+          "url": "https://www.booking.com/hotel/jp/hyatt-house-kanazawa.html",
+          "tier": "mid",
+          "area": "6 min from the station",
+          "what": "92 rooms, 78 with kitchens, connecting rooms, laundry.",
+          "price": "¥90,000–160,000 for a 2-bedroom plus a room",
+          "fit": "Beds, lift. The easy fallback.",
+          "verified": true
+        },
+        {
+          "name": "Kanazawa Machiya Kenroku",
+          "url": "https://www.gltjp.com/en/directory/item/18716/",
+          "tier": "mid",
+          "area": "Near Kenroku-en",
+          "what": "A whole machiya for up to six; cheaper per person from two nights.",
+          "price": "From ¥39,000 for two, rises with group size",
+          "fit": "Stairs.",
+          "verified": false
+        },
+        {
+          "name": "Dormy Inn or Tokyu Stay, three rooms",
+          "url": "https://www.booking.com/searchresults.html?ss=Kanazawa&group_adults=6&no_rooms=3",
+          "tier": "budget",
+          "area": "Station or Katamachi",
+          "what": "Business hotels with big public baths and free noodles at night.",
+          "price": "¥50,000–80,000",
+          "fit": "Beds, lift.",
+          "verified": false
+        }
+      ]
+    },
+    "takayama": {
+      "type": "hotel",
+      "why": "Two nights rarely justify a rental's cleaning fee. Walking distance to the market and the old town matters on icy streets.",
+      "fit": "Three rooms at a small hotel in the old town, or a machiya for six if it is cheaper for the two nights.",
+      "outlook": "Open to tight. Nohi buses to Shirakawa-go thin out 29 Dec–3 Jan; we arrive on the 28th.",
+      "tiers": {
+        "budget": [
+          60000,
+          120000
+        ],
+        "mid": [
+          90000,
+          150000
+        ],
+        "top": [
+          250000,
+          400000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "The Machiya Hotel Takayama",
+          "url": "https://www.google.com/search?q=The+Machiya+Hotel+Takayama",
+          "tier": "mid",
+          "area": "Old town",
+          "what": "14 rooms, group-friendly, in a restored merchant house.",
+          "price": "¥90,000–150,000 for three rooms",
+          "fit": "Check for a lift; ask for ground-floor rooms.",
+          "verified": false
+        },
+        {
+          "name": "Machiya Inns & Hotels · Takayama houses",
+          "url": "https://machiya-inn-japan.com/",
+          "tier": "budget",
+          "area": "Old town",
+          "what": "Restored houses that sleep 6–8, from the group that runs about 80 houses in Kyoto, Kanazawa and Takayama.",
+          "price": "¥60,000–120,000 for the house",
+          "fit": "Stairs; futon downstairs for her.",
+          "verified": true
+        },
+        {
+          "name": "Hidatei Hanaougi",
+          "url": "https://www.google.com/search?q=Hidatei+Hanaougi+Takayama",
+          "tier": "top",
+          "area": "Edge of town",
+          "what": "Ryokan with private baths and kaiseki; the Gentle version's New Year's Eve.",
+          "price": "¥250,000–400,000 with meals, two or three rooms",
+          "fit": "Lift, Japanese-Western rooms on request.",
+          "verified": false
+        },
+        {
+          "name": "Honjin Hiranoya Kachoan",
+          "url": "https://www.google.com/search?q=Honjin+Hiranoya+Kachoan+Takayama",
+          "tier": "top",
+          "area": "Old town, by the Jinya",
+          "what": "Classic ryokan in the centre; the other candidate for a Takayama New Year's Eve.",
+          "price": "¥250,000–400,000 with meals",
+          "fit": "Lift; ask for beds.",
+          "verified": false
+        }
+      ]
+    },
+    "gero": {
+      "type": "ryokan",
+      "why": "Restaurants close for New Year, so dinner and breakfast must be included. A flat town with footbaths, 45 minutes from Takayama and on the line to Kyoto.",
+      "fit": "Two rooms × 3 with the New Year plan: kaiseki on the 31st, osechi breakfast on 1 Jan. Ask for a room with its own bath, or book the private baths.",
+      "outlook": "Tight. New Year plans post on Jalan, Rakuten and Ikyu in September–October; the best-known houses clear within weeks. Book this month, and email if a site shows sold out.",
+      "tiers": {
+        "budget": [
+          150000,
+          200000
+        ],
+        "mid": [
+          200000,
+          300000
+        ],
+        "top": [
+          300000,
+          450000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Yunoshimakan",
+          "url": "https://selected-ryokan.com/ryokan/yunoshimakan_gero_gifu_nagoya-chubu-hokuriku.html",
+          "tier": "mid",
+          "area": "On the hill above the town, shuttle from the station",
+          "what": "A 1931 wooden building (registered cultural property), four free private baths, dinner served in the room.",
+          "price": "About ¥35,000–45,000 per person with meals, plus the New Year uplift",
+          "fit": "Historic building with steps; ask for a room near the lift and dinner in the room.",
+          "verified": false
+        },
+        {
+          "name": "Suimeikan",
+          "url": "https://suimeikan.co.jp/english/onsen",
+          "tier": "mid",
+          "area": "3 min from the station",
+          "what": "Large ryokan with three buildings, private baths to book, some rooms with their own onsen, Western-Japanese rooms.",
+          "price": "About ¥30,000–45,000 per person with meals, plus the New Year uplift",
+          "fit": "Lift, beds available, the easiest for the parents and her.",
+          "verified": true
+        },
+        {
+          "name": "Bosenkan",
+          "url": "https://www.japanryokanguide.com/en/blog/best-onsen-ryokans-near-nagoya",
+          "tier": "top",
+          "area": "River side",
+          "what": "Only about eight rooms have open-air baths and they sell out first.",
+          "price": "About ¥40,000–60,000 per person with meals",
+          "fit": "Ask for a bath-in-room pair of rooms.",
+          "verified": false
+        }
+      ]
+    },
+    "kyoto": {
+      "type": "rental",
+      "why": "A living room for the evenings over New Year, when most restaurants are closed 1–3 Jan and department-store basements reopen on the 2nd. Stock the kitchen on arrival. An apartment hotel is the fallback.",
+      "fit": "One machiya for 6–9 with three bedrooms, or a MIMARU SUITES apartment, or two Nazuna houses.",
+      "outlook": "Open for houses and apartment hotels; tight for the famous machiya brands; gone for Nazuna's New Year dinner-plan rooms (¥277,400 per room for 1–3).",
+      "tiers": {
+        "budget": [
+          45000,
+          80000
+        ],
+        "mid": [
+          90000,
+          170000
+        ],
+        "top": [
+          250000,
+          600000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Machiya Residence Inn · Mizunoha",
+          "url": "https://www.kyoto-machiya-inn.com/accommodations/",
+          "tier": "mid",
+          "area": "Central Kyoto",
+          "what": "A house for six: two beds, two semi-doubles and two futon.",
+          "price": "¥90,000–170,000 for the house",
+          "fit": "Stairs; beds mostly upstairs, futon can be made up downstairs. Welcome Desk check-in, luggage delivered to the house for ¥500 an item.",
+          "verified": true
+        },
+        {
+          "name": "Machiya Residence Inn · Hanatoki or Fujinoma",
+          "url": "https://www.kyoto-machiya-inn.com/accommodations/",
+          "tier": "mid",
+          "area": "Central Kyoto",
+          "what": "Houses for eight: two queens plus four futon, more room to spread out.",
+          "price": "¥110,000–170,000 for the house",
+          "fit": "Stairs.",
+          "verified": true
+        },
+        {
+          "name": "MIMARU SUITES Kyoto Shijo",
+          "url": "https://www.tripadvisor.com/Hotel_Review-g298564-d23517530",
+          "tier": "mid",
+          "area": "Shijo, central",
+          "what": "Apartment-hotel suites for 4–6 with kitchen and laundry; a front desk.",
+          "price": "From about ¥60,000 per suite",
+          "fit": "Beds, lift. The easy fallback.",
+          "verified": true
+        },
+        {
+          "name": "Rinn Rokujo",
+          "url": "https://rinn-kyomachi.com/en/",
+          "tier": "budget",
+          "area": "South of the station area",
+          "what": "Rinn's smaller machiya for six.",
+          "price": "¥45,000–80,000 for the house",
+          "fit": "Stairs.",
+          "verified": true
+        },
+        {
+          "name": "Nazuna Kyoto Gosho",
+          "url": "https://www.ikyu.com/en-us/00002780/",
+          "tier": "top",
+          "area": "By the Imperial Palace",
+          "what": "Two small luxury houses; the Tsubaki St New Year plan is ¥277,400 per room for 1–3 with an 11-course wagyu dinner (free cancellation to 21 days).",
+          "price": "¥250,000–600,000",
+          "fit": "Beds in some rooms; ask.",
+          "verified": true
+        }
+      ]
+    },
+    "hakone": {
+      "type": "ryokan",
+      "why": "A ryokan with an open-air bath in each room, so all three couples get the same room and she controls the temperature and time. Kaiseki for dinner; ask for a cooked-only menu for her.",
+      "fit": "Two rooms × 3, ideally Western or Japanese-Western rooms. Large modern houses have lifts.",
+      "outlook": "Our dates (5–7 Jan) are after the New Year rush: tight at the top houses, open at the mid-size ones. 31 Dec would have been gone.",
+      "tiers": {
+        "budget": [
+          90000,
+          150000
+        ],
+        "mid": [
+          180000,
+          300000
+        ],
+        "top": [
+          400000,
+          650000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Gora Hanaougi",
+          "url": "https://mai-ko.com/travel/japan/onsen/10-best-private-onsens-in-hakone/",
+          "tier": "mid",
+          "area": "Gora",
+          "what": "Open-air bath in every room; dinner and breakfast included.",
+          "price": "About ¥45,000–55,000 per person with meals (half-board rooms for two about US$570–615)",
+          "fit": "Lift, beds in some rooms; the plan's first choice.",
+          "verified": false
+        },
+        {
+          "name": "Kitanokaze Saryo",
+          "url": "https://mai-ko.com/travel/japan/onsen/10-best-private-onsens-in-hakone/",
+          "tier": "mid",
+          "area": "Sengokuhara",
+          "what": "Open-air bath in every room, near the Pola and glass museums.",
+          "price": "Mid to high",
+          "fit": "Lift.",
+          "verified": false
+        },
+        {
+          "name": "Hakone Ginyu",
+          "url": "https://www.ryokancollection.com/ryokan/hakone-ginyu/",
+          "tier": "top",
+          "area": "Miyanoshita, valley views",
+          "what": "Private rotenburo on every terrace, Western rooms for 1–3, lobby on the top floor with a lift.",
+          "price": "¥42,500–54,600 per person normally; verified",
+          "fit": "Beds, lift. Email for two rooms.",
+          "verified": true
+        },
+        {
+          "name": "Hakone Kowakien Ten-yu",
+          "url": "https://www.google.com/search?q=Hakone+Kowakien+Ten-yu",
+          "tier": "mid",
+          "area": "Kowakudani",
+          "what": "Modern, large, Western-Japanese rooms, infinity bath.",
+          "price": "¥180,000–300,000 for six with meals",
+          "fit": "Lift, beds. The easiest fit for the parents.",
+          "verified": false
+        },
+        {
+          "name": "Yoshiike Ryokan",
+          "url": "https://www.agoda.com/yoshiike-ryokan/hotel/kanagawa-jp.html",
+          "tier": "budget",
+          "area": "Hakone-Yumoto",
+          "what": "Big garden, rooms up to six, lift.",
+          "price": "¥90,000–150,000 for six with meals",
+          "fit": "Lift.",
+          "verified": true
+        },
+        {
+          "name": "Gora Kadan",
+          "url": "https://guide.michelin.com/hk/zh_HK/hotels-stays/hakone",
+          "tier": "top",
+          "area": "Gora",
+          "what": "A former imperial retreat, three Michelin Keys, open-air baths in the suites.",
+          "price": "¥400,000–650,000 for six",
+          "fit": "Lift.",
+          "verified": false
+        }
+      ]
+    },
+    "kinosaki": {
+      "type": "ryokan",
+      "why": "The town is the baths; a ryokan gives the yukata, the bath pass and the crab kaiseki. Choose one with a private bath for her because the public ones run hot.",
+      "fit": "Two or three rooms; the Nishimuraya houses have Western beds and lifts.",
+      "outlook": "Tight. Crab season plus New Year is Kinosaki's peak and two-night plans are common; our dates (5–7 Jan) are just after the rush.",
+      "tiers": {
+        "budget": [
+          120000,
+          180000
+        ],
+        "mid": [
+          200000,
+          320000
+        ],
+        "top": [
+          450000,
+          700000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Nishimuraya Hotel Shogetsutei",
+          "url": "https://www.nishimuraya.ne.jp/shogetsu/en/",
+          "tier": "mid",
+          "area": "Edge of the town, shuttle",
+          "what": "98 rooms, Western and Western-Japanese rooms, lift, crab kaiseki; a ¥2,000 per room voucher for direct booking.",
+          "price": "¥200,000–320,000 for six with meals",
+          "fit": "Beds, lift.",
+          "verified": true
+        },
+        {
+          "name": "Nishimuraya Honkan",
+          "url": "https://www.nishimuraya.ne.jp/honkan/en/",
+          "tier": "top",
+          "area": "Town centre",
+          "what": "1860, Relais & Châteaux, snow-crab kaiseki.",
+          "price": "¥450,000+ for six",
+          "fit": "Historic; stairs in parts.",
+          "verified": true
+        },
+        {
+          "name": "Morizuya, Tsutaya or Mikuniya",
+          "url": "https://www.google.com/search?q=Kinosaki+Onsen+ryokan+Morizuya+Tsutaya+Mikuniya",
+          "tier": "budget",
+          "area": "Town centre",
+          "what": "Mid-size family inns on the canal.",
+          "price": "¥120,000–180,000 for six with meals",
+          "fit": "Stairs in most.",
+          "verified": false
+        }
+      ]
+    },
+    "yudanaka": {
+      "type": "ryokan",
+      "why": "A ryokan dinner after the monkeys; Shibu's bath-hopping street is the evening.",
+      "fit": "Two rooms at a larger inn with a lift; the six-room village inns have stairs and are tight.",
+      "outlook": "Open at the larger houses for 23–25 Dec.",
+      "tiers": {
+        "budget": [
+          90000,
+          140000
+        ],
+        "mid": [
+          150000,
+          240000
+        ],
+        "top": [
+          300000,
+          400000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Biyunoyado",
+          "url": "https://www.google.com/search?q=Biyunoyado+Yudanaka",
+          "tier": "mid",
+          "area": "Yudanaka",
+          "what": "Large modern ryokan with a lift and Western-Japanese rooms; takes families at New Year.",
+          "price": "¥150,000–240,000 for six with meals",
+          "fit": "Beds, lift.",
+          "verified": false
+        },
+        {
+          "name": "Shibu Onsen village inns",
+          "url": "https://www.japan-guide.com/e/e6029.html",
+          "tier": "budget",
+          "area": "Shibu Onsen street",
+          "what": "Small historic inns with the key to the nine public baths.",
+          "price": "¥90,000–140,000",
+          "fit": "Stairs, futon; not for her.",
+          "verified": false
+        }
+      ]
+    },
+    "okuhida": {
+      "type": "ryokan",
+      "why": "The snow baths are the point; dinner is at the inn because there is nothing else.",
+      "fit": "Two rooms at an inn with a lift and an open-air bath.",
+      "outlook": "Tight around New Year.",
+      "tiers": {
+        "budget": [
+          120000,
+          180000
+        ],
+        "mid": [
+          180000,
+          280000
+        ],
+        "top": [
+          300000,
+          450000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hirayu or Shinhotaka inns",
+          "url": "https://okuhida.or.jp/en/",
+          "tier": "mid",
+          "area": "Hirayu Onsen or Shinhotaka",
+          "what": "Rotenburo in the snow; the official association lists the inns.",
+          "price": "¥180,000–280,000 for six with meals",
+          "fit": "Check for a lift.",
+          "verified": false
+        }
+      ]
+    },
+    "okayama": {
+      "type": "hotel",
+      "why": "A station hotel for two nights makes Himeji, Kurashiki and the Naoshima ferry easy.",
+      "fit": "Three rooms near Okayama station.",
+      "outlook": "Open.",
+      "tiers": {
+        "budget": [
+          45000,
+          70000
+        ],
+        "mid": [
+          70000,
+          120000
+        ],
+        "top": [
+          150000,
+          300000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hotel Granvia Okayama",
+          "url": "https://www.google.com/search?q=Hotel+Granvia+Okayama",
+          "tier": "mid",
+          "area": "On the station",
+          "what": "The station hotel.",
+          "price": "¥70,000–120,000 for three rooms",
+          "fit": "Beds, lift.",
+          "verified": false
+        },
+        {
+          "name": "Benesse House Park, Naoshima",
+          "url": "https://benesse-artsite.jp/en/stay/benessehouse/",
+          "tier": "top",
+          "area": "Naoshima",
+          "what": "The art hotel's lift wing; museum closures around New Year to check.",
+          "price": "¥150,000–300,000",
+          "fit": "Beds, lift.",
+          "verified": true
+        }
+      ]
+    },
+    "hiroshima": {
+      "type": "hotel",
+      "why": "Two nights near the station or the Peace Park.",
+      "fit": "Three rooms.",
+      "outlook": "Open.",
+      "tiers": {
+        "budget": [
+          40000,
+          60000
+        ],
+        "mid": [
+          60000,
+          110000
+        ],
+        "top": [
+          150000,
+          300000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Sheraton Grand or Hotel Granvia Hiroshima",
+          "url": "https://www.google.com/search?q=hotels+Hiroshima+station",
+          "tier": "mid",
+          "area": "Station",
+          "what": "Station hotels for a short stay.",
+          "price": "¥60,000–110,000 for three rooms",
+          "fit": "Beds, lift.",
+          "verified": false
+        }
+      ]
+    },
+    "kawaguchiko": {
+      "type": "ryokan",
+      "why": "The lake is the point: a room that looks straight at Fuji, so the first light on the mountain happens from bed and from the bath. Dinner at the inn; the hoto houses cover lunch.",
+      "fit": "Two rooms × 3 at a lakeside house with a lift, or Konansou's 12.5-mat lake-view rooms that take up to six (tatami only; ask for the Western-Japanese wing). The lakeside hotels all have lifts and beds.",
+      "outlook": "Our dates (5–7 Jan) are after the first-sunrise rush: open at the hotels, tight at Konansou and the top houses. 31 Dec would have been gone.",
+      "tiers": {
+        "budget": [
+          80000,
+          130000
+        ],
+        "mid": [
+          150000,
+          250000
+        ],
+        "top": [
+          400000,
+          700000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Konansou",
+          "url": "https://www.ikyu.com/en-us/00002350/",
+          "tier": "mid",
+          "area": "North shore, by the ropeway",
+          "what": "Tamayura lake-view rooms for 1–6, lift, rooftop foot bath with the Fuji view; half-board.",
+          "price": "From ¥70,400 for two half-board; about ¥200,000 for six in normal season",
+          "fit": "Lift; tatami only, so ask for the Western-Japanese wing or a bed. Verified on Ikyu.",
+          "verified": true
+        },
+        {
+          "name": "Fujikawaguchiko Onsen Ubuya",
+          "url": "https://www.google.com/search?q=Ubuya+Kawaguchiko",
+          "tier": "mid",
+          "area": "North shore",
+          "what": "Every room faces the lake and Fuji; in-room open-air baths in the better rooms; kaiseki dinner.",
+          "price": "¥150,000–250,000 for six with meals",
+          "fit": "Lift, Western-Japanese rooms.",
+          "verified": false
+        },
+        {
+          "name": "Fuji View Hotel",
+          "url": "https://www.google.com/search?q=Fuji+View+Hotel+Kawaguchiko",
+          "tier": "budget",
+          "area": "South shore, in a garden",
+          "what": "The classic 1936 lakeside hotel: Western beds, a garden on the water, restaurants.",
+          "price": "¥80,000–130,000 for three rooms",
+          "fit": "Beds, lift. The easiest fit for the parents.",
+          "verified": false
+        },
+        {
+          "name": "Hotel Mystays Fuji Onsen Resort",
+          "url": "https://www.google.com/search?q=Hotel+Mystays+Fuji+Onsen+Resort",
+          "tier": "budget",
+          "area": "Fuji-Q side, 10 min by car",
+          "what": "Modern, beds, lift, onsen with a Fuji view.",
+          "price": "¥80,000–130,000 for three rooms",
+          "fit": "Beds, lift.",
+          "verified": false
+        },
+        {
+          "name": "Hoshinoya Fuji",
+          "url": "https://hoshinoya.com/fuji/en/",
+          "tier": "top",
+          "area": "Hillside above the lake",
+          "what": "Glamping cabins facing Fuji, beds, outdoor fires; three cabins for six.",
+          "price": "¥400,000–700,000 for three cabins with meals",
+          "fit": "Beds; a buggy up the hill; New Year plans usually two-night minimum.",
+          "verified": false
+        },
+        {
+          "name": "Fufu Kawaguchiko",
+          "url": "https://www.fufukawaguchiko.jp/en/",
+          "tier": "top",
+          "area": "Wooded hill, lake side",
+          "what": "All-suite, beds, an onsen in every room.",
+          "price": "¥400,000+ for six",
+          "fit": "Beds, lift, in-room onsen for her.",
+          "verified": false
+        }
+      ]
+    }
+  }
+}

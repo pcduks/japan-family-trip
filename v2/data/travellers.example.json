@@ -1,0 +1,9 @@
+[
+  { "id": "pedro", "name": "Pedro", "email": "pedro@example.com", "role": "planner" },
+  { "id": "wife", "name": "Partner", "email": "partner@example.com", "role": "planner", "notes": "29 weeks pregnant at departure, about 32 at return" },
+  { "id": "brother", "name": "Brother", "email": "brother@example.com", "role": "member" },
+  { "id": "sister_in_law", "name": "Sister-in-law", "email": "sister-in-law@example.com", "role": "member" },
+  { "id": "father", "name": "Dad", "email": "dad@example.com", "role": "member" },
+  { "id": "mother", "name": "Mum", "email": "mum@example.com", "role": "member" },
+  { "id": "sister", "name": "Sister", "email": "sister@example.com", "role": "member", "notes": "May join; room sharing undecided" }
+]

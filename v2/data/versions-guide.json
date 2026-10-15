@@ -1,0 +1,142 @@
+{
+  "_about": "The story of each version: its theme, what it feels like day to day, what it contemplates and why. Written from docs/research/plan-doc (01-the-plan, 02-why-each-stay-is-this-long, 03-what-were-missing) and the region guides. Stay notes say why a base gets that many nights in that version.",
+  "versions": {
+    "plan": {
+      "theme": "Snow country, crab season and a ryokan New Year",
+      "tagline": "Six bases, every stay at least two nights, a rest every afternoon.",
+      "feel": "An easy start in Tokyo while the jet lag wears off and the four first-timers get the classic days. Then the Hokuriku shinkansen to Kanazawa for the slow middle of the trip: a whole house with a kitchen and a washing machine, crab at its peak, the snow-roped pines of Kenroku-en, museums done by the 27th before they close. A bus over the mountains through Shirakawa-go's thatched farmhouses to Takayama's old town, then a 45-minute train down the valley to Gero to sit out the busiest travel days of the year in a ryokan: footbaths, kaiseki on New Year's Eve, the temple bell at midnight, a New Year breakfast. New Year's Day is the quiet day to travel, so that is when we go to Kyoto. Temples and the New Year rituals there, Nara's deer on the Monday when museums close, then a private open-air bath in Hakone with two dawns to catch Fuji clear, and two last Tokyo days for the museums that were shut in December.",
+      "activities": [
+        "Tokyo: Tsukiji and the Hama-rikyu garden, Meiji Jingu and the Nezu Museum, Asakusa, a free Fuji viewpoint, the illuminations",
+        "Kanazawa: Kenroku-en with the yukitsuri snow ropes, the castle park, the 21st Century Museum, Higashi Chaya and a gold-leaf workshop, the samurai house, Omicho market and kobako crab",
+        "Shirakawa-go: the thatched village in snow, on the bus between Kanazawa and Takayama",
+        "Takayama: the Jinya before it closes, the morning market, the sake breweries, Hida beef, Hida Folk Village",
+        "Gero: footbaths, three public baths with a ¥1,300 pass, the Gassho Village, kaiseki and the New Year's Eve bell",
+        "Kyoto and Nara: Higashiyama and Kiyomizu-dera, Arashiyama, Fushimi Inari at dawn for the early crew, the National Museum on 2–3 Jan, Nara on 4 Jan",
+        "Hakone: the loop by ropeway, boat and shrine, the Open-Air Museum, a private bath, Fuji at dawn",
+        "Tokyo again: the Musée d'Orsay show, the National Museum open late on Fri 8 Jan, last shopping and last meals"
+      ],
+      "why": "It is the only version nobody rates poorly. Every stay is at least two nights, no long move falls on a peak travel day, New Year's Eve has dinner included, and every day has a 2–4pm rest window. The split days let the brother and sister-in-law move close to Full pace while she and the parents stay close to Gentle.",
+      "suits": "Her at 29–32 weeks (beds, few moves, private baths), the parents on a first visit, and the first-timers who want the classic sights without exhaustion.",
+      "trade": "Gives up Okuhida's snow baths and Hiroshima. Both are a night more than the calendar allows.",
+      "stay_notes": {
+        "tokyo": "Arrival plus three full days. Jet lag and four first-timers need an easy start; Mon 21 Dec is a museum closing day, so it becomes the market-and-gardens day. One night less loses a whole side of the city.",
+        "kanazawa": "Above the usual two or three days, deliberately: it is the week's rest bank before New Year, it has the museums we value, and everything must be done by Sun 27 Dec because museums close on Mon 28. A rental with a washing machine makes it the mid-trip reset.",
+        "takayama": "The town fills one day and the Jinya closes on 29 Dec, so arrive about 13:30 on the 28th and see it that afternoon. One night more would buy the Okuhida ropeway and snow baths.",
+        "gero": "Fixed by the calendar. Check in on 30 Dec, New Year's Eve at the ryokan, leave after the New Year breakfast on 1 Jan. One night would mean moving on 31 Dec, a peak travel day.",
+        "kyoto": "Three main outings plus Nara. Arrival on 1 Jan is late afternoon and counts as no day. Museums go on 2–3 Jan, Nara on Mon 4 Jan when Kyoto's museums close. One night less drops Nara or Arashiyama.",
+        "hakone": "One full day for the loop and a museum, and two dawns for a clear Fuji. One night would make the ryokan a quick stopover with a single chance at Fuji.",
+        "tokyo:2": "The museums that were closed in December, shopping, and a buffer before the flight. One night is possible but leaves no slack if a train or the weather slips."
+      }
+    },
+    "gentle": {
+      "theme": "Four bases, never rushed",
+      "tagline": "One outing a day, then rest. The fewest check-ins of any version.",
+      "feel": "The same opening in Tokyo, then four long stays and only four packing days. Kanazawa and Kyoto each get an extra night, so every day there holds one thing in the morning and nothing after lunch. Takayama becomes a four-night mountain base with New Year's Eve at a ryokan in the old town, and Okuhida or Shirakawa-go as unhurried day trips. Fuji is seen from the shinkansen or a Tokyo tower, or on an optional day trip from the last three Tokyo nights.",
+      "activities": [
+        "Tokyo: the three classic days, spread over four nights",
+        "Kanazawa: Kenroku-en, the 21st Century Museum, the chaya districts, a crab lunch, and a free day",
+        "Takayama: the old town and market, Hida Folk Village, a slow Shirakawa-go day, an optional Okuhida snow day, New Year's Eve at a Takayama ryokan",
+        "Kyoto: Higashiyama, Arashiyama, Nara, and an easy day for Kibune or Ohara",
+        "Tokyo: museums, shopping, and Hakone as a day trip if anyone wants Fuji"
+      ],
+      "why": "Built around her and the parents: beds, few moves, private baths, and no day that needs stamina. The pace table says Gentle is the best fit for a 29–32 week pregnancy.",
+      "suits": "Her, the parents, and anyone who would rather see less and never be tired.",
+      "trade": "Gives up Hakone, the two Fuji dawns, and the onsen-town New Year's Eve. The first-timers see fewer places and the brother and sister-in-law may find it slow.",
+      "stay_notes": {
+        "takayama": "Four nights works at Gentle because the days stay half-empty: the old town, the folk village, Shirakawa-go and Okuhida as day trips, and New Year's Eve at a ryokan with dinner.",
+        "kyoto": "Five nights gives a gentle day for Kibune or Ohara on top of the three main outings and Nara.",
+        "tokyo:2": "Three nights at the end leave room for a Hakone day trip (about 80 minutes each way) or a rest day before the flight."
+      }
+    },
+    "full": {
+      "theme": "Everything, including the snow baths and Hiroshima",
+      "tagline": "Eight bases, eight moves, two main outings a day.",
+      "feel": "A classic sightseeing trip. Tokyo and Kanazawa are trimmed to three nights, Okuhida's open-air baths in deep snow and the Shinhotaka ropeway go in between Takayama and Gero, and two Hiroshima nights with Miyajima follow Kyoto. The trade is time on trains: about 18 hours between bases, moves on 30 Dec and 4 Jan, one four-hour leg from Hiroshima to Hakone, and a single night in Tokyo at the end.",
+      "activities": [
+        "Tokyo and Kanazawa in three nights each, two outings a day",
+        "Okuhida: rotenburo in the snow, the Shinhotaka ropeway to 2,156 m",
+        "Gero: the ryokan New Year's Eve",
+        "Kyoto in three nights, then Hiroshima's Peace Park and Miyajima's floating torii",
+        "Hakone's loop and Fuji, then one last Tokyo night"
+      ],
+      "why": "For the two who have been to Tokyo and Kyoto before, this is the version with six new places. It fits the brother and sister-in-law's wish to see a lot.",
+      "suits": "The brother and sister-in-law. The two of you, for the new places.",
+      "trade": "No rest days. Travel on the peak days 30 Dec and 4 Jan. A one-night stop at the end. The pace table rates it poor for her and for the parents.",
+      "stay_notes": {
+        "okuhida": "Two nights for the ropeway and the snow baths. New Year's Eve then falls in Gero after a 2-hour move on 30 Dec, a peak day.",
+        "hiroshima": "Two nights: the Peace Park and museum on one day, Miyajima on the other. Then four hours to Hakone on 4 Jan, another peak day.",
+        "tokyo:2": "One night. Enough for the flight, not for the museums."
+      }
+    },
+    "snow-monkeys": {
+      "theme": "The plan, with snow monkeys first",
+      "tagline": "Two Nagano nights on the way to Kanazawa; the rest unchanged.",
+      "feel": "Tokyo is cut to three nights and Kanazawa to three, which buys two nights in Yudanaka: wild macaques in a steaming pool in a snowy gorge, and Shibu Onsen's lantern-lit street of nine old public baths. It sits on the shinkansen line, so the detour is about 80 minutes to Nagano and a 40-minute bus. From there the trip runs exactly as the plan: Kanazawa, Takayama, Gero for New Year's Eve, Kyoto, Hakone, Tokyo.",
+      "activities": [
+        "Yudanaka: the snow monkey park (a 30–40 minute forest walk on packed snow), Shibu Onsen's bath-hopping street, a ryokan dinner; Obuse's Hokusai museum on the way",
+        "Everything in the plan, with one day less in Tokyo and Kanazawa"
+      ],
+      "why": "The research names Yudanaka as the one new region that adds something genuinely different without breaking the pace rules, and it replaces nights rather than adding them.",
+      "suits": "Anyone whose must-do is the snow monkeys. Works for the parents; she can wait at the ryokan if the path is icy.",
+      "trade": "A Tokyo day and Kanazawa's fourth night, which was the rest day before New Year. Snow can be thin in late December.",
+      "stay_notes": {
+        "yudanaka": "Two nights: one for the monkeys, one for the onsen street. The forest path can be icy; cleats and a slow pace, or she stays at the ryokan.",
+        "tokyo": "Three nights means two full days. The parents lose one classic day; it can be made up on 7–8 Jan.",
+        "kanazawa": "Three nights means the museums day becomes a long one, or the Museum of Art drops out."
+      }
+    },
+    "art-not-fuji": {
+      "theme": "Art islands and gardens instead of Fuji",
+      "tagline": "Okayama replaces Hakone: Naoshima, Kurashiki, Korakuen and Himeji.",
+      "feel": "Identical to the plan until Kyoto. Then an hour west to Okayama for two nights: Himeji Castle on the way (Tue 5 Jan, she stays in the grounds), Korakuen's New Year garden, Kurashiki's canal and the Ohara Museum, and a day on Naoshima for the Chichu Art Museum and Benesse House on Wed 6 Jan, when it is open. The ride back to Tokyo is three hours twenty on the Sanyo and Tokaido shinkansen.",
+      "activities": [
+        "Himeji Castle, Japan's finest original keep",
+        "Korakuen, one of the three great gardens; Kurashiki's canal quarter and the Ohara Museum",
+        "Naoshima: Chichu Art Museum (timed tickets), Benesse House, the Yellow Pumpkin",
+        "Everything in the plan up to Kyoto"
+      ],
+      "why": "For a family that values museums and architecture, Naoshima is the strongest single addition in the research. Flat towns suit her and the parents.",
+      "suits": "The museum lovers. Those who have already seen Fuji.",
+      "trade": "The Hakone ryokan with a private bath, and the two Fuji dawns. Island walking in a cold sea wind; Chichu is closed Mondays.",
+      "stay_notes": {
+        "okayama": "Two nights: Himeji on the way in and Korakuen or Kurashiki on 5 Jan, Naoshima on Wed 6 Jan (Chichu closed Mondays; Teshima closed Tue–Thu in winter). Then about 3 h 20 to Tokyo."
+      }
+    },
+    "kinosaki": {
+      "theme": "Crab and seven baths instead of Fuji",
+      "tagline": "Kinosaki Onsen replaces Hakone, in snow-crab season.",
+      "feel": "Identical to the plan until Kyoto. Then 2 h 50 north-west to Kinosaki: a willow-lined canal town where everyone walks between seven public baths in yukata and geta, with a crab kaiseki at the ryokan. The town is flat, which suits the parents; she keeps to the ryokan's private bath because the public ones run hot. The catch is the way home: five to six hours back to Tokyo on 7 Jan.",
+      "activities": [
+        "The seven public baths of Kinosaki, by yukata and geta",
+        "Snow-crab kaiseki at the ryokan, in season",
+        "The ropeway and Onsen-ji temple",
+        "Everything in the plan up to Kyoto"
+      ],
+      "why": "A classic onsen town at its best moment, for a family that liked the idea of the ryokan night and wants a second one.",
+      "suits": "Onsen and crab lovers. Flat streets suit the parents.",
+      "trade": "Hakone and Fuji, a 5–6 hour journey back to Tokyo, and it repeats Kanazawa's crab and Gero's onsen.",
+      "stay_notes": {
+        "kinosaki": "Two nights, the usual minimum for its New Year and crab-season plans. Book a ryokan with a private bath for her; the Nishimuraya houses have Western beds and a lift."
+      }
+    },
+    "fuji-lake": {
+      "theme": "Fuji across the lake instead of Hakone",
+      "tagline": "The postcard view from a lakeside ryokan; the rest of the plan unchanged.",
+      "feel": "Identical to the plan until Kyoto. Then the shinkansen to Mishima and the Fujikyu bus over the pass to Lake Kawaguchi, about four and a quarter hours door to door, an hour more than Hakone. The reward is the view: Fuji stands straight across the water, with nothing in the way, from the room, the bath, the north-shore promenade and the boat. One full day for the ropeway and the lake, a bowl of hoto noodles, and a dawn or two with the mountain pink. Then two hours on the Fuji Excursion train straight into Shinjuku for the last Tokyo days. Fuji shows fully on about six January mornings in ten.",
+      "activities": [
+        "Oishi Park: the flat lakeside promenade with Fuji straight ahead, the easiest Fuji view of the trip for her",
+        "The Panoramic Ropeway and the lake boat: the main outing",
+        "Chureito Pagoda for the early crew (398 steps), with the classic pagoda-and-Fuji shot",
+        "Hoto noodles at Hoto Fudou or Kosaku; footbaths on the north shore",
+        "The Itchiku Kubota kimono museum if it clouds over",
+        "Everything in the plan up to Kyoto, and the two Tokyo days after"
+      ],
+      "why": "The two of you have done Hakone together. Kawaguchiko is new for everyone, and the guide says it has the better Fuji view: straight across the lake, not over a ridge. For a family that mostly wants the mountain, that is the point of the stay.",
+      "suits": "Anyone whose must-do is Fuji itself. Flat shoreline for her and the parents; the pagoda steps are optional.",
+      "trade": "Hakone's five museums for a cloudy day, the ryokan-with-private-bath culture of Hakone (lake hotels are more hotel than inn), and about an hour more on the way from Kyoto. On a cloudy day there is less to do.",
+      "stay_notes": {
+        "kawaguchiko": "Two nights, like Hakone: one full day for the ropeway and the lake, and two dawns to catch Fuji clear. Arrival from Kyoto is mid-afternoon, so day one is the promenade and the bath."
+      }
+    }
+  }
+}
