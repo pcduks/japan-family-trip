@@ -36,20 +36,20 @@ export function Guide() {
 
       <Section title="What we need from you">
         <ol className="grid gap-3">
-          <Step n={1} title="Pick your pace" href="/vote">
-            Gentle (one thing a day, then rest), Balanced (one big thing in the morning, a quiet afternoon, one quick visit later) or Full (two big things a day). This decides how many nights each place gets, so it is the first question.
+          <Step n={1} title="Say Must, Nice or Skip" href="/route">
+            On the Route page, under each stop, the places we would do there. Tap Must, Nice or Skip on the ones you have a view on. The family sees the count; nobody has to rank anything.
           </Step>
-          <Step n={2} title="Name two must-dos" href="/vote">
-            The two places you would be sad to miss. The planners build the days around them.
+          <Step n={2} title="Tell us what is missing" href="/">
+            The “Something missing?” box at the bottom of Explore and of every area page. A place, a dish, a worry: one line is enough.
           </Step>
-          <Step n={3} title="Rank the versions" href="/vote">
-            Put the versions in your order. Nobody sees the totals until everyone has voted, so vote honestly.
+          <Step n={3} title="Look at the trade-offs" href="/route">
+            Every stop says what one more or one fewer night would change, and flags the days that would be idle. If a quiet day in a quiet town bothers you, that is where to say so.
           </Step>
-          <Step n={4} title="Move things around (optional)" href="/versions/plan#stops">
-            On any version, drag a stop by its handle to reorder, tap its name to swap the place, use +/− for the nights, or add a stop from the list. The app points out closed days, long days and peak-day trains as you go, and changes save on their own. If it is not your version, your first change makes it yours; when you like it, tap “Suggest this to the plan”. The planners accept or decline, and every change to the plan is logged with a revert.
+          <Step n={4} title="Move things around (optional)" href="/route">
+            Open the stops on the Route page: drag a stop to reorder, tap its name to swap the place, use +/− for the nights. The app points out closed days, long days and peak-day trains as you go, and changes save on their own. If it is not your version, your first change makes it yours; when you like it, tap “Suggest this to the plan”.
           </Step>
           <Step n={5} title="Comment anywhere">
-            Every version, stay and place has comments. A heart on a place says “me too”.
+            Every version, stay and place has comments. A heart on a place says “me too”. The pace vote and the ranking still exist under your name, top right, for whoever wants them.
           </Step>
         </ol>
       </Section>
@@ -68,7 +68,7 @@ export function Guide() {
 
       <Section title="Getting around">
         <ul className="grid gap-2 text-ink-2">
-          <li>Three tabs. <b className="text-ink">Explore</b> is the map of everything we researched; tap an area for what it is known for, what it is like in our window, what we would do there, and why it is in or out. <b className="text-ink">Route</b> is the route that came out of it, the facts and the whys, the alternatives drawn on the same map, the cost, and a way to try a change. <b className="text-ink">Food</b> is where we eat. The full report, the places list and the vote sit under your name at the top right.</li>
+          <li>Three tabs. <b className="text-ink">Explore</b> is the map of everything we researched, grouped by where it is: on the route, within a day of it, then the rest of Japan. Tap an area for what it is known for, what it is like in our dates, what we would do there, and why it is in or out. <b className="text-ink">Route</b> is the route that came out of it, the facts and the whys, the alternatives drawn on the same map, the cost, and a way to try a change. <b className="text-ink">Food</b> is where we eat. The full report, the places list and the vote sit under your name at the top right.</li>
           <li>Tap your name, top right, for large text, dark mode{isPlanner ? ", the Family list" : ""} and sign out.</li>
           <li>Getting in: type the family code once, then tap your name. No password, no email. Tap your name at the top right to switch person on a shared phone.</li>
         </ul>

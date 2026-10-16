@@ -5,12 +5,15 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import why from "../../data/why.json";
 import { budgetOf, BUDGET_RATES, fmtJpyShort, fmtSgd, jpyToSgd, stayCost } from "@/lib/budget";
-import { fmtRange } from "@/lib/dates";
-import { stayNote, versionGuide } from "@/lib/guide";
+import { dateRange, fmtRange } from "@/lib/dates";
+import { avgOutdoorHours, exposure, EXPOSURE_LABEL } from "@/lib/exposure";
+import { IDLE_LABEL, stayNote, stayTradeoff, versionGuide } from "@/lib/guide";
 import { LODGING_TYPES } from "@/lib/lodging";
+import type { Place, Version } from "@/lib/types";
 import { movesOf, statsOf } from "@/lib/versions";
 import { BudgetCard } from "./Budget";
 import { JapanMap } from "./JapanMap";
+import { PlacePrefs } from "./PlacePrefs";
 import { Planner } from "./Planner";
 import { useStore } from "./providers";
 import { RegionCover } from "./RegionCover";
@@ -20,100 +23,154 @@ import { Back, Page, RegionDot, Section } from "./ui";
 type Src = { label: string; url: string };
 const WHY = why as unknown as { facts: { title: string; text: string; sources: Src[] }[]; route: { intro: string; steps: { region: string; title: string; text: string }[]; sources: Src[] }; for_whom: { who: string; text: string }[]; trust: { points: string[]; links: { label: string; href: string }[] } };
 
-/** The route drawn on the map, the facts behind it, the whys, the alternatives, and a way to try a change. */
+/** The route drawn on the map, the facts behind it, the whys, the alternatives, and a way to try a change. Everything follows the selected version. */
 export function RouteView() {
   const { snapshot } = useStore();
   const params = useSearchParams();
   const router = useRouter();
   const plan = snapshot.versions.find((v) => v.status === "plan");
-  const alternatives = snapshot.versions.filter((v) => v.status === "alternative");
   const [shown, setShown] = useState<string | null>(params.get("show"));
   const [openFacts, setOpenFacts] = useState<number | null>(null);
   const [tryOpen, setTryOpen] = useState(false);
-  const showing = snapshot.versions.find((v) => v.id === shown) ?? plan;
-  const g = plan ? versionGuide(plan.id) : null;
-  const sg = showing ? versionGuide(showing.id) : null;
   const regionName = (id: string) => snapshot.regions.find((r) => r.id === id)?.name ?? id;
-  const planBudget = plan ? budgetOf(plan, snapshot.regions).perCoupleSgd : undefined;
-  const stats = plan ? statsOf(plan, snapshot) : null;
-  const moves = plan ? movesOf(plan.stays, snapshot.regions) : [];
   if (!plan) return null;
+
+  const alternatives = snapshot.versions.filter((v) => v.status === "alternative").sort((a, b) => statsOf(a, snapshot).moves - statsOf(b, snapshot).moves);
+  const v: Version = snapshot.versions.find((x) => x.id === shown) ?? plan;
+  const isPlan = v.id === plan.id;
+  const g = versionGuide(v.id);
+  const planBudget = budgetOf(plan, snapshot.regions).perCoupleSgd;
+  const stats = statsOf(v, snapshot);
+  const moves = movesOf(v.stays, snapshot.regions);
+  const budget = budgetOf(v, snapshot.regions).perCoupleSgd;
+
+  /** Places for a stay: the day plan when this version has one, else what the plan does in that region, else the region's top picks. */
+  const placesFor = (stayIndex: number): { places: Place[]; days: Place[][] } => {
+    const s = v.stays[stayIndex];
+    const dates = dateRange(s.from, s.to);
+    const byId = (id: string | null) => (id ? snapshot.places.find((p) => p.id === id) : undefined);
+    const fromDays = (versionId: string) =>
+      dates.map((d) => (snapshot.days.find((x) => x.version_id === versionId && x.date === d)?.items ?? []).map((it) => byId(it.place_id)).filter((p): p is Place => !!p && p.size !== "meal"));
+    let days = fromDays(v.id);
+    if (!days.some((d) => d.length) && plan.stays.some((ps) => ps.region === s.region)) {
+      const planStay = plan.stays.find((ps) => ps.region === s.region)!;
+      days = dateRange(planStay.from, planStay.to).map((d) => (snapshot.days.find((x) => x.version_id === plan.id && x.date === d)?.items ?? []).map((it) => byId(it.place_id)).filter((p): p is Place => !!p && p.size !== "meal"));
+    }
+    if (!days.some((d) => d.length)) {
+      const top = snapshot.places.filter((p) => p.region === s.region && p.size !== "meal").sort((a, b) => (a.size === "main" ? 0 : 1) - (b.size === "main" ? 0 : 1)).slice(0, Math.max(2, s.nights * 2));
+      days = Array.from({ length: Math.max(1, s.nights) }, (_, i) => top.filter((_, k) => k % Math.max(1, s.nights) === i));
+    }
+    const seen = new Set<string>();
+    const places = days.flat().filter((p) => (seen.has(p.id) ? false : (seen.add(p.id), true)));
+    return { places, days };
+  };
+
+  const steps = (region: string, i: number) => {
+    if (!isPlan) return stayNote(v.id, v.stays, i) ?? v.stays[i].note ?? null;
+    const sameBefore = v.stays.slice(0, i).filter((s) => s.region === region).length;
+    const matches = WHY.route.steps.filter((x) => x.region === region);
+    return (matches[sameBefore] ?? matches[0])?.text ?? stayNote(v.id, v.stays, i) ?? v.stays[i].note ?? null;
+  };
 
   return (
     <Page wide>
       <Back href="/">Explore</Back>
       <section className="grid gap-2">
-        <p className="eyebrow">The route, and why</p>
-        <h1 className="display text-[2.3rem] leading-[1.02] sm:text-5xl">{g?.theme ?? plan.name}</h1>
+        <p className="eyebrow">{isPlan ? "The route, and why" : "An alternative"}</p>
+        <h1 className="display text-[2.3rem] leading-[1.02] sm:text-5xl">{g?.theme ?? v.name}</h1>
         <p className="max-w-prose text-ink-2">{g?.tagline}</p>
       </section>
 
       <div className="grid gap-2">
-        <JapanMap regions={snapshot.regions} stays={showing?.stays} view="heart" className="shadow-[var(--glow)]" onPick={(id) => router.push(`/areas/${id}`)} />
+        <JapanMap regions={snapshot.regions} stays={v.stays} view="heart" className="shadow-[var(--glow)]" onPick={(id) => router.push(`/areas/${id}`)} />
         <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4">
-          <button className={`chip shrink-0 ${!shown || shown === plan.id ? "bg-accent text-accent-ink" : ""}`} onClick={() => setShown(null)}>
+          <button className={`chip shrink-0 ${isPlan ? "bg-accent text-accent-ink" : ""}`} onClick={() => setShown(null)}>
             The route
           </button>
-          {alternatives.map((v) => (
-            <button key={v.id} className={`chip shrink-0 ${shown === v.id ? "bg-accent text-accent-ink" : ""}`} onClick={() => setShown(v.id)}>
-              {versionGuide(v.id)?.theme ?? v.name}
+          {alternatives.map((a) => (
+            <button key={a.id} className={`chip shrink-0 ${v.id === a.id ? "bg-accent text-accent-ink" : ""}`} onClick={() => setShown(a.id)}>
+              {versionGuide(a.id)?.theme ?? a.name}
             </button>
           ))}
         </div>
-        {showing && showing.id !== plan.id && sg ? (
-          <p className="text-sm text-ink-2">
-            <b>{sg.theme}.</b> {sg.tagline} <Link href={`/versions/${showing.id}`}>Open it →</Link>
-          </p>
-        ) : stats ? (
-          <p className="text-sm text-muted">
-            {stats.bases} bases · {stats.moves} moves · about {stats.travelHours} h between bases · New Year’s Eve in {regionName(stats.newYearsEve?.region ?? "")} · {planBudget ? `${fmtSgd(planBudget)} per couple` : ""}
-          </p>
-        ) : null}
+        <p className="text-sm text-muted">
+          <b className="text-ink">{stats.bases} bases · {stats.moves} check-ins</b> · about {stats.travelHours} h between bases · New Year’s Eve in {regionName(stats.newYearsEve?.region ?? "")} · {fmtSgd(budget)} per couple
+          {!isPlan ? (
+            <>
+              {" "}
+              · {budget - planBudget >= 0 ? "+" : "−"}
+              {fmtSgd(Math.abs(budget - planBudget))} vs the route
+            </>
+          ) : null}
+        </p>
       </div>
 
-      <Section title="Three facts that chose most of it">
-        <ol className="grid gap-2">
-          {WHY.facts.map((f, i) => (
-            <li key={f.title} className="card p-4">
-              <button className="flex w-full items-baseline gap-3 text-left" onClick={() => setOpenFacts(openFacts === i ? null : i)} aria-expanded={openFacts === i}>
-                <span className="display text-[1.8rem] leading-none text-accent">{i + 1}</span>
-                <b className="flex-1 text-[1.05rem] leading-tight">{f.title}</b>
-                <span className="text-muted">{openFacts === i ? "▴" : "▾"}</span>
-              </button>
-              {openFacts === i ? (
-                <div className="grid gap-2 pt-2">
-                  <p className="text-ink-2">{f.text}</p>
-                  <p className="text-xs text-muted">
-                    Sources:{" "}
-                    {f.sources.map((s, k) => (
-                      <span key={s.url}>
-                        {k ? " · " : ""}
-                        <a href={s.url} target="_blank" rel="noreferrer">
-                          {s.label}
-                        </a>
-                      </span>
-                    ))}
-                  </p>
-                </div>
-              ) : null}
-            </li>
-          ))}
-        </ol>
-      </Section>
+      {!isPlan ? (
+        <div className="card flex flex-wrap items-center justify-between gap-2 border-accent/40 p-3">
+          <span className="text-sm">
+            <b>Showing: {g?.theme ?? v.name}.</b> Everything below is this alternative. <Link href={`/versions/${v.id}`}>Open its page →</Link>
+          </span>
+          <button className="btn btn-sm" onClick={() => setShown(null)}>
+            Back to the route
+          </button>
+        </div>
+      ) : null}
+
+      {isPlan ? (
+        <Section title="Three facts that chose most of it">
+          <ol className="grid gap-2">
+            {WHY.facts.map((f, i) => (
+              <li key={f.title} className="card p-4">
+                <button className="flex w-full items-baseline gap-3 text-left" onClick={() => setOpenFacts(openFacts === i ? null : i)} aria-expanded={openFacts === i}>
+                  <span className="display text-[1.8rem] leading-none text-accent">{i + 1}</span>
+                  <b className="flex-1 text-[1.05rem] leading-tight">{f.title}</b>
+                  <span className="text-muted">{openFacts === i ? "▴" : "▾"}</span>
+                </button>
+                {openFacts === i ? (
+                  <div className="grid gap-2 pt-2">
+                    <p className="text-ink-2">{f.text}</p>
+                    <p className="text-xs text-muted">
+                      Sources:{" "}
+                      {f.sources.map((s, k) => (
+                        <span key={s.url}>
+                          {k ? " · " : ""}
+                          <a href={s.url} target="_blank" rel="noreferrer">
+                            {s.label}
+                          </a>
+                        </span>
+                      ))}
+                    </p>
+                  </div>
+                ) : null}
+              </li>
+            ))}
+          </ol>
+        </Section>
+      ) : null}
 
       {g ? (
         <Section title="What it feels like">
           <p className="max-w-prose leading-relaxed text-ink-2">{g.feel}</p>
+          {!isPlan ? (
+            <p className="text-sm text-ink-2">
+              <b>Why it exists:</b> {g.why} <b>Suits:</b> {g.suits} <b>Gives up:</b> {g.trade}
+            </p>
+          ) : null}
         </Section>
       ) : null}
 
-      <Section title="Stop by stop, and why" aside={`${plan.stays.length} stops · ${snapshot.trip.nights} nights`}>
+      <Section title="Stop by stop" aside={`${v.stays.length} stops · ${snapshot.trip.nights} nights`}>
+        <p className="text-sm text-ink-2">
+          Each stop says why it is this long, what one more or one fewer night would change, and how much of the day is outdoors in the cold. Under each one, the places we would do there: tap <b>Must</b>, <b>Nice</b> or <b>Skip</b> and the family sees the count.
+        </p>
         <ol className="grid gap-3">
-          {plan.stays.map((s, i) => {
-            const step = WHY.route.steps.find((x, k) => x.region === s.region && WHY.route.steps.findIndex((y) => y.region === s.region) + (s.region === "tokyo" && i > 0 ? 1 : 0) === k) ?? WHY.route.steps.find((x) => x.region === s.region);
-            const note = stayNote(plan.id, plan.stays, i);
+          {v.stays.map((s, i) => {
+            const text = steps(s.region, i);
             const cost = stayCost(s);
             const leg = moves.find((m) => m.index === i);
+            const t = stayTradeoff(v.id, v.stays, i);
+            const { places, days } = placesFor(i);
+            const outside = avgOutdoorHours(days);
             return (
               <li key={s.id ?? i} className="grid gap-2">
                 {leg ? (
@@ -122,67 +179,121 @@ export function RouteView() {
                     {leg.curated ? "" : "~"} h · {leg.how}
                   </p>
                 ) : null}
-                <Link href={`/areas/${s.region}`} className="card flex gap-3 overflow-hidden no-underline">
-                  <RegionCover regionId={s.region} className="w-20 shrink-0 self-stretch sm:w-32" sizes="160px" />
-                  <div className="grid min-w-0 flex-1 gap-1 py-3 pr-3">
-                    <div className="flex items-start justify-between gap-2">
-                      <span className="flex items-center gap-2">
-                        <span className="display text-[1.1rem] leading-none text-accent">{i + 1}</span>
-                        <RegionDot id={s.region} size={10} />
-                        <span className="display text-[1.25rem] leading-tight">{regionName(s.region)}</span>
-                      </span>
-                      <span className="shrink-0 text-right text-sm">
-                        <b>{s.nights}</b> n<span className="block text-xs text-muted">{fmtRange(s.from, s.to)}</span>
-                      </span>
+                <div className="card grid gap-0 overflow-hidden">
+                  <Link href={`/areas/${s.region}`} className="flex gap-3 no-underline">
+                    <RegionCover regionId={s.region} className="w-20 shrink-0 self-stretch sm:w-32" sizes="160px" />
+                    <div className="grid min-w-0 flex-1 gap-1 py-3 pr-3">
+                      <div className="flex items-start justify-between gap-2">
+                        <span className="flex items-center gap-2">
+                          <span className="display text-[1.1rem] leading-none text-accent">{i + 1}</span>
+                          <RegionDot id={s.region} size={10} />
+                          <span className="display text-[1.25rem] leading-tight">{regionName(s.region)}</span>
+                        </span>
+                        <span className="shrink-0 text-right text-sm">
+                          <b>{s.nights}</b> n<span className="block text-xs text-muted">{fmtRange(s.from, s.to)}</span>
+                        </span>
+                      </div>
+                      {text ? <p className="text-sm text-ink-2">{text}</p> : null}
+                      <p className="text-xs text-muted">
+                        {LODGING_TYPES[cost.lodging].label} · about {fmtJpyShort(cost.perNight)} a night for the group · {fmtSgd(jpyToSgd(cost.total / BUDGET_RATES.couples))} per couple
+                        {outside != null ? ` · about ${outside} h outdoors a day` : ""}
+                      </p>
                     </div>
-                    <p className="text-sm text-ink-2">{step?.text ?? note ?? s.note}</p>
-                    <p className="text-xs text-muted">
-                      {LODGING_TYPES[cost.lodging].label} · about {fmtJpyShort(cost.perNight)} a night for the group · {fmtSgd(jpyToSgd(cost.total / BUDGET_RATES.couples))} per couple
-                    </p>
-                  </div>
-                </Link>
+                  </Link>
+                  {t ? (
+                    <div className="grid gap-1.5 border-t border-rule px-3 py-3 text-sm">
+                      <p className="flex flex-wrap items-center gap-2">
+                        <b>Stay longer or move on?</b>
+                        <span className={`chip ${t.idle === "real" ? "border-warn text-warn" : t.idle === "some" ? "text-muted" : "text-ok"}`}>{IDLE_LABEL[t.idle]}</span>
+                      </p>
+                      <p className="text-ink-2">{t.note}</p>
+                      <p className="text-ink-2">
+                        <b>One more night:</b> {t.longer}
+                      </p>
+                      <p className="text-ink-2">
+                        <b>One fewer:</b> {t.shorter}
+                      </p>
+                    </div>
+                  ) : null}
+                  {places.length ? (
+                    <details className="border-t border-rule px-3 py-2">
+                      <summary className="cursor-pointer text-sm font-semibold">
+                        {places.length} places here · Must, Nice or Skip
+                      </summary>
+                      <ul className="grid gap-2 pt-2">
+                        {places.map((p) => (
+                          <li key={p.id} className="grid gap-1 border-b border-rule pb-2 last:border-0">
+                            <span className="flex flex-wrap items-baseline justify-between gap-x-2">
+                              <Link href={`/places/${p.id}`} className="font-semibold no-underline">
+                                {p.name}
+                              </Link>
+                              <span className="text-xs text-muted">
+                                {EXPOSURE_LABEL[exposure(p)]}
+                                {p.status === "avoid_for_her" ? " · not for her" : p.effort_for_her === "high" ? " · hard for her" : ""}
+                              </span>
+                            </span>
+                            {p.why ? <span className="text-sm text-ink-2">{p.why}</span> : null}
+                            <PlacePrefs placeId={p.id} />
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  ) : null}
+                </div>
               </li>
             );
           })}
         </ol>
-        <p className="text-xs text-muted">
-          Sources:{" "}
-          {WHY.route.sources.map((s, k) => (
-            <span key={s.url}>
-              {k ? " · " : ""}
-              <a href={s.url} target="_blank" rel="noreferrer">
-                {s.label}
-              </a>
-            </span>
-          ))}
-        </p>
+        {isPlan ? (
+          <p className="text-xs text-muted">
+            Sources:{" "}
+            {WHY.route.sources.map((s, k) => (
+              <span key={s.url}>
+                {k ? " · " : ""}
+                <a href={s.url} target="_blank" rel="noreferrer">
+                  {s.label}
+                </a>
+              </span>
+            ))}
+          </p>
+        ) : null}
       </Section>
 
-      <Section title="Why it works for each of us">
+      {isPlan ? (
+        <Section title="Why it works for each of us">
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {WHY.for_whom.map((w) => (
+              <li key={w.who} className="card grid gap-1 p-4">
+                <b className="leading-tight">{w.who}</b>
+                <p className="text-sm text-ink-2">{w.text}</p>
+              </li>
+            ))}
+          </ul>
+        </Section>
+      ) : null}
+
+      <Section title="What we could change" aside="fewest check-ins first">
+        <p className="text-ink-2">The same 20 nights spent differently. Tap one to see it above: the map, the stops, the trade-offs and the cost all switch.</p>
         <ul className="grid gap-3 sm:grid-cols-2">
-          {WHY.for_whom.map((w) => (
-            <li key={w.who} className="card grid gap-1 p-4">
-              <b className="leading-tight">{w.who}</b>
-              <p className="text-sm text-ink-2">{w.text}</p>
-            </li>
+          {alternatives.map((a) => (
+            <AlternativeCard
+              key={a.id}
+              v={a}
+              planBudget={planBudget}
+              onShow={() => {
+                setShown(a.id);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            />
           ))}
         </ul>
       </Section>
 
-      <Section title="What we could change" aside={`${alternatives.length} alternatives`}>
-        <p className="text-ink-2">The same 20 nights spent differently. Tap one to draw it on the map above; open it for the full story, the stops and the cost.</p>
-        <ul className="grid gap-3 sm:grid-cols-2">
-          {alternatives.map((v) => (
-            <AlternativeCard key={v.id} v={v} planBudget={planBudget} onShow={() => { setShown(v.id); window.scrollTo({ top: 0, behavior: "smooth" }); }} />
-          ))}
-        </ul>
-      </Section>
-
-      <BudgetCard v={plan} regions={snapshot.regions} regionName={regionName} title="What it costs, per couple" />
+      <BudgetCard v={v} regions={snapshot.regions} regionName={regionName} title={isPlan ? "What it costs, per couple" : `What “${g?.theme ?? v.name}” costs, per couple`} />
 
       <Section title="Try a change" aside="drag, swap, add nights">
         {tryOpen ? (
-          <Planner key={plan.id} version={plan} />
+          <Planner key={v.id} version={v} />
         ) : (
           <div className="card grid gap-2 p-4">
             <p className="text-ink-2">Move the stops, swap a place for another from the map, add or take nights. The timeline, the warnings and the cost update as you go. If this is not your version to edit, your first change makes a copy that is yours to shape and suggest.</p>

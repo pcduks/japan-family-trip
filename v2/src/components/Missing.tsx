@@ -39,6 +39,21 @@ export function Missing() {
         Regions we researched but left out, with the fit verdict. One tap makes you a version with the swap, which you can then edit and suggest.{" "}
         <Link href="/plan?tab=missing">The full write-up is in the report.</Link>
       </PageHeader>
+      {snapshot.comments.some((c) => c.target_type === "wish") ? (
+        <Section title="What the family asked for" aside="from the “Something missing?” boxes">
+          <ul className="grid gap-1.5 text-sm">
+            {snapshot.comments
+              .filter((c) => c.target_type === "wish")
+              .map((c) => (
+                <li key={c.id} className="flex flex-wrap gap-x-2">
+                  <b>{snapshot.travellers.find((t) => t.id === c.author_id)?.name ?? c.author_id}</b>
+                  <span className="text-muted">{c.target_id === "trip" ? "anywhere" : (snapshot.regions.find((r) => r.id === c.target_id)?.name ?? c.target_id)}:</span>
+                  <span>{c.body}</span>
+                </li>
+              ))}
+          </ul>
+        </Section>
+      ) : null}
       {GROUPS.map((g) => {
         const list = snapshot.regions.filter((r) => g.status.includes(r.status));
         if (!list.length) return null;

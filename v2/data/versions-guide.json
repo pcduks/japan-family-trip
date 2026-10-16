@@ -15,8 +15,8 @@
         "Hakone: the loop by ropeway, boat and shrine, the Open-Air Museum, a private bath, Fuji at dawn",
         "Tokyo again: the Musée d'Orsay show, the National Museum open late on Fri 8 Jan, last shopping and last meals"
       ],
-      "why": "It is the only version that works for everyone. Every stay is two nights or more, no long move falls on a peak travel day, New Year's Eve has dinner included, and afternoons are kept light. Days can split: the brother and sister-in-law can do two big things a day while she and the parents do one.",
-      "suits": "Her at 29–32 weeks (beds, few moves, private baths), the parents on a first visit, and the first-timers (João, the sister-in-law and Pedro's sister) who want the classic sights without exhaustion.",
+      "why": "It is the only version that works for everyone. Every stay is two nights or more, no long move falls on a peak travel day, New Year's Eve has dinner included, and afternoons are kept light. Days can split: João and Carolina can do two big things a day while she and the parents do one.",
+      "suits": "Her at 29–32 weeks (beds, few moves, private baths), the parents on a first visit, and the first-timers (João, Carolina and Tatiana) who want the classic sights without exhaustion.",
       "trade": "Gives up Okuhida's snow baths and Hiroshima. Both are a night more than the calendar allows.",
       "stay_notes": {
         "tokyo": "Arrival plus three full days. Jet lag and four first-timers need an easy start; Mon 21 Dec is a museum closing day, so it becomes the market-and-gardens day. One night less loses a whole side of the city.",
@@ -26,6 +26,50 @@
         "kyoto": "Three big days plus Nara. Arrival on 1 Jan is late afternoon and counts as no day. Museums go on 2–3 Jan, Nara on Mon 4 Jan when Kyoto's museums close. One night less drops Nara or Arashiyama.",
         "hakone": "One full day for the loop and a museum, and two dawns for a clear Fuji. One night would make the ryokan a quick stopover with a single chance at Fuji.",
         "tokyo:2": "The museums that were closed in December, shopping, and a buffer before the flight. One night is possible but leaves no slack if a train or the weather slips."
+      },
+      "tradeoffs": {
+        "tokyo": {
+          "longer": "A fifth night buys Kamakura or Nikko as a day trip. The city can fill any number of days.",
+          "shorter": "Three nights means two full days: one classic day is lost for the four first-timers, and the jet lag lands on a travel day.",
+          "idle": "none",
+          "note": "No idle risk. Tokyo fills every day, indoors or out."
+        },
+        "kanazawa": {
+          "longer": "A fifth night (28 Dec) is a museum-closed Monday: the market and the castle park, or a Kaga Onsen half day. Mostly a rest.",
+          "shorter": "Three nights squeezes Kenroku-en, the museums and the geisha district into two days and loses the slow day before New Year.",
+          "idle": "some",
+          "note": "Day four (Sun 27 Dec) is light by design: the market, a workshop, laundry. Fine as a rest, dull if you want to be out all day."
+        },
+        "takayama": {
+          "longer": "A third night buys Okuhida: the ropeway and the snow baths, a long cold day. Otherwise it is a second walk through the same old town.",
+          "shorter": "One night would mean seeing the Jinya and the old town in one afternoon, then leaving; just possible, but rushed.",
+          "idle": "some",
+          "note": "Day two (Tue 29 Dec) has the Jinya, Kyoya and two museums shut. The folk village and the breweries are open; it is a half day of things."
+        },
+        "gero": {
+          "longer": "A third night is a day at the inn. Gero is a spa town, not a sight: footbaths, three public baths, a small folk village. Pleasant, not beautiful.",
+          "shorter": "One night means moving on 31 Dec, the busiest travel day of the year, and no quiet day before the New Year dinner.",
+          "idle": "real",
+          "note": "Be honest about this one: the second day in Gero is for the bath, a nap and the kaiseki. If idle days bother you, this is the stop to question. The alternative is New Year in Takayama or Kyoto."
+        },
+        "kyoto": {
+          "longer": "A fifth night buys an easy day for Ohara or Kibune, or a second temple morning for the early risers.",
+          "shorter": "Three nights loses Nara or Arashiyama, because 1 Jan is an arrival afternoon and most places are shut until the 2nd.",
+          "idle": "some",
+          "note": "1 Jan is a quiet arrival day with restaurants closed: the house, a convenience store, a walk. Expected, and the only such day here."
+        },
+        "hakone": {
+          "longer": "A third night is a second chance at Fuji and a second museum day. Hakone has five museums, so a cloudy extra day is not wasted.",
+          "shorter": "One night gives one morning for Fuji and no time for the loop; the ryokan becomes a stopover.",
+          "idle": "none",
+          "note": "Two full mornings and one full day. On a cloudy day the museums fill it."
+        },
+        "tokyo:2": {
+          "longer": "A third night at the end buys a Kamakura day or a proper last shopping day, and more slack before a Saturday flight.",
+          "shorter": "One night is enough for the flight, not for the museums that were shut in December.",
+          "idle": "none",
+          "note": "No idle risk."
+        }
       }
     },
     "gentle": {
@@ -41,11 +85,37 @@
       ],
       "why": "Built around her and the parents: beds, few moves, private baths, and no day that needs stamina. The easiest pace for a 29–32 week pregnancy.",
       "suits": "Her, the parents, and anyone who would rather see less and never be tired.",
-      "trade": "Gives up Hakone, the two Fuji dawns, and the onsen-town New Year's Eve. The first-timers see fewer places and the brother and sister-in-law may find it slow.",
+      "trade": "Gives up Hakone, the two Fuji dawns, and the onsen-town New Year's Eve. The first-timers see fewer places and João and Carolina may find it slow.",
       "stay_notes": {
         "takayama": "Four nights works at Gentle because the days stay half-empty: the old town, the folk village, Shirakawa-go and Okuhida as day trips, and New Year's Eve at a ryokan with dinner.",
         "kyoto": "Five nights gives a gentle day for Kibune or Ohara on top of the three big days and Nara.",
         "tokyo:2": "Three nights at the end leave room for a Hakone day trip (about 80 minutes each way) or a rest day before the flight."
+      },
+      "tradeoffs": {
+        "kanazawa": {
+          "longer": "There is nothing more to add; four nights already covers it with a rest day.",
+          "shorter": "Three nights loses the rest day.",
+          "idle": "some",
+          "note": "One free day is built in. Fine at a gentle pace."
+        },
+        "takayama": {
+          "longer": "Nothing to add. Four nights is already generous for a one-day town.",
+          "shorter": "Two nights loses the Shirakawa-go and Okuhida day trips and New Year in the old town.",
+          "idle": "real",
+          "note": "Four nights in Takayama means two of the four days are day trips (Shirakawa-go, Okuhida) and 29–31 Dec have the museums shut. Without the day trips this is too long."
+        },
+        "kyoto": {
+          "longer": "A sixth night is too many with the city half shut until 3 Jan.",
+          "shorter": "Four nights, as in the main route, loses the easy Ohara or Kibune day.",
+          "idle": "some",
+          "note": "1 Jan is quiet by nature; the fifth day is a gentle one."
+        },
+        "tokyo:2": {
+          "longer": "Nothing to add.",
+          "shorter": "Two nights loses the Hakone day trip and the rest day before the flight.",
+          "idle": "none",
+          "note": "Three nights at the end is easy to fill: museums, Kamakura, shopping."
+        }
       }
     },
     "full": {
@@ -59,13 +129,45 @@
         "Kyoto in three nights, then Hiroshima's Peace Park and Miyajima's floating torii",
         "Hakone's loop and Fuji, then one last Tokyo night"
       ],
-      "why": "For the two who have been to Tokyo and Kyoto before, this is the version with six new places. It fits the brother and sister-in-law's wish to see a lot.",
-      "suits": "The brother and sister-in-law. Pedro and Fernanda, for the new places.",
+      "why": "For the two who have been to Tokyo and Kyoto before, this is the version with six new places. It fits João and Carolina's wish to see a lot.",
+      "suits": "João and Carolina. Pedro and Fernanda, for the new places.",
       "trade": "No rest days. Travel on the peak days 30 Dec and 4 Jan. A one-night stop at the end. Too tiring for her and probably for the parents.",
       "stay_notes": {
         "okuhida": "Two nights for the ropeway and the snow baths. New Year's Eve then falls in Gero after a 2-hour move on 30 Dec, a peak day.",
         "hiroshima": "Two nights: the Peace Park and museum on one day, Miyajima on the other. Then four hours to Hakone on 4 Jan, another peak day.",
         "tokyo:2": "One night. Enough for the flight, not for the museums."
+      },
+      "tradeoffs": {
+        "tokyo": {
+          "longer": "Four nights gives the first-timers the third classic day.",
+          "shorter": "Two nights is too little for a first visit.",
+          "idle": "none",
+          "note": "Two big things a day; no idle risk, some tired legs."
+        },
+        "kanazawa": {
+          "longer": "Four nights adds the rest day the main route has.",
+          "shorter": "Two nights loses the museums or the geisha district.",
+          "idle": "none",
+          "note": "Three nights is tight, not idle."
+        },
+        "okuhida": {
+          "longer": "A third night is a second bath day in a hamlet with nothing else.",
+          "shorter": "A day trip from Takayama covers the ropeway and one bath without the move.",
+          "idle": "some",
+          "note": "Day two is the baths and the view. Beautiful, but there is nothing else to do; fine if a snow bath is the point."
+        },
+        "hiroshima": {
+          "longer": "A third night buys Iwakuni or a second Miyajima evening.",
+          "shorter": "One night means the Peace Park and Miyajima on the same day, which is a long day.",
+          "idle": "none",
+          "note": "Two full days, both good."
+        },
+        "tokyo:2": {
+          "longer": "A second night buys the December museums back.",
+          "shorter": "Cannot be shorter.",
+          "idle": "none",
+          "note": "One night: pack, sleep, fly."
+        }
       }
     },
     "snow-monkeys": {
@@ -83,6 +185,26 @@
         "yudanaka": "Two nights: one for the monkeys, one for the onsen street. The forest path can be icy; cleats and a slow pace, or she stays at the ryokan.",
         "tokyo": "Three nights means two full days. The parents lose one classic day; it can be made up on 7–8 Jan.",
         "kanazawa": "Three nights means the museums day becomes a long one, or the Museum of Art drops out."
+      },
+      "tradeoffs": {
+        "yudanaka": {
+          "longer": "A third night buys Nozawa or Zenko-ji; otherwise it is a second bath day.",
+          "shorter": "One night makes the monkeys a rushed morning after a late arrival.",
+          "idle": "some",
+          "note": "Day two is the bath street and a slow lunch. Lovely in snow, quiet without it."
+        },
+        "tokyo": {
+          "longer": "Four nights gives back the classic day the first-timers lose here.",
+          "shorter": "Two nights is too little for a first visit.",
+          "idle": "none",
+          "note": "No idle risk."
+        },
+        "kanazawa": {
+          "longer": "Four nights gives back the rest day.",
+          "shorter": "Two nights loses the museums or the geisha district.",
+          "idle": "none",
+          "note": "Three nights is full, not idle."
+        }
       }
     },
     "art-not-fuji": {
@@ -100,6 +222,14 @@
       "trade": "The Hakone ryokan with a private bath, and the two Fuji dawns. Island walking in a cold sea wind; Chichu is closed Mondays.",
       "stay_notes": {
         "okayama": "Two nights: Himeji on the way in and Korakuen or Kurashiki on 5 Jan, Naoshima on Wed 6 Jan (Chichu closed Mondays; Teshima closed Tue–Thu in winter). Then about 3 h 20 to Tokyo."
+      },
+      "tradeoffs": {
+        "okayama": {
+          "longer": "A third night adds Kurashiki properly or Teshima if it is open.",
+          "shorter": "One night loses Naoshima, which is the point.",
+          "idle": "none",
+          "note": "Himeji on the way in, Naoshima on the full day. No idle risk if the ferry runs."
+        }
       }
     },
     "kinosaki": {
@@ -117,6 +247,14 @@
       "trade": "Hakone and Fuji, a 5–6 hour journey back to Tokyo, and it repeats Kanazawa's crab and Gero's onsen.",
       "stay_notes": {
         "kinosaki": "Two nights, the usual minimum for its New Year and crab-season plans. Book a ryokan with a private bath for her; the Nishimuraya houses have Western beds and a lift."
+      },
+      "tradeoffs": {
+        "kinosaki": {
+          "longer": "A third night is a third evening of baths and crab in the same small town.",
+          "shorter": "One night is a long way to go for one dinner.",
+          "idle": "some",
+          "note": "Day two is the baths, the ropeway and the temple. Pleasant and slow; like Gero, the town is the inn."
+        }
       }
     },
     "fuji-lake": {
@@ -136,7 +274,24 @@
       "trade": "Hakone's five museums for a cloudy day, the ryokan-with-private-bath culture of Hakone (lake hotels are more hotel than inn), and about an hour more on the way from Kyoto. On a cloudy day there is less to do.",
       "stay_notes": {
         "kawaguchiko": "Two nights, like Hakone: one full day for the ropeway and the lake, and two dawns to catch Fuji clear. Arrival from Kyoto is mid-afternoon, so day one is the promenade and the bath."
+      },
+      "tradeoffs": {
+        "kawaguchiko": {
+          "longer": "A third night is a third chance at a clear Fuji and little else; the museums are small.",
+          "shorter": "One night gives one dawn and no ropeway day.",
+          "idle": "some",
+          "note": "On a cloudy day there is less to do than in Hakone: the kimono museum, the footbaths, hoto noodles. Clear days are full."
+        }
       }
     }
+  },
+  "plan_nights": {
+    "tokyo": 4,
+    "kanazawa": 4,
+    "takayama": 2,
+    "gero": 2,
+    "kyoto": 4,
+    "hakone": 2,
+    "tokyo:2": 2
   }
 }

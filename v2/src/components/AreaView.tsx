@@ -8,6 +8,10 @@ import why from "../../data/why.json";
 import { areaInfo, cardsFor, sourceHref, type CatalogCard } from "@/lib/areas";
 import { fitLabel, regionColor } from "@/lib/colors";
 import { placeGuide, REPUTATION_SHORT } from "@/lib/placesGuide";
+import { exposure, EXPOSURE_LABEL } from "@/lib/exposure";
+import { IDLE_LABEL, stayTradeoff } from "@/lib/guide";
+import { PrefTally } from "./PlacePrefs";
+import { WishBox } from "./WishBox";
 import { fmtDay } from "@/lib/dates";
 import { legBetween } from "@/lib/legs";
 import { lodgingFor, TIER_LABEL } from "@/lib/lodging";
@@ -65,6 +69,8 @@ export function AreaView({ id }: { id: string }) {
   const sourceHost = (s: string) => s.replace(/^https?:\/\/(www\.)?/, "").split("/")[0];
   // One link per site, the first URL we met for it.
   const sources = Array.from(new Map(sourceList.map((s) => [sourceHost(s), s] as const).reverse()).values()).reverse();
+  const planStayIndex = plan ? plan.stays.findIndex((s) => s.region === id) : -1;
+  const tradeoff = plan && planStayIndex >= 0 ? stayTradeoff(plan.id, plan.stays, planStayIndex) : null;
   const herLabel = (p: Place) => (p.status === "avoid_for_her" ? "not for her" : p.effort_for_her === "high" ? "hard for her" : p.effort_for_her === "moderate" ? "moderate for her" : "easy for her");
 
   async function tryIt() {
@@ -247,6 +253,21 @@ export function AreaView({ id }: { id: string }) {
           <b>{fitLabel(region.status)}.</b> {inRoute ? (plan && stayWhy(id)) ?? region.summary : (verdict?.why ?? region.fit ?? region.summary)}
           {verdict?.comeback && verdict.comeback !== "no" ? ` It comes back as ${verdict.comeback}.` : ""}
         </p>
+        {tradeoff ? (
+          <div className="card grid gap-1.5 p-3 text-sm">
+            <p className="flex flex-wrap items-center gap-2">
+              <b>Stay longer or move on?</b>
+              <span className={`chip ${tradeoff.idle === "real" ? "border-warn text-warn" : tradeoff.idle === "some" ? "text-muted" : "text-ok"}`}>{IDLE_LABEL[tradeoff.idle]}</span>
+            </p>
+            <p className="text-ink-2">{tradeoff.note}</p>
+            <p className="text-ink-2">
+              <b>One more night:</b> {tradeoff.longer}
+            </p>
+            <p className="text-ink-2">
+              <b>One fewer:</b> {tradeoff.shorter}
+            </p>
+          </div>
+        ) : null}
         <div className="flex flex-wrap gap-2">
           {inRoute && plan ? (
             <Link href={`/versions/${plan.id}#stops`} className="btn btn-sm">
@@ -269,6 +290,8 @@ export function AreaView({ id }: { id: string }) {
       </Section>
 
       <JapanMap regions={snapshot.regions} stays={plan?.stays} selected={id} view="heart" className="shadow-[var(--glow)]" />
+
+      <WishBox targetId={id} title={`Something missing in ${region.name.replace(/ \(.*\)$/, "")}?`} hint="A place, a dish, a worry. One line; it lands with Pedro and Fernanda." />
 
       <p className="text-xs text-muted">
         Sources:{" "}
@@ -306,10 +329,11 @@ function Tier({ title, blurb, list, planned, her }: { title: string; blurb: stri
               </Link>
               {p.why ? <span className="block text-ink-2">{p.why}</span> : null}
               <span className="block text-xs text-muted">
-                {SIZE_LABEL[p.size] ?? p.size} · {her(p)}
+                {SIZE_LABEL[p.size] ?? p.size} · {EXPOSURE_LABEL[exposure(p)].toLowerCase()} · {her(p)}
                 {placeGuide(p.id) ? ` · ${REPUTATION_SHORT[placeGuide(p.id)!.reputation] ?? ""}` : ""}
                 {planned.get(p.id)?.length ? ` · ${fmtDay(planned.get(p.id)![0])}` : ""}
               </span>
+              <PrefTally placeId={p.id} />
             </span>
           </li>
         ))}

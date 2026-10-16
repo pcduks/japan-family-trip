@@ -201,9 +201,10 @@ export interface RankVote extends Vote {
   kind: "rank";
   value: { order: string[] };
 }
+/** Must / nice / skip per place. `places` is the must list, kept under its old name for older readers. */
 export interface MustDoVote extends Vote {
   kind: "mustdo";
-  value: { places: string[] };
+  value: { places: string[]; nice?: string[]; skip?: string[] };
 }
 
 export interface Suggestion {
@@ -229,7 +230,7 @@ export interface SuggestionDiff {
 export interface Comment {
   id: string;
   author_id: string;
-  target_type: "version" | "stay" | "day" | "place" | "drop" | "region";
+  target_type: "version" | "stay" | "day" | "place" | "drop" | "region" | "wish";
   target_id: string;
   body: string;
   created_at: string;

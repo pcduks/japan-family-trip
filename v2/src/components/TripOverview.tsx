@@ -215,6 +215,9 @@ export function AlternativeCard({ v, planBudget, onShow }: { v: Version; planBud
       <div className="grid gap-2 px-4 pb-4">
         <BudgetLine v={v} regions={snapshot.regions} compareTo={planBudget} />
         <div className="flex flex-wrap items-center gap-2">
+          <span className="chip">
+            <b>{statsOf(v, snapshot).bases}</b>&nbsp;bases · <b>{statsOf(v, snapshot).moves}</b>&nbsp;check-ins
+          </span>
           <RuleBadges findings={findings} />
           {onShow ? (
             <button className="btn btn-sm ml-auto" onClick={onShow}>
