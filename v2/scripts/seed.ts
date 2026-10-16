@@ -39,7 +39,7 @@ async function travellers() {
     rows = list.map((t) => ({ id: t.id, name: t.name, role: t.role, notes: t.notes ?? null, email: t.email?.trim().toLowerCase() || null }));
   } else {
     // Beta: the seven slots with placeholder names; each person types their own on first visit.
-    rows = tripData().trip.travellers.map((t) => ({ id: t.id, name: DEMO_NAMES[t.id] ?? t.id, role: t.role, notes: t.notes ?? null, email: null }));
+    rows = tripData().trip.travellers.map((t) => ({ id: t.id, name: t.name ?? DEMO_NAMES[t.id] ?? t.id, role: t.role, notes: t.notes ?? null, email: null }));
   }
   // Never overwrite a name someone has already typed in the app.
   const { data: existing } = await sb.from("travellers").select("id,name");

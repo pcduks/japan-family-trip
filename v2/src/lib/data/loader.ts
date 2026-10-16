@@ -17,7 +17,7 @@ function check<T>(label: string, r: { data: T | null; error: { message: string }
 
 export function fileSnapshot(): Snapshot {
   const d = tripData();
-  const travellers: Traveller[] = d.trip.travellers.map((t) => ({ id: t.id, role: t.role, notes: t.notes ?? null, name: DEMO_NAMES[t.id] ?? t.id }));
+  const travellers: Traveller[] = d.trip.travellers.map((t) => ({ id: t.id, role: t.role, notes: t.notes ?? null, name: t.name ?? DEMO_NAMES[t.id] ?? t.id }));
   return {
     trip: d.trip,
     pace: d.pace,
