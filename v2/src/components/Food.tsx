@@ -7,6 +7,7 @@ import foodGuide from "../../data/food-guide.json";
 import { fmtDay } from "@/lib/dates";
 import type { Place } from "@/lib/types";
 import { useStore } from "./providers";
+import { reportTabForRegion } from "./PlanReport";
 import { RegionCover } from "./RegionCover";
 import { Page, PageHeader, RegionDot, Section } from "./ui";
 
@@ -28,7 +29,7 @@ const GUIDE = foodGuide as unknown as {
 };
 
 /** Which region's food section covers a place's region (Gero sits with Takayama, Nara with Kyoto). */
-const FOOD_REGION: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", hakone: "hakone", kawaguchiko: "hakone" };
+const FOOD_REGION: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", kawaguchiko: "kawaguchiko", hakone: "hakone" };
 
 /** Where a meal sits in the plan's day by day, if it does. */
 export function plannedOn(placeId: string, days: { version_id: string; date: string; items: { place_id: string | null; slot: string }[] }[], versionId = "plan"): { date: string; slot: string }[] {
@@ -92,7 +93,7 @@ export function Food() {
             <RegionCover regionId={id} className="hero-fade -mx-4 h-[290px] sm:mx-0 sm:h-auto sm:aspect-[3/1] sm:rounded-2xl" sizes="(max-width: 1024px) 100vw, 1024px">
               <div className="absolute inset-x-4 bottom-4 z-10 grid gap-1 text-white">
                 <p className="text-[0.72rem] font-semibold tracking-wide uppercase opacity-90">
-                  {stays.length ? stays.map((s) => `${fmtDay(s.from, false)} – ${fmtDay(s.to, false)}`).join(" and ") : region?.name}
+                  {stays.length ? stays.map((s) => `${fmtDay(s.from, false)} – ${fmtDay(s.to, false)}`).join(" and ") : `${region?.name ?? r.title} · an alternative, not on the route`}
                 </p>
                 <h2 id={`food-${id}`} className="display text-[2rem] leading-none">
                   {r.title}
@@ -155,7 +156,7 @@ export function Food() {
                 ))}
               </ul>
               <p className="text-xs text-muted">
-                <Link href={`/places?region=${id}`}>Places in {r.title.split(" and")[0]}</Link> · <Link href={`/plan?tab=${id}`}>the full guide in the report</Link>
+                <Link href={`/places?region=${id}`}>Places in {r.title.split(" and")[0]}</Link> · <Link href={`/plan?tab=${reportTabForRegion(id) ?? id}`}>the full guide in the report</Link>
               </p>
             </div>
           </section>
@@ -186,7 +187,7 @@ export function Food() {
       ) : null}
 
       {show("ryokan") ? (
-        <Section title="The ryokan meals" id="ryokan" aside="Gero and Hakone">
+        <Section title="The ryokan meals" id="ryokan" aside="Gero, and Hakone if we swap">
           <p className="max-w-prose text-ink-2">{GUIDE.ryokan_meals.text}</p>
           <div className="card grid gap-2 p-4 text-sm">
             <p className="eyebrow">Ask for, when booking</p>
@@ -201,7 +202,7 @@ export function Food() {
               ))}
             </ul>
             <p className="text-muted">
-              The candidate ryokan, with prices and links, are on <Link href="/versions/plan#stay-3">the plan’s Gero stay</Link> and <Link href="/versions/plan#stay-5">its Hakone stay</Link>.
+              The candidate ryokan, with prices and links, are on <Link href="/versions/plan#stay-3">the plan’s Gero stay</Link> and <Link href="/versions/fuji-lake#stay-5">the Hakone alternative’s stay</Link>.
             </p>
           </div>
         </Section>

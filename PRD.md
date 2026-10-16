@@ -348,7 +348,7 @@ Ask me before deciding anything listed in §15.
 | `deadlines` | Booking and ticket dates |
 | `regions` | 26 regions: in plan, candidate (fits, maybe), day trip, not this trip, with fit text and suggested nights per pace |
 | `places` | 109 places: sights, museums, gardens, markets, experiences, events, restaurants, with hours, closures, effort for her, links, food |
-| `versions` | The plan (Balanced), Gentle, Full, Plan + snow monkeys, Art instead of Fuji, Crab and onsen instead of Fuji |
+| `versions` | The plan (Balanced), Gentle, Full, Plan + snow monkeys, Art instead of Fuji, Crab and onsen instead of Fuji, Hakone instead of the lake |
 | `legacy_routes` | Old routes A to D, for reference only |
 | `tokyo_personal_food_list` | The 58 places from the family's own Google Maps list |
 | `related_docs` | Links to the plan doc, the Tokyo and Kyoto guides, and the route explorer |

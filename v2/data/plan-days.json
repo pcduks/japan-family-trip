@@ -88,16 +88,18 @@
         { "place_id": "nara-naramachi", "slot": "afternoon", "crew": "everyone" },
         { "place_id": "ky-nishiki", "slot": "evening", "crew": "easy", "note": "Reopens today, for whoever stays in Kyoto" }
       ] },
-    { "date": "2027-01-05", "kind": "Move · 3–3.5 h", "title": "Hikari to Odawara with seats on the Fuji side; Hatsuhana soba (open Tuesdays), onsen",
-      "items": [ { "place_id": "hk-hatsuhana", "slot": "afternoon", "crew": "everyone" }, { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Onsen at the ryokan" } ] },
-    { "date": "2027-01-06", "kind": "Explore", "title": "Hakone Open-Air Museum or Pola Museum, ropeway, Lake Ashi boat",
+    { "date": "2027-01-05", "kind": "Move · 4 h 15", "title": "Shinkansen to Mishima with seats on the Fuji side, then the Fujikyu bus to the lake; Oishi Park and the shore at sunset",
+      "items": [ { "place_id": "kw-oishi", "slot": "afternoon", "crew": "everyone" }, { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Check in at the lake hotel; Fuji from the room" } ] },
+    { "date": "2027-01-06", "kind": "Explore", "title": "Panoramic Ropeway and the lake boat, hoto for lunch; the kimono museum if it clouds over",
       "items": [
-        { "place_id": null, "slot": "early", "crew": "early", "note": "Sunrise for Fuji" },
-        { "place_id": "hk-oam", "slot": "morning", "crew": "everyone" },
-        { "place_id": "hk-pola", "slot": "morning", "crew": "everyone", "note": "Or this, if it rains" },
-        { "place_id": "hk-loop", "slot": "afternoon", "crew": "everyone" }
+        { "place_id": "kw-chureito", "slot": "early", "crew": "early", "note": "At first light, for whoever wants the 398 steps" },
+        { "place_id": "kw-ropeway", "slot": "morning", "crew": "everyone" },
+        { "place_id": "kw-cruise", "slot": "morning", "crew": "everyone" },
+        { "place_id": "kw-hoto-fudou", "slot": "afternoon", "crew": "everyone", "note": "Hoto lunch" },
+        { "place_id": "kw-kubota", "slot": "afternoon", "crew": "everyone", "note": "Or this, if it is cloudy; check it is open on Wednesdays in January" },
+        { "place_id": "kw-onsen-foot", "slot": "afternoon", "crew": "easy" }
       ] },
-    { "date": "2027-01-07", "kind": "Move · 80 min", "title": "Romancecar to Shinjuku; afternoon free", "items": [ { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Afternoon free" } ] },
+    { "date": "2027-01-07", "kind": "Move · 2 h", "title": "A last look at Fuji at breakfast, then the Fuji Excursion train to Shinjuku; afternoon free", "items": [ { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Afternoon free" } ] },
     { "date": "2027-01-08", "kind": "Free", "title": "Late opening to 20:00 at Tokyo National Museum and Western Art; shopping, farewell dinner",
       "items": [
         { "place_id": "tokyo-tnm", "slot": "afternoon", "crew": "everyone" },

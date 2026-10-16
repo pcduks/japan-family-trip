@@ -1,5 +1,7 @@
 # Hakone and Fuji
 
+> **Changed on 16 Oct 2026: Kawaguchiko is now the route's Fuji stop, 5–7 Jan, at a lake hotel with beds and a lift; Hakone is the alternative.** Pedro and Fernanda have done Hakone, and the lake has the straight-on Fuji view and is new for everyone. The comparison below still holds; only the choice changed.
+
 **Tue 5 – Thu 7 Jan, 2 nights. Hakone is recommended over Kawaguchiko.** It is 1–2 hours closer to Kyoto with one main change, 80 minutes from Tokyo, and has five good museums for a cloudy day. January is the best month for Fuji either way.
 
 ## Hakone or Kawaguchiko

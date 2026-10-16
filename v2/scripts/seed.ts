@@ -5,7 +5,8 @@
  *   npm run seed -- --no-resolve  # skip the Google place-id lookups
  *   npm run seed -- --file=path   # import another schema-v2 file (partial is fine)
  *
- * The plan version is created the first time and never overwritten after that.
+ * The plan version is created the first time and never overwritten after that;
+ * its day by day follows data/plan-days.json (see planDays).
  */
 import { existsSync, readFileSync } from "node:fs";
 import { createClient } from "@supabase/supabase-js";
@@ -60,21 +61,47 @@ async function importData() {
   if (report.places.changed.length) for (const c of report.places.changed.slice(0, 20)) console.log(`  ~ ${c.id}: ${c.fields.join(", ")}`);
 }
 
-/** The plan's day-by-day (data/plan-days.json), only when the plan has no days yet: planners own them after that. */
+/**
+ * The plan's day-by-day (data/plan-days.json). The first run inserts every day.
+ * Later runs bring each date in line with the file when it differs: no screen
+ * edits days yet, so the file is still their only source. When one does, this
+ * must only touch days nobody has changed.
+ */
 async function planDays() {
   const { data: plan } = await sb.from("versions").select("id").eq("status", "plan").maybeSingle();
   if (!plan) return console.log("- no plan version yet; skipping days");
-  const { count } = await sb.from("days").select("*", { count: "exact", head: true }).eq("version_id", plan.id);
-  if (count) return console.log(`- plan already has ${count} days; left as they are`);
+  type Item = { place_id: string | null; slot: string; crew: string; note: string | null; sort: number };
+  const existing = check<{ id: string; date: string; title: string | null; day_items: Item[] }[]>(
+    "days",
+    await sb.from("days").select("id,date,title,day_items(place_id,slot,crew,note,sort)").eq("version_id", plan.id),
+  );
+  const byDate = new Map(existing.map((d) => [d.date, d]));
+  const itemsOf = (list: Item[]) => JSON.stringify([...list].sort((a, b) => a.sort - b.sort).map((it) => [it.place_id, it.slot, it.crew, it.note ?? null]));
+  let added = 0;
+  let updated = 0;
   let items = 0;
   for (const d of bundledPlanDays()) {
-    const day = check<{ id: string }>("day", await sb.from("days").insert({ version_id: plan.id, date: d.date, title: `${d.kind} · ${d.title}` }).select("id").single());
-    if (d.items.length) {
-      check("day items", await sb.from("day_items").insert(d.items.map((it, i) => ({ day_id: day.id, place_id: it.place_id, slot: it.slot, crew: it.crew, note: it.note ?? null, sort: i }))));
-      items += d.items.length;
+    const title = `${d.kind} · ${d.title}`;
+    const want = d.items.map((it, i) => ({ place_id: it.place_id, slot: it.slot, crew: it.crew, note: it.note ?? null, sort: i }));
+    const have = byDate.get(d.date);
+    if (have && have.title === title && itemsOf(have.day_items) === itemsOf(want)) continue;
+    let dayId: string;
+    if (have) {
+      check("day", await sb.from("days").update({ title }).eq("id", have.id));
+      check("day items", await sb.from("day_items").delete().eq("day_id", have.id));
+      dayId = have.id;
+      updated++;
+      console.log(`  ~ ${d.date}: ${title.slice(0, 70)}`);
+    } else {
+      dayId = check<{ id: string }>("day", await sb.from("days").insert({ version_id: plan.id, date: d.date, title }).select("id").single()).id;
+      added++;
+    }
+    if (want.length) {
+      check("day items", await sb.from("day_items").insert(want.map((it) => ({ ...it, day_id: dayId }))));
+      items += want.length;
     }
   }
-  console.log(`✓ plan day by day: ${bundledPlanDays().length} days, ${items} items`);
+  console.log(`✓ plan day by day: ${added} added, ${updated} updated, ${existing.length - updated} unchanged (${items} items written)`);
 }
 
 /** Resolve google_place_id and coordinates with Text Search biased to the region's centre. */

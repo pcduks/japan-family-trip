@@ -1,6 +1,6 @@
 # Japan trip planner (v2)
 
-The private planning app from `PRD.md` (Draft 2, 12 Oct 2026) for the family's winter trip, 20 Dec 2026 – 9 Jan 2027. The data is `trip-data.json` (schema v2) at the repository root: 109 places, 26 regions, 6 versions, the pace model, calendar rules and deadlines.
+The private planning app from `PRD.md` (Draft 2, 12 Oct 2026) for the family's winter trip, 20 Dec 2026 – 9 Jan 2027. The data is `trip-data.json` (schema v2) at the repository root: 117 places, 31 regions, 7 versions, the pace model, calendar rules and deadlines. The route's Fuji stop is Kawaguchiko (5–7 Jan, a lake hotel); Hakone is the alternative "Hakone instead of the lake" (version id `fuji-lake`, kept from when that id meant the lake, because the seed cannot delete versions).
 
 This folder is a separate Next.js app. The earlier app ("Seis pelo Japão") stays at the repository root, untouched, until you decide what to keep.
 
@@ -60,7 +60,7 @@ With no Supabase keys the app runs in demo mode: no sign-in, pick "I am…" unde
    - No Auth setup: the beta gate is the family code (`FAMILY_CODE`), checked on the server; the browser never holds a database key.
 4. `cp .env.example .env.local` and fill in the keys. `CLAUDE_CONNECTOR_TOKEN` is any long random string.
 5. Travellers: the seed creates the seven slots with placeholder names (Brother, Dad, Mum…); each person types their own name the first time they pick their slot. `data/travellers.json` (git-ignored, see the example) still works if you want to set names up front. Planners can also rename or remove people under the name at the top right → **Family**.
-6. `npm run seed`. It is idempotent: it upserts travellers (placeholder names unless `data/travellers.json` exists), imports `trip-data.json` by id, and resolves each place's `google_place_id` and coordinates with a Text Search biased to the region's centre. The plan version is created once and never overwritten by later imports. `--no-resolve` skips Google; `--file=path` imports another schema-v2 file.
+6. `npm run seed`. It is idempotent: it upserts travellers (placeholder names unless `data/travellers.json` exists), imports `trip-data.json` by id, and resolves each place's `google_place_id` and coordinates with a Text Search biased to the region's centre. The plan version is created once and never overwritten by later imports, so a change to the plan's stays in `trip-data.json` reaches the database only through the app (a planner edits the plan; the change is logged and can be reverted). The plan's day by day does follow `data/plan-days.json`: each date that differs from the file is rewritten, because no screen edits days yet. `--no-resolve` skips Google; `--file=path` imports another schema-v2 file.
 
 Without a machine at hand, the GitHub Actions workflow **Supabase setup (v2)** (`.github/workflows/supabase-setup.yml`) does steps 3 and 6 from repository secrets; see the comment at the top of the file.
 

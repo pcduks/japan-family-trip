@@ -1,5 +1,7 @@
 # Japan for Six (or Seven): the plan and the reasoning
 
+> **Changed on 16 Oct 2026:** the Fuji stop on 5–7 Jan is now Kawaguchiko (about 4 h 15 from Kyoto via Mishima and the Fujikyu bus, 2 h to Shinjuku on the Fuji Excursion), at a lake hotel with beds and a lift. Hakone, as written below, is the alternative.
+
 Oct 13, 2026 · @Pedro
 
 **Recommendation (revised 13 Oct):** 20 nights across six bases: Tokyo, Kanazawa, Takayama, Gero Onsen, Kyoto and Hakone, then back to Tokyo. Every stay is at least two nights. The longest travel day is about 3.5 hours. Inside the New Year window there are only two moves: a 45-minute train on 30 Dec and the trip to Kyoto on New Year's Day, when the trains are quiet.

@@ -55,6 +55,9 @@ export interface VersionStats {
   bases: number;
 }
 
+/** The two Fuji bases: the lake in the plan, Hakone in the alternatives that use it. */
+const FUJI_STOPS: Record<string, string> = { kawaguchiko: "Kawaguchiko", hakone: "Hakone" };
+
 export function statsOf(v: Version, data: Pick<TripData, "regions" | "pace">): VersionStats {
   const moves = movesOf(v.stays, data.regions);
   const travelHours = moves.reduce((a, m) => a + m.hours, 0);
@@ -69,7 +72,7 @@ export function statsOf(v: Version, data: Pick<TripData, "regions" | "pace">): V
     shortestStay: v.stays.length ? Math.min(...v.stays.map((s) => s.nights)) : 0,
     restDays,
     newYearsEve: nye ? { region: nye.region, lodging: nye.lodging } : null,
-    fuji: v.stays.some((s) => s.region === "hakone" || s.region === "kawaguchiko"),
+    fuji: v.stays.some((s) => s.region in FUJI_STOPS),
     bases: new Set(v.stays.map((s) => s.region)).size,
   };
 }
@@ -133,8 +136,9 @@ export function copyVersion(source: Version, ownerId: string, name: string, trip
 
 /**
  * A7: "make a version with this swap". If a seeded version already shows the
- * candidate, copy that; else if the fit text says it replaces Hakone, swap it
- * in for the Hakone stay; else add it as a two-night stay before the final
+ * candidate, copy that; else if the fit text says it replaces the Fuji stop
+ * (Kawaguchiko, or Hakone in versions that use it), swap it in for that stay;
+ * else add it as a two-night stay before the final
  * Tokyo nights, taking the nights from the longest stay.
  */
 export function swapInRegion(plan: Version, region: Region, versions: Version[], ownerId: string, tripStart: string): { version: Version; how: string } {
@@ -144,12 +148,13 @@ export function swapInRegion(plan: Version, region: Region, versions: Version[],
     return { version: v, how: `Copied “${existing.name}”, which already includes ${region.name}.` };
   }
   const v = copyVersion(plan, ownerId, `${region.name} instead`, tripStart);
-  const hakone = v.stays.findIndex((s) => s.region === "hakone");
-  if (hakone >= 0 && /hakone/i.test(region.fit ?? "")) {
-    v.stays[hakone] = { ...v.stays[hakone], region: region.id, lodging: null, note: `Swapped in for Hakone` };
-    v.name = `${region.name} instead of Hakone`;
+  const fuji = v.stays.findIndex((s) => s.region in FUJI_STOPS);
+  const fujiName = fuji >= 0 ? FUJI_STOPS[v.stays[fuji].region] : "";
+  if (fuji >= 0 && new RegExp(`\\b(${Object.values(FUJI_STOPS).join("|")})\\b`, "i").test(region.fit ?? "")) {
+    v.stays[fuji] = { ...v.stays[fuji], region: region.id, lodging: null, note: `Swapped in for ${fujiName}` };
+    v.name = `${region.name} instead of ${fujiName}`;
     v.stays = relayout(v.stays, tripStart);
-    return { version: v, how: `Replaced the Hakone stay with ${region.name}, same dates.` };
+    return { version: v, how: `Replaced the ${fujiName} stay with ${region.name}, same dates.` };
   }
   const longest = v.stays.reduce((best, s, i) => (s.nights > v.stays[best].nights ? i : best), 0);
   v.stays[longest] = { ...v.stays[longest], nights: v.stays[longest].nights - 2 };

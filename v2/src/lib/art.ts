@@ -1,7 +1,7 @@
 /**
  * The woodblock illustrations made for the earlier app (Gemini, committed in
  * public/illustrations). One per region, chosen by what it shows: snow-roped
- * pines for Kanazawa, the New Year bell for the Gero ryokan, Fuji for Hakone…
+ * pines for Kanazawa, the New Year bell for the Gero ryokan, Fuji for the lake and Hakone…
  */
 export const REGION_ART: Record<string, string> = {
   tokyo: "chapter-tokyo",

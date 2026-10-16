@@ -43,11 +43,12 @@
       { "region": "takayama", "title": "Takayama, 2 nights", "text": "The old town, the morning market, the sake breweries and Hida beef fill one full day. The Jinya closes on 29 Dec, so we see it on arrival. Two nights, not more: the town is a one-day place, and a third day while its museums are shut would be slow." },
       { "region": "gero", "title": "Gero for New Year's Eve, 2 nights", "text": "The move from Takayama is 45 minutes, so the two worst travel days of the year hold no long train for us. A ryokan includes the New Year's Eve dinner and the New Year breakfast on 1 Jan, which matters because restaurants close. Gero is flat, has footbaths, and sits on the line to Kyoto." },
       { "region": "kyoto", "title": "Kyoto on New Year's Day, 4 nights", "text": "1 Jan is the quiet day on the trains, so that is when we go. Kyoto's museums reopen on 2 Jan, the city is in its New Year rituals, and Nara goes on Monday the 4th when Kyoto's museums close again. A house with a living room covers the evenings while most restaurants are still shut." },
-      { "region": "hakone", "title": "Hakone, 2 nights, after the Ekiden", "text": "The Hakone Ekiden relay closes the roads on 2–3 Jan and the inns sold out a year ahead for those nights; 5–7 Jan is clear. One full day for the loop and the museums, two mornings to catch Fuji, a private bath in every room for the three couples. Then 80 minutes to Shinjuku, which keeps the last night near the airport." },
+      { "region": "kawaguchiko", "title": "Kawaguchiko, 2 nights, Fuji across the lake", "text": "From the north shore of Lake Kawaguchi, Fuji stands straight across the water with nothing in the way: from the room, the promenade, the ropeway and the boat. Early January is its clearest month, and the place is new for all seven of us. The move from Kyoto is the longest of the trip, about four and a quarter hours by shinkansen to Mishima and the Fujikyu bus, on 5 Jan when the New Year rush is over. A lake hotel with beds and a lift, one full day for the ropeway and the boat, two dawns to catch the mountain clear, and a hospital with obstetrics in Fujiyoshida. Then two hours on the Fuji Excursion train straight into Shinjuku, which keeps the last nights near the airport." },
       { "region": "tokyo", "title": "Tokyo again, 2 nights", "text": "The museums that were closed in December (the Musée d'Orsay show, the Tokyo National Museum open late on Friday 8 Jan), the shopping, the farewell dinner, and a buffer before a Saturday flight on a holiday weekend." }
     ],
     "sources": [
-      { "label": "Hakone Ekiden 2–3 Jan 2027", "url": "https://www.hakone-ekiden.jp/" },
+      { "label": "Fujikyu: Mishima to Lake Kawaguchi by bus", "url": "https://www.fujilake.co.jp/english/access.html" },
+      { "label": "isfujivisible: Hakone or Kawaguchiko", "url": "https://isfujivisible.com/blog/hakone-vs-kawaguchiko" },
       { "label": "japan-guide: Takayama in a day", "url": "https://www.japan-guide.com/e/e5912_takayama_full.html" },
       { "label": "Nohi bus Kanazawa–Shirakawa-go–Takayama", "url": "https://www.nouhibus.co.jp/english/" },
       { "label": "Japan Ryokan Guide: two nights at one ryokan", "url": "https://www.japanryokanguide.com/en/blog/how-many-nights-ryokan-itinerary" }
@@ -64,19 +65,19 @@
     },
     {
       "who": "Pedro and Fernanda, who know Tokyo and Kyoto",
-      "text": "Four of the seven stops are new to you: Kanazawa, Shirakawa-go, Takayama and Gero, with Hakone probably a fifth. If you have done Hakone, the Kawaguchiko alternative swaps it for a lakeside stay with Fuji straight across the water, new for everyone. The two cities you know are the two the first-timers need most, and in Kyoto you get the New Year rites you have not seen."
+      "text": "Five of the seven stops are new to you: Kanazawa, Shirakawa-go, Takayama, Gero and Kawaguchiko. You have done Hakone, so the Fuji stop is the lake instead, with the mountain straight across the water, new for everyone. The two cities you know are the two the first-timers need most, and in Kyoto you get the New Year rites you have not seen."
     },
     {
       "who": "Fernanda, at 29–32 weeks",
-      "text": "The route was shaped around you: no move over four hours, one long train a day, an easy day after each, private baths, light afternoons, and the right to drop any plan on the day. None of it is binding; it is the default. The one place the route goes against the medical advice is New Year's Eve: the advice is to spend those nights in a city with a perinatal centre, and Gero is a small spa town 1.5–2.5 h from Kyoto. We accepted that for the ryokan New Year. If your doctor would rather not, the clean alternative is the Kyoto house from 30 Dec, and the gentler alternative keeps the night in Takayama instead."
+      "text": "The route was shaped around you: moves of about four hours or less (the longest, Kyoto to the lake, is about four and a quarter), one long journey a day, an easy day after each, private baths, light afternoons, and the right to drop any plan on the day. None of it is binding; it is the default. The one place the route goes against the medical advice is New Year's Eve: the advice is to spend those nights in a city with a perinatal centre, and Gero is a small spa town 1.5–2.5 h from Kyoto. We accepted that for the ryokan New Year. If your doctor would rather not, the clean alternative is the Kyoto house from 30 Dec, and the gentler alternative keeps the night in Takayama instead."
     }
   ],
   "not_chosen": {
     "intro": "Everything below is good. It is out because of travel time, the New Year calendar or the pregnancy. Several come back as alternatives you can rank.",
     "items": [
-      { "region": "kawaguchiko", "why": "The closest Fuji view, but an hour more from Kyoto and fewer indoor options on a cloudy day.", "comeback": "the Kawaguchiko alternative" },
+      { "region": "hakone", "why": "The other Fuji base: five art museums for a cloudy day, ryokan with a private bath in every room, an hour closer to Kyoto and 80 minutes from Shinjuku. Pedro and Fernanda have done it, and Fuji shows over the ridges rather than straight across the water.", "comeback": "the Hakone alternative" },
       { "region": "yudanaka", "why": "Snow monkeys and an onsen street, but it costs a Tokyo day and Kanazawa's rest day, and the forest path can be icy.", "comeback": "the snow monkeys alternative" },
-      { "region": "okayama", "why": "Naoshima's art and Korakuen fit after Kyoto, at the price of Hakone and the Fuji mornings.", "comeback": "the art-instead-of-Fuji alternative" },
+      { "region": "okayama", "why": "Naoshima's art and Korakuen fit after Kyoto, at the price of Kawaguchiko and the Fuji mornings.", "comeback": "the art-instead-of-Fuji alternative" },
       { "region": "kinosaki", "why": "A lovely crab-and-baths town, but it repeats Kanazawa's crab and Gero's onsen, and the way home is 5–6 hours.", "comeback": "the crab-and-onsen alternative" },
       { "region": "okuhida", "why": "Open-air baths in deep snow and a ropeway to 2,156 m, but it makes New Year's Day a five-hour travel day and the summit deck is icy.", "comeback": "a day trip from Takayama, or the fuller alternative" },
       { "region": "hiroshima", "why": "Important history and Miyajima, but a long westward leg and two more nights.", "comeback": "the fuller alternative only" },

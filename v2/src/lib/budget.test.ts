@@ -13,7 +13,7 @@ describe("budget per couple", () => {
     expect(b.perCoupleSgd).toBeLessThan(15000);
     expect(b.headroomSgd).toBeGreaterThan(0);
     expect(b.days).toBe(21);
-    expect(b.ryokanDays).toBe(4);
+    expect(b.ryokanDays).toBe(2); // Gero; the lake is a hotel
     expect(b.moves).toBe(6);
   });
 
@@ -60,14 +60,16 @@ describe("lodging data", () => {
   });
 });
 
-describe("Fuji across the lake", () => {
-  it("swaps Hakone for Kawaguchiko, still counts as Fuji, and stays under the target", () => {
+describe("Hakone instead of the lake", () => {
+  it("the plan sleeps at the lake; the alternative swaps in Hakone, still counts as Fuji, and stays under the target", () => {
+    expect(plan.stays.find((s) => s.from === "2027-01-05")?.region).toBe("kawaguchiko");
     const v = data.versions.find((x) => x.id === "fuji-lake")!;
-    expect(v.stays.some((s) => s.region === "kawaguchiko")).toBe(true);
-    expect(v.stays.some((s) => s.region === "hakone")).toBe(false);
+    expect(v.stays.some((s) => s.region === "hakone")).toBe(true);
+    expect(v.stays.some((s) => s.region === "kawaguchiko")).toBe(false);
     expect(v.stays.reduce((a, s) => a + s.nights, 0)).toBe(20);
     expect(budgetOf(v, data.regions).perCoupleSgd).toBeLessThan(15000);
     expect(farePerPerson("kyoto", "kawaguchiko", data.regions)).toBe(13300);
+    expect(lodgingFor("kawaguchiko")?.type).toBe("hotel");
     expect(lodgingFor("kawaguchiko")?.candidates.some((c) => c.name === "Konansou")).toBe(true);
   });
 });

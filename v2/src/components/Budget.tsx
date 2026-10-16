@@ -100,7 +100,7 @@ export function BudgetCard({ v, regions, regionName, title = "Budget per couple"
             </tbody>
           </table>
           <p className="text-ink-2">
-            The biggest lines are {dearest.map((s) => `${regionName(s.region)} (${fmtSgd(jpyToSgd(s.total / BUDGET_RATES.couples))} per couple)`).join(" and ")}. A tier down there is the first lever; a tier up in Hakone is the first indulgence.
+            The biggest lines are {dearest.map((s) => `${regionName(s.region)} (${fmtSgd(jpyToSgd(s.total / BUDGET_RATES.couples))} per couple)`).join(" and ")}. A tier down there is the first lever; a better room at the Fuji stop is the first indulgence.
           </p>
           <p className="text-muted">
             Assumptions: ¥{BUDGET_RATES.currency.jpy_per_sgd} per S$ (as of {BUDGET_RATES.currency.as_of}); mid-tier nightly rates for six from the lodging research of 1 Oct 2026; ryokan nights include dinner and breakfast; New Year nights at +{Math.round(BUDGET_RATES.new_year_uplift.full.ryokan * 100)}% (ryokan) or +{Math.round(BUDGET_RATES.new_year_uplift.full.hotel * 100)}% (hotel) on 31 Dec and 1 Jan, half that on 30 Dec and 2 Jan; the

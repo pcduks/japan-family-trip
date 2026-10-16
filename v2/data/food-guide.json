@@ -7,7 +7,7 @@
     },
     {
       "title": "Ryokan nights are dinner and breakfast",
-      "text": "In Gero and Hakone the kaiseki dinner and the breakfast are part of the stay, served at a set time (usually 18:00 or 18:30). On those days we only need lunch and snacks. Tell the ryokan about her when booking: they swap the sashimi courses for cooked ones with three days' notice."
+      "text": "In Gero the kaiseki dinner and the breakfast are part of the stay, served at a set time (usually 18:00 or 18:30). On those days we only need lunch and snacks. Tell the ryokan about her when booking: they swap the sashimi courses for cooked ones with three days' notice."
     },
     {
       "title": "New Year closes the restaurants",
@@ -15,7 +15,7 @@
     },
     {
       "title": "Lunch is the cheap kaiseki",
-      "text": "The same kitchen charges a third at lunch. Ukihashi in Kyoto, Tsunahachi in Tokyo and the Fujiya dining room in Hakone are all best at midday. Dinners go to the izakaya-style places: oden in Kanazawa, yakiniku in Takayama."
+      "text": "The same kitchen charges a third at lunch. Ukihashi in Kyoto and Tsunahachi in Tokyo are both best at midday. Dinners go to the izakaya-style places: oden in Kanazawa, yakiniku in Takayama."
     },
     {
       "title": "Depachika for the easy nights",
@@ -76,7 +76,7 @@
     ]
   },
   "ryokan_meals": {
-    "text": "Two ryokan stays, four dinners, four breakfasts. The New Year's Eve dinner in Gero is a kaiseki with toshikoshi soba at the end; breakfast on 1 Jan is osechi (the lacquer boxes), ozoni soup and a sip of otoso. In Hakone the dinner is the house kaiseki, usually with a hot pot or a grilled course, and breakfast is grilled fish, rice, miso soup and pickles. Both ryokan can serve dinner in the room for her if asked.",
+    "text": "One ryokan stay on the route: two dinners and two breakfasts in Gero. The New Year's Eve dinner is a kaiseki with toshikoshi soba at the end; breakfast on 1 Jan is osechi (the lacquer boxes), ozoni soup and a sip of otoso. The ryokan can serve dinner in the room for her if asked. At the lake we eat at the hotel and the hoto houses. If we go to Hakone instead, that is a second ryokan: the house kaiseki, usually with a hot pot or a grilled course, and grilled fish, rice, miso soup and pickles for breakfast.",
     "ask_for": [
       "2 rooms × 3, same plan, same dinner sitting",
       "Cooked courses instead of sashimi for one guest (妊娠中)",
@@ -287,26 +287,39 @@
         }
       ]
     },
+    "kawaguchiko": {
+      "title": "Kawaguchiko",
+      "dishes": [
+        "Hoto noodles",
+        "Dinner at the lake hotel",
+        "Blueberry soft-serve at Oishi Park"
+      ],
+      "intro": "The lunch is hoto: Yamanashi's thick flat noodles stewed with pumpkin and vegetables in miso, served boiling in an iron pot, all cooked. The two big hoto houses, Hoto Fudou and Kosaku, seat six without booking. Dinner is at the lake hotel; book it with the rooms.",
+      "for_her": "Hoto is a cooked vegetable-and-miso stew, the easiest meal of the trip for her. Some menus offer horse sashimi on the side; skip that one.",
+      "dates": "5–7 Jan. Hoto Fudou is open daily 11:00–20:00 and takes cash; Kosaku is open 11:00–19:00.",
+      "guides": [
+        {
+          "label": "LIVE JAPAN: hoto in Kawaguchiko",
+          "url": "https://livejapan.com/en/in-tokyo/in-pref-fuji_mountain/in-mount_fuji/article-a0005559/"
+        }
+      ],
+      "extras": []
+    },
     "hakone": {
-      "title": "Hakone, or Kawaguchiko",
+      "title": "Hakone",
       "dishes": [
         "Yumoto soba",
         "The ryokan kaiseki",
         "The Fujiya Hotel's 1930 dining room",
-        "Tofu and mountain yam",
-        "Hoto noodles, if Kawaguchiko"
+        "Tofu and mountain yam"
       ],
-      "intro": "Hakone eats at the ryokan. Dinner and breakfast are included on both nights, so the picks are lunches: the famous soba house in Yumoto on the day we arrive, the Fujiya Hotel's French dining room from 1930 or its Japanese villa from 1895, and a tofu house for a light day. If the family swaps Hakone for Kawaguchiko, the lunch is hoto: Yamanashi's thick flat noodles stewed with pumpkin and vegetables in miso, served in an iron pot, all cooked, and the two big hoto houses seat six without booking.",
+      "intro": "If we go to Hakone instead of the lake, it eats at the ryokan. Dinner and breakfast are included on both nights, so the picks are lunches: the famous soba house in Yumoto on the day we arrive, the Fujiya Hotel's French dining room from 1930 or its Japanese villa from 1895, and a tofu house for a light day.",
       "for_her": "Ask the ryokan for a cooked-only kaiseki when booking; the house menus usually include sashimi.",
-      "dates": "5–7 Jan. Hatsuhana closes Wednesdays (6 Jan), so go on arrival, Tue 5 Jan. Yamasoba closes Thursdays. In Kawaguchiko, Hoto Fudou is open daily 11:00–20:00 and takes cash.",
+      "dates": "5–7 Jan. Hatsuhana closes Wednesdays (6 Jan), so go on arrival, Tue 5 Jan. Yamasoba closes Thursdays.",
       "guides": [
         {
           "label": "LIVE JAPAN: dining in Hakone",
           "url": "https://livejapan.com/ja/in-tokyo/in-pref-kanagawa/in-hakone_odawara/article-a0005610/"
-        },
-        {
-          "label": "LIVE JAPAN: hoto in Kawaguchiko",
-          "url": "https://livejapan.com/en/in-tokyo/in-pref-fuji_mountain/in-mount_fuji/article-a0005559/"
         }
       ],
       "extras": [
