@@ -410,7 +410,8 @@ function startEngine(o: EngineOpts): Engine {
     }
     for (const el of stations) {
       const j = Number(el.dataset.station);
-      el.style.opacity = j === travelling || (el.dataset.via && h >= j + 1) ? "1" : "0";
+      // A place on the way stays named once travelled, but only when the camera is close enough for it not to crowd the stops.
+      el.style.opacity = j === travelling || (el.dataset.via && h >= j + 1 && px < 0.2) ? "1" : "0";
     }
 
     if (travelling >= 0 && train && masks[travelling] && lens[travelling]) {
