@@ -1,0 +1,191 @@
+{
+  "_about": "How the journey is drawn: the line each move follows (station and road waypoints, lat/lng, in travel order), the place names in Japanese, how likely snow is on the ground in our window (0 rarely, 1 possible, 2 likely, 3 near-certain; from the area notes: Shirakawa-go near-certain by 25 Dec, Takayama about 66 cm of snowfall in December, Kanazawa intermittent, the Fuji side dry and clear), Fuji's clear-morning share in January (isfujivisible, 1991–2025), peaks and lakes for the ink layer.",
+  "kanji": {
+    "tokyo": "東京",
+    "kanazawa": "金沢",
+    "shirakawago": "白川郷",
+    "takayama": "高山",
+    "gero": "下呂",
+    "kyoto": "京都",
+    "nara": "奈良",
+    "kawaguchiko": "河口湖",
+    "hakone": "箱根",
+    "okuhida": "奥飛騨",
+    "yudanaka": "湯田中",
+    "okayama": "岡山",
+    "kinosaki": "城崎",
+    "hiroshima": "広島",
+    "osaka": "大阪",
+    "nikko": "日光",
+    "kamakura": "鎌倉",
+    "matsumoto": "松本",
+    "karuizawa": "軽井沢",
+    "kusatsu": "草津",
+    "ginzan": "銀山",
+    "shuzenji": "修善寺",
+    "echigo-yuzawa": "越後湯沢",
+    "koyasan": "高野山",
+    "kumano": "熊野",
+    "hokkaido": "北海道",
+    "kyushu": "九州",
+    "shikoku": "四国",
+    "okinawa": "沖縄",
+    "north-tohoku": "東北",
+    "south-tohoku": "仙台"
+  },
+  "snow": {
+    "shirakawago": 3,
+    "okuhida": 3,
+    "takayama": 2,
+    "yudanaka": 2,
+    "ginzan": 3,
+    "kinosaki": 2,
+    "echigo-yuzawa": 3,
+    "kusatsu": 2,
+    "kanazawa": 1,
+    "gero": 1,
+    "kawaguchiko": 1,
+    "hakone": 1,
+    "matsumoto": 1,
+    "karuizawa": 1,
+    "nikko": 1
+  },
+  "snow_words": ["Snow is rare", "Snow possible", "Snow likely", "Snow near-certain"],
+  "fuji": {
+    "regions": ["kawaguchiko", "hakone"],
+    "clear_mornings": 0.6,
+    "source": "https://isfujivisible.com/blog/mount-fuji-in-winter"
+  },
+  "lines": {},
+  "fuji_summit": {"lat": 35.3606, "lng": 138.7274},
+  "peaks": [
+    {"name": "Kitadake", "lat": 35.6741, "lng": 138.2389, "elev": 3193},
+    {"name": "Okuhotaka", "lat": 36.2892, "lng": 137.6481, "elev": 3190},
+    {"name": "Yarigatake", "lat": 36.3419, "lng": 137.6475, "elev": 3180},
+    {"name": "Ontake", "lat": 35.8928, "lng": 137.4803, "elev": 3067},
+    {"name": "Norikura", "lat": 36.1064, "lng": 137.5536, "elev": 3026},
+    {"name": "Tateyama", "lat": 36.5758, "lng": 137.6197, "elev": 3015},
+    {"name": "Kiso Komagatake", "lat": 35.7894, "lng": 137.8044, "elev": 2956},
+    {"name": "Shirouma", "lat": 36.7586, "lng": 137.7583, "elev": 2932},
+    {"name": "Akadake", "lat": 35.9708, "lng": 138.3703, "elev": 2899},
+    {"name": "Hakusan", "lat": 36.155, "lng": 136.7714, "elev": 2702},
+    {"name": "Asama", "lat": 36.4064, "lng": 138.5231, "elev": 2568},
+    {"name": "Myoko", "lat": 36.8911, "lng": 138.1136, "elev": 2454}
+  ],
+  "lakes": [
+    {
+      "name": "Lake Biwa",
+      "label": true,
+      "points": [
+        [35.53,  136.16],
+        [35.47,  136.24],
+        [35.38,  136.27],
+        [35.28,  136.24],
+        [35.19,  136.11],
+        [35.12,  136.03],
+        [35.06,  135.96],
+        [35.01,  135.89],
+        [35.0,  135.86],
+        [35.05,  135.89],
+        [35.13,  135.94],
+        [35.22,  135.96],
+        [35.31,  136.0],
+        [35.4,  136.02],
+        [35.47,  136.07],
+        [35.53,  136.16]
+      ]
+    },
+    {
+      "name": "Lake Kawaguchi",
+      "ellipse": {"lat": 35.5172, "lng": 138.7515, "rx": 0.038, "ry": 0.0065}
+    },
+    {
+      "name": "Lake Yamanaka",
+      "ellipse": {"lat": 35.4167, "lng": 138.8722, "rx": 0.03, "ry": 0.011}
+    },
+    {
+      "name": "Lake Ashi",
+      "ellipse": {"lat": 35.2056, "lng": 139.0, "rx": 0.009, "ry": 0.03}
+    }
+  ],
+  "seas": [
+    {"label": "Sea of Japan", "lat": 37.75, "lng": 135.4, "rotate": -28},
+    {"label": "Pacific Ocean", "lat": 33.75, "lng": 138.6, "rotate": -12}
+  ],
+  "snow_prefectures": [
+    "niigata",
+    "toyama",
+    "ishikawa",
+    "fukui",
+    "gifu",
+    "nagano",
+    "yamagata",
+    "akita",
+    "aomori",
+    "iwate",
+    "hokkaido"
+  ],
+  "ranges": [
+    {
+      "name": "Northern Alps",
+      "points": [
+        [36.8,  137.76],
+        [36.66,  137.7],
+        [36.57,  137.62],
+        [36.45,  137.63],
+        [36.34,  137.65],
+        [36.29,  137.65],
+        [36.2,  137.6],
+        [36.11,  137.55],
+        [35.95,  137.5]
+      ]
+    },
+    {
+      "name": "Central Alps",
+      "points": [
+        [35.95,  137.82],
+        [35.79,  137.8],
+        [35.66,  137.83],
+        [35.52,  137.8]
+      ]
+    },
+    {
+      "name": "Southern Alps",
+      "points": [
+        [35.78,  138.24],
+        [35.67,  138.24],
+        [35.57,  138.19],
+        [35.46,  138.16],
+        [35.33,  138.12],
+        [35.22,  138.05]
+      ]
+    },
+    {
+      "name": "Ryohaku",
+      "points": [
+        [36.4,  136.8],
+        [36.25,  136.79],
+        [36.155,  136.77],
+        [36.0,  136.73]
+      ]
+    },
+    {
+      "name": "Kanto mountains",
+      "points": [
+        [36.05,  138.8],
+        [35.95,  138.92],
+        [35.86,  138.97],
+        [35.75,  139.05]
+      ]
+    },
+    {
+      "name": "Mikuni",
+      "points": [
+        [37.0,  138.8],
+        [36.85,  138.72],
+        [36.75,  138.85],
+        [36.85,  139.1]
+      ]
+    }
+  ]
+}

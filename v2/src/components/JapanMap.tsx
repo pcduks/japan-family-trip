@@ -2,9 +2,11 @@
 
 import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useId, useMemo, useState } from "react";
 import { regionColor } from "@/lib/colors";
-import { MAP, project, REGION_PREFECTURES } from "@/lib/map";
+import { legsOf, smoothPath } from "@/lib/journey";
+import { project, REGION_PREFECTURES } from "@/lib/map";
+import { MapInk, MapInkDefs } from "./MapInk";
 import type { Region, Stay } from "@/lib/types";
 
 /** Label nudges for the crowded middle of Honshu, in viewBox units. */
@@ -38,29 +40,25 @@ export function JapanMap({ regions, stays, highlight = null, weight, view = "hea
   const route = useMemo(() => (stays ?? []).map((s) => ({ s, ...project(regions.find((r) => r.id === s.region)?.lat ?? 35, regions.find((r) => r.id === s.region)?.lng ?? 135) })), [stays, regions]);
   const lit = new Set((hover ?? selected) ? REGION_PREFECTURES[(hover ?? selected)!] ?? [] : []);
   const routeIds = new Set(route.map((p) => p.s.region));
+  const uid = useId().replace(/[^a-zA-Z0-9]/g, "");
+  const vbW = Number(VIEWS[view].split(" ")[2]);
+  const k = vbW / 360;
+  const routeSig = (stays ?? []).map((s) => s.region).join("|");
+  const regionCount = regions.length;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const legs = useMemo(() => legsOf(stays ?? [], regions), [routeSig, regionCount]);
   const dimmed = (id: string) => (highlight && !highlight.has(id)) || (stays && stays.length > 0 && !routeIds.has(id) && !highlight);
 
   return (
-    <div className={`relative overflow-hidden rounded-2xl ${className}`} style={{ background: "radial-gradient(120% 90% at 30% 20%, color-mix(in srgb, var(--card) 70%, transparent), transparent 60%), var(--bg-2)" }}>
+    <div className={`journey relative overflow-hidden rounded-2xl ${className}`}>
       <svg viewBox={VIEWS[view]} className="block h-auto w-full select-none" role="img" aria-label="Map of Japan with the areas we researched">
         <defs>
-          <filter id="paper" x="-5%" y="-5%" width="110%" height="110%">
-            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n" />
-            <feColorMatrix in="n" type="saturate" values="0" result="g" />
-            <feComponentTransfer in="g" result="t">
-              <feFuncA type="table" tableValues="0 0.06" />
-            </feComponentTransfer>
-            <feComposite in="SourceGraphic" in2="t" operator="over" />
-          </filter>
+          <MapInkDefs uid={uid} />
         </defs>
-        <g filter="url(#paper)">
-          {MAP.locations.map((p) => (
-            <path key={p.id} d={p.path} fill={lit.has(p.id) ? "color-mix(in srgb, var(--accent) 22%, var(--card))" : "var(--card)"} stroke="color-mix(in srgb, var(--ink) 45%, transparent)" strokeWidth={0.5} strokeLinejoin="round" style={{ transition: "fill 0.25s" }} />
-          ))}
-        </g>
-        {route.length > 1 ? (
-          <motion.polyline points={route.map((p) => `${p.x},${p.y}`).join(" ")} fill="none" stroke="var(--ink)" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" strokeDasharray="3 2.2" initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 0.85 }} transition={{ duration: 1.2, ease: "easeInOut" }} />
-        ) : null}
+        <MapInk uid={uid} k={k * 0.55} lit={lit} quiet />
+        {legs.map((l, i) => (
+          <motion.path key={l.key + l.index} d={smoothPath(l.points)} fill="none" stroke="var(--jm-ink)" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" strokeDasharray="4 3" vectorEffect="non-scaling-stroke" initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 0.85 }} transition={{ duration: 0.5, delay: 0.15 + i * 0.18, ease: "easeInOut" }} />
+        ))}
         {points.map(({ r, x, y }) => {
           const w = weight?.(r.id) ?? 1;
           const rad = 2.6 + w * 1.1;
