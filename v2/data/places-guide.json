@@ -1,0 +1,11 @@
+{
+  "_about": "What each researched place is famous for, what to expect, and reference links. Being written; entries are added per place id.",
+  "reputations": {
+    "classic": "A classic, for good reason",
+    "real": "Less known, the real thing",
+    "photo": "Famous online; go for the picture, do not plan a day around it",
+    "both": "Famous online and worth it",
+    "food": "A well-regarded place to eat"
+  },
+  "places": {}
+}

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { youtubeId } from "@/lib/google/ids";
+import { placeGuide, REPUTATION } from "@/lib/placesGuide";
 import type { PlaceDetails, Size } from "@/lib/types";
 import { Comments } from "./Comments";
 import { RegionCover } from "./RegionCover";
@@ -11,7 +12,7 @@ import { fmtDay } from "@/lib/dates";
 import { useStore } from "./providers";
 import { Avatar, Back, Checked, Page, PageHeader, RegionDot, Section } from "./ui";
 
-const SIZE_LABEL: Record<Size, string> = { main: "Main outing · half a day", short: "Short visit · 1–2 h", day_trip: "Day trip · a whole day", evening: "Evening", meal: "Meal" };
+const SIZE_LABEL: Record<Size, string> = { main: "Half a day", short: "An hour or two", day_trip: "A whole day", evening: "Evening", meal: "Meal" };
 
 export function PlaceView({ id }: { id: string }) {
   const { snapshot, me, isPlanner, toggleReaction, demo } = useStore();
@@ -52,6 +53,7 @@ export function PlaceView({ id }: { id: string }) {
   const staysHere = snapshot.versions.find((v) => v.status === "plan")?.stays.filter((s) => s.region === p.region) ?? [];
   const plannedOn = snapshot.days.filter((d) => d.version_id === "plan").flatMap((d) => d.items.filter((it) => it.place_id === p.id).map((it) => ({ date: d.date, slot: it.slot, crew: it.crew, note: it.note })));
   const guideTab = reportTabForRegion(p.region);
+  const guide = placeGuide(p.id);
 
   async function searchVideos() {
     const r = await fetch(`/api/videos/search?q=${encodeURIComponent(videoQ || `${p!.name} ${region?.name ?? ""} Japan`)}`);
@@ -80,7 +82,7 @@ export function PlaceView({ id }: { id: string }) {
             plannedOn.map((x, i) => (
               <span key={i} className="chip text-ok">
                 In the plan · {fmtDay(x.date)} {x.slot === "early" ? "dawn" : x.slot}
-                {x.crew !== "everyone" ? ` · ${x.crew} crew` : ""}
+                {x.crew === "early" ? " · early start, optional" : x.crew === "easy" ? " · easy option" : ""}
               </span>
             ))
           ) : (
@@ -110,6 +112,27 @@ export function PlaceView({ id }: { id: string }) {
       ) : (
         <RegionCover regionId={p.region} className="aspect-[4/3] w-full rounded-2xl" />
       )}
+
+      {guide ? (
+        <section className="card grid gap-2 p-4" aria-label="What to expect">
+          <p className="flex flex-wrap items-center gap-2">
+            <span className={`chip ${guide.reputation === "photo" ? "text-warn" : "text-ok"}`}>{REPUTATION[guide.reputation] ?? guide.reputation}</span>
+          </p>
+          <p>
+            <b>Famous for:</b> {guide.famous_for}
+          </p>
+          <p className="text-ink-2">{guide.expect}</p>
+          {guide.links.length ? (
+            <p className="flex flex-wrap gap-x-3 gap-y-1 text-sm">
+              {guide.links.map((l) => (
+                <a key={l.url} href={l.url} target="_blank" rel="noreferrer">
+                  {l.label} ↗
+                </a>
+              ))}
+            </p>
+          ) : null}
+        </section>
+      ) : null}
 
       <div className="card grid gap-3 p-4">
         <dl className="grid gap-2 text-sm">

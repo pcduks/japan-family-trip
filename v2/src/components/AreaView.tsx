@@ -7,6 +7,7 @@ import foodGuide from "../../data/food-guide.json";
 import why from "../../data/why.json";
 import { areaInfo, cardsFor, sourceHref, type CatalogCard } from "@/lib/areas";
 import { fitLabel, regionColor } from "@/lib/colors";
+import { placeGuide, REPUTATION_SHORT } from "@/lib/placesGuide";
 import { fmtDay } from "@/lib/dates";
 import { legBetween } from "@/lib/legs";
 import { lodgingFor, TIER_LABEL } from "@/lib/lodging";
@@ -22,7 +23,7 @@ import { Back, Page, RegionDot, Section } from "./ui";
 const FOOD_REGION: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", hakone: "hakone", kawaguchiko: "hakone" };
 const NOT_CHOSEN = (why as { not_chosen: { items: { region: string; why: string; comeback: string }[] } }).not_chosen.items;
 const FOOD = foodGuide as unknown as { regions: Record<string, { title: string; dishes: string[]; intro: string; for_her: string; dates: string }> };
-const SIZE_LABEL: Record<string, string> = { main: "Main outing", short: "Short visit", day_trip: "Day trip", evening: "Evening", meal: "Meal" };
+const SIZE_LABEL: Record<string, string> = { main: "Half a day", short: "An hour or two", day_trip: "Day trip", evening: "Evening", meal: "Meal" };
 
 /** One area, the same shape whether it is in the route or not: known for, in our window, feel, getting there, what we would do, eat, sleep, for her, our verdict, sources. */
 export function AreaView({ id }: { id: string }) {
@@ -129,7 +130,7 @@ export function AreaView({ id }: { id: string }) {
         </ul>
         {cards.length ? (
           <details className="rounded-xl bg-bg-2 p-3 text-sm">
-            <summary className="cursor-pointer font-semibold">{cards.length} experiences from the research catalogue, with how each one suits her</summary>
+            <summary className="cursor-pointer font-semibold">{cards.length} more things to do here, with how each one suits her</summary>
             <ul className="grid gap-2 pt-2">
               {cards.map((c) => (
                 <CardRow key={c.id} c={c} />
@@ -172,7 +173,7 @@ export function AreaView({ id }: { id: string }) {
               <b>{nights.nights} night{nights.nights === 1 ? "" : "s"} at {pace}.</b> {nights.reason}
             </p>
           ) : null}
-          <Tier title="Must do" blurb="anchors a day" list={must} planned={planned} her={herLabel} />
+          <Tier title="Must do" blurb="worth building a day around" list={must} planned={planned} her={herLabel} />
           <Tier title="Nice to do" blurb="fits an afternoon" list={nice} planned={planned} her={herLabel} />
           <Tier title="Nice to have" blurb="if there is time" list={maybe} planned={planned} her={herLabel} />
         </Section>
@@ -306,6 +307,7 @@ function Tier({ title, blurb, list, planned, her }: { title: string; blurb: stri
               {p.why ? <span className="block text-ink-2">{p.why}</span> : null}
               <span className="block text-xs text-muted">
                 {SIZE_LABEL[p.size] ?? p.size} · {her(p)}
+                {placeGuide(p.id) ? ` · ${REPUTATION_SHORT[placeGuide(p.id)!.reputation] ?? ""}` : ""}
                 {planned.get(p.id)?.length ? ` · ${fmtDay(planned.get(p.id)![0])}` : ""}
               </span>
             </span>
