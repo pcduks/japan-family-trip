@@ -20,7 +20,7 @@ const GROUPS: { k: string; label: string; blurb: string }[] = [
   { k: "not_this_trip", label: "Not this trip", blurb: "worth a trip of their own" },
 ];
 
-/** Step one: the whole country, the areas we researched, and a way in to each. */
+/** Home: the whole country, the areas we researched, and a way in to each. */
 export function Explore() {
   const { snapshot } = useStore();
   const [tag, setTag] = useState<string | null>(null);
@@ -69,7 +69,7 @@ export function Explore() {
 
       <Link href="/route" className="card flex items-center justify-between gap-3 border-accent/40 p-4 no-underline">
         <span className="grid gap-0.5">
-          <span className="eyebrow text-accent">Step two</span>
+          <span className="eyebrow text-accent">Next</span>
           <span className="display text-[1.35rem] leading-tight">The route that came out of this, and why</span>
           <span className="text-sm text-ink-2">{plan ? `${new Set(plan.stays.map((s) => s.region)).size} bases over ${snapshot.trip.nights} nights, the three facts behind it, and what we could change.` : ""}</span>
         </span>

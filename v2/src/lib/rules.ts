@@ -68,11 +68,11 @@ export function checkStays(stays: Stay[], pace: Pace, ctx: RulesContext): Findin
     }
   }
 
-  // min_two_nights
+  // min_two_nights: a suggestion, not a rule
   stays.forEach((s, i) => {
     if (s.nights < 2 && s.nights > 0)
-      out.push({ rule: "min_two_nights", severity: "warn", stayIndex: i, message: `${name(regions, s.region)} is only ${s.nights} night: a one-night stop costs half a day packing and checking in.` });
-    if (s.nights <= 0) out.push({ rule: "min_two_nights", severity: "warn", stayIndex: i, message: `${name(regions, s.region)} has no nights.` });
+      out.push({ rule: "min_two_nights", severity: "info", stayIndex: i, message: `${name(regions, s.region)} is one night. That is half a day of packing and checking in; fine for a stopover, worth two nights if there is much to see.` });
+    if (s.nights <= 0) out.push({ rule: "min_two_nights", severity: "info", stayIndex: i, message: `${name(regions, s.region)} has no nights.` });
   });
 
   // no_peak_moves
@@ -146,8 +146,8 @@ export function checkDays(items: DayItemLike[], pace: Pace, ctx: RulesContext): 
         out.push({ rule: "pregnancy_flags", severity: "info", date, placeId: p.id, source: p.links?.source ?? null, message: `${p.name} on ${fmtDay(date)} is ${p.status === "avoid_for_her" ? "marked avoid for her" : "high effort for her"}${p.effort_note ? `: ${p.effort_note}` : ""}.` });
       if (p.size === "main" || p.size === "day_trip") mains += p.size === "day_trip" ? level.main_per_day : 1;
     }
-    if (mains > level.main_per_day) out.push({ rule: "pace_overload", severity: "warn", date, message: `${fmtDay(date)} has ${mains} main outings; ${pace} allows ${level.main_per_day}.` });
-    if (!hasRest && level.rest_window && list.length) out.push({ rule: "pace_overload", severity: "warn", date, message: `${fmtDay(date)} has no rest window (${level.rest_window} at ${pace}).` });
+    if (mains > level.main_per_day) out.push({ rule: "pace_overload", severity: "info", date, message: `${fmtDay(date)} has ${mains} half-day visits; at a ${pace} pace ${level.main_per_day === 1 ? "one is usually enough" : `${level.main_per_day} is plenty`}. Split the group or drop one if it feels like a lot.` });
+    if (!hasRest && level.rest_window && list.length) out.push({ rule: "pace_overload", severity: "info", date, message: `${fmtDay(date)} has no free afternoon. A break after lunch helps her; a suggestion, not a rule.` });
   }
   return out;
 }

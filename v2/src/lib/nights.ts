@@ -50,7 +50,7 @@ export function suggestNights(
       const leftover = Math.max(0, shorts.length - fullDays * level.short_per_day);
       extraShortDays = Math.min(MAX_EXTRA_SHORT_DAYS, Math.ceil(leftover / level.short_per_day));
     } else {
-      // Gentle: one thing a day, so a morning of short visits is its own day.
+      // Gentle: one thing a day, so a morning of quick visits is its own day.
       extraShortDays = Math.min(MAX_EXTRA_SHORT_DAYS, shorts.length);
     }
   }
@@ -63,17 +63,17 @@ export function suggestNights(
 
   const paceWord = pace.charAt(0).toUpperCase() + pace.slice(1);
   const bits: string[] = [];
-  if (activeDays === 0) bits.push("nothing in the library needs a full day here");
+  if (activeDays === 0) bits.push("nothing here needs a full day");
   else {
-    bits.push(`${mains.length} main outing${mains.length === 1 ? "" : "s"} at ${paceWord} (${level.main_per_day} a day) = ${fullDays} full day${fullDays === 1 ? "" : "s"}`);
+    bits.push(`${mains.length} half-day visit${mains.length === 1 ? "" : "s"}, ${level.main_per_day} a day at a ${paceWord.toLowerCase()} pace, so ${fullDays} full day${fullDays === 1 ? "" : "s"}`);
     if (shorts.length)
       bits.push(
         extraShortDays
-          ? `${shorts.length} short visits, ${extraShortDays} extra day for the ones that don't fit the afternoons`
-          : `${shorts.length} short visit${shorts.length === 1 ? "" : "s"} fill the afternoons`,
+          ? `${shorts.length} quick visits, ${extraShortDays} extra day for the ones that do not fit the afternoons`
+          : `${shorts.length} quick visit${shorts.length === 1 ? "" : "s"} fill the afternoons`,
       );
     bits.push("plus the arrival day");
-    if (restDays) bits.push(`${restDays} rest day${restDays === 1 ? "" : "s"}`);
+    if (restDays) bits.push(`${restDays} easy day${restDays === 1 ? "" : "s"}`);
   }
   // Calendar notes: closures and Monday-closed museums on the stay's dates.
   const notes: string[] = [];
@@ -88,7 +88,7 @@ export function suggestNights(
   }
   let reason = `${nights ?? computed} night${nights === 1 ? "" : "s"}: ${bits.join(", ")}`;
   if (researched != null && researched !== computed) {
-    reason += `. Counting the library's top picks gives ${computed}; the research settled on ${researchedRaw} because the doc groups nearby places into one outing and allows for the calendar`;
+    reason += `. Counting the top picks alone gives ${computed}; ${researchedRaw} is the better answer because nearby places group into one visit and the calendar needs slack`;
   }
   if (notes.length) reason += `. ${notes.join("; ")}`;
   return { nights, researched: researchedRaw ?? null, computed, reason: reason + ".", mains, shorts };

@@ -40,7 +40,7 @@
   ]
  },
  "pace": {
-  "rule": "nights = arrival day + full days needed for main outings at this pace + rest days; short visits fill afternoons; the calendar then adjusts",
+  "rule": "nights = arrival day + full days needed for the half-day visits at this pace + easy days; quick visits fill afternoons; the calendar then adjusts",
   "levels": {
    "gentle": {
     "main_per_day": 1,
@@ -52,7 +52,7 @@
    "balanced": {
     "main_per_day": 1,
     "short_per_day": 1,
-    "travel_day": "1 short visit",
+    "travel_day": "1 quick visit",
     "rest_window": "14:00-16:00",
     "rest_day_every": 4.5,
     "walking_km": "8-10"
@@ -60,7 +60,7 @@
    "full": {
     "main_per_day": 2,
     "short_per_day": 1,
-    "travel_day": "1 main outing",
+    "travel_day": "1 half-day visit",
     "rest_day_every": null,
     "walking_km": "14-16"
    }
@@ -69,7 +69,7 @@
    "main": "Half a day, 3-4 h",
    "short": "1-2 h",
    "evening": "Not counted",
-   "day_trip": "A whole day, replaces a main outing",
+   "day_trip": "A whole day, replaces a half-day visit",
    "meal": "Not counted"
   }
  },
@@ -529,8 +529,8 @@
    "lat": 34.39,
    "lng": 132.46,
    "status": "option",
-   "summary": "Peace Park and the floating torii; in the Full version only",
-   "fit": "Day trip from Okayama, or 2 nights in the Full version",
+   "summary": "Peace Park and the floating torii; only in the fuller alternative",
+   "fit": "Day trip from Okayama, or 2 nights in the fuller alternative",
    "suggested_nights": null,
    "sources": [
     "https://gethiroshima.com/features/all-you-need-to-know-about-miyajima-at-new-year/"
@@ -2666,7 +2666,7 @@
    "name": "Fushimi Inari at dawn",
    "kind": "sight",
    "size": "main",
-   "why": "Torii tunnels; early crew",
+   "why": "Torii tunnels; best at dawn, before the crowds",
    "hours": null,
    "closures": [],
    "closed_weekdays": [],
@@ -3671,7 +3671,7 @@
    "name": "Mt Fuji Panoramic Ropeway",
    "kind": "nature",
    "size": "main",
-   "why": "Three minutes up to the Kachi Kachi viewpoint over the lake and Fuji; the main outing, with the lake cruise",
+   "why": "Three minutes up to the Kachi Kachi viewpoint over the lake and Fuji; the big thing of the day, with the lake cruise",
    "hours": "9:00-17:00 in winter; stops in strong wind",
    "closures": [],
    "closed_weekdays": [],
@@ -3717,7 +3717,7 @@
    "name": "Chureito Pagoda",
    "kind": "viewpoint",
    "size": "short",
-   "why": "The postcard shot: the red pagoda with Fuji behind. 398 steps, so for the early crew only",
+   "why": "The postcard shot: the red pagoda with Fuji behind. 398 steps, so not for her",
    "hours": "Always open",
    "closures": [],
    "closed_weekdays": [],

@@ -7,7 +7,7 @@ import type { Place, Size } from "@/lib/types";
 import { useStore } from "./providers";
 import { Back, Empty, Page, PageHeader, RegionDot } from "./ui";
 
-const SIZE_LABEL: Record<Size, string> = { main: "Main outing", short: "Short visit", day_trip: "Day trip", evening: "Evening", meal: "Meal" };
+const SIZE_LABEL: Record<Size, string> = { main: "Half a day", short: "An hour or two", day_trip: "Day trip", evening: "Evening", meal: "Meal" };
 const EFFORT: Record<string, string> = { low: "easy for her", moderate: "moderate for her", high: "hard for her" };
 
 /** Lazy photo: only asks the server once the card is near the viewport. */
@@ -119,7 +119,7 @@ export function PlacesList() {
           <div className="seg">
             {(["", "main", "short", "day_trip", "meal"] as const).map((s) => (
               <button key={s} aria-pressed={size === s} onClick={() => setSize(s)}>
-                {s ? SIZE_LABEL[s as Size].split(" ")[0] : "Any"}
+                {s ? SIZE_LABEL[s as Size] : "Any"}
               </button>
             ))}
           </div>

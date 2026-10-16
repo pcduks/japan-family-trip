@@ -67,7 +67,7 @@ export function Missing() {
                           source
                         </a>
                       ) : (
-                        "from the plan doc"
+                        "from the region guides"
                       )}
                     </p>
                     <div className="flex flex-wrap gap-2">

@@ -14,9 +14,9 @@ import { useStore } from "./providers";
 import { Avatar, Empty, Page, PageHeader, RegionDot, Section } from "./ui";
 
 const PACE_BLURB: Record<Pace, string> = {
-  gentle: "One main outing a day, done in the morning, then rest. Nobody is ever tired.",
-  balanced: "One main outing, a 2–4 pm rest, then one short visit. Full days with a real break.",
-  full: "Two main outings a day. A classic sightseeing trip; tiring by week two.",
+  gentle: "One big thing a day, in the morning, then rest. Nobody is ever tired.",
+  balanced: "One big thing in the morning, a quiet afternoon, one quick visit later. Full days with a real break.",
+  full: "Two big things a day. A classic sightseeing trip; tiring by week two.",
 };
 
 export function Vote() {

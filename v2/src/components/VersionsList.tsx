@@ -57,7 +57,7 @@ export function NewVersion() {
     <Page>
       <Back href="/route">The route</Back>
       <PageHeader eyebrow="My versions" title="New version">
-        Pick a starting point. Then drag the stops, tap a name to swap it, use +/− for nights; the rules check runs as you go and every change saves on its own.
+        Pick a starting point. Then drag the stops, tap a name to swap it, use +/− for nights; the app points out closed days and long days as you go, and every change saves on its own.
       </PageHeader>
       <label className="grid gap-1">
         <span className="eyebrow">Name</span>
