@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { youtubeId } from "@/lib/google/ids";
 import { placeGuide, REPUTATION } from "@/lib/placesGuide";
+import { PlacePrefs } from "./PlacePrefs";
 import type { PlaceDetails, Size } from "@/lib/types";
 import { Comments } from "./Comments";
 import { RegionCover } from "./RegionCover";
@@ -89,6 +90,9 @@ export function PlaceView({ id }: { id: string }) {
             <span className="chip text-muted">Not in the plan yet · a candidate near {region?.name ?? "our base"}</span>
           )}
         </p>
+        <div className="pt-1">
+          <PlacePrefs placeId={p.id} />
+        </div>
       </PageHeader>
 
       {details?.photos.length ? (

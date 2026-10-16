@@ -15,6 +15,8 @@ export interface AreaInfo {
   feel: string;
   getting_there: string;
   for_her: string;
+  /** route | near | north | alps | west | south */
+  zone: string;
 }
 export interface CatalogCard {
   id: string;
@@ -35,8 +37,10 @@ export interface CatalogCard {
   source: string;
 }
 
-const A = areasJson as unknown as { tags: Record<string, string>; areas: Record<string, AreaInfo> };
+const A = areasJson as unknown as { tags: Record<string, string>; zones: Record<string, string>; areas: Record<string, AreaInfo> };
 export const AREA_TAGS = A.tags;
+/** Zone id → heading, in display order. */
+export const ZONES: [string, string][] = Object.entries(A.zones);
 export const CATALOG = catalogJson as CatalogCard[];
 
 export function areaInfo(id: string): AreaInfo | null {
