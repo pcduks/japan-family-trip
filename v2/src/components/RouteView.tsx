@@ -3,7 +3,9 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useMotionValue, type MotionValue } from "motion/react";
+import { useMotionValue, useMotionValueEvent, type MotionValue } from "motion/react";
+import { regionColor } from "@/lib/colors";
+import { travelAt } from "@/lib/journey";
 import why from "../../data/why.json";
 import { budgetOf, BUDGET_RATES, fmtJpyShort, fmtSgd, jpyToSgd, stayCost } from "@/lib/budget";
 import { dateRange, fmtRange } from "@/lib/dates";
@@ -37,6 +39,13 @@ export function RouteView() {
   const listRef = useRef<HTMLOListElement>(null);
   const stickyRef = useRef<HTMLDivElement>(null);
   const t = useStopScroll(listRef, stickyRef);
+  const [activeStop, setActiveStop] = useState(0);
+  const stopCount = (snapshot.versions.find((x) => x.id === shown) ?? plan)?.stays.length ?? 0;
+  useMotionValueEvent(t, "change", (val) => {
+    const { stop, travel } = travelAt(val, stopCount);
+    const now = travel > 0.5 ? Math.min(stopCount - 1, stop + 1) : stop;
+    setActiveStop((prev) => (prev === now ? prev : now));
+  });
   const wide = useWide();
   /** Bring stop i into view just under the pinned map. */
   const scrollToStop = useCallback((i: number) => {
@@ -205,7 +214,7 @@ export function RouteView() {
                     </span>
                   </p>
                 ) : null}
-                <div className="card grid gap-0 overflow-hidden">
+                <div className="card grid gap-0 overflow-hidden transition-shadow duration-300" style={activeStop === i ? { boxShadow: `0 0 0 2px ${regionColor(s.region)}, var(--shadow)` } : undefined}>
                   <Link href={`/areas/${s.region}`} className="flex gap-3 no-underline">
                     <RegionCover regionId={s.region} className="w-20 shrink-0 self-stretch sm:w-32" sizes="160px" />
                     <div className="grid min-w-0 flex-1 gap-1 py-3 pr-3">

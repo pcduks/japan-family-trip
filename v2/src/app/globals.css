@@ -460,7 +460,9 @@
   top: -6px;
   border-radius: 999px;
   background: #fff;
-  box-shadow: 0 0 3px rgba(42, 63, 111, 0.35);
+  box-shadow:
+    0 0 0 1px rgba(42, 63, 111, 0.28),
+    0 1px 4px rgba(42, 63, 111, 0.35);
   opacity: 0;
   animation-name: jm-fall;
   animation-timing-function: linear;

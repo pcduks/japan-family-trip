@@ -270,13 +270,16 @@ function SegmentPath({ d, mode }: { d: string; mode: Mode }) {
   return <path d={d} fill="none" stroke="var(--jm-ink)" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />;
 }
 
+/** Places the line passes that are part of the trip, kept on the map once travelled. */
+const VIA = new Set(["Shirakawa-go"]);
+
 function Stations({ leg, index }: { leg: Leg; index: number }) {
   const named = leg.points.map((p, i) => ({ p, name: leg.names[i] })).filter((s): s is { p: Pt; name: string } => !!s.name);
   if (!named.length) return null;
   return (
     <>
       {named.map(({ p, name }) => (
-        <g key={name} data-gx={p.x} data-gy={p.y} data-station={index} style={{ opacity: 0, transition: "opacity 0.3s" }} pointerEvents="none">
+        <g key={name} data-gx={p.x} data-gy={p.y} data-station={index} data-via={VIA.has(name) ? "1" : undefined} style={{ opacity: 0, transition: "opacity 0.3s" }} pointerEvents="none">
           <circle r={2.4} fill="var(--jm-land)" stroke="var(--jm-ink)" strokeWidth={1.1} />
           <text x={5} y={3} fontSize={9.5} fill="var(--jm-ink)" opacity={0.8} stroke="var(--jm-land)" strokeWidth={2.4} paintOrder="stroke" style={{ fontFamily: "var(--font-sans)" }}>
             {name}
@@ -287,13 +290,13 @@ function Stations({ leg, index }: { leg: Leg; index: number }) {
   );
 }
 
-const FLAKES = Array.from({ length: 26 }, (_, i) => ({ left: (i * 37) % 100, delay: (i * 0.73) % 6, dur: 5 + ((i * 1.7) % 4), size: 2 + ((i * 7) % 3) }));
+const FLAKES = Array.from({ length: 34 }, (_, i) => ({ left: (i * 37) % 100, delay: (i * 0.73) % 6, dur: 5 + ((i * 1.7) % 4), size: 3 + ((i * 7) % 3) }));
 
 function Snowfall() {
   return (
     <div className="jm-snowfall pointer-events-none absolute inset-0" aria-hidden="true">
       {FLAKES.map((f, i) => (
-        <span key={i} style={{ left: `${f.left}%`, width: f.size, height: f.size, animationDelay: `${f.delay}s`, animationDuration: `${f.dur}s` }} />
+        <span key={i} style={{ left: `${f.left}%`, width: f.size, height: f.size, animationDelay: `-${f.delay}s`, animationDuration: `${f.dur}s` }} />
       ))}
     </div>
   );
@@ -405,7 +408,10 @@ function startEngine(o: EngineOpts): Engine {
       s.el.dataset.arrived = s.stops.some((i) => h >= legsBefore[i] - 0.001) ? "1" : "0";
       s.el.dataset.here = stopNow >= 0 && s.stops.includes(stopNow) ? "1" : "0";
     }
-    for (const el of stations) el.style.opacity = Number(el.dataset.station) === travelling ? "1" : "0";
+    for (const el of stations) {
+      const j = Number(el.dataset.station);
+      el.style.opacity = j === travelling || (el.dataset.via && h >= j + 1) ? "1" : "0";
+    }
 
     if (travelling >= 0 && train && masks[travelling] && lens[travelling]) {
       const m = masks[travelling]!;
