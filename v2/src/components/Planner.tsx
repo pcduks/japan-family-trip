@@ -193,7 +193,7 @@ export function Planner({ version, onSuggest }: { version: Version; onSuggest?: 
               Fit to {snapshot.trip.nights}
             </button>
           ) : null}
-          <span className={errors ? "text-danger" : warns ? "text-warn" : "text-ok"}>{errors ? `${errors} to fix` : warns ? `${warns} warning${warns > 1 ? "s" : ""}` : "rules ok"}</span>
+          <span className={errors ? "text-danger" : warns ? "text-warn" : "text-ok"}>{errors ? `${errors} to fix` : warns ? `${warns} warning${warns > 1 ? "s" : ""}` : "nothing to flag"}</span>
           <span className="text-muted">{fmtSgd(budget.perCoupleSgd)} per couple</span>
           <span className="ml-auto flex items-center gap-2">
             {undo.length ? (

@@ -20,7 +20,7 @@ import { Back, Page, RegionDot, Section } from "./ui";
 type Src = { label: string; url: string };
 const WHY = why as unknown as { facts: { title: string; text: string; sources: Src[] }[]; route: { intro: string; steps: { region: string; title: string; text: string }[]; sources: Src[] }; for_whom: { who: string; text: string }[]; trust: { points: string[]; links: { label: string; href: string }[] } };
 
-/** Step two: the route drawn on the map, the facts behind it, the whys, the alternatives, and a quiet way to try a change. */
+/** The route drawn on the map, the facts behind it, the whys, the alternatives, and a way to try a change. */
 export function RouteView() {
   const { snapshot } = useStore();
   const params = useSearchParams();
@@ -43,7 +43,7 @@ export function RouteView() {
     <Page wide>
       <Back href="/">Explore</Back>
       <section className="grid gap-2">
-        <p className="eyebrow">Step two · the route, and why</p>
+        <p className="eyebrow">The route, and why</p>
         <h1 className="display text-[2.3rem] leading-[1.02] sm:text-5xl">{g?.theme ?? plan.name}</h1>
         <p className="max-w-prose text-ink-2">{g?.tagline}</p>
       </section>
@@ -185,7 +185,7 @@ export function RouteView() {
           <Planner key={plan.id} version={plan} />
         ) : (
           <div className="card grid gap-2 p-4">
-            <p className="text-ink-2">Move the stops, swap a place for another from the map, add or take nights. The timeline, the rules and the cost follow live. If this is not your version to edit, your first change makes a copy that is yours to shape and suggest.</p>
+            <p className="text-ink-2">Move the stops, swap a place for another from the map, add or take nights. The timeline, the warnings and the cost update as you go. If this is not your version to edit, your first change makes a copy that is yours to shape and suggest.</p>
             <button className="btn btn-sm justify-self-start" onClick={() => setTryOpen(true)}>
               Open the stops
             </button>

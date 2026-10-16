@@ -128,7 +128,7 @@ export function TripOverview() {
         </>
       ) : null}
 
-      <Section title="The alternatives" aside={`${alternatives.length} from the research`}>
+      <Section title="The alternatives" aside={`${alternatives.length} alternatives`}>
         <p className="text-ink-2">The same 20 nights spent differently. Each one trades something the plan has for something it lacks. Rank them on the Vote page, or open one and move its stops around: it becomes your own version to suggest.</p>
         <ul className="grid gap-3 sm:grid-cols-2">
           {alternatives.map((v) => (

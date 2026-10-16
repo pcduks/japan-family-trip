@@ -203,7 +203,7 @@ export function VersionView({ id }: { id: string }) {
 
       {days.length ? (
         <Section title="Day by day" aside={`${days.length} days · from the plan doc`}>
-          <p className="text-sm text-ink-2">The main thing each day, planned around what is open. “Early crew” is optional: whoever wants more goes early; the others join for breakfast.</p>
+          <p className="text-sm text-ink-2">The main thing each day, planned around what is open. “Early” is optional: whoever wants more goes early; the others join for breakfast.</p>
           <DayByDay days={days} />
         </Section>
       ) : null}

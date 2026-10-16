@@ -57,7 +57,7 @@
         { "place_id": "tk-breweries", "slot": "morning", "crew": "everyone" },
         { "place_id": "tk-floats", "slot": "afternoon", "crew": "everyone" },
         { "place_id": "tk-folkvillage", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": "ok-ropeway", "slot": "morning", "crew": "early", "note": "Okuhida ropeway day trip instead, for the early crew" }
+        { "place_id": "ok-ropeway", "slot": "morning", "crew": "early", "note": "Okuhida ropeway day trip instead, for anyone who wants it" }
       ] },
     { "date": "2026-12-30", "kind": "Move · 45 min", "title": "Limited express to Gero, footbaths, check in at the ryokan",
       "items": [ { "place_id": "gr-baths", "slot": "afternoon", "crew": "everyone" }, { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Ryokan afternoon" } ] },

@@ -36,7 +36,7 @@ export function DayByDay({ days }: { days: Day[] }) {
                 {d.items.map((it, i) => {
                   const p = it.place_id ? snapshot.places.find((x) => x.id === it.place_id) : null;
                   const label = p?.name ?? it.note ?? "";
-                  const crew = it.crew !== "everyone" ? ` · ${it.crew} crew` : "";
+                  const crew = it.crew === "early" ? " · early start, optional" : it.crew === "easy" ? " · easy option" : "";
                   const cls = `chip ${it.crew === "early" ? "border-info/50" : it.crew === "easy" ? "border-ok/50" : ""}`;
                   return p ? (
                     <Link key={i} href={`/places/${p.id}`} className={`${cls} no-underline`} title={it.note ?? undefined}>

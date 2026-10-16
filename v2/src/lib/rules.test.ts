@@ -62,7 +62,7 @@ describe("rules on the seeded versions", () => {
     );
     expect(f.some((x) => x.rule === "closure_check")).toBe(true);
     expect(f.some((x) => x.rule === "pregnancy_flags")).toBe(true);
-    expect(f.filter((x) => x.rule === "pace_overload" && /main outings/.test(x.message)).length).toBe(1);
+    expect(f.filter((x) => x.rule === "pace_overload" && /half-day visits/.test(x.message)).length).toBe(1);
     expect(countBySeverity(f).warn).toBeGreaterThan(0);
   });
 });
@@ -91,7 +91,7 @@ describe("nights suggestion", () => {
   it("explains in plain language", () => {
     const kz = data.regions.find((x) => x.id === "kanazawa")!;
     const s = suggestNights(kz, "balanced", data.places, data.pace, plan.stays[1]);
-    expect(s.reason).toContain("main outing");
+    expect(s.reason).toContain("half-day visit");
     expect(s.reason).toContain("Mon 28 Dec");
   });
 });

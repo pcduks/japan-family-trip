@@ -37,7 +37,7 @@ export function Guide() {
       <Section title="What we need from you">
         <ol className="grid gap-3">
           <Step n={1} title="Pick your pace" href="/vote">
-            Gentle (one thing a day, then rest), Balanced (one main outing, a rest, one short visit) or Full (two main outings). This decides how many nights each place gets, so it is the first question.
+            Gentle (one thing a day, then rest), Balanced (one big thing in the morning, a quiet afternoon, one quick visit later) or Full (two big things a day). This decides how many nights each place gets, so it is the first question.
           </Step>
           <Step n={2} title="Name two must-dos" href="/vote">
             The two places you would be sad to miss. The planners build the days around them.
@@ -46,7 +46,7 @@ export function Guide() {
             Put the versions in your order. Nobody sees the totals until everyone has voted, so vote honestly.
           </Step>
           <Step n={4} title="Move things around (optional)" href="/versions/plan#stops">
-            On any version, drag a stop by its handle to reorder, tap its name to swap the place, use +/− for the nights, or add a stop from the list. The rules check runs as you go and changes save on their own. If it is not your version, your first change makes it yours; when you like it, tap “Suggest this to the plan”. The planners accept or decline, and every change to the plan is logged with a revert.
+            On any version, drag a stop by its handle to reorder, tap its name to swap the place, use +/− for the nights, or add a stop from the list. The app points out closed days, long days and peak-day trains as you go, and changes save on their own. If it is not your version, your first change makes it yours; when you like it, tap “Suggest this to the plan”. The planners accept or decline, and every change to the plan is logged with a revert.
           </Step>
           <Step n={5} title="Comment anywhere">
             Every version, stay and place has comments. A heart on a place says “me too”.
@@ -54,21 +54,21 @@ export function Guide() {
         </ol>
       </Section>
 
-      <Section title="The rules the app checks">
+      <Section title="What the app points out">
         <ul className="grid gap-2 text-ink-2">
-          <li><b className="text-ink">20 nights, no gaps.</b> Stays must run from 20 Dec to 9 Jan.</li>
-          <li><b className="text-ink">Two nights everywhere.</b> A one-night stop costs half a day packing.</li>
-          <li><b className="text-ink">No long moves on peak days.</b> 29–31 Dec and 2–4 Jan are the busiest travel days of the year in Japan. Short hops under an hour are fine.</li>
+          <li><b className="text-ink">20 nights, no gaps.</b> The stays have to cover 20 Dec to 9 Jan; this is the one thing it insists on.</li>
+          <li><b className="text-ink">One-night stops.</b> It mentions them, because a one-night stop costs half a day packing and checking in. Sometimes that is fine.</li>
+          <li><b className="text-ink">Long moves on peak days.</b> 29–31 Dec and 2–4 Jan are the busiest travel days of the year in Japan. Short hops under an hour are fine.</li>
           <li><b className="text-ink">Closures.</b> Most museums close on Mondays and from 29 Dec to 3 Jan. The app flags anything planned on a closed day.</li>
-          <li><b className="text-ink">New Year’s Eve at a ryokan.</b> Restaurants close that night, so dinner should be included.</li>
-          <li><b className="text-ink">Effort for her.</b> Every place carries a note for a pregnant traveller: stairs, ice, long walks, raw food.</li>
-          <li><b className="text-ink">Suggested nights.</b> Each stay shows how many nights the research suggests at your pace, with the reason, so a change is an informed one.</li>
+          <li><b className="text-ink">New Year’s Eve dinner.</b> Restaurants close that night, so it is worth having dinner included wherever we sleep.</li>
+          <li><b className="text-ink">Effort for her.</b> Every place carries a note for a pregnant traveller: stairs, ice, long walks, raw food. Long days and full afternoons get a mention too. These are suggestions; she decides on the day.</li>
+          <li><b className="text-ink">Suggested nights.</b> Each stay shows how many nights make sense at your pace, with the reason, so a change is an informed one.</li>
         </ul>
       </Section>
 
       <Section title="Getting around">
         <ul className="grid gap-2 text-ink-2">
-          <li>Three tabs. <b className="text-ink">Explore</b> is the map of everything we researched; tap an area for what it is known for, what it is like in our window, what we would do there, and why it is in or out. <b className="text-ink">Route</b> is the route that came out of it, the facts and the whys, the alternatives drawn on the same map, the cost, and a quiet way to try a change. <b className="text-ink">Food</b> is where we eat. The full report, the places list and the vote sit under your name at the top right.</li>
+          <li>Three tabs. <b className="text-ink">Explore</b> is the map of everything we researched; tap an area for what it is known for, what it is like in our window, what we would do there, and why it is in or out. <b className="text-ink">Route</b> is the route that came out of it, the facts and the whys, the alternatives drawn on the same map, the cost, and a way to try a change. <b className="text-ink">Food</b> is where we eat. The full report, the places list and the vote sit under your name at the top right.</li>
           <li>Tap your name, top right, for large text, dark mode{isPlanner ? ", the Family list" : ""} and sign out.</li>
           <li>Getting in: type the family code once, then tap your name. No password, no email. Tap your name at the top right to switch person on a shared phone.</li>
         </ul>

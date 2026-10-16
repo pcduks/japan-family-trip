@@ -98,7 +98,7 @@ export function FindingList({ findings, compact = false }: { findings: Finding[]
 export function RuleBadges({ findings }: { findings: Finding[] }) {
   const n = { error: 0, warn: 0, info: 0 };
   findings.forEach((f) => n[f.severity]++);
-  if (!findings.length) return <span className="chip text-ok">✓ rules ok</span>;
+  if (!findings.length) return <span className="chip text-ok">✓ nothing to flag</span>;
   return (
     <span className="flex flex-wrap gap-1">
       {n.error ? <span className="chip text-danger">{n.error} error{n.error > 1 ? "s" : ""}</span> : null}
