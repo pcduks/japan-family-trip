@@ -9,7 +9,7 @@ import type { Region, Stay } from "@/lib/types";
 
 /** Label nudges for the crowded middle of Honshu, in viewBox units. */
 const NUDGE: Record<string, [number, number]> = {
-  shirakawago: [-26, -4], takayama: [10, -6], gero: [10, 6], okuhida: [12, -14], kanazawa: [-30, 2], kyoto: [-22, 2], nara: [8, 9], osaka: [-24, 8], hakone: [8, 8], kawaguchiko: [-4, -9], tokyo: [10, -2], kamakura: [8, 7], nikko: [8, -2], kusatsu: [-26, -2], karuizawa: [10, -2], yudanaka: [-32, -3], matsumoto: [10, 4], "echigo-yuzawa": [10, -3], shuzenji: [2, 10], kinosaki: [-30, -2], okayama: [-4, 10], hiroshima: [-4, 10], koyasan: [6, 8], kumano: [6, 8], ginzan: [8, -2], "south-tohoku": [8, 4], "north-tohoku": [8, 0], hokkaido: [6, 8], kyushu: [-8, 12], shikoku: [-6, 10], okinawa: [20, -8],
+  shirakawago: [-26, -4], takayama: [10, -6], gero: [-8, 1], okuhida: [12, -14], kanazawa: [-30, 2], kyoto: [-22, 2], nara: [8, 9], osaka: [-24, 8], hakone: [8, 8], kawaguchiko: [-2, 11], tokyo: [10, -2], kamakura: [8, 7], nikko: [8, -2], kusatsu: [-26, -2], karuizawa: [10, -2], yudanaka: [-32, -3], matsumoto: [10, 4], "echigo-yuzawa": [10, -3], shuzenji: [2, 10], kinosaki: [-30, -2], okayama: [-4, 10], hiroshima: [-4, 10], koyasan: [6, 8], kumano: [6, 8], ginzan: [8, -2], "south-tohoku": [8, 4], "north-tohoku": [8, 0], hokkaido: [6, 8], kyushu: [-8, 12], shikoku: [-6, 10], okinawa: [20, -8],
 };
 const SHORT: Record<string, string> = { shirakawago: "Shirakawa-go", yudanaka: "Snow monkeys", okayama: "Okayama & Naoshima", "south-tohoku": "Sendai & Zao", "north-tohoku": "N. Tohoku", "echigo-yuzawa": "Yuzawa", kumano: "Kumano", kyushu: "Kyushu", shikoku: "Shikoku", hokkaido: "Hokkaido" };
 
