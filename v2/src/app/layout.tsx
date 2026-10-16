@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Figtree, Fraunces } from "next/font/google";
+import { Figtree, Fraunces, Shippori_Mincho } from "next/font/google";
 import Script from "next/script";
 import { AppHeader, BottomNav } from "@/components/AppChrome";
 import { Gate } from "@/components/Gate";
@@ -9,6 +9,8 @@ import { adminSupabase, getViewer } from "@/lib/supabase/server";
 import "./globals.css";
 
 const display = Fraunces({ subsets: ["latin"], axes: ["opsz", "SOFT"], weight: "variable", style: ["normal", "italic"], variable: "--font-display-face", display: "swap" });
+/** Place names in Japanese on the map and the picture scroll; only the glyphs used are downloaded. */
+const jp = Shippori_Mincho({ weight: ["500", "700"], preload: false, variable: "--font-jp", display: "swap" });
 const body = Figtree({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-body", display: "swap" });
 
 export const metadata: Metadata = {
@@ -34,7 +36,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   const me: Me | null | "demo" = viewer === "demo" ? "demo" : viewer ? { travellerId: viewer.travellerId, name: viewer.name, role: viewer.role } : null;
 
   return (
-    <html lang="en" suppressHydrationWarning className={`${display.variable} ${body.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${display.variable} ${body.variable} ${jp.variable}`}>
       <head>
         <Script id="prefs-boot" strategy="beforeInteractive">
           {PREFS_BOOT_SCRIPT}

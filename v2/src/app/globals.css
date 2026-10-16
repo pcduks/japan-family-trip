@@ -362,3 +362,227 @@
   min-height: 0;
   margin-right: 0.4em;
 }
+
+/*
+ * The journey map: sea with seigaiha waves, paper land printed slightly off
+ * register, snow country stippled, ink lines, a seal per stop.
+ */
+:root {
+  --jm-sea: #dfe6ea;
+  --jm-wave: rgba(42, 63, 111, 0.16);
+  --jm-sealabel: rgba(42, 63, 111, 0.5);
+  --jm-land: #fbf8f1;
+  --jm-snowland: #f1f4f7;
+  --jm-snowdot: rgba(42, 63, 111, 0.16);
+  --jm-offset: rgba(42, 63, 111, 0.22);
+  --jm-border: rgba(31, 29, 26, 0.38);
+  --jm-lake: #cfdbe2;
+  --jm-ink: #1f1d1a;
+  --jm-mountain: #c9c1b1;
+  --jm-snowcap: #ffffff;
+  --jm-fuji: #7b8fb4;
+}
+:root[data-theme="dark"] {
+  --jm-sea: #0d1220;
+  --jm-wave: rgba(157, 180, 232, 0.14);
+  --jm-sealabel: rgba(157, 180, 232, 0.5);
+  --jm-land: #1d2436;
+  --jm-snowland: #222b40;
+  --jm-snowdot: rgba(220, 230, 255, 0.2);
+  --jm-offset: rgba(0, 0, 0, 0.55);
+  --jm-border: rgba(239, 234, 223, 0.32);
+  --jm-lake: #16203a;
+  --jm-ink: #efeadf;
+  --jm-mountain: #3a4258;
+  --jm-snowcap: #e9eef8;
+  --jm-fuji: #5d6f97;
+}
+.journey {
+  background: var(--jm-sea);
+  box-shadow: var(--glow);
+  isolation: isolate;
+}
+.jm-seal {
+  fill: var(--c);
+  transition: fill 0.35s, stroke 0.35s;
+}
+.jm-num {
+  transition: fill 0.35s;
+}
+.jm-stamp[data-arrived="0"] .jm-seal {
+  fill: var(--jm-land);
+  stroke: var(--c);
+  stroke-width: 2.2;
+}
+.jm-stamp[data-arrived="0"] .jm-num {
+  fill: var(--c);
+}
+.jm-stamp[data-arrived="0"] .jm-seal-ring {
+  opacity: 0;
+}
+.jm-stamp[data-here="1"] .jm-halo {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: jm-pulse 1.9s ease-out infinite;
+}
+.jm-stamp:focus-visible {
+  outline: none;
+}
+.jm-stamp:focus-visible .jm-seal {
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+@keyframes jm-pulse {
+  0% {
+    opacity: 0.45;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.9);
+  }
+}
+.jm-train[data-mode="bus"] .jm-rail,
+.jm-train:not([data-mode="bus"]) .jm-bus {
+  display: none;
+}
+.jm-train {
+  transition: opacity 0.25s;
+}
+.jm-fuji-inner {
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.jm-fuji[data-near="1"] .jm-fuji-inner {
+  transform: scale(1.45);
+}
+.jm-snowfall span {
+  position: absolute;
+  top: -6px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow:
+    0 0 0 1px rgba(42, 63, 111, 0.28),
+    0 1px 4px rgba(42, 63, 111, 0.35);
+  opacity: 0;
+  animation-name: jm-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes jm-fall {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate3d(-18px, 320px, 0);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jm-stamp[data-here="1"] .jm-halo,
+  .jm-snowfall span {
+    animation: none;
+  }
+}
+
+/* The picture scroll (emakimono): a chapter painting per stop, a panel per day. */
+:root {
+  --emaki-night: #e3ddd1;
+  --emaki-gold-a: #f3dc9b;
+  --emaki-gold-b: #d9b35a;
+}
+:root[data-theme="dark"] {
+  --emaki-night: #262d40;
+  --emaki-gold-a: #6b5726;
+  --emaki-gold-b: #8c6f2c;
+}
+.emaki {
+  scroll-snap-type: x proximity;
+  mask-image: linear-gradient(to right, transparent 0, #000 14px, #000 calc(100% - 22px), transparent 100%);
+}
+.emaki-chapter {
+  border-left: 1px solid color-mix(in srgb, var(--ink) 20%, transparent);
+}
+.emaki-chapter:first-of-type {
+  border-radius: 16px 0 0 0;
+}
+.emaki-wash {
+  background:
+    linear-gradient(to bottom, rgba(10, 12, 20, 0.55), rgba(10, 12, 20, 0.05) 55%, rgba(10, 12, 20, 0.2)),
+    linear-gradient(to right, color-mix(in srgb, var(--c) 30%, transparent), transparent 60%);
+}
+.emaki-kanji {
+  writing-mode: vertical-rl;
+  font-family: var(--font-jp), var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: 0.12em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+}
+.emaki-day {
+  scroll-snap-align: start;
+  background: var(--card);
+  border-left: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  transition: background 0.2s;
+}
+.emaki-day:hover {
+  background: color-mix(in srgb, var(--c) 6%, var(--card));
+}
+.emaki-day:focus-visible {
+  outline-offset: -3px;
+}
+.emaki-day-ny {
+  background:
+    linear-gradient(to bottom, color-mix(in srgb, var(--emaki-gold-a) 38%, transparent), transparent 46%),
+    var(--card);
+}
+.emaki-gold {
+  color: #4a3510;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.55), transparent 22%),
+    radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.35), transparent 18%),
+    linear-gradient(100deg, var(--emaki-gold-a), var(--emaki-gold-b) 45%, var(--emaki-gold-a) 70%, var(--emaki-gold-b));
+  box-shadow: inset 0 0 0 1px rgba(120, 86, 20, 0.25);
+}
+:root[data-theme="dark"] .emaki-gold {
+  color: #fbecc4;
+}
+
+/* Bottom sheets slide up from the edge. */
+.sheet[data-state="open"] {
+  animation: sheet-in 0.32s cubic-bezier(0.2, 0.9, 0.25, 1);
+}
+.sheet-overlay[data-state="open"] {
+  animation: fade-in 0.25s ease-out;
+}
+@keyframes sheet-in {
+  from {
+    transform: translateY(40%);
+    opacity: 0.4;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sheet[data-state="open"],
+  .sheet-overlay[data-state="open"] {
+    animation: none;
+  }
+}
+:root {
+  --jm-lit: color-mix(in srgb, var(--accent) 20%, #fbf8f1);
+}
+:root[data-theme="dark"] {
+  --jm-lit: color-mix(in srgb, var(--accent) 22%, #1d2436);
+}
+.journey svg:not([data-ready]) .jm-drawn,
+.journey svg:not([data-ready]) .jm-train {
+  opacity: 0;
+}

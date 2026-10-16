@@ -1,8 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useMotionValue, useMotionValueEvent, type MotionValue } from "motion/react";
+import { regionColor } from "@/lib/colors";
+import { travelAt } from "@/lib/journey";
 import why from "../../data/why.json";
 import { budgetOf, BUDGET_RATES, fmtJpyShort, fmtSgd, jpyToSgd, stayCost } from "@/lib/budget";
 import { dateRange, fmtRange } from "@/lib/dates";
@@ -12,7 +15,8 @@ import { LODGING_TYPES } from "@/lib/lodging";
 import type { Place, Version } from "@/lib/types";
 import { movesOf, statsOf } from "@/lib/versions";
 import { BudgetCard } from "./Budget";
-import { JapanMap } from "./JapanMap";
+import { fmtLegHours, JourneyMap } from "./JourneyMap";
+import { PictureScroll } from "./PictureScroll";
 import { PlacePrefs } from "./PlacePrefs";
 import { Planner } from "./Planner";
 import { useStore } from "./providers";
@@ -27,12 +31,29 @@ const WHY = why as unknown as { facts: { title: string; text: string; sources: S
 export function RouteView() {
   const { snapshot } = useStore();
   const params = useSearchParams();
-  const router = useRouter();
   const plan = snapshot.versions.find((v) => v.status === "plan");
   const [shown, setShown] = useState<string | null>(params.get("show"));
   const [openFacts, setOpenFacts] = useState<number | null>(null);
   const [tryOpen, setTryOpen] = useState(false);
   const regionName = (id: string) => snapshot.regions.find((r) => r.id === id)?.name ?? id;
+  const listRef = useRef<HTMLOListElement>(null);
+  const stickyRef = useRef<HTMLDivElement>(null);
+  const t = useStopScroll(listRef, stickyRef);
+  const [activeStop, setActiveStop] = useState(0);
+  const stopCount = (snapshot.versions.find((x) => x.id === shown) ?? plan)?.stays.length ?? 0;
+  useMotionValueEvent(t, "change", (val) => {
+    const { stop, travel } = travelAt(val, stopCount);
+    const now = travel > 0.5 ? Math.min(stopCount - 1, stop + 1) : stop;
+    setActiveStop((prev) => (prev === now ? prev : now));
+  });
+  const wide = useWide();
+  /** Bring stop i into view just under the pinned map. */
+  const scrollToStop = useCallback((i: number) => {
+    const card = listRef.current?.querySelector<HTMLElement>(`[data-stop="${i}"]`);
+    if (!card) return;
+    const pinned = wide ? 0 : (stickyRef.current?.offsetHeight ?? 0);
+    window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - pinned - 20, behavior: "smooth" });
+  }, [wide]);
   if (!plan) return null;
 
   const alternatives = snapshot.versions.filter((v) => v.status === "alternative").sort((a, b) => statsOf(a, snapshot).moves - statsOf(b, snapshot).moves);
@@ -82,7 +103,7 @@ export function RouteView() {
       </section>
 
       <div className="grid gap-2">
-        <JapanMap regions={snapshot.regions} stays={v.stays} view="heart" className="shadow-[var(--glow)]" onPick={(id) => router.push(`/areas/${id}`)} />
+        <JourneyMap regions={snapshot.regions} stays={v.stays} ghost={isPlan ? null : plan.stays} aspect={wide ? 1.9 : 1.2} onStop={scrollToStop} />
         <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4">
           <button className={`chip shrink-0 ${isPlan ? "bg-accent text-accent-ink" : ""}`} onClick={() => setShown(null)}>
             The route
@@ -104,6 +125,10 @@ export function RouteView() {
           ) : null}
         </p>
       </div>
+
+      <Section title="The 21 days" aside="20 Dec – 9 Jan">
+        <PictureScroll version={v} onStop={scrollToStop} />
+      </Section>
 
       {!isPlan ? (
         <div className="card flex flex-wrap items-center justify-between gap-2 border-accent/40 p-3">
@@ -163,7 +188,11 @@ export function RouteView() {
         <p className="text-sm text-ink-2">
           Each stop says why it is this long, what one more or one fewer night would change, and how much of the day is outdoors in the cold. Under each one, the places we would do there: tap <b>Must</b>, <b>Nice</b> or <b>Skip</b> and the family sees the count.
         </p>
-        <ol className="grid gap-3">
+        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-start lg:gap-6">
+        <div ref={stickyRef} className="sticky top-0 z-[5] -mx-4 mb-3 bg-gradient-to-b from-bg from-80% to-transparent px-3 pt-2 pb-4 lg:order-2 lg:top-6 lg:mx-0 lg:bg-none lg:p-0">
+          <JourneyMap regions={snapshot.regions} stays={v.stays} t={t} aspect={wide ? 1.05 : 1.7} onStop={scrollToStop} label="The route, following the stop you are reading" />
+        </div>
+        <ol ref={listRef} className="grid gap-3">
           {v.stays.map((s, i) => {
             const text = steps(s.region, i);
             const cost = stayCost(s);
@@ -172,14 +201,20 @@ export function RouteView() {
             const { places, days } = placesFor(i);
             const outside = avgOutdoorHours(days);
             return (
-              <li key={s.id ?? i} className="grid gap-2">
+              <li key={s.id ?? i} className="grid gap-2" data-stop={i} id={`stop-${i}`}>
                 {leg ? (
-                  <p className="pl-3 text-sm text-muted">
-                    ↓ {leg.hours}
-                    {leg.curated ? "" : "~"} h · {leg.how}
+                  <p className="flex items-center gap-2.5 pl-3 text-sm text-muted">
+                    <span aria-hidden="true" className="h-7 border-l-2 border-dotted border-ink/40" />
+                    <span>
+                      <b className="text-ink">
+                        {leg.curated ? "" : "about "}
+                        {fmtLegHours(leg.hours)}
+                      </b>{" "}
+                      · {leg.how}
+                    </span>
                   </p>
                 ) : null}
-                <div className="card grid gap-0 overflow-hidden">
+                <div className="card grid gap-0 overflow-hidden transition-shadow duration-300" style={activeStop === i ? { boxShadow: `0 0 0 2px ${regionColor(s.region)}, var(--shadow)` } : undefined}>
                   <Link href={`/areas/${s.region}`} className="flex gap-3 no-underline">
                     <RegionCover regionId={s.region} className="w-20 shrink-0 self-stretch sm:w-32" sizes="160px" />
                     <div className="grid min-w-0 flex-1 gap-1 py-3 pr-3">
@@ -244,6 +279,7 @@ export function RouteView() {
             );
           })}
         </ol>
+        </div>
         {isPlan ? (
           <p className="text-xs text-muted">
             Sources:{" "}
@@ -334,4 +370,60 @@ export function RouteView() {
       </Section>
     </Page>
   );
+}
+
+/**
+ * Scroll position through the stop cards as a number: i when the reading line
+ * (a little below the pinned map) is at the top of card i, i + 0.5 halfway to
+ * the next, n - 1 + f through the last card.
+ */
+function useStopScroll(list: React.RefObject<HTMLOListElement | null>, pinned: React.RefObject<HTMLDivElement | null>): MotionValue<number> {
+  const t = useMotionValue(0);
+  useEffect(() => {
+    let raf = 0;
+    const measure = () => {
+      raf = 0;
+      const cards = Array.from(list.current?.querySelectorAll<HTMLElement>("[data-stop]") ?? []);
+      if (!cards.length) return;
+      const pin = pinned.current?.getBoundingClientRect();
+      const wide = window.matchMedia("(min-width: 1024px)").matches;
+      const top = wide || !pin ? 0 : Math.max(0, pin.bottom);
+      const line = top + (window.innerHeight - top) * 0.32;
+      const tops = cards.map((c) => c.getBoundingClientRect().top);
+      let i = 0;
+      while (i + 1 < tops.length && tops[i + 1] <= line) i++;
+      let v: number;
+      if (line < tops[0]) v = 0;
+      else if (i < tops.length - 1) v = i + (line - tops[i]) / Math.max(1, tops[i + 1] - tops[i]);
+      else v = i + Math.min(1, (line - tops[i]) / Math.max(1, cards[i].offsetHeight));
+      t.set(v);
+    };
+    const on = () => {
+      if (!raf) raf = requestAnimationFrame(measure);
+    };
+    measure();
+    window.addEventListener("scroll", on, { passive: true });
+    window.addEventListener("resize", on);
+    const ro = new ResizeObserver(on);
+    if (list.current) ro.observe(list.current);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("scroll", on);
+      window.removeEventListener("resize", on);
+      ro.disconnect();
+    };
+  }, [list, pinned, t]);
+  return t;
+}
+
+function useWide(): boolean {
+  const [wide, setWide] = useState(false);
+  useEffect(() => {
+    const m = window.matchMedia("(min-width: 1024px)");
+    const on = () => setWide(m.matches);
+    on();
+    m.addEventListener("change", on);
+    return () => m.removeEventListener("change", on);
+  }, []);
+  return wide;
 }
