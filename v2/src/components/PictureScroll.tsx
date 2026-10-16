@@ -136,7 +136,7 @@ export function PictureScroll({ version, onStop }: { version: Version; onStop?: 
                   </span>
                 </button>
                 {jp && c.len > 1 ? (
-                  <span className="emaki-kanji absolute right-2.5 top-2.5 text-white" aria-hidden="true">
+                  <span className="emaki-kanji absolute right-2.5 bottom-3 text-white" aria-hidden="true">
                     {jp}
                   </span>
                 ) : null}

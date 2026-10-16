@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { regionColor } from "@/lib/colors";
 import { fmtRange } from "@/lib/dates";
-import { cameraFrames, kanji, legsOf, lerpBox, regionPoint, smoothPath, smoothstep, snowLevel, travelAt, type Box, type Leg, type Mode, type Pt } from "@/lib/journey";
+import { cameraFrames, cameraOnLeg, kanji, legsOf, lerpBox, regionPoint, smoothPath, smoothstep, snowLevel, travelAt, type Box, type Leg, type Mode, type Pt } from "@/lib/journey";
 
 import { project } from "@/lib/map";
 import { MapInk, MapInkDefs } from "./MapInk";
@@ -310,7 +310,7 @@ interface EngineOpts {
   wrap: HTMLDivElement;
   pill: HTMLDivElement | null;
   legs: Leg[];
-  frames: { stops: Box[]; overview: Box };
+  frames: { stops: Box[]; legs: (Box | null)[]; overview: Box };
   stays: Stay[];
   follow: boolean;
   t: MotionValue<number> | null;
@@ -335,7 +335,7 @@ function startEngine(o: EngineOpts): Engine {
   masks.forEach((m, j) => {
     if (m) m.style.strokeDasharray = `${lens[j]} ${lens[j] + 1}`;
   });
-  const glyphs = Array.from(svg.querySelectorAll<SVGGElement>("[data-gx]")).map((el) => ({ el, x: Number(el.dataset.gx), y: Number(el.dataset.gy) }));
+  const glyphs = Array.from(svg.querySelectorAll<SVGGElement>("[data-gx]")).map((el) => ({ el, x: Number(el.dataset.gx), y: Number(el.dataset.gy), fuji: el.classList.contains("jm-fuji") }));
   const stamps = Array.from(svg.querySelectorAll<SVGGElement>("[data-stamp]")).map((el) => ({ el, region: el.dataset.stamp!, stops: (el.dataset.stops ?? "").split(",").map(Number) }));
   const stations = Array.from(svg.querySelectorAll<SVGGElement>("[data-station]"));
   const train = svg.querySelector<SVGGElement>("[data-train]");
@@ -370,9 +370,7 @@ function startEngine(o: EngineOpts): Engine {
         travelling = j;
         legFrac = travel;
       }
-      const a = frames.stops[stop] ?? frames.overview;
-      const b = frames.stops[Math.min(n - 1, stop + 1)] ?? a;
-      cam = outro > 0 ? lerpBox(frames.stops[n - 1] ?? frames.overview, frames.overview, outro) : lerpBox(a, b, travel);
+      cam = outro > 0 ? lerpBox(frames.stops[n - 1] ?? frames.overview, frames.overview, outro) : cameraOnLeg(frames, stop, travel);
       if (reduce && follow) cam = frames.overview;
     } else {
       h = head;
@@ -394,7 +392,9 @@ function startEngine(o: EngineOpts): Engine {
     const px = cam.w / Math.max(1, width);
     // Seals, names and peaks keep their size on screen; a bigger map gets slightly bigger ones.
     const k = px * Math.min(1.5, Math.max(1, width / 400));
-    for (const g of glyphs) g.el.setAttribute("transform", `translate(${g.x} ${g.y}) scale(${k})`);
+    // Fuji grows as the camera comes close: small on the whole route, big at the lake.
+    const fujiK = k * Math.min(1.35, Math.max(0.5, 0.17 / px));
+    for (const g of glyphs) g.el.setAttribute("transform", `translate(${g.x} ${g.y}) scale(${g.fuji ? fujiK : k})`);
     waves?.setAttribute("patternTransform", `scale(${(22 * px) / 7})`);
     snowDots?.setAttribute("patternTransform", `scale(${(9 * px) / 2.4})`);
 
@@ -430,7 +430,11 @@ function startEngine(o: EngineOpts): Engine {
       if (pill) pill.style.opacity = "0";
     }
     if (stopNow !== lastActive) o.onActive((lastActive = stopNow));
-    if (travelling !== lastMoving) o.onMoving((lastMoving = travelling));
+    if (travelling !== lastMoving) {
+      o.onMoving((lastMoving = travelling));
+      // The pill's text changes on the next render; place it again once it has its new width.
+      setTimeout(schedule, 40);
+    }
   };
   const schedule = () => {
     if (!raf) raf = requestAnimationFrame(frame);

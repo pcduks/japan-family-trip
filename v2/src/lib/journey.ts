@@ -233,17 +233,29 @@ export function travelAt(t: number, n: number): { stop: number; travel: number; 
   return { stop: i, travel: smoothstep((t - i - 0.5) / 0.5), outro: 0 };
 }
 
-/** The camera's frame for each stop: the leg in and the stop itself; plus the whole route. */
-export function cameraFrames(stays: Pick<Stay, "region">[], legs: Leg[], regions: Region[], aspect: number): { stops: Box[]; overview: Box } {
+/**
+ * Camera frames: close on each stop (while reading about it), the whole of
+ * each leg (the camera pulls back to it halfway through a move), and the
+ * whole route.
+ */
+export function cameraFrames(stays: Pick<Stay, "region">[], legs: Leg[], regions: Region[], aspect: number): { stops: Box[]; legs: (Box | null)[]; overview: Box } {
   const pts = stays.map((s) => regionPoint(s.region, regions));
-  const legInto = (i: number) => legs.find((l) => l.index === i - 1);
-  const stops = stays.map((_, i) => {
-    const leg = legInto(i);
-    const around = leg ? leg.points : [pts[i], pts[Math.min(pts.length - 1, i + 1)]];
-    return frame([...around, pts[i]], aspect, 48, 0.34, 0.24);
+  const stops = pts.map((p) => frame([p], aspect, 40, 0, 0));
+  const legFrames = stays.map((_, i) => {
+    const leg = legs.find((l) => l.index === i);
+    return leg ? frame(leg.points, aspect, 44, 0.3, 0.22) : null;
   });
   const all = [...pts, ...legs.flatMap((l) => l.points)];
-  return { stops, overview: frame(all, aspect, 60, 0.3, 0.14) };
+  return { stops, legs: legFrames, overview: frame(all, aspect, 60, 0.3, 0.14) };
+}
+
+/** The camera partway along leg i: from stop i out to the whole leg and back in on stop i + 1. */
+export function cameraOnLeg(f: { stops: Box[]; legs: (Box | null)[] }, i: number, travel: number): Box {
+  const a = f.stops[i];
+  const b = f.stops[Math.min(f.stops.length - 1, i + 1)] ?? a;
+  const mid = f.legs[i];
+  if (!mid) return lerpBox(a, b, travel);
+  return travel < 0.5 ? lerpBox(a, mid, smoothstep(travel * 2)) : lerpBox(mid, b, smoothstep((travel - 0.5) * 2));
 }
 
 /** Small peaks every few units along each range's ridge line, sized with a little deterministic jitter. */
