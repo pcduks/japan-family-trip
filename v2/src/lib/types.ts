@@ -172,7 +172,7 @@ export interface FoodListItem {
 export interface TripData {
   schema_version: number;
   generated: string;
-  trip: { name: string; start: string; end: string; nights: number; travellers: { id: string; role: Role; notes?: string }[] };
+  trip: { name: string; start: string; end: string; nights: number; travellers: { id: string; name?: string; role: Role; notes?: string }[] };
   pace: PaceModel;
   calendar: Calendar;
   deadlines: Deadline[];

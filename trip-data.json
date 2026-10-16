@@ -9,31 +9,38 @@
   "travellers": [
    {
     "id": "pedro",
+    "name": "Pedro",
     "role": "planner"
    },
    {
     "id": "wife",
+    "name": "Fernanda",
     "role": "planner",
     "notes": "29 weeks pregnant at departure, about 32 at return"
    },
    {
     "id": "brother",
+    "name": "João",
     "role": "member"
    },
    {
     "id": "sister_in_law",
+    "name": "Carolina",
     "role": "member"
    },
    {
     "id": "father",
+    "name": "Carlos",
     "role": "member"
    },
    {
     "id": "mother",
+    "name": "Nadir",
     "role": "member"
    },
    {
     "id": "sister",
+    "name": "Tatiana",
     "role": "member",
     "notes": "Joining; room sharing to settle"
    }
