@@ -24,7 +24,7 @@ import { PlacePhoto } from "./PlacePhoto";
 import { useStore } from "./providers";
 import { Back, Page, RegionDot, Section } from "./ui";
 
-const FOOD_REGION: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", hakone: "hakone", kawaguchiko: "hakone" };
+const FOOD_REGION: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", kawaguchiko: "kawaguchiko", hakone: "hakone" };
 const NOT_CHOSEN = (why as { not_chosen: { items: { region: string; why: string; comeback: string }[] } }).not_chosen.items;
 const FOOD = foodGuide as unknown as { regions: Record<string, { title: string; dishes: string[]; intro: string; for_her: string; dates: string }> };
 const SIZE_LABEL: Record<string, string> = { main: "Half a day", short: "An hour or two", day_trip: "Day trip", evening: "Evening", meal: "Meal" };
@@ -58,7 +58,9 @@ export function AreaView({ id }: { id: string }) {
   const meals = places.filter((p) => p.size === "meal");
   const cards = cardsFor(id);
   const verdict = NOT_CHOSEN.find((x) => x.region === id);
-  const alt = snapshot.versions.find((v) => v.status === "alternative" && v.stays.some((s) => s.region === id) && !inRoute);
+  // The alternative closest to the plan that uses this area, so Hakone draws "Hakone instead of the lake" rather than the fuller route.
+  const differsFromPlan = (v: { stays: { region: string }[] }) => v.stays.filter((s, i) => s.region !== plan?.stays[i]?.region).length + Math.abs(v.stays.length - (plan?.stays.length ?? 0));
+  const alt = inRoute ? undefined : snapshot.versions.filter((v) => v.status === "alternative" && v.stays.some((s) => s.region === id)).sort((a, b) => differsFromPlan(a) - differsFromPlan(b))[0];
   const food = FOOD.regions[FOOD_REGION[id] ?? id];
   const lodging = lodgingFor(id);
   const fromTokyo = legBetween("tokyo", id, snapshot.regions);

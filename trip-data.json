@@ -325,9 +325,9 @@
    "name": "Hakone",
    "lat": 35.23,
    "lng": 139.03,
-   "status": "in_plan",
-   "summary": "Fuji, onsen ryokan, art museums",
-   "fit": null,
+   "status": "candidate_fits",
+   "summary": "Fuji over the ridges, onsen ryokan with private baths, five art museums",
+   "fit": "Swap for Kawaguchiko 5-7 Jan: five museums for a cloudy day, ryokan with private baths, 80 min to Shinjuku, an hour less from Kyoto",
    "suggested_nights": {
     "gentle": "2-3",
     "balanced": 2,
@@ -346,9 +346,9 @@
    "name": "Kawaguchiko",
    "lat": 35.5171,
    "lng": 138.751,
-   "status": "candidate_fits",
-   "summary": "Fuji straight across the lake, lakeside ryokan, hoto noodles",
-   "fit": "Swap for Hakone when the postcard view matters more than the museums; 4-4.5 h from Kyoto, 2 h to Tokyo; fewer indoor options on a cloudy day",
+   "status": "in_plan",
+   "summary": "Fuji straight across the lake, a lake hotel with beds and a lift, hoto noodles",
+   "fit": null,
    "suggested_nights": {
     "gentle": "2-3",
     "balanced": 2,
@@ -396,7 +396,7 @@
    "lng": 133.93,
    "status": "candidate_fits",
    "summary": "Art islands, Ohara Museum, Korakuen, Himeji on the way",
-   "fit": "Swap for Hakone 5-7 Jan; Chichu open Wed 6 Jan; Teshima closed Tue-Thu",
+   "fit": "Swap for Kawaguchiko 5-7 Jan; Chichu open Wed 6 Jan; Teshima closed Tue-Thu",
    "suggested_nights": {
     "balanced": 2
    },
@@ -417,7 +417,7 @@
    "lng": 134.82,
    "status": "candidate_fits",
    "summary": "Seven public baths, crab season",
-   "fit": "Swap for Hakone; repeats crab and onsen; 5-6 h to Tokyo",
+   "fit": "Swap for Kawaguchiko; repeats crab and onsen; 5-6 h to Tokyo",
    "suggested_nights": {
     "balanced": 2
    },
@@ -437,7 +437,7 @@
    "lng": 140.53,
    "status": "candidate_maybe",
    "summary": "The most photogenic snowy onsen street",
-   "fit": "Swap for Hakone only if rooms for 6-7 are free; day visits capped",
+   "fit": "Swap for Kawaguchiko only if rooms for 6-7 are free; day visits capped",
    "suggested_nights": {
     "balanced": "1-2"
    },
@@ -457,7 +457,7 @@
    "lng": 138.93,
    "status": "candidate_fits",
    "summary": "Gentle bamboo-grove onsen town",
-   "fit": "Calmer Hakone alternative, no snow",
+   "fit": "Swap for Kawaguchiko for a calmer onsen town like Hakone, no snow",
    "suggested_nights": {
     "balanced": 2
    },
@@ -475,7 +475,7 @@
    "lng": 138.6,
    "status": "candidate_maybe",
    "summary": "Steaming hot-water field in snow",
-   "fit": "Hakone swap, but water too hot and acidic for her; long from Kyoto",
+   "fit": "Swap for Kawaguchiko, but the water is too hot and acidic for her; long from Kyoto",
    "suggested_nights": null,
    "sources": [
     "https://www.japan-guide.com/e/e7400.html"
@@ -3898,12 +3898,12 @@
      "note": "Nara on 4 Jan"
     },
     {
-     "region": "hakone",
+     "region": "kawaguchiko",
      "from": "2027-01-05",
      "to": "2027-01-07",
      "nights": 2,
-     "lodging": "ryokan",
-     "note": null
+     "lodging": "hotel",
+     "note": "Fuji across the lake; via Mishima"
     },
     {
      "region": "tokyo",
@@ -3915,8 +3915,8 @@
     }
    ],
    "travel_hours_est": 14,
-   "gains": "Every interest covered, a rest each day",
-   "gives_up": "Okuhida and Hiroshima",
+   "gains": "Every interest covered, a rest each day, Fuji straight across the lake",
+   "gives_up": "Okuhida, Hiroshima, and Hakone's museums and ryokan baths",
    "moves": 6
   },
   {
@@ -3964,12 +3964,12 @@
      "to": "2027-01-09",
      "nights": 3,
      "lodging": "hotel",
-     "note": "Hakone as a day trip optional"
+     "note": "A Fuji day trip optional (Kawaguchiko or Hakone)"
     }
    ],
    "travel_hours_est": 12,
    "gains": "Never rushed, fewest check-ins",
-   "gives_up": "Hakone and the onsen New Year's Eve",
+   "gives_up": "The Fuji stop and the onsen New Year's Eve",
    "moves": 4
   },
   {
@@ -4113,11 +4113,11 @@
      "note": null
     },
     {
-     "region": "hakone",
+     "region": "kawaguchiko",
      "from": "2027-01-05",
      "to": "2027-01-07",
      "nights": 2,
-     "lodging": "ryokan",
+     "lodging": "hotel",
      "note": null
     },
     {
@@ -4198,7 +4198,7 @@
     }
    ],
    "gains": "Chichu Art Museum, Ohara Museum, Korakuen, Himeji",
-   "gives_up": "Hakone ryokan and Fuji dawns",
+   "gives_up": "Kawaguchiko and Fuji across the lake",
    "moves": 6
   },
   {
@@ -4266,12 +4266,12 @@
     }
    ],
    "gains": "A classic onsen town in crab season",
-   "gives_up": "Hakone and Fuji; 5-6 h back to Tokyo",
+   "gives_up": "Kawaguchiko and Fuji; 5-6 h back to Tokyo",
    "moves": 6
   },
   {
    "id": "fuji-lake",
-   "name": "Fuji across the lake instead of Hakone",
+   "name": "Hakone instead of the lake",
    "pace": "balanced",
    "status": "alternative",
    "owner": "planners",
@@ -4317,12 +4317,12 @@
      "note": "Nara on 4 Jan"
     },
     {
-     "region": "kawaguchiko",
+     "region": "hakone",
      "from": "2027-01-05",
      "to": "2027-01-07",
      "nights": 2,
      "lodging": "ryokan",
-     "note": "Fuji across the lake; via Mishima"
+     "note": "Five museums for a cloudy day; 80 min to Shinjuku"
     },
     {
      "region": "tokyo",
@@ -4333,8 +4333,8 @@
      "note": null
     }
    ],
-   "gains": "The postcard Fuji view from a lakeside ryokan, hoto noodles, a new place for the two of you",
-   "gives_up": "Hakone's five museums on a cloudy day; about an hour more from Kyoto",
+   "gains": "Five museums for a cloudy day, a ryokan with a private bath in every room, 80 minutes to Shinjuku, an hour less from Kyoto",
+   "gives_up": "Fuji straight across the water; Hakone is new only for the first-timers (Pedro and Fernanda have been)",
    "moves": 6
   }
  ],

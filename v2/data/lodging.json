@@ -407,7 +407,7 @@
           "area": "Gora",
           "what": "Open-air bath in every room; dinner and breakfast included.",
           "price": "About ¥45,000–55,000 per person with meals (half-board rooms for two about US$570–615)",
-          "fit": "Lift, beds in some rooms; the plan's first choice.",
+          "fit": "Lift, beds in some rooms; the first choice if we go to Hakone.",
           "verified": false
         },
         {
@@ -663,9 +663,9 @@
       ]
     },
     "kawaguchiko": {
-      "type": "ryokan",
-      "why": "The lake is the point: a room that looks straight at Fuji, so the first light on the mountain happens from bed and from the bath. Dinner at the inn; the hoto houses cover lunch.",
-      "fit": "Two rooms × 3 at a lakeside house with a lift, or Konansou's 12.5-mat lake-view rooms that take up to six (tatami only; ask for the Western-Japanese wing). The lakeside hotels all have lifts and beds.",
+      "type": "hotel",
+      "why": "The lake is the point: a room on the north or east shore that looks straight at Fuji, so the first light on the mountain happens from bed. A lake hotel with beds and a lift suits the parents and her; the hoto houses cover lunch, and dinner is at the hotel or in town.",
+      "fit": "Three rooms for two at a lakeside hotel with beds and a lift, Fuji-side rooms asked for by name. Konansou's lake-view rooms take up to six but are tatami only, so only with its Western-Japanese wing.",
       "outlook": "Our dates (5–7 Jan) are after the first-sunrise rush: open at the hotels, tight at Konansou and the top houses. 31 Dec would have been gone.",
       "tiers": {
         "budget": [
@@ -683,23 +683,13 @@
       },
       "candidates": [
         {
-          "name": "Konansou",
-          "url": "https://www.ikyu.com/en-us/00002350/",
-          "tier": "mid",
-          "area": "North shore, by the ropeway",
-          "what": "Tamayura lake-view rooms for 1–6, lift, rooftop foot bath with the Fuji view; half-board.",
-          "price": "From ¥70,400 for two half-board; about ¥200,000 for six in normal season",
-          "fit": "Lift; tatami only, so ask for the Western-Japanese wing or a bed. Verified on Ikyu.",
-          "verified": true
-        },
-        {
           "name": "Fujikawaguchiko Onsen Ubuya",
           "url": "https://www.google.com/search?q=Ubuya+Kawaguchiko",
           "tier": "mid",
           "area": "North shore",
           "what": "Every room faces the lake and Fuji; in-room open-air baths in the better rooms; kaiseki dinner.",
           "price": "¥150,000–250,000 for six with meals",
-          "fit": "Lift, Western-Japanese rooms.",
+          "fit": "Lift, Western-Japanese rooms with beds. The first one to ask, for the Fuji view from the room; not yet checked on an official site.",
           "verified": false
         },
         {
@@ -723,14 +713,14 @@
           "verified": false
         },
         {
-          "name": "Hoshinoya Fuji",
-          "url": "https://hoshinoya.com/fuji/en/",
-          "tier": "top",
-          "area": "Hillside above the lake",
-          "what": "Glamping cabins facing Fuji, beds, outdoor fires; three cabins for six.",
-          "price": "¥400,000–700,000 for three cabins with meals",
-          "fit": "Beds; a buggy up the hill; New Year plans usually two-night minimum.",
-          "verified": false
+          "name": "Konansou",
+          "url": "https://www.ikyu.com/en-us/00002350/",
+          "tier": "mid",
+          "area": "North shore, by the ropeway",
+          "what": "Tamayura lake-view rooms for 1–6, lift, rooftop foot bath with the Fuji view; half-board.",
+          "price": "From ¥70,400 for two half-board; about ¥200,000 for six in normal season",
+          "fit": "Lift; tatami only, so ask for the Western-Japanese wing or a bed. Verified on Ikyu.",
+          "verified": true
         },
         {
           "name": "Fufu Kawaguchiko",
@@ -740,6 +730,16 @@
           "what": "All-suite, beds, an onsen in every room.",
           "price": "¥400,000+ for six",
           "fit": "Beds, lift, in-room onsen for her.",
+          "verified": false
+        },
+        {
+          "name": "Hoshinoya Fuji",
+          "url": "https://hoshinoya.com/fuji/en/",
+          "tier": "top",
+          "area": "Hillside above the lake",
+          "what": "Glamping cabins facing Fuji, beds, outdoor fires; three cabins for six.",
+          "price": "¥400,000–700,000 for three cabins with meals",
+          "fit": "Beds; a buggy up the hill; New Year plans usually two-night minimum.",
           "verified": false
         }
       ]

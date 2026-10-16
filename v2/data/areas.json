@@ -331,7 +331,7 @@
       "feel": "Steam, pines, a lake with a red torii, and a dozen ways to move: ropeway, cable car, boat, mountain railway. Eighty minutes from Shinjuku and a different century.",
       "getting_there": "From Kyoto about 3 h 15: Hikari to Odawara (the Nozomi does not stop), then the Hakone Tozan line. To Shinjuku 85 minutes on the Romancecar.",
       "for_her": "The ropeway crosses volcanic gas; the operator bars some conditions, so ask her doctor. Everything else is seated. A private bath makes the onsen easy.",
-      "zone": "route"
+      "zone": "near"
     },
     "kawaguchiko": {
       "prefecture": "Yamanashi",
@@ -368,10 +368,10 @@
         "The winter fireworks start 23 Jan and the Diamond Fuji weeks are in February, both after us.",
         "Fewer indoor options than Hakone on a cloudy day: the kimono museum, the music forest."
       ],
-      "feel": "Flat lakeside paths, a mountain that fills the sky, and a quieter, more Japanese resort than Hakone. The postcard view, for real.",
+      "feel": "Flat lakeside paths, a mountain that fills the sky, and a quieter resort than Hakone. The postcard view, for real.",
       "getting_there": "From Kyoto about 4 h 15 via Mishima and the Fujikyu bus; to Shinjuku 2 h on the Fuji Excursion train. An hour more than Hakone from the west.",
-      "for_her": "Flat shoreline, lifts in the lake hotels; the pagoda steps are optional. A hospital in Fujiyoshida.",
-      "zone": "near"
+      "for_her": "Flat shoreline, lifts and beds in the lake hotels; the pagoda steps are optional. The lake is at 833 m, which is no concern on its own. Fujiyoshida Municipal Hospital, a regional perinatal centre that takes obstetric walk-ins, is nearby.",
+      "zone": "route"
     },
     "yudanaka": {
       "prefecture": "Nagano",

@@ -15,12 +15,12 @@ const TABS: { id: string; file: string; label: string; region?: string }[] = [
   { id: "kanazawa", file: "11-kanazawa-and-shirakawa-go.md", label: "Kanazawa & Shirakawa-go", region: "kanazawa" },
   { id: "takayama", file: "12-takayama-and-hida.md", label: "Takayama & Hida", region: "takayama" },
   { id: "kyoto", file: "13-kyoto-and-nara.md", label: "Kyoto & Nara", region: "kyoto" },
-  { id: "hakone", file: "14-hakone-and-fuji.md", label: "Hakone & Fuji", region: "hakone" },
+  { id: "hakone", file: "14-hakone-and-fuji.md", label: "Kawaguchiko & Hakone", region: "kawaguchiko" },
 ];
 
 /** The tab for a region id, so stays and place lists can link straight to its guide. */
 export function reportTabForRegion(regionId: string): string | null {
-  const map: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", hakone: "hakone", kawaguchiko: "hakone" };
+  const map: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", kawaguchiko: "hakone", hakone: "hakone" };
   return map[regionId] ?? null;
 }
 

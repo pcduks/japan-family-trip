@@ -23,7 +23,7 @@ export function Guide() {
             The full research behind it: why these places, why each stay is this long, what we left out, and a guide to every base with hours, prices and where to eat.
           </Step>
           <Step n={3} title="The alternatives" href="/board">
-            Other ways to spend the same 20 nights: a gentler one, a fuller one, snow monkeys, art instead of Fuji, crab and onsen instead of Fuji. Each has its theme, what it feels like, what it does and why, and its budget. The board shows them side by side with the same numbers.
+            Other ways to spend the same 20 nights: a gentler one, a fuller one, snow monkeys, art instead of Fuji, crab and onsen instead of Fuji, Hakone instead of the lake. Each has its theme, what it feels like, what it does and why, and its budget. The board shows them side by side with the same numbers.
           </Step>
           <Step n={4} title="Places" href="/places">
             Everything we researched: {snapshot.places.length} places. Each page says why it’s worth it, when it’s open or closed over New Year, how hard it is for a pregnant traveller, and shows Google photos and reviews. A badge says whether it’s in the plan, and on which day.
