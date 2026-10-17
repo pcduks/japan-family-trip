@@ -47,6 +47,7 @@ export function AreaView({ id }: { id: string }) {
   const plan = snapshot.versions.find((v) => v.status === "plan");
   const stays = plan?.stays.filter((s) => s.region === id) ?? [];
   const inRoute = stays.length > 0;
+  const planStop = plan?.stays.findIndex((s) => s.region === id) ?? -1;
   const places = snapshot.places.filter((p) => p.region === id);
   const planned = new Map<string, string[]>();
   for (const d of snapshot.days) if (d.version_id === (plan?.id ?? "plan")) for (const it of d.items) if (it.place_id) planned.set(it.place_id, [...(planned.get(it.place_id) ?? []), d.date]);
@@ -242,7 +243,7 @@ export function AreaView({ id }: { id: string }) {
           </ul>
           {inRoute && plan ? (
             <p className="text-sm">
-              <Link href="/#stops">All candidates and booking links, on the route →</Link>
+              <Link href={planStop >= 0 ? `/#stop-${planStop}` : "/#stops"}>All candidates and booking links, on the route →</Link>
             </p>
           ) : null}
         </Section>
@@ -284,7 +285,7 @@ export function AreaView({ id }: { id: string }) {
           ) : null}
           {!inRoute && plan && region.status !== "not_this_trip" && region.status !== "day_trip" ? (
             <button className="btn btn-sm" onClick={tryIt} disabled={trying || !me}>
-              {trying ? "Making your version…" : "Try it in the route"}
+              {trying ? "Making your route…" : "Try it in the route"}
             </button>
           ) : null}
           <Link href="/routes" className="btn btn-sm">
@@ -295,7 +296,7 @@ export function AreaView({ id }: { id: string }) {
 
       <JapanMap regions={snapshot.regions} stays={plan?.stays} selected={id} view="heart" className="shadow-[var(--glow)]" />
 
-      <WishBox targetId={id} title={`Something missing in ${region.name.replace(/ \(.*\)$/, "")}?`} hint="A place, a dish, a worry. One line; it lands with Pedro and Fernanda." />
+      <WishBox targetId={id} title={`Something missing in ${region.name.replace(/ \(.*\)$/, "")}?`} />
 
       <p className="text-xs text-muted">
         Sources:{" "}

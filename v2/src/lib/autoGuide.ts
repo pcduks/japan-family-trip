@@ -76,7 +76,8 @@ export function guideFor(v: Version, snapshot: Pick<Snapshot, "versions" | "regi
     style: own?.style,
     written: false,
     nye: nyePlan ? `In ${nye}: ${nyePlan.title}` : undefined,
-    theme: own && v.status !== "personal" ? own.theme : v.name,
+    // A written route that has changed is named by its places, so the title never describes stops it no longer has.
+    theme: v.status === "personal" ? v.name : Array.from(new Set(v.stays.map((s) => name(s.region)))).join(", "),
     tagline: `${cap(word(st.bases))} bases over ${st.nights} nights, ${word(st.moves)} check-ins, New Year’s Eve in ${nye}.`,
     feel: parts.join(" "),
     activities,

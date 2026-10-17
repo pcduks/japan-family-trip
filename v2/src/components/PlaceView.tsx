@@ -9,7 +9,8 @@ import type { PlaceDetails, Size } from "@/lib/types";
 import { Comments } from "./Comments";
 import { RegionCover } from "./RegionCover";
 import { reportTabForRegion } from "./PlanReport";
-import { fmtDay } from "@/lib/dates";
+import { fmtDay, fmtRange } from "@/lib/dates";
+import { routeVisits } from "@/lib/days";
 import { useStore } from "./providers";
 import { Avatar, Back, Checked, Page, PageHeader, RegionDot, Section } from "./ui";
 
@@ -52,7 +53,7 @@ export function PlaceView({ id }: { id: string }) {
   const mustBy = snapshot.votes.filter((v) => v.kind === "mustdo" && ((v.value as { places?: string[] }).places ?? []).includes(p.id)).map((v) => v.traveller_id);
   const vid = video ?? youtubeId(p.links?.video) ?? youtubeId(region?.videos?.[0]);
   const staysHere = snapshot.versions.find((v) => v.status === "plan")?.stays.filter((s) => s.region === p.region) ?? [];
-  const plannedOn = snapshot.days.filter((d) => d.version_id === "plan").flatMap((d) => d.items.filter((it) => it.place_id === p.id).map((it) => ({ date: d.date, slot: it.slot, crew: it.crew, note: it.note })));
+  const plannedOn = routeVisits(snapshot).get(p.id) ?? [];
   const guideTab = reportTabForRegion(p.region);
   const guide = placeGuide(p.id);
 
@@ -82,12 +83,12 @@ export function PlaceView({ id }: { id: string }) {
           {plannedOn.length ? (
             plannedOn.map((x, i) => (
               <span key={i} className="chip text-ok">
-                In the plan · {fmtDay(x.date)} {x.slot === "early" ? "dawn" : x.slot}
+                On the route · {fmtDay(x.date)} {x.slot === "early" ? "dawn" : x.slot}
                 {x.crew === "early" ? " · early start, optional" : x.crew === "easy" ? " · easy option" : ""}
               </span>
             ))
           ) : (
-            <span className="chip text-muted">Not in the plan yet · a candidate near {region?.name ?? "our base"}</span>
+            <span className="chip text-muted">Not on the route yet · a candidate near {region?.name ?? "our base"}</span>
           )}
         </p>
         <div className="pt-1">
@@ -205,7 +206,7 @@ export function PlaceView({ id }: { id: string }) {
           ) : null}
           {staysHere.length ? (
             <Row k="We’re here">
-              {staysHere.map((s) => `${s.from.slice(5).replace("-", "/")}–${s.to.slice(5).replace("-", "/")}`).join(", ")} in the plan
+              {staysHere.map((s) => fmtRange(s.from, s.to)).join(", ")} on the route
             </Row>
           ) : null}
           {mustBy.length ? (

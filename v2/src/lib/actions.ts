@@ -124,6 +124,11 @@ export async function runAction(sb: DB, me: Viewer, action: string, p: Record<st
       fail(await sb.from("suggestions").update({ status: decision, decided_by: me.travellerId, decided_at: now }).eq("id", id), "suggestions");
       return;
     }
+    case "setDeadlineDone": {
+      if (me.role !== "planner") throw new ActionError("Planners only", 403);
+      fail(await sb.from("deadlines").update({ done: p.done === true }).eq("id", String(p.id ?? "")), "deadlines");
+      return;
+    }
     case "withdrawSuggestion": {
       const id = String(p.id ?? "");
       const q = sb.from("suggestions").delete().eq("id", id);

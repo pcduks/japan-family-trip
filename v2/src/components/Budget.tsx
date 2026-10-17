@@ -14,7 +14,7 @@ export function BudgetLine({ v, regions, compareTo }: { v: Pick<Version, "stays"
     <span className="flex flex-wrap items-baseline gap-x-2 text-sm">
       <b>{fmtSgd(b.perCoupleSgd)}</b>
       <span className="text-muted">per couple, no flights</span>
-      {diff !== null && diff !== 0 ? <span className={diff > 0 ? "text-danger" : "text-ok"}>{diff > 0 ? "+" : "−"}{fmtSgd(Math.abs(diff))} vs the plan</span> : null}
+      {diff !== null && diff !== 0 ? <span className={diff > 0 ? "text-danger" : "text-ok"}>{diff > 0 ? "+" : "−"}{fmtSgd(Math.abs(diff))} vs the route</span> : null}
       {diff === null ? <span className={b.headroomSgd >= 0 ? "text-ok" : "text-danger"}>{b.headroomSgd >= 0 ? `${fmtSgd(b.headroomSgd)} under` : `${fmtSgd(-b.headroomSgd)} over`} {fmtSgd(b.targetPerCoupleSgd)}</span> : null}
     </span>
   );
@@ -35,7 +35,7 @@ function Row({ label, jpy, note }: { label: string; jpy: number; note?: string }
   );
 }
 
-/** The full breakdown for a version: the big number against the target, the bar, the lines, the assumptions. */
+/** The full breakdown for a route: the big number against the target, the bar, the lines, the assumptions. */
 export function BudgetCard({ v, regions, regionName, title = "Budget per couple" }: { v: Pick<Version, "stays" | "pace">; regions: Region[]; regionName: (id: string) => string; title?: string }) {
   const b: Budget = budgetOf(v, regions);
   const [open, setOpen] = useState(false);

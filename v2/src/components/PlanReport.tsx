@@ -8,7 +8,7 @@ import { Markdown } from "./Markdown";
 import { Back, Page } from "./ui";
 
 const TABS: { id: string; file: string; label: string; region?: string }[] = [
-  { id: "plan", file: "01-the-plan.md", label: "The plan" },
+  { id: "plan", file: "01-the-plan.md", label: "The route" },
   { id: "nights", file: "02-why-each-stay-is-this-long.md", label: "Why each stay is this long" },
   { id: "missing", file: "03-what-were-missing.md", label: "What we’re missing" },
   { id: "tokyo", file: "10-tokyo.md", label: "Tokyo", region: "tokyo" },
@@ -35,12 +35,12 @@ export function PlanReport() {
     <Page>
       <Back href="/">Trip</Back>
       <header className="grid gap-1.5">
-        <p className="eyebrow">The research, in full</p>
-        <h1 className="display text-[2.1rem] leading-[1.05]">The plan and the reasoning</h1>
+        <p className="eyebrow">The full report</p>
+        <h1 className="display text-[2.1rem] leading-[1.05]">The route and the reasoning</h1>
         <p className="text-ink-2">
-          The whole plan doc, tab by tab: the itinerary and why, how the nights were decided, what was left out, and a guide to each place with hours, prices and food. Exported 13 Oct 2026; the{" "}
+          Everything behind the route, chapter by chapter: the itinerary and why, how the nights were decided, what was left out, and a guide to each place with hours, prices and food. Written up to 13 Oct 2026; the{" "}
           <a href="https://claude.ai/code/artifact/8af68e4b-aa1e-42c9-ad88-2a4dbdc396f7" target="_blank" rel="noreferrer">
-            live doc
+            online copy
           </a>{" "}
           is newer if they ever disagree.
         </p>

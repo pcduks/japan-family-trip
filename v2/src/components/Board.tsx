@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo } from "react";
+import { guideFor } from "@/lib/autoGuide";
 import { budgetOf } from "@/lib/budget";
 import { checkVersion } from "@/lib/rules";
 import type { Version } from "@/lib/types";
@@ -45,7 +46,7 @@ export function VersionCard({ v, href }: { v: Version; href: string }) {
       <div className="flex items-center justify-between gap-2">
         <div className="flex min-w-0 items-center gap-2">
           {owner ? <Avatar traveller={owner} travellers={snapshot.travellers} size={24} /> : null}
-          <h3 className="truncate text-[1.1rem]">{v.name}</h3>
+          <h3 className="truncate text-[1.1rem]">{v.status === "plan" ? "The route we are taking" : guideFor(v, snapshot).theme}</h3>
         </div>
         <div className="flex shrink-0 items-center gap-1">
           {v.status === "plan" ? <span className="chip bg-accent text-accent-ink">The plan</span> : null}
@@ -85,7 +86,7 @@ export function Board() {
     <Page wide>
       <Back href="/routes">Routes</Back>
       <PageHeader eyebrow={`${snapshot.trip.nights} nights · ${snapshot.travellers.length} travellers · 20 Dec – 9 Jan`} title="Side by side">
-        Every version on the same calendar. Same colour, same place. Tap one for the stops, where to sleep, the budget and the reasons.
+        Every route on the same calendar. Same colour, same place. Tap one for the stops, where to sleep, the budget and the reasons.
       </PageHeader>
 
       <div className="grid gap-3">

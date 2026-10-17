@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { plannerNames } from "@/lib/people";
 import { useStore } from "./providers";
 import { Avatar } from "./ui";
 
@@ -13,7 +14,7 @@ export function WishBox({ targetId, title = "Something missing?", hint }: { targ
     <section className="card grid gap-2 p-4" aria-label={title}>
       <p>
         <b>{title}</b>{" "}
-        <span className="text-sm text-ink-2">{hint ?? "A place you want to see, a thing you want to do, a worry. One line is enough; Pedro and Fernanda read them all."}</span>
+        <span className="text-sm text-ink-2">{hint ?? "A place you want to see, a thing you want to do, a worry."} One line is enough; it lands in {plannerNames(snapshot.travellers)}’s inbox.</span>
       </p>
       {list.length ? (
         <ul className="grid gap-1.5">

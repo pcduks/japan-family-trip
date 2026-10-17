@@ -46,6 +46,8 @@ export function BottomNav() {
 
 export function AppHeader() {
   const { me, demo, snapshot, setDemoMe, prefs, setPrefs, error, isPlanner } = useStore();
+  // Planners see every route waiting for a decision; everyone else, their own.
+  const waiting = snapshot.suggestions.filter((s) => s.status === "open" && (isPlanner || s.author_id === me?.travellerId)).length;
   const path = usePathname();
   const router = useRouter();
   const [open, setOpen] = useState(false);
@@ -65,6 +67,13 @@ export function AppHeader() {
           <span className="hidden sm:inline">Japan, winter 2026</span>
         </span>
         {demo ? <span className="chip">demo</span> : null}
+      </Link>
+      <span className="flex items-center gap-2">
+      <Link href="/inbox" aria-label={waiting ? `Inbox, ${waiting} waiting` : "Inbox"} className="relative grid size-10 place-items-center rounded-full border border-rule bg-card no-underline">
+        <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M4 13l2.5-7h11L20 13v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zM4 13h4.5l1 2h5l1-2H20" />
+        </svg>
+        {waiting ? <span className="absolute -top-1 -right-1 grid min-w-5 place-items-center rounded-full bg-accent px-1 text-[0.68rem] font-bold text-accent-ink">{waiting}</span> : null}
       </Link>
       <Dialog.Root open={open} onOpenChange={setOpen}>
         <Dialog.Trigger asChild>
@@ -108,6 +117,9 @@ export function AppHeader() {
             <fieldset className="grid gap-2">
               <legend className="eyebrow">More</legend>
               <div className="flex flex-wrap gap-2">
+                <Link href="/inbox" className="btn btn-sm" onClick={() => setOpen(false)}>
+                  Inbox{waiting ? ` · ${waiting}` : ""}
+                </Link>
                 <Link href="/plan" className="btn btn-sm" onClick={() => setOpen(false)}>
                   The full report
                 </Link>
@@ -153,6 +165,7 @@ export function AppHeader() {
           </Dialog.Content>
         </Dialog.Portal>
       </Dialog.Root>
+      </span>
     </header>
   );
 }
