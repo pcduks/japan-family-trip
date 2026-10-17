@@ -26,13 +26,15 @@ interface Props {
   /** Weight 1–3 for the stamp size. */
   weight?: (id: string) => number;
   view?: keyof typeof VIEWS;
+  /** A colour per area, such as its verdict; the area's own colour otherwise. */
+  pinColor?: (id: string) => string;
   selected?: string | null;
   onPick?: (id: string) => void;
   className?: string;
 }
 
 /** The illustrated map: ink coastlines on paper, a stamp per researched area, the route as a line. */
-export function JapanMap({ regions, stays, highlight = null, weight, view = "heart", selected = null, onPick, className = "" }: Props) {
+export function JapanMap({ regions, stays, highlight = null, weight, view = "heart", selected = null, onPick, pinColor, className = "" }: Props) {
   const router = useRouter();
   const [hover, setHover] = useState<string | null>(null);
   const pick = (id: string) => (onPick ? onPick(id) : router.push(`/areas/${id}`));
@@ -69,7 +71,7 @@ export function JapanMap({ regions, stays, highlight = null, weight, view = "hea
           return (
             <g key={r.id} className="cursor-pointer" onClick={() => pick(r.id)} onPointerEnter={() => setHover(r.id)} onPointerLeave={() => setHover(null)} style={{ opacity: dim ? 0.28 : 1, transition: "opacity 0.25s" }}>
               <circle cx={x} cy={y} r={rad + 3} fill="var(--card)" opacity={0.9} />
-              <motion.circle cx={x} cy={y} r={rad} fill={regionColor(r.id)} stroke="var(--card)" strokeWidth={0.8} initial={false} animate={{ r: selected === r.id || hover === r.id ? rad * 1.35 : rad }} transition={{ type: "spring", stiffness: 300, damping: 18 }} />
+              <motion.circle cx={x} cy={y} r={rad} fill={pinColor?.(r.id) ?? regionColor(r.id)} stroke="var(--card)" strokeWidth={0.8} initial={false} animate={{ r: selected === r.id || hover === r.id ? rad * 1.35 : rad }} transition={{ type: "spring", stiffness: 300, damping: 18 }} />
               {idx >= 0 ? (
                 <text x={x} y={y + 1.5} textAnchor="middle" fontSize={4.2} fontWeight={700} fill="#fff" style={{ pointerEvents: "none" }}>
                   {idx + 1}
