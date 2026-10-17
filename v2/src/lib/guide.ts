@@ -52,6 +52,10 @@ export function regionBestNights(region: string): string | null {
   return STAY_GUIDE[region]?.best ?? null;
 }
 
+export function regionStayGuide(region: string): { best?: string; date_notes?: string[]; nights: Record<string, StayGuideEntry> } | null {
+  return STAY_GUIDE[region] ?? null;
+}
+
 /** The trade-off for a stay: the version's own, else the plan's for a stay of the same length, else what that many nights gives in that place. */
 export function stayTradeoff(versionId: string, stays: Stay[], index: number): Tradeoff | null {
   const key = stayKey(stays, index);

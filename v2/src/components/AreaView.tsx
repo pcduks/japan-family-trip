@@ -9,7 +9,7 @@ import { areaInfo, cardsFor, sourceHref, type CatalogCard } from "@/lib/areas";
 import { fitLabel, regionColor } from "@/lib/colors";
 import { placeGuide, REPUTATION_SHORT } from "@/lib/placesGuide";
 import { exposure, EXPOSURE_LABEL } from "@/lib/exposure";
-import { IDLE_LABEL, stayTradeoff } from "@/lib/guide";
+import { IDLE_LABEL, regionStayGuide, stayTradeoff } from "@/lib/guide";
 import { PrefTally } from "./PlacePrefs";
 import { WishBox } from "./WishBox";
 import { fmtDay } from "@/lib/dates";
@@ -187,6 +187,8 @@ export function AreaView({ id }: { id: string }) {
         </Section>
       ) : null}
 
+      <StayLengths regionId={id} current={stays[0]?.nights ?? null} />
+
       {food || meals.length ? (
         <Section title="Eat" aside={<Link href={`/food?region=${FOOD_REGION[id] ?? id}`}>the food page →</Link>}>
           {food ? (
@@ -362,5 +364,62 @@ function CardRow({ c }: { c: CatalogCard }) {
         ) : null}
       </span>
     </li>
+  );
+}
+
+/** How long to stay here: what each length gives in our window, and the dates that change things. */
+function StayLengths({ regionId, current }: { regionId: string; current: number | null }) {
+  const g = regionStayGuide(regionId);
+  const lengths = g ? Object.keys(g.nights).map(Number).sort((a, b) => a - b) : [];
+  const [picked, setPicked] = useState<number | null>(null);
+  if (!g || !lengths.length) return null;
+  const n = picked ?? (current && lengths.includes(current) ? current : (lengths.find((x) => g.best?.startsWith(String(x))) ?? lengths[1] ?? lengths[0]));
+  const e = g.nights[String(n)];
+  return (
+    <Section title="How long to stay">
+      {g.best ? (
+        <p className="text-sm text-ink-2">
+          <b className="text-ink">Best:</b> {g.best}
+        </p>
+      ) : null}
+      <div className="flex items-center gap-2">
+        <span className="text-sm font-semibold text-muted">Nights</span>
+        <div className="seg" role="group" aria-label="Nights">
+          {lengths.map((x) => (
+            <button key={x} aria-pressed={x === n} onClick={() => setPicked(x)} aria-label={`${x} ${x === 1 ? "night" : "nights"}`} className="min-w-10">
+              {x}
+            </button>
+          ))}
+        </div>
+      </div>
+      {e ? (
+        <div className="card grid gap-1.5 p-4 text-sm">
+          <p className="flex flex-wrap items-center gap-2">
+            <b>{n === current ? "As in the route" : `${n} ${n === 1 ? "night" : "nights"}`}</b>
+            <span className={`chip ${e.idle === "real" ? "border-warn text-warn" : e.idle === "some" ? "text-muted" : "text-ok"}`}>{IDLE_LABEL[e.idle]}</span>
+          </p>
+          <p className="text-ink-2">{e.why}</p>
+          <p className="text-ink-2">
+            <b>One more night:</b> {e.longer}
+          </p>
+          <p className="text-ink-2">
+            <b>One fewer:</b> {e.shorter}
+          </p>
+          <p className="text-muted">{e.note}</p>
+        </div>
+      ) : null}
+      {g.date_notes?.length ? (
+        <ul className="grid gap-1 text-sm text-ink-2">
+          {g.date_notes.map((d) => (
+            <li key={d} className="flex gap-2">
+              <span aria-hidden="true" className="text-accent">
+                ●
+              </span>
+              {d}
+            </li>
+          ))}
+        </ul>
+      ) : null}
+    </Section>
   );
 }
