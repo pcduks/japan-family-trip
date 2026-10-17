@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Place, Size } from "@/lib/types";
+import { fmtDay, fmtRange } from "@/lib/dates";
+import { planDays } from "@/lib/days";
 import { useStore } from "./providers";
 import { Back, Empty, Page, PageHeader, RegionDot } from "./ui";
 
@@ -72,16 +74,24 @@ export function PlacesList() {
   const [size, setSize] = useState<string>("");
   const [inPlan, setInPlan] = useState<"" | "yes" | "no">(params.get("in") === "plan" ? "yes" : "");
   const [q, setQ] = useState("");
-  const plannedDates = new Map<string, string[]>();
-  for (const d of snapshot.days) if (d.version_id === "plan") for (const it of d.items) if (it.place_id) plannedDates.set(it.place_id, [...(plannedDates.get(it.place_id) ?? []), d.date]);
+  const plan = snapshot.versions.find((v) => v.status === "plan");
+  // What the route's days visit, as the days are now (they follow any change to the route).
+  const plannedDates = useMemo(() => {
+    const m = new Map<string, string[]>();
+    for (const d of plan ? planDays(plan, snapshot) : []) for (const it of d.items) if (it.place_id) m.set(it.place_id, [...(m.get(it.place_id) ?? []), d.date]);
+    return m;
+  }, [plan, snapshot]);
   const [photosPref, setPhotosPref] = useState<boolean | null>(null);
   const photos = photosPref ?? Boolean(region);
   const setPhotos = (b: boolean) => setPhotosPref(b);
 
+  // Areas in the order of the route, then the rest by name.
   const regions = useMemo(() => {
-    const ids = Array.from(new Set(snapshot.places.map((p) => p.region)));
-    return ids.map((id) => snapshot.regions.find((r) => r.id === id)!).filter(Boolean).sort((a, b) => (a.status === "in_plan" ? 0 : 1) - (b.status === "in_plan" ? 0 : 1));
-  }, [snapshot]);
+    const ids = new Set(snapshot.places.map((p) => p.region));
+    const onRoute = (plan?.stays ?? []).map((s) => s.region).filter((id, i, all) => ids.has(id) && all.indexOf(id) === i);
+    const rest = Array.from(ids).filter((id) => !onRoute.includes(id)).sort((a, b) => (snapshot.regions.find((r) => r.id === a)?.name ?? a).localeCompare(snapshot.regions.find((r) => r.id === b)?.name ?? b));
+    return [...onRoute, ...rest].map((id) => snapshot.regions.find((r) => r.id === id)).filter((r): r is NonNullable<typeof r> => !!r);
+  }, [snapshot, plan]);
 
   const mustVotes = snapshot.votes.filter((v) => v.kind === "mustdo");
   const mustCount = (id: string) => mustVotes.filter((v) => ((v.value as { places?: string[] }).places ?? []).includes(id)).length;
@@ -97,11 +107,46 @@ export function PlacesList() {
   );
   const plannedCount = snapshot.places.filter((p) => plannedDates.has(p.id)).length;
 
+  const card = (p: Place) => {
+    const area = snapshot.regions.find((r) => r.id === p.region);
+    const mc = mustCount(p.id);
+    const h = hearts(p.id);
+    return (
+      <li key={p.id}>
+        <Link href={`/places/${p.id}`} className="card flex h-full gap-3 overflow-hidden no-underline">
+          {photos ? <PlaceThumb place={p} className="w-28 shrink-0 sm:w-32" /> : null}
+          <div className="grid flex-1 content-start gap-1 p-3">
+            <p className="flex items-center gap-1.5 text-xs text-muted">
+              <RegionDot id={p.region} size={8} /> {area?.name} · {SIZE_LABEL[p.size]}
+            </p>
+            <h3 className="text-[1.05rem] leading-tight">{p.name}</h3>
+            {p.why ? <p className="line-clamp-2 text-sm text-ink-2">{p.why}</p> : null}
+            {p.food?.recommended_by ? (
+              <p className="text-xs text-muted">
+                {p.food.type ? `${p.food.type} · ` : ""}
+                {p.food.price_band ? `${p.food.price_band} · ` : ""}recommended by {p.food.recommended_by}
+              </p>
+            ) : null}
+            <p className="flex flex-wrap gap-1 pt-1 text-xs">
+              {plannedDates.has(p.id) ? <span className="chip text-ok">on the route · {plannedDates.get(p.id)!.map((d) => fmtDay(d, false)).join(", ")}</span> : null}
+              {p.status === "avoid_for_her" ? <span className="chip text-danger">avoid for her</span> : p.effort_for_her !== "low" ? <span className={`chip ${p.effort_for_her === "high" ? "text-danger" : "text-warn"}`}>{EFFORT[p.effort_for_her]}</span> : null}
+              {p.closures.length ? <span className="chip">closed {p.closures.map((c) => (c.start === c.end ? fmtDay(c.start, false) : fmtRange(c.start, c.end))).join(", ")}</span> : null}
+              {p.closed_weekdays.length ? <span className="chip">closed {p.closed_weekdays.join("/")}</span> : null}
+              {mc ? <span className="chip">★ {mc} must-do</span> : null}
+              {myMust.includes(p.id) ? <span className="chip text-ok">my must-do</span> : null}
+              {h ? <span className="chip">♥ {h}</span> : null}
+            </p>
+          </div>
+        </Link>
+      </li>
+    );
+  };
+
   return (
     <Page wide>
       <Back href="/places">Places</Back>
-      <PageHeader eyebrow={`${snapshot.places.length} places · ${regions.length} regions · ${plannedCount} in the plan`} title="Places">
-        Everything we researched, with hours, closures and effort for her. A green badge means it is in the plan’s day by day; the rest are candidates near our bases. Photos and reviews come from Google when you open a place.
+      <PageHeader eyebrow={`${snapshot.places.length} places · ${regions.length} areas · ${plannedCount} on the route`} title="Places">
+        Everything we researched, by area: tap one to open it, or search. A green badge means the route’s days go there. Each place has its hours, closures and effort for Fernanda; photos and reviews come from Google when you open one.
       </PageHeader>
       <div className="grid gap-2">
         <input placeholder="Search… ramen, museum, snow, onsen" value={q} onChange={(e) => setQ(e.target.value)} aria-label="Search places" />
@@ -123,10 +168,10 @@ export function PlacesList() {
               </button>
             ))}
           </div>
-          <div className="seg" role="group" aria-label="In the plan">
+          <div className="seg" role="group" aria-label="On the route">
             {(["", "yes", "no"] as const).map((v) => (
               <button key={v} aria-pressed={inPlan === v} onClick={() => setInPlan(v)}>
-                {v === "" ? "All" : v === "yes" ? "In the plan" : "Not yet"}
+                {v === "" ? "All" : v === "yes" ? "On the route" : "Not yet"}
               </button>
             ))}
           </div>
@@ -136,45 +181,45 @@ export function PlacesList() {
         </div>
       </div>
 
-      {list.length ? (
+      {!list.length ? (
+        <Empty>Nothing matches.</Empty>
+      ) : region || q.trim() ? (
         <ul className={`grid gap-3 ${photos ? "sm:grid-cols-2 lg:grid-cols-3" : "sm:grid-cols-2"}`}>
-          {list.map((p) => {
-            const region = snapshot.regions.find((r) => r.id === p.region);
-            const mc = mustCount(p.id);
-            const h = hearts(p.id);
-            return (
-              <li key={p.id}>
-                <Link href={`/places/${p.id}`} className="card flex h-full gap-3 overflow-hidden no-underline">
-                  {photos ? <PlaceThumb place={p} className="w-28 shrink-0 sm:w-32" /> : null}
-                  <div className="grid flex-1 content-start gap-1 p-3">
-                    <p className="flex items-center gap-1.5 text-xs text-muted">
-                      <RegionDot id={p.region} size={8} /> {region?.name} · {SIZE_LABEL[p.size]}
-                    </p>
-                    <h3 className="text-[1.05rem] leading-tight">{p.name}</h3>
-                    {p.why ? <p className="line-clamp-2 text-sm text-ink-2">{p.why}</p> : null}
-                    {p.food?.recommended_by ? (
-                      <p className="text-xs text-muted">
-                        {p.food.type ? `${p.food.type} · ` : ""}
-                        {p.food.price_band ? `${p.food.price_band} · ` : ""}recommended by {p.food.recommended_by}
-                      </p>
-                    ) : null}
-                    <p className="flex flex-wrap gap-1 pt-1 text-xs">
-                      {plannedDates.has(p.id) ? <span className="chip text-ok">in the plan · {plannedDates.get(p.id)!.map((d) => d.slice(5).replace("-", "/")).join(", ")}</span> : null}
-                      {p.status === "avoid_for_her" ? <span className="chip text-danger">avoid for her</span> : p.effort_for_her !== "low" ? <span className={`chip ${p.effort_for_her === "high" ? "text-danger" : "text-warn"}`}>{EFFORT[p.effort_for_her]}</span> : null}
-                      {p.closures.length ? <span className="chip">closed {p.closures.map((c) => `${c.start.slice(8)}–${c.end.slice(5).replace("-", "/")}`).join(", ")}</span> : null}
-                      {p.closed_weekdays.length ? <span className="chip">closed {p.closed_weekdays.join("/")}</span> : null}
-                      {mc ? <span className="chip">★ {mc} must-do</span> : null}
-                      {myMust.includes(p.id) ? <span className="chip text-ok">my must-do</span> : null}
-                      {h ? <span className="chip">♥ {h}</span> : null}
-                    </p>
-                  </div>
-                </Link>
-              </li>
-            );
-          })}
+          {list.map((p) => (
+            card(p)
+          ))}
         </ul>
       ) : (
-        <Empty>Nothing matches.</Empty>
+        <div className="grid gap-2">
+          {regions.map((r) => {
+            const here = list.filter((p) => p.region === r.id);
+            if (!here.length) return null;
+            const onRoute = here.filter((p) => plannedDates.has(p.id)).length;
+            return (
+              <details key={r.id} className="card group overflow-hidden">
+                <summary className="flex cursor-pointer list-none items-center gap-2 p-3 [&::-webkit-details-marker]:hidden">
+                  <RegionDot id={r.id} size={10} />
+                  <span className="display flex-1 text-[1.1rem] leading-tight">{r.name}</span>
+                  <span className="text-xs text-muted">
+                    {here.length} {here.length === 1 ? "place" : "places"}
+                    {onRoute ? ` · ${onRoute} on the route` : ""}
+                  </span>
+                  <span aria-hidden="true" className="text-muted transition-transform group-open:rotate-180">
+                    ▾
+                  </span>
+                </summary>
+                <ul className={`grid gap-3 border-t border-rule p-3 ${photos ? "sm:grid-cols-2 lg:grid-cols-3" : "sm:grid-cols-2"}`}>
+                  {here.map((p) => (
+                    card(p)
+                  ))}
+                </ul>
+                <p className="px-3 pb-3 text-sm">
+                  <Link href={`/areas/${r.id}`}>All about {r.name} →</Link>
+                </p>
+              </details>
+            );
+          })}
+        </div>
       )}
     </Page>
   );
