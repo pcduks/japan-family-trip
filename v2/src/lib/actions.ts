@@ -9,6 +9,8 @@ import type { Comment, Reaction, Stay, SuggestionDiff, Version, VoteKind } from 
 import type { Viewer } from "./supabase/server";
 import { describeDiff } from "./versions";
 import { rowToStay } from "./data/loader";
+import { tripData } from "./data/file";
+import { afterAccept, mergeOnto, sameRoute, stopNames, validRoute } from "./merge";
 
 type Row = Record<string, unknown>;
 
@@ -38,6 +40,15 @@ async function replaceStays(sb: DB, versionId: string, stays: Stay[]) {
   fail(await sb.from("versions").update({ updated_at: new Date().toISOString() }).eq("id", versionId), "versions");
 }
 
+const TRIP = tripData().trip;
+
+async function planRow(sb: DB): Promise<string> {
+  const { data } = await sb.from("versions").select("id").eq("status", "plan").maybeSingle();
+  const id = (data as Row | null)?.id as string | undefined;
+  if (!id) throw new ActionError("No plan", 500);
+  return id;
+}
+
 async function canEditVersion(sb: DB, me: Viewer, id: string): Promise<Row | null> {
   const { data } = await sb.from("versions").select("*").eq("id", id).maybeSingle();
   const row = (data as Row | null) ?? null;
@@ -58,6 +69,19 @@ export async function runAction(sb: DB, me: Viewer, action: string, p: Record<st
       if (!before && me.role !== "planner" && v.status !== "personal") throw new ActionError("Members create personal versions only", 403);
       if (!before && v.status === "personal" && v.owner !== me.travellerId) throw new ActionError("A personal version belongs to its author", 403);
       const beforeStays = before ? await planStays(sb, v.id) : null;
+      if (before?.status === "plan" && beforeStays) {
+        const bad = validRoute(v.stays, TRIP.start, TRIP.nights);
+        if (bad) throw new ActionError(bad);
+        // Someone changed the route while this was being edited: never overwrite it without asking.
+        const base = Array.isArray(p.base) ? (p.base as Stay[]) : null;
+        if (base && !sameRoute(base, beforeStays)) {
+          if (p.onTop !== true) throw new ActionError(`changed:${describeDiff(base, beforeStays, regions as never).join("; ")}`, 409);
+          const m = mergeOnto(base, v.stays, beforeStays, TRIP.start);
+          if (m.kind === "clash") throw new ActionError(`Your change and the newer one both touch ${stopNames(m.stops, regions)}. Look at the route first.`, 409);
+          if (m.kind === "already") return;
+          v.stays = m.stays;
+        }
+      }
       const row: Row = {
         id: v.id,
         name: String(v.name ?? "").trim().slice(0, 80) || "Untitled",
@@ -101,7 +125,14 @@ export async function runAction(sb: DB, me: Viewer, action: string, p: Record<st
     case "suggest": {
       const diff = p.diff as SuggestionDiff;
       if (!diff || !Array.isArray(diff.stays)) throw new ActionError("A diff with stays is required");
-      fail(await sb.from("suggestions").insert({ from_version_id: (p.fromVersionId as string | null) ?? null, author_id: me.travellerId, diff, comment: typeof p.comment === "string" ? p.comment : null }), "suggestions");
+      const bad = validRoute(diff.stays, TRIP.start, TRIP.nights);
+      if (bad) throw new ActionError(bad);
+      const planId = await planRow(sb);
+      const now = await planStays(sb, planId);
+      const stored: SuggestionDiff = { ...diff, base: Array.isArray(diff.base) ? diff.base : now };
+      // One open suggestion per person: sending again replaces the earlier one.
+      fail(await sb.from("suggestions").delete().eq("author_id", me.travellerId).eq("status", "open"), "suggestions");
+      fail(await sb.from("suggestions").insert({ from_version_id: (p.fromVersionId as string | null) ?? null, author_id: me.travellerId, diff: stored, comment: typeof p.comment === "string" ? p.comment : null }), "suggestions");
       return;
     }
     case "decideSuggestion": {
@@ -111,17 +142,22 @@ export async function runAction(sb: DB, me: Viewer, action: string, p: Record<st
       const { data } = await sb.from("suggestions").select("*").eq("id", id).eq("status", "open").maybeSingle();
       const s = data as Row | null;
       if (!s) throw new ActionError("That suggestion is not open", 404);
-      if (decision === "accepted") {
-        const { data: planRow } = await sb.from("versions").select("id").eq("status", "plan").maybeSingle();
-        const planId = (planRow as Row | null)?.id as string | undefined;
-        if (!planId) throw new ActionError("No plan", 500);
-        const diff = s.diff as SuggestionDiff;
+      const diff = s.diff as SuggestionDiff;
+      // "applied": a planner already saved the change (adjusted) on the trip; only mark it accepted.
+      if (decision === "accepted" && p.applied !== true) {
+        const planId = await planRow(sb);
         const before = await planStays(sb, planId);
-        await replaceStays(sb, planId, diff.stays);
-        if (diff.pace) fail(await sb.from("versions").update({ pace: diff.pace }).eq("id", planId), "versions");
-        fail(await sb.from("plan_history").insert({ version_id: planId, actor_id: me.travellerId, change: { summary: diff.summary, before, after: diff.stays, suggestion_id: id, suggested_by: s.author_id } }), "plan_history");
+        const r = afterAccept(diff, before, TRIP, regions);
+        if (!r.ok) throw new ActionError(r.message, 409);
+        const after = r.stays;
+        if (after) {
+          await replaceStays(sb, planId, after);
+          if (diff.pace) fail(await sb.from("versions").update({ pace: diff.pace }).eq("id", planId), "versions");
+          fail(await sb.from("plan_history").insert({ version_id: planId, actor_id: me.travellerId, change: { summary: describeDiff(before, after, regions as never), before, after, suggestion_id: id, suggested_by: s.author_id } }), "plan_history");
+        }
       }
-      fail(await sb.from("suggestions").update({ status: decision, decided_by: me.travellerId, decided_at: now }).eq("id", id), "suggestions");
+      const note = typeof p.note === "string" && p.note.trim() ? p.note.trim().slice(0, 500) : null;
+      fail(await sb.from("suggestions").update({ status: decision, decided_by: me.travellerId, decided_at: now, diff: { ...diff, decision_note: note } }).eq("id", id), "suggestions");
       return;
     }
     case "setDeadlineDone": {
@@ -142,10 +178,13 @@ export async function runAction(sb: DB, me: Viewer, action: string, p: Record<st
       const h = data as Row | null;
       if (!h) throw new ActionError("No such change", 404);
       const versionId = h.version_id as string;
-      const change = h.change as { before: Stay[] };
+      const change = h.change as { before: Stay[]; after: Stay[]; suggestion_id?: string | null };
       const current = await planStays(sb, versionId);
+      // Undo only while the route is still what that change left; otherwise it would wipe a newer change.
+      if (!sameRoute(current, change.after)) throw new ActionError("The route has changed since. Undo the newest change first.", 409);
       await replaceStays(sb, versionId, change.before);
-      fail(await sb.from("plan_history").insert({ version_id: versionId, actor_id: me.travellerId, change: { summary: ["reverted a change"], before: current, after: change.before, reverted: id } }), "plan_history");
+      fail(await sb.from("plan_history").insert({ version_id: versionId, actor_id: me.travellerId, change: { summary: ["undid a change"], before: current, after: change.before, reverted: id } }), "plan_history");
+      if (change.suggestion_id) fail(await sb.from("suggestions").update({ status: "open", decided_by: null, decided_at: null }).eq("id", change.suggestion_id), "suggestions");
       return;
     }
     case "addComment": {

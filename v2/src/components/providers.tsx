@@ -4,8 +4,9 @@ import { useRouter } from "next/navigation";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { localStore, useLocalStore, useSystemDark } from "@/lib/localStore";
 import type { RulesContext } from "@/lib/rules";
-import type { Comment, PlanHistoryEntry, Reaction, Role, Snapshot, Suggestion, SuggestionDiff, Version, Vote, VoteKind } from "@/lib/types";
+import type { Comment, PlanHistoryEntry, Reaction, Role, Snapshot, Stay, Suggestion, SuggestionDiff, Version, Vote, VoteKind } from "@/lib/types";
 import { describeDiff, newId } from "@/lib/versions";
+import { afterAccept, mergeOnto, sameRoute, stopNames, validRoute } from "@/lib/merge";
 
 /* ------------------------------------------------------------ prefs */
 
@@ -59,14 +60,16 @@ export interface Store {
   error: string | null;
   busy: boolean;
   refresh: () => Promise<void>;
-  saveVersion: (v: Version, note?: string) => Promise<void>;
+  /** Resolves to null when saved, else why not. With `base`, a change to the route that moved on meanwhile is refused unless `onTop`. */
+  saveVersion: (v: Version, note?: string, opts?: { base?: Stay[]; onTop?: boolean }) => Promise<string | null>;
   deleteVersion: (id: string) => Promise<void>;
   setVote: (kind: VoteKind, value: unknown) => Promise<void>;
   revealRanks: () => Promise<void>;
-  suggest: (fromVersionId: string | null, diff: SuggestionDiff, comment: string) => Promise<void>;
-  decideSuggestion: (id: string, decision: "accepted" | "declined") => Promise<void>;
+  suggest: (fromVersionId: string | null, diff: SuggestionDiff, comment: string) => Promise<string | null>;
+  /** With `applied`, the planner already saved the change on the trip: only mark it accepted. */
+  decideSuggestion: (id: string, decision: "accepted" | "declined", note?: string, applied?: boolean) => Promise<string | null>;
   withdrawSuggestion: (id: string) => Promise<void>;
-  revertHistory: (id: string) => Promise<void>;
+  revertHistory: (id: string) => Promise<string | null>;
   setDeadlineDone: (id: string, done: boolean) => Promise<void>;
   addComment: (targetType: Comment["target_type"], targetId: string, body: string) => Promise<void>;
   toggleReaction: (targetType: string, targetId: string, kind: Reaction["kind"]) => Promise<void>;
@@ -178,15 +181,19 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
 
   const isPlanner = !!me && me.role === "planner";
 
+  /** One write. Resolves to null when it worked, else the reason; a quiet write leaves the reason to the caller to show. */
   const run = useCallback(
-    async (action: string, payload: Record<string, unknown>) => {
+    async (action: string, payload: Record<string, unknown>, quiet = false): Promise<string | null> => {
       setBusy(true);
       try {
         await act(action, payload);
         setError(null);
         await refresh();
+        return null;
       } catch (e) {
-        setError((e as Error).message);
+        if (!quiet) setError((e as Error).message);
+        await refresh();
+        return (e as Error).message;
       } finally {
         setBusy(false);
       }
@@ -197,24 +204,35 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
   const patchDemo = (fn: (d: DemoState) => DemoState) => demoStore.set(fn(demoStore.get()));
 
   const saveVersion = useCallback(
-    async (v: Version, note?: string) => {
+    async (v: Version, note?: string, opts?: { base?: Stay[]; onTop?: boolean }): Promise<string | null> => {
       const who = me;
-      if (!who) return;
-      const before = snapshot.versions.find((x) => x.id === v.id);
+      if (!who) return "Sign in first";
       const isPlan = v.status === "plan";
-      const summary = before ? describeDiff(before.stays, v.stays, snapshot.regions) : [`created “${v.name}”`];
+      const before = !sb && isPlan ? (demoStore.get().planOverride ?? snapshot.versions.find((x) => x.id === v.id)) : snapshot.versions.find((x) => x.id === v.id);
       if (!sb) {
+        if (isPlan && before) {
+          const bad = validRoute(v.stays, snapshot.trip.start, snapshot.trip.nights);
+          if (bad) return bad;
+          if (opts?.base && !sameRoute(opts.base, before.stays)) {
+            if (!opts.onTop) return `changed:${describeDiff(opts.base, before.stays, snapshot.regions).join("; ")}`;
+            const m = mergeOnto(opts.base, v.stays, before.stays, snapshot.trip.start);
+            if (m.kind === "clash") return `Your change and the newer one both touch ${stopNames(m.stops, snapshot.regions)}. Look at the route first.`;
+            if (m.kind === "already") return null;
+            v = { ...v, stays: m.stays };
+          }
+        }
+        const summary = before ? describeDiff(before.stays, v.stays, snapshot.regions) : [`created “${v.name}”`];
         patchDemo((d) => {
           const history = isPlan && before ? [{ id: newId(), version_id: v.id, actor_id: who.travellerId, change: { summary: note ? [note, ...summary] : summary, before: before.stays, after: v.stays }, at: new Date().toISOString() }, ...d.history] : d.history;
           if (isPlan) return { ...d, planOverride: v, history };
           const others = d.versions.filter((x) => x.id !== v.id);
           return { ...d, versions: [...others, { ...v, updated_at: new Date().toISOString() }], history };
         });
-        return;
+        return null;
       }
-      await run("saveVersion", { version: v, note });
+      return run("saveVersion", { version: v, note, base: opts?.base, onTop: opts?.onTop }, !!opts?.base);
     },
-    [sb, run, snapshot.versions, snapshot.regions, me],
+    [sb, run, snapshot.versions, snapshot.regions, snapshot.trip, me],
   );
 
   const deleteVersion = useCallback(
@@ -242,43 +260,54 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
   }, [sb, run]);
 
   const suggest = useCallback(
-    async (fromVersionId: string | null, diff: SuggestionDiff, comment: string) => {
+    async (fromVersionId: string | null, diff: SuggestionDiff, comment: string): Promise<string | null> => {
       const who = me;
-      if (!who) return;
-      if (!sb)
-        return patchDemo((d) => ({
+      if (!who) return "Sign in first";
+      if (!sb) {
+        const bad = validRoute(diff.stays, snapshot.trip.start, snapshot.trip.nights);
+        if (bad) return bad;
+        // Read the demo route from storage, not the render this callback was made in: a toast can call it later.
+        const plan = demoStore.get().planOverride ?? snapshot.versions.find((v) => v.status === "plan");
+        const stored: SuggestionDiff = { ...diff, base: diff.base ?? plan?.stays };
+        patchDemo((d) => ({
           ...d,
-          suggestions: [{ id: newId(), from_version_id: fromVersionId, author_id: who.travellerId, diff, comment, status: "open", created_at: new Date().toISOString() }, ...d.suggestions],
+          // One open suggestion per person: sending again replaces the earlier one.
+          suggestions: [{ id: newId(), from_version_id: fromVersionId, author_id: who.travellerId, diff: stored, comment, status: "open", created_at: new Date().toISOString() }, ...d.suggestions.filter((x) => !(x.author_id === who.travellerId && x.status === "open"))],
         }));
-      await run("suggest", { fromVersionId, diff, comment });
+        return null;
+      }
+      return run("suggest", { fromVersionId, diff, comment }, true);
     },
-    [sb, run, me],
+    [sb, run, me, snapshot.trip, snapshot.versions],
   );
 
   const decideSuggestion = useCallback(
-    async (id: string, decision: "accepted" | "declined") => {
+    async (id: string, decision: "accepted" | "declined", note?: string, applied?: boolean): Promise<string | null> => {
       const who = me;
-      if (!who) return;
+      if (!who) return "Sign in first";
       if (!sb) {
         const s = demoStore.get().suggestions.find((x) => x.id === id);
-        if (!s) return;
-        const plan = snapshot.versions.find((v) => v.status === "plan");
+        // Read the demo route from storage, not the render this callback was made in: a toast can call it later.
+        const plan = demoStore.get().planOverride ?? snapshot.versions.find((v) => v.status === "plan");
+        if (!s || !plan) return "That suggestion is not open";
+        const r = decision === "accepted" && !applied ? afterAccept(s.diff, plan.stays, snapshot.trip, snapshot.regions) : ({ ok: true, stays: null } as const);
+        if (!r.ok) return r.message;
         patchDemo((d) => {
-          const suggestions = d.suggestions.map((x) => (x.id === id ? { ...x, status: decision, decided_by: who.travellerId, decided_at: new Date().toISOString() } : x));
-          if (decision === "declined" || !plan) return { ...d, suggestions };
-          const next: Version = { ...plan, stays: s.diff.stays, pace: s.diff.pace ?? plan.pace };
+          const suggestions = d.suggestions.map((x) => (x.id === id ? { ...x, status: decision, decided_by: who.travellerId, decided_at: new Date().toISOString(), diff: { ...x.diff, decision_note: note?.trim() || null } } : x));
+          if (!r.stays) return { ...d, suggestions };
+          const next: Version = { ...plan, stays: r.stays, pace: s.diff.pace ?? plan.pace };
           return {
             ...d,
             suggestions,
             planOverride: next,
-            history: [{ id: newId(), version_id: plan.id, actor_id: who.travellerId, change: { summary: s.diff.summary, before: plan.stays, after: next.stays, suggestion_id: id }, at: new Date().toISOString() }, ...d.history],
+            history: [{ id: newId(), version_id: plan.id, actor_id: who.travellerId, change: { summary: describeDiff(plan.stays, r.stays, snapshot.regions), before: plan.stays, after: r.stays, suggestion_id: id }, at: new Date().toISOString() }, ...d.history],
           };
         });
-        return;
+        return null;
       }
-      await run("decideSuggestion", { id, decision });
+      return run("decideSuggestion", { id, decision, note, applied }, true);
     },
-    [sb, run, snapshot.versions, me],
+    [sb, run, snapshot.versions, snapshot.trip, snapshot.regions, me],
   );
 
   const withdrawSuggestion = useCallback(
@@ -290,21 +319,25 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
   );
 
   const revertHistory = useCallback(
-    async (id: string) => {
+    async (id: string): Promise<string | null> => {
       const who = me;
-      if (!who) return;
+      if (!who) return "Sign in first";
       if (!sb) {
         const h = demoStore.get().history.find((x) => x.id === id);
-        const plan = snapshot.versions.find((v) => v.status === "plan");
-        if (!h || !plan) return;
+        // Read the demo route from storage, not the render this callback was made in: a toast can call it later.
+        const plan = demoStore.get().planOverride ?? snapshot.versions.find((v) => v.status === "plan");
+        if (!h || !plan) return "No such change";
+        // Undo only while the route is still what that change left; otherwise it would wipe a newer change.
+        if (!sameRoute(plan.stays, h.change.after)) return "The route has changed since. Undo the newest change first.";
         patchDemo((d) => ({
           ...d,
           planOverride: { ...plan, stays: h.change.before },
-          history: [{ id: newId(), version_id: plan.id, actor_id: who.travellerId, change: { summary: ["reverted a change"], before: plan.stays, after: h.change.before }, at: new Date().toISOString() }, ...d.history],
+          suggestions: h.change.suggestion_id ? d.suggestions.map((x) => (x.id === h.change.suggestion_id ? { ...x, status: "open", decided_by: null, decided_at: null } : x)) : d.suggestions,
+          history: [{ id: newId(), version_id: plan.id, actor_id: who.travellerId, change: { summary: ["undid a change"], before: plan.stays, after: h.change.before }, at: new Date().toISOString() }, ...d.history],
         }));
-        return;
+        return null;
       }
-      await run("revertHistory", { id });
+      return run("revertHistory", { id }, true);
     },
     [sb, run, snapshot.versions, me],
   );

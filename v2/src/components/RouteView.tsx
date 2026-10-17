@@ -27,14 +27,30 @@ import { RegionCover } from "./RegionCover";
 import { StayLodging } from "./StayLodging";
 import { Back, Empty, Page, RegionDot, Section } from "./ui";
 import { WhatsNext } from "./WhatsNext";
+import { EditBand, EditBar, MySuggestion, NightSheet, NyeSheet, Sheet, Toast, useDraftCount, useRouteEditor } from "./RouteEdit";
+import { nyeIndex } from "@/lib/nightMoves";
+import { stopKeys } from "@/lib/merge";
 
 type Src = { label: string; url: string };
 const WHY = why as unknown as { facts: { title: string; text: string; sources: Src[] }[]; route: { intro: string; steps: { region: string; title: string; text: string }[]; sources: Src[] }; for_whom: { who: string; text: string; ids?: string[] }[]; trust: { points: string[]; links: { label: string; href: string }[] } };
 
 /** A route's page: the map, the 21 days, the stops, and why. With no id it is the route we are taking (the Trip tab). */
 export function RouteView({ id }: { id?: string }) {
-  const { snapshot, me, isPlanner } = useStore();
+  const { snapshot, me, isPlanner, suggest, saveVersion, decideSuggestion, revertHistory } = useStore();
   const plan = snapshot.versions.find((v) => v.status === "plan");
+  const editor = useRouteEditor(plan);
+  const draftCount = useDraftCount();
+  const [sheet, setSheet] = useState<SheetState>(null);
+  const [toast, setToast] = useState<{ text: string; action?: { label: string; run: () => void } } | null>(null);
+  const [barError, setBarError] = useState<string | null>(null);
+  const [writing, setWriting] = useState(false);
+  const [confirmNye, setConfirmNye] = useState(false);
+  const [note, setNote] = useState("");
+  // The toast's Undo runs after the save has refreshed the history, so it reads the latest, not the one it was made with.
+  const historyRef = useRef(snapshot.history);
+  useEffect(() => {
+    historyRef.current = snapshot.history;
+  }, [snapshot.history]);
   const [openFacts, setOpenFacts] = useState<number | null>(null);
   const [feelOpen, setFeelOpen] = useState(false);
   const regionName = (rid: string) => snapshot.regions.find((r) => r.id === rid)?.name ?? rid;
@@ -65,7 +81,20 @@ export function RouteView({ id }: { id?: string }) {
     el.open = true;
     requestAnimationFrame(() => el.scrollIntoView({ block: "start" }));
   }, []);
-  const days = useMemo(() => (found ?? plan ? planDays(found ?? plan!, snapshot) : []), [found, plan, snapshot]);
+  const editingPlan = !id && editor.editing;
+  const draftStays = editor.stays;
+  const days = useMemo(() => (found ?? plan ? planDays(editingPlan ? { ...plan!, stays: draftStays } : (found ?? plan!), snapshot) : []), [found, plan, snapshot, editingPlan, draftStays]);
+  // From the Inbox, "See it on the trip" opens the planner's edit mode with that suggestion applied.
+  const reviewId = useRef<string | null>(null);
+  useEffect(() => {
+    const want = new URLSearchParams(window.location.search).get("review");
+    if (!want || reviewId.current === want || !isPlanner) return;
+    const s = snapshot.suggestions.find((x) => x.id === want && x.status === "open");
+    if (!s) return;
+    reviewId.current = want;
+    editor.start({ suggestion: s, review: true });
+    window.history.replaceState(null, "", "/");
+  }, [snapshot.suggestions, isPlanner, editor]);
   if (!plan) return null;
   if (id && !found)
     return (
@@ -75,8 +104,63 @@ export function RouteView({ id }: { id?: string }) {
       </Page>
     );
 
-  const v: Version = found ?? plan;
-  const isPlan = v.id === plan.id;
+  const isPlan = (found ?? plan).id === plan.id;
+  const editing = isPlan && editor.editing;
+  const v: Version = editing ? { ...plan, stays: editor.stays } : (found ?? plan);
+  const baseNights = new Map(stopKeys(editor.base).map((k, i) => [k, editor.base[i].nights]));
+  const keys = stopKeys(v.stays);
+  const planners = plannerNames(snapshot.travellers);
+  const mySent = snapshot.suggestions.find((s) => s.author_id === me?.travellerId && s.status === "open");
+  const reviewing = editor.review;
+  const mode: "member" | "planner" | "review" = reviewing ? "review" : isPlanner ? "planner" : "member";
+  const nyeChanged = editing && editor.base[nyeIndex(editor.base)]?.region !== editor.stays[nyeIndex(editor.stays)]?.region;
+  const latestHistory = () => historyRef.current.filter((h) => h.version_id === plan.id).sort((a, b) => b.at.localeCompare(a.at))[0];
+  const undoToast = (text: string) =>
+    setToast({
+      text,
+      action: {
+        label: "Undo",
+        run: async () => {
+          const h = latestHistory();
+          const why = h ? await revertHistory(h.id) : "Nothing to undo";
+          setToast({ text: why ?? "Undone. The route is as it was." });
+        },
+      },
+    });
+  /** Open edit mode, then the night sheet for that stop. */
+  const changeNights = (i: number, dir: "more" | "fewer") => {
+    if (!editing) editor.start(mySent && !isPlanner ? { suggestion: mySent } : undefined);
+    setSheet({ kind: "night", index: i, dir });
+  };
+  const startEditing = () => editor.start(mySent && !isPlanner && !draftCount ? { suggestion: mySent } : undefined);
+  async function updateRoute(onTop = false) {
+    if (nyeChanged && !confirmNye && !onTop) return setConfirmNye(true);
+    setWriting(true);
+    setBarError(null);
+    const why = await saveVersion({ ...plan!, stays: editor.stays }, undefined, { base: editor.base, onTop });
+    setWriting(false);
+    if (why?.startsWith("changed:")) return setSheet({ kind: "conflict", lines: why.slice(8) });
+    if (why) return setBarError(why);
+    setConfirmNye(false);
+    setSheet(null);
+    editor.leave(true);
+    undoToast("Route updated for everyone.");
+  }
+  async function acceptReview() {
+    if (!reviewing) return;
+    setWriting(true);
+    setBarError(null);
+    let why: string | null = null;
+    if (!editor.canUndo) why = await decideSuggestion(reviewing.id, "accepted");
+    else {
+      why = await saveVersion({ ...plan!, stays: editor.stays }, undefined, { base: editor.base });
+      if (!why) why = await decideSuggestion(reviewing.id, "accepted", undefined, true);
+    }
+    setWriting(false);
+    if (why) return setBarError(why.startsWith("changed:") ? `The route changed meanwhile: ${why.slice(8)}. Close and open it again.` : why);
+    editor.leave(true);
+    undoToast(`${firstName(snapshot.travellers, reviewing.author_id)}’s change is part of the route.`);
+  }
   const g = guideFor(v, snapshot);
   const mine = v.status === "personal";
   const author = snapshot.travellers.find((x) => x.id === v.owner)?.name.split(" ")[0];
@@ -102,7 +186,23 @@ export function RouteView({ id }: { id?: string }) {
 
   return (
     <Page wide>
+      {editing ? <EditBand mode={mode} author={reviewing ? firstName(snapshot.travellers, reviewing.author_id) : undefined} onClose={() => (editor.dirty && !reviewing ? setSheet({ kind: "leave" }) : editor.leave(!!reviewing))} /> : null}
+      {editor.notice && editing ? (
+        <div className="card grid gap-2 border-l-4 border-l-warn p-3 text-sm" role="status">
+          <p>{editor.notice.text}</p>
+          {editor.notice.actions ? (
+            <div className="flex flex-wrap gap-2">
+              {editor.notice.actions.map((a) => (
+                <button key={a.label} className="btn btn-sm" onClick={a.run}>
+                  {a.label}
+                </button>
+              ))}
+            </div>
+          ) : null}
+        </div>
+      ) : null}
       {isPlan ? null : <Back href="/routes">Routes</Back>}
+      {editing ? null : (
       <section className="grid gap-2">
         <p className="eyebrow">{isPlan ? `The route · ${fmtRange(snapshot.trip.start, snapshot.trip.end)}` : mine ? `${author ? `${author}’s` : "A family"} route · ${fmtStamp(v.updated_at)}` : `Another route · ${STYLE_LABEL[styleOf(v.id)] ?? ""} · ${paceLabel(v.pace)}`}</p>
         <h1 className="display text-[2.3rem] leading-[1.02] sm:text-5xl">{g.theme}</h1>
@@ -113,7 +213,9 @@ export function RouteView({ id }: { id?: string }) {
           </a>
         ) : null}
       </section>
+      )}
 
+      {editing ? null : (
       <div className="grid gap-2">
         <JourneyMap regions={snapshot.regions} stays={v.stays} ghost={isPlan ? null : plan.stays} aspect={wide ? 1.9 : 1.2} onStop={scrollToStop} />
         <p className="text-sm text-muted">
@@ -123,27 +225,44 @@ export function RouteView({ id }: { id?: string }) {
           · about {stats.travelHours} h between bases · New Year’s Eve in {regionName(stats.newYearsEve?.region ?? "")} · {fmtSgd(budget)} per couple
           {!isPlan ? ` · ${budget - planBudget >= 0 ? "+" : "−"}${fmtSgd(Math.abs(budget - planBudget))} vs the route` : ""}
         </p>
-        <ChangeButton
-          href={`/build?from=${v.id}`}
-          label={isPlan ? (isPlanner ? "Edit the route" : "Suggest a change") : "Change this route"}
-          caption={isPlan ? (isPlanner ? "Everyone sees the change once you save it." : `${plannerNames(snapshot.travellers)} see it before anything changes.`) : "Start from this route and make it yours."}
-        />
+        {isPlan ? (
+          <ChangeButton
+            onClick={startEditing}
+            label={isPlanner ? "Edit the route" : draftCount ? "Carry on with your suggestion" : mySent ? "Change your suggestion" : "Suggest a change"}
+            caption={isPlanner ? "Everyone sees the change once you save it." : draftCount ? `${draftCount} ${draftCount === 1 ? "change" : "changes"}, not sent yet.` : mySent ? `It replaces the one you sent on ${fmtStamp(mySent.created_at ?? "")}.` : `${planners} see it before anything changes.`}
+          />
+        ) : mine ? (
+          <ChangeButton href={`/build?from=${v.id}`} label={v.owner === me?.travellerId ? "Edit my route" : "Change this route"} caption={v.owner === me?.travellerId ? "Only you see changes until you send it." : "Start from this route and make it yours."} />
+        ) : (
+          <>
+            <ChangeButton onClick={() => setSheet({ kind: "whole" })} label={isPlanner ? "Make this the route" : "Suggest this route"} caption={isPlanner ? "It replaces the route for everyone, with Undo." : `${planners} see it with a note from you.`} />
+            <Link href={`/build?from=${v.id}`} className="justify-self-start text-sm">
+              Or start your own from it →
+            </Link>
+          </>
+        )}
       </div>
+      )}
 
-      {isPlan ? <WhatsNext /> : null}
-      <Link href="/routes" className="justify-self-start text-sm font-semibold">
-        {isPlan ? "Other routes →" : "All routes →"}
-      </Link>
+      {isPlan && !editing && !isPlanner ? <MySuggestion onChangeAgain={(s) => editor.start({ suggestion: s })} /> : null}
+      {isPlan && !editing ? <WhatsNext /> : null}
+      {editing ? null : (
+        <Link href="/routes" className="justify-self-start text-sm font-semibold">
+          {isPlan ? "Other routes →" : "All routes →"}
+        </Link>
+      )}
       {mine && v.owner === me?.travellerId ? <SendRoute v={v} /> : null}
 
-      <Section title="The 21 days" aside="tap a day">
-        <PictureScroll version={v} onStop={scrollToStop} />
-      </Section>
+      {editing ? null : (
+        <Section title="The 21 days" aside="tap a day">
+          <PictureScroll version={v} onStop={scrollToStop} />
+        </Section>
+      )}
 
       <Section id="stops" title="Stop by stop" aside={`${v.stays.length} stops · tap one`}>
         <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-start lg:gap-6">
           <div ref={stickyRef} className="sticky top-0 z-[5] -mx-4 mb-3 bg-gradient-to-b from-bg from-80% to-transparent px-3 pt-2 pb-4 lg:order-2 lg:top-6 lg:mx-0 lg:bg-none lg:p-0">
-            <JourneyMap regions={snapshot.regions} stays={v.stays} t={t} aspect={wide ? 1.05 : 1.9} onStop={scrollToStop} label="The route, following the stop you are reading" />
+            <JourneyMap regions={snapshot.regions} stays={v.stays} ghost={editing && editor.dirty ? editor.base : null} t={t} aspect={wide ? 1.05 : editing ? 2.4 : 1.9} onStop={scrollToStop} label="The route, following the stop you are reading" />
           </div>
           <ol ref={listRef} className="grid gap-2">
             {v.stays.map((s, i) => {
@@ -167,7 +286,7 @@ export function RouteView({ id }: { id?: string }) {
                       </span>
                     </p>
                   ) : null}
-                  <details className="card group isolate overflow-hidden transition-shadow duration-300" style={activeStop === i ? { boxShadow: `0 0 0 2px ${regionColor(s.region)}, var(--shadow)` } : undefined}>
+                  <details className={`card group isolate overflow-hidden transition-shadow duration-300 ${editing && (baseNights.get(keys[i]) ?? 0) > s.nights ? "border-2 border-dashed border-warn" : ""}`} style={editing && baseNights.get(keys[i]) !== s.nights ? { boxShadow: `0 0 0 2px var(--accent), var(--shadow)` } : activeStop === i ? { boxShadow: `0 0 0 2px ${regionColor(s.region)}, var(--shadow)` } : undefined}>
                     <summary className="grid cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                       <RegionCover regionId={s.region} className="hero-fade h-32 sm:h-40" sizes="(max-width: 1024px) 100vw, 560px">
           <span aria-hidden="true" className="absolute inset-0 z-[1] bg-gradient-to-t from-black/75 via-black/30 to-transparent" />
@@ -184,6 +303,41 @@ export function RouteView({ id }: { id?: string }) {
                           </span>
                         </span>
                       </RegionCover>
+                      {editing ? (
+                        <span className="flex items-center justify-between gap-3 px-3 pt-2.5">
+                          <span className="text-sm">
+                            <b>
+                              {s.nights} {s.nights === 1 ? "night" : "nights"}
+                            </b>
+                            {baseNights.get(keys[i]) !== s.nights ? <span className="text-muted"> (was {baseNights.get(keys[i]) ?? 0})</span> : null}
+                            {i === nyeIndex(v.stays) ? <span className="block text-xs text-accent">New Year’s Eve here</span> : null}
+                          </span>
+                          <span className="flex gap-2">
+                            <button
+                              className="btn h-12 min-w-12 text-xl"
+                              aria-label={`One fewer night in ${regionName(s.region)}`}
+                              disabled={s.nights <= 1}
+                              title={s.nights <= 1 ? "Every stop needs at least one night" : undefined}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                changeNights(i, "fewer");
+                              }}
+                            >
+                              −
+                            </button>
+                            <button
+                              className="btn h-12 min-w-12 text-xl"
+                              aria-label={`One more night in ${regionName(s.region)}`}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                changeNights(i, "more");
+                              }}
+                            >
+                              +
+                            </button>
+                          </span>
+                        </span>
+                      ) : null}
                       {story ? (
                         <span className="grid gap-0.5 px-3 pt-2.5 text-sm">
                           <b className="text-ink">{story.hook}</b>
@@ -210,6 +364,30 @@ export function RouteView({ id }: { id?: string }) {
                           <p className="text-ink-2">
                             <b>One fewer:</b> {tr.shorter}
                           </p>
+                          {isPlan && !editing ? (
+                            <div className="flex flex-wrap gap-2 pt-1">
+                              <button className="btn btn-sm" onClick={() => changeNights(i, "more")}>
+                                + One more night
+                              </button>
+                              <button className="btn btn-sm" disabled={s.nights <= 1} onClick={() => changeNights(i, "fewer")}>
+                                − One fewer
+                              </button>
+                            </div>
+                          ) : null}
+                        </div>
+                      ) : null}
+                      {isPlan && i === nyeIndex(v.stays) ? (
+                        <div className="flex flex-wrap items-center gap-2 rounded-xl bg-[var(--ny)] p-2.5">
+                          <b className="text-accent">New Year’s Eve is here.</b>
+                          <button
+                            className="btn btn-sm"
+                            onClick={() => {
+                              if (!editing) editor.start(mySent && !isPlanner ? { suggestion: mySent } : undefined);
+                              setSheet({ kind: "nye" });
+                            }}
+                          >
+                            Spend New Year elsewhere
+                          </button>
                         </div>
                       ) : null}
                       {places.length ? (
@@ -244,14 +422,14 @@ export function RouteView({ id }: { id?: string }) {
         </div>
       </Section>
 
-      {g.nye ? (
+      {!editing && g.nye ? (
         <p className="card max-w-prose border-l-4 border-l-accent p-4 text-sm leading-relaxed text-ink-2">
           <b className="block pb-1 text-ink">New Year’s Eve</b>
           {g.nye}
         </p>
       ) : null}
 
-      {isPlan && g.written && g.story ? (
+      {editing ? null : isPlan && g.written && g.story ? (
         <PlanWhy g={g} />
       ) : (
       <Section title="Why this route">
@@ -323,9 +501,162 @@ export function RouteView({ id }: { id?: string }) {
       </Section>
       )}
 
-      <BudgetCard v={v} regions={snapshot.regions} regionName={regionName} title="What it costs, per couple" />
+      {editing ? (
+        <div aria-hidden="true" className="h-48" />
+      ) : (
+        <>
+          <BudgetCard v={v} regions={snapshot.regions} regionName={regionName} title="What it costs, per couple" />
+          <Comments targetType="version" targetId={v.id} />
+        </>
+      )}
 
-      <Comments targetType="version" targetId={v.id} />
+      {editing ? (
+        <EditBar
+          base={editor.base}
+          stays={editor.stays}
+          busy={writing}
+          error={barError}
+          canUndo={editor.canUndo}
+          onUndo={editor.undo}
+          primary={mode === "review" ? "Make it part of the route" : mode === "planner" ? (confirmNye ? "Yes, change New Year’s Eve" : "Update the route") : `Send to ${planners}`}
+          onPrimary={mode === "review" ? acceptReview : mode === "planner" ? () => updateRoute() : () => setSheet({ kind: "send" })}
+          secondary={mode === "review" ? { label: "Keep the route as it is", run: () => setSheet({ kind: "decline" }) } : undefined}
+        />
+      ) : null}
+
+      {sheet?.kind === "night" && editing ? (
+        <NightSheet stays={editor.stays} index={sheet.index} dir={sheet.dir} onPick={editor.apply} onClose={() => setSheet(null)} note={mode === "member" ? `The route stays as it is until ${planners} say yes.` : undefined} />
+      ) : null}
+      {sheet?.kind === "nye" && editing ? <NyeSheet stays={editor.stays} onPick={editor.apply} onClose={() => setSheet(null)} /> : null}
+      {sheet?.kind === "send" ? (
+        <Sheet title="Send your suggestion" onClose={() => setSheet(null)}>
+          <ul className="grid gap-1 text-sm">
+            {describeDiff(editor.base, editor.stays, snapshot.regions).map((l) => (
+              <li key={l}>• {l}</li>
+            ))}
+          </ul>
+          {mySent ? <p className="text-sm text-muted">This replaces what you sent on {fmtStamp(mySent.created_at ?? "")}.</p> : null}
+          <label className="grid gap-1 text-sm">
+            <b>Anything to tell them?</b>
+            <textarea className="min-h-20 rounded-xl border border-rule bg-bg p-2" value={note} onChange={(e) => setNote(e.target.value)} placeholder="Mum would like a rest day" />
+          </label>
+          {barError ? <p className="text-sm text-warn" role="alert">{barError}</p> : null}
+          <button
+            className="btn btn-primary w-full"
+            disabled={writing}
+            onClick={async () => {
+              setWriting(true);
+              const why = await suggest(plan.id, { stays: editor.stays, base: editor.base, summary: describeDiff(editor.base, editor.stays, snapshot.regions) }, note.trim());
+              setWriting(false);
+              if (why) return setBarError(why);
+              setNote("");
+              setSheet(null);
+              editor.leave(true);
+              setToast({ text: `Sent to ${planners}. They’ll see it in their inbox.` });
+            }}
+          >
+            {writing ? "Sending…" : "Send"}
+          </button>
+          <p className="text-center text-xs text-muted">{planners} will see it in their inbox. Nothing changes until one of them says yes.</p>
+        </Sheet>
+      ) : null}
+      {sheet?.kind === "leave" ? (
+        <Sheet title="Throw away your changes?" onClose={() => setSheet(null)}>
+          <p className="text-sm text-ink-2">{describeDiff(editor.base, editor.stays, snapshot.regions).join(" · ")}</p>
+          <button className="btn btn-primary w-full" onClick={() => setSheet(null)}>
+            Keep changing
+          </button>
+          <button
+            className="btn w-full"
+            onClick={() => {
+              setSheet(null);
+              editor.leave(false);
+            }}
+          >
+            Keep them for later, on this phone
+          </button>
+          <button
+            className="btn w-full text-danger"
+            onClick={() => {
+              setSheet(null);
+              editor.leave(true);
+            }}
+          >
+            Throw them away
+          </button>
+        </Sheet>
+      ) : null}
+      {sheet?.kind === "conflict" ? (
+        <Sheet title="The route changed while you were editing" onClose={() => setSheet(null)}>
+          <p className="text-sm text-ink-2">{sheet.lines}</p>
+          <button className="btn btn-primary w-full" disabled={writing} onClick={() => updateRoute(true)}>
+            Put mine on top
+          </button>
+          <button className="btn w-full" onClick={() => setSheet(null)}>
+            Look first
+          </button>
+        </Sheet>
+      ) : null}
+      {sheet?.kind === "decline" && reviewing ? (
+        <Sheet title="Keep the route as it is?" onClose={() => setSheet(null)}>
+          <label className="grid gap-1 text-sm">
+            <b>Anything to tell {firstName(snapshot.travellers, reviewing.author_id)}?</b>
+            <textarea className="min-h-20 rounded-xl border border-rule bg-bg p-2" value={note} onChange={(e) => setNote(e.target.value)} />
+          </label>
+          <button
+            className="btn btn-primary w-full"
+            disabled={writing}
+            onClick={async () => {
+              setWriting(true);
+              const why = await decideSuggestion(reviewing.id, "declined", note.trim());
+              setWriting(false);
+              if (why) return setBarError(why);
+              setNote("");
+              setSheet(null);
+              editor.leave(true);
+              setToast({ text: "Kept the route as it is." });
+            }}
+          >
+            Keep the route as it is
+          </button>
+        </Sheet>
+      ) : null}
+      {sheet?.kind === "whole" ? (
+        <Sheet title={isPlanner ? "Make this the route?" : "Suggest this route"} onClose={() => setSheet(null)}>
+          <ul className="grid gap-1 text-sm">
+            {describeDiff(plan.stays, v.stays, snapshot.regions).slice(0, 6).map((l) => (
+              <li key={l}>• {l}</li>
+            ))}
+          </ul>
+          {isPlanner ? null : (
+            <label className="grid gap-1 text-sm">
+              <b>Anything to tell them?</b>
+              <textarea className="min-h-20 rounded-xl border border-rule bg-bg p-2" value={note} onChange={(e) => setNote(e.target.value)} />
+            </label>
+          )}
+          {barError ? <p className="text-sm text-warn" role="alert">{barError}</p> : null}
+          <button
+            className="btn btn-primary w-full"
+            disabled={writing}
+            onClick={async () => {
+              setWriting(true);
+              setBarError(null);
+              const why = isPlanner
+                ? await saveVersion({ ...plan, stays: v.stays }, `Made “${g.theme}” the route`, { base: plan.stays })
+                : await suggest(v.id, { stays: v.stays, whole: true, base: plan.stays, summary: describeDiff(plan.stays, v.stays, snapshot.regions) }, note.trim());
+              setWriting(false);
+              if (why) return setBarError(why.startsWith("changed:") ? "The route changed a moment ago. Look at it first." : why);
+              setNote("");
+              setSheet(null);
+              if (isPlanner) undoToast("This is the route now.");
+              else setToast({ text: `Sent to ${planners}.` });
+            }}
+          >
+            {isPlanner ? "Make it the route" : "Send"}
+          </button>
+        </Sheet>
+      ) : null}
+      {toast ? <Toast text={toast.text} action={toast.action} onDone={() => setToast(null)} /> : null}
     </Page>
   );
 }
@@ -338,7 +669,7 @@ function SendRoute({ v }: { v: Version }) {
   const plan = snapshot.versions.find((x) => x.status === "plan");
   const planners = plannerNames(snapshot.travellers);
   const sent = snapshot.suggestions.find((x) => x.from_version_id === v.id);
-  const run = async (fn: () => Promise<void>) => {
+  const run = async (fn: () => Promise<unknown>) => {
     setBusy(true);
     try {
       await fn();
@@ -446,16 +777,28 @@ function fmtStamp(iso: string | null | undefined): string {
 }
 
 /** The way into changing a route: outlined, full width, a pencil, and never paired with a twin, so it never reads as a switch that is already on. */
-function ChangeButton({ href, label, caption }: { href: string; label: string; caption: string }) {
+function ChangeButton({ href, onClick, label, caption }: { href?: string; onClick?: () => void; label: string; caption: string }) {
+  const cls = "flex min-h-[52px] w-full items-center justify-center gap-2 rounded-xl border-[1.5px] border-ink bg-card px-4 text-[1.05rem] font-semibold text-ink no-underline active:bg-bg-2";
+  const inner = (
+    <>
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 20h9" />
+        <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
+      </svg>
+      {label}
+    </>
+  );
   return (
     <div className="grid max-w-[420px] gap-1">
-      <Link href={href} className="flex min-h-[52px] items-center justify-center gap-2 rounded-xl border-[1.5px] border-ink bg-card px-4 text-[1.05rem] font-semibold text-ink no-underline active:bg-bg-2">
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 20h9" />
-          <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
-        </svg>
-        {label}
-      </Link>
+      {href ? (
+        <Link href={href} className={cls}>
+          {inner}
+        </Link>
+      ) : (
+        <button className={cls} onClick={onClick}>
+          {inner}
+        </button>
+      )}
       <p className="text-sm text-muted">{caption}</p>
     </div>
   );
@@ -605,3 +948,13 @@ function PlanWhy({ g }: { g: VersionGuide }) {
     </Section>
   );
 }
+
+type SheetState =
+  | null
+  | { kind: "night"; index: number; dir: "more" | "fewer" }
+  | { kind: "nye" }
+  | { kind: "send" }
+  | { kind: "leave" }
+  | { kind: "conflict"; lines: string }
+  | { kind: "decline" }
+  | { kind: "whole" };
