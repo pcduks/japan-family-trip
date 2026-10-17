@@ -19,4 +19,22 @@ export const REGION_PREFECTURES: Record<string, string[]> = {
   yudanaka: ["nagano"], okayama: ["okayama", "kagawa"], kinosaki: ["hyogo"], ginzan: ["yamagata"], shuzenji: ["shizuoka"], kusatsu: ["gunma"], nikko: ["tochigi"], kamakura: ["kanagawa"], "echigo-yuzawa": ["niigata"],
   hiroshima: ["hiroshima"], hokkaido: ["hokkaido"], "north-tohoku": ["aomori", "akita", "iwate"], "south-tohoku": ["miyagi", "yamagata"], koyasan: ["wakayama"], kumano: ["wakayama"], kyushu: ["fukuoka", "oita", "kumamoto", "nagasaki", "miyazaki", "kagoshima", "saga"],
   shikoku: ["ehime", "kagawa", "tokushima", "kochi"], okinawa: ["okinawa"], osaka: ["osaka"], matsumoto: ["nagano"], karuizawa: ["nagano"],
+  miyajima: ["hiroshima"],
+  shirahama: ["wakayama"],
+  nagano: ["nagano"],
+  arima: ["hyogo"],
+  matsue: ["shimane"],
+  fukuoka: ["fukuoka"],
+  nagoya: ["aichi"],
+  atami: ["shizuoka"],
+  "ise-shima": ["mie"],
+  morioka: ["iwate"],
+  tsunagi: ["iwate"],
 };
+
+/** A place's name short enough for a map label: "Hiroshima and Miyajima" → "Hiroshima", "Arima Onsen" → "Arima". */
+export function shortRegionName(id: string, regions: { id: string; name: string }[]): string {
+  const name = regions.find((r) => r.id === id)?.name;
+  if (!name) return id;
+  return name.replace(/ Onsen$/, "").replace(/ \(.*\)$/, "").split(/,| and /)[0].trim();
+}

@@ -1,0 +1,1745 @@
+{
+  "_about": "What a stay of each length gives, region by region, in our window (20 Dec 2026 – 9 Jan 2027). Used to explain any stop of any length in a route the family builds.",
+  "regions": {
+    "tokyo": {
+      "best": "4 nights at the start and 2 at the end; 5 if Tokyo is a single stay",
+      "date_notes": [
+        "20–25 Dec: the Christmas illuminations; most end on the 25th, Marunouchi runs on into February.",
+        "Mon 21 Dec, Mon 28 Dec and Mon 4 Jan: most museums close, so these are the Tsukiji, Hama-rikyu and Asakusa days.",
+        "21–28 Dec: the Metropolitan Art Museum (the Musée d'Orsay show) is shut; 22–25 Dec the National Museum's main building is mostly shut, and the whole museum closes 26–31 Dec.",
+        "27 Dec–2 Jan: the Ghibli Museum is closed; tickets go on sale on the 10th of the month before.",
+        "29 Dec–1 Jan: the Edo-period city gardens close; Shinjuku Gyoen stays shut to 3 Jan.",
+        "29–31 Dec: Comiket fills Odaiba and the Toyosu area in the mornings.",
+        "31 Dec: the Zojo-ji bell at midnight under Tokyo Tower; most restaurants shut, so book a hotel dinner.",
+        "1 Jan: the one dead day, with department stores closed. 1–3 Jan Meiji Jingu and Senso-ji take millions: dawn, or not at all.",
+        "2 Jan: the Imperial Palace New Year greeting, the Ekiden start and the department-store sales; the Kabuki-za New Year programme opens. Takashimaya reopens on the 3rd.",
+        "31 Dec–4 Jan: the Toyosu market is shut and Tsukiji mostly; the first tuna auction is Tue 5 Jan.",
+        "Fri 8 Jan: the Ueno museums are open to 20:00.",
+        "9 Jan opens a three-day weekend; the January sumo starts on the 10th, the day after we fly."
+      ],
+      "nights": {
+        "1": {
+          "why": "A flight night: pack, sleep, fly. It works at the very end, within easy reach of Haneda or Narita on 9 Jan; at the start it means moving on jet-lagged the next morning.",
+          "longer": "A second night buys one real Tokyo day: the Ueno museums in January, or Tsukiji and Hama-rikyu in December.",
+          "shorter": "A single night is the least Tokyo can be, with no slack if a train or the weather slips.",
+          "idle": "none",
+          "note": "No idle risk, and no room for anything but the airport."
+        },
+        "2": {
+          "why": "One full day plus an arrival or packing evening. At the end of the trip that is the Musée d'Orsay show and the National Museum on 7–8 Jan; at the start it is one classic day, too little for the four first-timers.",
+          "longer": "A third night buys a second full day: Asakusa and the Edo-Tokyo Museum, or Kamakura.",
+          "shorter": "One night is a flight night, with no museums.",
+          "idle": "none",
+          "note": "Full but calm: one big thing a day and a last good dinner."
+        },
+        "3": {
+          "why": "Two full days: two of the three classic days (Tsukiji and Hama-rikyu; Meiji Jingu, Harajuku and the Nezu Museum; Asakusa and the Edo-Tokyo Museum), or a generous end of trip with the Ueno museums and a shopping day.",
+          "longer": "A fourth night gives the first-timers the third classic day and lets jet lag land on a free morning.",
+          "shorter": "Two nights is one full day: fine at the end, too little at the start.",
+          "idle": "none",
+          "note": "Two big days and no spare one; a stay from 20 Dec makes Mon 21 the market and gardens day."
+        },
+        "4": {
+          "why": "Arrival plus three full days: all three classic days, the free Fuji view from the Metropolitan Government towers, and the Christmas lights if it falls before the 25th. The right first stay for jet lag and four first-timers.",
+          "longer": "A fifth night buys a Kamakura or Nikko day, or a slow day for Fernanda and the parents.",
+          "shorter": "Three nights loses one classic day for the first-timers, and jet lag lands on a sightseeing day.",
+          "idle": "none",
+          "note": "No idle risk: Tokyo fills every day, indoors or out, with a rest after lunch."
+        },
+        "5": {
+          "why": "The three classic days plus one more: a day trip to Kamakura, Nikko or the snow at Echigo-Yuzawa, or a teamLab Borderless and Mori Art Museum day. Over New Year it is the city with the most still open: Senso-ji, the towers, teamLab and the food halls from 2 Jan.",
+          "longer": "A sixth night is a second day trip or a proper rest day.",
+          "shorter": "Four nights drops the day trip but keeps all three classic days.",
+          "idle": "none",
+          "note": "Comfortable, with one easy day built in."
+        },
+        "6": {
+          "why": "Enough for three classic days, two day trips and a rest, or for a December stay and a January stay together. If it covers 29 Dec–3 Jan, museums and the city gardens shut and the big shrines are crushed, so those days lean on Mori, teamLab, the towers and the food halls.",
+          "longer": "A seventh night is another day trip or a slow neighbourhood day; Tokyo never runs out.",
+          "shorter": "Five nights loses one day trip or the rest day.",
+          "idle": "none",
+          "note": "Easy to fill; the risk is a trip that feels like one city, not idle days."
+        },
+        "7": {
+          "why": "A week: the classic days, Kamakura and Nikko, the Ghibli Museum or a sumo stable morning, and real rest. If it spans New Year, 1 Jan is a dead day and 29 Dec–3 Jan leans on shrines at dawn, towers and teamLab.",
+          "longer": "An eighth night only makes sense as a base for more day trips, at the cost of somewhere new.",
+          "shorter": "Six nights loses one day trip or rest day.",
+          "idle": "some",
+          "note": "Plenty to do, but Pedro and Fernanda know the city; a week here is a week less somewhere new."
+        }
+      }
+    },
+    "kanazawa": {
+      "best": "4 nights, ending by 28 Dec (3 at a quicker pace)",
+      "date_notes": [
+        "Sat 26 Dec, 13:00: the geiko dance afternoon in a Higashi Chaya teahouse (up to ten people, so seven fits).",
+        "26–27 Dec and 1–2 Jan: the Nomura samurai house is closed, so go on 24 or 25 Dec.",
+        "Mon 28 Dec: museums close; from 29 Dec the 21st Century Museum is shut to 1 Jan and the D.T. Suzuki and Prefectural museums to 3 Jan.",
+        "27 Dec–3 Jan: the castle park is lit in the evenings. 31 Dec–3 Jan Kenroku-en is free, and open all night on New Year's Eve.",
+        "28–31 Dec: Omicho market at its fullest; 1–4 Jan only 20–40 of its shops open; fully back Tue 5 Jan.",
+        "End of December: the last of the kobako crab, the small female crab; cooked, not raw, for Fernanda.",
+        "Mon 4 Jan: museums close again for the Monday."
+      ],
+      "nights": {
+        "1": {
+          "why": "An evening and a morning: Higashi Chaya at dusk and Kenroku-en first thing (free from 6:00), then on. A stop between Tokyo and the mountains, not a stay; the museums and the market need a day of their own.",
+          "longer": "A second night gives one full day: Kenroku-en, the castle park and the 21st Century Museum.",
+          "shorter": "A single night is a dinner of oden and a garden walk at dawn.",
+          "idle": "none",
+          "note": "Rushed, after a 2.5-hour train; Fernanda would probably skip the evening."
+        },
+        "2": {
+          "why": "One full day: Kenroku-en with its snow ropes, the castle park and the 21st Century Museum, with oden or crab at night and Higashi Chaya on the arrival afternoon.",
+          "longer": "A third night adds a gold-leaf workshop, Omicho market and the samurai house.",
+          "shorter": "One night is a dawn garden walk and little else.",
+          "idle": "none",
+          "note": "Tight: the museums or the geisha district get squeezed."
+        },
+        "3": {
+          "why": "Two full days: Kenroku-en and the museums on one, Higashi Chaya, gold leaf and the Nomura samurai house on the other, with lunch at Omicho. The length most guidebooks give it.",
+          "longer": "A fourth night adds the D.T. Suzuki Museum, the Museum of Art, the Sat 26 Dec geiko afternoon or a Kaga Onsen half day, and a slow day.",
+          "shorter": "Two nights loses the museums or the geisha district.",
+          "idle": "none",
+          "note": "Full, not idle."
+        },
+        "4": {
+          "why": "Three full days at an easy pace: the garden, the museums, the teahouses, a wagashi class and the market, in a rental house with a washing machine as the mid-trip reset. It has to finish by 28 Dec, when the museums close.",
+          "longer": "A fifth night is mostly rest: the market, the castle park, a Kaga Onsen afternoon.",
+          "shorter": "Three nights squeezes the museums into one long day and loses the slow day.",
+          "idle": "some",
+          "note": "Day four is light by design: the market, a workshop, laundry."
+        },
+        "5": {
+          "why": "Four full days: everything above plus a Kaga Onsen half day or the Noto coast, two hours each way and still rebuilding. Only worth it before 28 Dec; over 29 Dec–3 Jan the museums, the samurai house and most of the market are shut.",
+          "longer": "A sixth night would be a day with nothing new.",
+          "shorter": "Four nights keeps all of the city and loses the spare day.",
+          "idle": "real",
+          "note": "Two light days in a row: fine as a rest, dull for João and Carolina."
+        }
+      }
+    },
+    "shirakawago": {
+      "best": "No night (a stop on the bus), or 1 night in a farmhouse between 20 and 27 Dec",
+      "date_notes": [
+        "From about 25 Dec: snow on the ground is near-certain.",
+        "20–27 Dec: the only realistic dates for a farmhouse night for a group; New Year is long sold out, and no farmhouse sleeps seven then.",
+        "29 Dec–3 Jan: Nohi buses run a holiday timetable with some stops skipped; 1–3 Jan the village is very busy.",
+        "Around 31 Dec–1 Jan: the Wada House has closed in past years; ask the tourist office.",
+        "The light-up nights are 11, 17, 24 and 31 Jan 2027, all after we leave."
+      ],
+      "nights": {
+        "1": {
+          "why": "A night under thatch: dinner by the irori hearth, futons, and the village silent and snowy after the last coaches leave around 16:00. The farmhouse inns have shared baths and ladder-steep stairs, so Fernanda should ask for a ground-floor room.",
+          "longer": "A second night buys a quiet morning and the bus to Gokayama's Ainokura, with a tenth of the crowds.",
+          "shorter": "A single night is the keeper: the empty village at dusk and again at dawn.",
+          "idle": "none",
+          "note": "Full: an afternoon, the evening and a dawn walk."
+        },
+        "2": {
+          "why": "The night plus a whole second day: the Wada House, the viewpoint shuttle, then Gokayama by the limited bus, or simply the snow. Most of the village is seen in half a day.",
+          "longer": "A third night would have nothing new; the village is a few lanes.",
+          "shorter": "One night keeps the empty village at dusk and dawn.",
+          "idle": "some",
+          "note": "Day two is slow and cold, with few places to sit indoors."
+        },
+        "3": {
+          "why": "Too long for a village of a few lanes, with shared bathrooms, no doctor and buses that thin out over New Year. It only works as a snowed-in retreat.",
+          "longer": "A fourth night adds nothing.",
+          "shorter": "Two nights still gives the village, Gokayama and a quiet second evening.",
+          "idle": "real",
+          "note": "Two idle days in a cold farmhouse; not one for Fernanda at 30 weeks."
+        },
+        "4": {
+          "why": "Not sensible: after a day the village repeats itself, and the towns with more to do, Takayama and Kanazawa, are an hour or more away by bus.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already more than the village holds.",
+          "idle": "real",
+          "note": "Three empty days; base in Takayama or Kanazawa instead."
+        },
+        "5": {
+          "why": "Not sensible: Shirakawa-go is at its best as a stop on the bus or a single night, and every extra day is a cold one with little to do.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already far too many.",
+          "idle": "real",
+          "note": "Mostly idle; spend these nights in Takayama or Kanazawa."
+        }
+      }
+    },
+    "takayama": {
+      "best": "2 nights (3 with an Okuhida day)",
+      "date_notes": [
+        "19–25 Dec: Hida Folk Village has its Christmas light-up.",
+        "28–31 Dec: the Jinya-mae morning market turns into a New Year decorations market.",
+        "29 Dec–3 Jan: the Jinya is shut; arriving on the 28th, see it that afternoon.",
+        "Tuesdays (22 and 29 Dec, 5 Jan): Kusakabe House, Kyoya, Menya Shirakawa and Heianraku are closed. Yoshijima House is shut Monday to Thursday all winter.",
+        "1 Jan: many Sanmachi shops and Maruaki close; about half reopen 2–3 Jan, and the markets run with fewer stalls.",
+        "29 Dec–3 Jan: Nohi buses to Shirakawa-go, Kanazawa and Okuhida run a holiday timetable; book seats."
+      ],
+      "nights": {
+        "1": {
+          "why": "One afternoon and one morning: the Jinya and the old town on arrival, the morning market and a brewery before leaving. Just possible, and the Jinya is shut 29 Dec–3 Jan.",
+          "longer": "A second night gives the full town day: market, breweries, Hida beef and the Folk Village.",
+          "shorter": "A single night is the old town at a trot.",
+          "idle": "none",
+          "note": "No idle time, and no slack if the bus from Shirakawa-go runs late in snow."
+        },
+        "2": {
+          "why": "An arrival afternoon plus one full day: the Jinya, the morning markets, Sanmachi's breweries, the Folk Village and Hida beef at Maruaki. The right length unless you add the mountains.",
+          "longer": "A third night buys Okuhida: the Shinhotaka ropeway and a snow bath, a long cold day.",
+          "shorter": "One night means the Jinya and the old town in one afternoon, then leaving.",
+          "idle": "some",
+          "note": "If day two is Tue 29 Dec, the Jinya, Kusakabe House and three good restaurants are shut: a half day of things."
+        },
+        "3": {
+          "why": "The town plus a day out: Okuhida's ropeway and snow baths, 90 minutes by bus, or Hida-Furukawa's canal town 15 minutes away for a gentler one. Over New Year it is a snowy, open place to sit out the busy travel days, with a ryokan dinner on the 31st.",
+          "longer": "A fourth night is Shirakawa-go as a day trip, or another slow day.",
+          "shorter": "Two nights keeps the town and drops the mountains.",
+          "idle": "some",
+          "note": "One easy day in three; Okuhida is long and cold for Fernanda, so she may prefer Furukawa or the inn."
+        },
+        "4": {
+          "why": "Works only at a gentle pace with day trips: the town, Shirakawa-go, Okuhida and Hida-Furukawa, one a day, with New Year's Eve at a ryokan in the old town. Over 29 Dec–3 Jan the Jinya and some museums are shut.",
+          "longer": "A fifth night adds nothing new.",
+          "shorter": "Three nights loses one day trip.",
+          "idle": "real",
+          "note": "Two of the four days are day trips; without them it is too long."
+        },
+        "5": {
+          "why": "Too long for a one-day town, even with every day trip; the fifth day is a second walk through the same streets. Only as a snowbound rest in a machiya with a kitchen.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights already covers every day trip.",
+          "idle": "real",
+          "note": "At least two idle days."
+        }
+      }
+    },
+    "gero": {
+      "best": "2 nights, ideally 30 Dec–1 Jan for a ryokan New Year's Eve",
+      "date_notes": [
+        "31 Dec–2 Jan: ryokan New Year plans with toshikoshi soba and an osechi breakfast, at a surcharge of often 50–100%; shops in town close but the inns serve every meal.",
+        "31 Dec–2 Jan: the Gassho Village opens 9:00–16:00.",
+        "31 Dec: ask the inn whether Onsen-ji lets guests ring the bell at midnight.",
+        "Once a day a direct Hida train runs to Kyoto (around 16:18); check the 2027 timetable, otherwise change at Nagoya.",
+        "Gero's winter fireworks start about 10 Jan, after we leave."
+      ],
+      "nights": {
+        "1": {
+          "why": "One evening at the inn: a bath, kaiseki and breakfast. If it is New Year's Eve, one night means moving on 31 Dec or 1 Jan with no quiet day either side, and 31 Dec is a peak travel day.",
+          "longer": "A second night gives a quiet day for the footbaths, the bath pass and a nap before dinner.",
+          "shorter": "A single night is the inn and nothing else: a stopover.",
+          "idle": "none",
+          "note": "No idle time, but most of it is arriving and leaving."
+        },
+        "2": {
+          "why": "One quiet day between two inn evenings: the footbaths, three ryokan baths on the ¥1,300 pass, the Gassho Village and kaiseki. Made for New Year's Eve: arrive on the 30th, the bell at midnight, leave after the New Year breakfast.",
+          "longer": "A third night is a day at the inn; Gero is a spa town, not a sight.",
+          "shorter": "One night means a travel day either side and no quiet day.",
+          "idle": "some",
+          "note": "The full day is for the bath, a walk and a nap: pleasant, not beautiful."
+        },
+        "3": {
+          "why": "Two quiet days: fine if the point is rest through the busiest week, with Takayama 45 minutes up the valley for a half day. Otherwise the town runs out.",
+          "longer": "A fourth night is another day of baths.",
+          "shorter": "Two nights keeps New Year's Eve and loses a lazy day.",
+          "idle": "real",
+          "note": "Be honest about this one: day three is the inn again."
+        },
+        "4": {
+          "why": "Only as a deliberate retreat: four inn dinners in a row, with Takayama as a half day out. New Year surcharges make it dear.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already generous.",
+          "idle": "real",
+          "note": "Two or three idle days."
+        },
+        "5": {
+          "why": "Too long for a town of hotels along a river; even the most restful week would want somewhere with more to look at.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already a lot of baths.",
+          "idle": "real",
+          "note": "Mostly idle; split it with Takayama or Kyoto."
+        }
+      }
+    },
+    "okuhida": {
+      "best": "2 nights, or a day trip from Takayama",
+      "date_notes": [
+        "The Shinhotaka Ropeway runs 9:00–15:30 in winter and stops in strong wind; New Year hours need a call (0578-89-2252).",
+        "Snow is near-certain in our window; the summit deck is icy and high, so Fernanda checks with her doctor.",
+        "29 Dec–3 Jan: Nohi buses run a holiday timetable; book seats.",
+        "31 Dec–2 Jan: ryokan New Year plans at a surcharge.",
+        "1 Jan: from here to Kyoto is about five hours, a long New Year's Day."
+      ],
+      "nights": {
+        "1": {
+          "why": "An afternoon arrival, an open-air bath in the snow (a private one for Fernanda), and the Shinhotaka ropeway next morning before the bus out. With the ropeway closing at 15:30, it is tight.",
+          "longer": "A second night gives an unhurried ropeway morning and a second bath evening.",
+          "shorter": "A single night is one bath evening and a quick ropeway; a day trip from Takayama does nearly as much without the move.",
+          "idle": "none",
+          "note": "Full and cold; the bus is 60–90 minutes each way."
+        },
+        "2": {
+          "why": "One full day for the ropeway to 2,156 m and the Alps, then baths in deep snow at Hirayu or Shin-Hotaka. The most mountain-winter the trip can get.",
+          "longer": "A third night is a second bath day in a hamlet with nothing else.",
+          "shorter": "One night rushes the ropeway; a day trip from Takayama may be easier.",
+          "idle": "some",
+          "note": "Day two is the view and the baths. Beautiful, but that is all there is."
+        },
+        "3": {
+          "why": "Two quiet days of baths and snow: one for the ropeway, one for Hirayu no Mori or the inn. For people who want to do nothing in deep snow.",
+          "longer": "A fourth night adds nothing.",
+          "shorter": "Two nights holds all the sights.",
+          "idle": "real",
+          "note": "A real retreat; restless for João and Carolina."
+        },
+        "4": {
+          "why": "Not sensible: a scatter of hamlets with one ropeway, an hour or more from anything else.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already a long rest.",
+          "idle": "real",
+          "note": "Mostly idle."
+        },
+        "5": {
+          "why": "Not sensible: there is a day's worth of sights and the rest is baths.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already far too many.",
+          "idle": "real",
+          "note": "Mostly idle; Takayama is a better long base."
+        }
+      }
+    },
+    "kyoto": {
+      "best": "4 nights (5 at a gentle pace)",
+      "date_notes": [
+        "21 Dec: Toji's last temple market of the year; 25 Dec: Kitano Tenmangu's.",
+        "Sun 27 Dec, 14:00: the free trial ringing of the Chion-in bell.",
+        "28–30 Dec: Nishiki market at its busiest; 1–3 Jan most stalls are shut.",
+        "29–31 Dec: Nijo Castle is closed, and 1–3 Jan only its gardens open. 29 Dec–1 Jan the National Museum is shut; 29–30 Dec Himeji Castle too.",
+        "31 Dec: the Chion-in bell from about 22:40 (watch only, booked online from 1 Dec) and the Okera fire at Yasaka; restaurants close.",
+        "1–3 Jan: Fushimi Inari draws about 2.7 million: before 7:00, after 15:00, or not at all. Most restaurants close on the 1st; hotel restaurants are the safe bet.",
+        "2 Jan: Kitano's first-calligraphy festival. 2–3 Jan: the National Museum's New Year exhibition. 3 Jan: Okina Noh and the court-dress card game at Yasaka, and the Kyocera Museum's only open day.",
+        "29 Dec to about 5 Jan: Gion Corner and the geiko world are on holiday; the Imperial Palace and Katsura stay shut to 4 Jan.",
+        "Mon 4 Jan: museums close again, which makes it the Nara day.",
+        "8–12 Jan: Toka Ebisu at Kyoto's Ebisu shrine."
+      ],
+      "nights": {
+        "1": {
+          "why": "An evening and one morning: Kiyomizu-dera and the Higashiyama lanes at opening, or Fushimi Inari at dawn for whoever wants it. Arriving on 1 Jan, late in the day with restaurants shut, one night is almost nothing.",
+          "longer": "A second night gives one full temple day.",
+          "shorter": "A single night is a glimpse; Kyoto wants two or more.",
+          "idle": "some",
+          "note": "A stopover; nothing will feel done."
+        },
+        "2": {
+          "why": "One full day: Higashiyama and Kiyomizu-dera, Gion at dusk. In December everything is open; on 1–3 Jan the temples are, but museums only from the 2nd and many restaurants are shut.",
+          "longer": "A third night adds Arashiyama's bamboo and Tenryu-ji, or the National Museum.",
+          "shorter": "One night is a single morning.",
+          "idle": "none",
+          "note": "Full, and the first-timers will leave wanting more."
+        },
+        "3": {
+          "why": "Two full days: Higashiyama on one, Arashiyama on the other, with Gion at dusk and Fushimi Inari at dawn for the early risers. Starting on 1 Jan, that afternoon counts for nothing.",
+          "longer": "A fourth night brings back Nara or the National Museum.",
+          "shorter": "Two nights loses Arashiyama or Higashiyama.",
+          "idle": "none",
+          "note": "Two big days; Nara drops out."
+        },
+        "4": {
+          "why": "Three big days plus Nara: Higashiyama, Arashiyama, the National Museum and the New Year rites on 2–3 Jan, and Nara on Mon 4 Jan when Kyoto's museums close. What the main route does from 1 to 5 Jan.",
+          "longer": "A fifth night buys an easy day for Ohara or Kibune, often snowy, or a second temple dawn.",
+          "shorter": "Three nights loses Nara or Arashiyama.",
+          "idle": "some",
+          "note": "Starting on 1 Jan, that day is a quiet arrival with restaurants shut; expected, and the only such day."
+        },
+        "5": {
+          "why": "Four days plus a gentle one: Ohara's moss garden or Kibune, Nanzen-ji and the Philosopher's Path, or a day out to Himeji (open from 31 Dec) or Osaka's bunraku from about 3 Jan.",
+          "longer": "A sixth night adds Uji's tea houses or an Osaka day.",
+          "shorter": "Four nights keeps the big days and loses the easy one.",
+          "idle": "some",
+          "note": "One easy day built in; comfortable for Fernanda and the parents."
+        },
+        "6": {
+          "why": "The city plus day trips: Nara, Osaka, Himeji or Uji, one a day, with a rest. If it spans New Year's Eve, the Chion-in bell (watched, booked, cold) or the Okera fire at Yasaka, with dinner at a hotel or in a rented house because restaurants close.",
+          "longer": "A seventh night is another day trip or a rest.",
+          "shorter": "Five nights drops one day trip.",
+          "idle": "some",
+          "note": "Full if you use the trains; slow over 29 Dec–3 Jan if you stay in the city."
+        },
+        "7": {
+          "why": "A week only works as a base for Kansai: Nara, Osaka, Himeji, Uji and a day in the hills. Across 29 Dec–3 Jan half of it is shrine visits and closed museums, with Fushimi Inari taking millions.",
+          "longer": "An eighth night is too many with the city half shut.",
+          "shorter": "Six nights loses a day trip.",
+          "idle": "some",
+          "note": "Pedro and Fernanda know the city; a week here is a week less somewhere new."
+        }
+      }
+    },
+    "nara": {
+      "best": "No night (a day trip from Kyoto), or 1 night for New Year's Eve at Todai-ji",
+      "date_notes": [
+        "28 Dec–1 Jan: the Nara National Museum is shut; open 2–3 Jan, shut again Mon 4 Jan.",
+        "31 Dec: Todai-ji hands out numbered tickets to ring its bell from about 22:30 (queue from 21:30); Kasuga Taisha stays open all night.",
+        "1 Jan, 00:00–8:00: the Great Buddha hall is free, with the window above his face open.",
+        "1–3 Jan: big but orderly hatsumode crowds at Kasuga and Todai-ji.",
+        "Tuesdays: Kamameshi Shizuka is closed. Isuien garden is shut until mid-January."
+      ],
+      "nights": {
+        "1": {
+          "why": "An evening and a quiet early morning in the park before the day-trippers arrive. On 31 Dec it is the place to ring a temple bell yourselves, with the Great Buddha hall open free from midnight.",
+          "longer": "A second night adds Horyu-ji's ancient wooden temples or Naramachi at leisure.",
+          "shorter": "A single night buys the dawn park; without it Nara is an easy day trip, 35–45 minutes from Kyoto.",
+          "idle": "none",
+          "note": "Calm; the park is at its best at 8:00. The midnight bell means standing in the cold."
+        },
+        "2": {
+          "why": "Two unhurried days: Todai-ji, Kasuga Taisha and the deer on one, Horyu-ji or Naramachi and the National Museum (open 2–3 Jan) on the other. Flat paths and benches everywhere.",
+          "longer": "A third night would be Kyoto or Osaka as day trips.",
+          "shorter": "One night keeps the dawn park.",
+          "idle": "some",
+          "note": "Gentle and flat, but quiet in the evenings."
+        },
+        "3": {
+          "why": "Nara as a calm base for Kansai: the park, Horyu-ji, and Kyoto or Osaka each 35–50 minutes away. Easy for Fernanda; wasted if Kyoto is also on the route.",
+          "longer": "A fourth night is another day trip.",
+          "shorter": "Two nights covers Nara itself.",
+          "idle": "some",
+          "note": "Nara fills two days; the third is a train out."
+        },
+        "4": {
+          "why": "Too long for Nara itself; it only works as a quiet base for day trips into Kyoto and Osaka.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already a base, not a visit.",
+          "idle": "real",
+          "note": "Two days of trains or two idle days."
+        },
+        "5": {
+          "why": "Not sensible: Kyoto or Osaka would be the better base for the same day trips.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "Mostly idle in Nara itself."
+        }
+      }
+    },
+    "hakone": {
+      "best": "2 nights (3 if the weather looks uncertain)",
+      "date_notes": [
+        "19 Dec–3 Jan: Onshi-Hakone Park, the classic Fuji-over-the-lake view, is closed; it reopens 4 Jan.",
+        "31 Dec–1 Jan: the Okada Museum is closed; the Open-Air Museum is open every day.",
+        "1–3 Jan: hatsumode crowds at Hakone Shrine. 2–3 Jan: the Ekiden relay closes Route 1 and every inn sold out a year ago.",
+        "Wednesdays (23 and 30 Dec, 6 Jan): Hatsuhana soba is closed.",
+        "Mid-January: the ropeway's annual inspection begins, after we leave."
+      ],
+      "nights": {
+        "1": {
+          "why": "An afternoon arrival, the ryokan bath and kaiseki, and one morning for Fuji before leaving. No time for the loop.",
+          "longer": "A second night gives the full loop day and a second dawn for Fuji.",
+          "shorter": "A single night makes the ryokan a stopover and gives Fuji one chance.",
+          "idle": "none",
+          "note": "Arriving and leaving, with one good evening."
+        },
+        "2": {
+          "why": "One full day for the loop by mountain railway, cable car, the ropeway over Owakudani and the boat, plus a museum, and two dawns for Fuji (clear on about six January mornings in ten). The ropeway crosses volcanic gas, so Fernanda checks with her doctor.",
+          "longer": "A third night is a second chance at Fuji and a second museum day.",
+          "shorter": "One night gives one morning for Fuji and no loop.",
+          "idle": "none",
+          "note": "Two full mornings and one full day; on a cloudy day the museums fill it."
+        },
+        "3": {
+          "why": "The loop plus a museum day: the Open-Air Museum, the Pola's Impressionists or the Okada, and a yosegi marquetry workshop, with three dawns for Fuji.",
+          "longer": "A fourth night is a third museum or a slow day at the inn.",
+          "shorter": "Two nights keeps the loop and one museum.",
+          "idle": "none",
+          "note": "Five museums mean a cloudy day is never wasted."
+        },
+        "4": {
+          "why": "Long, but Hakone can carry it: the loop, two museum days and a lazy ryokan day, with Lake Ashi's red torii at Hakone Shrine. Over 2–3 Jan the Ekiden closes the roads and rooms are gone.",
+          "longer": "A fifth night is a rest day at the inn.",
+          "shorter": "Three nights covers everything at an easy pace.",
+          "idle": "some",
+          "note": "One slow day; pleasant in a ryokan with a private bath."
+        },
+        "5": {
+          "why": "Too long unless rest is the point: by day five you are repeating the loop. A good ryokan can make it a happy retreat for Fernanda and the parents.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights already holds the museums and a rest day.",
+          "idle": "real",
+          "note": "Two slow days; João and Carolina would want to move on."
+        }
+      }
+    },
+    "kawaguchiko": {
+      "best": "2 nights (3 for a third chance at Fuji)",
+      "date_notes": [
+        "Late December to early January is Fuji's clearest season, snow-capped most mornings.",
+        "31 Dec: first-sunrise visitors fill the lakeside inns; Fuji-Q Highland runs a countdown with fireworks.",
+        "29 Dec–3 Jan: buses from Shinjuku sell out and the lake road jams; 1–3 Jan Chureito and Oshino Hakkai are busy.",
+        "The Itchiku Kubota Art Museum's January closing days differ between sources; check.",
+        "The winter fireworks start 23 Jan and Diamond Fuji at Lake Yamanaka is February, both after we leave."
+      ],
+      "nights": {
+        "1": {
+          "why": "One afternoon on the shore and one dawn for Fuji, if it is clear. After a long move, such as about four hours from Kyoto, the lake becomes a stopover.",
+          "longer": "A second night gives the ropeway and the lake boat, and a second dawn.",
+          "shorter": "A single night gives one dawn and no ropeway day.",
+          "idle": "none",
+          "note": "All arriving and leaving; Fuji gets one chance."
+        },
+        "2": {
+          "why": "One full day for the Panoramic Ropeway, the boat, Oishi Park's flat shore and a hoto lunch, and two dawns for Fuji straight across the water.",
+          "longer": "A third night is a third chance at Fuji and an easy day at Oshino Hakkai or Lake Yamanaka, each about 30 minutes by bus.",
+          "shorter": "One night gives one dawn and no ropeway day.",
+          "idle": "some",
+          "note": "Clear days are full; a cloudy day has less indoors than Hakone."
+        },
+        "3": {
+          "why": "The lake plus Oshino Hakkai's spring ponds or Lake Yamanaka, Chureito Pagoda at dawn for the climbers (398 steps, not for Fernanda), and three dawns for Fuji.",
+          "longer": "A fourth night has little more to see.",
+          "shorter": "Two nights keeps the lake and the ropeway.",
+          "idle": "some",
+          "note": "Good if clouds threaten; otherwise one easy day."
+        },
+        "4": {
+          "why": "Only as a Fuji retreat in a house with a view, or with a day out to Hakone, about two hours by bus. Over 29 Dec–3 Jan the lake road jams.",
+          "longer": "A fifth night adds nothing.",
+          "shorter": "Three nights already holds every sight and three dawns.",
+          "idle": "real",
+          "note": "Two quiet days, more if it clouds over."
+        },
+        "5": {
+          "why": "Too long: the lake has two days of sights and a cloudy spell would leave little indoors.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "Mostly idle unless it is a rest week."
+        }
+      }
+    },
+    "yudanaka": {
+      "best": "2 nights, before Christmas",
+      "date_notes": [
+        "Snow by Christmas is likely but not guaranteed deep; the monkeys come down regardless.",
+        "Every day, 9:00–16:00 in winter: the monkey park, busiest 29 Dec–3 Jan.",
+        "31 Dec: Zenko-ji's midnight bell (the first 108 in line ring it) and New Year's Day hatsumode, crowded but calmer than Tokyo or Kyoto.",
+        "New Year: the small Shibu inns sold out a year ahead.",
+        "27 Dec–3 Jan: Nozawa night skiing; the fire festival is 15 Jan, after we leave."
+      ],
+      "nights": {
+        "1": {
+          "why": "The monkeys in the morning and a night on Shibu Onsen's lantern street. After a late arrival the monkeys become a rushed morning, and the forest path is 1.6 km each way on packed snow.",
+          "longer": "A second night gives an unhurried monkey morning and an evening of bath-hopping.",
+          "shorter": "A single night is the most rushed way to see them.",
+          "idle": "none",
+          "note": "Full; Fernanda may wait at the inn if the path is icy."
+        },
+        "2": {
+          "why": "One morning for the snow monkeys in their steaming pool, one evening walking Shibu's nine old bathhouses in yukata, and a ryokan dinner. Obuse's Hokusai ceiling or Zenko-ji fit on the way in or out.",
+          "longer": "A third night buys Nozawa's village baths, Zenko-ji at dawn, or a second bath day.",
+          "shorter": "One night makes the monkeys a rushed morning after a late arrival.",
+          "idle": "some",
+          "note": "Day two is the bath street and a slow lunch. Lovely in snow, quiet without it."
+        },
+        "3": {
+          "why": "Add Zenko-ji's dawn service and its pitch-dark passage, Nozawa Onsen's thirteen village baths and slopes for João and Carolina, or Togakushi's cedar avenue in the snow.",
+          "longer": "A fourth night only works as a ski stay.",
+          "shorter": "Two nights covers the monkeys and Shibu.",
+          "idle": "some",
+          "note": "Good for the fit five; Fernanda has an inn day."
+        },
+        "4": {
+          "why": "Only with skiing or a split base, Nagano city plus Shibu plus Nozawa; Shibu's small inns and single lane repeat themselves.",
+          "longer": "A fifth night adds nothing for the non-skiers.",
+          "shorter": "Three nights already covers the area.",
+          "idle": "real",
+          "note": "Two idle days for anyone not skiing."
+        },
+        "5": {
+          "why": "Too long unless it is a ski week; Nozawa wants five to seven nights over New Year, but that is a different trip.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "Mostly idle for Fernanda and the parents."
+        }
+      }
+    },
+    "okayama": {
+      "best": "2 nights (3 for Naoshima and Kurashiki both)",
+      "date_notes": [
+        "Mondays (21 and 28 Dec, 4 Jan): Chichu and most of Naoshima are closed; Chichu needs timed tickets about a month ahead.",
+        "Tuesdays (22 and 29 Dec, 5 Jan): the Teshima Art Museum is closed; last year it was also shut 31 Dec–2 Jan, and the island buses stopped.",
+        "31 Dec–1 Jan: Naoshima's museums have closed in recent years; the 2026–27 dates come out in autumn.",
+        "29–30 Dec: Himeji Castle is closed; 29–31 Dec Okayama Castle too.",
+        "1–3 Jan: Korakuen's New Year festival with koto music and the red-crowned cranes, free on 1 Jan; Ritsurin in Takamatsu is free on 1 Jan too.",
+        "The Ohara Museum in Kurashiki: sources differ on its year-end closure (around 23–27 Dec or 28–31 Dec); on 1 Jan only the main gallery opens.",
+        "From 12 Jan: Chichu closes for maintenance, after we leave."
+      ],
+      "nights": {
+        "1": {
+          "why": "Himeji Castle on the way in (shut 29–30 Dec) and Korakuen's garden, then on. Naoshima does not fit in one night.",
+          "longer": "A second night gives Naoshima: Chichu, Benesse House and the pumpkins, on a day the museums are open.",
+          "shorter": "A single night is a castle and a garden.",
+          "idle": "none",
+          "note": "Full, but it misses the reason for coming west."
+        },
+        "2": {
+          "why": "Himeji or Korakuen and Kurashiki's canal on one day, a full day on Naoshima for the Chichu Art Museum on the other. Flat towns suit Fernanda; the islands mean a cold sea wind.",
+          "longer": "A third night adds Kurashiki properly, or Teshima if it is open.",
+          "shorter": "One night loses Naoshima, which is the point.",
+          "idle": "none",
+          "note": "No idle risk if the ferry runs."
+        },
+        "3": {
+          "why": "Naoshima, Kurashiki with the Ohara Museum, and Korakuen at an easy pace, or Teshima's water-drop museum on an open day. Over 1–3 Jan, Korakuen has its New Year festival.",
+          "longer": "A fourth night buys Takamatsu's Ritsurin garden or Hiroshima as a day out.",
+          "shorter": "Two nights drops Kurashiki or Teshima.",
+          "idle": "none",
+          "note": "Three good days."
+        },
+        "4": {
+          "why": "Room for Ritsurin in Takamatsu, a night on Naoshima itself, or Hiroshima and Miyajima as a day trip. Over 31 Dec–2 Jan the island museums are likely shut.",
+          "longer": "A fifth night is a rest day.",
+          "shorter": "Three nights covers the core.",
+          "idle": "some",
+          "note": "One slow day."
+        },
+        "5": {
+          "why": "Long for Okayama itself; it works as a Setouchi base with Hiroshima, Ritsurin and two island days. Okayama is three hours twenty from Tokyo, so it is a long way home either way.",
+          "longer": "A sixth night adds nothing new.",
+          "shorter": "Four nights covers everything at an easy pace.",
+          "idle": "some",
+          "note": "One or two slow days."
+        }
+      }
+    },
+    "kinosaki": {
+      "best": "2 nights",
+      "date_notes": [
+        "25 Dec: the ropeway is closed; 31 Dec–3 Jan it runs short hours.",
+        "29 Dec–1 Jan: the public baths take turns to close: Ichi-no-yu and Mandara-yu on 31 Dec, Goshono-yu and Yanagi-yu on 1 Jan.",
+        "31 Dec: the last day of the small female crab; the big male crab runs to March.",
+        "New Year: the town's busiest and dearest nights, booked months ahead.",
+        "29–30 Dec: Himeji Castle, the usual stop on the way back, is closed."
+      ],
+      "nights": {
+        "1": {
+          "why": "One evening walking the baths in yukata and one crab dinner, then a long way out: Kyoto is about 2.5–3 hours, Tokyo 5–6.",
+          "longer": "A second night gives a full day of baths, the ropeway to Onsen-ji, and a second evening.",
+          "shorter": "A single night is a long way to go for one dinner.",
+          "idle": "none",
+          "note": "Mostly train."
+        },
+        "2": {
+          "why": "A day and two evenings: the public baths (not all seven are running), the ropeway and Onsen-ji, the flat willow-lined canal, and crab kaiseki in season. Fernanda keeps to the ryokan's private bath; the public ones run hot.",
+          "longer": "A third night is a third evening of baths, or Izushi's castle town and soba as a half day.",
+          "shorter": "One night is a long way to go for one dinner.",
+          "idle": "some",
+          "note": "Day two is pleasant and slow; like Gero, the town is the inn."
+        },
+        "3": {
+          "why": "A slow onsen stay with Izushi's soba and clock tower or the Genbudo basalt cliffs as half days out. Good for the parents, quiet for João and Carolina.",
+          "longer": "A fourth night adds nothing new.",
+          "shorter": "Two nights is the usual stay.",
+          "idle": "some",
+          "note": "Two easy days."
+        },
+        "4": {
+          "why": "Too long for a small town of seven baths, and the way home is 5–6 hours to Tokyo whatever you do.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already a slow stay.",
+          "idle": "real",
+          "note": "Two idle days."
+        },
+        "5": {
+          "why": "Not sensible: the same bath walk and crab dinner five nights running.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "Mostly idle."
+        }
+      }
+    },
+    "ginzan": {
+      "best": "1–2 nights between 20 and 27 Dec, only if rooms exist",
+      "date_notes": [
+        "From 20 Dec: winter day-visit rules. Daytime by park-and-ride shuttle; 17:00–20:00 capped at 100 people an hour with a booked ticket; after 20:00 inn guests only.",
+        "New Year: sold out a year ahead; 20–27 Dec is the only realistic window.",
+        "Late December: Zao's snow monsters are only half grown; the ropeway's night light-up starts around 27 Dec.",
+        "29 Dec–3 Jan: Yamagata shinkansen seats are full, worst on 30 Dec and 3 Jan."
+      ],
+      "nights": {
+        "1": {
+          "why": "The one way to see the gas-lit wooden inns under snow without the caps on day visitors. Rooms hold four at most, so seven means two or three rooms, and the lanes and inn stairs are icy.",
+          "longer": "A second night buys Yamadera for the climbers, or the Zao ropeway's night light-up from Yamagata.",
+          "shorter": "A single night is the photograph come to life; without it, a day visit means the shuttle and a booked evening slot.",
+          "idle": "none",
+          "note": "A dreamlike evening after a long journey: over three hours from Tokyo plus a bus."
+        },
+        "2": {
+          "why": "One evening and one full day: the river lanes by daylight, a bath, and Yamadera (1,015 icy steps, for the climbers) or Zao's ropeway in the snow.",
+          "longer": "A third night is another evening in a street of a dozen inns.",
+          "shorter": "One night is the photograph.",
+          "idle": "some",
+          "note": "Lovely and small; the second day is quiet."
+        },
+        "3": {
+          "why": "Too long for one short street of inns; the extra day is spent getting to Yamagata and back.",
+          "longer": "Nothing to add.",
+          "shorter": "Two nights holds the village and one day out.",
+          "idle": "real",
+          "note": "A quiet, icy day with little to do."
+        },
+        "4": {
+          "why": "Not sensible: no inn here sells four winter nights to a group of seven, and there is nothing to fill them.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already too many.",
+          "idle": "real",
+          "note": "Mostly idle."
+        },
+        "5": {
+          "why": "Not sensible: base in Yamagata or Sendai for a longer Tohoku stay instead.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already too many.",
+          "idle": "real",
+          "note": "Mostly idle."
+        }
+      }
+    },
+    "shuzenji": {
+      "best": "2 nights",
+      "date_notes": [
+        "25 Dec, 20:20–20:40: Atami's winter fireworks over the bay.",
+        "Thursdays: the MOA Museum in Atami is closed.",
+        "31 Dec–2 Jan: ryokan New Year plans at a surcharge; Shuzen-ji's own hatsumode is small and calm.",
+        "Kawazu's early cherries are in February and Atami's plum garden opens mid-January, both after us."
+      ],
+      "nights": {
+        "1": {
+          "why": "An evening in a quiet onsen town with a private bath, and the bamboo path in the morning. Mild and dry, about two hours from Tokyo.",
+          "longer": "A second night gives an unhurried day: the temple, the bamboo grove, a soba lunch.",
+          "shorter": "A single night is a bath and a dinner.",
+          "idle": "none",
+          "note": "Easy, short and calm."
+        },
+        "2": {
+          "why": "One gentle day: Shuzen-ji temple, the bamboo path and the riverside footbath, a ryokan dinner, and nothing steep. The calmest onsen town in reach, with no snow and no museums.",
+          "longer": "A third night buys Atami's MOA Museum and warm seafront, or Fuji from the Mishima Skywalk.",
+          "shorter": "One night is a bath and a dinner.",
+          "idle": "some",
+          "note": "Day two is a short walk and the bath; restful by design."
+        },
+        "3": {
+          "why": "Add Atami for the MOA Museum and the seafront, with fireworks over the bay if it is 25 Dec, or the Joren waterfall in the Izu hills.",
+          "longer": "A fourth night is another bath day.",
+          "shorter": "Two nights is Shuzenji alone.",
+          "idle": "some",
+          "note": "Gentle; João and Carolina may find it slow."
+        },
+        "4": {
+          "why": "Too long for a small town of a few lanes; it only works as a rest stop with Atami and Mishima as half days.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already generous.",
+          "idle": "real",
+          "note": "Two quiet days."
+        },
+        "5": {
+          "why": "Not sensible: Izu in winter is pleasant rather than wow, and a dead end for onward travel.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "Mostly idle."
+        }
+      }
+    },
+    "kusatsu": {
+      "best": "2 nights (for the bathers; little for Fernanda)",
+      "date_notes": [
+        "Through our window: the Yubatake is lit every evening.",
+        "The yumomi water-stirring shows run six times a day, New Year included.",
+        "29 Dec–3 Jan: the town fills with Tokyo families and ryokan prices double.",
+        "The bus to Karuizawa runs with snow chains and can stop in bad weather."
+      ],
+      "nights": {
+        "1": {
+          "why": "The steaming Yubatake under lights at dusk and a yumomi show, then out. It is about 3.5 hours from Tokyo by train and bus, and a long way from Kyoto.",
+          "longer": "A second night gives Sainokawara's huge open-air bath and an unhurried evening.",
+          "shorter": "A single night is the Yubatake and a dinner.",
+          "idle": "none",
+          "note": "A lot of travel for one evening."
+        },
+        "2": {
+          "why": "The Yubatake by day and lit at night, the seated yumomi shows, the Sainokawara park bath in the snow, and a ryokan with a private bath. The water is about 50 °C and acidic at source, too hot for Fernanda beyond a footbath.",
+          "longer": "A third night buys a ski morning for João and Carolina or Shima Onsen's 1691 bathhouse.",
+          "shorter": "One night is the Yubatake and a dinner.",
+          "idle": "some",
+          "note": "A great town for bathers; Fernanda will have the quietest time."
+        },
+        "3": {
+          "why": "Add a ski morning at the small resort above town, Shima Onsen's old bathhouse, or the bus to Karuizawa, about 80 minutes when the road is clear.",
+          "longer": "A fourth night adds nothing.",
+          "shorter": "Two nights covers the town.",
+          "idle": "some",
+          "note": "One quiet day for the non-skiers."
+        },
+        "4": {
+          "why": "Too long: one hot-water field and a ring of public baths, with no rail line out.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already generous.",
+          "idle": "real",
+          "note": "Two idle days, longest for Fernanda."
+        },
+        "5": {
+          "why": "Not sensible for this group: the baths are the point, and she can barely use them.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already too many.",
+          "idle": "real",
+          "note": "Mostly idle."
+        }
+      }
+    },
+    "nikko": {
+      "best": "1–2 nights, or a day trip from Tokyo on 21–23 Dec or 8 Jan",
+      "date_notes": [
+        "31 Dec night–3 Jan: Toshogu opens around midnight for hatsumode and is packed 1–3 Jan; the roads jam.",
+        "31 Dec–2 Jan: half the town's restaurants close, including most of the yuba lunches.",
+        "21–23 Dec, or after 4 Jan: the calm days for the shrines.",
+        "Wednesdays: Edo Wonderland is closed; it opens over New Year with short hours.",
+        "From late December, once the snow settles: guided snowshoes on Senjogahara."
+      ],
+      "nights": {
+        "1": {
+          "why": "Toshogu at opening (9:00) before the tour buses, Kanmangafuchi's flat river path in the afternoon, and a Kinugawa ryokan with a family bath. The shrines are about 200 stone steps to the main gate, so Fernanda stays at gate level.",
+          "longer": "A second night buys Lake Chuzenji, the half-frozen Kegon Falls (a lift down, no stairs) and Yumoto's sulphur baths.",
+          "shorter": "A single night means the shrines without rushing for the train; without it, Nikko is a two-hour day trip from Asakusa.",
+          "idle": "none",
+          "note": "A full day and a good bath."
+        },
+        "2": {
+          "why": "The shrines one day; the lake, Kegon Falls and Yumoto's milky baths in snow at 1,500 m the next, though the bus up has 48 hairpin bends. A big Kinugawa ryokan takes seven easily.",
+          "longer": "A third night adds a snowshoe on Senjogahara for the fit, or Edo Wonderland on a cold day.",
+          "shorter": "One night keeps the shrines and loses the lake.",
+          "idle": "none",
+          "note": "Two good days."
+        },
+        "3": {
+          "why": "Shrines, the lake and a third day: a Senjogahara snowshoe for the parents and João and Carolina while Fernanda soaks at Yumoto, or Edo Wonderland's shows.",
+          "longer": "A fourth night is too many; move on to Aizu or back to Tokyo.",
+          "shorter": "Two nights covers the shrines and the lake.",
+          "idle": "some",
+          "note": "One easy day."
+        },
+        "4": {
+          "why": "Too long for this group: the shrines and the lake take two days, and Kinugawa town is faded.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights already holds a snow day.",
+          "idle": "real",
+          "note": "Two idle days."
+        },
+        "5": {
+          "why": "Not sensible: Nikko is two days at most, and its New Year is crowds at the shrines.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already too many.",
+          "idle": "real",
+          "note": "Mostly idle."
+        }
+      }
+    },
+    "kamakura": {
+      "best": "No night (a day trip from Tokyo), or 1–2 nights at the end, an hour from Haneda",
+      "date_notes": [
+        "1–3 Jan: Tsurugaoka Hachimangu draws about 2.5 million for hatsumode, with crowd control on the trains and streets. Avoid.",
+        "1 Jan, about 6:50: first sunrise from Enoshima's beach, the gentlest one near Tokyo.",
+        "21–23 Dec or 7–8 Jan: the calm days.",
+        "Every day, 8:00–17:00 in winter: the Great Buddha and Hase-dera.",
+        "9 Jan: about an hour to Haneda, so it can be the last night."
+      ],
+      "nights": {
+        "1": {
+          "why": "The Great Buddha, Hase-dera and the bamboo garden at Hokoku-ji, the sea at dusk, and a quiet morning before the day-trippers. About an hour from Haneda, so it can be the last night.",
+          "longer": "A second night adds Enoshima and the north Kamakura Zen temples.",
+          "shorter": "A single night buys an evening by the sea; without it Kamakura is an easy day trip from Tokyo.",
+          "idle": "none",
+          "note": "Flat along the coast; the hill temples have stairs."
+        },
+        "2": {
+          "why": "Two unhurried days: the Great Buddha and Hase-dera on one, Engaku-ji and Kencho-ji in north Kamakura and Enoshima on the other. Lodging for seven is mostly small hotels and rental houses.",
+          "longer": "A third night buys a Yokohama day, or Fuji from the Enoshima shore at dawn.",
+          "shorter": "One night keeps the main sights.",
+          "idle": "none",
+          "note": "Two calm days; a seaside pause before the flight."
+        },
+        "3": {
+          "why": "Kamakura, Enoshima and a day in Yokohama for Chinatown and the Red Brick warehouses, close to Haneda for the 9 Jan flight.",
+          "longer": "A fourth night has little more.",
+          "shorter": "Two nights is Kamakura itself.",
+          "idle": "some",
+          "note": "One slow day."
+        },
+        "4": {
+          "why": "Too long for a seaside temple town; Tokyo is an hour away and a better base for more.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights already includes Yokohama.",
+          "idle": "real",
+          "note": "Two idle days."
+        },
+        "5": {
+          "why": "Not sensible; across 1–3 Jan it would mean the biggest hatsumode crush near Tokyo on the doorstep.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "Mostly idle."
+        }
+      }
+    },
+    "echigo-yuzawa": {
+      "best": "No night (a day trip from Tokyo), or 1 night",
+      "date_notes": [
+        "GALA's opening date is announced in late autumn, usually mid to late December.",
+        "29 Dec–3 Jan: GALA is very busy, and Joetsu shinkansen seats are full, worst on 30 Dec and 3 Jan.",
+        "Over New Year: the Ponshukan sake hall and its sake bath stay open."
+      ],
+      "nights": {
+        "1": {
+          "why": "Step off the shinkansen 75 minutes from Tokyo into a metre of snow: GALA's slopes from the station for the skiers, the Ponshukan's sake wall and warm sake bath for the rest, and a ryokan bath at night. Fernanda has an easy day near the station.",
+          "longer": "A second night buys Takaragawa's giant riverside baths for the parents (icy steps) or a full ski day.",
+          "shorter": "A single night is the snow, the sake hall and a warm bath; it also works as a day trip.",
+          "idle": "none",
+          "note": "Easy and white; the town itself is 1980s ski concrete."
+        },
+        "2": {
+          "why": "A ski day for João and Carolina, Takaragawa or a snowy walk for the parents, and two bath evenings. Little else in town.",
+          "longer": "A third night is another ski day.",
+          "shorter": "One night is the snow and the sake hall.",
+          "idle": "some",
+          "note": "Day two is snow and baths; fine if that is the wish."
+        },
+        "3": {
+          "why": "Only for skiers: three days of slopes, with little for Fernanda beyond the station and the inn.",
+          "longer": "Nothing to add.",
+          "shorter": "Two nights already holds the snow and the baths.",
+          "idle": "real",
+          "note": "Two idle days for the non-skiers."
+        },
+        "4": {
+          "why": "Not sensible for this group: nothing to see but the snow itself.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already a ski stay.",
+          "idle": "real",
+          "note": "Mostly idle."
+        },
+        "5": {
+          "why": "Not sensible for this group: a ski week, not a winter trip for seven.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already too many.",
+          "idle": "real",
+          "note": "Mostly idle."
+        }
+      }
+    },
+    "hiroshima": {
+      "best": "2 nights",
+      "date_notes": [
+        "30–31 Dec: the Peace Memorial Museum is closed; the park is always open.",
+        "31 Dec, about 18:00: the Chinka-sai fire festival in Miyajima town. 1 Jan: Itsukushima opens at midnight and is crowded 1–3 Jan.",
+        "To about 3 Jan: the Dreamination lights on Peace Boulevard.",
+        "About 31 Dec–3 Jan: the oyster huts close; the oyster festival is in February.",
+        "The way home is about four hours by shinkansen to Tokyo."
+      ],
+      "nights": {
+        "1": {
+          "why": "The Peace Park and museum on arrival and Miyajima the next morning, or the other way round; both in one day is long, and Hiroshima is about four hours from Tokyo.",
+          "longer": "A second night gives each its own day.",
+          "shorter": "A single night means the Peace Park and Miyajima on the same day.",
+          "idle": "none",
+          "note": "Long and rewarding, then a long train."
+        },
+        "2": {
+          "why": "One day for the Peace Park and museum, one for Miyajima's shrine and floating torii (check the tide) with grilled oysters. Mild, calm weather; Mt Misen's rocky steps are for the others.",
+          "longer": "A third night buys Iwakuni's wooden bridge, or a night on Miyajima itself after the day visitors leave.",
+          "shorter": "One night puts both in one long day.",
+          "idle": "none",
+          "note": "Two full days, both good."
+        },
+        "3": {
+          "why": "Add a night on Miyajima, Iwakuni, or Onomichi's temple hillside by ropeway, or the ferry to Dogo Onsen in Matsuyama.",
+          "longer": "A fourth night is a long way west for this trip.",
+          "shorter": "Two nights covers the city and the island.",
+          "idle": "some",
+          "note": "One gentle day."
+        },
+        "4": {
+          "why": "Hiroshima as a western base with Okayama, Onomichi and Iwakuni as day trips; good, but the trip home stays four hours.",
+          "longer": "A fifth night adds nothing new.",
+          "shorter": "Three nights already holds a day out.",
+          "idle": "some",
+          "note": "One or two slow days."
+        },
+        "5": {
+          "why": "Too long for the city and the island; only as a base for a Setouchi week.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already generous.",
+          "idle": "real",
+          "note": "Two idle days."
+        }
+      }
+    },
+    "osaka": {
+      "best": "No night (an evening from Kyoto), or 1–2 nights",
+      "date_notes": [
+        "28–30 Dec: Kuromon market at its busiest; 1–4 Jan most stalls close; fully back 5 Jan.",
+        "28 Dec–1 Jan: the castle tower is closed; it reopens 2 Jan.",
+        "31 Dec: the USJ countdown runs from 19:00 to 21:00 on 1 Jan (separate ticket); the Umeda Sky deck stays open to 01:00.",
+        "1–2 Jan: the Hankyu and Hanshin department stores close; the big Dotonbori chains stay open.",
+        "From about 3 Jan: the bunraku New Year performance, fully seated.",
+        "9 Jan: the eve of Toka Ebisu at Imamiya Ebisu, loud and crowded."
+      ],
+      "nights": {
+        "1": {
+          "why": "A night in Namba: Dotonbori's lights and street food, takoyaki and okonomiyaki (cooked, which suits Fernanda), with a bunraku matinee or the Kaiyukan aquarium. It is 15 minutes from Kyoto by shinkansen.",
+          "longer": "A second night buys a full day: the castle park, the Kaiyukan and Shinsekai.",
+          "shorter": "A single night is the evening on Dotonbori; an evening out from Kyoto covers most of it.",
+          "idle": "none",
+          "note": "Loud, funny and flat; Pedro and Fernanda know it."
+        },
+        "2": {
+          "why": "One full day and two evenings: Kuromon market, the castle, the Kaiyukan (open every day), the Umeda Sky deck. Apartment hotels for seven are easy even at New Year.",
+          "longer": "A third night adds Kobe or Himeji.",
+          "shorter": "One night is the evening on Dotonbori.",
+          "idle": "none",
+          "note": "Full of food; fine for everyone."
+        },
+        "3": {
+          "why": "Osaka as a Kansai base: Nara, Kobe's beef and Himeji each a short train away, and Kyoto 15 minutes off. On 31 Dec USJ's countdown is there for whoever wants it.",
+          "longer": "A fourth night is another day trip.",
+          "shorter": "Two nights covers the city.",
+          "idle": "some",
+          "note": "Good food, less beauty than Kyoto."
+        },
+        "4": {
+          "why": "Works only as a base for day trips; the city itself is two days, and over 1–3 Jan the markets and independent restaurants shut.",
+          "longer": "A fifth night is another train out.",
+          "shorter": "Three nights already holds a day trip.",
+          "idle": "some",
+          "note": "One or two slow days."
+        },
+        "5": {
+          "why": "Too long for this group unless Kyoto is left out and Osaka becomes the Kansai base.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "Two idle days in the city itself."
+        }
+      }
+    },
+    "matsumoto": {
+      "best": "1 night, on the way between Nagano and Takayama",
+      "date_notes": [
+        "29–31 Dec: the castle is closed; 1–3 Jan it opens 10:00–15:30; normal hours from 4 Jan.",
+        "29 Dec–3 Jan and Mondays: the City Museum of Art, with the Kusama rooms, is closed.",
+        "1–3 Jan: many Nakamachi shops close.",
+        "The bus to Takayama crosses a mountain pass on chains, about 2.5 hours, and snow can hold it; Kamikochi is closed all winter.",
+        "A white day is maybe one chance in three; Matsumoto is on the dry side."
+      ],
+      "nights": {
+        "1": {
+          "why": "The black castle with the Alps behind it, Nakamachi's white storehouses and Nawate's frog street. The keep's inner stairs are ladder-steep, so Fernanda sees it from the grounds.",
+          "longer": "A second night buys Shirahone Onsen's milky baths in the snow, an hour by bus.",
+          "shorter": "A single night is the castle and the old streets; without it, the castle fits as a stop on the way.",
+          "idle": "none",
+          "note": "One real sight; a clean, easy city for a night."
+        },
+        "2": {
+          "why": "The castle, Nakamachi and the Kusama rooms at the City Museum of Art one day; Shirahone or the Azumino countryside the next.",
+          "longer": "A third night adds little.",
+          "shorter": "One night covers the castle and the old streets.",
+          "idle": "some",
+          "note": "Day two is a half day out."
+        },
+        "3": {
+          "why": "Too long for one great building and a few streets, unless it is a base for Shirahone and Nagano.",
+          "longer": "Nothing to add.",
+          "shorter": "Two nights already holds a day out.",
+          "idle": "real",
+          "note": "A quiet, cold extra day."
+        },
+        "4": {
+          "why": "Not sensible: Matsumoto is a stop, not a stay.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already too many.",
+          "idle": "real",
+          "note": "Mostly idle."
+        },
+        "5": {
+          "why": "Not sensible: Matsumoto is a stop, not a stay.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already too many.",
+          "idle": "real",
+          "note": "Mostly idle."
+        }
+      }
+    },
+    "karuizawa": {
+      "best": "No night (a day trip from Tokyo), or 1 night",
+      "date_notes": [
+        "Through our window: the winter festival lights at Kyu-Karuizawa and Harunire Terrace.",
+        "29 Dec–3 Jan: the Prince slopes and the outlet mall are crowded, but nearly everything stays open, so it is an easy New Year base.",
+        "Natural snow is thin: expect brown ground and white pistes."
+      ],
+      "nights": {
+        "1": {
+          "why": "An hour from Tokyo: the outlet mall, the winter lights at Kyu-Karuizawa and Harunire Terrace, and a forest bath at Tombo-no-yu, with the Prince ski slopes by the station for a snow day.",
+          "longer": "A second night buys a full ski day and Shiraito Falls.",
+          "shorter": "A single night is the lights, a bath and the shops; it also works as a day trip.",
+          "idle": "none",
+          "note": "Tidy and easy; little Japan feel."
+        },
+        "2": {
+          "why": "A ski or sledging day for João and Carolina and the parents, a shopping and bath day for Fernanda, in one of the many villas that sleep seven.",
+          "longer": "A third night is wasted on this group.",
+          "shorter": "One night covers it.",
+          "idle": "some",
+          "note": "Day two is snow or shops."
+        },
+        "3": {
+          "why": "Too long: Tokyo's weekend escape has two days of things, and those are shops and a small ski hill.",
+          "longer": "Nothing to add.",
+          "shorter": "Two nights already holds the ski day.",
+          "idle": "real",
+          "note": "A spare day with nothing new."
+        },
+        "4": {
+          "why": "Not sensible for this group.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already too many.",
+          "idle": "real",
+          "note": "Mostly idle."
+        },
+        "5": {
+          "why": "Not sensible for this group.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already too many.",
+          "idle": "real",
+          "note": "Mostly idle."
+        }
+      }
+    },
+    "miyajima": {
+      "best": "2 nights (1 if Hiroshima is the base)",
+      "date_notes": [
+        "30–31 Dec: Hiroshima's Peace Memorial Museum is closed. The island stays calm until the evening of the 31st.",
+        "31 Dec, 18:00–18:30: Chinka-sai, the torch festival on Mikasa-hama beach. It is crowded near the fire, so watch from the back.",
+        "31 Dec, from about 21:00: people queue at Daisho-in, where the first 108 in line ring the temple bell.",
+        "1 Jan: the shrine opens at midnight, with queues of up to two hours for the first visit. The ropeway runs from 05:00 for sunrise on Mt Misen, at about 07:15.",
+        "1–3 Jan: day crowds come over from Hiroshima, and the island empties after dark.",
+        "Every day: the torii floats at high tide, and you can walk out to it at low tide. Check the tide table.",
+        "Visitors pay a ¥100 island tax with the ferry fare."
+      ],
+      "nights": {
+        "1": {
+          "why": "An afternoon at the shrine, an evening on the waterfront after the day visitors leave, and a quiet morning before they come back. Enough if Hiroshima is the base for the Peace Park.",
+          "longer": "A second night gives a slow day: Momijidani, Daisho-in and the torii at both tides.",
+          "shorter": "No night means a day trip from Hiroshima, about 45 minutes each way, and you miss the quiet evening.",
+          "idle": "none",
+          "note": "Short and lovely; the evening is the point."
+        },
+        "2": {
+          "why": "A calm day on the island and two evenings. On our dates it holds New Year's Eve: a walk, a bath, Chinka-sai at 18:00 and dinner at the inn. Fernanda can see the shrine in daylight on the 30th or 31st and skip the midnight queue; João, Carolina and Tatiana can join the bell queue at Daisho-in.",
+          "longer": "A third night means staying into 1–2 Jan, when the crowds arrive and the trains are full.",
+          "shorter": "One night, arriving on 31 Dec, puts the move on a busy morning.",
+          "idle": "some",
+          "note": "31 Dec is slow on purpose."
+        },
+        "3": {
+          "why": "Time for Mt Misen by ropeway for Carlos, Nadir and the fit ones, Iwakuni's wooden bridge by train, and an easy afternoon. Good before 29 Dec; over New Year the third day is mostly crowds.",
+          "longer": "A fourth night adds nothing the island has not already shown you.",
+          "shorter": "Two nights covers the shrine, the town and a quiet evening.",
+          "idle": "some",
+          "note": "One easy day."
+        },
+        "4": {
+          "why": "Too long for a small island, unless it is a quiet base for Hiroshima and Iwakuni as day trips.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already a slow stay.",
+          "idle": "real",
+          "note": "Two slow days."
+        },
+        "5": {
+          "why": "Not sensible: the same shrine and the same lane five days running, with Hiroshima better as a base.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "Mostly idle."
+        }
+      }
+    },
+    "shirahama": {
+      "best": "3 nights (4 with a Kumano day)",
+      "date_notes": [
+        "28 Dec–4 Jan: Adventure World is open every day, 10:00–17:00.",
+        "Late Dec to 3 Jan: Toretore Ichiba is at its busiest. Go when it opens.",
+        "December to February: Sennin-buro, the giant river bath at Kawayu, is dug each winter. The 2026–27 dates are not out yet.",
+        "1–3 Jan: first-visit crowds at Kumano Hongu Taisha. A weekday in late December is calmer.",
+        "Engetsu island: the sun sets through the arch only around the equinoxes. In winter it drops to one side, which is still a fine sunset.",
+        "Sakinoyu's hours change with the season and it can close for upkeep. Check before you go.",
+        "The way out: about 2 h 20 to Shin-Osaka and 3 h to Kyoto. Tokyo is five hours or more."
+      ],
+      "nights": {
+        "1": {
+          "why": "A sunset and a bath, then a long train back. Shirahama is three hours from Kyoto, so one night is mostly travel.",
+          "longer": "A second night gives a whole day for the cliffs, the market and Sakinoyu.",
+          "shorter": "It is too far for a day trip from Kyoto.",
+          "idle": "none",
+          "note": "Mostly train."
+        },
+        "2": {
+          "why": "One full day on the coast: Toretore market when it opens, Sandanbeki's cave by lift, Senjojiki's rock shelves, the beach and an afternoon soak. Two hotel dinners.",
+          "longer": "A third night adds Adventure World or a slow day.",
+          "shorter": "One night is a long way to go for one evening.",
+          "idle": "none",
+          "note": "A full day and two good evenings."
+        },
+        "3": {
+          "why": "The coast, an easy day (Adventure World, the beach, the hotel's baths) and room to stretch out. Good for Carlos and Nadir; quieter for João and Carolina.",
+          "longer": "A fourth night brings in Kumano: Hongu Taisha, the great torii at Oyunohara and the river bath at Kawayu.",
+          "shorter": "Two nights keeps the coast and loses the easy day.",
+          "idle": "some",
+          "note": "One slow day."
+        },
+        "4": {
+          "why": "The coast, a Kumano day by hired van (about three hours on the road in all) and a slow day. Across 28 Dec–1 Jan it also keeps everyone off the trains on the peak days. Fernanda may prefer the beach and the hotel bath on the Kumano day; Hongu has 158 stone steps.",
+          "longer": "A fifth night is another beach day.",
+          "shorter": "Three nights drops Kumano or the slow day.",
+          "idle": "some",
+          "note": "If it spans New Year's Eve, the 31st is slow on purpose."
+        },
+        "5": {
+          "why": "Too long unless the point is rest. The town is small and quiet in winter.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights already holds the coast and Kumano.",
+          "idle": "real",
+          "note": "Two idle days."
+        }
+      }
+    },
+    "nagano": {
+      "best": "3 nights",
+      "date_notes": [
+        "Every day, including 31 Dec and 1 Jan: the snow monkey park is open. It is busiest 29 Dec–3 Jan.",
+        "From 29 Dec: Matsumoto Castle closes for the year end. Sources differ on whether it reopens on 1 Jan or 4 Jan.",
+        "31 Dec into 1 Jan: Zenko-ji stays open all night and is packed, and the first-visit crowds are large until 3 Jan.",
+        "Every morning at dawn: Zenko-ji's morning service is open to anyone.",
+        "Obuse's Hokusai Museum: check its year-end closing days.",
+        "15 Jan: Nozawa's fire festival, after we leave."
+      ],
+      "nights": {
+        "1": {
+          "why": "Zenko-ji and the dark passage in the afternoon, dinner on the temple approach, and the snow monkeys the next morning before moving on. Kanazawa is an hour away, Tokyo 80–100 minutes.",
+          "longer": "A second night gives the monkeys a full morning and Shibu's lantern street in the afternoon.",
+          "shorter": "With no night, Nagano can be a stop between Tokyo and Kanazawa, with the bags in lockers.",
+          "idle": "none",
+          "note": "A busy stopover."
+        },
+        "2": {
+          "why": "Zenko-ji on arrival, then the snow monkeys at Jigokudani for the walkers. Fernanda can take the foot baths and a private bath in Shibu Onsen and meet them for lunch.",
+          "longer": "A third night adds Matsumoto Castle or Obuse.",
+          "shorter": "One night squeezes the monkeys into a morning.",
+          "idle": "none",
+          "note": "Two good days."
+        },
+        "3": {
+          "why": "Zenko-ji, the snow monkeys, and a day out to Matsumoto's black castle (50 minutes) or Obuse's Hokusai museum and chestnut sweets. A flat city with trains in every direction and a Red Cross hospital.",
+          "longer": "A fourth night adds a snow day at Nozawa or Togakushi's cedar avenue.",
+          "shorter": "Two nights drops Matsumoto or the monkeys.",
+          "idle": "none",
+          "note": "Every day has a clear plan."
+        },
+        "4": {
+          "why": "Three days plus a snow day at Nozawa or Togakushi: sledding, a ski lesson for João and Carolina, the wooden village baths. Fernanda may prefer a slow day at the hotel or in Obuse.",
+          "longer": "A fifth night is a second snow day.",
+          "shorter": "Three nights keeps the main days out.",
+          "idle": "some",
+          "note": "One easier day."
+        },
+        "5": {
+          "why": "A base for a Nagano week: the monkeys, Matsumoto, Obuse, Nozawa and Togakushi. Across 29 Dec–3 Jan it means Zenko-ji crowds and a closed castle.",
+          "longer": "A sixth night is too many for a station hotel.",
+          "shorter": "Four nights already holds a snow day.",
+          "idle": "some",
+          "note": "Full if you use the trains, slow if you do not."
+        }
+      }
+    },
+    "arima": {
+      "best": "2 nights (3–4 as a base for Kobe and Himeji)",
+      "date_notes": [
+        "29–30 Dec: Himeji Castle is closed. It is open, and busy, on 31 Dec and 1–3 Jan.",
+        "31 Dec–2 Jan: most Kobe beef counters close.",
+        "1 Jan: both public baths, Kin-no-yu and Gin-no-yu, are shut and many shops close. The ryokan bath and dinner are the evening.",
+        "2 Jan: Irizome-shiki, the first-bath ceremony. Check the 2027 time with the tourist office.",
+        "Kin-no-yu closes on the 2nd and 4th Tuesdays and Gin-no-yu on the 1st and 3rd, so Gin-no-yu is shut on Tue 5 Jan.",
+        "New Year: ryokan rates are 50–100% higher on 31 Dec–2 Jan."
+      ],
+      "nights": {
+        "1": {
+          "why": "One bath, one dinner and a morning in the lanes. Arima is about 75 minutes from Kyoto and an hour from Osaka, so one night works on the way through.",
+          "longer": "A second night gives a whole day: the gold and silver baths, the lanes and the sweet shops.",
+          "shorter": "As a day trip from Kyoto or Osaka you miss the ryokan, which is the point.",
+          "idle": "none",
+          "note": "Short and complete."
+        },
+        "2": {
+          "why": "A full day in town: the gold spring for the others, the cooler silver spring, the hill lanes and sweet shops, and two ryokan dinners. Fernanda can keep to the private baths.",
+          "longer": "A third night adds a Kobe day: Kitano's old houses, the harbour and beef.",
+          "shorter": "One night is a single evening.",
+          "idle": "some",
+          "note": "The town takes a morning; the inn fills the rest."
+        },
+        "3": {
+          "why": "Arima, plus Kobe as a day out, 30 minutes away. Over New Year, add the first-bath ceremony on 2 Jan.",
+          "longer": "A fourth night adds Himeji Castle, about an hour away.",
+          "shorter": "Two nights loses Kobe.",
+          "idle": "some",
+          "note": "One full day out and one slow one."
+        },
+        "4": {
+          "why": "Arima as a base for 1–5 Jan: a quiet arrival on the 1st when the public baths are shut, the ceremony on the 2nd, then Kobe and Himeji, and out after the return rush.",
+          "longer": "A fifth night is a second slow day.",
+          "shorter": "Leaving on 4 Jan puts the move on the last peak day.",
+          "idle": "some",
+          "note": "The arrival on 1 Jan is quiet, as expected."
+        },
+        "5": {
+          "why": "Too long for a small hill town. Kobe and Himeji are the only big days out.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already generous.",
+          "idle": "real",
+          "note": "Two slow days."
+        }
+      }
+    },
+    "matsue": {
+      "best": "3 nights (4 over New Year)",
+      "date_notes": [
+        "Every day: Matsue Castle and the Adachi Museum of Art are open, New Year included.",
+        "29 Dec–1 Jan: the Matsue History Museum is closed; the Hearn house and museum close for New Year too.",
+        "30 Dec: the last calm day at Izumo Taisha before the New Year crowds.",
+        "31 Dec: New Year's Eve dinner at the inn; most restaurants in town close.",
+        "1–3 Jan: Izumo Taisha is at its busiest; go early or not at all.",
+        "Winter: the Horikawa kotatsu boats run, but check 31 Dec and 1 Jan; they stop in strong wind or high water."
+      ],
+      "nights": {
+        "1": {
+          "why": "An evening by the lake and one morning: the castle, or the sunset if the train is on time. The Yakumo takes 2 h 30 each way, so one night barely repays the trip.",
+          "longer": "A second night gives a full day for the Adachi garden or Izumo Taisha.",
+          "shorter": "A single night is a long way to go for a sunset.",
+          "idle": "none",
+          "note": "Mostly train."
+        },
+        "2": {
+          "why": "One full day: the castle, Shiomi Nawate and a kotatsu boat in the morning, the Adachi garden in the afternoon, Lake Shinji at sunset. Izumo Taisha has to wait.",
+          "longer": "A third night adds Izumo Taisha and its warigo soba, an hour away on the Ichibata line.",
+          "shorter": "One night is a sunset and a train.",
+          "idle": "none",
+          "note": "Full; the journeys in and out are long."
+        },
+        "3": {
+          "why": "Two full days: the Adachi garden on one, Izumo Taisha on the other, the castle and the moats in between. The right length outside New Year.",
+          "longer": "A fourth night gives an easy day after the long arrival, or an afternoon at Tamatsukuri Onsen, 20 minutes away.",
+          "shorter": "Two nights loses Izumo Taisha or the Adachi garden.",
+          "idle": "none",
+          "note": "Two good days with the long arrival behind you."
+        },
+        "4": {
+          "why": "The New Year shape: an easy day after the four-hour arrival, the Adachi garden, Izumo Taisha on 30 Dec before the crowds, and a slow 31 Dec of castle, boat and bath before the inn's dinner. Fernanda gets a quiet day either side of the long trains.",
+          "longer": "A fifth night would be a true rest day with little new to see.",
+          "shorter": "Three nights means leaving on a peak day, or losing the Adachi garden or Izumo Taisha.",
+          "idle": "some",
+          "note": "31 Dec is light by design."
+        },
+        "5": {
+          "why": "Too long for a small town in winter unless the point is rest; the extra day is a bath day at Tamatsukuri Onsen or a second look at the lake.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already generous.",
+          "idle": "real",
+          "note": "One idle day, two in bad weather."
+        }
+      }
+    },
+    "fukuoka": {
+      "best": "3 nights (4 over New Year)",
+      "date_notes": [
+        "Until 30 Dec: the yatai are out most evenings and Yanagibashi market is busy with New Year shopping.",
+        "31 Dec–1 Jan: almost every yatai and most independent restaurants are shut; Canal City and the station chains stay open.",
+        "1–3 Jan: Dazaifu Tenmangu takes about two million people; go from 4 Jan, early.",
+        "2 Jan: department-store sales and food halls reopen; Hakata Hankyu has opened on 1 Jan in past years.",
+        "3 Jan: Tamaseseri at Hakozaki shrine, men in loincloths tussling for a wooden ball; watch from the edge.",
+        "About 28 Dec–4 Jan: the city's museums are closed."
+      ],
+      "nights": {
+        "1": {
+          "why": "A stopover: one evening of ramen or the stalls, then the train out. Fukuoka is 2 h 30 from Osaka and five hours from Tokyo, so one night barely repays the trip.",
+          "longer": "A second night gives one full food day.",
+          "shorter": "A single night is a long way to go for a bowl of ramen.",
+          "idle": "none",
+          "note": "Mostly train."
+        },
+        "2": {
+          "why": "One full day: a market morning, Ohori Park or Canal City, mizutaki for lunch, the yatai at night. Dazaifu or Yanagawa has to wait.",
+          "longer": "A third night adds Dazaifu or Yanagawa's kotatsu boats.",
+          "shorter": "One night is dinner and the train.",
+          "idle": "none",
+          "note": "Full, and easy on the legs."
+        },
+        "3": {
+          "why": "Two full days: the city's food on one, Dazaifu or Yanagawa on the other. In December everything is open; over 1–3 Jan the stalls and many restaurants are shut.",
+          "longer": "A fourth night lets the city wake up after New Year, or adds an easy day.",
+          "shorter": "Two nights loses the day out.",
+          "idle": "none",
+          "note": "Comfortable."
+        },
+        "4": {
+          "why": "The New Year shape: arrive on the quiet 1 Jan and stay through the busy 2–4 Jan while the city reopens. An easy 2 Jan of food halls and Ohori Park, Yanagawa on the 3rd, and on the 4th the yatai back and Dazaifu calm.",
+          "longer": "A fifth night buys Nagasaki or Karatsu once the trains calm down.",
+          "shorter": "Three nights means moving on 4 Jan, a peak day.",
+          "idle": "some",
+          "note": "2 Jan is slow; the city is still half asleep."
+        },
+        "5": {
+          "why": "Fukuoka plus a day out to Nagasaki, about 1 h 30 with one change, or the pottery town of Karatsu. Good for Fernanda; João and Carolina may want more.",
+          "longer": "A sixth night is too long so far from the rest of the route.",
+          "shorter": "Four nights drops the day out.",
+          "idle": "some",
+          "note": "One easy day."
+        }
+      }
+    },
+    "nagoya": {
+      "best": "2 nights",
+      "date_notes": [
+        "29 Dec–1 Jan: Nagoya Castle and the Honmaru Palace are closed; the keep is shut for rebuilding all year.",
+        "1–3 Jan: Atsuta Shrine and Osu Kannon are a crush.",
+        "Tuesdays: the SCMaglev and Railway Park is closed (Tue 5 Jan).",
+        "Wednesdays and the 2nd and 4th Thursdays: Atsuta Houraiken's main shop is closed (Wed 6 Jan).",
+        "From about 5 Jan: restaurants and museums are back to normal."
+      ],
+      "nights": {
+        "1": {
+          "why": "A stopping place: an evening of tebasaki and miso, then on. It splits a long ride, such as Hakata to Tokyo, into two easy halves.",
+          "longer": "A second night gives one full day: Atsuta, eel and the castle palace.",
+          "shorter": "A single night is the least it can be.",
+          "idle": "none",
+          "note": "No time for the city, and that is the point."
+        },
+        "2": {
+          "why": "One full day: Atsuta Shrine in the morning, hitsumabushi for lunch, the Honmaru Palace in the afternoon, miso-nikomi udon at night.",
+          "longer": "A third night adds Inuyama's original castle or the railway museum.",
+          "shorter": "One night is a dinner stop.",
+          "idle": "none",
+          "note": "One busy day with little walking."
+        },
+        "3": {
+          "why": "Two days: the city on one; on the other, Inuyama Castle, one of the twelve originals, 30 minutes by Meitetsu (steep inside, so Fernanda may wait below), or the Toyota museum and the railway park.",
+          "longer": "A fourth night only makes sense as a base for Ise, which is better slept in.",
+          "shorter": "Two nights loses the day out.",
+          "idle": "some",
+          "note": "Comfortable; Nagoya does not need three days."
+        },
+        "4": {
+          "why": "Only as a base for day trips: Inuyama, Ise Jingu (about 1 h 40 by Kintetsu) and the Toyota sites. Sleeping in Ise-Shima is kinder than a long day trip.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is enough.",
+          "idle": "some",
+          "note": "One quiet day."
+        },
+        "5": {
+          "why": "Not sensible: a week of day trips from a city that is good for two days.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "Two idle days."
+        }
+      }
+    },
+    "atami": {
+      "best": "2 nights (3 with Izu-Kogen)",
+      "date_notes": [
+        "25 Dec, 20:20–20:40: the last winter fireworks over the bay.",
+        "Wednesdays, and about 26–30 Dec: Kiunkaku is closed.",
+        "Thursdays: the MOA Museum is closed; check its New Year dates.",
+        "22 Dec–11 Jan: capybaras in the yuzu bath at Izu Shaboten Zoo, 10:30 and 13:30.",
+        "31 Dec–3 Jan: the hotels are at their fullest and dearest, and Kinomiya shrine's giant camphor draws New Year crowds.",
+        "Mid-January: the plum garden opens, after us."
+      ],
+      "nights": {
+        "1": {
+          "why": "An evening by the sea, with the fireworks if it is 25 Dec. Atami is 45 minutes from Tokyo, so one night works as a stop on the way into Izu.",
+          "longer": "A second night gives a day for the MOA Museum and Kiunkaku.",
+          "shorter": "A single night is a bath and a seafront walk.",
+          "idle": "none",
+          "note": "Easy and short."
+        },
+        "2": {
+          "why": "One full day: the MOA Museum in the morning, Kiunkaku and the old shopping streets after lunch, a warm walk along the bay.",
+          "longer": "A third night adds Izu-Kogen: the capybaras and the Jogasaki cliffs.",
+          "shorter": "One night is an evening.",
+          "idle": "none",
+          "note": "Gentle and full."
+        },
+        "3": {
+          "why": "Two full days: Atami's museums and seafront on one, Izu-Kogen's zoo and sea cliffs on the other, 25 minutes down the Ito line. With the fireworks on the 25th, the right length.",
+          "longer": "A fourth night adds Odawara Castle, or Hatsushima island if the sea is calm.",
+          "shorter": "Two nights loses Izu-Kogen.",
+          "idle": "none",
+          "note": "Two easy days."
+        },
+        "4": {
+          "why": "Atami plus day trips: Odawara Castle, Hakone's museums, or the Mishima Skywalk with Fuji behind it. Fine as a slow base.",
+          "longer": "Nothing nearby that Shuzenji or Hakone do not do better.",
+          "shorter": "Three nights is the usual stay.",
+          "idle": "some",
+          "note": "One easy day."
+        },
+        "5": {
+          "why": "Too long for a small resort unless the point is rest; over New Year it is busy and dear.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "One or two idle days."
+        }
+      }
+    },
+    "ise-shima": {
+      "best": "3 nights (4 over New Year)",
+      "date_notes": [
+        "31 Dec–1 Jan: Ise Jingu stays open through New Year's Eve night; waits of up to two hours on New Year's morning.",
+        "1–3 Jan: the shrines and Okage Yokocho at their most crowded; on 4–5 Jan company groups come, so go at dawn.",
+        "1–3 Jan: many restaurants close; hotel restaurants and the Okage Yokocho stalls carry on.",
+        "Every day: Toba Aquarium is open, but very busy 1–3 Jan.",
+        "Mikimoto Pearl Island has not published its New Year hours.",
+        "October to April: spiny lobster season."
+      ],
+      "nights": {
+        "1": {
+          "why": "One evening and one morning: Ise Jingu at opening, akafuku, and away. A long way to come for a shrine visit.",
+          "longer": "A second night gives the coast: Toba's pearls and aquarium.",
+          "shorter": "A single night is the shrine and nothing else.",
+          "idle": "none",
+          "note": "Mostly train."
+        },
+        "2": {
+          "why": "One full day: both shrines and Okage Yokocho in the morning, Pearl Island or the aquarium in the afternoon, lobster for dinner.",
+          "longer": "A third night adds Ago Bay and Kashikojima.",
+          "shorter": "One night is the shrine alone.",
+          "idle": "none",
+          "note": "Full."
+        },
+        "3": {
+          "why": "Two full days: Ise Jingu and Okage Yokocho on one; Toba, Ago Bay and the Yokoyama lookout on the other. The right length outside New Year.",
+          "longer": "A fourth night buys an easy day by the sea, or Futami's wedded rocks.",
+          "shorter": "Two nights rushes the coast.",
+          "idle": "none",
+          "note": "Two good days, all mild."
+        },
+        "4": {
+          "why": "The New Year shape: arrive on the quiet 1 Jan, keep 2–3 Jan for Toba and Ago Bay while the shrine is crowded, and see Ise Jingu at dawn on 4 Jan, the day before you leave.",
+          "longer": "A fifth night is a long, quiet day: pleasant, but little new.",
+          "shorter": "Three nights means moving on a peak day, or seeing the shrine in the crush.",
+          "idle": "some",
+          "note": "2 Jan is an easy day after the long move."
+        },
+        "5": {
+          "why": "Too long for this coast in winter unless the point is a seaside rest.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already generous.",
+          "idle": "real",
+          "note": "One or two idle days."
+        }
+      }
+    },
+    "morioka": {
+      "best": "3 nights (4 with an easy day)",
+      "date_notes": [
+        "28 Dec–4 Jan: Kakunodate's Kawarada house is shut; the Aoyagi house stays open.",
+        "29 Dec–3 Jan: museums and many restaurants close; most wanko soba houses stay open, but check.",
+        "1 Jan: shops close, and Morioka Hachimangu fills with the city's first shrine visit.",
+        "Every day: Chuson-ji at Hiraizumi, 8:30–16:30 in winter.",
+        "30 Dec and 3 Jan: the busiest days on the Tohoku shinkansen; book the Komachi and Hayabusa early."
+      ],
+      "nights": {
+        "1": {
+          "why": "A stopover on the way north: wanko soba and a walk by the river. Morioka's charm is slow, and one night does not show it.",
+          "longer": "A second night gives one day trip: Kakunodate or Hiraizumi.",
+          "shorter": "A single night is a dinner.",
+          "idle": "none",
+          "note": "Short."
+        },
+        "2": {
+          "why": "One full day: the old centre and a wanko soba lunch, or a day out to Kakunodate's samurai lanes.",
+          "longer": "A third night adds Hiraizumi's golden hall.",
+          "shorter": "One night is a meal.",
+          "idle": "none",
+          "note": "Full."
+        },
+        "3": {
+          "why": "Two days out with the evenings in Morioka: Kakunodate on one, Hiraizumi on the other.",
+          "longer": "A fourth night gives an easy day in between, which the ice and cold make welcome.",
+          "shorter": "Two nights loses Hiraizumi or Kakunodate.",
+          "idle": "none",
+          "note": "Busy; the cold tires everyone."
+        },
+        "4": {
+          "why": "Kakunodate, Hiraizumi and an easy Morioka day of noodles, the red-brick bank and the craft shops: the right pace in deep cold, with a rest before New Year.",
+          "longer": "A fifth night adds Koiwai Farm in the snow, or a day at Nyuto's milky baths for João and Carolina.",
+          "shorter": "Three nights drops the easy day.",
+          "idle": "some",
+          "note": "One easy day by design."
+        },
+        "5": {
+          "why": "Morioka plus a third day out: Nyuto Onsen's outdoor baths for the keen bathers, or Koiwai Farm. Five nights is a lot of one small city.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is plenty.",
+          "idle": "some",
+          "note": "One idle day, perhaps two."
+        }
+      }
+    },
+    "tsunagi": {
+      "best": "2 nights",
+      "date_notes": [
+        "30 Dec: a peak day on the shinkansen, but the hop from Morioka is 25 minutes by road.",
+        "31 Dec: New Year's Eve dinner and toshikoshi soba at the hotel; nothing else nearby is open.",
+        "1 Jan: osechi for breakfast, and a quiet Hayabusa from Morioka.",
+        "2–3 Jan: the hotels stay full and dear until the holiday ends."
+      ],
+      "nights": {
+        "1": {
+          "why": "One bath, one dinner, and the mountain at breakfast. Close enough to Morioka to work as a single night.",
+          "longer": "A second night gives a whole slow day, which is the point of the place.",
+          "shorter": "A single night is a bath and a dinner.",
+          "idle": "none",
+          "note": "Easy and short."
+        },
+        "2": {
+          "why": "A whole day with nothing to do but soak, read and watch the light on Mt Iwate, and dinner in the hotel. Restful for Fernanda and the parents.",
+          "longer": "A third night is another day of the same; over New Year it pushes the move onto the busy 2 Jan.",
+          "shorter": "One night is the bath and the dinner only.",
+          "idle": "some",
+          "note": "Day two is slow by design."
+        },
+        "3": {
+          "why": "A deep rest, with Morioka as an afternoon out. João and Carolina will be restless.",
+          "longer": "A fourth night adds nothing.",
+          "shorter": "Two nights is the usual stay.",
+          "idle": "some",
+          "note": "Two slow days."
+        },
+        "4": {
+          "why": "Too long for a village of hotels; better to sleep in Morioka and come out for one or two nights.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already long.",
+          "idle": "real",
+          "note": "Two idle days."
+        },
+        "5": {
+          "why": "Not sensible: the same bath and the same view five days running.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "Mostly idle."
+        }
+      }
+    },
+    "south-tohoku": {
+      "best": "3 nights",
+      "date_notes": [
+        "December, to about 25–28 Dec: the Pageant of Starlight on Jozenji-dori; the 2026 dates are still to come.",
+        "From about 27 Dec, at weekends and over New Year: the Zao ropeway's frozen-tree light-up has run in past seasons, about 1 h 30 away, with the trees still young.",
+        "Every day, New Year included: the Matsushima cruise and Zuigan-ji; 1 Jan adds a sunrise cruise.",
+        "About 28 Dec–4 Jan: the city's museums are closed; the oyster huts close about 31 Dec–3 Jan.",
+        "2 Jan: Sendai's New Year sale, with gifts for customers."
+      ],
+      "nights": {
+        "1": {
+          "why": "An evening of gyutan, and the lights if they are on. Sendai is 90 minutes from Tokyo, so one night works as a stop on the way north.",
+          "longer": "A second night gives Matsushima.",
+          "shorter": "A single night is dinner and bed.",
+          "idle": "none",
+          "note": "Short."
+        },
+        "2": {
+          "why": "One full day: Matsushima's cruise and Zuigan-ji in the morning, back for the lights and beef tongue at night.",
+          "longer": "A third night adds Zuihoden and the city, or Yamadera for the keen climbers.",
+          "shorter": "One night is a dinner.",
+          "idle": "none",
+          "note": "Full and easy."
+        },
+        "3": {
+          "why": "Two full days: Matsushima on one; Zuihoden, the arcades and a café morning on the other, with Yamadera's thousand steps for João and Carolina only. It also lets the long flight wear off before the snow.",
+          "longer": "A fourth night adds Akiu Onsen or an evening at the Zao ropeway.",
+          "shorter": "Two nights loses the city day.",
+          "idle": "some",
+          "note": "The second day is flexible."
+        },
+        "4": {
+          "why": "Sendai plus a day in the mountains: Zao's frozen trees by ropeway at night, or Ginzan Onsen's snowy street by day, about 2 h 30 each way.",
+          "longer": "A fifth night adds Akiu Onsen.",
+          "shorter": "Three nights is the usual stay.",
+          "idle": "some",
+          "note": "One easy day."
+        },
+        "5": {
+          "why": "Too long for a city that is pleasant rather than packed with sights; over New Year it is quiet.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already generous.",
+          "idle": "real",
+          "note": "One or two quiet days."
+        }
+      }
+    },
+    "north-tohoku": {
+      "best": "3 nights (4 over New Year)",
+      "date_notes": [
+        "31 Dec–1 Jan: the Nebuta museum is closed, and most of the city shuts on 1 Jan.",
+        "Around New Year: the Aomori Museum of Art and the Sannai-Maruyama site close; both have reopened on 2 Jan in past years, but check.",
+        "Winter: Hirosaki Castle's keep is closed; the park is free and open.",
+        "Every day the weather allows: the Hakkoda ropeway, about 9:00–16:00, every 15–20 minutes, stopped by winds of 25 m/s or more.",
+        "3 Jan: the Tohoku shinkansen south is at its fullest; book seats the day they go on sale."
+      ],
+      "nights": {
+        "1": {
+          "why": "One evening and a morning at the Nebuta museum before the train back. Three hours from Tokyo is a long way for that.",
+          "longer": "A second night gives the art museum or Hirosaki.",
+          "shorter": "A single night barely repays the trip.",
+          "idle": "none",
+          "note": "Mostly train."
+        },
+        "2": {
+          "why": "One full day: the art museum and Sannai-Maruyama, or Hirosaki's castle park and apple-pie cafés.",
+          "longer": "A third night gives both, or Hakkoda.",
+          "shorter": "One night is the station and the museum.",
+          "idle": "none",
+          "note": "Full."
+        },
+        "3": {
+          "why": "Two full days: Hirosaki on one; the art museum, the Jomon site and the Nebuta museum on the other.",
+          "longer": "A fourth night adds Hakkoda's ropeway, weather permitting, or an easy day.",
+          "shorter": "Two nights loses Hirosaki or the museums.",
+          "idle": "none",
+          "note": "Good days, all short hops."
+        },
+        "4": {
+          "why": "The New Year shape: arrive on the quiet 1 Jan with the city shut, an easy 2 Jan at the museums, Hirosaki on the 3rd, and Hakkoda on the 4th if the wind allows, with the Nebuta museum as the bad-weather plan.",
+          "longer": "A fifth night adds an afternoon at Asamushi Onsen, 20 minutes away, or a slow day.",
+          "shorter": "Three nights means riding south on a peak day, or losing Hakkoda.",
+          "idle": "some",
+          "note": "1 Jan is a quiet arrival with the city closed."
+        },
+        "5": {
+          "why": "Aomori plus Asamushi Onsen or a second go at Hakkoda; a long time in deep cold.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is plenty.",
+          "idle": "real",
+          "note": "One idle day, more in a blizzard."
+        }
+      }
+    }
+  }
+}

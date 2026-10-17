@@ -1,8 +1,10 @@
 /** The story behind each version (data/versions-guide.json): theme, feel, activities, why, and a note per stay. */
+import stayGuide from "../../data/stay-guide.json";
 import guide from "../../data/versions-guide.json";
 import type { Stay } from "./types";
 
 export interface VersionGuide {
+  style?: string;
   theme: string;
   tagline: string;
   feel: string;
@@ -12,6 +14,11 @@ export interface VersionGuide {
   trade: string;
   stay_notes: Record<string, string>;
   tradeoffs?: Record<string, Tradeoff>;
+  /** One line per date, for routes written without a day-by-day plan. */
+  days?: Record<string, string>;
+  /** Where and how New Year's Eve is spent. */
+  nye?: string;
+  sources?: { label: string; url: string }[];
 }
 
 /** Stay longer or move on: what one more night buys, what one fewer costs, and an honest idle-day flag. */
@@ -30,15 +37,40 @@ function stayKey(stays: Stay[], index: number): string {
   return occurrence > 1 ? `${stay.region}:${occurrence}` : stay.region;
 }
 
-/** The trade-off for a stay: the version's own when it has one, else the plan's for a stay of the same length. */
+/** What a stay of a given length gives in a region, whatever the route (data/stay-guide.json). */
+export interface StayGuideEntry extends Tradeoff {
+  why: string;
+}
+const STAY_GUIDE = (stayGuide as unknown as { regions: Record<string, { best?: string; date_notes?: string[]; nights: Record<string, StayGuideEntry> }> }).regions;
+
+export function stayGuideFor(region: string, nights: number): StayGuideEntry | null {
+  const g = STAY_GUIDE[region];
+  if (!g) return null;
+  if (g.nights[String(nights)]) return g.nights[String(nights)];
+  // Longer than written: use the longest entry we have; its "longer" line still holds.
+  const keys = Object.keys(g.nights).map(Number).sort((a, b) => a - b);
+  const top = keys.filter((k) => k <= nights).pop();
+  return top ? g.nights[String(top)] : null;
+}
+
+export function regionBestNights(region: string): string | null {
+  return STAY_GUIDE[region]?.best ?? null;
+}
+
+export function regionStayGuide(region: string): { best?: string; date_notes?: string[]; nights: Record<string, StayGuideEntry> } | null {
+  return STAY_GUIDE[region] ?? null;
+}
+
+/** The trade-off for a stay: the version's own, else the plan's for a stay of the same length, else what that many nights gives in that place. */
 export function stayTradeoff(versionId: string, stays: Stay[], index: number): Tradeoff | null {
   const key = stayKey(stays, index);
   const own = VERSIONS[versionId]?.tradeoffs?.[key];
   if (own) return own;
   const plan = VERSIONS.plan?.tradeoffs?.[key];
-  if (!plan) return null;
   const planStay = (guide as unknown as { plan_nights?: Record<string, number> }).plan_nights?.[key];
-  return planStay === undefined || planStay === stays[index].nights ? plan : null;
+  if (plan && (planStay === undefined || planStay === stays[index].nights)) return plan;
+  const g = stayGuideFor(stays[index].region, stays[index].nights);
+  return g ? { longer: g.longer, shorter: g.shorter, idle: g.idle, note: g.note } : null;
 }
 
 const VERSIONS = guide.versions as Record<string, VersionGuide>;
@@ -58,8 +90,8 @@ export function stayNote(versionId: string, stays: Stay[], index: number): strin
   const own = VERSIONS[versionId]?.stay_notes[key];
   if (own) return own;
   const plan = VERSIONS.plan?.stay_notes[key];
-  if (!plan) return null;
   // Only reuse the plan's note when the stay has the same length, else it would argue for the wrong number.
   const planStay = (guide as unknown as { plan_nights?: Record<string, number> }).plan_nights?.[key];
-  return planStay === undefined || planStay === stay.nights ? plan : null;
+  if (plan && (planStay === undefined || planStay === stay.nights)) return plan;
+  return stayGuideFor(stay.region, stay.nights)?.why ?? null;
 }

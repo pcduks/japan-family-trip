@@ -10,11 +10,14 @@ import why from "../../data/why.json";
 import { budgetOf, BUDGET_RATES, fmtJpyShort, fmtSgd, jpyToSgd, stayCost } from "@/lib/budget";
 import { dateRange, fmtRange } from "@/lib/dates";
 import { avgOutdoorHours, exposure, EXPOSURE_LABEL } from "@/lib/exposure";
-import { IDLE_LABEL, stayNote, stayTradeoff, versionGuide } from "@/lib/guide";
+import { IDLE_LABEL, stayNote, stayTradeoff } from "@/lib/guide";
 import { LODGING_TYPES } from "@/lib/lodging";
 import type { Place, Version } from "@/lib/types";
-import { movesOf, statsOf } from "@/lib/versions";
+import { movesOf, sharedNights, statsOf } from "@/lib/versions";
+import { guideFor } from "@/lib/autoGuide";
+import { STYLE_LABEL, styleOf } from "@/lib/styles";
 import { BudgetCard } from "./Budget";
+import { RoutePicker } from "./RoutePicker";
 import { fmtLegHours, JourneyMap } from "./JourneyMap";
 import { PictureScroll } from "./PictureScroll";
 import { PlacePrefs } from "./PlacePrefs";
@@ -57,9 +60,14 @@ export function RouteView() {
   if (!plan) return null;
 
   const alternatives = snapshot.versions.filter((v) => v.status === "alternative").sort((a, b) => statsOf(a, snapshot).moves - statsOf(b, snapshot).moves);
+  // More than half the nights where the route has them: a change to the route rather than another trip.
+  const close = plan ? alternatives.filter((a) => sharedNights(plan, a) > snapshot.trip.nights / 2) : [];
+  const different = alternatives.filter((a) => !close.includes(a));
   const v: Version = snapshot.versions.find((x) => x.id === shown) ?? plan;
   const isPlan = v.id === plan.id;
-  const g = versionGuide(v.id);
+  const g = guideFor(v, snapshot);
+  const mine = v.status === "personal";
+  const author = snapshot.travellers.find((x) => x.id === v.owner)?.name.split(" ")[0];
   const planBudget = budgetOf(plan, snapshot.regions).perCoupleSgd;
   const stats = statsOf(v, snapshot);
   const moves = movesOf(v.stays, snapshot.regions);
@@ -97,23 +105,14 @@ export function RouteView() {
     <Page wide>
       <Back href="/">Explore</Back>
       <section className="grid gap-2">
-        <p className="eyebrow">{isPlan ? "The route, and why" : "An alternative"}</p>
+        <p className="eyebrow">{isPlan ? "The route, and why" : mine ? `${author ? `${author}’s` : "A family"} route · ${fmtStamp(v.updated_at)}` : `An alternative · ${STYLE_LABEL[styleOf(v.id)] ?? ""}`}</p>
         <h1 className="display text-[2.3rem] leading-[1.02] sm:text-5xl">{g?.theme ?? v.name}</h1>
         <p className="max-w-prose text-ink-2">{g?.tagline}</p>
       </section>
 
       <div className="grid gap-2">
         <JourneyMap regions={snapshot.regions} stays={v.stays} ghost={isPlan ? null : plan.stays} aspect={wide ? 1.9 : 1.2} onStop={scrollToStop} />
-        <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4">
-          <button className={`chip shrink-0 ${isPlan ? "bg-accent text-accent-ink" : ""}`} onClick={() => setShown(null)}>
-            The route
-          </button>
-          {alternatives.map((a) => (
-            <button key={a.id} className={`chip shrink-0 ${v.id === a.id ? "bg-accent text-accent-ink" : ""}`} onClick={() => setShown(a.id)}>
-              {versionGuide(a.id)?.theme ?? a.name}
-            </button>
-          ))}
-        </div>
+        <RoutePicker current={v.id} onPick={setShown} />
         <p className="text-sm text-muted">
           <b className="text-ink">{stats.bases} bases · {stats.moves} check-ins</b> · about {stats.travelHours} h between bases · New Year’s Eve in {regionName(stats.newYearsEve?.region ?? "")} · {fmtSgd(budget)} per couple
           {!isPlan ? (
@@ -133,7 +132,7 @@ export function RouteView() {
       {!isPlan ? (
         <div className="card flex flex-wrap items-center justify-between gap-2 border-accent/40 p-3">
           <span className="text-sm">
-            <b>Showing: {g?.theme ?? v.name}.</b> Everything below is this alternative. <Link href={`/versions/${v.id}`}>Open its page →</Link>
+            <b>Showing: {g?.theme ?? v.name}.</b> Everything below is this {mine ? "route" : "alternative"}. <Link href={`/build?from=${v.id}`}>Change it in the builder →</Link>
           </span>
           <button className="btn btn-sm" onClick={() => setShown(null)}>
             Back to the route
@@ -180,6 +179,26 @@ export function RouteView() {
             <p className="text-sm text-ink-2">
               <b>Why it exists:</b> {g.why} <b>Suits:</b> {g.suits} <b>Gives up:</b> {g.trade}
             </p>
+          ) : null}
+          {g.nye ? (
+            <p className="card max-w-prose border-l-4 border-l-accent p-4 text-sm leading-relaxed text-ink-2">
+              <b className="block pb-1 text-ink">New Year’s Eve</b>
+              {g.nye}
+            </p>
+          ) : null}
+          {g.sources?.length ? (
+            <details className="text-xs text-muted">
+              <summary className="cursor-pointer">Sources for this route ({g.sources.length})</summary>
+              <ul className="grid gap-1 pt-2">
+                {g.sources.map((s) => (
+                  <li key={s.url}>
+                    <a href={s.url} target="_blank" rel="noreferrer">
+                      {s.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </details>
           ) : null}
         </Section>
       ) : null}
@@ -308,22 +327,29 @@ export function RouteView() {
         </Section>
       ) : null}
 
-      <Section title="What we could change" aside="fewest check-ins first">
-        <p className="text-ink-2">The same 20 nights spent differently. Tap one to see it above: the map, the stops, the trade-offs and the cost all switch.</p>
-        <ul className="grid gap-3 sm:grid-cols-2">
-          {alternatives.map((a) => (
-            <AlternativeCard
-              key={a.id}
-              v={a}
-              planBudget={planBudget}
-              onShow={() => {
-                setShown(a.id);
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            />
-          ))}
-        </ul>
-      </Section>
+      {[
+        { title: "A different trip", text: "The same 20 nights shaped another way, each a whole trip with its own New Year’s Eve. Tap one to see it above: the map, the stops, the trade-offs and the cost all switch.", list: different },
+        { title: "Close to the route", text: "The route with one or two stops changed. Each one trades something the route has for something it lacks.", list: close },
+      ].map((group) =>
+        group.list.length ? (
+          <Section key={group.title} title={group.title} aside={`${group.list.length} · fewest check-ins first`}>
+            <p className="text-ink-2">{group.text}</p>
+            <ul className="grid gap-3 sm:grid-cols-2">
+              {group.list.map((a) => (
+                <AlternativeCard
+                  key={a.id}
+                  v={a}
+                  planBudget={planBudget}
+                  onShow={() => {
+                    setShown(a.id);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                />
+              ))}
+            </ul>
+          </Section>
+        ) : null,
+      )}
 
       <BudgetCard v={v} regions={snapshot.regions} regionName={regionName} title={isPlan ? "What it costs, per couple" : `What “${g?.theme ?? v.name}” costs, per couple`} />
 
@@ -426,4 +452,10 @@ function useWide(): boolean {
     return () => m.removeEventListener("change", on);
   }, []);
   return wide;
+}
+
+function fmtStamp(iso: string | null | undefined): string {
+  if (!iso) return "new";
+  const d = new Date(iso);
+  return `saved ${d.getUTCDate()} ${["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getUTCMonth()]}`;
 }

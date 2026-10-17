@@ -21,7 +21,7 @@ const REGION_COLORS: Record<string, string> = {
   kamakura: "#1971c2",
   "echigo-yuzawa": "#2b8a3e",
   hokkaido: "#495057",
-  "north-tohoku": "#495057",
+  "north-tohoku": "#7950f2",
   koyasan: "#495057",
   kumano: "#495057",
   kyushu: "#495057",
@@ -30,7 +30,18 @@ const REGION_COLORS: Record<string, string> = {
   osaka: "#e8590c",
   matsumoto: "#5c7cfa",
   karuizawa: "#2b8a3e",
-  "south-tohoku": "#495057",
+  "south-tohoku": "#1971c2",
+  miyajima: "#c92a2a",
+  shirahama: "#1c7ed6",
+  nagano: "#5f3dc4",
+  arima: "#a61e4d",
+  matsue: "#364fc7",
+  fukuoka: "#e67700",
+  nagoya: "#2b8a3e",
+  atami: "#0c8599",
+  "ise-shima": "#9c36b5",
+  morioka: "#c2255c",
+  tsunagi: "#0b7285",
 };
 
 const FALLBACK = ["#4c6ef5", "#f76707", "#12b886", "#be4bdb", "#fab005", "#15aabf", "#fa5252", "#82c91e"];

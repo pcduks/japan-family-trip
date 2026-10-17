@@ -271,7 +271,7 @@
    "name": "Okuhida Onsen",
    "lat": 36.24,
    "lng": 137.56,
-   "status": "option",
+   "status": "candidate_fits",
    "summary": "Snow baths and the Alps ropeway",
    "fit": "Option B for New Year, or a day trip from Takayama",
    "suggested_nights": {
@@ -505,7 +505,7 @@
    "name": "Kamakura",
    "lat": 35.32,
    "lng": 139.55,
-   "status": "day_trip",
+   "status": "candidate_fits",
    "summary": "Great Buddha and the sea",
    "fit": "Day trip from Tokyo; avoid 1-3 Jan",
    "suggested_nights": null,
@@ -535,7 +535,7 @@
    "name": "Hiroshima and Miyajima",
    "lat": 34.39,
    "lng": 132.46,
-   "status": "option",
+   "status": "candidate_fits",
    "summary": "Peace Park and the floating torii; only in the fuller alternative",
    "fit": "Day trip from Okayama, or 2 nights in the fuller alternative",
    "suggested_nights": null,
@@ -564,11 +564,11 @@
   },
   {
    "id": "north-tohoku",
-   "name": "Northern Tohoku (Aomori, Hirosaki, Nyuto)",
+   "name": "Aomori and Hirosaki",
    "lat": 40.82,
    "lng": 140.74,
-   "status": "not_this_trip",
-   "summary": "Far; best as its own winter trip",
+   "status": "candidate_fits",
+   "summary": "The snowy far north: Hirosaki castle, the Hakkoda snow monsters, Aomori’s art and fish market",
    "fit": null,
    "suggested_nights": null,
    "sources": [],
@@ -657,7 +657,7 @@
    "name": "Osaka",
    "lat": 34.69,
    "lng": 135.5,
-   "status": "day_trip",
+   "status": "candidate_fits",
    "summary": "Street food, Kuromon market, bunraku; 15 min from Kyoto",
    "fit": "An evening out from Kyoto, not a base; you two know it",
    "suggested_nights": null,
@@ -704,15 +704,234 @@
   },
   {
    "id": "south-tohoku",
-   "name": "Sendai, Matsushima and Zao",
+   "name": "Sendai and Matsushima",
    "lat": 38.27,
    "lng": 140.87,
-   "status": "not_this_trip",
-   "summary": "The Pageant of Starlight, Matsushima bay, the Zao ropeway at night",
+   "status": "candidate_fits",
+   "summary": "A city base on the Tohoku shinkansen: Matsushima bay, Yamadera, the Pageant of Starlight",
    "fit": "The snow monsters are at full size in late January; a loop of its own",
    "suggested_nights": null,
    "sources": [
     "https://www.japan-guide.com/e/e5100.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "miyajima",
+   "name": "Miyajima",
+   "lat": 34.296,
+   "lng": 132.3198,
+   "status": "candidate_fits",
+   "summary": "The island of the floating torii, 40 minutes from Hiroshima, at its liveliest over New Year",
+   "fit": "A base in “The Golden Route in winter”",
+   "suggested_nights": {
+    "balanced": 2
+   },
+   "sources": [
+    "https://gethiroshima.com/features/all-you-need-to-know-about-miyajima-at-new-year/",
+    "https://miyajima.or.jp/english/event/event_chinka.html",
+    "https://www.hotels.com/ho312324",
+    "https://birth-navi.mhlw.go.jp/facilities/10237"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "shirahama",
+   "name": "Shirahama",
+   "lat": 33.679,
+   "lng": 135.342,
+   "status": "candidate_fits",
+   "summary": "One of Japan's oldest onsen, on a white-sand bay on the mild Pacific coast of the Kii peninsula, with Kumano inland",
+   "fit": "A base in “Kyoto, the Kii coast and Nara”",
+   "suggested_nights": {
+    "balanced": 4
+   },
+   "sources": [
+    "https://en.wikivoyage.org/wiki/Shirahama",
+    "https://mai-ko.com/travel/japan/ryokan/hotel-kawakyu/",
+    "https://www.ikyu.com/en-us/00002411/",
+    "https://birth-navi.mhlw.go.jp/facilities/10072"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "nagano",
+   "name": "Nagano",
+   "lat": 36.652,
+   "lng": 138.188,
+   "status": "candidate_fits",
+   "summary": "A flat temple city with trains to the snow monkeys, Matsumoto, Obuse and the ski villages",
+   "fit": "A base in “Deep snow country”",
+   "suggested_nights": {
+    "balanced": 3
+   },
+   "sources": [
+    "https://www.zenkoji.jp/annual/",
+    "https://www.snowmonkeyresorts.com/smr/snowmonkeypark/winter/",
+    "https://www.go-nagano.net/en/trip-idea/id17978?hsLang=en",
+    "https://www.jnto.go.jp/emergency/eng/pdf_list/nagano_eng.pdf"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "arima",
+   "name": "Arima Onsen",
+   "lat": 34.7968,
+   "lng": 135.2475,
+   "status": "candidate_fits",
+   "summary": "Japan's oldest hot spring, in the hills behind Kobe, with gold and silver waters",
+   "fit": "A base in “The western onsen trail”",
+   "suggested_nights": {
+    "balanced": 4
+   },
+   "sources": [
+    "https://www.ryuusenkaku.jp/english/annual.html",
+    "https://arimaspa-kingin.jp/en-01.htm",
+    "https://arimaspa-kingin.jp/en-02.htm",
+    "https://selected-ryokan.com/ryokan/taketori-tei-maruyama_arima_hyogo_kansai.html"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "matsue",
+   "name": "Matsue and Izumo",
+   "lat": 35.4723,
+   "lng": 133.0505,
+   "status": "candidate_fits",
+   "summary": "A castle town on Lake Shinji, with Izumo Taisha and Japan's most admired garden within an hour",
+   "fit": "A base in “Castles, Shrines and the Inland Sea”",
+   "suggested_nights": {
+    "balanced": 4
+   },
+   "sources": [
+    "https://www.japan-guide.com/e/e5800.html",
+    "https://www.matsue.jrc.or.jp/files/libs/7126/202510281349264780.pdf",
+    "https://en.wikipedia.org/wiki/Yakumo_(train)"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "fukuoka",
+   "name": "Fukuoka (Hakata)",
+   "lat": 33.5902,
+   "lng": 130.4207,
+   "status": "candidate_fits",
+   "summary": "Kyushu's easy, flat food city: ramen, yatai stalls and chicken hot pot, mild in winter",
+   "fit": "A base in “The Winter Food Trail”",
+   "suggested_nights": {
+    "full": 4
+   },
+   "sources": [
+    "https://www.japan-guide.com/e/e2161.html",
+    "https://en.japantravel.com/fukuoka/fukuoka-food-guide-yatai-culture/72406"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "nagoya",
+   "name": "Nagoya",
+   "lat": 35.1709,
+   "lng": 136.8815,
+   "status": "candidate_fits",
+   "summary": "A big, flat food city halfway between Hakata and Tokyo: eel, miso and fried wings",
+   "fit": "A base in “The Winter Food Trail”",
+   "suggested_nights": {
+    "full": 2
+   },
+   "sources": [
+    "https://www.japan-Guide.com/e/e3315.html",
+    "https://aichinow.pref.aichi.jp/en/show/data/guidebook/251/0/"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "atami",
+   "name": "Atami",
+   "lat": 35.1037,
+   "lng": 139.0779,
+   "status": "candidate_fits",
+   "summary": "A warm hot-spring resort on Sagami Bay, the gateway to the Izu peninsula",
+   "fit": "A base in “Fuji and the Pacific Shore”",
+   "suggested_nights": {
+    "balanced": 3
+   },
+   "sources": [
+    "https://www.japan-guide.com/e/e6317.html",
+    "https://birth-navi.mhlw.go.jp/facilities/10613"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "ise-shima",
+   "name": "Ise-Shima (Toba)",
+   "lat": 34.487,
+   "lng": 136.8432,
+   "status": "candidate_fits",
+   "summary": "Pacific bays of pearl rafts and islands, spiny lobster, and Japan's most sacred shrine",
+   "fit": "A base in “Fuji and the Pacific Shore”",
+   "suggested_nights": {
+    "balanced": 4
+   },
+   "sources": [
+    "https://www.japan-guide.com/e/e4310.html",
+    "https://Japan-guide.com/e/e4304.html",
+    "https://www.ise.jrc.or.jp/recruit_senior_resident/pdf/ex_program_03_04.pdf"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "morioka",
+   "name": "Morioka",
+   "lat": 39.7036,
+   "lng": 141.1527,
+   "status": "candidate_fits",
+   "summary": "A small, walkable castle town on the Tohoku shinkansen, a hub for Kakunodate and Hiraizumi",
+   "fit": "A base in “Snow, Samurai and the Far North”",
+   "suggested_nights": {
+    "balanced": 4
+   },
+   "sources": [
+    "https://www.japan-guide.com/e/e3602.html",
+    "https://birth-navi.mhlw.go.jp/facilities/10198"
+   ],
+   "instagram_official": null,
+   "hashtags": [],
+   "videos": []
+  },
+  {
+   "id": "tsunagi",
+   "name": "Tsunagi Onsen",
+   "lat": 39.689,
+   "lng": 141.033,
+   "status": "candidate_fits",
+   "summary": "A small onsen village on Lake Gosho, 25 minutes from Morioka, facing snowy Mt Iwate",
+   "fit": "A base in “Snow, Samurai and the Far North”",
+   "suggested_nights": {
+    "balanced": 2
+   },
+   "sources": [
+    "https://selected-ryokan.com/ryokan/nanbu-yumori-no-yado-taikan_tsunagi-oshuku_iwate_tohoku.html",
+    "https://birth-navi.mhlw.go.jp/facilities/10198"
    ],
    "instagram_official": null,
    "hashtags": [],
@@ -3847,6 +4066,1409 @@
     "pregnancy_note": "All cooked"
    },
    "google_place_id": null
+  },
+  {
+   "id": "miyajima-itsukushima-shrine-and-the-floating-tori",
+   "region": "miyajima",
+   "name": "Itsukushima Shrine and the floating torii",
+   "kind": "nature",
+   "size": "short",
+   "why": "The shrine on stilts over the sea; walk out to the torii at low tide, see it float at high tide",
+   "hours": "31 Dec 06:30–17:00; 1 Jan from midnight to 18:30; 2–3 Jan 06:30–18:30. Queues up to 2 h on 1 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://gethiroshima.com/features/all-you-need-to-know-about-miyajima-at-new-year/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Itsukushima%20Shrine%20and%20the%20floating%20torii%20Miyajima%20(Itsukushima)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Itsukushima%20Shrine%20and%20the%20floating%20torii%20Miyajima%20(Itsukushima)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "miyajima-chinka-sai-fire-festival",
+   "region": "miyajima",
+   "name": "Chinka-sai fire festival",
+   "kind": "event",
+   "size": "main",
+   "why": "About 1,000 torches lit from the shrine's sacred fire on the beach on New Year's Eve",
+   "hours": "31 Dec, 18:00–18:30 at Mikasa-hama; heated pushing near the fire, so watch from the back",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://miyajima.or.jp/english/event/event_chinka.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Chinka-sai%20fire%20festival%20Miyajima%20(Itsukushima)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Chinka-sai%20fire%20festival%20Miyajima%20(Itsukushima)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "miyajima-daisho-in-temple",
+   "region": "miyajima",
+   "name": "Daisho-in temple",
+   "kind": "event",
+   "size": "main",
+   "why": "Hillside temple with hundreds of small statues; the public can ring its bell on New Year's Eve",
+   "hours": "Open from midnight on 1 Jan; the first 108 people in line (from about 21:00 on 31 Dec) ring the bell",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://gethiroshima.com/features/all-you-need-to-know-about-miyajima-at-new-year/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Daisho-in%20temple%20Miyajima%20(Itsukushima)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Daisho-in%20temple%20Miyajima%20(Itsukushima)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "miyajima-mt-misen-by-ropeway",
+   "region": "miyajima",
+   "name": "Mt Misen by ropeway",
+   "kind": "viewpoint",
+   "size": "main",
+   "why": "Views over the Inland Sea islands; a special sunrise run on New Year's Day",
+   "hours": "Ropeway from 05:00 on 1 Jan, from 09:00 on 2 Jan; the last stretch to the summit is a steep, unlit trail",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://gethiroshima.com/features/all-you-need-to-know-about-miyajima-at-new-year/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Mt%20Misen%20by%20ropeway%20Miyajima%20(Itsukushima)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Mt%20Misen%20by%20ropeway%20Miyajima%20(Itsukushima)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "miyajima-omotesando-street-and-grilled-oysters",
+   "region": "miyajima",
+   "name": "Omotesando street and grilled oysters",
+   "kind": "food",
+   "size": "short",
+   "why": "Winter is oyster season; grilled and fried oysters are cooked through, momiji-manju cakes",
+   "hours": "Shops and food stalls open over New Year",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://gethiroshima.com/features/all-you-need-to-know-about-miyajima-at-new-year/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Omotesando%20street%20and%20grilled%20oysters%20Miyajima%20(Itsukushima)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Omotesando%20street%20and%20grilled%20oysters%20Miyajima%20(Itsukushima)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "miyajima-momijidani-park",
+   "region": "miyajima",
+   "name": "Momijidani park",
+   "kind": "garden",
+   "size": "short",
+   "why": "A gentle valley walk with streams and tame deer, quiet in winter",
+   "hours": "Public park, always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://miyajima.or.jp/english/event/calendar04.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Momijidani%20park%20Miyajima%20(Itsukushima)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Momijidani%20park%20Miyajima%20(Itsukushima)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shirahama-sakinoyu-seaside-bath",
+   "region": "shirahama",
+   "name": "Sakinoyu seaside bath",
+   "kind": "onsen",
+   "size": "main",
+   "why": "An ancient open-air bath on the rocks with waves breaking just below; one of Japan's oldest",
+   "hours": "Winter 10:00–15:00, closed Wednesdays (¥420); New Year hours to confirm. Rocks are wet, so a hand to hold",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://en.wikivoyage.org/wiki/Shirahama",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sakinoyu%20seaside%20bath%20Nanki-Shirahama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sakinoyu%20seaside%20bath%20Nanki-Shirahama%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shirahama-engetsu-island-at-sunset",
+   "region": "shirahama",
+   "name": "Engetsu island at sunset",
+   "kind": "nature",
+   "size": "short",
+   "why": "A rock arch offshore; on some winter evenings the sun sets through the hole",
+   "hours": "Open-air viewpoint, always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://en.wikivoyage.org/wiki/Shirahama",
+    "map": "https://www.google.com/maps/search/?api=1&query=Engetsu%20island%20at%20sunset%20Nanki-Shirahama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Engetsu%20island%20at%20sunset%20Nanki-Shirahama%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shirahama-sandanbeki-cliffs-and-cave",
+   "region": "shirahama",
+   "name": "Sandanbeki cliffs and cave",
+   "kind": "nature",
+   "size": "short",
+   "why": "50 m sea cliffs, with a lift down to a sea cave where the waves boom",
+   "hours": "Paid entry (about ¥1,300); New Year hours to confirm",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://en.wikivoyage.org/wiki/Shirahama",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sandanbeki%20cliffs%20and%20cave%20Nanki-Shirahama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sandanbeki%20cliffs%20and%20cave%20Nanki-Shirahama%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shirahama-senjojiki-rock-terraces",
+   "region": "shirahama",
+   "name": "Senjojiki rock terraces",
+   "kind": "event",
+   "size": "main",
+   "why": "Wide flat sandstone shelves over the sea, best in late afternoon light",
+   "hours": "Free and always open; uneven rock, keep back from the edge",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://en.wikivoyage.org/wiki/Shirahama",
+    "map": "https://www.google.com/maps/search/?api=1&query=Senjojiki%20rock%20terraces%20Nanki-Shirahama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Senjojiki%20rock%20terraces%20Nanki-Shirahama%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shirahama-toretore-ichiba-fish-market",
+   "region": "shirahama",
+   "name": "Toretore Ichiba fish market",
+   "kind": "market",
+   "size": "short",
+   "why": "A huge seafood hall with tuna cutting, grilled fish and cooked set meals",
+   "hours": "Usually open with extended hours over the holidays; busiest from the last week of December to 3 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://banzokubiology.com/toretore-nenmatsu-konzatsu/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Toretore%20Ichiba%20fish%20market%20Nanki-Shirahama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Toretore%20Ichiba%20fish%20market%20Nanki-Shirahama%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shirahama-adventure-world",
+   "region": "shirahama",
+   "name": "Adventure World",
+   "kind": "garden",
+   "size": "short",
+   "why": "A zoo, safari and marine park, popular with families (the pandas returned to China in 2025)",
+   "hours": "Closing days vary by season; check the official calendar for 31 Dec – 1 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.aws-s.com/en/guide/opening_hours/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Adventure%20World%20Nanki-Shirahama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Adventure%20World%20Nanki-Shirahama%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shirahama-kumano-hongu-taisha-and-oyunohara",
+   "region": "shirahama",
+   "name": "Kumano Hongu Taisha and Oyunohara",
+   "kind": "sight",
+   "size": "main",
+   "why": "The head shrine of the Kumano pilgrimage and the 34 m great torii on the river flat where the shrine once stood",
+   "hours": "Shrine open; 158 stone steps to the main hall, so she may prefer Oyunohara. About 2.5 h by bus, or about 1.5 h by hired van",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4953.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kumano%20Hongu%20Taisha%20and%20Oyunohara%20Nanki-Shirahama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kumano%20Hongu%20Taisha%20and%20Oyunohara%20Nanki-Shirahama%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shirahama-sennin-buro-at-kawayu-onsen",
+   "region": "shirahama",
+   "name": "Sennin-buro at Kawayu Onsen",
+   "kind": "onsen",
+   "size": "main",
+   "why": "A giant open-air bath dug into the river each winter, where hot water rises through the riverbed; swimsuits, free",
+   "hours": "Runs December to February, 06:30–22:00 (2026–27 dates not yet published)",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://visitwakayama.jp/en/attractions/detail_534.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sennin-buro%20at%20Kawayu%20Onsen%20Nanki-Shirahama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sennin-buro%20at%20Kawayu%20Onsen%20Nanki-Shirahama%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagano-zenko-ji-and-the-o-kaidan-passage",
+   "region": "nagano",
+   "name": "Zenko-ji and the o-kaidan passage",
+   "kind": "nature",
+   "size": "short",
+   "why": "A seventh-century temple with a dawn service and a pitch-dark tunnel walked with one hand on the wall",
+   "hours": "Open all night 31 Dec into 1 Jan and very crowded then; go before 29 Dec or after 4 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.zenkoji.jp/annual/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Zenko-ji%20and%20the%20o-kaidan%20passage%20Nagano%20city%20and%20Zenko-ji",
+    "photos": "https://www.google.com/search?tbm=isch&q=Zenko-ji%20and%20the%20o-kaidan%20passage%20Nagano%20city%20and%20Zenko-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagano-jigokudani-snow-monkeys",
+   "region": "nagano",
+   "name": "Jigokudani snow monkeys",
+   "kind": "onsen",
+   "size": "main",
+   "why": "Wild macaques bathing in a hot spring in the snow",
+   "hours": "Open every day including 31 Dec and 1 Jan; busiest 29 Dec–3 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.snowmonkeyresorts.com/smr/snowmonkeypark/winter/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Jigokudani%20snow%20monkeys%20Nagano%20city%20and%20Zenko-ji",
+    "photos": "https://www.google.com/search?tbm=isch&q=Jigokudani%20snow%20monkeys%20Nagano%20city%20and%20Zenko-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagano-shibu-onsen-lane-and-foot-baths",
+   "region": "nagano",
+   "name": "Shibu Onsen lane and foot baths",
+   "kind": "onsen",
+   "size": "main",
+   "why": "Lantern-lit onsen street near the monkey trail, where she can wait warm and easy",
+   "hours": "Open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6029.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shibu%20Onsen%20lane%20and%20foot%20baths%20Nagano%20city%20and%20Zenko-ji",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shibu%20Onsen%20lane%20and%20foot%20baths%20Nagano%20city%20and%20Zenko-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagano-matsumoto-castle-day-trip",
+   "region": "nagano",
+   "name": "Matsumoto Castle day trip",
+   "kind": "sight",
+   "size": "main",
+   "why": "Japan's black original castle, 50 minutes away on the Shinano express",
+   "hours": "Closed 29–31 Dec; special opening 1–3 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6051.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Matsumoto%20Castle%20day%20trip%20Nagano%20city%20and%20Zenko-ji",
+    "photos": "https://www.google.com/search?tbm=isch&q=Matsumoto%20Castle%20day%20trip%20Nagano%20city%20and%20Zenko-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagano-obuse-and-the-hokusai-museum",
+   "region": "nagano",
+   "name": "Obuse and the Hokusai Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "A small town of chestnut sweets with a museum of Hokusai's late work, 10 minutes' walk from the station",
+   "hours": "Check year-end closing days",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.go-nagano.net/en/trip-idea/3-days-of-naganos-winter-highlights",
+    "map": "https://www.google.com/maps/search/?api=1&query=Obuse%20and%20the%20Hokusai%20Museum%20Nagano%20city%20and%20Zenko-ji",
+    "photos": "https://www.google.com/search?tbm=isch&q=Obuse%20and%20the%20Hokusai%20Museum%20Nagano%20city%20and%20Zenko-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagano-nozawa-onsen-snow-day",
+   "region": "nagano",
+   "name": "Nozawa Onsen snow day",
+   "kind": "onsen",
+   "size": "main",
+   "why": "Sledding, ski lessons and wooden village bathhouses, 40 minutes by shinkansen and bus",
+   "hours": "Lifts and baths open; busiest 29 Dec–3 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6028.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Nozawa%20Onsen%20snow%20day%20Nagano%20city%20and%20Zenko-ji",
+    "photos": "https://www.google.com/search?tbm=isch&q=Nozawa%20Onsen%20snow%20day%20Nagano%20city%20and%20Zenko-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "arima-irizome-shiki-first-bath-ceremony",
+   "region": "arima",
+   "name": "Irizome-shiki first-bath ceremony",
+   "kind": "onsen",
+   "size": "short",
+   "why": "Priests, inn-keepers and geisha carry the statues of the spring's founders and pour the year's first hot water, on 2 Jan",
+   "hours": "Held every 2 January; check the 2027 time with the tourist office",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.ryuusenkaku.jp/english/annual.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Irizome-shiki%20first-bath%20ceremony%20Arima%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Irizome-shiki%20first-bath%20ceremony%20Arima%20Onsen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "arima-gin-no-yu-silver-spring",
+   "region": "arima",
+   "name": "Gin-no-yu (silver spring)",
+   "kind": "sight",
+   "size": "main",
+   "why": "Clear carbonated water, gentler and cooler than the gold spring",
+   "hours": "Closed 1 Jan and the 1st and 3rd Tuesdays",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://arimaspa-kingin.jp/en-02.htm",
+    "map": "https://www.google.com/maps/search/?api=1&query=Gin-no-yu%20(silver%20spring)%20Arima%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Gin-no-yu%20(silver%20spring)%20Arima%20Onsen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "arima-kin-no-yu-gold-spring",
+   "region": "arima",
+   "name": "Kin-no-yu (gold spring)",
+   "kind": "onsen",
+   "size": "main",
+   "why": "Iron-red water that is Arima's signature; hot, so for the others, with the free foot bath outside for her",
+   "hours": "Closed 1 Jan and the 2nd and 4th Tuesdays",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://arimaspa-kingin.jp/en-01.htm",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kin-no-yu%20(gold%20spring)%20Arima%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kin-no-yu%20(gold%20spring)%20Arima%20Onsen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "arima-arima-s-hill-lanes",
+   "region": "arima",
+   "name": "Arima's hill lanes",
+   "kind": "sight",
+   "size": "main",
+   "why": "Old sweet shops, carbonated-spring crackers and tiny shrines on steep lanes",
+   "hours": "Many shops shut on 1 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://visit.arima-onsen.com/things-to-do/buddhism-heritage",
+    "map": "https://www.google.com/maps/search/?api=1&query=Arima's%20hill%20lanes%20Arima%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Arima's%20hill%20lanes%20Arima%20Onsen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "arima-kobe-day",
+   "region": "arima",
+   "name": "Kobe day",
+   "kind": "food",
+   "size": "short",
+   "why": "Kitano's old foreign merchants' houses, the harbour and Kobe beef, 30 minutes away",
+   "hours": "Most beef counters closed 31 Dec–2 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://en.wikipedia.org/wiki/Kita-ku,_Kobe",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kobe%20day%20Arima%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kobe%20day%20Arima%20Onsen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "arima-himeji-castle-day",
+   "region": "arima",
+   "name": "Himeji Castle day",
+   "kind": "sight",
+   "size": "main",
+   "why": "Japan's finest original castle, about an hour via Shin-Kobe",
+   "hours": "Closed 29–30 Dec; open 31 Dec and 1–3 Jan, busy",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.hyogo-tourism.jp/world/spot/detail_1054.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Himeji%20Castle%20day%20Arima%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Himeji%20Castle%20day%20Arima%20Onsen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "matsue-matsue-castle",
+   "region": "matsue",
+   "name": "Matsue Castle",
+   "kind": "viewpoint",
+   "size": "main",
+   "why": "One of twelve original castle keeps, a National Treasure, with lake views from the top",
+   "hours": "Open daily 8:30–17:00 in winter; New Year hours not yet published",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://thegate12.com/spot/945",
+    "map": "https://www.google.com/maps/search/?api=1&query=Matsue%20Castle%20Matsue%20and%20Izumo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Matsue%20Castle%20Matsue%20and%20Izumo%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "matsue-horikawa-kotatsu-boat",
+   "region": "matsue",
+   "name": "Horikawa kotatsu boat",
+   "kind": "sight",
+   "size": "short",
+   "why": "A slow cruise round the castle moat at a heated table, under low bridges",
+   "hours": "Runs all year in principle; check 31 Dec and 1 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://co-trip.jp/spot/55276",
+    "map": "https://www.google.com/maps/search/?api=1&query=Horikawa%20kotatsu%20boat%20Matsue%20and%20Izumo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Horikawa%20kotatsu%20boat%20Matsue%20and%20Izumo%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "matsue-adachi-museum-of-art",
+   "region": "matsue",
+   "name": "Adachi Museum of Art",
+   "kind": "museum",
+   "size": "short",
+   "why": "A garden ranked Japan's finest for two decades, seen through the windows like paintings, plus Yokoyama Taikan's works",
+   "hours": "Says it is open every day of the year",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.adachi-museum.or.jp/en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Adachi%20Museum%20of%20Art%20Matsue%20and%20Izumo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Adachi%20Museum%20of%20Art%20Matsue%20and%20Izumo%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "matsue-izumo-taisha",
+   "region": "matsue",
+   "name": "Izumo Taisha",
+   "kind": "sight",
+   "size": "short",
+   "why": "One of Japan's oldest and greatest shrines, home of the gods' gathering, with the vast straw rope",
+   "hours": "Very crowded 1–3 Jan; go on 30 Dec",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.tokyoweekender.com/?p=106407",
+    "map": "https://www.google.com/maps/search/?api=1&query=Izumo%20Taisha%20Matsue%20and%20Izumo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Izumo%20Taisha%20Matsue%20and%20Izumo%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "matsue-lake-shinji-at-sunset",
+   "region": "matsue",
+   "name": "Lake Shinji at sunset",
+   "kind": "museum",
+   "size": "short",
+   "why": "One of Japan's celebrated sunsets, from the flat lakeside promenade by the museum",
+   "hours": "Always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5800.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Lake%20Shinji%20at%20sunset%20Matsue%20and%20Izumo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Lake%20Shinji%20at%20sunset%20Matsue%20and%20Izumo%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "matsue-shiomi-nawate-and-the-lafcadio-hearn-hou",
+   "region": "matsue",
+   "name": "Shiomi Nawate and the Lafcadio Hearn house",
+   "kind": "museum",
+   "size": "short",
+   "why": "A samurai lane of earthen walls and pines by the moat, and the writer's small house",
+   "hours": "The street is always open; the house and museum close for New Year",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5803.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shiomi%20Nawate%20and%20the%20Lafcadio%20Hearn%20house%20Matsue%20and%20Izumo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shiomi%20Nawate%20and%20the%20Lafcadio%20Hearn%20house%20Matsue%20and%20Izumo%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "fukuoka-yatai-stalls-in-nakasu-and-tenjin",
+   "region": "fukuoka",
+   "name": "Yatai stalls in Nakasu and Tenjin",
+   "kind": "food",
+   "size": "short",
+   "why": "About a hundred open-air stalls of eight to ten seats for ramen, oden and yakitori",
+   "hours": "Almost all shut 31 Dec–1 Jan, about half back on 2–3 Jan, most by 4 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://en.japantravel.com/fukuoka/fukuoka-food-guide-yatai-culture/72406",
+    "map": "https://www.google.com/maps/search/?api=1&query=Yatai%20stalls%20in%20Nakasu%20and%20Tenjin%20Fukuoka%20(Hakata)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Yatai%20stalls%20in%20Nakasu%20and%20Tenjin%20Fukuoka%20(Hakata)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "fukuoka-mizutaki-chicken-hot-pot",
+   "region": "fukuoka",
+   "name": "Mizutaki chicken hot pot",
+   "kind": "sight",
+   "size": "short",
+   "why": "Hakata's gentle, fully cooked hot pot, ideal for her",
+   "hours": "Hanamidori branches close 31 Dec–2 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://savorjapan.com/0004045150",
+    "map": "https://www.google.com/maps/search/?api=1&query=Mizutaki%20chicken%20hot%20pot%20Fukuoka%20(Hakata)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Mizutaki%20chicken%20hot%20pot%20Fukuoka%20(Hakata)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "fukuoka-ohori-park",
+   "region": "fukuoka",
+   "name": "Ohori Park",
+   "kind": "garden",
+   "size": "short",
+   "why": "A two-kilometre flat path round the old castle moat",
+   "hours": "Always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4805.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Ohori%20Park%20Fukuoka%20(Hakata)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Ohori%20Park%20Fukuoka%20(Hakata)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "fukuoka-canal-city-and-the-station-food-halls",
+   "region": "fukuoka",
+   "name": "Canal City and the station food halls",
+   "kind": "museum",
+   "size": "short",
+   "why": "Ramen Stadium and department-store basements; Canal City opens on 1 Jan",
+   "hours": "Canal City open 1 Jan; department stores from 2 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e2161.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Canal%20City%20and%20the%20station%20food%20halls%20Fukuoka%20(Hakata)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Canal%20City%20and%20the%20station%20food%20halls%20Fukuoka%20(Hakata)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "fukuoka-yanagawa-canals-and-steamed-eel",
+   "region": "fukuoka",
+   "name": "Yanagawa canals and steamed eel",
+   "kind": "food",
+   "size": "short",
+   "why": "A punted boat with a kotatsu through a castle town's moats, then eel steamed in a bamboo box",
+   "hours": "Kotatsu boats run December to February; check New Year days",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://crossroadfukuoka.jp/en/articles/yanagawa-kawakudari",
+    "map": "https://www.google.com/maps/search/?api=1&query=Yanagawa%20canals%20and%20steamed%20eel%20Fukuoka%20(Hakata)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Yanagawa%20canals%20and%20steamed%20eel%20Fukuoka%20(Hakata)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "fukuoka-dazaifu-tenmangu",
+   "region": "fukuoka",
+   "name": "Dazaifu Tenmangu",
+   "kind": "sight",
+   "size": "short",
+   "why": "The plum shrine of scholars and its umegae-mochi, 30 minutes away",
+   "hours": "A two-million crush 1–3 Jan; go from 4 Jan, early",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4854.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Dazaifu%20Tenmangu%20Fukuoka%20(Hakata)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Dazaifu%20Tenmangu%20Fukuoka%20(Hakata)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagoya-hitsumabushi",
+   "region": "nagoya",
+   "name": "Hitsumabushi",
+   "kind": "food",
+   "size": "short",
+   "why": "Grilled eel on rice eaten three ways; Atsuta Houraiken claims to have invented it",
+   "hours": "The main shop closes on Wednesdays and the 2nd and 4th Thursdays; use a branch on 6 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://thegate12.com/spot/245",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hitsumabushi%20Nagoya",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hitsumabushi%20Nagoya%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagoya-miso-katsu-tebasaki-and-miso-nikomi-udon",
+   "region": "nagoya",
+   "name": "Miso-katsu, tebasaki and miso-nikomi udon",
+   "kind": "sight",
+   "size": "short",
+   "why": "Nagoya's red-miso and fried-wing classics, all cooked",
+   "hours": "Back to normal by 5 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-Guide.com/e/e3315.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Miso-katsu,%20tebasaki%20and%20miso-nikomi%20udon%20Nagoya",
+    "photos": "https://www.google.com/search?tbm=isch&q=Miso-katsu,%20tebasaki%20and%20miso-nikomi%20udon%20Nagoya%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagoya-atsuta-shrine",
+   "region": "nagoya",
+   "name": "Atsuta Shrine",
+   "kind": "sight",
+   "size": "short",
+   "why": "One of Japan's most important shrines, in a cedar grove; calm again after the New Year crowds",
+   "hours": "Very busy 1–3 Jan; fine from 5 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-Guide.com/e/e3315.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Atsuta%20Shrine%20Nagoya",
+    "photos": "https://www.google.com/search?tbm=isch&q=Atsuta%20Shrine%20Nagoya%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagoya-nagoya-castle-and-the-honmaru-palace",
+   "region": "nagoya",
+   "name": "Nagoya Castle and the Honmaru Palace",
+   "kind": "sight",
+   "size": "short",
+   "why": "The rebuilt palace's painted screens, all on one level",
+   "hours": "Closed around New Year; open again by 5 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-Guide.com/e/e3315.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Nagoya%20Castle%20and%20the%20Honmaru%20Palace%20Nagoya",
+    "photos": "https://www.google.com/search?tbm=isch&q=Nagoya%20Castle%20and%20the%20Honmaru%20Palace%20Nagoya%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "atami-atami-bay-fireworks",
+   "region": "atami",
+   "name": "Atami bay fireworks",
+   "kind": "event",
+   "size": "short",
+   "why": "Twenty minutes of fireworks over the bay on 25 Dec, from the flat beach promenade",
+   "hours": "25 Dec, 20:20–20:40",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.nta.co.jp/kokunai/special/eventinfo/10612957.htm",
+    "map": "https://www.google.com/maps/search/?api=1&query=Atami%20bay%20fireworks%20Atami%20and%20the%20Izu%20coast",
+    "photos": "https://www.google.com/search?tbm=isch&q=Atami%20bay%20fireworks%20Atami%20and%20the%20Izu%20coast%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "atami-moa-museum-of-art",
+   "region": "atami",
+   "name": "MOA Museum of Art",
+   "kind": "museum",
+   "size": "short",
+   "why": "Japanese and East Asian art in a hilltop building reached by long escalators, with sea views",
+   "hours": "Usually closed Thursdays; New Year dates not yet published",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6317.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=MOA%20Museum%20of%20Art%20Atami%20and%20the%20Izu%20coast",
+    "photos": "https://www.google.com/search?tbm=isch&q=MOA%20Museum%20of%20Art%20Atami%20and%20the%20Izu%20coast%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "atami-kiunkaku",
+   "region": "atami",
+   "name": "Kiunkaku",
+   "kind": "garden",
+   "size": "short",
+   "why": "A 1919 villa turned ryokan where writers stayed, with a quiet garden",
+   "hours": "Closes for New Year; fine on 26 Dec",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6319.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kiunkaku%20Atami%20and%20the%20Izu%20coast",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kiunkaku%20Atami%20and%20the%20Izu%20coast%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "atami-izu-shaboten-zoo-capybara-bath",
+   "region": "atami",
+   "name": "Izu Shaboten Zoo capybara bath",
+   "kind": "onsen",
+   "size": "short",
+   "why": "Capybaras soaking in a yuzu-scented hot bath, at 10:30 and 13:30 over the holidays",
+   "hours": "Twice daily from 22 Dec to 11 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.haveagood-holiday.com/en/articles/izu-shaboten-zoo-capybara-outdoor-bath-30th-anniversary-2026",
+    "map": "https://www.google.com/maps/search/?api=1&query=Izu%20Shaboten%20Zoo%20capybara%20bath%20Atami%20and%20the%20Izu%20coast",
+    "photos": "https://www.google.com/search?tbm=isch&q=Izu%20Shaboten%20Zoo%20capybara%20bath%20Atami%20and%20the%20Izu%20coast%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "atami-jogasaki-coast",
+   "region": "atami",
+   "name": "Jogasaki coast",
+   "kind": "nature",
+   "size": "main",
+   "why": "Volcanic sea cliffs and a suspension bridge above the surf, near Izu-Kogen",
+   "hours": "Always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6310.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Jogasaki%20coast%20Atami%20and%20the%20Izu%20coast",
+    "photos": "https://www.google.com/search?tbm=isch&q=Jogasaki%20coast%20Atami%20and%20the%20Izu%20coast%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ise-shima-ise-jingu",
+   "region": "ise-shima",
+   "name": "Ise Jingu",
+   "kind": "sight",
+   "size": "main",
+   "why": "The Outer and Inner shrines in ancient cedar forest, rebuilt every twenty years",
+   "hours": "Up to two hours' wait on the morning of 1 Jan; go at dawn on 4 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4301.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Ise%20Jingu%20Ise-Shima%20(Toba)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Ise%20Jingu%20Ise-Shima%20(Toba)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ise-shima-mikimoto-pearl-island",
+   "region": "ise-shima",
+   "name": "Mikimoto Pearl Island",
+   "kind": "nature",
+   "size": "short",
+   "why": "Where cultured pearls began, with ama women divers in white",
+   "hours": "New Year hours not published; check",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4310.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Mikimoto%20Pearl%20Island%20Ise-Shima%20(Toba)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Mikimoto%20Pearl%20Island%20Ise-Shima%20(Toba)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ise-shima-toba-aquarium",
+   "region": "ise-shima",
+   "name": "Toba Aquarium",
+   "kind": "sight",
+   "size": "short",
+   "why": "One of Japan's biggest aquariums, with dugongs; warm and flat",
+   "hours": "Open every day; very busy 1–3 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://banzokubiology.com/?p=24946",
+    "map": "https://www.google.com/maps/search/?api=1&query=Toba%20Aquarium%20Ise-Shima%20(Toba)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Toba%20Aquarium%20Ise-Shima%20(Toba)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ise-shima-okage-yokocho-and-akafuku",
+   "region": "ise-shima",
+   "name": "Okage Yokocho and akafuku",
+   "kind": "sight",
+   "size": "short",
+   "why": "The old pilgrims' street by the Inner Shrine and its red-bean rice cakes",
+   "hours": "Open; crowded 1–3 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4301.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Okage%20Yokocho%20and%20akafuku%20Ise-Shima%20(Toba)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Okage%20Yokocho%20and%20akafuku%20Ise-Shima%20(Toba)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ise-shima-ago-bay-from-yokoyama",
+   "region": "ise-shima",
+   "name": "Ago Bay from Yokoyama",
+   "kind": "nature",
+   "size": "short",
+   "why": "A flat deck over a bay crowded with pearl rafts and pine islands",
+   "hours": "Always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4310.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Ago%20Bay%20from%20Yokoyama%20Ise-Shima%20(Toba)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Ago%20Bay%20from%20Yokoyama%20Ise-Shima%20(Toba)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ise-shima-spiny-lobster-ise-ebi",
+   "region": "ise-shima",
+   "name": "Spiny lobster (Ise-ebi)",
+   "kind": "sight",
+   "size": "short",
+   "why": "The region's prize, in season October to April, grilled or in a hot pot",
+   "hours": "Many restaurants close 1–3 Jan; hotel restaurants carry on",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://japanactivity.com/toba-ise-ebi-and-oyster-season",
+    "map": "https://www.google.com/maps/search/?api=1&query=Spiny%20lobster%20(Ise-ebi)%20Ise-Shima%20(Toba)",
+    "photos": "https://www.google.com/search?tbm=isch&q=Spiny%20lobster%20(Ise-ebi)%20Ise-Shima%20(Toba)%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "morioka-wanko-soba",
+   "region": "morioka",
+   "name": "Wanko soba",
+   "kind": "food",
+   "size": "short",
+   "why": "Bite-sized bowls of soba refilled until you put the lid on; a cheerful group meal",
+   "hours": "Check holiday hours",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.ana.co.jp/en/at/japan-travel-planner/iwate/0000003.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Wanko%20soba%20Morioka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Wanko%20soba%20Morioka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "morioka-kakunodate-samurai-district",
+   "region": "morioka",
+   "name": "Kakunodate samurai district",
+   "kind": "sight",
+   "size": "main",
+   "why": "Black wooden fences and samurai houses under snow, 45 minutes away by the Komachi",
+   "hours": "Aoyagi house open to 16:00 in winter; Kawarada house shut 28 Dec–4 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3602.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kakunodate%20samurai%20district%20Morioka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kakunodate%20samurai%20district%20Morioka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "morioka-chuson-ji-hiraizumi",
+   "region": "morioka",
+   "name": "Chuson-ji, Hiraizumi",
+   "kind": "sight",
+   "size": "main",
+   "why": "The gold-leafed Konjikido hall of 1124 in a snowy cedar forest",
+   "hours": "Open all year 8:30–16:30 in winter; a one-kilometre uphill path",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://thegate12.com/spot/1035",
+    "map": "https://www.google.com/maps/search/?api=1&query=Chuson-ji,%20Hiraizumi%20Morioka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Chuson-ji,%20Hiraizumi%20Morioka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "morioka-morioka-s-old-centre",
+   "region": "morioka",
+   "name": "Morioka's old centre",
+   "kind": "garden",
+   "size": "short",
+   "why": "The castle-ruin park, the red-brick Iwate Bank building and craft shops by the river",
+   "hours": "Streets open; shops close on 1 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.ana.co.jp/en/at/japan-travel-planner/iwate/0000003.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Morioka's%20old%20centre%20Morioka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Morioka's%20old%20centre%20Morioka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tsunagi-rooms-with-their-own-open-air-bath",
+   "region": "tsunagi",
+   "name": "Rooms with their own open-air bath",
+   "kind": "onsen",
+   "size": "short",
+   "why": "Short, private soaks in snow-light without walking on ice",
+   "hours": "Hotels run New Year plans",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://selected-ryokan.com/ryokan/nanbu-yumori-no-yado-taikan_tsunagi-oshuku_iwate_tohoku.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Rooms%20with%20their%20own%20open-air%20bath%20Tsunagi%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Rooms%20with%20their%20own%20open-air%20bath%20Tsunagi%20Onsen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tsunagi-mt-iwate-over-lake-gosho",
+   "region": "tsunagi",
+   "name": "Mt Iwate over Lake Gosho",
+   "kind": "nature",
+   "size": "short",
+   "why": "The volcano white across the water from the hotel windows",
+   "hours": "Always",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://selected-ryokan.com/ryokan/bessou-kakei_tsunagi_iwate_tohoku.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Mt%20Iwate%20over%20Lake%20Gosho%20Tsunagi%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Mt%20Iwate%20over%20Lake%20Gosho%20Tsunagi%20Onsen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tsunagi-new-year-s-eve-kaiseki",
+   "region": "tsunagi",
+   "name": "New Year's Eve kaiseki",
+   "kind": "food",
+   "size": "short",
+   "why": "Iwate beef, Sanriku fish and toshikoshi soba without leaving the hotel",
+   "hours": "31 Dec",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://selected-ryokan.com/ryokan/shikitei_tsunagi-onsen_iwate_tohoku.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=New%20Year's%20Eve%20kaiseki%20Tsunagi%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=New%20Year's%20Eve%20kaiseki%20Tsunagi%20Onsen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tsunagi-morioka-on-the-shuttle",
+   "region": "tsunagi",
+   "name": "Morioka on the shuttle",
+   "kind": "sight",
+   "size": "short",
+   "why": "The city is a 25-minute ride for anyone restless on 31 Dec",
+   "hours": "Shops close on 1 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://selected-ryokan.com/ryokan/nanbu-yumori-no-yado-taikan_tsunagi-oshuku_iwate_tohoku.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Morioka%20on%20the%20shuttle%20Tsunagi%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Morioka%20on%20the%20shuttle%20Tsunagi%20Onsen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
   }
  ],
  "versions": [
@@ -4336,6 +5958,576 @@
    "gains": "Five museums for a cloudy day, a ryokan with a private bath in every room, 80 minutes to Shinjuku, an hour less from Kyoto",
    "gives_up": "Fuji straight across the water; Hakone is new only for the first-timers (Pedro and Fernanda have been)",
    "moves": 6
+  },
+  {
+   "id": "golden-route-winter",
+   "name": "The Golden Route in winter",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-23",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": "Apartment hotel near a Yamanote station, e.g. MIMARU SUITES Tokyo Nihombashi: two suites plus a twin room for seven"
+    },
+    {
+     "region": "hakone",
+     "from": "2026-12-23",
+     "to": "2026-12-25",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": "Ryokan with a lift and Western-Japanese rooms, e.g. Hakone Kowakien Ten-yu; ask for in-room or private baths. Send big bags straight to Kyoto"
+    },
+    {
+     "region": "kyoto",
+     "from": "2026-12-25",
+     "to": "2026-12-28",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": "Apartment hotel such as MIMARU SUITES Kyoto Shijo, with a kitchen and washing machine"
+    },
+    {
+     "region": "hiroshima",
+     "from": "2026-12-28",
+     "to": "2026-12-30",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "City hotel near the station or Peace Park (Hilton or Sheraton Grand), four rooms"
+    },
+    {
+     "region": "miyajima",
+     "from": "2026-12-30",
+     "to": "2027-01-01",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": "New Year's Eve with dinner on the island, e.g. Miyajima Grand Hotel Arimoto (lift, Western-Japanese rooms with beds). The scarcest booking: do it first"
+    },
+    {
+     "region": "osaka",
+     "from": "2027-01-01",
+     "to": "2027-01-06",
+     "nights": 5,
+     "lodging": "hotel",
+     "note": "MIMARU Osaka Namba Station Annex 3-bedroom suite (six single beds, kitchen, laundry) plus one room for the seventh"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-06",
+     "to": "2027-01-09",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": "Same hotel as the start if possible, within 30 minutes of Haneda"
+    }
+   ],
+   "gains": "Hiroshima, the floating torii at New Year, Osaka and Himeji",
+   "gives_up": "All the snow: Kanazawa, Shirakawa-go and Takayama; a fourth night in Kyoto",
+   "moves": 6,
+   "travel_hours_est": 15
+  },
+  {
+   "id": "two-cities-deep",
+   "name": "Two cities, done slowly",
+   "pace": "gentle",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-26",
+     "nights": 6,
+     "lodging": "hotel",
+     "note": "Apartment hotel with washing machines and a kitchenette, e.g. MIMARU SUITES Tokyo Asakusa or Tokyu Stay Ginza; four rooms or two suites plus a twin"
+    },
+    {
+     "region": "kyoto",
+     "from": "2026-12-26",
+     "to": "2027-01-05",
+     "nights": 10,
+     "lodging": "rental",
+     "note": "A licensed whole townhouse for 7–9 with two bathrooms and a ground-floor bedroom with beds, e.g. Machiya Residence Inn Hanatoki or Fujinoma (8). Some operators block 25 Dec – 8 Jan, so book now"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-05",
+     "to": "2027-01-09",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Hotel within 30 minutes of Haneda, near Tokyo or Shinagawa station"
+    }
+   ],
+   "gains": "Two homes and two long trains; Kyoto at New Year from a house of your own",
+   "gives_up": "Ryokan nights, onsen towns and snow country",
+   "moves": 2,
+   "travel_hours_est": 6
+  },
+  {
+   "id": "deep-snow-country",
+   "name": "Deep snow country",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-23",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": "Near Tokyo or Ueno station for the Hokuriku shinkansen"
+    },
+    {
+     "region": "nagano",
+     "from": "2026-12-23",
+     "to": "2026-12-26",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": "Station hotel; Matsumoto and the snow monkeys as day trips"
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-26",
+     "to": "2026-12-29",
+     "nights": 3,
+     "lodging": "rental",
+     "note": "Old-town machiya; Shirakawa-go by bus on 27 Dec"
+    },
+    {
+     "region": "okuhida",
+     "from": "2026-12-29",
+     "to": "2027-01-01",
+     "nights": 3,
+     "lodging": "ryokan",
+     "note": "New Year's Eve; Hirayu or Shin-Hotaka"
+    },
+    {
+     "region": "kanazawa",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": "rental",
+     "note": "Machiya house with a kitchen for the closed days"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-05",
+     "to": "2027-01-09",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Echigo-Yuzawa snow day on 7 Jan"
+    }
+   ],
+   "gains": "Snow monkeys, Shirakawa-go, an Okuhida New Year in deep snow, Kanazawa under snow ropes",
+   "gives_up": "Kyoto, Nara and Fuji; more ice underfoot",
+   "moves": 5,
+   "travel_hours_est": 14
+  },
+  {
+   "id": "western-onsen-trail",
+   "name": "The western onsen trail",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-22",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Near Shinjuku for the Romancecar"
+    },
+    {
+     "region": "hakone",
+     "from": "2026-12-22",
+     "to": "2026-12-24",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": "Rooms with their own bath; Gora or Sengokuhara"
+    },
+    {
+     "region": "kyoto",
+     "from": "2026-12-24",
+     "to": "2026-12-28",
+     "nights": 4,
+     "lodging": "rental",
+     "note": "Machiya house; Nara on 26 Dec"
+    },
+    {
+     "region": "kinosaki",
+     "from": "2026-12-28",
+     "to": "2027-01-01",
+     "nights": 4,
+     "lodging": "ryokan",
+     "note": "New Year's Eve; crab kaiseki"
+    },
+    {
+     "region": "arima",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": "ryokan",
+     "note": "First-bath ceremony 2 Jan; Himeji 4 Jan"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-05",
+     "to": "2027-01-09",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": null
+    }
+   ],
+   "gains": "Hakone, Kinosaki and Arima: ten ryokan nights, Himeji and Kobe",
+   "gives_up": "Kanazawa, Takayama and real snow; the dearest lodging",
+   "moves": 5,
+   "travel_hours_est": 15
+  },
+  {
+   "id": "slow-kyoto-and-the-sea",
+   "name": "Kyoto house and the sea",
+   "pace": "gentle",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-24",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Near Tokyo station or Ginza"
+    },
+    {
+     "region": "kyoto",
+     "from": "2026-12-24",
+     "to": "2027-01-05",
+     "nights": 12,
+     "lodging": "rental",
+     "note": "Four-bedroom machiya near Okazaki and the Heian shrine; New Year's Eve at home"
+    },
+    {
+     "region": "kamakura",
+     "from": "2027-01-05",
+     "to": "2027-01-09",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Sea-view hotel at Shichirigahama; about an hour to Haneda"
+    }
+   ],
+   "gains": "Two moves in three weeks; a Kyoto house for twelve nights; Kamakura by the sea",
+   "gives_up": "Ryokan, onsen towns and snow; New Year’s Eve is a home dinner",
+   "moves": 2,
+   "travel_hours_est": 6
+  },
+  {
+   "id": "west-castles-inland-sea",
+   "name": "Castles, Shrines and the Inland Sea",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-23",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": "Three rooms and a single near a JR Yamanote station, or a MIMARU apartment for 6 plus a single; about ¥90–150k a night"
+    },
+    {
+     "region": "kyoto",
+     "from": "2026-12-23",
+     "to": "2026-12-26",
+     "nights": 3,
+     "lodging": "rental",
+     "note": "Machiya for 6–8 or MIMARU SUITES Kyoto Shijo; ask for a ground-floor bedroom for Fernanda; about ¥90–170k a night"
+    },
+    {
+     "region": "hiroshima",
+     "from": "2026-12-26",
+     "to": "2026-12-28",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Three rooms and a single near the station or Peace Park (Sheraton Grand, Hilton); about ¥60–110k a night"
+    },
+    {
+     "region": "matsue",
+     "from": "2026-12-28",
+     "to": "2027-01-01",
+     "nights": 4,
+     "lodging": "ryokan",
+     "note": "Lakeside onsen hotel at Matsue Shinjiko Onsen (Hotel Ichibata has a lake-view room for six; Naniwa Issui has rooms with private baths); dinner on 30 and 31 Dec; about ¥150–280k a night over New Year"
+    },
+    {
+     "region": "okayama",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Kurashiki Ivy Square in the canal quarter: two family rooms and a twin; about ¥80–130k a night"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-05",
+     "to": "2027-01-09",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Near Tokyo or Ueno station for the airport; send the big bags to the airport on 6 Jan"
+    }
+   ],
+   "gains": "Hiroshima, Izumo Taisha, Matsue and Himeji castles, Kurashiki’s canal",
+   "gives_up": "Snow country and a Fuji stay; a four-hour move on 28 Dec",
+   "moves": 5,
+   "travel_hours_est": 16
+  },
+  {
+   "id": "winter-food-trail",
+   "name": "The Winter Food Trail",
+   "pace": "full",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-23",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": "Near Tokyo Station or Ginza for the food halls; three rooms and a single, about ¥90–150k a night"
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-23",
+     "to": "2026-12-26",
+     "nights": 3,
+     "lodging": "rental",
+     "note": "A Machiya Residence Inn house for 6 (Ainotsuji, near Omicho) plus a room for Tatiana, or Hyatt House Kanazawa kitchen rooms; about ¥90–160k a night"
+    },
+    {
+     "region": "osaka",
+     "from": "2026-12-26",
+     "to": "2026-12-29",
+     "nights": 3,
+     "lodging": "rental",
+     "note": "MIMARU Osaka Namba Station Annex 3-bedroom suite for 6 plus a twin; about ¥80–140k a night"
+    },
+    {
+     "region": "arima",
+     "from": "2026-12-29",
+     "to": "2027-01-01",
+     "nights": 3,
+     "lodging": "ryokan",
+     "note": "Two or three rooms with private baths, Kobe beef kaiseki and osechi (Arima Onsen Motoyu Ryuusenkaku has suites for six with an open-air bath; Taketoritei Maruyama is smaller and finer); about ¥250–400k a night over New Year"
+    },
+    {
+     "region": "fukuoka",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": "rental",
+     "note": "Apartment hotel with 6-person units near Hakata or Tenjin; about ¥50–90k a night"
+    },
+    {
+     "region": "nagoya",
+     "from": "2027-01-05",
+     "to": "2027-01-07",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Three rooms and a single at a station hotel; about ¥50–80k a night"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-07",
+     "to": "2027-01-09",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Near Tokyo or Shinagawa station for the airport"
+    }
+   ],
+   "gains": "Crab, Kobe beef, Hakata ramen and Nagoya eel; an Arima ryokan New Year",
+   "gives_up": "Rest: seven bases and two long days; snow and Fuji",
+   "moves": 6,
+   "travel_hours_est": 17
+  },
+  {
+   "id": "fuji-pacific-shore",
+   "name": "Fuji and the Pacific Shore",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-22",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Near Shinjuku for the Fuji Excursion train; three rooms and a single"
+    },
+    {
+     "region": "kawaguchiko",
+     "from": "2026-12-22",
+     "to": "2026-12-25",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": "Lake hotel with beds and a lift (Fuji View Hotel, Hotel Mystays Fuji Onsen Resort) or a Fuji-view house for 7 with a private bath; about ¥80–150k a night"
+    },
+    {
+     "region": "atami",
+     "from": "2026-12-25",
+     "to": "2026-12-28",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": "Seafront hotel with Japanese-Western family rooms (KKR Hotel Atami has a room for up to seven; Kamenoi Hotel); about ¥70–130k a night"
+    },
+    {
+     "region": "shuzenji",
+     "from": "2026-12-28",
+     "to": "2027-01-01",
+     "nights": 4,
+     "lodging": "ryokan",
+     "note": "Two or three rooms at one ryokan, at least one with beds and its own bath; dinner every night, osechi on 1 Jan; about ¥200–320k a night over New Year"
+    },
+    {
+     "region": "ise-shima",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Bay-view hotel in Toba with Japanese-Western rooms for 2–5 (Toba Hotel International); about ¥90–160k a night"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-05",
+     "to": "2027-01-09",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Near Tokyo or Shinagawa station for Kamakura and the airport"
+    }
+   ],
+   "gains": "Fuji in its clearest month, Atami’s winter fireworks, a Shuzenji New Year, Ise Jingu",
+   "gives_up": "Snow, Kanazawa and Kyoto; four ryokan nights at New Year prices",
+   "moves": 5,
+   "travel_hours_est": 14
+  },
+  {
+   "id": "tohoku-snow-samurai",
+   "name": "Snow, Samurai and the Far North",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-23",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": "Near Tokyo or Ueno station for the Tohoku shinkansen; three rooms and a single"
+    },
+    {
+     "region": "south-tohoku",
+     "from": "2026-12-23",
+     "to": "2026-12-26",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": "Sendai station hotel, three rooms and a single (Westin Sendai, Hotel Metropolitan Sendai); about ¥50–90k a night"
+    },
+    {
+     "region": "morioka",
+     "from": "2026-12-26",
+     "to": "2026-12-30",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "City hotel by Morioka station, three rooms and a single; about ¥40–70k a night"
+    },
+    {
+     "region": "tsunagi",
+     "from": "2026-12-30",
+     "to": "2027-01-01",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": "Large lakeside onsen hotel with rooms with open-air baths and a shuttle from Morioka (Nanbu Yumori-no-yado Taikan, or Hotel Shion); about ¥150–250k a night over New Year"
+    },
+    {
+     "region": "north-tohoku",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Aomori city hotel near the station, three rooms and a single; about ¥50–80k a night"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-05",
+     "to": "2027-01-09",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Near Tokyo or Ueno station for the airport"
+    }
+   ],
+   "gains": "Deep snow by shinkansen, samurai towns, Hirosaki and Hakkoda; the cheapest lodging",
+   "gives_up": "Kyoto, Kanazawa and Fuji; cold and ice for Fernanda",
+   "moves": 5,
+   "travel_hours_est": 10
+  },
+  {
+   "id": "kii-coast-classic",
+   "name": "Kyoto, the Kii coast and Nara",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-24",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Apartment hotel near a Yamanote station, e.g. MIMARU SUITES Tokyo Nihombashi"
+    },
+    {
+     "region": "kyoto",
+     "from": "2026-12-24",
+     "to": "2026-12-28",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Apartment hotel such as MIMARU SUITES Kyoto Shijo, or a machiya with a ground-floor bedroom"
+    },
+    {
+     "region": "shirahama",
+     "from": "2026-12-28",
+     "to": "2027-01-01",
+     "nights": 4,
+     "lodging": "ryokan",
+     "note": "Onsen hotel with half board and a lift, e.g. Hotel Kawakyu (suites with a bedroom and living room, some with open-air baths) or Shirahama Coganoi Resort & Spa (kaiseki); ask for beds and cooked courses for Fernanda"
+    },
+    {
+     "region": "nara",
+     "from": "2027-01-01",
+     "to": "2027-01-05",
+     "nights": 4,
+     "lodging": "rental",
+     "note": "A whole house with a private bath, e.g. Konjakuso Nara Kitamachi \"MANAKA\" (4 bedrooms, 8 beds, washer-dryer, 10 min walk from Kintetsu Nara); or Nara Hotel"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-05",
+     "to": "2027-01-09",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": "Hotel within 30 minutes of Haneda"
+    }
+   ],
+   "gains": "A seaside onsen New Year, the Kumano shrines, Nara at leisure",
+   "gives_up": "Snow and a Fuji stay; eight nights in Tokyo",
+   "moves": 4,
+   "travel_hours_est": 13
   }
  ],
  "legacy_routes": [

@@ -8,7 +8,7 @@ import { legBetween } from "./legs";
 import { project } from "./map";
 import type { Region, Stay } from "./types";
 
-export type Mode = "shinkansen" | "limited_express" | "local" | "bus" | "private_rail" | "ropeway" | "rail";
+export type Mode = "shinkansen" | "limited_express" | "local" | "bus" | "private_rail" | "ropeway" | "ferry" | "taxi" | "rail";
 export interface Pt {
   x: number;
   y: number;
@@ -49,6 +49,8 @@ export const MODE_LABEL: Record<Mode, string> = {
   bus: "Bus",
   private_rail: "Private railway",
   ropeway: "Ropeway",
+  ferry: "Ferry",
+  taxi: "Taxi",
   rail: "Train",
 };
 
@@ -246,7 +248,8 @@ export function cameraFrames(stays: Pick<Stay, "region">[], legs: Leg[], regions
     return leg ? frame(leg.points, aspect, 44, 0.3, 0.22) : null;
   });
   const all = [...pts, ...legs.flatMap((l) => l.points)];
-  return { stops, legs: legFrames, overview: frame(all, aspect, 60, 0.3, 0.14) };
+  // Wider at the sides than above and below: place names sit beside their stamps.
+  return { stops, legs: legFrames, overview: frame(all, aspect, 60, 0.42, 0.14) };
 }
 
 /** The camera partway along leg i: from stop i out to the whole leg and back in on stop i + 1. */

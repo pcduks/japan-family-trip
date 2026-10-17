@@ -7,7 +7,7 @@ import { regionColor } from "@/lib/colors";
 import { fmtRange } from "@/lib/dates";
 import { cameraFrames, cameraOnLeg, kanji, legsOf, lerpBox, regionPoint, smoothPath, smoothstep, snowLevel, travelAt, type Box, type Leg, type Mode, type Pt } from "@/lib/journey";
 
-import { project } from "@/lib/map";
+import { project, shortRegionName } from "@/lib/map";
 import { MapInk, MapInkDefs } from "./MapInk";
 import type { Region, Stay } from "@/lib/types";
 
@@ -27,9 +27,25 @@ const SIDE: Record<string, "r" | "l" | "t" | "b"> = {
   okayama: "b",
   kinosaki: "t",
   hiroshima: "b",
+  miyajima: "l",
+  shirahama: "r",
+  nagano: "l",
+  arima: "t",
+  osaka: "l",
+  kamakura: "r",
+  matsue: "t",
+  fukuoka: "l",
+  nagoya: "r",
+  atami: "r",
+  "ise-shima": "b",
+  morioka: "r",
+  tsunagi: "l",
+  "south-tohoku": "r",
+  "north-tohoku": "r",
+  shuzenji: "l",
 };
 
-const SHORT: Record<string, string> = { gero: "Gero", okayama: "Okayama", kinosaki: "Kinosaki", yudanaka: "Snow monkeys", okuhida: "Okuhida", hiroshima: "Hiroshima" };
+const SHORT: Record<string, string> = { yudanaka: "Snow monkeys" };
 
 interface Props {
   regions: Region[];
@@ -44,12 +60,14 @@ interface Props {
   onStop?: (stopIndex: number) => void;
   className?: string;
   label?: string;
+  /** Draw the route in leg by leg when it appears or changes (overview only). */
+  drawIn?: boolean;
 }
 
 const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
 
 /** The journey on an ink-and-paper map: the real lines, a train that travels them, a camera that follows. */
-export function JourneyMap({ regions, stays, ghost = null, t, aspect = 1.3, onStop, className = "", label }: Props) {
+export function JourneyMap({ regions, stays, ghost = null, t, aspect = 1.3, onStop, className = "", label, drawIn = true }: Props) {
   const router = useRouter();
   const reduce = !!useReducedMotion();
   const follow = !!t;
@@ -82,7 +100,7 @@ export function JourneyMap({ regions, stays, ghost = null, t, aspect = 1.3, onSt
     const svg = svgRef.current;
     const wrap = wrapRef.current;
     if (!svg || !wrap) return;
-    const e = startEngine({ svg, wrap, pill: pillRef.current, legs, frames, stays, follow, t: t ?? null, reduce, aspect, lastCam, onActive: setActive, onMoving: setMoving, onPlaying: setPlaying });
+    const e = startEngine({ svg, wrap, pill: pillRef.current, legs, frames, stays, follow, t: t ?? null, reduce: reduce || !drawIn, aspect, lastCam, onActive: setActive, onMoving: setMoving, onPlaying: setPlaying });
     engine.current = e;
     return () => {
       e.destroy();
@@ -163,7 +181,7 @@ export function JourneyMap({ regions, stays, ghost = null, t, aspect = 1.3, onSt
         {routeRegions.map((id) => {
           const p = regionPoint(id, regions);
           const idx = stopsOf(id);
-          const name = SHORT[id] ?? regions.find((r) => r.id === id)?.name.replace(/ Onsen$/, "") ?? id;
+          const name = SHORT[id] ?? shortRegionName(id, regions);
           const side = SIDE[id] ?? "r";
           const jp = kanji(id);
           const nums = idx.map((i) => i + 1).join(" · ");
@@ -266,6 +284,8 @@ function SegmentPath({ d, mode }: { d: string; mode: Mode }) {
       </>
     );
   if (mode === "bus") return <path d={d} fill="none" stroke="var(--accent)" strokeWidth={2.4} strokeDasharray="5 3.5" strokeLinecap="round" vectorEffect="non-scaling-stroke" />;
+  if (mode === "ferry") return <path d={d} fill="none" stroke="var(--jm-ink)" strokeWidth={1.8} strokeDasharray="2 4" strokeLinecap="round" vectorEffect="non-scaling-stroke" />;
+  if (mode === "taxi") return <path d={d} fill="none" stroke="var(--accent)" strokeWidth={1.8} strokeDasharray="2 3" strokeLinecap="round" vectorEffect="non-scaling-stroke" />;
   if (mode === "ropeway") return <path d={d} fill="none" stroke="var(--jm-ink)" strokeWidth={2} strokeDasharray="1 3" strokeLinecap="round" vectorEffect="non-scaling-stroke" />;
   return <path d={d} fill="none" stroke="var(--jm-ink)" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />;
 }
@@ -424,7 +444,8 @@ function startEngine(o: EngineOpts): Engine {
       const flip = Math.abs(ang) > 90;
       train.setAttribute("transform", `translate(${at.x} ${at.y}) scale(${k}) rotate(${flip ? ang + 180 : ang}) scale(${flip ? -1 : 1} 1)`);
       train.style.opacity = "1";
-      train.dataset.mode = modeAt(legs[travelling], legFrac) === "bus" ? "bus" : "rail";
+      const mode = modeAt(legs[travelling], legFrac);
+      train.dataset.mode = mode === "bus" || mode === "taxi" ? "bus" : "rail";
       if (pill) {
         const sx = ((at.x - cam.x) / cam.w) * width;
         const sy = ((at.y - cam.y) / cam.h) * (width / aspect);

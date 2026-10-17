@@ -1,13 +1,19 @@
 import { describe, expect, it } from "vitest";
 import { tripData } from "./data/file";
+import { versionGuide } from "./guide";
 import { suggestNights } from "./nights";
 import { checkDays, checkStays, checkVersion, countBySeverity, type RulesContext } from "./rules";
-import { copyVersion, describeDiff, relayout, statsOf, swapInRegion } from "./versions";
+import { combineRoutes, copyVersion, describeDiff, movesOf, rebalance, relayout, statsOf, swapInRegion } from "./versions";
 
 const data = tripData();
 const ctx: RulesContext = { trip: data.trip, calendar: data.calendar, pace: data.pace, regions: data.regions, places: data.places };
 const plan = data.versions.find((v) => v.id === "plan")!;
 const full = data.versions.find((v) => v.id === "full")!;
+const NEW_ROUTES: Record<string, string> = {
+  "deep-snow-country": "tokyo nagano takayama okuhida kanazawa tokyo",
+  "west-castles-inland-sea": "tokyo kyoto hiroshima matsue okayama tokyo",
+  "tohoku-snow-samurai": "tokyo south-tohoku morioka tsunagi north-tohoku tokyo",
+};
 
 describe("rules on the seeded versions", () => {
   it("the plan passes with only info findings", () => {
@@ -22,6 +28,21 @@ describe("rules on the seeded versions", () => {
     for (const v of data.versions) {
       const errors = checkVersion(v, ctx).filter((x) => x.severity === "error");
       expect(errors, v.id).toEqual([]);
+    }
+  });
+
+  it("every researched alternative keeps to the calendar and has its own story", () => {
+    for (const v of data.versions.filter((x) => x.status === "alternative")) {
+      // Full moves on peak days on purpose (see below); the rest keep anything longer than a local hop off them.
+      const peak = movesOf(v.stays, data.regions).filter((m) => data.calendar.peak_travel_days.includes(m.date) && m.hours > 1.5);
+      if (v.id !== "full") expect(peak, v.id).toEqual([]);
+      const g = versionGuide(v.id);
+      expect(g?.style, v.id).toBeTruthy();
+      if (v.id in NEW_ROUTES) {
+        expect(Object.keys(g?.days ?? {}).length, v.id).toBe(21);
+        expect(g?.nye, v.id).toBeTruthy();
+        expect(v.stays.map((s) => s.region).join(" "), v.id).toBe(NEW_ROUTES[v.id]);
+      }
     }
   });
 
@@ -120,9 +141,33 @@ describe("version helpers", () => {
     const kinosaki = data.regions.find((r) => r.id === "kinosaki")!;
     const a = swapInRegion(plan, kinosaki, data.versions, "father", data.trip.start);
     expect(a.version.stays.some((s) => s.region === "kinosaki")).toBe(true);
-    const shuzenji = data.regions.find((r) => r.id === "shuzenji")!;
-    const b = swapInRegion(plan, shuzenji, data.versions, "father", data.trip.start);
-    expect(b.version.stays.find((s) => s.region === "shuzenji")?.from).toBe("2027-01-05");
+    const ginzan = data.regions.find((r) => r.id === "ginzan")!;
+    const b = swapInRegion(plan, ginzan, data.versions, "father", data.trip.start);
+    expect(b.version.stays.find((s) => s.region === "ginzan")?.from).toBe("2027-01-05");
     expect(checkVersion(b.version, ctx).filter((f) => f.severity === "error")).toEqual([]);
+  });
+
+  it("joins two routes at a date and keeps every night", () => {
+    const art = data.versions.find((v) => v.id === "art-not-fuji")!;
+    const joined = combineRoutes(plan, art, "2027-01-05", data.trip.start, data.trip.nights);
+    expect(joined.reduce((a, s) => a + s.nights, 0)).toBe(20);
+    expect(joined.map((s) => s.region)).toEqual(["tokyo", "kanazawa", "takayama", "gero", "kyoto", "okayama", "tokyo"]);
+    expect(joined[0].from).toBe("2026-12-20");
+    expect(joined[joined.length - 1].to).toBe("2027-01-09");
+  });
+
+  it("rebalances nights to keep the trip at 20", () => {
+    const longer = plan.stays.map((s, i) => (i === 2 ? { ...s, nights: s.nights + 1 } : s));
+    const r = rebalance(longer, 2, 20, data.regions);
+    expect(r.stays.reduce((a, s) => a + s.nights, 0)).toBe(20);
+    expect(r.stays[2].nights).toBe(plan.stays[2].nights + 1);
+    expect(r.note).toMatch(/took 1 night from/);
+    const shorter = plan.stays.map((s, i) => (i === 4 ? { ...s, nights: s.nights - 1 } : s));
+    const r2 = rebalance(shorter, 4, 20, data.regions);
+    expect(r2.stays.reduce((a, s) => a + s.nights, 0)).toBe(20);
+    expect(r2.stays[5].nights).toBe(plan.stays[5].nights + 1);
+    // Taking a night for stop 4 comes from later stops when they can spare one, so earlier dates stay put.
+    const kyoto = plan.stays.map((s, i) => (i === 0 ? { ...s, nights: s.nights + 1 } : s));
+    expect(rebalance(kyoto, 0, 20, data.regions).stays[0].from).toBe("2026-12-20");
   });
 });

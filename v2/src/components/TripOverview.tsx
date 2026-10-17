@@ -9,9 +9,11 @@ import { stayNote, versionGuide } from "@/lib/guide";
 import { LODGING_TYPES } from "@/lib/lodging";
 import { checkVersion } from "@/lib/rules";
 import type { Version } from "@/lib/types";
+import { STYLE_LABEL, styleOf } from "@/lib/styles";
 import { movesOf, paceLabel, statsOf } from "@/lib/versions";
 import { BudgetCard, BudgetLine } from "./Budget";
 import { useStore } from "./providers";
+import { guideFor } from "@/lib/autoGuide";
 import { RegionCover } from "./RegionCover";
 import { TimelineLane } from "./Timeline";
 import { Page, PageHeader, RegionDot, RuleBadges, Section } from "./ui";
@@ -177,7 +179,7 @@ export function TripOverview() {
 
 export function AlternativeCard({ v, planBudget, onShow }: { v: Version; planBudget?: number; onShow?: () => void }) {
   const { snapshot, rules } = useStore();
-  const g = versionGuide(v.id);
+  const g = guideFor(v, snapshot);
   const owner = v.owner === "planners" ? null : snapshot.travellers.find((t) => t.id === v.owner);
   const findings = checkVersion(v, rules);
   const nye = v.stays.find((s) => s.from <= "2026-12-31" && s.to > "2026-12-31");
@@ -187,7 +189,7 @@ export function AlternativeCard({ v, planBudget, onShow }: { v: Version; planBud
         <RegionCover regionId={v.stays.find((s) => !["tokyo", "kanazawa", "kyoto"].includes(s.region) && !snapshot.versions.find((p) => p.status === "plan")?.stays.some((ps) => ps.region === s.region))?.region ?? nye?.region ?? v.stays[0]?.region ?? "tokyo"} className="hero-fade aspect-[5/2]">
           <span className="absolute inset-x-3 bottom-3 z-10 grid gap-0.5 text-white">
             <span className="text-[0.72rem] font-semibold uppercase tracking-wide opacity-90">
-              {owner ? `${owner.name}’s version` : paceLabel(v.pace)}
+              {owner ? `${owner.name}’s version` : `${STYLE_LABEL[styleOf(v.id)] ?? "Classic"} · ${paceLabel(v.pace)}`}
             </span>
             <span className="display text-[1.45rem] leading-tight">{g?.theme ?? v.name}</span>
           </span>

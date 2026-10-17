@@ -743,6 +743,850 @@
           "verified": false
         }
       ]
+    },
+    "miyajima": {
+      "type": "ryokan",
+      "why": "The reason to sleep on the island is the evening, after the crowds have gone. On 31 Dec the restaurants close and the inn is where dinner happens. Book a ryokan with dinner and breakfast as one plan for all seven.",
+      "fit": "Two or three rooms: a large Japanese-Western room for four to six, plus a twin. Ask for beds for Fernanda, Carlos and Nadir, and a room near the lift.",
+      "outlook": "Tight for 30 Dec–1 Jan. The island has few large inns and the New Year plans go early. Easy before Christmas. If the island is full, sleep in Hiroshima and come over on the 30th or 31st.",
+      "tiers": {
+        "budget": [
+          100000,
+          150000
+        ],
+        "mid": [
+          150000,
+          240000
+        ],
+        "top": [
+          280000,
+          450000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Miyajima Grand Hotel Arimoto",
+          "url": "https://www.miyajima-arimoto.co.jp/",
+          "tier": "mid",
+          "area": "Minamimachi, near the shrine",
+          "what": "Calls itself the island's oldest inn, over 400 years old. Japanese-Western rooms of up to 99 m², with two beds and futons for six.",
+          "price": "About ¥130,000–180,000 for six with meals; 50–100% more for 30–31 Dec",
+          "fit": "Beds in the Japanese-Western rooms. Booking sites list a lift; confirm it.",
+          "verified": true
+        },
+        {
+          "name": "Itsukushima Iroha",
+          "url": "https://www.ikyu.com/en-us/00001685/",
+          "tier": "top",
+          "area": "On Omotesando, facing the strait",
+          "what": "Fifteen rooms of about 50 m² for up to four, some with twin beds, and a rooftop bath that looks across the water to the torii.",
+          "price": "From about ¥50,000 per person with dinner and breakfast, so roughly ¥300,000 for six",
+          "fit": "Twin beds, lift.",
+          "verified": true
+        },
+        {
+          "name": "Iwaso",
+          "url": "https://www.ikyu.com/en-us/00001178/",
+          "tier": "top",
+          "area": "Momijidani, about 300 m behind the shrine",
+          "what": "Founded in 1854 and one of the few inns on the island with its own hot spring. There is a main building, a new building and cottages; a corner room in the new building takes two to six.",
+          "price": "From about ¥25,000 per person without meals; with kaiseki, roughly ¥250,000–380,000 for six",
+          "fit": "Japanese rooms with futons. There are lifts, and the new building is step-free from the entrance.",
+          "verified": true
+        }
+      ]
+    },
+    "shirahama": {
+      "type": "ryokan",
+      "why": "Shirahama's big onsen hotels sell half board, and over New Year, when the town's restaurants close, the hotel dinner is the easy answer. Choose one with a lift, beds and a private or in-room bath for Fernanda.",
+      "fit": "Three rooms or suites for two, plus a single, or two Japanese-style rooms for three or four.",
+      "outlook": "Tight for 30 Dec–1 Jan, because the coast is a favourite Kansai New Year escape. Open before Christmas and after 4 Jan.",
+      "tiers": {
+        "budget": [
+          100000,
+          150000
+        ],
+        "mid": [
+          150000,
+          280000
+        ],
+        "top": [
+          350000,
+          600000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hotel Kawakyu",
+          "url": "https://www.ikyu.com/en-us/00000557/",
+          "tier": "mid",
+          "area": "On the bay",
+          "what": "A grand palace-style hotel where every room is a suite of 66–70 m² for two or three. Dinner is a buffet, and a few suites have their own open-air bath.",
+          "price": "From about ¥50,000 for two with dinner and breakfast, so roughly ¥150,000–250,000 for six; more at New Year",
+          "fit": "Twin beds in every suite.",
+          "verified": true
+        },
+        {
+          "name": "Shirahama Coganoi Resort & Spa",
+          "url": "https://www.ikyu.com/en-us/00000708/",
+          "tier": "mid",
+          "area": "Above the sea; free shuttle from JR Shirahama",
+          "what": "Kaiseki at its restaurant, with a lighter-portion course. Sea-view rooms with balconies, including a two-room Japanese suite (10 + 6 tatami), and an open-air bath above a wide pool of water.",
+          "price": "Roughly ¥180,000–280,000 for six with meals",
+          "fit": "Twin rooms and Japanese rooms; ask for beds.",
+          "verified": true
+        },
+        {
+          "name": "Nanki-Shirahama Marriott Hotel",
+          "url": "https://www.ikyu.com/en-us/00002411/",
+          "tier": "budget",
+          "area": "Shirahama town",
+          "what": "Japanese-style rooms of 42 m² for up to four, with garden or sea views; some rooms have an onsen bath. Dinner plans in the restaurant.",
+          "price": "From about ¥21,000–26,000 a room without meals; roughly ¥110,000–160,000 for six with dinner",
+          "fit": "Beds in the twin rooms; ask about the Japanese rooms.",
+          "verified": true
+        }
+      ]
+    },
+    "nagano": {
+      "type": "hotel",
+      "why": "Nagano is a base for day trips, so a hotel by the station makes sense. Trains to the monkeys, Matsumoto and the ski villages leave from the door, and taxis wait outside.",
+      "fit": "Three or four rooms: a twin for each couple and a single for Tatiana. Everything has lifts and beds.",
+      "outlook": "Open before Christmas. The ski weeks and New Year fill sooner.",
+      "tiers": {
+        "budget": [
+          40000,
+          60000
+        ],
+        "mid": [
+          60000,
+          100000
+        ],
+        "top": [
+          110000,
+          180000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hotel Metropolitan Nagano",
+          "url": "https://nagano.metropolitan.jp/",
+          "tier": "mid",
+          "area": "Joined to Nagano station",
+          "what": "A JR hotel with twin rooms of about 25 m², several restaurants and a bar, and the shinkansen downstairs.",
+          "price": "About ¥60,000–100,000 for three twins",
+          "fit": "Beds, lift, and no walking on ice to the train.",
+          "verified": true
+        },
+        {
+          "name": "Dormy Inn Nagano",
+          "url": "https://dormy-hotels.com/dormyinn/hotels/nagano/",
+          "tier": "budget",
+          "area": "A few minutes' walk from the station",
+          "what": "A business hotel with a natural hot-spring bath on the top floor, including an open-air pool, and free late-night ramen.",
+          "price": "About ¥40,000–60,000 for three rooms",
+          "fit": "Small rooms, lift. The shared bath is for the others; Fernanda has her room's bathroom.",
+          "verified": false
+        },
+        {
+          "name": "Fuchinobo",
+          "url": "https://www.fun-japan.jp/en/articles/14395",
+          "tier": "budget",
+          "area": "On the approach to Zenko-ji",
+          "what": "One of the 39 temple lodgings at Zenko-ji, with lockable rooms (one has three tatami bedrooms and a sitting room) and the dawn service a short walk away.",
+          "price": "Priced per person; ask by email",
+          "fit": "Futons, and shared baths in the basement. One night for the experience, not for Fernanda.",
+          "verified": true
+        }
+      ]
+    },
+    "arima": {
+      "type": "ryokan",
+      "why": "Arima is a ryokan town: the inn's own baths, dinner and breakfast are the stay. Book one with private baths so Fernanda can soak briefly at a temperature she likes; the gold water runs hot.",
+      "fit": "Two or three rooms. Arima Grand Hotel has a Japanese-Western room for six with two beds and four futons, plus a twin for the seventh.",
+      "outlook": "The large houses should have room after 2 Jan. New Year nights (31 Dec–2 Jan) come with special plans and prices, and the small, famous inns go early.",
+      "tiers": {
+        "budget": [
+          130000,
+          180000
+        ],
+        "mid": [
+          180000,
+          300000
+        ],
+        "top": [
+          380000,
+          700000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hyoe Koyokaku",
+          "url": "https://www.hyoe.co.jp/",
+          "tier": "mid",
+          "area": "Centre of town, five minutes' walk from the bus terminal",
+          "what": "A large inn with 126 rooms and some 700 years of history. Nine baths of gold and silver water, plus two private open-air baths to book (¥3,200–4,200 for 50 minutes). A corner suite opened in 2024.",
+          "price": "¥25,900–109,000 per person with meals, so about ¥160,000–300,000 for six",
+          "fit": "Mostly Japanese rooms; ask for beds and a room near the lift.",
+          "verified": true
+        },
+        {
+          "name": "Arima Grand Hotel",
+          "url": "https://www.arima-gh.jp/",
+          "tier": "mid",
+          "area": "Above the town",
+          "what": "Japanese-Western rooms for six (two beds and four futons, about 87 m²), private baths and a private spa, and kaiseki plans with Kobe beef.",
+          "price": "About ¥180,000–280,000 for six with meals",
+          "fit": "Two beds in each family room; lift.",
+          "verified": true
+        },
+        {
+          "name": "Taketoritei Maruyama",
+          "url": "https://selected-ryokan.com/ryokan/taketori-tei-maruyama_arima_hyogo_kansai.html",
+          "tier": "top",
+          "area": "Quiet edge of town, short shuttle from the bus terminal",
+          "what": "Thirty rooms, five with open-air baths and eight with indoor baths, and eight private baths free for 45 minutes.",
+          "price": "¥62,200–171,000 per person with meals, so ¥380,000 or more for six",
+          "fit": "A small luxury inn; ask about stairs and beds.",
+          "verified": true
+        }
+      ]
+    },
+    "osaka": {
+      "type": "hotel",
+      "why": "Osaka copes with New Year better than Kyoto: the chain restaurants and Dotonbori stay open, and the food halls are back from the 2nd. An apartment hotel in Namba puts Dotonbori, Kuromon and the Kintetsu line to Nara on the doorstep, with a kitchen and a washer for a long stay.",
+      "fit": "One three-bedroom suite for six plus a room for Tatiana, or two triples and a single. Everything has lifts and beds.",
+      "outlook": "Open at all tiers. New Year's Eve and the USJ countdown push Namba prices up on the 31st.",
+      "tiers": {
+        "budget": [
+          45000,
+          75000
+        ],
+        "mid": [
+          75000,
+          130000
+        ],
+        "top": [
+          180000,
+          400000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "MIMARU Osaka Namba Station Annex",
+          "url": "https://mimaruhotels.com/en/hotel/namba-station-annex/",
+          "tier": "mid",
+          "area": "Nippombashi, five minutes from Namba",
+          "what": "The Sky Garden suite: 100 m², three bedrooms with six single beds, a bath and a shower room, two toilets, a kitchen and a washer-dryer. Six minutes to the Kintetsu line for Nara.",
+          "price": "About ¥70,000–120,000 for the suite, plus a room for the seventh",
+          "fit": "Beds, lift, kitchen. Book a second, smaller unit for Tatiana.",
+          "verified": true
+        },
+        {
+          "name": "Cross Hotel Osaka",
+          "url": "https://www.hotels.com/ho258142/cross-hotel-osaka-osaka-japan/",
+          "tier": "budget",
+          "area": "Shinsaibashi-suji, a minute from Dotonbori",
+          "what": "A design hotel with triple rooms of about 27 m² (three beds side by side) and a tub in each bathroom.",
+          "price": "About ¥20,000–35,000 a room",
+          "fit": "Beds, lift. Two triples and a single cover all seven.",
+          "verified": false
+        }
+      ]
+    },
+    "nara": {
+      "type": "rental",
+      "why": "For more than one night, a house gives a kitchen and a table for seven while restaurants close on 1–3 Jan, and puts you in the park before the day visitors arrive. For a single night, a hotel by the park is simpler.",
+      "fit": "A house with three or four bedrooms and beds; check there is a ground-floor bedroom for Fernanda. Nara has few houses this size, so the fallback is three rooms at a hotel.",
+      "outlook": "Few large houses, so book early for New Year. Hotels have room; the business hotels near the stations are the fallback.",
+      "tiers": {
+        "budget": [
+          50000,
+          80000
+        ],
+        "mid": [
+          90000,
+          160000
+        ],
+        "top": [
+          180000,
+          350000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "KONJAKUSO Nara Kitamachi \"MANAKA\"",
+          "url": "https://www.ikyu.com/en-us/00052798/",
+          "tier": "top",
+          "area": "Kitamachi, near Todai-ji; 10 minutes' walk from Kintetsu Nara",
+          "what": "A whole house of 188 m² with four bedrooms and eight beds, an open-air Shigaraki-ware tub in the courtyard, and a washer-dryer.",
+          "price": "From about ¥111,600 a night for two without meals; expect ¥180,000–300,000 for six",
+          "fit": "Beds; not step-free, so check where the bedrooms are.",
+          "verified": true
+        },
+        {
+          "name": "Nara Hotel",
+          "url": "https://jrwest-hotels.jp/narahotel/",
+          "tier": "top",
+          "area": "On the edge of Nara Park",
+          "what": "A 1909 hotel by Kingo Tatsuno in cypress wood. The West building was renewed in 2026.",
+          "price": "About ¥120,000–250,000 for three rooms",
+          "fit": "Beds. Ask for the West building if the lift matters.",
+          "verified": true
+        },
+        {
+          "name": "Hotel Fujita Nara",
+          "url": "https://en.japantravel.com/nara/hotel-fujita-nara/564",
+          "tier": "budget",
+          "area": "Sanjo-dori, five minutes from JR Nara",
+          "what": "A plain business hotel on the main street to the park, with twins that take an extra bed and a few triples.",
+          "price": "About ¥40,000–70,000 for three rooms",
+          "fit": "Beds, lift.",
+          "verified": true
+        }
+      ]
+    },
+    "kamakura": {
+      "type": "hotel",
+      "why": "Kamakura is small and goes to bed early, so a hotel with a restaurant matters more than a kitchen. By the sea at Shichirigahama you see Fuji at sunset on clear days; by the station you are closer to the temples. Either way Haneda is about an hour.",
+      "fit": "Three twins and a single. Everything has lifts and beds.",
+      "outlook": "Open for 5–9 Jan, once the New Year crowds have gone. Avoid 1–3 Jan.",
+      "tiers": {
+        "budget": [
+          45000,
+          70000
+        ],
+        "mid": [
+          80000,
+          140000
+        ],
+        "top": [
+          180000,
+          300000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Kamakura Prince Hotel",
+          "url": "https://www.princehotels.com/kamakura/",
+          "tier": "mid",
+          "area": "Shichirigahama, on the hill above the beach",
+          "what": "97 rooms, all facing the sea; from the third and fourth floors you look to Enoshima and Fuji. French and Japanese restaurants, and a short walk to the Enoden.",
+          "price": "About ¥90,000–150,000 for three twins",
+          "fit": "Beds, lift.",
+          "verified": true
+        },
+        {
+          "name": "Hotel Metropolitan Kamakura",
+          "url": "https://kamakura.metropolitan.jp/",
+          "tier": "budget",
+          "area": "Two minutes from JR Kamakura's east exit",
+          "what": "A modern hotel in Komachi, among the shops near the station.",
+          "price": "Plans from about ¥22,000 a room, so roughly ¥60,000–100,000 for three",
+          "fit": "Beds, lift; the station is on the doorstep for the airport.",
+          "verified": true
+        }
+      ]
+    },
+    "matsue": {
+      "type": "ryokan",
+      "why": "With restaurants shut over New Year, a lakeside onsen inn makes it easy: dinner and breakfast included, osechi on 1 Jan, and Lake Shinji outside the window. Choose a room with its own bath for Fernanda.",
+      "fit": "Three rooms and a single, or two rooms for three and one for a couple. Naniwa Issui and Minamikan have rooms with private baths; Hotel Ichibata has lake-side triples, beds and a lift.",
+      "outlook": "Probably open. Matsue is far quieter over New Year than the famous onsen towns, but the few rooms with their own baths go first. Check 31 Dec in a browser.",
+      "tiers": {
+        "budget": [
+          130000,
+          200000
+        ],
+        "mid": [
+          200000,
+          330000
+        ],
+        "top": [
+          350000,
+          550000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hotel Ichibata",
+          "url": "https://www.ikyu.com/en-us/00031299/",
+          "tier": "budget",
+          "area": "Shinjiko Onsen, on the lake",
+          "what": "132 rooms, with lake-side triples of 36 m² and a top-floor onsen looking over the lake; a minute from the Ichibata line station.",
+          "price": "Lake-side triples from about ¥18,000 a room without meals; about ¥130,000–200,000 for six with dinner over New Year (estimate)",
+          "fit": "Beds, lift. No private baths: Fernanda would use the shared bath at quiet hours or the room's tub.",
+          "verified": true
+        },
+        {
+          "name": "Naniwa Issui",
+          "url": "https://selected-ryokan.com/ryokan/naniwa-issui_izumo-tamatsukuri-lake-shinji_shimane_chugoku.html",
+          "tier": "mid",
+          "area": "Shinjiko Onsen, on the lake",
+          "what": "25 rooms facing the lake; seven with their own open-air hot-spring bath, plus four designer Minamo rooms with baths; kaiseki of lake fish.",
+          "price": "¥25,700–62,200 per person with dinner and breakfast, so about ¥155,000–375,000 for six; New Year plans cost more",
+          "fit": "Ask for the rooms with private baths, and beds where they have them.",
+          "verified": true
+        },
+        {
+          "name": "Minamikan",
+          "url": "https://www.minami-g.co.jp/minamikan/",
+          "tier": "top",
+          "area": "By the lake, five minutes' walk from the castle",
+          "what": "A garden inn of 19 rooms, some with a bath looking over Lake Shinji; known for its sea-bream rice.",
+          "price": "Not published; expect ¥350,000 or more for six with meals over New Year (estimate)",
+          "fit": "Small and traditional; ask about beds and stairs.",
+          "verified": true
+        }
+      ]
+    },
+    "fukuoka": {
+      "type": "rental",
+      "why": "Over 1–3 Jan most stalls and many restaurants are shut, so a kitchen and a living room help. An apartment near Hakata or Tenjin also puts the yatai a short walk away once they reopen. Three hotel rooms and a single are the easy fallback.",
+      "fit": "An apartment for six to eight with a fourth bed or sofa bed, or three rooms and a single at a station hotel.",
+      "outlook": "Open. Fukuoka is quiet over New Year and city prices barely move; the new Richmond family rooms may go quickly.",
+      "tiers": {
+        "budget": [
+          40000,
+          70000
+        ],
+        "mid": [
+          75000,
+          120000
+        ],
+        "top": [
+          140000,
+          240000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "HOTEL All Stay Hakata Kukodori",
+          "url": "https://www.expedia.com/go/hotel/info/57669052",
+          "tier": "budget",
+          "area": "Hakata, towards the airport",
+          "what": "Seven apartments with kitchenettes and washer-dryers, the largest 71 m² for up to eleven; contactless check-in.",
+          "price": "Roughly ¥40,000–70,000 for the apartment (estimate)",
+          "fit": "Everyone in one unit. No front desk, so no luggage forwarding from the door.",
+          "verified": false
+        },
+        {
+          "name": "Richmond Hotel Fukuoka Tenjin",
+          "url": "https://travel.rakuten.co.jp/HOTEL/56733/56733_std.html",
+          "tier": "budget",
+          "area": "Tenjin, three minutes from Tenjin-Minami station",
+          "what": "Closed for a full refit and due to reopen on 24 Dec 2026, reportedly with new 48 m² family rooms for up to six (four beds, two of them sofa beds).",
+          "price": "Not yet published; Richmond rates are usually modest (estimate ¥50,000–80,000 for six)",
+          "fit": "Beds, lift, front desk. Brand new, but confirm the family rooms exist before counting on them.",
+          "verified": false
+        },
+        {
+          "name": "Hotel Nikko Fukuoka",
+          "url": "https://www.ikyu.com/en-us/00000082/",
+          "tier": "mid",
+          "area": "Three minutes from Hakata station by underground passage",
+          "what": "A large, well-run hotel; twins of 29–35 m² from about ¥27,000 a room.",
+          "price": "About ¥90,000–120,000 for three twins and a single",
+          "fit": "Beds, lift, a front desk for taxis and bags, and under cover all the way to the shinkansen.",
+          "verified": true
+        }
+      ]
+    },
+    "nagoya": {
+      "type": "hotel",
+      "why": "One or two nights on the way through, so a hotel on top of the station: no taxis with bags, and the train out is a lift ride away.",
+      "fit": "Three rooms and a single, or a corner room for three and two twins. GRAND BASE has apartments that sleep seven.",
+      "outlook": "Open. Nagoya is a business city and quiet in the first week of January.",
+      "tiers": {
+        "budget": [
+          40000,
+          65000
+        ],
+        "mid": [
+          70000,
+          110000
+        ],
+        "top": [
+          130000,
+          220000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Nagoya JR Gate Tower Hotel",
+          "url": "https://www.ikyu.com/en-us/00002368/",
+          "tier": "mid",
+          "area": "Above JR Nagoya station",
+          "what": "350 rooms on floors 15–24; doubles from about ¥27,500 and 28 m² twins from about ¥33,000 a room. Some rooms look down on the shinkansen tracks.",
+          "price": "About ¥100,000–130,000 for three twins and a single",
+          "fit": "Beds, lift, under one roof with the trains. Maglev construction may be audible in some rooms.",
+          "verified": true
+        },
+        {
+          "name": "Nagoya Marriott Associa Hotel",
+          "url": "https://www.marriott.com/en-us/hotels/ngodt-nagoya-marriott-associa-hotel/rooms",
+          "tier": "top",
+          "area": "JR Central Towers, above the station",
+          "what": "Rooms on floors 20–49 and a 54 m² family room for four.",
+          "price": "About ¥150,000–220,000 for six (estimate)",
+          "fit": "Beds, lift, and the view.",
+          "verified": true
+        },
+        {
+          "name": "GRAND BASE Nagoya Ekinishi",
+          "url": "https://www.hotels.com/ho1562650400/grand-base-nagoya-ekinishi-nagoya-japan",
+          "tier": "budget",
+          "area": "West side, about ten minutes' walk from the station",
+          "what": "Apartments with kitchens and washing machines; a 40 m² unit for seven and larger three-bedroom units.",
+          "price": "Roughly ¥40,000–65,000 for the apartment (estimate)",
+          "fit": "Everyone together; take a taxi from the station with the bags.",
+          "verified": false
+        }
+      ]
+    },
+    "atami": {
+      "type": "hotel",
+      "why": "For a few nights by the sea, a resort hotel with Japanese-Western family rooms is simpler and cheaper than a ryokan, and dinner can be in town or at the hotel.",
+      "fit": "One large Japanese-Western room for six or seven plus a single, or two family rooms.",
+      "outlook": "Open for the days before New Year; the bay hotels fill for the 25 Dec fireworks, and 31 Dec–2 Jan is tight and dear.",
+      "tiers": {
+        "budget": [
+          55000,
+          90000
+        ],
+        "mid": [
+          90000,
+          150000
+        ],
+        "top": [
+          160000,
+          280000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "KKR Hotel Atami",
+          "url": "https://www.jalan.net/yad327366",
+          "tier": "budget",
+          "area": "Kasuga-cho, near the beach",
+          "what": "A public servants' mutual-aid hotel that also takes the public; a 46 m² Japanese-Western room with a bedroom and six tatami, listed for up to seven.",
+          "price": "About ¥60,000–100,000 for six with breakfast (estimate)",
+          "fit": "Beds and futon in one room, lift. Check that non-members can book these dates.",
+          "verified": false
+        },
+        {
+          "name": "Hotel Sunmi Club",
+          "url": "https://www.ikyu.com/en-us/00906937/",
+          "tier": "mid",
+          "area": "Wadahama, ten minutes by car south of the station",
+          "what": "47 m² Japanese rooms (ten tatami plus six) for up to six, or Japanese-Western rooms with twin beds for up to five; sea-view open-air baths.",
+          "price": "Rooms from about ¥17,000–25,000 for two; about ¥90,000–130,000 for six with breakfast (estimate)",
+          "fit": "Lift. No private baths, so the shared baths at quiet hours.",
+          "verified": true
+        },
+        {
+          "name": "RISONARE Atami",
+          "url": "https://hoshinoresorts.com/en/hotels/risonareatami/",
+          "tier": "top",
+          "area": "Hillside above the town, free shuttle 15 minutes from the station",
+          "what": "Hoshino Resorts' family hotel: 81 rooms, all over 60 m², some for up to six; a seafood buffet or kaiseki with kinmedai. A desk by the station sends bags up.",
+          "price": "About ¥160,000–280,000 for six with dinner (estimate)",
+          "fit": "Beds, lift and room to spread out.",
+          "verified": true
+        }
+      ]
+    },
+    "ise-shima": {
+      "type": "hotel",
+      "why": "The bay-view hotels in Toba have Japanese-Western rooms for families, restaurants that keep going over New Year, and the station a short shuttle away.",
+      "fit": "Two rooms for three and one for a couple, or a tatami room for five and a twin.",
+      "outlook": "Probably open from 1 Jan; the New Year nights themselves are dear, and the Kintetsu seats can sell out before the rooms do.",
+      "tiers": {
+        "budget": [
+          60000,
+          100000
+        ],
+        "mid": [
+          100000,
+          170000
+        ],
+        "top": [
+          180000,
+          320000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Toba Grand Hotel",
+          "url": "https://www.kankomie.or.jp/report/429",
+          "tier": "budget",
+          "area": "Kohama, five minutes by car from Toba station, with a shuttle",
+          "what": "Sea-view baths, 12-tatami ocean-view rooms for five on the top floor, and dinners with Ise lobster in the room or at a buffet.",
+          "price": "About ¥70,000–110,000 for six with breakfast (estimate)",
+          "fit": "Lift; mostly tatami and futon.",
+          "verified": true
+        },
+        {
+          "name": "Toba Hotel International",
+          "url": "https://www.tobahotel.co.jp/",
+          "tier": "mid",
+          "area": "On the hill above Toba Bay, near the station",
+          "what": "Ocean Wing and Harbour Wing rooms and suites, some Japanese-Western for up to five; French and Japanese restaurants.",
+          "price": "About ¥100,000–170,000 for six (estimate)",
+          "fit": "Beds, lift. Some rooms face the hill, so ask for the bay.",
+          "verified": true
+        },
+        {
+          "name": "Shima Kanko Hotel The Classic",
+          "url": "https://www.miyakohotels.ne.jp/shima/",
+          "tier": "top",
+          "area": "Kashikojima, 40 minutes south of Toba by Kintetsu",
+          "what": "The grand old hotel over Ago Bay, known for its French cooking with Ise lobster and abalone; The Bay Suites next door.",
+          "price": "About ¥200,000–320,000 for four rooms (estimate)",
+          "fit": "Beds, lift; the rooms are for two, so four rooms.",
+          "verified": true
+        }
+      ]
+    },
+    "morioka": {
+      "type": "hotel",
+      "why": "A city base for day trips by shinkansen: a hotel joined to the station keeps the cold morning starts short and off the ice.",
+      "fit": "Three rooms and a single, or two triples and a twin.",
+      "outlook": "Open. Morioka is quiet and cheap in December and the city hotels do not sell out.",
+      "tiers": {
+        "budget": [
+          30000,
+          50000
+        ],
+        "mid": [
+          50000,
+          80000
+        ],
+        "top": [
+          85000,
+          130000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hotel Metropolitan Morioka (main building)",
+          "url": "https://www.ikyu.com/en-us/00002108/",
+          "tier": "mid",
+          "area": "Joined to Morioka station through the Fesan building",
+          "what": "190 rooms, some renovated in 2025; the station is a minute away indoors.",
+          "price": "About ¥45,000–70,000 for three twins and a single (estimate)",
+          "fit": "Beds, lift, and no ice between the room and the trains.",
+          "verified": true
+        },
+        {
+          "name": "Hotel Metropolitan Morioka New Wing",
+          "url": "https://www.expedia.co.uk/Morioka-Hotels-Hotel-Metropolitan-Morioka-New-Wing.h72185.Hotel-Information",
+          "tier": "mid",
+          "area": "Three minutes' walk from the station",
+          "what": "The newer, larger wing, with triples of about 30 m²: two beds and a sofa bed.",
+          "price": "About ¥60,000–90,000 for two triples and a twin (estimate)",
+          "fit": "Beds, lift.",
+          "verified": false
+        }
+      ]
+    },
+    "tsunagi": {
+      "type": "ryokan",
+      "why": "The village is the hotels: dinner, breakfast and the bath are the stay. A room with its own open-air bath means Fernanda never crosses ice to reach one.",
+      "fit": "Two or three rooms; ask for lake-side rooms with private baths, and beds where they have them.",
+      "outlook": "Uncertain for 31 Dec: New Year is the busiest time of the year here, and Taikan's eleven rooms with baths go first.",
+      "tiers": {
+        "budget": [
+          100000,
+          150000
+        ],
+        "mid": [
+          150000,
+          250000
+        ],
+        "top": [
+          280000,
+          450000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hotel Shion",
+          "url": "https://www.ikyu.com/en-us/00001197/",
+          "tier": "budget",
+          "area": "On the lake shore",
+          "what": "Lake-side tatami rooms for up to five, twins on the fourth floor, and 63 m² top-floor rooms for up to six; a lakeside rock bath.",
+          "price": "From about ¥12,000 per person with dinner and breakfast on an early-booking plan; about ¥110,000–160,000 for six over New Year (estimate)",
+          "fit": "Lift. Some premium rooms have their own bath, so ask.",
+          "verified": true
+        },
+        {
+          "name": "Nanbu Yumori-no-yado Taikan",
+          "url": "https://selected-ryokan.com/ryokan/nanbu-yumori-no-yado-taikan_tsunagi-oshuku_iwate_tohoku.html",
+          "tier": "mid",
+          "area": "Tsunagi village, by the lake",
+          "what": "120 rooms, eleven with their own open-air bath; a shuttle from Morioka station by booking.",
+          "price": "¥9,000–88,500 per person with dinner and breakfast; about ¥160,000–250,000 for six in rooms with baths over New Year (estimate)",
+          "fit": "Lift; a big hotel with a buffet or kaiseki.",
+          "verified": true
+        },
+        {
+          "name": "Bessou Kakei",
+          "url": "https://www.ikyu.com/en-us/00002348/",
+          "tier": "top",
+          "area": "Tsunagi, set apart from the big hotels",
+          "what": "Six villa suites of 100 m², each with an open-air rock bath and an indoor bath with a view, for up to three.",
+          "price": "From about ¥43,000 per person with dinner and breakfast; about ¥300,000–450,000 for three villas over New Year (estimate)",
+          "fit": "Private and quiet; ask about beds and steps.",
+          "verified": true
+        }
+      ]
+    },
+    "south-tohoku": {
+      "type": "hotel",
+      "why": "A city base for day trips: a hotel by the station keeps Matsushima's train and the shinkansen a short walk away.",
+      "fit": "Two four-bed family rooms at The Base, or three rooms and a single.",
+      "outlook": "Open. Sendai has plenty of rooms in December; the Pageant weekends are the busiest.",
+      "tiers": {
+        "budget": [
+          35000,
+          60000
+        ],
+        "mid": [
+          60000,
+          95000
+        ],
+        "top": [
+          100000,
+          170000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hotel Metropolitan The Base Sendai",
+          "url": "https://www.ikyu.com/en-us/00082745/",
+          "tier": "budget",
+          "area": "Two minutes from the station's west exit",
+          "what": "Opened in April 2026: 56 rooms, including four-bed family rooms (flat beds or bunks) with a microwave, fridge and tableware.",
+          "price": "Twins from about ¥12,000; about ¥40,000–65,000 for two four-bed rooms (estimate)",
+          "fit": "Beds, lift; two family rooms sleep all seven. Ask for flat beds, not bunks, for Fernanda and the parents.",
+          "verified": true
+        },
+        {
+          "name": "Hotel Metropolitan Sendai East",
+          "url": "https://www.ikyu.com/en-us/00002418/",
+          "tier": "mid",
+          "area": "By the station's east exit",
+          "what": "282 rooms, with superior triples of 34 m².",
+          "price": "About ¥60,000–90,000 for two triples and a single (estimate)",
+          "fit": "Beds, lift.",
+          "verified": true
+        },
+        {
+          "name": "The Westin Sendai",
+          "url": "https://www.ikyu.com/en-us/00001632/",
+          "tier": "top",
+          "area": "Ichibancho, ten minutes' walk or one subway stop from the station",
+          "what": "Rooms averaging about 43 m² on floors 28–36, high over the city.",
+          "price": "About ¥110,000–170,000 for four rooms (estimate)",
+          "fit": "Beds, lift, big bathrooms.",
+          "verified": true
+        }
+      ]
+    },
+    "north-tohoku": {
+      "type": "hotel",
+      "why": "A city hotel near Aomori station keeps the snowy walks short and the trains to Hirosaki and Shin-Aomori close, with restaurants and food halls nearby once the town reopens after 1 Jan.",
+      "fit": "Three rooms and a single, or the Yasukata villa suite for all seven.",
+      "outlook": "Open. Aomori is cheap, and New Year barely moves the prices.",
+      "tiers": {
+        "budget": [
+          30000,
+          55000
+        ],
+        "mid": [
+          55000,
+          85000
+        ],
+        "top": [
+          90000,
+          150000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Tsunageru Aomori Yasukata VillaSuite",
+          "url": "https://www.ikyu.com/en-us/00914999/",
+          "tier": "budget",
+          "area": "Yasukata, about ten minutes' walk from Aomori station",
+          "what": "An 89 m² suite with three bedrooms and a big living room for up to nine, renovated in 2023, with self-catering; also 50 m² Japanese-Western rooms for five.",
+          "price": "From about ¥28,000 a night for the suite, room only",
+          "fit": "All seven together with a kitchen; take a taxi in the snow.",
+          "verified": true
+        },
+        {
+          "name": "Hotel JAL City Aomori",
+          "url": "https://www.ikyu.com/en-us/00080138/",
+          "tier": "mid",
+          "area": "Six minutes' walk from Aomori station, by the bay",
+          "what": "167 rooms, some facing the bay and the Bay Bridge, partly renovated in 2025 with Tsugaru kogin stitching.",
+          "price": "About ¥45,000–75,000 for three twins and a single (estimate)",
+          "fit": "Beds, lift, a front desk.",
+          "verified": true
+        }
+      ]
+    },
+    "shuzenji": {
+      "type": "ryokan",
+      "why": "Shuzenji is an onsen town where the inn is the evening: dinner, breakfast and a bath. Over New Year, with little open in the village, dinner at the inn every night is the simple answer. Choose a room with its own bath for Fernanda.",
+      "fit": "Two or three rooms at one inn, at least one with beds and a private bath. Arai has a 116 m² river-view room for six.",
+      "outlook": "Tight for 31 Dec–2 Jan: the small inns load New Year plans early and the rooms with baths go first. 28–30 Dec is easier.",
+      "tiers": {
+        "budget": [
+          110000,
+          170000
+        ],
+        "mid": [
+          190000,
+          320000
+        ],
+        "top": [
+          350000,
+          600000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Breezbay Shuzenji Hotel",
+          "url": "https://www.ikyu.com/en-us/00900615/",
+          "tier": "budget",
+          "area": "Hillside, ten minutes by car from Shuzenji station",
+          "what": "Japanese-Western rooms with twin beds and tatami for up to four; a private bath to book and a large public bath.",
+          "price": "From about ¥12,000 a room without meals; about ¥110,000–170,000 for six with dinner over New Year (estimate)",
+          "fit": "Beds. Outside the village, so taxis for the bamboo path.",
+          "verified": true
+        },
+        {
+          "name": "Tofuya Resort & Spa-Izu",
+          "url": "https://selected-ryokan.com/ryokan/tofuya-resort-spa_izu-shuzenji_shizuoka_tokyo-suburbs.html",
+          "tier": "mid",
+          "area": "Yoshina, in the onsen village",
+          "what": "30 rooms, 23 with their own open-air hot-spring bath, in Japanese, Japanese-Western and Western styles.",
+          "price": "¥30,800–78,200 per person with dinner and breakfast; about ¥190,000–320,000 for six in the standard rooms, more over New Year",
+          "fit": "Ask for Japanese-Western rooms with beds and a bath.",
+          "verified": true
+        },
+        {
+          "name": "Arai Ryokan",
+          "url": "https://www.expedia.com/Izu-Hotels-Arai-Ryokan.h3130597.Hotel-Information",
+          "tier": "top",
+          "area": "On the river in the village centre",
+          "what": "An inn from 1872 whose wooden buildings are listed cultural properties; a 116 m² river-view room for six, renovated in 2023.",
+          "price": "About ¥350,000–550,000 for six with meals over New Year (estimate)",
+          "fit": "Historic: tatami and futon, stairs in parts.",
+          "verified": false
+        }
+      ]
     }
   }
 }
