@@ -35,7 +35,7 @@ export function StayLodging({ stay, region, defaultOpen = false }: { stay: Stay;
             <>
               <p className="text-ink-2">
                 <b>Why a {LODGING_TYPES[info.type].label.toLowerCase()}:</b> {info.why}
-                {differs ? <span className="text-warn"> This version sets a {type.label.toLowerCase()} here instead.</span> : null}
+                {differs ? <span className="text-warn"> This route sets a {type.label.toLowerCase()} here instead.</span> : null}
               </p>
               <p className="text-ink-2">
                 <b>For six:</b> {info.fit} <b>Outlook:</b> {info.outlook}

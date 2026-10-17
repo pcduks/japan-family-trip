@@ -103,7 +103,7 @@ export function Planner({ version, onSuggest, onDraft, keepTotal }: { version: V
         setForked(true);
         await saveVersion(mine);
         setStatus("saved");
-        setToast(demo ? "This is now your own version (demo: this browser only)." : "This is now your own version. Shape it, then suggest it to the plan.");
+        setToast(demo ? "This is now your own route (demo: this browser only)." : "This is now your own route. Shape it, save it, then send it from its page.");
         router.replace(`/routes/${mine.id}`);
       } catch {
         setStatus("error");

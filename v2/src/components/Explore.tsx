@@ -61,9 +61,9 @@ export function Explore() {
       <section className="grid gap-2 pt-1">
         <p className="eyebrow">{fmtDay(snapshot.trip.start, false)} – {fmtDay(snapshot.trip.end, false)} · {snapshot.trip.nights} nights · {snapshot.travellers.length} of us</p>
         <h1 className="display text-[2.4rem] leading-[1.02] sm:text-5xl">
-          Japan, <em className="text-accent not-italic">researched</em>
+          Places
         </h1>
-        <p className="max-w-prose text-ink-2">{intro.split(". ").slice(0, 3).join(". ")}. Tap any area to see what it is known for, what it is like in our dates, and why it is in or out. Or see <Link href="/places/list">every place as a list</Link>.</p>
+        <p className="max-w-prose text-ink-2">{intro.split(". ").slice(0, 2).join(". ")}. {regions.length} areas made the long list. Tap any area to see what it is known for, what it is like in our dates, and why it is in or out. Or see <Link href="/places/list">every place as a list</Link>.</p>
       </section>
 
       <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4">
@@ -152,7 +152,7 @@ export function Explore() {
         );
       })}
 
-      <WishBox targetId="trip" title="Something missing?" hint="A place you want to see, a thing you want to do, a worry. One line is enough; Pedro and Fernanda read them all." />
+      <WishBox targetId="trip" title="Something missing?" />
 
       <p className="text-sm text-muted">
         Everything here comes from nine research reports written in October 2026 and the route that followed; each area page links to its sources. <Link href="/plan">The full report</Link> · <Link href="/guide">How this app works</Link>

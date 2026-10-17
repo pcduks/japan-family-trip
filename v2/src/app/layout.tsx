@@ -15,7 +15,7 @@ const body = Figtree({ subsets: ["latin"], weight: ["400", "500", "600", "700"],
 
 export const metadata: Metadata = {
   title: "Japan, winter 2026",
-  description: "Our winter trip to Japan, 20 Dec 2026 – 9 Jan 2027: versions, votes, places and the map.",
+  description: "Our winter trip to Japan, 20 Dec 2026 – 9 Jan 2027: the route, the other routes, the places and the food.",
   robots: { index: false, follow: false },
 };
 

@@ -39,8 +39,9 @@ interface DemoState {
   history: PlanHistoryEntry[];
   planOverride: Version | null;
   rankRevealed: boolean;
+  doneDeadlines: string[];
 }
-const EMPTY_DEMO: DemoState = { versions: [], votes: [], suggestions: [], comments: [], reactions: [], history: [], planOverride: null, rankRevealed: false };
+const EMPTY_DEMO: DemoState = { versions: [], votes: [], suggestions: [], comments: [], reactions: [], history: [], planOverride: null, rankRevealed: false, doneDeadlines: [] };
 const demoStore = localStore<DemoState>("jp-demo", EMPTY_DEMO, (raw) => ({ ...EMPTY_DEMO, ...(raw as Partial<DemoState>) }));
 const demoMe = localStore<string | null>("jp-demo-me", null);
 
@@ -66,6 +67,7 @@ export interface Store {
   decideSuggestion: (id: string, decision: "accepted" | "declined") => Promise<void>;
   withdrawSuggestion: (id: string) => Promise<void>;
   revertHistory: (id: string) => Promise<void>;
+  setDeadlineDone: (id: string, done: boolean) => Promise<void>;
   addComment: (targetType: Comment["target_type"], targetId: string, body: string) => Promise<void>;
   toggleReaction: (targetType: string, targetId: string, kind: Reaction["kind"]) => Promise<void>;
 }
@@ -161,7 +163,8 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     if (sb) return remote;
     // Demo: overlay local edits on the bundled file.
     const versions = initial.versions.map((v) => (v.status === "plan" && demoState.planOverride ? demoState.planOverride : v)).concat(demoState.versions);
-    return { ...initial, versions, votes: demoState.votes, suggestions: demoState.suggestions, comments: demoState.comments, reactions: demoState.reactions, history: demoState.history };
+    const deadlines = initial.deadlines.map((d) => (d.id && demoState.doneDeadlines.includes(d.id) ? { ...d, done: true } : d));
+    return { ...initial, versions, deadlines, votes: demoState.votes, suggestions: demoState.suggestions, comments: demoState.comments, reactions: demoState.reactions, history: demoState.history };
   }, [sb, remote, initial, demoState]);
 
   const rankRevealed = sb
@@ -306,6 +309,14 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     [sb, run, snapshot.versions, me],
   );
 
+  const setDeadlineDone = useCallback(
+    async (id: string, done: boolean) => {
+      if (!sb) return patchDemo((d) => ({ ...d, doneDeadlines: done ? [...d.doneDeadlines.filter((x) => x !== id), id] : d.doneDeadlines.filter((x) => x !== id) }));
+      await run("setDeadlineDone", { id, done });
+    },
+    [sb, run],
+  );
+
   const addComment = useCallback(
     async (targetType: Comment["target_type"], targetId: string, body: string) => {
       const who = me;
@@ -353,6 +364,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     decideSuggestion,
     withdrawSuggestion,
     revertHistory,
+    setDeadlineDone,
     addComment,
     toggleReaction,
   };

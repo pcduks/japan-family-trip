@@ -15,6 +15,7 @@
  */
 import dayPlans from "../../data/day-plans.json";
 import { dateRange, weekday } from "./dates";
+import { stillAsWritten } from "./guide";
 import { legBetween } from "./legs";
 import type { Crew, Day, DayItem, DaySlot, Place, Snapshot, Stay, Version } from "./types";
 
@@ -87,8 +88,9 @@ export function planDays(v: Pick<Version, "id" | "stays" | "parent_version_id">,
   const peak = new Set(snap.calendar.peak_travel_days);
   const plan = snap.versions.find((x) => x.status === "plan");
   // Written routes to borrow days from, nearest first: this route, where it started, the plan, then the rest.
+  // Only routes whose stops are still the ones their days were written for: a changed route's stored days describe old stops.
   const refs = [snap.versions.find((x) => x.id === v.id), snap.versions.find((x) => x.id === v.parent_version_id), plan, ...snap.versions.filter((x) => x.status === "alternative")].filter(
-    (x, k, all): x is Version => !!x && x.status !== "personal" && all.findIndex((y) => y?.id === x.id) === k,
+    (x, k, all): x is Version => !!x && x.status !== "personal" && all.findIndex((y) => y?.id === x.id) === k && stillAsWritten(x.id, x.stays),
   );
   const used = new Set<DayPlan>();
   const out: PlannedDay[] = [];
@@ -198,4 +200,25 @@ function kindOf(dp: DayPlan, moving: boolean): string {
 
 function fromDb(d: Day): Omit<PlannedDay, "date" | "stayIndex" | "region"> {
   return { kind: d.kind ?? "Explore", title: d.title ?? "", items: d.items, forHer: null, source: "written" };
+}
+
+export interface Visit {
+  date: string;
+  slot: DaySlot;
+  crew: Crew;
+  note: string | null;
+}
+
+const VISITS = new WeakMap<object, Map<string, Visit[]>>();
+
+/** Where the route's days go, place by place, as the route is now. Cached per snapshot. */
+export function routeVisits(snap: Snap): Map<string, Visit[]> {
+  const hit = VISITS.get(snap.versions);
+  if (hit) return hit;
+  const plan = snap.versions.find((v) => v.status === "plan");
+  const out = new Map<string, Visit[]>();
+  for (const d of plan ? planDays(plan, snap) : [])
+    for (const it of d.items) if (it.place_id) out.set(it.place_id, [...(out.get(it.place_id) ?? []), { date: d.date, slot: it.slot, crew: it.crew, note: it.note ?? null }]);
+  VISITS.set(snap.versions, out);
+  return out;
 }

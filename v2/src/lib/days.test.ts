@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { bundledPlanDays, tripData } from "./data/file";
-import { planDays } from "./days";
+import { guideFor } from "./autoGuide";
+import { planDays, routeVisits } from "./days";
 import { relayout } from "./versions";
 import type { Version } from "./types";
 
@@ -55,5 +56,24 @@ describe("the days follow the route", () => {
     expect(days.find((d) => d.date === "2027-01-05")?.region).toBe("kyoto");
     expect(new Set(days.map((d) => d.title)).size).toBe(21);
     expect(days.filter((d) => NEW_YEAR(d.date) && d.kind === "Day trip" && d.region !== "kyoto")).toEqual([]);
+  });
+});
+
+describe("what follows a change to the route", () => {
+  it("places on the route come from the route's days as they are now", () => {
+    expect(routeVisits(snap).get("tokyo-tsukiji")?.map((x) => x.date)).toContain("2026-12-21");
+    const snow = data.versions.find((v) => v.id === "deep-snow-country")!;
+    const changed = { ...snap, versions: snap.versions.map((v) => (v.status === "plan" ? { ...v, stays: snow.stays } : v)) };
+    expect(routeVisits(changed).get("kanazawa-kenrokuen") ?? routeVisits(changed).size).toBeTruthy();
+    expect([...routeVisits(changed).keys()].some((id) => id.startsWith("nagano"))).toBe(true);
+  });
+
+  it("a changed route is named by its places and says what changed, not the old story", () => {
+    const snow = data.versions.find((v) => v.id === "deep-snow-country")!;
+    const g = guideFor({ ...plan, stays: snow.stays }, { ...snap, travellers: [] });
+    expect(g.written).toBe(false);
+    expect(g.theme).toBe("Tokyo, Nagano, Takayama, Okuhida, Kanazawa");
+    expect(g.why).toMatch(/changed since it was written/);
+    expect(guideFor(plan, { ...snap, travellers: [] }).written).toBe(true);
   });
 });

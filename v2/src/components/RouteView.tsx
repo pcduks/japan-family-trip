@@ -6,30 +6,33 @@ import { useMotionValue, useMotionValueEvent, type MotionValue } from "motion/re
 import { regionColor } from "@/lib/colors";
 import { travelAt } from "@/lib/journey";
 import why from "../../data/why.json";
-import { budgetOf, BUDGET_RATES, fmtJpyShort, fmtSgd, jpyToSgd, stayCost } from "@/lib/budget";
+import { budgetOf, fmtSgd } from "@/lib/budget";
 import { fmtRange } from "@/lib/dates";
 import { planDays } from "@/lib/days";
 import { avgOutdoorHours, exposure, EXPOSURE_LABEL } from "@/lib/exposure";
 import { IDLE_LABEL, stayNote, stayTradeoff } from "@/lib/guide";
-import { LODGING_TYPES } from "@/lib/lodging";
 import type { Place, Version } from "@/lib/types";
-import { movesOf, paceLabel, statsOf } from "@/lib/versions";
+import { firstName, plannerNames } from "@/lib/people";
+import { describeDiff, movesOf, paceLabel, statsOf } from "@/lib/versions";
 import { guideFor } from "@/lib/autoGuide";
 import { STYLE_LABEL, styleOf } from "@/lib/styles";
 import { BudgetCard } from "./Budget";
+import { Comments } from "./Comments";
 import { fmtLegHours, JourneyMap } from "./JourneyMap";
 import { PictureScroll } from "./PictureScroll";
 import { PlacePrefs } from "./PlacePrefs";
 import { useStore } from "./providers";
 import { RegionCover } from "./RegionCover";
+import { StayLodging } from "./StayLodging";
 import { Back, Empty, Page, RegionDot, Section } from "./ui";
+import { WhatsNext } from "./WhatsNext";
 
 type Src = { label: string; url: string };
 const WHY = why as unknown as { facts: { title: string; text: string; sources: Src[] }[]; route: { intro: string; steps: { region: string; title: string; text: string }[]; sources: Src[] }; for_whom: { who: string; text: string }[]; trust: { points: string[]; links: { label: string; href: string }[] } };
 
 /** A route's page: the map, the 21 days, the stops, and why. With no id it is the route we are taking (the Trip tab). */
 export function RouteView({ id }: { id?: string }) {
-  const { snapshot } = useStore();
+  const { snapshot, me } = useStore();
   const plan = snapshot.versions.find((v) => v.status === "plan");
   const [openFacts, setOpenFacts] = useState<number | null>(null);
   const [feelOpen, setFeelOpen] = useState(false);
@@ -53,6 +56,14 @@ export function RouteView({ id }: { id?: string }) {
     const pinned = wide ? 0 : (stickyRef.current?.offsetHeight ?? 0);
     window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - pinned - 20, behavior: "smooth" });
   }, [wide]);
+  // A link to a stop (/#stop-3) opens that stop's card.
+  useEffect(() => {
+    const m = window.location.hash.match(/^#stop-(\d+)$/);
+    const el = m ? document.querySelector<HTMLDetailsElement>(`#stop-${m[1]} details`) : null;
+    if (!el) return;
+    el.open = true;
+    requestAnimationFrame(() => el.scrollIntoView({ block: "start" }));
+  }, []);
   const days = useMemo(() => (found ?? plan ? planDays(found ?? plan!, snapshot) : []), [found, plan, snapshot]);
   if (!plan) return null;
   if (id && !found)
@@ -97,6 +108,8 @@ export function RouteView({ id }: { id?: string }) {
         <p className="max-w-prose text-ink-2">{g.tagline}</p>
       </section>
 
+      {isPlan ? <WhatsNext /> : null}
+
       <div className="grid gap-2">
         <JourneyMap regions={snapshot.regions} stays={v.stays} ghost={isPlan ? null : plan.stays} aspect={wide ? 1.9 : 1.2} onStop={scrollToStop} />
         <p className="text-sm text-muted">
@@ -116,11 +129,13 @@ export function RouteView({ id }: { id?: string }) {
         </div>
       </div>
 
+      {mine && v.owner === me?.travellerId ? <SendRoute v={v} /> : null}
+
       <Section title="The 21 days" aside="tap a day">
         <PictureScroll version={v} onStop={scrollToStop} />
       </Section>
 
-      <Section title="Stop by stop" aside={`${v.stays.length} stops · tap one`}>
+      <Section id="stops" title="Stop by stop" aside={`${v.stays.length} stops · tap one`}>
         <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-start lg:gap-6">
           <div ref={stickyRef} className="sticky top-0 z-[5] -mx-4 mb-3 bg-gradient-to-b from-bg from-80% to-transparent px-3 pt-2 pb-4 lg:order-2 lg:top-6 lg:mx-0 lg:bg-none lg:p-0">
             <JourneyMap regions={snapshot.regions} stays={v.stays} t={t} aspect={wide ? 1.05 : 1.9} onStop={scrollToStop} label="The route, following the stop you are reading" />
@@ -128,7 +143,6 @@ export function RouteView({ id }: { id?: string }) {
           <ol ref={listRef} className="grid gap-2">
             {v.stays.map((s, i) => {
               const text = steps(s.region, i);
-              const cost = stayCost(s);
               const leg = moves.find((m) => m.index === i);
               const tr = stayTradeoff(v.id, v.stays, i);
               const { places, days: placeDays } = placesFor(i);
@@ -166,10 +180,8 @@ export function RouteView({ id }: { id?: string }) {
                       </span>
                     </summary>
                     <div className="grid gap-2 border-t border-rule px-3 py-3 text-sm">
-                      <p className="text-xs text-muted">
-                        {LODGING_TYPES[cost.lodging].label} · about {fmtJpyShort(cost.perNight)} a night for the group · {fmtSgd(jpyToSgd(cost.total / BUDGET_RATES.couples))} per couple
-                        {outside != null ? ` · about ${outside} h outdoors a day` : ""}
-                      </p>
+                      <StayLodging stay={s} region={snapshot.regions.find((r) => r.id === s.region)} />
+                      {outside != null ? <p className="text-xs text-muted">About {outside} h outdoors a day on this stop’s days.</p> : null}
                       {tr ? (
                         <div className="grid gap-1">
                           <p className="flex flex-wrap items-center gap-2">
@@ -294,7 +306,62 @@ export function RouteView({ id }: { id?: string }) {
       </Section>
 
       <BudgetCard v={v} regions={snapshot.regions} regionName={regionName} title="What it costs, per couple" />
+
+      <Comments targetType="version" targetId={v.id} />
     </Page>
+  );
+}
+
+/** A route someone built, sent to the planners: they make it the route, or keep it as an idea. */
+function SendRoute({ v }: { v: Version }) {
+  const { snapshot, suggest, withdrawSuggestion } = useStore();
+  const [note, setNote] = useState("");
+  const [busy, setBusy] = useState(false);
+  const plan = snapshot.versions.find((x) => x.status === "plan");
+  const planners = plannerNames(snapshot.travellers);
+  const sent = snapshot.suggestions.find((x) => x.from_version_id === v.id);
+  const run = async (fn: () => Promise<void>) => {
+    setBusy(true);
+    try {
+      await fn();
+    } finally {
+      setBusy(false);
+    }
+  };
+  if (sent?.status === "open")
+    return (
+      <div className="card flex flex-wrap items-center justify-between gap-2 border-accent/40 p-3 text-sm">
+        <span>
+          <b>Sent to {planners}.</b> It is in their inbox.
+        </span>
+        <button className="btn btn-sm" disabled={busy} onClick={() => run(() => withdrawSuggestion(sent.id))}>
+          Take it back
+        </button>
+      </div>
+    );
+  if (sent?.status === "accepted")
+    return (
+      <p className="card p-3 text-sm">
+        <b>{firstName(snapshot.travellers, sent.decided_by)} made this the route.</b> <Link href="/">See it on Trip →</Link>
+      </p>
+    );
+  return (
+    <form
+      className="card grid gap-2 border-accent/40 p-4"
+      onSubmit={(e) => {
+        e.preventDefault();
+        if (!plan) return;
+        run(() => suggest(v.id, { stays: v.stays, pace: v.pace, summary: describeDiff(plan.stays, v.stays, snapshot.regions) }, note.trim())).then(() => setNote(""));
+      }}
+    >
+      <p className="text-sm">
+        <b>{sent?.status === "declined" ? `${firstName(snapshot.travellers, sent.decided_by)} kept the route as it is for now.` : `Like it? Send it to ${planners}.`}</b> They can make it the route, or keep it as an idea.
+      </p>
+      <input value={note} onChange={(e) => setNote(e.target.value)} placeholder="A line on why (optional)" aria-label="A note for them" maxLength={280} />
+      <button className="btn btn-sm btn-primary justify-self-start" disabled={busy}>
+        {sent?.status === "declined" ? "Send it again" : `Send to ${planners}`}
+      </button>
+    </form>
   );
 }
 

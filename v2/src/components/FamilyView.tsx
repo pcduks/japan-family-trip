@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { plannerNames } from "@/lib/people";
 import { useStore } from "./providers";
 import { Avatar, Back, Page, PageHeader, Section } from "./ui";
 
@@ -40,14 +41,14 @@ export function FamilyView() {
   }
 
   async function remove(tid: string, tname: string) {
-    if (!confirm(`Remove ${tname}? Their votes and versions go too.`)) return;
+    if (!confirm(`Remove ${tname}? Their preferences and routes go too.`)) return;
     const r = await fetch("/api/travellers", { method: "DELETE", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: tid }) });
     if (!r.ok) setMsg((await r.json()).error ?? "Could not remove.");
     await refresh();
   }
 
   async function invite() {
-    const text = `Our Japan trip planner is live: ${location.origin}\nType the family code I sent you, tap your name, and vote on the pace, your two must-dos and the versions before 25 Oct.`;
+    const text = `Our Japan trip planner is live: ${location.origin}\nType the family code I sent you, tap your name, and have a look at the route and the other routes before 25 Oct. Tap Must, Nice or Skip on the places, and send any route you build to ${plannerNames(snapshot.travellers)}.`;
     try {
       if (navigator.share) await navigator.share({ text });
       else {

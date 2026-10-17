@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import foodGuide from "../../data/food-guide.json";
 import { fmtDay } from "@/lib/dates";
+import { routeVisits } from "@/lib/days";
 import type { Place } from "@/lib/types";
 import { useStore } from "./providers";
 import { reportTabForRegion } from "./PlanReport";
@@ -31,10 +32,6 @@ const GUIDE = foodGuide as unknown as {
 /** Which region's food section covers a place's region (Gero sits with Takayama, Nara with Kyoto). */
 const FOOD_REGION: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", kawaguchiko: "kawaguchiko", hakone: "hakone" };
 
-/** Where a meal sits in the plan's day by day, if it does. */
-export function plannedOn(placeId: string, days: { version_id: string; date: string; items: { place_id: string | null; slot: string }[] }[], versionId = "plan"): { date: string; slot: string }[] {
-  return days.filter((d) => d.version_id === versionId).flatMap((d) => d.items.filter((it) => it.place_id === placeId).map((it) => ({ date: d.date, slot: it.slot })));
-}
 
 const TABS = [
   { id: "", label: "How we eat" },
@@ -249,7 +246,7 @@ function ListCard({ title, tone, items }: { title: string; tone: "ok" | "warn" |
 
 export function FoodCard({ p }: { p: Place }) {
   const { snapshot } = useStore();
-  const on = plannedOn(p.id, snapshot.days);
+  const on = routeVisits(snapshot).get(p.id) ?? [];
   const f = p.food ?? {};
   const herNote = f.pregnancy_note && /raw|pregnan|her\b|sushi|sashimi|alcohol|smok|liver|egg|rare/i.test(f.pregnancy_note) ? f.pregnancy_note : null;
   const otherNote = f.pregnancy_note && !herNote ? f.pregnancy_note : null;
@@ -292,7 +289,7 @@ export function FoodCard({ p }: { p: Place }) {
           <Row k="Closed">{[...p.closed_weekdays.map((d) => `${d}s`), ...p.closures.map((c) => `${fmtDay(c.start, false)}–${fmtDay(c.end, false)}`)].join(", ")}</Row>
         ) : null}
         {p.booking ? <Row k="Booking">{p.booking}</Row> : null}
-        <Row k="In the plan">
+        <Row k="On the route">
           {on.length ? <span className="text-ok">{on.map((x) => `${fmtDay(x.date)} (${x.slot})`).join(", ")}</span> : <span className="text-muted">not yet; a candidate near our base</span>}
         </Row>
       </dl>

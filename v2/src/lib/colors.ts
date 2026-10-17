@@ -79,7 +79,7 @@ export function fitColor(status: string): string {
 export function fitLabel(status: string): string {
   switch (status) {
     case "in_plan":
-      return "In the plan";
+      return "On the route";
     case "candidate_fits":
       return "Fits";
     case "option":
