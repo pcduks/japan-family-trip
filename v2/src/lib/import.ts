@@ -192,7 +192,12 @@ export async function importTripData(sb: DB, payload: ImportPayload, actor: stri
 
   if (payload.deadlines?.length) {
     const rows = (payload.deadlines as Deadline[]).map((d, i) => ({ id: d.id ?? `dl-${d.date}-${i}`, date: d.date, item: d.item, source: d.source ?? null }));
-    check("deadlines", await sb.from("deadlines").upsert(rows, { onConflict: "id", ignoreDuplicates: false }));
+    // The file is the list: a tick survives only on the same item, and dates no longer in the file go.
+    const have = check<{ id: string; item: string }[]>("deadlines", await sb.from("deadlines").select("id,item"));
+    const same = new Map(have.map((d) => [d.id, d.item]));
+    check("deadlines", await sb.from("deadlines").upsert(rows.map((r) => (same.get(r.id) === r.item ? r : { ...r, done: false })), { onConflict: "id", ignoreDuplicates: false }));
+    const stale = have.map((d) => d.id).filter((id) => !rows.some((r) => r.id === id));
+    if (stale.length) check("deadlines delete", await sb.from("deadlines").delete().in("id", stale));
     report.deadlines.added = rows.length;
   }
 

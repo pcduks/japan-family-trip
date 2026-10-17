@@ -310,9 +310,9 @@
     },
     "kyoto": {
       "type": "rental",
-      "why": "A living room for the evenings over New Year, when most restaurants are closed 1–3 Jan and department-store basements reopen on the 2nd. Stock the kitchen on arrival. An apartment hotel is the fallback.",
-      "fit": "One machiya for 6–9 with three bedrooms, or a MIMARU SUITES apartment, or two Nazuna houses.",
-      "outlook": "Open for houses and apartment hotels; tight for the famous machiya brands; gone for Nazuna's New Year dinner-plan rooms (¥277,400 per room for 1–3).",
+      "why": "A house in Higashiyama for New Year's Eve: the Okera fire and the bells are a walk away, and buses and the subway do not run all night. A living room and a kitchen cover the days when most restaurants are closed. It also holds the big cases from about 26 Dec.",
+      "fit": "One townhouse for 7 with three bedrooms and beds on the ground floor for Fernanda, or a ryokan for 30–31 Dec with the New Year's Eve dinner plus a second base for 1–5 Jan (about a 10-minute taxi). Ask for the licence number.",
+      "outlook": "The hardest booking of the trip. Houses and apartment hotels were open in October; the famous machiya brands are tight; Nazuna's New Year dinner-plan rooms are gone. Prices are for six; ask again for seven.",
       "tiers": {
         "budget": [
           45000,
@@ -329,21 +329,31 @@
       },
       "candidates": [
         {
-          "name": "Machiya Residence Inn · Mizunoha",
-          "url": "https://www.kyoto-machiya-inn.com/accommodations/",
+          "name": "Kyomachiya Miyabi Kiyomizu Bettei",
+          "url": "https://www.ikyu.com/en-us/00050500/",
           "tier": "mid",
-          "area": "Central Kyoto",
-          "what": "A house for six: two beds, two semi-doubles and two futon.",
-          "price": "¥90,000–170,000 for the house",
-          "fit": "Stairs; beds mostly upstairs, futon can be made up downstairs. Welcome Desk check-in, luggage delivered to the house for ¥500 an item.",
-          "verified": true
+          "area": "Higashiyama, 5 min from Kiyomizu-dera",
+          "what": "A townhouse for up to 8, with 3 bedrooms.",
+          "price": "Not checked; ask",
+          "fit": "Ask about beds on the ground floor, heating and check-in on 30 Dec.",
+          "verified": false
+        },
+        {
+          "name": "Villa Nene-no-michi “Kazeno Heritage”",
+          "url": "https://www.vmg.co.jp/venues/kyoto/",
+          "tier": "top",
+          "area": "Higashiyama, by Kodai-ji",
+          "what": "The former HOTEL VMG Resort Kyoto: a whole villa or suites, a short walk from Kodai-ji's bell.",
+          "price": "¥250,000–600,000 for six (to check for seven)",
+          "fit": "Ask about beds and stairs.",
+          "verified": false
         },
         {
           "name": "Machiya Residence Inn · Hanatoki or Fujinoma",
           "url": "https://www.kyoto-machiya-inn.com/accommodations/",
           "tier": "mid",
           "area": "Central Kyoto",
-          "what": "Houses for eight: two queens plus four futon, more room to spread out.",
+          "what": "Houses for eight: two queens plus four futon. Outside Higashiyama, so a taxi home on New Year's Eve.",
           "price": "¥110,000–170,000 for the house",
           "fit": "Stairs.",
           "verified": true
@@ -353,29 +363,9 @@
           "url": "https://www.tripadvisor.com/Hotel_Review-g298564-d23517530",
           "tier": "mid",
           "area": "Shijo, central",
-          "what": "Apartment-hotel suites for 4–6 with kitchen and laundry; a front desk.",
+          "what": "Apartment-hotel suites for 4–6 with kitchen and laundry; a front desk. Two suites for seven.",
           "price": "From about ¥60,000 per suite",
           "fit": "Beds, lift. The easy fallback.",
-          "verified": true
-        },
-        {
-          "name": "Rinn Rokujo",
-          "url": "https://rinn-kyomachi.com/en/",
-          "tier": "budget",
-          "area": "South of the station area",
-          "what": "Rinn's smaller machiya for six.",
-          "price": "¥45,000–80,000 for the house",
-          "fit": "Stairs.",
-          "verified": true
-        },
-        {
-          "name": "Nazuna Kyoto Gosho",
-          "url": "https://www.ikyu.com/en-us/00002780/",
-          "tier": "top",
-          "area": "By the Imperial Palace",
-          "what": "Two small luxury houses; the Tsubaki St New Year plan is ¥277,400 per room for 1–3 with an 11-course wagyu dinner (free cancellation to 21 days).",
-          "price": "¥250,000–600,000",
-          "fit": "Beds in some rooms; ask.",
           "verified": true
         }
       ]
@@ -516,9 +506,9 @@
     },
     "yudanaka": {
       "type": "ryokan",
-      "why": "A ryokan dinner after the monkeys; Shibu's bath-hopping street is the evening.",
-      "fit": "Two rooms at a larger inn with a lift; the six-room village inns have stairs and are tight.",
-      "outlook": "Open at the larger houses for 23–25 Dec.",
+      "why": "Christmas Eve at a ryokan, with dinner served, then Shibu's lantern lane; the snow monkeys the next morning.",
+      "fit": "Rooms for 7 with beds and a private or in-room bath; a lift. Small historic inns have stairs and futons, so ask before booking.",
+      "outlook": "For 24–26 Dec, not checked yet. The New Year nights are sold out at the small inns, but before Christmas should be easier. Prices are for six; ask again for seven.",
       "tiers": {
         "budget": [
           90000,
@@ -535,23 +525,33 @@
       },
       "candidates": [
         {
+          "name": "Kokuya",
+          "url": "https://www.google.com/search?q=Kokuya+Shibu+Onsen",
+          "tier": "mid",
+          "area": "Shibu Onsen",
+          "what": "Ryokan on the Shibu lane with private baths.",
+          "price": "¥150,000–240,000 for six with meals (to check for seven)",
+          "fit": "Private baths, lift.",
+          "verified": false
+        },
+        {
+          "name": "Kanaguya",
+          "url": "https://www.kanaguya.com/",
+          "tier": "mid",
+          "area": "Shibu Onsen",
+          "what": "A four-storey wooden ryokan on the lantern lane, with rooms for 6. Its own site warns of fake emails, so book only there.",
+          "price": "Not checked; ask",
+          "fit": "Historic building: ask about stairs, beds and a private bath.",
+          "verified": false
+        },
+        {
           "name": "Biyunoyado",
           "url": "https://www.google.com/search?q=Biyunoyado+Yudanaka",
           "tier": "mid",
           "area": "Yudanaka",
-          "what": "Large modern ryokan with a lift and Western-Japanese rooms; takes families at New Year.",
-          "price": "¥150,000–240,000 for six with meals",
+          "what": "Large modern ryokan with a lift, Japanese-Western rooms and a shuttle to the monkey park.",
+          "price": "¥150,000–240,000 for six with meals (to check for seven)",
           "fit": "Beds, lift.",
-          "verified": false
-        },
-        {
-          "name": "Shibu Onsen village inns",
-          "url": "https://www.japan-guide.com/e/e6029.html",
-          "tier": "budget",
-          "area": "Shibu Onsen street",
-          "what": "Small historic inns with the key to the nine public baths.",
-          "price": "¥90,000–140,000",
-          "fit": "Stairs, futon; not for her.",
           "verified": false
         }
       ]

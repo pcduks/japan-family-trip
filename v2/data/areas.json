@@ -54,7 +54,7 @@
       "verdict": {
         "state": "route",
         "headline": "The big, calm city where the trip begins and ends.",
-        "text": "Tokyo is huge but easy, with trains every few minutes, English on every sign, old gardens, great museums, and food from tonkatsu to tempura. We arrive in the week of the Christmas lights, and come back at the end for the museums that were shut over New Year.",
+        "text": "Tokyo is huge but easy, with trains every few minutes, English on every sign, old gardens, great museums, and food from tonkatsu to tempura. We arrive in the week of the Christmas lights, and come back at the end for the museums that were shut in December and a single act of kabuki.",
         "fit": "Stops 1 and 7 · 4 + 2 nights · 20–24 Dec and 7–9 Jan"
       },
       "aliases": [
@@ -115,9 +115,9 @@
       "do_line": "Gardens, geisha streets, gold leaf and crab",
       "verdict": {
         "state": "route",
-        "headline": "The small old city where we slow down.",
-        "text": "The war's bombs missed Kanazawa, so its samurai lanes, geisha teahouses and food culture survived, with Kenroku-en, one of Japan's three great gardens, at the centre. In late December the pines are roped against the snow, the small kobako crab is in its last weeks, and on Saturday 26 December a Higashi Chaya teahouse holds a geiko dance afternoon. It is our longest stop, in a whole house with a kitchen: the slow middle of the trip before New Year.",
-        "fit": "Stop 2 · 4 nights · 24–28 Dec"
+        "headline": "A small old city of gardens, teahouses and crab.",
+        "text": "The war's bombs missed Kanazawa, so its samurai lanes, geisha teahouses and food culture survived, with Kenroku-en, one of Japan's three great gardens, at the centre. In late December the pines are roped against the snow and the small kobako crab is in its last week. Two full days cover it: the garden and the 21st Century Museum, open late on Saturday, then the market, Higashi Chaya and the D.T. Suzuki Museum. We leave on Monday 28 Dec, when the museums close.",
+        "fit": "Stop 3 · 2 nights · 26–28 Dec"
       },
       "aliases": [
         "Kenroku-en",
@@ -160,8 +160,8 @@
       "verdict": {
         "state": "route",
         "headline": "Thatched farmhouses under snow, on our way to Takayama.",
-        "text": "Steep thatched farmhouses in a World Heritage village, with smoke from the hearths and snow almost certain by our date. Our bus stops here for two and a half hours, with a shuttle up to the viewpoint. No farmhouse can sleep seven over New Year, so it is a stop, not a night.",
-        "fit": "On the bus to Takayama, 28 Dec"
+        "text": "Steep thatched farmhouses in a World Heritage village, with smoke from the hearths and snow almost certain by our date. Our bus stops here for about three hours, with a shuttle up to the viewpoint. No farmhouse can sleep seven over New Year, so it is a stop, not a night.",
+        "fit": "On the bus to Takayama, Mon 28 Dec"
       },
       "aliases": [
         "Shirakawa",
@@ -215,8 +215,8 @@
       "verdict": {
         "state": "route",
         "headline": "An old mountain town of cedar, sake and beef.",
-        "text": "Takayama smells of cedar and grilled beef: Edo-era merchant streets, a morning market by the river, sake breweries with cedar balls over the door, and the Hida Folk Village on a hillside. The town fills one good day, and we arrive in time to see the old government house before it closes for New Year.",
-        "fit": "Stop 3 · 2 nights · 28–30 Dec"
+        "text": "Takayama smells of cedar and grilled beef: Edo-era merchant streets, a morning market by the river with a New Year decorations market at the end of December, sake breweries with cedar balls over the door, and the Hida Folk Village on a hillside. The town fills one good day. The Jinya, the old government house, closes from 29 Dec, so we only see it if there is time on the afternoon we arrive.",
+        "fit": "Stop 4 · 2 nights · 28–30 Dec"
       },
       "aliases": [
         "Hida",
@@ -261,10 +261,11 @@
       "region": "alps",
       "do_line": "Hot baths, footbaths and a ryokan New Year",
       "verdict": {
-        "state": "route",
-        "headline": "New Year's Eve at a hot-spring inn, with dinner served.",
-        "text": "A riverside spa town of footbaths and steam, where we spend New Year's Eve at a ryokan (a traditional inn): kaiseki, a dinner of many small courses, then toshikoshi soba, the noodles that close the year, the temple bell heard at midnight, and a special breakfast on New Year's morning. It is a classic spa town rather than a pretty village; the point is the inn, and staying put while the rest of Japan travels.",
-        "fit": "Stop 4 · 2 nights · 30 Dec – 1 Jan"
+        "state": "swap",
+        "headline": "A quiet ryokan New Year in a famous spa town.",
+        "text": "The water really is special: Hayashi Razan, a 17th-century scholar, named Gero one of Japan's three great hot springs, with Arima and Kusatsu, and it feels smooth and silky. The town is a riverside resort of big 1970s hotels, not a pretty old village. There are free footbaths and the thatched Gassho Village, but no event on New Year's Eve and no bell for visitors that is confirmed (ask the ryokan). Its best part, the hot baths, is what Fernanda can enjoy least. The direct train on to Kyoto takes about 3 hours, or 2¼–2½ via Nagoya.",
+        "fit": "Instead of Kyoto's first two nights, a quiet ryokan New Year (30 Dec–1 Jan)",
+        "route": "gero-new-year"
       },
       "aliases": [
         "Gero Onsen"
@@ -300,7 +301,7 @@
       "verdict": {
         "state": "daytrip",
         "headline": "The deepest snow and outdoor baths we could reach.",
-        "text": "Small hot-spring villages high in the Alps, with open-air baths in the snow and a ropeway up to 2,156 metres. As our New Year's Eve stop it would turn New Year's Day into a five-hour journey to Kyoto, so it stays a long day out, and that day would come from Takayama's one full day. The top of the ropeway is high and icy, so Fernanda may prefer the baths.",
+        "text": "Small hot-spring villages high in the Alps, with open-air baths in the snow and a ropeway up to 2,156 metres. It is 90 minutes by bus from Takayama, so a day there would use Takayama's one full day, and the market, the breweries and the folk village would drop out. The top of the ropeway is high and icy, so Fernanda may prefer the baths.",
         "fit": "A long day by bus from Takayama, 90 minutes each way"
       },
       "region": "alps",
@@ -357,9 +358,9 @@
       "do_line": "Temples, gardens and New Year rituals",
       "verdict": {
         "state": "route",
-        "headline": "The old capital, at its quietest and most itself.",
-        "text": "In the first days of January, Kyoto is grey stone, bare maples and lantern light, busy with its New Year rituals. We walk Higashiyama to Kiyomizu-dera and Gion at dusk, go early to Arashiyama, and eat simmered tofu by a temple garden. New Year's Day is a quiet arrival, so four nights give us three full days plus one for Nara.",
-        "fit": "Stop 5 · 4 nights · 1–5 Jan"
+        "headline": "The old capital, for New Year's Eve and after.",
+        "text": "On New Year's Eve Higashiyama is lantern light and crowds: the Okera fire at Yasaka Shrine from about 19:30, temple bells you can ring, and a walk home through the old lanes. New Year's Day is slow on purpose. Then the National Museum's New Year show, and easy days out to Nara, Uji, Ohara or Himeji while the rest of Japan travels home. It is a hub, so six nights never means an empty day.",
+        "fit": "Stop 5 · 6 nights · 30 Dec – 5 Jan"
       },
       "aliases": [
         "Fushimi Inari",
@@ -409,8 +410,9 @@
       "verdict": {
         "state": "route",
         "headline": "The Great Buddha and the deer, a day from Kyoto.",
-        "text": "A park the size of a town, with deer in the middle and temples at its edges, among them Todai-ji, whose Great Buddha sits in the world's largest wooden hall. It is slow and flat, a relief after Kyoto's crowds, and we go on the Monday, when Kyoto's museums close.",
-        "fit": "A day from Kyoto, Mon 4 Jan"
+        "text": "A park the size of a town, with deer in the middle and temples at its edges, among them Todai-ji, whose Great Buddha sits in the world's largest wooden hall. It is slow and flat, 35 minutes from Kyoto by reserved Kintetsu train, and we go on Monday 4 Jan. Whoever is up early can also see the Great Buddha on New Year's morning (to check). Another route gives Nara two nights of its own.",
+        "fit": "A day from Kyoto, Mon 4 Jan",
+        "route": "kyoto-nara-hakone"
       },
       "aliases": [
         "Todai-ji",
@@ -463,9 +465,9 @@
       "verdict": {
         "state": "swap",
         "headline": "Steam, art museums and Fuji over the hills.",
-        "text": "Steam rising between pines, a lake with a red shrine gate, and many ways to get around: mountain railway, cable car, ropeway and boat. Five art museums fill a cloudy day, and the best ryokan have an outdoor bath in every room. We chose the lake because there Fuji stands straight across the water and it is new for all seven of us; Pedro and Fernanda have already been to Hakone.",
+        "text": "Steam rising between pines, a lake with a red shrine gate, and a mountain railway, cable car, ropeway and boat. Five art museums fill a cloudy day, and the best ryokan have an outdoor bath in every room. From Kyoto it is about 3 hours, which keeps every move under four. We chose the lake because there Fuji stands straight across the water and it is new for all seven of us; Pedro and Fernanda have already been to Hakone.",
         "fit": "Instead of Kawaguchiko, 5–7 Jan",
-        "route": "fuji-lake"
+        "route": "kyoto-new-year-hakone"
       },
       "region": "tokyo-fuji",
       "do_line": "Art museums, ryokan baths and Fuji views",
@@ -521,7 +523,7 @@
       "verdict": {
         "state": "route",
         "headline": "Fuji fills the sky, straight across the lake.",
-        "text": "The famous view of Fuji with nothing in the way, from the hotel, the lakeside path, the ropeway and the boat, with hoto noodle stew for lunch. Early January is the mountain's clearest season, and the lake is new for all seven of us. On a cloudy day there is less to do here than in Hakone, which is why we have two dawns to catch it clear.",
+        "text": "The famous view of Fuji with nothing in the way, from the hotel, the lakeside path and the ropeway, with hoto noodle stew for lunch. Early January is the mountain's clearest season, and the lake is new for all seven of us. The move from Kyoto is about 4 h 15, the longest of the trip, and on a cloudy day there is less to do here than in Hakone, which is why we have two dawns to catch it clear. The nearest obstetric emergency care is to check before we book.",
         "fit": "Stop 6 · 2 nights · 5–7 Jan"
       },
       "aliases": [
@@ -571,11 +573,10 @@
       "region": "alps",
       "do_line": "Snow monkeys and a lantern-lit onsen street",
       "verdict": {
-        "state": "swap",
+        "state": "route",
         "headline": "Wild monkeys bathing in a steaming, snowy gorge.",
-        "text": "Wild monkeys sit in a hot pool at the end of a 30–40 minute forest walk, and Shibu Onsen below is a lantern-lit street of nine old public baths. It lies on the way to Kanazawa, but the snow can be thin before Christmas, and its two nights would come from Tokyo and Kanazawa. The forest path is packed snow and can be icy, so Fernanda may prefer to wait at the inn.",
-        "fit": "Instead of a night each in Tokyo and Kanazawa, 23–25 Dec",
-        "route": "snow-monkeys"
+        "text": "Wild monkeys sit in a hot pool at the end of a forest walk of about 1.6 km on packed snow, and Shibu Onsen below is a lantern-lit lane of nine old public baths. We spend Christmas Eve at a ryokan here, with Zenko-ji on the way in and Obuse's Hokusai paintings the next afternoon. Snow can be thin before Christmas. The path can be icy and the public baths run very hot, so Fernanda may prefer the footbaths and the inn's own bath.",
+        "fit": "Stop 2 · 2 nights · 24–26 Dec"
       },
       "aliases": [
         "Snow monkeys",
@@ -1569,11 +1570,10 @@
       "region": "alps",
       "do_line": "A great temple, snow monkeys and a castle",
       "verdict": {
-        "state": "later",
+        "state": "daytrip",
         "headline": "A friendly temple city at the foot of snowy hills.",
-        "text": "Zenko-ji is a seventh-century temple with a dawn service and a pitch-dark passage under the hall, and the snow monkeys, Matsumoto Castle and the ski villages are each under an hour away. It is a fine base for a snow-country route, but our snow nights go to Kanazawa, Takayama and Gero.",
-        "fit": "It has its own route: “Three weeks in the Alps and the snowy side”",
-        "route": "deep-snow-country"
+        "text": "Zenko-ji is a seventh-century temple with a flat approach and a pitch-dark passage under the hall, walked with one hand on the wall. We stop here on the way to Yudanaka, days before the New Year crowds. The passage is optional, and Fernanda may prefer the hall and the approach.",
+        "fit": "On the way to Yudanaka, Thu 24 Dec"
       },
       "aliases": [
         "Zenko-ji",
@@ -2027,12 +2027,12 @@
     "alps": {
       "name": "The Alps & the snowy side",
       "line": "Snow country: old towns, thatched villages, mountain hot springs and Sea of Japan crab, with winter at its best.",
-      "our_take": "The heart of our trip, 8 nights: Kanazawa, Takayama, and New Year in Gero."
+      "our_take": "The snowy heart of the trip, 6 nights before New Year: Yudanaka, Kanazawa and Takayama, with Shirakawa-go on the way."
     },
     "kansai": {
       "name": "Kyoto, Nara & Osaka",
       "line": "The old capitals and their temples, Osaka's street food, and hot-spring towns and sacred shrines in the hills and along the coast.",
-      "our_take": "4 nights in Kyoto for the New Year rituals, with a day in Nara."
+      "our_take": "6 nights in Kyoto, from New Year's Eve, with days out to Nara, Uji and Ohara."
     },
     "west": {
       "name": "The west",
@@ -2177,5 +2177,5 @@
       "caption": "The surest snow in Japan; its festivals come in February."
     }
   ],
-  "intro": "Most first trips are Tokyo, Fuji and Kyoto. We do all three, and add Japan's snowy side: old towns, thatched villages and a hot-spring New Year. Here is where everything else stands for us."
+  "intro": "Most first trips are Tokyo, Fuji and Kyoto. We do all three, with New Year in Kyoto, and add Japan's snowy side: wild monkeys, old towns, a thatched village. Here is where the rest stands."
 }

@@ -170,8 +170,41 @@
  },
  "deadlines": [
   {
+   "date": "2026-10-17",
+   "item": "Book now: Yudanaka or Shibu Onsen for 24–26 Dec, for 7, with beds and a private bath (Kokuya, Kanaguya, Biyunoyado). Book only through official channels; Kanaguya warns of fake emails",
+   "source": "https://www.kanaguya.com/"
+  },
+  {
+   "date": "2026-10-17",
+   "item": "Book now: Kyoto, Higashiyama, 30 Dec – 5 Jan, for 7. A townhouse (ask about ground-floor beds, the walk to Yasaka Shrine, the licence number and heating), or a ryokan for 30–31 Dec plus a second base for 1–5 Jan. Ask it to hold the big cases from about 26 Dec"
+  },
+  {
+   "date": "2026-10-17",
+   "item": "Book now: Kanazawa 26–28 Dec and Takayama 28–30 Dec, for 7"
+  },
+  {
+   "date": "2026-10-17",
+   "item": "Check the nearest obstetric emergency hospital for Kawaguchiko, then book the lake (or Hakone) for 5–7 Jan, for 7"
+  },
+  {
+   "date": "2026-10-25",
+   "item": "Agree the route as a family, including how to spend New Year's Eve: in the middle of it at Yasaka Shrine, or a calm ryokan dinner"
+  },
+  {
+   "date": "2026-10-31",
+   "item": "Only if wanted: book the Kanazawa geiko afternoon (Sat 26 Dec, 13:00). The train from Yudanaka arrives around midday, so it is tight"
+  },
+  {
    "date": "2026-11-10",
    "item": "Ghibli Museum tickets for December dates go on sale"
+  },
+  {
+   "date": "2026-11-24",
+   "item": "10:00 JST: reserve shinkansen seats Tokyo → Nagano for 24 Dec. Every later leg goes on sale one month ahead at 10:00 JST"
+  },
+  {
+   "date": "2026-11-26",
+   "item": "10:00 JST: reserve the Kagayaki Nagano → Kanazawa for 26 Dec"
   },
   {
    "date": "2026-11-28",
@@ -179,24 +212,38 @@
    "source": "https://www.nouhibus.co.jp/route_bus/shirakawago_en/"
   },
   {
+   "date": "2026-11-30",
+   "item": "10:00 JST: reserve the 30 Dec trains, Hida Takayama → Nagoya and Nozomi Nagoya → Kyoto, Green Car. Check first that the Hida carriage shortage is over",
+   "source": "https://trafficnews.jp/post/593602"
+  },
+  {
+   "date": "2026-12-01",
+   "item": "14:00 JST, optional: Chion-in bell viewing tickets for New Year's Eve (¥3,000 in 2025, sold out online by 9 Dec)",
+   "source": "https://watabi.org/en/articles/kyoto-new-year-guide"
+  },
+  {
+   "date": "2026-12-05",
+   "item": "10:00 JST: reserve the shinkansen Kyoto → Mishima for 5 Jan (or Kyoto → Odawara for Hakone)"
+  },
+  {
    "date": "2026-12-05",
    "item": "Sumo January tournament tickets on sale, if extending to 10 Jan"
+  },
+  {
+   "date": "2026-12-07",
+   "item": "10:00 JST: reserve the Fuji Excursion Kawaguchiko → Shinjuku for 7 Jan; it sells out weeks ahead"
+  },
+  {
+   "date": "2026-12-09",
+   "item": "Book the airport transfer to Haneda for Sat 9 Jan"
   },
   {
    "date": "2026-12-10",
    "item": "Ghibli Museum tickets for January dates go on sale"
   },
   {
-   "date": "2026-11-24",
-   "item": "About a month ahead: reserve shinkansen seats for 24 Dec, then each later leg"
-  },
-  {
-   "date": "2026-10-31",
-   "item": "Book the New Year's Eve ryokan and the Kanazawa geiko afternoon (Sat 26 Dec)"
-  },
-  {
-   "date": "2026-10-25",
-   "item": "Agree the route as a family: suggest a change from Trip, or send another route from its page"
+   "date": "2026-12-15",
+   "item": "Mid-December: recheck the New Year's Eve bell times, the Okera fire times, Obuse's holiday hours and the trains' year-end notices"
   }
  ],
  "regions": [
