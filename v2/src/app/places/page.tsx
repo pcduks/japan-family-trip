@@ -1,10 +1,7 @@
-import { Suspense } from "react";
-import { PlacesList } from "@/components/PlacesList";
+import { Explore } from "@/components/Explore";
+
+export const metadata = { title: "Places" };
 
 export default function PlacesPage() {
-  return (
-    <Suspense>
-      <PlacesList />
-    </Suspense>
-  );
+  return <Explore />;
 }

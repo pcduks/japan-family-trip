@@ -63,7 +63,7 @@ export function Explore() {
         <h1 className="display text-[2.4rem] leading-[1.02] sm:text-5xl">
           Japan, <em className="text-accent not-italic">researched</em>
         </h1>
-        <p className="max-w-prose text-ink-2">{intro.split(". ").slice(0, 3).join(". ")}. Tap any area to see what it is known for, what it is like in our dates, and why it is in or out.</p>
+        <p className="max-w-prose text-ink-2">{intro.split(". ").slice(0, 3).join(". ")}. Tap any area to see what it is known for, what it is like in our dates, and why it is in or out. Or see <Link href="/places/list">every place as a list</Link>.</p>
       </section>
 
       <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4">
@@ -95,7 +95,7 @@ export function Explore() {
         </div>
       </div>
 
-      <Link href="/route" className="card flex items-center justify-between gap-3 border-accent/40 p-4 no-underline">
+      <Link href="/" className="card flex items-center justify-between gap-3 border-accent/40 p-4 no-underline">
         <span className="grid gap-0.5">
           <span className="eyebrow text-accent">Next</span>
           <span className="display text-[1.35rem] leading-tight">The route that came out of this, and why</span>

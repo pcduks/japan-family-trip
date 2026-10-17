@@ -1,11 +1,12 @@
 /**
- * The story of a route nobody wrote a guide for (one the family built):
- * theme, tagline, what it feels like in travel order, what it does, how it
- * differs from where it started and from the route. Seeded routes keep their
- * written guide (data/versions-guide.json).
+ * The story of a route: its written guide (data/versions-guide.json) while its
+ * stops are still the ones that text was written for, else one generated from
+ * the stops as they are now: theme, tagline, what it feels like in travel
+ * order, what it does, how it differs from where it started and from the route.
  */
 import { areaInfo } from "./areas";
-import { versionGuide, type VersionGuide } from "./guide";
+import { placePlans } from "./days";
+import { stillAsWritten, versionGuide, writtenStays, type VersionGuide } from "./guide";
 import { describeDiff, movesOf, statsOf } from "./versions";
 import type { Snapshot, Version } from "./types";
 
@@ -23,7 +24,7 @@ function hoursText(h: number): string {
 
 export function guideFor(v: Version, snapshot: Pick<Snapshot, "versions" | "regions" | "pace" | "travellers">): VersionGuide {
   const own = versionGuide(v.id);
-  if (own) return own;
+  if (own && stillAsWritten(v.id, v.stays)) return { ...own, written: true };
   const name = (id: string) => snapshot.regions.find((r) => r.id === id)?.name.replace(/ Onsen$/, "") ?? id;
   const st = statsOf(v, snapshot);
   const moves = movesOf(v.stays, snapshot.regions);
@@ -54,7 +55,10 @@ export function guideFor(v: Version, snapshot: Pick<Snapshot, "versions" | "regi
   const fromParent = parent ? describeDiff(parent.stays, v.stays, snapshot.regions) : [];
   const fromPlan = plan && plan.id !== v.id ? describeDiff(plan.stays, v.stays, snapshot.regions) : [];
   const parentName = parent ? (versionGuide(parent.id)?.theme ?? parent.name) : null;
-  const why = parent
+  const changed = own && v.status !== "personal" ? describeDiff(writtenStays(v.id) ?? [], v.stays, snapshot.regions) : [];
+  const why = changed.length
+    ? `“${own!.theme}”, changed since it was written: ${changed.join("; ")}.`
+    : parent
     ? `${author ? `${author}’s` : "A"} route, started from “${parentName}”${fromParent.length ? `: ${fromParent.join("; ")}.` : ", unchanged so far."}`
     : `${author ? `${author}’s` : "A"} route, built stop by stop.`;
   const longest = moves.reduce((a, m) => Math.max(a, m.hours), 0);
@@ -67,8 +71,12 @@ export function guideFor(v: Version, snapshot: Pick<Snapshot, "versions" | "regi
           ? `Most of the family, with one long move (${hoursText(longest)}) to plan around for Fernanda.`
           : "The whole family at a middle pace: every move four hours or less.";
 
+  const nyePlan = st.newYearsEve ? placePlans(st.newYearsEve.region)?.special?.["12-31"] : undefined;
   return {
-    theme: v.name,
+    style: own?.style,
+    written: false,
+    nye: nyePlan ? `In ${nye}: ${nyePlan.title}` : undefined,
+    theme: own && v.status !== "personal" ? own.theme : v.name,
     tagline: `${cap(word(st.bases))} bases over ${st.nights} nights, ${word(st.moves)} check-ins, New Year’s Eve in ${nye}.`,
     feel: parts.join(" "),
     activities,

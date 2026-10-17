@@ -1,5 +1,6 @@
-import { Explore } from "@/components/Explore";
+import { RouteView } from "@/components/RouteView";
 
-export default function HomePage() {
-  return <Explore />;
+/** Trip: the route we are taking. */
+export default function TripPage() {
+  return <RouteView />;
 }

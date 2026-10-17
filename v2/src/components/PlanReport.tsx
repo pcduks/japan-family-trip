@@ -33,7 +33,7 @@ export function PlanReport() {
   const source = (docs as Record<string, string>)[tab.file] ?? "";
   return (
     <Page>
-      <Back href="/">Explore</Back>
+      <Back href="/">Trip</Back>
       <header className="grid gap-1.5">
         <p className="eyebrow">The research, in full</p>
         <h1 className="display text-[2.1rem] leading-[1.05]">The plan and the reasoning</h1>
@@ -56,7 +56,7 @@ export function PlanReport() {
         <Markdown source={source} />
         {tab.region ? (
           <p className="mt-6 flex flex-wrap gap-2 border-t border-rule pt-4">
-            <Link href={`/places?region=${tab.region}`} className="btn btn-sm">
+            <Link href={`/areas/${tab.region}`} className="btn btn-sm">
               Places in {tab.label.split(" &")[0]}
             </Link>
             <Link href={`/food?region=${tab.region}`} className="btn btn-sm">

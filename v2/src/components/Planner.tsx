@@ -104,7 +104,7 @@ export function Planner({ version, onSuggest, onDraft, keepTotal }: { version: V
         await saveVersion(mine);
         setStatus("saved");
         setToast(demo ? "This is now your own version (demo: this browser only)." : "This is now your own version. Shape it, then suggest it to the plan.");
-        router.replace(`/versions/${mine.id}`);
+        router.replace(`/routes/${mine.id}`);
       } catch {
         setStatus("error");
       }

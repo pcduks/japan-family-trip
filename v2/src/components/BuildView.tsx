@@ -42,7 +42,7 @@ export function BuildView() {
 }
 
 function Builder() {
-  const { snapshot, me, rules, saveVersion } = useStore();
+  const { snapshot, me, rules, saveVersion, isPlanner } = useStore();
   const router = useRouter();
   const params = useSearchParams();
   const nights = snapshot.trip.nights;
@@ -118,7 +118,20 @@ function Builder() {
     const v: Version = { ...live, id: asNew || !editing ? newId() : editing.id, name: name.trim() || `${first}’s route`, owner: me.travellerId, status: "personal" };
     try {
       await saveVersion(v);
-      router.push(`/route?show=${v.id}`);
+      router.push(`/routes/${v.id}`);
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  // A planner who started from the route can change the route itself; everyone else saves a route of their own.
+  const updatesPlan = isPlanner && !!plan && base.parent === plan.id;
+  const updatePlan = async () => {
+    if (!plan) return;
+    setSaving(true);
+    try {
+      await saveVersion({ ...plan, stays: live.stays }, "Changed in the builder");
+      router.push("/");
     } finally {
       setSaving(false);
     }
@@ -126,7 +139,7 @@ function Builder() {
 
   return (
     <Page wide>
-      <Back href="/route">The route</Back>
+      <Back href="/routes">Routes</Back>
       <header className="grid gap-2">
         <p className="eyebrow">Build a route</p>
         <h1 className="display text-[2.3rem] leading-[1.02] sm:text-5xl">Make it yours</h1>
@@ -258,6 +271,11 @@ function Builder() {
           {editing ? (
             <button className="btn" disabled={saving} onClick={() => save(true)}>
               Save as new
+            </button>
+          ) : null}
+          {updatesPlan ? (
+            <button className="btn" disabled={saving || total !== nights} onClick={updatePlan}>
+              Update the route
             </button>
           ) : null}
           <button className="btn btn-primary" disabled={saving || !me} onClick={() => save(false)}>

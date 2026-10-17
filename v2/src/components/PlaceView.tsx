@@ -63,7 +63,7 @@ export function PlaceView({ id }: { id: string }) {
 
   return (
     <Page>
-      <Back href={`/places?region=${p.region}`}>{region?.name ?? "Places"}</Back>
+      <Back href={`/areas/${p.region}`}>{region?.name ?? "Places"}</Back>
       <PageHeader
         eyebrow={
           <span className="flex items-center gap-1.5">
@@ -319,7 +319,7 @@ export function PlaceView({ id }: { id: string }) {
 
       <Comments targetType="place" targetId={p.id} />
       <p className="text-xs text-muted">
-        <Link href={`/map?region=${p.region}`}>Map</Link> · <Link href={`/places?region=${p.region}`}>More in {region?.name}</Link>
+        <Link href={`/areas/${p.region}`}>More in {region?.name}</Link>
         {guideTab ? (
           <>
             {" "}
