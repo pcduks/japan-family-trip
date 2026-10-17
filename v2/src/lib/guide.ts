@@ -14,6 +14,8 @@ export interface VersionGuide {
   trade: string;
   stay_notes: Record<string, string>;
   tradeoffs?: Record<string, Tradeoff>;
+  /** One line per date, for routes written without a day-by-day plan. */
+  days?: Record<string, string>;
 }
 
 /** Stay longer or move on: what one more night buys, what one fewer costs, and an honest idle-day flag. */

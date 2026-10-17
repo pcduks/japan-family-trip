@@ -7,6 +7,7 @@ import { regionArt } from "@/lib/art";
 import { regionColor } from "@/lib/colors";
 import { dateRange, fmtDay, fmtRange, weekday } from "@/lib/dates";
 import { outdoorHours } from "@/lib/exposure";
+import { versionGuide } from "@/lib/guide";
 import { fujiChance, JOURNEY, kanji, legsOf, snowLevel } from "@/lib/journey";
 import { fmtClock, fmtHours, sunTimes } from "@/lib/sun";
 import type { Day, Place, Region, Stay, Version } from "@/lib/types";
@@ -391,6 +392,7 @@ function buildDays(version: Version, plan: Version | undefined, allDays: Day[], 
   const last = stays[stays.length - 1];
   const dates = [...dateRange(stays[0].from, last.to), last.to];
   const legs = legsOf(stays, regions);
+  const ideas = versionGuide(version.id)?.days;
   const own = allDays.filter((d) => d.version_id === version.id);
   const planDays = plan ? allDays.filter((d) => d.version_id === plan.id) : [];
   const byId = new Map(places.map((p) => [p.id, p]));
@@ -403,11 +405,14 @@ function buildDays(version: Version, plan: Version | undefined, allDays: Day[], 
     const leg = isMove ? legs.find((l) => l.index === stayIndex - 1) : undefined;
     // The day plan: this version's own, else the plan's for the same date in the same place.
     const planStay = plan?.stays.find((s) => s.from <= date && (s.to > date || (s === plan.stays[plan.stays.length - 1] && s.to === date)));
-    const day = own.find((d) => d.date === date) ?? (planStay?.region === stay.region && (!isMove || plan?.stays.find((s) => s.from === date)?.region === stay.region) ? planDays.find((d) => d.date === date) : undefined) ?? null;
+    const ownDay = own.find((d) => d.date === date) ?? null;
+    const day = ownDay ?? (ideas?.[date] ? null : (planStay?.region === stay.region && (!isMove || plan?.stays.find((s) => s.from === date)?.region === stay.region) ? planDays.find((d) => d.date === date) : undefined) ?? null);
     const name = r?.name.replace(/ Onsen$/, "") ?? stay.region;
     const isLast = date === last.to;
     const kind = day ? kindWord(day.kind) : isLast ? "Fly" : isMove ? "Move" : date === stays[0].from ? "Arrive" : "Explore";
-    const title = day ? cleanTitle(day.title) : isLast ? "To the airport" : isMove ? `To ${name}${leg ? `: ${leg.how}` : ""}` : `A day in ${name}`;
+    // A route's own day ideas (written with the route) win over the plan's days and the generic line.
+    const idea = ideas?.[date];
+    const title = idea ?? (day ? cleanTitle(day.title) : isLast ? "To the airport" : isMove ? `To ${name}${leg ? `: ${leg.how}` : ""}` : `A day in ${name}`);
     const items = (day?.items ?? []).filter((it) => it.crew !== "early");
     const sights = items.map((it) => (it.place_id ? byId.get(it.place_id) : undefined)).filter((p): p is Place => !!p && p.size !== "meal");
     const outside = Math.round(sights.reduce((a, p) => a + outdoorHours(p), 0) * 2) / 2;
