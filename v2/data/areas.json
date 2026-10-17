@@ -2126,5 +2126,56 @@
       "note": "Single acts at Kabuki-za in Tokyo last about an hour, seated, on 20–23 Dec or 7–8 Jan.",
       "area": "tokyo"
     }
-  ]
+  ],
+  "famous_tiles": [
+    {
+      "title": "Tokyo",
+      "areas": [
+        "tokyo"
+      ],
+      "caption": "The big, calm city where we begin and end."
+    },
+    {
+      "title": "Kyoto & Nara",
+      "areas": [
+        "kyoto",
+        "nara"
+      ],
+      "caption": "Temples and lanterns at New Year, and a day with Nara's deer."
+    },
+    {
+      "title": "Mount Fuji",
+      "areas": [
+        "kawaguchiko"
+      ],
+      "caption": "Fuji straight across the lake, in its clearest month.",
+      "also": {
+        "label": "Hakone is the other famous base",
+        "area": "hakone"
+      }
+    },
+    {
+      "title": "Osaka",
+      "areas": [
+        "osaka"
+      ],
+      "caption": "Street food and bright lights, 15 minutes from Kyoto."
+    },
+    {
+      "title": "Hiroshima & Miyajima",
+      "areas": [
+        "hiroshima",
+        "miyajima"
+      ],
+      "caption": "The Peace Park and the floating gate, far to the west."
+    },
+    {
+      "title": "Hokkaido",
+      "areas": [
+        "hokkaido"
+      ],
+      "caption": "The surest snow in Japan; its festivals come in February."
+    }
+  ],
+  "intro": "Most first trips are Tokyo, Fuji and Kyoto. We do all three, and add Japan's snowy side: old towns, thatched villages and a hot-spring New Year. Here is where everything else stands for us."
 }

@@ -72,12 +72,33 @@ export interface CatalogCard {
   source: string;
 }
 
-const A = areasJson as unknown as { tags: Record<string, string>; zones: Record<string, string>; areas: Record<string, AreaInfo>; regions_meta?: Record<string, RegionMeta>; heard_of?: HeardOf[] };
+export interface FamousTile {
+  title: string;
+  areas: string[];
+  caption: string;
+  also?: { label: string; area: string };
+}
+const A = areasJson as unknown as { tags: Record<string, string>; zones: Record<string, string>; areas: Record<string, AreaInfo>; regions_meta?: Record<string, RegionMeta>; heard_of?: HeardOf[]; famous_tiles?: FamousTile[]; intro?: string };
 export const AREA_TAGS = A.tags;
 /** The six parts of Japan, in the order we travel through them. */
 export const REGIONS: Record<string, RegionMeta> = A.regions_meta ?? {};
 /** Famous names that are not areas of their own, each with an honest line. */
 export const HEARD_OF: HeardOf[] = A.heard_of ?? [];
+/** The places most first trips to Japan go, as tiles on the Places home. */
+export const FAMOUS_TILES: FamousTile[] = A.famous_tiles ?? [];
+export const PLACES_INTRO = A.intro ?? "";
+
+/** Lower case, no accents: "Kyōto" finds Kyoto. */
+const fold = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+/** Heard of somewhere? Areas by name, id or another name people know them by, then famous names that are not areas. */
+export function searchPlaces(q: string, names: Record<string, string>): { areas: string[]; heard: HeardOf[] } {
+  const t = fold(q.trim());
+  if (t.length < 2) return { areas: [], heard: [] };
+  const areas = Object.keys(A.areas).filter((id) => [names[id] ?? id, id, ...(A.areas[id].aliases ?? [])].some((n) => fold(n).includes(t)));
+  const heard = (A.heard_of ?? []).filter((h) => fold(h.name).includes(t));
+  return { areas, heard };
+}
 /** Zone id → heading, in display order. */
 export const ZONES: [string, string][] = Object.entries(A.zones);
 export const CATALOG = catalogJson as CatalogCard[];
