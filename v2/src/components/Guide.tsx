@@ -26,7 +26,7 @@ export function Guide() {
             Every area we looked at, on the map and by region. Each says what it is known for, what it is like on our dates, how long to stay and where to sleep. Every one of the {snapshot.places.length} places is in the list too.
           </Step>
           <Step n={4} title="Food" href="/food">
-            How we eat as six, city by city, what Fernanda can eat, the ryokan meals and our own Tokyo list.
+            How we eat as seven, city by city, what Fernanda can eat, the ryokan meals and our own Tokyo list.
           </Step>
         </ol>
       </Section>

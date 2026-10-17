@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { budgetOf, BUDGET_RATES, fmtJpy, fmtJpyShort, fmtSgd, jpyToSgd, type Budget } from "@/lib/budget";
+import { budgetOf, BUDGET_RATES, fmtJpy, fmtJpyShort, fmtSgd, jpyToSgd, perCouple, type Budget } from "@/lib/budget";
 import type { Region, Version } from "@/lib/types";
 import { LODGING_TYPES } from "@/lib/lodging";
 
@@ -78,7 +78,7 @@ export function BudgetCard({ v, regions, regionName, title = "Budget per couple"
               <tr>
                 <th className="py-1 font-semibold">Stay</th>
                 <th className="py-1 font-semibold">Type</th>
-                <th className="py-1 text-right font-semibold">A night, for six</th>
+                <th className="py-1 text-right font-semibold">A night, for seven</th>
                 <th className="py-1 text-right font-semibold">Per couple</th>
               </tr>
             </thead>
@@ -94,17 +94,17 @@ export function BudgetCard({ v, regions, regionName, title = "Budget per couple"
                     {s.upliftNights ? <span className="block text-xs text-muted">{s.upliftNights} New Year night{s.upliftNights > 1 ? "s" : ""} uplifted</span> : null}
                   </td>
                   <td className="py-1.5 text-right">{fmtJpyShort(s.perNight)}</td>
-                  <td className="py-1.5 text-right font-semibold">{fmtSgd(jpyToSgd(s.total / BUDGET_RATES.couples))}</td>
+                  <td className="py-1.5 text-right font-semibold">{fmtSgd(jpyToSgd(perCouple(s.total)))}</td>
                 </tr>
               ))}
             </tbody>
           </table>
           <p className="text-ink-2">
-            The biggest lines are {dearest.map((s) => `${regionName(s.region)} (${fmtSgd(jpyToSgd(s.total / BUDGET_RATES.couples))} per couple)`).join(" and ")}. A tier down there is the first lever; a better room at the Fuji stop is the first indulgence.
+            The biggest lines are {dearest.map((s) => `${regionName(s.region)} (${fmtSgd(jpyToSgd(perCouple(s.total)))} per couple)`).join(" and ")}. A tier down there is the first lever; a better room at the Fuji stop is the first indulgence.
           </p>
           <p className="text-muted">
-            Assumptions: ¥{BUDGET_RATES.currency.jpy_per_sgd} per S$ (as of {BUDGET_RATES.currency.as_of}); mid-tier nightly rates for six from prices checked on 1 Oct 2026; ryokan nights include dinner and breakfast; New Year nights at +{Math.round(BUDGET_RATES.new_year_uplift.full.ryokan * 100)}% (ryokan) or +{Math.round(BUDGET_RATES.new_year_uplift.full.hotel * 100)}% (hotel) on 31 Dec and 1 Jan, half that on 30 Dec and 2 Jan; the
-            figure is per couple; Pedro’s sister, travelling single, lands at roughly 60% of it (her own share of rooms, one person’s food and tickets). Treat the total as ±15%. The numbers live in <code>v2/data/budget.json</code>.{" "}
+            Assumptions: ¥{BUDGET_RATES.currency.jpy_per_sgd} per S$ (as of {BUDGET_RATES.currency.as_of}); mid-tier nightly rates checked for six on 1 Oct 2026, raised for seven (a fourth hotel room, ryokan per person, a bigger house), with the rooms split per head; ryokan nights include dinner and breakfast; New Year nights at +{Math.round(BUDGET_RATES.new_year_uplift.full.ryokan * 100)}% (ryokan) or +{Math.round(BUDGET_RATES.new_year_uplift.full.hotel * 100)}% (hotel) on 31 Dec and 1 Jan, half that on 30 Dec and 2 Jan; the
+            figure is per couple; Tatiana, travelling on her own, pays about half of it (her share of the rooms, one person’s food and tickets). Treat the total as ±15%. The numbers live in <code>v2/data/budget.json</code>.{" "}
             <Link href="/plan?tab=nights">Why each stay is this long</Link>
           </p>
         </div>

@@ -1,5 +1,5 @@
 {
-  "_about": "Assumptions behind the per-couple budget. JPY unless stated. Lodging is per night for the whole group of six at the mid tier of docs/research/07-lodging.md; the New Year uplift follows its ground rules. Fares are per person, reserved seats, from the plan doc's transport legs. Food and activity rates are the planners' estimates for this group. Change a number here and every version's budget follows.",
+  "_about": "Assumptions behind the per-couple budget. JPY unless stated. Lodging is per night for a group of six (as researched) at the mid tier, scaled for seven by seven_factor, of docs/research/07-lodging.md; the New Year uplift follows its ground rules. Fares are per person, reserved seats, from the plan doc's transport legs. Food and activity rates are the planners' estimates for this group. Change a number here and every version's budget follows.",
   "currency": {
     "jpy_per_sgd": 125,
     "as_of": "2026-10-13",
@@ -7,7 +7,9 @@
   },
   "target_per_couple_sgd": 15000,
   "couples": 3,
-  "people": 6,
+  "_seven": "Seven travel: three couples and Tatiana. Lodging rates below were researched for six, so seven_factor scales them: a fourth hotel room, ryokan priced per person, a bigger house or an extra bed. Lodging is split per head, so a couple pays 2/7.",
+  "seven_factor": { "hotel": 1.33, "ryokan": 1.17, "rental": 1.15 },
+  "people": 7,
   "lodging_per_night_for_six": {
     "tokyo": {
       "hotel": 110000,

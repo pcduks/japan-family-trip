@@ -68,7 +68,7 @@ export function Food() {
       </div>
 
       {!active ? (
-        <Section title="How we eat as six">
+        <Section title="How we eat as seven">
           <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {GUIDE.how_we_eat.map((h, i) => (
               <li key={h.title} className="card grid gap-1 p-4">
@@ -132,7 +132,7 @@ export function Food() {
                       </a>{" "}
                       <span className="text-ink-2">· {e.what}</span>
                       <span className="block text-xs text-muted">
-                        {e.who} · six: {e.six} · {e.hours} ·{" "}
+                        {e.who} · a table for six: {e.six} · {e.hours} ·{" "}
                         <a href={e.map} target="_blank" rel="noreferrer">
                           map
                         </a>
