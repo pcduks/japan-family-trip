@@ -35,7 +35,7 @@ export function PlanReport() {
     <Page>
       <Back href="/">Trip</Back>
       <header className="grid gap-1.5">
-        <p className="eyebrow">The full report</p>
+        <p className="eyebrow">All the details</p>
         <h1 className="display text-[2.1rem] leading-[1.05]">The route and the reasoning</h1>
         <p className="text-ink-2">
           Everything behind the route, chapter by chapter: the itinerary and why, how the nights were decided, what was left out, and a guide to each place with hours, prices and food. Written up to 13 Oct 2026; the{" "}

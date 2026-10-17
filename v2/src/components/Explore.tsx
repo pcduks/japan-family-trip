@@ -49,7 +49,7 @@ export function Explore() {
   const zoneOf = (r: Region) => (route.includes(r) ? "route" : (areaInfo(r.id)?.zone ?? "near"));
   const groups: { k: string; label: string; blurb: string; list: Region[] }[] = [
     { k: "route", label: "On the route", blurb: "in travel order", list: route },
-    ...ZONES.map(([k, label]) => ({ k, label, blurb: k === "near" ? "day trips and easy swaps" : "researched, not on this route", list: regions.filter((r) => zoneOf(r) === k) })),
+    ...ZONES.map(([k, label]) => ({ k, label, blurb: k === "near" ? "day trips and easy swaps" : "not on this route", list: regions.filter((r) => zoneOf(r) === k) })),
   ];
   const seen = new Set(groups.flatMap((g) => g.list.map((r) => r.id)));
   const rest = regions.filter((r) => !seen.has(r.id));
@@ -155,7 +155,7 @@ export function Explore() {
       <WishBox targetId="trip" title="Something missing?" />
 
       <p className="text-sm text-muted">
-        Everything here comes from nine research reports written in October 2026 and the route that followed; each area page links to its sources. <Link href="/plan">The full report</Link> · <Link href="/guide">How this app works</Link>
+        Each area page links to where its facts come from. <Link href="/places/list">Every place as a list</Link>
       </p>
     </Page>
   );

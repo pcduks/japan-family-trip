@@ -103,7 +103,7 @@ export function BudgetCard({ v, regions, regionName, title = "Budget per couple"
             The biggest lines are {dearest.map((s) => `${regionName(s.region)} (${fmtSgd(jpyToSgd(s.total / BUDGET_RATES.couples))} per couple)`).join(" and ")}. A tier down there is the first lever; a better room at the Fuji stop is the first indulgence.
           </p>
           <p className="text-muted">
-            Assumptions: ¥{BUDGET_RATES.currency.jpy_per_sgd} per S$ (as of {BUDGET_RATES.currency.as_of}); mid-tier nightly rates for six from the lodging research of 1 Oct 2026; ryokan nights include dinner and breakfast; New Year nights at +{Math.round(BUDGET_RATES.new_year_uplift.full.ryokan * 100)}% (ryokan) or +{Math.round(BUDGET_RATES.new_year_uplift.full.hotel * 100)}% (hotel) on 31 Dec and 1 Jan, half that on 30 Dec and 2 Jan; the
+            Assumptions: ¥{BUDGET_RATES.currency.jpy_per_sgd} per S$ (as of {BUDGET_RATES.currency.as_of}); mid-tier nightly rates for six from prices checked on 1 Oct 2026; ryokan nights include dinner and breakfast; New Year nights at +{Math.round(BUDGET_RATES.new_year_uplift.full.ryokan * 100)}% (ryokan) or +{Math.round(BUDGET_RATES.new_year_uplift.full.hotel * 100)}% (hotel) on 31 Dec and 1 Jan, half that on 30 Dec and 2 Jan; the
             figure is per couple; Pedro’s sister, travelling single, lands at roughly 60% of it (her own share of rooms, one person’s food and tickets). Treat the total as ±15%. The numbers live in <code>v2/data/budget.json</code>.{" "}
             <Link href="/plan?tab=nights">Why each stay is this long</Link>
           </p>

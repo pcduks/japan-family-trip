@@ -53,7 +53,7 @@ export function Guide() {
           <li><b className="text-ink">20 nights, no gaps.</b> The stays have to cover 20 Dec to 9 Jan; this is the one thing it insists on.</li>
           <li><b className="text-ink">One-night stops.</b> It mentions them, because a one-night stop costs half a day packing and checking in. Sometimes that is fine.</li>
           <li><b className="text-ink">Long moves on peak days.</b> 29–31 Dec and 2–4 Jan are the busiest travel days of the year in Japan. Short hops under an hour are fine.</li>
-          <li><b className="text-ink">Closures.</b> Most museums close on Mondays and from 29 Dec to 3 Jan. The app flags anything planned on a closed day.</li>
+          <li><b className="text-ink">Closures.</b> Most museums close on Mondays and from 29 Dec to 3 Jan. Anything planned on a closed day gets a warning.</li>
           <li><b className="text-ink">New Year’s Eve dinner.</b> Restaurants close that night, so it is worth having dinner included wherever we sleep.</li>
           <li><b className="text-ink">Effort for her.</b> Every place carries a note for a pregnant traveller: stairs, ice, long walks, raw food. Long days and full afternoons get a mention too. These are suggestions; she decides on the day.</li>
           <li><b className="text-ink">Suggested nights.</b> Each stay shows how many nights make sense at your pace, with the reason, so a change is an informed one.</li>
@@ -62,7 +62,7 @@ export function Guide() {
 
       <Section title="Getting around">
         <ul className="grid gap-2 text-ink-2">
-          <li>Tap your name, top right, for large text, dark mode, the full report{isPlanner ? ", the Family list" : ""} and sign out.</li>
+          <li>Tap your name, top right, for large text, dark mode, all the details{isPlanner ? ", the Family list" : ""} and sign out.</li>
           <li>Getting in: type the family code once, then tap your name. No password, no email. Tap your name at the top right to switch person on a shared phone.</li>
         </ul>
       </Section>

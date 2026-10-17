@@ -74,7 +74,7 @@ export function AreaView({ id }: { id: string }) {
   const sources = Array.from(new Map(sourceList.map((s) => [sourceHost(s), s] as const).reverse()).values()).reverse();
   const planStayIndex = plan ? plan.stays.findIndex((s) => s.region === id) : -1;
   const tradeoff = plan && planStayIndex >= 0 ? stayTradeoff(plan.id, plan.stays, planStayIndex) : null;
-  const herLabel = (p: Place) => (p.status === "avoid_for_her" ? "not for her" : p.effort_for_her === "high" ? "hard for her" : p.effort_for_her === "moderate" ? "moderate for her" : "easy for her");
+  const herLabel = (p: Place) => (p.status === "avoid_for_her" ? "not for Fernanda" : p.effort_for_her === "high" ? "hard for Fernanda" : p.effort_for_her === "moderate" ? "moderate for Fernanda" : "easy for Fernanda");
 
   async function tryIt() {
     if (!plan || !me) return;
@@ -139,7 +139,7 @@ export function AreaView({ id }: { id: string }) {
         </ul>
         {cards.length ? (
           <details className="rounded-xl bg-bg-2 p-3 text-sm">
-            <summary className="cursor-pointer font-semibold">{cards.length} more things to do here, with how each one suits her</summary>
+            <summary className="cursor-pointer font-semibold">{cards.length} more things to do here, with how each one suits Fernanda</summary>
             <ul className="grid gap-2 pt-2">
               {cards.map((c) => (
                 <CardRow key={c.id} c={c} />
@@ -203,7 +203,7 @@ export function AreaView({ id }: { id: string }) {
               </ul>
               <p className="text-ink-2">{food.intro}</p>
               <p className="rounded-xl bg-bg-2 p-3 text-sm">
-                <b>For her:</b> {food.for_her}
+                <b>For Fernanda:</b> {food.for_her}
               </p>
             </>
           ) : null}
@@ -349,7 +349,7 @@ function Tier({ title, blurb, list, planned, her }: { title: string; blurb: stri
 
 function CardRow({ c }: { c: CatalogCard }) {
   const href = sourceHref(c.source);
-  const bump = c.bump == null ? "" : c.bump >= 4 ? "easy for her" : c.bump === 3 ? "ok for her" : "hard for her";
+  const bump = c.bump == null ? "" : c.bump >= 4 ? "easy for Fernanda" : c.bump === 3 ? "ok for Fernanda" : "hard for Fernanda";
   return (
     <li className="grid gap-0.5 border-b border-rule pb-2 last:border-0">
       <span className="font-semibold">{c.name}</span>

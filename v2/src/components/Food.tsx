@@ -36,7 +36,7 @@ const FOOD_REGION: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazaw
 const TABS = [
   { id: "", label: "How we eat" },
   ...Object.entries(GUIDE.regions).map(([id, r]) => ({ id, label: r.title })),
-  { id: "her", label: "For her" },
+  { id: "her", label: "For Fernanda" },
   { id: "ryokan", label: "Ryokan meals" },
   { id: "ours", label: "Our Tokyo list" },
 ];
@@ -55,7 +55,7 @@ export function Food() {
 
   return (
     <Page wide>
-      <PageHeader eyebrow={`Where we eat · ${meals.length} researched places · ${ownList.length} of our own`} title="Food">
+      <PageHeader eyebrow={`Where we eat · ${meals.length} places · ${ownList.length} of our own`} title="Food">
         Three weeks, sixty-odd meals, one of us pregnant and two of us new to all of it. Start with how we eat; each city has its own tab with what it is about at the table and who recommends each restaurant.
       </PageHeader>
 
@@ -108,7 +108,7 @@ export function Food() {
             <p className="max-w-prose text-[1.02rem] leading-relaxed text-ink-2">{r.intro}</p>
             <div className="grid gap-3 text-sm sm:grid-cols-2">
               <p className="rounded-xl bg-bg-2 p-3">
-                <b>For her:</b> {r.for_her}
+                <b>For Fernanda:</b> {r.for_her}
               </p>
               <p className="rounded-xl bg-bg-2 p-3">
                 <b>On our dates:</b> {r.dates}
@@ -154,7 +154,7 @@ export function Food() {
                 ))}
               </ul>
               <p className="text-xs text-muted">
-                <Link href={`/areas/${id}`}>Places in {r.title.split(" and")[0]}</Link> · <Link href={`/plan?tab=${reportTabForRegion(id) ?? id}`}>the full guide in the report</Link>
+                <Link href={`/areas/${id}`}>Places in {r.title.split(" and")[0]}</Link> · <Link href={`/plan?tab=${reportTabForRegion(id) ?? id}`}>more on eating here</Link>
               </p>
             </div>
           </section>
@@ -162,7 +162,7 @@ export function Food() {
       })}
 
       {show("her") ? (
-        <Section title="What she can eat" id="her" aside="29–32 weeks">
+        <Section title="What Fernanda can eat" id="her" aside="29–32 weeks">
           <p className="max-w-prose text-ink-2">{GUIDE.for_her.summary}</p>
           <div className="grid gap-3 sm:grid-cols-3">
             <ListCard title="Fine" tone="ok" items={GUIDE.for_her.fine} />
@@ -179,7 +179,7 @@ export function Food() {
                 </a>
               </span>
             ))}
-            . <Link href="/plan?tab=plan">More on pregnancy in the report</Link>.
+            . <Link href="/plan?tab=plan">More on eating well while pregnant</Link>.
           </p>
         </Section>
       ) : null}
@@ -208,7 +208,7 @@ export function Food() {
 
       {show("ours") && ownList.length ? (
         <Section title="Our own Tokyo list" id="ours" aside="from the family’s saved Google Maps list">
-          <p className="text-sm text-ink-2">Bars and restaurants we saved ourselves over the years. Ratings are Google’s at the time of saving. Not researched for this trip, just ours. Nothing here has been checked for her.</p>
+          <p className="text-sm text-ink-2">Bars and restaurants we saved ourselves over the years. Ratings are Google’s at the time of saving. Not checked for this trip, just ours. Nothing here has been checked for Fernanda.</p>
           <ul className="grid gap-1 text-sm sm:grid-cols-2">
             {ownList.map((f) => (
               <li key={f.n} className="flex items-baseline justify-between gap-2 border-b border-rule py-1.5">
@@ -279,7 +279,7 @@ export function FoodCard({ p }: { p: Place }) {
         </Row>
         {f.group_of_6 ? <Row k="Six of us">{f.group_of_6}</Row> : null}
         {herNote ? (
-          <Row k="For her">
+          <Row k="For Fernanda">
             <span className="text-warn">{herNote}</span>
           </Row>
         ) : null}

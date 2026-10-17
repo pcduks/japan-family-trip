@@ -121,7 +121,7 @@ export function AppHeader() {
                   Inbox{waiting ? ` · ${waiting}` : ""}
                 </Link>
                 <Link href="/plan" className="btn btn-sm" onClick={() => setOpen(false)}>
-                  The full report
+                  All the details
                 </Link>
                 <Link href="/guide" className="btn btn-sm" onClick={() => setOpen(false)}>
                   How this works
