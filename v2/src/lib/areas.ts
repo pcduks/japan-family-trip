@@ -7,6 +7,20 @@ export interface KnownFor {
   blurb: string;
   place?: string;
 }
+/** Is it for us this trip: on our route, a day trip from a stop, a swap for one stop, or another time. */
+export interface Verdict {
+  state: "route" | "daytrip" | "swap" | "later";
+  /** Ten words or fewer, in plain words. */
+  headline: string;
+  /** Two or three sentences: what is lovely first, then the honest reason. */
+  text: string;
+  /** How it fits: the stop and dates, the trip out, or when it would be its own trip. */
+  fit: string;
+  /** The route that does it, when one exists. */
+  route?: string;
+}
+export const VERDICT_LABEL: Record<Verdict["state"], string> = { route: "On our route", daytrip: "Day trip", swap: "Could swap in", later: "Another time" };
+
 export interface AreaInfo {
   prefecture: string;
   tags: string[];
@@ -17,6 +31,7 @@ export interface AreaInfo {
   for_her: string;
   /** route | near | north | alps | west | south */
   zone: string;
+  verdict?: Verdict;
 }
 export interface CatalogCard {
   id: string;

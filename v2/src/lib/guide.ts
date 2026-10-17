@@ -19,9 +19,22 @@ export interface VersionGuide {
   days?: Record<string, string>;
   /** Where and how New Year's Eve is spent. */
   nye?: string;
+  /** The route told as a journey, paragraph by paragraph (the route we are taking). */
+  story?: string[];
+  /** What we looked for, in family words. */
+  looked_for?: { title: string; text: string }[];
+  /** Per stop: a hook and a short note, what is lovely first and then why that many nights. */
+  stops?: Record<string, StopStory>;
+  /** Area ids left for another time, told by each area's own verdict. */
+  left_out?: string[];
   /** True when this text was written for the route's stops as they are now; false when generated from them. */
   written?: boolean;
   sources?: { label: string; url: string }[];
+}
+
+export interface StopStory {
+  hook: string;
+  note: string;
 }
 
 /** Stay longer or move on: what one more night buys, what one fewer costs, and an honest idle-day flag. */
@@ -34,7 +47,7 @@ export interface Tradeoff {
 
 export const IDLE_LABEL: Record<Tradeoff["idle"], string> = { none: "Every day fills", some: "One quiet day", real: "Idle day risk" };
 
-function stayKey(stays: Stay[], index: number): string {
+export function stayKey(stays: Stay[], index: number): string {
   const stay = stays[index];
   const occurrence = stays.slice(0, index + 1).filter((s) => s.region === stay.region).length;
   return occurrence > 1 ? `${stay.region}:${occurrence}` : stay.region;
@@ -121,4 +134,14 @@ export function stayNote(versionId: string, stays: Stay[], index: number): strin
   const planStay = (guide as unknown as { plan_nights?: Record<string, number> }).plan_nights?.[key];
   if (plan && (planStay === undefined || planStay === stay.nights)) return plan;
   return stayGuideFor(stay.region, stay.nights)?.why ?? null;
+}
+
+/** A stop told lovely part first: the route's own, else the plan's for a stay of the same length. */
+export function stayStory(versionId: string, stays: Stay[], index: number): StopStory | null {
+  const own = ownFor(versionId, VERSIONS[versionId]?.stops, stays, index);
+  if (own) return own;
+  const key = stayKey(stays, index);
+  const plan = VERSIONS.plan?.stops?.[key];
+  const planStay = (guide as unknown as { plan_nights?: Record<string, number> }).plan_nights?.[key];
+  return plan && (planStay === undefined || planStay === stays[index].nights) ? plan : null;
 }

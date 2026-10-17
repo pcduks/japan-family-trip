@@ -219,7 +219,13 @@
       "feel": "Deep snow, steam, and the Alps close enough to touch. The most mountain-winter the trip can get.",
       "getting_there": "Nohi bus from Takayama, about 90 minutes; reserved seats 30 days out.",
       "for_her": "The summit deck is cold, high and icy; ask her doctor. The baths are the easy part.",
-      "zone": "near"
+      "zone": "near",
+      "verdict": {
+        "state": "daytrip",
+        "headline": "The deepest snow and outdoor baths we could reach.",
+        "text": "Small hot-spring villages high in the Alps, with open-air baths in the snow and a ropeway up to 2,156 metres. We thought of it for New Year's Eve, but then New Year's Day becomes a five-hour journey to Kyoto, so Gero keeps the easier day. The top of the ropeway is high and icy, so Fernanda may prefer the baths.",
+        "fit": "A long day by bus from Takayama, 90 minutes each way"
+      }
     },
     "kyoto": {
       "prefecture": "Kyoto",
@@ -331,7 +337,14 @@
       "feel": "Steam, pines, a lake with a red torii, and a dozen ways to move: ropeway, cable car, boat, mountain railway. Eighty minutes from Shinjuku and a different century.",
       "getting_there": "From Kyoto about 3 h 15: Hikari to Odawara (the Nozomi does not stop), then the Hakone Tozan line. To Shinjuku 85 minutes on the Romancecar.",
       "for_her": "The ropeway crosses volcanic gas; the operator bars some conditions, so ask her doctor. Everything else is seated. A private bath makes the onsen easy.",
-      "zone": "near"
+      "zone": "near",
+      "verdict": {
+        "state": "swap",
+        "headline": "Steam, art museums and Fuji over the hills.",
+        "text": "Steam rising between pines, a lake with a red shrine gate, and many ways to get around: mountain railway, cable car, ropeway and boat. Five art museums fill a cloudy day, and the ryokan have an outdoor bath in every room. We chose the lake because there Fuji stands straight across the water and it is new for all seven of us; Pedro and Fernanda have already done Hakone.",
+        "fit": "Instead of Kawaguchiko, 5–7 Jan, and an hour closer to Kyoto",
+        "route": "fuji-lake"
+      }
     },
     "kawaguchiko": {
       "prefecture": "Yamanashi",
@@ -654,7 +667,14 @@
       "feel": "A rebuilt city with a heavy centre and a light coast; the island at sunset makes the trip.",
       "getting_there": "1 h 45 from Kyoto on the Sanyo shinkansen; four hours to Tokyo, or four to Hakone in the fuller alternative.",
       "for_her": "Flat; Mt Misen's stairs are for the others. A long westward leg either way.",
-      "zone": "west"
+      "zone": "west",
+      "verdict": {
+        "state": "later",
+        "headline": "The Peace Park and the floating shrine gate.",
+        "text": "Hiroshima is a rebuilt city with an important, heavy history at its centre, and across the water Miyajima has the shrine gate that floats at high tide, deer and grilled oysters. It is far to the west of Kyoto and needs two more nights than we have.",
+        "fit": "On a trip that goes west past Kyoto",
+        "route": "golden-route-winter"
+      }
     },
     "hokkaido": {
       "prefecture": "Hokkaido",
@@ -686,7 +706,13 @@
       "feel": "Real winter, Siberian cold, white everywhere; the festivals that make it famous come a month later.",
       "getting_there": "Fly Haneda–Chitose, 1 h 35, sixty flights a day; the rail route is eight hours.",
       "for_her": "Ice underfoot in a city at minus five; strap-on spikes and short walks only.",
-      "zone": "north"
+      "zone": "north",
+      "verdict": {
+        "state": "later",
+        "headline": "Japan's real winter, best in February.",
+        "text": "The far north has the surest snow, crab, sea urchin and scallops, and Otaru's canal of stone warehouses and gas lamps. Its famous snow festivals start a month after we leave, it needs a flight each way, and Fernanda may prefer to skip the icy pavements this time.",
+        "fit": "Its own trip, in February, with a flight"
+      }
     },
     "north-tohoku": {
       "prefecture": "Aomori",
