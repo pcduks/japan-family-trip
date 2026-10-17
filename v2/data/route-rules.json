@@ -1,5 +1,5 @@
 {
-  "_about": "What the route checks need beyond trip-data.json (route review of 17 Oct 2026, docs/research/route-review-2026-10-17.md, rules 1, 2, 9, 10). Peak flows come from 03-transport §1 and R1; hospitals from 08-pregnancy §4.3 and expanded.md; full days from the review's §3.2. Minutes by taxi are estimates unless a source is given.",
+  "_about": "What the route checks need beyond trip-data.json (route review of 17 Oct 2026, docs/research/route-review-2026-10-17.md, rules 1, 2, 9, 10). Peak flows come from 03-transport §1 and R1; hospitals from 08-pregnancy §4.3 and expanded.md; full days from the review's §3.2. Minutes by taxi are estimates unless a source is given. Capacity: a small place deserves its full days + 1 nights unless `nights` says otherwise; a named day out (`extra`) earns one more when the route does not already stop there (review §3.2, revised 17 Oct evening).",
   "peak_flows": {
     "outbound": { "from": "2026-12-26", "to": "2026-12-30", "worst": ["2026-12-29", "2026-12-30"], "note": "leaving Tokyo and Kansai on the trunk lines" },
     "return": { "from": "2027-01-02", "to": "2027-01-04", "worst": ["2027-01-03"], "note": "heading back to Tokyo and Kansai on the trunk lines" },
@@ -13,9 +13,9 @@
     "tokyo": { "full_days": 4, "hub": true, "day_trips": ["kamakura", "nikko", "echigo-yuzawa", "karuizawa"] },
     "kyoto": { "full_days": 4, "hub": true, "day_trips": ["nara", "uji", "ohara", "osaka", "himeji"] },
     "osaka": { "full_days": 2, "hub": true, "day_trips": ["kyoto", "nara", "himeji", "kobe"] },
-    "kanazawa": { "full_days": 2, "hub": false },
-    "yudanaka": { "full_days": 1.5, "hub": false },
-    "nagano": { "full_days": 1.5, "hub": false },
+    "kanazawa": { "full_days": 2, "hub": false, "nights": 2, "extra": { "what": "the Shirakawa-go day trip", "region": "shirakawago" } },
+    "yudanaka": { "full_days": 1.5, "hub": false, "extra": { "what": "the split ski or Obuse day" } },
+    "nagano": { "full_days": 1.5, "hub": false, "extra": { "what": "the split ski or Obuse day" } },
     "takayama": { "full_days": 1, "hub": false },
     "gero": { "full_days": 0.5, "hub": false },
     "okuhida": { "full_days": 1, "hub": false },

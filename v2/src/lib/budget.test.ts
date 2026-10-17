@@ -13,8 +13,8 @@ describe("budget per couple", () => {
     expect(b.perCoupleSgd).toBeLessThan(15000);
     expect(b.headroomSgd).toBeGreaterThan(0);
     expect(b.days).toBe(21);
-    expect(b.ryokanDays).toBe(2); // Gero; the lake is a hotel
-    expect(b.moves).toBe(6);
+    expect(b.ryokanDays).toBe(3); // Yudanaka; the lake is a hotel
+    expect(b.moves).toBe(5);
   });
 
   it("every seeded version has a budget and Full costs more than Gentle", () => {

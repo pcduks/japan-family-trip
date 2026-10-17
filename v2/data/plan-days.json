@@ -1,6 +1,6 @@
 {
   "version": "plan",
-  "source": "docs/research/route-review-2026-10-17.md §4.3 (17 Oct 2026)",
+  "source": "docs/research/route-review-2026-10-17.md §4.3 (revised 17 Oct 2026, evening)",
   "days": [
     {
       "date": "2026-12-20",
@@ -177,7 +177,7 @@
     {
       "date": "2026-12-25",
       "kind": "Explore",
-      "title": "Snow monkeys in the morning, Obuse and the Hokusai museum in the afternoon",
+      "title": "Snow monkeys in the morning, then a slow afternoon at the ryokan",
       "items": [
         {
           "place_id": "nagano-jigokudani-snow-monkeys",
@@ -192,16 +192,53 @@
           "note": "Footbaths and a café in the village instead of the path"
         },
         {
-          "place_id": "nagano-obuse-and-the-hokusai-museum",
-          "slot": "afternoon",
+          "place_id": null,
+          "slot": "rest",
           "crew": "everyone",
-          "note": "Hokusai museum and chestnut sweets; holiday hours to check"
+          "note": "A slow afternoon at the ryokan, with a private bath"
+        },
+        {
+          "place_id": "yudanaka-shibu-soto-yu",
+          "slot": "afternoon",
+          "crew": "early",
+          "note": "The nine-bath walk for anyone who wants it; the water runs very hot"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Christmas dinner at the ryokan"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-26",
+      "kind": "Explore · split day",
+      "title": "Ski or snow at Shiga Kogen for whoever wants it; Obuse and Hokusai for Fernanda and the parents",
+      "items": [
+        {
+          "place_id": null,
+          "slot": "morning",
+          "crew": "early",
+          "note": "Shiga Kogen, 30 minutes by bus: ski or play in the snow (2026 opening date to check)"
+        },
+        {
+          "place_id": "nagano-obuse-and-the-hokusai-museum",
+          "slot": "morning",
+          "crew": "easy",
+          "note": "20 minutes on the same local line: the Hokusai museum and chestnut sweets (holiday hours to check)"
         },
         {
           "place_id": null,
           "slot": "afternoon",
+          "crew": "easy",
+          "note": "Gansho-in temple and its Hokusai ceiling painting (hours to check); Obuse is flat"
+        },
+        {
+          "place_id": "nagano-matsumoto-castle-day-trip",
+          "slot": "morning",
           "crew": "everyone",
-          "note": "Gansho-in temple and its Hokusai ceiling painting (hours to check)"
+          "note": "If nobody wants snow, all seven go to Matsumoto Castle instead (open until 28 Dec; the grounds for Fernanda)"
         },
         {
           "place_id": null,
@@ -212,21 +249,21 @@
       ]
     },
     {
-      "date": "2026-12-26",
+      "date": "2026-12-27",
       "kind": "Move · 2.5–3 h",
-      "title": "Train via Nagano to Kanazawa; Kenroku-en, then the 21st Century Museum, open late on Saturday",
+      "title": "Train via Nagano to Kanazawa, arriving about midday. Kenroku-en, then the 21st Century Museum",
       "items": [
         {
           "place_id": null,
           "slot": "morning",
           "crew": "everyone",
-          "note": "Nagaden to Nagano, then the Kagayaki, about 65 min; leave after 9:00"
+          "note": "Nagaden or bus to Nagano, then the Kagayaki or Hakutaka, about 65 min. Green Car seats, booked on 27 Nov"
         },
         {
           "place_id": null,
           "slot": "rest",
           "crew": "everyone",
-          "note": "A rest after the train"
+          "note": "Check in; a rest after the train"
         },
         {
           "place_id": "kz-kenrokuen",
@@ -236,16 +273,59 @@
         },
         {
           "place_id": "kz-21c",
-          "slot": "evening",
+          "slot": "afternoon",
           "crew": "everyone",
-          "note": "Open to 20:00 on Saturdays"
+          "note": "Closed on Mondays and from 29 Dec, so today is its day"
+        },
+        {
+          "place_id": "kz-dtsuzuki",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Next door, if there is energy"
         }
       ]
     },
     {
-      "date": "2026-12-27",
+      "date": "2026-12-28",
+      "kind": "Day trip",
+      "title": "Museums close today: Shirakawa-go by van or bus, back for a crab dinner",
+      "items": [
+        {
+          "place_id": null,
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "A van with a driver, door to door, or the 8:40 Nohi bus (in Shirakawa-go at 10:05). About 75 minutes each way"
+        },
+        {
+          "place_id": "sg-village",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "The Wada house and the lanes; the farmhouse stairs are optional"
+        },
+        {
+          "place_id": "sg-viewpoint",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Take the shuttle up"
+        },
+        {
+          "place_id": null,
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Lunch in the village, then back to Kanazawa"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Crab dinner: kobako crab is in season until 31 Dec. Fernanda may prefer it cooked, without the raw roe"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-29",
       "kind": "Explore",
-      "title": "Omicho market, Higashi Chaya and gold leaf, the D.T. Suzuki Museum, the Nagamachi lanes; crab dinner",
+      "title": "Omicho market in its busy year-end days, Higashi Chaya and gold leaf, the Nagamachi lanes",
       "items": [
         {
           "place_id": "kz-kenrokuen",
@@ -256,7 +336,8 @@
         {
           "place_id": "kz-omicho",
           "slot": "morning",
-          "crew": "everyone"
+          "crew": "everyone",
+          "note": "Busy with year-end shopping; it closes 1–4 Jan"
         },
         {
           "place_id": "kz-higashi",
@@ -271,126 +352,35 @@
           "note": "Seated; booking required"
         },
         {
-          "place_id": "kz-dtsuzuki",
-          "slot": "afternoon",
-          "crew": "everyone"
-        },
-        {
           "place_id": null,
           "slot": "afternoon",
           "crew": "everyone",
-          "note": "The Nagamachi samurai lanes; the Nomura house is closed 26–27 Dec"
+          "note": "The Nagamachi samurai lanes"
+        },
+        {
+          "place_id": "kz-kaga",
+          "slot": "afternoon",
+          "crew": "easy",
+          "note": "Or a half day at Kaga Onsen's baths, 25 minutes away"
         },
         {
           "place_id": null,
           "slot": "rest",
           "crew": "everyone",
           "note": "A long lunch, and laundry for the cabin bags"
-        },
-        {
-          "place_id": null,
-          "slot": "evening",
-          "crew": "everyone",
-          "note": "Crab dinner: kobako crab is in season until 31 Dec. Fernanda may prefer it cooked, without the raw roe"
-        }
-      ]
-    },
-    {
-      "date": "2026-12-28",
-      "kind": "Move · 2 h by bus",
-      "title": "Museums close today: Nohi bus to Shirakawa-go, then on to Takayama. Old town at dusk and Hida beef",
-      "items": [
-        {
-          "place_id": "sg-village",
-          "slot": "morning",
-          "crew": "everyone",
-          "note": "8:40 bus from Kanazawa, in Shirakawa-go at 10:05; about 3 hours here. The farmhouse stairs are optional"
-        },
-        {
-          "place_id": "sg-viewpoint",
-          "slot": "morning",
-          "crew": "everyone",
-          "note": "Take the shuttle up"
-        },
-        {
-          "place_id": null,
-          "slot": "afternoon",
-          "crew": "everyone",
-          "note": "Bus on to Takayama, about 50 min"
-        },
-        {
-          "place_id": "tk-jinya",
-          "slot": "afternoon",
-          "crew": "everyone",
-          "note": "Optional, if there is time after the bus: it closes 29 Dec – 3 Jan (hours to check)"
-        },
-        {
-          "place_id": null,
-          "slot": "evening",
-          "crew": "everyone",
-          "note": "The old town at dusk"
-        },
-        {
-          "place_id": "tk-maruaki",
-          "slot": "evening",
-          "crew": "everyone",
-          "note": "Hida beef; reserve dinner. Fernanda may prefer it well done"
-        }
-      ]
-    },
-    {
-      "date": "2026-12-29",
-      "kind": "Explore",
-      "title": "Morning market and New Year decorations, Sanmachi breweries, the festival floats, Hida Folk Village",
-      "items": [
-        {
-          "place_id": "tk-markets",
-          "slot": "morning",
-          "crew": "everyone",
-          "note": "With the New Year decorations market, 27–31 Dec. The riverside is icy, so cleats help"
-        },
-        {
-          "place_id": "tk-breweries",
-          "slot": "morning",
-          "crew": "everyone",
-          "note": "Year-end hours to check; amazake for Fernanda"
-        },
-        {
-          "place_id": "tk-seto",
-          "slot": "afternoon",
-          "crew": "everyone",
-          "note": "Hot duck soba for lunch"
-        },
-        {
-          "place_id": "tk-floats",
-          "slot": "afternoon",
-          "crew": "everyone",
-          "note": "Indoors; New Year hours to check"
-        },
-        {
-          "place_id": "tk-folkvillage",
-          "slot": "afternoon",
-          "crew": "everyone",
-          "note": "Open every day; slopes and icy paths"
-        },
-        {
-          "place_id": null,
-          "slot": "evening",
-          "crew": "everyone",
-          "note": "An early night before the train to Kyoto"
         }
       ]
     },
     {
       "date": "2026-12-30",
-      "kind": "Move · 3.5 h",
-      "title": "Train to Kyoto, arriving early afternoon. Nishiki market before it closes 1–3 Jan, Gion at dusk",
+      "kind": "Move · 2–2.5 h",
+      "title": "Train via Tsuruga to Kyoto, arriving about midday. Nishiki market before it closes 1–3 Jan, Gion at dusk",
       "items": [
         {
           "place_id": null,
           "slot": "morning",
           "crew": "everyone",
-          "note": "Hida to Nagoya (about 2 h 20), then the Nozomi to Kyoto (about 35 min). Green Car seats, booked on 30 Nov"
+          "note": "Hokuriku shinkansen to Tsuruga (about 50 min), then the Thunderbird to Kyoto (about 55 min); one change, with lifts. Green Car seats, booked on 30 Nov"
         },
         {
           "place_id": null,

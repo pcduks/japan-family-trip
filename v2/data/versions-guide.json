@@ -4,7 +4,142 @@
     "plan": {
       "style": "classic",
       "theme": "Snow country first, then New Year in Kyoto",
-      "tagline": "Seven bases, two nights in each small place, Kyoto for New Year.",
+      "tagline": "Five moves, three days apart, Kyoto for New Year.",
+      "feel": "An easy start in Tokyo while the jet lag wears off and the first-timers get the classic days. On Christmas Eve the shinkansen takes us to Nagano: Zenko-ji on the way, then three nights at a hot-spring inn in Yudanaka. Shibu Onsen's lantern lane after dinner, the snow monkeys the next morning, and a day that splits: skiing or snow at Shiga Kogen for whoever wants it, Obuse's Hokusai paintings for Fernanda and the parents. Then three nights in Kanazawa: Kenroku-en with its snow ropes and the 21st Century Museum, a day out to Shirakawa-go's thatched village while the museums are shut, and the market, the teahouses and crab in its last week. On 30 December a two-hour train takes us to Kyoto for six nights in Higashiyama: the Okera fire and the temple bells on New Year's Eve, a slow New Year's Day, then museums and easy days out to Nara, Uji or Himeji. Then Lake Kawaguchi, with Fuji straight across the water and two dawns to catch it clear, and two last Tokyo days for the museums that were shut in December.",
+      "activities": [
+        "Tokyo: Tsukiji and the Hama-rikyu garden, Asakusa and Senso-ji, the Western Art museum in Ueno, Meiji Jingu and the Nezu Museum, Skytree at dusk, the Marunouchi lights",
+        "Nagano: Zenko-ji on the way in, a Christmas Eve ryokan dinner, Shibu Onsen's lantern lane, the snow monkeys, a ski or snow day at Shiga Kogen, Obuse and the Hokusai museum",
+        "Kanazawa: Kenroku-en with the yukitsuri snow ropes, the 21st Century Museum, Omicho market, Higashi Chaya and a gold-leaf workshop, the D.T. Suzuki Museum, kobako crab",
+        "Shirakawa-go: the thatched village in snow, as a day trip from Kanazawa by van or bus",
+        "Kyoto: Higashiyama and Kiyomizu-dera, Nishiki market, the Okera fire and the temple bells on New Year's Eve, Ohara or Nanzen-ji on New Year's Day, the National Museum and Kitano Tenmangu on 2 Jan",
+        "Days out from Kyoto: Uji's Byodo-in and tea street, Nara's Great Buddha and deer, or Himeji Castle",
+        "Kawaguchiko: Fuji straight across the lake, the Panoramic Ropeway, the Itchiku Kubota kimono museum, hoto noodles, Chureito Pagoda at dawn for whoever wants the climb",
+        "Tokyo again: the Musée d'Orsay show, the Tokyo National Museum open late on Fri 8 Jan, a single act of kabuki, last shopping and a farewell dinner"
+      ],
+      "why": "It keeps every place to the nights it can fill and the moves far apart: five moves, at least three days apart, with cabin bags while the big cases wait in Kyoto. The third nights in Nagano and Kanazawa each carry a named day out, the ski or Obuse day and Shirakawa-go, and the only long stay is Kyoto, where day trips and museums fill the days after New Year. New Year's Eve is the real event in Kyoto, close to two big hospitals, and four places are new to Pedro and Fernanda. Days can split: João and Carolina can do two big things a day while Fernanda and the parents do one.",
+      "suits": "Fernanda at 29–32 weeks (beds, private baths, three nights between moves, light afternoons after long moves, every night from 29 Dec to 3 Jan near a big hospital), Carlos and Nadir on a first visit, and João, Carolina and Tatiana, who get the classic sights plus snow, monkeys, a ski day and a Kyoto New Year.",
+      "trade": "Gives up Takayama's old town and morning market (the 'with Takayama' route keeps them), a quiet ryokan New Year in Gero, Okuhida's snow baths and Hiroshima. Kyoto costs the most at New Year, and Kyoto to the lake is about 4 h 15, the one move over four hours (Hakone instead is about 3 h).",
+      "nye": "New Year's Eve in Higashiyama. Kiyomizu-dera and the old lanes early, before the crowds, then a rest at the house. Anyone can ring a temple bell in daylight: in 2025 Myoman-ji let visitors ring 15:00–17:00 and Zuiko-ji 14:00–17:30 (times for 2026 to check). Dinner in, with toshikoshi soba, the noodles that close the year. From about 19:30 the Okera fire burns at Yasaka Shrine: we go early, carry the flame home on a twist of rope, and are back by 21:00, so Fernanda can be in bed by then if she likes. For the midnight bells, Kodai-ji gives numbered tickets from 22:00 to the first 108 groups, and Eikando and Chishaku-in also let people ring (2025 pattern, to check). Buses and the subway do not run all night, so we walk home through Higashiyama.",
+      "stay_notes": {
+        "tokyo": "Arrival plus three full days. Jet lag and the first-timers need an easy start; Mon 21 Dec is a museum closing day, so it becomes the market-and-gardens day. One night less loses a whole side of the city.",
+        "yudanaka": "Zenko-ji on the way in and the lantern lane on Christmas Eve, the snow monkeys the next morning with a slow afternoon, then a split day: skiing or snow at Shiga Kogen for whoever wants it, Obuse for Fernanda and the parents. The third night is for that day.",
+        "kanazawa": "Kenroku-en and the 21st Century Museum on arrival (it closes from 29 Dec), Shirakawa-go as a day trip on Monday 28 Dec, when the museums are shut, then the market, the teahouses and the samurai lanes on the 29th. The third night is for Shirakawa-go.",
+        "kyoto": "Arrival on 30 Dec, New Year's Eve, a slow New Year's Day on purpose, then three days of museums and day trips: Nara, Uji, Ohara or Himeji. Kyoto is a hub, so every day has a plan. One night less drops a day out.",
+        "kawaguchiko": "One full day for the ropeway and the lake, and two dawns for a clear Fuji. The move from Kyoto is about 4 h 15, the longest of the trip, so day one is only the shore and the hotel.",
+        "tokyo:2": "The museums that were closed in December, a single act of kabuki, shopping, and a night close to Haneda before the Saturday flight. One night is possible but leaves no slack if a train or the weather slips."
+      },
+      "tradeoffs": {
+        "tokyo": {
+          "longer": "A fifth night buys Kamakura or Nikko as a day trip. The city can fill any number of days.",
+          "shorter": "Three nights means two full days: one classic day is lost for the first-timers, and the jet lag lands on a travel day.",
+          "idle": "none",
+          "note": "No idle risk. Tokyo fills every day, indoors or out."
+        },
+        "yudanaka": {
+          "longer": "A fourth night would be a second bath day; there is little more to see.",
+          "shorter": "Two nights drops the ski or Obuse day; the monkeys and the lantern lane still fit.",
+          "idle": "none",
+          "note": "Three full days: the monkeys, the split ski or Obuse day, and the arrival with Zenko-ji. Snow can be thin before Christmas, and the Shiga Kogen opening date is still to check; if nobody wants snow, Matsumoto Castle is the day out instead."
+        },
+        "kanazawa": {
+          "longer": "A fourth night falls after the museums close on 29 Dec: a rest day in a small town.",
+          "shorter": "Two nights drops the Shirakawa-go day trip, or turns it into a bus day with the bags.",
+          "idle": "none",
+          "note": "Three days, each with a plan: the garden and the museum, Shirakawa-go on the museums' closing day, then the market and the teahouses. The Nomura samurai house is closed 26–27 Dec, so we walk the Nagamachi lanes instead."
+        },
+        "kyoto": {
+          "longer": "A seventh night means leaving on 6 Jan and losing a night at the lake.",
+          "shorter": "Four nights keeps New Year's Eve and the museums but drops Uji, Ohara or Himeji, or moves Nara to its own two nights.",
+          "idle": "some",
+          "note": "1 Jan is slow on purpose: most of Kyoto is shut, so it is the rest day, with Ohara or Nanzen-ji for anyone who wants to go out. Every other day has a plan."
+        },
+        "kawaguchiko": {
+          "longer": "A third night is a third chance at a clear Fuji and an easy day: Oshino Hakkai's spring ponds or Lake Yamanaka, each about 30 minutes by bus. Otherwise there is little more to see.",
+          "shorter": "One night gives one dawn and no ropeway day, after the longest move of the trip; the lake becomes a stopover.",
+          "idle": "some",
+          "note": "Clear days are full. On a cloudy day there is less to do than in Hakone: the kimono museum, the music forest, the footbaths, a long hoto lunch. That is the cost of the better view."
+        },
+        "tokyo:2": {
+          "longer": "A third night at the end buys a Kamakura day or a proper last shopping day, and more slack before a Saturday flight.",
+          "shorter": "One night is enough for the flight, not for the museums that were shut in December.",
+          "idle": "none",
+          "note": "No idle risk."
+        }
+      },
+      "story": [
+        "We land in Tokyo on 20 December, while the Christmas lights are still up. Four easy days: markets, old gardens, museums, good food, and time for the jet lag to pass.",
+        "On Christmas Eve a fast train takes us into the snowy hills of Nagano. We stop at Zenko-ji, an old temple, and sleep three nights at a hot-spring inn. Wild monkeys sit in a steaming pool in the snow, Shibu's old lane glows with lanterns, and on one day some of us ski while the others see Hokusai's paintings in Obuse.",
+        "Then Kanazawa, on the Sea of Japan: a great garden, teahouses and winter crab. One day we drive into the mountains to Shirakawa-go, a village of thatched farmhouses in the snow, and come back for dinner. On 30 December a two-hour train takes us down to Kyoto.",
+        "Kyoto is our New Year. We carry the sacred fire home from Yasaka Shrine, hear the temple bells ring in the year, and walk back through the old lanes. Then calm days for museums, Nara's deer and the tea town of Uji. Last comes Lake Kawaguchi, with Fuji straight across the water, two more days in Tokyo, and home."
+      ],
+      "looked_for": [
+        {
+          "title": "Japan at its winter best",
+          "text": "Snow on old towns and a thatched village, wild monkeys in a hot pool, and crab in season."
+        },
+        {
+          "title": "The famous sights, for the first-timers",
+          "text": "Carlos, Nadir, João, Carolina and Tatiana get Tokyo, Kyoto's temples and Mount Fuji."
+        },
+        {
+          "title": "Something new for Pedro and Fernanda",
+          "text": "They know Tokyo, Kyoto, Hakone and Osaka, so Yudanaka, Kanazawa, Shirakawa-go and the Fuji lake are new to them too."
+        },
+        {
+          "title": "New Year's Eve in Kyoto",
+          "text": "The sacred fire at Yasaka Shrine, temple bells we can ring ourselves, and a short walk home. Dinner is at the house, because restaurants close, and there are calm choices for Fernanda."
+        },
+        {
+          "title": "Time to slow down, with no empty days",
+          "text": "Five moves, at least three days apart, and no small town gets a night it cannot fill. The slow days fall in Kyoto, where a quiet morning still has things to do."
+        },
+        {
+          "title": "Gentle for Fernanda",
+          "text": "Real beds, lifts, flat streets and private baths, and every night from 29 Dec to 3 Jan close to a big hospital. Suggestions she can drop on the day, not rules."
+        },
+        {
+          "title": "All seven together, by train",
+          "text": "Places that can sleep all of us, no flights, and short, pretty journeys: into the snowy hills of Nagano, along the Sea of Japan, Fuji out of the window."
+        }
+      ],
+      "stops": {
+        "tokyo": {
+          "hook": "The big, easy city, with the Christmas lights still on.",
+          "note": "Markets and old gardens, the Nezu Museum, Meiji Jingu's forest, Asakusa's temple lanes, and tonkatsu and tempura at night. Four nights give us time to get over the flight, and give the first-timers three full days of the classic city."
+        },
+        "yudanaka": {
+          "hook": "Wild monkeys in the snow, and a lantern-lit hot-spring lane.",
+          "note": "Wild monkeys sit in a steaming pool in a snowy gorge, and Shibu's old lane glows with lanterns on Christmas Eve. Three nights: Zenko-ji on the way in, the monkeys, then a day that splits, skiing at Shiga Kogen for some and Obuse's Hokusai paintings for the others."
+        },
+        "kanazawa": {
+          "hook": "Gardens, teahouses and winter crab, and a thatched village nearby.",
+          "note": "Kenroku-en with its pines roped against the snow, geisha and samurai lanes, gold leaf, and crab in its last weeks. Three nights, because Monday the 28th, when the museums close, is our day out to Shirakawa-go's thatched farmhouses."
+        },
+        "kyoto": {
+          "hook": "New Year's Eve in the old capital: sacred fire, temple bells.",
+          "note": "Lantern light in Higashiyama, the Okera fire at Yasaka Shrine, and bells ringing in the year. Six nights, because Kyoto is a hub: one slow New Year's Day, then museums and easy days out to Nara, Uji and Ohara, each with a plan."
+        },
+        "kawaguchiko": {
+          "hook": "Fuji fills the sky, straight across the lake.",
+          "note": "The famous view with nothing in the way, from the hotel, the lakeside path and the ropeway, with hoto noodles for lunch. Fuji hides in cloud on some mornings, so two nights give us two dawns to see it clear."
+        },
+        "tokyo:2": {
+          "hook": "Back to Tokyo for museums, kabuki and a goodbye dinner.",
+          "note": "The great museums of Ueno, with the Musée d'Orsay show and the Tokyo National Museum open late on Friday, then a single act of kabuki and a farewell dinner. Two nights keep the last day calm, so a late train cannot risk the Saturday flight."
+        }
+      },
+      "left_out": [
+        "takayama",
+        "gero",
+        "hakone",
+        "okuhida",
+        "hiroshima"
+      ]
+    },
+    "kyoto-new-year-takayama": {
+      "style": "classic",
+      "theme": "Kyoto New Year, with Takayama",
+      "tagline": "Two nights in each small place, Takayama before Kyoto.",
       "feel": "An easy start in Tokyo while the jet lag wears off and the first-timers get the classic days. On Christmas Eve the shinkansen takes us to Nagano: Zenko-ji on the way, then a hot-spring inn in Yudanaka, Shibu Onsen's lantern lane after dinner, the snow monkeys the next morning and Obuse's Hokusai paintings in the afternoon. Then Kanazawa for two full days: Kenroku-en with its snow ropes, the 21st Century Museum open late on Saturday, the market, the teahouses and crab in its last week. A bus over the mountains stops in Shirakawa-go's thatched village and goes on to Takayama for the old town, the morning market and Hida beef. On 30 December we ride to Kyoto and stay six nights in Higashiyama: the Okera fire and the temple bells on New Year's Eve, a slow New Year's Day, then museums and easy days out to Nara, Uji or Himeji. Then Lake Kawaguchi, with Fuji straight across the water and two dawns to catch it clear, and two last Tokyo days for the museums that were shut in December.",
       "activities": [
         "Tokyo: Tsukiji and the Hama-rikyu garden, Asakusa and Senso-ji, the Western Art museum in Ueno, Meiji Jingu and the Nezu Museum, Skytree at dusk, the Marunouchi lights",
@@ -19,7 +154,7 @@
       ],
       "why": "It keeps every place to the nights it can fill. No small place gets more than two, every day has a plan, and the only long stay is Kyoto, where day trips and museums fill the days after New Year. New Year's Eve is the real event in Kyoto, close to two big hospitals, and four of the seven bases are new to Pedro and Fernanda. Days can split: João and Carolina can do two big things a day while Fernanda and the parents do one.",
       "suits": "Fernanda at 29–32 weeks (beds, private baths, light afternoons after long moves, every night from 29 Dec to 3 Jan near a big hospital), Carlos and Nadir on a first visit, and João, Carolina and Tatiana, who get the classic sights plus snow, monkeys and a Kyoto New Year.",
-      "trade": "Gives up a quiet ryokan New Year in Gero, Okuhida's snow baths and Hiroshima. The moves come closer together: four moves between 24 and 30 Dec, each two days apart, with cabin bags while the big cases wait in Kyoto. Kyoto costs the most at New Year, and Kyoto to the lake is about 4 h 15, the one move over four hours (Hakone instead is about 3 h).",
+      "trade": "One more move than the main route: four moves between 24 and 30 Dec, including a bus day with the bags on 28 Dec and the 3.5-hour Hida train on 30 Dec, and no ski or Obuse day. The big cases wait in Kyoto while we travel with cabin bags. Kyoto costs the most at New Year, and Kyoto to the lake is about 4 h 15, the one move over four hours (Hakone instead is about 3 h).",
       "nye": "New Year's Eve in Higashiyama. Kiyomizu-dera and the old lanes early, before the crowds, then a rest at the house. Anyone can ring a temple bell in daylight: in 2025 Myoman-ji let visitors ring 15:00–17:00 and Zuiko-ji 14:00–17:30 (times for 2026 to check). Dinner in, with toshikoshi soba, the noodles that close the year. From about 19:30 the Okera fire burns at Yasaka Shrine: we go early, carry the flame home on a twist of rope, and are back by 21:00, so Fernanda can be in bed by then if she likes. For the midnight bells, Kodai-ji gives numbered tickets from 22:00 to the first 108 groups, and Eikando and Chishaku-in also let people ring (2025 pattern, to check). Buses and the subway do not run all night, so we walk home through Higashiyama.",
       "stay_notes": {
         "tokyo": "Arrival plus three full days. Jet lag and the first-timers need an easy start; Mon 21 Dec is a museum closing day, so it becomes the market-and-gardens day. One night less loses a whole side of the city.",
@@ -140,13 +275,29 @@
           "note": "The great museums of Ueno, with the Musée d'Orsay show and the Tokyo National Museum open late on Friday, then a single act of kabuki and a farewell dinner. Two nights keep the last day calm, so a late train cannot risk the Saturday flight."
         }
       },
-      "left_out": [
-        "gero",
-        "hakone",
-        "okuhida",
-        "hiroshima",
-        "hokkaido"
-      ]
+      "days": {
+        "2026-12-20": "Land at Haneda, van to the hotel, the Marunouchi lights, an easy dinner",
+        "2026-12-21": "Museums are closed on Mondays, so: Tsukiji outer market, Hama-rikyu garden, Ginza food halls",
+        "2026-12-22": "Asakusa and Senso-ji early, the Western Art museum in Ueno, Skytree at dusk",
+        "2026-12-23": "Meiji Jingu and Harajuku, the Nezu Museum garden, Shibuya. Send the big cases to Kyoto",
+        "2026-12-24": "Shinkansen to Nagano, Zenko-ji, then on to Yudanaka. Christmas Eve ryokan dinner and Shibu's lantern lane",
+        "2026-12-25": "Snow monkeys in the morning, Obuse and the Hokusai museum in the afternoon",
+        "2026-12-26": "Train via Nagano to Kanazawa; Kenroku-en, then the 21st Century Museum, open late on Saturday",
+        "2026-12-27": "Omicho market, Higashi Chaya and gold leaf, the D.T. Suzuki Museum, the Nagamachi lanes; crab dinner",
+        "2026-12-28": "Museums close today: Nohi bus to Shirakawa-go, then on to Takayama. Old town at dusk and Hida beef",
+        "2026-12-29": "Morning market and New Year decorations, Sanmachi breweries, the festival floats, Hida Folk Village",
+        "2026-12-30": "Train to Kyoto, arriving early afternoon. Nishiki market before it closes 1–3 Jan, Gion at dusk",
+        "2026-12-31": "Kiyomizu-dera early, a rest, a daytime bell, the Okera fire at Yasaka, midnight bells for whoever wants them",
+        "2027-01-01": "Slow on purpose: Ohara's Sanzen-in, or Nanzen-ji and the Philosopher's Path; a hotel lunch",
+        "2027-01-02": "The Kyoto National Museum's New Year show, Kitano Tenmangu's first-calligraphy festival",
+        "2027-01-03": "Uji: Byodo-in and the tea street. Or the New Year bunraku in Osaka",
+        "2027-01-04": "Nara by reserved Kintetsu train: Todai-ji, the deer, Kasuga Taisha. Or Himeji Castle. Send the big cases to Tokyo",
+        "2027-01-05": "Shinkansen to Mishima with seats on the Fuji side, then the bus to the lake. Nothing planned after arrival",
+        "2027-01-06": "Fuji at dawn, the Panoramic Ropeway, hoto for lunch, the Itchiku Kubota Art Museum",
+        "2027-01-07": "A second dawn, then the Fuji Excursion to Shinjuku. The Musée d'Orsay show or a food hall in the afternoon",
+        "2027-01-08": "A single act at Kabuki-za, the Tokyo National Museum open late, last shopping, farewell dinner",
+        "2027-01-09": "Fly home from Haneda"
+      }
     },
     "gero-new-year": {
       "style": "classic",
@@ -319,7 +470,7 @@
       "style": "classic",
       "theme": "Kyoto New Year, with Hakone for Fuji",
       "tagline": "The plan, with Hakone's museums and ryokan instead of the lake.",
-      "feel": "Everything in the plan up to 5 January: Tokyo, the snow monkeys, Kanazawa, Shirakawa-go and Takayama, then six nights in Kyoto for New Year. On 5 January we go to Hakone instead of Lake Kawaguchi: a ryokan with a private bath, steam rising between the pines, five art museums for a cloudy day, and Fuji over the hills and the lake. Then the Romancecar to Tokyo for the last two days.",
+      "feel": "Everything in the plan up to 5 January: Tokyo, the snow monkeys and a ski or Obuse day, Kanazawa with Shirakawa-go, then six nights in Kyoto for New Year. On 5 January we go to Hakone instead of Lake Kawaguchi: a ryokan with a private bath, steam rising between the pines, five art museums for a cloudy day, and Fuji over the hills and the lake. Then the Romancecar to Tokyo for the last two days.",
       "activities": [
         "Everything in the plan from Tokyo to Kyoto",
         "Hakone: the Open-Air Museum, the Pola and Narukawa museums, the loop by ropeway and boat on Lake Ashi, a ryokan with a private bath",
@@ -333,32 +484,13 @@
       },
       "nye": "As in the plan: New Year's Eve in Higashiyama. A daytime bell for anyone (in 2025 Myoman-ji 15:00–17:00 and Zuiko-ji 14:00–17:30; 2026 times to check), dinner in with toshikoshi soba, the Okera fire at Yasaka from about 19:30 and back by 21:00, so Fernanda can be in bed by then if she likes. The midnight bells at Kodai-ji, Eikando and Chishaku-in are for whoever wants them, and we walk home."
     },
-    "kyoto-new-year-ski": {
-      "style": "snow",
-      "theme": "Kyoto New Year, with a ski day first",
-      "tagline": "One Tokyo night moves to Nagano for a day on the slopes.",
-      "feel": "Three nights in Tokyo, then three in Yudanaka from 23 December. On one day those who ski go up to Shiga Kogen, 30 minutes by bus, while Fernanda, Carlos and Nadir visit Obuse and Zenko-ji at an easy pace. The snow monkeys and Shibu's lantern lane fill another day, and Christmas Eve is a ryokan dinner. From 26 December the trip runs exactly as the plan: Kanazawa, Shirakawa-go, Takayama, New Year in Kyoto, the lake and Tokyo.",
-      "activities": [
-        "Tokyo: two full days of the classic city",
-        "Yudanaka: a ski day at Shiga Kogen for those who ski; Obuse and Zenko-ji for the others; the snow monkeys and Shibu's lantern lane",
-        "Everything in the plan from Kanazawa onwards"
-      ],
-      "why": "Pedro wanted snow, and a ski day for those who ski. This gives one without adding a night or a move, and the others get a calm day of their own.",
-      "suits": "Whoever wants a day on skis. Fernanda cannot ski, so her day is Obuse and Zenko-ji at an easy pace with Carlos and Nadir.",
-      "trade": "One Tokyo day for the first-timers; some of it can be made up on 7–8 Jan. The Shiga Kogen opening date for 2026 is still to check, and snow can be thin before Christmas.",
-      "stay_notes": {
-        "tokyo": "Three nights means two full days. The first-timers lose one classic day; part of it can come back on 7–8 Jan.",
-        "yudanaka": "Three nights: one day on the slopes at Shiga Kogen for those who ski, one for the monkeys and Obuse, and Christmas Eve at the ryokan. Fernanda and the parents have an easy day of their own."
-      },
-      "nye": "As in the plan: New Year's Eve in Higashiyama. A daytime bell for anyone (in 2025 Myoman-ji 15:00–17:00 and Zuiko-ji 14:00–17:30; 2026 times to check), dinner in with toshikoshi soba, the Okera fire at Yasaka from about 19:30 and back by 21:00, so Fernanda can be in bed by then if she likes. The midnight bells at Kodai-ji, Eikando and Chishaku-in are for whoever wants them, and we walk home."
-    },
     "kyoto-nara-hakone": {
       "style": "classic",
       "theme": "Kyoto New Year, then Nara and Hakone",
       "tagline": "Four nights in Kyoto, two in Nara, then Hakone for Fuji.",
-      "feel": "As the plan to New Year: Tokyo, Yudanaka, Kanazawa, Shirakawa-go and Takayama, then Kyoto from 30 December for the Okera fire and the bells. On 3 January we take the 35-minute train to Nara and stay two nights by the park, with the deer at dawn and the Great Buddha before the day visitors come. Then Hakone for two nights, and Tokyo.",
+      "feel": "As the plan to New Year: Tokyo, Yudanaka, Kanazawa and Shirakawa-go, then Kyoto from 30 December for the Okera fire and the bells. On 3 January we take the 35-minute train to Nara and stay two nights by the park, with the deer at dawn and the Great Buddha before the day visitors come. Then Hakone for two nights, and Tokyo.",
       "activities": [
-        "Everything in the plan from Tokyo to Takayama",
+        "Everything in the plan from Tokyo to Kanazawa",
         "Kyoto: New Year's Eve in Higashiyama, a slow New Year's Day, the National Museum on 2 Jan",
         "Nara: the deer park at dawn, Todai-ji, Kasuga Taisha, Naramachi, Horyu-ji",
         "Hakone: the museums, the loop by ropeway and boat, a ryokan with a private bath",
@@ -1970,9 +2102,8 @@
   },
   "plan_nights": {
     "tokyo": 4,
-    "yudanaka": 2,
-    "kanazawa": 2,
-    "takayama": 2,
+    "yudanaka": 3,
+    "kanazawa": 3,
     "kyoto": 6,
     "kawaguchiko": 2,
     "tokyo:2": 2
