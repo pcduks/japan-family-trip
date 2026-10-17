@@ -25,18 +25,19 @@
    - 15 of the 17 routes give 3 or more nights to a small place. Most commonly that is Kanazawa at 4.
    - 8 of the 10 new routes end with 3–4 nights in Tokyo, padded with "free day" and "quiet evening".
    - All 10 new routes contain at least one day that is explicitly empty ("slow day", "easy day", "home day"), and 8 of them contain 2–5 such days.
-2. **The latest recommendation, route F in `expanded.md`, contradicts all three of Pedro's notes.**
-   - It gives Kanazawa 4 nights, where he said 3 already feels long.
-   - It gives Kyoto 6 nights without a day-by-day justification.
-   - It spends Nagano on a ski day Fernanda can't use.
+2. **The latest recommendation, route F in `expanded.md`, has the right shape but one stay too long.**
+   - It gives Kanazawa 4 nights, where Pedro said 3 already feels long. The fourth is a rest day in a small town (29 Dec).
+   - Its Kyoto 6 comes with a day-by-day plan, and its Nagano split day (ski for the fit four; Zenko-ji or Obuse for Fernanda and the parents) holds up. Both survive in the proposal below.
+   - The revised proposal is close to F: one Kanazawa night moves to the start in Tokyo, Shirakawa-go fills Kanazawa's museum closing day, and the stays shift by a day.
 3. **The cause is the rules, not the places.** A few rules, applied mechanically, force long blocks around New Year:
    - the no-move peak-day list
    - "rest days count as nights" wherever the calendar is frozen
    - the "ryokan dinner on 31 Dec" rule
    - the 2-night luggage lead over New Year
    - a 4-night Tokyo ending
-4. **Proposed main route:** Tokyo 4 → Nagano (Yudanaka/Shibu) 2 → Kanazawa 2 → Takayama 2 (via Shirakawa-go) → Kyoto 6 (New Year's Eve in Higashiyama) → Kawaguchiko 2 → Tokyo 2.
-   - No small place gets more than 2 nights.
+4. **Proposed main route:** Tokyo 4 → Nagano (Yudanaka/Shibu) 3 → Kanazawa 3 (Shirakawa-go as a day trip) → Kyoto 6 (New Year's Eve in Higashiyama) → Kawaguchiko 2 → Tokyo 2.
+   - 5 moves, at least 3 days apart. Takayama is dropped to save a move (revised 17 Oct, evening).
+   - No small place gets a night it can't fill: the third nights in Nagano and Kanazawa each carry a named day out.
    - Kyoto is the only long stay. It is a hub, and every one of its days has a named plan.
 5. **Twelve rule changes** are listed in section 5. The most important:
    - Make the peak-day rule directional and distance-based, and fix the dates (31 Dec is a calm day; 27–28 Dec are not).
@@ -116,8 +117,8 @@ A **full day** here means one main outing and one short visit, at the Balanced p
 
 | Place | What it really holds for this group in these dates | Full days | Nights it deserves |
 |---|---|---|---|
-| **Kanazawa** | Day 1: Kenroku-en, the castle park, the 21st Century Museum (open to 20:00 Fri–Sat, closed Mondays). Day 2: Higashi Chaya, Omicho market, D.T. Suzuki Museum, the Nagamachi lanes. The Nomura samurai house is closed 26–27 Dec, museums are closed Mondays and from 29 Dec. | 2 | **2**. 3 only if Shirakawa-go is a day trip, but it works better as a stop on the bus to Takayama. |
-| **Nagano** (Yudanaka / Shibu / Zenko-ji / Obuse) | Zenko-ji on arrival. The snow monkeys (open daily) in the morning, then Obuse (Hokusai's ceiling painting, chestnut sweets) in the afternoon. Shibu's lantern lane in the evening. | 1.5 | **2**. 3 only for a ski day for the fit four. |
+| **Kanazawa** | Day 1: Kenroku-en, the castle park, the 21st Century Museum (open to 20:00 Fri–Sat, closed Mondays). Day 2: Higashi Chaya, Omicho market, D.T. Suzuki Museum, the Nagamachi lanes. The Nomura samurai house is closed 26–27 Dec, museums are closed Mondays and from 29 Dec. | 2, or 3 with the Shirakawa-go day trip | **2–3**. 3 in the proposed route, because the Shirakawa-go day trip fills the museum closing day (Mon 28 Dec). |
+| **Nagano** (Yudanaka / Shibu / Zenko-ji / Obuse) | Zenko-ji on arrival. The snow monkeys (open daily) in the morning, then Obuse (Hokusai's ceiling painting, chestnut sweets) in the afternoon. Shibu's lantern lane in the evening. | 1.5, or 2.5 with a split day (ski for the fit four, Obuse for the others) | **2–3**. 3 in the proposed route, with the split day. |
 | **Takayama** | Old town, Sanmachi breweries, morning markets, the festival-float hall, Hida Folk Village. Takayama Jinya, the main museum, closes 29 Dec – 3 Jan. | 1–1.5 | **2** |
 | **Gero** | Footbaths, Gassho Village, the ryokan. No New Year's Eve event, and no bell for visitors confirmed (`expanded.md` §1). | 0.5 | **0–1**. A rest stop, not a destination. |
 | **Kyoto** (and day trips) | 3–4 days in the city for the four first-timers. Easy day trips: Nara (35–45 min), Uji (20–30 min), Ohara (40–60 min bus), Osaka (30 min), Himeji (50 min). New Year rites 31 Dec – 3 Jan. | 6+ | **4–6**, provided every day is planned (§4.3). |
@@ -160,36 +161,48 @@ From `expanded.md` §4, still open:
 
 ### 4.1 Main route: "New places before Christmas, Kyoto for New Year"
 
+*Revised 17 Oct, evening.* Pedro asked for fewer moves between Tokyo and Kyoto. Takayama is dropped; Shirakawa-go stays as a day trip from Kanazawa. The six-move version with Takayama is kept as variant V2 (§4.6).
+
 | # | Base | Dates | Nights | Why this long |
 |---|---|---|---|---|
 | 1 | Tokyo | Sun 20 – Thu 24 Dec | 4 | Arrival plus 3 full days for the four first-timers, in Christmas-lights week. Mon 21 is a museum closing day, so it is the markets-and-gardens day. |
-| 2 | Nagano: Yudanaka / Shibu Onsen | Thu 24 – Sat 26 Dec | 2 | Zenko-ji, the snow monkeys, Obuse, Shibu's lantern lane, a ryokan on Christmas Eve. |
-| 3 | Kanazawa | Sat 26 – Mon 28 Dec | 2 | Two full days: gardens and museums, then Higashi Chaya and the market. Leaving on Monday the 28th uses the museum closing day as the travel day. |
-| 4 | Takayama, via Shirakawa-go | Mon 28 – Wed 30 Dec | 2 | Shirakawa-go on the way in, the old town at dusk, then one full Takayama day. |
-| 5 | Kyoto, Higashiyama for New Year's Eve | Wed 30 Dec – Tue 5 Jan | 6 | The New Year event, then four day-trip and museum days while the rest of Japan travels home. A hub: every day has a named plan (§4.3). |
-| 6 | Kawaguchiko (or Hakone, §4.6) | Tue 5 – Thu 7 Jan | 2 | One full day and two dawns for Fuji. January is Fuji's clearest month. |
-| 7 | Tokyo | Thu 7 – Sat 9 Jan | 2 | The museums closed in December, a single act of kabuki, shopping, near Haneda for the flight. |
+| 2 | Nagano: Yudanaka / Shibu Onsen | Thu 24 – Sun 27 Dec | 3 | Zenko-ji, Shibu's lantern lane and a ryokan on Christmas Eve, then the snow monkeys, then a split day: the fit four ski at Shiga Kogen while Fernanda and the parents go to Obuse. |
+| 3 | Kanazawa | Sun 27 – Wed 30 Dec | 3 | Gardens and museums on the 27th. Mon 28 is the museum closing day, so it becomes the Shirakawa-go day trip. Higashi Chaya and the year-end market on the 29th. |
+| 4 | Kyoto, Higashiyama for New Year's Eve | Wed 30 Dec – Tue 5 Jan | 6 | The New Year event, then four day-trip and museum days while the rest of Japan travels home. A hub: every day has a named plan (§4.3). |
+| 5 | Kawaguchiko (or Hakone, §4.6) | Tue 5 – Thu 7 Jan | 2 | One full day and two dawns for Fuji. January is Fuji's clearest month. |
+| 6 | Tokyo | Thu 7 – Sat 9 Jan | 2 | The museums closed in December, a single act of kabuki, shopping, near Haneda for the flight. |
 
 **Totals:**
-- 4 + 2 + 2 + 2 + 6 + 2 + 2 = 20 nights.
-- 7 bases, 6 moves.
-- No small place over 2 nights.
-- 4 of the 7 bases are new to Pedro and Fernanda.
+- 4 + 3 + 3 + 6 + 2 + 2 = 20 nights.
+- 6 bases, 5 moves, at least 3 days apart.
+- Nagano and Kanazawa get 3 nights each, and each third night is earned: the ski and Obuse day in Nagano, and the Shirakawa-go day trip in Kanazawa. There is no empty day in either (rules 2 and 3).
+- 4 places are new to Pedro and Fernanda: Nagano, Kanazawa, Shirakawa-go and Kawaguchiko.
+
+**Why Takayama is the stop to drop, not Nagano or Kanazawa:**
+- Takayama gives the least on these dates. The Jinya, its main museum, closes on 29 Dec, and the town fills about a day.
+- Shirakawa-go, the best part of that leg, survives as a day trip from Kanazawa, without moving bags.
+- Two of the hardest travel days go: the bus day with luggage on 28 Dec, and the 3.5-hour Hida train on 30 Dec (the line has had cancellations; §3.4). Kanazawa → Kyoto is about 2–2.5 hours.
+- Pedro has said he likes Nagano and Kanazawa.
+
+**What is lost:** Takayama's old town, morning markets and a night in Hida. Hida beef is still on menus in Kanazawa and Shirakawa-go.
 
 ### 4.2 Moves, and when to book them
 
-| Date | From → To | How | Door to door | Peak? | Book |
+| Date | From → To | How | Door to door | Peak? (rule 1) | Book |
 |---|---|---|---|---|---|
-| Thu 24 Dec | Tokyo → Yudanaka | Hokuriku shinkansen to Nagano (~1 h 20), Zenko-ji, then the Nagaden express to Yudanaka (~45 min) | ~3 h, with a stop | No | 24 Nov, 10:00 JST |
-| Sat 26 Dec | Yudanaka → Kanazawa | Nagaden to Nagano, then Kagayaki (~65 min) | ~2.5–3 h | No (26 Dec is Saturday, the start of outbound traffic from Tokyo; this train runs Nagano to Kanazawa, not out of Tokyo) | 26 Nov |
-| Mon 28 Dec | Kanazawa → Shirakawa-go → Takayama | Nohi bus 8:40 → 10:05, about 3 h in the village, then a bus to Takayama (~50 min) | ~5 h including the village visit; ~2 h of riding | Regional bus; reserve | ~28 Nov (bus sales one month ahead) |
-| Wed 30 Dec | Takayama → Kyoto | Hida to Nagoya (~2 h 20), then Nozomi to Kyoto (~35 min) | ~3.5 h | 30 Dec is a peak day. The Hida leg runs *away* from the homecoming flow; the Nozomi is all-reserved. Our reading, not confirmed. | **30 Nov, 10:00 JST**, Green Car |
-| Tue 5 Jan | Kyoto → Kawaguchiko | Shinkansen to Mishima, then bus; or to Shin-Fuji | ~4 h 15 | No | 5 Dec |
+| Thu 24 Dec | Tokyo → Yudanaka | Hokuriku shinkansen to Nagano (~1 h 20), Zenko-ji, then the Nagaden express to Yudanaka (~45 min) or the Snow Monkey express bus (no stairs at Yudanaka) | ~3 h, with a stop | No | 24 Nov, 10:00 JST |
+| Sun 27 Dec | Yudanaka → Kanazawa | Nagaden or bus to Nagano, then Kagayaki or Hakutaka (~65 min) | ~2.5–3 h | 27 Dec is the national outbound peak, and Nagano → Kanazawa runs in the outbound direction. The leg is under 90 minutes, so it is *info*, not a warning, but seats for 7 may go fast because the train starts in Tokyo. | **27 Nov, 10:00 JST**, Green Car. Hakutaka keeps unreserved cars as a last resort for the fit ones only. |
+| Wed 30 Dec | Kanazawa → Kyoto | Hokuriku shinkansen to Tsuruga (~50 min), then the Thunderbird to Kyoto (~55 min); one change, with lifts | ~2–2.5 h | 30 Dec is a peak day, but this runs from Hokuriku towards Kansai, against the homecoming flow. Our reading, not confirmed. | **30 Nov, 10:00 JST**, Green Car |
+| Tue 5 Jan | Kyoto → Kawaguchiko | Shinkansen to Mishima, then the highway bus (~2 h); or to Shin-Fuji | ~4 h 15 | No | 5 Dec |
 | Thu 7 Jan | Kawaguchiko → Tokyo | Fuji Excursion (~2 h) | ~2.5 h | No | 7 Dec |
 
+The Shirakawa-go day trip on Mon 28 Dec is not a move. Two ways to do it:
+- **Nohi bus**, Kanazawa 8:40 → Shirakawa-go 10:05, back in the afternoon; about 75 minutes each way. Reserve when sales open (about 28 Nov). Seven seats together are not guaranteed.
+- **A private van with a driver**, about ¥80,000–100,000 for the day (`03-transport` §5). Door to door, stops when Fernanda needs them, and not tied to a bus timetable in snow. Recommended for this group.
+
 **Luggage, using the "travel light" pattern (rule 7):**
-- **23 Dec:** forward the big cases from Tokyo to the Kyoto lodging. Confirm it will store them from about 26 Dec.
-- **24–30 Dec:** travel with cabin bags. That's 6 nights across 3 bases, with laundry in Kanazawa.
+- **23 Dec:** forward the big cases from Tokyo to the Kyoto lodging. Confirm it will store them from about 25 Dec.
+- **24–30 Dec:** travel with cabin bags. That's 6 nights across 2 bases, with laundry in Kanazawa.
 - **4 Jan:** forward the big cases from Kyoto to the final Tokyo hotel. That allows the 2-night New Year lead, and the cases arrive by 6–7 Jan.
 - **5–7 Jan:** cabin bags again for Kawaguchiko.
 
@@ -202,12 +215,12 @@ From `expanded.md` §4, still open:
 | Tue 22 | Tokyo | Asakusa and Senso-ji early, Ueno or the Tokyo National Museum, Skytree at dusk | Lifts everywhere |
 | Wed 23 | Tokyo | Meiji Jingu and Harajuku, the Nezu Museum garden, Shibuya. Forward the big cases to Kyoto. | Ramped gate at Harajuku |
 | Thu 24 | → Nagano | Shinkansen to Nagano. Zenko-ji (flat approach; the dark passage under the hall is optional). On to Yudanaka. Christmas Eve ryokan dinner, then Shibu's lantern lane. | Private or in-room bath |
-| Fri 25 | Yudanaka | Snow monkeys in the morning (1.6 km of packed snow; spikes, or footbaths in Shibu). Afternoon in Obuse: Hokusai museum, Gansho-in ceiling, chestnut sweets. *Obuse hours over the holidays: check.* | Monkey path optional |
-| Sat 26 | → Kanazawa | Train via Nagano. Kenroku-en, then the 21st Century Museum (open late on Saturday) | Flat |
-| Sun 27 | Kanazawa | Omicho market, Higashi Chaya and gold leaf, D.T. Suzuki Museum, the Nagamachi lanes; crab dinner (kobako crab is in season until 31 Dec) | Flat; long lunch |
-| Mon 28 | → Takayama | Museums closed: Nohi bus to Shirakawa-go (viewpoint shuttle, Wada house), bus on to Takayama. Old town at dusk and Hida beef. | Seated bus; the farmhouse stairs are optional |
-| Tue 29 | Takayama | Miyagawa morning market (with the New Year decorations market, 27–31 Dec), Sanmachi sake breweries, festival-float hall, Hida Folk Village. Takayama Jinya is closed from 29 Dec. | Icy riverside; cleats |
-| Wed 30 | → Kyoto | Train to Kyoto, arriving early afternoon. Nishiki market before it closes 1–3 Jan, Gion at dusk. | Green Car, light afternoon |
+| Fri 25 | Yudanaka | Snow monkeys in the morning (1.6 km of packed snow; spikes, or footbaths and a café in Shibu). A slow afternoon at the ryokan; the nine-bath walk for the others. | Monkey path optional |
+| Sat 26 | Yudanaka | Split day. The fit four ski or play in the snow at Shiga Kogen (30-minute bus; *2026 opening date to check*). Fernanda and the parents go to Obuse, 20 minutes on the same local line: the Hokusai museum, Gansho-in's ceiling, chestnut sweets (*holiday hours to check*). If nobody wants snow, all seven go to Matsumoto Castle instead (open until 28 Dec; grounds for her). | Obuse is flat |
+| Sun 27 | → Kanazawa | Train via Nagano, arriving about midday. Kenroku-en, then the 21st Century Museum (closed Mondays and from 29 Dec, so today is its day). D.T. Suzuki Museum next door if there's energy. | Flat |
+| Mon 28 | Kanazawa | Museums closed: Shirakawa-go day trip by van or bus (viewpoint, Wada house, lunch), back for a crab dinner (kobako crab is in season until 31 Dec). | Seated ride; the farmhouse stairs are optional |
+| Tue 29 | Kanazawa | Omicho market in its busy year-end days (it closes 1–4 Jan), Higashi Chaya and gold leaf, the Nagamachi samurai lanes. Or a half day at Kaga Onsen's baths (25 min). | Flat; long lunch |
+| Wed 30 | → Kyoto | Train via Tsuruga, arriving about midday. Nishiki market before it closes 1–3 Jan, Gion at dusk. | Green Car, light afternoon |
 | Thu 31 | Kyoto | Kiyomizu-dera and the Higashiyama lanes early, then rest. A daytime bell for anyone (in 2025: Myoman-ji 15:00–17:00, Zuiko-ji 14:00–17:30). Dinner in, toshikoshi soba. Okera fire at Yasaka from about 19:30, back by 21:00. Midnight bell for whoever wants it: Kodai-ji (numbered tickets from 22:00, first 108 groups), Eikando, Chishaku-in. | Daytime bell, early fire, bed by 21:00 |
 | Fri 1 Jan | Kyoto | Slow on purpose: Ohara's Sanzen-in (open 1–3 Jan), or Nanzen-ji and the Philosopher's Path. Hotel or ryokan lunch, since restaurants are shut. The early crew can go to Todai-ji in Nara (free until 08:00, with the window to the Great Buddha's face open). | The planned rest day |
 | Sat 2 | Kyoto | Kyoto National Museum's New Year show, Kitano Tenmangu's first-calligraphy festival | Seated museum |
@@ -224,36 +237,35 @@ From `expanded.md` §4, still open:
 | Nights | Base | Nearest obstetric care (from `08-pregnancy` and `expanded.md`) |
 |---|---|---|
 | 20–23 Dec, 7–8 Jan | Tokyo | Many |
-| 24–25 Dec | Yudanaka | Hokushin General Hospital, Nakano: regional perinatal centre, ~10 km (estimate). Before New Year. |
-| 26–27 Dec | Kanazawa | City perinatal centre |
-| 28–29 Dec | Takayama | Takayama Red Cross Hospital, ~10 min from the station |
+| 24–26 Dec | Yudanaka | Hokushin General Hospital, Nakano: regional perinatal centre, ~10 km (estimate). Before New Year. |
+| 27–29 Dec | Kanazawa | City perinatal centre |
 | 30 Dec – 4 Jan | Kyoto | Kyoto University Hospital, Japan Baptist Hospital |
 | 5–6 Jan | Kawaguchiko | **Not checked.** Find the nearest obstetric emergency service before booking. If it is far, Hakone is the alternative (§4.6). |
 
-Every night from 29 Dec to 3 Jan is in Takayama or Kyoto, so rule 8 of `08-pregnancy` is met.
+Every night from 29 Dec to 3 Jan is in Kanazawa or Kyoto, so rule 8 of `08-pregnancy` is met.
 
 ### 4.5 Compared with the current main route and route F
 
 | | Current main | F (expanded.md) | **Proposed** |
 |---|---|---|---|
-| Stays | Tokyo 4, Kanazawa 4, Takayama 2, Gero 2, Kyoto 4, Kawaguchiko 2, Tokyo 2 | Tokyo 3, Shibu 3, Kanazawa 4, Kyoto 6, Kawaguchiko 2, Tokyo 2 | Tokyo 4, Yudanaka 2, Kanazawa 2, Takayama 2, Kyoto 6, Kawaguchiko 2, Tokyo 2 |
-| Small places over 2 nights | Kanazawa 4 | Shibu 3, Kanazawa 4 | **None** |
+| Stays | Tokyo 4, Kanazawa 4, Takayama 2, Gero 2, Kyoto 4, Kawaguchiko 2, Tokyo 2 | Tokyo 3, Shibu 3, Kanazawa 4, Kyoto 6, Kawaguchiko 2, Tokyo 2 | Tokyo 4, Yudanaka 3, Kanazawa 3, Kyoto 6, Kawaguchiko 2, Tokyo 2 |
+| Nights in small places beyond what they can fill (rule 2) | Kanazawa +2, Gero +1 | Kanazawa +1 (a rest day on 29 Dec) | **None**: Nagano 3 and Kanazawa 3 each have a named day trip or split day for the third day |
 | New Year's Eve | Quiet ryokan night in Gero | Kyoto event | Kyoto event, with a ryokan dinner if one is booked |
-| New places for Pedro and Fernanda | Kanazawa, Takayama, Gero, Kawaguchiko | Shibu, Kanazawa, Kawaguchiko | Nagano/Shibu, Kanazawa, Shirakawa-go, Takayama, Kawaguchiko |
-| Moves | 6 | 5 | 6 (4 of them in 24–30 Dec) |
-| Peak-day moves | 30 Dec, 45 min | 30 Dec, ~2–2.5 h | 30 Dec, ~3.5 h (against the main flow) |
+| New places for Pedro and Fernanda | Kanazawa, Takayama, Gero, Kawaguchiko | Shibu, Kanazawa, Kawaguchiko | Nagano/Shibu, Kanazawa, Shirakawa-go, Kawaguchiko |
+| Moves | 6 | 5 | **5**, at least 3 days apart |
+| Peak-day moves | 30 Dec, 45 min | 30 Dec, ~2–2.5 h | 27 Dec, 65 min (outbound direction, under 90 min); 30 Dec, ~2–2.5 h (against the flow) |
 | Hospital rule (29 Dec – 3 Jan) | Broken (Gero) | Kept | Kept |
-| Lodging risk | Gero New Year moderate | Shibu 23–26 Dec unchecked; Kyoto New Year high | Yudanaka 24–26 Dec unchecked; Kyoto New Year high |
+| Lodging risk | Gero New Year moderate | Shibu 23–26 Dec unchecked; Kyoto New Year high | Yudanaka 24–27 Dec unchecked; Kyoto New Year high |
 
 ### 4.6 Variants to show next to it
 
 - **V1, Hakone instead of Kawaguchiko (5–7 Jan).**
   - Gains: about 3 hours from Kyoto instead of 4 h 15, which keeps the 4-hour rule. Five museums for a cloudy day. Ryokan with private baths.
   - Costs: Pedro and Fernanda know Hakone, and Fuji is less direct. The Ekiden road closures are 2–3 Jan only.
-- **V2, a ski day for the fit four.**
-  - Stays: Tokyo 3 (20–23) → Nagano 3 (23–26), then as the main route.
-  - The fit four ski at Shiga Kogen (30-minute bus from Yudanaka; *2026 opening date to check*). Fernanda and the parents do Obuse and Zenko-ji.
-  - Costs one first-timer Tokyo day.
+- **V2, keep Takayama (six moves).**
+  - Stays: Tokyo 4 → Yudanaka 2 (24–26) → Kanazawa 2 (26–28) → Takayama 2 (28–30, arriving via Shirakawa-go on the bus) → Kyoto 6 → Kawaguchiko 2 → Tokyo 2.
+  - Gains: Takayama's old town and morning markets, Hida beef, a night in snow country before New Year.
+  - Costs: one more move, 4 moves in 24–30 Dec, the bus day with luggage on 28 Dec, and the 3.5-hour Hida train on 30 Dec. No ski or Obuse day.
 - **V3, Kyoto at 4, if 6 still feels long.**
   - Stays: Kyoto 4 (30 Dec – 3 Jan), then Nara 2 (3–5 Jan). Kyoto to Nara is a 35-minute local hop, so it is allowed under rule 1 below. Then Hakone 2 (V1).
   - Gains: a calm Nara with the deer at dawn.
@@ -265,12 +277,13 @@ Every night from 29 Dec to 3 Jan is in Takayama or Kyoto, so rule 8 of `08-pregn
 
 ### 4.7 Book or check now
 
-1. **Yudanaka or Shibu, 24–26 Dec, for 7.** Ask for beds and a private bath; Kokuya, Kanaguya and Biyunoyado are the candidates in `07-lodging`. Pedro's note that Shibu is sold out refers to New Year; before Christmas is *unchecked*. Book only through official channels; Kanaguya warns of fake emails.
-2. **Kyoto, Higashiyama, 30 Dec – 5 Jan.** The hardest booking. Either a townhouse for 7 (ask about ground-floor beds, the walk to Yasaka shrine, the licence number and heating), or a ryokan for 30–31 Dec plus a second base for 1–5 Jan.
-3. **Kanazawa 26–28 Dec and Takayama 28–30 Dec, for 7.**
-4. **Kawaguchiko or Hakone 5–7 Jan**, after the hospital check (§4.4).
-5. **Calendar:**
-   - 24 Nov, 26 Nov, ~28 Nov (Nohi bus), 30 Nov 10:00 JST (the 30 Dec trains)
+1. **Yudanaka or Shibu, 24–27 Dec, for 7.** Ask for beds and a private bath; Kokuya, Kanaguya and Biyunoyado are the candidates in `07-lodging`. Pedro's note that Shibu is sold out refers to New Year; before Christmas is *unchecked*. Book only through official channels; Kanaguya warns of fake emails.
+2. **Kyoto, Higashiyama, 30 Dec – 5 Jan.** The hardest booking. Either a townhouse for 7 that will also hold forwarded cases from about 25 Dec (ask about ground-floor beds, the walk to Yasaka shrine, the licence number and heating), or a ryokan for 30–31 Dec plus a second base for 1–5 Jan.
+3. **Kanazawa, 27–30 Dec, for 7**, ideally an apartment with a washing machine.
+4. **A van and driver for Mon 28 Dec**, Kanazawa – Shirakawa-go – Kanazawa, or the Nohi bus when sales open.
+5. **Kawaguchiko or Hakone 5–7 Jan**, after the hospital check (§4.4).
+6. **Calendar:**
+   - 24 Nov, 27 Nov, ~28 Nov (Nohi bus, if not a van), 30 Nov 10:00 JST (the 30 Dec trains)
    - 1 Dec, 14:00 (Chion-in bell tickets, optional)
    - 5 Dec, 7 Dec, 9 Dec (airport transfer)
 
@@ -302,7 +315,7 @@ Each rule has a short id, what changes, and the reason. The names are suggestion
   - *Warn* when a non-hub stay has more nights than its full days + 1.
   - *Warn* when a hub stay has more nights than full days + the day trips that are open on those dates + 1.
   - The message names the empty days. Example: "Kanazawa 4 nights: 2 full days, museums closed 28 Dec; 2 nights would leave no empty day".
-- **Starting values** (§3.2): Kanazawa 2, Nagano 1.5, Takayama 1, Gero 0.5, Kawaguchiko 1, Kyoto 4 + day trips, Tokyo 4 + day trips.
+- **Starting values** (§3.2): Kanazawa 2 (3 with the Shirakawa-go day trip), Nagano 1.5 (2.5 with the split ski and Obuse day), Takayama 1, Gero 0.5, Kawaguchiko 1, Kyoto 4 + day trips, Tokyo 4 + day trips. A day trip only counts on a date when it is open.
 
 ### Rule 3. No unplanned days in small places (new; extends "pace overload")
 
@@ -346,7 +359,7 @@ Each rule has a short id, what changes, and the reason. The names are suggestion
 - *Warn* for more than 3 moves in any 7 days.
 - *Warn* for moves on consecutive days.
 - *Info* when a move of 3 hours or more is followed by a plan heavier than "light afternoon".
-- **Why.** Short stays are only fair to her if the moves are spaced out. The proposed route has 4 moves in 24–30 Dec, all of them 2 days apart, which is the most this allows.
+- **Why.** Short stays are only fair to her if the moves are spaced out. Pedro asked for fewer travel days; the proposed route has 3 moves in 24–30 Dec, 3 days apart.
 
 ### Rule 9. The hospital rule stays and gets data (keeps `08-pregnancy` rule 8)
 
@@ -381,8 +394,9 @@ Each rule has a short id, what changes, and the reason. The names are suggestion
 
 1. **New Year's Eve:** in the middle of it at Yasaka shrine, or a calm ryokan dinner (V4)? The route is the same either way. Only the booking changes.
 2. **Fuji:** Kawaguchiko (the clearest view, 4 h 15 from Kyoto) or Hakone (3 h, museums, known to Pedro and Fernanda)?
-3. **A ski day for the fit four (V2)?** It costs a Tokyo day.
-4. **Kyoto at 6 nights, or Kyoto 4 + Nara 2 (V3)?**
+3. **Shirakawa-go on 28 Dec: private van (about ¥80,000–100,000 for the day) or the public bus?** The van is the gentler day for Fernanda.
+4. **Takayama back in (V2)?** It adds a move and the bus day with luggage, and drops the ski and Obuse day.
+5. **Kyoto at 6 nights, or Kyoto 4 + Nara 2 (V3)?**
 
 ---
 
