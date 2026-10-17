@@ -71,7 +71,7 @@ These fit the current route without changing any nights. They are ordered by how
 | [Indigo dyeing at Wanariya](https://www.gotokyo.org/en/workshop/sd036/index.html) | Asakusa, Tokyo | Take home a piece you dyed | Standing at the vats | Recommended |
 | [Yosegi wood marquetry](https://hakone-japan.com/yosegizaiku/experience/) | Hakone, 5–7 Jan | A craft found only in Hakone | Seated | Most places |
 | [Kimono with maternity dressing](https://salz-tokyo.com/blogs/news/pregnancy-in-kimono) | Kyoto, 2–3 Jan | New Year shrine photos | Possible with a soft, adjusted obi; careful in sandals | Days ahead |
-| New Year's Eve temple bell | Gero, about 23:30 on 31 Dec | Ring in 2027 yourselves | Outdoors and cold | Ask the ryokan whether Onsen-ji lets visitors ring |
+| New Year's Eve temple bell | Kyoto: Kodai-ji (numbered tickets from 22:00, first 108 groups), Eikando (queue 23:00–00:30), Chishaku-in (from 23:40); in daylight, Myoman-ji 15:00–17:00 and Zuiko-ji 14:00–17:30 (2025 times, to check) | Ring in 2027 yourselves | Outdoors and cold at midnight; the daytime bells suit Fernanda | No visitor bell has been found in Gero |
 
 **Not on your dates:**
 
