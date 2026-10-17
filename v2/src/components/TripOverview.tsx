@@ -12,6 +12,7 @@ import type { Version } from "@/lib/types";
 import { movesOf, paceLabel, statsOf } from "@/lib/versions";
 import { BudgetCard, BudgetLine } from "./Budget";
 import { useStore } from "./providers";
+import { guideFor } from "@/lib/autoGuide";
 import { RegionCover } from "./RegionCover";
 import { TimelineLane } from "./Timeline";
 import { Page, PageHeader, RegionDot, RuleBadges, Section } from "./ui";
@@ -177,7 +178,7 @@ export function TripOverview() {
 
 export function AlternativeCard({ v, planBudget, onShow }: { v: Version; planBudget?: number; onShow?: () => void }) {
   const { snapshot, rules } = useStore();
-  const g = versionGuide(v.id);
+  const g = guideFor(v, snapshot);
   const owner = v.owner === "planners" ? null : snapshot.travellers.find((t) => t.id === v.owner);
   const findings = checkVersion(v, rules);
   const nye = v.stays.find((s) => s.from <= "2026-12-31" && s.to > "2026-12-31");

@@ -171,3 +171,58 @@ export function paceLabel(p: Pace): string {
 export function nightsBetween(from: string, to: string): number {
   return daysBetween(from, to);
 }
+
+/**
+ * Two routes in one: follow `a` for the nights before `switchDate` and `b`
+ * from that night on. Neighbouring nights in the same place merge into one
+ * stay (the first one's lodging and note win).
+ */
+export function combineRoutes(a: Pick<Version, "stays">, b: Pick<Version, "stays">, switchDate: string, tripStart: string, nights: number): Stay[] {
+  const at = (v: Pick<Version, "stays">, d: string) => v.stays.find((s) => s.from <= d && s.to > d) ?? v.stays[v.stays.length - 1];
+  const out: Stay[] = [];
+  for (let k = 0; k < nights; k++) {
+    const d = addDays(tripStart, k);
+    const src = at(d < switchDate ? a : b, d);
+    if (!src) continue;
+    const last = out[out.length - 1];
+    if (last && last.region === src.region) last.nights += 1;
+    else out.push({ id: newId(), region: src.region, from: "", to: "", nights: 1, lodging: src.lodging, note: src.note });
+  }
+  return relayout(out, tripStart);
+}
+
+/**
+ * Keep the trip at `target` nights after stay `changed` grew or shrank (or
+ * appeared): take nights from the longest other stays (never below two), or
+ * give spare nights to the stay before it. Returns the stays and a line
+ * saying where the nights went, for a toast.
+ */
+export function rebalance(stays: Stay[], changed: number, target: number, regions: Region[]): { stays: Stay[]; note: string | null } {
+  const list = stays.map((s) => ({ ...s }));
+  const name = (id: string) => regionName(id, regions).replace(/ Onsen$/, "");
+  let diff = list.reduce((a, s) => a + s.nights, 0) - target;
+  const touched = new Map<number, number>();
+  let guard = 60;
+  while (diff > 0 && guard-- > 0) {
+    // Take from later stops first, so the dates before this one (and New Year) stay where they are.
+    const others = list.map((s, i) => ({ s, i })).filter(({ s, i }) => i !== changed && s.nights > 2);
+    if (!others.length) break;
+    const later = others.filter(({ i }) => i > changed);
+    const pool = later.length ? later : others;
+    const longest = pool.reduce((x, y) => (y.s.nights > x.s.nights || (y.s.nights === x.s.nights && Math.abs(y.i - changed) < Math.abs(x.i - changed)) ? y : x));
+    longest.s.nights -= 1;
+    touched.set(longest.i, (touched.get(longest.i) ?? 0) - 1);
+    diff -= 1;
+  }
+  if (diff < 0) {
+    // A spare night goes to the next stop (or the one before, at the end), so earlier dates stay put.
+    const to = changed + 1 < list.length ? changed + 1 : Math.max(0, changed - 1);
+    if (to !== changed && list[to]) {
+      list[to].nights += -diff;
+      touched.set(to, (touched.get(to) ?? 0) - diff);
+      diff = 0;
+    }
+  }
+  const parts = Array.from(touched.entries()).map(([i, d]) => `${d > 0 ? "gave" : "took"} ${Math.abs(d)} ${Math.abs(d) === 1 ? "night" : "nights"} ${d > 0 ? "to" : "from"} ${name(list[i].region)}`);
+  return { stays: list, note: parts.length ? `${parts.join(", ")} to keep ${target} nights.` : diff ? `Now ${target + diff} nights; take some off somewhere.` : null };
+}

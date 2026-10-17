@@ -15,7 +15,7 @@ import { stayNote } from "@/lib/guide";
 import { LODGING_TYPES } from "@/lib/lodging";
 import { checkVersion, type Finding } from "@/lib/rules";
 import type { Lodging, Pace, Region, Stay, Version } from "@/lib/types";
-import { copyVersion, movesOf, newId, relayout } from "@/lib/versions";
+import { copyVersion, movesOf, newId, rebalance, relayout } from "@/lib/versions";
 import { useStore } from "./providers";
 import { RegionCover } from "./RegionCover";
 import { StayLodging } from "./StayLodging";
@@ -35,7 +35,7 @@ type Status = "idle" | "saving" | "saved" | "error";
  * Changes save on their own. Someone who may not edit this version gets
  * their own copy the moment they change something.
  */
-export function Planner({ version, onSuggest }: { version: Version; onSuggest?: () => void }) {
+export function Planner({ version, onSuggest, onDraft, keepTotal }: { version: Version; onSuggest?: () => void; /** Draft mode: report every change here and save nothing. */ onDraft?: (v: Version) => void; /** Keep the trip at this many nights: a night added here is taken from elsewhere. */ keepTotal?: number }) {
   const { snapshot, rules, me, isPlanner, saveVersion, demo } = useStore();
   const router = useRouter();
   const canEdit = isPlanner || (version.status === "personal" && version.owner === me?.travellerId);
@@ -54,7 +54,7 @@ export function Planner({ version, onSuggest }: { version: Version; onSuggest?: 
   const [forked, setForked] = useState(false);
 
   // Follow the server while nothing is being edited here (someone else may have changed it).
-  if (version !== synced && !dirty) {
+  if (version !== synced && !dirty && !onDraft) {
     setSynced(version);
     setDraft(version);
   }
@@ -117,12 +117,23 @@ export function Planner({ version, onSuggest }: { version: Version; onSuggest?: 
       const next: Version = { ...draft, ...patch, stays: relayout(stays, snapshot.trip.start) };
       setUndo((u) => [...u.slice(-19), draft]);
       setDraft(next);
+      if (onDraft) {
+        onDraft(next);
+        return;
+      }
       setDirty(true);
       if (timer.current) clearTimeout(timer.current);
       timer.current = setTimeout(() => persist(next), canEdit ? 1200 : 500);
     },
-    [draft, snapshot.trip.start, persist, canEdit],
+    [draft, snapshot.trip.start, persist, canEdit, onDraft],
   );
+  /** Commit, first moving nights around so the trip keeps its length (when asked to). */
+  const commitBalanced = (stays: Stay[], changed: number) => {
+    if (!keepTotal) return commit(stays);
+    const r = rebalance(stays, changed, keepTotal, snapshot.regions);
+    if (r.note) setToast(r.note.charAt(0).toUpperCase() + r.note.slice(1));
+    commit(r.stays);
+  };
 
   useEffect(
     () => () => {
@@ -137,13 +148,30 @@ export function Planner({ version, onSuggest }: { version: Version; onSuggest?: 
     return () => clearTimeout(t);
   }, [toast]);
 
-  const update = (i: number, patch: Partial<Stay>) => commit(draft.stays.map((s, k) => (k === i ? { ...s, ...patch } : s)));
-  const remove = (i: number) => commit(draft.stays.filter((_, k) => k !== i));
+  const update = (i: number, patch: Partial<Stay>) => {
+    const stays = draft.stays.map((s, k) => (k === i ? { ...s, ...patch } : s));
+    if (patch.nights != null && patch.nights !== draft.stays[i].nights) commitBalanced(stays, i);
+    else commit(stays);
+  };
+  const remove = (i: number) => {
+    const gone = draft.stays[i];
+    const rest = draft.stays.filter((_, k) => k !== i);
+    if (keepTotal && gone && rest.length) {
+      const to = Math.max(0, i - 1);
+      rest[to] = { ...rest[to], nights: rest[to].nights + gone.nights };
+      setToast(`${gone.nights} ${gone.nights === 1 ? "night" : "nights"} moved to ${snapshot.regions.find((r) => r.id === rest[to].region)?.name ?? rest[to].region}.`);
+    }
+    commit(rest);
+  };
   const undoLast = () => {
     const prev = undo[undo.length - 1];
     if (!prev) return;
     setUndo((u) => u.slice(0, -1));
     setDraft(prev);
+    if (onDraft) {
+      onDraft(prev);
+      return;
+    }
     setDirty(true);
     if (timer.current) clearTimeout(timer.current);
     timer.current = setTimeout(() => persist(prev), 600);
@@ -160,7 +188,7 @@ export function Planner({ version, onSuggest }: { version: Version; onSuggest?: 
     const last = list[list.length - 1];
     const at = last && last.region === "tokyo" && list.length > 1 ? list.length - 1 : list.length;
     list.splice(at, 0, stay);
-    commit(list);
+    commitBalanced(list, at);
     setOpenStay(stay.id!);
   };
   const fitTo = (target: number) => {
@@ -201,7 +229,7 @@ export function Planner({ version, onSuggest }: { version: Version; onSuggest?: 
                 Undo
               </button>
             ) : null}
-            <SaveStatus status={status} canEdit={canEdit} forked={forked} />
+            {onDraft ? null : <SaveStatus status={status} canEdit={canEdit} forked={forked} />}
           </span>
         </div>
       </div>
@@ -214,7 +242,7 @@ export function Planner({ version, onSuggest }: { version: Version; onSuggest?: 
             </button>
           ))}
         </div>
-        <p className="text-sm text-muted">{canEdit ? "Drag the handle to reorder. Tap a name to swap it. Changes save on their own." : "Change anything and it becomes your own version to shape and suggest."}</p>
+        <p className="text-sm text-muted">{onDraft ? `Drag the handle to reorder, tap a name to swap it, +/− for nights${keepTotal ? ` (the trip stays at ${keepTotal} nights)` : ""}. Nothing is saved until you save it.` : canEdit ? "Drag the handle to reorder. Tap a name to swap it. Changes save on their own." : "Change anything and it becomes your own version to shape and suggest."}</p>
       </div>
 
       <DndContext sensors={sensors} collisionDetection={closestCenter} modifiers={[restrictToVerticalAxis]} autoScroll={false} onDragEnd={onDragEnd}>

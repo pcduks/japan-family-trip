@@ -44,12 +44,14 @@ interface Props {
   onStop?: (stopIndex: number) => void;
   className?: string;
   label?: string;
+  /** Draw the route in leg by leg when it appears or changes (overview only). */
+  drawIn?: boolean;
 }
 
 const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
 
 /** The journey on an ink-and-paper map: the real lines, a train that travels them, a camera that follows. */
-export function JourneyMap({ regions, stays, ghost = null, t, aspect = 1.3, onStop, className = "", label }: Props) {
+export function JourneyMap({ regions, stays, ghost = null, t, aspect = 1.3, onStop, className = "", label, drawIn = true }: Props) {
   const router = useRouter();
   const reduce = !!useReducedMotion();
   const follow = !!t;
@@ -82,7 +84,7 @@ export function JourneyMap({ regions, stays, ghost = null, t, aspect = 1.3, onSt
     const svg = svgRef.current;
     const wrap = wrapRef.current;
     if (!svg || !wrap) return;
-    const e = startEngine({ svg, wrap, pill: pillRef.current, legs, frames, stays, follow, t: t ?? null, reduce, aspect, lastCam, onActive: setActive, onMoving: setMoving, onPlaying: setPlaying });
+    const e = startEngine({ svg, wrap, pill: pillRef.current, legs, frames, stays, follow, t: t ?? null, reduce: reduce || !drawIn, aspect, lastCam, onActive: setActive, onMoving: setMoving, onPlaying: setPlaying });
     engine.current = e;
     return () => {
       e.destroy();
