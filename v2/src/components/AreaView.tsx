@@ -5,23 +5,22 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import foodGuide from "../../data/food-guide.json";
 import why from "../../data/why.json";
-import { areaInfo, cardsFor, sourceHref, type CatalogCard } from "@/lib/areas";
+import { areaIds, areaInfo, cardsFor, REGIONS, sourceHref, type CatalogCard } from "@/lib/areas";
 import { fitLabel, regionColor } from "@/lib/colors";
 import { placeGuide, REPUTATION_SHORT } from "@/lib/placesGuide";
 import { exposure, EXPOSURE_LABEL } from "@/lib/exposure";
-import { IDLE_LABEL, regionStayGuide, stayTradeoff } from "@/lib/guide";
+import { IDLE_LABEL, regionStayGuide, versionGuide } from "@/lib/guide";
 import { PrefTally } from "./PlacePrefs";
 import { WishBox } from "./WishBox";
 import { fmtDay } from "@/lib/dates";
 import { legBetween } from "@/lib/legs";
 import { lodgingFor, TIER_LABEL } from "@/lib/lodging";
-import { suggestNights } from "@/lib/nights";
-import type { Pace, Place } from "@/lib/types";
+import type { Place } from "@/lib/types";
 import { swapInRegion } from "@/lib/versions";
 import { FoodCard } from "./Food";
-import { JapanMap } from "./JapanMap";
 import { PlacePhoto } from "./PlacePhoto";
 import { useStore } from "./providers";
+import { VerdictPill } from "./Verdict";
 import { Back, Page, RegionDot, Section } from "./ui";
 
 const FOOD_REGION: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", kawaguchiko: "kawaguchiko", hakone: "hakone" };
@@ -35,7 +34,6 @@ export function AreaView({ id }: { id: string }) {
   const router = useRouter();
   const region = snapshot.regions.find((r) => r.id === id);
   const a = areaInfo(id);
-  const [pace, setPace] = useState<Pace>("balanced");
   const [trying, setTrying] = useState(false);
   if (!region || !a)
     return (
@@ -59,21 +57,15 @@ export function AreaView({ id }: { id: string }) {
   const meals = places.filter((p) => p.size === "meal");
   const cards = cardsFor(id);
   const verdict = NOT_CHOSEN.find((x) => x.region === id);
-  // The alternative closest to the plan that uses this area, so Hakone draws "Hakone instead of the lake" rather than the fuller route.
-  const differsFromPlan = (v: { stays: { region: string }[] }) => v.stays.filter((s, i) => s.region !== plan?.stays[i]?.region).length + Math.abs(v.stays.length - (plan?.stays.length ?? 0));
-  const alt = inRoute ? undefined : snapshot.versions.filter((v) => v.status === "alternative" && v.stays.some((s) => s.region === id)).sort((a, b) => differsFromPlan(a) - differsFromPlan(b))[0];
   const food = FOOD.regions[FOOD_REGION[id] ?? id];
   const lodging = lodgingFor(id);
   const fromTokyo = legBetween("tokyo", id, snapshot.regions);
   const prev = plan ? plan.stays[plan.stays.findIndex((s) => s.region === id) - 1] : undefined;
   const fromPrev = prev && prev.region !== "tokyo" ? legBetween(prev.region, id, snapshot.regions) : null;
-  const nights = suggestNights(region, pace, snapshot.places, snapshot.pace, stays[0] ?? null, mustVotes.filter((m) => places.some((p) => p.id === m)));
   const sourceList = [...region.sources, ...places.map((p) => p.links?.source).filter((s): s is string => !!s), ...cards.map((c) => sourceHref(c.source)).filter((s): s is string => !!s)];
   const sourceHost = (s: string) => s.replace(/^https?:\/\/(www\.)?/, "").split("/")[0];
   // One link per site, the first URL we met for it.
   const sources = Array.from(new Map(sourceList.map((s) => [sourceHost(s), s] as const).reverse()).values()).reverse();
-  const planStayIndex = plan ? plan.stays.findIndex((s) => s.region === id) : -1;
-  const tradeoff = plan && planStayIndex >= 0 ? stayTradeoff(plan.id, plan.stays, planStayIndex) : null;
   const herLabel = (p: Place) => (p.status === "avoid_for_her" ? "not for Fernanda" : p.effort_for_her === "high" ? "hard for Fernanda" : p.effort_for_her === "moderate" ? "moderate for Fernanda" : "easy for Fernanda");
 
   async function tryIt() {
@@ -84,6 +76,15 @@ export function AreaView({ id }: { id: string }) {
     router.push(`/routes/${version.id}`);
   }
 
+  const v = a.verdict;
+  const regionMeta = a.region ? REGIONS[a.region] : undefined;
+  const nearby = a.region ? areaIds().filter((x) => x !== id && areaInfo(x)?.region === a.region && snapshot.regions.some((r) => r.id === x)) : [];
+  const STATE_ORDER = ["route", "daytrip", "swap", "later"];
+  nearby.sort((x, y) => STATE_ORDER.indexOf(areaInfo(x)?.verdict?.state ?? "later") - STATE_ORDER.indexOf(areaInfo(y)?.verdict?.state ?? "later"));
+  const fitRoute = v?.route ? snapshot.versions.find((x) => x.id === v.route) : undefined;
+  const fitRouteName = fitRoute ? (versionGuide(fitRoute.id)?.theme ?? fitRoute.name) : null;
+  const dayPicks = [...sights].sort((x, y) => (x.size === "main" ? 0 : 1) - (y.size === "main" ? 0 : 1)).slice(0, 3);
+
   return (
     <Page wide>
       <Back href="/places">Places</Back>
@@ -91,20 +92,46 @@ export function AreaView({ id }: { id: string }) {
         <div className="absolute inset-x-4 bottom-4 z-10 grid gap-1 text-white">
           <p className="flex items-center gap-2 text-[0.72rem] font-semibold tracking-wide uppercase opacity-90">
             <RegionDot id={id} size={8} /> {a.prefecture}
+            {regionMeta ? ` · ${regionMeta.name}` : ""}
           </p>
           <h1 className="display text-[2.4rem] leading-[0.98]">{region.name.replace(/ \(.*\)$/, "")}</h1>
-          <p className="text-sm opacity-90">{region.summary}</p>
+          <p className="text-sm opacity-90">{a.do_line ?? region.summary}</p>
         </div>
       </PlacePhoto>
-      <p className="flex flex-wrap items-center gap-2 text-sm">
-        <span className="chip" style={{ borderColor: "var(--accent)" }}>
-          {fitLabel(region.status)}
-          {inRoute ? ` · ${stays.reduce((n, s) => n + s.nights, 0)} nights` : ""}
-        </span>
-        <span className="text-ink-2">{inRoute ? stays.map((s) => `${fmtDay(s.from, false)} – ${fmtDay(s.to, false)}`).join(" and ") : (verdict?.why ?? region.fit ?? "")}</span>
-      </p>
 
-      <Section title="Known for">
+      <section className="card grid gap-2 p-4" aria-labelledby="for-us">
+        <h2 id="for-us" className="eyebrow">
+          Is it for us this trip?
+        </h2>
+        {v ? (
+          <>
+            <p className="flex flex-wrap items-center gap-2">
+              <VerdictPill state={v.state} />
+            </p>
+            <p className="display text-[1.35rem] leading-tight">{v.headline}</p>
+            <p className="max-w-prose text-ink-2">{v.text}</p>
+            <p className="text-sm">
+              <b>{v.state === "route" ? "On the route: " : v.state === "daytrip" ? "How: " : v.state === "swap" ? "How it would fit: " : "When: "}</b>
+              {v.fit}
+            </p>
+            <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm font-semibold">
+              {inRoute && planStop >= 0 ? <Link href={`/#stop-${planStop}`}>See those days on Trip →</Link> : null}
+              {fitRoute && !inRoute ? <Link href={`/routes/${fitRoute.id}`}>See “{fitRouteName}” →</Link> : null}
+            </div>
+          </>
+        ) : (
+          <p className="text-ink-2">
+            <b>{fitLabel(region.status)}.</b> {inRoute ? (plan && stayWhy(id)) ?? region.summary : (verdict?.why ?? region.fit ?? region.summary)}
+          </p>
+        )}
+        {v?.state === "swap" && plan ? (
+          <button className="btn btn-sm justify-self-start" onClick={tryIt} disabled={trying || !me}>
+            {trying ? "Making your route…" : "Try it in the route"}
+          </button>
+        ) : null}
+      </section>
+
+      <Section title="What people come for">
         <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           {a.known_for.map((k) => (
             <li key={k.title}>
@@ -126,71 +153,45 @@ export function AreaView({ id }: { id: string }) {
         </ul>
       </Section>
 
-      <Section title="In our window" aside="20 Dec – 9 Jan">
-        <ul className="grid gap-2 text-ink-2">
-          {a.window.map((w, i) => (
-            <li key={i} className="flex gap-2">
-              <span aria-hidden="true" className="text-accent">
-                ●
-              </span>
-              <span>{w}</span>
-            </li>
-          ))}
-        </ul>
-        {cards.length ? (
-          <details className="rounded-xl bg-bg-2 p-3 text-sm">
-            <summary className="cursor-pointer font-semibold">{cards.length} more things to do here, with how each one suits Fernanda</summary>
-            <ul className="grid gap-2 pt-2">
-              {cards.map((c) => (
-                <CardRow key={c.id} c={c} />
-              ))}
-            </ul>
-          </details>
+      <Section title="What it’s like">
+        <p className="max-w-prose text-ink-2">{a.feel}</p>
+        {region.videos[0] ? (
+          <a href={region.videos[0]} target="_blank" rel="noreferrer" className="btn btn-sm justify-self-start">
+            Watch a video
+          </a>
         ) : null}
       </Section>
 
-      <div className="grid gap-4 sm:grid-cols-2">
-        <Section title="What it is like">
-          <p className="text-ink-2">{a.feel}</p>
-          {region.videos[0] ? (
-            <a href={region.videos[0]} target="_blank" rel="noreferrer" className="btn btn-sm justify-self-start">
-              Watch a video
-            </a>
-          ) : null}
-        </Section>
-        <Section title="Getting there">
-          <p className="text-ink-2">{a.getting_there}</p>
-          <p className="text-sm text-muted">
-            From Tokyo about {fromTokyo.hours}{fromTokyo.curated ? "" : "~"} h ({fromTokyo.how.toLowerCase()}).
-            {fromPrev && prev ? ` From ${snapshot.regions.find((r) => r.id === prev.region)?.name ?? prev.region} about ${fromPrev.hours} h (${fromPrev.how.toLowerCase()}).` : ""}
-          </p>
-        </Section>
-      </div>
-
       {sights.length ? (
-        <Section title={inRoute ? "What we would do here" : "If we spent nights here"} aside={
-          <span className="seg">
-            {(["gentle", "balanced", "full"] as Pace[]).map((p) => (
-              <button key={p} aria-pressed={pace === p} onClick={() => setPace(p)} className="!min-h-8 !py-1 !text-xs">
-                {p}
-              </button>
-            ))}
-          </span>
-        }>
-          {nights.nights != null ? (
-            <p className="text-sm text-ink-2">
-              <b>{nights.nights} night{nights.nights === 1 ? "" : "s"} at {pace}.</b> {nights.reason}
-            </p>
-          ) : null}
-          <Tier title="Must do" blurb="worth building a day around" list={must} planned={planned} her={herLabel} />
-          <Tier title="Nice to do" blurb="fits an afternoon" list={nice} planned={planned} her={herLabel} />
-          <Tier title="Nice to have" blurb="if there is time" list={maybe} planned={planned} her={herLabel} />
-        </Section>
+        inRoute ? (
+          <Section title="What we’d do" aside={<Link href="/places/list">every place →</Link>}>
+            <Tier title="Must do" blurb="worth building a day around" list={must} planned={planned} her={herLabel} />
+            <Tier title="Nice to do" blurb="fits an afternoon" list={nice} planned={planned} her={herLabel} />
+            <details className="text-sm">
+              <summary className="cursor-pointer font-semibold text-accent">{maybe.length} more, if there is time</summary>
+              <div className="pt-2">
+                <Tier title="Nice to have" blurb="if there is time" list={maybe} planned={planned} her={herLabel} />
+              </div>
+            </details>
+          </Section>
+        ) : (
+          <Section title={v?.state === "later" ? "What people do here" : "A day here could look like"}>
+            <Tier title={v?.state === "later" ? "The highlights" : "Three picks"} blurb="" list={dayPicks} planned={planned} her={herLabel} />
+            {sights.length > dayPicks.length ? (
+              <details className="text-sm">
+                <summary className="cursor-pointer font-semibold text-accent">All {sights.length} things to do here</summary>
+                <div className="grid gap-2 pt-2">
+                  <Tier title="Must do" blurb="worth building a day around" list={must} planned={planned} her={herLabel} />
+                  <Tier title="Nice to do" blurb="fits an afternoon" list={nice} planned={planned} her={herLabel} />
+                  <Tier title="Nice to have" blurb="if there is time" list={maybe} planned={planned} her={herLabel} />
+                </div>
+              </details>
+            ) : null}
+          </Section>
+        )
       ) : null}
 
-      <StayLengths regionId={id} current={stays[0]?.nights ?? null} />
-
-      {food || meals.length ? (
+      {inRoute && (food || meals.length) ? (
         <Section title="Eat" aside={<Link href={`/food?region=${FOOD_REGION[id] ?? id}`}>the food page →</Link>}>
           {food ? (
             <>
@@ -201,10 +202,7 @@ export function AreaView({ id }: { id: string }) {
                   </li>
                 ))}
               </ul>
-              <p className="text-ink-2">{food.intro}</p>
-              <p className="rounded-xl bg-bg-2 p-3 text-sm">
-                <b>For Fernanda:</b> {food.for_her}
-              </p>
+              <p className="max-w-prose text-ink-2">{food.intro}</p>
             </>
           ) : null}
           {meals.length ? (
@@ -217,16 +215,13 @@ export function AreaView({ id }: { id: string }) {
         </Section>
       ) : null}
 
-      {lodging ? (
+      {inRoute && lodging ? (
         <Section title="Sleep">
-          <p className="text-ink-2">
+          <p className="max-w-prose text-ink-2">
             <b>{lodging.type === "rental" ? "A whole house" : lodging.type === "ryokan" ? "A ryokan" : "A hotel"}.</b> {lodging.why}
           </p>
-          <p className="text-sm text-ink-2">
-            <b>For seven:</b> {lodging.fit} <b>Outlook:</b> {lodging.outlook}
-          </p>
           <ul className="grid gap-2 sm:grid-cols-2">
-            {lodging.candidates.slice(0, 4).map((c) => (
+            {lodging.candidates.slice(0, 2).map((c) => (
               <li key={c.name} className="card grid gap-0.5 p-3 text-sm">
                 <span className="flex items-start justify-between gap-2">
                   <a href={c.url} target="_blank" rel="noreferrer" className="font-semibold no-underline">
@@ -241,74 +236,92 @@ export function AreaView({ id }: { id: string }) {
               </li>
             ))}
           </ul>
-          {inRoute && plan ? (
+          {plan ? (
             <p className="text-sm">
-              <Link href={planStop >= 0 ? `/#stop-${planStop}` : "/#stops"}>All candidates and booking links, on the route →</Link>
+              <Link href={planStop >= 0 ? `/#stop-${planStop}` : "/#stops"}>All the places to stay and booking links, on the route →</Link>
             </p>
           ) : null}
         </Section>
       ) : null}
 
-      <Section title="For Fernanda">
-        <p className="text-ink-2">{a.for_her}</p>
-      </Section>
+      <p className="max-w-prose rounded-xl bg-bg-2 p-3 text-sm text-ink-2">
+        <b className="text-ink">For Fernanda:</b> {a.for_her}
+        {inRoute && food?.for_her ? ` ${food.for_her}` : ""}
+      </p>
 
-      <Section title="Our verdict">
-        <p className="text-ink-2">
-          <b>{fitLabel(region.status)}.</b> {inRoute ? (plan && stayWhy(id)) ?? region.summary : (verdict?.why ?? region.fit ?? region.summary)}
-          {verdict?.comeback && verdict.comeback !== "no" ? ` It comes back as ${verdict.comeback}.` : ""}
-        </p>
-        {tradeoff ? (
-          <div className="card grid gap-1.5 p-3 text-sm">
-            <p className="flex flex-wrap items-center gap-2">
-              <b>Stay longer or move on?</b>
-              <span className={`chip ${tradeoff.idle === "real" ? "border-warn text-warn" : tradeoff.idle === "some" ? "text-muted" : "text-ok"}`}>{IDLE_LABEL[tradeoff.idle]}</span>
-            </p>
-            <p className="text-ink-2">{tradeoff.note}</p>
-            <p className="text-ink-2">
-              <b>One more night:</b> {tradeoff.longer}
-            </p>
-            <p className="text-ink-2">
-              <b>One fewer:</b> {tradeoff.shorter}
+      <details className="card p-4">
+        <summary className="cursor-pointer font-semibold">The practical bits</summary>
+        <div className="grid gap-4 pt-3 text-sm">
+          <div className="grid gap-1.5">
+            <b>Getting there</b>
+            <p className="text-ink-2">{a.getting_there}</p>
+            <p className="text-muted">
+              From Tokyo about {fromTokyo.hours}{fromTokyo.curated ? "" : "~"} h ({fromTokyo.how.toLowerCase()}).
+              {fromPrev && prev ? ` From ${snapshot.regions.find((r) => r.id === prev.region)?.name ?? prev.region} about ${fromPrev.hours} h (${fromPrev.how.toLowerCase()}).` : ""}
             </p>
           </div>
-        ) : null}
-        <div className="flex flex-wrap gap-2">
-          {inRoute && plan ? (
-            <Link href="/" className="btn btn-sm">
-              See it on the route
-            </Link>
-          ) : alt ? (
-            <Link href={`/routes/${alt.id}`} className="btn btn-sm btn-primary">
-              See “{alt.name}”
-            </Link>
+          <div className="grid gap-1.5">
+            <b>In our dates, 20 Dec – 9 Jan</b>
+            <ul className="grid gap-1.5 text-ink-2">
+              {a.window.map((w, i) => (
+                <li key={i} className="flex gap-2">
+                  <span aria-hidden="true" className="text-accent">
+                    ●
+                  </span>
+                  <span>{w}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <StayLengths regionId={id} current={stays[0]?.nights ?? null} />
+          {cards.length ? (
+            <details className="rounded-xl bg-bg-2 p-3">
+              <summary className="cursor-pointer font-semibold">{cards.length} more things to do here, with how each one suits Fernanda</summary>
+              <ul className="grid gap-2 pt-2">
+                {cards.map((c) => (
+                  <CardRow key={c.id} c={c} />
+                ))}
+              </ul>
+            </details>
           ) : null}
-          {!inRoute && plan && region.status !== "not_this_trip" && region.status !== "day_trip" ? (
-            <button className="btn btn-sm" onClick={tryIt} disabled={trying || !me}>
-              {trying ? "Making your route…" : "Try it in the route"}
-            </button>
-          ) : null}
-          <Link href="/routes" className="btn btn-sm">
-            All routes
-          </Link>
+          <p className="text-xs text-muted">
+            Read more:{" "}
+            {sources.slice(0, 24).map((s, i) => (
+              <span key={s}>
+                {i ? " · " : ""}
+                <a href={s} target="_blank" rel="noreferrer">
+                  {sourceHost(s)}
+                </a>
+              </span>
+            ))}
+          </p>
         </div>
-      </Section>
+      </details>
 
-      <JapanMap regions={snapshot.regions} stays={plan?.stays} selected={id} view="heart" className="shadow-[var(--glow)]" />
+      {nearby.length ? (
+        <Section title={regionMeta ? `Nearby in ${regionMeta.name}` : "Nearby"}>
+          <ul className="grid gap-2 sm:grid-cols-2">
+            {nearby.slice(0, 4).map((x) => {
+              const ai = areaInfo(x)!;
+              const r = snapshot.regions.find((rr) => rr.id === x)!;
+              return (
+                <li key={x}>
+                  <Link href={`/areas/${x}`} className="card flex items-center gap-3 p-2 pr-3 no-underline">
+                    <PlacePhoto placeId={ai.known_for.find((k) => k.place)?.place} regionId={x} className="h-14 w-14 shrink-0 rounded-xl" />
+                    <span className="grid min-w-0 flex-1 gap-0.5">
+                      <b className="truncate text-ink">{r.name.replace(/ \(.*\)$/, "")}</b>
+                      <span className="truncate text-xs text-muted">{ai.do_line ?? r.summary}</span>
+                    </span>
+                    {ai.verdict ? <VerdictPill state={ai.verdict.state} small /> : null}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </Section>
+      ) : null}
 
       <WishBox targetId={id} title={`Something missing in ${region.name.replace(/ \(.*\)$/, "")}?`} />
-
-      <p className="text-xs text-muted">
-        Sources:{" "}
-        {sources.slice(0, 24).map((s, i) => (
-            <span key={s}>
-              {i ? " · " : ""}
-              <a href={s} target="_blank" rel="noreferrer">
-                {sourceHost(s)}
-              </a>
-            </span>
-          ))}
-      </p>
     </Page>
   );
 }

@@ -31,7 +31,27 @@ export interface AreaInfo {
   for_her: string;
   /** route | near | north | alps | west | south */
   zone: string;
+  /** tokyo-fuji | alps | kansai | west | north | south */
+  region?: string;
+  /** What you do there, in a few words. */
+  do_line?: string;
   verdict?: Verdict;
+  /** Other names people know it by: Fushimi Inari for Kyoto, Niseko for Hokkaido. */
+  aliases?: string[];
+  /** One of the places most first trips to Japan go. */
+  famous?: boolean;
+}
+export interface RegionMeta {
+  name: string;
+  /** What this part of Japan is like. */
+  line: string;
+  /** Our take: how much of the trip is here. */
+  our_take: string;
+}
+export interface HeardOf {
+  name: string;
+  note: string;
+  area: string | null;
 }
 export interface CatalogCard {
   id: string;
@@ -52,8 +72,12 @@ export interface CatalogCard {
   source: string;
 }
 
-const A = areasJson as unknown as { tags: Record<string, string>; zones: Record<string, string>; areas: Record<string, AreaInfo> };
+const A = areasJson as unknown as { tags: Record<string, string>; zones: Record<string, string>; areas: Record<string, AreaInfo>; regions_meta?: Record<string, RegionMeta>; heard_of?: HeardOf[] };
 export const AREA_TAGS = A.tags;
+/** The six parts of Japan, in the order we travel through them. */
+export const REGIONS: Record<string, RegionMeta> = A.regions_meta ?? {};
+/** Famous names that are not areas of their own, each with an honest line. */
+export const HEARD_OF: HeardOf[] = A.heard_of ?? [];
 /** Zone id → heading, in display order. */
 export const ZONES: [string, string][] = Object.entries(A.zones);
 export const CATALOG = catalogJson as CatalogCard[];
