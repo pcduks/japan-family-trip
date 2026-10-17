@@ -81,30 +81,35 @@ export function regionName(id: string, regions: Region[]): string {
   return regions.find((r) => r.id === id)?.name ?? id;
 }
 
-/** Plain-language lines describing how `after` differs from `before`. */
+/** Plain-language lines describing how `after` differs from `before`, stop by stop ("Tokyo at the end" apart from Tokyo). */
 export function describeDiff(before: Stay[], after: Stay[], regions: Region[]): string[] {
   const lines: string[] = [];
-  const sum = (stays: Stay[]) => {
-    const m = new Map<string, number>();
-    stays.forEach((s) => m.set(s.region, (m.get(s.region) ?? 0) + s.nights));
+  const keyed = (stays: Stay[]) => {
+    const seen = new Map<string, number>();
+    const m = new Map<string, Stay>();
+    for (const s of stays) {
+      const n = (seen.get(s.region) ?? 0) + 1;
+      seen.set(s.region, n);
+      m.set(n > 1 ? `${s.region}:${n}` : s.region, s);
+    }
     return m;
   };
-  const a = sum(before);
-  const b = sum(after);
-  for (const [region, n] of b) {
-    const was = a.get(region);
-    if (was == null) {
-      const st = after.filter((s) => s.region === region);
-      lines.push(`add ${regionName(region, regions)} ${st.map((s) => `${fmtDay(s.from, false)}–${fmtDay(s.to, false)}`).join(", ")} (${n} night${n === 1 ? "" : "s"})`);
-    } else if (was !== n) lines.push(`${regionName(region, regions)} ${was} → ${n} nights`);
+  const nights = (n: number) => `${n} ${n === 1 ? "night" : "nights"}`;
+  const name = (k: string) => `${regionName(k.split(":")[0], regions)}${k.includes(":") ? " at the end" : ""}`;
+  const a = keyed(before);
+  const b = keyed(after);
+  for (const [k, s] of b) {
+    const was = a.get(k);
+    if (!was) lines.push(`Add ${name(k)}, ${fmtDay(s.from, false)}–${fmtDay(s.to, false)} (${nights(s.nights)})`);
+    else if (was.nights !== s.nights) lines.push(`${name(k)} ${was.nights} → ${nights(s.nights)}`);
   }
-  for (const [region] of a) if (!b.has(region)) lines.push(`drop ${regionName(region, regions)}`);
+  for (const [k] of a) if (!b.has(k)) lines.push(`Drop ${name(k)}`);
   const orderA = before.map((s) => s.region).join(">");
   const orderB = after.map((s) => s.region).join(">");
-  if (!lines.length && orderA !== orderB) lines.push("same places, different order");
+  if (!lines.length && orderA !== orderB) lines.push("Same places, different order");
   if (!lines.length) {
     const changed = after.some((s, i) => before[i]?.lodging !== s.lodging || before[i]?.note !== s.note);
-    if (changed) lines.push("lodging or notes changed");
+    if (changed) lines.push("Where we stay changed");
   }
   return lines;
 }

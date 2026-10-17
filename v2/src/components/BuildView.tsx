@@ -130,8 +130,11 @@ function Builder() {
     if (!plan) return;
     setSaving(true);
     try {
-      await saveVersion({ ...plan, stays: live.stays }, "Changed in the builder");
-      router.push("/");
+      // The route as it was when the builder opened: a newer change is never overwritten without a word.
+      let why = await saveVersion({ ...plan, stays: live.stays }, "Changed in the builder", { base: base.stays });
+      if (why?.startsWith("changed:") && window.confirm(`The route changed while you were building: ${why.slice(8)}. Put your changes on top?`)) why = await saveVersion({ ...plan, stays: live.stays }, "Changed in the builder", { base: base.stays, onTop: true });
+      if (!why) router.push("/");
+      else if (!why.startsWith("changed:")) window.alert(why);
     } finally {
       setSaving(false);
     }

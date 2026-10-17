@@ -33,7 +33,7 @@ export function WhatsNext() {
       {waiting ? (
         <Link href="/inbox" className="flex items-center justify-between gap-2 rounded-xl bg-accent/10 px-3 py-2 text-sm no-underline">
           <span>
-            <b>{waiting}</b> {waiting === 1 ? "route" : "routes"} {isPlanner ? "sent to you to consider" : "you sent, waiting for an answer"}
+            <b>{waiting}</b> {waiting === 1 ? "suggestion" : "suggestions"} {isPlanner ? "waiting for you" : "you sent, waiting for an answer"}
           </span>
           <span aria-hidden="true">→</span>
         </Link>

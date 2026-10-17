@@ -20,11 +20,14 @@ const when = (iso: string | null | undefined) => (iso ? fmtDay(iso.slice(0, 10),
 export function Inbox() {
   const { snapshot, me, isPlanner, decideSuggestion, withdrawSuggestion, revertHistory } = useStore();
   const [busy, setBusy] = useState<string | null>(null);
+  /** Why the last action on a card did not go through, by card id. */
+  const [refused, setRefused] = useState<Record<string, string>>({});
   const planners = plannerNames(snapshot.travellers);
-  const act = async (id: string, fn: () => Promise<void>) => {
+  const act = async (id: string, fn: () => Promise<unknown>) => {
     setBusy(id);
     try {
-      await fn();
+      const why = await fn();
+      setRefused((r) => ({ ...r, [id]: typeof why === "string" ? why : "" }));
     } finally {
       setBusy(null);
     }
@@ -49,7 +52,7 @@ export function Inbox() {
           : `What you have sent to ${planners}, what they decided, and what everyone has said about the routes.`}
       </PageHeader>
 
-      <Section title="Routes sent to consider" aside={open.length ? `${open.length} waiting` : undefined}>
+      <Section title="Suggestions" aside={open.length ? `${open.length} waiting` : undefined}>
         {open.length ? (
           <ul className="grid gap-3">
             {open.map((s) => (
@@ -58,11 +61,13 @@ export function Inbox() {
                   <Avatar traveller={s.author_id} travellers={snapshot.travellers} size={24} />
                   {firstName(snapshot.travellers, s.author_id)} · {when(s.created_at)}
                 </p>
-                {s.from_version_id ? (
+                {s.from_version_id && routeHref(s.from_version_id) !== "/" ? (
                   <Link href={routeHref(s.from_version_id)} className="display text-[1.15rem] leading-tight">
-                    {routeName(s.from_version_id)} →
+                    {s.diff.whole ? `${routeName(s.from_version_id)}, instead of the route` : routeName(s.from_version_id)} →
                   </Link>
-                ) : null}
+                ) : (
+                  <p className="display text-[1.15rem] leading-tight">A change to the route</p>
+                )}
                 {s.comment ? <p className="text-ink-2">“{s.comment}”</p> : null}
                 <ul className="grid gap-0.5 text-sm text-ink-2">
                   {s.diff.summary.map((line) => (
@@ -73,8 +78,11 @@ export function Inbox() {
                   {isPlanner ? (
                     <>
                       <button className="btn btn-sm btn-primary" disabled={busy === s.id} onClick={() => act(s.id, () => decideSuggestion(s.id, "accepted"))}>
-                        Make it the route
+                        Make it part of the route
                       </button>
+                      <Link href={`/?review=${s.id}`} className="btn btn-sm">
+                        See it on the trip
+                      </Link>
                       <button className="btn btn-sm" disabled={busy === s.id} onClick={() => act(s.id, () => decideSuggestion(s.id, "declined"))}>
                         Keep the route as it is
                       </button>
@@ -82,21 +90,27 @@ export function Inbox() {
                   ) : null}
                   {s.author_id === me?.travellerId ? (
                     <button className="btn btn-sm" disabled={busy === s.id} onClick={() => act(s.id, () => withdrawSuggestion(s.id))}>
-                      Take it back
+                      Cancel my suggestion
                     </button>
                   ) : null}
                 </div>
+                {refused[s.id] ? (
+                  <p className="text-sm text-warn" role="alert">
+                    {refused[s.id]} {isPlanner ? <Link href={`/?review=${s.id}`}>Open to adjust →</Link> : null}
+                  </p>
+                ) : null}
               </li>
             ))}
           </ul>
         ) : (
-          <Empty>{isPlanner ? "Nothing waiting. When someone sends a route from its page, it lands here." : `Nothing waiting. Build a route, then send it to ${planners} from its page.`}</Empty>
+          <Empty>{isPlanner ? "Nothing waiting. When someone suggests a change, or sends another route from its page, it lands here." : `Nothing waiting. Suggest a change from Trip, or send another route to ${planners} from its page.`}</Empty>
         )}
         {decided.length ? (
           <ul className="grid gap-1 text-sm text-muted">
             {decided.map((s) => (
               <li key={s.id}>
-                {firstName(snapshot.travellers, s.author_id)}’s “{routeName(s.from_version_id)}”: {s.status === "accepted" ? "made the route" : "kept as an idea"} by {firstName(snapshot.travellers, s.decided_by)} on {when(s.decided_at)}
+                {firstName(snapshot.travellers, s.author_id)}’s {s.diff.whole ? `“${routeName(s.from_version_id)}”` : "change"}: {s.status === "accepted" ? "added to the route" : "the route stayed as it is"} ({firstName(snapshot.travellers, s.decided_by)}, {when(s.decided_at)})
+                {s.diff.decision_note ? <span className="block text-ink-2">“{s.diff.decision_note}”</span> : null}
               </li>
             ))}
           </ul>
@@ -162,6 +176,7 @@ export function Inbox() {
                     Undo this change
                   </button>
                 ) : null}
+                {refused[h.id] ? <p className="text-sm text-warn" role="alert">{refused[h.id]}</p> : null}
               </li>
             ))}
           </ul>

@@ -220,11 +220,17 @@ export interface Suggestion {
 }
 
 export interface SuggestionDiff {
-  /** The full proposed stays list; the plan's stays are replaced on accept. */
+  /** The full proposed stays list. */
   stays: Stay[];
+  /** The route as it was when the change started; accepting applies only what differs from it. */
+  base?: Stay[];
+  /** A whole other route, suggested as it is: accepting replaces the route. */
+  whole?: boolean;
   pace?: Pace;
   /** Plain-language lines such as "Kanazawa 4 → 3 nights". */
   summary: string[];
+  /** A planner's note when they decide. */
+  decision_note?: string | null;
 }
 
 export interface Comment {
