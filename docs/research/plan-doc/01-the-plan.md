@@ -1,5 +1,7 @@
 # Japan for Six (or Seven): the plan and the reasoning
 
+> **Changed on 17 Oct 2026:** the main route is now Tokyo 4 → Yudanaka/Shibu Onsen 2 → Kanazawa 2 → Takayama 2 (via Shirakawa-go) → Kyoto 6, with New Year's Eve in Higashiyama → Kawaguchiko 2 → Tokyo 2. No small town gets more nights than it can fill, and every night from 29 Dec to 3 Jan is in Takayama or Kyoto, near a hospital with obstetrics. The Gero New Year described below is kept as an alternative. The reasons, and the rule changes behind them, are in [the route review of 17 Oct](../route-review-2026-10-17.md).
+
 > **Changed on 16 Oct 2026:** the Fuji stop on 5–7 Jan is now Kawaguchiko (about 4 h 15 from Kyoto via Mishima and the Fujikyu bus, 2 h to Shinjuku on the Fuji Excursion), at a lake hotel with beds and a lift. Hakone, as written below, is the alternative.
 
 Oct 13, 2026 · @Pedro

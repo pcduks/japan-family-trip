@@ -12,7 +12,7 @@ These dates come from the 2025–26 season. The 2026–27 lists are not out yet.
 - **Nishiki Market:** many shops close 1–3 Jan ([official site](https://www.kyoto-nishiki.or.jp/en/contact/)), so go on 4 Jan.
 - **Department stores** were closed 1–2 Jan last year; Kyoto Station restaurants were open 2–3 Jan ([The Tokyo Chapter](https://www.thetokyochapter.com/?p=19044)). On 1 Jan, hotel restaurants are the safe bet.
 - **Events:**
-  - [Yasaka Shrine](https://kyotokankoyagi.com/yasaka-hatsumode-en): Okera fire ritual at 17:00 on 1 Jan; court-costume card game on 3 Jan.
+  - [Yasaka Shrine](https://kyotokankoyagi.com/yasaka-hatsumode-en): Okera fire ritual on New Year's Eve (the rite at 19:00, then the fire from about 19:30 on 31 Dec to 05:00 on 1 Jan); court-costume card game on 3 Jan.
   - [Kitano Tenmangū](https://leafkyoto.net/en/221125-kyoto-hatsumode): first-calligraphy festival on 2 Jan, with a tea room.
   - Heian Jingū: open 6:00–18:30 on 2–3 Jan.
 - Honke Owariya, the famous soba shop, was [reported closed in August 2026](https://www.insidekyoto.com/honke-owariya-restaurant-kyoto).
