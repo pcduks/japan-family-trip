@@ -5469,6 +5469,1560 @@
     "video": null
    },
    "google_place_id": null
+  },
+  {
+   "id": "tokyo-skytree",
+   "region": "tokyo",
+   "name": "Tokyo Skytree",
+   "kind": "viewpoint",
+   "size": "short",
+   "why": "The tallest tower in Japan, next to Asakusa; at dusk the city lights come on below you and Fuji can show on a clear day",
+   "hours": "About 10:00-22:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Lifts all the way; queues at dusk",
+   "price": null,
+   "booking": "Timed tickets online save the queue",
+   "links": {
+    "source": "https://www.tokyo-skytree.jp/en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tokyo%20Skytree%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tokyo%20Skytree%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-zojoji",
+   "region": "tokyo",
+   "name": "Zojo-ji temple",
+   "kind": "sight",
+   "size": "short",
+   "why": "The big temple at the foot of Tokyo Tower; on New Year's Eve the bell rings at midnight with the tower lit behind it",
+   "hours": "Grounds always open; New Year's Eve crowds from about 22:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Standing in a cold, packed crowd at midnight",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://metropolisjapan.com/tokyo-new-years-eve-countdown-events-parties-temples/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Zojo-ji%20temple%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Zojo-ji%20temple%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-ippan-sanga",
+   "region": "tokyo",
+   "name": "Imperial Palace New Year greeting",
+   "kind": "event",
+   "size": "short",
+   "why": "On 2 Jan the inner palace grounds open and the imperial family greets the crowd from a balcony, several times in the morning",
+   "hours": "2 Jan only, morning; security queues from about 9:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "Long standing queues and security checks in the cold",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3017.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Imperial%20Palace%20New%20Year%20greeting%20Tokyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Imperial%20Palace%20New%20Year%20greeting%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-yokohama",
+   "region": "tokyo",
+   "name": "Yokohama: Minato Mirai and Chinatown",
+   "kind": "sight",
+   "size": "day_trip",
+   "why": "Japan's biggest Chinatown, a harbour front with a big wheel and lights at night; 30 minutes from Tokyo",
+   "hours": "Chinatown and the harbour are open every day",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat promenades; Chinatown is crowded at weekends",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e2156.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Yokohama%3A%20Minato%20Mirai%20and%20Chinatown%20Yokohama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Yokohama%3A%20Minato%20Mirai%20and%20Chinatown%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tokyo-sankeien",
+   "region": "tokyo",
+   "name": "Sankeien Garden, Yokohama",
+   "kind": "garden",
+   "size": "short",
+   "why": "A big landscape garden with old farmhouses, a three-storey pagoda and a tea house, moved here from Kyoto and beyond",
+   "hours": "9:00-17:00; closed 29-31 Dec",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2026-12-31",
+     "note": "Closed",
+     "source": "https://trip.pref.kanagawa.jp/destination/sankeien-garden/90"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Gravel paths and a few slopes",
+   "price": "About ¥700",
+   "booking": null,
+   "links": {
+    "source": "https://trip.pref.kanagawa.jp/destination/sankeien-garden/90",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sankeien%20Garden%2C%20Yokohama%20Yokohama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sankeien%20Garden%2C%20Yokohama%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nikko-toshogu",
+   "region": "nikko",
+   "name": "Nikko Toshogu and the Shinkyo bridge",
+   "kind": "sight",
+   "size": "day_trip",
+   "why": "The shogun's lacquered, gilded shrine in a cedar forest, often in snow, and the red bridge over the river at the town edge",
+   "hours": "9:00-16:00 from November to March, last entry 30 minutes before",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Stone steps and icy paths; the 200-odd steps up to the tomb are optional",
+   "price": "About ¥1,600",
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3801.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Nikko%20Toshogu%20and%20the%20Shinkyo%20bridge%20Nikko",
+    "photos": "https://www.google.com/search?tbm=isch&q=Nikko%20Toshogu%20and%20the%20Shinkyo%20bridge%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kamakura-daibutsu",
+   "region": "kamakura",
+   "name": "Great Buddha of Kamakura (Kotoku-in)",
+   "kind": "sight",
+   "size": "short",
+   "why": "A 13-metre bronze Buddha sitting in the open air since the 1250s; you can step inside him for ¥50",
+   "hours": "8:00-17:00 from October to March",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat; the inside is a short steep stair",
+   "price": "¥300",
+   "booking": null,
+   "links": {
+    "source": "https://kotoku-in.jp/en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Great%20Buddha%20of%20Kamakura%20%28Kotoku-in%29%20Kamakura",
+    "photos": "https://www.google.com/search?tbm=isch&q=Great%20Buddha%20of%20Kamakura%20%28Kotoku-in%29%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kamakura-hasedera",
+   "region": "kamakura",
+   "name": "Hase-dera",
+   "kind": "sight",
+   "size": "short",
+   "why": "A hillside temple with a garden and pond at the bottom and a terrace looking over the bay at the top",
+   "hours": "About 8:00-16:30 in winter",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "The lower garden is flat; the terrace and cave are up steps",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.hasedera.jp/en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hase-dera%20Kamakura",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hase-dera%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kamakura-enoden",
+   "region": "kamakura",
+   "name": "Enoden line to Shichirigahama",
+   "kind": "nature",
+   "size": "short",
+   "why": "The little coastal railway along the beaches; at Shichirigahama Fuji stands over the sea at sunset on clear days",
+   "hours": "Trains every 12 minutes or so",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Seated; the beach is a short walk from the station",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.enoden.co.jp/en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Enoden%20line%20to%20Shichirigahama%20Kamakura",
+    "photos": "https://www.google.com/search?tbm=isch&q=Enoden%20line%20to%20Shichirigahama%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "echigo-yuzawa-gala",
+   "region": "echigo-yuzawa",
+   "name": "GALA Yuzawa and the station sake hall",
+   "kind": "nature",
+   "size": "day_trip",
+   "why": "A ski area with its own shinkansen station: the gondola goes straight up into deep snow, and the Ponshukan hall in Echigo-Yuzawa station pours tastings of 100 Niigata sakes",
+   "hours": "Season opened 20 Dec in 2025; 2026 opening date to confirm",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Seated gondola and a warm lodge at the top; snow underfoot outside",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://shinkansen-ticket.com/blogs/news/gala-yuzawa-opens-for-the-2025-2026-winter-season-on-december-20",
+    "map": "https://www.google.com/maps/search/?api=1&query=GALA%20Yuzawa%20and%20the%20station%20sake%20hall%20Echigo-Yuzawa",
+    "photos": "https://www.google.com/search?tbm=isch&q=GALA%20Yuzawa%20and%20the%20station%20sake%20hall%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "osaka-dotonbori",
+   "region": "osaka",
+   "name": "Dotonbori and Namba at night",
+   "kind": "food",
+   "size": "short",
+   "why": "The canal of neon signs, takoyaki, okonomiyaki and kushikatsu; the big chains stay open right through New Year",
+   "hours": "Evenings; most chain restaurants open every day, New Year included",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat but packed shoulder to shoulder after 19:00; go early in the evening",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4001.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Dotonbori%20Osaka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Dotonbori%20Osaka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "osaka-kuromon-market",
+   "region": "osaka",
+   "name": "Kuromon market",
+   "kind": "market",
+   "size": "short",
+   "why": "Osaka's kitchen: grilled scallops, wagyu skewers, fruit and fish counters under one long arcade",
+   "hours": "Mornings from about 9:00; each shop sets its own hours. Busiest 28–31 Dec, when about 150,000 people a day come for New Year food",
+   "closures": [
+    {
+     "start": "2027-01-01",
+     "end": "2027-01-04",
+     "note": "Many stalls shut; fully back about 5 Jan",
+     "source": "https://kuromon.com/"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Standing and crowded; much of the food is raw, so pick the grilled counters",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4031.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kuromon%20Market%20Osaka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kuromon%20Market%20Osaka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "osaka-castle",
+   "region": "osaka",
+   "name": "Osaka Castle and its park",
+   "kind": "sight",
+   "size": "main",
+   "why": "The great keep on its stone walls, a museum inside, and a lift most of the way up; the moats and park around it are free",
+   "hours": "Tower about 9:00–17:00; closed 28 Dec–1 Jan, open again on 2 Jan. The park is always open",
+   "closures": [
+    {
+     "start": "2026-12-28",
+     "end": "2027-01-01",
+     "note": "Main tower closed for New Year; the park stays open",
+     "source": "https://www.japan-guide.com/e/e4000.html"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "A lift to the 5th floor, then two flights of stairs; long lift queues at busy times",
+   "price": null,
+   "booking": "Tickets can be bought online ahead",
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4000.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Osaka%20Castle",
+    "photos": "https://www.google.com/search?tbm=isch&q=Osaka%20Castle%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-kinkakuji",
+   "region": "kyoto",
+   "name": "Kinkaku-ji (the Golden Pavilion)",
+   "kind": "sight",
+   "size": "short",
+   "why": "The gold-leafed pavilion over its pond; in snow it is the most photographed sight in Kyoto",
+   "hours": "9:00-17:00, every day of the year",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "A gentle one-way loop; busy from 10:00",
+   "price": "¥500",
+   "booking": null,
+   "links": {
+    "source": "https://www.shokoku-ji.jp/en/kinkakuji/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kinkaku-ji%20%28the%20Golden%20Pavilion%29%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kinkaku-ji%20%28the%20Golden%20Pavilion%29%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-uji",
+   "region": "kyoto",
+   "name": "Uji: Byodo-in and the tea street",
+   "kind": "sight",
+   "size": "day_trip",
+   "why": "The Phoenix Hall on the ten-yen coin, its museum, and the old street of matcha shops by the river; 20 minutes by JR from Kyoto",
+   "hours": "Byodo-in 8:30-17:30, no closing days listed; New Year hours to check",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat; the street and the temple are a 10-minute walk from the station",
+   "price": "About ¥700",
+   "booking": null,
+   "links": {
+    "source": "https://www.byodoin.or.jp/en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Uji%3A%20Byodo-in%20and%20the%20tea%20street%20Uji",
+    "photos": "https://www.google.com/search?tbm=isch&q=Uji%3A%20Byodo-in%20and%20the%20tea%20street%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-kitano",
+   "region": "kyoto",
+   "name": "Kitano Tenmangu",
+   "kind": "sight",
+   "size": "short",
+   "why": "The shrine of scholars, with plum trees; the last flea market of the year on 25 Dec and the first-calligraphy festival on 2 Jan",
+   "hours": "Grounds open daily; markets from about 8:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat but packed on market days",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://leafkyoto.net/en/221125-kyoto-hatsumode",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kitano%20Tenmangu%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kitano%20Tenmangu%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-yasaka",
+   "region": "kyoto",
+   "name": "Yasaka Shrine and Gion",
+   "kind": "sight",
+   "size": "short",
+   "why": "The shrine at the top of Gion; on New Year's Eve people carry the sacred okera fire home on a twist of rope",
+   "hours": "Always open; okera fire from about 19:00-19:30 on 31 Dec",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Very crowded from 22:00 on 31 Dec and all of 1-3 Jan",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://kyotokankoyagi.com/okerabi-yasakashrine-en",
+    "map": "https://www.google.com/maps/search/?api=1&query=Yasaka%20Shrine%20and%20Gion%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Yasaka%20Shrine%20and%20Gion%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-chionin",
+   "region": "kyoto",
+   "name": "Chion-in temple bell",
+   "kind": "sight",
+   "size": "short",
+   "why": "Japan's great 70-tonne bell, swung by 17 monks with a log on New Year's Eve; a free trial ringing at 14:00 on 27 Dec",
+   "hours": "Gate opens about 20:30 on 31 Dec, ringing from about 22:40; check whether pre-registration is needed",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "Steep stone steps up the hill and a long cold wait",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://global.kyoto.travel/resource/global/download/81-pdf.pdf",
+    "map": "https://www.google.com/maps/search/?api=1&query=Chion-in%20temple%20bell%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Chion-in%20temple%20bell%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-kibune",
+   "region": "kyoto",
+   "name": "Kibune shrine",
+   "kind": "nature",
+   "size": "day_trip",
+   "why": "A mountain valley 30 minutes north, with the red lantern-lined steps of Kifune shrine; beautiful in snow",
+   "hours": "Shrine grounds open daily; restaurants keep short winter hours",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "A sloping road and some steps; Kurama's mountain path is not for her",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.discoverkyoto.com/places-go/kurama-and-kibune/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kibune%20shrine%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kibune%20shrine%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-tofukuji",
+   "region": "kyoto",
+   "name": "Tofuku-ji",
+   "kind": "sight",
+   "size": "short",
+   "why": "A Zen temple with checkerboard moss gardens and a long wooden bridge over a maple ravine, one stop from Fushimi Inari",
+   "hours": "9:00-16:00; New Year opening not confirmed",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Shoes off on cold wooden floors",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3930.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tofuku-ji%20Kyoto",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tofuku-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ky-omihachiman",
+   "region": "kyoto",
+   "name": "Omi-Hachiman",
+   "kind": "sight",
+   "size": "day_trip",
+   "why": "An old merchant town on Lake Biwa with a willow-lined canal, white storehouses and a slow boat; about 35 minutes from Kyoto",
+   "hours": "Canal boats 10:00-16:00; the hand-rowed boats rest on Wednesdays",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat lanes; shoes off on the boat",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e7075.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Omi-Hachiman%20Omihachiman",
+    "photos": "https://www.google.com/search?tbm=isch&q=Omi-Hachiman%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nara-horyuji",
+   "region": "nara",
+   "name": "Horyu-ji",
+   "kind": "sight",
+   "size": "main",
+   "why": "The oldest wooden buildings in the world, from about 700, with a five-storey pagoda and a treasure hall; 30 minutes by JR from Nara",
+   "hours": "8:00-16:30 from November to February",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat gravel between the halls; a long site, so take it in two halves",
+   "price": "About ¥1,500",
+   "booking": null,
+   "links": {
+    "source": "https://www.gltjp.com/en/article/item/20472/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Horyu-ji%20Nara",
+    "photos": "https://www.google.com/search?tbm=isch&q=Horyu-ji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nara-national-museum",
+   "region": "nara",
+   "name": "Nara National Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Japan's finest Buddhist sculpture, next to the deer park; it reopens on 2 Jan",
+   "hours": "9:30-17:00; closed Mondays and 28 Dec-1 Jan",
+   "closures": [
+    {
+     "start": "2026-12-28",
+     "end": "2027-01-01",
+     "note": "Closed for New Year",
+     "source": "https://www.japan-guide.com/e/e4109.html"
+    }
+   ],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4109.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Nara%20National%20Museum%20Nara",
+    "photos": "https://www.google.com/search?tbm=isch&q=Nara%20National%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nara-kofukuji",
+   "region": "nara",
+   "name": "Kofuku-ji and its National Treasure Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "The temple by the park whose small museum holds the three-faced Ashura statue; the pagoda is under repair until 2034",
+   "hours": "Museum 9:00-17:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "About ¥900",
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4101.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kofuku-ji%20and%20its%20National%20Treasure%20Museum%20Nara",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kofuku-ji%20and%20its%20National%20Treasure%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nara-kamameshi",
+   "region": "nara",
+   "name": "Kamameshi Shizuka",
+   "kind": "food",
+   "size": "meal",
+   "why": "Rice cooked in an iron pot with chicken or vegetables, near the park; all cooked",
+   "hours": "Lunch and early dinner; closed Tuesdays",
+   "closures": [],
+   "closed_weekdays": [
+    "Tue"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://narashikanko.or.jp/en/spot/cuisine/shiduka-koen",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kamameshi%20Shizuka%20Nara",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kamameshi%20Shizuka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "okuhida-hirayu-no-mori",
+   "region": "okuhida",
+   "name": "Hirayu no Mori",
+   "kind": "onsen",
+   "size": "short",
+   "why": "A big day-bath in the forest at Hirayu, with outdoor pools in the snow and private iron-kettle baths",
+   "hours": "10:00-21:00; private baths 12:00-15:00, ¥3,000 for 45 minutes",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Use a private bath; outdoor stones are icy",
+   "price": "¥700",
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5942.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hirayu%20no%20Mori%20Okuhida",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hirayu%20no%20Mori%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "gero-onsenji",
+   "region": "gero",
+   "name": "Onsen-ji temple",
+   "kind": "sight",
+   "size": "short",
+   "why": "The temple above the town that tells the legend of the white heron who found the spring; views over the roofs and steam",
+   "hours": "Free, until sunset",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "173 stone steps up from the town",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://gltjp.com/en/directory/item/15959",
+    "map": "https://www.google.com/maps/search/?api=1&query=Onsen-ji%20temple%20Gero",
+    "photos": "https://www.google.com/search?tbm=isch&q=Onsen-ji%20temple%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-oshino",
+   "region": "kawaguchiko",
+   "name": "Oshino Hakkai",
+   "kind": "sight",
+   "size": "short",
+   "why": "Eight clear spring ponds fed by Fuji's snowmelt in a small thatched village, with Fuji behind; you can drink the water",
+   "hours": "Ponds always open; shops about 9:00-17:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat but busy; the path round the ponds can be icy",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6915.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Oshino%20Hakkai%20Oshino",
+    "photos": "https://www.google.com/search?tbm=isch&q=Oshino%20Hakkai%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kw-sengen",
+   "region": "kawaguchiko",
+   "name": "Fujiyoshida Sengen Shrine (Kitaguchi Hongu)",
+   "kind": "sight",
+   "size": "short",
+   "why": "The old shrine at the foot of the Fuji climb, with a cedar avenue and a huge wooden torii; the local first-visit shrine at New Year",
+   "hours": "Always open, free",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Gravel avenue; busy but calm on 1-3 Jan",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6903.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Fujiyoshida%20Sengen%20Shrine%20%28Kitaguchi%20Hongu%29%20Fujiyoshida",
+    "photos": "https://www.google.com/search?tbm=isch&q=Fujiyoshida%20Sengen%20Shrine%20%28Kitaguchi%20Hongu%29%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "yudanaka-shibu-soto-yu",
+   "region": "yudanaka",
+   "name": "Shibu Onsen's nine public baths",
+   "kind": "onsen",
+   "size": "short",
+   "why": "Guests of Shibu's inns get a key to nine tiny old bathhouses along the lane; collect a stamp at each in your yukata",
+   "hours": "Bathhouses open about 6:00-22:00 for inn guests",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "The water runs very hot; she enjoys the walk and the stamps and bathes at the inn",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6029.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shibu%20Onsen%27s%20nine%20public%20baths%20Shibu%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shibu%20Onsen%27s%20nine%20public%20baths%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "osaka-kaiyukan",
+   "region": "osaka",
+   "name": "Kaiyukan aquarium",
+   "kind": "museum",
+   "size": "main",
+   "why": "One of the world's great aquariums, spiralling down round a huge tank with a whale shark; warm, dry and seated in places",
+   "hours": "About 10:00–20:00; open over New Year, with a few maintenance days a year announced ahead",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Gentle downhill ramps all the way; benches by the big tank",
+   "price": null,
+   "booking": "Timed tickets online are worth it over the holidays",
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4004.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Osaka%20Aquarium%20Kaiyukan",
+    "photos": "https://www.google.com/search?tbm=isch&q=Osaka%20Aquarium%20Kaiyukan%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "osaka-shinsekai",
+   "region": "osaka",
+   "name": "Shinsekai and Tsutenkaku",
+   "kind": "food",
+   "size": "short",
+   "why": "The old retro quarter under Tsutenkaku tower, famous for kushikatsu: skewers fried to order, so cooked through",
+   "hours": "Restaurants from late morning; many open over New Year",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat; noisy and lively rather than tiring",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4012.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shinsekai%20Osaka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shinsekai%20Osaka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "osaka-umeda-sky-building",
+   "region": "osaka",
+   "name": "Umeda Sky Building Floating Garden",
+   "kind": "viewpoint",
+   "size": "short",
+   "why": "An open-air rooftop ring 170 m up between two towers, best at dusk over the city lights",
+   "hours": "About 9:30–22:30; it has run late-night countdowns on 31 Dec in past years. New Year hours to confirm",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Lifts and an escalator in a glass tube; the roof deck is windy and cold",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4002.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Umeda%20Sky%20Building%20Floating%20Garden",
+    "photos": "https://www.google.com/search?tbm=isch&q=Umeda%20Sky%20Building%20Floating%20Garden%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "osaka-sumiyoshi-taisha",
+   "region": "osaka",
+   "name": "Sumiyoshi Taisha",
+   "kind": "sight",
+   "size": "short",
+   "why": "One of Japan's oldest shrines, with a steep red arched bridge and halls in a style older than Buddhism in Japan",
+   "hours": "Grounds open daily. 1–3 Jan it takes over two million first visitors and is a crush; calm in late December and from 4 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat grounds; the drum bridge is very steep, and there is a flat path round it",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4007.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sumiyoshi%20Taisha%20Osaka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sumiyoshi%20Taisha%20Osaka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "osaka-umeda-food-halls",
+   "region": "osaka",
+   "name": "Umeda department-store food halls",
+   "kind": "food",
+   "size": "short",
+   "why": "Hankyu and Hanshin's basements: bento, sweets, cooked New Year dishes; the first-sale lucky bags go on sale on 2 Jan",
+   "hours": "About 10:00–20:00; close early on 31 Dec and shut on 1 Jan. The New Year sale starts on 2 Jan and is very busy",
+   "closures": [
+    {
+     "start": "2027-01-01",
+     "end": "2027-01-01",
+     "note": "Department stores closed",
+     "source": "https://www.japan-guide.com/e/e2276.html"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Crowded and warm; nowhere to sit, so buy and take it back",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4009.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hankyu%20Umeda%20food%20hall",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hankyu%20Umeda%20food%20hall%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "osaka-universal-studios",
+   "region": "osaka",
+   "name": "Universal Studios Japan",
+   "kind": "event",
+   "size": "main",
+   "why": "The film theme park with Super Nintendo World and Harry Potter; a big paid countdown party on 31 Dec",
+   "hours": "Open every day; the 31 Dec countdown needs its own ticket and runs late. Long queues all holiday week",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "Hours of standing in queues and a lot of walking; better for João and Carolina",
+   "price": null,
+   "booking": "Tickets and Express passes sell out over New Year; book ahead",
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4021.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Universal%20Studios%20Japan",
+    "photos": "https://www.google.com/search?tbm=isch&q=Universal%20Studios%20Japan%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kinosaki-public-baths",
+   "region": "kinosaki",
+   "name": "The seven public baths (sotoyu)",
+   "kind": "onsen",
+   "size": "main",
+   "why": "Walking between the town's public baths in yukata and geta is the point of Kinosaki; most inns give a free pass",
+   "hours": "Roughly 7:00–23:00 (some open mid-afternoon). Each bath has its own weekly rest day, and over New Year they take turns to close",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "The water runs hot and the floors are wet; the inn's private bath is the easy choice for her",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3527.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kinosaki%20Onsen%20sotoyu",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kinosaki%20Onsen%20sotoyu%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kinosaki-ropeway-and-onsen-ji",
+   "region": "kinosaki",
+   "name": "Ropeway and Onsen-ji temple",
+   "kind": "viewpoint",
+   "size": "short",
+   "why": "A short ropeway up Mt Daishi to the temple that founded the spa, with views over the town and the sea",
+   "hours": "About 9:10–17:10; closed the 2nd and 4th Thursdays (24 Dec in 2026); short hours 31 Dec–3 Jan",
+   "closures": [
+    {
+     "start": "2026-12-24",
+     "end": "2026-12-24",
+     "note": "Ropeway closed (4th Thursday)",
+     "source": "https://www.gltjp.com/en/directory/item/18558/"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "The ropeway does the climb; the temple has a few steps from the middle station",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3529.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kinosaki%20Onsen%20Ropeway",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kinosaki%20Onsen%20Ropeway%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kinosaki-willow-canal-walk",
+   "region": "kinosaki",
+   "name": "The willow canal at night",
+   "kind": "sight",
+   "size": "short",
+   "why": "Stone bridges, willows and lanterns along the Otani river, full of families in yukata between baths",
+   "hours": "Always open; liveliest after dinner",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat; geta are slippery on wet stone, so shoes are fine",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3528.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kinosaki%20Onsen%20Otani%20river",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kinosaki%20Onsen%20Otani%20river%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kinosaki-crab-kaiseki",
+   "region": "kinosaki",
+   "name": "Snow-crab kaiseki at the inn",
+   "kind": "food",
+   "size": "meal",
+   "why": "November to March is crab season: crab boiled, grilled, in hot pot and in rice porridge",
+   "hours": "Dinner at the ryokan; booked with the room",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Ask for every crab dish cooked; skip the crab sashimi",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3525.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kinosaki%20crab%20kaiseki",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kinosaki%20crab%20kaiseki%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kinosaki-izushi",
+   "region": "kinosaki",
+   "name": "Izushi castle town and sara soba",
+   "kind": "sight",
+   "size": "main",
+   "why": "A little castle town 40 minutes by bus: the Shinkoro clock tower, red torii up to the castle ruins, and soba on five small plates",
+   "hours": "Streets always open; about 50 soba shops, each with its own rest days. Busy for first visits 1–3 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat streets; the torii stairs to the ruins are steep and optional",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://visitkinosaki.com/sample-itineraries/time-travel-in-izushi-castle-town/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Izushi%20castle%20town",
+    "photos": "https://www.google.com/search?tbm=isch&q=Izushi%20castle%20town%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kinosaki-genbudo-park",
+   "region": "kinosaki",
+   "name": "Genbudo Park",
+   "kind": "nature",
+   "size": "short",
+   "why": "Cliffs of six-sided basalt columns formed by lava, 10 minutes from town, with a small rock and mineral museum",
+   "hours": "9:00–17:00; some listings say closed 29 Dec–3 Jan, so check",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-03",
+     "note": "May be closed for New Year (sources differ)",
+     "source": "https://www.hyogo-tourism.jp/world/spot/detail_1060.html"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Short flat paths from the car park",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.hyogo-tourism.jp/world/spot/detail_1060.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Genbudo%20Park%20Toyooka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Genbudo%20Park%20Toyooka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kinosaki-marine-world",
+   "region": "kinosaki",
+   "name": "Kinosaki Marine World",
+   "kind": "museum",
+   "size": "main",
+   "why": "An aquarium on the Sea of Japan coast with dolphin and sea-lion shows and fishing for your own lunch",
+   "hours": "About 9:30–16:30; irregular closing days, so check the calendar",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Mostly indoors and flat; benches at the shows",
+   "price": "About ¥2,800 adults",
+   "booking": null,
+   "links": {
+    "source": "https://visitkinosaki.com/things-to-do/marine-world/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kinosaki%20Marine%20World",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kinosaki%20Marine%20World%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hiroshima-peace-park",
+   "region": "hiroshima",
+   "name": "Peace Memorial Park and the A-Bomb Dome",
+   "kind": "sight",
+   "size": "short",
+   "why": "The ruined dome, the cenotaph, the children's monument with its paper cranes, along the river",
+   "hours": "Always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat paths; benches by the river",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3400.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hiroshima%20Peace%20Memorial%20Park",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hiroshima%20Peace%20Memorial%20Park%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hiroshima-peace-museum",
+   "region": "hiroshima",
+   "name": "Peace Memorial Museum",
+   "kind": "museum",
+   "size": "main",
+   "why": "The story of 6 August 1945 through objects and survivors' words; hard, and essential",
+   "hours": "Dec–Feb 7:30–18:00; closed 30–31 Dec. Buy web tickets ahead; queues build from mid-morning",
+   "closures": [
+    {
+     "start": "2026-12-30",
+     "end": "2026-12-31",
+     "note": "Closed",
+     "source": "https://hpmmuseum.jp/?lang=eng"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat with lifts, but emotionally heavy; benches are few, so a break halfway helps",
+   "price": "¥200 adults",
+   "booking": "Web tickets advised; early and evening slots need booking",
+   "links": {
+    "source": "https://hpmmuseum.jp/?lang=eng",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hiroshima%20Peace%20Memorial%20Museum",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hiroshima%20Peace%20Memorial%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hiroshima-okonomimura",
+   "region": "hiroshima",
+   "name": "Okonomimura",
+   "kind": "food",
+   "size": "meal",
+   "why": "Three floors of small okonomiyaki counters: noodles, cabbage and egg layered on the griddle in front of you",
+   "hours": "Lunch to late; each stall sets its own New Year days",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Cooked through; counter stools, and a lift",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3406.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Okonomimura%20Hiroshima",
+    "photos": "https://www.google.com/search?tbm=isch&q=Okonomimura%20Hiroshima%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hiroshima-shukkeien",
+   "region": "hiroshima",
+   "name": "Shukkeien garden",
+   "kind": "garden",
+   "size": "short",
+   "why": "A small landscape garden of bridges, tea houses and a carp pond, a quiet counterweight to the Peace Park",
+   "hours": "9:00–17:00 in winter; closed 29–31 Dec",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2026-12-31",
+     "note": "Closed",
+     "source": "https://www.japan-guide.com/e/e3403.html"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat paths; one arched bridge",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3403.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shukkeien%20Garden%20Hiroshima",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shukkeien%20Garden%20Hiroshima%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hiroshima-dreamination",
+   "region": "hiroshima",
+   "name": "Dreamination lights",
+   "kind": "event",
+   "size": "short",
+   "why": "Peace Boulevard and the city centre lit with big light sculptures, mid-November to early January",
+   "hours": "Usually 17:30/18:00–22:30 nightly to about 3 Jan; 2026 dates to confirm",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat, free and open",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://en.jal.japantravel.com/hiroshima/hiroshima-dreamination/2973",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hiroshima%20Dreamination",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hiroshima%20Dreamination%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hiroshima-castle-grounds",
+   "region": "hiroshima",
+   "name": "Hiroshima Castle grounds and Gokoku shrine",
+   "kind": "sight",
+   "size": "short",
+   "why": "The moats and Ninomaru gate of the rebuilt castle; the keep itself closed in March 2026 for earthquake safety",
+   "hours": "Grounds always open and lit in the evening. Gokoku shrine, inside, is the city's busiest first-visit shrine 1–3 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat; the keep is closed, so there are no stairs to face",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3402.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hiroshima%20Castle",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hiroshima%20Castle%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "hiroshima-iwakuni-kintaikyo",
+   "region": "hiroshima",
+   "name": "Kintai bridge, Iwakuni",
+   "kind": "sight",
+   "size": "main",
+   "why": "Five wooden arches over a clear river, rebuilt to the 1673 design, with Kikko park and the castle hill behind",
+   "hours": "The bridge is open round the clock (small fee); about 50 min from Hiroshima by JR and bus",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "The arches are steep steps up and down; the riverside paths alongside are flat",
+   "price": "About ¥310 return",
+   "booking": null,
+   "links": {
+    "source": "https://www.japan.travel/en/spot/2191/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kintaikyo%20Bridge%20Iwakuni",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kintaikyo%20Bridge%20Iwakuni%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "okayama-korakuen",
+   "region": "okayama",
+   "name": "Okayama Korakuen",
+   "kind": "garden",
+   "size": "main",
+   "why": "One of Japan's three great gardens: lawns, ponds and tea houses under the black castle; its New Year festival runs 1–3 Jan",
+   "hours": "Open every day; free on 1 Jan. 1–3 Jan: koto music and red-crowned cranes let out on the lawns",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Wide flat paths and benches; the little hill is optional",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5701.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Okayama%20Korakuen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Okayama%20Korakuen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "okayama-castle",
+   "region": "okayama",
+   "name": "Okayama Castle",
+   "kind": "sight",
+   "size": "short",
+   "why": "The black \"crow castle\" over the river, rebuilt inside as a museum, across a footbridge from Korakuen",
+   "hours": "9:00–17:30; closed 29–31 Dec",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2026-12-31",
+     "note": "Closed",
+     "source": "https://okayama-castle.jp/guide-en"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Stairs inside; there is a lift to some floors",
+   "price": "About ¥400 adults",
+   "booking": null,
+   "links": {
+    "source": "https://okayama-castle.jp/guide-en",
+    "map": "https://www.google.com/maps/search/?api=1&query=Okayama%20Castle",
+    "photos": "https://www.google.com/search?tbm=isch&q=Okayama%20Castle%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "okayama-kurashiki-canal-quarter",
+   "region": "okayama",
+   "name": "Kurashiki canal quarter",
+   "kind": "sight",
+   "size": "main",
+   "why": "White-walled rice warehouses along a willow canal, now cafés, craft and denim shops; lovely at dusk",
+   "hours": "Streets always open; shops quieter 1 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat and compact; small bridges",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5751.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kurashiki%20Bikan%20Historical%20Quarter",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kurashiki%20Bikan%20Historical%20Quarter%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "okayama-ohara-museum",
+   "region": "okayama",
+   "name": "Ohara Museum of Art",
+   "kind": "museum",
+   "size": "main",
+   "why": "Japan's first museum of Western art (El Greco, Monet, Gauguin), reopened in April 2026 after renovation",
+   "hours": "Closed Mondays; shorter winter hours. Year-end closure about 28–31 Dec, and only the main building on 1 Jan; 2026 dates to confirm",
+   "closures": [
+    {
+     "start": "2026-12-28",
+     "end": "2026-12-31",
+     "note": "Year-end closure (sources differ)",
+     "source": "https://www.japan-guide.com/e/e5754.html"
+    }
+   ],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": "Flat galleries with seats",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5754.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Ohara%20Museum%20of%20Art%20Kurashiki",
+    "photos": "https://www.google.com/search?tbm=isch&q=Ohara%20Museum%20of%20Art%20Kurashiki%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "okayama-chichu-art-museum",
+   "region": "okayama",
+   "name": "Chichu Art Museum, Naoshima",
+   "kind": "museum",
+   "size": "main",
+   "why": "Monet's water lilies, Turrell and De Maria in Tadao Ando's underground galleries lit by the sky",
+   "hours": "Closed Mondays; timed tickets about a month ahead. Closed for maintenance from 12 Jan 2027; New Year days to confirm",
+   "closures": [
+    {
+     "start": "2027-01-12",
+     "end": "2027-03-19",
+     "note": "Maintenance closure",
+     "source": "https://benesse-artsite.jp/en/news/20260630-3559.html"
+    }
+   ],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "moderate",
+   "effort_note": "Ramps and some stairs; cool and dim inside; the island means a ferry and buses in the sea wind",
+   "price": null,
+   "booking": "Timed online tickets, released about a month ahead",
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5477.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Chichu%20Art%20Museum%20Naoshima",
+    "photos": "https://www.google.com/search?tbm=isch&q=Chichu%20Art%20Museum%20Naoshima%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "okayama-benesse-house-and-the-pumpkin",
+   "region": "okayama",
+   "name": "Benesse House Museum and the Yellow Pumpkin",
+   "kind": "museum",
+   "size": "short",
+   "why": "The hotel-museum above the sea and Kusama's spotted pumpkin on the pier, with outdoor art along the shore",
+   "hours": "Open daily 8:00–21:00 in normal times; the pumpkin is outdoors",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "A shuttle bus links the sights; the shore path is flat",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5478.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Benesse%20House%20Museum%20Naoshima",
+    "photos": "https://www.google.com/search?tbm=isch&q=Benesse%20House%20Museum%20Naoshima%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "okayama-teshima-art-museum",
+   "region": "okayama",
+   "name": "Teshima Art Museum",
+   "kind": "museum",
+   "size": "main",
+   "why": "A single concrete shell in the rice terraces where drops of water run and pool across the floor; very quiet",
+   "hours": "Dec–Feb closed Tuesday to Thursday; last New Year it also shut 31 Dec–2 Jan. Timed tickets",
+   "closures": [],
+   "closed_weekdays": [
+    "Tue",
+    "Wed",
+    "Thu"
+   ],
+   "effort_for_her": "moderate",
+   "effort_note": "Two ferries and an island bus; shoes off inside, on a cold floor",
+   "price": null,
+   "booking": "Timed online tickets",
+   "links": {
+    "source": "https://benesse-artsite.jp/en/news/20260630-3559.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Teshima%20Art%20Museum",
+    "photos": "https://www.google.com/search?tbm=isch&q=Teshima%20Art%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "okayama-ritsurin-garden",
+   "region": "okayama",
+   "name": "Ritsurin garden, Takamatsu",
+   "kind": "garden",
+   "size": "main",
+   "why": "A huge stroll garden of sculpted pines below a wooded hill, with a tea house on the water; an hour from Okayama",
+   "hours": "Open every day; free on 1 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat gravel paths, long but easy; boats on the pond some days",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5401.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Ritsurin%20Garden%20Takamatsu",
+    "photos": "https://www.google.com/search?tbm=isch&q=Ritsurin%20Garden%20Takamatsu%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "matsue-tamatsukuri-onsen",
+   "region": "matsue",
+   "name": "Tamatsukuri Onsen",
+   "kind": "onsen",
+   "size": "short",
+   "why": "One of Japan's oldest spa villages, 20 minutes away, famous for skin-softening water; free foot baths along the little river",
+   "hours": "Streets and foot baths always open; day baths at the inns vary",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat riverside path; the foot baths are just right for her",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.visit-matsue.com/discover/outer_matsue/south_of_lake_shinji/onsen_inns",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tamatsukuri%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tamatsukuri%20Onsen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "fukuoka-yanagibashi-market",
+   "region": "fukuoka",
+   "name": "Yanagibashi market",
+   "kind": "market",
+   "size": "short",
+   "why": "Hakata's century-old kitchen market: fish, mentaiko, fish cakes and a few breakfast counters",
+   "hours": "Mon–Sat about 8:00–18:00; closed Sundays and holidays, and over New Year",
+   "closures": [
+    {
+     "start": "2027-01-01",
+     "end": "2027-01-03",
+     "note": "Closed for New Year (holidays)",
+     "source": "https://en.japantravel.com/fukuoka/yanagibashi-market/22516"
+    }
+   ],
+   "closed_weekdays": [
+    "Sun"
+   ],
+   "effort_for_her": "low",
+   "effort_note": "One short covered street; standing",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://en.japantravel.com/fukuoka/yanagibashi-market/22516",
+    "map": "https://www.google.com/maps/search/?api=1&query=Yanagibashi%20Rengo%20Market%20Fukuoka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Yanagibashi%20Rengo%20Market%20Fukuoka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "fukuoka-kushida-shrine",
+   "region": "fukuoka",
+   "name": "Kushida shrine and old Hakata",
+   "kind": "sight",
+   "size": "short",
+   "why": "Hakata's guardian shrine, with a towering festival float on show, and the Kawabata arcade and old temples nearby",
+   "hours": "Grounds always open; busy but manageable for first visits 1–3 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat and close to Canal City",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4808.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kushida%20Shrine%20Fukuoka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kushida%20Shrine%20Fukuoka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "fukuoka-hakozaki-tamaseseri",
+   "region": "fukuoka",
+   "name": "Tamaseseri at Hakozaki shrine",
+   "kind": "event",
+   "size": "short",
+   "why": "On 3 Jan, men in loincloths tussle for a wooden ball while being doused with water, land team against sea team",
+   "hours": "3 Jan, about 13:00–14:30; free",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "A pushing crowd near the ball; watch from the edge",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.crossroadfukuoka.jp/en/event/12608",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hakozakigu%20Shrine%20Fukuoka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hakozakigu%20Shrine%20Fukuoka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "fukuoka-momochi-seaside",
+   "region": "fukuoka",
+   "name": "Momochi seaside and Fukuoka Tower",
+   "kind": "viewpoint",
+   "size": "short",
+   "why": "A beach promenade and a 234 m tower with views over the bay, best at sunset",
+   "hours": "Tower open daily into the evening; New Year hours to confirm",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": "Flat boardwalk; lifts up the tower",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e4801.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Fukuoka%20Tower%20Momochi",
+    "photos": "https://www.google.com/search?tbm=isch&q=Fukuoka%20Tower%20Momochi%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
   }
  ],
  "versions": [

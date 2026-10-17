@@ -130,7 +130,7 @@ export function planDays(v: Pick<Version, "id" | "stays" | "parent_version_id">,
         const dp = allPlans(pp).find((x) => x.from?.includes(`${ref.id}:${date}`));
         if (dp) {
           used.add(dp);
-          written.set(date, { kind: kindOf(dp, date === s.from && moving), title: dp.title, items: toItems(dp.items), forHer: dp.for_her ?? null, source: "written" });
+          written.set(date, { kind: s === last && date === last.to ? "Fly" : kindOf(dp, date === s.from && moving), title: dp.title, items: toItems(dp.items), forHer: dp.for_her ?? null, source: "written" });
         }
       }
     }
@@ -151,12 +151,12 @@ export function planDays(v: Pick<Version, "id" | "stays" | "parent_version_id">,
       }
       if (date === s.from && (i === 0 || moving)) {
         const arrive = (pp.arrival ?? []).find((dp) => works(dp, date)) ?? pp.arrival?.find((dp) => !dp.dates_only && dp.new_year !== "only");
-        const how = i === 0 ? "" : `To ${name}${leg ? ` (${leg.how})` : ""}. `;
+        // The train itself is shown with the day; the title says what the afternoon holds.
         const easy = !!leg && leg.hours >= 3.5;
         out.push({
           ...base,
           kind: i === 0 ? "Arrive" : "Move",
-          title: arrive && !easy ? `${how}${arrive.title}` : `${how}${easy ? "A long travel day: check in and an early dinner" : "Settle in"}`,
+          title: arrive && !easy ? arrive.title : easy ? `A long travel day to ${name}: check in and an early dinner` : `To ${name}: settle in`,
           items: arrive && !easy ? openItems(arrive, date) : [],
           forHer: arrive?.for_her ?? null,
           source: arrive ? "plans" : "plain",
