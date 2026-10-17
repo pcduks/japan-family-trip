@@ -17,6 +17,14 @@ describe("budget per couple", () => {
     expect(b.moves).toBe(5);
   });
 
+  it("lodging is priced for seven and a couple pays two of the seven shares", () => {
+    const b = budgetOf(plan, data.regions);
+    const rooms = b.stays.reduce((a, s) => a + s.total, 0);
+    expect(b.lodging).toBe(Math.round((rooms * 2) / 7));
+    const tokyo = stayCost(plan.stays[0]);
+    expect(tokyo.perNight).toBe(Math.round(110000 * 1.33)); // a fourth hotel room
+  });
+
   it("every seeded version has a budget and Full costs more than Gentle", () => {
     const by = Object.fromEntries(data.versions.map((v) => [v.id, budgetOf(v, data.regions).perCoupleSgd]));
     for (const v of data.versions) expect(by[v.id], v.id).toBeGreaterThan(5000);

@@ -17,9 +17,9 @@ export interface StayCost {
   /** True when the stay had no lodging set and the type was inferred. */
   inferred: boolean;
   nights: number;
-  /** Plain nightly rate for six, before the New Year uplift. */
+  /** Plain nightly rate for the seven of us, before the New Year uplift. */
   perNight: number;
-  /** Total for six, uplift included. */
+  /** Total for the seven of us, uplift included. */
   total: number;
   /** Nights that carry a New Year surcharge. */
   upliftNights: number;
@@ -53,9 +53,19 @@ export function inferLodging(stay: Pick<Stay, "region" | "lodging">): { lodging:
   return { lodging: (rates.onsen_regions as string[]).includes(stay.region) ? "ryokan" : "hotel", inferred: true };
 }
 
+/** The research priced lodging for six; seven need a fourth hotel room, one more ryokan guest or a bigger house. */
+export function forSeven(jpyForSix: number, lodging: Lodging): number {
+  return Math.round(jpyForSix * rates.seven_factor[lodging]);
+}
+
 export function nightlyRate(region: string, lodging: Lodging): number {
   const table = (rates.lodging_per_night_for_six as Record<string, Record<Lodging, number>>)[region];
-  return table?.[lodging] ?? rates.default_lodging_per_night_for_six[lodging];
+  return forSeven(table?.[lodging] ?? rates.default_lodging_per_night_for_six[lodging], lodging);
+}
+
+/** A couple's part of something the whole group shares, split per head. */
+export function perCouple(groupJpy: number): number {
+  return (groupJpy * 2) / rates.people;
 }
 
 function upliftFor(date: string, lodging: Lodging): number {
@@ -90,11 +100,10 @@ export function jpyToSgd(jpy: number): number {
   return Math.round(jpy / rates.currency.jpy_per_sgd);
 }
 
-/** The budget for one couple on this version: lodging split three ways, everything else for two. */
+/** The budget for one couple on this version: lodging split per head (2 of 7), everything else for two. */
 export function budgetOf(v: Pick<Version, "stays" | "pace">, regions: Region[]): Budget {
   const stays = v.stays.map(stayCost);
-  const couples = rates.couples;
-  const lodging = Math.round(stays.reduce((a, s) => a + s.total, 0) / couples);
+  const lodging = Math.round(perCouple(stays.reduce((a, s) => a + s.total, 0)));
 
   const nightsTotal = stays.reduce((a, s) => a + s.nights, 0);
   const days = nightsTotal + 1;
@@ -132,7 +141,7 @@ export function budgetOf(v: Pick<Version, "stays" | "pace">, regions: Region[]):
     luggage,
     extras,
     totalJpy,
-    totalSgd: perCoupleSgd * couples,
+    totalSgd: Math.round((perCoupleSgd * rates.people) / 2),
     perCoupleSgd,
     headroomSgd: rates.target_per_couple_sgd - perCoupleSgd,
     stays,

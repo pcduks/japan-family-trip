@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { BUDGET_RATES, fmtJpyShort, fmtSgd, jpyToSgd, stayCost } from "@/lib/budget";
+import { fmtJpyShort, fmtSgd, forSeven, jpyToSgd, perCouple, stayCost } from "@/lib/budget";
 import { lodgingFor, LODGING_TYPES, searchLinks, TIER_LABEL } from "@/lib/lodging";
 import type { Region, Stay } from "@/lib/types";
 
 /**
  * Where to stay for one stay: the recommended type and why, the named
- * candidates from the research with links and prices for six, and search
- * links with our dates and six guests filled in.
+ * candidates from the research with links and prices (researched for six), and
+ * search links with our dates and seven guests filled in.
  */
 export function StayLodging({ stay, region, defaultOpen = false }: { stay: Stay; region: Region | undefined; defaultOpen?: boolean }) {
   const [open, setOpen] = useState(defaultOpen);
@@ -22,8 +22,8 @@ export function StayLodging({ stay, region, defaultOpen = false }: { stay: Stay;
       <button className="flex w-full items-center justify-between gap-2 text-left" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
         <span>
           <b>Where to stay:</b> {type.label.toLowerCase()}
-          {cost.inferred ? <span className="text-muted"> (assumed)</span> : null} · about {fmtJpyShort(cost.perNight)} a night for six
-          {cost.upliftNights ? <span className="text-muted">, more over New Year</span> : null} · <b>{fmtSgd(jpyToSgd(cost.total / BUDGET_RATES.couples))}</b> per couple
+          {cost.inferred ? <span className="text-muted"> (assumed)</span> : null} · about {fmtJpyShort(cost.perNight)} a night for seven
+          {cost.upliftNights ? <span className="text-muted">, more over New Year</span> : null} · <b>{fmtSgd(jpyToSgd(perCouple(cost.total)))}</b> per couple
         </span>
         <span aria-hidden="true" className="shrink-0 text-muted">
           {open ? "▴" : "▾"}
@@ -38,12 +38,12 @@ export function StayLodging({ stay, region, defaultOpen = false }: { stay: Stay;
                 {differs ? <span className="text-warn"> This route sets a {type.label.toLowerCase()} here instead.</span> : null}
               </p>
               <p className="text-ink-2">
-                <b>For six:</b> {info.fit} <b>Outlook:</b> {info.outlook}
+                <b>For the group:</b> {info.fit} <b>Outlook:</b> {info.outlook} <span className="text-muted">Researched for six: ask each place about a seventh bed.</span>
               </p>
               <p className="flex flex-wrap gap-x-3 text-xs text-muted">
                 {(["budget", "mid", "top"] as const).map((t) => (
                   <span key={t}>
-                    {TIER_LABEL[t]} {fmtJpyShort(info.tiers[t][0])}–{fmtJpyShort(info.tiers[t][1])} a night for six
+                    {TIER_LABEL[t]} {fmtJpyShort(forSeven(info.tiers[t][0], info.type))}–{fmtJpyShort(forSeven(info.tiers[t][1], info.type))} a night for seven
                   </span>
                 ))}
               </p>
@@ -68,10 +68,10 @@ export function StayLodging({ stay, region, defaultOpen = false }: { stay: Stay;
               </ul>
             </>
           ) : (
-            <p className="text-muted">No places to stay picked for this base yet. The budget assumes a {type.label.toLowerCase()} at {fmtJpyShort(cost.perNight)} a night for six.</p>
+            <p className="text-muted">No places to stay picked for this base yet. The budget assumes a {type.label.toLowerCase()} at {fmtJpyShort(cost.perNight)} a night for seven.</p>
           )}
           <div className="grid gap-1">
-            <p className="eyebrow">Search with our dates and six guests</p>
+            <p className="eyebrow">Search with our dates and seven guests</p>
             <ul className="flex flex-wrap gap-2">
               {links.map((l) => (
                 <li key={l.label}>
