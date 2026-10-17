@@ -1,6 +1,7 @@
 /** The story behind each version (data/versions-guide.json): theme, feel, activities, why, and a note per stay. */
 import stayGuide from "../../data/stay-guide.json";
 import guide from "../../data/versions-guide.json";
+import trip from "../data/trip-data.json";
 import type { Stay } from "./types";
 
 export interface VersionGuide {
@@ -18,6 +19,8 @@ export interface VersionGuide {
   days?: Record<string, string>;
   /** Where and how New Year's Eve is spent. */
   nye?: string;
+  /** True when this text was written for the route's stops as they are now; false when generated from them. */
+  written?: boolean;
   sources?: { label: string; url: string }[];
 }
 
@@ -64,7 +67,7 @@ export function regionStayGuide(region: string): { best?: string; date_notes?: s
 /** The trade-off for a stay: the version's own, else the plan's for a stay of the same length, else what that many nights gives in that place. */
 export function stayTradeoff(versionId: string, stays: Stay[], index: number): Tradeoff | null {
   const key = stayKey(stays, index);
-  const own = VERSIONS[versionId]?.tradeoffs?.[key];
+  const own = ownFor(versionId, VERSIONS[versionId]?.tradeoffs, stays, index);
   if (own) return own;
   const plan = VERSIONS.plan?.tradeoffs?.[key];
   const planStay = (guide as unknown as { plan_nights?: Record<string, number> }).plan_nights?.[key];
@@ -74,6 +77,30 @@ export function stayTradeoff(versionId: string, stays: Stay[], index: number): T
 }
 
 const VERSIONS = guide.versions as Record<string, VersionGuide>;
+
+/** The stops each written route had when its text was written (trip-data.json). */
+const WRITTEN_STAYS = Object.fromEntries((trip as unknown as { versions: { id: string; stays: Stay[] }[] }).versions.map((v) => [v.id, v.stays]));
+
+export function writtenStays(versionId: string): Stay[] | null {
+  return WRITTEN_STAYS[versionId] ?? null;
+}
+
+/** Is the route still the one its text was written for: same places, same dates? */
+export function stillAsWritten(versionId: string, stays: Pick<Stay, "region" | "from" | "to">[]): boolean {
+  const w = WRITTEN_STAYS[versionId];
+  return !!w && w.length === stays.length && w.every((s, i) => s.region === stays[i].region && s.from === stays[i].from && s.to === stays[i].to);
+}
+
+/** A route's own note or trade-off for a stop holds only while that stop has the nights it was written for. */
+function ownFor<T>(versionId: string, table: Record<string, T> | undefined, stays: Stay[], index: number): T | null {
+  const key = stayKey(stays, index);
+  const own = table?.[key];
+  if (!own) return null;
+  const w = WRITTEN_STAYS[versionId];
+  if (!w) return own;
+  const k = w.findIndex((_, i) => stayKey(w, i) === key);
+  return k >= 0 && w[k].nights === stays[index].nights ? own : null;
+}
 
 export function versionGuide(id: string): VersionGuide | null {
   return VERSIONS[id] ?? null;
@@ -87,7 +114,7 @@ export function stayNote(versionId: string, stays: Stay[], index: number): strin
   const stay = stays[index];
   const occurrence = stays.slice(0, index + 1).filter((s) => s.region === stay.region).length;
   const key = occurrence > 1 ? `${stay.region}:${occurrence}` : stay.region;
-  const own = VERSIONS[versionId]?.stay_notes[key];
+  const own = ownFor(versionId, VERSIONS[versionId]?.stay_notes, stays, index);
   if (own) return own;
   const plan = VERSIONS.plan?.stay_notes[key];
   // Only reuse the plan's note when the stay has the same length, else it would argue for the wrong number.

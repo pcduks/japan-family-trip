@@ -66,7 +66,7 @@ export function FamilyView() {
 
   return (
     <Page>
-      <Back href="/">Explore</Back>
+      <Back href="/">Trip</Back>
       <PageHeader eyebrow="Planners" title="Family">
         Everyone on this list gets in with the family code and their name. Names that nobody has claimed yet show as “Brother”, “Dad” and so on until that person types their own.
       </PageHeader>

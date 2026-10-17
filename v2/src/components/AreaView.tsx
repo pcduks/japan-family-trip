@@ -40,7 +40,7 @@ export function AreaView({ id }: { id: string }) {
   if (!region || !a)
     return (
       <Page>
-        <Back href="/">Explore</Back>
+        <Back href="/places">Places</Back>
         <p className="text-muted">No such area.</p>
       </Page>
     );
@@ -80,12 +80,12 @@ export function AreaView({ id }: { id: string }) {
     setTrying(true);
     const { version } = swapInRegion(plan, region!, snapshot.versions, me.travellerId, snapshot.trip.start);
     await saveVersion(version);
-    router.push(`/versions/${version.id}#stops`);
+    router.push(`/routes/${version.id}`);
   }
 
   return (
     <Page wide>
-      <Back href="/">Explore</Back>
+      <Back href="/places">Places</Back>
       <PlacePhoto placeId={a.known_for.find((k) => k.place)?.place} regionId={id} className="hero-fade -mx-4 aspect-[4/3] sm:mx-0 sm:aspect-[5/2] sm:rounded-2xl sm:shadow-[var(--glow)]">
         <div className="absolute inset-x-4 bottom-4 z-10 grid gap-1 text-white">
           <p className="flex items-center gap-2 text-[0.72rem] font-semibold tracking-wide uppercase opacity-90">
@@ -242,7 +242,7 @@ export function AreaView({ id }: { id: string }) {
           </ul>
           {inRoute && plan ? (
             <p className="text-sm">
-              <Link href={`/versions/${plan.id}#stops`}>All candidates and booking links, on the route →</Link>
+              <Link href="/#stops">All candidates and booking links, on the route →</Link>
             </p>
           ) : null}
         </Section>
@@ -274,12 +274,12 @@ export function AreaView({ id }: { id: string }) {
         ) : null}
         <div className="flex flex-wrap gap-2">
           {inRoute && plan ? (
-            <Link href={`/versions/${plan.id}#stops`} className="btn btn-sm">
+            <Link href="/" className="btn btn-sm">
               See it on the route
             </Link>
           ) : alt ? (
-            <Link href={`/route?show=${alt.id}`} className="btn btn-sm btn-primary">
-              Draw “{alt.name}” on the map
+            <Link href={`/routes/${alt.id}`} className="btn btn-sm btn-primary">
+              See “{alt.name}”
             </Link>
           ) : null}
           {!inRoute && plan && region.status !== "not_this_trip" && region.status !== "day_trip" ? (
@@ -287,8 +287,8 @@ export function AreaView({ id }: { id: string }) {
               {trying ? "Making your version…" : "Try it in the route"}
             </button>
           ) : null}
-          <Link href="/route" className="btn btn-sm">
-            The route and why
+          <Link href="/routes" className="btn btn-sm">
+            All routes
           </Link>
         </div>
       </Section>

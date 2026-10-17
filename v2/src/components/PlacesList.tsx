@@ -99,7 +99,7 @@ export function PlacesList() {
 
   return (
     <Page wide>
-      <Back href="/route">The route</Back>
+      <Back href="/places">Places</Back>
       <PageHeader eyebrow={`${snapshot.places.length} places · ${regions.length} regions · ${plannedCount} in the plan`} title="Places">
         Everything we researched, with hours, closures and effort for her. A green badge means it is in the plan’s day by day; the rest are candidates near our bases. Photos and reviews come from Google when you open a place.
       </PageHeader>

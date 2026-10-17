@@ -5,12 +5,12 @@ import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { regionArt } from "@/lib/art";
 import { regionColor } from "@/lib/colors";
-import { dateRange, fmtDay, fmtRange, weekday } from "@/lib/dates";
+import { fmtDay, fmtRange, weekday } from "@/lib/dates";
 import { outdoorHours } from "@/lib/exposure";
-import { versionGuide } from "@/lib/guide";
 import { fujiChance, JOURNEY, kanji, legsOf, snowLevel } from "@/lib/journey";
 import { fmtClock, fmtHours, sunTimes } from "@/lib/sun";
-import type { Day, Place, Region, Stay, Version } from "@/lib/types";
+import { planDays } from "@/lib/days";
+import type { DayItem, Place, Snapshot, Stay, Version } from "@/lib/types";
 import Link from "next/link";
 import { fmtLegHours } from "./JourneyMap";
 import { useStore } from "./providers";
@@ -32,7 +32,8 @@ interface DayView {
   region: string;
   kind: string;
   title: string;
-  day: Day | null;
+  items: DayItem[];
+  forHer: string | null;
   move: { from: string; hours: number; how: string; bus: boolean } | null;
   rise: number;
   set: number;
@@ -64,12 +65,11 @@ export function PictureScroll({ version, onStop }: { version: Version; onStop?: 
   const [open, setOpen] = useState<DayView | null>(null);
   const [view, setView] = useState({ left: 0, width: 1 });
   const regions = snapshot.regions;
-  const plan = snapshot.versions.find((v) => v.status === "plan");
 
   const sig = version.stays.map((s) => `${s.region}:${s.from}:${s.to}`).join("|");
-  const days = useMemo(() => buildDays(version, plan, snapshot.days, snapshot.places, regions, snapshot.calendar),
+  const days = useMemo(() => buildDays(version, snapshot),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [sig, snapshot.days, snapshot.places, plan?.id]);
+    [sig, snapshot.days, snapshot.places, snapshot.versions]);
   const chapters = useMemo(() => {
     const out: { stay: Stay; index: number; start: number; len: number }[] = [];
     version.stays.forEach((stay, index) => {
@@ -235,7 +235,12 @@ export function PictureScroll({ version, onStop }: { version: Version; onStop?: 
                   </p>
                 ) : null}
                 <p className="text-[1.02rem] leading-relaxed text-ink">{open.title}</p>
-                {open.day?.items.length ? <DayItems day={open.day} /> : null}
+                {open.items.length ? <DayItems items={open.items} /> : null}
+                {open.forHer ? (
+                  <p className="text-sm text-ink-2">
+                    <b className="text-ink">For Fernanda:</b> {open.forHer}
+                  </p>
+                ) : null}
                 <dl className="grid grid-cols-2 gap-2 text-sm">
                   <div className="rounded-xl bg-bg-2 p-2.5">
                     <dt className="text-xs text-muted">Daylight</dt>
@@ -300,11 +305,11 @@ export function PictureScroll({ version, onStop }: { version: Version; onStop?: 
 
 const SLOT: Record<string, string> = { early: "Dawn", morning: "Morning", afternoon: "Afternoon", evening: "Evening", rest: "Rest" };
 
-function DayItems({ day }: { day: Day }) {
+function DayItems({ items }: { items: DayItem[] }) {
   const { snapshot } = useStore();
   return (
     <ul className="grid gap-1.5">
-      {day.items.map((it, i) => {
+      {items.map((it, i) => {
         const p = it.place_id ? snapshot.places.find((x) => x.id === it.place_id) : null;
         const extra = it.crew === "early" ? "early start, optional" : it.crew === "easy" ? "easy option" : null;
         return (
@@ -386,34 +391,19 @@ function FujiGlyph() {
   );
 }
 
-function buildDays(version: Version, plan: Version | undefined, allDays: Day[], places: Place[], regions: Region[], calendar: { peak_travel_days: string[]; new_year_closures: { start: string; end: string } }): DayView[] {
+function buildDays(version: Version, snapshot: Snapshot): DayView[] {
   const stays = version.stays;
   if (!stays.length) return [];
-  const last = stays[stays.length - 1];
-  const dates = [...dateRange(stays[0].from, last.to), last.to];
+  const { calendar, regions } = snapshot;
   const legs = legsOf(stays, regions);
-  const ideas = versionGuide(version.id)?.days;
-  const own = allDays.filter((d) => d.version_id === version.id);
-  const planDays = plan ? allDays.filter((d) => d.version_id === plan.id) : [];
-  const byId = new Map(places.map((p) => [p.id, p]));
-  return dates.map((date) => {
-    let stayIndex = stays.findIndex((s) => s.from <= date && s.to > date);
-    if (stayIndex < 0) stayIndex = stays.length - 1;
+  const byId = new Map(snapshot.places.map((p) => [p.id, p]));
+  return planDays(version, snapshot).map((pd) => {
+    const { date, stayIndex } = pd;
     const stay = stays[stayIndex];
     const r = regions.find((x) => x.id === stay.region);
     const isMove = stayIndex > 0 && stay.from === date && stays[stayIndex - 1].region !== stay.region;
     const leg = isMove ? legs.find((l) => l.index === stayIndex - 1) : undefined;
-    // The day plan: this version's own, else the plan's for the same date in the same place.
-    const planStay = plan?.stays.find((s) => s.from <= date && (s.to > date || (s === plan.stays[plan.stays.length - 1] && s.to === date)));
-    const ownDay = own.find((d) => d.date === date) ?? null;
-    const day = ownDay ?? (ideas?.[date] ? null : (planStay?.region === stay.region && (!isMove || plan?.stays.find((s) => s.from === date)?.region === stay.region) ? planDays.find((d) => d.date === date) : undefined) ?? null);
-    const name = r?.name.replace(/ Onsen$/, "") ?? stay.region;
-    const isLast = date === last.to;
-    const kind = day ? kindWord(day.kind) : isLast ? "Fly" : isMove ? "Move" : date === stays[0].from ? "Arrive" : "Explore";
-    // A route's own day ideas (written with the route) win over the plan's days and the generic line.
-    const idea = ideas?.[date];
-    const title = idea ?? (day ? cleanTitle(day.title) : isLast ? "To the airport" : isMove ? `To ${name}${leg ? `: ${leg.how}` : ""}` : `A day in ${name}`);
-    const items = (day?.items ?? []).filter((it) => it.crew !== "early");
+    const items = pd.items.filter((it) => it.crew !== "early");
     const sights = items.map((it) => (it.place_id ? byId.get(it.place_id) : undefined)).filter((p): p is Place => !!p && p.size !== "meal");
     const outside = Math.round(sights.reduce((a, p) => a + outdoorHours(p), 0) * 2) / 2;
     const hard = sights.some((p) => p.effort_for_her === "high" || p.status === "avoid_for_her");
@@ -425,9 +415,10 @@ function buildDays(version: Version, plan: Version | undefined, allDays: Day[], 
       date,
       stayIndex,
       region: stay.region,
-      kind,
-      title,
-      day,
+      kind: kindWord(pd.kind),
+      title: cleanTitle(pd.title),
+      items: pd.items,
+      forHer: pd.forHer,
       move: leg ? { from: leg.fromRegion, hours: leg.hours, how: leg.how, bus: leg.segments.some((s) => s.mode === "bus") && leg.segments.every((s) => s.mode === "bus" || s.mode === "local") } : null,
       rise: sun.rise,
       set: sun.set,

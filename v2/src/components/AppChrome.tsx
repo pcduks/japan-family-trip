@@ -8,12 +8,8 @@ import { useStore, type ThemePref } from "./providers";
 import { Avatar } from "./ui";
 
 const I = {
-  home: "M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z",
-  board: "M4 6h16M4 12h10M4 18h13",
-  vote: "M5 13l4 4L19 7",
   versions: "M8 4h12v12M4 8h12v12H4z",
   places: "M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z",
-  map: "M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14",
   trip: "M4 15V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v8M4 15h16M4 15l-1 4M20 15l1 4M8 19h8M8 8h8",
   food: "M4 11h16a8 8 0 0 1-16 0zM8 4l1 4M12 3v5M16 4l-1 4M9 19h6",
 };
@@ -39,8 +35,9 @@ export function BottomNav() {
   return (
     <nav aria-label="Main" className="fixed inset-x-0 bottom-0 z-30 border-t border-rule bg-bg/95 backdrop-blur" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
       <ul className="mx-auto flex max-w-xl items-stretch justify-around px-1">
-        <NavItem href="/" label="Explore" icon={I.map} active={path === "/" || is("/areas") || is("/places") || is("/map") || is("/missing")} />
-        <NavItem href="/route" label="Route" icon={I.trip} active={is("/route") || is("/trip") || is("/board") || is("/versions") || is("/plan") || is("/guide")} />
+        <NavItem href="/" label="Trip" icon={I.trip} active={path === "/" || is("/plan") || is("/guide")} />
+        <NavItem href="/routes" label="Routes" icon={I.versions} active={is("/routes") || is("/build") || is("/board")} />
+        <NavItem href="/places" label="Places" icon={I.places} active={is("/places") || is("/areas")} />
         <NavItem href="/food" label="Food" icon={I.food} active={is("/food")} />
       </ul>
     </nav>
@@ -111,20 +108,11 @@ export function AppHeader() {
             <fieldset className="grid gap-2">
               <legend className="eyebrow">More</legend>
               <div className="flex flex-wrap gap-2">
-                <Link href="/places" className="btn btn-sm" onClick={() => setOpen(false)}>
-                  Places
-                </Link>
-                <Link href="/map" className="btn btn-sm" onClick={() => setOpen(false)}>
-                  Map
-                </Link>
                 <Link href="/plan" className="btn btn-sm" onClick={() => setOpen(false)}>
-                  Full report
+                  The full report
                 </Link>
                 <Link href="/guide" className="btn btn-sm" onClick={() => setOpen(false)}>
                   How this works
-                </Link>
-                <Link href="/vote" className="btn btn-sm" onClick={() => setOpen(false)}>
-                  Vote
                 </Link>
                 {isPlanner ? (
                   <Link href="/family" className="btn btn-sm" onClick={() => setOpen(false)}>

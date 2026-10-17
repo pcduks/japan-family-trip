@@ -18,6 +18,21 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_GOOGLE_MAP_ID: pick("NEXT_PUBLIC_GOOGLE_MAP_ID", "GOOGLE_MAP_ID"),
     NEXT_PUBLIC_GOOGLE_MAP_ID_DARK: pick("NEXT_PUBLIC_GOOGLE_MAP_ID_DARK", "GOOGLE_MAP_ID_DARK"),
   },
+  // Old addresses from before the four tabs (Trip, Routes, Places, Food), so saved links still land somewhere sensible.
+  async redirects() {
+    return [
+      { source: "/route", has: [{ type: "query", key: "show", value: "(?<show>.+)" }], destination: "/routes/:show", permanent: false },
+      { source: "/route", destination: "/", permanent: false },
+      { source: "/trip", destination: "/", permanent: false },
+      { source: "/versions", destination: "/routes", permanent: false },
+      { source: "/versions/new", destination: "/build", permanent: false },
+      { source: "/versions/:id/edit", destination: "/build?from=:id", permanent: false },
+      { source: "/versions/:id", destination: "/routes/:id", permanent: false },
+      { source: "/vote", destination: "/routes", permanent: false },
+      { source: "/map", destination: "/places", permanent: false },
+      { source: "/missing", destination: "/places", permanent: false },
+    ];
+  },
   async headers() {
     return [
       {

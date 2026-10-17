@@ -29,7 +29,6 @@
     "@radix-ui/react-tabs": "^1.1.21",
     "@supabase/supabase-js": "^2.117.2",
     "@svg-maps/japan": "^2.0.0",
-    "@vis.gl/react-google-maps": "^1.10.1",
     "motion": "^14.2.0",
     "next": "16.3.7",
     "react": "19.2.8",

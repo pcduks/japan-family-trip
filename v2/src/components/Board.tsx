@@ -81,26 +81,19 @@ export function Board() {
   const { snapshot, me } = useStore();
   const versions = snapshot.versions.filter((v) => v.status !== "legacy" && (v.shared !== false || v.owner === me?.travellerId || me?.role === "planner"));
   const regionIds = Array.from(new Set(versions.flatMap((v) => v.stays.map((s) => s.region))));
-  const rankVotes = snapshot.votes.filter((v) => v.kind === "rank").length;
   return (
     <Page wide>
-      <Back href="/route">The route</Back>
+      <Back href="/routes">Routes</Back>
       <PageHeader eyebrow={`${snapshot.trip.nights} nights · ${snapshot.travellers.length} travellers · 20 Dec – 9 Jan`} title="Side by side">
         Every version on the same calendar. Same colour, same place. Tap one for the stops, where to sleep, the budget and the reasons.
       </PageHeader>
-
-      <div className="flex flex-wrap gap-2 text-sm">
-        <Link href="/vote" className="btn btn-sm btn-primary">
-          Rank them · {rankVotes}/{snapshot.travellers.length} have
-        </Link>
-      </div>
 
       <div className="grid gap-3">
         <div className="sticky top-0 z-10 bg-bg pt-1">
           <TimelineAxis trip={snapshot.trip} calendar={snapshot.calendar} />
         </div>
         {versions.map((v) => (
-          <VersionCard key={v.id} v={v} href={`/versions/${v.id}`} />
+          <VersionCard key={v.id} v={v} href={v.status === "plan" ? "/" : `/routes/${v.id}`} />
         ))}
       </div>
 

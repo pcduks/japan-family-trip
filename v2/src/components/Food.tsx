@@ -37,7 +37,7 @@ export function plannedOn(placeId: string, days: { version_id: string; date: str
 }
 
 const TABS = [
-  { id: "", label: "Everything" },
+  { id: "", label: "How we eat" },
   ...Object.entries(GUIDE.regions).map(([id, r]) => ({ id, label: r.title })),
   { id: "her", label: "For her" },
   { id: "ryokan", label: "Ryokan meals" },
@@ -52,13 +52,14 @@ export function Food() {
   const active = picked && picked.forParam === wanted ? picked.id : wanted ? (FOOD_REGION[wanted] ?? wanted) : "";
   const meals = snapshot.places.filter((p) => p.size === "meal" || p.kind === "food");
   const ownList = snapshot.food_list;
-  const show = (id: string) => !active || active === id;
+  // One thing at a time: the first tab is how we eat, what she can eat and the ryokan meals; each city has its own.
+  const show = (id: string) => active === id || (!active && (id === "her" || id === "ryokan"));
   const regionOrder = Object.keys(GUIDE.regions);
 
   return (
     <Page wide>
       <PageHeader eyebrow={`Where we eat · ${meals.length} researched places · ${ownList.length} of our own`} title="Food">
-        Three weeks, sixty-odd meals, one of us pregnant and two of us new to all of it. This is what each place is about at the table, who recommends each restaurant and why, what she can eat, and how the ryokan nights work. Tap a region, or read it top to bottom.
+        Three weeks, sixty-odd meals, one of us pregnant and two of us new to all of it. Start with how we eat; each city has its own tab with what it is about at the table and who recommends each restaurant.
       </PageHeader>
 
       <div className="no-scrollbar sticky top-0 z-10 -mx-4 flex gap-2 overflow-x-auto bg-bg px-4 py-2">
@@ -156,7 +157,7 @@ export function Food() {
                 ))}
               </ul>
               <p className="text-xs text-muted">
-                <Link href={`/places?region=${id}`}>Places in {r.title.split(" and")[0]}</Link> · <Link href={`/plan?tab=${reportTabForRegion(id) ?? id}`}>the full guide in the report</Link>
+                <Link href={`/areas/${id}`}>Places in {r.title.split(" and")[0]}</Link> · <Link href={`/plan?tab=${reportTabForRegion(id) ?? id}`}>the full guide in the report</Link>
               </p>
             </div>
           </section>
@@ -202,7 +203,7 @@ export function Food() {
               ))}
             </ul>
             <p className="text-muted">
-              The candidate ryokan, with prices and links, are on <Link href="/versions/plan#stay-3">the plan’s Gero stay</Link> and <Link href="/versions/fuji-lake#stay-5">the Hakone alternative’s stay</Link>.
+              The candidate ryokan, with prices and links, are on <Link href="/#stop-3">the route’s Gero stop</Link> and <Link href="/routes/fuji-lake#stop-5">the Hakone route’s stop</Link>.
             </p>
           </div>
         </Section>
