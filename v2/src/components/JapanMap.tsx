@@ -51,7 +51,7 @@ export function JapanMap({ regions, stays, highlight = null, weight, view = "hea
 
   return (
     <div className={`journey relative overflow-hidden rounded-2xl ${className}`}>
-      <svg viewBox={VIEWS[view]} className="block h-auto w-full select-none" role="img" aria-label="Map of Japan with the areas we researched">
+      <svg viewBox={VIEWS[view]} className="block h-auto w-full select-none" role="img" aria-label="Map of Japan with the areas we looked at">
         <defs>
           <MapInkDefs uid={uid} />
         </defs>

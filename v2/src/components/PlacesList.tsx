@@ -10,7 +10,7 @@ import { useStore } from "./providers";
 import { Back, Empty, Page, PageHeader, RegionDot } from "./ui";
 
 const SIZE_LABEL: Record<Size, string> = { main: "Half a day", short: "An hour or two", day_trip: "Day trip", evening: "Evening", meal: "Meal" };
-const EFFORT: Record<string, string> = { low: "easy for her", moderate: "moderate for her", high: "hard for her" };
+const EFFORT: Record<string, string> = { low: "easy for Fernanda", moderate: "moderate for Fernanda", high: "hard for Fernanda" };
 
 /** Lazy photo: only asks the server once the card is near the viewport. */
 export function PlaceThumb({ place, className = "" }: { place: Place; className?: string }) {
@@ -129,7 +129,7 @@ export function PlacesList() {
             ) : null}
             <p className="flex flex-wrap gap-1 pt-1 text-xs">
               {plannedDates.has(p.id) ? <span className="chip text-ok">on the route · {plannedDates.get(p.id)!.map((d) => fmtDay(d, false)).join(", ")}</span> : null}
-              {p.status === "avoid_for_her" ? <span className="chip text-danger">avoid for her</span> : p.effort_for_her !== "low" ? <span className={`chip ${p.effort_for_her === "high" ? "text-danger" : "text-warn"}`}>{EFFORT[p.effort_for_her]}</span> : null}
+              {p.status === "avoid_for_her" ? <span className="chip text-danger">avoid for Fernanda</span> : p.effort_for_her !== "low" ? <span className={`chip ${p.effort_for_her === "high" ? "text-danger" : "text-warn"}`}>{EFFORT[p.effort_for_her]}</span> : null}
               {p.closures.length ? <span className="chip">closed {p.closures.map((c) => (c.start === c.end ? fmtDay(c.start, false) : fmtRange(c.start, c.end))).join(", ")}</span> : null}
               {p.closed_weekdays.length ? <span className="chip">closed {p.closed_weekdays.join("/")}</span> : null}
               {mc ? <span className="chip">★ {mc} must-do</span> : null}
@@ -146,7 +146,7 @@ export function PlacesList() {
     <Page wide>
       <Back href="/places">Places</Back>
       <PageHeader eyebrow={`${snapshot.places.length} places · ${regions.length} areas · ${plannedCount} on the route`} title="Places">
-        Everything we researched, by area: tap one to open it, or search. A green badge means the route’s days go there. Each place has its hours, closures and effort for Fernanda; photos and reviews come from Google when you open one.
+        Every place, by area: tap one to open it, or search. A green badge means the route’s days go there. Each place has its hours, closures and effort for Fernanda; photos and reviews come from Google when you open one.
       </PageHeader>
       <div className="grid gap-2">
         <input placeholder="Search… ramen, museum, snow, onsen" value={q} onChange={(e) => setQ(e.target.value)} aria-label="Search places" />

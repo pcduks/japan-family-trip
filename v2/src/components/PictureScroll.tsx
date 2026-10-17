@@ -325,7 +325,7 @@ function DayItems({ items }: { items: DayItem[] }) {
               )}
               {p && it.note ? <span className="text-ink-2"> · {it.note}</span> : null}
               {extra ? <span className="text-muted"> · {extra}</span> : null}
-              {p?.status === "avoid_for_her" ? <span className="text-warn"> · not for her</span> : p?.effort_for_her === "high" ? <span className="text-warn"> · hard for her</span> : null}
+              {p?.status === "avoid_for_her" ? <span className="text-warn"> · not for Fernanda</span> : p?.effort_for_her === "high" ? <span className="text-warn"> · hard for Fernanda</span> : null}
             </span>
           </li>
         );

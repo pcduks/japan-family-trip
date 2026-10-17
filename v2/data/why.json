@@ -73,7 +73,7 @@
     }
   ],
   "not_chosen": {
-    "intro": "Everything below is good. It is out because of travel time, the New Year calendar or the pregnancy. Several come back as alternatives you can rank.",
+    "intro": "Everything below is good. It is out because of travel time, the New Year calendar or the pregnancy. Several come back as other routes to look at.",
     "items": [
       { "region": "hakone", "why": "The other Fuji base: five art museums for a cloudy day, ryokan with a private bath in every room, an hour closer to Kyoto and 80 minutes from Shinjuku. Pedro and Fernanda have done it, and Fuji shows over the ridges rather than straight across the water.", "comeback": "the Hakone alternative" },
       { "region": "yudanaka", "why": "Snow monkeys and an onsen street, but it costs a Tokyo day and Kanazawa's rest day, and the forest path can be icy.", "comeback": "the snow monkeys alternative" },
@@ -83,12 +83,12 @@
       { "region": "hiroshima", "why": "Important history and Miyajima, but a long westward leg and two more nights.", "comeback": "the fuller alternative only" },
       { "region": "hokkaido", "why": "The best snow and a flight each way, but the Sapporo and Otaru festivals are in February, the ice underfoot is the one thing to avoid at 30 weeks, and it is the most expensive lodging in Japan at New Year.", "comeback": "its own trip" },
       { "region": "ginzan", "why": "The most photographed snowy onsen street, but far north, day visits are capped, and its few small inns book a year ahead.", "comeback": "no" },
-      { "region": "kusatsu", "why": "A steaming hot-water field, but the water is too hot and acidic for her and it is a long way from Kyoto.", "comeback": "no" },
+      { "region": "kusatsu", "why": "A steaming hot-water field, but the water is too hot and acidic for Fernanda and it is a long way from Kyoto.", "comeback": "no" },
       { "region": "koyasan", "why": "A temple night with the dawn fire ritual is memorable, but the lodgings are cold, the beds are floor futons and the paths are icy.", "comeback": "no" },
       { "region": "kyushu", "why": "Yufuin, Kurokawa and Takachiho need a car or a bus that runs one to three times a day; the Aso crater is closed; sand baths refuse pregnant guests.", "comeback": "its own trip" },
       { "region": "north-tohoku", "why": "Longer transfers, colder, fewer houses for seven, and its festivals are in February.", "comeback": "its own trip" },
       { "region": "shikoku", "why": "The Iya vine bridges close December to March.", "comeback": "no" },
-      { "region": "okinawa", "why": "Flights and boats; boats are not advised for her.", "comeback": "no" },
+      { "region": "okinawa", "why": "Flights and boats; boats are not advised for Fernanda.", "comeback": "no" },
       { "region": "nikko", "why": "Lacquered shrines in a cedar forest, but hundreds of icy stone stairs in winter.", "comeback": "a day trip from Tokyo at the end" },
       { "region": "kamakura", "why": "The Great Buddha and the sea, an easy day; the hill temples have stairs and 1–3 Jan is mobbed.", "comeback": "a day trip from Tokyo" }
     ]
@@ -96,17 +96,16 @@
   "trust": {
     "intro": "How much to trust this.",
     "points": [
-      "The country-wide research was done on 1 October 2026: nine reports on events, closures, trains, lodging and pregnancy, plus two catalogues of 156 experiences across every region with a score for how well each suits her. The route and the five region guides followed on 12–13 October.",
+      "We looked across the whole country in early October 2026: events, closures, trains, places to stay and what is sensible in the third trimester, and 156 experiences, each with a note on how well it suits Fernanda. The route and the five region guides followed on 12–13 October.",
       "Most 2026–27 year-end calendars were not published in October, so many opening hours follow the 2025–26 pattern. Where a date is confirmed (the Nozomi all-reserved window, Takashimaya's 1–2 Jan closure, the Ekiden dates) it says so. We recheck everything in December.",
       "Prices are estimates: lodging at the mid tier for seven with a New Year uplift, fares for reserved seats, food by pace. Treat the budget as plus or minus 15 percent.",
       "Every place, restaurant and opening time links to the page it came from. If a claim has no link, treat it as our opinion.",
-      "The taste calls are ours: that four nights in Kanazawa beat five in Takayama, that a ryokan New Year beats a city one. The facts narrowed the field; those calls are what the vote is for."
+      "The taste calls are ours: that four nights in Kanazawa beat five in Takayama, that a ryokan New Year beats a city one. The facts narrowed the field; those calls are for the family to make together."
     ],
     "links": [
-      { "label": "The full report, tab by tab", "href": "/plan" },
+      { "label": "Every detail, tab by tab", "href": "/plan" },
       { "label": "Why each stay is this long", "href": "/plan?tab=nights" },
-      { "label": "What we left out, in detail", "href": "/missing" },
-      { "label": "The raw research on GitHub", "href": "https://github.com/pcduks/japan-family-trip/tree/main/docs/research" }
+      { "label": "What we left out, in detail", "href": "/missing" }
     ]
   }
 }

@@ -68,7 +68,7 @@ export function StayLodging({ stay, region, defaultOpen = false }: { stay: Stay;
               </ul>
             </>
           ) : (
-            <p className="text-muted">No lodging research for this base yet. The budget assumes a {type.label.toLowerCase()} at {fmtJpyShort(cost.perNight)} a night for six.</p>
+            <p className="text-muted">No places to stay picked for this base yet. The budget assumes a {type.label.toLowerCase()} at {fmtJpyShort(cost.perNight)} a night for six.</p>
           )}
           <div className="grid gap-1">
             <p className="eyebrow">Search with our dates and six guests</p>

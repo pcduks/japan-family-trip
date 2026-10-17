@@ -174,7 +174,7 @@ export function PlaceView({ id }: { id: string }) {
               </ul>
             </Row>
           ) : null}
-          <Row k="For her">
+          <Row k="For Fernanda">
             <span className={p.status === "avoid_for_her" ? "text-danger" : p.effort_for_her === "high" ? "text-danger" : p.effort_for_her === "moderate" ? "text-warn" : "text-ok"}>
               {p.status === "avoid_for_her" ? "Avoid" : `${p.effort_for_her} effort`}
             </span>
@@ -198,7 +198,7 @@ export function PlaceView({ id }: { id: string }) {
               </Row>
               {p.food.group_of_6 ? <Row k="Six of us">{p.food.group_of_6}</Row> : null}
               {p.food.pregnancy_note ? (
-                <Row k={/raw|pregnan|her\b|sushi|sashimi|alcohol|smok/i.test(p.food.pregnancy_note) ? "For her" : "Note"}>
+                <Row k={/raw|pregnan|her\b|sushi|sashimi|alcohol|smok/i.test(p.food.pregnancy_note) ? "For Fernanda" : "Note"}>
                   <span className="text-warn">{p.food.pregnancy_note}</span>
                 </Row>
               ) : null}

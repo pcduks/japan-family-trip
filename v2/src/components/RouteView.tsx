@@ -32,7 +32,7 @@ const WHY = why as unknown as { facts: { title: string; text: string; sources: S
 
 /** A route's page: the map, the 21 days, the stops, and why. With no id it is the route we are taking (the Trip tab). */
 export function RouteView({ id }: { id?: string }) {
-  const { snapshot, me } = useStore();
+  const { snapshot, me, isPlanner } = useStore();
   const plan = snapshot.versions.find((v) => v.status === "plan");
   const [openFacts, setOpenFacts] = useState<number | null>(null);
   const [feelOpen, setFeelOpen] = useState(false);
@@ -117,17 +117,17 @@ export function RouteView({ id }: { id?: string }) {
           · about {stats.travelHours} h between bases · New Year’s Eve in {regionName(stats.newYearsEve?.region ?? "")} · {fmtSgd(budget)} per couple
           {!isPlan ? ` · ${budget - planBudget >= 0 ? "+" : "−"}${fmtSgd(Math.abs(budget - planBudget))} vs the route` : ""}
         </p>
-        <div className="flex flex-wrap gap-2">
-          <Link href={`/build?from=${v.id}`} className="btn btn-sm btn-primary">
-            Change it
-          </Link>
-          <Link href="/routes" className="btn btn-sm">
-            {isPlan ? "Other routes" : "All routes"}
-          </Link>
-        </div>
+        <ChangeButton
+          href={`/build?from=${v.id}`}
+          label={isPlan ? (isPlanner ? "Edit the route" : "Suggest a change") : "Change this route"}
+          caption={isPlan ? (isPlanner ? "Everyone sees the change once you save it." : `${plannerNames(snapshot.travellers)} see it before anything changes.`) : "Start from this route and make it yours."}
+        />
       </div>
 
       {isPlan ? <WhatsNext /> : null}
+      <Link href="/routes" className="justify-self-start text-sm font-semibold">
+        {isPlan ? "Other routes →" : "All routes →"}
+      </Link>
       {mine && v.owner === me?.travellerId ? <SendRoute v={v} /> : null}
 
       <Section title="The 21 days" aside="tap a day">
@@ -210,7 +210,7 @@ export function RouteView({ id }: { id?: string }) {
                                   </Link>
                                   <span className="text-xs text-muted">
                                     {EXPOSURE_LABEL[exposure(p)]}
-                                    {p.status === "avoid_for_her" ? " · not for her" : p.effort_for_her === "high" ? " · hard for her" : ""}
+                                    {p.status === "avoid_for_her" ? " · not for Fernanda" : p.effort_for_her === "high" ? " · hard for Fernanda" : ""}
                                   </span>
                                 </span>
                                 {p.why ? <span className="text-ink-2">{p.why}</span> : null}
@@ -301,7 +301,6 @@ export function RouteView({ id }: { id?: string }) {
                 ))}
               </p>
             ) : null}
-            {isPlan ? <Link href="/plan">The full report →</Link> : null}
           </div>
         </details>
       </Section>
@@ -426,4 +425,20 @@ function fmtStamp(iso: string | null | undefined): string {
   if (!iso) return "new";
   const d = new Date(iso);
   return `saved ${d.getUTCDate()} ${["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getUTCMonth()]}`;
+}
+
+/** The way into changing a route: outlined, full width, a pencil, and never paired with a twin, so it never reads as a switch that is already on. */
+function ChangeButton({ href, label, caption }: { href: string; label: string; caption: string }) {
+  return (
+    <div className="grid max-w-[420px] gap-1">
+      <Link href={href} className="flex min-h-[52px] items-center justify-center gap-2 rounded-xl border-[1.5px] border-ink bg-card px-4 text-[1.05rem] font-semibold text-ink no-underline active:bg-bg-2">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 20h9" />
+          <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
+        </svg>
+        {label}
+      </Link>
+      <p className="text-sm text-muted">{caption}</p>
+    </div>
+  );
 }
