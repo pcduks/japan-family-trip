@@ -1,0 +1,335 @@
+{
+  "designer": "Snow, onsen and slow",
+  "routes": [
+    {
+      "id": "deep-snow-country",
+      "name": "Deep snow country",
+      "style": "snow",
+      "pace": "balanced",
+      "theme": "Three weeks in the Alps and the snowy side",
+      "tagline": "Tokyo 3, Nagano 3, Takayama 3, Okuhida 3, Kanazawa 4 and Tokyo 4: snow monkeys, thatched villages, a ryokan New Year in deep snow and Kanazawa's gardens under their snow ropes.",
+      "feel": "Three days of Tokyo lights, then the shinkansen climbs into the mountains. In Nagano you watch the dawn service at Zenko-ji, the fit five walk the forest path to the snow monkeys, and Christmas Day is a trip to Matsumoto's black castle with the Alps behind it. The Hida line follows a white gorge to Takayama: morning markets, sake breweries, a day among the thatched farmhouses of Shirakawa-go. On 29 Dec a short bus ride takes you up to Okuhida, where the snow is deepest and New Year's Eve is a long dinner at a ryokan, with a private bath and a ropeway up to 2,156 m the day before. On the quiet 1 Jan you come down to Kanazawa for its slow, free New Year days in Kenroku-en. You end with four easy days in Tokyo and one last snow day at Echigo-Yuzawa.",
+      "activities": [
+        "Tokyo: Christmas illuminations, Tsukiji outer market and Hama-rikyu on the Monday museums close, Asakusa and Ueno",
+        "Nagano: Zenko-ji at dawn and its pitch-dark o-kaidan passage, the Jigokudani snow monkeys, a day trip to Matsumoto Castle and Nakamachi, Obuse for Hokusai and chestnut sweets",
+        "Takayama: Takayama Jinya before it closes on 29 Dec, morning markets, Sanmachi sake breweries, Hida beef, a day trip to Shirakawa-go by bus",
+        "Okuhida: a ryokan New Year's Eve with private baths in deep snow, the Shin-Hotaka double-decker ropeway, Hirayu Great Falls, a guided snowshoe walk for the fit",
+        "Kanazawa: Kenroku-en free on 1–3 Jan with its yukitsuri snow ropes, the 21st Century Museum from 2 Jan, Higashi Chaya and gold leaf, Omicho's crab when it reopens on 5 Jan",
+        "Tokyo: Tokyo National Museum and the January Kabuki, shopping, and a snow-play day trip to GALA Yuzawa (75 minutes away)"
+      ],
+      "why": "This is the route for a family that came to Japan for winter itself: it stays on the snowy side of the mountains for two weeks instead of dipping in and out. It suits the first-timers who want the postcard Japan of snow and thatch, and it gives Pedro and Fernanda a trip with no Kyoto or Hakone repeats at all.",
+      "suits": "João and Carolina (snow, monkeys, snowshoes), Carlos and Nadir (castle, villages, long walks in the snow), Tatiana (the classic winter images); Pedro and Fernanda get an all-new trip, though Fernanda has the most ice to manage of any option.",
+      "trade": "No Kyoto, Nara or Fuji at all, so the first-timers miss Japan's temple capital and the famous mountain. There is more ice underfoot for Fernanda than on the main route, and New Year's Eve is about an hour from the nearest hospital with obstetrics rather than in a city. Five moves, and the 1 Jan journey is close to four hours.",
+      "stays": [
+        { "region": "tokyo", "from": "2026-12-20", "to": "2026-12-23", "nights": 3, "lodging": "hotel", "note": "Near Tokyo or Ueno station for the Hokuriku shinkansen" },
+        { "region": "nagano", "from": "2026-12-23", "to": "2026-12-26", "nights": 3, "lodging": "hotel", "note": "Station hotel; Matsumoto and the snow monkeys as day trips" },
+        { "region": "takayama", "from": "2026-12-26", "to": "2026-12-29", "nights": 3, "lodging": "rental", "note": "Old-town machiya; Shirakawa-go by bus on 27 Dec" },
+        { "region": "okuhida", "from": "2026-12-29", "to": "2027-01-01", "nights": 3, "lodging": "ryokan", "note": "New Year's Eve; Hirayu or Shin-Hotaka" },
+        { "region": "kanazawa", "from": "2027-01-01", "to": "2027-01-05", "nights": 4, "lodging": "rental", "note": "Machiya house with a kitchen for the closed days" },
+        { "region": "tokyo", "from": "2027-01-05", "to": "2027-01-09", "nights": 4, "lodging": "hotel", "note": "Echigo-Yuzawa snow day on 7 Jan" }
+      ],
+      "legs": [
+        { "from": "tokyo", "to": "nagano", "date": "2026-12-23", "hours": 2.0, "how": "Hokuriku shinkansen (Kagayaki or Hakutaka), 80–100 minutes", "fare_jpy_per_person": 8800, "peak_day": false },
+        { "from": "nagano", "to": "takayama", "date": "2026-12-26", "hours": 3.25, "how": "Hokuriku shinkansen to Toyama (about 50 minutes), then the Hida limited express up the Jinzu gorge (about 90 minutes)", "fare_jpy_per_person": 10500, "peak_day": false },
+        { "from": "takayama", "to": "okuhida", "date": "2026-12-29", "hours": 1.25, "how": "Nohi bus to Hirayu Onsen (about 60 minutes); short local hop", "fare_jpy_per_person": 1600, "peak_day": true },
+        { "from": "okuhida", "to": "kanazawa", "date": "2027-01-01", "hours": 4.0, "how": "Nohi bus to Takayama (about 60 minutes), Hida limited express to Toyama (about 90 minutes), shinkansen to Kanazawa (20 minutes); or the direct Nohi highway bus from Takayama (about 2 h 15)", "fare_jpy_per_person": 8600, "peak_day": false },
+        { "from": "kanazawa", "to": "tokyo", "date": "2027-01-05", "hours": 3.25, "how": "Hokuriku shinkansen Kagayaki (about 2 h 30)", "fare_jpy_per_person": 15000, "peak_day": false }
+      ],
+      "nye": "At a ryokan in Okuhida (Hirayu or Shin-Hotaka), with New Year's Eve kaiseki and toshikoshi soba included, a private or in-room bath for Fernanda, and snow banked up outside the window. Breakfast on 1 Jan is the New Year osechi before the quiet-day journey to Kanazawa.",
+      "stay_notes": {
+        "tokyo": "Arrival plus two full days to get over the flight; the city comes back at the end, so this first visit can stay light.",
+        "nagano": "Arrival afternoon at Zenko-ji, then one day for the snow monkeys and one for Matsumoto Castle, which is open until 28 Dec and closed 29–31 Dec. Nagano is a flat city with trains in every direction and a Red Cross hospital.",
+        "takayama": "Three nights so the Jinya (closed from 29 Dec), the old town and a full Shirakawa-go day all fit before New Year, without rushing on icy streets.",
+        "okuhida": "Fixed by the calendar: in by 29 Dec on a one-hour bus, out on the quiet 1 Jan. Three nights gives one ropeway day, one slow day and New Year's Eve itself.",
+        "kanazawa": "1–4 Jan are slow days everywhere; Kanazawa is a home-coming city, not a resort, so it stays calm. Kenroku-en is free, the 21st Century Museum reopens on 2 Jan and Omicho fully reopens on 5 Jan, the morning you leave.",
+        "tokyo:2": "Four nights so the museums closed in December can be seen, a snow-play day at Echigo-Yuzawa fits, and the last night is close to the airport."
+      },
+      "tradeoffs": {
+        "tokyo": { "longer": "A Nikko or Kawagoe day before the snow", "shorter": "Straight into the mountains on the second morning, still jet-lagged", "idle": "none", "note": "Full but gentle; Monday 21 Dec is the market-and-gardens day because museums close." },
+        "nagano": { "longer": "A Nozawa Onsen snow day with sledding and the village baths, or Togakushi's cedar avenue", "shorter": "Matsumoto or the monkeys drops out", "idle": "none", "note": "Every day has a clear plan; the monkey morning is long for the walkers, so Fernanda's afternoon is free." },
+        "takayama": { "longer": "A quiet Hida-Furukawa canal-town morning", "shorter": "Shirakawa-go squeezed into the travel day, or the Jinya missed", "idle": "some", "note": "28 Dec can be as slow as you like: markets, sake and an early Hida beef dinner." },
+        "okuhida": { "longer": "Not advised: it would mean moving on 2–4 Jan", "shorter": "Moving on 30 Dec instead, which is the busiest outbound day of the year", "idle": "some", "note": "31 Dec is meant to be idle: baths, a nap, a snowshoe walk for anyone restless, then the long dinner." },
+        "kanazawa": { "longer": "Not possible without a peak-day move; one more Tokyo night instead", "shorter": "Leaving on 4 Jan, a peak day on the Hokuriku line", "idle": "some", "note": "4 Jan is a soft day (the 21st Century Museum shuts on Mondays); use it for Nagamachi, a tea house or a Kaga Onsen afternoon." },
+        "tokyo:2": { "longer": "Not possible: 9 Jan is the flight", "shorter": "The Yuzawa snow day or the late museum evening goes", "idle": "some", "note": "8 Jan is deliberately free for shopping and packing; send big bags to the airport by 6 Jan." }
+      },
+      "day_ideas": [
+        { "date": "2026-12-20", "title": "Land, check in, a short walk and an easy dinner near the hotel" },
+        { "date": "2026-12-21", "title": "Museums close on Mondays: Tsukiji outer market, Hama-rikyu garden, Ginza food halls, evening lights" },
+        { "date": "2026-12-22", "title": "Asakusa and Senso-ji before the crowds, Ueno park, an izakaya night; send big bags ahead to Takayama" },
+        { "date": "2026-12-23", "title": "Shinkansen to Nagano; Zenko-ji in the afternoon and dinner on the Nakamise lane" },
+        { "date": "2026-12-24", "title": "Snow monkeys at Jigokudani for the walkers; Fernanda takes the foot baths and a private bath slot in Shibu Onsen and meets them for lunch" },
+        { "date": "2026-12-25", "title": "Christmas in Matsumoto: the black castle (keep for the fit, grounds for her), Nakamachi and the Kusama museum" },
+        { "date": "2026-12-26", "title": "Up the white Jinzu gorge to Takayama; Takayama Jinya in the afternoon" },
+        { "date": "2026-12-27", "title": "Shirakawa-go by the first bus: Wada house, the viewpoint shuttle, back for Hida beef" },
+        { "date": "2026-12-28", "title": "Morning markets, Sanmachi sake breweries, the festival-float hall, an early night" },
+        { "date": "2026-12-29", "title": "One more morning market, then the hour's bus up to Okuhida and the first private bath in the snow" },
+        { "date": "2026-12-30", "title": "Shin-Hotaka ropeway to 2,156 m if the sky is clear (she watches from the warm top station), Hirayu Great Falls on the way back" },
+        { "date": "2026-12-31", "title": "A slow snowy day, a snowshoe walk for anyone restless, then New Year's Eve kaiseki and toshikoshi soba" },
+        { "date": "2027-01-01", "title": "Osechi breakfast, then the quiet-day trains down to Kanazawa; Kenroku-en at dusk, free entry" },
+        { "date": "2027-01-02", "title": "Kenroku-en in daylight with its snow ropes, then the 21st Century Museum as it reopens" },
+        { "date": "2027-01-03", "title": "Higashi Chaya lanes, gold-leaf shops as they reopen, the castle park lit in the evening" },
+        { "date": "2027-01-04", "title": "A soft day: Nagamachi samurai lanes, matcha in a tea house, or a Kaga Onsen afternoon bath" },
+        { "date": "2027-01-05", "title": "Omicho market's first full morning of the year for crab, then the Kagayaki back to Tokyo" },
+        { "date": "2027-01-06", "title": "Tokyo National Museum and the New Year exhibition; a single act of New Year Kabuki in Ginza" },
+        { "date": "2027-01-07", "title": "Snow play at GALA Yuzawa, 75 minutes by shinkansen, for anyone who wants it; a free day in Tokyo for the rest" },
+        { "date": "2027-01-08", "title": "Last shopping and depachika, farewell dinner" },
+        { "date": "2027-01-09", "title": "To the airport" }
+      ],
+      "checks": {
+        "longest_move_h": 4.0,
+        "peak_day_moves": "One: Takayama to Okuhida on 29 Dec, a one-hour local bus that heads away from the crowds; the 1 Jan journey is on the quietest travel day of the year.",
+        "nights_total": 20,
+        "risks": "Mountain roads: the Okuhida buses run in heavy snow but can be delayed, and the Shin-Hotaka ropeway stops in strong wind. Okuhida ryokan rooms for seven over New Year are tight in mid-October, and the nearest obstetrics (Takayama Red Cross) is 45–60 minutes away on a snowy road during the holiday closures. Ice everywhere for Fernanda."
+      },
+      "sources": [
+        { "label": "Snow Monkey Park winter trail conditions (ice, crampons, 45 minutes each way)", "url": "https://www.snowmonkeyresorts.com/smr/snowmonkeypark/winter/" },
+        { "label": "Jigokudani Snow Monkey Park guide", "url": "https://www.go-nagano.net/en/trip-idea/id17978?hsLang=en" },
+        { "label": "Zenko-ji New Year information", "url": "https://www.zenkoji.jp/annual/" },
+        { "label": "Matsumoto Castle (japan-guide)", "url": "https://www.japan-guide.com/e/e6051.html" },
+        { "label": "Matsumoto City Museum of Art (Kusama)", "url": "https://www.japan-guide.com/e/e6058.html" },
+        { "label": "Hida limited express timetable (Toyama–Takayama)", "url": "https://www.snowmonkeyresorts.com/access/limited-express-hida-timetable/" },
+        { "label": "Takayama via Nagoya or Toyama", "url": "https://japlanease.com/tokyo-takayama-train-route/" },
+        { "label": "Takayama to Hirayu Onsen bus (about 60 minutes)", "url": "https://www.snowmonkeyresorts.com/access/local-bus-timetable-from-takayama-to-hirayu-onsen-kamikochi/" },
+        { "label": "Okuhida Onsen (japan-guide)", "url": "https://japan-guide.com/e/e5941.html" },
+        { "label": "Shinhotaka Ropeway winter hours", "url": "https://go-centraljapan.jp/route/mountain/en/24.html" },
+        { "label": "Hirayukan Japanese-Western rooms for up to eight", "url": "https://ph.trip.com/hotels/takayama-hotel-detail-1458386/hirayukan" },
+        { "label": "Okuhida no Yado Furusato, rooms with private open-air baths", "url": "https://hotels.com/ho630376/okuhida-no-yado-furusato-takayama-japan" },
+        { "label": "Nohi bus Takayama–Kanazawa booking window over New Year", "url": "https://japanbusonline.com/en/DestinationSearch/21" },
+        { "label": "Machiya Residence Inn Kanazawa houses (Itose sleeps 11 in 4 bedrooms)", "url": "https://www.kanazawa-machiya-inn.com/accommodations/" },
+        { "label": "GALA Yuzawa season and access", "url": "https://hiddenjapan-gems.com/gala-yuzawa-guide/" }
+      ]
+    },
+    {
+      "id": "western-onsen-trail",
+      "name": "The western onsen trail",
+      "style": "onsen",
+      "pace": "balanced",
+      "theme": "Three great hot-spring towns, with Kyoto between",
+      "tagline": "Tokyo 2, Hakone 2, Kyoto 4, Kinosaki 4, Arima 4 and Tokyo 4: ten nights in onsen ryokan, a yukata New Year in Kinosaki and Japan's oldest hot spring for the first days of 2027.",
+      "feel": "After two Tokyo days the trip slows straight away: a Romancecar to Hakone, an in-room bath, Fuji over the ridges and the Open-Air Museum. Christmas Eve is in Kyoto, with four days of temples, Gion lanes and Nara's deer before everything closes. On 28 Dec a direct train runs north to Kinosaki, the willow-lined canal town where everyone walks between baths in yukata and wooden sandals. It is liveliest at New Year: crab dinners, the ropeway, a half day in the castle town of Izushi, then New Year's Eve at the inn. On the quiet 1 Jan you move to Arima, in the hills behind Kobe, for the first-bath ceremony on 2 Jan, a Kobe day and Himeji Castle. Four Tokyo nights close the trip.",
+      "activities": [
+        "Tokyo: Tsukiji outer market and Hama-rikyu on the Monday, Ginza food halls and the Christmas lights",
+        "Hakone: an in-room bath for each couple, the Hakone Open-Air Museum and its foot bath, Pola Museum, Fuji from Lake Ashi",
+        "Kyoto: Higashiyama and Kiyomizu-dera, Fushimi Inari's lower shrines early, Arashiyama, and a Nara day before the New Year crowds",
+        "Kinosaki: the canal-side public baths in yukata (others) and private baths at the inn (her), snow-crab kaiseki, the ropeway and Onsen-ji, a half day in Izushi for sara soba",
+        "Arima: the Irizome-shiki first-bath ceremony on 2 Jan, Gin-no-yu's cooler carbonated bath, the hill lanes, a Kobe day and Himeji Castle on 4 Jan",
+        "Tokyo: Tokyo National Museum, New Year Kabuki, last shopping"
+      ],
+      "why": "This route is built around bathing well, which suits Fernanda better than any snow walk: three onsen towns where she can soak in private, gently and often, while the others try the famous public baths. Kyoto gives the first-timers their temples in between, and Kinosaki at New Year is one of Japan's happiest places to be.",
+      "suits": "Fernanda (private baths, flat Kinosaki, cooked crab), Carlos and Nadir (bath-hopping in yukata, Kyoto, Himeji), Tatiana and Carolina (the ryokan life); João gets Himeji and Kobe but little snow.",
+      "trade": "No Kanazawa, Takayama, Shirakawa-go or real snow: Kinosaki may be white, the rest probably not. Hakone and Kyoto are repeats for Pedro and Fernanda. Ten ryokan nights make it the dearest of these three, and the last move from Arima to Tokyo is about four hours.",
+      "stays": [
+        { "region": "tokyo", "from": "2026-12-20", "to": "2026-12-22", "nights": 2, "lodging": "hotel", "note": "Near Shinjuku for the Romancecar" },
+        { "region": "hakone", "from": "2026-12-22", "to": "2026-12-24", "nights": 2, "lodging": "ryokan", "note": "Rooms with their own bath; Gora or Sengokuhara" },
+        { "region": "kyoto", "from": "2026-12-24", "to": "2026-12-28", "nights": 4, "lodging": "rental", "note": "Machiya house; Nara on 26 Dec" },
+        { "region": "kinosaki", "from": "2026-12-28", "to": "2027-01-01", "nights": 4, "lodging": "ryokan", "note": "New Year's Eve; crab kaiseki" },
+        { "region": "arima", "from": "2027-01-01", "to": "2027-01-05", "nights": 4, "lodging": "ryokan", "note": "First-bath ceremony 2 Jan; Himeji 4 Jan" },
+        { "region": "tokyo", "from": "2027-01-05", "to": "2027-01-09", "nights": 4, "lodging": "hotel", "note": null }
+      ],
+      "legs": [
+        { "from": "tokyo", "to": "hakone", "date": "2026-12-22", "hours": 1.75, "how": "Odakyu Romancecar from Shinjuku to Hakone-Yumoto (85 minutes), then the mountain railway or a taxi", "fare_jpy_per_person": 3000, "peak_day": false },
+        { "from": "hakone", "to": "kyoto", "date": "2026-12-24", "hours": 3.25, "how": "Taxi or mountain railway to Odawara, then the Hikari to Kyoto (about 2 hours)", "fare_jpy_per_person": 12500, "peak_day": false },
+        { "from": "kyoto", "to": "kinosaki", "date": "2026-12-28", "hours": 3.0, "how": "Kinosaki limited express, direct from Kyoto (about 2 h 25)", "fare_jpy_per_person": 5900, "peak_day": false },
+        { "from": "kinosaki", "to": "arima", "date": "2027-01-01", "hours": 3.25, "how": "Kounotori limited express to Sanda (about 2 hours), then the Kobe Electric Railway via Arimaguchi (about 25 minutes) or a taxi", "fare_jpy_per_person": 5800, "peak_day": false },
+        { "from": "arima", "to": "tokyo", "date": "2027-01-05", "hours": 4.0, "how": "Taxi to Shin-Kobe (about 30 minutes), then the Nozomi to Tokyo (about 2 h 50)", "fare_jpy_per_person": 15300, "peak_day": false }
+      ],
+      "nye": "At a Kinosaki ryokan on a two-night New Year plan: snow-crab dinner (cooked for her), toshikoshi soba, osechi on 1 Jan. The town is at its liveliest, with families in yukata walking the canal between the public baths late into the night; Fernanda uses the inn's private bath, which in Kinosaki is plain heated water she can set to her own temperature.",
+      "stay_notes": {
+        "tokyo": "Arrival plus one full day; Tokyo returns for four nights at the end, so the start is just a soft landing.",
+        "hakone": "Two nights in a ryokan is the classic length: one full day for the museums and two dawns for a clear Fuji, before the holiday rush.",
+        "kyoto": "Four nights while the temples are calm and before the 29 Dec closures: Higashiyama, Fushimi Inari, Arashiyama and a Nara day.",
+        "kinosaki": "Fixed by the calendar: in on 28 Dec, before the peak days, and out on the quiet 1 Jan. The town is small, so the four days are baths, crab, the ropeway, Izushi and doing very little.",
+        "arima": "In on 1 Jan, out on 5 Jan after the return rush. Arima itself is a day; the other days are the 2 Jan ceremony, Kobe and Himeji, each under an hour away.",
+        "tokyo:2": "The museums closed in December, Kabuki from 2 Jan, and a calm last night close to the airport."
+      },
+      "tradeoffs": {
+        "tokyo": { "longer": "A gentler start before the first move", "shorter": "Not possible: the first stay needs two nights", "idle": "none", "note": "One full day, used for the market and gardens since museums close on Mondays." },
+        "hakone": { "longer": "A second Fuji morning and the Okada Museum", "shorter": "One night only, packing again the next morning", "idle": "none", "note": "Full but easy; she should not get off the ropeway at Owakudani because of the volcanic gas." },
+        "kyoto": { "longer": "Uji and its tea houses, or a slower Arashiyama", "shorter": "Nara drops out", "idle": "none", "note": "Four full days; 28 Dec morning is Nishiki market before the train." },
+        "kinosaki": { "longer": "Not advised: it would mean moving on 2–4 Jan", "shorter": "Moving on 29–31 Dec, the busy days", "idle": "real", "note": "Honestly a slow four days: 29 Dec and 31 Dec have little planned beyond baths and walks, which is the point." },
+        "arima": { "longer": "Not possible without moving later; Tokyo would shrink", "shorter": "Leaving on 4 Jan, the last peak day of the return rush", "idle": "some", "note": "Arima's two public baths close on 1 Jan, so the arrival evening is the ryokan bath and dinner." },
+        "tokyo:2": { "longer": "Not possible: 9 Jan is the flight", "shorter": "The museums or Kabuki go", "idle": "some", "note": "8 Jan is free; send big bags to the airport by 6 Jan." }
+      },
+      "day_ideas": [
+        { "date": "2026-12-20", "title": "Land, check in near Shinjuku, an easy dinner" },
+        { "date": "2026-12-21", "title": "Museums close on Mondays: Tsukiji outer market, Hama-rikyu, Ginza food halls and lights" },
+        { "date": "2026-12-22", "title": "Romancecar to Hakone; the Open-Air Museum and its foot bath, then the first in-room bath" },
+        { "date": "2026-12-23", "title": "Fuji at dawn, Pola Museum, Lake Ashi; the ropeway for the others (she stays on board past Owakudani)" },
+        { "date": "2026-12-24", "title": "Hikari to Kyoto; Christmas Eve stroll through Gion and Shirakawa" },
+        { "date": "2026-12-25", "title": "Higashiyama: Kiyomizu-dera, Kodai-ji and the old lanes, taken slowly" },
+        { "date": "2026-12-26", "title": "Nara: Todai-ji, the deer park and Naramachi, before the New Year crowds" },
+        { "date": "2026-12-27", "title": "Fushimi Inari's lower shrines early (the fit four climb), then Arashiyama's bamboo and Tenryu-ji garden" },
+        { "date": "2026-12-28", "title": "Nishiki market in the morning, the direct train to Kinosaki, first yukata walk by the canal" },
+        { "date": "2026-12-29", "title": "Ropeway and Onsen-ji, public baths for the others, private bath for her, crab dinner" },
+        { "date": "2026-12-30", "title": "Half day in Izushi, the little castle town: sara soba, the clock tower, the old lanes" },
+        { "date": "2026-12-31", "title": "A slow day of baths and naps, New Year's Eve dinner and toshikoshi soba at the inn" },
+        { "date": "2027-01-01", "title": "Osechi breakfast, the quiet-day train to Arima, a ryokan bath (both public baths are shut today)" },
+        { "date": "2027-01-02", "title": "Irizome-shiki, Arima's first-bath ceremony with priests and geisha, then Gin-no-yu for the others" },
+        { "date": "2027-01-03", "title": "Kobe: Kitano's old foreign houses, the harbour, a Kobe beef lunch where open" },
+        { "date": "2027-01-04", "title": "Himeji Castle: the keep for the fit, the grounds and Koko-en garden for her" },
+        { "date": "2027-01-05", "title": "Shinkansen back to Tokyo, a quiet evening" },
+        { "date": "2027-01-06", "title": "Tokyo National Museum's New Year show, a single act of Kabuki in Ginza" },
+        { "date": "2027-01-07", "title": "Asakusa and Ueno, or teamLab Borderless for a warm indoor afternoon" },
+        { "date": "2027-01-08", "title": "Free day, last shopping, farewell dinner" },
+        { "date": "2027-01-09", "title": "To the airport" }
+      ],
+      "checks": {
+        "longest_move_h": 4.0,
+        "peak_day_moves": "none",
+        "nights_total": 20,
+        "risks": "Kinosaki on New Year's Eve is the scarcest booking: Shogetsutei and the mid-size inns are tight and want two-night plans, so ask several inns by email this week. Arima's lanes are steep (taxis for her), and its two public baths close on 1 Jan. Ten ryokan nights put this route near the top of the budget."
+      },
+      "sources": [
+        { "label": "Kinosaki outer baths over New Year and crab season", "url": "https://kinosaki-spa.gr.jp/news/28516/" },
+        { "label": "Kinosaki access (Kinosaki and Kounotori limited expresses)", "url": "https://visitkinosaki.com/access/" },
+        { "label": "Kinosaki in-room baths use plain heated water; private baths", "url": "https://visitkinosaki.com/trip-ideas/onsen-for-1-please-private-baths-in-kinosaki-onsen/" },
+        { "label": "Nishimuraya Hotel Shogetsutei, rooms with open-air baths", "url": "https://selected-ryokan.com/ryokan/nishimuraya-hotel-shogetsutei_kinosaki_hyogo_kansai.html" },
+        { "label": "Kounotori stops (Sanda) and journey times", "url": "https://jprail.com/trains/limited-express-kounotori.html" },
+        { "label": "Shintetsu Arima line via Arimaguchi", "url": "https://en.wikipedia.org/wiki/Shintetsu_Arima_Line" },
+        { "label": "Arima Irizome-shiki on 2 January", "url": "https://www.ryuusenkaku.jp/english/annual.html" },
+        { "label": "Kin-no-yu hours and closing days (closed 1 Jan)", "url": "https://arimaspa-kingin.jp/en-01.htm" },
+        { "label": "Gin-no-yu hours and closing days (closed 1 Jan)", "url": "https://arimaspa-kingin.jp/en-02.htm" },
+        { "label": "Taketoritei Maruyama, private baths", "url": "https://selected-ryokan.com/ryokan/taketori-tei-maruyama_arima_hyogo_kansai.html" },
+        { "label": "Hyoe Koyokaku, rooms with open-air baths", "url": "https://selected-ryokan.com/ryokan/hyoe-koyokaku_arima_hyogo_kansai.html" },
+        { "label": "Hakone private onsen ryokan", "url": "https://mai-ko.com/travel/japan/onsen/10-best-private-onsens-in-hakone/" },
+        { "label": "Machiya Residence Inn Kyoto houses for 7–9", "url": "https://www.kyoto-machiya-inn.com/accommodations/" }
+      ]
+    },
+    {
+      "id": "slow-kyoto-and-the-sea",
+      "name": "Kyoto house and the sea",
+      "style": "slow",
+      "pace": "gentle",
+      "theme": "Three homes, two train rides, no rushing",
+      "tagline": "Tokyo 4, a Kyoto house for 12 and a seaside hotel in Kamakura for 4: the fewest moves of any option, with New Year lived like a Kyoto family.",
+      "feel": "Four unhurried days in Tokyo, then on Christmas Eve one train ride to Kyoto and a house with four bedrooms, a kitchen and two bathrooms near the Heian shrine. You stay twelve nights. Each day holds one easy thing: Higashiyama's lanes, Nara's deer, the trial ringing of Chion-in's great bell on 27 Dec, Uji's tea houses, a snow day above Lake Biwa for anyone who wants one. New Year's Eve is at home with soba, then a short walk to Yasaka Shrine for the sacred okera fire, while the fit ones queue to ring a temple bell at midnight. The New Year days are slow and local, with Kyoto University Hospital ten minutes away. On 5 Jan you move once more, to a hotel above the sea at Kamakura: the Great Buddha, the little Enoden train, and Fuji across the bay at sunset.",
+      "activities": [
+        "Tokyo: Tsukiji outer market and Hama-rikyu, Meiji Jingu and Harajuku, Asakusa and Ueno, the Christmas lights",
+        "Kyoto: Higashiyama and Gion, Fushimi Inari's lower shrines, Arashiyama, the Kyoto National Museum from 2 Jan, Ohara's quiet Sanzen-in on New Year's Day",
+        "From the Kyoto house: Nara and Todai-ji, Uji's Byodo-in and tea, Omi-Hachiman's canals on Lake Biwa, Himeji Castle, and a Biwako Valley snow day for the fit",
+        "New Year in Kyoto: Chion-in's trial bell ringing on 27 Dec, the okera fire at Yasaka on 31 Dec, a bell to ring at Kodai-ji or Eikando for the fit ones",
+        "Kamakura: the Great Buddha, Hase-dera's lower garden, the Enoden along the coast, Enoshima, Fuji over Sagami Bay at sunset, and a Yokohama day"
+      ],
+      "why": "This is the route built around Fernanda and the parents: only two moving days, a real home for the twelve middle nights, and every New Year night in a city with a university hospital. It still gives the first-timers Tokyo, Kyoto, Nara and Fuji, and it is the cheapest of these three by a distance.",
+      "suits": "Fernanda first of all (two moves, her own ground-floor room, the hospital close), Carlos and Nadir (Kyoto in depth, Kamakura's temples), Tatiana (a living room to share); João and Carolina can take the snow day and the long Fushimi climb.",
+      "trade": "No Kanazawa, Takayama, Shirakawa-go or onsen town, and no real snow. Tokyo and Kyoto are repeats for Pedro and Fernanda, and New Year's Eve is a home dinner rather than a ryokan. Twelve nights in one city means some days with very little planned.",
+      "stays": [
+        { "region": "tokyo", "from": "2026-12-20", "to": "2026-12-24", "nights": 4, "lodging": "hotel", "note": "Near Tokyo station or Ginza" },
+        { "region": "kyoto", "from": "2026-12-24", "to": "2027-01-05", "nights": 12, "lodging": "rental", "note": "Four-bedroom machiya near Okazaki and the Heian shrine; New Year's Eve at home" },
+        { "region": "kamakura", "from": "2027-01-05", "to": "2027-01-09", "nights": 4, "lodging": "hotel", "note": "Sea-view hotel at Shichirigahama; about an hour to Haneda" }
+      ],
+      "legs": [
+        { "from": "tokyo", "to": "kyoto", "date": "2026-12-24", "hours": 3.0, "how": "Nozomi (2 h 15), the day before it becomes all-reserved", "fare_jpy_per_person": 14200, "peak_day": false },
+        { "from": "kyoto", "to": "kamakura", "date": "2027-01-05", "hours": 3.25, "how": "Nozomi to Shin-Yokohama (about 1 h 55), then a jumbo taxi to the hotel (about 45 minutes)", "fare_jpy_per_person": 13500, "peak_day": false }
+      ],
+      "nye": "At the Kyoto house, argued on purpose: it is Japan's great New Year city, the house has a kitchen and a table for seven, and Kyoto University Hospital is ten minutes away when clinics are closed. Order an osechi box from a department store by mid-December, have toshikoshi soba at home or early at a soba shop, then walk to Yasaka Shrine around 19:30 for the okera fire before the midnight crowds. The fit ones queue for a bell they can ring (Kodai-ji, Chishaku-in or Eikando) while Fernanda goes home to bed.",
+      "stay_notes": {
+        "tokyo": "Arrival plus three easy days; Tokyo is not repeated at the end, so the first-timers get their Tokyo here while the Christmas lights are on.",
+        "kyoto": "Twelve nights so that nobody packs between Christmas and Epiphany: the house covers the calm days before 29 Dec, the closed days, and the reopening on 2–4 Jan, with a different day trip whenever the city feels small.",
+        "kamakura": "In after the return rush, out to the airport in about an hour. Four nights gives the Great Buddha, Enoshima, a Yokohama or Tokyo day, and a free last day."
+      },
+      "tradeoffs": {
+        "tokyo": { "longer": "A Nikko or Kawagoe day", "shorter": "The first-timers' only Tokyo shrinks to two days", "idle": "none", "note": "One thing a day, with Monday 21 Dec as the market-and-gardens day." },
+        "kyoto": { "longer": "Not needed", "shorter": "An extra move, which is exactly what this route avoids", "idle": "real", "note": "Honestly, 29 Dec–1 Jan and a couple of other days are free days by design: a long breakfast, one short outing, an afternoon nap." },
+        "kamakura": { "longer": "Not possible: 9 Jan is the flight", "shorter": "Enoshima or the Yokohama day goes", "idle": "some", "note": "8 Jan is free; if you fly from Narita, spend the last night in Tokyo instead, since Narita is about two hours away." }
+      },
+      "day_ideas": [
+        { "date": "2026-12-20", "title": "Land, check in, a short walk and dinner nearby" },
+        { "date": "2026-12-21", "title": "Museums close on Mondays: Tsukiji outer market, Hama-rikyu, Ginza and the lights" },
+        { "date": "2026-12-22", "title": "Meiji Jingu and Harajuku in the morning, the Nezu Museum garden" },
+        { "date": "2026-12-23", "title": "Asakusa and Senso-ji, Ueno park, the Skytree at dusk; send the big bags to Kyoto" },
+        { "date": "2026-12-24", "title": "One train to Kyoto, settle into the house, Christmas Eve by the Kamo river" },
+        { "date": "2026-12-25", "title": "Higashiyama slowly: Kodai-ji, the old lanes, Gion at dusk" },
+        { "date": "2026-12-26", "title": "Nara: Todai-ji, the deer park and Naramachi, home by mid-afternoon" },
+        { "date": "2026-12-27", "title": "Chion-in's trial bell ringing at 14:00, the 70-tonne bell without the New Year's Eve crowd; Nanzen-ji garden" },
+        { "date": "2026-12-28", "title": "Nishiki market for the house's New Year shopping, an afternoon at home" },
+        { "date": "2026-12-29", "title": "Arashiyama early: the bamboo grove and Tenryu-ji garden" },
+        { "date": "2026-12-30", "title": "Uji: Byodo-in and a tea house; or a Biwako Valley snow day for the fit (if the slopes are open)" },
+        { "date": "2026-12-31", "title": "A home day, soba for supper, the okera fire at Yasaka; a temple bell at midnight for the fit" },
+        { "date": "2027-01-01", "title": "Ozoni at home, then Ohara's Sanzen-in, quiet on New Year's Day" },
+        { "date": "2027-01-02", "title": "Kyoto National Museum's New Year opening; department-store food halls reopen" },
+        { "date": "2027-01-03", "title": "Omi-Hachiman: the canal and old merchant streets on Lake Biwa, 35 minutes away" },
+        { "date": "2027-01-04", "title": "Himeji Castle by shinkansen: the keep for the fit, the grounds and Koko-en for her" },
+        { "date": "2027-01-05", "title": "Shinkansen to Shin-Yokohama and on to the sea at Kamakura; sunset Fuji from the hotel" },
+        { "date": "2027-01-06", "title": "The Great Buddha and Hase-dera's lower garden, the Enoden along the shore" },
+        { "date": "2027-01-07", "title": "Yokohama: Sankeien garden and Chinatown; or Tokyo National Museum, an hour away" },
+        { "date": "2027-01-08", "title": "Enoshima across the flat bridge (escalators on the island), a last seafood lunch, packing" },
+        { "date": "2027-01-09", "title": "About an hour to Haneda" }
+      ],
+      "checks": {
+        "longest_move_h": 3.25,
+        "peak_day_moves": "none",
+        "nights_total": 20,
+        "risks": "Finding a Kyoto house for seven that takes a 12-night booking across New Year (some operators block late December or want minimums); book this week and confirm a ground-floor bedroom and heating. Kamakura's last night only works well for Haneda."
+      },
+      "sources": [
+        { "label": "Machiya Residence Inn Kyoto houses for 7–9 (Waren Bettei near the Heian shrine, Wakaba)", "url": "https://www.kyoto-machiya-inn.com/accommodations/" },
+        { "label": "Kyoto New Year's Eve bells you can ring", "url": "https://kyoto.travel/en/news/joya-no-kane-bells-for-the-new-year-list-is-updated" },
+        { "label": "Chion-in New Year's Eve bell and trial ringing", "url": "https://www.chion-in.or.jp/special/joya/" },
+        { "label": "Yasaka Shrine (okera-mairi)", "url": "https://www.yasaka-jinja.or.jp/" },
+        { "label": "Biwako Valley winter access from Kyoto", "url": "https://japanuncharted.com/shiga/mountain/biwako-valley-resort-guide" },
+        { "label": "Kamakura Prince Hotel: every room faces the sea, Fuji from upper floors", "url": "https://www.princehotels.com/hotels/%e9%90%ae%e5%80%89%e7%8e%8b%e5%ad%90%e5%a4%a7%e9%a3%af%e5%ba%97/" },
+        { "label": "Kotoku-in (Great Buddha) hours", "url": "https://kotoku-in.jp/en/" },
+        { "label": "Shonan Kamakura General Hospital, 24-hour emergency, foreign patients", "url": "https://trip.pref.kanagawa.jp/destination/shonan-kamakura-general-hospital/1401" },
+        { "label": "Kyoto accommodation tax from March 2026", "url": "https://kyoto.travel/en/news/tax-change/" }
+      ]
+    }
+  ],
+  "new_regions": [
+    {
+      "id": "nagano",
+      "name": "Nagano city and Zenko-ji",
+      "lat": 36.652,
+      "lng": 138.188,
+      "prefecture": "Nagano",
+      "kanji": "長野",
+      "summary": "A flat temple city with trains to the snow monkeys, Matsumoto, Obuse and the ski villages",
+      "snow": 1,
+      "things": [
+        { "name": "Zenko-ji and the o-kaidan passage", "why": "A seventh-century temple with a dawn service and a pitch-dark tunnel walked with one hand on the wall", "exposure": "mixed", "effort_for_her": "low", "new_year": "Open all night 31 Dec into 1 Jan and very crowded then; go before 29 Dec or after 4 Jan", "source": "https://www.zenkoji.jp/annual/" },
+        { "name": "Jigokudani snow monkeys", "why": "Wild macaques bathing in a hot spring in the snow", "exposure": "outdoors", "effort_for_her": "high", "new_year": "Open every day including 31 Dec and 1 Jan; busiest 29 Dec–3 Jan", "source": "https://www.snowmonkeyresorts.com/smr/snowmonkeypark/winter/" },
+        { "name": "Shibu Onsen lane and foot baths", "why": "Lantern-lit onsen street near the monkey trail, where she can wait warm and easy", "exposure": "mixed", "effort_for_her": "moderate", "new_year": "Open", "source": "https://www.japan-guide.com/e/e6029.html" },
+        { "name": "Matsumoto Castle day trip", "why": "Japan's black original castle, 50 minutes away on the Shinano express", "exposure": "mixed", "effort_for_her": "moderate", "new_year": "Closed 29–31 Dec; special opening 1–3 Jan", "source": "https://www.japan-guide.com/e/e6051.html" },
+        { "name": "Obuse and the Hokusai Museum", "why": "A small town of chestnut sweets with a museum of Hokusai's late work, 10 minutes' walk from the station", "exposure": "indoors", "effort_for_her": "low", "new_year": "Check year-end closing days", "source": "https://www.go-nagano.net/en/trip-idea/3-days-of-naganos-winter-highlights" },
+        { "name": "Nozawa Onsen snow day", "why": "Sledding, ski lessons and wooden village bathhouses, 40 minutes by shinkansen and bus", "exposure": "outdoors", "effort_for_her": "high", "new_year": "Lifts and baths open; busiest 29 Dec–3 Jan", "source": "https://www.japan-guide.com/e/e6028.html" }
+      ],
+      "lodging_for_seven": "Four rooms in a station hotel with lifts and beds, such as Hotel Metropolitan Nagano or Dormy Inn Nagano; about ¥60,000–110,000 per night for six before Christmas.",
+      "hospital": "Nagano Red Cross Hospital (perinatal centre), 5-22-1 Wakasato, 026-226-4131",
+      "sources": [
+        "https://www.zenkoji.jp/annual/",
+        "https://www.snowmonkeyresorts.com/smr/snowmonkeypark/winter/",
+        "https://www.go-nagano.net/en/trip-idea/id17978?hsLang=en",
+        "https://www.jnto.go.jp/emergency/eng/pdf_list/nagano_eng.pdf"
+      ]
+    },
+    {
+      "id": "arima",
+      "name": "Arima Onsen",
+      "lat": 34.7968,
+      "lng": 135.2475,
+      "prefecture": "Hyogo",
+      "kanji": "有馬温泉",
+      "summary": "Japan's oldest hot spring, in the hills behind Kobe, with gold and silver waters",
+      "snow": 0,
+      "things": [
+        { "name": "Irizome-shiki first-bath ceremony", "why": "Priests, inn-keepers and geisha carry the statues of the spring's founders and pour the year's first hot water, on 2 Jan", "exposure": "outdoors", "effort_for_her": "low", "new_year": "Held every 2 January; check the 2027 time with the tourist office", "source": "https://www.ryuusenkaku.jp/english/annual.html" },
+        { "name": "Gin-no-yu (silver spring)", "why": "Clear carbonated water, gentler and cooler than the gold spring", "exposure": "indoors", "effort_for_her": "moderate", "new_year": "Closed 1 Jan and the 1st and 3rd Tuesdays", "source": "https://arimaspa-kingin.jp/en-02.htm" },
+        { "name": "Kin-no-yu (gold spring)", "why": "Iron-red water that is Arima's signature; hot, so for the others, with the free foot bath outside for her", "exposure": "indoors", "effort_for_her": "moderate", "new_year": "Closed 1 Jan and the 2nd and 4th Tuesdays", "source": "https://arimaspa-kingin.jp/en-01.htm" },
+        { "name": "Arima's hill lanes", "why": "Old sweet shops, carbonated-spring crackers and tiny shrines on steep lanes", "exposure": "outdoors", "effort_for_her": "moderate", "new_year": "Many shops shut on 1 Jan", "source": "https://visit.arima-onsen.com/things-to-do/buddhism-heritage" },
+        { "name": "Kobe day", "why": "Kitano's old foreign merchants' houses, the harbour and Kobe beef, 30 minutes away", "exposure": "mixed", "effort_for_her": "low", "new_year": "Most beef counters closed 31 Dec–2 Jan", "source": "https://en.wikipedia.org/wiki/Kita-ku,_Kobe" },
+        { "name": "Himeji Castle day", "why": "Japan's finest original castle, about an hour via Shin-Kobe", "exposure": "mixed", "effort_for_her": "moderate", "new_year": "Closed 29–30 Dec; open 31 Dec and 1–3 Jan, busy", "source": "https://www.hyogo-tourism.jp/world/spot/detail_1054.html" }
+      ],
+      "lodging_for_seven": "Two or three rooms at one ryokan with private baths and a lift: Taketoritei Maruyama (eight private baths, rooms with open-air baths), Hyoe Koyokaku (large, rooms with open-air baths) or Arima Grand Hotel (a six-person room with two beds and four futons). About ¥180,000–300,000 per night for six with two meals; more on 1–2 Jan.",
+      "hospital": "Saiseikai Hyogo Prefectural Hospital (regional perinatal centre), 5-1-1 Fujiwaradai-nakamachi, Kita-ku, 078-987-2222, about 20 minutes by car; Kobe City Medical Center General Hospital (24-hour maternity emergency) on Port Island, about 35 minutes",
+      "sources": [
+        "https://www.ryuusenkaku.jp/english/annual.html",
+        "https://arimaspa-kingin.jp/en-01.htm",
+        "https://arimaspa-kingin.jp/en-02.htm",
+        "https://selected-ryokan.com/ryokan/taketori-tei-maruyama_arima_hyogo_kansai.html",
+        "https://doctorsfile.jp/h/222372/",
+        "https://www.city.kobe.lg.jp/documents/77510/202403_en.pdf"
+      ]
+    }
+  ],
+  "notes": "Ice and Fernanda on the snow route: the Jigokudani trail is packed snow and ice, often several centimetres thick, for about 45 minutes each way with a rough last stretch; the honest advice is that she waits in Shibu Onsen unless the trail is freshly packed, she has crampons and poles, someone's arm, and her doctor is relaxed about it. The same goes for Takayama's slushy streets (taxis and strap-on cleats), the Shirakawa-go viewpoint (take the shuttle), the Shin-Hotaka summit (stay inside the warm top station) and Okuhida's outdoor baths (use the indoor private bath; no walking on icy stone in sub-zero air). New Year's Eve in Okuhida is the one place in these three routes that is 45–60 minutes from obstetrics during the closures; if that worries anyone, the swap is a Takayama ryokan for 29 Dec–1 Jan (Takayama Red Cross is a 10-minute walk) with Okuhida as a day trip on 30 Dec. Rooms: everywhere assumes four rooms or a four-bedroom house for three couples and Tatiana; the Kanazawa (Itose, 4 bedrooms) and Kyoto (Waren Bettei or Wakaba, 4 bedrooms, 2 bathrooms) houses were chosen for that. Rough lodging totals for seven: snow about ¥2.3M, onsen about ¥3.7M (ryokan dinners included), slow about ¥2.5M, all inside the S$15,000-per-couple target. Rejected: Nozawa or Shibu for New Year (named inns full, chalets want 7-night minimums), an Echigo-Yuzawa stay at the end (its last night would be nearly two hours from the airport, so it is a day trip instead), Dogo Onsen on the onsen trail (it needs a flight or a 6-hour rail day back), Atami for the slow route's seaside (good ryokan with private baths, but no Great Buddha or Fuji over the sea; it swaps in cleanly if an onsen matters more). Uncertain: 2026–27 winter bus timetables in Hida, the Arima ceremony time, Biwako Valley's opening date, Matsumoto Castle's exact 2026 closing dates (sources say 29–31 Dec or 29 Dec–3 Jan), and whether Shonan Kamakura General Hospital takes obstetric emergencies at night (Yokohama's university hospitals are the back-up, 30 minutes away)."
+}
