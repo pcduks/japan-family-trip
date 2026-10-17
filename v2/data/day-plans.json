@@ -316,6 +316,298 @@
         }
       }
     },
+    "atami": {
+      "arrival": [
+        {
+          "id": "atami-arrive-seafront",
+          "title": "Check in, a flat walk along the Sun Beach promenade at dusk, and dinner at the hotel",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "atami-sun-beach-promenade",
+              "slot": "evening",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": null,
+          "from": []
+        }
+      ],
+      "last_morning": "A last walk on the promenade, onsen manju from the station street, and the Kodama out of Atami.",
+      "days": [
+        {
+          "id": "atami-moa-seafront",
+          "title": "MOA Museum of Art (check its closed days) and a warm seafront walk",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "atami-moa-museum-of-art",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Closed Thursdays; long escalators do the climbing"
+            },
+            {
+              "place_id": "atami-sun-beach-promenade",
+              "slot": "afternoon",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Atami Ginza's old shopping street and a pudding"
+            }
+          ],
+          "new_year": "closed",
+          "closed_weekdays": [
+            "Thu"
+          ],
+          "dates_not": [],
+          "for_her": "The escalators and lifts take her up the hill; the seafront is flat.",
+          "from": [
+            "fuji-pacific-shore:2026-12-26"
+          ]
+        },
+        {
+          "id": "atami-izu-kogen",
+          "title": "Izu-Kogen by the Ito line: capybaras in the yuzu bath at Izu Shaboten Zoo (10:30 or 13:30), the Jogasaki coast for the keen walkers",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "atami-izu-shaboten-zoo-capybara-bath",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "About 25 minutes to Izu-Kogen, then the bus; baths at 10:30 and 13:30"
+            },
+            {
+              "place_id": "atami-jogasaki-coast",
+              "slot": "afternoon",
+              "crew": "early",
+              "note": "The suspension bridge and the cliff path, about an hour on uneven lava"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "A café in Izu-Kogen while the others walk"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "12-20",
+            "12-21"
+          ],
+          "for_her": "The zoo is gentle. The Jogasaki path is uneven rock in the wind, so she may prefer the café.",
+          "from": [
+            "fuji-pacific-shore:2026-12-27"
+          ]
+        },
+        {
+          "id": "atami-kiunkaku-kinomiya",
+          "title": "Kiunkaku's 1919 villa and garden, the giant camphor at Kinomiya Shrine, and the old shopping streets",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "atami-kiunkaku",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Closed Wednesdays and over the year end, about 26–30 Dec"
+            },
+            {
+              "place_id": "atami-kinomiya-shrine",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "One stop up the Ito line from Atami"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Coffee and sweets in Atami Ginza"
+            }
+          ],
+          "new_year": "closed",
+          "closed_weekdays": [
+            "Wed"
+          ],
+          "dates_not": [
+            "12-26",
+            "12-27",
+            "12-28"
+          ],
+          "for_her": "Kiunkaku is all on the flat, in slippers; Kinomiya has a short slope.",
+          "from": []
+        },
+        {
+          "id": "atami-hatsushima",
+          "title": "Over to Hatsushima, 30 minutes by ferry: a flat island walk, the Asian garden and a seafood lunch",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "atami-hatsushima",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Tickets at Atami port; sailings stop in rough seas"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Grilled and fried fish at the harbour restaurants"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The ferry rolls in a winter swell; on a windy day she may prefer to stay ashore.",
+          "from": []
+        },
+        {
+          "id": "atami-odawara",
+          "title": "Odawara Castle by the Tokaido line (25 minutes), the park and the keep, and kamaboko fish cakes for lunch",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "atami-odawara-castle",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Kamaboko shops on the old Tokaido road"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "12-31",
+            "01-01"
+          ],
+          "for_her": "The keep has stairs inside, but the park is gentle.",
+          "from": []
+        },
+        {
+          "id": "atami-slow-bath-day",
+          "title": "A slow day: the hotel baths at a quiet hour, the seafront, and an early dinner of simmered kinmedai",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "atami-sun-beach-promenade",
+              "slot": "afternoon",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Kinmedai is a high-mercury fish, so one small portion this week is plenty.",
+          "from": []
+        }
+      ],
+      "special": {
+        "12-25": {
+          "id": "atami-christmas-fireworks",
+          "title": "Christmas Day in Atami: Kiunkaku in the afternoon (it shuts 26–30 Dec) and the bay fireworks at 20:20 from the promenade",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "atami-kiunkaku",
+              "slot": "afternoon",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "atami-sun-beach-promenade",
+              "slot": "evening",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "atami-atami-bay-fireworks",
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "20:20–20:40; wrap up warm"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Twenty minutes on a flat promenade; a folding seat and a thermos make it easy.",
+          "from": [
+            "fuji-pacific-shore:2026-12-25"
+          ]
+        },
+        "12-31": {
+          "id": "atami-nye",
+          "title": "New Year's Eve: a slow morning by the sea, station shopping before it shuts, the hotel's dinner; Kinomiya at midnight for the keen",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "atami-sun-beach-promenade",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "The station building sells bento, fish cakes and sweets until early evening"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Book the hotel's New Year's Eve dinner"
+            },
+            {
+              "place_id": "atami-kinomiya-shrine",
+              "slot": "evening",
+              "crew": "early",
+              "note": "Busy from midnight"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The hotel bath and an early night; the first sunrise is only a few hours later.",
+          "from": []
+        },
+        "01-01": {
+          "id": "atami-new-year-day",
+          "title": "New Year's Day: the first sunrise over Sagami Bay for the early risers, then the capybaras' yuzu bath at Izu-Kogen",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "atami-sun-beach-promenade",
+              "slot": "morning",
+              "crew": "early",
+              "note": "Sunrise about 6:50; Fujikyu also runs a booked sunrise cruise"
+            },
+            {
+              "place_id": "atami-izu-shaboten-zoo-capybara-bath",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "The 13:30 bath"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner at the hotel"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The sunrise is cold and early; she can see it from a sea-facing room.",
+          "from": []
+        }
+      }
+    },
     "fukuoka": {
       "arrival": [
         {
@@ -1351,6 +1643,615 @@
           "closed_weekdays": [],
           "dates_not": [],
           "for_her": "Skip Gokoku shrine and Miyajima today, both a crush; the park is calm and flat.",
+          "from": []
+        }
+      }
+    },
+    "ise-shima": {
+      "arrival": [
+        {
+          "id": "ise-arrive-toba",
+          "title": "Kintetsu to Toba, a walk along the bay at dusk, and dinner at the hotel",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Toba Bay from the seafront, then dinner at the hotel"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": null,
+          "from": []
+        },
+        {
+          "id": "ise-arrive-new-year",
+          "title": "Osechi breakfast, then west to Toba on the quiet New Year's Day, about four hours; dinner at the hotel",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner at the hotel; many town restaurants close 1–3 Jan"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Three trains in one day: reserved seats and the bags sent ahead the day before.",
+          "from": [
+            "fuji-pacific-shore:2027-01-01"
+          ]
+        }
+      ],
+      "last_morning": "A last look at the pearl rafts from the hotel, akafuku from the station shop, and the Kintetsu to Nagoya.",
+      "days": [
+        {
+          "id": "ise-jingu-dawn",
+          "title": "Ise Jingu at dawn (the Outer Shrine, then the Inner), akafuku in Okage Yokocho; Toba Aquarium in the afternoon",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "ise-shima-ise-jingu",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Go at opening; a taxi between the Outer and Inner shrines"
+            },
+            {
+              "place_id": "ise-shima-okage-yokocho-and-akafuku",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Akafuku and hot tea at the main shop"
+            },
+            {
+              "place_id": "ise-shima-toba-aquarium",
+              "slot": "afternoon",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "01-01",
+            "01-02",
+            "01-03"
+          ],
+          "for_her": "Long gravel walks under the cedars: flat but tiring. A taxi between the shrines and a sit-down with akafuku help.",
+          "from": [
+            "fuji-pacific-shore:2027-01-04"
+          ]
+        },
+        {
+          "id": "ise-ago-bay",
+          "title": "Kintetsu to Kashikojima, the Yokoyama lookout over Ago Bay's islands, and a spiny-lobster lunch",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "ise-shima-ago-bay-from-yokoyama",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "A taxi from Ugata station to the lookout"
+            },
+            {
+              "place_id": "ise-shima-spiny-lobster-ise-ebi",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Many restaurants close 1–3 Jan; the big hotel restaurants carry on"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The Yokoyama deck is flat from the car park. Cooked lobster rather than sashimi is the gentler choice.",
+          "from": [
+            "fuji-pacific-shore:2027-01-03"
+          ]
+        },
+        {
+          "id": "ise-toba-pearls",
+          "title": "Easy day: a walk round Toba Bay and Mikimoto Pearl Island's ama divers (check the New Year hours)",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "ise-shima-mikimoto-pearl-island",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "The divers show several times a day; times on the board"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "Back to the hotel for a bath"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Short and flat.",
+          "from": [
+            "fuji-pacific-shore:2027-01-02"
+          ]
+        },
+        {
+          "id": "ise-ama-hut-futami",
+          "title": "The wedded rocks at Futami, then lunch round the fire in an ama divers' hut at Osatsu",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "ise-shima-futami-wedded-rocks",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "ise-shima-osatsu-ama-hut",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Booking only; closed 30 Dec–5 Jan"
+            }
+          ],
+          "new_year": "closed",
+          "closed_weekdays": [],
+          "dates_not": [
+            "01-04",
+            "01-05"
+          ],
+          "for_her": "Ask for everything grilled through. The hut has low benches, so a cushion helps.",
+          "from": []
+        },
+        {
+          "id": "ise-spain-village",
+          "title": "Shima Spain Village for João and Carolina's rides, with the park's hot-spring bath for anyone who would rather soak",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "ise-shima-shima-spain-village",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "Himawari-no-yu, the hot spring next to the park"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Skip the big rides; the parades, the castle museum and the spa are gentle.",
+          "from": []
+        },
+        {
+          "id": "ise-slow-sea-day",
+          "title": "A slow day by the sea: the hotel bath, a stroll along Toba harbour, and an early lobster dinner",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "A stroll along Toba harbour"
+            },
+            {
+              "place_id": "ise-shima-spiny-lobster-ise-ebi",
+              "slot": "evening",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Restful by design.",
+          "from": []
+        }
+      ],
+      "special": {
+        "12-31": {
+          "id": "ise-nye",
+          "title": "New Year's Eve: Toba Aquarium in the calm morning, the bay in the afternoon, and the hotel's New Year's Eve dinner",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "ise-shima-toba-aquarium",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "A bath and a nap"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Book the hotel's New Year's Eve dinner: Ise lobster, cooked"
+            },
+            {
+              "place_id": "ise-shima-ise-jingu",
+              "slot": "evening",
+              "crew": "early",
+              "note": "The Inner Shrine stays open through the night and fills fast after 22:00; only for the keen"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The shrine at midnight is a long, cold crush on gravel; the hotel is the better place to see the year in.",
+          "from": []
+        },
+        "01-01": {
+          "id": "ise-new-year-day",
+          "title": "New Year's Day: a slow breakfast, Mikimoto Pearl Island if it opens, a bay walk and dinner at the hotel; the shrine waits until 4 Jan",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "ise-shima-mikimoto-pearl-island",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "New Year hours not yet published; check"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "The hotel restaurant; most town restaurants shut 1–3 Jan"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Ise Jingu has waits of up to two hours today; dawn on 4 Jan is far kinder.",
+          "from": []
+        }
+      }
+    },
+    "kamakura": {
+      "arrival": [
+        {
+          "id": "kamakura-arrive-sea",
+          "title": "Shinkansen to Shin-Yokohama and on to the sea at Kamakura; sunset Fuji from the hotel",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "kamakura-shichirigahama",
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Fuji across the bay on clear days"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "A taxi from Shin-Yokohama with the bags, about 45 minutes.",
+          "from": [
+            "slow-kyoto-and-the-sea:2027-01-05"
+          ]
+        },
+        {
+          "id": "kamakura-arrive-komachi",
+          "title": "Check in near Kamakura station, a short walk up Komachi-dori and an early dinner",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Komachi-dori closes early; dinner by 19:00"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "01-01",
+            "01-02",
+            "01-03"
+          ],
+          "for_her": null,
+          "from": []
+        }
+      ],
+      "last_morning": "A last look at the sea and Fuji from the hotel, then about an hour to Haneda.",
+      "days": [
+        {
+          "id": "kamakura-buddha-hasedera",
+          "title": "The Great Buddha and Hase-dera's lower garden, then the Enoden along the shore",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "kamakura-daibutsu",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Open from 8:00; ¥50 more to step inside"
+            },
+            {
+              "place_id": "kamakura-hasedera",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "The lower garden and the cave are flat; the view terrace is up steps"
+            },
+            {
+              "place_id": "kamakura-enoden",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "To Shichirigahama for the sea"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "01-01",
+            "01-02",
+            "01-03"
+          ],
+          "for_her": "Flat at the Buddha; Hase-dera's lower garden is gentle and the terrace can wait.",
+          "from": [
+            "slow-kyoto-and-the-sea:2027-01-06"
+          ]
+        },
+        {
+          "id": "kamakura-yokohama",
+          "title": "Yokohama: Sankeien garden and Chinatown; or the Tokyo National Museum, an hour away",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "kamakura-sankeien",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "kamakura-yokohama-chinatown",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Soup dumplings and a round table for seven"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "12-26",
+            "12-27",
+            "12-28",
+            "12-29",
+            "12-30",
+            "12-31"
+          ],
+          "for_her": "Sankeien is gently hilly with benches; Chinatown is flat but busy.",
+          "from": [
+            "slow-kyoto-and-the-sea:2027-01-07"
+          ]
+        },
+        {
+          "id": "kamakura-enoshima",
+          "title": "Enoshima across the flat bridge (escalators on the island), a seafood lunch, and the aquarium on the way back",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "kamakura-enoshima",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "The outdoor escalators climb most of the hill"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Shirasu whitebait on rice: the boiled kind (kama-age), not raw"
+            },
+            {
+              "place_id": "kamakura-enoshima-aquarium",
+              "slot": "afternoon",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Escalators for the climb, cooked whitebait, and a warm aquarium.",
+          "from": [
+            "slow-kyoto-and-the-sea:2027-01-08"
+          ]
+        },
+        {
+          "id": "kamakura-hachimangu-hokokuji",
+          "title": "Tsurugaoka Hachimangu and Komachi-dori, then matcha among the bamboo at Hokoku-ji",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "kamakura-tsurugaoka-hachimangu",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Komachi-dori's snack shops on the way back"
+            },
+            {
+              "place_id": "kamakura-hokoku-ji",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "A short taxi ride; closed 29 Dec–3 Jan"
+            }
+          ],
+          "new_year": "closed",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The shrine's main hall is up a long flight of steps; the ponds and lower precinct are flat.",
+          "from": []
+        },
+        {
+          "id": "kamakura-kita-kamakura",
+          "title": "North Kamakura's Zen temples: Kencho-ji and Engaku-ji, temple vegetable soup, and the walk down into town",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "kamakura-kencho-ji",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Engaku-ji, by Kita-Kamakura station"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Kenchin-jiru, the temple vegetable soup, for lunch"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Engaku-ji begins with steep steps; Kencho-ji is gentler and its main halls are on the flat.",
+          "from": []
+        },
+        {
+          "id": "kamakura-slow-sea-day",
+          "title": "A slow day by the sea: a long breakfast, a walk on the beach, a café, and Fuji at sunset",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "kamakura-shichirigahama",
+              "slot": "evening",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Restful by design.",
+          "from": []
+        },
+        {
+          "id": "kamakura-fly-home",
+          "title": "Flight day: a last look at the sea and Fuji from the hotel, then about an hour to Haneda",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "A jumbo taxi or the airport bus; the big bags went ahead by takkyubin"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Ask for an aisle seat and walk the cabin every hour or so on the flight.",
+          "from": [
+            "slow-kyoto-and-the-sea:2027-01-09"
+          ],
+          "dates_only": [
+            "01-09"
+          ]
+        },
+        {
+          "id": "kamakura-tokyo-museum",
+          "title": "A day in Tokyo, an hour away: the Tokyo National Museum and Ueno park",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "tokyo-tnm",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "About an hour on the Yokosuka and Yamanote lines; closed Mondays"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Ueno park and a late lunch"
+            }
+          ],
+          "new_year": "closed",
+          "closed_weekdays": [
+            "Mon"
+          ],
+          "dates_not": [],
+          "for_her": "Plenty of benches and a lift; a taxi back to Tokyo station saves the stairs.",
+          "from": []
+        }
+      ],
+      "special": {
+        "12-31": {
+          "id": "kamakura-nye",
+          "title": "New Year's Eve: the Great Buddha in the calm morning, the hotel's dinner, and Kencho-ji's bell at midnight for anyone keen",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "kamakura-daibutsu",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "A nap; Tsurugaoka Hachimangu fills from the evening, so stay clear"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Book the hotel restaurant's New Year's Eve dinner; Kamakura has no big food hall, so buy extras in Yokohama the day before"
+            },
+            {
+              "place_id": "kamakura-kencho-ji",
+              "slot": "evening",
+              "crew": "early",
+              "note": "From about 23:45 everyone in the queue may ring it; be in line before midnight"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The bell queue is cold and late; the year can turn from the hotel just as well.",
+          "from": []
+        },
+        "01-01": {
+          "id": "kamakura-new-year-day",
+          "title": "New Year's Day: sunrise on the beach for the early risers, then Yokohama's Sankeien and a Chinatown dinner, away from Hachimangu",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "kamakura-shichirigahama",
+              "slot": "morning",
+              "crew": "early",
+              "note": "Sunrise about 6:50"
+            },
+            {
+              "place_id": "kamakura-sankeien",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Open from 1 Jan in recent years, with the Kakushokaku house shown"
+            },
+            {
+              "place_id": "kamakura-yokohama-chinatown",
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Most restaurants open on New Year's Day"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Kamakura's stations and streets are under crowd control 1–3 Jan; a taxi to Yokohama avoids them.",
           "from": []
         }
       }
@@ -3501,6 +4402,862 @@
         }
       }
     },
+    "morioka": {
+      "arrival": [
+        {
+          "id": "morioka-arrive-wanko",
+          "title": "Hayabusa to Morioka (40 minutes from Sendai); wanko soba and the castle-ruin park",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "morioka-wanko-soba",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Azumaya closes 30 Dec–1 Jan"
+            },
+            {
+              "place_id": "morioka-morioka-s-old-centre",
+              "slot": "afternoon",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Wanko soba can be stopped at any bowl; cleats for the park paths.",
+          "from": [
+            "tohoku-snow-samurai:2026-12-26"
+          ]
+        },
+        {
+          "id": "morioka-arrive-river",
+          "title": "Check in by the station and a short walk to the Kitakami river and Kaiun bridge, with Mt Iwate behind",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Reimen cold noodles or a hot pot near the station"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": null,
+          "from": []
+        }
+      ],
+      "last_morning": "Breakfast with Mt Iwate from the window, a nanbu senbei snack for the train, and the Hayabusa.",
+      "days": [
+        {
+          "id": "morioka-kakunodate",
+          "title": "Day trip to Kakunodate by the Komachi (45 minutes): the samurai street and the Aoyagi house under snow",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "morioka-kakunodate-samurai-district",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "The Kawarada house shuts 28 Dec–4 Jan; the Aoyagi house stays open"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Hinai chicken oyakodon for lunch, then the train back"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The samurai street is flat but icy; cleats and a slow pace.",
+          "from": [
+            "tohoku-snow-samurai:2026-12-27"
+          ]
+        },
+        {
+          "id": "morioka-hiraizumi",
+          "title": "Day trip to Hiraizumi: Chuson-ji's golden hall and Motsu-ji's garden; the slope is long, so take it slowly or by taxi",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "morioka-chuson-ji-hiraizumi",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Shinkansen to Ichinoseki, then the bus; a taxi up the slope for her"
+            },
+            {
+              "place_id": "morioka-motsu-ji",
+              "slot": "afternoon",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The Tsukimizaka slope is a kilometre uphill on packed snow; a taxi to the top gate helps.",
+          "from": [
+            "tohoku-snow-samurai:2026-12-28"
+          ]
+        },
+        {
+          "id": "morioka-easy-city",
+          "title": "Easy day in Morioka: jajamen noodles, the red-brick bank by the river, and the Kogensha craft shop",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "morioka-jajamen",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "morioka-iwate-bank-red-brick",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "The banking hall is closed Tuesdays and 29 Dec–3 Jan; the building is fine from outside"
+            },
+            {
+              "place_id": "morioka-kogensha",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Closed on the 15th of the month"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Short, flat walks between warm places; taxis on icy days.",
+          "from": [
+            "tohoku-snow-samurai:2026-12-29"
+          ]
+        },
+        {
+          "id": "morioka-geibikei",
+          "title": "The Geibikei gorge by kotatsu boat, warm under a quilt between snowy cliffs",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "morioka-geibikei-kotatsu-boat",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Shinkansen to Ichinoseki, then the Ofunato line; about 1 h 30"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Mochi and dango in Ichinoseki on the way back"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Seated and warm under the kotatsu quilt; the landing stage can be icy.",
+          "from": []
+        },
+        {
+          "id": "morioka-nyuto",
+          "title": "Nyuto Onsen's milky outdoor baths for João and Carolina; Lake Tazawa's shore for the rest",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "morioka-nyuto-tsurunoyu",
+              "slot": "morning",
+              "crew": "early",
+              "note": "Komachi to Tazawako, then the bus; about 2 hours"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "Lake Tazawa from a café, or a slow day in Morioka"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Icy paths and very hot water; this one is for the keen bathers.",
+          "from": []
+        },
+        {
+          "id": "morioka-slow-day",
+          "title": "A slow day: a long breakfast, the river walk, a coffee house, and wanko soba for anyone who did not try it",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "morioka-wanko-soba",
+              "slot": "evening",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Restful by design.",
+          "from": []
+        }
+      ],
+      "special": {
+        "12-31": {
+          "id": "morioka-nye",
+          "title": "New Year's Eve: the old centre, New Year food from the department store, the hotel's dinner; Hachimangu at midnight for the keen",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "morioka-morioka-s-old-centre",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Kawatoku department store's food hall sells New Year dishes until early evening"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner at the hotel restaurant, booked; wanko soba houses mostly close today"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "early",
+              "note": "Morioka Hachimangu fills from midnight with the whole city"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Icy streets at night; the hotel is the better place to see the year in.",
+          "from": []
+        },
+        "01-01": {
+          "id": "morioka-new-year-day",
+          "title": "New Year's Day: Morioka shuts, so out to Chuson-ji, open every day, and back for the hotel's dinner",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "morioka-chuson-ji-hiraizumi",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "New Year visitors, but far fewer than at city shrines"
+            },
+            {
+              "place_id": "morioka-motsu-ji",
+              "slot": "afternoon",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner at the hotel restaurant"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "A taxi up the slope, and a slow pace on the snow.",
+          "from": []
+        }
+      }
+    },
+    "nagano": {
+      "arrival": [
+        {
+          "id": "nagano-arrive-zenkoji",
+          "title": "Shinkansen to Nagano; Zenko-ji in the afternoon and dinner on the Nakamise lane",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "nagano-zenko-ji-and-the-o-kaidan-passage",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "The pitch-dark o-kaidan passage under the hall takes ten minutes, one hand on the wall"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner on the Nakamise lane: oyaki dumplings and Shinshu soba"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "12-31",
+            "01-01",
+            "01-02",
+            "01-03"
+          ],
+          "for_her": "The approach is flat but nearly two kilometres from the station; a taxi to the gate saves her legs for the temple.",
+          "from": [
+            "deep-snow-country:2026-12-23"
+          ]
+        },
+        {
+          "id": "nagano-arrive-station",
+          "title": "Check in by the station, a short walk along Chuo-dori and soba near the hotel",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Soba or a hot oyaki near the station; an early night"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": null,
+          "from": []
+        }
+      ],
+      "last_morning": "For the early risers, Zenko-ji's dawn service; then oyaki and a bento from the station for the train.",
+      "days": [
+        {
+          "id": "nagano-snow-monkeys",
+          "title": "Snow monkeys at Jigokudani for the walkers; Fernanda takes the foot baths and a private bath in Shibu Onsen and meets them for lunch",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "nagano-jigokudani-snow-monkeys",
+              "slot": "morning",
+              "crew": "early",
+              "note": "Train to Yudanaka, bus to the trailhead, then about 45 minutes each way on packed snow; crampons for hire at the start"
+            },
+            {
+              "place_id": "nagano-shibu-onsen-lane-and-foot-baths",
+              "slot": "morning",
+              "crew": "rest",
+              "note": "Foot baths along the lantern lane and a private bath slot at a ryokan"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Lunch together in Shibu, then the train back to Nagano"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The trail is packed snow and ice for 45 minutes each way. She may prefer to stay warm in Shibu, unless the path is freshly packed and her doctor is relaxed about it.",
+          "from": [
+            "deep-snow-country:2026-12-24"
+          ]
+        },
+        {
+          "id": "nagano-matsumoto",
+          "title": "Matsumoto by the Shinano express: the black castle (the keep for the keen, the grounds for her), Nakamachi and the Kusama museum",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "nagano-matsumoto-castle-day-trip",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "50 minutes each way; the keep is all near-vertical wooden stairs"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Nakamachi's white storehouses, a coffee and a soba lunch"
+            },
+            {
+              "place_id": "nagano-matsumoto-city-museum-of-art",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Closed Mondays and over the New Year"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "12-29",
+            "12-30",
+            "12-31"
+          ],
+          "for_her": "The keep's ladders are steep and crowded; the grounds, the moat and Nakamachi are flat and lovely on their own.",
+          "from": [
+            "deep-snow-country:2026-12-25"
+          ]
+        },
+        {
+          "id": "nagano-zenkoji-obuse",
+          "title": "Zenko-ji's dawn service for the early risers, then Obuse's Hokusai Museum and chestnut sweets",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "nagano-zenko-ji-and-the-o-kaidan-passage",
+              "slot": "morning",
+              "crew": "early",
+              "note": "The morning service starts around dawn; afterwards a priest touches bowed heads with his rosary"
+            },
+            {
+              "place_id": "nagano-obuse-and-the-hokusai-museum",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "25 minutes on the Nagaden; the museum is 10 minutes' walk from the station"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Chestnut rice and kuri-kinton in the old merchant houses"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "12-31",
+            "01-01"
+          ],
+          "for_her": "Obuse is small and flat, and the museum is warm with benches. The dawn service is long and cold; she could join them at the temple later.",
+          "from": []
+        },
+        {
+          "id": "nagano-nozawa-snow-day",
+          "title": "A snow day at Nozawa Onsen: sledding, a ski lesson for João and Carolina, and the wooden village bathhouses",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "nagano-nozawa-onsen-snow-day",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Shinkansen to Iiyama, then the bus, about 40 minutes in all; busiest 29 Dec–3 Jan"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "A café in the village and a dip of the feet in a soto-yu bathhouse; the water is very hot"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Back to Nagano for dinner"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Nozawa's lanes are steep and icy and the village baths are scalding. She may prefer a slow day in Nagano or Obuse.",
+          "from": []
+        },
+        {
+          "id": "nagano-togakushi",
+          "title": "Togakushi by bus: the Chusha shrine under giant cedars, a basket of Togakushi soba, and deep snow",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "nagano-togakushi-chusha",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "About an hour on the Birdline bus from Nagano station; check the winter timetable"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Soba for lunch by the shrine, then the bus down"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The Chusha steps can be icy, so cleats and a hand on the rail. The upper Okusha path is shut in deep snow anyway.",
+          "from": []
+        },
+        {
+          "id": "nagano-slow-day",
+          "title": "A slow day: a late breakfast, the covered Gondo arcade, a hot oyaki, and a bath back at the hotel",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Late breakfast and the Gondo arcade near the temple"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "A nap and the hotel bath"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Restful by design.",
+          "from": []
+        }
+      ],
+      "special": {
+        "12-31": {
+          "id": "nagano-nye",
+          "title": "New Year's Eve: Zenko-ji in the calm morning, soba for lunch, dinner at the hotel; the midnight bell for the keen ones",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "nagano-zenko-ji-and-the-o-kaidan-passage",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Calm in the morning; the crowds build from about 22:00 and the temple stays open all night"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "A bath and a nap"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Book the hotel restaurant's New Year's Eve dinner, or buy toshikoshi soba and bento at the station food hall before it shuts"
+            },
+            {
+              "place_id": "nagano-zenko-ji-and-the-o-kaidan-passage",
+              "slot": "evening",
+              "crew": "early",
+              "note": "From midnight the first 108 in line ring the great bell; numbered tickets from about 22:00 in past years, so check"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Midnight at Zenko-ji is cold and packed. Bed early and the temple again after 4 Jan is the kinder choice.",
+          "from": []
+        },
+        "01-01": {
+          "id": "nagano-new-year-day",
+          "title": "New Year's Day: leave Zenko-ji to the crowds; Matsumoto Castle's New Year opening, and dinner booked at the hotel",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "nagano-matsumoto-castle-day-trip",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "The castle usually reopens for 1–3 Jan, but sources differ, so confirm; the Kusama museum stays shut"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "Most of Nagano shuts today; the station's convenience stores and the hotel stay open"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner at the hotel restaurant, booked ahead"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The grounds are flat and calm on New Year morning; the keep will have a queue on its steep stairs.",
+          "from": []
+        }
+      }
+    },
+    "nagoya": {
+      "arrival": [
+        {
+          "id": "nagoya-arrive-wings",
+          "title": "Nozomi to Nagoya; tebasaki wings for dinner near the station",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "nagoya-miso-katsu-tebasaki-and-miso-nikomi-udon",
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Peppery fried tebasaki wings at a chain near the station"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The wings are cooked through; ask for less pepper if it bothers her.",
+          "from": [
+            "winter-food-trail:2027-01-05"
+          ]
+        },
+        {
+          "id": "nagoya-arrive-food-hall",
+          "title": "Check in above the station and pick a dinner from the department-store food hall downstairs",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Eel bento, miso-katsu sandwiches and sweets from the food hall; eat in the room"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "01-01"
+          ],
+          "for_her": null,
+          "from": []
+        }
+      ],
+      "last_morning": "Kishimen noodles at a platform stand, an eel bento for the train, and away.",
+      "days": [
+        {
+          "id": "nagoya-eel-shrine-palace",
+          "title": "Atsuta Shrine, hitsumabushi at a Houraiken branch, the Honmaru Palace, and miso-nikomi udon for dinner",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "nagoya-atsuta-shrine",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Calm again from about 5 Jan"
+            },
+            {
+              "place_id": "nagoya-hitsumabushi",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "The main shop shuts on Wednesdays and the 2nd and 4th Thursdays; the department-store branches are the fallback"
+            },
+            {
+              "place_id": "nagoya-nagoya-castle-and-the-honmaru-palace",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "The keep is shut for rebuilding; the palace is open and all on one level"
+            },
+            {
+              "place_id": "nagoya-miso-katsu-tebasaki-and-miso-nikomi-udon",
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Miso-nikomi udon, bubbling in its clay pot"
+            }
+          ],
+          "new_year": "closed",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "All flat. Eel is rich in vitamin A, so she may prefer one serving and to pass on the eel-liver soup.",
+          "from": [
+            "winter-food-trail:2027-01-06"
+          ]
+        },
+        {
+          "id": "nagoya-inuyama",
+          "title": "Inuyama by Meitetsu: an original castle keep above the river, and the old castle-town street",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "nagoya-inuyama-castle",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "About 30 minutes from Meitetsu Nagoya, then a 20-minute walk or a taxi"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "The castle-town street: dengaku tofu, sweets and small museums"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "12-29",
+            "12-30",
+            "12-31"
+          ],
+          "for_her": "Inside the keep the stairs are like ladders; she might wait in the grounds while the others climb.",
+          "from": []
+        },
+        {
+          "id": "nagoya-trains-and-stars",
+          "title": "SCMaglev and Railway Park for the trains, then the planetarium at the City Science Museum",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "nagoya-scmaglev-and-railway-park",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "About 25 minutes on the Aonami line"
+            },
+            {
+              "place_id": "nagoya-city-science-museum",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Buy the timed planetarium tickets as soon as you arrive"
+            }
+          ],
+          "new_year": "closed",
+          "closed_weekdays": [
+            "Mon",
+            "Tue"
+          ],
+          "dates_not": [],
+          "for_her": "Big, flat and warm, with plenty of benches.",
+          "from": []
+        },
+        {
+          "id": "nagoya-osu-and-aquarium",
+          "title": "Osu Kannon and the covered Osu arcades, miso-katsu for lunch, the Port of Nagoya aquarium after",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "nagoya-osu-kannon-and-arcades",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "nagoya-miso-katsu-tebasaki-and-miso-nikomi-udon",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Miso-katsu for lunch"
+            },
+            {
+              "place_id": "nagoya-port-aquarium",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Closed Mondays"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [
+            "Mon"
+          ],
+          "dates_not": [],
+          "for_her": "The arcades are covered and flat; the aquarium has lifts and seats by the big tanks.",
+          "from": []
+        },
+        {
+          "id": "nagoya-tokugawa",
+          "title": "The Tokugawa Art Museum's samurai treasures and the garden next door, then a coffee in the old Shumokucho lanes",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "nagoya-tokugawa-art-museum",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Tokugawa-en's pond garden, then the old merchants' houses of Shumokucho"
+            }
+          ],
+          "new_year": "closed",
+          "closed_weekdays": [
+            "Mon"
+          ],
+          "dates_not": [],
+          "for_her": "Gentle and indoors, with a flat garden path.",
+          "from": []
+        },
+        {
+          "id": "nagoya-slow-day",
+          "title": "A slow day: a coffee-shop 'morning set', Hisaya-odori park, and the department-store food halls",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Nagoya's 'morning': coffee with free toast and egg"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Hisaya-odori park and the food halls of Sakae"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "01-01"
+          ],
+          "for_her": "Restful by design.",
+          "from": []
+        }
+      ],
+      "special": {
+        "12-31": {
+          "id": "nagoya-nye",
+          "title": "New Year's Eve: the Osu arcades in the morning, New Year shopping in a food hall, and dinner booked at the hotel",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "nagoya-osu-kannon-and-arcades",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Most stalls open on the morning of 31 Dec"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "The station department stores sell New Year food until early evening"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner at the hotel restaurant, booked; or toshikoshi soba in the room"
+            },
+            {
+              "place_id": "nagoya-atsuta-shrine",
+              "slot": "evening",
+              "crew": "early",
+              "note": "Huge crowds from midnight; only for anyone who wants the crush"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Midnight at Atsuta is a long, cold queue; the year can turn from the hotel window just as well.",
+          "from": []
+        },
+        "01-01": {
+          "id": "nagoya-new-year-day",
+          "title": "New Year's Day: the Port of Nagoya aquarium at opening, a quiet afternoon, dinner at the hotel; Atsuta waits until 4 Jan or later",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "nagoya-port-aquarium",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Usually open over New Year; busy from late morning, so go at opening"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "Shops and food halls are shut today; the department stores reopen on 2 Jan with lucky bags"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner at the hotel restaurant, booked ahead"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Warm and seated; leave before the crowds peak.",
+          "from": []
+        }
+      }
+    },
     "nara": {
       "arrival": [
         {
@@ -3787,6 +5544,269 @@
           "from": [
             "kii-coast-classic:2027-01-02"
           ]
+        }
+      }
+    },
+    "north-tohoku": {
+      "arrival": [
+        {
+          "id": "north-tohoku-arrive",
+          "title": "Hayabusa to Shin-Aomori, a taxi into town, and dinner near the hotel",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "north-tohoku-a-factory",
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "By the station; hours vary by shop"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "A taxi from Shin-Aomori with the bags; the pavements are deep in snow.",
+          "from": []
+        },
+        {
+          "id": "north-tohoku-arrive-new-year",
+          "title": "New Year breakfast, then the Hayabusa an hour north to Aomori on the quiet day; dinner at the hotel",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Most of the city is shut on 1 Jan; the hotel restaurant or a convenience store"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "A short ride on the quietest travel day of the year.",
+          "from": [
+            "tohoku-snow-samurai:2027-01-01"
+          ]
+        }
+      ],
+      "last_morning": "Apple juice and a scallop bento at the station, then the Hayabusa home from Shin-Aomori.",
+      "days": [
+        {
+          "id": "north-tohoku-hirosaki",
+          "title": "Hirosaki by local train (about 40 minutes): the castle park in snow and the apple-pie cafés",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "north-tohoku-hirosaki-castle-park",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "north-tohoku-hirosaki-apple-pie",
+              "slot": "afternoon",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "01-01"
+          ],
+          "for_her": "Snowy park paths: cleats, and a taxi from the station to the gate.",
+          "from": [
+            "tohoku-snow-samurai:2027-01-03"
+          ]
+        },
+        {
+          "id": "north-tohoku-art-and-jomon",
+          "title": "Aomori Museum of Art (it reopened on 2 Jan in past years) and the Sannai-Maruyama Jomon site next door",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "north-tohoku-aomori-museum-of-art",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Closed the 2nd and 4th Mondays"
+            },
+            {
+              "place_id": "north-tohoku-sannai-maruyama",
+              "slot": "afternoon",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "12-28",
+            "12-29",
+            "12-30",
+            "12-31",
+            "01-01"
+          ],
+          "for_her": "Warm and flat inside; the Jomon village outdoors is a short, snowy loop.",
+          "from": [
+            "tohoku-snow-samurai:2027-01-02"
+          ]
+        },
+        {
+          "id": "north-tohoku-hakkoda",
+          "title": "The Hakkoda ropeway by bus (about an hour) if the weather allows; Sukayu's big bath for the others; the Nebuta museum if not",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "north-tohoku-hakkoda-ropeway",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Stops in strong wind; check before the bus"
+            },
+            {
+              "place_id": "north-tohoku-sukayu-onsen",
+              "slot": "afternoon",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "north-tohoku-nebuta-warasse",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "The bad-weather plan"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "She can wait in the warm top station; at Sukayu, the smaller Tamanoyu bath and a short soak.",
+          "from": [
+            "tohoku-snow-samurai:2027-01-04"
+          ]
+        },
+        {
+          "id": "north-tohoku-nebuta-market",
+          "title": "Nokke-don at the fish market, the Nebuta museum, and cider and apple sweets at A-Factory",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "north-tohoku-nokke-don",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Closed Tuesdays"
+            },
+            {
+              "place_id": "north-tohoku-nebuta-warasse",
+              "slot": "afternoon",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "north-tohoku-a-factory",
+              "slot": "afternoon",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [
+            "Tue"
+          ],
+          "dates_not": [
+            "12-31",
+            "01-01"
+          ],
+          "for_her": "Grilled scallops and cooked toppings for her bowl; all three are by the station.",
+          "from": []
+        },
+        {
+          "id": "north-tohoku-stove-train",
+          "title": "The Tsugaru stove train across the snowy plain from Goshogawara, with dried squid grilled on the stove",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "north-tohoku-stove-train",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "About an hour to Goshogawara; check the timetable"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Back via Hirosaki or straight to Aomori"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Seated and warm; a long day of trains.",
+          "from": []
+        },
+        {
+          "id": "north-tohoku-asamushi",
+          "title": "An easy afternoon at Asamushi Onsen by the sea: the station foot bath and the aquarium",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "north-tohoku-asamushi",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "20 minutes by train"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Gentle and warm.",
+          "from": []
+        }
+      ],
+      "special": {
+        "12-31": {
+          "id": "north-tohoku-nye",
+          "title": "New Year's Eve: Asamushi's aquarium and foot bath, food shopping before the city shuts, and the hotel's dinner",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "north-tohoku-asamushi",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Buy food for 1 Jan by the station before it shuts; the city closes almost completely tomorrow"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner at the hotel restaurant, booked, or a cooked dinner in the villa suite"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Everything short and warm; snowy streets after dark are best avoided.",
+          "from": []
+        },
+        "01-01": {
+          "id": "north-tohoku-new-year-day",
+          "title": "New Year's Day: the city shuts, so Hirosaki Castle park in deep snow (free and always open), and dinner at the hotel",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "north-tohoku-hirosaki-castle-park",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "The cafés are mostly shut today"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner at the hotel restaurant"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Cleats and a slow pace on the snowy paths.",
+          "from": []
         }
       }
     },
@@ -5028,6 +7048,537 @@
         }
       }
     },
+    "shuzenji": {
+      "arrival": [
+        {
+          "id": "shuzenji-arrive",
+          "title": "About an hour to Shuzenji; the bamboo path and the Tokko-no-yu foot bath before dinner at the ryokan",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "shuzenji-bamboo-path",
+              "slot": "afternoon",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "shuzenji-tokko-no-yu",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "A foot bath only"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner at the ryokan"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Short and flat; the ryokan bath is the main event.",
+          "from": [
+            "fuji-pacific-shore:2026-12-28"
+          ]
+        }
+      ],
+      "last_morning": "A last soak in the room's bath, a walk to the temple gate, and the little Izuhakone train to Mishima.",
+      "days": [
+        {
+          "id": "shuzenji-strawberries-fuji",
+          "title": "Strawberry picking in Izu-Nagaoka and the Izu Panorama Park ropeway for Fuji over Suruga Bay",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "shuzenji-ema-strawberries",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "shuzenji-izu-panorama-park",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Clearest in the morning or late afternoon"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The greenhouses are warm and flat; rinse the berries if she can. The ropeway top is a flat terrace with sofas.",
+          "from": [
+            "fuji-pacific-shore:2026-12-29"
+          ]
+        },
+        {
+          "id": "shuzenji-mishima",
+          "title": "The Mishima Skywalk with Fuji behind it and an eel lunch in Mishima; or the Nirayama furnace for the history lovers",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "shuzenji-mishima-skywalk",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "A bus from Mishima station"
+            },
+            {
+              "place_id": "shuzenji-mishima-eel",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Usually closed Wednesdays; Mishima has other eel houses"
+            },
+            {
+              "place_id": "shuzenji-nirayama-furnace",
+              "slot": "afternoon",
+              "crew": "early",
+              "note": "For anyone keen on history, on the way back"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The bridge is flat but windy and sways a little. Eel is rich in vitamin A, so one serving.",
+          "from": [
+            "fuji-pacific-shore:2026-12-30"
+          ]
+        },
+        {
+          "id": "shuzenji-temple-rainbow",
+          "title": "Shuzen-ji temple in the morning, then Rainbow Village's gardens and little steam railway",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "shuzenji-shuzen-ji-temple",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "shuzenji-niji-no-sato",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "A short bus ride from the onsen; closed Tuesdays"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [
+            "Tue"
+          ],
+          "dates_not": [],
+          "for_her": "The gardens are gently hilly; the train saves the climbs.",
+          "from": []
+        },
+        {
+          "id": "shuzenji-atami-day",
+          "title": "A day in Atami, about an hour away: the MOA Museum of Art and a warm walk along the bay",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "atami-moa-museum-of-art",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Closed Thursdays"
+            },
+            {
+              "place_id": "atami-sun-beach-promenade",
+              "slot": "afternoon",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "closed",
+          "closed_weekdays": [
+            "Thu"
+          ],
+          "dates_not": [],
+          "for_her": "Escalators up to the museum and a flat seafront.",
+          "from": []
+        },
+        {
+          "id": "shuzenji-slow-day",
+          "title": "A slow ryokan day: baths, a nap, a stroll by the river, and a soba lunch in town",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Soba in town and a stroll along the Katsura river"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Restful by design.",
+          "from": []
+        },
+        {
+          "id": "shuzenji-nirayama-nagaoka",
+          "title": "The Nirayama furnace's brick chimneys and Izu-Nagaoka's quiet onsen streets",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "shuzenji-nirayama-furnace",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "A foot bath in Izu-Nagaoka's onsen streets"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "12-31",
+            "01-01"
+          ],
+          "for_her": "Flat and short.",
+          "from": []
+        }
+      ],
+      "special": {
+        "12-31": {
+          "id": "shuzenji-nye",
+          "title": "Shuzen-ji temple and a slow day; New Year's Eve kaiseki at the ryokan and the midnight bell",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "shuzenji-shuzen-ji-temple",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "Baths and a nap"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "The ryokan's New Year's Eve kaiseki and toshikoshi soba"
+            },
+            {
+              "place_id": "shuzenji-shuzen-ji-temple",
+              "slot": "evening",
+              "crew": "early",
+              "note": "From about 23:30 visitors queue to strike the bell once each; tickets in past years"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Kinmedai simmered rather than raw, and a small portion. The bell is a short walk, but cold.",
+          "from": [
+            "fuji-pacific-shore:2026-12-31"
+          ]
+        },
+        "01-01": {
+          "id": "shuzenji-new-year-day",
+          "title": "New Year's Day: osechi at the ryokan, Shuzen-ji's small, calm first visit, and Fuji from the Panorama Park",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Osechi breakfast at the ryokan"
+            },
+            {
+              "place_id": "shuzenji-shuzen-ji-temple",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "A small, calm first visit"
+            },
+            {
+              "place_id": "shuzenji-izu-panorama-park",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "On 1 Jan the ropeway runs from 5:00 for the first sunrise; later it is calmer"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "All gentle; the afternoon ropeway avoids the dawn queue.",
+          "from": []
+        }
+      }
+    },
+    "south-tohoku": {
+      "arrival": [
+        {
+          "id": "south-tohoku-arrive-lights",
+          "title": "Hayabusa to Sendai; the Pageant of Starlight on Jozenji-dori if it is still lit, and grilled beef tongue",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "south-tohoku-pageant-of-starlight",
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Probably over by 26 Dec; 2026 dates still to come"
+            },
+            {
+              "place_id": "south-tohoku-gyutan",
+              "slot": "evening",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Jozenji-dori is flat; a taxi there and back keeps her off any ice.",
+          "from": [
+            "tohoku-snow-samurai:2026-12-23"
+          ]
+        },
+        {
+          "id": "south-tohoku-arrive-station",
+          "title": "Check in by the station and a beef-tongue dinner on the station's 'gyutan street'",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "south-tohoku-gyutan",
+              "slot": "evening",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": null,
+          "from": []
+        }
+      ],
+      "last_morning": "Zunda mochi or a beef-tongue bento from the station, and onto the Hayabusa.",
+      "days": [
+        {
+          "id": "south-tohoku-matsushima",
+          "title": "Matsushima: the seated bay cruise, Zuigan-ji, and grilled oysters (cooked through for Fernanda)",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "south-tohoku-matsushima-cruise",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "40 minutes on the Senseki line"
+            },
+            {
+              "place_id": "south-tohoku-zuigan-ji",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "south-tohoku-matsushima-oysters",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "The huts close about 31 Dec–3 Jan"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "All flat and seated. Oysters well grilled rather than raw are the safer choice.",
+          "from": [
+            "tohoku-snow-samurai:2026-12-24"
+          ]
+        },
+        {
+          "id": "south-tohoku-sendai-yamadera",
+          "title": "A Sendai day: Zuihoden mausoleum or a café morning; Yamadera's thousand icy steps for João and Carolina",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "south-tohoku-zuihoden",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "south-tohoku-yamadera",
+              "slot": "morning",
+              "crew": "early",
+              "note": "About an hour on the Senzan line; cleats for the steps"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "A café in the covered Ichibancho arcades"
+            },
+            {
+              "place_id": "south-tohoku-gyutan",
+              "slot": "evening",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "12-31"
+          ],
+          "for_her": "Yamadera's icy steps are probably best left to the others. Zuihoden has steps too, so take them slowly or stay in the arcades.",
+          "from": [
+            "tohoku-snow-samurai:2026-12-25"
+          ]
+        },
+        {
+          "id": "south-tohoku-aquarium-arcades",
+          "title": "Sendai Umino-Mori Aquarium in the morning, then the covered arcades and a zunda shake",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "south-tohoku-umino-mori-aquarium",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "About 20 minutes by train to Nakanosakae"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "The Ichibancho and Clis Road arcades, all under cover"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Warm and flat, out of the cold all day.",
+          "from": []
+        },
+        {
+          "id": "south-tohoku-zao",
+          "title": "Zao's snow monsters by ropeway, about 1 h 30 away, best on the evening light-up days",
+          "kind": "daytrip",
+          "items": [
+            {
+              "place_id": "south-tohoku-zao-snow-monsters",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "The trees are only half-formed before mid-January; check the light-up dates"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The top station is about –10 °C and the cars are crowded on light-up nights; she may prefer a warm day in Sendai.",
+          "from": []
+        },
+        {
+          "id": "south-tohoku-slow-day",
+          "title": "A slow day: a late breakfast, the zelkova avenues, a bookshop café, and beef tongue again for dinner",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "south-tohoku-gyutan",
+              "slot": "evening",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Restful by design.",
+          "from": []
+        }
+      ],
+      "special": {
+        "12-31": {
+          "id": "south-tohoku-nye",
+          "title": "New Year's Eve: Matsushima's cruise and Zuigan-ji in the morning, food-hall shopping in Sendai, and the hotel's dinner",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "south-tohoku-matsushima-cruise",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "south-tohoku-zuigan-ji",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "The bell is rung from 21:00 tonight"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Sendai's department-store food halls sell New Year dishes until early evening"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner at the hotel restaurant, booked"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The oyster huts are shut today; grilled fish on the waterfront instead.",
+          "from": []
+        },
+        "01-01": {
+          "id": "south-tohoku-new-year-day",
+          "title": "New Year's Day: Matsushima's sunrise cruise for the early risers, Zuihoden's main hall open free, a quiet afternoon",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "south-tohoku-matsushima-cruise",
+              "slot": "morning",
+              "crew": "early",
+              "note": "A special sunrise cruise has run on 1 Jan; book"
+            },
+            {
+              "place_id": "south-tohoku-zuihoden",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "On 1 Jan only the main hall opens, free"
+            },
+            {
+              "place_id": "south-tohoku-umino-mori-aquarium",
+              "slot": "afternoon",
+              "crew": "everyone",
+              "note": "Most shops shut today; the aquarium stays open"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Dinner at the hotel restaurant"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The sunrise cruise is cold and early; Zuihoden and the aquarium later are gentler.",
+          "from": []
+        },
+        "01-02": {
+          "id": "south-tohoku-hatsuuri-day",
+          "title": "2 Jan: Sendai's New Year sale, a custom since the Edo period, with gifts for customers; then the aquarium",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "south-tohoku-hatsuuri",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Go mid-morning, once the first rush has passed"
+            },
+            {
+              "place_id": "south-tohoku-umino-mori-aquarium",
+              "slot": "afternoon",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "The arcades are covered but packed at opening; mid-morning is calmer.",
+          "from": []
+        }
+      }
+    },
     "takayama": {
       "arrival": [
         {
@@ -6261,6 +8812,194 @@
           "closed_weekdays": [],
           "dates_not": [],
           "for_her": "Watch the runners from a café window; the kerbside crowd is deep.",
+          "from": []
+        }
+      }
+    },
+    "tsunagi": {
+      "arrival": [
+        {
+          "id": "tsunagi-arrive",
+          "title": "Shuttle to Tsunagi Onsen; Lake Gosho and Mt Iwate, and the first soak",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "tsunagi-mt-iwate-over-lake-gosho",
+              "slot": "afternoon",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "tsunagi-rooms-with-their-own-open-air-bath",
+              "slot": "evening",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "A short, cool soak in the room bath, with water to drink.",
+          "from": [
+            "tohoku-snow-samurai:2026-12-30"
+          ]
+        }
+      ],
+      "last_morning": "A last soak with the mountain at breakfast, then the shuttle to Morioka station.",
+      "days": [
+        {
+          "id": "tsunagi-slow-onsen-day",
+          "title": "A slow day at the onsen: baths, a book by the window, Mt Iwate across the lake",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "tsunagi-rooms-with-their-own-open-air-bath",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "tsunagi-mt-iwate-over-lake-gosho",
+              "slot": "afternoon",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Short soaks, cool water to drink, and lots of rest.",
+          "from": []
+        },
+        {
+          "id": "tsunagi-morioka-afternoon",
+          "title": "The shuttle into Morioka for the old centre and a noodle lunch, back for dinner at the hotel",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "tsunagi-morioka-on-the-shuttle",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "morioka-morioka-s-old-centre",
+              "slot": "afternoon",
+              "crew": "everyone"
+            },
+            {
+              "place_id": null,
+              "slot": "evening",
+              "crew": "everyone",
+              "note": "Back for dinner at the hotel"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "01-01"
+          ],
+          "for_her": "Taxis between sights on icy days.",
+          "from": []
+        },
+        {
+          "id": "tsunagi-koiwai",
+          "title": "Koiwai Farm in the snow, 20 minutes by taxi, with Mt Iwate behind the pastures",
+          "kind": "explore",
+          "items": [
+            {
+              "place_id": "tsunagi-koiwai-farm",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Check what is open in winter"
+            },
+            {
+              "place_id": null,
+              "slot": "afternoon",
+              "crew": "rest",
+              "note": "Back for the bath"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [
+            "12-31",
+            "01-01"
+          ],
+          "for_her": "Open, snowy and windy; keep it short and warm.",
+          "from": []
+        },
+        {
+          "id": "tsunagi-lake-walk",
+          "title": "A short walk on the lake shore in the morning snow, the hotel lunch, and an afternoon nap",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "tsunagi-mt-iwate-over-lake-gosho",
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Cleats; the shore path may be icy"
+            }
+          ],
+          "new_year": "ok",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "She may prefer the view from the window if the path is icy.",
+          "from": []
+        }
+      ],
+      "special": {
+        "12-31": {
+          "id": "tsunagi-nye",
+          "title": "Slow day at the onsen; New Year's Eve dinner and toshikoshi soba",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": "tsunagi-rooms-with-their-own-open-air-bath",
+              "slot": "morning",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "tsunagi-morioka-on-the-shuttle",
+              "slot": "afternoon",
+              "crew": "early",
+              "note": "For anyone restless; shops open until afternoon"
+            },
+            {
+              "place_id": "tsunagi-new-year-s-eve-kaiseki",
+              "slot": "evening",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Iwate beef cooked through, fish cooked rather than raw; nothing else nearby is open.",
+          "from": [
+            "tohoku-snow-samurai:2026-12-31"
+          ]
+        },
+        "01-01": {
+          "id": "tsunagi-new-year-day",
+          "title": "New Year's Day: osechi at breakfast, a slow day of baths and the mountain, and the hotel's New Year dinner",
+          "kind": "easy",
+          "items": [
+            {
+              "place_id": null,
+              "slot": "morning",
+              "crew": "everyone",
+              "note": "Osechi breakfast at the hotel"
+            },
+            {
+              "place_id": "tsunagi-mt-iwate-over-lake-gosho",
+              "slot": "afternoon",
+              "crew": "everyone"
+            },
+            {
+              "place_id": "tsunagi-rooms-with-their-own-open-air-bath",
+              "slot": "evening",
+              "crew": "everyone"
+            }
+          ],
+          "new_year": "only",
+          "closed_weekdays": [],
+          "dates_not": [],
+          "for_her": "Everything is indoors today.",
           "from": []
         }
       }

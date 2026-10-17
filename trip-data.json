@@ -7023,6 +7023,1537 @@
     "video": null
    },
    "google_place_id": null
+  },
+  {
+   "id": "nagano-togakushi-chusha",
+   "region": "nagano",
+   "name": "Togakushi Chusha shrine and soba",
+   "kind": "sight",
+   "size": "main",
+   "why": "A mountain shrine among giant cedars, an hour up the Birdline by bus, with Togakushi soba served in bamboo baskets",
+   "hours": "Chusha and Hokosha open in winter; the upper Okusha and its cedar avenue close in deep snow (from early January) and the path past the Zuishinmon gate is shut",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Snowy steps at the Chusha; cleats help",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://togakushi-21.jp/news/54485/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Togakushi%20Shrine%20Chusha%20Nagano",
+    "photos": "https://www.google.com/search?tbm=isch&q=Togakushi%20Shrine%20Chusha%20Nagano%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/togakushi/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagano-matsumoto-city-museum-of-art",
+   "region": "nagano",
+   "name": "Matsumoto City Museum of Art (Kusama Yayoi)",
+   "kind": "museum",
+   "size": "short",
+   "why": "Kusama Yayoi's home-town museum, with her dotted flowers outside and a room of her work inside, 12 minutes' walk from Matsumoto station",
+   "hours": "Usually 9:00–17:00; closed Mondays and over the New Year (check the 2026 dates)",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-03",
+     "note": "Usual year-end closure; confirm the exact dates",
+     "source": "https://www.japan-guide.com/e/e6058.html"
+    }
+   ],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6058.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Matsumoto%20City%20Museum%20of%20Art",
+    "photos": "https://www.google.com/search?tbm=isch&q=Matsumoto%20City%20Museum%20of%20Art%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/matsumotocitymuseumofart/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagoya-inuyama-castle",
+   "region": "nagoya",
+   "name": "Inuyama Castle",
+   "kind": "sight",
+   "size": "main",
+   "why": "One of Japan's twelve original castle keeps, on a bluff above the Kiso river, with an old castle-town street below; 30 minutes on the Meitetsu",
+   "hours": "9:00–17:00; closed 29–31 Dec; very busy 1–3 Jan",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2026-12-31",
+     "note": "Year-end closure",
+     "source": "https://banzokubiology.com/?p=11462"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Ladder-like stairs inside the keep",
+   "price": "About ¥1,000",
+   "booking": null,
+   "links": {
+    "source": "https://banzokubiology.com/?p=11462",
+    "map": "https://www.google.com/maps/search/?api=1&query=Inuyama%20Castle",
+    "photos": "https://www.google.com/search?tbm=isch&q=Inuyama%20Castle%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/inuyamacastle/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagoya-scmaglev-and-railway-park",
+   "region": "nagoya",
+   "name": "SCMaglev and Railway Park",
+   "kind": "museum",
+   "size": "main",
+   "why": "JR Central's train museum: old shinkansen to sit in, steam engines, a giant model railway and the record-breaking maglev",
+   "hours": "10:00–17:30; closed Tuesdays and 28 Dec–1 Jan",
+   "closures": [
+    {
+     "start": "2026-12-28",
+     "end": "2027-01-01",
+     "note": "Year-end closure",
+     "source": "https://museum.jr-central.co.jp/facilities/_pdf/calendar_2026.pdf"
+    }
+   ],
+   "closed_weekdays": [
+    "Tue"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "About ¥1,000",
+   "booking": null,
+   "links": {
+    "source": "https://museum.jr-central.co.jp/facilities/_pdf/calendar_2026.pdf",
+    "map": "https://www.google.com/maps/search/?api=1&query=SCMaglev%20and%20Railway%20Park%20Nagoya",
+    "photos": "https://www.google.com/search?tbm=isch&q=SCMaglev%20and%20Railway%20Park%20Nagoya%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/リニア鉄道館/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagoya-city-science-museum",
+   "region": "nagoya",
+   "name": "Nagoya City Science Museum",
+   "kind": "museum",
+   "size": "short",
+   "why": "Hands-on science floors and one of the largest planetarium domes in the world, in Fushimi",
+   "hours": "9:30–17:00; closed Mondays and 29 Dec–3 Jan",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-03",
+     "note": "Year-end closure",
+     "source": "https://www.city.nagoya.jp/naka/shisetsu/1021210/1021213.html"
+    }
+   ],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": "Planetarium tickets are timed and sell out; buy them first thing",
+   "links": {
+    "source": "https://www.city.nagoya.jp/naka/shisetsu/1021210/1021213.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Nagoya%20City%20Science%20Museum",
+    "photos": "https://www.google.com/search?tbm=isch&q=Nagoya%20City%20Science%20Museum%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagoya-osu-kannon-and-arcades",
+   "region": "nagoya",
+   "name": "Osu Kannon and the Osu arcades",
+   "kind": "market",
+   "size": "short",
+   "why": "A vermilion temple at the head of covered shopping streets full of snack stalls, second-hand shops and old cafés",
+   "hours": "Arcades open daily; crowded 1–3 Jan for first visits",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3315.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Osu%20Kannon%20Nagoya",
+    "photos": "https://www.google.com/search?tbm=isch&q=Osu%20Kannon%20Nagoya%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/osukannon/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagoya-port-aquarium",
+   "region": "nagoya",
+   "name": "Port of Nagoya Public Aquarium",
+   "kind": "sight",
+   "size": "short",
+   "why": "Orcas, dolphins and belugas in a big, warm aquarium by the harbour, 30 minutes by subway",
+   "hours": "9:30–17:00 in winter; closed Mondays; usually open over New Year and busiest 1–3 Jan",
+   "closures": [],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.walkerplus.com/spot/ar0623s03764/data.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Port%20of%20Nagoya%20Public%20Aquarium",
+    "photos": "https://www.google.com/search?tbm=isch&q=Port%20of%20Nagoya%20Public%20Aquarium%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/名古屋港水族館/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "nagoya-tokugawa-art-museum",
+   "region": "nagoya",
+   "name": "Tokugawa Art Museum and Tokugawa-en",
+   "kind": "museum",
+   "size": "short",
+   "why": "The Owari Tokugawa lords' armour, swords, tea things and Tale of Genji scrolls, with a stroll garden next door",
+   "hours": "10:00–17:00; closed Mondays and for maintenance from mid-December to early January in recent years",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-03",
+     "note": "At least these days; in recent years it has closed from mid-December, so check",
+     "source": "https://www.tokugawa-art-museum.jp/news/20231201124632/"
+    }
+   ],
+   "closed_weekdays": [
+    "Mon"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.tokugawa-art-museum.jp/news/20231201124632/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tokugawa%20Art%20Museum%20Nagoya",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tokugawa%20Art%20Museum%20Nagoya%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ise-shima-futami-wedded-rocks",
+   "region": "ise-shima",
+   "name": "Futami Okitama Shrine and the wedded rocks",
+   "kind": "sight",
+   "size": "short",
+   "why": "Two sea rocks tied with a sacred rope, at a small seaside shrine 15 minutes from Toba; traditionally visited before Ise Jingu",
+   "hours": "Always open; crowded on the morning of 1 Jan, calm from 4 Jan. The sun rises between the rocks only in early summer",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.kankomie.or.jp/event/7073",
+    "map": "https://www.google.com/maps/search/?api=1&query=Futami%20Okitama%20Shrine%20Meoto%20Iwa",
+    "photos": "https://www.google.com/search?tbm=isch&q=Futami%20Okitama%20Shrine%20Meoto%20Iwa%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/夫婦岩/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ise-shima-osatsu-ama-hut",
+   "region": "ise-shima",
+   "name": "Ama divers' hut lunch at Osatsu",
+   "kind": "food",
+   "size": "short",
+   "why": "Lunch round the fire in a hut with working ama women divers, who grill shellfish and fish and tell stories",
+   "hours": "Booking only; Hachiman Kamado closes 30–31 Dec and 1–5 Jan",
+   "closures": [
+    {
+     "start": "2026-12-30",
+     "end": "2027-01-05",
+     "note": "Closed 30–31 Dec and 1–5 Jan",
+     "source": "https://www.kankomie.or.jp/spot/18442"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": "Book ahead; ask for everything grilled through",
+   "links": {
+    "source": "https://www.kankomie.or.jp/spot/18442",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hachiman%20Kamado%20Osatsu%20Toba",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hachiman%20Kamado%20Osatsu%20Toba%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/海女小屋/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "ise-shima-shima-spain-village",
+   "region": "ise-shima",
+   "name": "Shima Spain Village (Parque España)",
+   "kind": "sight",
+   "size": "main",
+   "why": "A Spanish-themed park with rides, parades and a castle museum, plus the Himawari-no-yu hot spring next door",
+   "hours": "9:30–17:00; New Year festival in past years; closed for maintenance from about 12 Jan to mid-February",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.walkerplus.com/spot/ar0624s14603/data.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shima%20Spain%20Village",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shima%20Spain%20Village%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/志摩スペイン村/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "atami-sun-beach-promenade",
+   "region": "atami",
+   "name": "Atami Sun Beach and the seafront promenade",
+   "kind": "nature",
+   "size": "short",
+   "why": "A flat, palm-lined promenade along the sandy bay, with the Moonlight Terrace pier; the fireworks are watched from here",
+   "hours": "Always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6317.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Atami%20Sun%20Beach",
+    "photos": "https://www.google.com/search?tbm=isch&q=Atami%20Sun%20Beach%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/atamisunbeach/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "atami-kinomiya-shrine",
+   "region": "atami",
+   "name": "Kinomiya Shrine",
+   "kind": "sight",
+   "size": "short",
+   "why": "A shrine round a 2,000-year-old camphor tree, lit softly in the evening; you walk round the trunk for luck",
+   "hours": "Always open; crowded from midnight on 31 Dec and through 1–3 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6317.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kinomiya%20Shrine%20Atami",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kinomiya%20Shrine%20Atami%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/来宮神社/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "atami-hatsushima",
+   "region": "atami",
+   "name": "Hatsushima island",
+   "kind": "nature",
+   "size": "main",
+   "why": "A small island 30 minutes off Atami by ferry, with an Asian garden, a coastal path and harbour fish restaurants",
+   "hours": "About ten sailings a day; cancelled in rough seas. ¥2,900 return",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "The ferry can roll in a winter swell",
+   "price": "¥2,900 return",
+   "booking": null,
+   "links": {
+    "source": "https://www.hatsushima.jp/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hatsushima%20Atami",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hatsushima%20Atami%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/初島/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "atami-odawara-castle",
+   "region": "atami",
+   "name": "Odawara Castle",
+   "kind": "sight",
+   "size": "short",
+   "why": "A rebuilt keep with a samurai museum inside and a sea view from the top, 25 minutes from Atami on the Tokaido line",
+   "hours": "Park always open; the keep closes on 31 Dec and 1 Jan (some years a special opening on 1 Jan) and the 2nd Wednesday of December",
+   "closures": [
+    {
+     "start": "2026-12-31",
+     "end": "2027-01-01",
+     "note": "Keep closed",
+     "source": "https://banzokubiology.com/?p=11728"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Stairs inside the keep",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://banzokubiology.com/?p=11728",
+    "map": "https://www.google.com/maps/search/?api=1&query=Odawara%20Castle",
+    "photos": "https://www.google.com/search?tbm=isch&q=Odawara%20Castle%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/odawaracastle/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shuzenji-shuzen-ji-temple",
+   "region": "shuzenji",
+   "name": "Shuzen-ji temple",
+   "kind": "sight",
+   "size": "short",
+   "why": "The Zen temple founded by Kobo Daishi that gave the town its name, at the top of the main street",
+   "hours": "Open daily; visitors may strike the bell on New Year's Eve from about 23:30 (tickets in past years)",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://tabi-mag.jp/syuzenji/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shuzenji%20Temple%20Izu",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shuzenji%20Temple%20Izu%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/修禅寺/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shuzenji-bamboo-path",
+   "region": "shuzenji",
+   "name": "Chikurin-no-komichi bamboo path",
+   "kind": "nature",
+   "size": "short",
+   "why": "A short, flat path through a bamboo grove beside the Katsura river, with a round bamboo bench in the middle",
+   "hours": "Always open",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6311.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shuzenji%20Bamboo%20Forest%20Path",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shuzenji%20Bamboo%20Forest%20Path%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/竹林の小径/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shuzenji-tokko-no-yu",
+   "region": "shuzenji",
+   "name": "Tokko-no-yu foot bath",
+   "kind": "onsen",
+   "size": "short",
+   "why": "The town's oldest hot spring, in the riverbed below the temple; today a foot bath only",
+   "hours": "Always open; free",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e6311.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tokko%20no%20Yu%20Shuzenji",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tokko%20no%20Yu%20Shuzenji%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shuzenji-izu-panorama-park",
+   "region": "shuzenji",
+   "name": "Izu Panorama Park ropeway",
+   "kind": "nature",
+   "size": "main",
+   "why": "A seven-minute ropeway up Mt Katsuragi to a flat terrace of sofas facing Fuji across Suruga Bay",
+   "hours": "Winter 9:00–17:00 (last up 16:30); open over New Year, from 5:00 on 1 Jan for the first sunrise",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "About ¥3,500 return",
+   "booking": null,
+   "links": {
+    "source": "https://banzokubiology.com/?p=11425",
+    "map": "https://www.google.com/maps/search/?api=1&query=Izu%20Panorama%20Park",
+    "photos": "https://www.google.com/search?tbm=isch&q=Izu%20Panorama%20Park%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/伊豆パノラマパーク/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shuzenji-ema-strawberries",
+   "region": "shuzenji",
+   "name": "Strawberry picking at Ema",
+   "kind": "food",
+   "size": "short",
+   "why": "Thirty minutes of eat-all-you-can strawberries in warm greenhouses, ten minutes from Izu-Nagaoka",
+   "hours": "From about mid-December; 10:00–15:00 (9:00 at weekends); check New Year days",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "About ¥2,500",
+   "booking": null,
+   "links": {
+    "source": "https://www.walkerplus.com/event/ar0622e328690/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Ema%20Ichigo%20Gari%20Center%20Izunokuni",
+    "photos": "https://www.google.com/search?tbm=isch&q=Ema%20Ichigo%20Gari%20Center%20Izunokuni%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shuzenji-mishima-skywalk",
+   "region": "shuzenji",
+   "name": "Mishima Skywalk",
+   "kind": "nature",
+   "size": "short",
+   "why": "Japan's longest pedestrian suspension bridge, 400 m across a valley, with Fuji at one end",
+   "hours": "9:00–17:00; open over New Year",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Flat but windy and a little bouncy",
+   "price": "About ¥1,100",
+   "booking": null,
+   "links": {
+    "source": "https://banzokubiology.com/?p=13899",
+    "map": "https://www.google.com/maps/search/?api=1&query=Mishima%20Skywalk",
+    "photos": "https://www.google.com/search?tbm=isch&q=Mishima%20Skywalk%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/三島スカイウォーク/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shuzenji-mishima-eel",
+   "region": "shuzenji",
+   "name": "Eel in Mishima (Sakuraya)",
+   "kind": "food",
+   "size": "meal",
+   "why": "Mishima's spring water is said to clean the eel's flavour; Sakuraya has grilled it since the Meiji era",
+   "hours": "Usually closed Wednesdays and one Tuesday a month; open over New Year by one listing",
+   "closures": [],
+   "closed_weekdays": [
+    "Wed"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.mapple.net/original/411957/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sakuraya%20Mishima%20unagi",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sakuraya%20Mishima%20unagi%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shuzenji-nirayama-furnace",
+   "region": "shuzenji",
+   "name": "Nirayama reverberatory furnace",
+   "kind": "sight",
+   "size": "short",
+   "why": "Twin brick chimneys of an 1850s iron furnace, a World Heritage site, 15 minutes from Izu-Nagaoka",
+   "hours": "Winter 9:00–16:30; closed the 3rd Wednesday of the month, 31 Dec and 1 Jan",
+   "closures": [
+    {
+     "start": "2026-12-31",
+     "end": "2027-01-01",
+     "note": "Closed",
+     "source": "https://www.at-s.com/facilities/article/view/place/138539.html"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.at-s.com/facilities/article/view/place/138539.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Nirayama%20Reverberatory%20Furnace",
+    "photos": "https://www.google.com/search?tbm=isch&q=Nirayama%20Reverberatory%20Furnace%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "shuzenji-niji-no-sato",
+   "region": "shuzenji",
+   "name": "Shuzenji Rainbow Village (Niji-no-sato)",
+   "kind": "garden",
+   "size": "main",
+   "why": "Gardens in English, Canadian and Japanese styles, joined by a little steam railway, with evening lights this winter",
+   "hours": "10:00–16:00 in winter; closed Tuesdays and some days in mid-December and mid-January; open over New Year",
+   "closures": [],
+   "closed_weekdays": [
+    "Tue"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.at-s.com/spot/article/138190",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shuzenji%20Niji%20no%20Sato",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shuzenji%20Niji%20no%20Sato%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kamakura-tsurugaoka-hachimangu",
+   "region": "kamakura",
+   "name": "Tsurugaoka Hachimangu",
+   "kind": "sight",
+   "size": "main",
+   "why": "Kamakura's great shrine at the end of the cherry-lined Dankazura avenue, with ponds and a main hall up a broad flight of steps",
+   "hours": "Open daily; open all night 31 Dec–2 Jan and packed 1–3 Jan (about 2.5 million visitors), with crowd control on the streets",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Main hall up a long flight of steps",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://rurubu.jp/andmore/spot/80013721/hatsumode",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tsurugaoka%20Hachimangu",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tsurugaoka%20Hachimangu%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/tsurugaokahachimangu/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kamakura-hokoku-ji",
+   "region": "kamakura",
+   "name": "Hokoku-ji bamboo garden",
+   "kind": "garden",
+   "size": "short",
+   "why": "A small Zen temple with a grove of 2,000 moso bamboo and matcha in a tea pavilion inside it",
+   "hours": "9:00–16:00; closed 29 Dec–3 Jan",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-03",
+     "note": "Closed for New Year",
+     "source": "https://rurubu.jp/andmore/spot/80013695/koyo"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "About ¥400, tea extra",
+   "booking": null,
+   "links": {
+    "source": "https://rurubu.jp/andmore/spot/80013695/koyo",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hokokuji%20Kamakura",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hokokuji%20Kamakura%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/hokokuji/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kamakura-enoshima",
+   "region": "kamakura",
+   "name": "Enoshima",
+   "kind": "nature",
+   "size": "main",
+   "why": "A small island reached by a flat bridge, with outdoor escalators up the hill, a garden, a lighthouse tower and shrines",
+   "hours": "Always open; the winter lights on the tower ran 17:00–20:00 last season",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Escalators for the climb; steps beyond them",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://sp.jorudan.co.jp/illumi/spot_97889.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Enoshima%20Island",
+    "photos": "https://www.google.com/search?tbm=isch&q=Enoshima%20Island%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/enoshima/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kamakura-enoshima-aquarium",
+   "region": "kamakura",
+   "name": "Enoshima Aquarium (Enosui)",
+   "kind": "sight",
+   "size": "short",
+   "why": "A bright aquarium on the beach by Enoshima, with a big Sagami Bay tank, jellyfish and a dolphin show",
+   "hours": "Open every day; New Year hours usually 9:00–17:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://report.iko-yo.net/articles/16458",
+    "map": "https://www.google.com/maps/search/?api=1&query=Enoshima%20Aquarium",
+    "photos": "https://www.google.com/search?tbm=isch&q=Enoshima%20Aquarium%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/enosui/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kamakura-kencho-ji",
+   "region": "kamakura",
+   "name": "Kencho-ji",
+   "kind": "sight",
+   "size": "short",
+   "why": "Japan's oldest Zen training monastery, in a valley in north Kamakura; on New Year's Eve anyone in the queue may ring its bell",
+   "hours": "8:30–16:30; the New Year's Eve bell from about 23:45, queue before midnight",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://rurubu.jp/andmore/spot/20003422",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kenchoji%20Kamakura",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kenchoji%20Kamakura%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/kenchoji/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kamakura-sankeien",
+   "region": "kamakura",
+   "name": "Sankeien garden, Yokohama",
+   "kind": "garden",
+   "size": "main",
+   "why": "A large landscape garden with historic houses and a three-storey pagoda brought from Kyoto and Kamakura",
+   "hours": "9:00–17:00; closed about 26–31 Dec in recent years; open from 1 Jan, with the Kakushokaku house shown 1–3 Jan",
+   "closures": [
+    {
+     "start": "2026-12-26",
+     "end": "2026-12-31",
+     "note": "Year-end closure in recent years; check",
+     "source": "https://www.welcome.city.yokohama.jp/eventinfo/ev_detail.php?bid=yw4848"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "¥900",
+   "booking": null,
+   "links": {
+    "source": "https://www.welcome.city.yokohama.jp/eventinfo/ev_detail.php?bid=yw4848",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sankeien%20Garden%20Yokohama",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sankeien%20Garden%20Yokohama%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/sankeien/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kamakura-yokohama-chinatown",
+   "region": "kamakura",
+   "name": "Yokohama Chinatown",
+   "kind": "food",
+   "size": "short",
+   "why": "Japan's biggest Chinatown: steamed buns, soup dumplings and big round tables for seven",
+   "hours": "Open daily, including New Year",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e3201.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Yokohama%20Chinatown",
+    "photos": "https://www.google.com/search?tbm=isch&q=Yokohama%20Chinatown%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/yokohamachinatown/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "kamakura-shichirigahama",
+   "region": "kamakura",
+   "name": "Shichirigahama beach",
+   "kind": "nature",
+   "size": "short",
+   "why": "A long beach between Kamakura and Enoshima, with Fuji across the bay on clear winter evenings",
+   "hours": "Always open; sunset about 16:45 in early January",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.princehotels.com/kamakura/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Shichirigahama%20Beach%20Kamakura",
+    "photos": "https://www.google.com/search?tbm=isch&q=Shichirigahama%20Beach%20Kamakura%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/shichirigahama/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "south-tohoku-matsushima-cruise",
+   "region": "south-tohoku",
+   "name": "Matsushima bay cruise",
+   "kind": "nature",
+   "size": "main",
+   "why": "A seated 50-minute cruise among the pine-covered islands of one of Japan's three great views, 40 minutes from Sendai by the Senseki line",
+   "hours": "Hourly about 10:00–15:00 in winter; runs every day except in storms; a sunrise cruise has run on 1 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "About ¥1,500",
+   "booking": null,
+   "links": {
+    "source": "https://rurubu.jp/andmore/spot/80003790",
+    "map": "https://www.google.com/maps/search/?api=1&query=Matsushima%20Bay%20Cruise",
+    "photos": "https://www.google.com/search?tbm=isch&q=Matsushima%20Bay%20Cruise%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/matsushima/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "south-tohoku-zuigan-ji",
+   "region": "south-tohoku",
+   "name": "Zuigan-ji",
+   "kind": "sight",
+   "size": "short",
+   "why": "Date Masamune's Zen temple by the bay, with gold-screened rooms and cave shrines along the cedar approach",
+   "hours": "8:00 or 8:30 to about 15:30 in winter; from 8:30 on 1 Jan; the New Year's Eve bell from 21:00",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "About ¥1,000",
+   "booking": null,
+   "links": {
+    "source": "https://rurubu.jp/andmore/spot/80003789",
+    "map": "https://www.google.com/maps/search/?api=1&query=Zuiganji%20Matsushima",
+    "photos": "https://www.google.com/search?tbm=isch&q=Zuiganji%20Matsushima%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/瑞巌寺/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "south-tohoku-matsushima-oysters",
+   "region": "south-tohoku",
+   "name": "Grilled oysters in Matsushima",
+   "kind": "food",
+   "size": "meal",
+   "why": "Winter is oyster season: all-you-can-eat oyster huts and grilled oysters on the waterfront",
+   "hours": "The oyster huts close about 31 Dec–3 Jan",
+   "closures": [
+    {
+     "start": "2026-12-31",
+     "end": "2027-01-03",
+     "note": "Oyster huts closed (approximate)",
+     "source": "https://www.japan-guide.com/e/e5100.html"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5100.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Matsushima%20kaki%20goya%20oyster%20hut",
+    "photos": "https://www.google.com/search?tbm=isch&q=Matsushima%20kaki%20goya%20oyster%20hut%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "south-tohoku-zuihoden",
+   "region": "south-tohoku",
+   "name": "Zuihoden",
+   "kind": "sight",
+   "size": "short",
+   "why": "Date Masamune's gilded, painted mausoleum among tall cedars, up a flight of stone steps",
+   "hours": "9:00–16:20 in December and January; closed 31 Dec; on 1 Jan only the main hall opens, free",
+   "closures": [
+    {
+     "start": "2026-12-31",
+     "end": "2026-12-31",
+     "note": "Closed",
+     "source": "https://www.zuihoden.com/cms/wp-content/uploads/9cc50af006e01c3282c11cc789adfc34.pdf"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Stone steps up to the mausoleum",
+   "price": "¥570",
+   "booking": null,
+   "links": {
+    "source": "https://www.zuihoden.com/cms/wp-content/uploads/9cc50af006e01c3282c11cc789adfc34.pdf",
+    "map": "https://www.google.com/maps/search/?api=1&query=Zuihoden%20Sendai",
+    "photos": "https://www.google.com/search?tbm=isch&q=Zuihoden%20Sendai%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/瑞鳳殿/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "south-tohoku-yamadera",
+   "region": "south-tohoku",
+   "name": "Yamadera (Risshaku-ji)",
+   "kind": "sight",
+   "size": "main",
+   "why": "A mountain temple of halls clinging to cliffs, up 1,015 stone steps, an hour from Sendai on the Senzan line",
+   "hours": "Open in winter, about 8:30–15:00; the steps ice over, so cleats",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "1,015 icy steps; probably one for the others",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.visityamagata.jp/en/spot-yamagata-yamadera-en/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Yamadera%20Risshakuji",
+    "photos": "https://www.google.com/search?tbm=isch&q=Yamadera%20Risshakuji%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/yamadera/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "south-tohoku-pageant-of-starlight",
+   "region": "south-tohoku",
+   "name": "The Pageant of Starlight",
+   "kind": "event",
+   "size": "short",
+   "why": "The zelkova avenue of Jozenji-dori lit end to end with LEDs in December",
+   "hours": "Evenings in December; 2026 dates not yet announced (2025 ran 5–28 Dec; one guide expects 6–25 Dec)",
+   "closures": [
+    {
+     "start": "2026-12-26",
+     "end": "2027-01-09",
+     "note": "Probably over by 26 Dec; the end date is unconfirmed",
+     "source": "https://en.japantravel.com/miyagi/sendai-pageant-of-starlight/9040"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://en.japantravel.com/miyagi/sendai-pageant-of-starlight/9040",
+    "map": "https://www.google.com/maps/search/?api=1&query=Jozenji-dori%20Sendai",
+    "photos": "https://www.google.com/search?tbm=isch&q=Jozenji-dori%20Sendai%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/光のページェント/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "south-tohoku-gyutan",
+   "region": "south-tohoku",
+   "name": "Gyutan (grilled beef tongue)",
+   "kind": "food",
+   "size": "meal",
+   "why": "Sendai's own dinner: charcoal-grilled beef tongue with barley rice and oxtail soup; a whole 'beef tongue street' in the station",
+   "hours": "Station restaurants open late and most of New Year",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.japan-guide.com/e/e5100.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Gyutan%20dori%20Sendai%20Station",
+    "photos": "https://www.google.com/search?tbm=isch&q=Gyutan%20dori%20Sendai%20Station%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/牛タン/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "south-tohoku-umino-mori-aquarium",
+   "region": "south-tohoku",
+   "name": "Sendai Umino-Mori Aquarium",
+   "kind": "sight",
+   "size": "short",
+   "why": "A big modern aquarium by the port with a Sanriku sea tank, sea lions and penguins; New Year shows in past years",
+   "hours": "9:00–17:30; open every day including New Year",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://report.iko-yo.net/articles/29684",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sendai%20Umino-Mori%20Aquarium",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sendai%20Umino-Mori%20Aquarium%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/うみの杜水族館/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "south-tohoku-hatsuuri",
+   "region": "south-tohoku",
+   "name": "Sendai's New Year sale (Hatsuuri)",
+   "kind": "event",
+   "size": "short",
+   "why": "On 2 Jan the arcades open early and give customers gifts with what they buy, a custom from the Date domain more than 200 years old",
+   "hours": "2 Jan from early morning; busiest first thing",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://bestcalendar.jp/dates/kinenbi/767",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sendai%20Ichibancho%20arcade",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sendai%20Ichibancho%20arcade%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/仙台初売り/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "south-tohoku-zao-snow-monsters",
+   "region": "south-tohoku",
+   "name": "Zao snow monsters by ropeway",
+   "kind": "nature",
+   "size": "day_trip",
+   "why": "Trees frozen into white shapes at the top of the Zao ropeway, lit up on set evenings; about 1 h 30 from Sendai by bus",
+   "hours": "Light-up on set dates from about 27 Dec in past seasons, 17:00–21:00; 2026–27 dates not yet published. The trees are only half-formed before mid-January",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "About –10 °C at the top, crowded cars at night",
+   "price": "About ¥4,400 return",
+   "booking": null,
+   "links": {
+    "source": "https://tabi-mag.jp/zao-lightup/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Zao%20Ropeway%20Juhyo",
+    "photos": "https://www.google.com/search?tbm=isch&q=Zao%20Ropeway%20Juhyo%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/樹氷/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "morioka-motsu-ji",
+   "region": "morioka",
+   "name": "Motsu-ji garden, Hiraizumi",
+   "kind": "garden",
+   "size": "short",
+   "why": "A Pure Land garden of the 12th century round a large pond, flat and quiet under snow, 15 minutes from Chuson-ji",
+   "hours": "8:30–16:30 from 5 Nov to 4 Mar; open every day",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "About ¥700",
+   "booking": null,
+   "links": {
+    "source": "https://www.mapple.net/article/95607/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Motsuji%20Hiraizumi",
+    "photos": "https://www.google.com/search?tbm=isch&q=Motsuji%20Hiraizumi%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/毛越寺/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "morioka-geibikei-kotatsu-boat",
+   "region": "morioka",
+   "name": "Geibikei gorge kotatsu boat",
+   "kind": "nature",
+   "size": "main",
+   "why": "A flat-bottomed boat poled up a limestone gorge while you sit at a heated kotatsu table; the boatman sings on the way back",
+   "hours": "Runs all year; kotatsu boats December to February; stops in bad weather. About 1 h 30 from Morioka via Ichinoseki",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": "About ¥1,800",
+   "booking": null,
+   "links": {
+    "source": "https://rurubu.jp/andmore/spot/80002824",
+    "map": "https://www.google.com/maps/search/?api=1&query=Geibikei%20Gorge",
+    "photos": "https://www.google.com/search?tbm=isch&q=Geibikei%20Gorge%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/猊鼻渓/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "morioka-jajamen",
+   "region": "morioka",
+   "name": "Jajamen at Pairon",
+   "kind": "food",
+   "size": "meal",
+   "why": "Morioka's noodles with miso-meat paste; finish with chitantan, egg soup made in the bowl",
+   "hours": "Sources disagree on Sunday closing; closed over New Year",
+   "closures": [
+    {
+     "start": "2027-01-01",
+     "end": "2027-01-03",
+     "note": "Closed over New Year (approximate)",
+     "source": "https://www.mapple.net/article/94372/"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.gltjp.com/ja/directory/item/14253/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Pairon%20Morioka%20jajamen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Pairon%20Morioka%20jajamen%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "morioka-kogensha",
+   "region": "morioka",
+   "name": "Kogensha craft shop and café",
+   "kind": "market",
+   "size": "short",
+   "why": "A craft shop of Tohoku ironware, baskets and lacquer around a courtyard, with an old coffee house",
+   "hours": "10:00–18:00; closed on the 15th of each month and over New Year",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.gltjp.com/ja/directory/item/12576/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Kogensha%20Morioka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Kogensha%20Morioka%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/光原社/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "morioka-iwate-bank-red-brick",
+   "region": "morioka",
+   "name": "Iwate Bank Red Brick Building",
+   "kind": "museum",
+   "size": "short",
+   "why": "A 1911 red-brick bank by the river, by the architect of Tokyo station, with its old banking hall open to visit",
+   "hours": "10:00–17:00; closed Tuesdays and 29 Dec–3 Jan",
+   "closures": [
+    {
+     "start": "2026-12-29",
+     "end": "2027-01-03",
+     "note": "Year-end closure",
+     "source": "https://iwagin-akarengakan.jp/redbrick/pdf/20240919_usage_01.pdf"
+    }
+   ],
+   "closed_weekdays": [
+    "Tue"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://iwagin-akarengakan.jp/redbrick/pdf/20240919_usage_01.pdf",
+    "map": "https://www.google.com/maps/search/?api=1&query=Iwate%20Bank%20Red%20Brick%20Building%20Morioka",
+    "photos": "https://www.google.com/search?tbm=isch&q=Iwate%20Bank%20Red%20Brick%20Building%20Morioka%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "morioka-nyuto-tsurunoyu",
+   "region": "morioka",
+   "name": "Tsurunoyu at Nyuto Onsen",
+   "kind": "onsen",
+   "size": "day_trip",
+   "why": "Milky-blue outdoor baths at a thatched inn deep in the snow, by the Komachi to Tazawako and a bus",
+   "hours": "Day baths about 10:00–15:00; one source says closed to day visitors on Mondays; guests come first in winter",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "high",
+   "effort_note": "Icy paths and a mixed outdoor bath; probably one for the others",
+   "price": "About ¥700",
+   "booking": null,
+   "links": {
+    "source": "https://www.nap-camp.com/mag/spot/97299",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tsurunoyu%20Nyuto%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tsurunoyu%20Nyuto%20Onsen%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/鶴の湯/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "tsunagi-koiwai-farm",
+   "region": "tsunagi",
+   "name": "Koiwai Farm in the snow",
+   "kind": "nature",
+   "size": "short",
+   "why": "A 130-year-old dairy farm on the plain below Mt Iwate, about 20 minutes by taxi: snowy pastures, a restaurant and soft ice cream",
+   "hours": "Parts close in winter and its museum shuts 31 Dec–1 Jan; check what is open",
+   "closures": [
+    {
+     "start": "2026-12-31",
+     "end": "2027-01-01",
+     "note": "Museum closed; other parts may be too",
+     "source": "https://www.asoview.com/note/7306/"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.asoview.com/note/7306/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Koiwai%20Farm%20Makiba-en",
+    "photos": "https://www.google.com/search?tbm=isch&q=Koiwai%20Farm%20Makiba-en%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/小岩井農場/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "north-tohoku-aomori-museum-of-art",
+   "region": "north-tohoku",
+   "name": "Aomori Museum of Art",
+   "kind": "museum",
+   "size": "main",
+   "why": "A white museum dug into the ground, with Nara Yoshitomo's 8.5 m Aomori-ken dog and Chagall's huge stage backdrops",
+   "hours": "9:30–17:00; closed on the 2nd and 4th Mondays and around New Year (reopened on 2 Jan in past years)",
+   "closures": [
+    {
+     "start": "2026-12-28",
+     "end": "2027-01-01",
+     "note": "New Year closure in past years; check the 2026 dates",
+     "source": "https://allabout.co.jp/gm/gc/380873/"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://allabout.co.jp/gm/gc/380873/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Aomori%20Museum%20of%20Art",
+    "photos": "https://www.google.com/search?tbm=isch&q=Aomori%20Museum%20of%20Art%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/aomorimuseumofart/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "north-tohoku-sannai-maruyama",
+   "region": "north-tohoku",
+   "name": "Sannai-Maruyama Jomon site",
+   "kind": "museum",
+   "size": "short",
+   "why": "A 5,000-year-old village of rebuilt pit houses and a giant timber tower, with a museum, next to the art museum",
+   "hours": "9:00–17:00; closes around New Year (reopened on 2 Jan in past years)",
+   "closures": [
+    {
+     "start": "2026-12-30",
+     "end": "2027-01-01",
+     "note": "New Year closure in past years; check",
+     "source": "https://sannaimaruyama.pref.aomori.jp/wp-content/uploads/2026/03/f6dfbd1e9d4345de5913bc18db08af93.pdf"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://sannaimaruyama.pref.aomori.jp/wp-content/uploads/2026/03/f6dfbd1e9d4345de5913bc18db08af93.pdf",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sannai%20Maruyama%20Site%20Aomori",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sannai%20Maruyama%20Site%20Aomori%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/三内丸山遺跡/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "north-tohoku-nebuta-warasse",
+   "region": "north-tohoku",
+   "name": "Nebuta Museum Wa Rasse",
+   "kind": "museum",
+   "size": "short",
+   "why": "The giant lantern floats of Aomori's summer festival, lit up indoors by the station, with drums to try",
+   "hours": "9:00–18:00 in winter; closed 31 Dec–1 Jan",
+   "closures": [
+    {
+     "start": "2026-12-31",
+     "end": "2027-01-01",
+     "note": "Closed",
+     "source": "https://iko-yo.net/facilities/25025"
+    }
+   ],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://iko-yo.net/facilities/25025",
+    "map": "https://www.google.com/maps/search/?api=1&query=Nebuta%20Museum%20Wa%20Rasse%20Aomori",
+    "photos": "https://www.google.com/search?tbm=isch&q=Nebuta%20Museum%20Wa%20Rasse%20Aomori%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/ねぶたの家ワラッセ/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "north-tohoku-hirosaki-castle-park",
+   "region": "north-tohoku",
+   "name": "Hirosaki Castle park",
+   "kind": "garden",
+   "size": "main",
+   "why": "Moats, gates and an original keep (moved aside for wall repairs) under deep snow; free in winter",
+   "hours": "Park open all hours and free in winter; the keep is closed in winter",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Snowy paths; cleats",
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://banzokubiology.com/?p=12579",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hirosaki%20Castle%20Park",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hirosaki%20Castle%20Park%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/hirosakicastle/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "north-tohoku-hirosaki-apple-pie",
+   "region": "north-tohoku",
+   "name": "Hirosaki's apple-pie cafés",
+   "kind": "food",
+   "size": "meal",
+   "why": "The apple capital has dozens of cafés baking apple pie, and old Western houses to have it in",
+   "hours": "Most close 1 Jan; some reopen on 2 Jan",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://media.jreast.co.jp/articles/2774",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hirosaki%20apple%20pie%20cafe",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hirosaki%20apple%20pie%20cafe%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "north-tohoku-hakkoda-ropeway",
+   "region": "north-tohoku",
+   "name": "Hakkoda ropeway",
+   "kind": "nature",
+   "size": "main",
+   "why": "Ten minutes up into frost-covered trees and the forming snow monsters; about an hour from Aomori by bus",
+   "hours": "Winter 9:00–15:40 up, last down 16:00, every 15–20 minutes; stops in winds of 25 m/s or more; New Year running unconfirmed",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Very cold at the top; the lift and the warm station make it possible",
+   "price": "¥2,200 return",
+   "booking": null,
+   "links": {
+    "source": "https://hakkoda-ropeway.jp/en/faq/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hakkoda%20Ropeway",
+    "photos": "https://www.google.com/search?tbm=isch&q=Hakkoda%20Ropeway%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/八甲田ロープウェー/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "north-tohoku-sukayu-onsen",
+   "region": "north-tohoku",
+   "name": "Sukayu Onsen",
+   "kind": "onsen",
+   "size": "short",
+   "why": "A great wooden bathhouse in the snow; the mixed Sennin-buro has a women-only hour, 8:00–9:00, and smaller separate baths",
+   "hours": "Day baths 7:00–18:00 (Tamanoyu 9:00–17:00); about ¥1,000",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "moderate",
+   "effort_note": "Very hot, acidic water; Tamanoyu is the gentler choice",
+   "price": "About ¥1,000",
+   "booking": null,
+   "links": {
+    "source": "https://www.mapple.net/article/34185/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Sukayu%20Onsen",
+    "photos": "https://www.google.com/search?tbm=isch&q=Sukayu%20Onsen%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/酸ヶ湯温泉/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "north-tohoku-nokke-don",
+   "region": "north-tohoku",
+   "name": "Nokke-don at the Aomori fish market",
+   "kind": "food",
+   "size": "meal",
+   "why": "Buy a bowl of rice and tickets, then pick toppings stall by stall; grilled scallops and cooked things for Fernanda",
+   "hours": "Mornings; closed Tuesdays; New Year days change, so check",
+   "closures": [],
+   "closed_weekdays": [
+    "Tue"
+   ],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.nap-camp.com/mag/111131",
+    "map": "https://www.google.com/maps/search/?api=1&query=Aomori%20Gyosai%20Center%20Nokke-don",
+    "photos": "https://www.google.com/search?tbm=isch&q=Aomori%20Gyosai%20Center%20Nokke-don%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/のっけ丼/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "north-tohoku-a-factory",
+   "region": "north-tohoku",
+   "name": "A-Factory",
+   "kind": "market",
+   "size": "short",
+   "why": "A glass market hall by the station with a cider workshop, apple sweets and a food court",
+   "hours": "About 10:00–19:00; hours vary by shop",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://www.mapple.net/article/33670/",
+    "map": "https://www.google.com/maps/search/?api=1&query=A-FACTORY%20Aomori",
+    "photos": "https://www.google.com/search?tbm=isch&q=A-FACTORY%20Aomori%20winter",
+    "instagram": null,
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "north-tohoku-asamushi",
+   "region": "north-tohoku",
+   "name": "Asamushi Onsen and aquarium",
+   "kind": "onsen",
+   "size": "short",
+   "why": "A seaside onsen town 20 minutes from Aomori by train, with a foot bath by the station and an aquarium of local sea life",
+   "hours": "Aquarium 9:00–17:00, open all year; New Year days unconfirmed",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": null,
+   "links": {
+    "source": "https://sp.jorudan.co.jp/zoo_aqua/spot_0310.html",
+    "map": "https://www.google.com/maps/search/?api=1&query=Asamushi%20Aquarium",
+    "photos": "https://www.google.com/search?tbm=isch&q=Asamushi%20Aquarium%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/浅虫温泉/",
+    "video": null
+   },
+   "google_place_id": null
+  },
+  {
+   "id": "north-tohoku-stove-train",
+   "region": "north-tohoku",
+   "name": "Tsugaru Railway stove train",
+   "kind": "sight",
+   "size": "day_trip",
+   "why": "An old train heated by coal-burning stoves, on which you can grill dried squid, across the snowy Tsugaru plain from Goshogawara",
+   "hours": "December to March; 2026–27 timetable to be published",
+   "closures": [],
+   "closed_weekdays": [],
+   "effort_for_her": "low",
+   "effort_note": null,
+   "price": null,
+   "booking": "A stove-train ticket on top of the fare",
+   "links": {
+    "source": "https://tabi-mag.jp/tsugaru-stovetrain/",
+    "map": "https://www.google.com/maps/search/?api=1&query=Tsugaru%20Railway%20Stove%20Train",
+    "photos": "https://www.google.com/search?tbm=isch&q=Tsugaru%20Railway%20Stove%20Train%20winter",
+    "instagram": "https://www.instagram.com/explore/tags/ストーブ列車/",
+    "video": null
+   },
+   "google_place_id": null
   }
  ],
  "versions": [
