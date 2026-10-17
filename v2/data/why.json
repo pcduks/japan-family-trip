@@ -1,100 +1,264 @@
 {
   "_about": "The reasoning behind the route, for the Route page. Every claim comes from docs/research (00-synthesis, 01-events, 02-closures, 03-transport, 05-north-west, 06-south-west-hokkaido, 07-lodging, 08-pregnancy; researched 1 Oct 2026) and docs/research/plan-doc (12–13 Oct 2026). Sources are the ones those files cite.",
-  "researched": { "catalog": "2026-10-01", "plan": "2026-10-13", "reports": 9, "experience_cards": 156 },
+  "researched": {
+    "catalog": "2026-10-01",
+    "plan": "2026-10-13",
+    "reports": 9,
+    "experience_cards": 156
+  },
   "intro": "Japan has 47 prefectures and hundreds of towns worth a week. We looked at the whole country for these exact 21 days: what is open, what is closed, which trains sell out, where the snow is, what is sensible at 29–32 weeks of pregnancy, and which places can sleep seven. Twenty-six regions made the long list. The New Year calendar and the pregnancy ruled most of them out before taste came into it. Tap any area to see what it is known for, what it is like in late December and early January, and why it is in or out.",
   "facts": [
     {
       "title": "New Year closes most of Japan for a week",
-      "text": "Between 29 Dec and 3 Jan museums, castles, markets and most independent restaurants close. Shrines, temples, onsen towns and department-store food halls (from 2 Jan) stay open. Trains are fullest on 27–30 Dec leaving Tokyo and 2–4 Jan coming back; JR East puts the peaks on 30 Dec and 3 Jan. The two calm travel days are 31 Dec and 1 Jan. And 9 Jan starts a three-day weekend, so the last night should be close to the airport. That gives any sensible trip the same shape: Tokyo first, move before the 28th, sit still somewhere self-sufficient over New Year, move on the quiet day, finish within reach of Tokyo.",
+      "text": "Between 29 Dec and 3 Jan museums, castles, markets and most independent restaurants close. Shrines, temples, onsen towns and department-store food halls (from 2 Jan) stay open. Trains are fullest on 27–30 Dec leaving Tokyo and 2–4 Jan coming back; JR East puts the peaks on 30 Dec and 3 Jan. The two calm travel days are 31 Dec and 1 Jan. And 9 Jan starts a three-day weekend, so the last night should be close to the airport. That gives any sensible trip the same shape: Tokyo first, the small towns before the crowds leave the cities on 29–30 Dec, New Year somewhere big enough to fill the closed days, and the last night within reach of Haneda. 31 Dec and 1 Jan are calm days to travel. In our route the still place is Kyoto: we arrive on 30 Dec on reserved seats, on a train running against the main flow (to check), and stay until 5 Jan.",
       "sources": [
-        { "label": "JR East year-end forecasts (research 03)", "url": "https://www.jreast.co.jp/" },
-        { "label": "watabi: New Year opening guide", "url": "https://watabi.org/en/articles/japan-new-year-opening-guide" },
-        { "label": "japan-guide: New Year closures", "url": "https://www.japan-guide.com/e/e2276.html" },
-        { "label": "Nozomi all-reserved 25 Dec–5 Jan (JR Central)", "url": "https://smart-ex.jp/en/topics/detail/?id=756" }
+        {
+          "label": "JR East year-end forecasts (research 03)",
+          "url": "https://www.jreast.co.jp/"
+        },
+        {
+          "label": "watabi: New Year opening guide",
+          "url": "https://watabi.org/en/articles/japan-new-year-opening-guide"
+        },
+        {
+          "label": "japan-guide: New Year closures",
+          "url": "https://www.japan-guide.com/e/e2276.html"
+        },
+        {
+          "label": "Nozomi all-reserved 25 Dec–5 Jan (JR Central)",
+          "url": "https://smart-ex.jp/en/topics/detail/?id=756"
+        }
       ]
     },
     {
       "title": "Fernanda will be 29 to 32 weeks pregnant",
       "text": "Standard advice for the third trimester, and what her doctor and the airline ask for, shape the trip more than anything else: keep moving days to about four hours door to door with one long train, take it easy the day after a long move, walk a comfortable distance with places to sit, avoid long queues and standing events, avoid icy paths and stone stairs without a handrail, use onsen only in a private bath, short and not too hot, and stay within reach of a hospital with 24-hour obstetrics. In practice that takes out bus-only mountain villages for the nights, long domestic flights, Hokkaido's icy pavements and the famous temple-bell queues. It is also why most stays are two nights or more and the afternoons are kept light. None of this is a rule she has to follow; it is the default, and she decides on the day.",
       "sources": [
-        { "label": "ACOG: air travel during pregnancy", "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/08/air-travel-during-pregnancy" },
-        { "label": "Environment Ministry: onsen and pregnancy (PDF)", "url": "https://www.env.go.jp/content/900492871.pdf" },
-        { "label": "JNTO: hospitals with obstetrics by prefecture", "url": "https://www.jnto.go.jp/emergency/eng/mi_guide.html" },
-        { "label": "Singapore Airlines pregnancy rules (certificate after 28 weeks)", "url": "https://www.singaporeair.com/en_UK/sg/travel-info/special-assistance/expectant-mothers/" }
+        {
+          "label": "ACOG: air travel during pregnancy",
+          "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/08/air-travel-during-pregnancy"
+        },
+        {
+          "label": "Environment Ministry: onsen and pregnancy (PDF)",
+          "url": "https://www.env.go.jp/content/900492871.pdf"
+        },
+        {
+          "label": "JNTO: hospitals with obstetrics by prefecture",
+          "url": "https://www.jnto.go.jp/emergency/eng/mi_guide.html"
+        },
+        {
+          "label": "Singapore Airlines pregnancy rules (certificate after 28 weeks)",
+          "url": "https://www.singaporeair.com/en_UK/sg/travel-info/special-assistance/expectant-mothers/"
+        }
       ]
     },
     {
       "title": "Winter helps in some places and not in others",
-      "text": "On the Sea of Japan side (Shirakawa-go, Takayama, the Nagano hills) snow on the ground is near-certain by 25 Dec. Kanazawa and the cities get cold with some snow. The Fuji side is dry, sunny and at its clearest of the year: Fuji is fully visible on about six January mornings in ten. The famous winter events all come after we leave: the Shirakawa-go light-up (11–31 Jan), the Sapporo and Otaru snow festivals (February), the Zao snow monsters at full size (late January), Ginzan Onsen at its best. Chasing them in our dates means cold without the show. So the route goes where December actually delivers: thatched houses in snow on the way to Takayama, crab at its peak in Kanazawa, a ryokan New Year, and Fuji in its clearest month.",
+      "text": "On the Sea of Japan side (Shirakawa-go, Takayama, the Nagano hills) snow on the ground is near-certain by 25 Dec. Kanazawa and the cities get cold with some snow. The Fuji side is dry, sunny and at its clearest of the year: Fuji is fully visible on about six January mornings in ten. The famous winter events all come after we leave: the Shirakawa-go light-up (11–31 Jan), the Sapporo and Otaru snow festivals (February), the Zao snow monsters at full size (late January), Ginzan Onsen at its best. Chasing them in our dates means cold without the show. So the route goes where December actually delivers: thatched houses in snow on the way to Takayama, crab at its peak in Kanazawa, snow monkeys in Nagano, Kyoto's New Year fire and bells, and Fuji in its clearest month.",
       "sources": [
-        { "label": "isfujivisible: Fuji in winter, 1991–2025 statistics", "url": "https://isfujivisible.com/blog/mount-fuji-in-winter" },
-        { "label": "Shirakawa-go light-up dates 2027", "url": "https://www.japan-guide.com/e/e5956.html" },
-        { "label": "Sapporo White Illumination and festival dates", "url": "https://www.sapporo.travel/" },
-        { "label": "Kaga crab season (Nov–Dec)", "url": "https://www.japan.travel/en/articles-from-2020/kobakogani-snow-crab-of-kaga" }
+        {
+          "label": "isfujivisible: Fuji in winter, 1991–2025 statistics",
+          "url": "https://isfujivisible.com/blog/mount-fuji-in-winter"
+        },
+        {
+          "label": "Shirakawa-go light-up dates 2027",
+          "url": "https://www.japan-guide.com/e/e5956.html"
+        },
+        {
+          "label": "Sapporo White Illumination and festival dates",
+          "url": "https://www.sapporo.travel/"
+        },
+        {
+          "label": "Kaga crab season (Nov–Dec)",
+          "url": "https://www.japan.travel/en/articles-from-2020/kobakogani-snow-crab-of-kaga"
+        }
       ]
     }
   ],
   "route": {
     "intro": "Put those three together and the route almost draws itself. Here is why each stop is where it is, in this order.",
     "steps": [
-      { "region": "tokyo", "title": "Tokyo first, 4 nights", "text": "The flights land here. The first days absorb the jet lag and give the four first-timers the classic city while the Christmas lights are still on (they end 25 Dec). Museums are open before the 29th; Monday the 21st is their closing day, so that becomes the market-and-gardens day." },
-      { "region": "kanazawa", "title": "Kanazawa, 4 nights, done by the 27th", "text": "Two and a half hours on the Hokuriku shinkansen, booked before the 27 Dec rush. Kanazawa is the slow middle of the trip: a whole house with a kitchen and a washing machine, the 21st Century Museum, Kenroku-en with its snow ropes, the geisha and samurai districts, and the female kobako crab in the last week of its season. Museums close on Monday 28 Dec and from the 29th, so four nights put the three museum days before that." },
-      { "region": "shirakawago", "title": "Shirakawa-go on the way, not as a base", "text": "The Nohi bus from Kanazawa stops in the thatched village for two and a half hours and continues to Takayama. No farmhouse takes a group of seven over New Year, the inns have steep stairs and shared baths, and the village light-ups are in late January. A stop on the bus gives the snow village without any of that." },
-      { "region": "takayama", "title": "Takayama, 2 nights", "text": "The old town, the morning market, the sake breweries and Hida beef fill one full day. The Jinya closes on 29 Dec, so we see it on arrival. Two nights, not more: the town is a one-day place, and a third day while its museums are shut would be slow." },
-      { "region": "gero", "title": "Gero for New Year's Eve, 2 nights", "text": "The move from Takayama is 45 minutes, so the two worst travel days of the year hold no long train for us. A ryokan includes the New Year's Eve dinner and the New Year breakfast on 1 Jan, which matters because restaurants close. Gero is flat, has footbaths, and sits on the line to Kyoto." },
-      { "region": "kyoto", "title": "Kyoto on New Year's Day, 4 nights", "text": "1 Jan is the quiet day on the trains, so that is when we go. Kyoto's museums reopen on 2 Jan, the city is in its New Year rituals, and Nara goes on Monday the 4th when Kyoto's museums close again. A house with a living room covers the evenings while most restaurants are still shut." },
-      { "region": "kawaguchiko", "title": "Kawaguchiko, 2 nights, Fuji across the lake", "text": "From the north shore of Lake Kawaguchi, Fuji stands straight across the water with nothing in the way: from the room, the promenade, the ropeway and the boat. Early January is its clearest month, and the place is new for all seven of us. The move from Kyoto is the longest of the trip, about four and a quarter hours by shinkansen to Mishima and the Fujikyu bus, on 5 Jan when the New Year rush is over. A lake hotel with beds and a lift, one full day for the ropeway and the boat, two dawns to catch the mountain clear, and a hospital with obstetrics in Fujiyoshida. Then two hours on the Fuji Excursion train straight into Shinjuku, which keeps the last nights near the airport." },
-      { "region": "tokyo", "title": "Tokyo again, 2 nights", "text": "The museums that were closed in December (the Musée d'Orsay show, the Tokyo National Museum open late on Friday 8 Jan), the shopping, the farewell dinner, and a buffer before a Saturday flight on a holiday weekend." }
+      {
+        "region": "tokyo",
+        "title": "Tokyo first, 4 nights",
+        "text": "The flights land here. The first days absorb the jet lag and give the first-timers the classic city while the Christmas lights are up. Monday the 21st is the museums' closing day, so that becomes the market-and-gardens day. On the 23rd the big cases go ahead to Kyoto, and we travel the next week with cabin bags."
+      },
+      {
+        "region": "yudanaka",
+        "title": "Yudanaka and Shibu Onsen, 2 nights",
+        "text": "About 80 minutes on the Hokuriku shinkansen to Nagano, a stop at Zenko-ji, then 45 minutes on the local express. Christmas Eve is a ryokan dinner and Shibu's lantern lane; the next morning, the snow monkeys, and in the afternoon, Obuse. Two nights fill both days, and the inns are easier to find before Christmas than at New Year."
+      },
+      {
+        "region": "kanazawa",
+        "title": "Kanazawa, 2 nights",
+        "text": "From Nagano the Kagayaki takes about 65 minutes, and the train runs between Nagano and Kanazawa, not out of Tokyo. Two full days: Kenroku-en and the 21st Century Museum (open late on Saturday), then Omicho market, Higashi Chaya and the D.T. Suzuki Museum. We leave on Monday 28 Dec, the museums' closing day."
+      },
+      {
+        "region": "shirakawago",
+        "title": "Shirakawa-go on the way, not as a base",
+        "text": "The Nohi bus from Kanazawa stops in the thatched village for about three hours and goes on to Takayama. No farmhouse takes a group of seven over New Year, the houses have ladder-like stairs, and the light-ups are in late January. A stop on the bus gives us the snow village without any of that."
+      },
+      {
+        "region": "takayama",
+        "title": "Takayama, 2 nights",
+        "text": "The old town at dusk on arrival, then one full day: the morning market, the sake breweries, the festival floats and the Hida Folk Village. The Jinya closes from 29 Dec. Takayama Red Cross Hospital is about 10 minutes from the station, which matters from 29 Dec."
+      },
+      {
+        "region": "kyoto",
+        "title": "Kyoto for New Year, 6 nights",
+        "text": "On 30 Dec the Hida train to Nagoya and the Nozomi to Kyoto take about 3.5 hours, with reserved Green Car seats. The train runs away from the crowds heading home (our reading, to check). Then we stay put: New Year's Eve in Higashiyama, a slow New Year's Day, and three days of museums and day trips while the rest of Japan travels home. Kyoto University Hospital and the Japan Baptist Hospital are close."
+      },
+      {
+        "region": "kawaguchiko",
+        "title": "Kawaguchiko, 2 nights, Fuji across the lake",
+        "text": "From the north shore of Lake Kawaguchi, Fuji stands straight across the water. Early January is its clearest month, and the lake is new for all seven of us. The move from Kyoto is the longest of the trip, about four and a quarter hours by shinkansen to Mishima and the bus, so the first afternoon is only the shore. Hakone is the alternative, about three hours from Kyoto."
+      },
+      {
+        "region": "tokyo",
+        "title": "Tokyo again, 2 nights",
+        "text": "Two hours on the Fuji Excursion train into Shinjuku. Then the museums that were closed in December (the Musée d'Orsay show, the Tokyo National Museum open late on Friday 8 Jan), a single act of kabuki, the farewell dinner, and a night near Haneda before a Saturday flight on a holiday weekend."
+      }
     ],
     "sources": [
-      { "label": "Fujikyu: Mishima to Lake Kawaguchi by bus", "url": "https://www.fujilake.co.jp/english/access.html" },
-      { "label": "isfujivisible: Hakone or Kawaguchiko", "url": "https://isfujivisible.com/blog/hakone-vs-kawaguchiko" },
-      { "label": "japan-guide: Takayama in a day", "url": "https://www.japan-guide.com/e/e5912_takayama_full.html" },
-      { "label": "Nohi bus Kanazawa–Shirakawa-go–Takayama", "url": "https://www.nouhibus.co.jp/english/" },
-      { "label": "Japan Ryokan Guide: two nights at one ryokan", "url": "https://www.japanryokanguide.com/en/blog/how-many-nights-ryokan-itinerary" }
+      {
+        "label": "Fujikyu: Mishima to Lake Kawaguchi by bus",
+        "url": "https://www.fujilake.co.jp/english/access.html"
+      },
+      {
+        "label": "isfujivisible: Hakone or Kawaguchiko",
+        "url": "https://isfujivisible.com/blog/hakone-vs-kawaguchiko"
+      },
+      {
+        "label": "japan-guide: Takayama in a day",
+        "url": "https://www.japan-guide.com/e/e5912_takayama_full.html"
+      },
+      {
+        "label": "Nohi bus Kanazawa–Shirakawa-go–Takayama",
+        "url": "https://www.nouhibus.co.jp/english/"
+      },
+      {
+        "label": "Japan Ryokan Guide: two nights at one ryokan",
+        "url": "https://www.japanryokanguide.com/en/blog/how-many-nights-ryokan-itinerary"
+      }
     ]
   },
   "for_whom": [
     {
       "who": "João, Carolina and Tatiana, first time in Japan",
-      "ids": ["brother", "sister_in_law", "sister"],
-      "text": "You get the three everyone should see first: Tokyo, Kyoto and Fuji. On top of that, three things most first visits miss: a snow village, a samurai city with the best garden in the country, and a real ryokan New Year with the temple bell at midnight. If you would rather see more and rest less, the route called “Everything, including the snow baths and Hiroshima” adds both."
+      "ids": [
+        "brother",
+        "sister_in_law",
+        "sister"
+      ],
+      "text": "You get the three everyone should see first: Tokyo, Kyoto and Fuji. On top of that, things most first visits miss: wild monkeys in the snow, a samurai city with one of the best gardens in the country, a thatched village, and New Year's Eve in Kyoto with the sacred fire and the temple bells. If you want a day on the slopes, the ski-day route adds one at Shiga Kogen."
     },
     {
       "who": "Carlos and Nadir, first time",
-      "ids": ["father", "mother"],
-      "text": "The classic sights without the exhaustion. One big thing a day, done in the morning when the sights are quietest; a long lunch; the afternoon free to keep going or not. Beds and lifts wherever we sleep, rooms with beds at the ryokan, and no day over about 10 km unless you want it."
+      "ids": [
+        "father",
+        "mother"
+      ],
+      "text": "The classic sights without the exhaustion. One big thing a day, done in the morning when the sights are quietest; a long lunch; the afternoon free to keep going or not. Beds and lifts wherever we sleep, and no day over about 10 km unless you want it. Between 24 and 30 Dec we move every two days with small bags, while the big cases wait for us in Kyoto."
     },
     {
       "who": "Pedro and Fernanda, who know Tokyo and Kyoto",
-      "ids": ["pedro", "wife"],
-      "text": "Five of the seven stops are new to you: Kanazawa, Shirakawa-go, Takayama, Gero and Kawaguchiko. You have done Hakone, so the Fuji stop is the lake instead, with the mountain straight across the water, new for everyone. The two cities you know are the two the first-timers need most, and in Kyoto you get the New Year rites you have not seen."
+      "ids": [
+        "pedro",
+        "wife"
+      ],
+      "text": "Four of the seven bases are new to you: Yudanaka, Kanazawa, Takayama and Kawaguchiko, with Shirakawa-go on the way. You have done Hakone, so the Fuji stop is the lake instead, with the mountain straight across the water. Kyoto gets the most nights because the first-timers need it, and New Year's Eve there is new to you: the Okera fire, the bells and the walk home."
     },
     {
       "who": "Fernanda, at 29–32 weeks",
-      "ids": ["wife"],
-      "text": "The route was shaped around you: moves of about four hours or less (the longest, Kyoto to the lake, is about four and a quarter), one long journey a day, an easy day after each, private baths, light afternoons, and the right to drop any plan on the day. None of it is binding; it is the default. The one place the route goes against the medical advice is New Year's Eve: the advice is to spend those nights in a city with a perinatal centre, and Gero is a small spa town 1.5–2.5 h from Kyoto. We accepted that for the ryokan New Year. If your doctor would rather not, the clean alternative is the Kyoto house from 30 Dec, and the gentler alternative keeps the night in Takayama instead."
+      "ids": [
+        "wife"
+      ],
+      "text": "The route was shaped around you: moves of about four hours or less (the one exception is Kyoto to the lake on 5 Jan, about four and a quarter; Hakone instead is about three), one long train a day, a light afternoon after each long move, Green Car seats, private baths, and the right to drop any plan on the day. Every night from 29 Dec to 3 Jan is in Takayama or Kyoto, close to a hospital with obstetrics. On New Year's Eve you may prefer the daytime bell and the early fire, and to be in bed by 21:00. None of it is binding; it is the default."
     }
   ],
   "not_chosen": {
     "intro": "Everything below is good. It is out because of travel time, the New Year calendar or the pregnancy. Several come back as other routes to look at.",
     "items": [
-      { "region": "hakone", "why": "The other Fuji base: five art museums for a cloudy day, ryokan with a private bath in every room, an hour closer to Kyoto and 80 minutes from Shinjuku. Pedro and Fernanda have done it, and Fuji shows over the ridges rather than straight across the water.", "comeback": "the Hakone alternative" },
-      { "region": "yudanaka", "why": "Snow monkeys and an onsen street, but it costs a Tokyo day and Kanazawa's rest day, and the forest path can be icy.", "comeback": "the snow monkeys alternative" },
-      { "region": "okayama", "why": "Naoshima's art and Korakuen fit after Kyoto, at the price of Kawaguchiko and the Fuji mornings.", "comeback": "the art-instead-of-Fuji alternative" },
-      { "region": "kinosaki", "why": "A lovely crab-and-baths town, but it repeats Kanazawa's crab and Gero's onsen, and the way home is 5–6 hours.", "comeback": "the crab-and-onsen alternative" },
-      { "region": "okuhida", "why": "Open-air baths in deep snow and a ropeway to 2,156 m, but it makes New Year's Day a five-hour travel day and the summit deck is icy.", "comeback": "a day trip from Takayama, or the fuller alternative" },
-      { "region": "hiroshima", "why": "Important history and Miyajima, but a long westward leg and two more nights.", "comeback": "the fuller alternative only" },
-      { "region": "hokkaido", "why": "The best snow and a flight each way, but the Sapporo and Otaru festivals are in February, the ice underfoot is the one thing to avoid at 30 weeks, and it is the most expensive lodging in Japan at New Year.", "comeback": "its own trip" },
-      { "region": "ginzan", "why": "The most photographed snowy onsen street, but far north, day visits are capped, and its few small inns book a year ahead.", "comeback": "no" },
-      { "region": "kusatsu", "why": "A steaming hot-water field, but the water is too hot and acidic for Fernanda and it is a long way from Kyoto.", "comeback": "no" },
-      { "region": "koyasan", "why": "A temple night with the dawn fire ritual is memorable, but the lodgings are cold, the beds are floor futons and the paths are icy.", "comeback": "no" },
-      { "region": "kyushu", "why": "Yufuin, Kurokawa and Takachiho need a car or a bus that runs one to three times a day; the Aso crater is closed; sand baths refuse pregnant guests.", "comeback": "its own trip" },
-      { "region": "north-tohoku", "why": "Longer transfers, colder, fewer houses for seven, and its festivals are in February.", "comeback": "its own trip" },
-      { "region": "shikoku", "why": "The Iya vine bridges close December to March.", "comeback": "no" },
-      { "region": "okinawa", "why": "Flights and boats; boats are not advised for Fernanda.", "comeback": "no" },
-      { "region": "nikko", "why": "Lacquered shrines in a cedar forest, but hundreds of icy stone stairs in winter.", "comeback": "a day trip from Tokyo at the end" },
-      { "region": "kamakura", "why": "The Great Buddha and the sea, an easy day; the hill temples have stairs and 1–3 Jan is mobbed.", "comeback": "a day trip from Tokyo" }
+      {
+        "region": "gero",
+        "why": "One of Japan's three great hot springs, but the town is a 1970s resort with nothing on for New Year's Eve, and the baths are what Fernanda can enjoy least.",
+        "comeback": "the Gero New Year alternative"
+      },
+      {
+        "region": "hakone",
+        "why": "The other Fuji base: five art museums for a cloudy day, ryokan with a private bath in every room, an hour closer to Kyoto and 80 minutes from Shinjuku. Pedro and Fernanda have done it, and Fuji shows over the ridges rather than straight across the water.",
+        "comeback": "the Hakone alternative"
+      },
+      {
+        "region": "okayama",
+        "why": "Naoshima's art and Korakuen fit after Kyoto, at the price of Kawaguchiko and the Fuji mornings.",
+        "comeback": "the art-instead-of-Fuji alternative"
+      },
+      {
+        "region": "kinosaki",
+        "why": "A lovely crab-and-baths town, but it repeats Kanazawa's crab and Gero's onsen, and the way home is 5–6 hours.",
+        "comeback": "the crab-and-onsen alternative"
+      },
+      {
+        "region": "okuhida",
+        "why": "Open-air baths in deep snow and a ropeway to 2,156 m, but it makes New Year's Day a five-hour travel day and the summit deck is icy.",
+        "comeback": "a day trip from Takayama, or the fuller alternative"
+      },
+      {
+        "region": "hiroshima",
+        "why": "Important history and Miyajima, but a long westward leg and two more nights.",
+        "comeback": "the fuller alternative only"
+      },
+      {
+        "region": "hokkaido",
+        "why": "The best snow and a flight each way, but the Sapporo and Otaru festivals are in February, the ice underfoot is the one thing to avoid at 30 weeks, and it is the most expensive lodging in Japan at New Year.",
+        "comeback": "its own trip"
+      },
+      {
+        "region": "ginzan",
+        "why": "The most photographed snowy onsen street, but far north, day visits are capped, and its few small inns book a year ahead.",
+        "comeback": "no"
+      },
+      {
+        "region": "kusatsu",
+        "why": "A steaming hot-water field, but the water is too hot and acidic for Fernanda and it is a long way from Kyoto.",
+        "comeback": "no"
+      },
+      {
+        "region": "koyasan",
+        "why": "A temple night with the dawn fire ritual is memorable, but the lodgings are cold, the beds are floor futons and the paths are icy.",
+        "comeback": "no"
+      },
+      {
+        "region": "kyushu",
+        "why": "Yufuin, Kurokawa and Takachiho need a car or a bus that runs one to three times a day; the Aso crater is closed; sand baths refuse pregnant guests.",
+        "comeback": "its own trip"
+      },
+      {
+        "region": "north-tohoku",
+        "why": "Longer transfers, colder, fewer houses for seven, and its festivals are in February.",
+        "comeback": "its own trip"
+      },
+      {
+        "region": "shikoku",
+        "why": "The Iya vine bridges close December to March.",
+        "comeback": "no"
+      },
+      {
+        "region": "okinawa",
+        "why": "Flights and boats; boats are not advised for Fernanda.",
+        "comeback": "no"
+      },
+      {
+        "region": "nikko",
+        "why": "Lacquered shrines in a cedar forest, but hundreds of icy stone stairs in winter.",
+        "comeback": "a day trip from Tokyo at the end"
+      },
+      {
+        "region": "kamakura",
+        "why": "The Great Buddha and the sea, an easy day; the hill temples have stairs and 1–3 Jan is mobbed.",
+        "comeback": "a day trip from Tokyo"
+      }
     ]
   },
   "trust": {
@@ -104,12 +268,21 @@
       "Most 2026–27 year-end calendars were not published in October, so many opening hours follow the 2025–26 pattern. Where a date is confirmed (the Nozomi all-reserved window, Takashimaya's 1–2 Jan closure, the Ekiden dates) it says so. We recheck everything in December.",
       "Prices are estimates: lodging at the mid tier for seven with a New Year uplift, fares for reserved seats, food by pace. Treat the budget as plus or minus 15 percent.",
       "Every place, restaurant and opening time links to the page it came from. If a claim has no link, treat it as our opinion.",
-      "The taste calls are ours: that four nights in Kanazawa beat five in Takayama, that a ryokan New Year beats a city one. The facts narrowed the field; those calls are for the family to make together."
+      "The taste calls are ours: that two nights each in Nagano, Kanazawa and Takayama beat four in one of them, and that Kyoto's New Year beats a quiet ryokan one. The facts narrowed the field; those calls are for the family to make together."
     ],
     "links": [
-      { "label": "Every detail, tab by tab", "href": "/plan" },
-      { "label": "Why each stay is this long", "href": "/plan?tab=nights" },
-      { "label": "What we left out, in detail", "href": "/missing" }
+      {
+        "label": "Every detail, tab by tab",
+        "href": "/plan"
+      },
+      {
+        "label": "Why each stay is this long",
+        "href": "/plan?tab=nights"
+      },
+      {
+        "label": "What we left out, in detail",
+        "href": "/missing"
+      }
     ]
   }
 }

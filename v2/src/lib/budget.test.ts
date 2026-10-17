@@ -24,7 +24,7 @@ describe("budget per couple", () => {
   });
 
   it("New Year nights at a ryokan carry the uplift", () => {
-    const gero = plan.stays.find((s) => s.region === "gero")!;
+    const gero = data.versions.find((v) => v.id === "gero-new-year")!.stays.find((s) => s.region === "gero")!;
     const c = stayCost(gero);
     expect(c.lodging).toBe("ryokan");
     expect(c.upliftNights).toBe(2); // nights of 30 and 31 Dec
@@ -50,12 +50,12 @@ describe("lodging data", () => {
     for (const r of regions) expect(lodgingFor(r), r).not.toBeNull();
   });
 
-  it("search links carry the dates and six guests", () => {
-    const stay = plan.stays.find((s) => s.region === "kanazawa")!;
-    const links = searchLinks(stay, data.regions.find((r) => r.id === "kanazawa"));
+  it("search links carry the dates and the seven of us", () => {
+    const stay = plan.stays.find((s) => s.region === "kyoto")!;
+    const links = searchLinks(stay, data.regions.find((r) => r.id === "kyoto"));
     const booking = links.find((l) => l.label === "Booking.com")!;
-    expect(booking.url).toContain("checkin=2026-12-24");
-    expect(booking.url).toContain("group_adults=6");
+    expect(booking.url).toContain("checkin=2026-12-30");
+    expect(booking.url).toContain("group_adults=7");
     expect(links.some((l) => l.label === "Airbnb")).toBe(true);
   });
 });

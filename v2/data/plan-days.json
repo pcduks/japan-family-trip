@@ -1,111 +1,738 @@
 {
   "version": "plan",
-  "source": "docs/research/plan-doc/01-the-plan.md, day-by-day table (13 Oct 2026)",
+  "source": "docs/research/route-review-2026-10-17.md §4.3 (17 Oct 2026)",
   "days": [
-    { "date": "2026-12-20", "kind": "Arrive", "title": "Check in, a short walk, an easy dinner nearby", "items": [] },
-    { "date": "2026-12-21", "kind": "Explore", "title": "Museums are closed on Mondays, so: Tsukiji outer market, Hama-rikyu garden, Ginza and a depachika food hall",
+    {
+      "date": "2026-12-20",
+      "kind": "Arrive",
+      "title": "Land at Haneda, van to the hotel, the Marunouchi lights, an easy dinner",
       "items": [
-        { "place_id": "tokyo-toyosu-auction", "slot": "early", "crew": "early", "note": "About 5am, with a guide" },
-        { "place_id": "tokyo-tsukiji", "slot": "morning", "crew": "everyone" },
-        { "place_id": "tokyo-hamarikyu", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": null, "slot": "afternoon", "crew": "everyone", "note": "Ginza and a depachika food hall" }
-      ] },
-    { "date": "2026-12-22", "kind": "Explore", "title": "Nezu Museum and garden (book a time slot), Meiji Jingu, Harajuku, an izakaya night",
+        {
+          "place_id": null,
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Van from Haneda to the hotel"
+        },
+        {
+          "place_id": "tokyo-illuminations",
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Marunouchi, a short flat walk"
+        },
+        {
+          "place_id": null,
+          "slot": "rest",
+          "crew": "everyone",
+          "note": "An easy dinner near the hotel; Fernanda rests"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-21",
+      "kind": "Explore",
+      "title": "Museums are closed on Mondays, so: Tsukiji outer market, Hama-rikyu garden, Ginza food halls",
       "items": [
-        { "place_id": "tokyo-meiji", "slot": "morning", "crew": "everyone" },
-        { "place_id": "tokyo-nezu", "slot": "afternoon", "crew": "everyone", "note": "Book a time slot" },
-        { "place_id": null, "slot": "evening", "crew": "everyone", "note": "Harajuku, then an izakaya night" }
-      ] },
-    { "date": "2026-12-23", "kind": "Explore", "title": "Edo-Tokyo Museum (reopened 2026) and Sumida Hokusai Museum, then Asakusa. Send the big bags ahead",
+        {
+          "place_id": "tokyo-toyosu-auction",
+          "slot": "early",
+          "crew": "early",
+          "note": "About 5am, with a guide"
+        },
+        {
+          "place_id": "tokyo-tsukiji",
+          "slot": "morning",
+          "crew": "everyone"
+        },
+        {
+          "place_id": "tokyo-hamarikyu",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Flat, with a teahouse for a seated break"
+        },
+        {
+          "place_id": null,
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Ginza and a department-store food hall"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-22",
+      "kind": "Explore",
+      "title": "Asakusa and Senso-ji early, the Western Art museum in Ueno, Skytree at dusk",
       "items": [
-        { "place_id": "tokyo-edo-tokyo", "slot": "morning", "crew": "everyone" },
-        { "place_id": "tokyo-hokusai", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": "tokyo-asakusa", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": null, "slot": "evening", "crew": "everyone", "note": "Send the suitcases ahead to Kanazawa (takkyubin)" }
-      ] },
-    { "date": "2026-12-24", "kind": "Move · 2.5 h", "title": "Hokuriku shinkansen; afternoon at the 21st Century Museum (open to 18:00)",
-      "items": [ { "place_id": "kz-21c", "slot": "afternoon", "crew": "everyone" } ] },
-    { "date": "2026-12-25", "kind": "Explore", "title": "Kenroku-en, Castle Park, Nomura samurai house, D.T. Suzuki Museum",
+        {
+          "place_id": "tokyo-asakusa",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Senso-ji early, before the crowds"
+        },
+        {
+          "place_id": "tokyo-nmwa",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "The Turner show (book ahead). The Tokyo National Museum's main building is mostly closed 22–25 Dec, so it waits for January"
+        },
+        {
+          "place_id": "tokyo-kayaba",
+          "slot": "afternoon",
+          "crew": "easy",
+          "note": "A seated coffee break in Yanaka"
+        },
+        {
+          "place_id": "tokyo-skytree",
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "At dusk; lifts all the way; timed tickets online save the queue"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-23",
+      "kind": "Explore",
+      "title": "Meiji Jingu and Harajuku, the Nezu Museum garden, Shibuya. Send the big cases to Kyoto",
       "items": [
-        { "place_id": "kz-kenrokuen", "slot": "early", "crew": "early", "note": "Free from 6:00" },
-        { "place_id": "kz-kenrokuen", "slot": "morning", "crew": "everyone" },
-        { "place_id": "kz-castle", "slot": "morning", "crew": "everyone" },
-        { "place_id": "kz-nomura", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": "kz-dtsuzuki", "slot": "afternoon", "crew": "everyone" }
-      ] },
-    { "date": "2026-12-26", "kind": "Explore", "title": "Higashi Chaya teahouse district, gold-leaf workshop, Omicho market, crab dinner",
+        {
+          "place_id": "tokyo-meiji",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Enter by the Harajuku gate"
+        },
+        {
+          "place_id": "tokyo-maisen",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Tonkatsu lunch, near the Nezu Museum"
+        },
+        {
+          "place_id": "tokyo-nezu",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Book a time slot; the garden has slopes"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Harajuku and Shibuya"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Send the big cases ahead to the Kyoto lodging (takkyubin); it must agree to hold them from about 26 Dec"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-24",
+      "kind": "Move · 3 h",
+      "title": "Shinkansen to Nagano, Zenko-ji, then on to Yudanaka. Christmas Eve ryokan dinner and Shibu's lantern lane",
       "items": [
-        { "place_id": "kz-higashi", "slot": "morning", "crew": "everyone" },
-        { "place_id": "kz-goldleaf", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": "kz-geiko", "slot": "afternoon", "crew": "everyone", "note": "Book by 31 Oct" },
-        { "place_id": "kz-omicho", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": null, "slot": "evening", "crew": "everyone", "note": "Crab dinner" }
-      ] },
-    { "date": "2026-12-27", "kind": "Easy", "title": "Free morning. Optional half day at Kaga Onsen (20 min by shinkansen), or the Prefectural Museum of Art",
+        {
+          "place_id": null,
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Hokuriku shinkansen to Nagano, about 1 h 20; cabin bags only"
+        },
+        {
+          "place_id": "nagano-zenko-ji-and-the-o-kaidan-passage",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "A flat approach; the dark passage under the hall is optional"
+        },
+        {
+          "place_id": null,
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Nagaden express to Yudanaka, about 45 min"
+        },
+        {
+          "place_id": null,
+          "slot": "rest",
+          "crew": "everyone",
+          "note": "Check in; Fernanda may prefer a private or in-room bath"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Christmas Eve dinner at the ryokan"
+        },
+        {
+          "place_id": "nagano-shibu-onsen-lane-and-foot-baths",
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "The lantern lane after dinner"
+        },
+        {
+          "place_id": "yudanaka-shibu-soto-yu",
+          "slot": "evening",
+          "crew": "early",
+          "note": "The nine-bath walk, for guests of Shibu's inns; the water runs very hot, so Fernanda may prefer the inn's bath"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-25",
+      "kind": "Explore",
+      "title": "Snow monkeys in the morning, Obuse and the Hokusai museum in the afternoon",
       "items": [
-        { "place_id": "kz-kaga", "slot": "afternoon", "crew": "early", "note": "Optional" },
-        { "place_id": "kz-artmuseum", "slot": "afternoon", "crew": "easy", "note": "Optional" }
-      ] },
-    { "date": "2026-12-28", "kind": "Move", "title": "8:40 bus, 2.5 hours in Shirakawa-go, Takayama at 13:25. Takayama Jinya in the afternoon",
+        {
+          "place_id": "nagano-jigokudani-snow-monkeys",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "1.6 km on packed snow; spikes help. Fernanda may prefer to skip the path"
+        },
+        {
+          "place_id": "nagano-shibu-onsen-lane-and-foot-baths",
+          "slot": "morning",
+          "crew": "easy",
+          "note": "Footbaths and a café in the village instead of the path"
+        },
+        {
+          "place_id": "nagano-obuse-and-the-hokusai-museum",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Hokusai museum and chestnut sweets; holiday hours to check"
+        },
+        {
+          "place_id": null,
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Gansho-in temple and its Hokusai ceiling painting (hours to check)"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Dinner at the ryokan"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-26",
+      "kind": "Move · 2.5–3 h",
+      "title": "Train via Nagano to Kanazawa; Kenroku-en, then the 21st Century Museum, open late on Saturday",
       "items": [
-        { "place_id": "sg-village", "slot": "morning", "crew": "everyone" },
-        { "place_id": "tk-jinya", "slot": "afternoon", "crew": "everyone", "note": "Closes 29 Dec – 3 Jan, so today" }
-      ] },
-    { "date": "2026-12-29", "kind": "Explore", "title": "Morning market, old town and sake breweries, Festival Floats hall, Hida Folk Village",
+        {
+          "place_id": null,
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Nagaden to Nagano, then the Kagayaki, about 65 min; leave after 9:00"
+        },
+        {
+          "place_id": null,
+          "slot": "rest",
+          "crew": "everyone",
+          "note": "A rest after the train"
+        },
+        {
+          "place_id": "kz-kenrokuen",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Gentle slopes, icy in places"
+        },
+        {
+          "place_id": "kz-21c",
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Open to 20:00 on Saturdays"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-27",
+      "kind": "Explore",
+      "title": "Omicho market, Higashi Chaya and gold leaf, the D.T. Suzuki Museum, the Nagamachi lanes; crab dinner",
       "items": [
-        { "place_id": "tk-markets", "slot": "morning", "crew": "everyone" },
-        { "place_id": "tk-breweries", "slot": "morning", "crew": "everyone" },
-        { "place_id": "tk-floats", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": "tk-folkvillage", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": "ok-ropeway", "slot": "morning", "crew": "early", "note": "Okuhida ropeway day trip instead, for anyone who wants it" }
-      ] },
-    { "date": "2026-12-30", "kind": "Move · 45 min", "title": "Limited express to Gero, footbaths, check in at the ryokan",
-      "items": [ { "place_id": "gr-baths", "slot": "afternoon", "crew": "everyone" }, { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Ryokan afternoon" } ] },
-    { "date": "2026-12-31", "kind": "Easy", "title": "Gassho Village (9:00–16:00), onsen-hopping pass, New Year's Eve dinner and toshikoshi soba",
+        {
+          "place_id": "kz-kenrokuen",
+          "slot": "early",
+          "crew": "early",
+          "note": "Free from 6:00, for anyone who wants it in the morning light"
+        },
+        {
+          "place_id": "kz-omicho",
+          "slot": "morning",
+          "crew": "everyone"
+        },
+        {
+          "place_id": "kz-higashi",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "The Shima teahouse has steep stairs"
+        },
+        {
+          "place_id": "kz-goldleaf",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Seated; booking required"
+        },
+        {
+          "place_id": "kz-dtsuzuki",
+          "slot": "afternoon",
+          "crew": "everyone"
+        },
+        {
+          "place_id": null,
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "The Nagamachi samurai lanes; the Nomura house is closed 26–27 Dec"
+        },
+        {
+          "place_id": null,
+          "slot": "rest",
+          "crew": "everyone",
+          "note": "A long lunch, and laundry for the cabin bags"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Crab dinner: kobako crab is in season until 31 Dec. Fernanda may prefer it cooked, without the raw roe"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-28",
+      "kind": "Move · 2 h by bus",
+      "title": "Museums close today: Nohi bus to Shirakawa-go, then on to Takayama. Old town at dusk and Hida beef",
       "items": [
-        { "place_id": "gr-gassho", "slot": "morning", "crew": "everyone" },
-        { "place_id": "gr-baths", "slot": "afternoon", "crew": "everyone", "note": "Onsen-hopping pass" },
-        { "place_id": null, "slot": "evening", "crew": "everyone", "note": "New Year's Eve dinner at the ryokan, toshikoshi soba" }
-      ] },
-    { "date": "2027-01-01", "kind": "Move · 1.5–2.5 h", "title": "New Year breakfast at the ryokan, then the afternoon train; trains are quiet today", "items": [ { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Nothing planned after arriving" } ] },
-    { "date": "2027-01-02", "kind": "Explore", "title": "Kyoto National Museum (New Year show), Higashiyama, Gion at dusk",
+        {
+          "place_id": "sg-village",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "8:40 bus from Kanazawa, in Shirakawa-go at 10:05; about 3 hours here. The farmhouse stairs are optional"
+        },
+        {
+          "place_id": "sg-viewpoint",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Take the shuttle up"
+        },
+        {
+          "place_id": null,
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Bus on to Takayama, about 50 min"
+        },
+        {
+          "place_id": "tk-jinya",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Optional, if there is time after the bus: it closes 29 Dec – 3 Jan (hours to check)"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "The old town at dusk"
+        },
+        {
+          "place_id": "tk-maruaki",
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Hida beef; reserve dinner. Fernanda may prefer it well done"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-29",
+      "kind": "Explore",
+      "title": "Morning market and New Year decorations, Sanmachi breweries, the festival floats, Hida Folk Village",
       "items": [
-        { "place_id": "ky-fushimi", "slot": "early", "crew": "early" },
-        { "place_id": "ky-higashiyama", "slot": "morning", "crew": "everyone" },
-        { "place_id": "ky-knm", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": null, "slot": "evening", "crew": "everyone", "note": "Gion at dusk" }
-      ] },
-    { "date": "2027-01-03", "kind": "Explore", "title": "Arashiyama early, Nanzen-ji garden and a yudōfu lunch",
+        {
+          "place_id": "tk-markets",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "With the New Year decorations market, 27–31 Dec. The riverside is icy, so cleats help"
+        },
+        {
+          "place_id": "tk-breweries",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Year-end hours to check; amazake for Fernanda"
+        },
+        {
+          "place_id": "tk-seto",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Hot duck soba for lunch"
+        },
+        {
+          "place_id": "tk-floats",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Indoors; New Year hours to check"
+        },
+        {
+          "place_id": "tk-folkvillage",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Open every day; slopes and icy paths"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "An early night before the train to Kyoto"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-30",
+      "kind": "Move · 3.5 h",
+      "title": "Train to Kyoto, arriving early afternoon. Nishiki market before it closes 1–3 Jan, Gion at dusk",
       "items": [
-        { "place_id": "ky-arashiyama", "slot": "morning", "crew": "everyone" },
-        { "place_id": "ky-okutan", "slot": "afternoon", "crew": "everyone", "note": "Yudōfu lunch" },
-        { "place_id": "ky-nanzenji", "slot": "afternoon", "crew": "everyone" }
-      ] },
-    { "date": "2027-01-04", "kind": "Explore", "title": "Nara: Tōdai-ji, Kasuga Taisha, the deer park and Naramachi. Nishiki market reopens in Kyoto",
+        {
+          "place_id": null,
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Hida to Nagoya (about 2 h 20), then the Nozomi to Kyoto (about 35 min). Green Car seats, booked on 30 Nov"
+        },
+        {
+          "place_id": null,
+          "slot": "rest",
+          "crew": "everyone",
+          "note": "Check in in Higashiyama; the big cases are waiting. Fernanda may prefer a light afternoon"
+        },
+        {
+          "place_id": "ky-nishiki",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Many shops close 1–3 Jan, so today"
+        },
+        {
+          "place_id": "ky-yasaka",
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Gion at dusk, before the New Year crowds"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Buy food for the next two days: most restaurants close over New Year"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-31",
+      "kind": "New Year's Eve",
+      "title": "Kiyomizu-dera early, a rest, a daytime bell, the Okera fire at Yasaka, midnight bells for whoever wants them",
       "items": [
-        { "place_id": "nara-todaiji", "slot": "morning", "crew": "everyone" },
-        { "place_id": "nara-kasuga", "slot": "morning", "crew": "everyone" },
-        { "place_id": "nara-naramachi", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": "ky-nishiki", "slot": "evening", "crew": "easy", "note": "Reopens today, for whoever stays in Kyoto" }
-      ] },
-    { "date": "2027-01-05", "kind": "Move · 4 h 15", "title": "Shinkansen to Mishima with seats on the Fuji side, then the Fujikyu bus to the lake; Oishi Park and the shore at sunset",
-      "items": [ { "place_id": "kw-oishi", "slot": "afternoon", "crew": "everyone" }, { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Check in at the lake hotel; Fuji from the room" } ] },
-    { "date": "2027-01-06", "kind": "Explore", "title": "Panoramic Ropeway and the lake boat, hoto for lunch; the kimono museum if it clouds over",
+        {
+          "place_id": "ky-higashiyama",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Early, before the crowds; slopes and stone steps"
+        },
+        {
+          "place_id": null,
+          "slot": "rest",
+          "crew": "everyone",
+          "note": "Rest at the house"
+        },
+        {
+          "place_id": null,
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "A daytime bell for anyone: in 2025, Myoman-ji 15:00–17:00 and Zuiko-ji 14:00–17:30 (2026 times to check)"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Dinner in, with toshikoshi soba"
+        },
+        {
+          "place_id": "ky-yasaka",
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "The Okera fire from about 19:30; go early and be back by 21:00. Fernanda can be in bed by 21:00 if she likes"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "early",
+          "note": "Midnight bell: Kodai-ji (numbered tickets from 22:00, first 108 groups), Eikando or Chishaku-in (2025 pattern, to check)"
+        },
+        {
+          "place_id": "ky-chionin",
+          "slot": "evening",
+          "crew": "early",
+          "note": "Or watch Chion-in's great bell, with tickets bought from 1 Dec (optional)"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-01",
+      "kind": "Rest",
+      "title": "Slow on purpose: Ohara's Sanzen-in, or Nanzen-ji and the Philosopher's Path; a hotel lunch",
       "items": [
-        { "place_id": "kw-chureito", "slot": "early", "crew": "early", "note": "At first light, for whoever wants the 398 steps" },
-        { "place_id": "kw-ropeway", "slot": "morning", "crew": "everyone" },
-        { "place_id": "kw-cruise", "slot": "morning", "crew": "everyone" },
-        { "place_id": "kw-hoto-fudou", "slot": "afternoon", "crew": "everyone", "note": "Hoto lunch" },
-        { "place_id": "kw-kubota", "slot": "afternoon", "crew": "everyone", "note": "Or this, if it is cloudy; check it is open on Wednesdays in January" },
-        { "place_id": "kw-onsen-foot", "slot": "afternoon", "crew": "easy" }
-      ] },
-    { "date": "2027-01-07", "kind": "Move · 2 h", "title": "A last look at Fuji at breakfast, then the Fuji Excursion train to Shinjuku; afternoon free", "items": [ { "place_id": null, "slot": "rest", "crew": "everyone", "note": "Afternoon free" } ] },
-    { "date": "2027-01-08", "kind": "Free", "title": "Late opening to 20:00 at Tokyo National Museum and Western Art; shopping, farewell dinner",
+        {
+          "place_id": "nara-todaiji",
+          "slot": "early",
+          "crew": "early",
+          "note": "Free until 08:00 on New Year's morning, with the window to the Great Buddha's face open (to check)"
+        },
+        {
+          "place_id": "ky-ohara",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Sanzen-in's moss garden, often in snow; 40–60 min by bus, then 10 min uphill"
+        },
+        {
+          "place_id": "ky-nanzenji",
+          "slot": "morning",
+          "crew": "easy",
+          "note": "Closer to the house; open 1–4 Jan. Then a short walk on the Philosopher's Path"
+        },
+        {
+          "place_id": null,
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Lunch at a hotel or ryokan restaurant, since most restaurants are shut"
+        },
+        {
+          "place_id": null,
+          "slot": "rest",
+          "crew": "everyone",
+          "note": "A quiet afternoon at the house"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-02",
+      "kind": "Explore",
+      "title": "The Kyoto National Museum's New Year show, Kitano Tenmangu's first-calligraphy festival",
       "items": [
-        { "place_id": "tokyo-tnm", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": "tokyo-nmwa", "slot": "afternoon", "crew": "everyone" },
-        { "place_id": null, "slot": "evening", "crew": "everyone", "note": "Farewell dinner" }
-      ] },
-    { "date": "2027-01-09", "kind": "Fly", "title": "Airport", "items": [] }
+        {
+          "place_id": "ky-knm",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "New Year exhibition; open 2–3 Jan, 9:30–17:00. Seated breaks inside"
+        },
+        {
+          "place_id": "ky-ukihashi",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Kaiseki lunch at Hotel Granvia; private rooms; open over New Year last year"
+        },
+        {
+          "place_id": "ky-kitano",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "The first-calligraphy festival; flat but packed, so Fernanda may prefer a short visit"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-03",
+      "kind": "Explore",
+      "title": "Uji: Byodo-in and the tea street. Or the New Year bunraku in Osaka",
+      "items": [
+        {
+          "place_id": "ky-uji",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "20–30 min by local train; flat. New Year hours to check"
+        },
+        {
+          "place_id": "ky-bunraku",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Or this instead: puppet theatre from about 3 Jan, fully seated (dates to check)"
+        },
+        {
+          "place_id": null,
+          "slot": "rest",
+          "crew": "everyone",
+          "note": "Today is the worst day for traffic back to the cities, so we stay on local trains"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-04",
+      "kind": "Explore",
+      "title": "Nara by reserved Kintetsu train: Todai-ji, the deer, Kasuga Taisha. Or Himeji Castle. Send the big cases to Tokyo",
+      "items": [
+        {
+          "place_id": "nara-todaiji",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Kintetsu limited express, 35 min; reserve seats. Fernanda may prefer to watch the deer, not feed them"
+        },
+        {
+          "place_id": "nara-kasuga",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Take the bus up"
+        },
+        {
+          "place_id": "nara-naramachi",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Flat old lanes"
+        },
+        {
+          "place_id": "ky-himeji",
+          "slot": "morning",
+          "crew": "early",
+          "note": "Or Himeji Castle instead, 50 min by shinkansen: the keep for those who want the stairs, the grounds for Fernanda"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Send the big cases ahead to the last Tokyo hotel"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-05",
+      "kind": "Move · 4 h 15",
+      "title": "Shinkansen to Mishima with seats on the Fuji side, then the bus to the lake. Nothing planned after arrival",
+      "items": [
+        {
+          "place_id": null,
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Shinkansen to Mishima, then the Fujikyu bus; Green Car seats"
+        },
+        {
+          "place_id": null,
+          "slot": "rest",
+          "crew": "everyone",
+          "note": "Check in at the lake hotel; nothing planned"
+        },
+        {
+          "place_id": "kw-oishi",
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "The lakeshore at sunset, flat and free"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-06",
+      "kind": "Explore",
+      "title": "Fuji at dawn, the Panoramic Ropeway, hoto for lunch, the Itchiku Kubota Art Museum",
+      "items": [
+        {
+          "place_id": null,
+          "slot": "early",
+          "crew": "everyone",
+          "note": "Fuji at dawn from the room or the shore"
+        },
+        {
+          "place_id": "kw-chureito",
+          "slot": "early",
+          "crew": "early",
+          "note": "At first light, for whoever wants the 398 steps"
+        },
+        {
+          "place_id": "kw-ropeway",
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Seated; stops in strong wind"
+        },
+        {
+          "place_id": "kw-hoto-fudou",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Hoto lunch; cash"
+        },
+        {
+          "place_id": "kw-kubota",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "January closing days differ between sources, so check it is open on Wednesday"
+        },
+        {
+          "place_id": "kw-onsen-foot",
+          "slot": "afternoon",
+          "crew": "easy",
+          "note": "Lakeside footbaths, or the Music Forest"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-07",
+      "kind": "Move · 2 h",
+      "title": "A second dawn, then the Fuji Excursion to Shinjuku. The Musée d'Orsay show or a food hall in the afternoon",
+      "items": [
+        {
+          "place_id": null,
+          "slot": "early",
+          "crew": "everyone",
+          "note": "A last look at Fuji at breakfast"
+        },
+        {
+          "place_id": null,
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Fuji Excursion train to Shinjuku, about 2 h"
+        },
+        {
+          "place_id": "tokyo-tobikan",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Masterworks from the Musée d'Orsay; book ahead"
+        },
+        {
+          "place_id": "tokyo-isetan",
+          "slot": "afternoon",
+          "crew": "easy",
+          "note": "Or the Isetan Shinjuku food hall, close to the station"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-08",
+      "kind": "Explore",
+      "title": "A single act at Kabuki-za, the Tokyo National Museum open late, last shopping, farewell dinner",
+      "items": [
+        {
+          "place_id": "tokyo-kabuki",
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "A single act, about an hour"
+        },
+        {
+          "place_id": null,
+          "slot": "afternoon",
+          "crew": "everyone",
+          "note": "Last shopping"
+        },
+        {
+          "place_id": "tokyo-tnm",
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Open to 20:00 on Fridays"
+        },
+        {
+          "place_id": null,
+          "slot": "evening",
+          "crew": "everyone",
+          "note": "Farewell dinner. Tonight's hotel is within 60–90 minutes of Haneda"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-09",
+      "kind": "Fly home",
+      "title": "Fly home from Haneda",
+      "items": [
+        {
+          "place_id": null,
+          "slot": "morning",
+          "crew": "everyone",
+          "note": "Transfer to Haneda, booked from 9 Dec"
+        }
+      ]
+    }
   ]
 }

@@ -86,9 +86,11 @@
    "end": "2027-01-03"
   },
   "peak_travel_days": [
+   "2026-12-26",
+   "2026-12-27",
+   "2026-12-28",
    "2026-12-29",
    "2026-12-30",
-   "2026-12-31",
    "2027-01-02",
    "2027-01-03",
    "2027-01-04"
@@ -96,13 +98,13 @@
   "rules": [
    {
     "id": "min_two_nights",
-    "severity": "warn",
-    "text": "Every stay is at least 2 nights"
+    "severity": "info",
+    "text": "Two nights or more is kinder; a suggestion, never a reason to pad"
    },
    {
     "id": "no_peak_moves",
     "severity": "warn",
-    "text": "No intercity move on a peak travel day; short local hops are allowed with a note"
+    "text": "No move over 90 minutes with the New Year crowds (out of Tokyo and Kansai 26–30 Dec, back 2–4 Jan); 31 Dec and 1 Jan are calm; moves against the flow get a booking note"
    },
    {
     "id": "closure_check",
@@ -117,12 +119,42 @@
    {
     "id": "new_years_eve_dinner",
     "severity": "info",
-    "text": "31 Dec should be at a ryokan with dinner included"
+    "text": "Arrange New Year's Eve dinner ahead: most restaurants close (a ryokan, a booked restaurant or cooking in)"
    },
    {
     "id": "pregnancy_flags",
     "severity": "info",
     "text": "Show effort_for_her and avoid_for_her on every planned item"
+   },
+   {
+    "id": "long_move",
+    "severity": "warn",
+    "text": "No day over about 4 hours door to door"
+   },
+   {
+    "id": "move_density",
+    "severity": "warn",
+    "text": "No moves on consecutive days, and no more than four in any week"
+   },
+   {
+    "id": "capacity",
+    "severity": "warn",
+    "text": "No more nights than a place can fill: full days + 1 in small places; hubs count their easy day trips"
+   },
+   {
+    "id": "tokyo_ending",
+    "severity": "warn",
+    "text": "The night of 8 Jan near Haneda; no more than 2 nights in Tokyo at the end unless the first Tokyo stay was short"
+   },
+   {
+    "id": "hospital",
+    "severity": "warn",
+    "text": "Every night within about 30 minutes of obstetric care; 29 Dec – 3 Jan near a perinatal centre; missing data shows as not checked"
+   },
+   {
+    "id": "known_places",
+    "severity": "info",
+    "text": "Long stays in places Pedro and Fernanda already know should be for the first-timers"
    }
   ],
   "facts": [
@@ -138,8 +170,41 @@
  },
  "deadlines": [
   {
+   "date": "2026-10-17",
+   "item": "Book now: Yudanaka or Shibu Onsen for 24–26 Dec, for 7, with beds and a private bath (Kokuya, Kanaguya, Biyunoyado). Book only through official channels; Kanaguya warns of fake emails",
+   "source": "https://www.kanaguya.com/"
+  },
+  {
+   "date": "2026-10-17",
+   "item": "Book now: Kyoto, Higashiyama, 30 Dec – 5 Jan, for 7. A townhouse (ask about ground-floor beds, the walk to Yasaka Shrine, the licence number and heating), or a ryokan for 30–31 Dec plus a second base for 1–5 Jan. Ask it to hold the big cases from about 26 Dec"
+  },
+  {
+   "date": "2026-10-17",
+   "item": "Book now: Kanazawa 26–28 Dec and Takayama 28–30 Dec, for 7"
+  },
+  {
+   "date": "2026-10-17",
+   "item": "Check the nearest obstetric emergency hospital for Kawaguchiko, then book the lake (or Hakone) for 5–7 Jan, for 7"
+  },
+  {
+   "date": "2026-10-25",
+   "item": "Agree the route as a family, including how to spend New Year's Eve: in the middle of it at Yasaka Shrine, or a calm ryokan dinner"
+  },
+  {
+   "date": "2026-10-31",
+   "item": "Only if wanted: book the Kanazawa geiko afternoon (Sat 26 Dec, 13:00). The train from Yudanaka arrives around midday, so it is tight"
+  },
+  {
    "date": "2026-11-10",
    "item": "Ghibli Museum tickets for December dates go on sale"
+  },
+  {
+   "date": "2026-11-24",
+   "item": "10:00 JST: reserve shinkansen seats Tokyo → Nagano for 24 Dec. Every later leg goes on sale one month ahead at 10:00 JST"
+  },
+  {
+   "date": "2026-11-26",
+   "item": "10:00 JST: reserve the Kagayaki Nagano → Kanazawa for 26 Dec"
   },
   {
    "date": "2026-11-28",
@@ -147,24 +212,38 @@
    "source": "https://www.nouhibus.co.jp/route_bus/shirakawago_en/"
   },
   {
+   "date": "2026-11-30",
+   "item": "10:00 JST: reserve the 30 Dec trains, Hida Takayama → Nagoya and Nozomi Nagoya → Kyoto, Green Car. Check first that the Hida carriage shortage is over",
+   "source": "https://trafficnews.jp/post/593602"
+  },
+  {
+   "date": "2026-12-01",
+   "item": "14:00 JST, optional: Chion-in bell viewing tickets for New Year's Eve (¥3,000 in 2025, sold out online by 9 Dec)",
+   "source": "https://watabi.org/en/articles/kyoto-new-year-guide"
+  },
+  {
+   "date": "2026-12-05",
+   "item": "10:00 JST: reserve the shinkansen Kyoto → Mishima for 5 Jan (or Kyoto → Odawara for Hakone)"
+  },
+  {
    "date": "2026-12-05",
    "item": "Sumo January tournament tickets on sale, if extending to 10 Jan"
+  },
+  {
+   "date": "2026-12-07",
+   "item": "10:00 JST: reserve the Fuji Excursion Kawaguchiko → Shinjuku for 7 Jan; it sells out weeks ahead"
+  },
+  {
+   "date": "2026-12-09",
+   "item": "Book the airport transfer to Haneda for Sat 9 Jan"
   },
   {
    "date": "2026-12-10",
    "item": "Ghibli Museum tickets for January dates go on sale"
   },
   {
-   "date": "2026-11-24",
-   "item": "About a month ahead: reserve shinkansen seats for 24 Dec, then each later leg"
-  },
-  {
-   "date": "2026-10-31",
-   "item": "Book the New Year's Eve ryokan and the Kanazawa geiko afternoon (Sat 26 Dec)"
-  },
-  {
-   "date": "2026-10-25",
-   "item": "Agree the route as a family: suggest a change from Trip, or send another route from its page"
+   "date": "2026-12-15",
+   "item": "Mid-December: recheck the New Year's Eve bell times, the Okera fire times, Obuse's holiday hours and the trains' year-end notices"
   }
  ],
  "regions": [
@@ -255,9 +334,9 @@
    "name": "Gero Onsen",
    "lat": 35.81,
    "lng": 137.24,
-   "status": "in_plan",
-   "summary": "New Year's Eve onsen town",
-   "fit": null,
+   "status": "candidate_fits",
+   "summary": "Hot-spring resort town on the Hida line; one of Japan's three great hot springs",
+   "fit": "A quiet ryokan New Year instead of Kyoto's first two nights (30 Dec – 1 Jan)",
    "suggested_nights": {
     "gentle": 2,
     "balanced": 2,
@@ -377,7 +456,7 @@
    "name": "Yudanaka, Shibu Onsen and the snow monkeys",
    "lat": 36.74,
    "lng": 138.42,
-   "status": "candidate_fits",
+   "status": "in_plan",
    "summary": "Wild monkeys bathing in snow; lantern-lit onsen street",
    "fit": "Swap: Tokyo 20-23, Yudanaka 23-25, Kanazawa 25-28",
    "suggested_nights": {
@@ -8563,9 +8642,78 @@
  "versions": [
   {
    "id": "plan",
-   "name": "The plan (Balanced)",
+   "name": "New places before Christmas, Kyoto for New Year",
    "pace": "balanced",
    "status": "plan",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-24",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": null
+    },
+    {
+     "region": "yudanaka",
+     "from": "2026-12-24",
+     "to": "2026-12-26",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": "Zenko-ji on the way; Christmas Eve at the ryokan"
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-26",
+     "to": "2026-12-28",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": null
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-28",
+     "to": "2026-12-30",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Via Shirakawa-go on the 8:40 bus"
+    },
+    {
+     "region": "kyoto",
+     "from": "2026-12-30",
+     "to": "2027-01-05",
+     "nights": 6,
+     "lodging": "rental",
+     "note": "New Year's Eve in Higashiyama; Nara on 4 Jan"
+    },
+    {
+     "region": "kawaguchiko",
+     "from": "2027-01-05",
+     "to": "2027-01-07",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Fuji across the lake; via Mishima"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-07",
+     "to": "2027-01-09",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": null
+    }
+   ],
+   "travel_hours_est": 16,
+   "gains": "Snow monkeys and Shibu's lantern lane, Kanazawa and Takayama without empty days, New Year's Eve in Kyoto with the bells, a hospital close by every night of New Year",
+   "gives_up": "A ryokan New Year's Eve in an onsen town (a Higashiyama ryokan can give the dinner); the long Kyoto → Kawaguchiko day (4 h 15)",
+   "moves": 6
+  },
+  {
+   "id": "gero-new-year",
+   "name": "New Year's Eve at a Gero ryokan",
+   "pace": "balanced",
+   "status": "alternative",
    "owner": "planners",
    "stays": [
     {
@@ -8626,9 +8774,221 @@
     }
    ],
    "travel_hours_est": 14,
-   "gains": "Every interest covered, a rest each day, Fuji straight across the lake",
-   "gives_up": "Okuhida, Hiroshima, and Hakone's museums and ryokan baths",
+   "gains": "A quiet ryokan New Year with dinner and breakfast served, four nights in Kanazawa, Kyoto from 1 Jan",
+   "gives_up": "The Kyoto New Year's Eve, the snow monkeys and Shibu; Gero has no event that night and its hot baths are what Fernanda can use least",
    "moves": 6
+  },
+  {
+   "id": "kyoto-new-year-hakone",
+   "name": "Kyoto New Year, Hakone for Fuji",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-24",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": null
+    },
+    {
+     "region": "yudanaka",
+     "from": "2026-12-24",
+     "to": "2026-12-26",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": "Zenko-ji on the way; Christmas Eve at the ryokan"
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-26",
+     "to": "2026-12-28",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": null
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-28",
+     "to": "2026-12-30",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Via Shirakawa-go on the 8:40 bus"
+    },
+    {
+     "region": "kyoto",
+     "from": "2026-12-30",
+     "to": "2027-01-05",
+     "nights": 6,
+     "lodging": "rental",
+     "note": "New Year's Eve in Higashiyama; Nara on 4 Jan"
+    },
+    {
+     "region": "hakone",
+     "from": "2027-01-05",
+     "to": "2027-01-07",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": null
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-07",
+     "to": "2027-01-09",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": null
+    }
+   ],
+   "gains": "About 3 h from Kyoto instead of 4 h 15, five museums for a cloudy day, a ryokan with private baths",
+   "gives_up": "Fuji straight across the water; Pedro and Fernanda know Hakone",
+   "moves": 6
+  },
+  {
+   "id": "kyoto-new-year-ski",
+   "name": "Kyoto New Year, with a ski day",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-23",
+     "nights": 3,
+     "lodging": "hotel",
+     "note": null
+    },
+    {
+     "region": "yudanaka",
+     "from": "2026-12-23",
+     "to": "2026-12-26",
+     "nights": 3,
+     "lodging": "ryokan",
+     "note": "A ski day at Shiga Kogen for whoever skis"
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-26",
+     "to": "2026-12-28",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": null
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-28",
+     "to": "2026-12-30",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Via Shirakawa-go on the 8:40 bus"
+    },
+    {
+     "region": "kyoto",
+     "from": "2026-12-30",
+     "to": "2027-01-05",
+     "nights": 6,
+     "lodging": "rental",
+     "note": "New Year's Eve in Higashiyama; Nara on 4 Jan"
+    },
+    {
+     "region": "kawaguchiko",
+     "from": "2027-01-05",
+     "to": "2027-01-07",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Fuji across the lake; via Mishima"
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-07",
+     "to": "2027-01-09",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": null
+    }
+   ],
+   "gains": "A ski day at Shiga Kogen for whoever skis, while Fernanda, Carlos and Nadir take Obuse and Zenko-ji",
+   "gives_up": "One first-timer day in Tokyo",
+   "moves": 6
+  },
+  {
+   "id": "kyoto-nara-hakone",
+   "name": "Kyoto New Year, then Nara and Hakone",
+   "pace": "balanced",
+   "status": "alternative",
+   "owner": "planners",
+   "stays": [
+    {
+     "region": "tokyo",
+     "from": "2026-12-20",
+     "to": "2026-12-24",
+     "nights": 4,
+     "lodging": "hotel",
+     "note": null
+    },
+    {
+     "region": "yudanaka",
+     "from": "2026-12-24",
+     "to": "2026-12-26",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": "Zenko-ji on the way; Christmas Eve at the ryokan"
+    },
+    {
+     "region": "kanazawa",
+     "from": "2026-12-26",
+     "to": "2026-12-28",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": null
+    },
+    {
+     "region": "takayama",
+     "from": "2026-12-28",
+     "to": "2026-12-30",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "Via Shirakawa-go on the 8:40 bus"
+    },
+    {
+     "region": "kyoto",
+     "from": "2026-12-30",
+     "to": "2027-01-03",
+     "nights": 4,
+     "lodging": "rental",
+     "note": "New Year's Eve in Higashiyama"
+    },
+    {
+     "region": "nara",
+     "from": "2027-01-03",
+     "to": "2027-01-05",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": "The deer at dawn"
+    },
+    {
+     "region": "hakone",
+     "from": "2027-01-05",
+     "to": "2027-01-07",
+     "nights": 2,
+     "lodging": "ryokan",
+     "note": null
+    },
+    {
+     "region": "tokyo",
+     "from": "2027-01-07",
+     "to": "2027-01-09",
+     "nights": 2,
+     "lodging": "hotel",
+     "note": null
+    }
+   ],
+   "gains": "Four Kyoto nights instead of six, a calm Nara with the deer at dawn, Hakone 4 h from Nara",
+   "gives_up": "One more check-in; Fuji straight across the water",
+   "moves": 7
   },
   {
    "id": "gentle",
