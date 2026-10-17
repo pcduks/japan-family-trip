@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useMotionValue, useMotionValueEvent, type MotionValue } from "motion/react";
 import { regionColor } from "@/lib/colors";
-import { travelAt } from "@/lib/journey";
+import { kanji, travelAt } from "@/lib/journey";
 import why from "../../data/why.json";
 import { budgetOf, fmtSgd } from "@/lib/budget";
 import { fmtRange } from "@/lib/dates";
@@ -108,8 +108,6 @@ export function RouteView({ id }: { id?: string }) {
         <p className="max-w-prose text-ink-2">{g.tagline}</p>
       </section>
 
-      {isPlan ? <WhatsNext /> : null}
-
       <div className="grid gap-2">
         <JourneyMap regions={snapshot.regions} stays={v.stays} ghost={isPlan ? null : plan.stays} aspect={wide ? 1.9 : 1.2} onStop={scrollToStop} />
         <p className="text-sm text-muted">
@@ -129,6 +127,7 @@ export function RouteView({ id }: { id?: string }) {
         </div>
       </div>
 
+      {isPlan ? <WhatsNext /> : null}
       {mine && v.owner === me?.travellerId ? <SendRoute v={v} /> : null}
 
       <Section title="The 21 days" aside="tap a day">
@@ -162,22 +161,24 @@ export function RouteView({ id }: { id?: string }) {
                     </p>
                   ) : null}
                   <details className="card group overflow-hidden transition-shadow duration-300" style={activeStop === i ? { boxShadow: `0 0 0 2px ${regionColor(s.region)}, var(--shadow)` } : undefined}>
-                    <summary className="flex cursor-pointer list-none gap-3 [&::-webkit-details-marker]:hidden">
-                      <RegionCover regionId={s.region} className="w-16 shrink-0 self-stretch sm:w-24" sizes="120px" />
-                      <span className="grid min-w-0 flex-1 gap-0.5 py-2.5 pr-3">
-                        <span className="flex items-start justify-between gap-2">
-                          <span className="flex min-w-0 items-center gap-2">
-                            <span className="display text-[1.05rem] leading-none text-accent">{i + 1}</span>
-                            <RegionDot id={s.region} size={9} />
-                            <span className="display truncate text-[1.15rem] leading-tight">{regionName(s.region)}</span>
+                    <summary className="grid cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                      <RegionCover regionId={s.region} className="hero-fade h-32 sm:h-40" sizes="(max-width: 1024px) 100vw, 560px">
+          <span aria-hidden="true" className="absolute inset-0 z-[1] bg-gradient-to-t from-black/75 via-black/30 to-transparent" />
+                        <span className="absolute inset-x-3 bottom-2.5 z-10 flex items-end justify-between gap-2 text-white">
+                          <span className="flex min-w-0 items-baseline gap-2">
+                            <span className="display text-[1.25rem] leading-none opacity-90">{i + 1}</span>
+                            <RegionDot id={s.region} size={10} />
+                            <span className="display truncate text-[1.5rem] leading-tight">{regionName(s.region)}</span>
+                            {kanji(s.region) ? <span className="hidden text-sm opacity-80 min-[380px]:inline">{kanji(s.region)}</span> : null}
                           </span>
-                          <span className="shrink-0 text-right text-sm">
+                          <span className="shrink-0 text-right text-sm leading-tight">
                             <b>{s.nights}</b> {s.nights === 1 ? "night" : "nights"}
-                            <span className="block text-xs text-muted">{fmtRange(s.from, s.to)}</span>
+                            <span className="block text-xs opacity-90">{fmtRange(s.from, s.to)}</span>
                           </span>
                         </span>
-                        {text ? <span className="line-clamp-2 text-sm text-ink-2 group-open:line-clamp-none">{text}</span> : null}
-                      </span>
+                      </RegionCover>
+                      {text ? <span className="line-clamp-2 px-3 pt-2.5 text-sm text-ink-2 group-open:line-clamp-none">{text}</span> : null}
+                      <span className="px-3 pt-1 pb-2.5 text-xs font-semibold text-accent group-open:hidden">Where to stay, the trade-offs and the places ▾</span>
                     </summary>
                     <div className="grid gap-2 border-t border-rule px-3 py-3 text-sm">
                       <StayLodging stay={s} region={snapshot.regions.find((r) => r.id === s.region)} />

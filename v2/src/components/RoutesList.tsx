@@ -8,6 +8,7 @@ import { STYLE_LABEL, styleOf } from "@/lib/styles";
 import type { Version } from "@/lib/types";
 import { paceLabel, sharedNights, statsOf } from "@/lib/versions";
 import { useStore } from "./providers";
+import { RegionCover } from "./RegionCover";
 import { TimelineLane } from "./Timeline";
 import { Page, PageHeader, Section } from "./ui";
 
@@ -89,15 +90,25 @@ function RouteRow({ v, label, planBudget }: { v: Version; label?: string; planBu
   const diff = planBudget !== undefined ? cost - planBudget : 0;
   const author = v.status === "personal" ? snapshot.travellers.find((t) => t.id === v.owner)?.name.split(" ")[0] : null;
   const nye = snapshot.regions.find((r) => r.id === st.newYearsEve?.region)?.name.replace(/ Onsen$/, "");
+  // The picture: the first place this route has that the route we are taking doesn't, else where it spends New Year's Eve.
+  const plan = snapshot.versions.find((x) => x.status === "plan");
+  const cover = v.stays.find((s) => s.region !== "tokyo" && !plan?.stays.some((p) => p.region === s.region))?.region ?? st.newYearsEve?.region ?? v.stays[0]?.region ?? "tokyo";
   return (
     <li>
-      <Link href={v.status === "plan" ? "/" : `/routes/${v.id}`} className="card grid gap-1.5 p-3 no-underline">
-        <span className="text-[0.7rem] font-semibold tracking-wide text-muted uppercase">
-          {label ?? (author ? `${author}’s route` : `${STYLE_LABEL[styleOf(v.id)] ?? "Classic"} · ${paceLabel(v.pace)}`)}
+      <Link href={v.status === "plan" ? "/" : `/routes/${v.id}`} className="card grid gap-2 overflow-hidden pb-3 no-underline">
+        <RegionCover regionId={cover} className="hero-fade h-28 sm:h-32" sizes="(max-width: 640px) 100vw, 640px">
+          <span aria-hidden="true" className="absolute inset-0 z-[1] bg-gradient-to-t from-black/75 via-black/30 to-transparent" />
+          <span className="absolute inset-x-3 bottom-2.5 z-10 grid gap-0.5 text-white">
+            <span className="text-[0.68rem] font-semibold tracking-wide uppercase opacity-90">
+              {label ?? (author ? `${author}’s route` : `${STYLE_LABEL[styleOf(v.id)] ?? "Classic"} · ${paceLabel(v.pace)}`)}
+            </span>
+            <span className="display text-[1.3rem] leading-tight">{g.theme}</span>
+          </span>
+        </RegionCover>
+        <span className="px-3">
+          <TimelineLane stays={v.stays} trip={snapshot.trip} calendar={snapshot.calendar} regions={snapshot.regions} height={18} />
         </span>
-        <span className="display text-[1.2rem] leading-tight">{g.theme}</span>
-        <TimelineLane stays={v.stays} trip={snapshot.trip} calendar={snapshot.calendar} regions={snapshot.regions} height={18} />
-        <span className="text-xs text-muted">
+        <span className="px-3 text-xs text-muted">
           {st.bases} bases · {st.moves} check-ins · New Year’s Eve in {nye ?? "—"} · {fmtSgd(cost)}
           {diff ? <span className={diff > 0 ? "text-danger" : "text-ok"}> ({diff > 0 ? "+" : "−"}{fmtSgd(Math.abs(diff))})</span> : null}
         </span>

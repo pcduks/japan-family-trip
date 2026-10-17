@@ -13,7 +13,7 @@ function due(days: number): string {
   return `in ${days} days`;
 }
 
-/** The top of Trip: routes waiting for a decision, then the next dates to book or decide by. */
+/** Under the map on Trip: routes waiting for a decision, then the next date to book or decide by; tap for all of them. */
 export function WhatsNext() {
   const { snapshot, me, isPlanner, setDeadlineDone } = useStore();
   const [all, setAll] = useState(false);
@@ -21,11 +21,12 @@ export function WhatsNext() {
   const waiting = snapshot.suggestions.filter((s) => s.status === "open" && (isPlanner || s.author_id === me?.travellerId)).length;
   const sorted = snapshot.deadlines.slice().sort((a, b) => a.date.localeCompare(b.date));
   const open = sorted.filter((d) => !d.done);
-  const shown = all ? sorted : open.slice(0, 3);
+  // Closed, it is one line: the next date. Open, every date with its tick box.
+  const shown = all ? sorted : open.slice(0, 1);
   if (!waiting && !shown.length) return null;
 
   return (
-    <section className="card grid gap-2 p-4" aria-labelledby="whats-next">
+    <section className="card grid gap-2 px-4 py-3" aria-labelledby="whats-next">
       <h2 id="whats-next" className="eyebrow">
         What’s next
       </h2>
@@ -64,9 +65,9 @@ export function WhatsNext() {
           );
         })}
       </ul>
-      {sorted.length > 3 ? (
+      {sorted.length > 1 ? (
         <button className="justify-self-start text-sm font-semibold text-accent" onClick={() => setAll(!all)} aria-expanded={all}>
-          {all ? "Only what’s next" : `All ${sorted.length} dates`}
+          {all ? "Only what’s next" : `All ${sorted.length} dates ▾`}
         </button>
       ) : null}
     </section>
