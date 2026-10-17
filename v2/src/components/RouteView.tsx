@@ -10,7 +10,8 @@ import { budgetOf, fmtSgd } from "@/lib/budget";
 import { fmtRange } from "@/lib/dates";
 import { planDays } from "@/lib/days";
 import { avgOutdoorHours, exposure, EXPOSURE_LABEL } from "@/lib/exposure";
-import { IDLE_LABEL, stayNote, stayTradeoff } from "@/lib/guide";
+import { IDLE_LABEL, stayNote, stayStory, stayTradeoff, type VersionGuide } from "@/lib/guide";
+import { areaInfo, VERDICT_LABEL } from "@/lib/areas";
 import type { Place, Version } from "@/lib/types";
 import { firstName, plannerNames } from "@/lib/people";
 import { describeDiff, movesOf, paceLabel, statsOf } from "@/lib/versions";
@@ -28,7 +29,7 @@ import { Back, Empty, Page, RegionDot, Section } from "./ui";
 import { WhatsNext } from "./WhatsNext";
 
 type Src = { label: string; url: string };
-const WHY = why as unknown as { facts: { title: string; text: string; sources: Src[] }[]; route: { intro: string; steps: { region: string; title: string; text: string }[]; sources: Src[] }; for_whom: { who: string; text: string }[]; trust: { points: string[]; links: { label: string; href: string }[] } };
+const WHY = why as unknown as { facts: { title: string; text: string; sources: Src[] }[]; route: { intro: string; steps: { region: string; title: string; text: string }[]; sources: Src[] }; for_whom: { who: string; text: string; ids?: string[] }[]; trust: { points: string[]; links: { label: string; href: string }[] } };
 
 /** A route's page: the map, the 21 days, the stops, and why. With no id it is the route we are taking (the Trip tab). */
 export function RouteView({ id }: { id?: string }) {
@@ -106,6 +107,11 @@ export function RouteView({ id }: { id?: string }) {
         <p className="eyebrow">{isPlan ? `The route · ${fmtRange(snapshot.trip.start, snapshot.trip.end)}` : mine ? `${author ? `${author}’s` : "A family"} route · ${fmtStamp(v.updated_at)}` : `Another route · ${STYLE_LABEL[styleOf(v.id)] ?? ""} · ${paceLabel(v.pace)}`}</p>
         <h1 className="display text-[2.3rem] leading-[1.02] sm:text-5xl">{g.theme}</h1>
         <p className="max-w-prose text-ink-2">{g.tagline}</p>
+        {isPlan && g.written && g.story ? (
+          <a href="#why" className="chip justify-self-start no-underline">
+            Why this route · 2 min ↓
+          </a>
+        ) : null}
       </section>
 
       <div className="grid gap-2">
@@ -141,7 +147,8 @@ export function RouteView({ id }: { id?: string }) {
           </div>
           <ol ref={listRef} className="grid gap-2">
             {v.stays.map((s, i) => {
-              const text = steps(s.region, i);
+              const story = stayStory(v.id, v.stays, i);
+              const text = story ? null : steps(s.region, i);
               const leg = moves.find((m) => m.index === i);
               const tr = stayTradeoff(v.id, v.stays, i);
               const { places, days: placeDays } = placesFor(i);
@@ -160,7 +167,7 @@ export function RouteView({ id }: { id?: string }) {
                       </span>
                     </p>
                   ) : null}
-                  <details className="card group overflow-hidden transition-shadow duration-300" style={activeStop === i ? { boxShadow: `0 0 0 2px ${regionColor(s.region)}, var(--shadow)` } : undefined}>
+                  <details className="card group isolate overflow-hidden transition-shadow duration-300" style={activeStop === i ? { boxShadow: `0 0 0 2px ${regionColor(s.region)}, var(--shadow)` } : undefined}>
                     <summary className="grid cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                       <RegionCover regionId={s.region} className="hero-fade h-32 sm:h-40" sizes="(max-width: 1024px) 100vw, 560px">
           <span aria-hidden="true" className="absolute inset-0 z-[1] bg-gradient-to-t from-black/75 via-black/30 to-transparent" />
@@ -177,7 +184,14 @@ export function RouteView({ id }: { id?: string }) {
                           </span>
                         </span>
                       </RegionCover>
-                      {text ? <span className="line-clamp-2 px-3 pt-2.5 text-sm text-ink-2 group-open:line-clamp-none">{text}</span> : null}
+                      {story ? (
+                        <span className="grid gap-0.5 px-3 pt-2.5 text-sm">
+                          <b className="text-ink">{story.hook}</b>
+                          <span className="line-clamp-2 text-ink-2 group-open:line-clamp-none">{story.note}</span>
+                        </span>
+                      ) : text ? (
+                        <span className="line-clamp-2 px-3 pt-2.5 text-sm text-ink-2 group-open:line-clamp-none">{text}</span>
+                      ) : null}
                       <span className="px-3 pt-1 pb-2.5 text-xs font-semibold text-accent group-open:hidden">Where to stay, the trade-offs and the places ▾</span>
                     </summary>
                     <div className="grid gap-2 border-t border-rule px-3 py-3 text-sm">
@@ -220,7 +234,7 @@ export function RouteView({ id }: { id?: string }) {
                           </ul>
                         </div>
                       ) : null}
-                      <Link href={`/areas/${s.region}`}>All about {regionName(s.region)} →</Link>
+                      <Link href={`/areas/${s.region}`}>More about {regionName(s.region)} →</Link>
                     </div>
                   </details>
                 </li>
@@ -237,6 +251,9 @@ export function RouteView({ id }: { id?: string }) {
         </p>
       ) : null}
 
+      {isPlan && g.written && g.story ? (
+        <PlanWhy g={g} />
+      ) : (
       <Section title="Why this route">
         <div className="grid max-w-prose justify-items-start gap-1">
           <p className={`leading-relaxed text-ink-2 ${feelOpen ? "" : "line-clamp-5"}`}>{g.feel}</p>
@@ -304,6 +321,7 @@ export function RouteView({ id }: { id?: string }) {
           </div>
         </details>
       </Section>
+      )}
 
       <BudgetCard v={v} regions={snapshot.regions} regionName={regionName} title="What it costs, per couple" />
 
@@ -440,5 +458,150 @@ function ChangeButton({ href, label, caption }: { href: string; label: string; c
       </Link>
       <p className="text-sm text-muted">{caption}</p>
     </div>
+  );
+}
+
+/** Why the route we are taking: the journey, what we looked for, what we left for another time, what is in it for you, and the practical reasons last. */
+function PlanWhy({ g }: { g: VersionGuide }) {
+  const { snapshot, me } = useStore();
+  const [open, setOpen] = useState(false);
+  const [openFacts, setOpenFacts] = useState<number | null>(null);
+  const story = g.story ?? [];
+  const mineFirst = WHY.for_whom.filter((w) => me && w.ids?.includes(me.travellerId));
+  const others = WHY.for_whom.filter((w) => !mineFirst.includes(w));
+  const regionName = (id: string) => snapshot.regions.find((r) => r.id === id)?.name.replace(/ \(.*\)$/, "") ?? id;
+  return (
+    <Section id="why" title="Why this route" aside="2 min">
+      <div className="grid max-w-prose justify-items-start gap-3 leading-relaxed text-ink-2">
+        {(open ? story : story.slice(0, 2)).map((p, i) => (
+          <p key={i}>{p}</p>
+        ))}
+        {story.length > 2 ? (
+          <button className="text-sm font-semibold text-accent" onClick={() => setOpen(!open)} aria-expanded={open}>
+            {open ? "Show less" : "The whole journey ▾"}
+          </button>
+        ) : null}
+      </div>
+
+      {g.looked_for?.length ? (
+        <div className="card grid max-w-prose gap-2 p-4">
+          <h3 className="eyebrow">What we looked for</h3>
+          <ul className="grid gap-1">
+            {g.looked_for.map((l) => (
+              <li key={l.title}>
+                <details className="group">
+                  <summary className="flex cursor-pointer list-none items-baseline gap-2 py-0.5 [&::-webkit-details-marker]:hidden">
+                    <span aria-hidden="true" className="text-accent">
+                      ●
+                    </span>
+                    <b className="flex-1">{l.title}</b>
+                    <span aria-hidden="true" className="text-xs text-muted group-open:rotate-180">
+                      ▾
+                    </span>
+                  </summary>
+                  <p className="pb-1 pl-5 text-sm text-ink-2">{l.text}</p>
+                </details>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
+      {g.left_out?.length ? (
+        <div className="grid max-w-prose gap-2">
+          <h3 className="eyebrow">Left for another time</h3>
+          <ul className="grid gap-2">
+            {g.left_out.map((id) => {
+              const verdict = areaInfo(id)?.verdict;
+              if (!verdict) return null;
+              return (
+                <li key={id}>
+                  <Link href={`/areas/${id}`} className="card grid gap-0.5 p-3 text-sm no-underline">
+                    <span className="flex items-baseline justify-between gap-2">
+                      <b className="text-ink">{regionName(id)}</b>
+                      <span className="shrink-0 text-xs text-muted">{VERDICT_LABEL[verdict.state]} →</span>
+                    </span>
+                    <span className="text-ink-2">{verdict.headline}</span>
+                    <span className="text-xs text-muted">{verdict.fit}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ) : null}
+
+      <div className="grid max-w-prose gap-2 text-sm">
+        <h3 className="eyebrow">What’s in it for you</h3>
+        {(mineFirst.length ? mineFirst : WHY.for_whom.slice(0, 1)).map((w) => (
+          <p key={w.who} className="text-ink-2">
+            <b className="text-ink">{w.who}:</b> {w.text}
+          </p>
+        ))}
+        <details>
+          <summary className="cursor-pointer font-semibold text-accent">For everyone else</summary>
+          <div className="grid gap-2 pt-2">
+            {(mineFirst.length ? others : WHY.for_whom.slice(1)).map((w) => (
+              <p key={w.who} className="text-ink-2">
+                <b className="text-ink">{w.who}:</b> {w.text}
+              </p>
+            ))}
+          </div>
+        </details>
+      </div>
+
+      <details className="card max-w-prose p-4 text-sm">
+        <summary className="cursor-pointer font-semibold">The practical reasons</summary>
+        <div className="grid gap-3 pt-3 text-ink-2">
+          <ol className="grid gap-2">
+            {WHY.facts.map((f, i) => (
+              <li key={f.title}>
+                <button className="flex w-full items-baseline gap-2 text-left" onClick={() => setOpenFacts(openFacts === i ? null : i)} aria-expanded={openFacts === i}>
+                  <span className="display text-[1.3rem] leading-none text-accent">{i + 1}</span>
+                  <b className="flex-1 text-ink">{f.title}</b>
+                  <span className="text-muted">{openFacts === i ? "▴" : "▾"}</span>
+                </button>
+                {openFacts === i ? <p className="pt-1 pl-6">{f.text}</p> : null}
+              </li>
+            ))}
+          </ol>
+          <ul className="grid gap-2">
+            {WHY.route.steps.map((st, i) => (
+              <li key={i}>
+                <b className="text-ink">{st.title}.</b> {st.text}
+              </li>
+            ))}
+          </ul>
+          <ul className="grid gap-1">
+            {WHY.trust.points.map((p, i) => (
+              <li key={i} className="flex gap-2">
+                <span aria-hidden="true" className="text-accent">
+                  ●
+                </span>
+                <span>{p}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="flex flex-wrap gap-x-3 gap-y-1">
+            {WHY.trust.links.map((l) => (
+              <Link key={l.href} href={l.href}>
+                {l.label}
+              </Link>
+            ))}
+          </p>
+          <p className="text-xs text-muted">
+            Sources:{" "}
+            {WHY.route.sources.map((src, k) => (
+              <span key={src.url}>
+                {k ? " · " : ""}
+                <a href={src.url} target="_blank" rel="noreferrer">
+                  {src.label}
+                </a>
+              </span>
+            ))}
+          </p>
+        </div>
+      </details>
+    </Section>
   );
 }

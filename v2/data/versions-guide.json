@@ -71,7 +71,79 @@
           "idle": "none",
           "note": "No idle risk."
         }
-      }
+      },
+      "story": [
+        "We land in Tokyo on 20 December, while the Christmas lights are still up. The first days are easy: markets, gardens, a museum, good food, and time for the jet lag to pass.",
+        "On Christmas Eve a fast train takes us across Japan to Kanazawa, on the Sea of Japan. This is where we slow down. We have a whole house, a garden with its pines tied against the snow, and crab in the last week of its season.",
+        "Then a bus climbs into the mountains. We stop in Shirakawa-go, a village of thatched farmhouses in the snow, and sleep in Takayama, an old town of sake breweries and Hida beef. For New Year's Eve we go down the valley to Gero, to a ryokan, a traditional inn, with hot baths, a long dinner and the temple bell at midnight. While the rest of Japan travels, we stay still.",
+        "On New Year's Day the trains are quiet, so we ride to Kyoto for its temples and New Year rituals, with a day among the deer in Nara. Then Lake Kawaguchi, where Fuji stands right across the water. Two last days in Tokyo, and home."
+      ],
+      "looked_for": [
+        {
+          "title": "Japan at its winter best",
+          "text": "Snow on old towns, crab in season, and hot baths when it is cold outside."
+        },
+        {
+          "title": "The famous sights, for the first-timers",
+          "text": "Carlos, Nadir, João, Carolina and Tatiana get Tokyo, Kyoto's temples and Mount Fuji."
+        },
+        {
+          "title": "Something new for Pedro and Fernanda",
+          "text": "They know Tokyo, Kyoto, Hakone and Osaka, so Kanazawa, Takayama, Gero and the Fuji lake are new to them too."
+        },
+        {
+          "title": "A warm, easy New Year",
+          "text": "Most restaurants close for New Year, so we spend it at a ryokan where dinner and breakfast are served to us."
+        },
+        {
+          "title": "Time to slow down",
+          "text": "Every stop is two nights or more, afternoons are unhurried, and in the middle of the trip we have a whole house with a kitchen."
+        },
+        {
+          "title": "Gentle for Fernanda",
+          "text": "Real beds, lifts, flat streets and private baths. Suggestions she can drop on the day, not rules."
+        },
+        {
+          "title": "All seven together, by train",
+          "text": "Places that can sleep all of us, no flights, and short, pretty journeys: a bus over the mountains, a train down a river valley, Fuji out of the window."
+        }
+      ],
+      "stops": {
+        "tokyo": {
+          "hook": "The big, easy city, with the Christmas lights still on.",
+          "note": "Markets and old gardens, the Nezu Museum, Meiji Jingu's forest, Asakusa's temple lanes, and tonkatsu and tempura at night. Four nights give us time to get over the flight, and give Carlos, Nadir, João, Carolina and Tatiana three full days of the classic city."
+        },
+        "kanazawa": {
+          "hook": "A small old city of gardens, teahouses and winter crab.",
+          "note": "Kenroku-en with its pines roped against the snow, geisha and samurai streets, gold leaf, and crab in its last weeks. Our longest stop, because this is where we slow down before New Year: a house with a kitchen and a washing machine, and one day with nothing planned."
+        },
+        "takayama": {
+          "hook": "Thatched farmhouses in the snow, then an old mountain town.",
+          "note": "Shirakawa-go's thatched village on the bus ride over, then Takayama: a morning market, sake breweries with cedar balls over the door, and Hida beef. Two nights are enough: the town fills one good day, and we arrive in time for the old government house before it closes for New Year."
+        },
+        "gero": {
+          "hook": "New Year's Eve at a hot-spring inn, with dinner served.",
+          "note": "A riverside spa town of footbaths, where the ryokan serves a long kaiseki dinner, soba for the old year and a special New Year breakfast. We arrive before the busiest travel days, stay warm and still, and leave on New Year's Day, when the trains are quiet."
+        },
+        "kyoto": {
+          "hook": "Temples, lanterns and New Year rituals in the old capital.",
+          "note": "Grey stone, bare maples and lantern light: Kiyomizu-dera, Gion at dusk, Arashiyama early, and the deer and the Great Buddha of Nara. New Year's Day is only a quiet arrival, so four nights give three real days in Kyoto and one in Nara."
+        },
+        "kawaguchiko": {
+          "hook": "Fuji fills the sky, straight across the lake.",
+          "note": "The famous view with nothing in the way, from the hotel, the lakeside path, the ropeway and the boat, with hoto noodles for lunch. Fuji hides in cloud on some mornings, so two nights give us two dawns to see it clear."
+        },
+        "tokyo:2": {
+          "hook": "Back to Tokyo for museums, shopping and a goodbye dinner.",
+          "note": "The great museums of Ueno, with the Musée d'Orsay show and the Tokyo National Museum open late on Friday, then last shopping and a farewell dinner. Two nights keep the last day calm, so a late train cannot put the Saturday flight at risk."
+        }
+      },
+      "left_out": [
+        "hakone",
+        "hiroshima",
+        "okuhida",
+        "hokkaido"
+      ]
     },
     "gentle": {
       "style": "slow",

@@ -57,18 +57,22 @@
   "for_whom": [
     {
       "who": "João, Carolina and Tatiana, first time in Japan",
-      "text": "You get the three everyone should see first: Tokyo, Kyoto and Fuji. On top of that, three things most first visits miss: a snow village, a samurai city with the best garden in the country, and a real ryokan New Year with the temple bell at midnight. The fuller alternative (eight bases) adds Hiroshima and the snow baths if you would rather see more and rest less."
+      "ids": ["brother", "sister_in_law", "sister"],
+      "text": "You get the three everyone should see first: Tokyo, Kyoto and Fuji. On top of that, three things most first visits miss: a snow village, a samurai city with the best garden in the country, and a real ryokan New Year with the temple bell at midnight. If you would rather see more and rest less, the route called “Everything, including the snow baths and Hiroshima” adds both."
     },
     {
-      "who": "Carlos and Nadir, first time, very fit",
+      "who": "Carlos and Nadir, first time",
+      "ids": ["father", "mother"],
       "text": "The classic sights without the exhaustion. One big thing a day, done in the morning when the sights are quietest; a long lunch; the afternoon free to keep going or not. Beds and lifts wherever we sleep, rooms with beds at the ryokan, and no day over about 10 km unless you want it."
     },
     {
       "who": "Pedro and Fernanda, who know Tokyo and Kyoto",
+      "ids": ["pedro", "wife"],
       "text": "Five of the seven stops are new to you: Kanazawa, Shirakawa-go, Takayama, Gero and Kawaguchiko. You have done Hakone, so the Fuji stop is the lake instead, with the mountain straight across the water, new for everyone. The two cities you know are the two the first-timers need most, and in Kyoto you get the New Year rites you have not seen."
     },
     {
       "who": "Fernanda, at 29–32 weeks",
+      "ids": ["wife"],
       "text": "The route was shaped around you: moves of about four hours or less (the longest, Kyoto to the lake, is about four and a quarter), one long journey a day, an easy day after each, private baths, light afternoons, and the right to drop any plan on the day. None of it is binding; it is the default. The one place the route goes against the medical advice is New Year's Eve: the advice is to spend those nights in a city with a perinatal centre, and Gero is a small spa town 1.5–2.5 h from Kyoto. We accepted that for the ryokan New Year. If your doctor would rather not, the clean alternative is the Kyoto house from 30 Dec, and the gentler alternative keeps the night in Takayama instead."
     }
   ],
