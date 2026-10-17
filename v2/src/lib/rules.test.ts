@@ -86,7 +86,7 @@ describe("rules on the seeded versions", () => {
 
   it("flags gaps, overlaps and the wrong total", () => {
     const stays = plan.stays.map((s) => ({ ...s }));
-    stays[1] = { ...stays[1], nights: 1, to: "2026-12-25" };
+    stays[1] = { ...stays[1], nights: 2, to: "2026-12-26" };
     const f = checkStays(stays, "balanced", ctx);
     expect(f.some((x) => x.rule === "twenty_nights" && /gap/.test(x.message))).toBe(true);
     const short = relayout(stays, data.trip.start);
@@ -153,7 +153,7 @@ describe("version helpers", () => {
   it("stats of the plan match the doc", () => {
     const st = statsOf(plan, data);
     expect(st.nights).toBe(20);
-    expect(st.moves).toBe(6);
+    expect(st.moves).toBe(5);
     expect(st.shortestStay).toBe(2);
     expect(st.fuji).toBe(true);
     expect(st.newYearsEve?.region).toBe("kyoto");
@@ -163,10 +163,10 @@ describe("version helpers", () => {
   it("copy + diff", () => {
     const mine = copyVersion(plan, "mother", "Mum's version", data.trip.start);
     expect(mine.status).toBe("personal");
-    mine.stays[2].nights = 3;
-    mine.stays[3].nights = 1;
+    mine.stays[1].nights = 2;
+    mine.stays[2].nights = 4;
     const re = relayout(mine.stays, data.trip.start);
-    expect(describeDiff(plan.stays, re, data.regions)).toEqual(["Kanazawa 2 → 3 nights", "Takayama 2 → 1 night"]);
+    expect(describeDiff(plan.stays, re, data.regions)).toEqual(["Yudanaka, Shibu Onsen and the snow monkeys 3 → 2 nights", "Kanazawa 3 → 4 nights"]);
   });
 
   it("swap in a candidate region", () => {
@@ -183,7 +183,7 @@ describe("version helpers", () => {
     const art = data.versions.find((v) => v.id === "art-not-fuji")!;
     const joined = combineRoutes(plan, art, "2027-01-05", data.trip.start, data.trip.nights);
     expect(joined.reduce((a, s) => a + s.nights, 0)).toBe(20);
-    expect(joined.map((s) => s.region)).toEqual(["tokyo", "yudanaka", "kanazawa", "takayama", "kyoto", "okayama", "tokyo"]);
+    expect(joined.map((s) => s.region)).toEqual(["tokyo", "yudanaka", "kanazawa", "kyoto", "okayama", "tokyo"]);
     expect(joined[0].from).toBe("2026-12-20");
     expect(joined[joined.length - 1].to).toBe("2027-01-09");
   });

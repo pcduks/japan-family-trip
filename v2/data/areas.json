@@ -116,8 +116,8 @@
       "verdict": {
         "state": "route",
         "headline": "A small old city of gardens, teahouses and crab.",
-        "text": "The war's bombs missed Kanazawa, so its samurai lanes, geisha teahouses and food culture survived, with Kenroku-en, one of Japan's three great gardens, at the centre. In late December the pines are roped against the snow and the small kobako crab is in its last week. Two full days cover it: the garden and the 21st Century Museum, open late on Saturday, then the market, Higashi Chaya and the D.T. Suzuki Museum. We leave on Monday 28 Dec, when the museums close.",
-        "fit": "Stop 3 · 2 nights · 26–28 Dec"
+        "text": "The war's bombs missed Kanazawa, so its samurai lanes, geisha teahouses and food culture survived, with Kenroku-en, one of Japan's three great gardens, at the centre. In late December the pines are roped against the snow and the small kobako crab is in its last week. Three days: the garden and the 21st Century Museum on arrival, Shirakawa-go as a day trip on Monday 28 Dec, when the museums close, then the market, Higashi Chaya and the samurai lanes.",
+        "fit": "Stop 3 · 3 nights · 27–30 Dec"
       },
       "aliases": [
         "Kenroku-en",
@@ -158,10 +158,10 @@
       "region": "alps",
       "do_line": "Thatched farmhouses in the snow",
       "verdict": {
-        "state": "route",
-        "headline": "Thatched farmhouses under snow, on our way to Takayama.",
-        "text": "Steep thatched farmhouses in a World Heritage village, with smoke from the hearths and snow almost certain by our date. Our bus stops here for about three hours, with a shuttle up to the viewpoint. No farmhouse can sleep seven over New Year, so it is a stop, not a night.",
-        "fit": "On the bus to Takayama, Mon 28 Dec"
+        "state": "daytrip",
+        "headline": "Thatched farmhouses under snow, a day out from Kanazawa.",
+        "text": "Steep thatched farmhouses in a World Heritage village, with smoke from the hearths and snow almost certain by our date. A van with a driver, or the Nohi bus, takes about 75 minutes each way from Kanazawa, with a shuttle up to the viewpoint. No farmhouse can sleep seven over New Year, so it is a day out, not a night.",
+        "fit": "A day trip from Kanazawa, Mon 28 Dec"
       },
       "aliases": [
         "Shirakawa",
@@ -213,10 +213,11 @@
       "region": "alps",
       "do_line": "Old town, morning market, sake and Hida beef",
       "verdict": {
-        "state": "route",
+        "state": "swap",
         "headline": "An old mountain town of cedar, sake and beef.",
-        "text": "Takayama smells of cedar and grilled beef: Edo-era merchant streets, a morning market by the river with a New Year decorations market at the end of December, sake breweries with cedar balls over the door, and the Hida Folk Village on a hillside. The town fills one good day. The Jinya, the old government house, closes from 29 Dec, so we only see it if there is time on the afternoon we arrive.",
-        "fit": "Stop 4 · 2 nights · 28–30 Dec"
+        "text": "Takayama smells of cedar and grilled beef: Edo-era merchant streets, a morning market by the river with a New Year decorations market at the end of December, sake breweries with cedar balls over the door, and the Hida Folk Village on a hillside. The town fills about one good day, and the Jinya, the old government house, closes from 29 Dec. We dropped it to save a move; the 'with Takayama' route keeps two nights here, arriving via Shirakawa-go.",
+        "fit": "Instead of the third nights in Yudanaka and Kanazawa, 28–30 Dec",
+        "route": "kyoto-new-year-takayama"
       },
       "aliases": [
         "Hida",
@@ -302,7 +303,7 @@
         "state": "daytrip",
         "headline": "The deepest snow and outdoor baths we could reach.",
         "text": "Small hot-spring villages high in the Alps, with open-air baths in the snow and a ropeway up to 2,156 metres. It is 90 minutes by bus from Takayama, so a day there would use Takayama's one full day, and the market, the breweries and the folk village would drop out. The top of the ropeway is high and icy, so Fernanda may prefer the baths.",
-        "fit": "A long day by bus from Takayama, 90 minutes each way"
+        "fit": "A long day by bus from Takayama, in the 'with Takayama' route"
       },
       "region": "alps",
       "do_line": "Snow baths and a ropeway into the Alps",
@@ -575,8 +576,8 @@
       "verdict": {
         "state": "route",
         "headline": "Wild monkeys bathing in a steaming, snowy gorge.",
-        "text": "Wild monkeys sit in a hot pool at the end of a forest walk of about 1.6 km on packed snow, and Shibu Onsen below is a lantern-lit lane of nine old public baths. We spend Christmas Eve at a ryokan here, with Zenko-ji on the way in and Obuse's Hokusai paintings the next afternoon. Snow can be thin before Christmas. The path can be icy and the public baths run very hot, so Fernanda may prefer the footbaths and the inn's own bath.",
-        "fit": "Stop 2 · 2 nights · 24–26 Dec"
+        "text": "Wild monkeys sit in a hot pool at the end of a forest walk of about 1.6 km on packed snow, and Shibu Onsen below is a lantern-lit lane of nine old public baths. We spend Christmas Eve at a ryokan here, with Zenko-ji on the way in. On the third day whoever wants snow skis at Shiga Kogen, 30 minutes by bus, while Fernanda and the parents see Obuse's Hokusai paintings. Snow can be thin before Christmas. The path can be icy and the public baths run very hot, so Fernanda may prefer the footbaths and the inn's own bath.",
+        "fit": "Stop 2 · 3 nights · 24–27 Dec"
       },
       "aliases": [
         "Snow monkeys",
@@ -2027,7 +2028,7 @@
     "alps": {
       "name": "The Alps & the snowy side",
       "line": "Snow country: old towns, thatched villages, mountain hot springs and Sea of Japan crab, with winter at its best.",
-      "our_take": "The snowy heart of the trip, 6 nights before New Year: Yudanaka, Kanazawa and Takayama, with Shirakawa-go on the way."
+      "our_take": "The snowy heart of the trip, 6 nights before New Year: Yudanaka and Kanazawa, with Shirakawa-go as a day out."
     },
     "kansai": {
       "name": "Kyoto, Nara & Osaka",

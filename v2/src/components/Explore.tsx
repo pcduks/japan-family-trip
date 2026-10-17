@@ -15,6 +15,8 @@ import { WishBox } from "./WishBox";
 const STATES: Verdict["state"][] = ["route", "daytrip", "swap", "later"];
 /** The parts of Japan we travel through, open; the rest folded under "Further away". */
 const NEAR = ["tokyo-fuji", "alps", "kansai"];
+/** Day trips sort right after the stop they go from. */
+const DAY_TRIP_BASE: Record<string, string> = { nara: "kyoto", shirakawago: "kanazawa", nagano: "yudanaka" };
 
 /**
  * Places: the Japan people know, then every area by the part of Japan it is in,
@@ -35,8 +37,10 @@ export function Explore() {
   const found = useMemo(() => searchPlaces(q, Object.fromEntries(snapshot.regions.map((r) => [r.id, r.name]))), [q, snapshot.regions]);
   // Route stops in travel order, then day trips, swaps and the rest.
   const planOrder = (id: string) => {
-    const i = plan?.stays.findIndex((s) => s.region === id) ?? -1;
-    return i >= 0 ? i : id === "nara" ? 4.5 : id === "shirakawago" ? 1.5 : 99;
+    const at = (r: string) => plan?.stays.findIndex((s) => s.region === r) ?? -1;
+    const i = at(id);
+    const base = at(DAY_TRIP_BASE[id] ?? "");
+    return i >= 0 ? i : base >= 0 ? base + 0.5 : 99;
   };
   const sortRows = (list: string[]) => list.slice().sort((a, b) => STATES.indexOf(stateOf(a)) - STATES.indexOf(stateOf(b)) || planOrder(a) - planOrder(b) || name(a).localeCompare(name(b)));
   const inRegion = (rid: string) => sortRows(ids.filter((id) => areaInfo(id)!.region === rid && (!state || stateOf(id) === state)));

@@ -15,7 +15,7 @@ const withNights = (stays: Stay[], change: Record<string, number>) => {
 
 describe("putting a suggestion on top of the route as it is now", () => {
   it("names the two Tokyo stays apart", () => {
-    expect(stopKeys(base)).toEqual(["tokyo", "yudanaka", "kanazawa", "takayama", "kyoto", "kawaguchiko", "tokyo:2"]);
+    expect(stopKeys(base)).toEqual(["tokyo", "yudanaka", "kanazawa", "kyoto", "kawaguchiko", "tokyo:2"]);
   });
 
   it("applies as sent when the route has not changed", () => {
@@ -27,11 +27,11 @@ describe("putting a suggestion on top of the route as it is now", () => {
 
   it("keeps a planner's change to other stops made since", () => {
     const carlos = withNights(base, { kyoto: 7, kawaguchiko: 1 });
-    const pedro = withNights(base, { takayama: 3, kanazawa: 1 });
+    const pedro = withNights(base, { kanazawa: 4, yudanaka: 2 });
     const r = mergeOnto(base, carlos, pedro, start);
     expect(r.kind).toBe("clean");
     if (r.kind !== "clean") return;
-    expect(changedStops(base, r.stays).sort()).toEqual(["kanazawa", "kawaguchiko", "kyoto", "takayama"]);
+    expect(changedStops(base, r.stays).sort()).toEqual(["kanazawa", "kawaguchiko", "kyoto", "yudanaka"]);
     expect(validRoute(r.stays, start, data.trip.nights)).toBeNull();
   });
 

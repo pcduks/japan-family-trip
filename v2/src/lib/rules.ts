@@ -38,6 +38,16 @@ const PEAK_HOP_HOURS = 1.5;
 /** The most door-to-door travel in one day for Fernanda (08-pregnancy rule 3). */
 const MAX_MOVE_HOURS = 4;
 
+/** What a place can fill: full days, and for a small place one named day out that earns one more night. */
+interface Capacity {
+  full_days: number;
+  hub: boolean;
+  /** Nights a small place deserves without its day out; full days + 1 when not given. */
+  nights?: number;
+  day_trips?: string[];
+  extra?: { what: string; region?: string };
+}
+
 interface Hospital {
   name: string;
   phone?: string;
@@ -49,7 +59,7 @@ interface Hospital {
 const RR = routeRules as unknown as {
   peak_flows: { outbound: { from: string; to: string; worst: string[] }; return: { from: string; to: string; worst: string[] }; calm: string[] };
   city_sides: Record<"tokyo" | "kansai", string[]>;
-  capacity: Record<string, { full_days: number; hub: boolean; day_trips?: string[] }>;
+  capacity: Record<string, Capacity>;
   hospitals: Record<string, Hospital>;
   known_by_planners: string[];
 };
@@ -79,7 +89,7 @@ export function hospitalFor(region: string): Hospital | null {
   return RR.hospitals[region] ?? null;
 }
 
-export function capacityOf(region: string): { full_days: number; hub: boolean; day_trips?: string[] } | null {
+export function capacityOf(region: string): Capacity | null {
   return RR.capacity[region] ?? null;
 }
 
@@ -137,7 +147,7 @@ export function checkStays(stays: Stay[], pace: Pace, ctx: RulesContext): Findin
       const worst = (flow === "outbound" ? RR.peak_flows.outbound.worst : RR.peak_flows.return.worst).includes(date);
       out.push({ rule: "no_peak_moves", severity: "warn", stayIndex: i, date, message: `${route} (${leg.hours} h) on ${fmtDay(date)} goes with the New Year crowds${flow === "outbound" ? ", out of the big cities" : ", back to the big cities"}${worst ? " on one of the busiest days" : ""}. Book reserved seats at 10:00 the day sales open, a month ahead.` });
     } else if (calendar.peak_travel_days.includes(date) && !RR.peak_flows.calm.includes(date))
-      out.push({ rule: "no_peak_moves", severity: "info", stayIndex: i, date, message: `${route} on ${fmtDay(date)} is a busy travel day, but ${leg.hours < PEAK_HOP_HOURS ? `a short hop (${leg.hours} h)` : "this train runs against the main flow"}. Reserve seats at 10:00 the day sales open, a month ahead.` });
+      out.push({ rule: "no_peak_moves", severity: "info", stayIndex: i, date, message: `${route} on ${fmtDay(date)} is a busy travel day, but ${leg.hours < PEAK_HOP_HOURS ? `a short hop (${leg.hours} h)` : !sideOf(a.region) && !sideOf(b.region) ? "it runs between smaller places, away from the main flow; trains from Tokyo may already be full" : "this train runs against the main flow"}. Reserve seats at 10:00 the day sales open, a month ahead.` });
   }
 
   // long_move: no day over about four hours door to door, wherever it falls.
@@ -150,21 +160,23 @@ export function checkStays(stays: Stay[], pace: Pace, ctx: RulesContext): Findin
       out.push({ rule: "long_move", severity: "warn", stayIndex: i, date: b.from, message: `${name(regions, a.region)} → ${name(regions, b.region)} is about ${leg.hours} h${leg.curated ? "" : " (an estimate)"}, more than the four hours a day Fernanda may prefer. Green Car seats and nothing planned after arriving.` });
   }
 
-  // move_density: moves on consecutive days, or more than four in a week, wear her out.
+  // move_density: moves on consecutive days, or more than three in a week, wear her out.
   const moveDates = stays.slice(1).filter((s, k) => s.region !== stays[k].region).map((s) => s.from);
   for (let k = 1; k < moveDates.length; k++)
     if (addDays(moveDates[k - 1], 1) === moveDates[k]) out.push({ rule: "move_density", severity: "warn", date: moveDates[k], message: `Moves on ${fmtDay(moveDates[k - 1])} and ${fmtDay(moveDates[k])}, two days running. Two nights between moves is kinder for Fernanda.` });
-  for (let k = 0; k + 4 < moveDates.length; k++)
-    if (moveDates[k + 4] <= addDays(moveDates[k], 6)) out.push({ rule: "move_density", severity: "warn", date: moveDates[k], message: `Five moves between ${fmtDay(moveDates[k])} and ${fmtDay(moveDates[k + 4])}: a lot of packing in one week.` });
+  for (let k = 0; k + 3 < moveDates.length; k++)
+    if (moveDates[k + 3] <= addDays(moveDates[k], 6)) out.push({ rule: "move_density", severity: "warn", date: moveDates[k], message: `Four moves between ${fmtDay(moveDates[k])} and ${fmtDay(moveDates[k + 3])}: a lot of packing in one week. Three days between moves is kinder for Fernanda.` });
 
   // capacity: no more nights than a place can fill.
   stays.forEach((s, i) => {
     const c = RR.capacity[s.region];
     if (!c) return;
-    const cap = c.hub ? c.full_days + (c.day_trips?.length ?? 0) + 1 : Math.floor(c.full_days + 1);
+    // A small place's day out only counts when the route does not already stop there.
+    const extra = !c.hub && c.extra && !stays.some((x) => x.region === c.extra!.region) ? c.extra : null;
+    const cap = c.hub ? c.full_days + (c.day_trips?.length ?? 0) + 1 : (c.nights ?? Math.floor(c.full_days + 1)) + (extra ? 1 : 0);
     if (s.nights > cap) {
       const days = c.full_days === 1 ? "one full day" : `about ${c.full_days} full days`;
-      out.push({ rule: "capacity", severity: "warn", stayIndex: i, message: c.hub ? `${name(regions, s.region)} has ${s.nights} nights: ${days} in the city and ${c.day_trips?.length ?? 0} easy day trips. Every day needs a plan.` : `${name(regions, s.region)} has ${s.nights} nights, but ${days} to fill in our dates. More than ${cap} leaves empty days; a quiet day sits better in a big city.` });
+      out.push({ rule: "capacity", severity: "warn", stayIndex: i, message: c.hub ? `${name(regions, s.region)} has ${s.nights} nights: ${days} in the city and ${c.day_trips?.length ?? 0} easy day trips. Every day needs a plan.` : `${name(regions, s.region)} has ${s.nights} nights, but ${days} to fill in our dates${extra ? `, plus ${extra.what}` : ""}. More than ${cap} leaves empty days; a quiet day sits better in a big city.` });
     }
   });
 

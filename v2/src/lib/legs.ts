@@ -32,7 +32,7 @@ const CURATED: Record<string, Leg> = {
   "tokyo>gero": { hours: 3.5, how: "Shinkansen to Nagoya, then Hida limited express" },
   "kanazawa>shirakawago": { hours: 1.25, how: "Nohi bus" },
   "kanazawa>takayama": { hours: 2.5, how: "Nohi bus, stopping in Shirakawa-go" },
-  "kanazawa>yudanaka": { hours: 2.75, how: "Shinkansen to Nagano, then Nagano Electric Railway" },
+  "kanazawa>yudanaka": { hours: 2.75, how: "Nagano Electric Railway and the Hokuriku shinkansen, changing at Nagano" },
   "nagano>gero": { hours: 4.75, how: "Shinano limited express to Nagoya, then Hida limited express" },
   "yudanaka>kyoto": { hours: 5, how: "Nagano Electric Railway to Nagano, Shinano to Nagoya, then shinkansen" },
   "yudanaka>nagano": { hours: 0.75, how: "Nagano Electric Railway limited express" },
