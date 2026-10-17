@@ -7,7 +7,7 @@ import { regionColor } from "@/lib/colors";
 import { fmtRange } from "@/lib/dates";
 import { cameraFrames, cameraOnLeg, kanji, legsOf, lerpBox, regionPoint, smoothPath, smoothstep, snowLevel, travelAt, type Box, type Leg, type Mode, type Pt } from "@/lib/journey";
 
-import { project } from "@/lib/map";
+import { project, shortRegionName } from "@/lib/map";
 import { MapInk, MapInkDefs } from "./MapInk";
 import type { Region, Stay } from "@/lib/types";
 
@@ -27,9 +27,25 @@ const SIDE: Record<string, "r" | "l" | "t" | "b"> = {
   okayama: "b",
   kinosaki: "t",
   hiroshima: "b",
+  miyajima: "l",
+  shirahama: "r",
+  nagano: "l",
+  arima: "t",
+  osaka: "l",
+  kamakura: "r",
+  matsue: "t",
+  fukuoka: "l",
+  nagoya: "r",
+  atami: "r",
+  "ise-shima": "b",
+  morioka: "r",
+  tsunagi: "l",
+  "south-tohoku": "r",
+  "north-tohoku": "r",
+  shuzenji: "l",
 };
 
-const SHORT: Record<string, string> = { gero: "Gero", okayama: "Okayama", kinosaki: "Kinosaki", yudanaka: "Snow monkeys", okuhida: "Okuhida", hiroshima: "Hiroshima" };
+const SHORT: Record<string, string> = { yudanaka: "Snow monkeys" };
 
 interface Props {
   regions: Region[];
@@ -165,7 +181,7 @@ export function JourneyMap({ regions, stays, ghost = null, t, aspect = 1.3, onSt
         {routeRegions.map((id) => {
           const p = regionPoint(id, regions);
           const idx = stopsOf(id);
-          const name = SHORT[id] ?? regions.find((r) => r.id === id)?.name.replace(/ Onsen$/, "") ?? id;
+          const name = SHORT[id] ?? shortRegionName(id, regions);
           const side = SIDE[id] ?? "r";
           const jp = kanji(id);
           const nums = idx.map((i) => i + 1).join(" · ");

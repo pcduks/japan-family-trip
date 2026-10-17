@@ -68,6 +68,91 @@
       "hotel": 110000,
       "rental": 110000,
       "ryokan": 220000
+    },
+    "miyajima": {
+      "hotel": 110000,
+      "rental": 100000,
+      "ryokan": 210000
+    },
+    "shirahama": {
+      "hotel": 100000,
+      "rental": 90000,
+      "ryokan": 220000
+    },
+    "nagano": {
+      "hotel": 75000,
+      "rental": 80000,
+      "ryokan": 180000
+    },
+    "arima": {
+      "hotel": 120000,
+      "rental": 110000,
+      "ryokan": 260000
+    },
+    "osaka": {
+      "hotel": 95000,
+      "rental": 95000,
+      "ryokan": 220000
+    },
+    "nara": {
+      "hotel": 90000,
+      "rental": 110000,
+      "ryokan": 230000
+    },
+    "kamakura": {
+      "hotel": 100000,
+      "rental": 100000,
+      "ryokan": 220000
+    },
+    "matsue": {
+      "hotel": 70000,
+      "rental": 70000,
+      "ryokan": 220000
+    },
+    "fukuoka": {
+      "hotel": 85000,
+      "rental": 70000,
+      "ryokan": 180000
+    },
+    "nagoya": {
+      "hotel": 85000,
+      "rental": 65000,
+      "ryokan": 180000
+    },
+    "atami": {
+      "hotel": 100000,
+      "rental": 90000,
+      "ryokan": 220000
+    },
+    "ise-shima": {
+      "hotel": 110000,
+      "rental": 90000,
+      "ryokan": 230000
+    },
+    "morioka": {
+      "hotel": 60000,
+      "rental": 55000,
+      "ryokan": 170000
+    },
+    "tsunagi": {
+      "hotel": 90000,
+      "rental": 90000,
+      "ryokan": 200000
+    },
+    "south-tohoku": {
+      "hotel": 70000,
+      "rental": 65000,
+      "ryokan": 200000
+    },
+    "north-tohoku": {
+      "hotel": 60000,
+      "rental": 50000,
+      "ryokan": 180000
+    },
+    "shuzenji": {
+      "hotel": 90000,
+      "rental": 90000,
+      "ryokan": 250000
     }
   },
   "default_lodging_per_night_for_six": {
@@ -84,7 +169,12 @@
     "kusatsu",
     "ginzan",
     "shuzenji",
-    "kawaguchiko"
+    "kawaguchiko",
+    "shirahama",
+    "arima",
+    "matsue",
+    "atami",
+    "tsunagi"
   ],
   "new_year_uplift": {
     "full": {
@@ -151,7 +241,35 @@
     "kyoto>kawaguchiko": 13300,
     "kawaguchiko>tokyo": 4200,
     "tokyo>kawaguchiko": 4200,
-    "hakone>kawaguchiko": 2500
+    "hakone>kawaguchiko": 2500,
+    "hiroshima>miyajima": 620,
+    "miyajima>osaka": 11700,
+    "osaka>tokyo": 15100,
+    "tokyo>nagano": 8800,
+    "nagano>takayama": 10500,
+    "okuhida>kanazawa": 8600,
+    "kinosaki>arima": 5800,
+    "arima>tokyo": 15300,
+    "kyoto>kamakura": 13500,
+    "hiroshima>matsue": 11800,
+    "matsue>okayama": 6400,
+    "kanazawa>osaka": 10000,
+    "osaka>arima": 1400,
+    "arima>fukuoka": 16000,
+    "fukuoka>nagoya": 19200,
+    "nagoya>tokyo": 11500,
+    "kawaguchiko>atami": 4600,
+    "atami>shuzenji": 900,
+    "shuzenji>ise-shima": 11000,
+    "ise-shima>tokyo": 15000,
+    "tokyo>south-tohoku": 11500,
+    "south-tohoku>morioka": 6900,
+    "morioka>tsunagi": 1000,
+    "tsunagi>north-tohoku": 7500,
+    "north-tohoku>tokyo": 19500,
+    "kyoto>shirahama": 6500,
+    "shirahama>nara": 5900,
+    "nara>tokyo": 15900
   },
   "fare_per_hour_fallback": 3600,
   "luggage_per_case_per_move": 2500,

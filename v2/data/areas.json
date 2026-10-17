@@ -689,61 +689,82 @@
       "zone": "north"
     },
     "north-tohoku": {
-      "prefecture": "Aomori, Akita, Iwate",
+      "prefecture": "Aomori",
       "tags": [
         "snow",
-        "onsen"
+        "museums",
+        "food"
       ],
       "known_for": [
         {
-          "title": "Nyuto Onsen",
-          "blurb": "Milky outdoor baths at Tsurunoyu under deep snow, booked months ahead."
+          "title": "Aomori Museum of Art",
+          "blurb": "Nara Yoshitomo's eight-metre white dog and Chagall's stage backdrops, next to the Sannai-Maruyama Jomon site."
         },
         {
-          "title": "Oirase gorge",
-          "blurb": "Frozen waterfalls along a river walk."
+          "title": "Hirosaki Castle park",
+          "blurb": "Moats, gates and an original keep under deep snow, 40 minutes away, with apple-pie cafés in town."
         },
         {
-          "title": "Kakunodate",
-          "blurb": "A samurai town whose black fences hold the snow."
+          "title": "Nebuta Museum Wa Rasse",
+          "blurb": "The giant lantern floats of the summer festival, indoors by the station."
+        },
+        {
+          "title": "The Hakkoda ropeway",
+          "blurb": "Ten minutes up into frost-covered trees, an hour from town; it stops in strong wind."
+        },
+        {
+          "title": "Scallops and nokke-don",
+          "blurb": "Build-your-own rice bowls at the fish market, and grilled scallops and kaiyaki miso for Fernanda."
         }
       ],
       "window": [
-        "Snow near-certain; the Hirosaki lantern and Towada festivals are in February.",
-        "Three hours from Tokyo by Hayabusa, all reserved and nearly full on the peak days."
+        "Snow is near-certain: Aomori is one of the snowiest cities in the world.",
+        "The Nebuta museum closes 31 Dec–1 Jan; the art museum has reopened on 2 Jan in past years.",
+        "Hakkoda's ropeway runs about 9:00–16:00 in winter; the frost trees fill out from January.",
+        "Three hours from Tokyo by Hayabusa, full on 3 Jan; Hirosaki's snow-lantern festival is in February, after us."
       ],
-      "feel": "The deepest, quietest winter in Japan, and a long way from everything else on our route.",
-      "getting_there": "Tohoku shinkansen to Morioka or Shin-Aomori, then buses.",
-      "for_her": "Cold, long transfers, few houses for seven. A trip of its own.",
+      "feel": "A snowbound port at the top of Honshu, with a castle town and apple orchards behind it and a mountain range of frozen trees an hour away. Big skies, deep snow and very few foreign visitors.",
+      "getting_there": "Hayabusa from Tokyo to Shin-Aomori, about 3 h 15, then a short taxi or train into town. Hirosaki is about 40 minutes by local train.",
+      "for_her": "Deep snow and icy pavements: cleats, taxis and short walks, with the museums for the coldest days. Aomori Prefectural Central Hospital, with a perinatal centre, is in the city.",
       "zone": "north"
     },
     "south-tohoku": {
-      "prefecture": "Miyagi & Yamagata",
+      "prefecture": "Miyagi",
       "tags": [
-        "snow",
-        "onsen"
+        "food",
+        "classics",
+        "gentle"
       ],
       "known_for": [
         {
-          "title": "Zao ropeway at night",
-          "blurb": "The frozen trees lit from below, seated the whole way; the 'snow monsters' reach full size in late January."
+          "title": "Matsushima",
+          "blurb": "Pine-covered islands in a bay, one of Japan's three great views; a seated 50-minute cruise runs every day, New Year included."
         },
         {
-          "title": "Matsushima",
-          "blurb": "Pine islands in a bay, one of the three great views, with a big hotel that does a New Year plan."
+          "title": "Gyutan",
+          "blurb": "Grilled beef tongue with barley rice and oxtail soup: Sendai's own dinner."
         },
         {
           "title": "The Pageant of Starlight",
-          "blurb": "Sendai's avenue of lights, until 27 Dec."
+          "blurb": "The zelkova avenue of Jozenji-dori lit end to end in December."
+        },
+        {
+          "title": "Zuihoden",
+          "blurb": "Date Masamune's gilded, painted mausoleum among tall cedars, up a flight of stone steps."
+        },
+        {
+          "title": "Sendai's New Year sale",
+          "blurb": "On 2 Jan the shops open with gifts for customers, a custom kept since the Edo period."
         }
       ],
       "window": [
-        "The monsters are partial in our window; the Pageant ends 27 Dec.",
-        "An hour and a half from Tokyo to Sendai; a possible add-on, not a fit for this route."
+        "The Pageant of Starlight's 2026 dates are not announced; last year it ran 5–28 Dec, and one guide expects 6–25 Dec.",
+        "The Matsushima cruise and Zuigan-ji run every day; the city's museums close roughly 28 Dec–4 Jan, and the oyster huts about 31 Dec–3 Jan.",
+        "Cold and mostly dry, with the odd snowfall; Zao's frozen trees are only half formed before mid-January."
       ],
-      "feel": "Big city, calm bay, and a mountain that freezes into shapes. The other possible loop, if snow scenery mattered more than food and ryokan.",
-      "getting_there": "Tohoku shinkansen, 90 minutes to Sendai.",
-      "for_her": "Seated ropeway; icy summit; big hotels with lifts.",
+      "feel": "Tohoku's big, green, easy city of tree-lined avenues and covered arcades, with the pine islands of Matsushima 40 minutes away. Comfortable and well fed rather than dramatic.",
+      "getting_there": "Hayabusa from Tokyo, about 1 h 30; Matsushima is 40 minutes by the Senseki line.",
+      "for_her": "Flat avenues, covered arcades and station hotels with lifts; the Matsushima cruise is seated. Oysters grilled rather than raw. Tohoku University Hospital, a comprehensive perinatal centre, is about 15 minutes by taxi.",
       "zone": "north"
     },
     "koyasan": {
@@ -936,6 +957,419 @@
       "getting_there": "Hokuriku shinkansen, about an hour from Tokyo.",
       "for_her": "Flat; a shopping day at most.",
       "zone": "near"
+    },
+    "miyajima": {
+      "prefecture": "Hiroshima",
+      "tags": [
+        "classics",
+        "food",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "The floating torii",
+          "blurb": "Itsukushima's shrine stands on stilts over the sea. Walk out to the great gate at low tide and watch it float at high tide."
+        },
+        {
+          "title": "Chinka-sai",
+          "blurb": "On New Year's Eve about a thousand torches are lit from the shrine's sacred fire on Mikasa-hama beach."
+        },
+        {
+          "title": "The island after dark",
+          "blurb": "Once the day visitors take the ferry back, the lanterns, the deer and the quiet waterfront are yours."
+        },
+        {
+          "title": "Grilled oysters",
+          "blurb": "Winter is oyster season. They come grilled or fried and cooked through, with momiji-manju cakes along Omotesando."
+        }
+      ],
+      "window": [
+        "Mild and calm; snow is rare.",
+        "31 Dec is the island's big night: Chinka-sai at 18:00, then the shrine opens at midnight, with queues of up to two hours for the first visit.",
+        "The inns that serve dinner fill first for 30–31 Dec. Book them before anything else."
+      ],
+      "feel": "A sacred island of deer, red lacquer and pines, ten minutes across the water from Hiroshima. Busy by day and hushed at night.",
+      "getting_there": "About 45 minutes from Hiroshima: JR to Miyajimaguchi, then a 10-minute ferry. About 2 h 30 from Kyoto, four hours from Tokyo.",
+      "for_her": "Flat around the shrine and the town. The top of Mt Misen is a steep trail, so the view from the ropeway is plenty. The ferry is short and sheltered. JA Hiroshima General Hospital in Hatsukaichi, which has obstetrics, is 15–20 minutes from the mainland pier.",
+      "zone": "west"
+    },
+    "shirahama": {
+      "prefecture": "Wakayama",
+      "tags": [
+        "onsen",
+        "food",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "Sakinoyu",
+          "blurb": "One of Japan's oldest baths, open to the sky on the rocks, with the waves breaking just below."
+        },
+        {
+          "title": "The white beach and the cliffs",
+          "blurb": "Shirarahama's pale sand, the sea cave under Sandanbeki by lift, and Senjojiki's wide rock shelves at sunset."
+        },
+        {
+          "title": "Toretore Ichiba",
+          "blurb": "A huge fish hall with tuna cutting, grilled fish and cooked set meals."
+        },
+        {
+          "title": "Kumano",
+          "blurb": "A day inland to Hongu Taisha, the great torii at Oyunohara and the river bath at Kawayu."
+        }
+      ],
+      "window": [
+        "The mildest coast on mainland Japan in winter. Snow is rare and the days are often sunny.",
+        "A favourite New Year escape from Osaka, so hotel dinner plans for 31 Dec are scarce and dearer.",
+        "Adventure World is open every day from 28 Dec to 4 Jan.",
+        "Three hours each way from Kyoto; five or more from Tokyo."
+      ],
+      "feel": "A seaside spa town of big hotels on a white bay: warm sea air and steam rising from the rocks. Easy, sunny and a little old-fashioned.",
+      "getting_there": "About 3 h from Kyoto and 2 h 20 from Shin-Osaka on the Kuroshio limited express, which runs along the coast.",
+      "for_her": "A big hotel with a lift and a private or in-room bath is the easy choice. The seaside bath and the rock shelves are wet and uneven, so hold someone's arm. Kinan Hospital in Tanabe, a regional perinatal centre, is 20–25 minutes by taxi.",
+      "zone": "west"
+    },
+    "nagano": {
+      "prefecture": "Nagano",
+      "tags": [
+        "snow",
+        "classics",
+        "museums"
+      ],
+      "known_for": [
+        {
+          "title": "Zenko-ji",
+          "blurb": "A seventh-century temple with a dawn service and a pitch-dark passage under the hall, walked with one hand on the wall."
+        },
+        {
+          "title": "The snow monkeys",
+          "blurb": "Wild macaques in a steaming pool, 45 minutes away by train or bus and then a forest walk."
+        },
+        {
+          "title": "Matsumoto Castle",
+          "blurb": "Japan's black original castle, 50 minutes away on the Shinano express."
+        },
+        {
+          "title": "Obuse",
+          "blurb": "A small town of chestnut sweets, with a museum of Hokusai's late work."
+        }
+      ],
+      "window": [
+        "The city sees light snow; the monkey trail and the ski villages are white.",
+        "Zenko-ji is packed from New Year's Eve to 3 Jan. Before 29 Dec or after 4 Jan it is calm.",
+        "Matsumoto Castle closes for the year end from 29 Dec."
+      ],
+      "feel": "A plain, friendly temple city at the foot of snowy hills. The monkeys, the castle and the ski villages are each under an hour away.",
+      "getting_there": "80–100 minutes from Tokyo and about an hour from Kanazawa on the Hokuriku shinkansen.",
+      "for_her": "Flat around the station and the temple, and a station hotel with a lift. The monkey trail is packed snow and ice, so she may prefer to wait in Shibu Onsen with the foot baths. Nagano Red Cross Hospital has a perinatal centre.",
+      "zone": "alps"
+    },
+    "arima": {
+      "prefecture": "Hyogo",
+      "tags": [
+        "onsen",
+        "food"
+      ],
+      "known_for": [
+        {
+          "title": "Gold and silver water",
+          "blurb": "Kin-no-yu's iron-red spring, hot and famous, and Gin-no-yu's clear, fizzy water, which is gentler."
+        },
+        {
+          "title": "Ryokan with private baths",
+          "blurb": "Hyoe Koyokaku, Arima Grand Hotel and Taketoritei Maruyama all have baths you can book for yourselves."
+        },
+        {
+          "title": "Irizome-shiki",
+          "blurb": "On 2 Jan, priests, inn-keepers and geisha carry the founders' statues through town and pour the year's first hot water."
+        },
+        {
+          "title": "Kobe and Himeji",
+          "blurb": "Kitano's old merchants' houses and Kobe beef 30 minutes away; Himeji Castle about an hour."
+        }
+      ],
+      "window": [
+        "Mild; snow is rare and light.",
+        "Both public baths close on 1 Jan, and many shops too. That evening the ryokan bath is the bath.",
+        "Ryokan rates run 50–100% higher on 31 Dec–2 Jan."
+      ],
+      "feel": "A steep little spa town in a fold of the Rokko hills: rust-red water, wooden lanes and old sweet shops. An hour from Osaka and a world away.",
+      "getting_there": "About 75 minutes from Kyoto (train to Sannomiya, then the bus), an hour from Osaka by direct bus, and about three hours from Kinosaki.",
+      "for_her": "The lanes are steep, so take taxis between the inn and the baths. The gold spring runs hot; a private bath at the inn is the easy way. Saiseikai Hyogo Prefectural Hospital, a regional perinatal centre, is about 20 minutes by car.",
+      "zone": "near"
+    },
+    "matsue": {
+      "prefecture": "Shimane",
+      "tags": [
+        "onsen",
+        "museums",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "Matsue Castle",
+          "blurb": "One of the twelve original keeps, black-timbered, with Lake Shinji from the top floor. Open every day of the year."
+        },
+        {
+          "title": "The Adachi garden",
+          "blurb": "Ranked Japan's finest garden for over twenty years, seen through the museum's windows like paintings, with Yokoyama Taikan's works inside."
+        },
+        {
+          "title": "Izumo Taisha",
+          "blurb": "One of Japan's oldest and greatest shrines, with its vast straw rope, an hour away on the little Ichibata line."
+        },
+        {
+          "title": "Lake Shinji at sunset",
+          "blurb": "One of the country's celebrated sunsets, from the flat promenade by the prefectural art museum."
+        },
+        {
+          "title": "Kotatsu boats on the moat",
+          "blurb": "A slow ride round the castle moats at a heated table, ducking under low bridges."
+        }
+      ],
+      "window": [
+        "The castle is open every day, New Year included, and the Adachi Museum says the same; the history museum and the Lafcadio Hearn house close for New Year.",
+        "Izumo Taisha takes its big crowds on 1–3 Jan, so 30 Dec is the calm day to go.",
+        "Winter here is grey and damp more often than snowy; snow on the Chugoku mountains can delay the Yakumo.",
+        "About 2 h 30 from Okayama, so about four hours from Kyoto or Hiroshima."
+      ],
+      "feel": "A small castle town between a lake and a lagoon: willow-lined moats, samurai lanes and a sunset people travel for. Quiet, unshowy, and the right size for a slow New Year.",
+      "getting_there": "The Yakumo limited express from Okayama, about 2 h 30 over the mountains. Okayama is 45 minutes from Shin-Osaka and 35 from Hiroshima by shinkansen.",
+      "for_her": "Flat lakeside and moat walks, a heated boat, and lakeside onsen inns with private baths. The castle keep has steep wooden stairs, so the grounds may be enough for Fernanda. Matsue Red Cross Hospital, with a perinatal centre that answers at night and over New Year, is about ten minutes away by taxi.",
+      "zone": "west"
+    },
+    "fukuoka": {
+      "prefecture": "Fukuoka",
+      "tags": [
+        "food",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "The yatai",
+          "blurb": "About a hundred open-air stalls in Nakasu and Tenjin, eight or ten seats each, for ramen, oden and yakitori."
+        },
+        {
+          "title": "Tonkotsu ramen",
+          "blurb": "Hakata's pork-bone ramen, at the counters where the style began or the Ramen Stadium in Canal City."
+        },
+        {
+          "title": "Mizutaki and motsunabe",
+          "blurb": "The city's two hot pots, chicken and offal, both cooked through at the table."
+        },
+        {
+          "title": "Dazaifu Tenmangu",
+          "blurb": "The scholars' shrine among plum trees, 30 minutes away, with umegae-mochi baked at the gate."
+        },
+        {
+          "title": "Yanagawa",
+          "blurb": "A punted boat with a kotatsu through a castle town's canals, then eel steamed in a bamboo box."
+        }
+      ],
+      "window": [
+        "Almost every yatai is shut on 31 Dec and 1 Jan; about half are back on 2–3 Jan and most by 4 Jan.",
+        "Dazaifu takes about two million people over 1–3 Jan; from 4 Jan it is calm again.",
+        "Mild and dry, about 10 °C by day. The city's museums close for New Year, roughly 28 Dec–4 Jan.",
+        "Hakata Hankyu has opened its New Year sale on 1 Jan in past years; most department stores reopen on the 2nd."
+      ],
+      "feel": "A big, flat, easy city by the sea where food is the point: steam from the stalls along the river, ramen at midnight, hot pot at lunch. Relaxed and mild, and a long way from the rest of the trip.",
+      "getting_there": "Nozomi from Shin-Osaka about 2 h 30, from Kyoto about 2 h 45. From Tokyo it is five hours by train, or a flight.",
+      "for_her": "Flat, mild and compact, with taxis everywhere, and mizutaki is about the ideal meal. She may want to skip the raw squid and sashimi at the stalls. Kyushu University Hospital has obstetrics, and Fukuoka University Hospital's perinatal centre takes emergencies around the clock.",
+      "zone": "south"
+    },
+    "nagoya": {
+      "prefecture": "Aichi",
+      "tags": [
+        "food",
+        "museums"
+      ],
+      "known_for": [
+        {
+          "title": "Hitsumabushi",
+          "blurb": "Grilled eel on rice eaten three ways; Atsuta Houraiken has served it since 1873."
+        },
+        {
+          "title": "Red miso and fried wings",
+          "blurb": "Miso-katsu, miso-nikomi udon and tebasaki chicken wings, all cooked and all filling."
+        },
+        {
+          "title": "The Honmaru Palace",
+          "blurb": "Nagoya Castle's rebuilt palace of painted screens and gold, all on one level."
+        },
+        {
+          "title": "Atsuta Shrine",
+          "blurb": "Home of one of the imperial regalia, in a grove of great camphor trees."
+        },
+        {
+          "title": "SCMaglev and Railway Park",
+          "blurb": "JR Central's train museum, with old shinkansen, steam engines and the maglev. Closed on Tuesdays."
+        }
+      ],
+      "window": [
+        "Nagoya Castle closes 29 Dec–1 Jan; the wooden keep itself is shut for rebuilding, but the palace is open.",
+        "Atsuta Shrine takes over two million visitors on 1–3 Jan; from about 5 Jan it is calm.",
+        "Atsuta Houraiken's main shop closes on Wednesdays and the 2nd and 4th Thursdays; the department-store branches are the fallback.",
+        "Dry, cold and usually sunny."
+      ],
+      "feel": "Japan's fourth city, flat and practical, with a big appetite: eel, red miso and fried wings, the Osu shopping arcades, and a castle palace in gold. A good place to break a long journey and eat well.",
+      "getting_there": "On the Tokaido shinkansen: 1 h 40 from Tokyo, 35 minutes from Kyoto, about 3 h 20 from Hakata. The Kintetsu to Ise-Shima leaves from next door.",
+      "for_her": "Flat, with lifts, taxis and big hotels joined to the station. Everything above is cooked. Nagoya University Hospital and Nagoya City University Hospital are 15–20 minutes by taxi.",
+      "zone": "near"
+    },
+    "atami": {
+      "prefecture": "Shizuoka (Izu)",
+      "tags": [
+        "onsen",
+        "museums",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "Fireworks over the bay",
+          "blurb": "Twenty minutes from 20:20 on 25 Dec, the last of the year, watched from the flat beach promenade."
+        },
+        {
+          "title": "MOA Museum of Art",
+          "blurb": "Japanese and Chinese art and a golden tea room on the hilltop, reached by long escalators, with the sea below."
+        },
+        {
+          "title": "Kiunkaku",
+          "blurb": "A 1919 villa of gardens and Western rooms where Japan's great novelists stayed."
+        },
+        {
+          "title": "Capybaras in the bath",
+          "blurb": "At Izu Shaboten Zoo they soak in a yuzu-scented hot bath at 10:30 and 13:30 over the holidays."
+        },
+        {
+          "title": "The Jogasaki coast",
+          "blurb": "Black lava cliffs and a suspension bridge over the surf, near Izu-Kogen."
+        }
+      ],
+      "window": [
+        "25 Dec: the last winter fireworks over the bay, 20:20–20:40.",
+        "Kiunkaku closes on Wednesdays and over the year-end, about 26–30 Dec, so 25 Dec is the day for it.",
+        "The MOA Museum closes on Thursdays; its New Year dates are not yet published.",
+        "Mild, dry and sunny, about 12 °C by day; the plum garden and Kawazu's early cherries come after us."
+      ],
+      "feel": "A steep little resort tumbling down to a sandy bay: old shopping streets, steam from the hot springs and the sea in nearly every view. Livelier than Shuzenji and warmer than Tokyo.",
+      "getting_there": "45 minutes from Tokyo by Kodama or Hikari. From Lake Kawaguchi, about 2 h 45 by bus to Mishima and one stop on the shinkansen.",
+      "for_her": "The town is steep, but the seafront is flat, taxis are cheap and the MOA's escalators do the climbing. Choose a hotel with a private bath or quiet bath hours. IUHW Atami Hospital in town has obstetrics; Juntendo University Shizuoka Hospital, a major perinatal centre, is 35–40 minutes by car.",
+      "zone": "near"
+    },
+    "ise-shima": {
+      "prefecture": "Mie",
+      "tags": [
+        "food",
+        "classics",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "Ise Jingu",
+          "blurb": "The Outer and Inner shrines in ancient cedar forest, rebuilt every twenty years: Japan's most sacred place."
+        },
+        {
+          "title": "Okage Yokocho",
+          "blurb": "The old pilgrims' street by the Inner Shrine, and akafuku rice cakes under red bean paste."
+        },
+        {
+          "title": "Mikimoto Pearl Island",
+          "blurb": "Where cultured pearls began, with ama women divers in white."
+        },
+        {
+          "title": "Spiny lobster",
+          "blurb": "Ise-ebi is in season from October to April, grilled or in a hot pot, with Matoya oysters alongside."
+        },
+        {
+          "title": "Ago Bay",
+          "blurb": "Pearl rafts and pine islands from the flat deck at Yokoyama."
+        }
+      ],
+      "window": [
+        "1–3 Jan: Ise Jingu takes hundreds of thousands, with waits of up to two hours on New Year's morning; company groups follow on the first working days, so dawn is the time.",
+        "Many restaurants close 1–3 Jan; hotel restaurants carry on, and the lobster is in season.",
+        "Mild and sunny, rarely below freezing, no snow.",
+        "About 1 h 40 from Nagoya by Kintetsu limited express; the reserved seats sell out on holidays."
+      ],
+      "feel": "Japan's most sacred shrine in a cedar forest, then a coast of quiet bays, pearl rafts and fishing towns. Calm, warm and unhurried, with some of the best seafood of the trip.",
+      "getting_there": "Kintetsu limited express from Nagoya to Toba, about 1 h 40, or about two hours from Kyoto or Osaka.",
+      "for_her": "The shrines are long gravel walks under trees, flat but tiring; a taxi between the Outer and Inner shrines helps. Lobster and oysters cooked rather than raw. Ise Red Cross Hospital, a regional perinatal centre, is about 20 minutes from Toba.",
+      "zone": "west"
+    },
+    "morioka": {
+      "prefecture": "Iwate",
+      "tags": [
+        "snow",
+        "food",
+        "museums"
+      ],
+      "known_for": [
+        {
+          "title": "Wanko soba",
+          "blurb": "Bite-sized bowls of soba refilled until you put the lid on: a cheerful group meal."
+        },
+        {
+          "title": "Two more noodles",
+          "blurb": "Jajamen with miso paste, and chewy cold reimen; Morioka is proud of all three."
+        },
+        {
+          "title": "Kakunodate",
+          "blurb": "Black samurai fences holding the snow, 45 minutes away by the Komachi."
+        },
+        {
+          "title": "Chuson-ji",
+          "blurb": "The gold-leafed Konjikido hall of 1124 in a snowy cedar forest at Hiraizumi, about an hour south."
+        },
+        {
+          "title": "The old centre",
+          "blurb": "The castle-ruin park, the red-brick Iwate Bank of 1911, and craft shops by the river."
+        }
+      ],
+      "window": [
+        "Snow is likely by Christmas and the pavements ice over, so cleats and taxis.",
+        "In Kakunodate the Aoyagi house stays open in winter; the Kawarada house shuts 28 Dec–4 Jan.",
+        "Chuson-ji is open all year, 8:30–16:30 in winter, at the top of a long slope.",
+        "Shops close on 1 Jan, and Morioka Hachimangu draws the whole city on 1–3 Jan."
+      ],
+      "feel": "A small, low, walkable city of rivers and bridges with Mt Iwate behind it, red-brick banks and old craft shops. Friendly, cheap and quiet, and an easy hub for the snowy towns around it.",
+      "getting_there": "Hayabusa from Tokyo, about 2 h 15; 40 minutes from Sendai, about an hour from Shin-Aomori.",
+      "for_her": "Flat streets, but ice from late December: cleats, slow steps and taxis. Station hotels with lifts. Iwate Medical University Hospital, with a perinatal centre, is at Yahaba, about 25 minutes by taxi.",
+      "zone": "north"
+    },
+    "tsunagi": {
+      "prefecture": "Iwate",
+      "tags": [
+        "snow",
+        "onsen",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "Mt Iwate over Lake Gosho",
+          "blurb": "The volcano white across the water from the lake-side rooms."
+        },
+        {
+          "title": "Rooms with their own bath",
+          "blurb": "Open-air baths in the room at Taikan and Bessou Kakei: short, private soaks in the snow light."
+        },
+        {
+          "title": "A New Year's Eve kaiseki",
+          "blurb": "Iwate beef, Sanriku fish and toshikoshi soba without leaving the hotel."
+        },
+        {
+          "title": "Morioka on the doorstep",
+          "blurb": "The city is 25 minutes away by shuttle for anyone restless."
+        }
+      ],
+      "window": [
+        "Snow is likely from late December; the village is small and is mostly hotels.",
+        "New Year plans run dinner on 31 Dec and osechi on 1 Jan; the rooms with private baths go first.",
+        "The hotel shuttles from Morioka station must be booked; a taxi takes about 25 minutes."
+      ],
+      "feel": "A handful of big onsen hotels on the shore of a lake, with Mt Iwate standing white across the water. Nothing to do but bathe, eat and look at the mountain, which is the idea.",
+      "getting_there": "About 25 minutes from Morioka station by hotel shuttle or taxi; Morioka is 2 h 15 from Tokyo.",
+      "for_her": "Everything happens indoors, so the ice matters less. A room with its own bath lets her keep soaks short and cool. The nearest obstetric centre, Iwate Medical University Hospital, is 35–45 minutes by taxi, further than from Morioka.",
+      "zone": "north"
     }
   },
   "zones": {

@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useId, useMemo, useState } from "react";
 import { regionColor } from "@/lib/colors";
 import { legsOf, smoothPath } from "@/lib/journey";
-import { project, REGION_PREFECTURES } from "@/lib/map";
+import { project, REGION_PREFECTURES, shortRegionName } from "@/lib/map";
 import { MapInk, MapInkDefs } from "./MapInk";
 import type { Region, Stay } from "@/lib/types";
 
@@ -13,7 +13,7 @@ import type { Region, Stay } from "@/lib/types";
 const NUDGE: Record<string, [number, number]> = {
   shirakawago: [-26, -4], takayama: [10, -6], gero: [-8, 1], okuhida: [12, -14], kanazawa: [-30, 2], kyoto: [-22, 2], nara: [8, 9], osaka: [-24, 8], hakone: [8, 8], kawaguchiko: [-2, 11], tokyo: [10, -2], kamakura: [8, 7], nikko: [8, -2], kusatsu: [-26, -2], karuizawa: [10, -2], yudanaka: [-32, -3], matsumoto: [10, 4], "echigo-yuzawa": [10, -3], shuzenji: [2, 10], kinosaki: [-30, -2], okayama: [-4, 10], hiroshima: [-4, 10], koyasan: [6, 8], kumano: [6, 8], ginzan: [8, -2], "south-tohoku": [8, 4], "north-tohoku": [8, 0], hokkaido: [6, 8], kyushu: [-8, 12], shikoku: [-6, 10], okinawa: [20, -8],
 };
-const SHORT: Record<string, string> = { shirakawago: "Shirakawa-go", yudanaka: "Snow monkeys", okayama: "Okayama & Naoshima", "south-tohoku": "Sendai & Zao", "north-tohoku": "N. Tohoku", "echigo-yuzawa": "Yuzawa", kumano: "Kumano", kyushu: "Kyushu", shikoku: "Shikoku", hokkaido: "Hokkaido" };
+const SHORT: Record<string, string> = { shirakawago: "Shirakawa-go", yudanaka: "Snow monkeys", okayama: "Okayama & Naoshima", "echigo-yuzawa": "Yuzawa", kumano: "Kumano", kyushu: "Kyushu", shikoku: "Shikoku", hokkaido: "Hokkaido" };
 
 export const VIEWS = { japan: "0 0 438 516", heart: "138 163 236 180" } as const;
 
@@ -64,7 +64,7 @@ export function JapanMap({ regions, stays, highlight = null, weight, view = "hea
           const rad = 2.6 + w * 1.1;
           const dim = dimmed(r.id);
           const [dx, dy] = NUDGE[r.id] ?? [8, 0];
-          const label = SHORT[r.id] ?? r.name.replace(/,.*$/, "").replace(/ \(.*\)$/, "").replace(" Onsen", "");
+          const label = SHORT[r.id] ?? shortRegionName(r.id, [r]);
           const idx = route.findIndex((p) => p.s.region === r.id);
           return (
             <g key={r.id} className="cursor-pointer" onClick={() => pick(r.id)} onPointerEnter={() => setHover(r.id)} onPointerLeave={() => setHover(null)} style={{ opacity: dim ? 0.28 : 1, transition: "opacity 0.25s" }}>

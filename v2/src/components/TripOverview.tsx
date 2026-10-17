@@ -10,7 +10,7 @@ import { LODGING_TYPES } from "@/lib/lodging";
 import { checkVersion } from "@/lib/rules";
 import type { Version } from "@/lib/types";
 import { STYLE_LABEL, styleOf } from "@/lib/styles";
-import { movesOf, paceLabel, sharedNights, statsOf } from "@/lib/versions";
+import { movesOf, paceLabel, statsOf } from "@/lib/versions";
 import { BudgetCard, BudgetLine } from "./Budget";
 import { useStore } from "./providers";
 import { guideFor } from "@/lib/autoGuide";
@@ -22,9 +22,6 @@ export function TripOverview() {
   const { snapshot, me } = useStore();
   const plan = snapshot.versions.find((v) => v.status === "plan");
   const alternatives = snapshot.versions.filter((v) => v.status === "alternative");
-  // More than half the nights where the plan has them: a change to the plan rather than another trip.
-  const close = plan ? alternatives.filter((v) => sharedNights(plan, v) > snapshot.trip.nights / 2) : [];
-  const different = alternatives.filter((v) => !close.includes(v));
   const personal = snapshot.versions.filter((v) => v.status === "personal" && (v.shared !== false || v.owner === me?.travellerId || me?.role === "planner"));
   const g = plan ? versionGuide(plan.id) : null;
   const regionName = (id: string) => snapshot.regions.find((r) => r.id === id)?.name ?? id;
@@ -133,30 +130,18 @@ export function TripOverview() {
         </>
       ) : null}
 
-      <Section title="A different trip" aside={`${different.length} routes`}>
-        <p className="text-ink-2">The same 20 nights, shaped another way: snow country, the onsen towns, the west, the far north, the Pacific coast, a food trail, or two cities done slowly. Each one is a whole trip with its own New Year’s Eve.</p>
+      <Section title="The alternatives" aside={`${alternatives.length} alternatives`}>
+        <p className="text-ink-2">The same 20 nights spent differently. Each one trades something the plan has for something it lacks. Rank them on the Vote page, or open one and move its stops around: it becomes your own version to suggest.</p>
         <ul className="grid gap-3 sm:grid-cols-2">
-          {different.map((v) => (
-            <AlternativeCard key={v.id} v={v} planBudget={planBudget} />
-          ))}
-        </ul>
-      </Section>
-
-      <Section title="Close to the plan" aside={`${close.length} routes`}>
-        <p className="text-ink-2">The plan with one or two stops changed. Each one trades something the plan has for something it lacks. Open one and move its stops around in the builder: it becomes your own route to suggest.</p>
-        <ul className="grid gap-3 sm:grid-cols-2">
-          {close.map((v) => (
+          {alternatives.map((v) => (
             <AlternativeCard key={v.id} v={v} planBudget={planBudget} />
           ))}
         </ul>
         <div className="flex flex-wrap gap-2">
-          <Link href="/build" className="btn btn-sm btn-primary">
-            Build your own
-          </Link>
           <Link href="/board" className="btn btn-sm">
             Compare side by side
           </Link>
-          <Link href="/vote" className="btn btn-sm">
+          <Link href="/vote" className="btn btn-sm btn-primary">
             Rank them
           </Link>
         </div>

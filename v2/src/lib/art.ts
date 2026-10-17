@@ -35,6 +35,17 @@ export const REGION_ART: Record<string, string> = {
   matsumoto: "deck-neve",
   karuizawa: "deck-natureza",
   "south-tohoku": "chapter-tohoku",
+  miyajima: "chapter-setouchi",
+  shirahama: "chapter-setouchi",
+  nagano: "route-B",
+  arima: "deck-reveillon",
+  matsue: "chapter-setouchi",
+  fukuoka: "chapter-kyushu",
+  nagoya: "chapter-kyoto",
+  atami: "chapter-fuji",
+  "ise-shima": "deck-natureza",
+  morioka: "chapter-tohoku",
+  tsunagi: "chapter-tohoku",
 };
 
 export const PACE_ART = { gentle: "deck-noite-tranquila", balanced: "deck-comida", full: "deck-dia-de-rua" } as const;

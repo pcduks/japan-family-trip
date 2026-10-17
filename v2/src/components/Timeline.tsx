@@ -2,6 +2,7 @@
 
 import { regionColor } from "@/lib/colors";
 import { addDays, daysBetween, fmtDay } from "@/lib/dates";
+import { shortRegionName } from "@/lib/map";
 import type { Calendar, Region, Stay, TripData } from "@/lib/types";
 
 interface LaneProps {
@@ -15,11 +16,11 @@ interface LaneProps {
   onStayClick?: (index: number) => void;
 }
 
-const SHORT: Record<string, string> = { shirakawago: "Shira", "echigo-yuzawa": "Yuzawa", "north-tohoku": "Tohoku", gero: "Gero", okuhida: "Okuhida", kinosaki: "Kinosaki", yudanaka: "Yudanaka", hiroshima: "Hiroshima" };
+const SHORT: Record<string, string> = { shirakawago: "Shira", "echigo-yuzawa": "Yuzawa", yudanaka: "Yudanaka" };
 
 /** Fit the label to the bar: ~17 px per night at 375 px wide. */
 function label(r: Region | undefined, id: string, nights: number): string {
-  const name = SHORT[id] ?? r?.name ?? id;
+  const name = SHORT[id] ?? (r ? shortRegionName(id, [r]) : id);
   if (nights >= 4) return name;
   if (nights === 3) return name.length > 6 ? name.slice(0, 5) : name;
   if (nights === 2) return name.slice(0, 4);

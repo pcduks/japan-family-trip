@@ -13,7 +13,7 @@ import { avgOutdoorHours, exposure, EXPOSURE_LABEL } from "@/lib/exposure";
 import { IDLE_LABEL, stayNote, stayTradeoff } from "@/lib/guide";
 import { LODGING_TYPES } from "@/lib/lodging";
 import type { Place, Version } from "@/lib/types";
-import { movesOf, statsOf } from "@/lib/versions";
+import { movesOf, sharedNights, statsOf } from "@/lib/versions";
 import { guideFor } from "@/lib/autoGuide";
 import { STYLE_LABEL, styleOf } from "@/lib/styles";
 import { BudgetCard } from "./Budget";
@@ -60,6 +60,9 @@ export function RouteView() {
   if (!plan) return null;
 
   const alternatives = snapshot.versions.filter((v) => v.status === "alternative").sort((a, b) => statsOf(a, snapshot).moves - statsOf(b, snapshot).moves);
+  // More than half the nights where the route has them: a change to the route rather than another trip.
+  const close = plan ? alternatives.filter((a) => sharedNights(plan, a) > snapshot.trip.nights / 2) : [];
+  const different = alternatives.filter((a) => !close.includes(a));
   const v: Version = snapshot.versions.find((x) => x.id === shown) ?? plan;
   const isPlan = v.id === plan.id;
   const g = guideFor(v, snapshot);
@@ -324,22 +327,29 @@ export function RouteView() {
         </Section>
       ) : null}
 
-      <Section title="What we could change" aside="fewest check-ins first">
-        <p className="text-ink-2">The same 20 nights spent differently. Tap one to see it above: the map, the stops, the trade-offs and the cost all switch.</p>
-        <ul className="grid gap-3 sm:grid-cols-2">
-          {alternatives.map((a) => (
-            <AlternativeCard
-              key={a.id}
-              v={a}
-              planBudget={planBudget}
-              onShow={() => {
-                setShown(a.id);
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            />
-          ))}
-        </ul>
-      </Section>
+      {[
+        { title: "A different trip", text: "The same 20 nights shaped another way, each a whole trip with its own New Year’s Eve. Tap one to see it above: the map, the stops, the trade-offs and the cost all switch.", list: different },
+        { title: "Close to the route", text: "The route with one or two stops changed. Each one trades something the route has for something it lacks.", list: close },
+      ].map((group) =>
+        group.list.length ? (
+          <Section key={group.title} title={group.title} aside={`${group.list.length} · fewest check-ins first`}>
+            <p className="text-ink-2">{group.text}</p>
+            <ul className="grid gap-3 sm:grid-cols-2">
+              {group.list.map((a) => (
+                <AlternativeCard
+                  key={a.id}
+                  v={a}
+                  planBudget={planBudget}
+                  onShow={() => {
+                    setShown(a.id);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                />
+              ))}
+            </ul>
+          </Section>
+        ) : null,
+      )}
 
       <BudgetCard v={v} regions={snapshot.regions} regionName={regionName} title={isPlan ? "What it costs, per couple" : `What “${g?.theme ?? v.name}” costs, per couple`} />
 
