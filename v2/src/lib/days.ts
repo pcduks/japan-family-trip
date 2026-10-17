@@ -33,6 +33,8 @@ export interface DayPlan {
   new_year?: "ok" | "closed" | "only";
   closed_weekdays?: string[];
   dates_not?: string[];
+  /** Only on these days ("01-01"), for plans like a New Year's Day arrival. */
+  dates_only?: string[];
   for_her?: string | null;
   from?: string[];
 }
@@ -98,6 +100,7 @@ export function planDays(v: Pick<Version, "id" | "stays" | "parent_version_id">,
     if (dp.new_year === "only" && !inNewYear(date)) return false;
     if (dp.closed_weekdays?.includes(weekday(date))) return false;
     if (dp.dates_not?.includes(date.slice(5))) return false;
+    if (dp.dates_only && !dp.dates_only.includes(date.slice(5))) return false;
     // A plan built around one place is off when that place is shut; a side visit can be dropped instead.
     const main = dp.items?.find((it) => it.place_id);
     return main ? placeOpen(places.get(main.place_id!), date) : true;
@@ -147,7 +150,7 @@ export function planDays(v: Pick<Version, "id" | "stays" | "parent_version_id">,
         continue;
       }
       if (date === s.from && (i === 0 || moving)) {
-        const arrive = (pp.arrival ?? []).find((dp) => works(dp, date)) ?? pp.arrival?.[0];
+        const arrive = (pp.arrival ?? []).find((dp) => works(dp, date)) ?? pp.arrival?.find((dp) => !dp.dates_only && dp.new_year !== "only");
         const how = i === 0 ? "" : `To ${name}${leg ? ` (${leg.how})` : ""}. `;
         const easy = !!leg && leg.hours >= 3.5;
         out.push({
