@@ -16,6 +16,9 @@ export interface VersionGuide {
   tradeoffs?: Record<string, Tradeoff>;
   /** One line per date, for routes written without a day-by-day plan. */
   days?: Record<string, string>;
+  /** Where and how New Year's Eve is spent. */
+  nye?: string;
+  sources?: { label: string; url: string }[];
 }
 
 /** Stay longer or move on: what one more night buys, what one fewer costs, and an honest idle-day flag. */

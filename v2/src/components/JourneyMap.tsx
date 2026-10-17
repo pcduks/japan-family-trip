@@ -268,6 +268,8 @@ function SegmentPath({ d, mode }: { d: string; mode: Mode }) {
       </>
     );
   if (mode === "bus") return <path d={d} fill="none" stroke="var(--accent)" strokeWidth={2.4} strokeDasharray="5 3.5" strokeLinecap="round" vectorEffect="non-scaling-stroke" />;
+  if (mode === "ferry") return <path d={d} fill="none" stroke="var(--jm-ink)" strokeWidth={1.8} strokeDasharray="2 4" strokeLinecap="round" vectorEffect="non-scaling-stroke" />;
+  if (mode === "taxi") return <path d={d} fill="none" stroke="var(--accent)" strokeWidth={1.8} strokeDasharray="2 3" strokeLinecap="round" vectorEffect="non-scaling-stroke" />;
   if (mode === "ropeway") return <path d={d} fill="none" stroke="var(--jm-ink)" strokeWidth={2} strokeDasharray="1 3" strokeLinecap="round" vectorEffect="non-scaling-stroke" />;
   return <path d={d} fill="none" stroke="var(--jm-ink)" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />;
 }
@@ -426,7 +428,8 @@ function startEngine(o: EngineOpts): Engine {
       const flip = Math.abs(ang) > 90;
       train.setAttribute("transform", `translate(${at.x} ${at.y}) scale(${k}) rotate(${flip ? ang + 180 : ang}) scale(${flip ? -1 : 1} 1)`);
       train.style.opacity = "1";
-      train.dataset.mode = modeAt(legs[travelling], legFrac) === "bus" ? "bus" : "rail";
+      const mode = modeAt(legs[travelling], legFrac);
+      train.dataset.mode = mode === "bus" || mode === "taxi" ? "bus" : "rail";
       if (pill) {
         const sx = ((at.x - cam.x) / cam.w) * width;
         const sy = ((at.y - cam.y) / cam.h) * (width / aspect);

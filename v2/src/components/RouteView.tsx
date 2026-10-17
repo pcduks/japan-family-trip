@@ -177,6 +177,26 @@ export function RouteView() {
               <b>Why it exists:</b> {g.why} <b>Suits:</b> {g.suits} <b>Gives up:</b> {g.trade}
             </p>
           ) : null}
+          {g.nye ? (
+            <p className="card max-w-prose border-l-4 border-l-accent p-4 text-sm leading-relaxed text-ink-2">
+              <b className="block pb-1 text-ink">New Year’s Eve</b>
+              {g.nye}
+            </p>
+          ) : null}
+          {g.sources?.length ? (
+            <details className="text-xs text-muted">
+              <summary className="cursor-pointer">Sources for this route ({g.sources.length})</summary>
+              <ul className="grid gap-1 pt-2">
+                {g.sources.map((s) => (
+                  <li key={s.url}>
+                    <a href={s.url} target="_blank" rel="noreferrer">
+                      {s.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          ) : null}
         </Section>
       ) : null}
 

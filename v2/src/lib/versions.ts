@@ -172,6 +172,13 @@ export function nightsBetween(from: string, to: string): number {
   return daysBetween(from, to);
 }
 
+/** Nights two routes spend in the same place on the same date. */
+export function sharedNights(a: Pick<Version, "stays">, b: Pick<Version, "stays">): number {
+  let n = 0;
+  for (const s of a.stays) for (const t of b.stays) if (s.region === t.region) n += Math.max(0, daysBetween(s.from > t.from ? s.from : t.from, s.to < t.to ? s.to : t.to));
+  return n;
+}
+
 /**
  * Two routes in one: follow `a` for the nights before `switchDate` and `b`
  * from that night on. Neighbouring nights in the same place merge into one

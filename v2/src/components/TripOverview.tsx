@@ -9,7 +9,8 @@ import { stayNote, versionGuide } from "@/lib/guide";
 import { LODGING_TYPES } from "@/lib/lodging";
 import { checkVersion } from "@/lib/rules";
 import type { Version } from "@/lib/types";
-import { movesOf, paceLabel, statsOf } from "@/lib/versions";
+import { STYLE_LABEL, styleOf } from "@/lib/styles";
+import { movesOf, paceLabel, sharedNights, statsOf } from "@/lib/versions";
 import { BudgetCard, BudgetLine } from "./Budget";
 import { useStore } from "./providers";
 import { guideFor } from "@/lib/autoGuide";
@@ -21,6 +22,9 @@ export function TripOverview() {
   const { snapshot, me } = useStore();
   const plan = snapshot.versions.find((v) => v.status === "plan");
   const alternatives = snapshot.versions.filter((v) => v.status === "alternative");
+  // More than half the nights where the plan has them: a change to the plan rather than another trip.
+  const close = plan ? alternatives.filter((v) => sharedNights(plan, v) > snapshot.trip.nights / 2) : [];
+  const different = alternatives.filter((v) => !close.includes(v));
   const personal = snapshot.versions.filter((v) => v.status === "personal" && (v.shared !== false || v.owner === me?.travellerId || me?.role === "planner"));
   const g = plan ? versionGuide(plan.id) : null;
   const regionName = (id: string) => snapshot.regions.find((r) => r.id === id)?.name ?? id;
@@ -129,18 +133,30 @@ export function TripOverview() {
         </>
       ) : null}
 
-      <Section title="The alternatives" aside={`${alternatives.length} alternatives`}>
-        <p className="text-ink-2">The same 20 nights spent differently. Each one trades something the plan has for something it lacks. Rank them on the Vote page, or open one and move its stops around: it becomes your own version to suggest.</p>
+      <Section title="A different trip" aside={`${different.length} routes`}>
+        <p className="text-ink-2">The same 20 nights, shaped another way: snow country, the onsen towns, the west, the far north, the Pacific coast, a food trail, or two cities done slowly. Each one is a whole trip with its own New Year’s Eve.</p>
         <ul className="grid gap-3 sm:grid-cols-2">
-          {alternatives.map((v) => (
+          {different.map((v) => (
+            <AlternativeCard key={v.id} v={v} planBudget={planBudget} />
+          ))}
+        </ul>
+      </Section>
+
+      <Section title="Close to the plan" aside={`${close.length} routes`}>
+        <p className="text-ink-2">The plan with one or two stops changed. Each one trades something the plan has for something it lacks. Open one and move its stops around in the builder: it becomes your own route to suggest.</p>
+        <ul className="grid gap-3 sm:grid-cols-2">
+          {close.map((v) => (
             <AlternativeCard key={v.id} v={v} planBudget={planBudget} />
           ))}
         </ul>
         <div className="flex flex-wrap gap-2">
+          <Link href="/build" className="btn btn-sm btn-primary">
+            Build your own
+          </Link>
           <Link href="/board" className="btn btn-sm">
             Compare side by side
           </Link>
-          <Link href="/vote" className="btn btn-sm btn-primary">
+          <Link href="/vote" className="btn btn-sm">
             Rank them
           </Link>
         </div>
@@ -188,7 +204,7 @@ export function AlternativeCard({ v, planBudget, onShow }: { v: Version; planBud
         <RegionCover regionId={v.stays.find((s) => !["tokyo", "kanazawa", "kyoto"].includes(s.region) && !snapshot.versions.find((p) => p.status === "plan")?.stays.some((ps) => ps.region === s.region))?.region ?? nye?.region ?? v.stays[0]?.region ?? "tokyo"} className="hero-fade aspect-[5/2]">
           <span className="absolute inset-x-3 bottom-3 z-10 grid gap-0.5 text-white">
             <span className="text-[0.72rem] font-semibold uppercase tracking-wide opacity-90">
-              {owner ? `${owner.name}’s version` : paceLabel(v.pace)}
+              {owner ? `${owner.name}’s version` : `${STYLE_LABEL[styleOf(v.id)] ?? "Classic"} · ${paceLabel(v.pace)}`}
             </span>
             <span className="display text-[1.45rem] leading-tight">{g?.theme ?? v.name}</span>
           </span>

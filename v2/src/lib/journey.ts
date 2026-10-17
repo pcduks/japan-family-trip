@@ -8,7 +8,7 @@ import { legBetween } from "./legs";
 import { project } from "./map";
 import type { Region, Stay } from "./types";
 
-export type Mode = "shinkansen" | "limited_express" | "local" | "bus" | "private_rail" | "ropeway" | "rail";
+export type Mode = "shinkansen" | "limited_express" | "local" | "bus" | "private_rail" | "ropeway" | "ferry" | "taxi" | "rail";
 export interface Pt {
   x: number;
   y: number;
@@ -49,6 +49,8 @@ export const MODE_LABEL: Record<Mode, string> = {
   bus: "Bus",
   private_rail: "Private railway",
   ropeway: "Ropeway",
+  ferry: "Ferry",
+  taxi: "Taxi",
   rail: "Train",
 };
 
