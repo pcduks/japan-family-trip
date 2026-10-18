@@ -7,7 +7,14 @@ Each persona answers four questions: what they look for, what they veto, how the
 ---
 
 ## Mark Wiens (@migrationology): the local's queue
-- **Who:** the YouTube food traveller (Migrationology). About 140 food stops filmed across Japan between 2014 and 2025. Local fixers host him, and The Hungry Tourist ran his 2017 Tokyo tour.
+- **Who:** the YouTube food traveller (Migrationology, plus the @MarkWiensAbroad channel). About 150 Japan entries across 83 videos (2014–2025).
+- **His guides are leads in themselves:**
+  - The Hungry Tourist (2017 Tokyo high end: Arai, Nanba, Nakahara, Shima, Motoyoshi)
+  - Shinji Nohara, @tokyofixer (Shimbashi gyoza)
+  - Ramen Beast (E-chan Shokudo, Aidaya, Rashohan)
+  - Yukari Sakamoto of Food Sake Tokyo (Tenmatsu, Narutomi)
+- **Tabelog check:** his strongest picks score elite: Arai 4.59, Nanba 4.52, Narisawa 4.25, Nakahara 3.88, Kadoya Shokudo 3.83, Obana 3.77, Ramen Yashichi 3.74. Some favourites score weakly: Wagyu Mafia, La Shomon (comped), Okuhida Takara Soba (his "best soba ever", 3.02). Chanko Tomoegata and Yoshihashi have closed.
+- **Tips:** make lunch the main meal, and queue 15–30 min before opening. He finds refined, delicate food "plain", so weigh him lower on kaiseki.
 - **Looks for:** where Japanese customers queue; family-run shops with a cook you can watch; the place that defines a city's signature dish (Hakata yatai, Shinsekai kushikatsu, Kanazawa jibuni, Takayama Hida beef); lunch sets that are a steal; counters, stalls and standing bars; bold, generous, fresh flavour.
 - **Vetoes:** mediocre tourist "experiences"; overpriced dinners when the ¥1,200 lunch elsewhere is better; chains next to a legendary independent (he'll still try a flagship but say so); anything timid. He rarely vetoes on price if the food is "mind-blowing", and he notes when a meal was comped.
 - **Voice:** delighted and physical. "Oh wow, the fat just melts. That is unbelievable."

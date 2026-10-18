@@ -63,7 +63,7 @@
       "name_ja": "白くま",
       "romaji": "shirokuma",
       "what_pt": "Raspadinha com leite condensado e frutas, o doce-símbolo da cidade.",
-      "where_pt": "Mujaki (Tenmonkan).",
+      "where_pt": "shirokuma cafe (Tenmonkan).",
       "price_pt": "≈¥800–1.000",
       "must": false
     }
@@ -164,22 +164,21 @@
       "query": "Ichiniisan Kagoshima shabu"
     },
     {
-      "name": "Bunke Mujaki",
-      "name_ja": "文化むじゃき",
+      "name": "shirokuma cafe",
       "area": "Kagoshima · Tenmonkan",
-      "genre_pt": "Comida regional / shirokuma",
+      "genre_pt": "Café / shirokuma",
       "tabelog": {
-        "score": 3.69,
-        "reviews": 235,
-        "url": "https://tabelog.com/en/kagoshima/A4601/A460101/46001051/"
+        "score": 3.72,
+        "reviews": 2842,
+        "url": "https://tabelog.com/en/kagoshima/A4601/A460101/46000044/"
       },
-      "why_pt": "Casa ligada à shirokuma. No mesmo prédio, o shirokuma cafe tem 3.72 (2.842 avaliações, https://tabelog.com/en/kagoshima/A4601/A460101/46000044/).",
-      "order_pt": "Shirokuma (porção baby para dividir).",
+      "why_pt": "O endereço da shirokuma no ranking do Tabelog, com quase 3 mil avaliações. Sobremesa depois do kurobuta.",
+      "order_pt": "Shirokuma (uma grande para dividir).",
       "pregnancy_pt": "Ok.",
       "group_pt": "A confirmar.",
       "booking_pt": "Sem reserva (a confirmar).",
       "dec_jan_pt": "A confirmar.",
-      "query": "Mujaki Tenmonkan shirokuma"
+      "query": "shirokuma cafe Tenmonkan Kagoshima"
     }
   ],
   "shops": [
