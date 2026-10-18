@@ -1,221 +1,33 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
-import type { ReactNode } from "react";
-import foodGuide from "../../data/food-guide.json";
 import { fmtDay } from "@/lib/dates";
-import { DEEP_ONLY_TABS, FOOD_REGION, TOPIC_TABS } from "@/lib/foodDeep";
+import { FOOD_REGION } from "@/lib/foodDeep";
 import { routeVisits } from "@/lib/days";
 import type { Place } from "@/lib/types";
 import { useStore } from "./providers";
-import { reportTabForRegion } from "./PlanReport";
-import { RegionCover } from "./RegionCover";
-import { Page, PageHeader, RegionDot, Section } from "./ui";
+import { Section } from "./ui";
 
-interface FoodRegion {
-  title: string;
-  dishes: string[];
-  intro: string;
-  for_her: string;
-  dates: string;
-  guides: { label: string; url: string }[];
-  extras: { name: string; url: string; what: string; who: string; six: string; hours: string; map: string }[];
-}
-
-const GUIDE = foodGuide as unknown as {
-  how_we_eat: { title: string; text: string }[];
-  for_her: { summary: string; fine: string[]; careful: string[]; avoid: string[]; sources: { label: string; url: string }[] };
-  ryokan_meals: { text: string; ask_for: string[] };
-  regions: Record<string, FoodRegion>;
-};
-
-const REGION_TABS = Object.entries(GUIDE.regions).flatMap(([id, r]) => [
-  { id, label: r.title },
-  ...DEEP_ONLY_TABS.filter((t) => t.after === id).map((t) => ({ id: t.id, label: t.label })),
-]);
-
-const TABS = [
-  { id: "", label: "How we eat" },
-  TOPIC_TABS[0],
-  ...REGION_TABS,
-  ...TOPIC_TABS.slice(1),
-  { id: "her", label: "For Fernanda" },
-  { id: "ryokan", label: "Ryokan meals" },
-  { id: "ours", label: "Our Tokyo list" },
-];
-
-/** `deep` is the open tab's deep guide (a city or a how-to), rendered on the server by the page. */
-export function Food({ deep }: { deep?: ReactNode }) {
+/** Our own lists: the saved places in the library that are meals, and the family's Tokyo list. */
+export function OurList() {
   const { snapshot } = useStore();
-  const params = useSearchParams();
-  const wanted = params.get("region");
-  const router = useRouter();
-  const active = wanted ? (FOOD_REGION[wanted] ?? wanted) : "";
   const meals = snapshot.places.filter((p) => p.size === "meal" || p.kind === "food");
   const ownList = snapshot.food_list;
-  // One thing at a time: the first tab is how we eat, what she can eat and the ryokan meals; each city has its own.
-  const show = (id: string) => active === id || (!active && (id === "her" || id === "ryokan"));
-  const regionOrder = Object.keys(GUIDE.regions);
-
   return (
-    <Page wide>
-      <PageHeader eyebrow={`Where we eat · ${meals.length} places · ${ownList.length} of our own`} title="Food">
-        Three weeks, sixty-odd meals, one of us pregnant and two of us new to all of it. Start with how we eat and what to book by when. Each city has its own tab: why it eats the way it does, what to try, the markets, and restaurants checked on Tabelog with the critics who went. Depachika, station food, konbini and manners have their own tabs.
-      </PageHeader>
-
-      <div className="no-scrollbar sticky top-0 z-10 -mx-4 flex gap-2 overflow-x-auto bg-bg px-4 py-2">
-        {TABS.map((t) => (
-          <button key={t.id} className={`chip shrink-0 ${active === t.id ? "bg-accent text-accent-ink" : ""}`} aria-pressed={active === t.id} onClick={() => router.replace(t.id ? `/food?region=${t.id}` : "/food", { scroll: false })}>
-            {GUIDE.regions[t.id] ? <RegionDot id={t.id} size={8} /> : null} {t.label}
-          </button>
-        ))}
-      </div>
-
-      {!active ? (
-        <Section title="How we eat as seven">
-          <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {GUIDE.how_we_eat.map((h, i) => (
-              <li key={h.title} className="card grid gap-1 p-4">
-                <span className="display text-[1.6rem] leading-none text-accent">{i + 1}</span>
-                <b>{h.title}</b>
-                <span className="text-sm text-ink-2">{h.text}</span>
-              </li>
+    <>
+      {meals.length ? (
+        <Section title="Saved in our places" id="saved" aside={`${meals.length} places`}>
+          <p className="text-sm text-ink-2">Meals saved in the trip’s places library, with who recommended them.</p>
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {meals.map((p) => (
+              <FoodCard key={p.id} p={p} />
             ))}
-          </ol>
+          </ul>
         </Section>
       ) : null}
-
-      {regionOrder.filter(show).map((id) => {
-        const r = GUIDE.regions[id];
-        const places = meals.filter((p) => (FOOD_REGION[p.region] ?? p.region) === id);
-        const region = snapshot.regions.find((x) => x.id === id);
-        const stays = snapshot.versions.find((v) => v.status === "plan")?.stays.filter((s) => (FOOD_REGION[s.region] ?? s.region) === id) ?? [];
-        return (
-          <section key={id} className="grid gap-4" aria-labelledby={`food-${id}`}>
-            <RegionCover regionId={id} className="hero-fade -mx-4 h-[290px] sm:mx-0 sm:h-auto sm:aspect-[3/1] sm:rounded-2xl" sizes="(max-width: 1024px) 100vw, 1024px">
-              <div className="absolute inset-x-4 bottom-4 z-10 grid gap-1 text-white">
-                <p className="text-[0.72rem] font-semibold tracking-wide uppercase opacity-90">
-                  {stays.length ? stays.map((s) => `${fmtDay(s.from, false)} – ${fmtDay(s.to, false)}`).join(" and ") : `${region?.name ?? r.title} · an alternative, not on the route`}
-                </p>
-                <h2 id={`food-${id}`} className="display text-[2rem] leading-none">
-                  {r.title}
-                </h2>
-                <ul className="flex flex-wrap gap-1.5 pt-1">
-                  {r.dishes.map((d) => (
-                    <li key={d} className="rounded-full bg-white/20 px-2 py-0.5 text-xs font-semibold backdrop-blur">
-                      {d}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </RegionCover>
-            <p className="max-w-prose text-[1.02rem] leading-relaxed text-ink-2">{r.intro}</p>
-            <div className="grid gap-3 text-sm sm:grid-cols-2">
-              <p className="rounded-xl bg-bg-2 p-3">
-                <b>For Fernanda:</b> {r.for_her}
-              </p>
-              <p className="rounded-xl bg-bg-2 p-3">
-                <b>On our dates:</b> {r.dates}
-              </p>
-            </div>
-            {places.length ? (
-              <ul className="grid gap-3 sm:grid-cols-2">
-                {places.map((p) => (
-                  <FoodCard key={p.id} p={p} />
-                ))}
-              </ul>
-            ) : null}
-            {r.extras.length ? (
-              <div className="grid gap-1 text-sm">
-                <p className="eyebrow">Also in the guides</p>
-                <ul className="grid gap-1 sm:grid-cols-2">
-                  {r.extras.map((e) => (
-                    <li key={e.name} className="border-b border-rule py-1.5">
-                      <a href={e.url} target="_blank" rel="noreferrer" className="font-semibold no-underline">
-                        {e.name}
-                      </a>{" "}
-                      <span className="text-ink-2">· {e.what}</span>
-                      <span className="block text-xs text-muted">
-                        {e.who} · a table for six: {e.six} · {e.hours} ·{" "}
-                        <a href={e.map} target="_blank" rel="noreferrer">
-                          map
-                        </a>
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-            <div className="grid gap-1 text-sm">
-              <p className="eyebrow">Guides to read</p>
-              <ul className="flex flex-wrap gap-x-3 gap-y-1">
-                {r.guides.map((g) => (
-                  <li key={g.url}>
-                    <a href={g.url} target="_blank" rel="noreferrer">
-                      {g.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-xs text-muted">
-                <Link href={`/areas/${id}`}>Places in {r.title.split(" and")[0]}</Link> · <Link href={`/plan?tab=${reportTabForRegion(id) ?? id}`}>more on eating here</Link>
-              </p>
-            </div>
-          </section>
-        );
-      })}
-
-      {deep}
-
-      {show("her") ? (
-        <Section title="What Fernanda can eat" id="her" aside="29–32 weeks">
-          <p className="max-w-prose text-ink-2">{GUIDE.for_her.summary}</p>
-          <div className="grid gap-3 sm:grid-cols-3">
-            <ListCard title="Fine" tone="ok" items={GUIDE.for_her.fine} />
-            <ListCard title="With care" tone="warn" items={GUIDE.for_her.careful} />
-            <ListCard title="Not this trip" tone="danger" items={GUIDE.for_her.avoid} />
-          </div>
-          <p className="text-sm text-muted">
-            A note to show: <span className="font-semibold text-ink">妊娠中です。生もの抜きでお願いします。</span> (I am pregnant; nothing raw, please.) Sources:{" "}
-            {GUIDE.for_her.sources.map((s, i) => (
-              <span key={s.url}>
-                {i ? " · " : ""}
-                <a href={s.url} target="_blank" rel="noreferrer">
-                  {s.label}
-                </a>
-              </span>
-            ))}
-            . <Link href="/plan?tab=plan">More on eating well while pregnant</Link>.
-          </p>
-        </Section>
-      ) : null}
-
-      {show("ryokan") ? (
-        <Section title="The ryokan meals" id="ryokan" aside="Gero, and Hakone if we swap">
-          <p className="max-w-prose text-ink-2">{GUIDE.ryokan_meals.text}</p>
-          <div className="card grid gap-2 p-4 text-sm">
-            <p className="eyebrow">Ask for, when booking</p>
-            <ul className="grid gap-1 sm:grid-cols-2">
-              {GUIDE.ryokan_meals.ask_for.map((a) => (
-                <li key={a} className="flex gap-2">
-                  <span aria-hidden="true" className="text-accent">
-                    ●
-                  </span>
-                  {a}
-                </li>
-              ))}
-            </ul>
-            <p className="text-muted">
-              The candidate ryokan, with prices and links, are on <Link href="/#stop-3">the route’s Gero stop</Link> and <Link href="/routes/fuji-lake#stop-5">the Hakone route’s stop</Link>.
-            </p>
-          </div>
-        </Section>
-      ) : null}
-
-      {show("ours") && ownList.length ? (
+      {ownList.length ? (
         <Section title="Our own Tokyo list" id="ours" aside="from the family’s saved Google Maps list">
-          <p className="text-sm text-ink-2">Bars and restaurants we saved ourselves over the years. Ratings are Google’s at the time of saving. Not checked for this trip, just ours. Nothing here has been checked for Fernanda.</p>
+          <p className="text-sm text-ink-2">Bars and restaurants we saved ourselves over the years. Ratings are Google’s at the time of saving. Not checked for this trip, and not checked for Fernanda.</p>
           <ul className="grid gap-1 text-sm sm:grid-cols-2">
             {ownList.map((f) => (
               <li key={f.n} className="flex items-baseline justify-between gap-2 border-b border-rule py-1.5">
@@ -231,11 +43,11 @@ export function Food({ deep }: { deep?: ReactNode }) {
           </ul>
         </Section>
       ) : null}
-    </Page>
+    </>
   );
 }
 
-function ListCard({ title, tone, items }: { title: string; tone: "ok" | "warn" | "danger"; items: string[] }) {
+export function ListCard({ title, tone, items }: { title: string; tone: "ok" | "warn" | "danger"; items: string[] }) {
   const color = { ok: "text-ok", warn: "text-warn", danger: "text-danger" }[tone];
   return (
     <div className="card grid content-start gap-2 p-4">
@@ -284,7 +96,7 @@ export function FoodCard({ p }: { p: Place }) {
             </>
           ) : null}
         </Row>
-        {f.group_of_6 ? <Row k="Six of us">{f.group_of_6}</Row> : null}
+        {f.group_of_6 ? <Row k="Group">{f.group_of_6}</Row> : null}
         {herNote ? (
           <Row k="For Fernanda">
             <span className="text-warn">{herNote}</span>

@@ -5,7 +5,8 @@ import "server-only";
  * to /api/act; the switch below is the whole contract.
  */
 import type { DB } from "./supabase/types";
-import type { Comment, Reaction, Stay, SuggestionDiff, Version, VoteKind } from "./types";
+import type { Comment, FoodBooking, Reaction, Stay, SuggestionDiff, Version, VoteKind } from "./types";
+import { badBooking, encodeNotes, foodDeadline } from "./food";
 import type { Viewer } from "./supabase/server";
 import { describeDiff } from "./versions";
 import { rowToStay } from "./data/loader";
@@ -162,7 +163,28 @@ export async function runAction(sb: DB, me: Viewer, action: string, p: Record<st
     }
     case "setDeadlineDone": {
       if (me.role !== "planner") throw new ActionError("Planners only", 403);
-      fail(await sb.from("deadlines").update({ done: p.done === true }).eq("id", String(p.id ?? "")), "deadlines");
+      const id = String(p.id ?? "");
+      // Food dates live in the app's data until first ticked; ticking stores them.
+      const food = foodDeadline(id);
+      if (food) fail(await sb.from("deadlines").upsert({ id, date: food.date, item: food.item, source: food.source ?? null, done: p.done === true }, { onConflict: "id" }), "deadlines");
+      else fail(await sb.from("deadlines").update({ done: p.done === true }).eq("id", id), "deadlines");
+      return;
+    }
+    case "setFoodBooking": {
+      if (me.role !== "planner") throw new ActionError("Planners only", 403);
+      const b = (p.booking ?? {}) as Partial<FoodBooking>;
+      const bad = badBooking(b);
+      if (bad) throw new ActionError(bad);
+      const row = { target_type: "food", target_id: b.target_id!, name: b.name!.trim().slice(0, 120), url: b.url ?? null, status: b.status!, booked_by: me.travellerId, notes: encodeNotes(b) };
+      const { data } = await sb.from("bookings").select("id").eq("target_type", "food").eq("target_id", row.target_id).limit(1).maybeSingle();
+      const existing = data as Row | null;
+      if (existing) fail(await sb.from("bookings").update(row).eq("id", existing.id), "bookings");
+      else fail(await sb.from("bookings").insert(row), "bookings");
+      return;
+    }
+    case "clearFoodBooking": {
+      if (me.role !== "planner") throw new ActionError("Planners only", 403);
+      fail(await sb.from("bookings").delete().eq("target_type", "food").eq("target_id", String(p.targetId ?? "")), "bookings");
       return;
     }
     case "withdrawSuggestion": {

@@ -16,7 +16,9 @@
       "what": "Soba served in little heaps on a bamboo sieve, with the scent of mountain buckwheat.",
       "where": "Uzuraya, Soba no Mi. Mark Wiens had tōji soba (soba dipped in hot broth) at Fukuden, in Nagano.",
       "must": true,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Soba in little heaps on a bamboo sieve, from a sacred mountain.",
+      "story": "Shinshū is soba country out of necessity: cold mountains, difficult rice, and buckwheat that likes altitude and mist. As early as the 17th century the Honchō Shokukan ranked Shinshū buckwheat above the rest. Togakushi, a sacred mountain of ascetics north of the city, makes the prefecture's most famous soba, served in little heaps on a bamboo sieve. Take one heap at a time, dip it, and breathe in the buckwheat."
     },
     {
       "name": "Oyaki",
@@ -25,7 +27,9 @@
       "what": "A wheat dumpling stuffed with nozawana, aubergine, pumpkin or beans. Grilled on the irori or steamed.",
       "where": "Ogawa no Shō Daimon, on the Zenkō-ji approach.",
       "must": true,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "A wheat dumpling stuffed with nozawana greens, aubergine or beans.",
+      "story": "Rice yielded little in these mountains, so people made their own bread: wheat dumplings stuffed with nozawana greens, aubergine, pumpkin or beans, baked in the ashes of the irori, the sunken hearth. In central Nagano they're usually steamed now, but Ogawa still shows the old way, grilling them on the irori. On the Zenkō-ji approach, try nozawana and aubergine, and eat them hot in your hand."
     },
     {
       "name": "Shukubō shōjin ryōri",
@@ -34,7 +38,9 @@
       "what": "Buddhist vegetarian dinner and breakfast at a temple lodging, with tofu, mountain vegetables and sesame.",
       "where": "Zenkō-ji's 39 shukubō (book directly with each).",
       "must": true,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Buddhist vegetarian dinner at a temple lodging: tofu, mountain greens, sesame.",
+      "story": "Nagano grew up as Zenkō-ji's temple town. In the Edo period the pilgrimage became a popular craze, and temple lodgings sprang up to take in the pilgrims. Today there are 39, 25 Tendai and 14 Jōdo, and anyone can sleep in one. Dinner and breakfast are shōjin ryōri, Buddhist vegetarian cooking: tofu, mountain vegetables and sesame. Each lodging is booked directly, and it's all easy for Fernanda."
     },
     {
       "name": "Zenkō-ji shichimi",
@@ -43,7 +49,8 @@
       "what": "A seven-spice chilli blend; Yawataya Isogorō's is the classic temple souvenir.",
       "where": "Yawataya Isogorō, on the temple approach.",
       "must": false,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "A seven-spice chilli blend; the classic Zenkō-ji souvenir."
     },
     {
       "name": "Shinshū beef sukiyaki",
@@ -53,7 +60,8 @@
       "where": "Suki-tei Honten.",
       "must": false,
       "pregnancy": "careful",
-      "pregnancy_note": "For Fernanda: skip the raw dipping egg and let the beef cook through."
+      "pregnancy_note": "For Fernanda: skip the raw dipping egg and let the beef cook through.",
+      "glance": "Local beef cooked in an iron pot with a sweet sauce."
     },
     {
       "name": "Obuse chestnut sweets",
@@ -62,7 +70,8 @@
       "what": "Obuse, half an hour away, is the chestnut town: kuri-yōkan and chestnut sweets.",
       "where": "Sakurai Kanseidō in Obuse.",
       "must": false,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Chestnut sweets from Obuse, the chestnut town half an hour away."
     },
     {
       "name": "Nagano apples",
@@ -71,7 +80,8 @@
       "what": "December is still the season.",
       "where": "Fruit shops and supermarkets.",
       "must": false,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Local apples, still in season in December."
     }
   ],
   "areas": [
@@ -87,7 +97,8 @@
       ],
       "tips": "Go early; come back in the evening when the temple empties.",
       "dec_jan": "Our stop is Thu 24 Dec, on the way to Yudanaka, a week before the hatsumōde crowds of 1–3 Jan (when shops keep special hours, to confirm).",
-      "query": "Zenkoji Nakamise Nagano"
+      "query": "Zenkoji Nakamise Nagano",
+      "glance": "The pilgrims' avenue: oyaki, shichimi, soba and temple lodgings."
     },
     {
       "name": "Togakushi",
@@ -99,7 +110,8 @@
       ],
       "tips": "Put a name on Uzuraya's board before it opens. The Kagami-ike bus doesn't run in winter.",
       "dec_jan": "Deep snow; winter and New Year hours to confirm. Not on our route (the 26 Dec day is ski or Obuse).",
-      "query": "Togakushi soba"
+      "query": "Togakushi soba",
+      "glance": "A snowy mountain shrine village, home of Togakushi soba."
     },
     {
       "name": "Obuse",
@@ -112,7 +124,8 @@
       ],
       "tips": "Nagano Dentetsu train, ~30 min.",
       "dec_jan": "Our Obuse option is Sat 26 Dec, the ski-or-Obuse day from Yudanaka. Hours to confirm.",
-      "query": "Obuse chestnut"
+      "query": "Obuse chestnut",
+      "glance": "A small town of chestnuts and Hokusai, 30 minutes by train."
     }
   ],
   "places": [
@@ -134,7 +147,15 @@
       "group": "70 seats; say we're seven.",
       "booking": "Name board before opening.",
       "dec_jan": "Closed Tuesdays and Wednesdays. Winter and New Year hours to confirm; Togakushi isn't on our route.",
-      "query": "Uzuraya Togakushi"
+      "query": "Uzuraya Togakushi",
+      "pregnancy": "ok",
+      "seven": "yes",
+      "closed_weekdays": [
+        "Tue",
+        "Wed"
+      ],
+      "booking_channel": "queue",
+      "glance": "The Togakushi soba everyone wants, with room for a group."
     },
     {
       "name": "Soba no Mi",
@@ -160,7 +181,10 @@
           "note": "Logged as “Sobanomi”, Oct 2020 (once), per City Foodsters.",
           "url": "https://www.cityfoodsters.com/restaurants/"
         }
-      ]
+      ],
+      "pregnancy": "ok",
+      "seven": "room",
+      "glance": "The other big Togakushi soba house, with private rooms."
     },
     {
       "name": "Soba Fujioka",
@@ -180,7 +204,16 @@
       "group": "One table for 6, exactly: it doesn't take seven. No children under 10.",
       "booking": "Reservation only, a month ahead. Cash only.",
       "dec_jan": "Open Friday to Monday (so not Thu 24 Dec). Winter hours to confirm.",
-      "query": "Soba Fujioka Iizuna"
+      "query": "Soba Fujioka Iizuna",
+      "pregnancy": "ok",
+      "seven": "no",
+      "closed_weekdays": [
+        "Tue",
+        "Wed",
+        "Thu"
+      ],
+      "booking_opens": "1 month ahead",
+      "glance": "The region's best-rated soba, served as a course."
     },
     {
       "name": "Suki-tei Honten",
@@ -200,7 +233,10 @@
       "group": "120 seats, rooms for 4–16; seven fit.",
       "booking": "Book ahead.",
       "dec_jan": "Closed over the year end and New Year (dates not given): check it's open on Thu 24 Dec.",
-      "query": "Sukitei Nagano"
+      "query": "Sukitei Nagano",
+      "pregnancy": "ok",
+      "seven": "room",
+      "glance": "Shinshū beef sukiyaki in a private room for the family."
     },
     {
       "name": "Ogawa no Shō Daimon",
@@ -218,7 +254,14 @@
       "group": "Takeaway; seven is no problem.",
       "booking": "No reservations.",
       "dec_jan": "Closed Wednesdays, so Thu 24 Dec, our Zenkō-ji stop, is fine on that count. Year-end hours to confirm.",
-      "query": "Ogawa no Sho Daimon Nagano"
+      "query": "Ogawa no Sho Daimon Nagano",
+      "pregnancy": "ok",
+      "seven": "yes",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Oyaki grilled on the hearth, on the Zenkō-ji approach."
     }
   ],
   "shops": [

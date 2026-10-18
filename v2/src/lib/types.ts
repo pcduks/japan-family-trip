@@ -59,6 +59,26 @@ export interface Deadline {
   item: string;
   source?: string | null;
   done?: boolean;
+  /** Food dates only (data/food-deadlines.json): how to book, and the food place it is for. */
+  how?: string;
+  place?: string;
+}
+
+/** A restaurant booking Pedro tracks on the Food tab (trip.bookings, target_type "food"). */
+export interface FoodBooking {
+  id: string;
+  /** The food place id, `<city>/<slug>`. */
+  target_id: string;
+  name: string;
+  /** idea: picked for a night; held: requested; booked or paid: confirmed. */
+  status: "idea" | "held" | "booked" | "paid";
+  url: string | null;
+  date: string | null;
+  meal: "breakfast" | "lunch" | "dinner" | null;
+  time: string | null;
+  party: number | null;
+  ref: string | null;
+  note: string | null;
 }
 
 export interface Region extends Provenance {
@@ -297,6 +317,7 @@ export interface Snapshot {
   history: PlanHistoryEntry[];
   days: Day[];
   food_list: FoodListItem[];
+  food_bookings: FoodBooking[];
   related_docs: Record<string, string>;
   /** Where the data came from, so the UI can say so. */
   source: "supabase" | "file";
