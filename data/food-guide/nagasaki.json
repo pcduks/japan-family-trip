@@ -1,0 +1,187 @@
+{
+  "slug": "nagasaki",
+  "name": "Nagasaki",
+  "tagline_pt": "A porta do Japão para o mundo por dois séculos: bolo português, macarrão chinês e uma mesa redonda que mistura os três.",
+  "history_pt": [
+    "Por mais de 200 anos Nagasaki foi a única janela do Japão para fora. Os portugueses chegaram no século XVI. Dejima, a ilha artificial em forma de leque, foi construída em 1634–36 para isolá-los; em 1639 foram expulsos, e de 1641 a 1859 os holandeses ocuparam a ilha. Pelos seus armazéns entrava açúcar, e com ele uma cozinha doce que o resto do Japão não tinha. Os chineses tinham seu próprio bairro, e a cidade aprendeu a comer à moda wa-ka-ran: japonesa, chinesa (ka) e holandesa (ran).",
+    "Para a família do Pedro: a castella é prima do nosso pão de ló. O Wikipedia japonês aponta como ancestrais o pão de ló português e o bizcocho espanhol, e o nome vem de 'bolo de Castela' na boca dos portugueses. A Fukusaya diz ter sido fundada em 1624. A versão de Nagasaki é mais úmida e densa, com açúcar zarame crocante no fundo. Vale levar uma caixa e comparar com o pão de ló de casa.",
+    "O champon nasceu no fim da era Meiji: Chen Pingshun, do Shikairō, criou um prato barato e nutritivo para estudantes chineses, com base no menmen de Fuqing (Fujian). Em 1907 já havia mais de dez casas servindo 'chapon'. O shippoku é o banquete wakaran: mesa redonda, travessas compartilhadas, abre com a sopa ohire (de pargo) e tem tōbani (barriga de porco à moda chinesa). A toruko rice, dos anos 1950, junta tonkatsu, pilaf e espaguete no mesmo prato, e ninguém sabe ao certo o que ela tem de turca."
+  ],
+  "winter_pt": "Inverno ameno e úmido. Época de castella para presentes de fim de ano (filas nas lojas em dezembro) e do Festival das Lanternas, que só começa no Ano-Novo Lunar (fevereiro), então não pega a viagem.",
+  "meibutsu": [
+    {
+      "name_pt": "Castella",
+      "name_ja": "カステラ",
+      "romaji": "kasutera",
+      "what_pt": "O bolo de origem portuguesa: úmido, denso, com açúcar zarame no fundo. O gosan-yaki usa 5 gemas para 3 claras e é mais rico.",
+      "where_pt": "Shōkandō, Iwanaga Baijuken, Fukusaya, Shōōken.",
+      "price_pt": "¥1.000–3.000 a caixa",
+      "must": true
+    },
+    {
+      "name_pt": "Champon",
+      "name_ja": "ちゃんぽん",
+      "romaji": "chanpon",
+      "what_pt": "Macarrão grosso cozido direto no caldo branco de porco e frango, com frutos do mar, repolho e kamaboko, tudo salteado na wok.",
+      "where_pt": "Kozanrō Chūkagai Shinkan, Shikairō.",
+      "price_pt": "¥1.000–1.500",
+      "must": true
+    },
+    {
+      "name_pt": "Sara-udon",
+      "name_ja": "皿うどん",
+      "romaji": "sara-udon",
+      "what_pt": "Macarrão fininho frito e crocante (ou grosso salteado) coberto com um molho espesso de frutos do mar e legumes. Pinga-se vinagre e karashi.",
+      "where_pt": "Kozanrō, Shikairō.",
+      "price_pt": "¥1.000–1.500",
+      "must": true
+    },
+    {
+      "name_pt": "Shippoku",
+      "name_ja": "卓袱料理",
+      "romaji": "shippoku ryōri",
+      "what_pt": "O banquete wakaran em mesa redonda: sopa ohire primeiro, depois tōbani (porco braseado), sashimi, frituras e umewan (doce de mochi).",
+      "where_pt": "Ryōtei tradicionais de Maruyama; reserve com antecedência.",
+      "price_pt": "A confirmar",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Tem sashimi entre as travessas: ela deixa passar e fica com os pratos cozidos."
+    },
+    {
+      "name_pt": "Toruko rice",
+      "name_ja": "トルコライス",
+      "romaji": "toruko raisu",
+      "what_pt": "Tonkatsu com molho demi-glace, pilaf e espaguete napolitana no mesmo prato. Comfort food do pós-guerra.",
+      "where_pt": "Tsuru-chan.",
+      "price_pt": "¥1.680–1.880",
+      "must": true
+    },
+    {
+      "name_pt": "Milkshake de Nagasaki",
+      "name_ja": "ミルクセーキ",
+      "romaji": "mirukusēki",
+      "what_pt": "Um milkshake que se come de colher, meio raspadinha.",
+      "where_pt": "Tsuru-chan.",
+      "price_pt": "A confirmar",
+      "must": false
+    },
+    {
+      "name_pt": "Kakuni-manjū",
+      "name_ja": "角煮まんじゅう",
+      "romaji": "kakuni manjū",
+      "what_pt": "Pão chinês de vapor recheado com barriga de porco braseada, herança da mesa shippoku. Lanche de rua no Chinatown.",
+      "where_pt": "Shinchi Chūkagai.",
+      "price_pt": "≈¥400–600",
+      "must": false
+    }
+  ],
+  "areas": [
+    {
+      "name": "Shinchi Chūkagai (Chinatown)",
+      "name_ja": "新地中華街",
+      "kind": "bairro",
+      "story_pt": "Um dos três Chinatowns do Japão, no aterro onde ficavam os armazéns dos mercadores chineses.",
+      "eat_pt": ["Champon e sara-udon no Kozanrō", "Kakuni-manjū na rua"],
+      "tips_pt": "Pequeno: uma rua em cruz. Para jantar em 6, reserve as salas do Kozanrō.",
+      "dec_jan_pt": "Muitas casas abrem no Ano-Novo; datas a confirmar.",
+      "query": "Shinchi Chinatown Nagasaki"
+    },
+    {
+      "name": "Dejima",
+      "name_ja": "出島",
+      "kind": "bairro",
+      "story_pt": "A ilha holandesa (e antes portuguesa), hoje reconstruída como museu a céu aberto. Por aqui entrou o açúcar que fez a castella.",
+      "eat_pt": ["Castella nas lojas do caminho", "Café em Dejima"],
+      "tips_pt": "Combine com Shinchi, a 5 minutos.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Dejima Nagasaki"
+    },
+    {
+      "name": "Shianbashi e Maruyama",
+      "name_ja": "思案橋・丸山",
+      "kind": "bairro",
+      "story_pt": "O antigo bairro das casas de chá e hoje a zona de bares e kissaten.",
+      "eat_pt": ["Toruko rice no Tsuru-chan", "Shippoku em ryōtei"],
+      "tips_pt": "À noite é onde a cidade sai para beber.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Shianbashi Nagasaki"
+    }
+  ],
+  "places": [
+    {
+      "name": "Chūgoku Saikan Kozanrō, Chūkagai Shinkan",
+      "name_ja": "中国菜館 江山楼 中華街新館",
+      "area": "Nagasaki · Shinchi Chinatown",
+      "genre_pt": "Chinês / champon",
+      "price_pt": "≈¥1.000–2.000 (cursos mais)",
+      "tabelog": { "score": 3.67, "reviews": 1853, "url": "https://tabelog.com/en/nagasaki/A4201/A420101/42005120/", "awards": "Chinese WEST 百名店 2023, 2024, 2026" },
+      "why_pt": "O champon e o sara-udon mais bem avaliados da cidade, com sala para o grupo. O antigo Kozanrō honten fechou.",
+      "order_pt": "Tokujō champon, sara-udon de macarrão fino, gyōza.",
+      "pregnancy_pt": "Ok (tudo cozido).",
+      "group_pt": "156 lugares e salas privadas para cursos: os seis juntos.",
+      "booking_pt": "Cursos com um dia de antecedência, 4+ adultos.",
+      "dec_jan_pt": "Fecha segunda e terça. Ano-Novo a confirmar.",
+      "query": "Kozanro Chukagai Shinkan"
+    },
+    {
+      "name": "Shikairō",
+      "name_ja": "四海樓",
+      "area": "Nagasaki · Ōura",
+      "genre_pt": "Chinês / champon",
+      "price_pt": "≈¥1.000–2.999",
+      "tabelog": { "score": 3.49, "reviews": 2017, "url": "https://tabelog.com/en/nagasaki/A4201/A420101/42000053/", "awards": "Chinese WEST 百名店 2021" },
+      "why_pt": "A casa de Chen Pingshun, o pai do champon. É a parada de história; no prato, o Kozanrō está à frente.",
+      "order_pt": "Champon.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "Salões grandes: os seis juntos.",
+      "booking_pt": "Só para cursos.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Shikairo Nagasaki"
+    },
+    {
+      "name": "Tsuru-chan",
+      "name_ja": "ツル茶ん",
+      "area": "Nagasaki · Shianbashi",
+      "genre_pt": "Kissaten",
+      "price_pt": "¥1.680–1.880",
+      "tabelog": { "score": 3.62, "reviews": 1510, "url": "https://tabelog.com/en/nagasaki/A4201/A420101/42000064/", "awards": "Kissaten 百名店 2021 (por snapshot)" },
+      "why_pt": "Kissaten antigo onde a toruko rice virou instituição. A casa não diz ser a criadora; diz que se inspirou no 'Restaurante Turco'.",
+      "order_pt": "Toruko rice e milkshake de colher.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "Café pequeno: dividam ou esperem.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Tsuruchan Nagasaki"
+    },
+    {
+      "name": "Shōōken honten",
+      "name_ja": "松翁軒 本店",
+      "area": "Nagasaki · centro",
+      "genre_pt": "Castella / café",
+      "price_pt": "¥1.000–2.000",
+      "tabelog": { "score": 3.53, "reviews": 488, "url": "https://tabelog.com/en/nagasaki/A4201/A420101/42000209/" },
+      "why_pt": "O lugar para comer castella sentado: o Café Sevilla no andar de cima (3.53).",
+      "order_pt": "Castella com chá ou café.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Shooken Nagasaki"
+    }
+  ],
+  "shops": [
+    { "name": "Shōkandō", "name_ja": "匠寛堂", "what_pt": "Wagashi WEST 百名店 2026. Gosan-yaki castella densa e rica. Tabelog 3.67 (https://tabelog.com/nagasaki/A4201/A420101/42000051/).", "buy_pt": "Gosan-yaki castella.", "dec_jan_pt": "A confirmar.", "query": "Shokando Nagasaki castella" },
+    { "name": "Iwanaga Baijuken", "name_ja": "岩永 梅寿軒", "what_pt": "Wagashi WEST 百名店 2026, com lotes diários pequenos que esgotam. Tabelog 3.68 (https://tabelog.com/nagasaki/A4201/A420101/42001419/).", "buy_pt": "Castella; chegue cedo.", "dec_jan_pt": "A confirmar.", "query": "Iwanaga Baijuken Nagasaki" },
+    { "name": "Fukusaya Nagasaki honten", "name_ja": "福砂屋 長崎本店", "what_pt": "A casa de 1624. Ficou em 2º e 3º no teste cego da MONOQLO (2024): úmida, com crosta de zarame levemente amarga. Tabelog 3.44 (https://tabelog.com/en/nagasaki/A4201/A420101/42000057/).", "buy_pt": "Castella clássica em caixa.", "dec_jan_pt": "Fecha quartas. Ano-Novo a confirmar.", "query": "Fukusaya Nagasaki honten" },
+    { "name": "Bunmeidō sōhonten", "name_ja": "文明堂総本店", "what_pt": "Fundada em 1900, só para viagem. O Bunmeidō de Tóquio é outra empresa. Tabelog 3.24.", "buy_pt": "Castella para presente.", "dec_jan_pt": "A confirmar.", "query": "Bunmeido sohonten Nagasaki" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/カステラ",
+    "https://ja.wikipedia.org/wiki/ちゃんぽん",
+    "https://ja.wikipedia.org/wiki/卓袱料理",
+    "https://ja.wikipedia.org/wiki/トルコライス",
+    "https://ja.wikipedia.org/wiki/出島",
+    "https://360life.shinyusha.co.jp/articles/-/43200",
+    "https://tabelog.com/matome/26305/"
+  ]
+}

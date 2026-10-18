@@ -15,6 +15,42 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     }
   },
   {
+    "slug": "hakone",
+    "name": "Hakone",
+    "region": "Kanagawa",
+    "tagline_pt": "Passo da velha estrada Tōkaidō: soba de água de montanha, ovo preto do vulcão e a melhor enguia da região.",
+    "counts": {
+      "meibutsu": 7,
+      "areas": 3,
+      "places": 3,
+      "shops": 3
+    }
+  },
+  {
+    "slug": "kawaguchiko",
+    "name": "Lake Kawaguchiko",
+    "region": "Fuji Five Lakes",
+    "tagline_pt": "Terra de Kai ao pé do Fuji: macarrão grosso no missô e udon duro de cidade têxtil.",
+    "counts": {
+      "meibutsu": 5,
+      "areas": 2,
+      "places": 5,
+      "shops": 2
+    }
+  },
+  {
+    "slug": "atami",
+    "name": "Atami (Izu)",
+    "region": "Izu",
+    "tagline_pt": "A fonte termal dos xoguns e a capital do peixe seco ao sol.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 2,
+      "places": 5,
+      "shops": 2
+    }
+  },
+  {
     "slug": "matsumoto",
     "name": "Matsumoto",
     "region": "Nagano",
@@ -205,6 +241,54 @@ export const FOOD_CITIES: FoodCityMeta[] = [
       "places": 3,
       "shops": 2
     }
+  },
+  {
+    "slug": "nagasaki",
+    "name": "Nagasaki",
+    "region": "Kyushu",
+    "tagline_pt": "A porta do Japão para o mundo por dois séculos: bolo português, macarrão chinês e uma mesa redonda que mistura os três.",
+    "counts": {
+      "meibutsu": 7,
+      "areas": 3,
+      "places": 4,
+      "shops": 4
+    }
+  },
+  {
+    "slug": "sendai",
+    "name": "Sendai",
+    "region": "Tōhoku",
+    "tagline_pt": "Cidade de Date Masamune: língua de boi grelhada, edamame doce e kamaboko em folha de bambu.",
+    "counts": {
+      "meibutsu": 7,
+      "areas": 3,
+      "places": 5,
+      "shops": 4
+    }
+  },
+  {
+    "slug": "yamagata",
+    "name": "Yamagata city",
+    "region": "Tōhoku",
+    "tagline_pt": "O vale das frutas, da panela de inhame com carne e do soba em tábua.",
+    "counts": {
+      "meibutsu": 7,
+      "areas": 2,
+      "places": 5,
+      "shops": 2
+    }
+  },
+  {
+    "slug": "zao",
+    "name": "Zaō Onsen",
+    "region": "Tōhoku",
+    "tagline_pt": "Vila de esqui e fonte ácida: aqui se come no hotel, e a comida boa desce a montanha.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 2,
+      "places": 3,
+      "shops": 2
+    }
   }
 ];
 
@@ -233,6 +317,9 @@ export const FOOD_TOPICS: FoodTopicMeta[] = [
 
 export const CITY_LOADERS: Record<string, () => Promise<FoodCity>> = {
   "tokyo": () => import("../../../data/food-guide/tokyo.json").then((m) => m.default as FoodCity),
+  "hakone": () => import("../../../data/food-guide/hakone.json").then((m) => m.default as FoodCity),
+  "kawaguchiko": () => import("../../../data/food-guide/kawaguchiko.json").then((m) => m.default as FoodCity),
+  "atami": () => import("../../../data/food-guide/atami.json").then((m) => m.default as FoodCity),
   "matsumoto": () => import("../../../data/food-guide/matsumoto.json").then((m) => m.default as FoodCity),
   "nagano": () => import("../../../data/food-guide/nagano.json").then((m) => m.default as FoodCity),
   "yudanaka": () => import("../../../data/food-guide/yudanaka.json").then((m) => m.default as FoodCity),
@@ -249,6 +336,10 @@ export const CITY_LOADERS: Record<string, () => Promise<FoodCity>> = {
   "beppu": () => import("../../../data/food-guide/beppu.json").then((m) => m.default as FoodCity),
   "kurokawa": () => import("../../../data/food-guide/kurokawa.json").then((m) => m.default as FoodCity),
   "kumamoto": () => import("../../../data/food-guide/kumamoto.json").then((m) => m.default as FoodCity),
+  "nagasaki": () => import("../../../data/food-guide/nagasaki.json").then((m) => m.default as FoodCity),
+  "sendai": () => import("../../../data/food-guide/sendai.json").then((m) => m.default as FoodCity),
+  "yamagata": () => import("../../../data/food-guide/yamagata.json").then((m) => m.default as FoodCity),
+  "zao": () => import("../../../data/food-guide/zao.json").then((m) => m.default as FoodCity),
 };
 
 export const TOPIC_LOADERS: Record<string, () => Promise<FoodTopic>> = {

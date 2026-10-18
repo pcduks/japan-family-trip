@@ -1,0 +1,228 @@
+{
+  "slug": "yamagata",
+  "name": "Yamagata city",
+  "tagline_pt": "O vale das frutas, da panela de inhame com carne e do soba em tábua.",
+  "history_pt": [
+    "Yamagata viveu do rio Mogami, a estrada de barcos que levava o açafrão-bastardo e o arroz até o mar. A história mais contada do imoni começa aí: barqueiros do Mogami no período Edo cozinhavam inhame com bacalhau seco à beira do rio. A carne entrou no fim dos anos 1920; hoje o imoni de Yamagata é inhame, carne, konnyaku e cebolinha no shoyu, enquanto o de Sendai vai de porco e missô.",
+    "O vale de Yamagata é quente no verão e nevado no inverno, perfeito para fruta: cereja (junho), pera La France (melhor em novembro), maçã. A carne de Yamagata e a de Yonezawa vêm dos mesmos pastos de montanha, e o soba é rústico: o ita-soba de Murayama vem numa tábua comprida, e o niku-soba de Kahoku leva frango velho em caldo frio.",
+    "O tama-konnyaku, bolas de konnyaku no espeto cozidas no shoyu e comidas com mostarda, teria nascido nas casas de chá do interior, que não tinham açúcar nem farinha de arroz para fazer dango."
+  ],
+  "winter_pt": "O imoni é de outono à beira do rio, mas no inverno aparece nos izakaya. Fim da La France e maçãs na estação. O soba quente e o sukiyaki fazem sentido na neve.",
+  "meibutsu": [
+    {
+      "name_pt": "Imoni",
+      "name_ja": "芋煮",
+      "romaji": "imoni",
+      "what_pt": "Panela de inhame (satoimo) com carne bovina, konnyaku e cebolinha em caldo de shoyu.",
+      "where_pt": "Izakaya como Denshichi (pergunte; no inverno é otōshi comum).",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Carne de Yamagata",
+      "name_ja": "山形牛",
+      "romaji": "Yamagata-gyū",
+      "what_pt": "Wagyu local em sukiyaki ou grelhado.",
+      "where_pt": "Kanazawaya Gyūniku-ten.",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Sem ovo cru; carne bem cozida."
+    },
+    {
+      "name_pt": "Ita-soba",
+      "name_ja": "板そば",
+      "romaji": "ita-soba",
+      "what_pt": "Soba grosso e rústico servido numa tábua comprida para dividir.",
+      "where_pt": "Araki Soba, em Murayama.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Niku-soba frio",
+      "name_ja": "冷たい肉そば",
+      "romaji": "tsumetai niku-soba",
+      "what_pt": "Soba em caldo de frango servido frio, com frango velho firme e cebolinha. De Kahoku.",
+      "where_pt": "Casas de soba do interior.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Tama-konnyaku",
+      "name_ja": "玉こんにゃく",
+      "romaji": "tama-konnyaku",
+      "what_pt": "Bolas de konnyaku no espeto, no shoyu, com mostarda.",
+      "where_pt": "Barracas e pontos turísticos.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Frutas",
+      "name_ja": "果物",
+      "romaji": "kudamono",
+      "what_pt": "La France (pera) no fim da estação e maçãs.",
+      "where_pt": "Lojas de frutas e estação.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Jingisukan",
+      "name_ja": "ジンギスカン",
+      "romaji": "jingisukan",
+      "what_pt": "Cordeiro grelhado na chapa em domo.",
+      "where_pt": "Robata.",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Bem passado."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Arredores da estação de Yamagata",
+      "name_ja": "山形駅周辺",
+      "kind": "estação",
+      "story_pt": "Izakaya e lojas de frutas e lembranças.",
+      "eat_pt": [
+        "Imoni no izakaya",
+        "Tama-konnyaku"
+      ],
+      "tips_pt": "Denshichi fica a 2 min da estação.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Yamagata Station"
+    },
+    {
+      "name": "Interior de soba (Murayama)",
+      "name_ja": "村山",
+      "kind": "bairro",
+      "story_pt": "Região do ita-soba, a norte da cidade.",
+      "eat_pt": [
+        "Ita-soba na Araki Soba"
+      ],
+      "tips_pt": "Táxi a partir da estação de Murayama.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Murayama ita soba"
+    }
+  ],
+  "places": [
+    {
+      "name": "Kanazawaya Gyūniku-ten",
+      "name_ja": "金澤屋牛肉店",
+      "area": "Yamagata",
+      "genre_pt": "Sukiyaki de carne de Yamagata",
+      "price_pt": "Almoço ¥1–4k, jantar ¥6–10k",
+      "tabelog": {
+        "score": 3.56,
+        "reviews": 164,
+        "url": "https://tabelog.com/yamagata/A0601/A060101/6007058/",
+        "awards": "すき焼き・しゃぶしゃぶ 百名店 2024"
+      },
+      "why_pt": "Açougue com sukiyaki: a carne de Yamagata sem cerimônia.",
+      "order_pt": "Sukiyaki.",
+      "pregnancy_pt": "Sem ovo cru.",
+      "group_pt": "42 lugares, sala privativa (a página diverge na capacidade); 6 cabem.",
+      "booking_pt": "Reserve.",
+      "dec_jan_pt": "Fecha às terças. Ano-Novo a confirmar.",
+      "query": "Kanazawaya Yamagata"
+    },
+    {
+      "name": "Izakaya Denshichi",
+      "name_ja": "居酒屋 伝七",
+      "area": "Yamagata · 2 min da estação",
+      "genre_pt": "Izakaya",
+      "price_pt": "¥8–10k",
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 177,
+        "url": "https://tabelog.com/yamagata/A0601/A060101/6002200/",
+        "awards": "居酒屋 EAST 百名店 2024–2026"
+      },
+      "why_pt": "O izakaya de Yamagata nas listas três anos seguidos.",
+      "order_pt": "Pergunte por imoni; pratos de Yamagata.",
+      "pregnancy_pt": "Evite cru de molusco.",
+      "group_pt": "26 lugares; peça mesa para 6.",
+      "booking_pt": "Reserve.",
+      "dec_jan_pt": "Fecha aos domingos. Ano-Novo a confirmar.",
+      "query": "Denshichi Yamagata"
+    },
+    {
+      "name": "Araki Soba",
+      "name_ja": "あらきそば",
+      "area": "Murayama",
+      "genre_pt": "Soba (ita-soba)",
+      "price_pt": "¥1–2k",
+      "tabelog": {
+        "score": 3.68,
+        "reviews": 507,
+        "url": "https://tabelog.com/yamagata/A0605/A060502/6000017/",
+        "awards": "そば EAST 百名店 2024, 2025"
+      },
+      "why_pt": "O ita-soba de referência, grosso e com muita mastigação.",
+      "order_pt": "Ita-soba.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "30 lugares; 6 cabem.",
+      "booking_pt": "Sem reserva (a confirmar).",
+      "dec_jan_pt": "Fecha às quartas. Ano-Novo a confirmar.",
+      "query": "Araki Soba Murayama"
+    },
+    {
+      "name": "Teuchi Soba Umesoba",
+      "name_ja": "手打ちそば 梅蕎麦",
+      "area": "Yamagata",
+      "genre_pt": "Soba",
+      "tabelog": {
+        "score": 3.58,
+        "reviews": 347,
+        "url": "https://tabelog.com/yamagata/A0601/A060101/6000107/",
+        "awards": "そば 百名店 2022, EAST 2024, 2025"
+      },
+      "why_pt": "Soba dentro da cidade, com tatame.",
+      "order_pt": "Soba frio.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "Tem tatame.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Fecha às terças. Ano-Novo a confirmar.",
+      "query": "Umesoba Yamagata"
+    },
+    {
+      "name": "Robata",
+      "name_ja": "ロバタ",
+      "area": "Yamagata",
+      "genre_pt": "Jingisukan",
+      "tabelog": {
+        "score": 3.65,
+        "url": "https://tabelog.com/yamagata/A0601/A060101/6000693/"
+      },
+      "why_pt": "Cordeiro grelhado bem pontuado na cidade; não verificado em detalhe.",
+      "order_pt": "Jingisukan.",
+      "pregnancy_pt": "Bem passado.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Robata jingisukan Yamagata"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Lojas de frutas",
+      "name_ja": "果物店",
+      "what_pt": "Lojas de fruta de Yamagata na estação e no centro.",
+      "buy_pt": "La France e maçãs da estação.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Yamagata fruit shop"
+    },
+    {
+      "name": "Tama-konnyaku",
+      "name_ja": "玉こんにゃく",
+      "what_pt": "Vendido em barracas e lojas de lembranças.",
+      "buy_pt": "Espetinhos quentes; pacotes para levar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "tama konnyaku Yamagata"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "https://ja.wikipedia.org/wiki/芋煮会",
+    "https://ja.wikipedia.org/wiki/玉こんにゃく",
+    "https://ja.wikipedia.org/wiki/ラ・フランス",
+    "https://ja.wikipedia.org/wiki/冷たい肉そば"
+  ]
+}
