@@ -31,7 +31,13 @@ Each persona answers four questions: what they look for, what they veto, how the
 - **For the family:** konbini, depachika and ekiben count as real meals in his book, and so do tofu and tonkatsu specialists. Kappabashi knives: buy what you'll maintain.
 
 ## Pete Wells (@pete_wells): value and hype
-- **Who:** New York Times restaurant critic 2012–2024. Reviewed New York's Japanese restaurants (Nakazawa, Kono, Torishin, Kajitsu, Sushi Sho, Yoshino…). He hasn't published reviews of places in Japan.
+- **Who:** New York Times restaurant critic 2012–2024; now writes for the Times' Food section. He hasn't published reviews of places in Japan. His New York Japanese reviews:
+  - Sushi Nakazawa ★★★★ and Yoshino ★★★★
+  - Ichimura, Kono and Torishin ★★★
+  - Kajitsu and Tempura Matsui ★★
+  - Kappo Masa: zero stars, "Satisfactory". The zero-star Masa review is a myth; Sam Sifton reviewed Masa itself.
+- **Rice first:** "may ruin other sushi for you"; "just tart enough that you can sense the presence of vinegar". Then temperature and curing on each piece, real seasonality, and pleasure in proportion to price.
+- **The Japanese places his reviews treat as the standard:** Sushi Saito 4.61, Torishiki 4.43, Sushi Sho Yotsuya 4.42, Kikunoi 4.10.
 - **Looks for:** whether the price is justified by what lands on the plate; one thing done with fanatical precision (one chicken, one rice, one fish); a coherent menu where every course has a reason; warm, unhurried hospitality; whether a regular would still love it once the hype dies.
 - **Vetoes:** hyped luxury where the parts outshine the whole; "random and purposeless" tasting menus; famous-for-being-famous places; inflated tourist prices; reseller bookings; theatre (gold leaf, caviar bumps, wagyu for its own sake).
 - **Voice:** dry, exact, occasionally devastating. "The rice is the argument here."
@@ -82,10 +88,13 @@ Each persona answers four questions: what they look for, what they veto, how the
 - **Vetoes:** fine-but-forgettable; anything you can book on a whim.
 - **Reality check:** Saito and Sugita are fixer or regulars only. Families can book directly at Hakkoku, Tempura Kondo, Shima, Yoroniku, Yakiniku Jumbo and Tempura Matsu. Torishiki's January phone window opens 18 Nov 2026. Weak local scores: Kichi Kichi omurice (3.33), Shima (3.71). Their palate skews to medium-rare wagyu and raw fish, so the pregnant traveller needs well-done meat and cooked courses.
 
-## Jason Wang (@jwang815): the destination meal
-- **Who:** a former Silicon Valley executive, co-founder of Waypoint Journeys (191 countries), who co-runs @cityfoodsters. *Not* the Xi'an Famous Foods CEO. Japan traces: Noma Kyoto (2023) and Vegan Ramen UZU (Kyoto).
-- **Looks for:** a story (a maker, a place few visit); a meal worth routing a day around; course-by-course documentation; dietary needs met without compromise.
-- **Vetoes:** generic, crowded tourist circuits. Little else is public, so lean on the others.
+## Jason Wang (@jwang815): the obsessive returner
+- **Who:** co-founder of Caviar (the food-delivery company, sold to Square in 2014). He now travels full time with Grace Chen (Waypoint Journeys) and logs every meal at **cityfoodsters.com**: 2,281 restaurants in 110 countries, **671 of them in Japan, with dates**. *Not* the Xi'an Famous Foods CEO.
+- **His verdict is the return visit.** Most revisited: Bar Gen Yamamoto 12×, Sumibi Yakiniku Nakahara 11×, Sushi Saito 9×, Kakigaracho Sugita 9×+, Miyamasou 7×, Den 7×, Ogata 6×, Tenzushi (Kokura) 5×, Hirasansō 5×.
+- **Regional depth:** Kanazawa (Kataori 4.70, Kisanuki 4.57, Mekumi 4.48), Toyama (L'Évo 4.56), Kyushu (Tenzushi 4.55, Sushi Sakai 4.54, Beppu Hirokado 4.43). Many visits fall in Dec–Jan, the same season as this trip.
+- **Looks for:** places worth coming back to, destination meals worth routing a day around, the regional great far from Tokyo.
+- **Vetoes:** generic tourist circuits. His written opinions are thin (mostly photos), so the visit count stands in for his verdict.
+- **Full Japan log with Tabelog checks:** `docs/research/food/15-critic-wells-wang.md`.
 
 ## Laercio Munechika (@laerciomunechika): placeholder
 - Little public trace. Use him only as a tiebreaker in a São Paulo Nikkei register: does it hold up for someone raised on Liberdade's Japanese-Brazilian food, and is it the real regional version rather than the export? **Ask the user what he posts and why they trust him.**
