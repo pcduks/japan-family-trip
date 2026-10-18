@@ -125,7 +125,14 @@
       "group_pt": "12 lugares e bancos do lado de fora: os seis comem.",
       "booking_pt": "Sem reserva.",
       "dec_jan_pt": "Ter–sex 8h30–14h, sáb 8h30–13h; fecha domingo e segunda. Ano-Novo a confirmar.",
-      "query": "Gamo udon Sakaide"
+      "query": "Gamo udon Sakaide",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Gamou”, abr 2017 (1 vez), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Hinode Seimenjo",
@@ -225,7 +232,19 @@
       "group_pt": "111 lugares: os seis juntos.",
       "booking_pt": "Online.",
       "dec_jan_pt": "Fecha terças. Ano-Novo a confirmar.",
-      "query": "Ikkaku Marugame honten"
+      "query": "Ikkaku Marugame honten",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve no Ikkaku 2 vezes em Kagawa (abr 2017, jun 2020), sem filial indicada (Marugame ou Takamatsu).",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        },
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Comeu na filial de Shinsaibashi (Osaka) em 2015: “the juiciest chicken in Osaka”, frango velho e novo.",
+          "url": "https://migrationology.com/ikkaku-chicken-osaka/"
+        }
+      ]
     }
   ],
   "shops": [

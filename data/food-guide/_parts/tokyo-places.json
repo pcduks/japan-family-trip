@@ -18,7 +18,14 @@
       "group_pt": "Cabe 6: sala privativa para 6 no andar de cima, ou 6 dos 9 lugares do balcão.",
       "booking_pt": "Só com reserva. Reserve assim que abrir a janela (fim de out–nov para 20–24/12).",
       "dec_jan_pt": "Fecha às quartas. 24/12 (qui): aberto.",
-      "query": "Mikawa Zezankyo Monzen-nakacho Tokyo"
+      "query": "Mikawa Zezankyo Monzen-nakacho Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 4 vezes (dez 2013 – jun 2016), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Tonkatsu Narikura",
@@ -38,7 +45,14 @@
       "group_pt": "Cabe 6: balcão de 6 lugares, uma reserva só.",
       "booking_pt": "Só com reserva.",
       "dec_jan_pt": "Abre qua/qui/sáb/dom/feriados; fecha seg/ter/sex. 24/12 (qui): aberto.",
-      "query": "Tonkatsu Narikura Minami-Asagaya Tokyo"
+      "query": "Tonkatsu Narikura Minami-Asagaya Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 4 vezes (fev 2016 – dez 2020), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Uwo Toku",
@@ -74,14 +88,24 @@
       },
       "critics": [
         {
-          "who": "@migrationology",
+          "who": "@migrationology (Mark Wiens)",
           "note_pt": "Mark Wiens fechou o balcão inteiro no tour da Hungry Tourist.",
           "url": "https://www.youtube.com/watch?v=Cm2dczXpBG0"
         },
         {
-          "who": "@we.are.hungry.tourists",
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
           "note_pt": "Uma das paradas centrais do “Tokyo Super Tour”.",
           "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        },
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note_pt": "Postou do balcão em 21/03/2016 (post embutido no Tokyo Table Trip).",
+          "url": "https://tokyotabletrip.com/en/214"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note_pt": "Califa vai há 9 anos: “one of the most intimate, joyful, precise, and simply oishii sushi experiences in Tokyo”; atum da Yamayuki e o chutoro triplo de assinatura (tour Grand Japan).",
+          "url": "https://www.thehungrytourist.com/tours/grand-japan"
         }
       ],
       "why_pt": "O sushi mais bem avaliado em que seis pessoas entram juntas. Arroz de personalidade forte, e o atum é o ponto alto. Se for fazer uma única noite de ¥50k, é aqui.",
@@ -110,7 +134,14 @@
       "group_pt": "Salas para 2–20 pessoas. Cabe 6 tranquilo.",
       "booking_pt": "Aceita reserva. Há taxa de serviço.",
       "dec_jan_pt": "Abre todos os dias. 24/12: aberto.",
-      "query": "Ningyocho Imahan Honten Tokyo"
+      "query": "Ningyocho Imahan Honten Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (set 2018), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Narutomi",
@@ -126,12 +157,12 @@
       },
       "critics": [
         {
-          "who": "@migrationology",
-          "note_pt": "Mark Wiens escreveu sobre o seiro de jūwari e o tempurá.",
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Mark Wiens escreveu sobre o seiro de jūwari e o tempurá de vieira no sal: “one of the most simple yet most amazing meals” (2014).",
           "url": "https://migrationology.com/narutomi-soba-restaurant-tokyo/"
         },
         {
-          "who": "@migrationology",
+          "who": "@migrationology (Mark Wiens)",
           "note_pt": "Vídeo da visita.",
           "url": "https://www.youtube.com/watch?v=nw1whY-8NbY"
         }
@@ -158,9 +189,19 @@
       },
       "critics": [
         {
-          "who": "@we.are.hungry.tourists",
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
           "note_pt": "“From the one and only Yakiniku Jumbo!” — parada fixa dos tours de Tóquio (posts de set. e out. 2024).",
           "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        },
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note_pt": "Levou David Chang ao Jumbo no Ugly Delicious (temporada 2, 2020): nohara-yaki, contrafilé grelhado e mergulhado em ovo cru.",
+          "url": "https://www.timeout.com/tokyo/news/every-tokyo-restaurant-in-david-changs-ugly-delicious-season-two-031120"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Yakiniku Jumbo” 2 vezes (mar 2015, jan 2019), sem filial indicada; foi também 4 vezes ao Jumbo Hanare (Hongō).",
+          "url": "https://www.cityfoodsters.com/restaurants/"
         }
       ],
       "why_pt": "O yakiniku famoso que se reserva sem drama para um grupo. Wagyu cortado com cuidado e salas fechadas.",
@@ -268,7 +309,19 @@
       "group_pt": "52 lugares; cabe 6 depois de entrar.",
       "booking_pt": "Não aceita reserva nem por telefone. O Tabelog recomenda fila a partir das ~14:00 em dia de semana (abre 16:00). Ela não deve ficar na fila: alguém guarda o lugar.",
       "dec_jan_pt": "Fecha ter/qua. 24/12: aberto.",
-      "query": "Stamina-en Shikahama Adachi Tokyo"
+      "query": "Stamina-en Shikahama Adachi Tokyo",
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note_pt": "Postou daqui em nov 2014 (post embutido no Tokyo Table Trip).",
+          "url": "https://tokyotabletrip.com/en/308"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (mar 2020), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Obana",
@@ -284,9 +337,14 @@
       },
       "critics": [
         {
-          "who": "@migrationology",
+          "who": "@migrationology (Mark Wiens)",
           "note_pt": "Mark Wiens: a enguia “mais amanteigada” que já comeu.",
           "url": "https://www.youtube.com/watch?v=N26pjkM_z4A"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (dez 2013), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
         }
       ],
       "why_pt": "A velha casa de unagi de Kantō pela qual os locais fazem fila. Combine com o Maruchiba logo depois.",
@@ -315,7 +373,14 @@
       "group_pt": "Salas privativas para 6.",
       "booking_pt": "Aceita reserva.",
       "dec_jan_pt": "Fecha dom/seg/feriados. 24/12: aberto.",
-      "query": "Edogawa Ishibashi unagi Edogawabashi Tokyo"
+      "query": "Edogawa Ishibashi unagi Edogawabashi Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 2 vezes (jan e mai 2019), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Kagurazaka Ishikawa",
@@ -331,9 +396,14 @@
       },
       "critics": [
         {
-          "who": "@we.are.hungry.tourists",
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
           "note_pt": "Na lista do “nível que buscamos” (não é parada confirmada).",
           "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 3 vezes (dez 2013 – set 2020; duas como “Ishikawa”, casamento provável), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
         }
       ],
       "why_pt": "Se a família fizer um único kaiseki em Tóquio, esta é a referência: dez Silver seguidos.",
@@ -378,9 +448,14 @@
       },
       "critics": [
         {
-          "who": "@little_meg_siu_meg",
+          "who": "@little_meg_siu_meg (Margaret Lam)",
           "note_pt": "Elogiou o morango marinado entre pratos e o dango de batata-doce.",
           "url": "https://www.instagram.com/p/C8Zl2FkJywR/"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 3 vezes (abr 2018 – dez 2022), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
         }
       ],
       "why_pt": "Cozinha chinesa vista por lentes japonesas, e a maior nota do gênero no Tabelog. Chá no lugar do vinho.",
@@ -405,7 +480,7 @@
       },
       "critics": [
         {
-          "who": "@little_meg_siu_meg",
+          "who": "@little_meg_siu_meg (Margaret Lam)",
           "note_pt": "Elogiou o shiraae de tomate e fava e o karasumi caseiro com milho.",
           "url": "https://www.instagram.com/p/C8Zl2FkJywR/"
         }
@@ -472,7 +547,7 @@
       },
       "critics": [
         {
-          "who": "@migrationology",
+          "who": "@migrationology (Mark Wiens)",
           "note_pt": "“Pelo estilo e pelo ambiente, eu realmente amei o Tonki.”",
           "url": "https://www.youtube.com/watch?v=kYPus4Dq4V0"
         }
@@ -503,7 +578,14 @@
       "group_pt": "Balcão de 10: reserve 6 lugares.",
       "booking_pt": "Aceita reserva (só cursos).",
       "dec_jan_pt": "Fecha às segundas. 24/12: aberto.",
-      "query": "Tempura Fukamachi Kyobashi Tokyo"
+      "query": "Tempura Fukamachi Kyobashi Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 2 vezes (mar 2015 e dez 2017), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Tempura Kondo",
@@ -518,9 +600,14 @@
       },
       "critics": [
         {
-          "who": "@we.are.hungry.tourists",
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
           "note_pt": "Na lista do “nível que buscamos” para tempurá.",
           "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Kondo”, jan 2015 (1 vez), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
         }
       ],
       "why_pt": "Já estava na lista da família, e o Tabelog confirma. Famoso pelos legumes: batata-doce e cenoura em fios.",
@@ -548,7 +635,14 @@
       "group_pt": "Salas para 6. Reserva às 17:00 tem limite de 2 horas.",
       "booking_pt": "Aceita reserva.",
       "dec_jan_pt": "Fecha aos domingos e tem folgas extras no Ano-Novo (datas não informadas). 24/12: aberto.",
-      "query": "Sukiyaki Hiyama Ningyocho Tokyo"
+      "query": "Sukiyaki Hiyama Ningyocho Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Hiyama”, dez 2014 (1 vez), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Sumibi Yakiniku Nakahara",
@@ -564,14 +658,24 @@
       },
       "critics": [
         {
-          "who": "@migrationology",
+          "who": "@migrationology (Mark Wiens)",
           "note_pt": "Mark Wiens: sua 8ª melhor refeição de 2017 (o katsu-sando de wagyu).",
           "url": "https://www.youtube.com/watch?v=FonKlmYXUPo"
         },
         {
-          "who": "@migrationology",
+          "who": "@migrationology (Mark Wiens)",
           "note_pt": "Lista dos melhores de 2017.",
           "url": "https://migrationology.com/best-food-travel-2017/"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note_pt": "Parada do “Best of Tokyo” da Hungry Tourist em 2017; foi a refeição favorita de Mark Wiens no tour.",
+          "url": "https://migrationology.com/best-tokyo-food-tour/"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 11 vezes (mar 2015 – jan 2026), o restaurante de comida a que ele mais voltou no Japão.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
         }
       ],
       "why_pt": "O yakiniku de luxo, em que o trabalho de açougueiro é o próprio menu.",
@@ -600,7 +704,14 @@
       "group_pt": "Só 6 lugares: grupo de 6 = balcão inteiro.",
       "booking_pt": "Reservas da semana seguinte abrem todo sábado às 9:00 (canal próprio da casa, não Tabelog nem telefone). Sem reserva a partir das 11:00; das 12:00 reservas têm prioridade.",
       "dec_jan_pt": "Fecha às segundas; 11:00–16:00. 24/12: aberto. Na última temporada fechou 29/12–3/1.",
-      "query": "Ginza Hachigo ramen Tokyo"
+      "query": "Ginza Hachigo ramen Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 2 vezes (dez 2022 e jan 2026), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Kanda Matsuya",
@@ -851,9 +962,14 @@
       },
       "critics": [
         {
-          "who": "@migrationology",
+          "who": "@migrationology (Mark Wiens)",
           "note_pt": "O tonkatsu gourmet favorito de Mark Wiens (no mesmo vídeo do Tonki).",
           "url": "https://www.youtube.com/watch?v=kYPus4Dq4V0"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 3 vezes (dez 2013 – fev 2015), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
         }
       ],
       "why_pt": "Já na lista da família: cardápio de porcos por raça, numa casa antiga de Nishi-Azabu.",
@@ -899,7 +1015,14 @@
       "group_pt": "~5 no balcão mais mesas de pé: comam em turnos.",
       "booking_pt": "Só fila.",
       "dec_jan_pt": "Seg/ter/qui/sex/sáb 6:30–13:00; fecha qua/dom. Ano-Novo provavelmente segue o mercado (a confirmar).",
-      "query": "Kitsuneya Tsukiji horumon Tokyo"
+      "query": "Kitsuneya Tsukiji horumon Tokyo",
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Horumon-don “legendary” no passeio pelo mercado externo de Tsukiji (2017).",
+          "url": "https://www.youtube.com/watch?v=BqdFvgaiynM"
+        }
+      ]
     },
     {
       "name": "Kayaba Coffee",
@@ -920,6 +1043,430 @@
       "booking_pt": "Reserva online. Abre 8:00.",
       "dec_jan_pt": "Fecha às segundas. 24/12: aberto.",
       "query": "Kayaba Coffee Yanaka Tokyo"
+    },
+    {
+      "name": "Sawada",
+      "name_ja": "すし処 さわ田",
+      "area": "Tóquio · Ginza",
+      "genre_pt": "Sushi",
+      "price_pt": "Almoço ¥45.100 · jantar ¥56.100 (abr 2025)",
+      "tabelog": {
+        "score": 4.51,
+        "reviews": 617,
+        "url": "https://tabelog.com/en/tokyo/A1301/A130101/13001043/",
+        "awards": "Award Gold 2021–23, 2025, 2026; Silver 2019, 2020, 2024; 百名店 2021, 2022, 2025"
+      },
+      "critics": [
+        {
+          "who": "@ocritico.antigourmet (Ian Oliver)",
+          "note_pt": "Ian Oliver deu 10/10 (pagou R$1.700) no duelo com o Saito: arroz de vinagre tinto e sal marinho que “ataca a língua de forma virulenta, sem deixar de ser profundamente elegante”, peixe curado em koji, enguia defumada em serragem de cerejeira. “Depois dele, qualquer outro sushi permanece mudo.”",
+          "url": "https://www.ocriticoantigourmet.com.br/sawada-vs-saito"
+        }
+      ],
+      "why_pt": "O sushi que o crítico mais exigente da lista pôs acima do Saito, e o único desse nível que ele provou ser reservável por gente comum. Sem fotos e sem inglês: só sobra o que está no balcão.",
+      "order_pt": "Omakase único. Repare no arroz de vinagre tinto e na enguia defumada.",
+      "pregnancy_pt": "Quase tudo é cru ou curado. Só vale para ela avisando antes (tamago, enguia, cozidos); o mais sensato é ela ficar de fora desta.",
+      "group_pt": "Balcão pequeno; número de lugares a confirmar. Para 6, conte com dividir o grupo ou ir só uma parte.",
+      "booking_pt": "Online pelo OMAKASE. As vagas abrem “a conta-gotas”, sem aviso de horário: Ian atualizou a página umas 5 ou 6 vezes e deu sorte.",
+      "dec_jan_pt": "Fecha seg/qui/dom: 24/12 (qui) fechado. Ano-Novo a confirmar.",
+      "query": "Sushi Sawada Ginza"
+    },
+    {
+      "name": "Sushi Saito",
+      "name_ja": "鮨 さいとう",
+      "area": "Tóquio · Roppongi 1-chōme",
+      "genre_pt": "Sushi",
+      "tabelog": {
+        "score": 4.61,
+        "reviews": 1439,
+        "url": "https://tabelog.com/en/tokyo/A1308/A130802/13015251/",
+        "awards": "Award Gold 2019–2026; 百名店 2021, 2022, 2025"
+      },
+      "critics": [
+        {
+          "who": "@ocritico.antigourmet (Ian Oliver)",
+          "note_pt": "Ian Oliver deu 9,5/10 (pagou R$1.400): shari a 38 °C, vinagre quase imperceptível, akami cortado a 1,2 mm e maturado 10 dias. “Um dos trabalhos mais incríveis que a gastronomia já foi capaz de me proporcionar.”",
+          "url": "https://www.ocriticoantigourmet.com.br/sawada-vs-saito"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note_pt": "Parada confirmada do tour Grand Japan (jantar de aniversário). Califa: “Saito has always also been a merry place, full of warmth behind the precision.”",
+          "url": "https://www.thehungrytourist.com/tours/grand-japan"
+        },
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note_pt": "A Departures (2020) cita o Saito entre os lugares “impossíveis” em que ela consegue entrar.",
+          "url": "https://web.archive.org/web/2020/https://www.departures.com/lifestyle/food/tokyo-new-young-chefs-update-modern-japanese-cuisine"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 9 vezes (nov 2015 – jun 2025), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "Quatro críticos da lista convergem aqui, e o Tabelog também (ouro desde 2019). É a referência do Edomae austero, para saber que existe, não para planejar a viagem em torno.",
+      "order_pt": "Omakase único.",
+      "pregnancy_pt": "Quase tudo cru: não é refeição para ela.",
+      "group_pt": "Balcão pequeno; seis juntos é irrealista.",
+      "booking_pt": "Praticamente impossível sem conexão: não aceita mais reservas novas por telefone. Na prática, só com cliente fixo que leve você ou concierge com relação com a casa.",
+      "dec_jan_pt": "Fecha domingos e feriados. Ano-Novo a confirmar.",
+      "query": "Sushi Saito Roppongi"
+    },
+    {
+      "name": "Nihonbashi Kakigarachō Sugita",
+      "name_ja": "日本橋蛎殻町 すぎた",
+      "area": "Tóquio · Nihonbashi Kakigarachō (Suitengūmae)",
+      "genre_pt": "Sushi",
+      "tabelog": {
+        "score": 4.65,
+        "reviews": 1016,
+        "url": "https://tabelog.com/en/tokyo/A1302/A130204/13018162/",
+        "awards": "Award Gold 2019–26; 百名店 2021, 2022, 2025"
+      },
+      "critics": [
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note_pt": "Parada confirmada do Grand Japan. Califa: “one of the counters by which I measure sushi: humility, beauty, discipline, and the privilege of being allowed to sit there.”",
+          "url": "https://www.thehungrytourist.com/tours/grand-japan"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 9 vezes como “Sushi Sugita” (abr 2017 – jun 2025), mais 3 registradas como “Sugita” (até abr 2026), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "A nota mais alta de sushi de toda a lista (4,65) e a régua do Califa. Como o Saito, fica de referência.",
+      "order_pt": "Omakase único.",
+      "pregnancy_pt": "Quase tudo cru: não é refeição para ela.",
+      "booking_pt": "Só online (telefone fechado); na prática os clientes fixos reservam de novo na saída. Efetivamente só por conexão.",
+      "dec_jan_pt": "Fecha segunda. Ano-Novo a confirmar.",
+      "query": "Kakigaracho Sugita sushi"
+    },
+    {
+      "name": "Den",
+      "name_ja": "傳",
+      "area": "Tóquio · Jingūmae (Gaiemmae)",
+      "genre_pt": "Japonesa criativa",
+      "tabelog": {
+        "score": 4.36,
+        "reviews": 340,
+        "url": "https://tabelog.com/en/tokyo/A1306/A130603/13046855/",
+        "awards": "Award Silver 2026"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note_pt": "Foi pelo menos 9 vezes (“9th visit”, set 2015, ainda em Jimbōchō): postou o “sanduíche” de anago, shiso e beterraba e, em 2016, a salada de formigas pretas.",
+          "url": "https://www.pinterest.com/pin/little_meg_siu_meg-on-instagram-anago-shiso-beetroot-sandwich-jimbocho-den-tokyo-9th-visit-912015-from-the-last-visit-whic--11540542773599736/"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 7 vezes no endereço atual (abr 2017 – jan 2026) e 3 no antigo, em Jimbōchō, segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "A casa a que a Meg e o Jason Wang mais voltaram, e o Tabelog acompanha. Cozinha japonesa com humor, que muda a cada estação.",
+      "pregnancy_pt": "Menu-degustação com itens crus possíveis: avise ao reservar.",
+      "group_pt": "Tem sala privativa (com taxa); capacidade a confirmar.",
+      "booking_pt": "Muito disputado; canal a confirmar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Den Jingumae Tokyo"
+    },
+    {
+      "name": "Kanemasu",
+      "name_ja": "かねます",
+      "area": "Tóquio · Kachidoki",
+      "genre_pt": "Bar em pé (tachinomi)",
+      "tabelog": {
+        "score": 3.74,
+        "reviews": 837,
+        "url": "https://tabelog.com/en/tokyo/A1313/A131302/13002243/",
+        "awards": "立ち飲み 百名店 2025"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note_pt": "Quatro posts entre 2014 e 2015: um balcão a que ela voltava (posts embutidos no Tokyo Table Trip).",
+          "url": "https://tokyotabletrip.com/en/297"
+        }
+      ],
+      "why_pt": "O bar em pé de Kachidoki que a Meg frequentava, com selo 百名店 de tachinomi.",
+      "pregnancy_pt": "Parte dos petiscos é crua: ela fica com os cozidos. E é tudo em pé.",
+      "group_pt": "Bar em pé: 6 juntos é difícil; vá em 2–3.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kanemasu Kachidoki"
+    },
+    {
+      "name": "Suzutashiki",
+      "name_ja": "鈴田式",
+      "area": "Tóquio · Nishi-Azabu",
+      "genre_pt": "Washoku na lenha (薪焼き)",
+      "price_pt": "¥60.000–79.999",
+      "tabelog": {
+        "score": 4.21,
+        "reviews": 459,
+        "url": "https://tabelog.com/en/tokyo/A1307/A130701/13293100/",
+        "awards": "Award Bronze 2025, 2026; 日本料理 TOKYO 百名店 2025; TOKYO 百名店 2025"
+      },
+      "critics": [
+        {
+          "who": "@hitode47 (Hideto Tashiro)",
+          "note_pt": "É o restaurante do próprio @hitode47: Hideto Tashiro é o chef (no Suzutashiki desde 2019; mudou para Nishi-Azabu em jan 2024). Casa do chef, não recomendação independente.",
+          "url": "https://hitosara.com/0020007533/"
+        }
+      ],
+      "why_pt": "Washoku em fogo de lenha: shiitake grelhado recheado de pasta fermentada, iimushi de wagyu, arroz de donabe defumado com um tição dentro, sorvete defumado. O Tabelog confirma (4,21, bronze 2025–26).",
+      "order_pt": "Omakase único, com harmonização de saquê ou vinho.",
+      "pregnancy_pt": "O menu já teve caviar defumado, ouriço sobre sōmen, temaki de tartare e peixe cru: peça trocas cozidas ao reservar. Shiitake, iimushi de wagyu, arroz de donabe e sorvete defumado são tranquilos.",
+      "group_pt": "Sala privativa para 6 (há outra para 8) e 8 lugares no balcão: a sala de 6 é a família exata.",
+      "booking_pt": "Pelo OMAKASE; dois turnos (17h30 e 20h30). Em 2023 um blogueiro relatou espera de um ano e meio: para dez 2026, só com desistência.",
+      "dec_jan_pt": "Ano-Novo a confirmar ao reservar.",
+      "query": "Suzutashiki Nishi-Azabu"
+    },
+    {
+      "name": "Shichubo Yung",
+      "name_ja": "私厨房 勇",
+      "area": "Tóquio · Shirokane",
+      "genre_pt": "Chinesa (cozinha privada, balcão)",
+      "price_pt": "Jantar ¥10–15 mil no Tabelog; ¥15–20 mil pelas avaliações",
+      "tabelog": {
+        "score": 3.86,
+        "reviews": 312,
+        "url": "https://tabelog.com/tokyo/A1316/A131602/13168401/",
+        "awards": "Award Bronze 2017–2023; 中国料理 TOKYO 百名店 2021, 2023, 2024, 2026"
+      },
+      "critics": [
+        {
+          "who": "@fuchsiadunlop (Fuchsia Dunlop)",
+          "note_pt": "O único restaurante no Japão que Fuchsia Dunlop citou. Em Invitation to a Banquet (p. 265) descreve um salteado de vieiras, talo de arroz selvagem, cebolinha-amarela e abóbora como “an astonishing work of engineering”; no podcast de Tyler Cowen (2023) chamou de “absolutely superb”.",
+          "url": "https://conversationswithtyler.com/episodes/fuchsia-dunlop-3/"
+        }
+      ],
+      "why_pt": "Comida chinesa servida como num balcão de sushi, cada ingrediente no seu ponto. A crítica e o Tabelog concordam.",
+      "order_pt": "O curso; preste atenção aos salteados de legumes.",
+      "pregnancy_pt": "Curso chinês cozido, em geral seguro. Peça para tirar marisco cru ou “bêbado” e entradas de peixe cru.",
+      "group_pt": "10 lugares: os 6 ocupam 6 deles. Reserve cedo ou pergunte por uso exclusivo.",
+      "booking_pt": "Só reserva online (telefone fechado).",
+      "dec_jan_pt": "Ter–dom 18h–22h; fecha segunda. 24/12 (qui): aberto. Ano-Novo não informado.",
+      "query": "Shichubo Yung Shirokane"
+    },
+    {
+      "name": "Seiyō Ryōri Shima",
+      "name_ja": "西洋料理 島",
+      "area": "Tóquio · Nihonbashi / Kyōbashi",
+      "genre_pt": "Steak (wagyu)",
+      "tabelog": {
+        "score": 3.71,
+        "reviews": 269,
+        "url": "https://tabelog.com/en/tokyo/A1302/A130202/13000495/",
+        "awards": "Award Bronze 2017–20; Steak 百名店 2021–25"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Sirloin grosso de wagyu e sanduíche de steak, cerca de ¥12.000 (2017; refeição paga pelo tour da Hungry Tourist).",
+          "url": "https://www.youtube.com/watch?v=4sMejozB6XU"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note_pt": "Parada fixa dos tours. Califa: o mestre usa A4 ou A3, nunca A5 (“too fatty”), e há um wagyu sando fora do cardápio, o “Califa Special”.",
+          "url": "https://www.thehungrytourist.com/tours/grand-japan"
+        }
+      ],
+      "why_pt": "O santuário de steak de dois críticos da lista. O Tabelog é mais morno (3,71): os japoneses gostam, mas não deliram.",
+      "order_pt": "Sirloin; o sanduíche de steak.",
+      "pregnancy_pt": "Peça a carne dela bem passada. Tudo é cozido, então é uma das noites de luxo mais fáceis para ela.",
+      "booking_pt": "Online. Seg–sáb, 18h–21h.",
+      "dec_jan_pt": "Fecha domingo. Ano-Novo a confirmar.",
+      "query": "Seiyo Ryori Shima Nihonbashi"
+    },
+    {
+      "name": "Tempura Motoyoshi",
+      "name_ja": "てんぷら 元吉",
+      "area": "Tóquio · Daikanyama",
+      "genre_pt": "Tempura",
+      "tabelog": {
+        "score": 4.06,
+        "reviews": 147,
+        "url": "https://tabelog.com/en/tokyo/A1303/A130302/13270939/",
+        "awards": "Tempura 百名店 2023, 2025"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "“his tempura is literally flawless”; o melhor bocado foi ouriço sobre shiso frito (tour da Hungry Tourist, 2017, ainda no endereço antigo de Aoyama).",
+          "url": "https://migrationology.com/best-tokyo-food-tour/"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note_pt": "Califa vai há 9 anos: “Nothing is heavy… Greatness without stiffness.”",
+          "url": "https://www.thehungrytourist.com/tours/grand-japan"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 2 vezes (jun 2016 e jun 2020), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "Mudou de Aoyama para Daikanyama, e o endereço novo tem 4,06. Tempura é o luxo mais seguro para a gestante.",
+      "order_pt": "Omakase de tempura.",
+      "pregnancy_pt": "Tudo frito na hora. Só o ouriço cru sobre o shiso ela pula.",
+      "booking_pt": "Online; viável.",
+      "dec_jan_pt": "Fecha segunda. Ano-Novo a confirmar.",
+      "query": "Tempura Motoyoshi Daikanyama"
+    },
+    {
+      "name": "Torishiki",
+      "name_ja": "鳥しき",
+      "area": "Tóquio · Meguro",
+      "genre_pt": "Yakitori",
+      "tabelog": {
+        "score": 4.43,
+        "reviews": 1379,
+        "url": "https://tabelog.com/en/tokyo/A1316/A131601/13041029/",
+        "awards": "Award Gold 2019–22; Silver 2023–26"
+      },
+      "critics": [
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note_pt": "Na lista de yakitori “do nível que buscamos” dos tours de Tóquio; Califa filmou e chamou de “Mount Everest of yakitori”.",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 2 vezes (jun 2016 e mai 2019), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "O yakitori mais disputado de Tóquio, e com janela de reserva conhecida.",
+      "order_pt": "Omakase de espetinhos.",
+      "pregnancy_pt": "Frango pode vir rosado no centro (sasami, fígado): peça os dela bem passados.",
+      "booking_pt": "Por telefone, no 1º dia útil de cada mês, para os dois meses seguintes. A janela de janeiro de 2027 abre em 18/11/2026, 17h–19h (horário do Japão). Precisa de quem fale japonês ou de concierge.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Torishiki Meguro"
+    },
+    {
+      "name": "Karashibi Miso Ramen Kikanbo",
+      "name_ja": "鬼金棒",
+      "area": "Tóquio · Kanda (Kajichō)",
+      "genre_pt": "Rāmen de missô picante",
+      "tabelog": {
+        "score": 3.72,
+        "reviews": 2848,
+        "url": "https://tabelog.com/en/tokyo/A1310/A131002/13097205/"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Pediu o nível “devil” de pimenta e sanshō: “one of the most flavorful bowls” (2017).",
+          "url": "https://www.youtube.com/watch?v=jrMsWztL1n8"
+        }
+      ],
+      "why_pt": "Rāmen de missô com pimenta (kara) e sanshō (shibi) em níveis que você escolhe. Para quem gosta de ardido.",
+      "order_pt": "Karashibi miso; escolha os níveis de kara e shibi no ticket.",
+      "pregnancy_pt": "Tudo cozido; só dose a pimenta se ela tiver azia.",
+      "booking_pt": "Ticket na máquina da entrada; fila.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kikanbo Kanda"
+    },
+    {
+      "name": "Menya Shichisai",
+      "name_ja": "麺屋 七彩",
+      "area": "Tóquio · Hatchōbori",
+      "genre_pt": "Rāmen",
+      "tabelog": {
+        "score": 3.78,
+        "reviews": 4766,
+        "url": "https://tabelog.com/en/tokyo/A1302/A130203/13184399/",
+        "awards": "Ramen TOKYO 百名店 2018–2025"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Macarrão cortado à mão na hora: “best of the tour” no passeio de rāmen por Ginza (2017).",
+          "url": "https://www.youtube.com/watch?v=kMVmGjCC8Eo"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (set 2016), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "O macarrão é cortado na frente do cliente, pedido a pedido.",
+      "pregnancy_pt": "Tranquilo.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Menya Shichisai Hatchobori"
+    },
+    {
+      "name": "Yonekyū Honten",
+      "name_ja": "米久本店",
+      "area": "Tóquio · Asakusa",
+      "genre_pt": "Sukiyaki",
+      "tabelog": {
+        "score": 3.61,
+        "reviews": 1314,
+        "url": "https://tabelog.com/en/tokyo/A1311/A131102/13003667/",
+        "awards": "Sukiyaki 百名店 2024"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Sukiyaki numa casa centenária de tatame, com tambor na porta (2017). Escolheu por ser “an old heritage restaurant that's stood the test of time”.",
+          "url": "https://www.youtube.com/watch?v=f7HIc3B0BLI"
+        }
+      ],
+      "why_pt": "Sukiyaki histórico de Asakusa; os pais vão gostar das salas de tatame.",
+      "order_pt": "Um prato de carne especial e um normal, como o Mark faria da próxima vez.",
+      "pregnancy_pt": "Ela dispensa o ovo cru de mergulhar e cozinha bem a carne.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Yonekyu Asakusa sukiyaki"
+    },
+    {
+      "name": "Sanshūya Ginza Honten",
+      "name_ja": "三州屋 銀座本店",
+      "area": "Tóquio · Ginza 2-chōme",
+      "genre_pt": "Teishoku de peixe",
+      "tabelog": {
+        "score": 3.5,
+        "reviews": 2355,
+        "url": "https://tabelog.com/en/tokyo/A1301/A130101/13002473/",
+        "awards": "Teishoku 百名店 2021"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "“one of the best local Japanese restaurants I've ever been to in Tokyo” (2017).",
+          "url": "https://www.youtube.com/watch?v=iszTT9U4OA8"
+        }
+      ],
+      "why_pt": "Almoço de peixe fresco com cara de Ginza antiga, a preço de bairro.",
+      "pregnancy_pt": "Peça peixe grelhado, frito ou cozido em vez de sashimi.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Sanshuya Ginza"
+    },
+    {
+      "name": "Sushi Hakkoku",
+      "name_ja": "はっこく",
+      "area": "Tóquio · Ginza",
+      "genre_pt": "Sushi",
+      "tabelog": {
+        "score": 3.84,
+        "reviews": 787,
+        "url": "https://tabelog.com/en/tokyo/A1301/A130101/13217157/",
+        "awards": "Award Bronze 2019–25"
+      },
+      "critics": [
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note_pt": "Na lista de sushi “do nível que buscamos” dos tours; Califa filmou com o chef Hiro Sato.",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        }
+      ],
+      "why_pt": "O sushi de grife da lista em que uma família comum consegue reservar.",
+      "pregnancy_pt": "Avise ao reservar e peça tamago, anago, camarão e peixes cozidos no lugar dos crus.",
+      "booking_pt": "Online, até 2 meses antes; mande as restrições alimentares com antecedência.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Sushi Hakkoku Ginza"
     }
   ],
   "shops": [

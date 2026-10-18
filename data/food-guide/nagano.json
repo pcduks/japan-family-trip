@@ -153,7 +153,14 @@
       "group_pt": "53 lugares com salas; 6 cabem.",
       "booking_pt": "A confirmar.",
       "dec_jan_pt": "O ônibus de Kagami-ike não roda no inverno: táxi ou carro. A confirmar.",
-      "query": "Soba no Mi Togakushi"
+      "query": "Soba no Mi Togakushi",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Sobanomi”, out 2020 (1 vez), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Soba Fujioka",

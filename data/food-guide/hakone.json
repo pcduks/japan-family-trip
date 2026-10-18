@@ -136,7 +136,14 @@
       "group_pt": "69 lugares com salas para 6; cabem.",
       "booking_pt": "Reserva de enguia por telefone até 2 meses antes.",
       "dec_jan_pt": "10:00–16:00; fecha quinta e sexta. Ano-Novo a confirmar.",
-      "query": "Unagi-tei Tomoei Odawara"
+      "query": "Unagi-tei Tomoei Odawara",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Tomoei” em Odawara, set 2016 (1 vez), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Takeyabu Hakone",

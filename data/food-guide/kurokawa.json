@@ -78,7 +78,11 @@
       "name_ja": "黒川温泉街",
       "kind": "rua",
       "story_pt": "Ruela de pousadas, lojas de doces e cafés ao longo do rio. Pequeno e bom de andar, em 20 minutos se atravessa tudo.",
-      "eat_pt": ["Troque o terceiro selo do nyūtō tegata por um lanche", "Onsen tamago (não para ela)", "Doces e pudim das lojinhas"],
+      "eat_pt": [
+        "Troque o terceiro selo do nyūtō tegata por um lanche",
+        "Onsen tamago (não para ela)",
+        "Doces e pudim das lojinhas"
+      ],
       "tips_pt": "Os poucos restaurantes fecham cedo: a noite é no ryokan. Leve dinheiro.",
       "dec_jan_pt": "Ryokan funcionam no Ano-Novo; lojas com horário reduzido (a confirmar). Estrada com gelo é comum.",
       "query": "Kurokawa Onsen"
@@ -88,7 +92,10 @@
       "name_ja": "小国町",
       "kind": "bairro",
       "story_pt": "A cidadezinha vizinha, com casas de soba de moinho de pedra e açougues de cavalo e de boi.",
-      "eat_pt": ["Soba no Yūshin", "Yakiniku de cavalo na Fujimoto"],
+      "eat_pt": [
+        "Soba no Yūshin",
+        "Yakiniku de cavalo na Fujimoto"
+      ],
       "tips_pt": "É de carro: alugue um ou combine táxi pela pousada.",
       "dec_jan_pt": "A confirmar.",
       "query": "Oguni Kumamoto soba"
@@ -101,8 +108,18 @@
       "area": "Kurokawa · Manganji",
       "genre_pt": "Ryokan (jantar incluso)",
       "price_pt": "¥100.000+ (diária)",
-      "tabelog": { "score": 3.86, "reviews": 49, "url": "https://tabelog.com/en/kumamoto/A4302/A430203/43014494/" },
-      "critics": [{ "who": "@eduardo.takemi", "note_pt": "Ficou aqui para descansar em 2026 e chamou o restaurante de 'interessante'. Oito quartos num terreno de 15.000 m², com banhos privativos ao ar livre.", "url": "https://www.tokyoaijo.com/post/kurokawa-onsen-arte-de-descansar" }],
+      "tabelog": {
+        "score": 3.86,
+        "reviews": 49,
+        "url": "https://tabelog.com/en/kumamoto/A4302/A430203/43014494/"
+      },
+      "critics": [
+        {
+          "who": "@eduardo.takemi (Eduardo Takemi)",
+          "note_pt": "Ficou aqui para descansar em 2026 e chamou o restaurante de 'interessante'. Oito quartos num terreno de 15.000 m², com banhos privativos ao ar livre.",
+          "url": "https://www.tokyoaijo.com/post/kurokawa-onsen-arte-de-descansar"
+        }
+      ],
       "why_pt": "A escolha do nosso crítico brasileiro, e 3.86 no Tabelog, nota de mesa séria para uma pousada.",
       "order_pt": "O jantar da casa.",
       "pregnancy_pt": "Avise sem crus ao reservar.",
@@ -117,7 +134,11 @@
       "area": "Oguni · Miyahara",
       "genre_pt": "Soba",
       "price_pt": "¥1.000–3.000",
-      "tabelog": { "score": 3.56, "reviews": 86, "url": "https://tabelog.com/en/kumamoto/A4302/A430203/43000728/" },
+      "tabelog": {
+        "score": 3.56,
+        "reviews": 86,
+        "url": "https://tabelog.com/en/kumamoto/A4302/A430203/43000728/"
+      },
       "why_pt": "Soba feito à mão num balcão pequeno: o melhor soba avaliado perto de Kurokawa.",
       "order_pt": "Zaru soba ou soba quente.",
       "pregnancy_pt": "Ok.",
@@ -132,7 +153,11 @@
       "area": "Oguni · Shimojō",
       "genre_pt": "Carne de cavalo",
       "price_pt": "¥4.000–4.999",
-      "tabelog": { "score": 3.63, "reviews": 69 , "url": "https://tabelog.com/en/kumamoto/A4302/A430203/43010954/" },
+      "tabelog": {
+        "score": 3.63,
+        "reviews": 69,
+        "url": "https://tabelog.com/en/kumamoto/A4302/A430203/43010954/"
+      },
       "why_pt": "Açougue-restaurante de cavalo no interior: o lugar para provar a carne de Kumamoto longe do circuito turístico.",
       "order_pt": "Set de yakiniku de cavalo; basashi para os outros cinco.",
       "pregnancy_pt": "Ela fica no yakiniku bem passado; nada de basashi.",
@@ -147,7 +172,12 @@
       "area": "Aso · Uchinomaki (no caminho para Kurokawa)",
       "genre_pt": "Shokudō / akaushi-don",
       "price_pt": "¥2.000–2.999",
-      "tabelog": { "score": 3.70, "reviews": 1957, "url": "https://tabelog.com/en/kumamoto/A4302/A430201/43004788/", "awards": "Shokudō 百名店 2024, 2026" },
+      "tabelog": {
+        "score": 3.7,
+        "reviews": 1957,
+        "url": "https://tabelog.com/en/kumamoto/A4302/A430201/43004788/",
+        "awards": "Shokudō 百名店 2024, 2026"
+      },
       "why_pt": "O akaushi-don mais famoso de Aso, num shokudō antigo. Vale a parada a caminho de Kurokawa.",
       "order_pt": "Akaushi-don.",
       "pregnancy_pt": "A carne vem rosada: peça bem passada ou escolha outro prato.",
@@ -158,8 +188,22 @@
     }
   ],
   "shops": [
-    { "name": "Nyūtō tegata (Kaze no Ya)", "name_ja": "入湯手形", "what_pt": "A plaquinha de madeira de Kurokawa: dois selos para banhos e um que vale banho ou troca por comida e lembranças.", "buy_pt": "Um por adulto; use o terceiro selo num doce.", "dec_jan_pt": "Vendido o ano todo (a confirmar).", "query": "Kurokawa Onsen Kaze no Ya nyuto tegata" },
-    { "name": "Lojinhas do vale", "name_ja": "黒川温泉の売店", "what_pt": "Doces, pudins e lanches de produtos de Aso.", "buy_pt": "Doces para o quarto; leite e pudim de Aso.", "dec_jan_pt": "Horário reduzido no Ano-Novo (a confirmar).", "query": "Kurokawa Onsen shops" }
+    {
+      "name": "Nyūtō tegata (Kaze no Ya)",
+      "name_ja": "入湯手形",
+      "what_pt": "A plaquinha de madeira de Kurokawa: dois selos para banhos e um que vale banho ou troca por comida e lembranças.",
+      "buy_pt": "Um por adulto; use o terceiro selo num doce.",
+      "dec_jan_pt": "Vendido o ano todo (a confirmar).",
+      "query": "Kurokawa Onsen Kaze no Ya nyuto tegata"
+    },
+    {
+      "name": "Lojinhas do vale",
+      "name_ja": "黒川温泉の売店",
+      "what_pt": "Doces, pudins e lanches de produtos de Aso.",
+      "buy_pt": "Doces para o quarto; leite e pudim de Aso.",
+      "dec_jan_pt": "Horário reduzido no Ano-Novo (a confirmar).",
+      "query": "Kurokawa Onsen shops"
+    }
   ],
   "sources": [
     "https://ja.wikipedia.org/wiki/黒川温泉",

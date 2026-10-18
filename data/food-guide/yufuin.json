@@ -73,7 +73,11 @@
       "name_ja": "湯の坪街道",
       "kind": "rua",
       "story_pt": "O corredor de lojas entre a estação e o lago Kinrin, cheio de croquetes, doces e lembranças.",
-      "eat_pt": ["Roll cake da B-speak", "Doces da Yufuin Milch (3.57)", "Curry udon no Kikusuke"],
+      "eat_pt": [
+        "Roll cake da B-speak",
+        "Doces da Yufuin Milch (3.57)",
+        "Curry udon no Kikusuke"
+      ],
       "tips_pt": "Lota a partir das 11h com ônibus de excursão. Vá às 9h–10h ou no fim da tarde.",
       "dec_jan_pt": "Muito movimento nos feriados de Ano-Novo; lojas abertas com horário reduzido (a confirmar).",
       "query": "Yunotsubo Kaido Yufuin"
@@ -83,7 +87,10 @@
       "name_ja": "金鱗湖",
       "kind": "bairro",
       "story_pt": "Lago pequeno alimentado por fontes quentes. Nas manhãs frias de inverno sai névoa da água, e o Kamenoi Bessō e seus cafés ficam ao lado.",
-      "eat_pt": ["Almoço no Yunotake-an", "Café no Tenjō Sajiki"],
+      "eat_pt": [
+        "Almoço no Yunotake-an",
+        "Café no Tenjō Sajiki"
+      ],
       "tips_pt": "Para a névoa, vá logo depois do nascer do sol, em dia frio e sem vento.",
       "dec_jan_pt": "A confirmar.",
       "query": "Kinrin Lake Yufuin"
@@ -96,7 +103,11 @@
       "area": "Yufuin · Lago Kinrin (Kamenoi Bessō)",
       "genre_pt": "Comida regional / japonesa",
       "price_pt": "¥4.000–15.000",
-      "tabelog": { "score": 3.74, "reviews": 308, "url": "https://tabelog.com/en/oita/A4402/A440201/44000042/" },
+      "tabelog": {
+        "score": 3.74,
+        "reviews": 308,
+        "url": "https://tabelog.com/en/oita/A4402/A440201/44000042/"
+      },
       "why_pt": "O restaurante aberto ao público do Kamenoi Bessō, o ryokan número 1 da cidade no Tabelog. É a melhor forma de provar a cozinha da casa sem dormir lá.",
       "order_pt": "Wagyu cozido no vapor termal (¥1.600), hitsumabushi de enguia, arroz de frango.",
       "pregnancy_pt": "Ok com pratos cozidos; sem sashimi.",
@@ -111,7 +122,12 @@
       "area": "Yufuin",
       "genre_pt": "Italiano / pizza",
       "price_pt": "¥2.000–5.000",
-      "tabelog": { "score": 3.67, "reviews": 659, "url": "https://tabelog.com/en/oita/A4402/A440201/44000453/", "awards": "Italian WEST 百名店 2023, 2025; Pizza 百名店 2021" },
+      "tabelog": {
+        "score": 3.67,
+        "reviews": 659,
+        "url": "https://tabelog.com/en/oita/A4402/A440201/44000453/",
+        "awards": "Italian WEST 百名店 2023, 2025; Pizza 百名店 2021"
+      },
       "why_pt": "Pizza de forno a lenha com vista para o monte Yufu: uma pausa do japonês que agrada a todos.",
       "order_pt": "Pizza do forno de pedra e as costelinhas assadas.",
       "pregnancy_pt": "Ok; evite presunto cru e queijos moles não pasteurizados.",
@@ -126,7 +142,12 @@
       "area": "Yufuin",
       "genre_pt": "Kissaten",
       "price_pt": "¥1.000–1.999",
-      "tabelog": { "score": 3.66, "reviews": 591, "url": "https://tabelog.com/en/oita/A4402/A440201/44000043/", "awards": "Kissaten 百名店 2022, 2026" },
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 591,
+        "url": "https://tabelog.com/en/oita/A4402/A440201/44000043/",
+        "awards": "Kissaten 百名店 2022, 2026"
+      },
       "why_pt": "Kissaten 百名店 duas vezes, com 30 lugares e clima de pausa longa. A partir das 17h vira o Bar Yamaneko.",
       "order_pt": "Café e doce da casa.",
       "pregnancy_pt": "Ok (com moderação na cafeína).",
@@ -137,8 +158,22 @@
     }
   ],
   "shops": [
-    { "name": "B-speak", "name_ja": "ビー・スピーク", "what_pt": "O roll cake de Yufuin. Tabelog 3.64 (459), Sweets WEST 百名店 2023 e 2026 (https://tabelog.com/en/oita/A4402/A440201/44000122/).", "buy_pt": "Roll cake (para levar).", "dec_jan_pt": "10h–17h todos os dias; fecha duas vezes por ano em datas variáveis.", "query": "B-speak Yufuin" },
-    { "name": "Yufuin Milch honten", "name_ja": "ゆふいん ミルヒ 本店", "what_pt": "Doces ocidentais de leite. Tabelog 3.57 (341), https://tabelog.com/en/oita/A4402/A440201/44007864/.", "buy_pt": "Um doce para comer andando pela Yunotsubo.", "dec_jan_pt": "A confirmar.", "query": "Yufuin Milch" }
+    {
+      "name": "B-speak",
+      "name_ja": "ビー・スピーク",
+      "what_pt": "O roll cake de Yufuin. Tabelog 3.64 (459), Sweets WEST 百名店 2023 e 2026 (https://tabelog.com/en/oita/A4402/A440201/44000122/).",
+      "buy_pt": "Roll cake (para levar).",
+      "dec_jan_pt": "10h–17h todos os dias; fecha duas vezes por ano em datas variáveis.",
+      "query": "B-speak Yufuin"
+    },
+    {
+      "name": "Yufuin Milch honten",
+      "name_ja": "ゆふいん ミルヒ 本店",
+      "what_pt": "Doces ocidentais de leite. Tabelog 3.57 (341), https://tabelog.com/en/oita/A4402/A440201/44007864/.",
+      "buy_pt": "Um doce para comer andando pela Yunotsubo.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Yufuin Milch"
+    }
   ],
   "sources": [
     "https://tabelog.com/en/oita/A4402/A440201/rank/",

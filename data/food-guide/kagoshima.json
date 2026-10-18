@@ -149,7 +149,7 @@
       },
       "critics": [
         {
-          "who": "@migrationology",
+          "who": "@migrationology (Mark Wiens)",
           "note_pt": "Mark Wiens comeu o kurobuta shabu daqui no seu 'dia do kurobuta' em Kagoshima (2023), junto com tonkatsu de kurobuta e o Izakaya Tsuwabuki.",
           "url": "https://www.youtube.com/watch?v=1vlsRKEvWaQ"
         }
@@ -177,7 +177,14 @@
       "group_pt": "A confirmar.",
       "booking_pt": "Sem reserva (a confirmar).",
       "dec_jan_pt": "A confirmar.",
-      "query": "shirokuma cafe Tenmonkan Kagoshima"
+      "query": "shirokuma cafe Tenmonkan Kagoshima",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Kumasotei and Shirokuma Cafe”, abr 2020, segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     }
   ],
   "shops": [

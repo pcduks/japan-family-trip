@@ -75,7 +75,12 @@
       "name_ja": "道後温泉・ハイカラ通り",
       "kind": "rua",
       "story_pt": "A galeria coberta que leva ao Dōgo Onsen Honkan, a casa de banhos de madeira que inspirou o Botchan.",
-      "eat_pt": ["Botchan dango", "Jakoten quente", "Taimeshi no Akiyoshi de Dōgo", "Sucos de mikan"],
+      "eat_pt": [
+        "Botchan dango",
+        "Jakoten quente",
+        "Taimeshi no Akiyoshi de Dōgo",
+        "Sucos de mikan"
+      ],
       "tips_pt": "Coma e banhe-se no fim da tarde, quando os grupos saem.",
       "dec_jan_pt": "Muito movimento no Ano-Novo; lojas abertas (horário a confirmar).",
       "query": "Dogo Onsen Haikara Dori"
@@ -85,7 +90,10 @@
       "name_ja": "大街道・銀天街",
       "kind": "rua",
       "story_pt": "As galerias do centro, ao pé do castelo, com nabeyaki udon e taimeshi.",
-      "eat_pt": ["Nabeyaki udon", "Taimeshi no Akiyoshi honten"],
+      "eat_pt": [
+        "Nabeyaki udon",
+        "Taimeshi no Akiyoshi honten"
+      ],
       "tips_pt": "O almoço fica por aqui entre o castelo e o bonde.",
       "dec_jan_pt": "A confirmar.",
       "query": "Okaido Matsuyama"
@@ -98,7 +106,11 @@
       "area": "Matsuyama · centro",
       "genre_pt": "Taimeshi",
       "price_pt": "A confirmar",
-      "tabelog": { "score": 3.50, "reviews": 468, "url": "https://tabelog.com/en/ehime/A3801/A380101/38011850/" },
+      "tabelog": {
+        "score": 3.5,
+        "reviews": 468,
+        "url": "https://tabelog.com/en/ehime/A3801/A380101/38011850/"
+      },
       "why_pt": "Serve os dois taimeshi lado a lado: o Pedro prova o cru de Uwajima, ela fica com o cozido de Matsuyama. A filial de Dōgo também tem 3.50 (https://tabelog.com/en/ehime/A3801/A380101/38013282/).",
       "order_pt": "Um de cada: Matsuyama e Uwajima.",
       "pregnancy_pt": "Só o de Matsuyama (cozido).",
@@ -113,7 +125,11 @@
       "area": "Matsuyama",
       "genre_pt": "Taimeshi de Uwajima",
       "price_pt": "A confirmar",
-      "tabelog": { "score": 3.48, "reviews": 353, "url": "https://tabelog.com/en/ehime/A3801/A380101/38014061/" },
+      "tabelog": {
+        "score": 3.48,
+        "reviews": 353,
+        "url": "https://tabelog.com/en/ehime/A3801/A380101/38014061/"
+      },
       "why_pt": "Casa que se diz 'ganso' (original) do taimeshi de Uwajima.",
       "order_pt": "Uwajima taimeshi; versão cozida para ela.",
       "pregnancy_pt": "Ela pede o taimeshi de Matsuyama.",
@@ -128,7 +144,9 @@
       "area": "Matsuyama",
       "genre_pt": "Nabeyaki udon",
       "price_pt": "A confirmar",
-      "tabelog": { "awards": "Udon WEST 百名店 2024" },
+      "tabelog": {
+        "awards": "Udon WEST 百名店 2024"
+      },
       "why_pt": "Um dos dois 百名店 do udon doce de panela de Matsuyama; o outro é a Kotori. Nota a confirmar.",
       "order_pt": "Nabeyaki udon.",
       "pregnancy_pt": "Ok; peça sem ovo mole se vier.",
@@ -139,9 +157,30 @@
     }
   ],
   "shops": [
-    { "name": "Tsuboya", "name_ja": "つぼや菓子舗", "what_pt": "A casa de 1883 apontada como a mais antiga do Botchan dango.", "buy_pt": "Botchan dango fresco (dura menos).", "dec_jan_pt": "A confirmar.", "query": "Tsuboya Botchan dango Dogo" },
-    { "name": "Utsuboya", "name_ja": "うつぼ屋", "what_pt": "A versão mais comum nas lojas de lembrança, que dura mais.", "buy_pt": "Caixa de Botchan dango para levar.", "dec_jan_pt": "A confirmar.", "query": "Utsuboya Botchan dango" },
-    { "name": "Lojas de suco de mikan de Dōgo", "name_ja": "みかんジュース", "what_pt": "Sucos de variedades de cítricos de Ehime.", "buy_pt": "Garrafas de suco e mikan fresco.", "dec_jan_pt": "A confirmar.", "query": "Dogo mikan juice shop" }
+    {
+      "name": "Tsuboya",
+      "name_ja": "つぼや菓子舗",
+      "what_pt": "A casa de 1883 apontada como a mais antiga do Botchan dango.",
+      "buy_pt": "Botchan dango fresco (dura menos).",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Tsuboya Botchan dango Dogo"
+    },
+    {
+      "name": "Utsuboya",
+      "name_ja": "うつぼ屋",
+      "what_pt": "A versão mais comum nas lojas de lembrança, que dura mais.",
+      "buy_pt": "Caixa de Botchan dango para levar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Utsuboya Botchan dango"
+    },
+    {
+      "name": "Lojas de suco de mikan de Dōgo",
+      "name_ja": "みかんジュース",
+      "what_pt": "Sucos de variedades de cítricos de Ehime.",
+      "buy_pt": "Garrafas de suco e mikan fresco.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Dogo mikan juice shop"
+    }
   ],
   "sources": [
     "https://ja.wikipedia.org/wiki/鯛めし",

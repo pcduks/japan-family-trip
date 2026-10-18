@@ -171,14 +171,26 @@
       "area": "Kyoto · Higashiyama (Maruyama)",
       "genre_pt": "Ryōtei kaiseki",
       "price_pt": "Faixa Tabelog ¥20–39 mil + 15% de serviço",
-      "tabelog": { "score": 4.10, "reviews": 611, "url": "https://tabelog.com/kyoto/A2601/A260301/26001346/", "awards": "Award Bronze 2018, 2019, 2021–2026; 日本料理 WEST 百名店 2021, 2023, 2025" },
+      "tabelog": {
+        "score": 4.1,
+        "reviews": 611,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26001346/",
+        "awards": "Award Bronze 2018, 2019, 2021–2026; 日本料理 WEST 百名店 2021, 2023, 2025"
+      },
       "why_pt": "A referência pela qual Kyoto se mede, e o único kaiseki onde seis pessoas ganham sala de tatame com jardim. Manteve 3 estrelas no Michelin japonês Kyoto-Osaka 2026 (site da casa).",
       "order_pt": "O curso sazonal; deixe a casa conduzir.",
       "pregnancy_pt": "Tem sashimi e às vezes marisco cru ou ouriço. Avise ao reservar: \"妊娠中のため、生もの・生卵は火を通したものに変更をお願いします\".",
       "group_pt": "Cabe 6: salas privativas para 4, 6 e 8+.",
       "booking_pt": "Telefone ou site oficial, com bastante antecedência.",
       "dec_jan_pt": "Fecha no fim de ano e Ano-Novo (datas exatas a confirmar). Marque entre 20 e 24 dez ou depois do dia 4; 24 dez funciona bem.",
-      "query": "Kikunoi Honten Kyoto"
+      "query": "Kikunoi Honten Kyoto",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (mar 2015), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Kōdaiji Wakuden",
@@ -186,7 +198,12 @@
       "area": "Kyoto · Higashiyama",
       "genre_pt": "Kaiseki",
       "price_pt": "Almoço ¥30–39 mil · Jantar ¥50–59 mil",
-      "tabelog": { "score": 3.94, "reviews": 269, "url": "https://tabelog.com/kyoto/A2601/A260301/26000535/", "awards": "Tabelog Award todo ano 2017–2026 (Silver 2020); 日本料理 WEST 百名店" },
+      "tabelog": {
+        "score": 3.94,
+        "reviews": 269,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26000535/",
+        "awards": "Tabelog Award todo ano 2017–2026 (Silver 2020); 日本料理 WEST 百名店"
+      },
       "why_pt": "A alternativa de luxo ao Kikunoi, com seis salas privativas.",
       "group_pt": "Salas privativas: cabe 6.",
       "booking_pt": "Telefone, com antecedência. Fecha domingo.",
@@ -199,7 +216,11 @@
       "area": "Kyoto · Pontochō",
       "genre_pt": "Obanzai e saquê",
       "price_pt": "Jantar ¥8–10 mil",
-      "tabelog": { "score": 3.51, "reviews": 118, "url": "https://tabelog.com/kyoto/A2601/A260201/26000698/" },
+      "tabelog": {
+        "score": 3.51,
+        "reviews": 118,
+        "url": "https://tabelog.com/kyoto/A2601/A260201/26000698/"
+      },
       "why_pt": "As travessas no balcão são o cardápio. Comida caseira de Kyoto honesta, numa casa de Pontochō que não virou parque temático. Listada no Michelin japonês como obanzai de duas gerações.",
       "order_pt": "Okara, hijiki, nishin-nasu (berinjela com arenque) e o que estiver nas travessas.",
       "pregnancy_pt": "Quase tudo é cozido. Ela pula só o kizushi (cavala crua curada).",
@@ -214,7 +235,11 @@
       "area": "Kyoto · Kiyamachi-Sanjō",
       "genre_pt": "Obanzai e izakaya",
       "price_pt": "Jantar ¥8–10 mil",
-      "tabelog": { "score": 3.50, "reviews": 338, "url": "https://tabelog.com/kyoto/A2601/A260201/26001266/" },
+      "tabelog": {
+        "score": 3.5,
+        "reviews": 338,
+        "url": "https://tabelog.com/kyoto/A2601/A260201/26001266/"
+      },
       "why_pt": "Plano B do Masuda, mesmo repertório e uma sala que cabe seis exatos. Abre às 15h, bom para jantar cedo.",
       "order_pt": "As obanzai do balcão; peça para o chef sugerir.",
       "pregnancy_pt": "Evitar só o sashimi.",
@@ -229,7 +254,12 @@
       "area": "Kyoto · Kawabata-Nijō",
       "genre_pt": "Izakaya (oden, cozidos, saquê)",
       "price_pt": "¥3–4 mil",
-      "tabelog": { "score": 3.71, "reviews": 983, "url": "https://tabelog.com/kyoto/A2601/A260302/26001072/", "awards": "居酒屋 百名店 2021, 2022; 居酒屋 WEST 百名店 2024, 2025, 2026" },
+      "tabelog": {
+        "score": 3.71,
+        "reviews": 983,
+        "url": "https://tabelog.com/kyoto/A2601/A260302/26001072/",
+        "awards": "居酒屋 百名店 2021, 2022; 居酒屋 WEST 百名店 2024, 2025, 2026"
+      },
       "why_pt": "Madeira, luz baixa, balcão comprido e saquê sério. É o izakaya que o morador de Kyoto escolhe para mostrar a coisa de verdade.",
       "order_pt": "Oden, cozidos do dia, saquê de Fushimi.",
       "pregnancy_pt": "Oden e cozidos ok; pular sashimi.",
@@ -244,7 +274,11 @@
       "area": "Kyoto · Nanzenji",
       "genre_pt": "Yudōfu e kaiseki de tofu",
       "price_pt": "¥4–6 mil",
-      "tabelog": { "score": 3.50, "reviews": 834, "url": "https://tabelog.com/kyoto/A2601/A260301/26001013/" },
+      "tabelog": {
+        "score": 3.5,
+        "reviews": 834,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26001013/"
+      },
       "why_pt": "O clássico Okutan Nanzenji está em suspenso no Tabelog; o Junsei é o yudōfu prático para seis, com jardim e comida gentil para os pais e para a gravidez.",
       "order_pt": "Curso de yudōfu com yuba e dengaku.",
       "pregnancy_pt": "Tudo cozido.",
@@ -259,7 +293,11 @@
       "area": "Kyoto · Kiyomizu",
       "genre_pt": "Yudōfu",
       "price_pt": "a confirmar",
-      "tabelog": { "score": 3.47, "reviews": 435, "url": "https://tabelog.com/kyoto/A2601/A260301/26001625/" },
+      "tabelog": {
+        "score": 3.47,
+        "reviews": 435,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26001625/"
+      },
       "why_pt": "A casa Okutan (fundada em 1635 segundo guias japoneses), com salas privativas e reserva.",
       "pregnancy_pt": "Tudo cozido.",
       "group_pt": "Salas privativas.",
@@ -273,14 +311,25 @@
       "area": "Kyoto · Shijō-Ōhashi (Minamiza)",
       "genre_pt": "Nishin soba",
       "price_pt": "¥1.500–2.500",
-      "tabelog": { "score": 3.48, "reviews": 855, "url": "https://tabelog.com/kyoto/A2601/A260301/26001629/" },
+      "tabelog": {
+        "score": 3.48,
+        "reviews": 855,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26001629/"
+      },
       "why_pt": "A casa que inventou a nishin soba (1882; loja de 1861, segundo a província de Kyoto). Se a família quiser um ritual de fim de ano em Kyoto, é este: soba de arenque à beira do rio.",
       "order_pt": "Nishin soba quente.",
       "pregnancy_pt": "Ok.",
       "group_pt": "Mesas compartilhadas; no pico, 4+2.",
       "booking_pt": "Sem reserva.",
       "dec_jan_pt": "Abre todo dia. Fila longa no dia 31: vá 29–30 dez ou na abertura do 31. Horário de Ano-Novo a confirmar.",
-      "query": "Matsuba nishin soba Kyoto"
+      "query": "Matsuba nishin soba Kyoto",
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Nishin soba em 2015: “a little expensive… very good quality”.",
+          "url": "https://www.youtube.com/watch?v=WiVaC25Gg0I"
+        }
+      ]
     },
     {
       "name": "Honke Owariya Honten",
@@ -288,13 +337,24 @@
       "area": "Kyoto · Nijō / Karasuma-Oike",
       "genre_pt": "Soba e soba-mochi",
       "price_pt": "¥1–3 mil",
-      "tabelog": { "score": 3.49, "reviews": 640, "url": "https://tabelog.com/kyoto/A2601/A260202/26000657/" },
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 640,
+        "url": "https://tabelog.com/kyoto/A2601/A260202/26000657/"
+      },
       "why_pt": "A soba de linhagem mais antiga de Kyoto (era Muromachi), fornecedora da Casa Imperial. Mas o Tabelog marca 掲載保留: status incerto. Confirme que a matriz está funcionando antes de ir.",
       "pregnancy_pt": "Evitar coberturas de ovo cru (tsukimi).",
       "group_pt": "Tinha 92 lugares: 6 cabem.",
       "booking_pt": "Sem reserva.",
       "dec_jan_pt": "Registro antigo: fecha só 1 e 2 jan; 31 dez é o grande dia de toshikoshi-soba. Verificar se está aberto.",
-      "query": "Honke Owariya Kyoto"
+      "query": "Honke Owariya Kyoto",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (dez 2013), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Sobaya Nikora",
@@ -302,7 +362,12 @@
       "area": "Kyoto · Imadegawa",
       "genre_pt": "Soba artesanal com petiscos",
       "price_pt": "Almoço ¥3–4 mil · Jantar ¥8–10 mil",
-      "tabelog": { "score": 3.66, "reviews": 327, "url": "https://tabelog.com/kyoto/A2601/A260202/26000514/", "awards": "そば WEST 百名店 2024, 2025" },
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 327,
+        "url": "https://tabelog.com/kyoto/A2601/A260202/26000514/",
+        "awards": "そば WEST 百名店 2024, 2025"
+      },
       "why_pt": "A soba-ya moderna de Kyoto: petiscos com saquê (soba-mae) e depois o macarrão. É aqui que o Pedro come soba se o Owariya estiver fechado.",
       "order_pt": "Petiscos de soba-mae, depois seiro.",
       "pregnancy_pt": "Ok.",
@@ -317,7 +382,12 @@
       "area": "Kyoto · Nanzenji",
       "genre_pt": "Curry udon",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.52, "reviews": 687, "url": "https://tabelog.com/kyoto/A2601/A260301/26000815/", "awards": "うどん 百名店 2017; うどん WEST 百名店 2020, 2022, 2024" },
+      "tabelog": {
+        "score": 3.52,
+        "reviews": 687,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26000815/",
+        "awards": "うどん 百名店 2017; うどん WEST 百名店 2020, 2022, 2024"
+      },
       "why_pt": "O curry udon engrossado com dashi pelo qual japonês faz fila, perto do Caminho do Filósofo.",
       "order_pt": "Curry udon.",
       "pregnancy_pt": "Ok.",
@@ -332,7 +402,12 @@
       "area": "Kyoto · Okazaki (Heian)",
       "genre_pt": "Udon de Kyoto",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.69, "reviews": 1670, "url": "https://tabelog.com/kyoto/A2601/A260302/26000919/", "awards": "うどん 百名店 2017–2019; うどん WEST 百名店 2020, 2024" },
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 1670,
+        "url": "https://tabelog.com/kyoto/A2601/A260302/26000919/",
+        "awards": "うどん 百名店 2017–2019; うどん WEST 百名店 2020, 2024"
+      },
       "why_pt": "Udon macio num caldo claro de kombu, o oposto do Sanuki elástico. A tigela de referência de Kyoto.",
       "order_pt": "Kitsune (aqui \"kētsune\") ou kasu-jiru udon.",
       "pregnancy_pt": "O oyakodon vem com ovo mole: peça \"よく火を通して\" ou pule. Kasu-jiru leva sake-kasu: ela evita.",
@@ -347,7 +422,12 @@
       "area": "Kyoto · Estação de Kyoto",
       "genre_pt": "Ramen de Kyoto (shōyu escuro) e yakimeshi",
       "price_pt": "Menos de ¥1.000",
-      "tabelog": { "score": 3.59, "reviews": 4352, "url": "https://tabelog.com/kyoto/A2601/A260101/26000791/", "awards": "ラーメン WEST 百名店 2020, 2021" },
+      "tabelog": {
+        "score": 3.59,
+        "reviews": 4352,
+        "url": "https://tabelog.com/kyoto/A2601/A260101/26000791/",
+        "awards": "ラーメン WEST 百名店 2020, 2021"
+      },
       "why_pt": "O ramen mais antigo de Kyoto, barraca de 1938 perto da estação (ASCII). O pedido certo é o yakimeshi preto.",
       "order_pt": "Chūka soba + yakimeshi.",
       "pregnancy_pt": "Ok.",
@@ -362,7 +442,12 @@
       "area": "Kyoto · Estação de Kyoto",
       "genre_pt": "Ramen shōyu-tonkotsu",
       "price_pt": "Menos de ¥1.000",
-      "tabelog": { "score": 3.73, "reviews": 7004, "url": "https://tabelog.com/kyoto/A2601/A260101/26000873/", "awards": "ラーメン WEST 百名店 2019–2025" },
+      "tabelog": {
+        "score": 3.73,
+        "reviews": 7004,
+        "url": "https://tabelog.com/kyoto/A2601/A260101/26000873/",
+        "awards": "ラーメン WEST 百名店 2019–2025"
+      },
       "why_pt": "Mais leve e mais suíno que o vizinho Shinpuku, e abre às 6h: a tigela clássica antes do trem.",
       "order_pt": "Ramen.",
       "pregnancy_pt": "Ok.",
@@ -377,7 +462,12 @@
       "area": "Kyoto · Teramachi",
       "genre_pt": "Ramen shōyu de dashi",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.71, "reviews": 1146, "url": "https://tabelog.com/kyoto/A2601/A260201/26032368/", "awards": "ラーメン WEST 百名店 2023, 2024, 2025" },
+      "tabelog": {
+        "score": 3.71,
+        "reviews": 1146,
+        "url": "https://tabelog.com/kyoto/A2601/A260201/26032368/",
+        "awards": "ラーメン WEST 百名店 2023, 2024, 2025"
+      },
       "why_pt": "O ramen \"refinado\" de Kyoto, de kombu e katsuo. Alternativa para tsukemen: Wajo Ryōmen Sugari (3.67, 2.173 avaliações, WEST 百名店 2023–2025, https://tabelog.com/kyoto/A2601/A260202/26006820/, 10 lugares).",
       "pregnancy_pt": "Ok.",
       "group_pt": "16 lugares: 4+2 ou 3+3.",
@@ -391,7 +481,11 @@
       "area": "Kyoto · Gion",
       "genre_pt": "Saba-zushi e sushi prensado",
       "price_pt": "¥2–3 mil",
-      "tabelog": { "score": 3.69, "reviews": 1177, "url": "https://tabelog.com/kyoto/A2601/A260301/26000585/" },
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 1177,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26000585/"
+      },
       "why_pt": "A versão definitiva da comida de festa de Kyoto, cavala gorda sobre arroz embrulhado em kombu, desde 1781 (Keihan).",
       "order_pt": "Saba sugata-zushi; anago ou inari para ela.",
       "pregnancy_pt": "Cavala curada, não cozida: decisão dela. Seguro: anago-zushi e inari.",
@@ -406,13 +500,30 @@
       "area": "Kyoto · Matsuo (Arashiyama)",
       "genre_pt": "Tempura e kappō",
       "price_pt": "Almoço ¥20–29 mil · Jantar ¥30–39 mil",
-      "tabelog": { "score": 3.79, "reviews": 316, "url": "https://tabelog.com/kyoto/A2601/A260403/26001461/", "awards": "Award Silver 2017, Bronze 2018–2022; 天ぷら 百名店 2022, 2023, 2025" },
+      "tabelog": {
+        "score": 3.79,
+        "reviews": 316,
+        "url": "https://tabelog.com/kyoto/A2601/A260403/26001461/",
+        "awards": "Award Silver 2017, Bronze 2018–2022; 天ぷら 百名店 2022, 2023, 2025"
+      },
       "why_pt": "O filho da casa joga o kappō contra a fritura: mais inventivo que a tempura padrão de Gion. Combina com um dia em Arashiyama.",
       "pregnancy_pt": "Tempura ok; o lado kappō pode ter sashimi, avise ao reservar.",
       "group_pt": "3 salas privativas (até 8).",
-      "booking_pt": "Telefone.",
+      "booking_pt": "Online (Tabelog) ou telefone.",
       "dec_jan_pt": "Fecha quarta. Ano-Novo a confirmar.",
-      "query": "Tempura Matsu Kyoto"
+      "query": "Tempura Matsu Kyoto",
+      "critics": [
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note_pt": "Parada confirmada do Grand Japan 2027: kappō com algumas tempuras e churrasco no bambuzal da irmã do chef.",
+          "url": "https://www.thehungrytourist.com/tours/grand-japan"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (mar 2015), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Tempura Yoshikawa",
@@ -420,7 +531,12 @@
       "area": "Kyoto · Tominokōji-Oike",
       "genre_pt": "Tempura em ryokan",
       "price_pt": "Almoço ¥6–8 mil · Jantar ¥20–29 mil",
-      "tabelog": { "score": 3.62, "reviews": 205, "url": "https://tabelog.com/kyoto/A2601/A260202/26001150/", "awards": "天ぷら 百名店 2022, 2023, 2025" },
+      "tabelog": {
+        "score": 3.62,
+        "reviews": 205,
+        "url": "https://tabelog.com/kyoto/A2601/A260202/26001150/",
+        "awards": "天ぷら 百名店 2022, 2023, 2025"
+      },
       "why_pt": "A tempura séria mais confortável do centro de Kyoto para seis, com pais mais velhos e uma grávida.",
       "order_pt": "Almoço de tempura (melhor custo).",
       "pregnancy_pt": "Ok.",
@@ -435,14 +551,26 @@
       "area": "Kyoto · Okazaki",
       "genre_pt": "Yōshoku",
       "price_pt": "Almoço ¥1–2 mil · ¥4–5 mil",
-      "tabelog": { "score": 3.65, "reviews": 1210, "url": "https://tabelog.com/kyoto/A2601/A260301/26000009/", "awards": "洋食 百名店 2020, 2022; 洋食 WEST 百名店 2025" },
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 1210,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26000009/",
+        "awards": "洋食 百名店 2020, 2022; 洋食 WEST 百名店 2025"
+      },
       "why_pt": "O demi-glace é o motivo. Almoço tranquilo depois do Heian Jingū ou dos museus.",
       "order_pt": "Omurice, hayashi rice, hambāgu.",
       "pregnancy_pt": "Omurice: peça o ovo firme (\"卵はしっかり焼いて\").",
       "group_pt": "33 lugares, só mesas: cabe 6.",
       "booking_pt": "Sem reserva.",
       "dec_jan_pt": "Fecha terça e quarta. Ano-Novo a confirmar.",
-      "query": "Grill Kodakara Kyoto"
+      "query": "Grill Kodakara Kyoto",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (jun 2020), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Smart Coffee",
@@ -450,7 +578,12 @@
       "area": "Kyoto · Teramachi",
       "genre_pt": "Kissaten",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.71, "reviews": 1808, "url": "https://tabelog.com/kyoto/A2601/A260201/26000647/", "awards": "喫茶店 百名店 2021, 2022, 2026" },
+      "tabelog": {
+        "score": 3.71,
+        "reviews": 1808,
+        "url": "https://tabelog.com/kyoto/A2601/A260201/26000647/",
+        "awards": "喫茶店 百名店 2021, 2022, 2026"
+      },
       "why_pt": "Um dos dois kissaten de referência de Kyoto; as panquecas e a rabanada são a instituição.",
       "order_pt": "Hotcake ou french toast com café.",
       "pregnancy_pt": "Ok; descafeinado a confirmar.",
@@ -465,7 +598,12 @@
       "area": "Kyoto · Shijō-Kiyamachi",
       "genre_pt": "Kissaten",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.73, "reviews": 1881, "url": "https://tabelog.com/kyoto/A2601/A260201/26000900/", "awards": "喫茶店 百名店 2021, 2022, 2026" },
+      "tabelog": {
+        "score": 3.73,
+        "reviews": 1881,
+        "url": "https://tabelog.com/kyoto/A2601/A260201/26000900/",
+        "awards": "喫茶店 百名店 2021, 2022, 2026"
+      },
       "why_pt": "Salão barroco-italiano de 1934, bem cultural registrado.",
       "order_pt": "Café e o salão.",
       "pregnancy_pt": "Ok.",
@@ -480,14 +618,26 @@
       "area": "Kyoto · Demachiyanagi",
       "genre_pt": "Wagashi (para viagem)",
       "price_pt": "Menos de ¥1.000",
-      "tabelog": { "score": 3.84, "reviews": 3956, "url": "https://tabelog.com/kyoto/A2601/A260302/26001520/", "awards": "スイーツ WEST 百名店 2018–2020, 2022; 和菓子・甘味処 WEST 百名店 2023, 2026" },
+      "tabelog": {
+        "score": 3.84,
+        "reviews": 3956,
+        "url": "https://tabelog.com/kyoto/A2601/A260302/26001520/",
+        "awards": "スイーツ WEST 百名店 2018–2020, 2022; 和菓子・甘味処 WEST 百名店 2023, 2026"
+      },
       "why_pt": "Mame-mochi de ervilha vermelha salgada, o mochi do dia mais conhecido de Kyoto. Coma na margem do Kamo.",
       "order_pt": "Mame-mochi (名代豆餅).",
       "pregnancy_pt": "Ok. Cortar pequeno para os pais.",
       "group_pt": "Só para viagem.",
       "booking_pt": "Encomenda por telefone (segundo o Tabelog); senão, fila.",
       "dec_jan_pt": "Fecha terça e 4ª quarta. Fila de famílias para o mochi de Ano-Novo no fim de ano. Dura só o dia.",
-      "query": "Demachi Futaba Kyoto"
+      "query": "Demachi Futaba Kyoto",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (dez 2013), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Kagizen Yoshifusa Shijō Honten",
@@ -495,7 +645,12 @@
       "area": "Kyoto · Gion",
       "genre_pt": "Wagashi e kanmidokoro",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.78, "reviews": 1943, "url": "https://tabelog.com/kyoto/A2601/A260301/26001887/", "awards": "スイーツ 百名店 2017; スイーツ WEST 2018–2020, 2022; 和菓子・甘味処 WEST 2023, 2026" },
+      "tabelog": {
+        "score": 3.78,
+        "reviews": 1943,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26001887/",
+        "awards": "スイーツ 百名店 2017; スイーツ WEST 2018–2020, 2022; 和菓子・甘味処 WEST 2023, 2026"
+      },
       "why_pt": "Kuzu-kiri feito na hora com kuromitsu de Okinawa. A casa de doce de Gion que o próprio Kyoto respeita.",
       "order_pt": "Kuzu-kiri.",
       "pregnancy_pt": "Ok.",
@@ -510,7 +665,11 @@
       "area": "Kyoto · Teramachi-Nijō",
       "genre_pt": "Salão de chá",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.39, "reviews": 569, "url": "https://tabelog.com/kyoto/A2601/A260202/26000182/" },
+      "tabelog": {
+        "score": 3.39,
+        "reviews": 569,
+        "url": "https://tabelog.com/kyoto/A2601/A260202/26000182/"
+      },
       "why_pt": "A equipe ensina a preparar gyokuro ou matcha você mesmo, o que importa mais que a nota.",
       "pregnancy_pt": "Gyokuro tem muita cafeína: uma xícara, ou hōjicha.",
       "group_pt": "39 lugares; sem reserva.",
@@ -523,7 +682,12 @@
       "area": "Uji",
       "genre_pt": "Casa de chá e doces",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.54, "reviews": 1675, "url": "https://tabelog.com/kyoto/A2607/A260701/26000722/", "awards": "スイーツ WEST 百名店 2018, 2019; 和菓子・甘味処 WEST 百名店 2023" },
+      "tabelog": {
+        "score": 3.54,
+        "reviews": 1675,
+        "url": "https://tabelog.com/kyoto/A2607/A260701/26000722/",
+        "awards": "スイーツ WEST 百名店 2018, 2019; 和菓子・甘味処 WEST 百名店 2023"
+      },
       "why_pt": "Casa de comerciante de chá de 1859.",
       "order_pt": "Geleia de matcha (namacha jelly) e cha-soba.",
       "pregnancy_pt": "Uma porção de matcha; hōjicha no resto.",
@@ -537,7 +701,11 @@
       "area": "Kyoto · Nishiki",
       "genre_pt": "Udon (nabeyaki)",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.53, "reviews": 347, "url": "https://tabelog.com/kyoto/A2601/A260201/26017337/" },
+      "tabelog": {
+        "score": 3.53,
+        "reviews": 347,
+        "url": "https://tabelog.com/kyoto/A2601/A260201/26017337/"
+      },
       "why_pt": "A pausa sentada de quem compra em Nishiki: o \"Fumiya nabe\", nabeyaki udon de Kyoto.",
       "order_pt": "Fumiya nabe.",
       "pregnancy_pt": "O ovo do nabe deve ir bem cozido: peça para cozinhar mais.",
@@ -550,7 +718,11 @@
       "area": "Kyoto · Fushimi",
       "genre_pt": "Izakaya de cervejaria (yakitori)",
       "price_pt": "a confirmar",
-      "tabelog": { "score": 3.41, "reviews": 1073, "url": "https://tabelog.com/kyoto/A2601/A260601/26001213/" },
+      "tabelog": {
+        "score": 3.41,
+        "reviews": 1073,
+        "url": "https://tabelog.com/kyoto/A2601/A260601/26001213/"
+      },
       "why_pt": "O izakaya da Yamamoto Honke, dentro de um armazém de saquê: o melhor almoço para seis em Fushimi.",
       "order_pt": "Yakitori e o saquê da Yamamoto Honke (para quem bebe).",
       "pregnancy_pt": "Yakitori bem passado ok; nada de saquê.",
@@ -563,23 +735,207 @@
       "name_ja": "伏見夢百衆",
       "area": "Kyoto · Fushimi",
       "genre_pt": "Bar de saquê e café",
-      "tabelog": { "score": 3.44, "reviews": 133, "url": "https://tabelog.com/kyoto/A2601/A260601/26004759/" },
+      "tabelog": {
+        "score": 3.44,
+        "reviews": 133,
+        "url": "https://tabelog.com/kyoto/A2601/A260601/26004759/"
+      },
       "why_pt": "Flights de várias cervejarias de Fushimi num prédio histórico.",
       "pregnancy_pt": "Para ela, café ou amazake de kōji.",
       "dec_jan_pt": "Fecha segunda e no fim de ano/Ano-Novo: vá antes do dia 28.",
       "query": "Fushimi Yume Hyakushu"
+    },
+    {
+      "name": "Yudofu Sagano",
+      "name_ja": "湯豆腐 嵯峨野",
+      "area": "Kyoto · Arashiyama",
+      "genre_pt": "Yudōfu",
+      "price_pt": "Almoço ¥3–5 mil",
+      "tabelog": {
+        "score": 3.45,
+        "reviews": 347,
+        "url": "https://tabelog.com/en/kyoto/A2601/A260403/26000814/"
+      },
+      "critics": [
+        {
+          "who": "@kenjilopezalt (J. Kenji López-Alt)",
+          "note_pt": "Almoço de yudōfu em vários tempos num episódio inteiro do “Kenji Eats Japan” (abr 2026): “If you're ever in Kyoto, head to Yudofu Sagano yourself.”",
+          "url": "https://www.youtube.com/watch?v=Oa6LoSXeMZc"
+        }
+      ],
+      "why_pt": "Tofu como o Kenji gosta: o mérito está no tofu, não no tempero. 3,45 é sólido para um especialista em tofu.",
+      "order_pt": "O curso de yudōfu.",
+      "pregnancy_pt": "Tudo cozido: perfeito para ela e para os pais.",
+      "group_pt": "80 lugares e salas privativas para 10–20: os 6 cabem fácil.",
+      "booking_pt": "Aceita reserva. Almoço 11h–16h30.",
+      "dec_jan_pt": "Folgas variáveis; Ano-Novo a confirmar.",
+      "query": "Yudofu Sagano Arashiyama"
+    },
+    {
+      "name": "Ogata",
+      "name_ja": "緒方",
+      "area": "Kyoto · Shijō",
+      "genre_pt": "Kaiseki",
+      "tabelog": {
+        "score": 4.54,
+        "reviews": 588,
+        "url": "https://tabelog.com/en/kyoto/A2601/A260201/26012136/",
+        "awards": "Award Gold 2019–23, 2026"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note_pt": "Regular “em todas as 12 estações”: sushi de kinome (“Transcending”), berinjela kamo grelhada (“Heaven”) e a agulha de pinheiro sob o copo para o porta-copos não grudar (jun 2024).",
+          "url": "https://www.instagram.com/p/C8Zl2FkJywR/"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note_pt": "Na lista de kaiseki “do nível que buscamos” dos tours.",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 6 vezes (set 2015 – dez 2020, três delas em dezembro), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "O kaiseki de Kyoto em que três críticos da lista se encontram, e ouro no Tabelog.",
+      "pregnancy_pt": "Avise ao reservar: kaiseki tem sashimi, e a cozinha adapta.",
+      "group_pt": "8 lugares no balcão e 1 sala privativa (até 8): cabe 6.",
+      "booking_pt": "Online; muito difícil.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Ogata Kyoto kaiseki"
+    },
+    {
+      "name": "Washoku Haru",
+      "name_ja": "和食 晴",
+      "area": "Kyoto · Karasuma",
+      "genre_pt": "Izakaya / washoku",
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 326,
+        "url": "https://tabelog.com/en/kyoto/A2601/A260201/26026013/",
+        "awards": "居酒屋 百名店 2026"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note_pt": "Três posts entre 2016 e 2017: um balcão a que ela voltava (posts embutidos no Tokyo Table Trip).",
+          "url": "https://tokyotabletrip.com/en/300"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (abr 2020), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "O izakaya de Kyoto a que a Meg voltava, com 百名店 2026.",
+      "pregnancy_pt": "Avise: peça os cozidos.",
+      "group_pt": "11 lugares no balcão: 6 ocupam mais da metade; reserve.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Washoku Haru Kyoto"
+    },
+    {
+      "name": "WOW WOW TONIGHT",
+      "name_ja": "魚々鶏夜",
+      "area": "Kyoto · Kawaramachi",
+      "genre_pt": "Izakaya moderno",
+      "price_pt": "Jantar ¥5–6 mil (pelas avaliações)",
+      "tabelog": {
+        "score": 3.24,
+        "reviews": 90,
+        "url": "https://tabelog.com/en/kyoto/A2601/A260201/26035024/"
+      },
+      "critics": [
+        {
+          "who": "@kenjilopezalt (J. Kenji López-Alt)",
+          "note_pt": "“rowdy modern izakaya”: o ensopado de carne, cebola e tofu e o peito de pato com sanshō em conserva viraram duas receitas dele (2026). “If you're in Kyoto, check them out.”",
+          "url": "https://www.youtube.com/watch?v=ZdlZGAuW8Wc"
+        }
+      ],
+      "why_pt": "Nota local fraca (3,24): o Kenji adorou, os japoneses acham comum. Vá pela diversão e pelo ensopado, não pelo ranking.",
+      "order_pt": "O ensopado de carne e tofu; o pato com sanshō.",
+      "pregnancy_pt": "Peça o pato bem passado.",
+      "group_pt": "2º andar com 20 lugares de mesa: 6 cabem.",
+      "booking_pt": "Aceita reserva; jantar 18h–24h, última reserva às 21h.",
+      "dec_jan_pt": "Folgas variáveis; Ano-Novo a confirmar.",
+      "query": "Wow Wow Tonight Kyoto izakaya"
     }
   ],
   "shops": [
-    { "name": "Miki Keiran", "name_ja": "三木鶏卵", "what_pt": "Dashimaki tamago em Nishiki (Tabelog 3.45, https://tabelog.com/kyoto/A2601/A260201/26004870/).", "buy_pt": "Um rolo de dashimaki para comer no hotel; ovo totalmente cozido, seguro na gravidez.", "dec_jan_pt": "9h–17h; Ano-Novo a confirmar.", "query": "Miki Keiran Nishiki" },
-    { "name": "Fuka Nishiki", "name_ja": "麩嘉 錦店", "what_pt": "O 百名店 dentro de Nishiki (3.69, 和菓子・甘味処 WEST 2023, 2026; https://tabelog.com/kyoto/A2601/A260201/26007146/).", "buy_pt": "Fu-manjū (glúten de trigo com anko, em folha de bambu sasa).", "dec_jan_pt": "Fecha segunda.", "query": "Fuka Nishiki fu manju" },
-    { "name": "Uchida Tsukemono (Nishiki)", "name_ja": "京つけもの 打田漬物 錦小路店", "what_pt": "Conservas de Kyoto (Tabelog 3.15, https://tabelog.com/kyoto/A2601/A260202/26015723/).", "buy_pt": "Senmai-zuke (estação em dezembro), shiba-zuke.", "dec_jan_pt": "Fecha só 1 jan.", "query": "Uchida Tsukemono Nishiki" },
-    { "name": "Murakami-jū Honten", "name_ja": "村上重本店", "what_pt": "Casa de conservas conhecida pelo senmai-zuke (Tabelog 3.16, https://tabelog.com/kyoto/A2601/A260201/26007678/).", "buy_pt": "Senmai-zuke e suguki.", "dec_jan_pt": "Fecha 1–3 jan: compre 29–31 dez.", "query": "Murakamiju Kyoto" },
-    { "name": "Aritsugu", "name_ja": "有次", "what_pt": "Casa de facas de Kyoto em Nishiki, que se diz descendente do ferreiro de espadas 藤原有次 (https://www.aritsugu.jp/).", "buy_pt": "Faca de cozinha com o nome gravado em kanji; afiam na hora.", "price_pt": "a confirmar", "dec_jan_pt": "Avisos mensais de folga no site; checar em dezembro. Vá cedo, fila desde 11h.", "query": "Aritsugu Nishiki" },
-    { "name": "Tsujiwa Kanaami", "name_ja": "辻和金網", "what_pt": "Trama de arame de cobre feita à mão (https://www.tsujiwa.com/).", "buy_pt": "Escumadeira de tofu, coador de chá, grelha.", "dec_jan_pt": "a confirmar; loja pequena, vá em dupla.", "query": "Tsujiwa Kanaami Kyoto" },
-    { "name": "Ippodo Honten", "name_ja": "一保堂茶舗 京都本店", "what_pt": "Loja de chá histórica (Tabelog 3.12, https://tabelog.com/kyoto/A2601/A260202/26031878/).", "buy_pt": "Gyokuro, sencha, matcha e hōjicha (este para ela).", "dec_jan_pt": "a confirmar.", "query": "Ippodo Tea Kyoto Honten" },
-    { "name": "Gekkeikan Ōkura Sake Museum", "name_ja": "月桂冠大倉記念館", "what_pt": "Museu com degustação em Fushimi (Tabelog 3.47, https://tabelog.com/kyoto/A2601/A260601/26007339/).", "buy_pt": "Saquê de Fushimi para os pais.", "dec_jan_pt": "Fecha terça (29 dez); Ano-Novo a confirmar.", "query": "Gekkeikan Okura Sake Museum" },
-    { "name": "Saga Tōfu Morika", "name_ja": "嵯峨豆腐 森嘉", "what_pt": "O tofu que os restaurantes de yudōfu de Kyoto usam (Tabelog 3.44, https://tabelog.com/kyoto/A2601/A260403/26002454/).", "buy_pt": "Tofu e ganmodoki para comer frio no banco (8 lugares).", "dec_jan_pt": "Fecha quarta; Ano-Novo a confirmar.", "query": "Morika tofu Saga Kyoto" }
+    {
+      "name": "Miki Keiran",
+      "name_ja": "三木鶏卵",
+      "what_pt": "Dashimaki tamago em Nishiki (Tabelog 3.45, https://tabelog.com/kyoto/A2601/A260201/26004870/).",
+      "buy_pt": "Um rolo de dashimaki para comer no hotel; ovo totalmente cozido, seguro na gravidez.",
+      "dec_jan_pt": "9h–17h; Ano-Novo a confirmar.",
+      "query": "Miki Keiran Nishiki"
+    },
+    {
+      "name": "Fuka Nishiki",
+      "name_ja": "麩嘉 錦店",
+      "what_pt": "O 百名店 dentro de Nishiki (3.69, 和菓子・甘味処 WEST 2023, 2026; https://tabelog.com/kyoto/A2601/A260201/26007146/).",
+      "buy_pt": "Fu-manjū (glúten de trigo com anko, em folha de bambu sasa).",
+      "dec_jan_pt": "Fecha segunda.",
+      "query": "Fuka Nishiki fu manju"
+    },
+    {
+      "name": "Uchida Tsukemono (Nishiki)",
+      "name_ja": "京つけもの 打田漬物 錦小路店",
+      "what_pt": "Conservas de Kyoto (Tabelog 3.15, https://tabelog.com/kyoto/A2601/A260202/26015723/).",
+      "buy_pt": "Senmai-zuke (estação em dezembro), shiba-zuke.",
+      "dec_jan_pt": "Fecha só 1 jan.",
+      "query": "Uchida Tsukemono Nishiki"
+    },
+    {
+      "name": "Murakami-jū Honten",
+      "name_ja": "村上重本店",
+      "what_pt": "Casa de conservas conhecida pelo senmai-zuke (Tabelog 3.16, https://tabelog.com/kyoto/A2601/A260201/26007678/).",
+      "buy_pt": "Senmai-zuke e suguki.",
+      "dec_jan_pt": "Fecha 1–3 jan: compre 29–31 dez.",
+      "query": "Murakamiju Kyoto"
+    },
+    {
+      "name": "Aritsugu",
+      "name_ja": "有次",
+      "what_pt": "Casa de facas de Kyoto em Nishiki, que se diz descendente do ferreiro de espadas 藤原有次 (https://www.aritsugu.jp/).",
+      "buy_pt": "Faca de cozinha com o nome gravado em kanji; afiam na hora.",
+      "price_pt": "a confirmar",
+      "dec_jan_pt": "Avisos mensais de folga no site; checar em dezembro. Vá cedo, fila desde 11h.",
+      "query": "Aritsugu Nishiki"
+    },
+    {
+      "name": "Tsujiwa Kanaami",
+      "name_ja": "辻和金網",
+      "what_pt": "Trama de arame de cobre feita à mão (https://www.tsujiwa.com/).",
+      "buy_pt": "Escumadeira de tofu, coador de chá, grelha.",
+      "dec_jan_pt": "a confirmar; loja pequena, vá em dupla.",
+      "query": "Tsujiwa Kanaami Kyoto"
+    },
+    {
+      "name": "Ippodo Honten",
+      "name_ja": "一保堂茶舗 京都本店",
+      "what_pt": "Loja de chá histórica (Tabelog 3.12, https://tabelog.com/kyoto/A2601/A260202/26031878/).",
+      "buy_pt": "Gyokuro, sencha, matcha e hōjicha (este para ela).",
+      "dec_jan_pt": "a confirmar.",
+      "query": "Ippodo Tea Kyoto Honten"
+    },
+    {
+      "name": "Gekkeikan Ōkura Sake Museum",
+      "name_ja": "月桂冠大倉記念館",
+      "what_pt": "Museu com degustação em Fushimi (Tabelog 3.47, https://tabelog.com/kyoto/A2601/A260601/26007339/).",
+      "buy_pt": "Saquê de Fushimi para os pais.",
+      "dec_jan_pt": "Fecha terça (29 dez); Ano-Novo a confirmar.",
+      "query": "Gekkeikan Okura Sake Museum"
+    },
+    {
+      "name": "Saga Tōfu Morika",
+      "name_ja": "嵯峨豆腐 森嘉",
+      "what_pt": "O tofu que os restaurantes de yudōfu de Kyoto usam (Tabelog 3.44, https://tabelog.com/kyoto/A2601/A260403/26002454/).",
+      "buy_pt": "Tofu e ganmodoki para comer frio no banco (8 lugares).",
+      "dec_jan_pt": "Fecha quarta; Ano-Novo a confirmar.",
+      "query": "Morika tofu Saga Kyoto"
+    }
   ],
   "sources": [
     "docs/research/food/22-kansai.md",

@@ -71,7 +71,11 @@
       "name_ja": "鉄輪",
       "kind": "bairro",
       "story_pt": "O bairro dos 'infernos' (fontes coloridas e fumegantes) e das velhas pousadas de tōji, onde o vapor sai das calçadas. É o coração do jigoku-mushi.",
-      "eat_pt": ["Jigoku-mushi no Kōbō Kannawa", "Ovos e pudim de vapor", "Sorvete e lanches nas bancas dos jigoku"],
+      "eat_pt": [
+        "Jigoku-mushi no Kōbō Kannawa",
+        "Ovos e pudim de vapor",
+        "Sorvete e lanches nas bancas dos jigoku"
+      ],
       "tips_pt": "Vá cedo: a fila do Kōbō chega a 60 min. Ruas íngremes, de pedra e molhadas.",
       "dec_jan_pt": "Infernos e bancas abrem no Ano-Novo (horário a confirmar).",
       "query": "Kannawa Onsen Beppu"
@@ -81,7 +85,11 @@
       "name_ja": "別府駅・北浜",
       "kind": "bairro",
       "story_pt": "O centro antigo, com galerias cobertas, izakaya e casas de toriten e reimen.",
-      "eat_pt": ["Toriten", "Reimen", "Izakaya de peixe de Oita"],
+      "eat_pt": [
+        "Toriten",
+        "Reimen",
+        "Izakaya de peixe de Oita"
+      ],
       "tips_pt": "À noite é aqui que se come; Kannawa esvazia cedo.",
       "dec_jan_pt": "A confirmar.",
       "query": "Beppu Station Kitahama"
@@ -94,7 +102,11 @@
       "area": "Beppu · Beppu-daigaku",
       "genre_pt": "Toriten / chinês",
       "price_pt": "¥1.000–2.999",
-      "tabelog": { "score": 3.49, "reviews": 1574, "url": "https://tabelog.com/en/oita/A4402/A440202/44000534/" },
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 1574,
+        "url": "https://tabelog.com/en/oita/A4402/A440202/44000534/"
+      },
       "why_pt": "Onde o toriten aparece no cardápio desde os anos 1920. É mais história que alta cozinha, mas a massa leve com batata ainda faz diferença.",
       "order_pt": "Toriten com karashi e vinagre-shōyu.",
       "pregnancy_pt": "Ok.",
@@ -109,7 +121,11 @@
       "area": "Beppu · Kannawa",
       "genre_pt": "Cozinha a vapor (self-service)",
       "price_pt": "¥1.000–1.999",
-      "tabelog": { "score": 3.49, "reviews": 617, "url": "https://tabelog.com/en/oita/A4402/A440202/44004949/" },
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 617,
+        "url": "https://tabelog.com/en/oita/A4402/A440202/44004949/"
+      },
       "why_pt": "Não é restaurante, é uma experiência: vocês escolhem os ingredientes e cozinham na fumarola. Divertido para os seis.",
       "order_pt": "Cesta de legumes, frango, ovos e mariscos; pudim de sobremesa.",
       "pregnancy_pt": "Tudo cozido no vapor: ok. Frutos do mar até o fim.",
@@ -124,7 +140,12 @@
       "area": "Beppu · Beppu-daigaku",
       "genre_pt": "Reimen de Beppu",
       "price_pt": "≈¥1.000",
-      "tabelog": { "score": 3.49, "reviews": 926, "url": "https://tabelog.com/en/oita/A4402/A440202/44000594/", "awards": "Asia/Ethnic WEST 百名店 2024 (por snapshot, a confirmar)" },
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 926,
+        "url": "https://tabelog.com/en/oita/A4402/A440202/44000594/",
+        "awards": "Asia/Ethnic WEST 百名店 2024 (por snapshot, a confirmar)"
+      },
       "why_pt": "Macarrão elástico e chashu de boi. No frio, peça o onmen quente. Alternativa: Rokusei Matsubara (3.48), onde o pessoal pede o chūka soba.",
       "order_pt": "Reimen ou onmen.",
       "pregnancy_pt": "Ok (carne cozida).",
@@ -132,11 +153,71 @@
       "booking_pt": "Sem reserva.",
       "dec_jan_pt": "A confirmar.",
       "query": "Kogetsu Beppu reimen"
+    },
+    {
+      "name": "Beppu Hirokado",
+      "name_ja": "別府 廣門",
+      "area": "Beppu",
+      "genre_pt": "Kaiseki",
+      "tabelog": {
+        "score": 4.43,
+        "reviews": 194,
+        "url": "https://tabelog.com/en/oita/A4402/A440202/44012162/",
+        "awards": "Award Silver 2025–26"
+      },
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (nov 2024), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "O kaiseki de nota mais alta de Beppu.",
+      "pregnancy_pt": "Avise ao reservar e peça os cozidos.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Beppu Hirokado"
+    },
+    {
+      "name": "Gyōza Kogetsu",
+      "name_ja": "湖月",
+      "area": "Beppu",
+      "genre_pt": "Gyōza",
+      "tabelog": {
+        "score": 3.73,
+        "reviews": 482,
+        "url": "https://tabelog.com/en/oita/A4402/A440202/44000056/"
+      },
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (nov 2024), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "Gyōza de Beppu (não confundir com o Kogetsu 胡月 do reimen).",
+      "pregnancy_pt": "Tranquilo.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Gyoza Kogetsu Beppu"
     }
   ],
   "shops": [
-    { "name": "Bancas dos jigoku de Kannawa", "name_ja": "鉄輪の地獄", "what_pt": "Ovos e pudins cozidos no vapor.", "buy_pt": "Jigoku-mushi purin, ovos de vapor.", "price_pt": "¥100–400", "dec_jan_pt": "Abrem no Ano-Novo (a confirmar).", "query": "Kannawa jigoku pudding" },
-    { "name": "Tokiwa (loja de departamento)", "name_ja": "トキハ", "what_pt": "A loja de departamento de Oita, com filial do Tōyōken (3.48, https://tabelog.com/en/oita/A4402/A440202/44011247/) e omiyage locais.", "buy_pt": "Kabosu em produtos, shiitake seco de Oita, doces.", "dec_jan_pt": "A confirmar.", "query": "Tokiwa Beppu" }
+    {
+      "name": "Bancas dos jigoku de Kannawa",
+      "name_ja": "鉄輪の地獄",
+      "what_pt": "Ovos e pudins cozidos no vapor.",
+      "buy_pt": "Jigoku-mushi purin, ovos de vapor.",
+      "price_pt": "¥100–400",
+      "dec_jan_pt": "Abrem no Ano-Novo (a confirmar).",
+      "query": "Kannawa jigoku pudding"
+    },
+    {
+      "name": "Tokiwa (loja de departamento)",
+      "name_ja": "トキハ",
+      "what_pt": "A loja de departamento de Oita, com filial do Tōyōken (3.48, https://tabelog.com/en/oita/A4402/A440202/44011247/) e omiyage locais.",
+      "buy_pt": "Kabosu em produtos, shiitake seco de Oita, doces.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Tokiwa Beppu"
+    }
   ],
   "sources": [
     "https://ja.wikipedia.org/wiki/地獄蒸し",

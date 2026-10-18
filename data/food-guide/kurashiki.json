@@ -181,7 +181,14 @@
       "group_pt": "36 lugares (22 em mesa): os seis cabem.",
       "booking_pt": "Sem reserva.",
       "dec_jan_pt": "Qua–dom, 11h20–14h e 17h–19h30; fecha segunda e terça. Ano-Novo a confirmar.",
-      "query": "Kappa Kurashiki tonkatsu"
+      "query": "Kappa Kurashiki tonkatsu",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (nov 2019), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Machiya Kissa Miyake Shōten",

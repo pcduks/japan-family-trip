@@ -202,7 +202,11 @@
       "area": "Osaka · Shinsekai (Janjan-yokochō)",
       "genre_pt": "Kushikatsu e doteyaki",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.49, "reviews": 2075, "url": "https://tabelog.com/osaka/A2701/A270206/27000443/" },
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 2075,
+        "url": "https://tabelog.com/osaka/A2701/A270206/27000443/"
+      },
       "why_pt": "Massa fina e crocante, doteyaki e o ritual do molho. É para cá que o morador de Osaka manda, não para a matriz da Daruma.",
       "order_pt": "Doteyaki e uma rodada de kushikatsu, começando pelo de carne.",
       "pregnancy_pt": "Tudo frito: ok. Pular acompanhamentos crus.",
@@ -217,7 +221,11 @@
       "area": "Osaka · Umeda",
       "genre_pt": "Kushikatsu em pé",
       "price_pt": "¥1.500–2.500",
-      "tabelog": { "score": 3.49, "reviews": 1530, "url": "https://tabelog.com/osaka/A2701/A270101/27001927/" },
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 1530,
+        "url": "https://tabelog.com/osaka/A2701/A270101/27001927/"
+      },
       "why_pt": "O bar de kushikatsu do assalariado debaixo dos trilhos de Umeda, pratos empilhados e molho comum.",
       "pregnancy_pt": "Comida ok, mas é em pé: melhor para o Pedro e o irmão.",
       "group_pt": "70 lugares em pé.",
@@ -230,8 +238,18 @@
       "name_ja": "串かつだるま 新世界総本店",
       "area": "Osaka · Shinsekai",
       "genre_pt": "Kushikatsu",
-      "tabelog": { "score": 3.45, "reviews": 1258, "url": "https://tabelog.com/osaka/A2701/A270206/27004260/" },
-      "critics": [{ "who": "@migrationology", "note_pt": "Mark Wiens comeu aqui em 2015 e gostou (\"gourmet chicken nuggets\").", "url": "https://migrationology.com/kushikatsu-daruma-osaka/" }],
+      "tabelog": {
+        "score": 3.45,
+        "reviews": 1258,
+        "url": "https://tabelog.com/osaka/A2701/A270206/27004260/"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Mark Wiens comeu aqui em 2015 e gostou (\"gourmet chicken nuggets\").",
+          "url": "https://migrationology.com/kushikatsu-daruma-osaka/"
+        }
+      ],
       "why_pt": "Historicamente o pioneiro (1929), hoje a rede do chef bravo de mascote: ok, mas não é por isso que se vai a Shinsekai. Prefira o Yaekatsu.",
       "group_pt": "12 lugares no balcão.",
       "query": "Kushikatsu Daruma Shinsekai"
@@ -242,8 +260,19 @@
       "area": "Osaka · Umeda",
       "genre_pt": "Okonomiyaki e modan-yaki",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.66, "reviews": 2201, "url": "https://tabelog.com/osaka/A2701/A270101/27000297/", "awards": "お好み焼き 百名店 2018, 2019, 2022, 2023, 2024, 2025" },
-      "critics": [{ "who": "@migrationology", "note_pt": "Mark Wiens, guia de Osaka 2015: \"The chef is amazing!\" (Kiji do Umeda Sky Building).", "url": "https://migrationology.com/osaka-food-guide-japan/" }],
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 2201,
+        "url": "https://tabelog.com/osaka/A2701/A270101/27000297/",
+        "awards": "お好み焼き 百名店 2018, 2019, 2022, 2023, 2024, 2025"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Mark Wiens, guia de Osaka 2015: \"The chef is amazing!\" (Kiji do Umeda Sky Building).",
+          "url": "https://migrationology.com/osaka-food-guide-japan/"
+        }
+      ],
       "why_pt": "Okonomiyaki leve e aerado, e a modan-yaki mais querida de Umeda.",
       "order_pt": "Modan-yaki e o okonomiyaki da casa.",
       "pregnancy_pt": "Ok quando bem cozido; recuse ovo cru por cima.",
@@ -258,14 +287,26 @@
       "area": "Osaka · Dōtonbori",
       "genre_pt": "Okonomiyaki (yamaimo-yaki)",
       "price_pt": "¥1.500–3.000",
-      "tabelog": { "score": 3.56, "reviews": 1750, "url": "https://tabelog.com/osaka/A2701/A270202/27001278/", "awards": "お好み焼き 百名店 2018, 2019, 2022, 2024, 2025" },
+      "tabelog": {
+        "score": 3.56,
+        "reviews": 1750,
+        "url": "https://tabelog.com/osaka/A2701/A270202/27001278/",
+        "awards": "お好み焼き 百名店 2018, 2019, 2022, 2024, 2025"
+      },
       "why_pt": "Numa rua de armadilhas de rede, o Mizuno é a casa de família com selo 百名店.",
       "order_pt": "Yamaimo-yaki.",
       "pregnancy_pt": "Ok.",
       "group_pt": "38 lugares: mesa para 6.",
       "booking_pt": "Sem reserva; fila longa.",
       "dec_jan_pt": "Abre todo dia, sem folga listada: melhor aposta em Dōtonbori entre 29 dez e 3 jan (a confirmar).",
-      "query": "Mizuno okonomiyaki Dotonbori"
+      "query": "Mizuno okonomiyaki Dotonbori",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (dez 2013), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Okonomiyaki Chitose",
@@ -273,7 +314,12 @@
       "area": "Osaka · Taishi (Shinsekai)",
       "genre_pt": "Okonomiyaki",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.61, "reviews": 377, "url": "https://tabelog.com/osaka/A2701/A270206/27019100/", "awards": "お好み焼き 百名店 2022, 2023, 2024, 2025" },
+      "tabelog": {
+        "score": 3.61,
+        "reviews": 377,
+        "url": "https://tabelog.com/osaka/A2701/A270206/27019100/",
+        "awards": "お好み焼き 百名店 2022, 2023, 2024, 2025"
+      },
       "why_pt": "O okonomiyaki de bairro que o local junta com uma rodada de kushikatsu em Shinsekai.",
       "pregnancy_pt": "Ok.",
       "group_pt": "12 lugares: 3+3, ou na abertura.",
@@ -287,7 +333,11 @@
       "area": "Osaka · Abeno / Tennōji",
       "genre_pt": "Takoyaki",
       "price_pt": "Menos de ¥1.000",
-      "tabelog": { "score": 3.49, "reviews": 1423, "url": "https://tabelog.com/osaka/A2701/A270203/27002750/" },
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 1423,
+        "url": "https://tabelog.com/osaka/A2701/A270203/27002750/"
+      },
       "why_pt": "A resposta do morador de Osaka a \"onde tem takoyaki bom?\": massa temperada com caldo, comida sem molho.",
       "order_pt": "Takoyaki sem molho.",
       "pregnancy_pt": "Ok, bem quente.",
@@ -301,7 +351,11 @@
       "area": "Osaka · Tamade",
       "genre_pt": "Takoyaki",
       "price_pt": "Menos de ¥1.000",
-      "tabelog": { "score": 3.38, "reviews": 673, "url": "https://tabelog.com/osaka/A2701/A270406/27001123/" },
+      "tabelog": {
+        "score": 3.38,
+        "reviews": 673,
+        "url": "https://tabelog.com/osaka/A2701/A270406/27001123/"
+      },
       "why_pt": "A casa creditada com a invenção do takoyaki nos anos 1930 (crédito não verificado). Sem molho, massa com dashi. A filial Tennōji MIO (3.43) é mais fácil.",
       "pregnancy_pt": "Ok.",
       "group_pt": "9 lugares; aceita reserva.",
@@ -314,8 +368,18 @@
       "area": "Osaka · Shin-Umeda Shokudōgai",
       "genre_pt": "Takoyaki",
       "price_pt": "Menos de ¥1.000",
-      "tabelog": { "score": 3.55, "reviews": 3064, "url": "https://tabelog.com/osaka/A2701/A270101/27012248/" },
-      "critics": [{ "who": "@migrationology", "note_pt": "Mark Wiens incluiu no vídeo \"5 foods you have to try\" em Osaka (2024).", "url": "https://www.youtube.com/watch?v=3zLvByt52go" }],
+      "tabelog": {
+        "score": 3.55,
+        "reviews": 3064,
+        "url": "https://tabelog.com/osaka/A2701/A270101/27012248/"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Mark Wiens incluiu no vídeo \"5 foods you have to try\" em Osaka (2024).",
+          "url": "https://www.youtube.com/watch?v=3zLvByt52go"
+        }
+      ],
       "why_pt": "O negi-mayo (montanha de cebolinha) é famoso.",
       "order_pt": "Negi-mayo.",
       "pregnancy_pt": "Ok (maionese industrial é pasteurizada).",
@@ -329,8 +393,18 @@
       "area": "Osaka · Namba",
       "genre_pt": "Takoyaki",
       "price_pt": "Menos de ¥1.000",
-      "tabelog": { "score": 3.49, "reviews": 3232, "url": "https://tabelog.com/osaka/A2701/A270202/27002320/" },
-      "critics": [{ "who": "@migrationology", "note_pt": "Mark Wiens provou a banca de Kuromon e a matriz em 2015: \"one of the best versions\".", "url": "https://migrationology.com/kuromon-ichiba-market-osaka/" }],
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 3232,
+        "url": "https://tabelog.com/osaka/A2701/A270202/27002320/"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Mark Wiens provou a banca de Kuromon e a matriz em 2015: \"one of the best versions\".",
+          "url": "https://migrationology.com/kuromon-ichiba-market-osaka/"
+        }
+      ],
       "why_pt": "O takoyaki de Namba com lugar para sentar.",
       "pregnancy_pt": "Ok.",
       "group_pt": "80 lugares: bom para 6.",
@@ -343,7 +417,12 @@
       "area": "Osaka · Minami-Senba",
       "genre_pt": "Kitsune udon e oji-zōsui",
       "price_pt": "Menos de ¥1.000",
-      "tabelog": { "score": 3.66, "reviews": 900, "url": "https://tabelog.com/osaka/A2701/A270201/27000931/", "awards": "うどん WEST 百名店 2024" },
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 900,
+        "url": "https://tabelog.com/osaka/A2701/A270201/27000931/",
+        "awards": "うどん WEST 百名店 2024"
+      },
       "why_pt": "Tofu frito doce sobre udon macio no dashi de kombu, na casa que inventou o prato (1893).",
       "order_pt": "Kitsune udon; no frio, o oji-zōsui da casa.",
       "pregnancy_pt": "Ok.",
@@ -358,7 +437,12 @@
       "area": "Osaka · Dōtonbori",
       "genre_pt": "Udon e udon-suki",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.58, "reviews": 2401, "url": "https://tabelog.com/osaka/A2701/A270202/27001289/", "awards": "うどん 百名店 2017–2019; うどん WEST 百名店 2020" },
+      "tabelog": {
+        "score": 3.58,
+        "reviews": 2401,
+        "url": "https://tabelog.com/osaka/A2701/A270202/27001289/",
+        "awards": "うどん 百名店 2017–2019; うどん WEST 百名店 2020"
+      },
       "why_pt": "A forma mais confortável de seis pessoas provarem o dashi de Osaka: uma sala silenciosa no meio de Dōtonbori.",
       "order_pt": "Kitsune udon; udon-suki em curso para o grupo.",
       "pregnancy_pt": "O oyakodon vem com ovo mole: peça bem cozido ou pule.",
@@ -373,8 +457,24 @@
       "area": "Osaka · Namba Sennichimae",
       "genre_pt": "Nikusui e udon",
       "price_pt": "Menos de ¥1.000",
-      "tabelog": { "score": 3.72, "reviews": 2309, "url": "https://tabelog.com/osaka/A2701/A270202/27002763/", "awards": "うどん WEST 百名店 2022, 2024" },
-      "critics": [{ "who": "@migrationology", "note_pt": "Mark Wiens queria ir mas encontrou fechado (guia de Osaka 2015).", "url": "https://migrationology.com/osaka-food-guide-japan/" }],
+      "tabelog": {
+        "score": 3.72,
+        "reviews": 2309,
+        "url": "https://tabelog.com/osaka/A2701/A270202/27002763/",
+        "awards": "うどん WEST 百名店 2022, 2024"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Mark Wiens queria ir mas encontrou fechado (guia de Osaka 2015).",
+          "url": "https://migrationology.com/osaka-food-guide-japan/"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Chitose Udon”, jun 2025 (1 vez), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
       "why_pt": "A cantina dos comediantes de Namba e uma tigela que só existe em Osaka.",
       "order_pt": "Nikusui com arroz.",
       "pregnancy_pt": "Recusar o \"tama\" (ovo cru).",
@@ -389,7 +489,12 @@
       "area": "Osaka · Umeda",
       "genre_pt": "Udon bukkake",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.77, "reviews": 1937, "url": "https://tabelog.com/osaka/A2701/A270101/27052204/", "awards": "うどん WEST 百名店 2022, 2024" },
+      "tabelog": {
+        "score": 3.77,
+        "reviews": 1937,
+        "url": "https://tabelog.com/osaka/A2701/A270101/27052204/",
+        "awards": "うどん WEST 百名店 2022, 2024"
+      },
       "why_pt": "Para o Pedro que quer udon de massa firme: o chikutama-ten bukkake.",
       "order_pt": "Chikutama-ten bukkake (tempura de chikuwa e ovo).",
       "pregnancy_pt": "O ovo da tempura é frito; confirme gema firme.",
@@ -403,9 +508,30 @@
       "area": "Osaka · Kyōbashi",
       "genre_pt": "Bar de peixe em pé",
       "price_pt": "¥2–3 mil",
-      "tabelog": { "score": 3.54, "reviews": 1212, "url": "https://tabelog.com/osaka/A2701/A270107/27002949/", "awards": "立ち飲み 百名店 2025" },
-      "critics": [{ "who": "@migrationology", "note_pt": "Mark Wiens incluiu o atum maçaricado do Tōyō no vídeo \"5 foods you have to try\" (2024).", "url": "https://www.youtube.com/watch?v=3zLvByt52go" }],
-      "why_pt": "O teatro mais puro de bar em pé de Osaka, com o dono queimando atum no maçarico na sua frente. Mande os irmãos.",
+      "tabelog": {
+        "score": 3.54,
+        "reviews": 1212,
+        "url": "https://tabelog.com/osaka/A2701/A270107/27002949/",
+        "awards": "立ち飲み 百名店 2025"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Mark Wiens incluiu o atum maçaricado do Tōyō no vídeo \"5 foods you have to try\" (2024).",
+          "url": "https://www.youtube.com/watch?v=3zLvByt52go"
+        },
+        {
+          "who": "@ocritico.antigourmet (Ian Oliver)",
+          "note_pt": "Ian Oliver deu 3/10 (“ruim”, pagou R$550): atum com ikura meio congelado, hosomaki desleixado, atum maçaricado com “retrogosto de butano”; só a enguia salvou. “O Toyo prova que storytelling barato não é exclusividade de restaurante chique.”",
+          "url": "https://www.ocriticoantigourmet.com.br/minha-critica-ao-izakaya-toyo"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (nov 2022), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "O teatro mais puro de bar em pé de Osaka, com o dono queimando atum no maçarico na sua frente. Mande os irmãos. Divergência honesta: Ian Oliver deu 3/10 pela técnica, enquanto o Tabelog dá 3,54 e o 百名店 de bar em pé 2025. Os japoneses o valorizam como bar barato e divertido, não como destino de técnica.",
       "order_pt": "Toro aburi, enguia grelhada.",
       "pregnancy_pt": "Muito cru (otoro, ouriço, ikura, vieira). Ela pode o atum maçaricado, enguia e peixe grelhado; o problema maior é ficar horas em pé.",
       "group_pt": "Em pé; fila.",
@@ -419,7 +545,12 @@
       "area": "Osaka · Tenma",
       "genre_pt": "Tachinomi de peixe",
       "price_pt": "¥2–3 mil",
-      "tabelog": { "score": 3.56, "reviews": 271, "url": "https://tabelog.com/osaka/A2701/A270103/27106713/", "awards": "立ち飲み 百名店 2025" },
+      "tabelog": {
+        "score": 3.56,
+        "reviews": 271,
+        "url": "https://tabelog.com/osaka/A2701/A270103/27106713/",
+        "awards": "立ち飲み 百名店 2025"
+      },
       "why_pt": "O bar de peixe 百名店 do bairro mais denso de bares em pé de Osaka.",
       "pregnancy_pt": "Muito sashimi: ela fica nos grelhados e cozidos.",
       "group_pt": "Em pé: em duplas e trios.",
@@ -432,7 +563,12 @@
       "area": "Osaka · Sōemonchō",
       "genre_pt": "Kappō",
       "price_pt": "Jantar ¥35–45 mil",
-      "tabelog": { "score": 4.55, "reviews": 408, "url": "https://tabelog.com/osaka/A2701/A270202/27001286/", "awards": "Award Gold 2018–2021, 2026; Silver 2017, 2022–2025; 日本料理 WEST 百名店 2021, 2023, 2025" },
+      "tabelog": {
+        "score": 4.55,
+        "reviews": 408,
+        "url": "https://tabelog.com/osaka/A2701/A270202/27001286/",
+        "awards": "Award Gold 2018–2021, 2026; Silver 2017, 2022–2025; 日本料理 WEST 百名店 2021, 2023, 2025"
+      },
       "why_pt": "O topo do kappō de Osaka e uma das notas mais altas do oeste do Japão. Um luxo em Kyoto mais este estoura o orçamento: escolha um.",
       "pregnancy_pt": "Avisar na reserva: sashimi e possivelmente marisco cru no curso.",
       "group_pt": "Sala para 6, se conseguir.",
@@ -446,7 +582,12 @@
       "area": "Osaka · Dōtonbori",
       "genre_pt": "Kappō",
       "price_pt": "Almoço ¥8–10 mil · Jantar ¥15–20 mil",
-      "tabelog": { "score": 3.68, "reviews": 243, "url": "https://tabelog.com/osaka/A2701/A270202/27001248/", "awards": "Award Bronze 2017, 2018, 2019" },
+      "tabelog": {
+        "score": 3.68,
+        "reviews": 243,
+        "url": "https://tabelog.com/osaka/A2701/A270202/27001248/",
+        "awards": "Award Bronze 2017, 2018, 2019"
+      },
       "why_pt": "O balcão clássico de kappō de Osaka por um terço do preço do Honkogetsu. Ver o chef é o programa.",
       "order_pt": "Curso de almoço (melhor custo).",
       "pregnancy_pt": "Avise; trocam por pratos cozidos.",
@@ -461,7 +602,12 @@
       "area": "Osaka · Namba",
       "genre_pt": "Chūka (shumai, harumaki)",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.67, "reviews": 2535, "url": "https://tabelog.com/osaka/A2701/A270202/27001213/", "awards": "中国料理 WEST 百名店 2021, 2024, 2026" },
+      "tabelog": {
+        "score": 3.67,
+        "reviews": 2535,
+        "url": "https://tabelog.com/osaka/A2701/A270202/27001213/",
+        "awards": "中国料理 WEST 百名店 2021, 2024, 2026"
+      },
       "why_pt": "Shumai envolto em crepe de ovo, só de Osaka, num salão chinês-japonês de estilo pré-guerra.",
       "order_pt": "Shumai e harumaki.",
       "pregnancy_pt": "Ok.",
@@ -476,7 +622,11 @@
       "area": "Osaka · Namba",
       "genre_pt": "Butaman",
       "price_pt": "Menos de ¥1.000",
-      "tabelog": { "score": 3.47, "reviews": 1918, "url": "https://tabelog.com/osaka/A2701/A270202/27001312/" },
+      "tabelog": {
+        "score": 3.47,
+        "reviews": 1918,
+        "url": "https://tabelog.com/osaka/A2701/A270202/27001312/"
+      },
       "why_pt": "O souvenir que todo mundo leva no shinkansen. Respeitado, mas não é destino.",
       "pregnancy_pt": "Ok.",
       "group_pt": "120 lugares.",
@@ -489,13 +639,25 @@
       "area": "Osaka · Nishinakajima-Minamikata",
       "genre_pt": "Ramen shōyu",
       "price_pt": "¥1.000–1.500",
-      "tabelog": { "score": 3.75, "reviews": 5089, "url": "https://tabelog.com/osaka/A2701/A270301/27064584/", "awards": "ラーメン WEST 百名店 2017–2022; ラーメン OSAKA 百名店 2023, 2024, 2025" },
+      "tabelog": {
+        "score": 3.75,
+        "reviews": 5089,
+        "url": "https://tabelog.com/osaka/A2701/A270301/27064584/",
+        "awards": "ラーメン WEST 百名店 2017–2022; ラーメン OSAKA 百名店 2023, 2024, 2025"
+      },
       "why_pt": "O shōyu moderno mais famoso de Osaka, com chāshū grosso e culto próprio.",
       "pregnancy_pt": "Ok.",
       "group_pt": "26 lugares: dividir.",
       "booking_pt": "Sem reserva; fila longa.",
       "dec_jan_pt": "Abre quase 24h (até 3–4h); fecha às 15h em 23 dez. Boa opção 29 dez–3 jan (a confirmar).",
-      "query": "Jinrui Mina Menrui"
+      "query": "Jinrui Mina Menrui",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (dez 2016), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Daikoku",
@@ -503,7 +665,12 @@
       "area": "Osaka · Namba",
       "genre_pt": "Shokudō (kayaku gohan)",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.58, "reviews": 637, "url": "https://tabelog.com/osaka/A2701/A270202/27001293/", "awards": "定食 百名店 2021; 食堂 百名店 2024, 2026" },
+      "tabelog": {
+        "score": 3.58,
+        "reviews": 637,
+        "url": "https://tabelog.com/osaka/A2701/A270202/27001293/",
+        "awards": "定食 百名店 2021; 食堂 百名店 2024, 2026"
+      },
       "why_pt": "O almoço antigo de Namba que os escritores de Osaka citam: comida de casa, sem show.",
       "order_pt": "Kayaku gohan.",
       "pregnancy_pt": "Ok.",
@@ -513,19 +680,169 @@
     },
     {
       "name": "Kuromon Miyoshi",
-            "area": "Osaka · Kuromon",
+      "area": "Osaka · Kuromon",
       "genre_pt": "Okonomiyaki / teppan izakaya",
-      "tabelog": { "score": 3.56, "reviews": 145, "url": "https://tabelog.com/osaka/A2701/A270202/27000399/" },
+      "tabelog": {
+        "score": 3.56,
+        "reviews": 145,
+        "url": "https://tabelog.com/osaka/A2701/A270202/27000399/"
+      },
       "why_pt": "A única mesa sólida no Tabelog perto de Kuromon.",
       "pregnancy_pt": "Ok.",
       "dec_jan_pt": "Fecha no fim de ano e Ano-Novo.",
       "query": "Kuromon Miyoshi"
+    },
+    {
+      "name": "Kadoya Shokudō Sōhonten",
+      "name_ja": "カドヤ食堂 総本店",
+      "area": "Osaka · Nishinagahori",
+      "genre_pt": "Rāmen / tsukemen",
+      "price_pt": "Tsukemen ¥2.500 (2024)",
+      "tabelog": {
+        "score": 3.83,
+        "reviews": 3664,
+        "url": "https://tabelog.com/en/osaka/A2701/A270105/27001084/",
+        "awards": "Ramen 百名店 2017–2025"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Tsukemen de ¥2.500, “one of the highest rated ramen” de Osaka (vídeo “Best Japanese food in Osaka”, 2024).",
+          "url": "https://www.youtube.com/watch?v=2s-m2XeTcH4"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (jun 2019), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "O rāmen mais bem avaliado da lista de Osaka.",
+      "order_pt": "Tsukemen.",
+      "pregnancy_pt": "Tranquilo.",
+      "dec_jan_pt": "Fecha ter/qua (29–30/12 fechado). Ano-Novo a confirmar.",
+      "query": "Kadoya Shokudo Nishinagahori"
+    },
+    {
+      "name": "Ramen Yashichi",
+      "name_ja": "らーめん弥七",
+      "area": "Osaka · Nakatsu (Toyosaki 3-4-8)",
+      "genre_pt": "Rāmen de shoyu e frango",
+      "tabelog": {
+        "score": 3.74,
+        "reviews": 1999,
+        "url": "https://tabelog.com/en/osaka/A2701/A270101/27003232/",
+        "awards": "Ramen WEST/OSAKA 百名店 2017–2025"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "“the best bowl of ramen I'd ever had” (2015, levado por Dwight Turner).",
+          "url": "https://www.youtube.com/watch?v=fVR6oJSMcmw"
+        }
+      ],
+      "why_pt": "A tigela que Mark Wiens chamou de melhor da vida, e o Tabelog mantém no 百名店 há quase uma década.",
+      "order_pt": "Shoyu de frango.",
+      "pregnancy_pt": "Tranquilo.",
+      "dec_jan_pt": "Fecha sáb/dom/feriados: 24/12 (qui) aberto em princípio; 28–30/12 a confirmar.",
+      "query": "Ramen Yashichi Nakatsu"
+    },
+    {
+      "name": "Sushi Sanshin",
+      "name_ja": "鮨 三心",
+      "area": "Osaka · Tanimachi 6-chōme",
+      "genre_pt": "Sushi",
+      "tabelog": {
+        "score": 4.61,
+        "reviews": 682,
+        "url": "https://tabelog.com/en/osaka/A2701/A270204/27095402/",
+        "awards": "Award Gold 2024–2026; Bronze 2021–23; Sushi WEST 百名店 2021, 2022, 2025"
+      },
+      "critics": [
+        {
+          "who": "@ocritico.antigourmet (Ian Oliver)",
+          "note_pt": "Escolhido para o roteiro “Japão 2027” do Ian Oliver como “restaurante ouro no Tabelog em Osaka”. É indicação do roteiro, não crítica publicada.",
+          "url": "https://www.ocriticoantigourmet.com.br/japao"
+        }
+      ],
+      "why_pt": "O sushi mais bem avaliado de Osaka, escolhido por quem mede o arroz em graus.",
+      "pregnancy_pt": "Quase tudo cru: avise ao reservar ou ela fica de fora.",
+      "booking_pt": "Regras rígidas: mais de 30 min de atraso conta como cancelamento, quem reservou tem de ir, sem perfume. Muito disputado.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Sushi Sanshin Osaka"
+    },
+    {
+      "name": "Honke Shibatō",
+      "name_ja": "本家柴藤",
+      "area": "Osaka · Kitahama",
+      "genre_pt": "Unagi",
+      "price_pt": "¥8.870 (2024)",
+      "tabelog": {
+        "score": 3.57,
+        "reviews": 465,
+        "url": "https://tabelog.com/en/osaka/A2701/A270102/27000005/"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Casa de mais de 300 anos, 15ª geração: enguia “among the best I've had in Japan” (2024).",
+          "url": "https://www.youtube.com/watch?v=2s-m2XeTcH4"
+        }
+      ],
+      "why_pt": "Três séculos de enguia em Kitahama: herança e prato cozido, bom para a família inteira.",
+      "order_pt": "Unagi.",
+      "pregnancy_pt": "Enguia cozida: liberada. Pule o fígado (kimo).",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Honke Shibato Kitahama"
+    },
+    {
+      "name": "Ajinoya Honten",
+      "name_ja": "味乃家",
+      "area": "Osaka · Namba",
+      "genre_pt": "Okonomiyaki",
+      "tabelog": {
+        "score": 3.59,
+        "reviews": 1784,
+        "url": "https://tabelog.com/en/osaka/A2701/A270202/27001439/",
+        "awards": "Okonomiyaki 百名店 2018–2025"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Em 2015 foi a escolha da Ying (“best okonomiyaki I've ever had”); Mark voltou em 2024: loja de família desde 1965.",
+          "url": "https://www.youtube.com/watch?v=2s-m2XeTcH4"
+        }
+      ],
+      "why_pt": "Okonomiyaki de família em Namba, com 百名店 seguido.",
+      "pregnancy_pt": "Cozido na chapa: tranquilo.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Ajinoya Namba okonomiyaki"
     }
   ],
   "shops": [
-    { "name": "Jikkō (Sakai)", "name_ja": "實光 / 実光刃物", "what_pt": "Facas de Sakai desde 1900, com afiação; lojas também em Ura-Namba e Nishiki-Teramachi (Kyoto), segundo o site (https://www.jikko.jp/).", "buy_pt": "Faca de cozinha profissional; peça para assentar o fio e gravar o nome.", "dec_jan_pt": "Oficinas de Sakai fecham ~29 dez a 4–5 jan: vá antes do dia 28.", "query": "Jikko Sakai knives" },
-    { "name": "Sakai Traditional Crafts Museum", "name_ja": "堺伝統産業会館", "what_pt": "Exposição sobre a forja de facas e loja com várias marcas de Sakai (meio dia saindo de Namba pela linha Nankai).", "buy_pt": "Comparar facas de vários ferreiros.", "dec_jan_pt": "a confirmar.", "query": "Sakai Traditional Crafts Museum" },
-    { "name": "Sennichimae Dōguyasuji", "name_ja": "千日前道具屋筋", "what_pt": "Rua de utensílios profissionais (ver Áreas).", "buy_pt": "Chapa de takoyaki, panela de cobre de tamagoyaki, comida de plástico.", "dec_jan_pt": "Vá 28–30 dez.", "query": "Sennichimae Doguyasuji" }
+    {
+      "name": "Jikkō (Sakai)",
+      "name_ja": "實光 / 実光刃物",
+      "what_pt": "Facas de Sakai desde 1900, com afiação; lojas também em Ura-Namba e Nishiki-Teramachi (Kyoto), segundo o site (https://www.jikko.jp/).",
+      "buy_pt": "Faca de cozinha profissional; peça para assentar o fio e gravar o nome.",
+      "dec_jan_pt": "Oficinas de Sakai fecham ~29 dez a 4–5 jan: vá antes do dia 28.",
+      "query": "Jikko Sakai knives"
+    },
+    {
+      "name": "Sakai Traditional Crafts Museum",
+      "name_ja": "堺伝統産業会館",
+      "what_pt": "Exposição sobre a forja de facas e loja com várias marcas de Sakai (meio dia saindo de Namba pela linha Nankai).",
+      "buy_pt": "Comparar facas de vários ferreiros.",
+      "dec_jan_pt": "a confirmar.",
+      "query": "Sakai Traditional Crafts Museum"
+    },
+    {
+      "name": "Sennichimae Dōguyasuji",
+      "name_ja": "千日前道具屋筋",
+      "what_pt": "Rua de utensílios profissionais (ver Áreas).",
+      "buy_pt": "Chapa de takoyaki, panela de cobre de tamagoyaki, comida de plástico.",
+      "dec_jan_pt": "Vá 28–30 dez.",
+      "query": "Sennichimae Doguyasuji"
+    }
   ],
   "sources": [
     "docs/research/food/22-kansai.md",

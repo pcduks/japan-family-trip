@@ -167,7 +167,14 @@
       "group_pt": "50 lugares: os seis juntos.",
       "booking_pt": "Sem reserva.",
       "dec_jan_pt": "A confirmar.",
-      "query": "Denko Sekka ekie Hiroshima"
+      "query": "Denko Sekka ekie Hiroshima",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (nov 2019), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     }
   ],
   "shops": [

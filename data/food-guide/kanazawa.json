@@ -147,7 +147,7 @@
       },
       "critics": [
         {
-          "who": "@migrationology",
+          "who": "@migrationology (Mark Wiens)",
           "note_pt": "Café da manhã em Ōmichō: kaisen-don de ¥3.500 aqui.",
           "url": "https://www.youtube.com/watch?v=TKFOzNTrWwk"
         }
@@ -198,7 +198,14 @@
       "group_pt": "17 lugares: balcão de 9 e sala de tatame de 8. Para 6, a sala, ou 3+3 em turnos de balcão.",
       "booking_pt": "On-line, abre 2 meses antes. Marque no fim de outubro.",
       "dec_jan_pt": "Almoço e jantar; fecha quarta, domingo e feriados. Ano-Novo a confirmar.",
-      "query": "Otome Zushi Kanazawa"
+      "query": "Otome Zushi Kanazawa",
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note_pt": "Postou daqui em fev 2016 (post embutido no Tokyo Table Trip).",
+          "url": "https://tokyotabletrip.com/en/340"
+        }
+      ]
     },
     {
       "name": "Kabuna",
@@ -252,7 +259,7 @@
       },
       "critics": [
         {
-          "who": "@migrationology",
+          "who": "@migrationology (Mark Wiens)",
           "note_pt": "Provou o curry de Kanazawa aqui no vídeo da cidade.",
           "url": "https://www.youtube.com/watch?v=TKFOzNTrWwk"
         }
@@ -264,6 +271,81 @@
       "booking_pt": "Sem reserva.",
       "dec_jan_pt": "Fechado 30/12–1/1; abre a partir de 2/1, útil no meio do fechamento.",
       "query": "Turban Curry Kanazawa"
+    },
+    {
+      "name": "Kataori",
+      "name_ja": "片折",
+      "area": "Kanazawa · Higashiyama",
+      "genre_pt": "Kaiseki",
+      "tabelog": {
+        "score": 4.7,
+        "reviews": 492,
+        "url": "https://tabelog.com/en/ishikawa/A1701/A170101/17011166/",
+        "awards": "Award Gold 2021–26"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note_pt": "Dengaku de missô com kinome, tofu de yomogi e ochazuke de umeboshi com okoge (jun 2024).",
+          "url": "https://www.instagram.com/p/C8Zl2FkJywR/"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (set 2020), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "A maior nota de todo o guia (4,70), e a Meg a cita entre suas casas de pureza e simplicidade.",
+      "pregnancy_pt": "Avise ao reservar e peça os cozidos.",
+      "group_pt": "8 lugares no balcão: balcão inteiro ou 3+3.",
+      "booking_pt": "Muito difícil.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kataori Kanazawa"
+    },
+    {
+      "name": "Kisanuki",
+      "name_ja": "木さ貫",
+      "area": "Kanazawa",
+      "genre_pt": "Kaiseki",
+      "tabelog": {
+        "score": 4.57,
+        "reviews": 126,
+        "url": "https://tabelog.com/en/ishikawa/A1701/A170101/17015162/"
+      },
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (jun 2025), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "Kaiseki novo de Kanazawa que já passa de 4,5 no Tabelog.",
+      "pregnancy_pt": "Avise ao reservar e peça os cozidos.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kisanuki Kanazawa"
+    },
+    {
+      "name": "Sushi Dokoro Mekumi",
+      "name_ja": "すし処 めくみ",
+      "area": "Nonoichi (perto de Kanazawa)",
+      "genre_pt": "Sushi",
+      "tabelog": {
+        "score": 4.48,
+        "reviews": 512,
+        "url": "https://tabelog.com/en/ishikawa/A1702/A170203/17000700/",
+        "awards": "Award Gold (5 edições)"
+      },
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (abr 2017), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "O sushi de peixe de Hokuriku com ouro no Tabelog, fora do centro.",
+      "pregnancy_pt": "Quase tudo cru: avise ao reservar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Sushi Mekumi Nonoichi"
     }
   ],
   "shops": [

@@ -81,7 +81,10 @@
       "name_ja": "新地中華街",
       "kind": "bairro",
       "story_pt": "Um dos três Chinatowns do Japão, no aterro onde ficavam os armazéns dos mercadores chineses.",
-      "eat_pt": ["Champon e sara-udon no Kozanrō", "Kakuni-manjū na rua"],
+      "eat_pt": [
+        "Champon e sara-udon no Kozanrō",
+        "Kakuni-manjū na rua"
+      ],
       "tips_pt": "Pequeno: uma rua em cruz. Para jantar em 6, reserve as salas do Kozanrō.",
       "dec_jan_pt": "Muitas casas abrem no Ano-Novo; datas a confirmar.",
       "query": "Shinchi Chinatown Nagasaki"
@@ -91,7 +94,10 @@
       "name_ja": "出島",
       "kind": "bairro",
       "story_pt": "A ilha holandesa (e antes portuguesa), hoje reconstruída como museu a céu aberto. Por aqui entrou o açúcar que fez a castella.",
-      "eat_pt": ["Castella nas lojas do caminho", "Café em Dejima"],
+      "eat_pt": [
+        "Castella nas lojas do caminho",
+        "Café em Dejima"
+      ],
       "tips_pt": "Combine com Shinchi, a 5 minutos.",
       "dec_jan_pt": "A confirmar.",
       "query": "Dejima Nagasaki"
@@ -101,7 +107,10 @@
       "name_ja": "思案橋・丸山",
       "kind": "bairro",
       "story_pt": "O antigo bairro das casas de chá e hoje a zona de bares e kissaten.",
-      "eat_pt": ["Toruko rice no Tsuru-chan", "Shippoku em ryōtei"],
+      "eat_pt": [
+        "Toruko rice no Tsuru-chan",
+        "Shippoku em ryōtei"
+      ],
       "tips_pt": "À noite é onde a cidade sai para beber.",
       "dec_jan_pt": "A confirmar.",
       "query": "Shianbashi Nagasaki"
@@ -114,7 +123,12 @@
       "area": "Nagasaki · Shinchi Chinatown",
       "genre_pt": "Chinês / champon",
       "price_pt": "≈¥1.000–2.000 (cursos mais)",
-      "tabelog": { "score": 3.67, "reviews": 1853, "url": "https://tabelog.com/en/nagasaki/A4201/A420101/42005120/", "awards": "Chinese WEST 百名店 2023, 2024, 2026" },
+      "tabelog": {
+        "score": 3.67,
+        "reviews": 1853,
+        "url": "https://tabelog.com/en/nagasaki/A4201/A420101/42005120/",
+        "awards": "Chinese WEST 百名店 2023, 2024, 2026"
+      },
       "why_pt": "O champon e o sara-udon mais bem avaliados da cidade, com sala para o grupo. O antigo Kozanrō honten fechou.",
       "order_pt": "Tokujō champon, sara-udon de macarrão fino, gyōza.",
       "pregnancy_pt": "Ok (tudo cozido).",
@@ -129,7 +143,12 @@
       "area": "Nagasaki · Ōura",
       "genre_pt": "Chinês / champon",
       "price_pt": "≈¥1.000–2.999",
-      "tabelog": { "score": 3.49, "reviews": 2017, "url": "https://tabelog.com/en/nagasaki/A4201/A420101/42000053/", "awards": "Chinese WEST 百名店 2021" },
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 2017,
+        "url": "https://tabelog.com/en/nagasaki/A4201/A420101/42000053/",
+        "awards": "Chinese WEST 百名店 2021"
+      },
       "why_pt": "A casa de Chen Pingshun, o pai do champon. É a parada de história; no prato, o Kozanrō está à frente.",
       "order_pt": "Champon.",
       "pregnancy_pt": "Ok.",
@@ -144,7 +163,12 @@
       "area": "Nagasaki · Shianbashi",
       "genre_pt": "Kissaten",
       "price_pt": "¥1.680–1.880",
-      "tabelog": { "score": 3.62, "reviews": 1510, "url": "https://tabelog.com/en/nagasaki/A4201/A420101/42000064/", "awards": "Kissaten 百名店 2021 (por snapshot)" },
+      "tabelog": {
+        "score": 3.62,
+        "reviews": 1510,
+        "url": "https://tabelog.com/en/nagasaki/A4201/A420101/42000064/",
+        "awards": "Kissaten 百名店 2021 (por snapshot)"
+      },
       "why_pt": "Kissaten antigo onde a toruko rice virou instituição. A casa não diz ser a criadora; diz que se inspirou no 'Restaurante Turco'.",
       "order_pt": "Toruko rice e milkshake de colher.",
       "pregnancy_pt": "Ok.",
@@ -159,7 +183,11 @@
       "area": "Nagasaki · centro",
       "genre_pt": "Castella / café",
       "price_pt": "¥1.000–2.000",
-      "tabelog": { "score": 3.53, "reviews": 488, "url": "https://tabelog.com/en/nagasaki/A4201/A420101/42000209/" },
+      "tabelog": {
+        "score": 3.53,
+        "reviews": 488,
+        "url": "https://tabelog.com/en/nagasaki/A4201/A420101/42000209/"
+      },
       "why_pt": "O lugar para comer castella sentado: o Café Sevilla no andar de cima (3.53).",
       "order_pt": "Castella com chá ou café.",
       "pregnancy_pt": "Ok.",
@@ -170,10 +198,38 @@
     }
   ],
   "shops": [
-    { "name": "Shōkandō", "name_ja": "匠寛堂", "what_pt": "Wagashi WEST 百名店 2026. Gosan-yaki castella densa e rica. Tabelog 3.67 (https://tabelog.com/nagasaki/A4201/A420101/42000051/).", "buy_pt": "Gosan-yaki castella.", "dec_jan_pt": "A confirmar.", "query": "Shokando Nagasaki castella" },
-    { "name": "Iwanaga Baijuken", "name_ja": "岩永 梅寿軒", "what_pt": "Wagashi WEST 百名店 2026, com lotes diários pequenos que esgotam. Tabelog 3.68 (https://tabelog.com/nagasaki/A4201/A420101/42001419/).", "buy_pt": "Castella; chegue cedo.", "dec_jan_pt": "A confirmar.", "query": "Iwanaga Baijuken Nagasaki" },
-    { "name": "Fukusaya Nagasaki honten", "name_ja": "福砂屋 長崎本店", "what_pt": "A casa de 1624. Ficou em 2º e 3º no teste cego da MONOQLO (2024): úmida, com crosta de zarame levemente amarga. Tabelog 3.44 (https://tabelog.com/en/nagasaki/A4201/A420101/42000057/).", "buy_pt": "Castella clássica em caixa.", "dec_jan_pt": "Fecha quartas. Ano-Novo a confirmar.", "query": "Fukusaya Nagasaki honten" },
-    { "name": "Bunmeidō sōhonten", "name_ja": "文明堂総本店", "what_pt": "Fundada em 1900, só para viagem. O Bunmeidō de Tóquio é outra empresa. Tabelog 3.24.", "buy_pt": "Castella para presente.", "dec_jan_pt": "A confirmar.", "query": "Bunmeido sohonten Nagasaki" }
+    {
+      "name": "Shōkandō",
+      "name_ja": "匠寛堂",
+      "what_pt": "Wagashi WEST 百名店 2026. Gosan-yaki castella densa e rica. Tabelog 3.67 (https://tabelog.com/nagasaki/A4201/A420101/42000051/).",
+      "buy_pt": "Gosan-yaki castella.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Shokando Nagasaki castella"
+    },
+    {
+      "name": "Iwanaga Baijuken",
+      "name_ja": "岩永 梅寿軒",
+      "what_pt": "Wagashi WEST 百名店 2026, com lotes diários pequenos que esgotam. Tabelog 3.68 (https://tabelog.com/nagasaki/A4201/A420101/42001419/).",
+      "buy_pt": "Castella; chegue cedo.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Iwanaga Baijuken Nagasaki"
+    },
+    {
+      "name": "Fukusaya Nagasaki honten",
+      "name_ja": "福砂屋 長崎本店",
+      "what_pt": "A casa de 1624. Ficou em 2º e 3º no teste cego da MONOQLO (2024): úmida, com crosta de zarame levemente amarga. Tabelog 3.44 (https://tabelog.com/en/nagasaki/A4201/A420101/42000057/).",
+      "buy_pt": "Castella clássica em caixa.",
+      "dec_jan_pt": "Fecha quartas. Ano-Novo a confirmar.",
+      "query": "Fukusaya Nagasaki honten"
+    },
+    {
+      "name": "Bunmeidō sōhonten",
+      "name_ja": "文明堂総本店",
+      "what_pt": "Fundada em 1900, só para viagem. O Bunmeidō de Tóquio é outra empresa. Tabelog 3.24.",
+      "buy_pt": "Castella para presente.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Bunmeido sohonten Nagasaki"
+    }
   ],
   "sources": [
     "https://ja.wikipedia.org/wiki/カステラ",

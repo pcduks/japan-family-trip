@@ -72,7 +72,11 @@
       "name_ja": "表参道商店街",
       "kind": "rua",
       "story_pt": "A rua coberta que leva do cais ao santuário, com barracas de ostra, momiji e anago.",
-      "eat_pt": ["Ostras grelhadas no Hayashi", "Kaki-furai no Kakiya", "Age-momiji no Momiji-dō"],
+      "eat_pt": [
+        "Ostras grelhadas no Hayashi",
+        "Kaki-furai no Kakiya",
+        "Age-momiji no Momiji-dō"
+      ],
       "tips_pt": "Coma antes das 11h ou depois das 15h, quando os grupos de excursão saem. Cuidado com os cervos: eles roubam papel e comida.",
       "dec_jan_pt": "Lotada de 31/12 a 3/1. Lojas abertas no Ano-Novo (horário a confirmar).",
       "query": "Miyajima Omotesando shopping street"
@@ -82,7 +86,10 @@
       "name_ja": "宮島口",
       "kind": "estação",
       "story_pt": "O cais do continente: estação JR e Hiroden, ferry e a Ueno.",
-      "eat_pt": ["Anago-meshi na Ueno", "Bentō de anago para o ferry"],
+      "eat_pt": [
+        "Anago-meshi na Ueno",
+        "Bentō de anago para o ferry"
+      ],
       "tips_pt": "Faça a anago-meshi na ida ou na volta da ilha.",
       "dec_jan_pt": "Ueno sem folga fixa; Ano-Novo a confirmar.",
       "query": "Miyajimaguchi"
@@ -95,14 +102,25 @@
       "area": "Miyajimaguchi",
       "genre_pt": "Anago-meshi",
       "price_pt": "¥2.000–2.999",
-      "tabelog": { "score": 3.66, "reviews": 3727, "url": "https://tabelog.com/en/hiroshima/A3402/A340205/34000065/" },
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 3727,
+        "url": "https://tabelog.com/en/hiroshima/A3402/A340205/34000065/"
+      },
       "why_pt": "A casa de 1901 que fez da anago-meshi o prato da ilha. Congro macio, arroz que já é um prato por si.",
       "order_pt": "Anago-meshi.",
       "pregnancy_pt": "Ok (cozido).",
       "group_pt": "7 mesas para 4: os seis em duas mesas lado a lado, ou bentō para o ferry.",
       "booking_pt": "Online.",
       "dec_jan_pt": "Aberto o ano todo, sem folga fixa. Horário de Ano-Novo a confirmar.",
-      "query": "Anagomeshi Ueno Miyajimaguchi"
+      "query": "Anagomeshi Ueno Miyajimaguchi",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Ueno” em Hiroshima (anago-meshi, Miyajimaguchi), set 2016; o casamento com o Tabelog não foi confirmado.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
     },
     {
       "name": "Yakigaki no Hayashi",
@@ -110,7 +128,11 @@
       "area": "Miyajima · Omotesandō",
       "genre_pt": "Ostras",
       "price_pt": "4 ostras ¥750",
-      "tabelog": { "score": 3.73, "reviews": 1061, "url": "https://tabelog.com/en/hiroshima/A3402/A340202/34002301/" },
+      "tabelog": {
+        "score": 3.73,
+        "reviews": 1061,
+        "url": "https://tabelog.com/en/hiroshima/A3402/A340202/34002301/"
+      },
       "why_pt": "Número 1 da ilha no Tabelog: ostra de Jigozen de três anos, grelhada na hora.",
       "order_pt": "Yaki-gaki, kaki-furai, kaki-meshi.",
       "pregnancy_pt": "Grelhada (bem cozida) e frita ok; nada de crua.",
@@ -125,7 +147,11 @@
       "area": "Miyajima · Omotesandō",
       "genre_pt": "Ostras",
       "price_pt": "A confirmar",
-      "tabelog": { "score": 3.57, "reviews": 2121, "url": "https://tabelog.com/en/hiroshima/A3402/A340202/34003363/" },
+      "tabelog": {
+        "score": 3.57,
+        "reviews": 2121,
+        "url": "https://tabelog.com/en/hiroshima/A3402/A340202/34003363/"
+      },
       "why_pt": "Casa especializada em ostras; dezembro é o pico.",
       "order_pt": "Set de ostras com kaki-furai e grelhadas.",
       "pregnancy_pt": "Sem crua; frita e grelhada ok.",
@@ -139,7 +165,11 @@
       "area": "Miyajima",
       "genre_pt": "Anago-meshi",
       "price_pt": "A confirmar",
-      "tabelog": { "score": 3.56, "reviews": 965, "url": "https://tabelog.com/en/hiroshima/A3402/A340202/34002045/" },
+      "tabelog": {
+        "score": 3.56,
+        "reviews": 965,
+        "url": "https://tabelog.com/en/hiroshima/A3402/A340202/34002045/"
+      },
       "why_pt": "A anago-meshi da ilha, para quem não passou na Ueno.",
       "order_pt": "Anago-meshi.",
       "pregnancy_pt": "Ok.",
@@ -150,9 +180,31 @@
     }
   ],
   "shops": [
-    { "name": "Momiji-dō honten", "name_ja": "紅葉堂 本店", "what_pt": "Inventor do age-momiji (2002). Wagashi WEST 百名店 2026; Tabelog 3.65 (1.904), https://tabelog.com/en/hiroshima/A3402/A340202/34010095/.", "buy_pt": "Age-momiji quente, para comer na hora.", "price_pt": "≈¥200", "dec_jan_pt": "A confirmar.", "query": "Momijido honten Miyajima" },
-    { "name": "Momiji-dō Niban-ya", "name_ja": "紅葉堂弐番屋", "what_pt": "Segunda loja da Momiji-dō, Wagashi WEST 百名店 2026; Tabelog 3.61 (785), https://tabelog.com/en/hiroshima/A3402/A340202/34001086/.", "buy_pt": "Age-momiji quando a matriz tiver fila.", "dec_jan_pt": "A confirmar.", "query": "Momijido Nibanya Miyajima" },
-    { "name": "Iwamura Momiji-ya", "name_ja": "岩村もみじ屋", "what_pt": "Momiji manjū assado na hora, Wagashi WEST 百名店 2026; Tabelog 3.63 (656), https://tabelog.com/en/hiroshima/A3402/A340202/34001087/.", "buy_pt": "Caixa de momiji manjū para presente.", "dec_jan_pt": "A confirmar.", "query": "Iwamura Momijiya Miyajima" }
+    {
+      "name": "Momiji-dō honten",
+      "name_ja": "紅葉堂 本店",
+      "what_pt": "Inventor do age-momiji (2002). Wagashi WEST 百名店 2026; Tabelog 3.65 (1.904), https://tabelog.com/en/hiroshima/A3402/A340202/34010095/.",
+      "buy_pt": "Age-momiji quente, para comer na hora.",
+      "price_pt": "≈¥200",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Momijido honten Miyajima"
+    },
+    {
+      "name": "Momiji-dō Niban-ya",
+      "name_ja": "紅葉堂弐番屋",
+      "what_pt": "Segunda loja da Momiji-dō, Wagashi WEST 百名店 2026; Tabelog 3.61 (785), https://tabelog.com/en/hiroshima/A3402/A340202/34001086/.",
+      "buy_pt": "Age-momiji quando a matriz tiver fila.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Momijido Nibanya Miyajima"
+    },
+    {
+      "name": "Iwamura Momiji-ya",
+      "name_ja": "岩村もみじ屋",
+      "what_pt": "Momiji manjū assado na hora, Wagashi WEST 百名店 2026; Tabelog 3.63 (656), https://tabelog.com/en/hiroshima/A3402/A340202/34001087/.",
+      "buy_pt": "Caixa de momiji manjū para presente.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Iwamura Momijiya Miyajima"
+    }
   ],
   "sources": [
     "https://ja.wikipedia.org/wiki/もみじ饅頭",

@@ -75,7 +75,11 @@
       "name_ja": "下通・上通",
       "kind": "rua",
       "story_pt": "As galerias cobertas do centro, onde fica a vida noturna de Kumamoto: izakaya de cavalo, casas chinesas de taipien e lojas de doces.",
-      "eat_pt": ["Taipien no Kōrantei", "Basashi e sakura-nabe no Suganoya (Karashimachō, ali perto)", "Ikinari dango"],
+      "eat_pt": [
+        "Taipien no Kōrantei",
+        "Basashi e sakura-nabe no Suganoya (Karashimachō, ali perto)",
+        "Ikinari dango"
+      ],
       "tips_pt": "Coberta, boa para dia de chuva. O jantar é por aqui.",
       "dec_jan_pt": "Lojas abertas com horário reduzido no Ano-Novo (a confirmar).",
       "query": "Shimotori Kumamoto"
@@ -85,7 +89,11 @@
       "name_ja": "桜の馬場 城彩苑",
       "kind": "rua",
       "story_pt": "Rua de comidas e lembranças ao pé do castelo, montada como cidade de Edo. Turístico, mas prático para provar tudo antes do castelo.",
-      "eat_pt": ["Karashi renkon", "Ikinari dango", "Croquete de cavalo"],
+      "eat_pt": [
+        "Karashi renkon",
+        "Ikinari dango",
+        "Croquete de cavalo"
+      ],
       "tips_pt": "Bom para os pais almoçarem leve depois do castelo.",
       "dec_jan_pt": "A confirmar.",
       "query": "Sakuranobaba Josaien"
@@ -95,7 +103,10 @@
       "name_ja": "熊本駅",
       "kind": "estação",
       "story_pt": "A estação reformada tem mercado de omiyage e ramen; o Kokutei fica a 5 minutos.",
-      "eat_pt": ["Kokutei", "Karashi renkon para levar"],
+      "eat_pt": [
+        "Kokutei",
+        "Karashi renkon para levar"
+      ],
       "tips_pt": "Faça o ramen antes do Shinkansen.",
       "dec_jan_pt": "A confirmar.",
       "query": "Kumamoto Station"
@@ -108,7 +119,12 @@
       "area": "Kumamoto · Nihongiguchi",
       "genre_pt": "Ramen de Kumamoto",
       "price_pt": "≈¥1.000",
-      "tabelog": { "score": 3.69, "reviews": 2616, "url": "https://tabelog.com/en/kumamoto/A4301/A430101/43000091/", "awards": "Ramen WEST 百名店 2025" },
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 2616,
+        "url": "https://tabelog.com/en/kumamoto/A4301/A430101/43000091/",
+        "awards": "Ramen WEST 百名店 2025"
+      },
       "why_pt": "O ramen de alho torrado na sua forma clássica. Peça o grande, porque não tem kaedama. O outro 百名店 2025 da cidade é o Hinokuni Bunryū sōhonten.",
       "order_pt": "Ramen grande (大盛り), com ovo cozido ou sem ovo.",
       "pregnancy_pt": "Ok, sem ovo cru nem gema mole.",
@@ -123,7 +139,10 @@
       "area": "Kumamoto · Shimotōri",
       "genre_pt": "Chinês / taipien",
       "price_pt": "≈¥1.000–1.500",
-      "tabelog": { "score": 3.49, "url": "https://tabelog.com/kumamoto/A4301/A430101/43000046/" },
+      "tabelog": {
+        "score": 3.49,
+        "url": "https://tabelog.com/kumamoto/A4301/A430101/43000046/"
+      },
       "why_pt": "Casa de 1934 e uma das que disputam a origem do taipien. Alternativas do Chinese WEST 百名店 2026: Kairakuen e Tōkagen.",
       "order_pt": "Taipien.",
       "pregnancy_pt": "Ok (tudo cozido).",
@@ -138,7 +157,11 @@
       "area": "Kumamoto · Karashimachō",
       "genre_pt": "Izakaya de cavalo",
       "price_pt": "≈¥8.000–9.999",
-      "tabelog": { "score": 3.50, "reviews": 332, "url": "https://tabelog.com/en/kumamoto/A4301/A430101/43005409/" },
+      "tabelog": {
+        "score": 3.5,
+        "reviews": 332,
+        "url": "https://tabelog.com/en/kumamoto/A4301/A430101/43005409/"
+      },
       "why_pt": "O jantar de cavalo para os seis: os cortes crus para quem pode e panelas e grelhados para ela.",
       "order_pt": "Basashi variado para cinco; sakura-nabe ou hari-hari nabe para todos.",
       "pregnancy_pt": "Nada de basashi nem yukke. Ela fica com nabe, cavalo grelhado ou ensopado de tendão.",
@@ -146,11 +169,48 @@
       "booking_pt": "Online.",
       "dec_jan_pt": "A confirmar.",
       "query": "Suganoya Shinshigai Kumamoto"
+    },
+    {
+      "name": "Katsuretsu-tei",
+      "name_ja": "勝烈亭",
+      "area": "Kumamoto",
+      "genre_pt": "Tonkatsu",
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 1760,
+        "url": "https://tabelog.com/en/kumamoto/A4301/A430101/43000307/"
+      },
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (abr 2020), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "Tonkatsu de Kumamoto com quase 1.800 avaliações.",
+      "pregnancy_pt": "Tudo frito e cozido: tranquilo.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Katsuretsutei Kumamoto"
     }
   ],
   "shops": [
-    { "name": "Karashi renkon (lojas tradicionais)", "name_ja": "辛子蓮根", "what_pt": "Várias casas da cidade vendem a raiz inteira, embalada a vácuo.", "buy_pt": "Uma peça inteira para fatiar no hotel.", "price_pt": "¥1.000–2.000", "dec_jan_pt": "Muito vendido no fim de ano (a confirmar).", "query": "karashi renkon shop Kumamoto" },
-    { "name": "Mercado de omiyage da estação Kumamoto", "name_ja": "熊本駅 おみやげ", "what_pt": "Concentra os doces e conservas da prefeitura.", "buy_pt": "Ikinari dango, karashi renkon, mikan.", "dec_jan_pt": "A confirmar.", "query": "Kumamoto Station souvenirs" }
+    {
+      "name": "Karashi renkon (lojas tradicionais)",
+      "name_ja": "辛子蓮根",
+      "what_pt": "Várias casas da cidade vendem a raiz inteira, embalada a vácuo.",
+      "buy_pt": "Uma peça inteira para fatiar no hotel.",
+      "price_pt": "¥1.000–2.000",
+      "dec_jan_pt": "Muito vendido no fim de ano (a confirmar).",
+      "query": "karashi renkon shop Kumamoto"
+    },
+    {
+      "name": "Mercado de omiyage da estação Kumamoto",
+      "name_ja": "熊本駅 おみやげ",
+      "what_pt": "Concentra os doces e conservas da prefeitura.",
+      "buy_pt": "Ikinari dango, karashi renkon, mikan.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kumamoto Station souvenirs"
+    }
   ],
   "sources": [
     "https://ja.wikipedia.org/wiki/辛子蓮根",

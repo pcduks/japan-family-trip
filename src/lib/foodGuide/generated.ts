@@ -10,7 +10,7 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     "counts": {
       "meibutsu": 20,
       "areas": 17,
-      "places": 42,
+      "places": 57,
       "shops": 25
     }
   },
@@ -106,7 +106,7 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     "counts": {
       "meibutsu": 8,
       "areas": 3,
-      "places": 6,
+      "places": 9,
       "shops": 4
     }
   },
@@ -118,7 +118,7 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     "counts": {
       "meibutsu": 6,
       "areas": 3,
-      "places": 3,
+      "places": 4,
       "shops": 2
     }
   },
@@ -142,7 +142,7 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     "counts": {
       "meibutsu": 8,
       "areas": 5,
-      "places": 28,
+      "places": 32,
       "shops": 9
     }
   },
@@ -154,7 +154,7 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     "counts": {
       "meibutsu": 7,
       "areas": 9,
-      "places": 23,
+      "places": 28,
       "shops": 3
     }
   },
@@ -178,7 +178,7 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     "counts": {
       "meibutsu": 5,
       "areas": 4,
-      "places": 6,
+      "places": 7,
       "shops": 2
     }
   },
@@ -274,7 +274,7 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     "counts": {
       "meibutsu": 8,
       "areas": 4,
-      "places": 6,
+      "places": 10,
       "shops": 4
     }
   },
@@ -298,7 +298,7 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     "counts": {
       "meibutsu": 6,
       "areas": 2,
-      "places": 3,
+      "places": 5,
       "shops": 2
     }
   },
@@ -322,7 +322,7 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     "counts": {
       "meibutsu": 6,
       "areas": 3,
-      "places": 3,
+      "places": 4,
       "shops": 2
     }
   },

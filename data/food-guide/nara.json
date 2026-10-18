@@ -120,7 +120,12 @@
       "area": "Nara · Sanjō-dōri",
       "genre_pt": "Wagashi (yomogi-mochi)",
       "price_pt": "Menos de ¥1.000",
-      "tabelog": { "score": 3.72, "reviews": 2689, "url": "https://tabelog.com/nara/A2901/A290101/29000222/", "awards": "スイーツ WEST 百名店 2018–2020, 2022; 和菓子・甘味処 WEST 百名店 2023, 2026" },
+      "tabelog": {
+        "score": 3.72,
+        "reviews": 2689,
+        "url": "https://tabelog.com/nara/A2901/A290101/29000222/",
+        "awards": "スイーツ WEST 百名店 2018–2020, 2022; 和菓子・甘味処 WEST 百名店 2023, 2026"
+      },
       "why_pt": "Sim, a socagem em alta velocidade virou espetáculo turístico. Mas 3.72 em 2.689 avaliações e seis 百名店 mostram que o japonês avalia o mochi, não o show: quente, macio, verde, com anko e kinako.",
       "order_pt": "Yomogi-mochi, dois por pessoa.",
       "pregnancy_pt": "Ok; morder pequeno.",
@@ -135,7 +140,12 @@
       "area": "Nara · Naramachi",
       "genre_pt": "Namagashi e kakigōri",
       "price_pt": "¥1–2 mil",
-      "tabelog": { "score": 3.83, "reviews": 1109, "url": "https://tabelog.com/nara/A2901/A290101/29002296/", "awards": "スイーツ WEST 百名店 2018–2020, 2022; 和菓子・甘味処 WEST 百名店 2023, 2026" },
+      "tabelog": {
+        "score": 3.83,
+        "reviews": 1109,
+        "url": "https://tabelog.com/nara/A2901/A290101/29002296/",
+        "awards": "スイーツ WEST 百名店 2018–2020, 2022; 和菓子・甘味処 WEST 百名店 2023, 2026"
+      },
       "why_pt": "O namagashi pelo qual quem ama Nara viaja. Mais quieto e melhor que qualquer coisa na faixa do parque.",
       "order_pt": "Namagashi da estação com matcha.",
       "pregnancy_pt": "Ok; um matcha só. A escada é íngreme a 30 semanas: compre para levar.",
@@ -150,7 +160,11 @@
       "area": "Nara · Naramachi",
       "genre_pt": "Cozinha regional (legumes tradicionais de Yamato)",
       "price_pt": "Almoço ¥3–4 mil · Jantar ¥4–5 mil",
-      "tabelog": { "score": 3.66, "reviews": 374, "url": "https://tabelog.com/nara/A2901/A290101/29001643/" },
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 374,
+        "url": "https://tabelog.com/nara/A2901/A290101/29001643/"
+      },
       "why_pt": "A melhor refeição sentada em Nara para esta família: calma, de legumes e privativa para seis.",
       "order_pt": "O curso de legumes de Yamato.",
       "pregnancy_pt": "Quase tudo cozido: ok.",
@@ -164,7 +178,11 @@
       "name_ja": "柿の葉すし本舗たなか 奈良本店",
       "area": "Nara · centro",
       "genre_pt": "Kakinoha-zushi",
-      "tabelog": { "score": 3.25, "reviews": 477, "url": "https://tabelog.com/nara/A2901/A290101/29006750/" },
+      "tabelog": {
+        "score": 3.25,
+        "reviews": 477,
+        "url": "https://tabelog.com/nara/A2901/A290101/29006750/"
+      },
       "why_pt": "Nota baixa é normal para comida regional embalada. Compre uma caixa para o trem; não planeje refeição em torno disso.",
       "order_pt": "Caixa mista; anago e legumes para ela.",
       "pregnancy_pt": "Cavala e salmão curados, não cozidos: escolha anago e legumes.",
@@ -177,7 +195,11 @@
       "name_ja": "平宗 奈良店",
       "area": "Nara · centro",
       "genre_pt": "Kakinoha-zushi e refeições",
-      "tabelog": { "score": 3.19, "reviews": 303, "url": "https://tabelog.com/nara/A2901/A290101/29000753/" },
+      "tabelog": {
+        "score": 3.19,
+        "reviews": 303,
+        "url": "https://tabelog.com/nara/A2901/A290101/29000753/"
+      },
       "why_pt": "Refeição sentada com kakinoha-zushi; para viagem o ano todo.",
       "pregnancy_pt": "Mesmo cuidado com o peixe curado.",
       "group_pt": "Reserva de almoço só para 10+.",
@@ -189,7 +211,10 @@
       "name_ja": "ゐざさ",
       "area": "Nara · Yume-kaze Hiroba",
       "genre_pt": "Kakinoha-zushi",
-      "tabelog": { "score": 3.16, "url": "https://tabelog.com/nara/A2901/A290101/29001038/" },
+      "tabelog": {
+        "score": 3.16,
+        "url": "https://tabelog.com/nara/A2901/A290101/29001038/"
+      },
       "why_pt": "A terceira grande marca, com tatame: seis sentam juntos perto do Tōdai-ji.",
       "pregnancy_pt": "Mesmo cuidado com o peixe curado.",
       "group_pt": "42 lugares com tatame: cabe 6.",
@@ -198,9 +223,30 @@
     }
   ],
   "shops": [
-    { "name": "Mori Narazuke-ten", "name_ja": "森奈良漬店", "what_pt": "Casa antiga de Nara-zuke ao lado do Tōdai-ji (Tabelog 3.08, 37 avaliações, https://tabelog.com/nara/A2901/A290101/29005147/).", "buy_pt": "Shirouri Nara-zuke para os pais e o Pedro.", "dec_jan_pt": "9h–18h todo dia; Ano-Novo a confirmar.", "query": "Mori Narazuke Nara" },
-    { "name": "Imanishi Honten", "name_ja": "今西本店", "what_pt": "Outra casa antiga de Nara-zuke (Tabelog 3.10, https://tabelog.com/nara/A2901/A290101/29005395/).", "buy_pt": "Nara-zuke.", "dec_jan_pt": "a confirmar.", "query": "Imanishi Honten Narazuke" },
-    { "name": "Kakinoha-zushi Tanaka", "name_ja": "柿の葉すし本舗たなか", "what_pt": "Caixas de kakinoha-zushi para viagem.", "buy_pt": "Caixa mista para o trem.", "dec_jan_pt": "Abre todo dia.", "query": "Kakinoha sushi Tanaka Nara" }
+    {
+      "name": "Mori Narazuke-ten",
+      "name_ja": "森奈良漬店",
+      "what_pt": "Casa antiga de Nara-zuke ao lado do Tōdai-ji (Tabelog 3.08, 37 avaliações, https://tabelog.com/nara/A2901/A290101/29005147/).",
+      "buy_pt": "Shirouri Nara-zuke para os pais e o Pedro.",
+      "dec_jan_pt": "9h–18h todo dia; Ano-Novo a confirmar.",
+      "query": "Mori Narazuke Nara"
+    },
+    {
+      "name": "Imanishi Honten",
+      "name_ja": "今西本店",
+      "what_pt": "Outra casa antiga de Nara-zuke (Tabelog 3.10, https://tabelog.com/nara/A2901/A290101/29005395/).",
+      "buy_pt": "Nara-zuke.",
+      "dec_jan_pt": "a confirmar.",
+      "query": "Imanishi Honten Narazuke"
+    },
+    {
+      "name": "Kakinoha-zushi Tanaka",
+      "name_ja": "柿の葉すし本舗たなか",
+      "what_pt": "Caixas de kakinoha-zushi para viagem.",
+      "buy_pt": "Caixa mista para o trem.",
+      "dec_jan_pt": "Abre todo dia.",
+      "query": "Kakinoha sushi Tanaka Nara"
+    }
   ],
   "sources": [
     "docs/research/food/22-kansai.md",

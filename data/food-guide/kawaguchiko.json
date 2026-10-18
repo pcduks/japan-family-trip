@@ -109,13 +109,19 @@
       "area": "Kawaguchiko",
       "genre_pt": "Hōtō",
       "tabelog": {
-        "score": 3.49
+        "score": 3.49,
+        "url": "https://tabelog.com/en/yamanashi/A1903/A190303/19000046/"
       },
       "critics": [
         {
-          "who": "@migrationology",
+          "who": "@migrationology (Mark Wiens)",
           "note_pt": "Comeu hōtō aqui num vídeo de bate-volta pelas montanhas de Kantō.",
           "url": "https://www.youtube.com/watch?v=bgzyczSWOu8"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Koshu Houtou Kosaku”, set 2016 (1 vez), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
         }
       ],
       "why_pt": "Um dos grandes salões de hōtō, abaixo de 3,5, mas fácil para grupo.",

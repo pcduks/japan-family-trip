@@ -164,7 +164,7 @@
       },
       "critics": [
         {
-          "who": "@migrationology",
+          "who": "@migrationology (Mark Wiens)",
           "note_pt": "Provou o Toyama Black original: 'um pouco intenso, não meu favorito'; preferiu o Isshin na estação.",
           "url": "https://www.youtube.com/watch?v=9f8vJwYLgCY"
         }
@@ -176,6 +176,28 @@
       "booking_pt": "Sem reserva.",
       "dec_jan_pt": "Fecha às quartas. Ano-Novo a confirmar.",
       "query": "Nishicho Taiki Toyama"
+    },
+    {
+      "name": "L'Évo",
+      "area": "Tonami (Toyama)",
+      "genre_pt": "Cozinha inovadora",
+      "tabelog": {
+        "score": 4.56,
+        "reviews": 517,
+        "url": "https://tabelog.com/en/toyama/A1605/A160502/16009727/",
+        "awards": "Award Gold (3 edições)"
+      },
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (dez 2017), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "O restaurante-destino de Toyama, no interior de Tonami; o Jason Wang foi em dezembro.",
+      "pregnancy_pt": "Avise ao reservar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "L'Evo Tonami Toyama"
     }
   ],
   "shops": [
