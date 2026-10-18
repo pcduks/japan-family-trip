@@ -390,6 +390,11 @@ export const FOOD_CITIES: FoodCityMeta[] = [
 
 export const FOOD_TOPICS: FoodTopicMeta[] = [
   {
+    "slug": "calendario",
+    "title_pt": "Calendário e reservas",
+    "items": 57
+  },
+  {
     "slug": "depachika",
     "title_pt": "Depachika",
     "items": 63
@@ -447,6 +452,7 @@ export const CITY_LOADERS: Record<string, () => Promise<FoodCity>> = {
 };
 
 export const TOPIC_LOADERS: Record<string, () => Promise<FoodTopic>> = {
+  "calendario": () => import("../../../data/food-guide/topics/calendario.json").then((m) => m.default as FoodTopic),
   "depachika": () => import("../../../data/food-guide/topics/depachika.json").then((m) => m.default as FoodTopic),
   "ekiben": () => import("../../../data/food-guide/topics/ekiben.json").then((m) => m.default as FoodTopic),
   "etiquette": () => import("../../../data/food-guide/topics/etiquette.json").then((m) => m.default as FoodTopic),
