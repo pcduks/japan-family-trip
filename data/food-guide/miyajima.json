@@ -3,7 +3,7 @@
   "name": "Miyajima",
   "tagline_pt": "A ilha do torii no mar: ostras grelhadas na rua, congro sobre arroz e o bolinho de folha de bordo que nasceu aqui.",
   "history_pt": [
-    "Miyajima (Itsukushima) é ilha sagrada há mais de mil anos, e por muito tempo ninguém podia nascer nem ser enterrado nela. A comida é de peregrino e de baía: o anago (congro) pescado no Seto, grelhado no molho e posto sobre arroz cozido no caldo da cabeça e dos ossos. A Ueno, em Miyajimaguchi, faz isso desde 1901 e vendia como ekiben na estação.",
+    "Miyajima (Itsukushima) é ilha sagrada há mais de mil anos, e por muito tempo ninguém podia nascer nem ser enterrado nela. A comida é de peregrino e de baía: o anago (congro) pescado no Seto, grelhado no molho e posto sobre arroz temperado. A Ueno, em Miyajimaguchi, faz isso desde 1901.",
     "O momiji manjū nasceu na ilha: em 1906 o doceiro Takatsu Tsunesuke fez, a pedido da dona do ryokan Iwasō, um bolinho em forma de folha de bordo, lembrando o vale de Momijidani. A história de que Itō Hirobumi inspirou o doce com uma piada sobre a mão de uma moça é lenda sem registro. Em 2002 a Momiji-dō lançou o age-momiji, frito na hora.",
     "As ostras de Jigozen, do outro lado do estreito, são criadas por três anos e grelhadas na casca nas barracas da rua Omotesandō."
   ],
@@ -13,7 +13,7 @@
       "name_pt": "Anago-meshi",
       "name_ja": "あなごめし",
       "romaji": "anago-meshi",
-      "what_pt": "Congro grelhado no molho em fatias sobre arroz temperado com o caldo do próprio peixe. Mais leve e menos gorduroso que a enguia.",
+      "what_pt": "Congro grelhado no molho, em fatias sobre arroz temperado. Mais leve que a enguia.",
       "where_pt": "Anagomeshi Ueno (Miyajimaguchi) ou Fujitaya (na ilha).",
       "price_pt": "¥2.000–3.000",
       "must": true
@@ -60,7 +60,7 @@
       "name_pt": "Shamoji (colher de arroz)",
       "name_ja": "杓子",
       "romaji": "shakushi",
-      "what_pt": "Não se come, mas é o símbolo da ilha: a colher de madeira para arroz foi inventada em Miyajima, e a maior do mundo está na Omotesandō.",
+      "what_pt": "Não se come, mas é o símbolo da ilha: pela tradição local, a colher de madeira para arroz foi inventada aqui, e uma gigante enfeita a Omotesandō.",
       "where_pt": "Lojas da Omotesandō.",
       "price_pt": "¥500+",
       "must": false
@@ -126,7 +126,7 @@
       "genre_pt": "Ostras",
       "price_pt": "A confirmar",
       "tabelog": { "score": 3.57, "reviews": 2121, "url": "https://tabelog.com/en/hiroshima/A3402/A340202/34003363/" },
-      "why_pt": "Casa moderna só de ostras; dezembro é o pico.",
+      "why_pt": "Casa especializada em ostras; dezembro é o pico.",
       "order_pt": "Set de ostras com kaki-furai e grelhadas.",
       "pregnancy_pt": "Sem crua; frita e grelhada ok.",
       "group_pt": "A confirmar.",
@@ -136,7 +136,6 @@
     },
     {
       "name": "Fujitaya",
-      "name_ja": "ふじたや",
       "area": "Miyajima",
       "genre_pt": "Anago-meshi",
       "price_pt": "A confirmar",
