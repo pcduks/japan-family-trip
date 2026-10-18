@@ -19,11 +19,11 @@ export function Guide() {
           <Step n={1} title="Trip" href="/">
             The route we are taking: the map, the 21 days, each stop and why it is that long, New Year’s Eve, and what it costs per couple against the S$15,000 target. Only {planners.join(" and ")} change it, so there is always exactly one.
           </Step>
-          <Step n={2} title="Routes" href="/routes">
-            The other ways to spend the same 20 nights, by style: snow, onsen, the west, the far north, the coast, food, two cities done slowly. Each opens as a full page like Trip. Build your own from any of them, or join two, and it gets its own page too.
+          <Step n={2} title="Japan" href="/places">
+            Everything we looked at across Japan, on the map and by region: what each place is known for, what it is like on our dates, and whether it is on our route, a day out, a possible swap or a trip of its own. Every one of the {snapshot.places.length} places is in the list too.
           </Step>
-          <Step n={3} title="Places" href="/places">
-            Every area we looked at, on the map and by region. Each says what it is known for, what it is like on our dates, how long to stay and where to sleep. Every one of the {snapshot.places.length} places is in the list too.
+          <Step n={3} title="What if" href="/routes">
+            Our route is the starting point. A few changes worth a look (Takayama back in, Hakone for Fuji, Nara after New Year), each read against our route: nights, moves, checks and cost. Then make your own change and send it to {planners.join(" and ")}.
           </Step>
           <Step n={4} title="Food" href="/food">
             How we eat as seven, city by city, what Fernanda can eat, the ryokan meals and our own Tokyo list.
@@ -37,10 +37,10 @@ export function Guide() {
             Open a stop on the Trip tab and the places its days visit are listed. Tap Must, Nice or Skip on the ones you have a view on. The family sees the count.
           </Step>
           <Step n={2} title="Tell us what is missing" href="/places">
-            The “Something missing?” box on Places and on every area page. A place, a dish, a worry: one line is enough.
+            The “Something missing?” box on the Japan page and on every area page. A place, a dish, a worry: one line is enough.
           </Step>
-          <Step n={3} title="Shape a route of your own (optional)" href="/build">
-            Start from any route, add or take nights, swap a place. The days, the map, the warnings and the cost follow every change. Save it and the family can open it from Routes.
+          <Step n={3} title="Try a change (optional)" href="/routes">
+            On What if, start from our route: add or take nights, swap a place. The days, the map, the checks and the cost follow every change. Send it as a suggestion, or save it and the family can open it from What if.
           </Step>
           <Step n={4} title="Comment anywhere">
             Every route, stop and place has comments. A heart on a place says “me too”.

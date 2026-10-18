@@ -43,7 +43,7 @@ export function PlaceView({ id }: { id: string }) {
   if (!p)
     return (
       <Page>
-        <Back href="/places">Places</Back>
+        <Back href="/places">Japan</Back>
         <p className="text-muted">No such place.</p>
       </Page>
     );

@@ -134,7 +134,7 @@ export function Inbox() {
             ))}
           </ul>
         ) : (
-          <Empty>No wishes yet. Anyone can send one from the bottom of Places or of any area page.</Empty>
+          <Empty>No wishes yet. Anyone can send one from the bottom of the Japan page or of any area page.</Empty>
         )}
       </Section>
 

@@ -65,7 +65,6 @@ function Builder() {
   const [name, setName] = useState(editing?.name ?? `${first}’s route`);
   const [draft, setDraft] = useState<Version>(() => toVersion(base));
   const [tab, setTab] = useState<"one" | "two">("one");
-  const [styleFilter, setStyleFilter] = useState("all");
   const [saving, setSaving] = useState(false);
 
   // Join two
@@ -109,8 +108,7 @@ function Builder() {
   const planBudget = plan ? budgetOf(plan, snapshot.regions).perCoupleSgd : budget;
   const findings = checkVersion(live, rules);
   const total = live.stays.reduce((a, s) => a + s.nights, 0);
-  const styles = Array.from(new Set(routes.filter((v) => v.status === "alternative").map((v) => styleOf(v.id))));
-  const shown = routes.filter((v) => styleFilter === "all" || (styleFilter === "yours" ? v.status === "personal" : v.status === "alternative" && styleOf(v.id) === styleFilter));
+  const shown = routes;
 
   const save = async (asNew: boolean) => {
     if (!me) return;
@@ -142,14 +140,14 @@ function Builder() {
 
   return (
     <Page wide>
-      <Back href="/routes">Routes</Back>
+      <Back href="/routes">What if</Back>
       <header className="grid gap-2">
-        <p className="eyebrow">Build a route</p>
-        <h1 className="display text-[2.3rem] leading-[1.02] sm:text-5xl">Make it yours</h1>
-        <p className="max-w-prose text-ink-2">Start from any route, or join two of them on a date you choose. Then change the nights, add, drop and reorder stops. The map, the days, the warnings and the cost follow every change, and the trip keeps its {nights} nights. Save it and it gets its own page, like every other route.</p>
+        <p className="eyebrow">What if</p>
+        <h1 className="display text-[2.3rem] leading-[1.02] sm:text-5xl">Change the stops</h1>
+        <p className="max-w-prose text-ink-2">It starts from our route. Change the nights, add, drop and reorder stops; the map, the days, the checks and the cost follow every change, and the trip keeps its {nights} nights. Save it and it gets its own page on What if.</p>
       </header>
 
-      <Section title="1 · Where to start">
+      <Section title="1 · Starting point" aside="our route, unless you pick another">
         <div className="seg justify-self-start" role="group" aria-label="How to start">
           <button aria-pressed={tab === "one"} onClick={() => setTab("one")}>
             From one route
@@ -161,13 +159,6 @@ function Builder() {
 
         {tab === "one" ? (
           <div className="grid gap-2">
-            <div className="no-scrollbar -mx-4 flex gap-1.5 overflow-x-auto px-4 text-[0.78rem]">
-              {[["all", "All"], ...styles.map((s) => [s, STYLE_LABEL[s] ?? s]), ...(routes.some((v) => v.status === "personal") ? [["yours", "Yours"]] : [])].map(([k, label]) => (
-                <button key={k} className={`shrink-0 rounded-full px-2.5 py-1 font-semibold ${styleFilter === k ? "bg-ink text-bg" : "text-muted"}`} aria-pressed={styleFilter === k} onClick={() => setStyleFilter(k)}>
-                  {label}
-                </button>
-              ))}
-            </div>
             <ul className="no-scrollbar -mx-4 flex snap-x gap-3 overflow-x-auto px-4 pb-1">
               {shown.map((v) => {
                 const st = statsOf(v, snapshot);

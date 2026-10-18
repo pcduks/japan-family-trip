@@ -36,8 +36,8 @@ export function BottomNav() {
     <nav aria-label="Main" className="fixed inset-x-0 bottom-0 z-30 border-t border-rule bg-bg/95 backdrop-blur" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
       <ul className="mx-auto flex max-w-xl items-stretch justify-around px-1">
         <NavItem href="/" label="Trip" icon={I.trip} active={path === "/" || is("/plan") || is("/guide")} />
-        <NavItem href="/routes" label="Routes" icon={I.versions} active={is("/routes") || is("/build") || is("/board")} />
-        <NavItem href="/places" label="Places" icon={I.places} active={is("/places") || is("/areas")} />
+        <NavItem href="/places" label="Japan" icon={I.places} active={is("/places") || is("/areas")} />
+        <NavItem href="/routes" label="What if" icon={I.versions} active={is("/routes") || is("/build") || is("/board")} />
         <NavItem href="/food" label="Food" icon={I.food} active={is("/food")} />
       </ul>
     </nav>

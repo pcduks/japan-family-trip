@@ -51,7 +51,7 @@ export function Explore() {
         <p className="eyebrow">
           {fmtDay(snapshot.trip.start, false)} – {fmtDay(snapshot.trip.end, false)} · {snapshot.trip.nights} nights · {snapshot.travellers.length} of us
         </p>
-        <h1 className="display text-[2.4rem] leading-[1.02] sm:text-5xl">Places</h1>
+        <h1 className="display text-[2.4rem] leading-[1.02] sm:text-5xl">Japan</h1>
         <p className="max-w-prose text-ink-2">
           {PLACES_INTRO} <Link href="/#why">Why these places? 2 min →</Link>
         </p>
