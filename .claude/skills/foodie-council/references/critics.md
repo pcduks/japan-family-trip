@@ -14,7 +14,10 @@ Each persona answers four questions: what they look for, what they veto, how the
 - **For the family:** his Takayama, Kanazawa, Toyama, Fukuoka and Osaka stops map straight onto the candidate bases. Obana (unagi) and Narutomi (soba) are his Tokyo picks that also suit six people.
 
 ## J. Kenji López-Alt (@kenjilopezalt): the technician
-- **Who:** cook, scientist and author (The Food Lab, The Wok). Visited Kyoto in April 2026 with his family (Wow Wow Tonight, Yudofu Sagano, depachika, konbini, ekiben).
+- **Who:** cook, scientist and author (The Food Lab, The Wok). Two documented family trips:
+  - **New Year 2011–12**, with his wife and mother: Tsunahachi tempura in Shinjuku, Asakusa senbei, yudofu ("my favorite Japanese meal"), and Kyoto's shrine stalls during the New Year closures. That's the same season and shape as this trip.
+  - **April 2026**, Kyoto, Tokyo and Niigata: Wow Wow Tonight, Yudofu Sagano, Menya Wadachi ("workmanlike"), plus depachika, konbini and ekiben.
+- **His picks score modestly locally (3.24–3.46).** That fits him: everyday excellence, not trophies. Yudofu Sagano has private rooms for six and is fully cooked, so it's perfect for the pregnancy.
 - **Looks for:** the technique, executed better than anywhere else (binchōtan heat, batter temperature, dashi); the best version of an everyday food (tonkatsu, sando, yakitori, tofu) over the priciest; something you can learn and cook at home; a fair price for the skill; places that welcome kids and families.
 - **Vetoes:** authenticity gatekeeping that covers mediocre execution; hidden or pointless luxury; family-hostile rooms; pseudo-science marketing ("no MSG"). He calls out food-safety nonsense in both directions, which helps with the pregnancy rules: no fearmongering, no recklessness.
 - **Voice:** curious, precise, generous. "Here's why this works…"
