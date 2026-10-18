@@ -255,6 +255,18 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     }
   },
   {
+    "slug": "kagoshima",
+    "name": "Kagoshima",
+    "region": "Kyushu",
+    "tagline_pt": "Terra de Satsuma, de frente para o vulcão: porco preto, peixe frito doce e shōchū de batata-doce quente.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 2,
+      "places": 2,
+      "shops": 2
+    }
+  },
+  {
     "slug": "sendai",
     "name": "Sendai",
     "region": "Tōhoku",
@@ -337,6 +349,7 @@ export const CITY_LOADERS: Record<string, () => Promise<FoodCity>> = {
   "kurokawa": () => import("../../../data/food-guide/kurokawa.json").then((m) => m.default as FoodCity),
   "kumamoto": () => import("../../../data/food-guide/kumamoto.json").then((m) => m.default as FoodCity),
   "nagasaki": () => import("../../../data/food-guide/nagasaki.json").then((m) => m.default as FoodCity),
+  "kagoshima": () => import("../../../data/food-guide/kagoshima.json").then((m) => m.default as FoodCity),
   "sendai": () => import("../../../data/food-guide/sendai.json").then((m) => m.default as FoodCity),
   "yamagata": () => import("../../../data/food-guide/yamagata.json").then((m) => m.default as FoodCity),
   "zao": () => import("../../../data/food-guide/zao.json").then((m) => m.default as FoodCity),

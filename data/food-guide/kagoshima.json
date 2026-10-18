@@ -62,7 +62,7 @@
       "name_pt": "Shirokuma",
       "name_ja": "白くま",
       "romaji": "shirokuma",
-      "what_pt": "Raspadinha com leite condensado e frutas, o doce-símbolo da cidade. Mesmo no inverno tem fila.",
+      "what_pt": "Raspadinha com leite condensado e frutas, o doce-símbolo da cidade.",
       "where_pt": "Tenmonkan.",
       "price_pt": "≈¥800–1.000",
       "must": false
@@ -73,8 +73,13 @@
       "name": "Tenmonkan",
       "name_ja": "天文館",
       "kind": "bairro",
-      "story_pt": "O centro comercial e noturno, com galerias cobertas. O nome vem de um observatório astronômico que os Shimazu ergueram aqui no período Edo.",
-      "eat_pt": ["Kurobuta shabu no Ajimori", "Tonkatsu de kurobuta", "Shirokuma", "Izakaya de shōchū"],
+      "story_pt": "O centro comercial e noturno, com galerias cobertas. O nome vem de um observatório astronômico que os Shimazu ergueram aqui no período Edo. Mark Wiens comeu kurobuta por aqui em 2023 e enfrentou 1 h de fila no kaiten-zushi Mekkemon, no porto (https://www.youtube.com/watch?v=ESDc9g-QP10; Tabelog não verificado).",
+      "eat_pt": [
+        "Kurobuta shabu no Ajimori",
+        "Tonkatsu de kurobuta",
+        "Shirokuma",
+        "Izakaya de shōchū"
+      ],
       "tips_pt": "Concentre jantares e doces aqui; tudo a pé.",
       "dec_jan_pt": "A confirmar.",
       "query": "Tenmonkan Kagoshima"
@@ -84,7 +89,10 @@
       "name_ja": "鹿児島中央駅",
       "kind": "estação",
       "story_pt": "A chegada do Shinkansen, com mercado de omiyage, satsuma-age e a rua de izakaya ao lado.",
-      "eat_pt": ["Satsuma-age quente", "Ekiben de kurobuta"],
+      "eat_pt": [
+        "Satsuma-age quente",
+        "Ekiben de kurobuta"
+      ],
       "tips_pt": "Compre satsuma-age para o trem.",
       "dec_jan_pt": "A confirmar.",
       "query": "Kagoshima Chuo Station"
@@ -97,7 +105,12 @@
       "area": "Kagoshima · Tenmonkan",
       "genre_pt": "Kurobuta shabu-shabu",
       "price_pt": "Jantar ≈¥6.000–7.999 (+5% de serviço)",
-      "tabelog": { "score": 3.67, "reviews": 1164, "url": "https://tabelog.com/en/kagoshima/A4601/A460101/46000029/", "awards": "Sukiyaki/Shabu-shabu 百名店 2024" },
+      "tabelog": {
+        "score": 3.67,
+        "reviews": 1164,
+        "url": "https://tabelog.com/en/kagoshima/A4601/A460101/46000029/",
+        "awards": "Sukiyaki/Shabu-shabu 百名店 2024"
+      },
       "why_pt": "Aberto em 1978 e, segundo o Tabelog, o criador do kurobuta shabu. Sala de tatami para o grupo e porco que justifica a viagem.",
       "order_pt": "Curso de kurobuta shabu.",
       "pregnancy_pt": "Troque o ovo cru por ponzu e cozinhe bem o porco.",
@@ -111,34 +124,43 @@
       "name_ja": "いちにいさん",
       "area": "Kagoshima · várias filiais",
       "genre_pt": "Kurobuta shabu-shabu",
-      "tabelog": { "awards": "Sukiyaki/Shabu-shabu 百名店 2024 (nota a confirmar)" },
-      "critics": [{ "who": "@migrationology", "note_pt": "Mark Wiens comeu o kurobuta shabu daqui no seu 'dia do kurobuta' em Kagoshima (2023), junto com tonkatsu de kurobuta e o Izakaya Tsuwabuki.", "url": "https://www.youtube.com/watch?v=1vlsRKEvWaQ" }],
-      "why_pt": "A alternativa ao Ajimori no mesmo 百名店, com caldo de soba e várias filiais. Nota e filial a confirmar antes de reservar.",
+      "tabelog": {
+        "awards": "Sukiyaki/Shabu-shabu 百名店 2024 (nota a confirmar)"
+      },
+      "critics": [
+        {
+          "who": "@migrationology",
+          "note_pt": "Mark Wiens comeu o kurobuta shabu daqui no seu 'dia do kurobuta' em Kagoshima (2023), junto com tonkatsu de kurobuta e o Izakaya Tsuwabuki.",
+          "url": "https://www.youtube.com/watch?v=1vlsRKEvWaQ"
+        }
+      ],
+      "why_pt": "A alternativa ao Ajimori no mesmo 百名店, com várias filiais. Nota e filial a confirmar no Tabelog antes de reservar.",
       "order_pt": "Kurobuta shabu.",
       "pregnancy_pt": "Porco bem cozido; sem ovo cru.",
       "group_pt": "A confirmar.",
       "booking_pt": "A confirmar.",
       "dec_jan_pt": "A confirmar.",
       "query": "Ichiniisan Kagoshima shabu"
-    },
-    {
-      "name": "Mawaru Sushi Mekkemon (Dolphin Port)",
-      "name_ja": "回転寿司 めっけもん ドルフィンポート",
-      "area": "Kagoshima · porto",
-      "genre_pt": "Kaiten-zushi",
-      "critics": [{ "who": "@migrationology", "note_pt": "Mark Wiens enfrentou 1 h de fila neste kaiten de peixe local (2023).", "url": "https://www.youtube.com/watch?v=ESDc9g-QP10" }],
-      "why_pt": "Sushi de esteira com peixe da baía de Kagoshima. Tabelog não verificado; a filial do Dolphin Port pode ter mudado de endereço desde 2023.",
-      "order_pt": "Peixe local (kibinago, buri, katsuo).",
-      "pregnancy_pt": "Ela escolhe pratos cozidos ou grelhados (aburi, tamago, anago) e evita mariscos crus.",
-      "group_pt": "Mesas de esteira para 4–6 (a confirmar).",
-      "booking_pt": "Fila; confira se há lista eletrônica.",
-      "dec_jan_pt": "A confirmar.",
-      "query": "Mekkemon kaiten sushi Kagoshima"
     }
   ],
   "shops": [
-    { "name": "Satsuma-age das lojas tradicionais", "name_ja": "さつま揚げ", "what_pt": "Várias fabricantes vendem frito na hora na Tenmonkan e na estação.", "buy_pt": "Uma sacola variada quente; versão embalada para levar.", "price_pt": "¥100–300 a peça", "dec_jan_pt": "Muito vendida no fim de ano (a confirmar).", "query": "satsuma age shop Kagoshima Chuo" },
-    { "name": "Lojas de shōchū", "name_ja": "焼酎専門店", "what_pt": "Kagoshima tem mais de cem destilarias; as lojas especializadas deixam provar.", "buy_pt": "Uma garrafa de imo-shōchū para os pais.", "dec_jan_pt": "A confirmar.", "query": "shochu shop Kagoshima Tenmonkan" }
+    {
+      "name": "Satsuma-age das lojas tradicionais",
+      "name_ja": "さつま揚げ",
+      "what_pt": "Várias fabricantes vendem frito na hora na Tenmonkan e na estação.",
+      "buy_pt": "Uma sacola variada quente; versão embalada para levar.",
+      "price_pt": "¥100–300 a peça",
+      "dec_jan_pt": "Muito vendida no fim de ano (a confirmar).",
+      "query": "satsuma age shop Kagoshima Chuo"
+    },
+    {
+      "name": "Lojas de shōchū",
+      "name_ja": "焼酎専門店",
+      "what_pt": "Lojas especializadas em shōchū de Kagoshima; muitas deixam provar.",
+      "buy_pt": "Uma garrafa de imo-shōchū para os pais.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "shochu shop Kagoshima Tenmonkan"
+    }
   ],
   "sources": [
     "https://ja.wikipedia.org/wiki/黒豚",
