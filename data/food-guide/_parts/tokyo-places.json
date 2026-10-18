@@ -6,7 +6,12 @@
       "area": "Tóquio · Monzen-nakachō (Fukuzumi)",
       "genre_pt": "Tempurá",
       "price_pt": "Jantar ¥20.000–29.999",
-      "tabelog": { "score": 4.10, "reviews": 853, "url": "https://tabelog.com/tokyo/A1313/A131303/13090866/", "awards": "Award Bronze 2017–2026 (10 seguidos); 百名店 2023, 2025" },
+      "tabelog": {
+        "score": 4.1,
+        "reviews": 853,
+        "url": "https://tabelog.com/tokyo/A1313/A131303/13090866/",
+        "awards": "Award Bronze 2017–2026 (10 seguidos); 百名店 2023, 2025"
+      },
       "why_pt": "O tempurá de Saotome Tetsuya é a régua com que os outros mestres se medem. Dez prêmios seguidos no Tabelog e uma sala que resolve o problema dos seis.",
       "order_pt": "O omakase completo: kuruma-ebi, peixes da estação, legumes de inverno e o kakiage no tendon ou tencha para fechar.",
       "pregnancy_pt": "Tudo frito, então tranquilo. Se vier o uni no shiso mal passado, peça bem cozido ou pule.",
@@ -21,7 +26,12 @@
       "area": "Tóquio · Minami-Asagaya",
       "genre_pt": "Tonkatsu",
       "price_pt": "¥6.000–7.999",
-      "tabelog": { "score": 4.29, "reviews": 2037, "url": "https://tabelog.com/tokyo/A1319/A131905/13236380/", "awards": "Award Bronze 2021–2026; 百名店 2024, 2026" },
+      "tabelog": {
+        "score": 4.29,
+        "reviews": 2037,
+        "url": "https://tabelog.com/tokyo/A1319/A131905/13236380/",
+        "awards": "Award Bronze 2021–2026; 百名店 2024, 2026"
+      },
       "why_pt": "A única casa de tonkatsu com seis prêmios seguidos no Tabelog. Porco de raça, empanado claro e fino, fritura em temperatura baixa: o tonkatsu no seu ponto mais refinado.",
       "order_pt": "Rosu (lombo) e hire (filé) de porco SPF; se houver, o lombo de raça especial do dia.",
       "pregnancy_pt": "Aqui o miolo costuma sair rosado. Para ela, peça bem passado: 「よく火を通してください」.",
@@ -36,7 +46,12 @@
       "area": "Tóquio · Higashi-Mukōjima (Sumida)",
       "genre_pt": "Sushi",
       "price_pt": "Jantar ¥15.000–19.999",
-      "tabelog": { "score": 3.94, "reviews": 412, "url": "https://tabelog.com/tokyo/A1312/A131203/13017947/", "awards": "Award Bronze 2017–2022; 百名店 2022, 2025" },
+      "tabelog": {
+        "score": 3.94,
+        "reviews": 412,
+        "url": "https://tabelog.com/tokyo/A1312/A131203/13017947/",
+        "awards": "Award Bronze 2017–2022; 百名店 2022, 2025"
+      },
       "why_pt": "O melhor sushi por preço da lista, num canto de Sumida onde turista não chega. Seis prêmios Bronze cobrando um terço de Ginza.",
       "order_pt": "O omakase; estilo Edomae, com peixes curados e cozidos (confirme na hora).",
       "pregnancy_pt": "Sem marisco cru; limite o atum. Peças curadas e cozidas (anago, ebi, tamago) estão liberadas.",
@@ -51,10 +66,23 @@
       "area": "Tóquio · Ginza",
       "genre_pt": "Sushi",
       "price_pt": "¥50.000–59.999 (almoço e jantar)",
-      "tabelog": { "score": 4.59, "reviews": 1083, "url": "https://tabelog.com/tokyo/A1301/A130101/13188186/", "awards": "Award Gold 2017, 2020–2026; Silver 2018–19; 百名店 Sushi TOKYO 2022, 2025" },
+      "tabelog": {
+        "score": 4.59,
+        "reviews": 1083,
+        "url": "https://tabelog.com/tokyo/A1301/A130101/13188186/",
+        "awards": "Award Gold 2017, 2020–2026; Silver 2018–19; 百名店 Sushi TOKYO 2022, 2025"
+      },
       "critics": [
-        { "who": "@migrationology", "note_pt": "Mark Wiens fechou o balcão inteiro no tour da Hungry Tourist.", "url": "https://www.youtube.com/watch?v=Cm2dczXpBG0" },
-        { "who": "@we.are.hungry.tourists", "note_pt": "Uma das paradas centrais do “Tokyo Super Tour”.", "url": "https://www.thehungrytourist.com/tours/best-of-tokyo" }
+        {
+          "who": "@migrationology",
+          "note_pt": "Mark Wiens fechou o balcão inteiro no tour da Hungry Tourist.",
+          "url": "https://www.youtube.com/watch?v=Cm2dczXpBG0"
+        },
+        {
+          "who": "@we.are.hungry.tourists",
+          "note_pt": "Uma das paradas centrais do “Tokyo Super Tour”.",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        }
       ],
       "why_pt": "O sushi mais bem avaliado em que seis pessoas entram juntas. Arroz de personalidade forte, e o atum é o ponto alto. Se for fazer uma única noite de ¥50k, é aqui.",
       "order_pt": "Omakase. Os cortes de atum são a assinatura; kohada e anago mostram a técnica.",
@@ -70,7 +98,12 @@
       "area": "Tóquio · Ningyōchō",
       "genre_pt": "Sukiyaki / shabu-shabu",
       "price_pt": "Jantar ¥10.000–14.999 · almoço ¥5.000–5.999",
-      "tabelog": { "score": 3.68, "reviews": 1539, "url": "https://tabelog.com/tokyo/A1302/A130204/13003059/", "awards": "百名店 Hot Pot 2024" },
+      "tabelog": {
+        "score": 3.68,
+        "reviews": 1539,
+        "url": "https://tabelog.com/tokyo/A1302/A130204/13003059/",
+        "awards": "百名店 Hot Pot 2024"
+      },
       "why_pt": "O sukiyaki de família, com a nakai-san preparando a panela na sala. Confiável, aberto todo dia, e o almoço sai pela metade do preço.",
       "order_pt": "Sukiyaki de wagyu; ou o shabu-shabu para quem quer mais leve. Almoço é o melhor custo.",
       "pregnancy_pt": "Sukiyaki se mergulha em ovo cru: peça 「生卵なしで」 (sem ovo cru) e a carne dela mais cozida. O shabu-shabu evita o problema.",
@@ -85,10 +118,23 @@
       "area": "Tóquio · Tsukiji / Ginza 8-chōme",
       "genre_pt": "Soba",
       "price_pt": "Jantar ¥6.000–7.999 · almoço ¥1.000–1.999",
-      "tabelog": { "score": 3.73, "reviews": 787, "url": "https://tabelog.com/tokyo/A1313/A131301/13023064/", "awards": "百名店 EAST 2024, 2025" },
+      "tabelog": {
+        "score": 3.73,
+        "reviews": 787,
+        "url": "https://tabelog.com/tokyo/A1313/A131301/13023064/",
+        "awards": "百名店 EAST 2024, 2025"
+      },
       "critics": [
-        { "who": "@migrationology", "note_pt": "Mark Wiens escreveu sobre o seiro de jūwari e o tempurá.", "url": "https://migrationology.com/narutomi-soba-restaurant-tokyo/" },
-        { "who": "@migrationology", "note_pt": "Vídeo da visita.", "url": "https://www.youtube.com/watch?v=nw1whY-8NbY" }
+        {
+          "who": "@migrationology",
+          "note_pt": "Mark Wiens escreveu sobre o seiro de jūwari e o tempurá.",
+          "url": "https://migrationology.com/narutomi-soba-restaurant-tokyo/"
+        },
+        {
+          "who": "@migrationology",
+          "note_pt": "Vídeo da visita.",
+          "url": "https://www.youtube.com/watch?v=nw1whY-8NbY"
+        }
       ],
       "why_pt": "Jūwari (100% trigo-sarraceno) de precisão rara, e uma mesa que cabe a família inteira.",
       "order_pt": "Seiro de jūwari; tempurá; à noite, petiscos com saquê antes do soba.",
@@ -104,9 +150,18 @@
       "area": "Tóquio · Shirokane",
       "genre_pt": "Yakiniku / wagyu",
       "price_pt": "Jantar ¥10.000–14.999 · almoço de fim de semana ¥4.000–4.999",
-      "tabelog": { "score": 3.73, "reviews": 1634, "url": "https://tabelog.com/tokyo/A1316/A131602/13026377/", "awards": "Award Bronze 2017–19; 百名店 2023, 2025" },
+      "tabelog": {
+        "score": 3.73,
+        "reviews": 1634,
+        "url": "https://tabelog.com/tokyo/A1316/A131602/13026377/",
+        "awards": "Award Bronze 2017–19; 百名店 2023, 2025"
+      },
       "critics": [
-        { "who": "@we.are.hungry.tourists", "note_pt": "“From the one and only Yakiniku Jumbo!” — parada fixa dos tours de Tóquio (posts de set. e out. 2024).", "url": "https://www.thehungrytourist.com/tours/best-of-tokyo" }
+        {
+          "who": "@we.are.hungry.tourists",
+          "note_pt": "“From the one and only Yakiniku Jumbo!” — parada fixa dos tours de Tóquio (posts de set. e out. 2024).",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        }
       ],
       "why_pt": "O yakiniku famoso que se reserva sem drama para um grupo. Wagyu cortado com cuidado e salas fechadas.",
       "order_pt": "O arroz cozido no caldo e na gordura do wagyu, coberto de cubos grelhados; os cortes de wagyu da casa.",
@@ -122,7 +177,12 @@
       "area": "Tóquio · Asakusa",
       "genre_pt": "Sushi",
       "price_pt": "Faixa do Tabelog ¥3.000–3.999 (parece baixa; confirmar)",
-      "tabelog": { "score": 3.69, "reviews": 440, "url": "https://tabelog.com/tokyo/A1311/A131102/13016811/", "awards": "百名店 2021, 2025" },
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 440,
+        "url": "https://tabelog.com/tokyo/A1311/A131102/13016811/",
+        "awards": "百名店 2021, 2025"
+      },
       "why_pt": "Sushi-ya antigo de Asakusa com espaço de verdade: balcão, mesas e tatame. A noite de sushi sem estresse para a família toda.",
       "order_pt": "Nigiri da casa; peça um prato de peças cozidas para ela.",
       "pregnancy_pt": "Regras padrão de sushi: sem marisco cru, pouco atum; anago, ebi e tamago liberados.",
@@ -137,7 +197,12 @@
       "area": "Tóquio · Ginza (GINZA SIX)",
       "genre_pt": "Tempurá",
       "price_pt": "Jantar ¥20.000–29.999 · almoço ¥15.000–19.999",
-      "tabelog": { "score": 3.68, "reviews": 314, "url": "https://tabelog.com/tokyo/A1301/A130101/13207702/", "awards": "百名店 2023, 2025" },
+      "tabelog": {
+        "score": 3.68,
+        "reviews": 314,
+        "url": "https://tabelog.com/tokyo/A1301/A130101/13207702/",
+        "awards": "百名店 2023, 2025"
+      },
       "why_pt": "Da linhagem do tempurá do Hilltop Hotel. O tempurá que dá para reservar em cima da hora para 6.",
       "order_pt": "Curso de tempurá; o tencha no final.",
       "pregnancy_pt": "Tudo cozido: tranquilo.",
@@ -152,7 +217,11 @@
       "area": "Tóquio · Ginza",
       "genre_pt": "Oden",
       "price_pt": "¥8.000–9.999",
-      "tabelog": { "score": 3.58, "reviews": 471, "url": "https://tabelog.com/en/tokyo/A1301/A130101/13002703/" },
+      "tabelog": {
+        "score": 3.58,
+        "reviews": 471,
+        "url": "https://tabelog.com/en/tokyo/A1301/A130101/13002703/"
+      },
       "why_pt": "Oden de Ginza numa sala fechada: o prato de inverno de Tóquio, e serve nas duas janelas da viagem.",
       "order_pt": "Daikon, ovo, chikuwabu, gyūsuji e o que estiver na panela; saquê quente para os outros.",
       "pregnancy_pt": "Tudo cozido: tranquilo.",
@@ -167,7 +236,12 @@
       "area": "Tóquio · Kyōbashi",
       "genre_pt": "Yakitori",
       "price_pt": "Jantar ¥10.000–14.999 · almoço ¥2.000–2.999",
-      "tabelog": { "score": 3.68, "reviews": 1275, "url": "https://tabelog.com/tokyo/A1302/A130202/13251802/", "awards": "百名店 EAST 2024, 2025" },
+      "tabelog": {
+        "score": 3.68,
+        "reviews": 1275,
+        "url": "https://tabelog.com/tokyo/A1302/A130202/13251802/",
+        "awards": "百名店 EAST 2024, 2025"
+      },
       "why_pt": "Yakitori à moda antiga de Kyōbashi que recebe seis sem ginástica de balcão. O almoço é uma barganha.",
       "order_pt": "O curso de espetinhos; no almoço, o yakitori-don.",
       "pregnancy_pt": "Peça tudo bem passado (「よく焼きで」). Evite sasami mal passado, fígado e tsukune com gema crua.",
@@ -182,7 +256,12 @@
       "area": "Tóquio · Shikahama (Adachi, extremo norte)",
       "genre_pt": "Yakiniku / horumon",
       "price_pt": "¥6.000–7.999",
-      "tabelog": { "score": 4.27, "reviews": 2745, "url": "https://tabelog.com/tokyo/A1323/A132305/13003777/", "awards": "Award Silver 2017, Gold 2018, Silver 2019–2026; 百名店 2023, 2025" },
+      "tabelog": {
+        "score": 4.27,
+        "reviews": 2745,
+        "url": "https://tabelog.com/tokyo/A1323/A132305/13003777/",
+        "awards": "Award Silver 2017, Gold 2018, Silver 2019–2026; 百名店 2023, 2025"
+      },
       "why_pt": "O yakiniku mais premiado do Tabelog, num bairro residencial onde quem faz fila é japonês. O exemplo mais puro de “local conhece, turista não”.",
       "order_pt": "Horumon (miúdos) e os cortes da casa; o kalbi.",
       "pregnancy_pt": "Grelhe a carne dela até o fim; nada cru ou tataki.",
@@ -197,9 +276,18 @@
       "area": "Tóquio · Minami-Senju",
       "genre_pt": "Enguia (unagi)",
       "price_pt": "¥10.000–14.999 · almoço ¥8.000–9.999",
-      "tabelog": { "score": 3.77, "reviews": 1599, "url": "https://tabelog.com/tokyo/A1324/A132401/13003509/", "awards": "Award Bronze 2017–2020; 百名店 2024, 2026" },
+      "tabelog": {
+        "score": 3.77,
+        "reviews": 1599,
+        "url": "https://tabelog.com/tokyo/A1324/A132401/13003509/",
+        "awards": "Award Bronze 2017–2020; 百名店 2024, 2026"
+      },
       "critics": [
-        { "who": "@migrationology", "note_pt": "Mark Wiens: a enguia “mais amanteigada” que já comeu.", "url": "https://www.youtube.com/watch?v=N26pjkM_z4A" }
+        {
+          "who": "@migrationology",
+          "note_pt": "Mark Wiens: a enguia “mais amanteigada” que já comeu.",
+          "url": "https://www.youtube.com/watch?v=N26pjkM_z4A"
+        }
       ],
       "why_pt": "A velha casa de unagi de Kantō pela qual os locais fazem fila. Combine com o Maruchiba logo depois.",
       "order_pt": "Unajū (enguia grelhada no laquê sobre arroz); shirayaki para comparar.",
@@ -215,7 +303,12 @@
       "area": "Tóquio · Edogawabashi",
       "genre_pt": "Enguia (unagi)",
       "price_pt": "Preço não informado no Tabelog",
-      "tabelog": { "score": 3.76, "reviews": 690, "url": "https://tabelog.com/tokyo/A1309/A130905/13003531/", "awards": "Award Bronze 2017–2020; 百名店 2024, 2026" },
+      "tabelog": {
+        "score": 3.76,
+        "reviews": 690,
+        "url": "https://tabelog.com/tokyo/A1309/A130905/13003531/",
+        "awards": "Award Bronze 2017–2020; 百名店 2024, 2026"
+      },
       "why_pt": "Unagi de primeiro time que aceita reserva e tem sala. A alternativa ao Obana sem fila.",
       "order_pt": "Unajū.",
       "pregnancy_pt": "Enguia cozida está ok; pule o fígado (kimo).",
@@ -230,9 +323,18 @@
       "area": "Tóquio · Kagurazaka",
       "genre_pt": "Kaiseki",
       "price_pt": "¥50.000–59.999",
-      "tabelog": { "score": 4.41, "reviews": 738, "url": "https://tabelog.com/tokyo/A1309/A130905/13004079/", "awards": "Award Silver 2017–2026; 百名店 2023, 2025" },
+      "tabelog": {
+        "score": 4.41,
+        "reviews": 738,
+        "url": "https://tabelog.com/tokyo/A1309/A130905/13004079/",
+        "awards": "Award Silver 2017–2026; 百名店 2023, 2025"
+      },
       "critics": [
-        { "who": "@we.are.hungry.tourists", "note_pt": "Na lista do “nível que buscamos” (não é parada confirmada).", "url": "https://www.thehungrytourist.com/tours/best-of-tokyo" }
+        {
+          "who": "@we.are.hungry.tourists",
+          "note_pt": "Na lista do “nível que buscamos” (não é parada confirmada).",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        }
       ],
       "why_pt": "Se a família fizer um único kaiseki em Tóquio, esta é a referência: dez Silver seguidos.",
       "order_pt": "O curso único, guiado pela estação.",
@@ -248,7 +350,12 @@
       "area": "Tóquio · Akasaka",
       "genre_pt": "Kaiseki",
       "price_pt": "Jantar ¥20.000–29.999 · almoço ¥15.000–19.999",
-      "tabelog": { "score": 3.86, "reviews": 595, "url": "https://tabelog.com/tokyo/A1308/A130801/13002514/", "awards": "Award Bronze 2017–23, 2025–26; 百名店 2023, 2025" },
+      "tabelog": {
+        "score": 3.86,
+        "reviews": 595,
+        "url": "https://tabelog.com/tokyo/A1308/A130801/13002514/",
+        "awards": "Award Bronze 2017–23, 2025–26; 百名店 2023, 2025"
+      },
       "why_pt": "A filial em Tóquio da casa de Kyoto. Kaiseki de verdade pela metade do preço do Ishikawa.",
       "order_pt": "O curso de almoço é a melhor entrada.",
       "pregnancy_pt": "Avise ao reservar; peça trocas cozidas para sashimi e marisco.",
@@ -263,9 +370,18 @@
       "area": "Tóquio · Minami-Azabu (Hiroo)",
       "genre_pt": "Chinesa",
       "price_pt": "¥50.000–59.999",
-      "tabelog": { "score": 4.59, "reviews": 922, "url": "https://tabelog.com/tokyo/A1307/A130703/13205298/", "awards": "Award Gold 2018–19, 2021–26; Silver 2020; 百名店 2024, 2026" },
+      "tabelog": {
+        "score": 4.59,
+        "reviews": 922,
+        "url": "https://tabelog.com/tokyo/A1307/A130703/13205298/",
+        "awards": "Award Gold 2018–19, 2021–26; Silver 2020; 百名店 2024, 2026"
+      },
       "critics": [
-        { "who": "@little_meg_siu_meg", "note_pt": "Elogiou o morango marinado entre pratos e o dango de batata-doce.", "url": "https://www.instagram.com/p/C8Zl2FkJywR/" }
+        {
+          "who": "@little_meg_siu_meg",
+          "note_pt": "Elogiou o morango marinado entre pratos e o dango de batata-doce.",
+          "url": "https://www.instagram.com/p/C8Zl2FkJywR/"
+        }
       ],
       "why_pt": "Cozinha chinesa vista por lentes japonesas, e a maior nota do gênero no Tabelog. Chá no lugar do vinho.",
       "order_pt": "Curso único, com harmonização de chás.",
@@ -281,9 +397,18 @@
       "area": "Tóquio · Nishi-Azabu / Roppongi",
       "genre_pt": "Kaiseki",
       "price_pt": "¥50.000–59.999",
-      "tabelog": { "score": 4.46, "reviews": 332, "url": "https://tabelog.com/tokyo/A1307/A130701/13270958/", "awards": "Award Silver 2025, 2026; 百名店 2023, 2025" },
+      "tabelog": {
+        "score": 4.46,
+        "reviews": 332,
+        "url": "https://tabelog.com/tokyo/A1307/A130701/13270958/",
+        "awards": "Award Silver 2025, 2026; 百名店 2023, 2025"
+      },
       "critics": [
-        { "who": "@little_meg_siu_meg", "note_pt": "Elogiou o shiraae de tomate e fava e o karasumi caseiro com milho.", "url": "https://www.instagram.com/p/C8Zl2FkJywR/" }
+        {
+          "who": "@little_meg_siu_meg",
+          "note_pt": "Elogiou o shiraae de tomate e fava e o karasumi caseiro com milho.",
+          "url": "https://www.instagram.com/p/C8Zl2FkJywR/"
+        }
       ],
       "why_pt": "A alternativa ao Ishikawa, com o aval de alguém da sua lista. Mais jovem, mais pessoal.",
       "order_pt": "Curso único da estação.",
@@ -299,7 +424,12 @@
       "area": "Tóquio · Hirakawachō",
       "genre_pt": "Chinesa (Sichuan)",
       "price_pt": "Jantar ¥10.000–14.999 · almoço ¥1.000–1.999",
-      "tabelog": { "score": 3.74, "reviews": 1798, "url": "https://tabelog.com/tokyo/A1308/A130803/13000434/", "awards": "百名店 2024, 2026" },
+      "tabelog": {
+        "score": 3.74,
+        "reviews": 1798,
+        "url": "https://tabelog.com/tokyo/A1308/A130803/13000434/",
+        "awards": "百名店 2024, 2026"
+      },
       "why_pt": "A casa da família Chen, que popularizou o mapo tofu no Japão. Chūka na fonte, com sala para o grupo.",
       "order_pt": "Mapo tofu, ebi-chili, tantanmen.",
       "pregnancy_pt": "Tranquilo.",
@@ -314,7 +444,12 @@
       "area": "Tóquio · Ueno-Hirokōji",
       "genre_pt": "Katsuretsu / yōshoku",
       "price_pt": "Preço não informado no Tabelog",
-      "tabelog": { "score": 3.77, "reviews": 2064, "url": "https://tabelog.com/tokyo/A1311/A131101/13003587/", "awards": "百名店 2023, 2025" },
+      "tabelog": {
+        "score": 3.77,
+        "reviews": 2064,
+        "url": "https://tabelog.com/tokyo/A1311/A131101/13003587/",
+        "awards": "百名店 2023, 2025"
+      },
       "why_pt": "O “katsuretsu” original, frito devagar na banha. Perfeito depois dos museus de Ueno.",
       "order_pt": "Katsuretsu; o creme de camarão em estação.",
       "pregnancy_pt": "Tranquilo.",
@@ -329,9 +464,18 @@
       "area": "Tóquio · Meguro",
       "genre_pt": "Tonkatsu",
       "price_pt": "¥2.000–2.999",
-      "tabelog": { "score": 3.51, "reviews": 2306, "url": "https://tabelog.com/tokyo/A1316/A131601/13002040/", "awards": "百名店 2019, 2021" },
+      "tabelog": {
+        "score": 3.51,
+        "reviews": 2306,
+        "url": "https://tabelog.com/tokyo/A1316/A131601/13002040/",
+        "awards": "百名店 2019, 2021"
+      },
       "critics": [
-        { "who": "@migrationology", "note_pt": "“Pelo estilo e pelo ambiente, eu realmente amei o Tonki.”", "url": "https://www.youtube.com/watch?v=kYPus4Dq4V0" }
+        {
+          "who": "@migrationology",
+          "note_pt": "“Pelo estilo e pelo ambiente, eu realmente amei o Tonki.”",
+          "url": "https://www.youtube.com/watch?v=kYPus4Dq4V0"
+        }
       ],
       "why_pt": "O teatro da linha de cozinheiros de jaleco branco cortando e fritando, e uma reserva fácil para 6.",
       "order_pt": "Rosu katsu teishoku, com repetição de repolho e missoshiru.",
@@ -347,7 +491,12 @@
       "area": "Tóquio · Kyōbashi",
       "genre_pt": "Tempurá",
       "price_pt": "Jantar ¥20.000–29.999 · almoço ¥10.000–14.999",
-      "tabelog": { "score": 4.02, "reviews": 1029, "url": "https://tabelog.com/tokyo/A1302/A130202/13004105/", "awards": "Award Bronze 2017–18, 2021–26; Silver 2019–20; 百名店 2023, 2025" },
+      "tabelog": {
+        "score": 4.02,
+        "reviews": 1029,
+        "url": "https://tabelog.com/tokyo/A1302/A130202/13004105/",
+        "awards": "Award Bronze 2017–18, 2021–26; Silver 2019–20; 百名店 2023, 2025"
+      },
       "why_pt": "Prêmio todo ano desde 2017. O almoço pela metade do preço do jantar é uma das melhores relações custo-qualidade de alto nível em Tóquio.",
       "order_pt": "Curso de almoço.",
       "pregnancy_pt": "Tranquilo.",
@@ -361,9 +510,18 @@
       "name_ja": "てんぷら 近藤",
       "area": "Tóquio · Ginza",
       "genre_pt": "Tempurá",
-      "tabelog": { "score": 4.02, "reviews": 1203, "url": "https://tabelog.com/tokyo/A1301/A130101/13004993/", "awards": "Award Bronze 2018–20, 2025–26; 百名店 2022, 2023, 2025" },
+      "tabelog": {
+        "score": 4.02,
+        "reviews": 1203,
+        "url": "https://tabelog.com/tokyo/A1301/A130101/13004993/",
+        "awards": "Award Bronze 2018–20, 2025–26; 百名店 2022, 2023, 2025"
+      },
       "critics": [
-        { "who": "@we.are.hungry.tourists", "note_pt": "Na lista do “nível que buscamos” para tempurá.", "url": "https://www.thehungrytourist.com/tours/best-of-tokyo" }
+        {
+          "who": "@we.are.hungry.tourists",
+          "note_pt": "Na lista do “nível que buscamos” para tempurá.",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        }
       ],
       "why_pt": "Já estava na lista da família, e o Tabelog confirma. Famoso pelos legumes: batata-doce e cenoura em fios.",
       "order_pt": "Curso com os legumes da casa.",
@@ -378,7 +536,12 @@
       "area": "Tóquio · Ningyōchō",
       "genre_pt": "Sukiyaki",
       "price_pt": "Jantar ¥20.000–29.999 · almoço ¥15.000–19.999",
-      "tabelog": { "score": 3.70, "reviews": 598, "url": "https://tabelog.com/tokyo/A1302/A130204/13003043/", "awards": "百名店 Hot Pot 2024" },
+      "tabelog": {
+        "score": 3.7,
+        "reviews": 598,
+        "url": "https://tabelog.com/tokyo/A1302/A130204/13003043/",
+        "awards": "百名店 Hot Pot 2024"
+      },
       "why_pt": "O sukiyaki do próprio açougue, numa sala fechada. Um degrau acima do Imahan na carne.",
       "order_pt": "Sukiyaki de wagyu.",
       "pregnancy_pt": "Peça 「生卵なしで」 (sem ovo cru) e a carne dela mais cozida.",
@@ -393,10 +556,23 @@
       "area": "Tóquio · Ichigaya",
       "genre_pt": "Yakiniku / wagyu",
       "price_pt": "¥30.000–39.999",
-      "tabelog": { "score": 3.88, "reviews": 773, "url": "https://tabelog.com/tokyo/A1309/A130904/13175110/", "awards": "Award Silver 2017, Bronze 2018–2026; 百名店 2023, 2025" },
+      "tabelog": {
+        "score": 3.88,
+        "reviews": 773,
+        "url": "https://tabelog.com/tokyo/A1309/A130904/13175110/",
+        "awards": "Award Silver 2017, Bronze 2018–2026; 百名店 2023, 2025"
+      },
       "critics": [
-        { "who": "@migrationology", "note_pt": "Mark Wiens: sua 8ª melhor refeição de 2017 (o katsu-sando de wagyu).", "url": "https://www.youtube.com/watch?v=FonKlmYXUPo" },
-        { "who": "@migrationology", "note_pt": "Lista dos melhores de 2017.", "url": "https://migrationology.com/best-food-travel-2017/" }
+        {
+          "who": "@migrationology",
+          "note_pt": "Mark Wiens: sua 8ª melhor refeição de 2017 (o katsu-sando de wagyu).",
+          "url": "https://www.youtube.com/watch?v=FonKlmYXUPo"
+        },
+        {
+          "who": "@migrationology",
+          "note_pt": "Lista dos melhores de 2017.",
+          "url": "https://migrationology.com/best-food-travel-2017/"
+        }
       ],
       "why_pt": "O yakiniku de luxo, em que o trabalho de açougueiro é o próprio menu.",
       "order_pt": "O curso; o katsu-sando de wagyu.",
@@ -412,7 +588,12 @@
       "area": "Tóquio · Higashi-Ginza",
       "genre_pt": "Lámen",
       "price_pt": "¥1.000–1.999",
-      "tabelog": { "score": 3.93, "reviews": 2541, "url": "https://tabelog.com/tokyo/A1301/A130101/13228602/", "awards": "百名店 2024, 2025" },
+      "tabelog": {
+        "score": 3.93,
+        "reviews": 2541,
+        "url": "https://tabelog.com/tokyo/A1301/A130101/13228602/",
+        "awards": "百名店 2024, 2025"
+      },
       "why_pt": "Uma das maiores notas de lámen em Tóquio: chūka-soba límpido de um ex-chef de cozinha francesa, num salão de seis lugares que dá para reservar.",
       "order_pt": "Chūka-soba (o caldo claro é o ponto).",
       "pregnancy_pt": "Pergunte se o chāshū é rosado; pule ovo mole.",
@@ -427,7 +608,12 @@
       "area": "Tóquio · Kanda-Sudachō (Awajichō)",
       "genre_pt": "Soba",
       "price_pt": "¥1.000–1.999",
-      "tabelog": { "score": 3.66, "reviews": 3216, "url": "https://tabelog.com/tokyo/A1310/A131002/13000340/", "awards": "百名店 2021, EAST 2024" },
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 3216,
+        "url": "https://tabelog.com/tokyo/A1310/A131002/13000340/",
+        "awards": "百名店 2021, EAST 2024"
+      },
       "why_pt": "A casa de soba da era Meiji com a cultura de saquê e soba intacta. O Takemura (doces) fica ao lado.",
       "order_pt": "Seiro, nameko-oroshi, kamonanban; um saquê com petisco antes.",
       "pregnancy_pt": "Tranquilo; pule opções tsukimi (ovo cru).",
@@ -442,7 +628,12 @@
       "area": "Tóquio · Estação de Tóquio",
       "genre_pt": "Okonomiyaki",
       "price_pt": "Jantar ¥3.000–3.999 · almoço ¥1.000–1.999",
-      "tabelog": { "score": 3.65, "reviews": 2641, "url": "https://tabelog.com/tokyo/A1302/A130201/13020110/", "awards": "百名店 2024, 2025" },
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 2641,
+        "url": "https://tabelog.com/tokyo/A1302/A130201/13020110/",
+        "awards": "百名店 2024, 2025"
+      },
       "why_pt": "Okonomiyaki de Osaka colado no shinkansen. Bom para dia de chegada ou de partida.",
       "order_pt": "Sujiyaki (com tendão e cebolinha); mix-yaki.",
       "pregnancy_pt": "Tudo cozido: tranquilo.",
@@ -457,7 +648,11 @@
       "area": "Tóquio · Tsukishima",
       "genre_pt": "Monjayaki",
       "price_pt": "¥2.000–2.999",
-      "tabelog": { "score": 3.49, "reviews": 1134, "url": "https://tabelog.com/en/tokyo/A1313/A131302/13012771/" },
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 1134,
+        "url": "https://tabelog.com/en/tokyo/A1313/A131302/13012771/"
+      },
       "why_pt": "A casa de referência do monja, prato que só existe em Tóquio. Notas de monja são baixas no Tabelog, e esta está entre as mais altas de Tsukishima. Combine com o Kishidaya.",
       "order_pt": "Monja de mentaiko com mochi e queijo; um okonomiyaki para dividir.",
       "pregnancy_pt": "Cozido na chapa: tranquilo (mentaiko cozido está ok).",
@@ -472,7 +667,11 @@
       "area": "Tóquio · Asakusa (Senzoku)",
       "genre_pt": "Oden",
       "price_pt": "¥5.000–5.999",
-      "tabelog": { "score": 3.52, "reviews": 763, "url": "https://tabelog.com/en/tokyo/A1311/A131102/13003741/" },
+      "tabelog": {
+        "score": 3.52,
+        "reviews": 763,
+        "url": "https://tabelog.com/en/tokyo/A1311/A131102/13003741/"
+      },
       "why_pt": "Balcão de oden centenário, no estilo de Kantō. Inverno em estado puro.",
       "order_pt": "Daikon, ovo, tofu, sujinikomi; deixe o itamae escolher.",
       "pregnancy_pt": "Tranquilo.",
@@ -487,7 +686,12 @@
       "area": "Tóquio · Nihonzutsumi (Minami-Senju)",
       "genre_pt": "Izakaya",
       "price_pt": "¥4.000–4.999",
-      "tabelog": { "score": 3.64, "reviews": 661, "url": "https://tabelog.com/tokyo/A1324/A132401/13050828/", "awards": "百名店 izakaya EAST 2025, 2026" },
+      "tabelog": {
+        "score": 3.64,
+        "reviews": 661,
+        "url": "https://tabelog.com/tokyo/A1324/A132401/13050828/",
+        "awards": "百名店 izakaya EAST 2025, 2026"
+      },
       "why_pt": "O izakaya shitamachi mais caloroso da lista, e abre cedo o bastante para emendar depois do almoço no Obana.",
       "order_pt": "Pratos cozidos do quadro do dia; nikomi; frituras.",
       "pregnancy_pt": "Fique nos pratos cozidos.",
@@ -502,7 +706,12 @@
       "area": "Tóquio · Tsukishima",
       "genre_pt": "Izakaya",
       "price_pt": "¥3.000–3.999",
-      "tabelog": { "score": 3.71, "reviews": 1459, "url": "https://tabelog.com/tokyo/A1313/A131302/13002239/", "awards": "百名店 izakaya EAST 2025, 2026" },
+      "tabelog": {
+        "score": 3.71,
+        "reviews": 1459,
+        "url": "https://tabelog.com/tokyo/A1313/A131302/13002239/",
+        "awards": "百名店 izakaya EAST 2025, 2026"
+      },
       "why_pt": "Um dos “três grandes” izakaya de nikomi da velha Tóquio. Público todo local.",
       "order_pt": "Nikomi (cozido de carne), o prato da casa.",
       "pregnancy_pt": "Nikomi e pratos cozidos ok; pule sashimi de marisco.",
@@ -517,7 +726,12 @@
       "area": "Tóquio · Kanda-Ogawamachi",
       "genre_pt": "Tonkatsu / yōshoku",
       "price_pt": "¥2.000–2.999",
-      "tabelog": { "score": 3.69, "reviews": 2227, "url": "https://tabelog.com/tokyo/A1310/A131002/13141456/", "awards": "百名店 2024, 2026" },
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 2227,
+        "url": "https://tabelog.com/tokyo/A1310/A131002/13141456/",
+        "awards": "百名店 2024, 2026"
+      },
       "why_pt": "O tonkatsu clássico de Kanda por um quinto do preço do Narikura.",
       "order_pt": "Rosu katsu; o especial do dia.",
       "pregnancy_pt": "Tranquilo; peça bem passado.",
@@ -531,7 +745,12 @@
       "area": "Tóquio · Hanzōmon (Ichibanchō)",
       "genre_pt": "Sushi",
       "price_pt": "¥40.000–49.999",
-      "tabelog": { "score": 4.27, "reviews": 342, "url": "https://tabelog.com/tokyo/A1308/A130803/13220742/", "awards": "Award Bronze 2023–2026; 百名店 2021, 2022, 2025" },
+      "tabelog": {
+        "score": 4.27,
+        "reviews": 342,
+        "url": "https://tabelog.com/tokyo/A1308/A130803/13220742/",
+        "awards": "Award Bronze 2023–2026; 百名店 2021, 2022, 2025"
+      },
       "why_pt": "Já estava na lista da família (fica em Hanzōmon, não em Roppongi). Dois chefs, oito lugares, precisão total. O plano B se o Arai lotar.",
       "order_pt": "Omakase.",
       "pregnancy_pt": "Como no Arai: sem marisco cru, pouco atum, peças cozidas e curadas.",
@@ -546,7 +765,12 @@
       "area": "Tóquio · Negishi (Uguisudani)",
       "genre_pt": "Yōshoku",
       "price_pt": "Jantar ¥8.000–9.999 · almoço ¥4.000–4.999",
-      "tabelog": { "score": 3.82, "reviews": 1073, "url": "https://tabelog.com/tokyo/A1311/A131104/13003752/", "awards": "百名店 2023, EAST 2025" },
+      "tabelog": {
+        "score": 3.82,
+        "reviews": 1073,
+        "url": "https://tabelog.com/tokyo/A1311/A131104/13003752/",
+        "awards": "百名店 2023, EAST 2025"
+      },
       "why_pt": "Yōshoku shitamachi no seu ponto mais polido: a cozinha “ocidental” do Japão feita como alta cozinha.",
       "order_pt": "Menchi-katsu, hambāgu, omurice.",
       "pregnancy_pt": "Menchi-katsu e hambāgu ok. O omurice pode vir mole por dentro: pergunte.",
@@ -556,38 +780,17 @@
       "query": "Restaurant Kamiya Negishi Tokyo"
     },
     {
-      "name": "Kanemasu",
-      "name_ja": "かねます",
-      "area": "Tóquio · Kachidoki",
-      "genre_pt": "Bar de pé (tachinomi)",
-      "tabelog": { "score": 3.74, "reviews": 837, "url": "https://tabelog.com/tokyo/A1313/A131302/13002243/", "awards": "百名店 izakaya 2021, tachinomi 2025" },
-      "why_pt": "O balcão de pé onde os chefs de Tóquio vão beber.",
-      "order_pt": "Os pratos cozidos do dia.",
-      "pregnancy_pt": "Famoso por frutos do mar crus fartos: ela fica nos pratos cozidos.",
-      "group_pt": "De pé, ~10–20 pessoas: chegue na abertura (13:00 em dia de semana).",
-      "booking_pt": "Sem reserva.",
-      "dec_jan_pt": "Seg/ter/qui/sex 13:00–19:00, sáb 9:30–14:00; fecha qua/dom. 24/12: aberto.",
-      "query": "Kanemasu Kachidoki Tokyo"
-    },
-    {
-      "name": "Ginza Shimada",
-      "name_ja": "銀座 しまだ",
-      "area": "Tóquio · Ginza",
-      "genre_pt": "Bar de pé (tachinomi)",
-      "tabelog": { "score": 3.67, "reviews": 1499, "url": "https://tabelog.com/tokyo/A1301/A130101/13136359/", "awards": "Award Bronze 2017–19; 百名店 tachinomi 2025" },
-      "why_pt": "Já na lista da família: bar de pé com pratos cozidos de nível de restaurante, a preço de bar.",
-      "order_pt": "O quadro de pratos quentes do dia.",
-      "pregnancy_pt": "Prefira os cozidos.",
-      "dec_jan_pt": "Fecha dom/feriados.",
-      "query": "Ginza Shimada tachinomi Tokyo"
-    },
-    {
       "name": "Motenashi Kuroki",
       "name_ja": "饗 くろ㐂",
       "area": "Tóquio · Asakusabashi",
       "genre_pt": "Lámen",
       "price_pt": "¥1.000–1.999",
-      "tabelog": { "score": 3.90, "reviews": 1859, "url": "https://tabelog.com/tokyo/A1311/A131103/13290780/", "awards": "百名店 2024, 2025" },
+      "tabelog": {
+        "score": 3.9,
+        "reviews": 1859,
+        "url": "https://tabelog.com/tokyo/A1311/A131103/13290780/",
+        "awards": "百名店 2024, 2025"
+      },
       "why_pt": "Shio e tigelas com jeito de soba, em nível quase topo do Tabelog.",
       "order_pt": "Shio soba.",
       "pregnancy_pt": "Pergunte se o chāshū é rosado; pule ovo mole.",
@@ -597,38 +800,17 @@
       "query": "Motenashi Kuroki Asakusabashi Tokyo"
     },
     {
-      "name": "Fuunji Shinjuku",
-      "name_ja": "風雲児 新宿本店",
-      "area": "Tóquio · Shinjuku (Yoyogi)",
-      "genre_pt": "Tsukemen / lámen",
-      "tabelog": { "score": 3.76, "reviews": 5422, "url": "https://tabelog.com/tokyo/A1304/A130401/13044091/", "awards": "百名店 Ramen TOKYO 2017–23, 2025" },
-      "why_pt": "Já na lista da família. A loja-mãe é bem melhor que a filial da estação: tsukemen de caldo de frango e peixe espesso.",
-      "order_pt": "Tsukemen.",
-      "pregnancy_pt": "Pule ovo mole; caldo e massa ok.",
-      "group_pt": "15 no balcão: fila, podem separar.",
-      "dec_jan_pt": "Aberto o ano todo.",
-      "query": "Fuunji Shinjuku Honten Tokyo"
-    },
-    {
-      "name": "Udon Shin",
-      "name_ja": "うどん 慎",
-      "area": "Tóquio · Yoyogi / Shinjuku",
-      "genre_pt": "Udon",
-      "tabelog": { "score": 3.68, "reviews": 2702, "url": "https://tabelog.com/tokyo/A1304/A130401/13125862/", "awards": "百名店 Udon 2017–20, EAST 2022/24" },
-      "why_pt": "Já na lista da família (fica em Yoyogi, não em Roppongi). Udon cortado na hora, firme e elástico.",
-      "order_pt": "Udon quente com tempurá.",
-      "pregnancy_pt": "Evite o kama-tama (ovo cru) e o carbonara de ovo; o resto ok.",
-      "booking_pt": "Senha online para a fila.",
-      "dec_jan_pt": "Fecha 30/12–2/1.",
-      "query": "Udon Shin Yoyogi Tokyo"
-    },
-    {
       "name": "Sushi Matsumoto",
       "name_ja": "鮨 まつ本",
       "area": "Tóquio · Itabashi",
       "genre_pt": "Sushi",
       "price_pt": "¥15.000–19.999",
-      "tabelog": { "score": 3.74, "reviews": 377, "url": "https://tabelog.com/tokyo/A1322/A132201/13185463/", "awards": "百名店 2025" },
+      "tabelog": {
+        "score": 3.74,
+        "reviews": 377,
+        "url": "https://tabelog.com/tokyo/A1322/A132201/13185463/",
+        "awards": "百名店 2025"
+      },
       "why_pt": "Balcão de bairro em nível 百名店 por um terço do preço do Arai.",
       "order_pt": "Omakase.",
       "pregnancy_pt": "Regras padrão de sushi.",
@@ -638,26 +820,16 @@
       "query": "Sushi Matsumoto Itabashi Tokyo"
     },
     {
-      "name": "Tachigui Sushi Akira",
-      "name_ja": "立喰い鮨 あきら",
-      "area": "Tóquio · Shimbashi",
-      "genre_pt": "Sushi de pé (tachigui)",
-      "price_pt": "Almoço ¥6.000–7.999 · jantar ¥10.000–14.999",
-      "tabelog": { "score": 3.65, "reviews": 560, "url": "https://tabelog.com/tokyo/A1301/A130103/13256255/" },
-      "why_pt": "Substitui o “Yusho”, que não se achou no Tabelog. Sushi de pé com qualidade mais perto de balcão sentado (a maioria dos tachigui fica em 3,1–3,3).",
-      "order_pt": "Peça por peça, apontando.",
-      "pregnancy_pt": "Ela aponta peças cozidas ou curadas; e ficar de pé com 30 semanas cansa: visita curta.",
-      "group_pt": "7 lugares de pé: chegue às 12:00 ou vá em duas levas de 3.",
-      "booking_pt": "Sem reserva.",
-      "dec_jan_pt": "Fecha às quartas. 24/12: aberto.",
-      "query": "Tachigui Sushi Akira Shimbashi Tokyo"
-    },
-    {
       "name": "Toriyoshi Nakameguro",
       "name_ja": "鳥よし 中目黒本店",
       "area": "Tóquio · Naka-Meguro",
       "genre_pt": "Yakitori",
-      "tabelog": { "score": 3.72, "reviews": 826, "url": "https://tabelog.com/tokyo/A1317/A131701/13003200/", "awards": "百名店 EAST 2024, 2025" },
+      "tabelog": {
+        "score": 3.72,
+        "reviews": 826,
+        "url": "https://tabelog.com/tokyo/A1317/A131701/13003200/",
+        "awards": "百名店 EAST 2024, 2025"
+      },
       "why_pt": "O yakitori de bairro que conversa com os favoritos da família em Naka-Meguro.",
       "order_pt": "Os espetinhos clássicos; o oyako-don é com ovo mole.",
       "pregnancy_pt": "Tudo bem passado (「よく焼きで」); nada de sasami rosado, fígado ou gema crua.",
@@ -667,28 +839,22 @@
       "query": "Toriyoshi Nakameguro Honten Tokyo"
     },
     {
-      "name": "Aramaki",
-      "name_ja": "新まき",
-      "area": "Tóquio · Higashi-Azabu (Akabanebashi)",
-      "genre_pt": "Yakitori",
-      "price_pt": "¥15.000–19.999",
-      "tabelog": { "score": 3.73, "reviews": 181, "url": "https://tabelog.com/tokyo/A1314/A131401/13296718/", "awards": "百名店 EAST 2025 (primeira seleção)" },
-      "why_pt": "O yakitori em formato omakase, novo e ainda fora do radar turístico.",
-      "order_pt": "O curso.",
-      "pregnancy_pt": "Avise ao reservar: tudo bem passado, sem fígado nem gema crua.",
-      "group_pt": "10 lugares: 6 deles, ou pergunte pelo balcão inteiro.",
-      "booking_pt": "Só com reserva.",
-      "dec_jan_pt": "Fecha aos domingos. 24/12: aberto.",
-      "query": "Aramaki yakitori Higashi-Azabu Tokyo"
-    },
-    {
       "name": "Butagumi Nishi-Azabu",
       "name_ja": "西麻布 豚組",
       "area": "Tóquio · Nishi-Azabu",
       "genre_pt": "Tonkatsu",
-      "tabelog": { "score": 3.59, "reviews": 905, "url": "https://tabelog.com/tokyo/A1307/A130701/13004791/", "awards": "百名店 Tonkatsu 2017–19/21/24/26" },
+      "tabelog": {
+        "score": 3.59,
+        "reviews": 905,
+        "url": "https://tabelog.com/tokyo/A1307/A130701/13004791/",
+        "awards": "百名店 Tonkatsu 2017–19/21/24/26"
+      },
       "critics": [
-        { "who": "@migrationology", "note_pt": "O tonkatsu gourmet favorito de Mark Wiens (no mesmo vídeo do Tonki).", "url": "https://www.youtube.com/watch?v=kYPus4Dq4V0" }
+        {
+          "who": "@migrationology",
+          "note_pt": "O tonkatsu gourmet favorito de Mark Wiens (no mesmo vídeo do Tonki).",
+          "url": "https://www.youtube.com/watch?v=kYPus4Dq4V0"
+        }
       ],
       "why_pt": "Já na lista da família: cardápio de porcos por raça, numa casa antiga de Nishi-Azabu.",
       "order_pt": "Compare duas raças de rosu.",
@@ -697,27 +863,17 @@
       "query": "Butagumi Nishi-Azabu Tokyo"
     },
     {
-      "name": "Chūka Soba Tagano",
-      "name_ja": "中華そば 多賀野",
-      "area": "Tóquio · Nakanobu",
-      "genre_pt": "Lámen / tsukemen",
-      "price_pt": "Menos de ¥1.000",
-      "tabelog": { "score": 3.85, "reviews": 2455, "url": "https://tabelog.com/tokyo/A1317/A131712/13003421/", "awards": "百名店 2024, 2025" },
-      "why_pt": "Loja de bairro residencial onde a fila é de moradores, não de turistas.",
-      "order_pt": "Chūka-soba ou tsukemen.",
-      "pregnancy_pt": "Pule ovo mole.",
-      "group_pt": "11 no balcão: dividam.",
-      "booking_pt": "Sem reserva; 11:30–14:30 ou até acabar.",
-      "dec_jan_pt": "Fecha às quartas. 24/12: aberto.",
-      "query": "Chuka Soba Tagano Nakanobu Tokyo"
-    },
-    {
       "name": "Torimeshi Torito Bunten",
       "name_ja": "鳥めし 鳥藤分店",
       "area": "Tóquio · Mercado externo de Tsukiji",
       "genre_pt": "Café da manhã (arroz com frango)",
       "price_pt": "¥1.000–1.999",
-      "tabelog": { "score": 3.54, "reviews": 1357, "url": "https://tabelog.com/tokyo/A1313/A131301/13037973/", "awards": "百名店 toriryōri 2025" },
+      "tabelog": {
+        "score": 3.54,
+        "reviews": 1357,
+        "url": "https://tabelog.com/tokyo/A1313/A131301/13037973/",
+        "awards": "百名店 toriryōri 2025"
+      },
       "why_pt": "O café da manhã de Tsukiji que os locais comem, de um atacadista de frango.",
       "order_pt": "Torimeshi.",
       "pregnancy_pt": "Torimeshi, não oyakodon (o ovo vem meio cru).",
@@ -732,7 +888,11 @@
       "area": "Tóquio · Mercado externo de Tsukiji",
       "genre_pt": "Horumon-don (balcão de mercado)",
       "price_pt": "~¥900–1.000 (preço atual a confirmar)",
-      "tabelog": { "score": 3.49, "reviews": 2744, "url": "https://tabelog.com/en/tokyo/A1313/A131301/13007656/" },
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 2744,
+        "url": "https://tabelog.com/en/tokyo/A1313/A131301/13007656/"
+      },
       "why_pt": "O único prato de Tsukiji que não deve nada ao turismo: miúdos cozidos no missô Hatchō desde 1947, comida de trabalhador do mercado.",
       "order_pt": "Horumon-don; o gyūdon da casa.",
       "pregnancy_pt": "Cozido por horas: tranquilo.",
@@ -747,7 +907,12 @@
       "area": "Tóquio · Yanaka",
       "genre_pt": "Kissaten / café da manhã",
       "price_pt": "~¥1.000–2.000",
-      "tabelog": { "score": 3.75, "reviews": 1540, "url": "https://tabelog.com/tokyo/A1311/A131104/13019585/", "awards": "百名店 Kissaten 2022, 2026" },
+      "tabelog": {
+        "score": 3.75,
+        "reviews": 1540,
+        "url": "https://tabelog.com/tokyo/A1311/A131104/13019585/",
+        "awards": "百名店 Kissaten 2022, 2026"
+      },
       "why_pt": "Kissaten numa machiya antiga: o melhor começo para uma manhã em Yanaka (com Himitsudō e Inamura Shōzō por perto).",
       "order_pt": "Tamago sando; o “ruShian” (café com chocolate).",
       "pregnancy_pt": "O tamago sando é de omelete cozida: ok. Uma xícara de café.",
@@ -755,36 +920,6 @@
       "booking_pt": "Reserva online. Abre 8:00.",
       "dec_jan_pt": "Fecha às segundas. 24/12: aberto.",
       "query": "Kayaba Coffee Yanaka Tokyo"
-    },
-    {
-      "name": "Café de l'Ambre",
-      "name_ja": "カフェ・ド・ランブル",
-      "area": "Tóquio · Ginza 8-chōme",
-      "genre_pt": "Kissaten",
-      "price_pt": "¥1.000–2.999",
-      "tabelog": { "score": 3.77, "reviews": 1312, "url": "https://tabelog.com/tokyo/A1301/A130103/13002564/", "awards": "百名店 Kissaten 2022, 2026" },
-      "why_pt": "“Só café”: grãos envelhecidos por anos, coado em flanela. Instituição de Ginza.",
-      "order_pt": "Blanc et Noir (café gelado com leite condensado, servido em taça).",
-      "pregnancy_pt": "Uma xícara só (cafeína).",
-      "group_pt": "10 no balcão e mesinhas de 2: dividam.",
-      "booking_pt": "Sem reserva.",
-      "dec_jan_pt": "Fecha às segundas. 24/12: aberto.",
-      "query": "Cafe de l'Ambre Ginza Tokyo"
-    },
-    {
-      "name": "Himitsudō",
-      "name_ja": "ひみつ堂",
-      "area": "Tóquio · Yanaka",
-      "genre_pt": "Kakigōri",
-      "price_pt": "¥1.000–2.999",
-      "tabelog": { "score": 3.76, "reviews": 3085, "url": "https://tabelog.com/en/tokyo/A1311/A131106/13126796/", "awards": "百名店 Sweets 2023, 2026" },
-      "why_pt": "O especialista em kakigōri que abre o ano inteiro: gelo natural raspado à mão e xaropes de fruta feitos na casa.",
-      "order_pt": "O sabor de fruta de inverno do dia; morango quando houver.",
-      "pregnancy_pt": "Tranquilo (gelo natural, xaropes cozidos).",
-      "group_pt": "21 lugares.",
-      "booking_pt": "Sem reserva.",
-      "dec_jan_pt": "9:00–18:00 (8:00 no fim de semana) pelo Tabelog; horário de inverno a confirmar.",
-      "query": "Himitsudo kakigori Yanaka Tokyo"
     }
   ],
   "shops": [
@@ -806,28 +941,12 @@
       "query": "Kama-Asa Shoten Kappabashi Tokyo"
     },
     {
-      "name": "Kamata Hakensha",
-      "name_ja": "かまた刃研社",
-      "what_pt": "Kappabashi, desde 1923. Começou como afiador (o que chef japonês mais valoriza), hoje com 800+ facas e gravação na hora.",
-      "buy_pt": "Um gyuto de 18–21 cm ou santoku como primeira faca.",
-      "dec_jan_pt": "10:00–18:00, folgas irregulares. Ano-Novo a confirmar.",
-      "query": "Kamata Hakensha Kappabashi Tokyo"
-    },
-    {
       "name": "Tsubaya",
       "name_ja": "つば屋包丁店",
       "what_pt": "Nishi-Asakusa, desde 1956. 1.000+ facas para pegar na mão fora da caixa, inclusive facas de cortar soba. Afiação deixada de manhã volta no mesmo dia.",
       "buy_pt": "Faca de soba (soba-kiri) para o cozinheiro da família; afiação das facas de casa.",
       "dec_jan_pt": "A confirmar.",
       "query": "Tsubaya Hochoten Nishi-Asakusa Tokyo"
-    },
-    {
-      "name": "Sugimoto Hamono",
-      "name_ja": "杉本刃物",
-      "what_pt": "Faqueiro de Tsukiji (4-10-2), conhecido entre chefs pelos cutelos chineses (reputação não verificada).",
-      "buy_pt": "Cutelo chinês; facas de peixe.",
-      "dec_jan_pt": "Fecha domingos, feriados e folgas do mercado: 23/12 e 31/12–4/1.",
-      "query": "Sugimoto Hamono Tsukiji Tokyo"
     },
     {
       "name": "Ninben + Nihonbashi Dashi Bar",
@@ -905,28 +1024,12 @@
       "query": "Nihonbashi Takashimaya Tokyo"
     },
     {
-      "name": "Daimaru Tokyo (depachika)",
-      "name_ja": "大丸東京店",
-      "what_pt": "O maior depachika colado a uma estação, dentro da Estação de Tóquio (Yaesu). O lugar do bentô antes do shinkansen.",
-      "buy_pt": "Bentô e sozai para o trem.",
-      "dec_jan_pt": "Fecha 1/1; abre 2/1. Em anos anteriores vendia osechi sem reserva em 31/12 (2026 a confirmar).",
-      "query": "Daimaru Tokyo depachika Tokyo Station"
-    },
-    {
       "name": "Kuya",
       "name_ja": "空也",
       "what_pt": "Monaka de Ginza. Tabelog 3,80 (2.294), 百名店 wagashi 2026.",
       "buy_pt": "Kuya monaka.",
       "dec_jan_pt": "Reserva por telefone é considerada necessária (a confirmar).",
       "query": "Kuya monaka Ginza Tokyo"
-    },
-    {
-      "name": "Nihonbashi Nagato",
-      "name_ja": "日本橋 長門",
-      "what_pt": "Wagashi tradicional entre o Mitsukoshi e o Takashimaya. Tabelog 3,81 (1.630), 百名店 wagashi 2026.",
-      "buy_pt": "Doces da estação (itens a confirmar).",
-      "dec_jan_pt": "A confirmar.",
-      "query": "Nihonbashi Nagato wagashi Tokyo"
     },
     {
       "name": "Usagiya",
@@ -938,14 +1041,6 @@
       "query": "Usagiya dorayaki Ueno Tokyo"
     },
     {
-      "name": "Kameju",
-      "name_ja": "亀十",
-      "what_pt": "Dorayaki fofo de Asakusa, com fila. Tabelog 3,79 (4.492).",
-      "buy_pt": "Dorayaki de anko escuro e de shiro-an.",
-      "dec_jan_pt": "A confirmar.",
-      "query": "Kameju dorayaki Asakusa Tokyo"
-    },
-    {
       "name": "Takemura",
       "name_ja": "竹むら",
       "what_pt": "Casa de doces num prédio de madeira pré-guerra, ao lado do Kanda Matsuya e do Kanda Yabu. Tabelog 3,76 (1.680), 百名店 wagashi 2023/2026. Comida de inverno; 44 lugares em mesas, cabe 6.",
@@ -953,14 +1048,6 @@
       "price_pt": "Menos de ¥1.000",
       "dec_jan_pt": "Fecha dom/seg/feriados. 24/12: aberto. Horário de 31/12 a confirmar.",
       "query": "Takemura Kanda Awajicho Tokyo"
-    },
-    {
-      "name": "Oiwake Dango Honpo",
-      "name_ja": "追分だんご本舗",
-      "what_pt": "Casa de dango a 5 minutos do Isetan Shinjuku. Tabelog 3,75 (2.304).",
-      "buy_pt": "Dango variados (mitarashi, anko).",
-      "dec_jan_pt": "A confirmar.",
-      "query": "Oiwake Dango Honpo Shinjuku Tokyo"
     },
     {
       "name": "Inamura Shōzō",
@@ -980,28 +1067,12 @@
       "query": "VIRON Marunouchi Tokyo"
     },
     {
-      "name": "Centre the Bakery",
-      "name_ja": "セントル ザ・ベーカリー",
-      "what_pt": "Especialista em shokupan (pão de forma japonês) em Ginza 1-chōme. Tabelog 3,85 (2.906).",
-      "buy_pt": "Shokupan para torrar no apartamento.",
-      "dec_jan_pt": "A confirmar.",
-      "query": "Centre the Bakery Ginza Tokyo"
-    },
-    {
       "name": "Pelican",
       "name_ja": "パンのペリカン",
       "what_pt": "Padaria de Tawaramachi (Asakusa) que só faz pão de forma e pãezinhos. Tabelog 3,79 (2.330).",
       "buy_pt": "Pão de forma inteiro (confira se precisa reservar por telefone).",
       "dec_jan_pt": "O calendário de fim de ano sai no site deles.",
       "query": "Pelican bakery Tawaramachi Tokyo"
-    },
-    {
-      "name": "Levain Tomigaya",
-      "name_ja": "ルヴァン 富ヶ谷",
-      "what_pt": "Pioneira do pão de fermentação natural em Tóquio, em Yoyogi-Hachiman. Tabelog 3,77 (1.114), 百名店 todo ano desde 2017.",
-      "buy_pt": "Pão de campanha de levain.",
-      "dec_jan_pt": "A confirmar.",
-      "query": "Levain Tomigaya Tokyo"
     },
     {
       "name": "Kanda Yabu Soba (toshikoshi soba)",
