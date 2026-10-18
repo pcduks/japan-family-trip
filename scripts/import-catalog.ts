@@ -681,7 +681,7 @@ const EXTRA_ROWS = `
 | TK-04 | Primeiro nascer do sol na Skytree | Tokyo Skytree first-sunrise opening (1 Jan) | Tokyo | Tokyo | 1 Jan | all | 5 | 1 | indoor | 9000 | 2 | online early Dec; sells out in minutes | event | 4 | tokyo-skytree.jp |
 | TK-05 | Kabuki de Ano-Novo (um ato) | Kabuki-za New Year single-act seat | Tokyo | Tokyo | 2–9 Jan; not 8 Jan | all | 5 | 1 | indoor | 2000 | 1.5 | day before online (makumi) | open from 2 Jan | 4 | kabukiweb.net |
 | TK-06 | teamLab Planets | teamLab Planets Toyosu | Tokyo | Tokyo | all window | all | 4 | 1 | indoor | 4200 | 2 | 3–6 wk timed ticket | open daily; Comiket jams Toyosu 29–31 Dec | 3 | teamlab.art |
-| TK-07 | Primeiro leilão de atum em Toyosu | Toyosu first tuna auction (5 Jan) | Tokyo | Tokyo | 5 Jan | fit four; partner 2F window | 3 / 4 | 2 | indoor | 0 | 2 | deck lottery early Dec; 2F window none | event | 4 | shijou.metro.tokyo.lg.jp |
+| TK-07 | Primeiro leilão de atum em Toyosu | Toyosu first tuna auction (5 Jan) | Tokyo | Tokyo | 5 Jan | fit four; partner 2F window | 3 / 4 | 2 | indoor | 0 | 2 | none (2F glass window only; the deck takes no lottery entries for the first auction) | event | 4 | shijou.metro.tokyo.lg.jp |
 | TK-08 | Museu Ghibli | Ghibli Museum Mitaka | Tokyo | Tokyo | 3–9 Jan | all | 4 | 1 | indoor | 1000 | 2.5 | Jan tickets 10 Dec 10:00 JST | closed 27 Dec–2 Jan | 4 | ghibli-museum.jp |
 | TK-09 | Semana de luzes de Natal em Tokyo | Tokyo Christmas lights week (Marunouchi, Yebisu, Roppongi) | Tokyo | Tokyo | 20–25 Dec | all | 5 | 1 | outdoor | 0 | 2 | none | ends 25 Dec (Marunouchi runs to 14 Feb) | 3 | gotokyo.org |
 | TK-10 | Café da manhã em Tsukiji | Tsukiji outer market breakfast | Tokyo | Tokyo | not 1–3 Jan | all | 4 | 1 | covered | 3000 | 2 | none | closed 1–3 Jan; packed 28–30 Dec | 3 | tsukiji.or.jp |
@@ -843,7 +843,7 @@ const PROMISES: Record<string, string> = {
   "TK-04": "O primeiro sol de 2027 a 350 m, quente e sentado.",
   "TK-05": "Um ato de kabuki de Ano-Novo por ¥1–2 mil, com guia em inglês.",
   "TK-06": "Salas de água e luz descalço; indoor para dia de chuva.",
-  "TK-07": "O primeiro leilão de atum do ano às 5h; a gestante vê do 2º andar.",
+  "TK-07": "O primeiro leilão de atum do ano às 5h, visto da janela de vidro do 2º andar.",
   "TK-08": "O museu do Totoro; só 3–9 jan, ingressos em 10 dez.",
   "TK-09": "A semana de luzes de Natal: Marunouchi, Yebisu, Roppongi, até 25 dez.",
   "TK-10": "Café da manhã de sushi e tamagoyaki no mercado externo.",
