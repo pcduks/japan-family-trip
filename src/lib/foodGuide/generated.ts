@@ -255,6 +255,18 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     }
   },
   {
+    "slug": "matsuyama",
+    "name": "Matsuyama / Dōgo",
+    "region": "Ehime",
+    "tagline_pt": "A cidade do Botchan e da fonte termal mais antiga do Japão: arroz com pargo, udon doce de panela e dango de três cores.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 2,
+      "places": 3,
+      "shops": 3
+    }
+  },
+  {
     "slug": "fukuoka",
     "name": "Fukuoka",
     "region": "Kyushu",
@@ -421,6 +433,7 @@ export const CITY_LOADERS: Record<string, () => Promise<FoodCity>> = {
   "okayama": () => import("../../../data/food-guide/okayama.json").then((m) => m.default as FoodCity),
   "kurashiki": () => import("../../../data/food-guide/kurashiki.json").then((m) => m.default as FoodCity),
   "takamatsu": () => import("../../../data/food-guide/takamatsu.json").then((m) => m.default as FoodCity),
+  "matsuyama": () => import("../../../data/food-guide/matsuyama.json").then((m) => m.default as FoodCity),
   "fukuoka": () => import("../../../data/food-guide/fukuoka.json").then((m) => m.default as FoodCity),
   "yufuin": () => import("../../../data/food-guide/yufuin.json").then((m) => m.default as FoodCity),
   "beppu": () => import("../../../data/food-guide/beppu.json").then((m) => m.default as FoodCity),
