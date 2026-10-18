@@ -7819,8 +7819,8 @@
     "cost_pp_jpy": 0,
     "hours": 2,
     "booking": {
-      "lead_days": 30,
-      "how": "none (2F glass window only; the deck takes no lottery entries for the first auction)"
+      "lead_days": 0,
+      "how": "none (second-floor glass window only; the deck takes no lottery entries for the first auction)"
     },
     "uniqueness": 4,
     "split_group": true,
