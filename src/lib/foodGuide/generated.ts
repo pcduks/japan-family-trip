@@ -3,12 +3,18 @@ import type { FoodCity, FoodCityMeta, FoodTopic, FoodTopicMeta } from "./types";
 
 export const FOOD_CITIES: FoodCityMeta[] = [];
 
-export const FOOD_TOPICS: FoodTopicMeta[] = [];
+export const FOOD_TOPICS: FoodTopicMeta[] = [
+  {
+    "slug": "konbini",
+    "title_pt": "Konbini",
+    "items": 64
+  }
+];
 
 export const CITY_LOADERS: Record<string, () => Promise<FoodCity>> = {
 
 };
 
 export const TOPIC_LOADERS: Record<string, () => Promise<FoodTopic>> = {
-
+  "konbini": () => import("../../../data/food-guide/topics/konbini.json").then((m) => m.default as FoodTopic),
 };
