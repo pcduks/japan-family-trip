@@ -146,7 +146,7 @@ export function copyVersion(source: Version, ownerId: string, name: string, trip
  * else add it as a two-night stay before the final
  * Tokyo nights, taking the nights from the longest stay.
  */
-export function swapInRegion(plan: Version, region: Region, versions: Version[], ownerId: string, tripStart: string): { version: Version; how: string } {
+export function swapInRegion(plan: Version, region: Region, versions: Version[], ownerId: string, tripStart: string, allRegions: Region[] = [region]): { version: Version; how: string } {
   const existing = versions.find((v) => (v.status === "plan" || v.status === "alternative") && v.stays.some((s) => s.region === region.id));
   if (existing) {
     const v = copyVersion(existing, ownerId, `${existing.name} (my copy)`, tripStart);
@@ -161,12 +161,28 @@ export function swapInRegion(plan: Version, region: Region, versions: Version[],
     v.stays = relayout(v.stays, tripStart);
     return { version: v, how: `Replaced the ${fujiName} stay with ${region.name}, same dates.` };
   }
-  const longest = v.stays.reduce((best, s, i) => (s.nights > v.stays[best].nights ? i : best), 0);
-  v.stays[longest] = { ...v.stays[longest], nights: v.stays[longest].nights - 2 };
-  const insertAt = Math.max(1, v.stays.length - 1);
-  v.stays.splice(insertAt, 0, { region: region.id, from: "", to: "", nights: 2, lodging: null, note: "Added from What we're missing" });
-  v.stays = relayout(v.stays, tripStart);
-  return { version: v, how: `Added 2 nights in ${region.name} before the last stay, taken from ${regionName(plan.stays[longest].region, [region])}.` };
+  // Put it where it adds the least travel, between two stops.
+  const regions = allRegions.some((r) => r.id === region.id) ? allRegions : [...allRegions, region];
+  const leg = (x: string, y: string) => legBetween(x, y, regions).hours;
+  let insertAt = Math.max(1, v.stays.length - 1);
+  let detour = Infinity;
+  for (let p = 1; p < v.stays.length; p++) {
+    const d = leg(v.stays[p - 1].region, region.id) + leg(region.id, v.stays[p].region) - leg(v.stays[p - 1].region, v.stays[p].region);
+    if (d < detour) [insertAt, detour] = [p, d];
+  }
+  // Two nights from the longest stay that can spare them and still keeps New Year's Eve where it is.
+  const nye = (stays: Stay[]) => stays.find((s) => s.from <= "2026-12-31" && s.to > "2026-12-31")?.region;
+  const donors = v.stays.map((s, i) => i).filter((i) => v.stays[i].nights > 2).sort((x, y) => v.stays[y].nights - v.stays[x].nights);
+  const attempt = (donor: number) => {
+    const stays = v.stays.map((s, i) => (i === donor ? { ...s, nights: s.nights - 2 } : s));
+    stays.splice(insertAt, 0, { region: region.id, from: "", to: "", nights: 2, lodging: null, note: "Added on the Japan page" });
+    return relayout(stays, tripStart);
+  };
+  const donor = donors.find((i) => nye(attempt(i)) === nye(v.stays)) ?? donors[0] ?? 0;
+  v.stays = attempt(donor);
+  v.name = `With ${region.name}`;
+  const before = v.stays[insertAt - 1] ? regionName(v.stays[insertAt - 1].region, regions) : null;
+  return { version: v, how: `Added 2 nights in ${region.name}${before ? ` after ${before}` : ""}, taken from ${regionName(plan.stays[donor].region, regions)}.` };
 }
 
 export function paceLabel(p: Pace): string {

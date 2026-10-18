@@ -8,7 +8,7 @@ export const VERDICT_STYLE: Record<Verdict["state"], { color: string }> = {
   later: { color: "var(--muted)" },
 };
 
-/** A filled dot (on our route), a dashed ring (day trip), a half-filled dot (could swap in) or an empty ring (another time). */
+/** A filled dot (on our route), a dashed ring (a day out), a half-filled dot (would mean a change) or an empty ring (another trip). */
 export function VerdictMark({ state, size = 10 }: { state: Verdict["state"]; size?: number }) {
   const c = VERDICT_STYLE[state].color;
   return (
@@ -26,7 +26,7 @@ export function VerdictMark({ state, size = 10 }: { state: Verdict["state"]; siz
   );
 }
 
-/** Is it for us this trip, as a pill: On our route, Day trip, Could swap in, Another time. */
+/** Is it for us this trip, as a pill: On our route, A day out, Would mean a change, Another trip. */
 export function VerdictPill({ state, small }: { state: Verdict["state"]; small?: boolean }) {
   const st = VERDICT_STYLE[state];
   return (
