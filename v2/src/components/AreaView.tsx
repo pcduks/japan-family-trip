@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import foodGuide from "../../data/food-guide.json";
 import why from "../../data/why.json";
@@ -16,10 +15,10 @@ import { fmtDay } from "@/lib/dates";
 import { legBetween } from "@/lib/legs";
 import { lodgingFor, TIER_LABEL } from "@/lib/lodging";
 import type { Place } from "@/lib/types";
-import { swapInRegion } from "@/lib/versions";
 import { FoodCard } from "./Food";
 import { PlacePhoto } from "./PlacePhoto";
 import { useStore } from "./providers";
+import { useFits } from "./useFits";
 import { VerdictPill } from "./Verdict";
 import { Back, Page, RegionDot, Section } from "./ui";
 
@@ -30,11 +29,10 @@ const SIZE_LABEL: Record<string, string> = { main: "Half a day", short: "An hour
 
 /** One area, the same shape whether it is in the route or not: known for, in our window, feel, getting there, what we would do, eat, sleep, for her, our verdict, sources. */
 export function AreaView({ id }: { id: string }) {
-  const { snapshot, me, saveVersion } = useStore();
-  const router = useRouter();
+  const { snapshot } = useStore();
+  const fits = useFits();
   const region = snapshot.regions.find((r) => r.id === id);
   const a = areaInfo(id);
-  const [trying, setTrying] = useState(false);
   if (!region || !a)
     return (
       <Page>
@@ -68,20 +66,15 @@ export function AreaView({ id }: { id: string }) {
   const sources = Array.from(new Map(sourceList.map((s) => [sourceHost(s), s] as const).reverse()).values()).reverse();
   const herLabel = (p: Place) => (p.status === "avoid_for_her" ? "not for Fernanda" : p.effort_for_her === "high" ? "hard for Fernanda" : p.effort_for_her === "moderate" ? "moderate for Fernanda" : "easy for Fernanda");
 
-  async function tryIt() {
-    if (!plan || !me) return;
-    setTrying(true);
-    const { version } = swapInRegion(plan, region!, snapshot.versions, me.travellerId, snapshot.trip.start);
-    await saveVersion(version);
-    router.push(`/routes/${version.id}`);
-  }
 
   const v = a.verdict;
   const regionMeta = a.region ? REGIONS[a.region] : undefined;
   const nearby = a.region ? areaIds().filter((x) => x !== id && areaInfo(x)?.region === a.region && snapshot.regions.some((r) => r.id === x)) : [];
   const STATE_ORDER = ["route", "daytrip", "swap", "later"];
-  nearby.sort((x, y) => STATE_ORDER.indexOf(areaInfo(x)?.verdict?.state ?? "later") - STATE_ORDER.indexOf(areaInfo(y)?.verdict?.state ?? "later"));
-  const fitRoute = v?.route ? snapshot.versions.find((x) => x.id === v.route) : undefined;
+  nearby.sort((x, y) => STATE_ORDER.indexOf(fits.get(x)?.state ?? "later") - STATE_ORDER.indexOf(fits.get(y)?.state ?? "later"));
+  // Worked out from the route as it is now; the words above it are ours.
+  const fit = fits.get(id);
+  const fitRoute = snapshot.versions.find((x) => x.status === "alternative" && x.stays.some((s) => s.region === id));
   const fitRouteName = fitRoute ? (versionGuide(fitRoute.id)?.theme ?? fitRoute.name) : null;
   const dayPicks = [...sights].sort((x, y) => (x.size === "main" ? 0 : 1) - (y.size === "main" ? 0 : 1)).slice(0, 3);
 
@@ -106,13 +99,13 @@ export function AreaView({ id }: { id: string }) {
         {v ? (
           <>
             <p className="flex flex-wrap items-center gap-2">
-              <VerdictPill state={v.state} />
+              <VerdictPill state={fit?.state ?? v.state} />
             </p>
             <p className="display text-[1.35rem] leading-tight">{v.headline}</p>
             <p className="max-w-prose text-ink-2">{v.text}</p>
             <p className="text-sm">
-              <b>{v.state === "route" ? "On the route: " : v.state === "daytrip" ? "How: " : v.state === "swap" ? "How it would fit: " : "When: "}</b>
-              {v.fit}
+              <b>{fit?.fit === "route" ? "On the route: " : fit?.fit === "daytrip" ? "How: " : fit?.fit === "change" ? "What it would take: " : "Why not this time: "}</b>
+              {fit?.line ?? v.fit}
             </p>
             <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm font-semibold">
               {inRoute && planStop >= 0 ? <Link href={`/#stop-${planStop}`}>See those days on Trip →</Link> : null}
@@ -124,10 +117,10 @@ export function AreaView({ id }: { id: string }) {
             <b>{fitLabel(region.status)}.</b> {inRoute ? (plan && stayWhy(id)) ?? region.summary : (verdict?.why ?? region.fit ?? region.summary)}
           </p>
         )}
-        {v?.state === "swap" && plan ? (
-          <button className="btn btn-sm justify-self-start" onClick={tryIt} disabled={trying || !me}>
-            {trying ? "Making your route…" : "Try it in the route"}
-          </button>
+        {fit?.fit === "change" && plan ? (
+          <Link href={`/build?add=${id}`} className="btn btn-sm justify-self-start no-underline">
+            What would it take? →
+          </Link>
         ) : null}
       </section>
 
@@ -312,7 +305,7 @@ export function AreaView({ id }: { id: string }) {
                       <b className="truncate text-ink">{r.name.replace(/ \(.*\)$/, "")}</b>
                       <span className="truncate text-xs text-muted">{ai.do_line ?? r.summary}</span>
                     </span>
-                    {ai.verdict ? <VerdictPill state={ai.verdict.state} small /> : null}
+                    {fits.get(x) ? <VerdictPill state={fits.get(x)!.state} small /> : null}
                   </Link>
                 </li>
               );

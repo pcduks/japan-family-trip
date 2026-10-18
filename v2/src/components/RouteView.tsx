@@ -18,6 +18,7 @@ import { describeDiff, movesOf, paceLabel, statsOf } from "@/lib/versions";
 import { guideFor } from "@/lib/autoGuide";
 import { STYLE_LABEL, styleOf } from "@/lib/styles";
 import { BudgetCard } from "./Budget";
+import { useFits } from "./useFits";
 import { Comments } from "./Comments";
 import { fmtLegHours, JourneyMap } from "./JourneyMap";
 import { PictureScroll } from "./PictureScroll";
@@ -813,6 +814,7 @@ function ChangeButton({ href, onClick, label, caption }: { href?: string; onClic
 
 /** Why the route we are taking: the journey, what we looked for, what we left for another time, what is in it for you, and the practical reasons last. */
 function PlanWhy({ g }: { g: VersionGuide }) {
+  const fits = useFits();
   const { snapshot, me } = useStore();
   const [open, setOpen] = useState(false);
   const [openFacts, setOpenFacts] = useState<number | null>(null);
@@ -869,10 +871,10 @@ function PlanWhy({ g }: { g: VersionGuide }) {
                   <Link href={`/areas/${id}`} className="card grid gap-0.5 p-3 text-sm no-underline">
                     <span className="flex items-baseline justify-between gap-2">
                       <b className="text-ink">{regionName(id)}</b>
-                      <span className="shrink-0 text-xs text-muted">{VERDICT_LABEL[verdict.state]} →</span>
+                      <span className="shrink-0 text-xs text-muted">{VERDICT_LABEL[fits.get(id)?.state ?? verdict.state]} →</span>
                     </span>
                     <span className="text-ink-2">{verdict.headline}</span>
-                    <span className="text-xs text-muted">{verdict.fit}</span>
+                    <span className="text-xs text-muted">{fits.get(id)?.line ?? verdict.fit}</span>
                   </Link>
                 </li>
               );

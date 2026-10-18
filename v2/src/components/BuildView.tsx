@@ -2,14 +2,14 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useMemo, useState, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { guideFor } from "@/lib/autoGuide";
 import { budgetOf, fmtSgd } from "@/lib/budget";
 import { addDays, fmtDay } from "@/lib/dates";
 import { checkVersion } from "@/lib/rules";
 import { STYLE_LABEL, styleOf } from "@/lib/styles";
 import type { Snapshot, Stay, Version } from "@/lib/types";
-import { combineRoutes, newId, relayout, statsOf } from "@/lib/versions";
+import { combineRoutes, newId, relayout, statsOf, swapInRegion } from "@/lib/versions";
 import { JourneyMap } from "./JourneyMap";
 import { PictureScroll } from "./PictureScroll";
 import { Planner } from "./Planner";
@@ -23,6 +23,8 @@ interface Base {
   parent: string | null;
   pace: Version["pace"];
   label: string;
+  /** What changed to bring a place in, when the builder opened from "What would it take?". */
+  how?: string;
 }
 
 /**
@@ -58,9 +60,20 @@ function Builder() {
   const fromParam = params.get("from");
   const editing = routes.find((v) => v.id === fromParam && v.status === "personal" && v.owner === me?.travellerId) ?? null;
   const [base, setBase] = useState<Base>(() => {
+    // "What would it take?" on the Japan page: our route with that place brought in.
+    const add = plan ? snapshot.regions.find((r) => r.id === params.get("add")) : undefined;
+    if (add && plan) {
+      const { version, how } = swapInRegion(plan, add, snapshot.versions, me?.travellerId ?? "", snapshot.trip.start, snapshot.regions);
+      return { ...startFrom(version), parent: plan.id, label: `our route, with ${add.name.split(",")[0]}`, how };
+    }
     const v = routes.find((x) => x.id === fromParam) ?? plan;
     return v ? startFrom(v) : blank();
   });
+  // From "What would it take?", go straight to the changed route.
+  const adding = !!base.how;
+  useEffect(() => {
+    if (adding) document.getElementById("shape")?.scrollIntoView({ block: "start" });
+  }, [adding]);
   const first = me?.name.split(" ")[0] ?? "My";
   const [name, setName] = useState(editing?.name ?? `${first}’s route`);
   const [draft, setDraft] = useState<Version>(() => toVersion(base));
@@ -231,6 +244,11 @@ function Builder() {
         <div className="grid gap-0.5">
           <h2 className="text-[1.35rem]">2 · Shape it</h2>
           <span className="text-sm text-muted">Starting from {base.label}</span>
+          {base.how ? (
+            <p className="mt-1 rounded-xl bg-bg-2 p-3 text-sm">
+              <b>What it would take:</b> {base.how} The map, the checks and the cost below show the rest. Change anything; nothing is sent or saved until you choose to.
+            </p>
+          ) : null}
         </div>
         <div className="grid gap-4 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] lg:items-start">
           <div className="grid gap-2 lg:sticky lg:top-4">

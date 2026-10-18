@@ -89,6 +89,23 @@ const CURATED: Record<string, Leg> = {
   "morioka>tsunagi": { hours: 0.6, how: "Hotel shuttle or taxi" },
   "tsunagi>north-tohoku": { hours: 2, how: "Shuttle to Morioka, then shinkansen" },
   "north-tohoku>tokyo": { hours: 4, how: "Tohoku shinkansen from Shin-Aomori" },
+  // Nearest-stop journeys for the Japan page's fit (door to door, rounded; to check before booking).
+  "kawaguchiko>shuzenji": { hours: 2.5, how: "Bus to Mishima, then the Izuhakone line" },
+  "yudanaka>kusatsu": { hours: 3, how: "Via Nagano and Karuizawa by train and bus; the mountain road is closed in winter" },
+  "kyoto>kumano": { hours: 4.5, how: "Limited express to Kii-Tanabe, then the bus up to Hongu" },
+  "kyoto>osaka": { hours: 0.5, how: "JR Special Rapid or shinkansen" },
+  "yudanaka>matsumoto": { hours: 2, how: "Nagano Electric Railway to Nagano, then the Shinano limited express" },
+  "yudanaka>karuizawa": { hours: 1.5, how: "Nagano Electric Railway to Nagano, then the shinkansen" },
+  "tokyo>karuizawa": { hours: 1.25, how: "Hokuriku shinkansen" },
+  "kyoto>miyajima": { hours: 2.75, how: "Shinkansen to Hiroshima, train to Miyajimaguchi, then the ferry" },
+  "kyoto>arima": { hours: 1.5, how: "Train to Kobe, then the Kobe Electric Railway" },
+  "kyoto>matsue": { hours: 4, how: "Shinkansen to Okayama, then the Yakumo limited express" },
+  "kyoto>fukuoka": { hours: 3, how: "Nozomi to Hakata, about 2 h 40" },
+  "kyoto>nagoya": { hours: 0.75, how: "Shinkansen, about 35 min" },
+  "tokyo>atami": { hours: 1, how: "Shinkansen, about 45 min" },
+  "kyoto>ise-shima": { hours: 2.5, how: "Kintetsu limited express" },
+  "tokyo>morioka": { hours: 2.5, how: "Tohoku shinkansen" },
+  "tokyo>tsunagi": { hours: 3, how: "Tohoku shinkansen to Morioka, then a bus" },
 };
 
 export function legKey(a: string, b: string): string {

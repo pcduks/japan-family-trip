@@ -19,7 +19,7 @@ export interface Verdict {
   /** The route that does it, when one exists. */
   route?: string;
 }
-export const VERDICT_LABEL: Record<Verdict["state"], string> = { route: "On our route", daytrip: "Day trip", swap: "Could swap in", later: "Another time" };
+export const VERDICT_LABEL: Record<Verdict["state"], string> = { route: "On our route", daytrip: "A day out", swap: "Would mean a change", later: "Another trip" };
 
 export interface AreaInfo {
   prefecture: string;

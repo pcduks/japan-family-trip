@@ -302,7 +302,7 @@
       "verdict": {
         "state": "daytrip",
         "headline": "The deepest snow and outdoor baths we could reach.",
-        "text": "Small hot-spring villages high in the Alps, with open-air baths in the snow and a ropeway up to 2,156 metres. It is 90 minutes by bus from Takayama, so a day there would use Takayama's one full day, and the market, the breweries and the folk village would drop out. The top of the ropeway is high and icy, so Fernanda may prefer the baths.",
+        "text": "Small hot-spring villages high in the Alps, with open-air baths in the snow and a ropeway up to 2,156 metres. From our route it is about four hours by bus via Takayama, so it needs nights of its own; with Takayama back in the route it becomes a 90-minute day out. The top of the ropeway is high and icy, so Fernanda may prefer the baths.",
         "fit": "A long day by bus from Takayama, in the 'with Takayama' route"
       },
       "region": "alps",
@@ -626,7 +626,7 @@
       "verdict": {
         "state": "swap",
         "headline": "Art islands and a great garden instead of Fuji.",
-        "text": "Naoshima's island museums, among them the Chichu Art Museum, Kurashiki's canal quarter of white-walled warehouses, and Korakuen, one of Japan's three great gardens, with Himeji Castle on the way. It is mild by the Inland Sea and an hour from Kyoto. The trade is Fuji: no lake and no dawns, only a look from the train on the way back to Tokyo.",
+        "text": "Naoshima's island museums, among them the Chichu Art Museum, Kurashiki's canal quarter of white-walled warehouses, and Korakuen, one of Japan's three great gardens, with Himeji Castle on the way. It is mild by the Inland Sea and an hour from Kyoto, so Korakuen and Kurashiki make a day out; Naoshima's islands need a night, and staying would cost the Fuji lake.",
         "fit": "Instead of Kawaguchiko, 5–7 Jan",
         "route": "art-not-fuji"
       },
@@ -956,7 +956,7 @@
       "verdict": {
         "state": "later",
         "headline": "The Peace Park and the floating shrine gate.",
-        "text": "Hiroshima is a rebuilt city with an important, heavy history at its centre, and across the water Miyajima has the shrine gate that floats at high tide, deer and grilled oysters. It is far to the west of Kyoto and needs two more nights than we have.",
+        "text": "Hiroshima is a rebuilt city with an important, heavy history at its centre, and across the water Miyajima has the shrine gate that floats at high tide, deer and grilled oysters. The Peace Park is 1 h 45 from Kyoto by shinkansen, a long but easy day out. Miyajima as well needs a night there.",
         "fit": "It has its own route: “Tokyo to the floating torii, the classic way”",
         "route": "golden-route-winter"
       },
@@ -1394,7 +1394,7 @@
       "verdict": {
         "state": "later",
         "headline": "A black original castle with the Alps behind it.",
-        "text": "One of Japan's original castle keeps stands black against the snowy Alps, in a clean mountain city with milky-white baths up the valley. It is off our line of travel and fits a route through Nagano; the keep's inner stairs are ladder-steep, so Fernanda may prefer the view from the grounds.",
+        "text": "One of Japan's original castle keeps stands black against the snowy Alps, in a clean mountain city with milky-white baths up the valley. It is about two hours from Yudanaka, and it is our plan B for Sat 26 Dec if nobody wants snow; the keep's inner stairs are ladder-steep, so Fernanda may prefer the view from the grounds.",
         "fit": "It has its own route: “Three weeks in the Alps and the snowy side”",
         "route": "deep-snow-country"
       },
@@ -1621,7 +1621,7 @@
       "verdict": {
         "state": "later",
         "headline": "A steep little spa town of gold and silver water.",
-        "text": "Rust-red “gold” water and clear, fizzy “silver” water, in a steep town of wooden lanes and old sweet shops an hour from Osaka, with Kobe 30 minutes away. Our hot-spring New Year is in Gero, and Arima belongs to a route of onsen towns.",
+        "text": "Rust-red “gold” water and clear, fizzy “silver” water, in a steep town of wooden lanes and old sweet shops an hour from Osaka, with Kobe 30 minutes away. From Kyoto it makes a day out with Kobe; a night there belongs to a route of onsen towns.",
         "fit": "It has its own route: “Three great hot-spring towns, with Kyoto between”",
         "route": "western-onsen-trail"
       },
@@ -1784,7 +1784,7 @@
       "verdict": {
         "state": "later",
         "headline": "Japan's fourth city, with a big appetite.",
-        "text": "Grilled eel eaten three ways, red miso and fried chicken wings, a rebuilt castle palace of gold screens, and a big train museum. It is a good place to break a long journey and eat well, but on our route we may only change trains there on New Year's Day.",
+        "text": "Grilled eel eaten three ways, red miso and fried chicken wings, a rebuilt castle palace of gold screens, and a big train museum. It is 35 minutes from Kyoto by shinkansen, an easy day out for the food and the train museum.",
         "fit": "It has its own route: “Crab, Kobe beef, Hakata ramen and Nagoya eel”",
         "route": "winter-food-trail"
       },
@@ -1840,7 +1840,7 @@
       "verdict": {
         "state": "later",
         "headline": "A steep, warm resort above a sandy bay.",
-        "text": "Old shopping streets, steam from the hot springs and the sea in nearly every view, with the MOA art museum on the hilltop and the year's last fireworks over the bay on 25 December. We are in Kanazawa that night, and Atami fits best on a route along the Pacific.",
+        "text": "Old shopping streets, steam from the hot springs and the sea in nearly every view, with the MOA art museum on the hilltop and the year's last fireworks over the bay on 25 December. We are in Yudanaka that night, and Atami fits best on a route along the Pacific.",
         "fit": "It has its own route: “Sunny winter days around Fuji and the sea”",
         "route": "fuji-pacific-shore"
       },
@@ -2178,5 +2178,5 @@
       "caption": "The surest snow in Japan; its festivals come in February."
     }
   ],
-  "intro": "Most first trips are Tokyo, Fuji and Kyoto. We do all three, with New Year in Kyoto, and add Japan's snowy side: wild monkeys, old towns, a thatched village. Here is where the rest stands."
+  "intro": "Everything people come to Japan for, as things to do: the famous sights, the snowy side, the hot springs, the far north and the islands. Each one says how it fits our trip as it is now: on our route, a day out from a stop, a change to the route, or a trip of its own."
 }
