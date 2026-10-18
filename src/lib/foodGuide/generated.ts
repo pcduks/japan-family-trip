@@ -262,7 +262,7 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     "counts": {
       "meibutsu": 6,
       "areas": 2,
-      "places": 2,
+      "places": 4,
       "shops": 2
     }
   },
