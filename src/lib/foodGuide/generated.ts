@@ -207,6 +207,18 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     }
   },
   {
+    "slug": "onomichi",
+    "name": "Onomichi",
+    "region": "Hiroshima",
+    "tagline_pt": "Cidade de ladeiras e templos no estreito: o ramen de shōyu com gordura de porco boiando é a razão de parar aqui.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 2,
+      "places": 5,
+      "shops": 2
+    }
+  },
+  {
     "slug": "fukuoka",
     "name": "Fukuoka",
     "region": "Kyushu",
@@ -369,6 +381,7 @@ export const CITY_LOADERS: Record<string, () => Promise<FoodCity>> = {
   "kobe": () => import("../../../data/food-guide/kobe.json").then((m) => m.default as FoodCity),
   "hiroshima": () => import("../../../data/food-guide/hiroshima.json").then((m) => m.default as FoodCity),
   "miyajima": () => import("../../../data/food-guide/miyajima.json").then((m) => m.default as FoodCity),
+  "onomichi": () => import("../../../data/food-guide/onomichi.json").then((m) => m.default as FoodCity),
   "fukuoka": () => import("../../../data/food-guide/fukuoka.json").then((m) => m.default as FoodCity),
   "yufuin": () => import("../../../data/food-guide/yufuin.json").then((m) => m.default as FoodCity),
   "beppu": () => import("../../../data/food-guide/beppu.json").then((m) => m.default as FoodCity),
