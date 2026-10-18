@@ -25,7 +25,7 @@ const groupOf = (region: string) => REGION_GROUP.find(([re]) => re.test(region))
 
 function cityStatus(c: FoodCityMeta) {
   const bits = [c.counts.meibutsu && `${c.counts.meibutsu} pratos`, c.counts.places && `${c.counts.places} restaurantes`].filter(Boolean);
-  return c.tagline_pt || bits.join(" · ");
+  return bits.join(" · ") || c.tagline_pt;
 }
 
 /** The food guide's front page: our route's cities first, then the how-to topics, then every other base. */

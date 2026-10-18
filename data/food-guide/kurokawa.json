@@ -1,0 +1,171 @@
+{
+  "slug": "kurokawa",
+  "name": "Kurokawa Onsen",
+  "tagline_pt": "Vale de pousadas no alto de Aso: aqui a comida é o jantar do ryokan, o boi vermelho do pasto e o soba das montanhas.",
+  "history_pt": [
+    "Kurokawa é uma ravina com cerca de 24 pousadas pequenas ao longo do rio Tanohara, em Minamioguni (Kumamoto). Nos anos 1980 era um lugar esquecido. Gotō Tetsuya, do ryokan Shinmeikan, cavou à mão uma banheira em caverna e convenceu os vizinhos a apostar em banhos ao ar livre e paisagem 'natural'. Em 1986 nasceu o nyūtō tegata, uma plaquinha de madeira que dá acesso aos banhos de várias pousadas. Desde 2022 ela traz três selos: dois para banhos, e o terceiro pode ser trocado por comida nas lojas locais.",
+    "A mesa é a do planalto de Aso: akaushi (boi vermelho, criado no pasto e mais magro que o wagyu preto), cavalo (Kumamoto produz cerca de 40% da carne de cavalo do Japão), soba de moinho de pedra no 'caminho do soba' de Oguni, legumes de montanha e ovos cozidos na fonte. Como há poucos restaurantes no vale, o jantar do ryokan é o centro da noite.",
+    "O nosso crítico brasileiro Eduardo Takemi foi descansar aqui em 2026, no ryokan Gosho Gekkōju, e escreveu na Tokyo Aijo sobre a arte de não fazer checklist: banho, onsen tamago e almoços onde os moradores comem."
+  ],
+  "winter_pt": "Dezembro e janeiro são frios, às vezes com neve e estrada com gelo. O festival de luzes Yuakari ilumina o vale no inverno. Panelas de akaushi e de cavalo e soba quente são a comida da estação.",
+  "meibutsu": [
+    {
+      "name_pt": "Akaushi (boi vermelho de Aso)",
+      "name_ja": "あか牛",
+      "romaji": "akaushi",
+      "what_pt": "Boi de pelagem marrom criado no pasto de Aso: carne magra com 8–15% de gordura, mais sabor de carne que de manteiga. Clássico em akaushi-don (sobre arroz).",
+      "where_pt": "Imakin Shokudō (Aso, no caminho) e jantares de ryokan.",
+      "price_pt": "¥2.000–4.000 o don",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "O don costuma vir rosado no meio: peça よく焼いて (bem passado)."
+    },
+    {
+      "name_pt": "Soba de Oguni",
+      "name_ja": "小国そば",
+      "romaji": "Oguni soba",
+      "what_pt": "Soba moído em moinho de pedra e feito com água de nascente, nas casas da estrada 'soba kaidō' perto de Kurokawa.",
+      "where_pt": "Teuchi Soba Yūshin.",
+      "price_pt": "¥1.000–3.000",
+      "must": true
+    },
+    {
+      "name_pt": "Carne de cavalo",
+      "name_ja": "馬肉",
+      "romaji": "baniku",
+      "what_pt": "Kumamoto é a terra do cavalo: basashi (cru) com shōyu adocicado, alho e gengibre; também grelhado e em panela.",
+      "where_pt": "Fujimoto (Oguni) e ryokan.",
+      "price_pt": "¥4.000–5.000",
+      "must": false,
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Basashi e yukke de cavalo são carne crua (risco de toxoplasmose): fora. Ela pode comer o yakiniku de cavalo bem passado."
+    },
+    {
+      "name_pt": "Onsen tamago",
+      "name_ja": "温泉たまご",
+      "romaji": "onsen tamago",
+      "what_pt": "Ovo cozido devagar na água termal: clara mole, gema cremosa. O Eduardo Takemi elogiou.",
+      "where_pt": "Café da manhã do ryokan e lojinhas do vale.",
+      "price_pt": "≈¥100",
+      "must": false,
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Gema mole: ela pula. Ovo cozido duro (固ゆで) é ok."
+    },
+    {
+      "name_pt": "Dengaku de Aso",
+      "name_ja": "田楽",
+      "romaji": "dengaku",
+      "what_pt": "Espetos de tofu, konnyaku, inhame e peixe de rio assados no irori (fogão de chão) com missô.",
+      "where_pt": "Takamori Dengaku Hozonkai (sul de Aso, Tabelog 3.72, https://tabelog.com/en/kumamoto/A4302/A430202/43000002/).",
+      "price_pt": "A confirmar",
+      "must": false
+    },
+    {
+      "name_pt": "Jantar kaiseki de ryokan",
+      "name_ja": "旅館の会席",
+      "romaji": "ryokan kaiseki",
+      "what_pt": "A refeição principal de Kurokawa: vários pratos de produtos de Aso, servidos no quarto ou em sala.",
+      "where_pt": "A pousada de vocês.",
+      "price_pt": "Incluído na diária",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Avise na reserva: 妊娠中なので生もの抜きで. Peça para trocar basashi, sashimi e ovo mole por pratos cozidos. Banho termal no fim da gravidez: só com o OK do obstetra."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Vale de Kurokawa",
+      "name_ja": "黒川温泉街",
+      "kind": "rua",
+      "story_pt": "Ruela de pousadas, lojas de doces e cafés ao longo do rio. Pequeno e bom de andar, em 20 minutos se atravessa tudo.",
+      "eat_pt": ["Troque o terceiro selo do nyūtō tegata por um lanche", "Onsen tamago (não para ela)", "Doces e pudim das lojinhas"],
+      "tips_pt": "Os poucos restaurantes fecham cedo: a noite é no ryokan. Leve dinheiro.",
+      "dec_jan_pt": "Ryokan funcionam no Ano-Novo; lojas com horário reduzido (a confirmar). Estrada com gelo é comum.",
+      "query": "Kurokawa Onsen"
+    },
+    {
+      "name": "Oguni (caminho do soba)",
+      "name_ja": "小国町",
+      "kind": "bairro",
+      "story_pt": "A cidadezinha vizinha, com casas de soba de moinho de pedra e açougues de cavalo e de boi.",
+      "eat_pt": ["Soba no Yūshin", "Yakiniku de cavalo na Fujimoto"],
+      "tips_pt": "É de carro: alugue um ou combine táxi pela pousada.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Oguni Kumamoto soba"
+    }
+  ],
+  "places": [
+    {
+      "name": "Kurokawa Onsen Gosho Gekkōju",
+      "name_ja": "黒川温泉御処 月洸樹",
+      "area": "Kurokawa · Manganji",
+      "genre_pt": "Ryokan (jantar incluso)",
+      "price_pt": "¥100.000+ (diária)",
+      "tabelog": { "score": 3.86, "reviews": 49, "url": "https://tabelog.com/en/kumamoto/A4302/A430203/43014494/" },
+      "critics": [{ "who": "@eduardo.takemi", "note_pt": "Ficou aqui para descansar em 2026 e chamou o restaurante de 'interessante'. Oito quartos num terreno de 15.000 m², com banhos privativos ao ar livre.", "url": "https://www.tokyoaijo.com/post/kurokawa-onsen-arte-de-descansar" }],
+      "why_pt": "A escolha do nosso crítico brasileiro, e 3.86 no Tabelog, nota de mesa séria para uma pousada.",
+      "order_pt": "O jantar da casa.",
+      "pregnancy_pt": "Avise sem crus ao reservar.",
+      "group_pt": "Oito quartos: três quartos para três casais (a confirmar).",
+      "booking_pt": "Online (gekkoujyu.com) ou 0967-44-1717.",
+      "dec_jan_pt": "Ano-Novo lota cedo; reserve já.",
+      "query": "Gosho Gekkoju Kurokawa"
+    },
+    {
+      "name": "Teuchi Soba Yūshin",
+      "name_ja": "手打そば優心",
+      "area": "Oguni · Miyahara",
+      "genre_pt": "Soba",
+      "price_pt": "¥1.000–3.000",
+      "tabelog": { "score": 3.56, "reviews": 86, "url": "https://tabelog.com/en/kumamoto/A4302/A430203/43000728/" },
+      "why_pt": "Soba feito à mão num balcão pequeno: o melhor soba avaliado perto de Kurokawa.",
+      "order_pt": "Zaru soba ou soba quente.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "12 lugares, grupo máximo de 6: dá, mas chegue cedo.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Só almoço, 11h–16h; fecha segunda e terça. Ano-Novo a confirmar.",
+      "query": "Teuchi Soba Yushin Oguni"
+    },
+    {
+      "name": "Fujimoto Yaoyorozu no Seiniku Honpo",
+      "name_ja": "ふじ本 八百萬乃精肉本舗",
+      "area": "Oguni · Shimojō",
+      "genre_pt": "Carne de cavalo",
+      "price_pt": "¥4.000–4.999",
+      "tabelog": { "score": 3.63, "reviews": 69 , "url": "https://tabelog.com/en/kumamoto/A4302/A430203/43010954/" },
+      "why_pt": "Açougue-restaurante de cavalo no interior: o lugar para provar a carne de Kumamoto longe do circuito turístico.",
+      "order_pt": "Set de yakiniku de cavalo; basashi para os outros cinco.",
+      "pregnancy_pt": "Ela fica no yakiniku bem passado; nada de basashi.",
+      "group_pt": "20 lugares: os seis juntos.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Fecha quartas. Ano-Novo a confirmar.",
+      "query": "Fujimoto Oguni horse meat"
+    },
+    {
+      "name": "Imakin Shokudō",
+      "name_ja": "いまきん食堂",
+      "area": "Aso · Uchinomaki (no caminho para Kurokawa)",
+      "genre_pt": "Shokudō / akaushi-don",
+      "price_pt": "¥2.000–2.999",
+      "tabelog": { "score": 3.70, "reviews": 1957, "url": "https://tabelog.com/en/kumamoto/A4302/A430201/43004788/", "awards": "Shokudō 百名店 2024, 2026" },
+      "why_pt": "O akaushi-don mais famoso de Aso, num shokudō antigo. Vale a parada a caminho de Kurokawa.",
+      "order_pt": "Akaushi-don.",
+      "pregnancy_pt": "A carne vem rosada: peça bem passada ou escolha outro prato.",
+      "group_pt": "Tatami no 1º e 2º andar e sala para até 8: os seis cabem.",
+      "booking_pt": "Lista de espera no dia (fila de ~1 h às 11h num dia de semana). Política de reserva confusa: confirme.",
+      "dec_jan_pt": "Fecha no recesso de fim de ano e Ano-Novo.",
+      "query": "Imakin Shokudo Aso"
+    }
+  ],
+  "shops": [
+    { "name": "Nyūtō tegata (Kaze no Ya)", "name_ja": "入湯手形", "what_pt": "A plaquinha de madeira de Kurokawa: dois selos para banhos e um que vale banho ou troca por comida e lembranças.", "buy_pt": "Um por adulto; use o terceiro selo num doce.", "dec_jan_pt": "Vendido o ano todo (a confirmar).", "query": "Kurokawa Onsen Kaze no Ya nyuto tegata" },
+    { "name": "Lojinhas do vale", "name_ja": "黒川温泉の売店", "what_pt": "Doces, pudins e lanches de produtos de Aso.", "buy_pt": "Doces para o quarto; leite e pudim de Aso.", "dec_jan_pt": "Horário reduzido no Ano-Novo (a confirmar).", "query": "Kurokawa Onsen shops" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/黒川温泉",
+    "https://ja.wikipedia.org/wiki/あか牛",
+    "https://ja.wikipedia.org/wiki/馬刺し",
+    "https://www.tokyoaijo.com/post/kurokawa-onsen-arte-de-descansar",
+    "https://tabelog.com/en/kumamoto/A4302/rank/"
+  ]
+}

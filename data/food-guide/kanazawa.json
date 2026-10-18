@@ -1,0 +1,313 @@
+{
+  "slug": "kanazawa",
+  "name": "Kanazawa",
+  "tagline_pt": "A cidade do clã Maeda: caranguejo de inverno, cozinha de corte Kaga e um mercado de 300 anos.",
+  "history_pt": [
+    "Kanazawa foi a capital do domínio Kaga, do clã Maeda, o feudo mais rico do Japão Edo depois do próprio xogunato. Sem poder gastar em exército sem levantar suspeita em Edo, os Maeda gastaram em chá, laca, doces e mesa. Daí sai o Kaga ryōri: pratos de corte servidos em louça Kutani e laca de Wajima, e o jibuni de pato, que já aparece num livro de receitas do século XVIII escrito por um cozinheiro a serviço dos Maeda.",
+    "O ouro é a outra herança. Cerca de 99% da folha de ouro do Japão é batida aqui (Kanazawa-haku). O domínio continuou batendo ouro em segredo quando o xogunato tinha o monopólio, e o clima úmido e as oficinas de laca e altares budistas da região fizeram o resto. Por isso o sorvete com folha de ouro em Higashi Chaya: é enfeite, não tem gosto.",
+    "O mar do Japão abastece a cidade. O mercado de Ōmichō conta sua história a partir de 1721 (as raízes vêm de um incêndio de 1690 que juntou ali as peixarias), servia a cozinha do domínio e hoje tem perto de 170 bancas. Da terra vêm os Kaga yasai: 15 legumes certificados, cultivados desde antes de 1945 e ainda plantados em Kanazawa, como o nabo gensuke, a lótus de Kaga e o kinjisō roxo."
+  ],
+  "winter_pt": "Dezembro é o mês do kōbako-gani, a fêmea do caranguejo-das-neves, com ovas por dentro e por fora. A temporada abre em 6/11 e Ishikawa costuma encerrar a das fêmeas por volta de 29/12 (a data de 2026 está a confirmar), então o kōbako exige estar aqui antes de ~28/12. O macho (加能ガニ) segue até março. É também época de buri gordo, kabura-zushi e nabo gensuke na oden.",
+  "meibutsu": [
+    {
+      "name_pt": "Caranguejo kōbako",
+      "name_ja": "香箱ガニ",
+      "romaji": "kōbako-gani",
+      "what_pt": "Fêmea pequena do zuwai, cozida inteira: ovas laranja de dentro (uchiko), ovas granuladas de fora (sotoko) e missô. Desmontada na casca, com vinagre de tosa. Só existe de 6/11 até perto do fim do ano.",
+      "where_pt": "Yamasan Sushi e Kabuna; no inverno a oden de Miyuki ganha o kani-men; Otome Zushi no topo.",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Cozido, pode. Evite só kani-sashi (caranguejo cru) se aparecer."
+    },
+    {
+      "name_pt": "Jibuni",
+      "name_ja": "治部煮",
+      "romaji": "jibuni",
+      "what_pt": "Pato fatiado e passado na farinha, cozido em caldo de dashi, shoyu e mirin com sudare-fu (glúten de trigo de Kanazawa), shiitake e verdura. A farinha engrossa o caldo; come-se com wasabi. Prato símbolo da cozinha Kaga.",
+      "where_pt": "Kabuna; Gyohan (魚半), onde Mark Wiens comeu o jibuni por ¥2.800 (Tabelog não verificado).",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Pato bem cozido no caldo. Tudo certo."
+    },
+    {
+      "name_pt": "Oden de Kanazawa",
+      "name_ja": "金沢おでん",
+      "romaji": "Kanazawa oden",
+      "what_pt": "Oden em caldo claro que se come o ano todo, com peças locais: kuruma-fu (rodelas de glúten), bai-gai (búzio), nabo gensuke e, na estação, o kani-men com caranguejo kōbako.",
+      "where_pt": "Oden Izakaya Miyuki e Akadama, ambos em Katamachi.",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Tudo cozido. Pule só sashimi de molusco servido de acompanhamento."
+    },
+    {
+      "name_pt": "Buri de inverno",
+      "name_ja": "寒ぶり",
+      "romaji": "kan-buri",
+      "what_pt": "Olho-de-boi gordo de inverno do mar do Japão, em sashimi, sushi, teriyaki ou buri-daikon.",
+      "where_pt": "Bancas de Ōmichō, Yamasan, Kabuna.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Kabura-zushi",
+      "name_ja": "かぶら寿し",
+      "romaji": "kabura-zushi",
+      "what_pt": "Conserva de inverno: fatias de nabo com buri salgado no meio, fermentadas em kōji de arroz. Um dos presentes de Ano-Novo da cidade.",
+      "where_pt": "Bancas de Ōmichō e lojas de presentes da estação (Hyakubangai).",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "O buri é curado e fermentado, não cozido. Melhor ela provar só o nabo, ou deixar passar."
+    },
+    {
+      "name_pt": "Nodoguro grelhado",
+      "name_ja": "のどぐろ",
+      "romaji": "nodoguro",
+      "what_pt": "Peixe vermelho de carne muito gorda (akamutsu), grelhado com sal. Um dos pratos caros do Hokuriku.",
+      "where_pt": "Kabuna e izakaya de Katamachi.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Curry de Kanazawa",
+      "name_ja": "金沢カレー",
+      "romaji": "Kanazawa curry",
+      "what_pt": "Molho escuro e grosso, arroz coberto, katsu por cima, repolho picado ao lado, garfo de metal em travessa de inox. A Turban, de 1971, é tida como a original.",
+      "where_pt": "Turban Curry Honten (Mark Wiens filmou lá).",
+      "price_pt": "≈ ¥1.000",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Amanattō e wagashi",
+      "name_ja": "甘納豆・和菓子",
+      "romaji": "amanattō, wagashi",
+      "what_pt": "Cidade de cerimônia do chá, logo cidade de doces. Feijões cristalizados de Kawamura e kanmi de Higashi Chaya.",
+      "where_pt": "Amanatto Kawamura, Tsubomi, Suzume (estação).",
+      "must": false,
+      "pregnancy": "ok"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Ōmichō Market",
+      "name_ja": "近江町市場",
+      "kind": "mercado",
+      "story_pt": "Mercado desde 1721, que abastecia a cozinha do domínio Kaga. Hoje são perto de 170 bancas de peixe, caranguejo, legumes de Kaga e balcões de kaisen-don.",
+      "eat_pt": [
+        "Kaisen-don na Ikiiki-tei",
+        "Caranguejo cozido para comer de pé",
+        "Croquete de banca (Mark Wiens provou)",
+        "Sushi na Yamasan"
+      ],
+      "tips_pt": "Chegue antes das 8:00 para a Ikiiki-tei. A maioria das bancas de kaisen-don fica em 3,40–3,49 no Tabelog: seja exigente e olhe os preços por peso do caranguejo.",
+      "dec_jan_pt": "28–30/12 é a corrida de compras de Ano-Novo (lotado, caranguejo vendido por caixa). Em 2024–25 abriu em 31/12 com horário curto e fechou 1–3/1. Calendário 2026–27 a confirmar (076-231-1462).",
+      "query": "Omicho Market Kanazawa"
+    },
+    {
+      "name": "Higashi Chaya",
+      "name_ja": "ひがし茶屋街",
+      "kind": "bairro",
+      "story_pt": "Bairro de casas de chá de gueixas de madeira, hoje com casas de doces, chá e lojas de folha de ouro.",
+      "eat_pt": [
+        "Amanattō na Kawamura",
+        "Kanmi na Tsubomi",
+        "Matcha (Mark Wiens parou numa casa de chá aqui)",
+        "Sorvete com folha de ouro (foto, não sabor)"
+      ],
+      "tips_pt": "Cedo de manhã está vazio. As lojas de folha de ouro são turísticas; os doces são o que vale.",
+      "dec_jan_pt": "Kawamura: loja fechada 31/12–3/1, salão do 2º andar fechado 24/12–4/1. Tsubomi fecha às quartas.",
+      "query": "Higashi Chaya Kanazawa"
+    },
+    {
+      "name": "Katamachi e Kiguramachi",
+      "name_ja": "片町・木倉町",
+      "kind": "bairro",
+      "story_pt": "O centro noturno: oden, izakaya e os balcões de sushi caros.",
+      "eat_pt": [
+        "Oden em Miyuki ou Akadama",
+        "Jantar de cozinha Kaga na Kabuna"
+      ],
+      "tips_pt": "Reserve oden e izakaya para grupo de 6.",
+      "dec_jan_pt": "Muitos fecham aos domingos; datas de Ano-Novo a confirmar.",
+      "query": "Katamachi Kanazawa"
+    }
+  ],
+  "places": [
+    {
+      "name": "Ikiiki-tei Ōmichō",
+      "name_ja": "いきいき亭 近江町店",
+      "area": "Kanazawa · Ōmichō",
+      "genre_pt": "Kaisen-don, sushi",
+      "price_pt": "¥2–5k",
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 1088,
+        "url": "https://tabelog.com/ishikawa/A1701/A170101/17001392/",
+        "awards": "nenhum"
+      },
+      "critics": [
+        {
+          "who": "@migrationology",
+          "note_pt": "Café da manhã em Ōmichō: kaisen-don de ¥3.500 aqui.",
+          "url": "https://www.youtube.com/watch?v=TKFOzNTrWwk"
+        }
+      ],
+      "why_pt": "O balcão do mercado que liga para o peixe, não para a foto. A tigela 'Local' só leva captura local, e arroz e coberturas vêm separados.",
+      "order_pt": "A tigela Local (só peixe local).",
+      "pregnancy_pt": "A tigela crua leva amaebi, gasuebi, vieira e ouriço. Peça uma só de peixe, sem crustáceos e moluscos, ou ela come em outro lugar.",
+      "group_pt": "10 lugares no balcão. Divida 3+3 ou 2+2+2 em duas rodadas.",
+      "booking_pt": "Não reserva. Ponha o nome na lista na abertura (7:00). Ao meio-dia a espera chega a ~2 h.",
+      "dec_jan_pt": "7:00–15:00, fecha às terças. Provavelmente segue o fechamento do mercado em 1–3/1 (a confirmar).",
+      "query": "Ikiiki-tei Omicho Kanazawa"
+    },
+    {
+      "name": "Yamasan Sushi Honten",
+      "name_ja": "山さん寿司 本店",
+      "area": "Kanazawa · Ōmichō",
+      "genre_pt": "Sushi, kaisen-don",
+      "price_pt": "¥3–4k",
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 1333,
+        "url": "https://tabelog.com/ishikawa/A1701/A170101/17000196/",
+        "awards": "nenhum"
+      },
+      "why_pt": "O sushi do mercado que cabe seis. A melhor saída para um almoço de kōbako e buri.",
+      "order_pt": "Kōbako cozido e nigiri de buri.",
+      "pregnancy_pt": "Muita coisa cozida: caranguejo cozido e nigiri de peixe, não de molusco.",
+      "group_pt": "32 lugares com tatame e mesas. 6 cabem.",
+      "booking_pt": "Reserva on-line para poucos grupos por dia.",
+      "dec_jan_pt": "9:00–16:00, sem folga fixa. Ano-Novo a confirmar.",
+      "query": "Yamasan Sushi Omicho"
+    },
+    {
+      "name": "Otome Zushi",
+      "name_ja": "乙女寿司",
+      "area": "Kanazawa · Kiguramachi",
+      "genre_pt": "Sushi",
+      "price_pt": "¥20–30k",
+      "tabelog": {
+        "score": 4.05,
+        "reviews": 614,
+        "url": "https://tabelog.com/ishikawa/A1701/A170101/17000107/",
+        "awards": "Tabelog Award Bronze 2020–2026, Silver 2019; 寿司 WEST 百名店 2021, 2022, 2025"
+      },
+      "why_pt": "A referência histórica de Kanazawa: peixe do Hokuriku tratado com contenção. O almoço é o jeito mais em conta de entrar.",
+      "order_pt": "Omakase; no inverno, buri e kōbako.",
+      "pregnancy_pt": "Peça com antecedência para trocar mariscos crus e shirako (provável em dezembro) por cozidos. Buri e kōbako cozido estão liberados.",
+      "group_pt": "17 lugares: balcão de 9 e sala de tatame de 8. Para 6, a sala, ou 3+3 em turnos de balcão.",
+      "booking_pt": "On-line, abre 2 meses antes. Marque no fim de outubro.",
+      "dec_jan_pt": "Almoço e jantar; fecha quarta, domingo e feriados. Ano-Novo a confirmar.",
+      "query": "Otome Zushi Kanazawa"
+    },
+    {
+      "name": "Kabuna",
+      "name_ja": "かぶ菜",
+      "area": "Kanazawa · Katamachi/Nomachi",
+      "genre_pt": "Izakaya de frutos do mar e cozinha local",
+      "price_pt": "¥6–8k",
+      "tabelog": {
+        "score": 3.75,
+        "reviews": 321,
+        "url": "https://tabelog.com/ishikawa/A1701/A170101/17000085/",
+        "awards": "居酒屋 WEST 百名店 2025, 2026"
+      },
+      "why_pt": "O izakaya de cozinha local ao qual os avaliadores do Tabelog voltam pelo jibuni e pelo caranguejo da estação.",
+      "order_pt": "Jibuni, oden, nodoguro grelhado, kōbako.",
+      "pregnancy_pt": "Cardápio amplo. Evitar mariscos crus e shirako.",
+      "group_pt": "11 salas privativas, incluindo uma para 6. O melhor jantar de grupo abaixo de ¥10k na cidade.",
+      "booking_pt": "On-line.",
+      "dec_jan_pt": "Fecha aos domingos. Ano-Novo a confirmar.",
+      "query": "Kabuna Kanazawa"
+    },
+    {
+      "name": "Oden Izakaya Miyuki",
+      "name_ja": "おでん居酒屋 三幸",
+      "area": "Kanazawa · Katamachi",
+      "genre_pt": "Oden",
+      "price_pt": "¥3–4k",
+      "tabelog": {
+        "score": 3.63,
+        "reviews": 711,
+        "url": "https://tabelog.com/ishikawa/A1701/A170101/17002725/",
+        "awards": "nenhum"
+      },
+      "why_pt": "Desde 1967. Dashi mais leve e limpo que o rival Akadama, e clientela local de verdade.",
+      "order_pt": "Miyuki-age (satsuma-age da casa), kuruma-fu, bai-gai, nabo; kani-men na estação.",
+      "pregnancy_pt": "Tudo cozido. Evite só acompanhamentos crus de molusco.",
+      "group_pt": "Salas privativas de 10–20. 6 cabem.",
+      "booking_pt": "On-line, obrigatória para 3 ou mais.",
+      "dec_jan_pt": "16:00–22:00; fecha domingo, feriado e 2ª segunda do mês (11/1/2027 fechado). Ano-Novo a confirmar.",
+      "query": "Oden Miyuki Kanazawa"
+    },
+    {
+      "name": "Turban Curry Honten",
+      "name_ja": "ターバンカレー 本店",
+      "area": "Kanazawa",
+      "genre_pt": "Curry de Kanazawa",
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 914,
+        "url": "https://tabelog.com/ishikawa/A1701/A170101/17001277/"
+      },
+      "critics": [
+        {
+          "who": "@migrationology",
+          "note_pt": "Provou o curry de Kanazawa aqui no vídeo da cidade.",
+          "url": "https://www.youtube.com/watch?v=TKFOzNTrWwk"
+        }
+      ],
+      "why_pt": "A original de 1971, que os avaliadores do Tabelog chamam de 本家本元. Abaixo de 3,5: vale pela história e pelo horário de Ano-Novo.",
+      "order_pt": "Katsu curry.",
+      "pregnancy_pt": "Tudo cozido.",
+      "group_pt": "16 lugares; 6 se dividem.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Fechado 30/12–1/1; abre a partir de 2/1, útil no meio do fechamento.",
+      "query": "Turban Curry Kanazawa"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Amanatto Kawamura",
+      "name_ja": "甘納豆かわむら",
+      "what_pt": "Feijões cristalizados (amanattō) de casa de doces de Higashi Chaya. Tabelog 3,73, 和菓子 WEST 百名店 2023, 2026.",
+      "buy_pt": "Caixas de amanattō, que viajam bem como presente.",
+      "dec_jan_pt": "Loja fechada 31/12–3/1; salão do 2º andar fechado 24/12–4/1.",
+      "query": "Amanatto Kawamura Kanazawa"
+    },
+    {
+      "name": "Tsubomi",
+      "name_ja": "つぼみ",
+      "what_pt": "Casa de kanmi (doces e chá) em Higashi Chaya. Tabelog 3,66, 和菓子 WEST 百名店 2023, 2026.",
+      "buy_pt": "Doces para comer no local; 16 lugares.",
+      "dec_jan_pt": "Fecha às quartas. Ano-Novo a confirmar.",
+      "query": "Tsubomi Higashi Chaya"
+    },
+    {
+      "name": "Suzume Kanazawa Hyakubangai",
+      "name_ja": "すゞめ 金沢百番街店",
+      "what_pt": "Casa de wagashi dentro da estação, na lista 和菓子 百名店 2026.",
+      "buy_pt": "Doces para o trem.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Suzume Kanazawa Hyakubangai"
+    },
+    {
+      "name": "Fukumitsuya",
+      "name_ja": "福光屋",
+      "what_pt": "Cervejaria de saquê de Kanazawa, em plena produção em dezembro.",
+      "buy_pt": "Saquê para os homens; amazake de kōji (sem álcool) para ela, se houver.",
+      "dec_jan_pt": "Horário da loja no Ano-Novo a confirmar.",
+      "query": "Fukumitsuya Kanazawa"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "docs/research/food/11-critics-international.md",
+    "https://www.youtube.com/watch?v=TKFOzNTrWwk",
+    "https://ja.wikipedia.org/wiki/近江町市場",
+    "https://ja.wikipedia.org/wiki/治部煮",
+    "https://ja.wikipedia.org/wiki/加賀野菜",
+    "https://ja.wikipedia.org/wiki/金沢箔",
+    "https://ja.wikipedia.org/wiki/香箱ガニ"
+  ]
+}

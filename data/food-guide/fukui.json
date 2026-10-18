@@ -1,0 +1,174 @@
+{
+  "slug": "fukui",
+  "name": "Fukui / Awara Onsen",
+  "tagline_pt": "A terra do caranguejo de etiqueta amarela e do soba com nabo ralado.",
+  "history_pt": [
+    "Echizen, a antiga província de Fukui, pesca o zuwai macho com o nome Echizen-gani desde por volta de 1916, e foi a primeira do Japão a pôr etiqueta nos caranguejos: a amarela garante a origem. A fêmea pequena aqui se chama seiko-gani. O romancista Kaikō Takeshi era tão fã que uma pousada da costa batizou com o nome dele uma tigela com oito seiko desmontadas sobre arroz.",
+    "O soba é a outra religião. O clã Asakura incentivou o trigo-sarraceno contra a fome e a guerra, e no começo do período Edo o vassalo Honda Tomimasa o espalhou por terras pobres; uma das histórias de origem diz que ele mandou servir soba coberto de nabo ralado. Em 1947 o imperador Shōwa elogiou o soba de Takefu e o nome 'Echizen soba' pegou.",
+    "O oroshi soba usa farinha integral, com casca, então o macarrão é mais escuro e mais firme. O nabo ralado entra no caldo, e cada casa escolhe a parte do nabo para regular a ardência."
+  ],
+  "winter_pt": "Temporada de Echizen-gani: macho de 6/11 a 20/3, fêmea (seiko) só até o fim do ano. Em Awara Onsen, o jantar de caranguejo do ryokan é o programa. Fukui ainda tem um hábito curioso: mizu-yōkan, gelatina de feijão, se come no inverno, gelada, ao lado do aquecedor.",
+  "meibutsu": [
+    {
+      "name_pt": "Caranguejo Echizen",
+      "name_ja": "越前がに",
+      "romaji": "Echizen-gani",
+      "what_pt": "Zuwai macho com etiqueta amarela, cozido, no vapor ou grelhado. Um dos caranguejos mais caros do Japão.",
+      "where_pt": "Ryokans de Awara e da costa; Echizen Kani no Bō em Mikuni.",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Cozido ou grelhado, pode. Evite kani-sashi cru."
+    },
+    {
+      "name_pt": "Seiko-gani",
+      "name_ja": "せいこがに",
+      "romaji": "seiko-gani",
+      "what_pt": "A fêmea pequena, com uchiko e sotoko. É o kōbako de Kanazawa com outro nome.",
+      "where_pt": "Kobase (tigela Kaikō-don, até o fim do ano).",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Oroshi soba de Echizen",
+      "name_ja": "越前おろしそば",
+      "romaji": "Echizen oroshi soba",
+      "what_pt": "Soba integral, escuro e firme, com nabo ralado, cebolinha e katsuobushi, frio no caldo ou com o caldo por cima.",
+      "where_pt": "Casas de soba da cidade; nenhuma verificada no Tabelog para este guia.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Sōsu katsudon",
+      "name_ja": "ソースカツ丼",
+      "romaji": "sōsu katsudon",
+      "what_pt": "Costeleta fina empanada mergulhada em molho tipo inglês sobre arroz, sem ovo. A versão de Fukui da katsudon.",
+      "where_pt": "Casas de katsudon da cidade (não verificadas no Tabelog aqui).",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Heshiko",
+      "name_ja": "へしこ",
+      "romaji": "heshiko",
+      "what_pt": "Cavala salgada e fermentada em farelo de arroz por um ano ou mais. Grelhada, acompanha arroz e saquê.",
+      "where_pt": "Lojas de produtos do mar.",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Grelhada está liberada; fatiada crua, como sashimi, ela evita."
+    },
+    {
+      "name_pt": "Mizu-yōkan de inverno",
+      "name_ja": "水ようかん",
+      "romaji": "mizu-yōkan",
+      "what_pt": "Gelatina mole de feijão-azuki, vendida em caixas rasas no inverno e comida gelada.",
+      "where_pt": "Supermercados e docerias (dez–fev).",
+      "must": false,
+      "pregnancy": "ok"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Costa de Echizen",
+      "name_ja": "越前海岸",
+      "kind": "porto",
+      "story_pt": "A costa onde o Echizen-gani é desembarcado e onde ficam as pousadas de caranguejo.",
+      "eat_pt": [
+        "Almoço de caranguejo",
+        "Kaikō-don na Kobase"
+      ],
+      "tips_pt": "Carro ou táxi; transporte público é fraco.",
+      "dec_jan_pt": "Kobase só recebe hóspedes 27/12–4/1.",
+      "query": "Echizen coast crab"
+    },
+    {
+      "name": "Mikuni-minato",
+      "name_ja": "三国湊",
+      "kind": "porto",
+      "story_pt": "Antigo porto de navios mercantes, hoje com restaurantes de caranguejo.",
+      "eat_pt": [
+        "Kaisen-don e caranguejo na Echizen Kani no Bō"
+      ],
+      "tips_pt": "Reserve a sessão das 11:00.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Mikuni minato Fukui"
+    },
+    {
+      "name": "Awara Onsen",
+      "name_ja": "あわら温泉",
+      "kind": "bairro",
+      "story_pt": "Vila termal onde, em 1947, o imperador Shōwa foi servido de jibuni. Hoje o jantar de caranguejo do ryokan é o programa de inverno.",
+      "eat_pt": [
+        "Jantar de caranguejo no ryokan"
+      ],
+      "tips_pt": "Pergunte ao ryokan se o caranguejo é etiquetado.",
+      "dec_jan_pt": "Ryokans abertos; preços sobem no Ano-Novo.",
+      "query": "Awara Onsen"
+    }
+  ],
+  "places": [
+    {
+      "name": "Furusato no Yado Kobase",
+      "name_ja": "ふるさとの宿こばせ",
+      "area": "Costa de Echizen",
+      "genre_pt": "Ryokan de caranguejo",
+      "price_pt": "Almoço ~¥13–24k (segundo avaliações)",
+      "tabelog": {
+        "score": 3.75,
+        "reviews": 92,
+        "url": "https://tabelog.com/fukui/A1802/A180201/18000759/",
+        "awards": "nenhum"
+      },
+      "why_pt": "O único destino de caranguejo que vale uma viagem de um dia. O Kaikō-don, oito seiko desmontadas sobre arroz, é peregrinação no Tabelog.",
+      "order_pt": "Kaikō-don (開高丼), só da abertura até o fim do ano.",
+      "pregnancy_pt": "Todo caranguejo é cozido. Liberado.",
+      "group_pt": "Em nov–dez o almoço aceita grupos de até 6, exatamente a família, com salas privativas.",
+      "booking_pt": "Só com reserva; os cursos abrem em 1/9.",
+      "dec_jan_pt": "27/12–4/1 só hóspedes. Precisa de data antes de 27/12.",
+      "query": "Kobase Echizen"
+    },
+    {
+      "name": "Echizen Kani no Bō",
+      "name_ja": "越前蟹の坊",
+      "area": "Mikuni-minato",
+      "genre_pt": "Caranguejo, kaisen-don",
+      "price_pt": "¥3–10k",
+      "tabelog": {
+        "score": 3.57,
+        "reviews": 389,
+        "url": "https://tabelog.com/fukui/A1801/A180102/18004214/"
+      },
+      "why_pt": "Da pousada Bōyōrō: caranguejo de Fukui sem fazer pernoite.",
+      "order_pt": "Caranguejo cozido; kaisen-don.",
+      "pregnancy_pt": "Prefira o caranguejo cozido e evite camarão e marisco crus no kaisen-don.",
+      "group_pt": "40 lugares; 6 cabem.",
+      "booking_pt": "Reserva só para a sessão das 11:00.",
+      "dec_jan_pt": "Fecha segunda e terça. Ano-Novo a confirmar.",
+      "query": "Echizen Kani no Bo Mikuni"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Bancas de caranguejo do porto de Echizen",
+      "name_ja": "越前漁港周辺の蟹販売店",
+      "what_pt": "Peixarias que vendem Echizen-gani cozido com etiqueta amarela.",
+      "buy_pt": "Caranguejo cozido para comer no hotel; confira a etiqueta.",
+      "dec_jan_pt": "Movimento forte no fim de ano; a confirmar.",
+      "query": "Echizen crab shop"
+    },
+    {
+      "name": "Mizu-yōkan de inverno",
+      "name_ja": "水ようかん",
+      "what_pt": "Docerias e supermercados de Fukui vendem caixas rasas no inverno.",
+      "buy_pt": "Uma caixa para a família.",
+      "dec_jan_pt": "Típico de dezembro a fevereiro.",
+      "query": "Fukui mizu yokan"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "https://ja.wikipedia.org/wiki/越前がに",
+    "https://ja.wikipedia.org/wiki/越前おろしそば",
+    "https://ja.wikipedia.org/wiki/香箱ガニ",
+    "https://ja.wikipedia.org/wiki/治部煮"
+  ]
+}

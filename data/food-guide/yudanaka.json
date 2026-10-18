@@ -1,0 +1,158 @@
+{
+  "slug": "yudanaka",
+  "name": "Yudanaka / Shibu Onsen",
+  "tagline_pt": "Vila termal de montanha: aqui se come no ryokan, e o soba bom fica de carro.",
+  "history_pt": [
+    "Shibu Onsen tem uma lenda de 1.300 anos (o monge Gyōki teria achado a fonte) e foi uma das fontes secretas de Takeda Shingen, que cuidou ali dos feridos da batalha de Kawanakajima. Kobayashi Issa e Hokusai passaram por aqui. Yudanaka, ao lado, é a porta para os macacos de Jigokudani.",
+    "É Shinshū de montanha: soba, oyaki, nozawana e maçãs dos pomares do vale de Yamanouchi. A vida de comer gira em torno do ryokan, com jantar de várias etapas e café da manhã incluído. Nas ruas das vilas, nada passa de ~3,4 no Tabelog."
+  ],
+  "winter_pt": "Neve, nabe no ryokan, maçãs, nozawana nova e ovo cozido nas fontes termais. A casa de soba mais famosa do vale fecha de fim de novembro a fim de abril.",
+  "meibutsu": [
+    {
+      "name_pt": "Jantar de ryokan",
+      "name_ja": "旅館の夕食",
+      "romaji": "ryokan no yūshoku",
+      "what_pt": "Kaiseki de montanha: peixe de rio, carne de Shinshū, cogumelos, nabe, soba no fim.",
+      "where_pt": "O seu ryokan.",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Peça antes da chegada: sem sashimi de crustáceo ou marisco, carne bem cozida, sem ovo cru."
+    },
+    {
+      "name_pt": "Soba de Shinshū",
+      "name_ja": "信州そば",
+      "romaji": "Shinshū soba",
+      "what_pt": "Soba frio na peneira, feito com trigo-sarraceno moído na pedra.",
+      "where_pt": "Iwamoto Sobaya (de carro).",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Ovo de fonte termal",
+      "name_ja": "温泉たまご",
+      "romaji": "onsen tamago",
+      "what_pt": "Ovo cozido devagar na água quente da fonte: clara mole, gema cremosa.",
+      "where_pt": "Ryokans e vilas termais.",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Gema mal cozida. Ela come só se estiver bem firme."
+    },
+    {
+      "name_pt": "Maçãs de Yamanouchi",
+      "name_ja": "りんご",
+      "romaji": "ringo",
+      "what_pt": "Os pomares do vale ainda vendem maçã em dezembro.",
+      "where_pt": "Lojas de frutas e mercadinhos.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Oyaki e nozawana",
+      "name_ja": "おやき・野沢菜",
+      "romaji": "oyaki, nozawana",
+      "what_pt": "Os lanches de Shinshū: bolinho recheado e conserva verde.",
+      "where_pt": "Lojas de lembranças das vilas.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Cerveja e saquê de Shiga Kōgen",
+      "name_ja": "志賀高原ビール・地酒",
+      "romaji": "Shiga Kōgen beer",
+      "what_pt": "A cervejaria Tamamura Honten faz saquê e cerveja artesanal no vale.",
+      "where_pt": "Tamamura Honten.",
+      "must": false,
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Álcool. Ela pula."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Rua de Shibu Onsen",
+      "name_ja": "渋温泉街",
+      "kind": "rua",
+      "story_pt": "Ruela de pedra com ryokans de madeira e nove banhos públicos.",
+      "eat_pt": [
+        "Lanches de oyaki",
+        "Ovos termais"
+      ],
+      "tips_pt": "À noite, de yukata, é o programa.",
+      "dec_jan_pt": "Ryokans abertos e caros no Ano-Novo.",
+      "query": "Shibu Onsen"
+    },
+    {
+      "name": "Yudanaka",
+      "name_ja": "湯田中",
+      "kind": "estação",
+      "story_pt": "Estação final da linha Nagano Dentetsu, base para Jigokudani.",
+      "eat_pt": [
+        "Lanche antes dos macacos"
+      ],
+      "tips_pt": "Coma antes de subir: no caminho não há nada.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Yudanaka Station"
+    }
+  ],
+  "places": [
+    {
+      "name": "Ishiusu-biki Soba Kōbō Yama no Mi",
+      "name_ja": "石臼挽き蕎麦香房 山の実",
+      "area": "Yamanouchi",
+      "genre_pt": "Soba",
+      "tabelog": {
+        "score": 4.06,
+        "reviews": 346,
+        "url": "https://tabelog.com/nagano/A2001/A200104/20000397/",
+        "awards": "Award Bronze 2022, 2025, 2026; そば EAST 百名店 2025"
+      },
+      "why_pt": "O melhor soba da região, mas com neve fecha. Está aqui para ninguém perder a viagem.",
+      "order_pt": "Soba moído na pedra.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Fechado do fim de novembro ao fim de abril. A página fala num ponto de inverno nas pistas, não verificado. Provavelmente inútil na viagem.",
+      "query": "Yama no Mi soba Yamanouchi"
+    },
+    {
+      "name": "Iwamoto Sobaya",
+      "name_ja": "岩本そば屋",
+      "area": "Yamanouchi (de carro)",
+      "genre_pt": "Soba",
+      "tabelog": {
+        "score": 3.57,
+        "reviews": 89,
+        "url": "https://tabelog.com/nagano/A2001/A200104/20002605/"
+      },
+      "why_pt": "O soba utilizável no inverno, com sala de tatame.",
+      "order_pt": "Zaru soba.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "30 lugares com tatame; 6 cabem.",
+      "booking_pt": "A confirmar. Só dinheiro.",
+      "dec_jan_pt": "Fecha às quintas. Ano-Novo a confirmar.",
+      "query": "Iwamoto Sobaya Yamanouchi"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Tamamura Honten",
+      "name_ja": "玉村本店",
+      "what_pt": "Cervejaria de saquê e da cerveja Shiga Kōgen no vale.",
+      "buy_pt": "Saquê e cerveja para os adultos que bebem.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Tamamura Honten Shiga Kogen Beer"
+    },
+    {
+      "name": "Lojas de maçã e lembranças",
+      "name_ja": "りんご・土産店",
+      "what_pt": "Lojinhas de fruta e de oyaki/nozawana nas vilas.",
+      "buy_pt": "Maçã da estação, nozawana.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Yudanaka apple shop"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "https://ja.wikipedia.org/wiki/渋温泉",
+    "https://ja.wikipedia.org/wiki/おやき"
+  ]
+}

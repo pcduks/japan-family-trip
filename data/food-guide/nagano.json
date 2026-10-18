@@ -1,0 +1,243 @@
+{
+  "slug": "nagano",
+  "name": "Nagano (Zenkō-ji)",
+  "tagline_pt": "Cidade-templo: soba de Togakushi, oyaki e a mesa vegetariana das hospedarias do Zenkō-ji.",
+  "history_pt": [
+    "Nagano nasceu como cidade do templo Zenkō-ji. A peregrinação ao Zenkō-ji virou moda popular no período Edo, e para receber romeiros surgiram as hospedarias de templo (shukubō): hoje são 39 (25 da seita Tendai, 14 da Jōdo), e qualquer pessoa pode dormir numa e jantar shōjin ryōri, a cozinha vegetariana budista.",
+    "Nagano é terra de soba por necessidade: montanha fria, arroz difícil, trigo-sarraceno que gosta de altitude e neblina. Já no século XVII o Honchō Shokukan punha o trigo-sarraceno de Shinshū acima dos outros, e em 1983 a província declarou o soba feito à mão um 'bem cultural do sabor'. Togakushi, montanha sagrada de ascetas ao norte da cidade, é o soba mais famoso da província, servido em montinhos na peneira de bambu.",
+    "O oyaki é o pão da montanha: arroz rendia pouco, então se fazia bolinho de trigo recheado de nozawana, berinjela ou feijão, assado nas cinzas do irori. No centro de Nagano o costume é cozinhar no vapor; em Ogawa ainda se mostra o jeito antigo."
+  ],
+  "winter_pt": "Togakushi fica sob neve funda em janeiro: confirme se as casas de soba estão abertas. O hatsumōde (primeira visita do ano) no Zenkō-ji em 1–3/1 é enorme, com cerimônias de 1–3/1 e o carimbo na cabeça (御印文頂戴) de 7 a 15/1. Maçãs e nozawana nova.",
+  "meibutsu": [
+    {
+      "name_pt": "Soba de Togakushi",
+      "name_ja": "戸隠そば",
+      "romaji": "Togakushi soba",
+      "what_pt": "Soba servido em pequenos montes na peneira de bambu, com o perfume do trigo-sarraceno da montanha.",
+      "where_pt": "Uzuraya, Soba no Mi. Mark Wiens comeu tōji soba (soba mergulhado em caldo quente) no Fukuden, em Nagano.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Oyaki",
+      "name_ja": "おやき",
+      "romaji": "oyaki",
+      "what_pt": "Bolinho de trigo recheado de nozawana, berinjela, abóbora ou feijão. Grelhado no irori ou no vapor.",
+      "where_pt": "Ogawa no Shō Daimon, na avenida do Zenkō-ji.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Shōjin ryōri do shukubō",
+      "name_ja": "宿坊の精進料理",
+      "romaji": "shukubō shōjin ryōri",
+      "what_pt": "Jantar e café vegetarianos budistas numa hospedaria do templo, com tofu, legumes da montanha e goma.",
+      "where_pt": "Os 39 shukubō do Zenkō-ji (reserva direta com cada um).",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Shichimi de Zenkō-ji",
+      "name_ja": "七味唐辛子",
+      "romaji": "shichimi tōgarashi",
+      "what_pt": "Mistura de sete especiarias com pimenta; a de Yawataya Isogorō é a lembrança clássica do templo.",
+      "where_pt": "Yawataya Isogorō, na avenida do templo.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Sukiyaki de carne de Shinshū",
+      "name_ja": "信州牛すき焼き",
+      "romaji": "Shinshū-gyū sukiyaki",
+      "what_pt": "Carne de Shinshū na panela de ferro com molho doce.",
+      "where_pt": "Suki-tei Honten.",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Pule o ovo cru de mergulhar e deixe a carne cozinhar bem."
+    },
+    {
+      "name_pt": "Doces de castanha de Obuse",
+      "name_ja": "小布施の栗菓子",
+      "romaji": "Obuse kuri-gashi",
+      "what_pt": "Obuse, a meia hora, é a cidade da castanha: kuri-yōkan e doces de castanha.",
+      "where_pt": "Sakurai Kanseidō em Obuse.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Maçãs de Nagano",
+      "name_ja": "信州りんご",
+      "romaji": "ringo",
+      "what_pt": "Dezembro ainda é temporada.",
+      "where_pt": "Lojas de fruta e supermercados.",
+      "must": false,
+      "pregnancy": "ok"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Avenida do Zenkō-ji (Omotesandō e Nakamise)",
+      "name_ja": "善光寺表参道・仲見世通り",
+      "kind": "rua",
+      "story_pt": "Avenida dos romeiros, com oyaki, shichimi, soba e as hospedarias de templo em volta.",
+      "eat_pt": [
+        "Oyaki no Ogawa no Shō",
+        "Shichimi da Yawataya Isogorō",
+        "Shukubō para o jantar"
+      ],
+      "tips_pt": "Vá cedo; volte à noite quando o templo esvazia.",
+      "dec_jan_pt": "1–3/1 lotado pelo hatsumōde; lojas com horários especiais (a confirmar).",
+      "query": "Zenkoji Nakamise Nagano"
+    },
+    {
+      "name": "Togakushi",
+      "name_ja": "戸隠",
+      "kind": "bairro",
+      "story_pt": "Vila de santuários na montanha, cerca de 1 h de ônibus da estação.",
+      "eat_pt": [
+        "Soba na Uzuraya ou Soba no Mi"
+      ],
+      "tips_pt": "Ponha o nome na lousa da Uzuraya antes de abrir. O ônibus de Kagami-ike não roda no inverno.",
+      "dec_jan_pt": "Neve funda; funcionamento de inverno e Ano-Novo a confirmar.",
+      "query": "Togakushi soba"
+    },
+    {
+      "name": "Obuse",
+      "name_ja": "小布施",
+      "kind": "bairro",
+      "story_pt": "Cidadezinha de castanhas e de Hokusai.",
+      "eat_pt": [
+        "Doces de castanha",
+        "Soba na せきざわ (百名店)"
+      ],
+      "tips_pt": "Trem Nagano Dentetsu, ~30 min.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Obuse chestnut"
+    }
+  ],
+  "places": [
+    {
+      "name": "Uzuraya",
+      "name_ja": "うずら家",
+      "area": "Togakushi Chūsha",
+      "genre_pt": "Soba",
+      "price_pt": "¥1–3k",
+      "tabelog": {
+        "score": 3.78,
+        "reviews": 1506,
+        "url": "https://tabelog.com/nagano/A2001/A200101/20000191/",
+        "awards": "そば 百名店 2017–2022, EAST 2024, 2025"
+      },
+      "why_pt": "O soba de Togakushi que todo mundo quer, com espaço de verdade.",
+      "order_pt": "Zaru soba de Togakushi, tempura de legumes da montanha.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "70 lugares; 6 cabem.",
+      "booking_pt": "Lousa de nomes antes de abrir.",
+      "dec_jan_pt": "Fecha terça e quarta. Inverno e Ano-Novo a confirmar.",
+      "query": "Uzuraya Togakushi"
+    },
+    {
+      "name": "Soba no Mi",
+      "name_ja": "そばの実",
+      "area": "Togakushi",
+      "genre_pt": "Soba",
+      "tabelog": {
+        "score": 3.78,
+        "reviews": 1031,
+        "url": "https://tabelog.com/nagano/A2001/A200101/20001575/",
+        "awards": "そば 百名店 2017–2022, EAST 2024, 2025"
+      },
+      "why_pt": "A outra casa grande de Togakushi, com salas privativas.",
+      "order_pt": "Soba frio.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "53 lugares com salas; 6 cabem.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "O ônibus de Kagami-ike não roda no inverno: táxi ou carro. A confirmar.",
+      "query": "Soba no Mi Togakushi"
+    },
+    {
+      "name": "Soba Fujioka",
+      "name_ja": "蕎麦 ふじおか",
+      "area": "Planalto de Iizuna",
+      "genre_pt": "Curso de soba",
+      "price_pt": "¥4–6k",
+      "tabelog": {
+        "score": 3.88,
+        "reviews": 155,
+        "url": "https://tabelog.com/nagano/A2001/A200101/20000415/",
+        "awards": "Tabelog Award Silver 2017, Bronze 2018–21; 百名店 vários anos"
+      },
+      "why_pt": "O soba mais bem pontuado da região, em curso.",
+      "order_pt": "O curso.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "Mesa de 6: cabe exatamente. Não aceita menores de 10.",
+      "booking_pt": "Só reserva, um mês antes. Só dinheiro.",
+      "dec_jan_pt": "Abre sexta a segunda. Inverno a confirmar.",
+      "query": "Soba Fujioka Iizuna"
+    },
+    {
+      "name": "Suki-tei Honten",
+      "name_ja": "すき亭 本店",
+      "area": "Nagano",
+      "genre_pt": "Sukiyaki, carne de Shinshū",
+      "price_pt": "¥5–15k",
+      "tabelog": {
+        "score": 3.61,
+        "reviews": 232,
+        "url": "https://tabelog.com/nagano/A2001/A200101/20000232/",
+        "awards": "すき焼き・しゃぶしゃぶ 百名店 2024"
+      },
+      "why_pt": "O sukiyaki de Nagano que cabe a família toda em sala privativa.",
+      "order_pt": "Sukiyaki de carne de Shinshū.",
+      "pregnancy_pt": "Sem ovo cru; carne bem cozida.",
+      "group_pt": "120 lugares, salas para 4–16; 6 cabem.",
+      "booking_pt": "Reserve.",
+      "dec_jan_pt": "Fechado no fim de ano e Ano-Novo (datas não informadas).",
+      "query": "Sukitei Nagano"
+    },
+    {
+      "name": "Ogawa no Shō Daimon",
+      "name_ja": "小川の庄 大門店",
+      "area": "Nagano · avenida do Zenkō-ji",
+      "genre_pt": "Oyaki",
+      "tabelog": {
+        "score": 3.47,
+        "reviews": 270,
+        "url": "https://tabelog.com/nagano/A2001/A200101/20001092/"
+      },
+      "why_pt": "Oyaki grelhado no irori. Abaixo de 3,5, mas a melhor nota de oyaki perto do templo (いろは堂 仲見世 tem ~3,2).",
+      "order_pt": "Oyaki de nozawana e de berinjela.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "Para levar; 6 sem problema.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Fecha às quartas. Ano-Novo a confirmar.",
+      "query": "Ogawa no Sho Daimon Nagano"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Yawataya Isogorō",
+      "name_ja": "八幡屋礒五郎",
+      "what_pt": "Casa de shichimi da avenida do Zenkō-ji.",
+      "buy_pt": "Shichimi em lata, misturas sob encomenda.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Yawataya Isogoro Zenkoji"
+    },
+    {
+      "name": "Sakurai Kanseidō Honten",
+      "name_ja": "桜井甘精堂 本店",
+      "what_pt": "Doceria de castanha em Obuse, 和菓子 EAST 百名店 2026.",
+      "buy_pt": "Kuri-yōkan e doces de castanha.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Sakurai Kanseido Obuse"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "docs/research/food/11-critics-international.md",
+    "https://www.youtube.com/watch?v=hGBXlqIcSqM",
+    "https://ja.wikipedia.org/wiki/善光寺",
+    "https://ja.wikipedia.org/wiki/信州そば",
+    "https://ja.wikipedia.org/wiki/おやき"
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "slug": "nara",
+  "name": "Nara",
+  "tagline_pt": "A primeira capital: comida de templo e de conserva, onde nasceram o saquê limpo e o sōmen.",
+  "history_pt": [
+    "Nara foi capital no século VIII (Heijō-kyō), e muito do que o Japão come começou nos templos daqui. Uma tabuleta de madeira escavada no palácio, da casa do príncipe Nagaya, já lista cabaça e berinjela em borra de saquê: o avô do Nara-zuke. O nome \"Nara-zuke\" se popularizou com o médico Itoya Sōsen, que vendia melão branco (shirouri) em sake-kasu na era Keichō (1596–1615).",
+    "O templo Shōryaku-ji (fundado em 992) se apresenta como \"清酒発祥の地\", o berço do saquê refinado. Na era Muromachi, os monges fecharam ali as técnicas do saquê moderno: arroz polido no kōji e no arroz cozido (morohaku), três etapas de mistura, pasteurização e o fermento-mãe bodaimoto. O \"Nanto morohaku\", saquê dos templos de Nara, era o mais cotado do país.",
+    "Nara não tem mar. O cavala salgado subia de Kishū pelos rios Kino e Kumano e chegava salgado demais; fatiado fino sobre arroz e embrulhado em folha de caqui (que perfuma e ajuda a conservar), virou o kakinoha-zushi, comida de festa nas montanhas de Yoshino e Gojō.",
+    "No café da manhã, Nara come chagayu (\"okaisan\"), arroz cozido em chá torrado. Os registros dos monges do Shuni-e do Tōdai-ji (rito anual desde 752) já falam dele. E no pé do monte Miwa, onde está o santuário Ōmiwa, a tradição diz que nasceu o sōmen."
+  ],
+  "winter_pt": "O sōmen de Miwa é esticado à mão no frio mais forte do inverno: dezembro e janeiro são a estação de produção. O ozōni de Nara é de missô branco, mas com mochi redondo grelhado (único na região), e há famílias que tiram o mochi do caldo e passam na kinako (きな粉雑煮).",
+  "meibutsu": [
+    {
+      "name_pt": "Sushi em folha de caqui",
+      "name_ja": "柿の葉寿司",
+      "romaji": "kakinoha-zushi",
+      "what_pt": "Pedaços de arroz com cavala ou salmão curado, cada um embrulhado em folha de caqui (a folha não se come). Feito para durar uns dias: comida de trem.",
+      "where_pt": "Tanaka (aberta todo dia), Hiraso ou Izasa, em Nara.",
+      "price_pt": "a confirmar",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "O peixe é curado em sal e vinagre, não cozido: decisão dela. A Tanaka vende peças de anago e de legumes como troca segura."
+    },
+    {
+      "name_pt": "Conserva em borra de saquê",
+      "name_ja": "奈良漬",
+      "romaji": "Nara-zuke",
+      "what_pt": "Melão branco, pepino ou gengibre curados meses em sake-kasu até ficarem castanhos, doces e alcoólicos. Combina com arroz branco e chá.",
+      "where_pt": "Mori Narazuke-ten (ao lado do Tōdai-ji) e Imanishi Honten.",
+      "price_pt": "a confirmar",
+      "must": true,
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Retém álcool (a Wikipedia japonesa cita ~5%). Ela pula ou prova uma lasca; compre para os pais e o Pedro."
+    },
+    {
+      "name_pt": "Mingau de chá",
+      "name_ja": "茶粥",
+      "romaji": "chagayu (okaisan)",
+      "what_pt": "Arroz cozido em hōjicha, ralo e sem goma, salgado. Café da manhã de Nara há séculos; às vezes leva batata-doce, castanha ou mochi.",
+      "where_pt": "Café da manhã de ryokan em Nara; pergunte ao reservar. Nenhum restaurante foi verificado no Tabelog.",
+      "pregnancy": "ok",
+      "pregnancy_pt": "Hōjicha tem pouca cafeína."
+    },
+    {
+      "name_pt": "Sōmen de Miwa",
+      "name_ja": "三輪素麺",
+      "romaji": "Miwa sōmen",
+      "what_pt": "Fios finíssimos de trigo esticados à mão no inverno, firmes ao cozinhar. O envelhecido por um ano (hine) e por dois (ōhine) é o mais valorizado. No frio, peça nyūmen (sōmen em caldo quente).",
+      "where_pt": "Na região de Miwa/Sakurai, perto do santuário Ōmiwa; para levar, pacotes nas lojas de souvenir. Nenhuma casa foi verificada no Tabelog.",
+      "price_pt": "a confirmar",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Mochi de artemísia",
+      "name_ja": "よもぎ餅",
+      "romaji": "yomogi-mochi",
+      "what_pt": "Mochi verde de artemísia, recheado de anko liso e coberto de kinako, comido quente logo depois de socado.",
+      "where_pt": "Nakatanidō (Sanjō-dōri).",
+      "price_pt": "Menos de ¥1.000",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Morder pequeno, sobretudo os pais."
+    },
+    {
+      "name_pt": "Saquê de Nara",
+      "name_ja": "奈良の酒",
+      "romaji": "Nara no sake",
+      "what_pt": "Saquê feito com o método bodaimoto do Shōryaku-ji, ácido e encorpado. O templo faz o festival do bodaimoto em janeiro (em 2027: 9 jan, o dia da volta da família).",
+      "where_pt": "Lojas de saquê da cidade; Shōryaku-ji fica nas montanhas, de ônibus.",
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Nada de saquê; amazake só de kōji (\"麹の甘酒ですか?\")."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Naramachi",
+      "name_ja": "ならまち",
+      "kind": "bairro",
+      "story_pt": "O antigo bairro de mercadores ao sul do lago Sarusawa, de casas de madeira compridas (machiya). É onde ficam os doces sérios e as refeições calmas de Nara.",
+      "eat_pt": [
+        "Namagashi no Kashiya (melhor nota de doce de Nara)",
+        "Almoço de legumes de Yamato no Awa Naramachi (sala para 6)"
+      ],
+      "tips_pt": "Muito mais tranquilo que a faixa dos cervos. Kashiya tem escada íngreme: compre para levar.",
+      "dec_jan_pt": "Kashiya diz abrir o ano todo; Awa fecha terça. Ano-Novo a confirmar.",
+      "query": "Naramachi Nara"
+    },
+    {
+      "name": "Sanjō-dōri e Higashimuki",
+      "name_ja": "三条通り・東向商店街",
+      "kind": "rua",
+      "story_pt": "As ruas que ligam a estação Kintetsu-Nara ao parque. Comércio de souvenir, mas com casas antigas de kakinoha-zushi e Nara-zuke no caminho.",
+      "eat_pt": [
+        "Yomogi-mochi quente do Nakatanidō",
+        "Caixa de kakinoha-zushi da Tanaka para o trem",
+        "Nara-zuke no Mori, já perto do Tōdai-ji"
+      ],
+      "tips_pt": "No Nakatanidō, compre dois por pessoa e coma ali; não espere o show da socagem, que não tem horário.",
+      "dec_jan_pt": "Nakatanidō fecha terça (29 dez). Kasuga Taisha e Tōdai-ji lotam em 1–3 jan.",
+      "query": "Sanjo-dori Nara"
+    },
+    {
+      "name": "Miwa",
+      "name_ja": "三輪",
+      "kind": "bairro",
+      "story_pt": "Ao pé do monte Miwa, sede do santuário Ōmiwa, protetor dos fabricantes de sōmen. Todo 5 de fevereiro o santuário faz o bokujōsai, que \"adivinha\" o preço da safra.",
+      "eat_pt": [
+        "Sōmen frio ou nyūmen quente nas casas da rua do santuário (nenhuma verificada no Tabelog)"
+      ],
+      "tips_pt": "Meio dia saindo de Nara pela linha JR Sakurai (estação Miwa).",
+      "dec_jan_pt": "Ōmiwa é um dos grandes destinos de hatsumōde: muito cheio em 1–3 jan.",
+      "query": "Omiwa Shrine Miwa somen"
+    }
+  ],
+  "places": [
+    {
+      "name": "Nakatanidō",
+      "name_ja": "中谷堂",
+      "area": "Nara · Sanjō-dōri",
+      "genre_pt": "Wagashi (yomogi-mochi)",
+      "price_pt": "Menos de ¥1.000",
+      "tabelog": { "score": 3.72, "reviews": 2689, "url": "https://tabelog.com/nara/A2901/A290101/29000222/", "awards": "スイーツ WEST 百名店 2018–2020, 2022; 和菓子・甘味処 WEST 百名店 2023, 2026" },
+      "why_pt": "Sim, a socagem em alta velocidade virou espetáculo turístico. Mas 3.72 em 2.689 avaliações e seis 百名店 mostram que o japonês avalia o mochi, não o show: quente, macio, verde, com anko e kinako.",
+      "order_pt": "Yomogi-mochi, dois por pessoa.",
+      "pregnancy_pt": "Ok; morder pequeno.",
+      "group_pt": "Para comer na hora, em pé.",
+      "booking_pt": "Sem reserva; a loja não informa horário da socagem.",
+      "dec_jan_pt": "Fecha terça (29 dez). Ano-Novo a confirmar.",
+      "query": "Nakatanido Nara"
+    },
+    {
+      "name": "Kashiya",
+      "name_ja": "萬御菓子誂處 樫舎",
+      "area": "Nara · Naramachi",
+      "genre_pt": "Namagashi e kakigōri",
+      "price_pt": "¥1–2 mil",
+      "tabelog": { "score": 3.83, "reviews": 1109, "url": "https://tabelog.com/nara/A2901/A290101/29002296/", "awards": "スイーツ WEST 百名店 2018–2020, 2022; 和菓子・甘味処 WEST 百名店 2023, 2026" },
+      "why_pt": "O namagashi pelo qual quem ama Nara viaja. Mais quieto e melhor que qualquer coisa na faixa do parque.",
+      "order_pt": "Namagashi da estação com matcha.",
+      "pregnancy_pt": "Ok; um matcha só. A escada é íngreme a 30 semanas: compre para levar.",
+      "group_pt": "13 lugares de tatame no andar de cima: dividir ou levar.",
+      "booking_pt": "Prioridade para reserva por telefone.",
+      "dec_jan_pt": "\"Aberto o ano todo\" (Tabelog). Ano-Novo a confirmar.",
+      "query": "Kashiya wagashi Naramachi"
+    },
+    {
+      "name": "Awa Naramachi",
+      "name_ja": "粟 ならまち店",
+      "area": "Nara · Naramachi",
+      "genre_pt": "Cozinha regional (legumes tradicionais de Yamato)",
+      "price_pt": "Almoço ¥3–4 mil · Jantar ¥4–5 mil",
+      "tabelog": { "score": 3.66, "reviews": 374, "url": "https://tabelog.com/nara/A2901/A290101/29001643/" },
+      "why_pt": "A melhor refeição sentada em Nara para esta família: calma, de legumes e privativa para seis.",
+      "order_pt": "O curso de legumes de Yamato.",
+      "pregnancy_pt": "Quase tudo cozido: ok.",
+      "group_pt": "Sala privativa para 6–8.",
+      "booking_pt": "Só com reserva.",
+      "dec_jan_pt": "Fecha terça. Ano-Novo a confirmar.",
+      "query": "Awa Naramachi"
+    },
+    {
+      "name": "Kakinoha-zushi Honpo Tanaka Nara Honten",
+      "name_ja": "柿の葉すし本舗たなか 奈良本店",
+      "area": "Nara · centro",
+      "genre_pt": "Kakinoha-zushi",
+      "tabelog": { "score": 3.25, "reviews": 477, "url": "https://tabelog.com/nara/A2901/A290101/29006750/" },
+      "why_pt": "Nota baixa é normal para comida regional embalada. Compre uma caixa para o trem; não planeje refeição em torno disso.",
+      "order_pt": "Caixa mista; anago e legumes para ela.",
+      "pregnancy_pt": "Cavala e salmão curados, não cozidos: escolha anago e legumes.",
+      "group_pt": "Para viagem, com alguns lugares.",
+      "dec_jan_pt": "Abre todo dia 9h30–19h. Ano-Novo a confirmar.",
+      "query": "Kakinoha sushi Tanaka Nara"
+    },
+    {
+      "name": "Hiraso Nara-ten",
+      "name_ja": "平宗 奈良店",
+      "area": "Nara · centro",
+      "genre_pt": "Kakinoha-zushi e refeições",
+      "tabelog": { "score": 3.19, "reviews": 303, "url": "https://tabelog.com/nara/A2901/A290101/29000753/" },
+      "why_pt": "Refeição sentada com kakinoha-zushi; para viagem o ano todo.",
+      "pregnancy_pt": "Mesmo cuidado com o peixe curado.",
+      "group_pt": "Reserva de almoço só para 10+.",
+      "dec_jan_pt": "Fecha segunda. Ano-Novo a confirmar.",
+      "query": "Hiraso Nara"
+    },
+    {
+      "name": "Izasa (Yume-kaze Hiroba)",
+      "name_ja": "ゐざさ",
+      "area": "Nara · Yume-kaze Hiroba",
+      "genre_pt": "Kakinoha-zushi",
+      "tabelog": { "score": 3.16, "url": "https://tabelog.com/nara/A2901/A290101/29001038/" },
+      "why_pt": "A terceira grande marca, com tatame: seis sentam juntos perto do Tōdai-ji.",
+      "pregnancy_pt": "Mesmo cuidado com o peixe curado.",
+      "group_pt": "42 lugares com tatame: cabe 6.",
+      "dec_jan_pt": "a confirmar.",
+      "query": "Izasa Yumekaze Hiroba Nara"
+    }
+  ],
+  "shops": [
+    { "name": "Mori Narazuke-ten", "name_ja": "森奈良漬店", "what_pt": "Casa antiga de Nara-zuke ao lado do Tōdai-ji (Tabelog 3.08, 37 avaliações, https://tabelog.com/nara/A2901/A290101/29005147/).", "buy_pt": "Shirouri Nara-zuke para os pais e o Pedro.", "dec_jan_pt": "9h–18h todo dia; Ano-Novo a confirmar.", "query": "Mori Narazuke Nara" },
+    { "name": "Imanishi Honten", "name_ja": "今西本店", "what_pt": "Outra casa antiga de Nara-zuke (Tabelog 3.10, https://tabelog.com/nara/A2901/A290101/29005395/).", "buy_pt": "Nara-zuke.", "dec_jan_pt": "a confirmar.", "query": "Imanishi Honten Narazuke" },
+    { "name": "Kakinoha-zushi Tanaka", "name_ja": "柿の葉すし本舗たなか", "what_pt": "Caixas de kakinoha-zushi para viagem.", "buy_pt": "Caixa mista para o trem.", "dec_jan_pt": "Abre todo dia.", "query": "Kakinoha sushi Tanaka Nara" }
+  ],
+  "sources": [
+    "docs/research/food/22-kansai.md",
+    "https://ja.wikipedia.org/wiki/奈良漬け",
+    "https://ja.wikipedia.org/wiki/正暦寺",
+    "https://shoryakuji.jp/",
+    "https://ja.wikipedia.org/wiki/柿の葉寿司",
+    "https://ja.wikipedia.org/wiki/茶粥",
+    "https://ja.wikipedia.org/wiki/三輪素麺",
+    "https://ja.wikipedia.org/wiki/雑煮"
+  ]
+}

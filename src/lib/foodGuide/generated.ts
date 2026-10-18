@@ -4,7 +4,7 @@ import type { FoodCity, FoodCityMeta, FoodTopic, FoodTopicMeta } from "./types";
 export const FOOD_CITIES: FoodCityMeta[] = [
   {
     "slug": "tokyo",
-    "name": "Tóquio",
+    "name": "Tokyo",
     "region": "Kanto",
     "tagline_pt": "A cidade que inventou o fast-food de trabalhador — nigiri, tempurá e soba de barraca — e depois o refinou até virar a capital mundial do comer bem.",
     "counts": {
@@ -12,6 +12,90 @@ export const FOOD_CITIES: FoodCityMeta[] = [
       "areas": 17,
       "places": 42,
       "shops": 25
+    }
+  },
+  {
+    "slug": "matsumoto",
+    "name": "Matsumoto",
+    "region": "Nagano",
+    "tagline_pt": "Cidade-castelo do soba, do frango 'de bandido' e do missô de Shinshū.",
+    "counts": {
+      "meibutsu": 7,
+      "areas": 2,
+      "places": 3,
+      "shops": 2
+    }
+  },
+  {
+    "slug": "nagano",
+    "name": "Nagano (Zenkō-ji)",
+    "region": "Nagano",
+    "tagline_pt": "Cidade-templo: soba de Togakushi, oyaki e a mesa vegetariana das hospedarias do Zenkō-ji.",
+    "counts": {
+      "meibutsu": 7,
+      "areas": 3,
+      "places": 5,
+      "shops": 2
+    }
+  },
+  {
+    "slug": "yudanaka",
+    "name": "Yudanaka / Shibu Onsen",
+    "region": "Nagano",
+    "tagline_pt": "Vila termal de montanha: aqui se come no ryokan, e o soba bom fica de carro.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 2,
+      "places": 2,
+      "shops": 2
+    }
+  },
+  {
+    "slug": "takayama",
+    "name": "Takayama / Hida",
+    "region": "Gifu (Hida)",
+    "tagline_pt": "Cidade de montanha de mercadores: carne Hida, missô na folha, saquê novo e mercados de manhã.",
+    "counts": {
+      "meibutsu": 8,
+      "areas": 3,
+      "places": 6,
+      "shops": 4
+    }
+  },
+  {
+    "slug": "kanazawa",
+    "name": "Kanazawa",
+    "region": "Ishikawa",
+    "tagline_pt": "A cidade do clã Maeda: caranguejo de inverno, cozinha de corte Kaga e um mercado de 300 anos.",
+    "counts": {
+      "meibutsu": 8,
+      "areas": 3,
+      "places": 6,
+      "shops": 4
+    }
+  },
+  {
+    "slug": "toyama",
+    "name": "Toyama",
+    "region": "Toyama",
+    "tagline_pt": "Uma baía funda e fria aos pés dos Alpes: buri de inverno, camarão branco e ramen preto.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 3,
+      "places": 3,
+      "shops": 2
+    }
+  },
+  {
+    "slug": "fukui",
+    "name": "Fukui / Awara Onsen",
+    "region": "Fukui",
+    "tagline_pt": "A terra do caranguejo de etiqueta amarela e do soba com nabo ralado.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 3,
+      "places": 2,
+      "shops": 2
     }
   },
   {
@@ -25,10 +109,121 @@ export const FOOD_CITIES: FoodCityMeta[] = [
       "places": 28,
       "shops": 9
     }
+  },
+  {
+    "slug": "osaka",
+    "name": "Osaka",
+    "region": "Kansai",
+    "tagline_pt": "Cidade de comerciante que come até cair: dashi de kombu, farinha na chapa e balcão em pé.",
+    "counts": {
+      "meibutsu": 7,
+      "areas": 9,
+      "places": 23,
+      "shops": 3
+    }
+  },
+  {
+    "slug": "nara",
+    "name": "Nara",
+    "region": "Kansai",
+    "tagline_pt": "A primeira capital: comida de templo e de conserva, onde nasceram o saquê limpo e o sōmen.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 3,
+      "places": 6,
+      "shops": 3
+    }
+  },
+  {
+    "slug": "kobe",
+    "name": "Kobe",
+    "region": "Hyogo",
+    "tagline_pt": "O porto que abriu em 1868 e aprendeu a comer carne, pão e bolinho chinês antes do resto do Japão.",
+    "counts": {
+      "meibutsu": 5,
+      "areas": 4,
+      "places": 6,
+      "shops": 2
+    }
+  },
+  {
+    "slug": "fukuoka",
+    "name": "Fukuoka",
+    "region": "Kyushu",
+    "tagline_pt": "Cidade de comerciantes que come rápido, barato e tarde: ramen de osso de porco, panela de frango e barraquinha na beira do rio.",
+    "counts": {
+      "meibutsu": 8,
+      "areas": 4,
+      "places": 6,
+      "shops": 4
+    }
+  },
+  {
+    "slug": "yufuin",
+    "name": "Yufuin",
+    "region": "Oita (Kyushu)",
+    "tagline_pt": "Vila termal de pousadas pequenas ao pé do monte Yufu: aqui se come bem no ryokan e se lancha no caminho.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 2,
+      "places": 3,
+      "shops": 2
+    }
+  },
+  {
+    "slug": "beppu",
+    "name": "Beppu",
+    "region": "Oita (Kyushu)",
+    "tagline_pt": "A cidade que cozinha no vapor do inferno: legumes, ovos e frutos do mar no bafo das fontes termais, e frango frito em tempurá.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 2,
+      "places": 3,
+      "shops": 2
+    }
+  },
+  {
+    "slug": "kurokawa",
+    "name": "Kurokawa Onsen",
+    "region": "Kumamoto (Kyushu)",
+    "tagline_pt": "Vale de pousadas no alto de Aso: aqui a comida é o jantar do ryokan, o boi vermelho do pasto e o soba das montanhas.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 2,
+      "places": 4,
+      "shops": 2
+    }
+  },
+  {
+    "slug": "kumamoto",
+    "name": "Kumamoto",
+    "region": "Kyushu",
+    "tagline_pt": "Cidade de castelo e de criadores de cavalo: ramen com alho torrado, sopa chinesa de bifum e raiz de lótus recheada de mostarda.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 3,
+      "places": 3,
+      "shops": 2
+    }
   }
 ];
 
 export const FOOD_TOPICS: FoodTopicMeta[] = [
+  {
+    "slug": "depachika",
+    "title_pt": "Depachika",
+    "items": 63
+  },
+  {
+    "slug": "ekiben",
+    "title_pt": "Ekiben e comida de estação",
+    "items": 44
+  },
+  {
+    "slug": "etiquette",
+    "title_pt": "Etiqueta à mesa",
+    "items": 61
+  },
   {
     "slug": "konbini",
     "title_pt": "Konbini",
@@ -38,9 +233,27 @@ export const FOOD_TOPICS: FoodTopicMeta[] = [
 
 export const CITY_LOADERS: Record<string, () => Promise<FoodCity>> = {
   "tokyo": () => import("../../../data/food-guide/tokyo.json").then((m) => m.default as FoodCity),
+  "matsumoto": () => import("../../../data/food-guide/matsumoto.json").then((m) => m.default as FoodCity),
+  "nagano": () => import("../../../data/food-guide/nagano.json").then((m) => m.default as FoodCity),
+  "yudanaka": () => import("../../../data/food-guide/yudanaka.json").then((m) => m.default as FoodCity),
+  "takayama": () => import("../../../data/food-guide/takayama.json").then((m) => m.default as FoodCity),
+  "kanazawa": () => import("../../../data/food-guide/kanazawa.json").then((m) => m.default as FoodCity),
+  "toyama": () => import("../../../data/food-guide/toyama.json").then((m) => m.default as FoodCity),
+  "fukui": () => import("../../../data/food-guide/fukui.json").then((m) => m.default as FoodCity),
   "kyoto": () => import("../../../data/food-guide/kyoto.json").then((m) => m.default as FoodCity),
+  "osaka": () => import("../../../data/food-guide/osaka.json").then((m) => m.default as FoodCity),
+  "nara": () => import("../../../data/food-guide/nara.json").then((m) => m.default as FoodCity),
+  "kobe": () => import("../../../data/food-guide/kobe.json").then((m) => m.default as FoodCity),
+  "fukuoka": () => import("../../../data/food-guide/fukuoka.json").then((m) => m.default as FoodCity),
+  "yufuin": () => import("../../../data/food-guide/yufuin.json").then((m) => m.default as FoodCity),
+  "beppu": () => import("../../../data/food-guide/beppu.json").then((m) => m.default as FoodCity),
+  "kurokawa": () => import("../../../data/food-guide/kurokawa.json").then((m) => m.default as FoodCity),
+  "kumamoto": () => import("../../../data/food-guide/kumamoto.json").then((m) => m.default as FoodCity),
 };
 
 export const TOPIC_LOADERS: Record<string, () => Promise<FoodTopic>> = {
+  "depachika": () => import("../../../data/food-guide/topics/depachika.json").then((m) => m.default as FoodTopic),
+  "ekiben": () => import("../../../data/food-guide/topics/ekiben.json").then((m) => m.default as FoodTopic),
+  "etiquette": () => import("../../../data/food-guide/topics/etiquette.json").then((m) => m.default as FoodTopic),
   "konbini": () => import("../../../data/food-guide/topics/konbini.json").then((m) => m.default as FoodTopic),
 };

@@ -1,0 +1,150 @@
+{
+  "slug": "yufuin",
+  "name": "Yufuin",
+  "tagline_pt": "Vila termal de pousadas pequenas ao pé do monte Yufu: aqui se come bem no ryokan e se lancha no caminho.",
+  "history_pt": [
+    "Yufuin escolheu ser o contrário de Beppu: em vez de hotéis grandes e vida noturna, pousadas pequenas no meio de arrozais e da névoa da manhã sobre o lago Kinrin. As melhores mesas da cidade estão dentro dos ryokan (Kamenoi Bessō, Sansō Murata, Tamanoyu dominam o ranking do Tabelog), e o jantar kaiseki da pousada costuma ser a refeição mais importante da estadia.",
+    "A comida é a de Oita montanhosa: boi Bungo, frango de terreiro, shiitake seco, dango-jiru e legumes da bacia. A rua Yunotsubo, entre a estação e o lago, virou corredor de doces e croquetes para turista; há boas exceções, como o roll cake da B-speak."
+  ],
+  "winter_pt": "Inverno é frio e úmido na bacia; a névoa da manhã sobre o Kinrin é a cena da estação. Panela de dango-jiru e de boi Bungo nos ryokan.",
+  "meibutsu": [
+    {
+      "name_pt": "Boi Bungo",
+      "name_ja": "豊後牛",
+      "romaji": "Bungo-gyū",
+      "what_pt": "O wagyu de Oita, servido em steak, sukiyaki ou cozido no vapor termal nos restaurantes da vila.",
+      "where_pt": "Yunotake-an (wagyu cozido no vapor termal), jantares de ryokan.",
+      "price_pt": "¥1.600–10.000",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Peça bem passado (ウェルダン). Evite tataki e sashimi de boi."
+    },
+    {
+      "name_pt": "Roll cake",
+      "name_ja": "ロールケーキ",
+      "romaji": "rōru kēki",
+      "what_pt": "O roll cake da B-speak, pão de ló com creme, só para viagem. Esgota cedo.",
+      "where_pt": "B-speak.",
+      "price_pt": "≈¥1.500 o rolo (a confirmar)",
+      "must": true
+    },
+    {
+      "name_pt": "Dango-jiru",
+      "name_ja": "だんご汁",
+      "romaji": "dango-jiru",
+      "what_pt": "Sopa de missô de cevada com tiras de massa puxadas à mão e legumes: o conforto de Oita no frio.",
+      "where_pt": "Restaurantes de comida local; café da manhã de ryokan.",
+      "price_pt": "¥800–1.200",
+      "must": false
+    },
+    {
+      "name_pt": "Kaiseki de ryokan",
+      "name_ja": "旅館の会席",
+      "romaji": "ryokan kaiseki",
+      "what_pt": "O jantar da pousada, servido no quarto ou em sala privada, com produtos de Oita. Em Yufuin é a refeição principal.",
+      "where_pt": "Pousada onde vocês dormirem.",
+      "price_pt": "Incluído na diária",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Avise na reserva: 妊娠中なので生もの抜きで (estou grávida, sem crus). Os ryokan trocam sashimi e ovo cru por pratos cozidos."
+    },
+    {
+      "name_pt": "Curry udon",
+      "name_ja": "カレーうどん",
+      "romaji": "karē udon",
+      "what_pt": "Udon grosso em curry espesso, almoço quente e barato no meio da vila.",
+      "where_pt": "Kikusuke (Tabelog 3.55, https://tabelog.com/en/oita/A4402/A440201/44008319/).",
+      "price_pt": "≈¥1.000",
+      "must": false
+    },
+    {
+      "name_pt": "Café de kissaten",
+      "name_ja": "喫茶",
+      "romaji": "kissa",
+      "what_pt": "Café sem pressa num kissaten 百名店. Pausa de meio de tarde para os pais.",
+      "where_pt": "Sabō Tenjō Sajiki.",
+      "price_pt": "¥1.000–2.000",
+      "must": false
+    }
+  ],
+  "areas": [
+    {
+      "name": "Rua Yunotsubo",
+      "name_ja": "湯の坪街道",
+      "kind": "rua",
+      "story_pt": "O corredor de lojas entre a estação e o lago Kinrin, cheio de croquetes, doces e lembranças.",
+      "eat_pt": ["Roll cake da B-speak", "Doces da Yufuin Milch (3.57)", "Curry udon no Kikusuke"],
+      "tips_pt": "Lota a partir das 11h com ônibus de excursão. Vá às 9h–10h ou no fim da tarde.",
+      "dec_jan_pt": "Muito movimento nos feriados de Ano-Novo; lojas abertas com horário reduzido (a confirmar).",
+      "query": "Yunotsubo Kaido Yufuin"
+    },
+    {
+      "name": "Lago Kinrin",
+      "name_ja": "金鱗湖",
+      "kind": "bairro",
+      "story_pt": "Lago pequeno alimentado por fontes quentes. Nas manhãs frias de inverno sai névoa da água, e o Kamenoi Bessō e seus cafés ficam ao lado.",
+      "eat_pt": ["Almoço no Yunotake-an", "Café no Tenjō Sajiki"],
+      "tips_pt": "Para a névoa, vá logo depois do nascer do sol, em dia frio e sem vento.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kinrin Lake Yufuin"
+    }
+  ],
+  "places": [
+    {
+      "name": "Yunotake-an",
+      "name_ja": "湯の岳庵",
+      "area": "Yufuin · Lago Kinrin (Kamenoi Bessō)",
+      "genre_pt": "Comida regional / japonesa",
+      "price_pt": "¥4.000–15.000",
+      "tabelog": { "score": 3.74, "reviews": 308, "url": "https://tabelog.com/en/oita/A4402/A440201/44000042/" },
+      "why_pt": "O restaurante aberto ao público do Kamenoi Bessō, o ryokan número 1 da cidade no Tabelog. É a melhor forma de provar a cozinha da casa sem dormir lá.",
+      "order_pt": "Wagyu cozido no vapor termal (¥1.600), hitsumabushi de enguia, arroz de frango.",
+      "pregnancy_pt": "Ok com pratos cozidos; sem sashimi.",
+      "group_pt": "Salas privadas só até 4: os seis em mesa aberta ou tatami (a confirmar).",
+      "booking_pt": "Online.",
+      "dec_jan_pt": "Aberto o ano todo, 11h–22h (horário pode mudar).",
+      "query": "Yunotake-an Yufuin"
+    },
+    {
+      "name": "Kunugi no Oka",
+      "name_ja": "檪の丘",
+      "area": "Yufuin",
+      "genre_pt": "Italiano / pizza",
+      "price_pt": "¥2.000–5.000",
+      "tabelog": { "score": 3.67, "reviews": 659, "url": "https://tabelog.com/en/oita/A4402/A440201/44000453/", "awards": "Italian WEST 百名店 2023, 2025; Pizza 百名店 2021" },
+      "why_pt": "Pizza de forno a lenha com vista para o monte Yufu: uma pausa do japonês que agrada a todos.",
+      "order_pt": "Pizza do forno de pedra e as costelinhas assadas.",
+      "pregnancy_pt": "Ok; evite presunto cru e queijos moles não pasteurizados.",
+      "group_pt": "70 lugares: os seis juntos.",
+      "booking_pt": "Reserva online só para o jantar; almoço por ordem de chegada.",
+      "dec_jan_pt": "Fecha quartas (abre em feriados). Ano-Novo a confirmar.",
+      "query": "Kunugi no Oka Yufuin"
+    },
+    {
+      "name": "Sabō Tenjō Sajiki",
+      "name_ja": "茶房 天井棧敷",
+      "area": "Yufuin",
+      "genre_pt": "Kissaten",
+      "price_pt": "¥1.000–1.999",
+      "tabelog": { "score": 3.66, "reviews": 591, "url": "https://tabelog.com/en/oita/A4402/A440201/44000043/", "awards": "Kissaten 百名店 2022, 2026" },
+      "why_pt": "Kissaten 百名店 duas vezes, com 30 lugares e clima de pausa longa. A partir das 17h vira o Bar Yamaneko.",
+      "order_pt": "Café e doce da casa.",
+      "pregnancy_pt": "Ok (com moderação na cafeína).",
+      "group_pt": "30 lugares em mesa: cabe 6 fora do pico.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "9h–17h, folgas irregulares. Ano-Novo a confirmar.",
+      "query": "Tenjo Sajiki Yufuin"
+    }
+  ],
+  "shops": [
+    { "name": "B-speak", "name_ja": "ビー・スピーク", "what_pt": "O roll cake de Yufuin. Tabelog 3.64 (459), Sweets WEST 百名店 2023 e 2026 (https://tabelog.com/en/oita/A4402/A440201/44000122/).", "buy_pt": "Roll cake (para levar).", "dec_jan_pt": "10h–17h todos os dias; fecha duas vezes por ano em datas variáveis.", "query": "B-speak Yufuin" },
+    { "name": "Yufuin Milch honten", "name_ja": "ゆふいん ミルヒ 本店", "what_pt": "Doces ocidentais de leite. Tabelog 3.57 (341), https://tabelog.com/en/oita/A4402/A440201/44007864/.", "buy_pt": "Um doce para comer andando pela Yunotsubo.", "dec_jan_pt": "A confirmar.", "query": "Yufuin Milch" }
+  ],
+  "sources": [
+    "https://tabelog.com/en/oita/A4402/A440201/rank/",
+    "https://tabelog.com/en/oita/A4402/A440201/44000042/",
+    "https://tabelog.com/en/oita/A4402/A440201/44000453/",
+    "https://tabelog.com/en/oita/A4402/A440201/44000043/",
+    "https://ja.wikipedia.org/wiki/だんご汁"
+  ]
+}

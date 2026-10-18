@@ -1,0 +1,207 @@
+{
+  "slug": "toyama",
+  "name": "Toyama",
+  "tagline_pt": "Uma baía funda e fria aos pés dos Alpes: buri de inverno, camarão branco e ramen preto.",
+  "history_pt": [
+    "A baía de Toyama despenca rápido para águas profundas e frias bem perto da costa, alimentada pela neve dos Alpes do Norte. Por isso tem peixe de fundo, lula-vagalume e o shiroebi, o camarão translúcido chamado de 'joia da baía de Toyama'. Só aqui ele é pescado comercialmente.",
+    "Em Himi, as redes fixas (teichi-ami) pegam o buri que desce para o sul no inverno. O kan-buri de Himi, de dezembro e janeiro, é a marca mais cobiçada do Japão para esse peixe.",
+    "O masu-zushi é a comida de viagem da cidade. Era feito com truta do rio Jinzū, prensada sobre arroz em folhas de bambu dentro de uma caixa redonda de madeira. A empresa Minamoto, fundada em 1908 como fornecedora da estação, vende desde 1912; hoje a truta vem sobretudo de Hokkaido.",
+    "O ramen preto, Toyama Black, nasceu no pós-guerra para os operários que reconstruíam a cidade bombardeada: caldo de shoyu escuro e salgadíssimo, muita pimenta-do-reino, feito para comer com arroz e repor o sal do suor. A Wikipedia data em ~1955; avaliações no Tabelog falam no Taiki de 1947."
+  ],
+  "winter_pt": "Pico do kan-buri de Himi, de dezembro a janeiro: buri-shabu, buri-daikon e sashimi. O shiroebi fresco é sobretudo das estações quentes; no inverno vem congelado ou seco (a confirmar no balcão).",
+  "meibutsu": [
+    {
+      "name_pt": "Buri de inverno de Himi",
+      "name_ja": "ひみ寒ぶり",
+      "romaji": "Himi kan-buri",
+      "what_pt": "Buri de inverno das redes fixas de Himi, no auge da gordura. Em sashimi, buri-shabu, teriyaki ou buri-daikon.",
+      "where_pt": "Himi Uoichiba Shokudō, logo ao lado de onde é desembarcado.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Camarão branco",
+      "name_ja": "白えび",
+      "romaji": "shiroebi",
+      "what_pt": "Camarãozinho translúcido, doce, só pescado comercialmente na baía de Toyama. Cru em sashimi, ou em kakiage e kara-age crocantes.",
+      "where_pt": "Gin Gyo e izakaya da cidade; tendon de shiroebi em restaurantes da estação.",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Cru conta como crustáceo cru: ela fica com o kakiage ou kara-age, que são fritos."
+    },
+    {
+      "name_pt": "Masu-zushi",
+      "name_ja": "ますのすし",
+      "romaji": "masu-zushi",
+      "what_pt": "Truta curada prensada sobre arroz, embrulhada em bambu numa caixa redonda de madeira (wappa). Corta-se em fatias como torta.",
+      "where_pt": "Ekiben na estação de Toyama (Minamoto e outras casas).",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "A truta é curada no sal e vinagre, não cozida. Japonesas grávidas costumam comer; se quiser zero risco, ela pula."
+    },
+    {
+      "name_pt": "Toyama Black",
+      "name_ja": "富山ブラック",
+      "romaji": "Toyama burakku",
+      "what_pt": "Ramen de shoyu quase preto, muito salgado, pimenta-do-reino grossa e cebolinha. Pensado para comer com arroz.",
+      "where_pt": "Nishichō Taiki (o original). Mark Wiens achou 'um pouco intenso, não meu favorito' e preferiu o Isshin, na estação.",
+      "must": false,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Pule o ovo cru que alguns vendem à parte."
+    },
+    {
+      "name_pt": "Kobu-jime",
+      "name_ja": "昆布締め",
+      "romaji": "kobu-jime",
+      "what_pt": "Peixe branco curado entre folhas de kombu. Toyama é uma das grandes consumidoras de kombu do Japão, herança das rotas de navio do mar do Japão.",
+      "where_pt": "Izakaya e supermercados.",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Peixe cru curado: peixe é liberado pelo brief, mas evite versões com camarão ou marisco."
+    },
+    {
+      "name_pt": "Kamaboko de Toyama",
+      "name_ja": "富山のかまぼこ",
+      "romaji": "kamaboko",
+      "what_pt": "Pasta de peixe enrolada (kombu-maki) ou moldada em formatos de festa (saiku-kamaboko) para casamentos e Ano-Novo.",
+      "where_pt": "Lojas de presentes da estação.",
+      "must": false,
+      "pregnancy": "ok"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Porto de pesca de Himi",
+      "name_ja": "氷見漁港",
+      "kind": "mercado",
+      "story_pt": "Porto das redes fixas de buri. O refeitório do mercado abre às 6:30.",
+      "eat_pt": [
+        "Buri teishoku ou buri-katsu",
+        "Peixe grelhado"
+      ],
+      "tips_pt": "Vá cedo, de trem até Himi; combine com café da manhã.",
+      "dec_jan_pt": "Refeitório fechado 1–3/1, abre a partir de 4/1.",
+      "query": "Himi fishing port"
+    },
+    {
+      "name": "Estação de Toyama",
+      "name_ja": "富山駅",
+      "kind": "estação",
+      "story_pt": "Ponto de partida do masu-zushi e das lojas de omiyage.",
+      "eat_pt": [
+        "Masu-zushi para o trem",
+        "Ramen no Isshin (preferido de Mark Wiens)"
+      ],
+      "tips_pt": "Compre o masu-zushi pela manhã; esgota modelos menores.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Toyama Station"
+    },
+    {
+      "name": "Centro (Nishichō, Sōgawa)",
+      "name_ja": "西町・総曲輪",
+      "kind": "bairro",
+      "story_pt": "O centro antigo, onde o ramen preto nasceu em barraca.",
+      "eat_pt": [
+        "Toyama Black no Taiki"
+      ],
+      "tips_pt": "Peça arroz junto: é o jeito certo.",
+      "dec_jan_pt": "Taiki fecha às quartas; Ano-Novo a confirmar.",
+      "query": "Nishicho Toyama"
+    }
+  ],
+  "places": [
+    {
+      "name": "Himi Uoichiba Shokudō",
+      "name_ja": "氷見 魚市場食堂",
+      "area": "Himi · porto de pesca",
+      "genre_pt": "Shokudō de frutos do mar",
+      "price_pt": "¥1–3k",
+      "tabelog": {
+        "score": 3.59,
+        "reviews": 1538,
+        "url": "https://tabelog.com/toyama/A1604/A160402/16008630/",
+        "awards": "食堂 百名店 2024, 2026"
+      },
+      "why_pt": "Kan-buri a poucos metros de onde é desembarcado, a preço de refeitório. A experiência do buri sem a conta do ryokan.",
+      "order_pt": "Buri teishoku, buri-katsu, peixe grelhado.",
+      "pregnancy_pt": "Buri e peixe grelhado. Evitar tigelas com camarão cru e mariscos.",
+      "group_pt": "82 lugares; 6 cabem. Chegue cedo.",
+      "booking_pt": "Não reserva.",
+      "dec_jan_pt": "Abre 6:30 todo dia. Fechado 1–3/1; abre de 4/1.",
+      "query": "Himi Uoichiba Shokudo"
+    },
+    {
+      "name": "Gin Gyo",
+      "name_ja": "吟魚",
+      "area": "Toyama · Shintomichō",
+      "genre_pt": "Izakaya de frutos do mar",
+      "price_pt": "¥6–8k",
+      "tabelog": {
+        "score": 3.64,
+        "reviews": 567,
+        "url": "https://tabelog.com/toyama/A1601/A160101/16007011/",
+        "awards": "居酒屋 WEST 百名店 2024–2026"
+      },
+      "why_pt": "O izakaya onde se come Toyama de verdade, com duas casas irmãs também no 百名店 2026 (吟チロリ e ぎんぎょ伍式).",
+      "order_pt": "Kara-age ou kakiage de shiroebi, buri, peixe do dia.",
+      "pregnancy_pt": "Aqui ela pede o shiroebi frito em vez do sashimi.",
+      "group_pt": "23 lugares, com kotatsu rebaixado para 5. Para 6: duas mesas ou kotatsu + 1; pergunte.",
+      "booking_pt": "On-line.",
+      "dec_jan_pt": "Abre todo dia, folgas irregulares. Ano-Novo a confirmar.",
+      "query": "Gin Gyo Toyama"
+    },
+    {
+      "name": "Nishichō Taiki Nishimachi Honten",
+      "name_ja": "西町大喜 西町本店",
+      "area": "Toyama · Nishichō",
+      "genre_pt": "Ramen (Toyama Black)",
+      "price_pt": "¥1–2k",
+      "tabelog": {
+        "score": 3.57,
+        "reviews": 1205,
+        "url": "https://tabelog.com/toyama/A1601/A160101/16000030/",
+        "awards": "nenhum"
+      },
+      "critics": [
+        {
+          "who": "@migrationology",
+          "note_pt": "Provou o Toyama Black original: 'um pouco intenso, não meu favorito'; preferiu o Isshin na estação.",
+          "url": "https://www.youtube.com/watch?v=9f8vJwYLgCY"
+        }
+      ],
+      "why_pt": "O original do ramen preto: brutalmente salgado e feito para comer com arroz. Passou para outros donos em 2000. Os ramen 百名店 de Toyama são outros (はじめ家 em Uozu, 貪瞋癡 em Himi).",
+      "order_pt": "Chūka soba com arroz.",
+      "pregnancy_pt": "Pule o ovo cru vendido à parte.",
+      "group_pt": "25 lugares no balcão; 6 sentam em fila ou se dividem.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Fecha às quartas. Ano-Novo a confirmar.",
+      "query": "Nishicho Taiki Toyama"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Masu-zushi Minamoto",
+      "name_ja": "ますのすし 源",
+      "what_pt": "Fornecedora da estação desde 1908, vende masu-zushi desde 1912.",
+      "buy_pt": "Uma caixa redonda de masu-zushi para o trem.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Minamoto masunosushi Toyama Station"
+    },
+    {
+      "name": "Lojas de omiyage da estação de Toyama",
+      "name_ja": "富山駅 おみやげ売場",
+      "what_pt": "Corredor de lembranças comestíveis dentro da estação.",
+      "buy_pt": "Masu-zushi de várias casas, shiroebi seco, kamaboko de Toyama.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Toyama Station omiyage"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "docs/research/food/11-critics-international.md",
+    "https://www.youtube.com/watch?v=9f8vJwYLgCY",
+    "https://ja.wikipedia.org/wiki/富山ブラック",
+    "https://ja.wikipedia.org/wiki/ますのすし",
+    "https://ja.wikipedia.org/wiki/シラエビ"
+  ]
+}
