@@ -1,0 +1,395 @@
+{
+  "slug": "kanazawa",
+  "name": "Kanazawa",
+  "tagline": "The Maeda clan's city: winter crab, Kaga court cooking and a 300-year-old market.",
+  "history": [
+    "Kanazawa was the capital of the Kaga domain, ruled by the Maeda clan: the richest fief in Edo Japan after the shogunate itself. Unable to spend on an army without raising suspicion in Edo, the Maeda spent on tea, lacquer, sweets and the table. That gave us Kaga ryōri: court dishes served on Kutani porcelain and Wajima lacquer, and duck jibuni, which already appears in an 18th-century recipe book by a cook in the Maeda's service.",
+    "Gold is the other legacy. About 99% of Japan's gold leaf is beaten here (Kanazawa-haku). The domain kept beating gold in secret while the shogunate held the monopoly, and the humid climate and the region's lacquer and Buddhist-altar workshops did the rest. Hence the gold-leaf ice cream in Higashi Chaya: it's decoration, it tastes of nothing.",
+    "The Sea of Japan feeds the city. Ōmichō market dates itself from 1721 (its roots go back to a fire in 1690 that brought the fishmongers together there), supplied the domain's kitchen and today has close to 170 stalls. From the land come the Kaga yasai: 15 certified vegetables, grown since before 1945 and still planted in Kanazawa, such as gensuke radish, Kaga lotus root and purple kinjisō."
+  ],
+  "winter": "December is kōbako-gani month: the female snow crab, with roe inside and out. The season opens on 6 Nov and Ishikawa usually closes it for females around 29 Dec (the 2026 date is to confirm), so kōbako means being here before ~28 Dec. For us that means our first two nights, 27 and 28 Dec, with the 29th a maybe. The male (加能ガニ) runs until March. It's also the season for fatty buri, kabura-zushi and gensuke radish in the oden.",
+  "meibutsu": [
+    {
+      "name": "Kōbako crab",
+      "name_ja": "香箱ガニ",
+      "romaji": "kōbako-gani",
+      "what": "A small female zuwai crab, boiled whole: orange inner roe (uchiko), granular outer roe (sotoko) and the miso. Taken apart in its shell and eaten with tosa vinegar. Only around from 6 Nov to near the end of the year.",
+      "where": "Yamasan Sushi and Kabuna; in winter Miyuki's oden adds kani-men; Otome Zushi at the top end.",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_note": "For Fernanda: cooked, so fine. Only skip kani-sashi (raw crab) if it turns up."
+    },
+    {
+      "name": "Jibuni",
+      "name_ja": "治部煮",
+      "romaji": "jibuni",
+      "what": "Sliced duck dusted in flour and simmered in dashi, soy and mirin with sudare-fu (Kanazawa wheat gluten), shiitake and greens. The flour thickens the broth; it's eaten with wasabi. The emblem of Kaga cooking.",
+      "where": "Kabuna; Gyohan (魚半), where Mark Wiens had jibuni for ¥2,800 (Tabelog not checked).",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_note": "Duck cooked through in the broth. All fine for Fernanda."
+    },
+    {
+      "name": "Kanazawa oden",
+      "name_ja": "金沢おでん",
+      "romaji": "Kanazawa oden",
+      "what": "Clear-broth oden eaten all year round, with local pieces: kuruma-fu (gluten wheels), bai-gai (whelk), gensuke radish and, in season, kani-men with kōbako crab.",
+      "where": "Oden Izakaya Miyuki and Akadama, both in Katamachi.",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_note": "All cooked. For Fernanda: skip only raw shellfish served on the side."
+    },
+    {
+      "name": "Winter buri",
+      "name_ja": "寒ぶり",
+      "romaji": "kan-buri",
+      "what": "Fatty winter yellowtail from the Sea of Japan, as sashimi, sushi, teriyaki or buri-daikon.",
+      "where": "Ōmichō stalls, Yamasan, Kabuna.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name": "Kabura-zushi",
+      "name_ja": "かぶら寿し",
+      "romaji": "kabura-zushi",
+      "what": "A winter pickle: slices of turnip with salted buri in between, fermented in rice kōji. One of the city's New Year gifts.",
+      "where": "Ōmichō stalls and the station gift shops (Hyakubangai).",
+      "must": false,
+      "pregnancy": "careful",
+      "pregnancy_note": "The buri is cured and fermented, not cooked. Better for Fernanda to taste only the turnip, or pass."
+    },
+    {
+      "name": "Grilled nodoguro",
+      "name_ja": "のどぐろ",
+      "romaji": "nodoguro",
+      "what": "A red fish with very rich flesh (akamutsu), salt-grilled. One of the Hokuriku's pricey dishes.",
+      "where": "Kabuna and the Katamachi izakaya.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name": "Kanazawa curry",
+      "name_ja": "金沢カレー",
+      "romaji": "Kanazawa curry",
+      "what": "Thick dark sauce covering the rice, katsu on top, shredded cabbage on the side, a metal fork and a stainless-steel plate. Turban, from 1971, is held to be the original.",
+      "where": "Turban Curry Honten (Mark Wiens filmed there).",
+      "price": "≈ ¥1,000",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name": "Amanattō and wagashi",
+      "name_ja": "甘納豆・和菓子",
+      "romaji": "amanattō, wagashi",
+      "what": "A tea-ceremony city is a sweets city. Candied beans from Kawamura and kanmi in Higashi Chaya.",
+      "where": "Amanatto Kawamura, Tsubomi, Suzume (station).",
+      "must": false,
+      "pregnancy": "ok"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Ōmichō Market",
+      "name_ja": "近江町市場",
+      "kind": "market",
+      "story": "A market since 1721 that supplied the Kaga domain's kitchen. Today close to 170 stalls of fish, crab, Kaga vegetables and kaisen-don counters.",
+      "eat": [
+        "Kaisen-don at Ikiiki-tei",
+        "Boiled crab eaten standing up",
+        "A stall croquette (Mark Wiens tried one)",
+        "Sushi at Yamasan"
+      ],
+      "tips": "Get there before 8:00 for Ikiiki-tei. Most kaisen-don stalls sit at 3.40–3.49 on Tabelog: be choosy and check crab prices by weight.",
+      "dec_jan": "28–30 Dec is the New Year shopping rush: packed, with crab sold by the box. That covers every market day we have after Sun 27 Dec, our arrival day and the one calm visit, if we get in early enough. On the 28th we're in Shirakawa-go; on the 29th and the morning of the 30th, go early, eat at a counter and don't plan to browse. We leave on the 30th, so the New Year closure doesn't touch us (in 2024–25 it opened 31 Dec with short hours and closed 1–3 Jan; 2026–27 calendar to confirm, 076-231-1462).",
+      "query": "Omicho Market Kanazawa"
+    },
+    {
+      "name": "Higashi Chaya",
+      "name_ja": "ひがし茶屋街",
+      "kind": "neighbourhood",
+      "story": "The old geisha teahouse district of wooden houses, now full of sweet shops, tea and gold-leaf shops.",
+      "eat": [
+        "Amanattō at Kawamura",
+        "Kanmi at Tsubomi",
+        "Matcha (Mark Wiens stopped at a teahouse here)",
+        "Gold-leaf ice cream (for the photo, not the taste)"
+      ],
+      "tips": "Empty early in the morning. The gold-leaf shops are touristy; the sweets are what's worth it.",
+      "dec_jan": "Kawamura's shop is open on our dates (it closes 31 Dec–3 Jan), but its upstairs salon is closed 24 Dec–4 Jan. Tsubomi closes Wednesdays, so not on 30 Dec.",
+      "query": "Higashi Chaya Kanazawa"
+    },
+    {
+      "name": "Katamachi and Kiguramachi",
+      "name_ja": "片町・木倉町",
+      "kind": "neighbourhood",
+      "story": "The night-time centre: oden, izakaya and the expensive sushi counters.",
+      "eat": [
+        "Oden at Miyuki or Akadama",
+        "A Kaga dinner at Kabuna"
+      ],
+      "tips": "Book oden and izakaya ahead for seven.",
+      "dec_jan": "Many close on Sundays, and Sun 27 Dec is our first night: plan the big dinners for Mon 28 (after Shirakawa-go) and Tue 29 Dec. Year-end hours to confirm.",
+      "query": "Katamachi Kanazawa"
+    }
+  ],
+  "places": [
+    {
+      "name": "Ikiiki-tei Ōmichō",
+      "name_ja": "いきいき亭 近江町店",
+      "area": "Kanazawa · Ōmichō",
+      "genre": "Kaisen-don, sushi",
+      "price": "¥2–5k",
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 1088,
+        "url": "https://tabelog.com/ishikawa/A1701/A170101/17001392/",
+        "awards": "none"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Breakfast at Ōmichō: a ¥3,500 kaisen-don here.",
+          "url": "https://www.youtube.com/watch?v=TKFOzNTrWwk"
+        }
+      ],
+      "why": "The market counter that cares about the fish, not the photo. The 'Local' bowl uses only local catch, and the rice and toppings come separately.",
+      "order": "The Local bowl (local fish only).",
+      "pregnancy_note": "The raw bowl has amaebi, gasuebi, scallop and sea urchin. For Fernanda: ask for fish only, no crustaceans or shellfish, or she eats elsewhere.",
+      "group": "10 counter seats. Split 4+3 (or 3+2+2) over two rounds.",
+      "booking": "No reservations. Put a name on the list at opening (7:00). By midday the wait reaches ~2 h.",
+      "dec_jan": "7:00–15:00, closed Tuesdays (29 Dec). Our chances: Sun 27 Dec if we arrive before 15:00, before the rush, or the 7:00 list on Wed 30 Dec before the Kyoto train, in the thick of it. It probably follows the market's 1–3 Jan closure (to confirm), but we've gone by then.",
+      "query": "Ikiiki-tei Omicho Kanazawa"
+    },
+    {
+      "name": "Yamasan Sushi Honten",
+      "name_ja": "山さん寿司 本店",
+      "area": "Kanazawa · Ōmichō",
+      "genre": "Sushi, kaisen-don",
+      "price": "¥3–4k",
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 1333,
+        "url": "https://tabelog.com/ishikawa/A1701/A170101/17000196/",
+        "awards": "none"
+      },
+      "why": "The market sushi place with room for a group. The best bet for a lunch of kōbako and buri.",
+      "order": "Boiled kōbako and buri nigiri.",
+      "pregnancy_note": "Plenty is cooked. For Fernanda: boiled crab and fish nigiri, not shellfish.",
+      "group": "32 seats on tatami and at tables; book for seven and check they'll seat us together.",
+      "booking": "Online booking for a few groups a day.",
+      "dec_jan": "9:00–16:00, no fixed closing day, so it works on Sun 27 Dec, when the Katamachi places are shut: our kōbako lunch on arrival day, before the season ends (~29 Dec) and before the market rush. Year-end hours to confirm.",
+      "query": "Yamasan Sushi Omicho"
+    },
+    {
+      "name": "Otome Zushi",
+      "name_ja": "乙女寿司",
+      "area": "Kanazawa · Kiguramachi",
+      "genre": "Sushi",
+      "price": "¥20–30k",
+      "tabelog": {
+        "score": 4.05,
+        "reviews": 614,
+        "url": "https://tabelog.com/ishikawa/A1701/A170101/17000107/",
+        "awards": "Tabelog Award Bronze 2020–2026, Silver 2019; 寿司 WEST 百名店 2021, 2022, 2025"
+      },
+      "why": "Kanazawa's historic benchmark: Hokuriku fish handled with restraint. Lunch is the cheapest way in.",
+      "order": "Omakase; in winter, buri and kōbako.",
+      "pregnancy_note": "For Fernanda: ask ahead to swap raw shellfish and shirako (likely in December) for cooked pieces. Buri and boiled kōbako are fine.",
+      "group": "17 seats: a 9-seat counter and an 8-seat tatami room. For seven, book the tatami room (7 of its 8 seats), or 4+3 across counter sittings.",
+      "booking": "Online, opens 2 months ahead. Book in late October.",
+      "dec_jan": "Lunch and dinner; closed Wednesdays, Sundays and holidays, so only Mon 28 (dinner, after Shirakawa-go) and Tue 29 Dec work for us. With kōbako ending ~29 Dec, the 28th is the safer night. Year-end hours to confirm.",
+      "query": "Otome Zushi Kanazawa",
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note": "Posted from here in Feb 2016 (post embedded in Tokyo Table Trip).",
+          "url": "https://tokyotabletrip.com/en/340"
+        }
+      ]
+    },
+    {
+      "name": "Kabuna",
+      "name_ja": "かぶ菜",
+      "area": "Kanazawa · Katamachi/Nomachi",
+      "genre": "Seafood and local-cooking izakaya",
+      "price": "¥6–8k",
+      "tabelog": {
+        "score": 3.75,
+        "reviews": 321,
+        "url": "https://tabelog.com/ishikawa/A1701/A170101/17000085/",
+        "awards": "居酒屋 WEST 百名店 2025, 2026"
+      },
+      "why": "The local-cooking izakaya that Tabelog reviewers keep returning to for the jibuni and the seasonal crab.",
+      "order": "Jibuni, oden, grilled nodoguro, kōbako.",
+      "pregnancy_note": "Wide menu. For Fernanda: skip raw shellfish and shirako.",
+      "group": "11 private rooms, including one for 6: ask whether a seventh chair fits, or for a bigger room. The best group dinner under ¥10k in town.",
+      "booking": "Online.",
+      "dec_jan": "Closed Sundays, so not 27 Dec. Mon 28 or Tue 29 Dec; take the 28th if we want kōbako while it lasts. Year-end hours to confirm.",
+      "query": "Kabuna Kanazawa"
+    },
+    {
+      "name": "Oden Izakaya Miyuki",
+      "name_ja": "おでん居酒屋 三幸",
+      "area": "Kanazawa · Katamachi",
+      "genre": "Oden",
+      "price": "¥3–4k",
+      "tabelog": {
+        "score": 3.63,
+        "reviews": 711,
+        "url": "https://tabelog.com/ishikawa/A1701/A170101/17002725/",
+        "awards": "none"
+      },
+      "why": "Since 1967. Lighter, cleaner dashi than its rival Akadama, and a genuinely local crowd.",
+      "order": "Miyuki-age (the house satsuma-age), kuruma-fu, bai-gai, radish; kani-men in season.",
+      "pregnancy_note": "All cooked. For Fernanda: skip only raw shellfish sides.",
+      "group": "Private rooms for 10–20; seven fit.",
+      "booking": "Online; required for 3 or more.",
+      "dec_jan": "16:00–22:00; closed Sundays, holidays and the 2nd Monday of the month (11 Jan 2027 closed, after we've gone). So not Sun 27 Dec; Mon 28 and Tue 29 Dec aren't closing days, and kani-men only while kōbako lasts (~29 Dec). Year-end hours to confirm.",
+      "query": "Oden Miyuki Kanazawa"
+    },
+    {
+      "name": "Turban Curry Honten",
+      "name_ja": "ターバンカレー 本店",
+      "area": "Kanazawa",
+      "genre": "Kanazawa curry",
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 914,
+        "url": "https://tabelog.com/ishikawa/A1701/A170101/17001277/"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Tried Kanazawa curry here in his city video.",
+          "url": "https://www.youtube.com/watch?v=TKFOzNTrWwk"
+        }
+      ],
+      "why": "The 1971 original, which Tabelog reviewers call 本家本元. Under 3.5: it's here for the history.",
+      "order": "Katsu curry.",
+      "pregnancy_note": "All cooked.",
+      "group": "16 seats; we'll split up.",
+      "booking": "No reservations.",
+      "dec_jan": "Closed 30 Dec–1 Jan (it reopens on 2 Jan), so go 27–29 Dec, not on the morning we leave.",
+      "query": "Turban Curry Kanazawa"
+    },
+    {
+      "name": "Kataori",
+      "name_ja": "片折",
+      "area": "Kanazawa · Higashiyama",
+      "genre": "Kaiseki",
+      "tabelog": {
+        "score": 4.7,
+        "reviews": 492,
+        "url": "https://tabelog.com/en/ishikawa/A1701/A170101/17011166/",
+        "awards": "Award Gold 2021–26"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note": "Miso dengaku with kinome, yomogi tofu and umeboshi ochazuke with okoge (Jun 2024).",
+          "url": "https://www.instagram.com/p/C8Zl2FkJywR/"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Been once (Sep 2020), per the City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "The highest score in the whole guide (4.70), and Meg names it among her places of purity and simplicity.",
+      "pregnancy_note": "For Fernanda: say so when booking and ask for cooked dishes.",
+      "group": "8-seat counter: book 7 of its 8 seats (in effect the whole counter), or 4+3.",
+      "booking": "Very hard.",
+      "dec_jan": "To confirm for 27–30 Dec.",
+      "query": "Kataori Kanazawa"
+    },
+    {
+      "name": "Kisanuki",
+      "name_ja": "木さ貫",
+      "area": "Kanazawa",
+      "genre": "Kaiseki",
+      "tabelog": {
+        "score": 4.57,
+        "reviews": 126,
+        "url": "https://tabelog.com/en/ishikawa/A1701/A170101/17015162/"
+      },
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Been once (Jun 2025), per the City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "A new Kanazawa kaiseki already above 4.5 on Tabelog.",
+      "pregnancy_note": "For Fernanda: say so when booking and ask for cooked dishes.",
+      "dec_jan": "To confirm for 27–30 Dec.",
+      "query": "Kisanuki Kanazawa"
+    },
+    {
+      "name": "Sushi Dokoro Mekumi",
+      "name_ja": "すし処 めくみ",
+      "area": "Nonoichi (near Kanazawa)",
+      "genre": "Sushi",
+      "tabelog": {
+        "score": 4.48,
+        "reviews": 512,
+        "url": "https://tabelog.com/en/ishikawa/A1702/A170203/17000700/",
+        "awards": "Award Gold (5 editions)"
+      },
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Been once (Apr 2017), per the City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "Hokuriku-fish sushi with Tabelog gold, out of the centre.",
+      "pregnancy_note": "Almost all raw: for Fernanda, say so when booking.",
+      "dec_jan": "To confirm for 27–30 Dec.",
+      "query": "Sushi Mekumi Nonoichi"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Amanatto Kawamura",
+      "name_ja": "甘納豆かわむら",
+      "what": "Candied beans (amanattō) from a Higashi Chaya sweet house. Tabelog 3.73, 和菓子 WEST 百名店 2023, 2026.",
+      "buy": "Boxes of amanattō, which travel well as gifts.",
+      "dec_jan": "Shop open on our dates (closed 31 Dec–3 Jan); upstairs salon closed 24 Dec–4 Jan, so no sitting down.",
+      "query": "Amanatto Kawamura Kanazawa"
+    },
+    {
+      "name": "Tsubomi",
+      "name_ja": "つぼみ",
+      "what": "A kanmi house (sweets and tea) in Higashi Chaya. Tabelog 3.66, 和菓子 WEST 百名店 2023, 2026.",
+      "buy": "Sweets to eat in; 16 seats.",
+      "dec_jan": "Closed Wednesdays (30 Dec, our leaving day). Year-end hours to confirm.",
+      "query": "Tsubomi Higashi Chaya"
+    },
+    {
+      "name": "Suzume Kanazawa Hyakubangai",
+      "name_ja": "すゞめ 金沢百番街店",
+      "what": "A wagashi shop inside the station, on the 和菓子 百名店 2026 list.",
+      "buy": "Sweets for the train.",
+      "dec_jan": "To confirm; handy on 30 Dec for the train to Kyoto.",
+      "query": "Suzume Kanazawa Hyakubangai"
+    },
+    {
+      "name": "Fukumitsuya",
+      "name_ja": "福光屋",
+      "what": "A Kanazawa sake brewery, in full production in December.",
+      "buy": "Sake for the men; kōji amazake (alcohol-free) for Fernanda, if they have it.",
+      "dec_jan": "Shop hours at the year end to confirm.",
+      "query": "Fukumitsuya Kanazawa"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "docs/research/food/11-critics-international.md",
+    "https://www.youtube.com/watch?v=TKFOzNTrWwk",
+    "https://ja.wikipedia.org/wiki/近江町市場",
+    "https://ja.wikipedia.org/wiki/治部煮",
+    "https://ja.wikipedia.org/wiki/加賀野菜",
+    "https://ja.wikipedia.org/wiki/金沢箔",
+    "https://ja.wikipedia.org/wiki/香箱ガニ"
+  ]
+}

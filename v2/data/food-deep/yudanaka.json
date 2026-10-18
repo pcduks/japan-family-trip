@@ -1,0 +1,158 @@
+{
+  "slug": "yudanaka",
+  "name": "Yudanaka / Shibu Onsen",
+  "tagline": "A mountain hot-spring village: here we eat at the ryokan, and the good soba is a drive away.",
+  "history": [
+    "Shibu Onsen has a 1,300-year-old legend (the monk Gyōki is said to have found the spring) and was one of Takeda Shingen's secret springs, where he tended the wounded from the battle of Kawanakajima. Kobayashi Issa and Hokusai passed through. Yudanaka, next door, is the gateway to the Jigokudani monkeys.",
+    "This is mountain Shinshū: soba, oyaki, nozawana and apples from the Yamanouchi valley orchards. Eating here revolves around the ryokan, with a multi-course dinner and breakfast included. In the village streets nothing scores above ~3.4 on Tabelog."
+  ],
+  "winter": "Snow, nabe at the ryokan, apples, new-season nozawana and eggs cooked in the hot springs. The valley's most famous soba house closes from late November to late April.",
+  "meibutsu": [
+    {
+      "name": "Ryokan dinner",
+      "name_ja": "旅館の夕食",
+      "romaji": "ryokan no yūshoku",
+      "what": "Mountain kaiseki: river fish, Shinshū beef, mushrooms, nabe, soba to finish.",
+      "where": "Our ryokan.",
+      "must": true,
+      "pregnancy": "careful",
+      "pregnancy_note": "For Fernanda: ask before we arrive. No crustacean or shellfish sashimi, meat well cooked, no raw egg."
+    },
+    {
+      "name": "Shinshū soba",
+      "name_ja": "信州そば",
+      "romaji": "Shinshū soba",
+      "what": "Cold soba on a bamboo sieve, made from stone-ground buckwheat.",
+      "where": "Iwamoto Sobaya (by car).",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name": "Hot-spring egg",
+      "name_ja": "温泉たまご",
+      "romaji": "onsen tamago",
+      "what": "An egg cooked slowly in the hot-spring water: soft white, creamy yolk.",
+      "where": "Ryokans and the spa villages.",
+      "must": false,
+      "pregnancy": "careful",
+      "pregnancy_note": "The yolk is undercooked. For Fernanda: only if it's properly firm."
+    },
+    {
+      "name": "Yamanouchi apples",
+      "name_ja": "りんご",
+      "romaji": "ringo",
+      "what": "The valley orchards are still selling apples in December.",
+      "where": "Fruit shops and small grocers.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name": "Oyaki and nozawana",
+      "name_ja": "おやき・野沢菜",
+      "romaji": "oyaki, nozawana",
+      "what": "Shinshū's snacks: a stuffed dumpling and a green pickle.",
+      "where": "Souvenir shops in the villages.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name": "Shiga Kōgen beer and sake",
+      "name_ja": "志賀高原ビール・地酒",
+      "romaji": "Shiga Kōgen beer",
+      "what": "The Tamamura Honten brewery makes sake and craft beer in the valley.",
+      "where": "Tamamura Honten.",
+      "must": false,
+      "pregnancy": "avoid",
+      "pregnancy_note": "Alcohol. Fernanda skips it."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Shibu Onsen street",
+      "name_ja": "渋温泉街",
+      "kind": "street",
+      "story": "A stone lane of wooden ryokans and nine public baths.",
+      "eat": [
+        "Oyaki snacks",
+        "Hot-spring eggs"
+      ],
+      "tips": "The evening stroll in yukata is the thing to do.",
+      "dec_jan": "We're here 24–27 Dec, with Christmas Eve dinner at our ryokan. The ryokans are open; they're at their most expensive over New Year, which we miss.",
+      "query": "Shibu Onsen"
+    },
+    {
+      "name": "Yudanaka",
+      "name_ja": "湯田中",
+      "kind": "station",
+      "story": "End of the Nagano Dentetsu line and the base for Jigokudani.",
+      "eat": [
+        "A snack before the monkeys"
+      ],
+      "tips": "Eat before heading up: there's nothing on the way.",
+      "dec_jan": "To confirm for 24–27 Dec.",
+      "query": "Yudanaka Station"
+    }
+  ],
+  "places": [
+    {
+      "name": "Ishiusu-biki Soba Kōbō Yama no Mi",
+      "name_ja": "石臼挽き蕎麦香房 山の実",
+      "area": "Yamanouchi",
+      "genre": "Soba",
+      "tabelog": {
+        "score": 4.06,
+        "reviews": 346,
+        "url": "https://tabelog.com/nagano/A2001/A200104/20000397/",
+        "awards": "Award Bronze 2022, 2025, 2026; そば EAST 百名店 2025"
+      },
+      "why": "The best soba in the area, but it closes once the snow comes. It's listed so nobody makes a wasted trip.",
+      "order": "Stone-ground soba.",
+      "pregnancy_note": "Fine.",
+      "group": "To confirm.",
+      "booking": "To confirm.",
+      "dec_jan": "Closed late November to late April, so closed for our whole stay (24–27 Dec). Its page mentions a winter spot on the ski slopes, not verified. Probably no use to us.",
+      "query": "Yama no Mi soba Yamanouchi"
+    },
+    {
+      "name": "Iwamoto Sobaya",
+      "name_ja": "岩本そば屋",
+      "area": "Yamanouchi (by car)",
+      "genre": "Soba",
+      "tabelog": {
+        "score": 3.57,
+        "reviews": 89,
+        "url": "https://tabelog.com/nagano/A2001/A200104/20002605/"
+      },
+      "why": "The soba we can actually get in winter, with a tatami room.",
+      "order": "Zaru soba.",
+      "pregnancy_note": "Fine.",
+      "group": "30 seats on tatami; tell them we're seven.",
+      "booking": "To confirm. Cash only.",
+      "dec_jan": "Closed Thursdays, so not on Christmas Eve (Thu 24 Dec, our arrival day). Fri 25 to Sun 27 Dec aren't closing days, but confirm year-end hours.",
+      "query": "Iwamoto Sobaya Yamanouchi"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Tamamura Honten",
+      "name_ja": "玉村本店",
+      "what": "The valley's brewery for sake and Shiga Kōgen beer.",
+      "buy": "Sake and beer for the adults who drink.",
+      "dec_jan": "To confirm for 24–27 Dec.",
+      "query": "Tamamura Honten Shiga Kogen Beer"
+    },
+    {
+      "name": "Apple and souvenir shops",
+      "name_ja": "りんご・土産店",
+      "what": "Little fruit shops and oyaki/nozawana shops in the villages.",
+      "buy": "Seasonal apples, nozawana.",
+      "dec_jan": "To confirm for 24–27 Dec.",
+      "query": "Yudanaka apple shop"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "https://ja.wikipedia.org/wiki/渋温泉",
+    "https://ja.wikipedia.org/wiki/おやき"
+  ]
+}

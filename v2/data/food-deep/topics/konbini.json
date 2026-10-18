@@ -1,0 +1,608 @@
+{
+  "slug": "konbini",
+  "title": "Konbini",
+  "intro": [
+    "Konbini (コンビニ) is the Japanese convenience store, but forget the petrol-station kind: fresh food delivered two or three times a day, freshly ground coffee, a toilet, a cash machine, a printer, post and ticket sales. Open 24 hours, almost always on 1 January too. For seven of us with Fernanda pregnant, it's the cheap breakfast, the train snack and the New Year plan B in Kyoto.",
+    "Three big chains split the country: 7-Eleven (セブン-イレブン), FamilyMart (ファミリーマート, \"Famima\") and Lawson (ローソン). Japanese people pick sides: in a LINE Research survey of May 2025 (5,255 people), 41.6% named 7-Eleven as their favourite, 23.2% Lawson and 21.5% FamilyMart. Among teenagers, Famima wins.",
+    "Rule of thumb: onigiri, bentō and \"proper\" food at 7-Eleven; fried chicken and sandwiches at Famima; sweets and premium onigiri at Lawson. But go into all of them: the week's new releases are half the fun."
+  ],
+  "sections": [
+    {
+      "title": "The chains and what each is known for",
+      "body": "How Japanese people see each chain, from surveys and the retail press there. Prices rise almost every year, so treat them as a guide.",
+      "items": [
+        {
+          "name": "7-Eleven",
+          "name_ja": "セブン-イレブン",
+          "what": "The biggest and the overall favourite (41.6% in LINE Research 2025). Known for the best onigiri, bentō and sōzai (ready dishes), and its 7 Premium line. The cheapest of the three for basic onigiri. 「マツコの知らない世界」 did a whole episode on it, and the charcoal-grilled beni-shake onigiri shown there became a star.",
+          "where": "Everywhere; usually the one nearest the station.",
+          "must": true,
+          "tip": "Also the best cash machine for foreign cards (Seven Bank)."
+        },
+        {
+          "name": "FamilyMart",
+          "name_ja": "ファミリーマート",
+          "what": "Famous for FamiChiki (counter fried chicken), its sandwiches and bentō with generous karaage. The teenagers' favourite in surveys. It has invested in new onigiri machines and has sold frozen onigiri since Jan 2026.",
+          "where": "All over Japan.",
+          "must": true
+        },
+        {
+          "name": "Lawson",
+          "name_ja": "ローソン",
+          "what": "The sweets leader: in a MyVoice survey (May 2025), about 35% of people who buy konbini sweets prefer Lawson (the Uchi Café line). It has had Karaage-kun since 1986 and the premium 「金しゃり」 onigiri. In a Business Journal oyakodon test it won on taste, but was the most expensive.",
+          "where": "All over Japan.",
+          "must": true,
+          "tip": "Still the chain most likely to keep oden at the counter in winter."
+        },
+        {
+          "name": "Natural Lawson",
+          "name_ja": "ナチュラルローソン",
+          "what": "The \"healthy\" Lawson, with purple shops: granola, salads, wholemeal bread, additive-free snacks. Good for Fernanda and the parents. Fewer fried things, and no oden.",
+          "where": "Mostly Tokyo (office areas and districts such as Ebisu, Shibuya, Akasaka)."
+        },
+        {
+          "name": "Ministop",
+          "name_ja": "ミニストップ",
+          "what": "A smaller chain (Aeon group), known for soft-serve made at the counter and its seasonal flavours. In the 2025 onigiri survey it was the cheapest of the four.",
+          "where": "Most common in Kantō and Kyūshū.",
+          "price": "Soft-serve: to confirm",
+          "tip": "If you pass one, order the ソフトクリーム バニラ."
+        },
+        {
+          "name": "Seicomart (Secoma)",
+          "name_ja": "セイコーマート",
+          "what": "Hokkaidō's chain, top in customer satisfaction (JCSI) almost every year since 2011. Its in-store kitchen (Hot Chef) makes katsudon and fries to order. It won't cross our route (about 1,090 stores in Hokkaidō and 102 in Ibaraki and Saitama), but if you see one, go in.",
+          "where": "Hokkaidō; a few in Ibaraki and Saitama."
+        }
+      ]
+    },
+    {
+      "title": "Onigiri: how to open them and which to pick",
+      "body": "To open an onigiri with separate nori: pull the middle tab (①) down and around, then pull off the left (②) and right (③) wrappers. The nori stays crisp and on the outside. In the Onigiri Association's (おにぎり協会) 「おにぎり調査2025」, tuna-mayo was the best seller at all four chains, followed by the salmon and kombu classics.",
+      "items": [
+        {
+          "name": "Tuna-mayo",
+          "name_ja": "ツナマヨネーズ",
+          "what": "No. 1 at every chain. Tinned tuna with mayonnaise. Tinned tuna is cooked, so it's fine for Fernanda.",
+          "where": "All",
+          "price": "¥178 (7-Eleven), ¥181 (Lawson), ¥198 (FamilyMart), 2025 prices",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Grilled salmon",
+          "name_ja": "鮭（焼鮭・紅しゃけ）",
+          "what": "The Japanese comfort favourite: salted, grilled, flaked salmon. At 7-Eleven, look for the charcoal-grilled beni-shake.",
+          "where": "All",
+          "price": "¥213 (7-Eleven), ¥221 (Lawson), ¥235 (FamilyMart), from an early-2026 Kantō survey",
+          "must": true,
+          "pregnancy": "ok",
+          "tip": "Onigiri salmon is grilled. Don't confuse it with the smoked salmon (スモークサーモン) in sandwiches."
+        },
+        {
+          "name": "Kombu",
+          "name_ja": "昆布",
+          "what": "Kombu simmered in soy and sugar (tsukudani). Sweet-salty, a grandparents' classic.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Okaka",
+          "name_ja": "おかか",
+          "what": "Bonito flakes (katsuobushi) with soy. Simple and addictive.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Umeboshi",
+          "name_ja": "梅",
+          "what": "Pickled plum, very sour. It divides opinion, but it's the lunch-box classic. Good for nausea.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Mentaiko / tarako",
+          "name_ja": "明太子・たらこ",
+          "what": "Cured cod roe (mentaiko is the spicy one). Usually raw (生), though grilled versions exist (焼きたらこ). Very salty.",
+          "where": "All",
+          "pregnancy": "avoid",
+          "tip": "Raw roe carries a Listeria risk. Fernanda only takes the ones marked 焼き (grilled). Variants such as ツナ明太マヨ have roe too: read the label."
+        },
+        {
+          "name": "Ikura",
+          "name_ja": "いくら",
+          "what": "Marinated raw salmon roe, in the premium lines.",
+          "where": "All, in premium lines",
+          "pregnancy": "careful",
+          "tip": "A low but real Listeria risk. Better to swap for grilled salmon."
+        },
+        {
+          "name": "Lawson premium onigiri",
+          "name_ja": "金しゃりおにぎり",
+          "what": "Lawson's pricier line, with looser rice and a generous filling. Good to compare with the basic one.",
+          "where": "Lawson",
+          "price": "to confirm"
+        }
+      ]
+    },
+    {
+      "title": "Sandwiches: the cult of the tamago sando",
+      "body": "The konbini egg sandwich (たまごサンド) has become a pilgrimage: soft, very white sandwich bread with chopped boiled egg and Japanese mayo. Kenji López-Alt blind-tested the three chains (video of 19 Aug 2026). The egg is cooked, so it's fine for Fernanda.",
+      "items": [
+        {
+          "name": "Tamago sando",
+          "name_ja": "たまごサンド",
+          "what": "Japanese people argue between 7-Eleven's (more chopped egg) and Famima's or Lawson's (creamier). Buy all three and hold a family vote.",
+          "where": "All",
+          "price": "to confirm",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Mix sando / katsu sando",
+          "name_ja": "ミックスサンド・カツサンド",
+          "what": "Ham and egg, or tonkatsu with sauce. The katsu is cooked.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Fruit sando",
+          "name_ja": "フルーツサンド",
+          "what": "Whipped cream with strawberry, kiwi or mandarin. It's dessert, but Japanese people eat it for breakfast.",
+          "where": "All, by season",
+          "price": "to confirm"
+        },
+        {
+          "name": "Smoked-salmon or soft-cheese sandwiches",
+          "name_ja": "スモークサーモン・カマンベール",
+          "what": "They turn up in \"gourmet\" wraps and baguettes.",
+          "where": "All",
+          "pregnancy": "avoid",
+          "tip": "Cold-smoked salmon and soft natural cheese (camembert, brie) are Listeria risks. Fernanda takes the egg or katsu one."
+        }
+      ]
+    },
+    {
+      "title": "The hot counter: fried chicken and steamed buns",
+      "body": "By the till are the fryer case (ホットスナック) and the steamer (中華まん). Point and say the name, or the number on the label. In winter, a nikuman is the official snack for stepping off a cold train, from Yudanaka to Kawaguchiko.",
+      "items": [
+        {
+          "name": "FamiChiki",
+          "name_ja": "ファミチキ",
+          "what": "Boneless, crumbed, juicy chicken thigh in a little bag that doubles as the wrapper. Famima's icon. There are also レッド (spicy) and pizza versions.",
+          "where": "FamilyMart",
+          "price": "¥248 (official site, Oct 2026)",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Karaage-kun",
+          "name_ja": "からあげクン",
+          "what": "Five karaage nuggets in a little box with a mascot. Sold since 1986. The レギュラー (regular) is the classic, and there's always a flavour of the month.",
+          "where": "Lawson",
+          "price": "to confirm (it was ¥238 from 2022)",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Nikuman",
+          "name_ja": "肉まん",
+          "what": "Steamed bun filled with pork. Soft and hot, perfect to hold in the cold.",
+          "where": "All (Oct–Mar)",
+          "price": "7-Eleven: ¥168 (ごろっと肉まん) and ¥251 (大入り豚まん), official site, Oct 2026",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Anman",
+          "name_ja": "あんまん",
+          "what": "The sweet version, with azuki bean paste (7-Eleven's has sesame).",
+          "where": "All",
+          "price": "7-Eleven: ¥161 (official site, Oct 2026)",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Pizzaman",
+          "name_ja": "ピザまん",
+          "what": "Tomato sauce and cheese filling. Japanese children's favourite.",
+          "where": "All",
+          "price": "7-Eleven: ¥171 (official site, Oct 2026)",
+          "pregnancy": "ok",
+          "tip": "The cheese is steamed and comes out piping hot, so it's fine for Fernanda."
+        }
+      ]
+    },
+    {
+      "title": "Konbini oden (winter)",
+      "body": "A pot of dashi broth with daikon, egg, fried tofu and fish cakes, by the till. Not every store has it these days, and Lawson keeps it most. How to order: take a tub (or ask the assistant), name the items with 「これと、これ」 (kore to, kore) while pointing, ask for 「おつゆ多めで」 (otsuyu ōme de, \"plenty of broth\") and 「からし」 (karashi, mustard) if you want it.",
+      "items": [
+        {
+          "name": "Daikon",
+          "name_ja": "大根（つゆしみ大根）",
+          "what": "A round of daikon that has spent all day soaking up broth. Oden's No. 1 item.",
+          "where": "Lawson and some 7-Eleven/FamilyMart",
+          "price": "Lawson ¥160 (official site)",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Egg",
+          "name_ja": "たまご",
+          "what": "Hard-boiled egg, browned by the broth.",
+          "where": "Lawson and others",
+          "price": "Lawson ¥160 (official site)",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Gyūsuji",
+          "name_ja": "牛すじ",
+          "what": "A skewer of beef tendon simmered until soft.",
+          "where": "Lawson",
+          "price": "Lawson ¥198 (official site)",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Atsuage, konnyaku and chikuwa",
+          "name_ja": "厚揚げ・こんにゃく・ちくわ",
+          "what": "Thick fried tofu, konjac jelly and a tube of fish paste.",
+          "where": "Lawson and others",
+          "price": "Lawson: atsuage ¥135, konnyaku ¥140 (official site)",
+          "pregnancy": "ok"
+        }
+      ]
+    },
+    {
+      "title": "Hot and cold drinks",
+      "body": "In winter, a heated shelf (ホット) near the till holds tea, coffee and corn soup in small bottles. They double as hand warmers. On vending machines, the red button (あったか~い) is hot and the blue one (つめた~い) is cold.",
+      "items": [
+        {
+          "name": "Hot Japanese teas",
+          "name_ja": "ホットのお茶（緑茶・ほうじ茶・麦茶）",
+          "what": "Green (お~いお茶, 伊右衛門), hōjicha (roasted, low caffeine) and mugicha (barley, caffeine-free).",
+          "where": "All",
+          "price": "to confirm",
+          "must": true,
+          "pregnancy": "ok",
+          "tip": "For Fernanda: mugicha (麦茶) and rooibos have no caffeine. Hōjicha has little."
+        },
+        {
+          "name": "Canned coffee and fresh coffee",
+          "name_ja": "缶コーヒー・セブンカフェ",
+          "what": "The counter machine coffee (7 Café, Famima Café, Machi Café at Lawson) is good and cheap. Pay at the till, take the cup, press the button.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "careful",
+          "tip": "Count the caffeine: the usual pregnancy limit is ~200 mg a day, one or two cans or cups. Big cans of \"black\" can have more. Look for カフェイン on the label."
+        },
+        {
+          "name": "Calpis",
+          "name_ja": "カルピス",
+          "what": "A sweet fermented milk drink, a Japanese classic. There's a hot version (ホットカルピス) in winter.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Amazake",
+          "name_ja": "甘酒",
+          "what": "A sweet rice drink, hot in winter and everywhere at New Year. There are two kinds: rice kōji (米麹), alcohol-free, and sake lees (酒粕), with under 1% alcohol.",
+          "where": "All, including the hot shelf",
+          "price": "to confirm",
+          "pregnancy": "careful",
+          "tip": "Fernanda only drinks it if the label says 米麹 or ノンアルコール. Morinaga warns pregnant women and children off the 酒粕 kind."
+        },
+        {
+          "name": "Corn soup / cup miso soup",
+          "name_ja": "コーンスープ・カップみそ汁",
+          "what": "A hot can of corn soup, or a cup of instant miso with hot water from the store's kettle.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "ok"
+        }
+      ]
+    },
+    {
+      "title": "Bentō, pasta and a full meal",
+      "body": "Bentō, pasta and donburi sit in the chiller. At the till they'll ask 「温めますか？」 (atatamemasu ka?, \"shall I heat it?\"). Answer 「はい、お願いします」 (hai, onegaishimasu) or 「大丈夫です」 (daijōbu desu, \"no need\"). In many stores you heat it yourself in the microwave by the till.",
+      "items": [
+        {
+          "name": "Karaage or salmon bentō",
+          "name_ja": "唐揚げ弁当・鮭弁当",
+          "what": "The classic lunch. Famima's is famous for its karaage, and 7-Eleven has the widest range.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Japanese pasta",
+          "name_ja": "パスタ（ナポリタン・たらこ）",
+          "what": "Napolitan (ketchup sauce with sausage) is \"granny's café food\" and worth a try.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "careful",
+          "tip": "The tarako or mentaiko one has raw roe stirred in. Fernanda avoids it, or heats it until it's piping hot."
+        },
+        {
+          "name": "Oyakodon / katsudon",
+          "name_ja": "親子丼・カツ丼",
+          "what": "Rice bowl with chicken and egg, or with breaded pork.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "careful",
+          "tip": "Konbini egg is cooked at the factory but can be soft. For Fernanda, heat it well in the microwave."
+        }
+      ]
+    },
+    {
+      "title": "Sweets",
+      "body": "Lawson wins the sweets surveys, but 7-Eleven and Famima launch new ones every week too. Winter brings strawberry, chestnut, matcha and chocolate (this year Lawson has a Godiva collaboration from 20 Oct).",
+      "items": [
+        {
+          "name": "Premium Roll Cake",
+          "name_ja": "プレミアムロールケーキ",
+          "what": "The sweet that made Uchi Café famous: fluffy sponge around a \"well\" of fresh cream. Eaten with a spoon.",
+          "where": "Lawson",
+          "price": "¥214 (official site, Oct 2026)",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "MILK roll cake / Uchi Café × Milk sweets",
+          "name_ja": "Uchi Café×Milk MILKロールケーキ",
+          "what": "A Hokkaidō fresh-cream line: roll, choux, crêpe and dorayaki.",
+          "where": "Lawson",
+          "price": "¥257–297 (official site, Oct 2026)",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "7-Eleven pudding",
+          "name_ja": "セブンプレミアム プリン",
+          "what": "Japanese-style pudding, firm, with burnt caramel. Japanese people argue over which chain's is best.",
+          "where": "7-Eleven",
+          "price": "to confirm",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Ministop soft-serve",
+          "name_ja": "ソフトクリーム",
+          "what": "Made by the machine, on the spot, at the counter.",
+          "where": "Ministop",
+          "price": "to confirm",
+          "pregnancy": "ok"
+        }
+      ]
+    },
+    {
+      "title": "Breakfast and healthy options",
+      "body": "Hotel breakfast too dear? Build one at the konbini for ¥600–900 a head: an onigiri, an egg, a yoghurt and a hot tea. For Fernanda and the parents, this is the protein kit. On ryokan nights (Yudanaka) breakfast is included, so this is for the city days.",
+      "items": [
+        {
+          "name": "Salad chicken",
+          "name_ja": "サラダチキン",
+          "what": "Sous-vide chicken breast in flavours (plain, herb, smoked). High in protein.",
+          "where": "All",
+          "price": "to confirm",
+          "must": true,
+          "pregnancy": "ok",
+          "tip": "It's cooked and pasteurised in the pack. If Fernanda wants to be extra safe, 20 seconds in the microwave does it."
+        },
+        {
+          "name": "Boiled egg",
+          "name_ja": "ゆでたまご・味付たまご",
+          "what": "Salted boiled egg, or ajitsuke (marinated in soy). Konbini ones are hard-boiled.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "ok",
+          "tip": "A soft yolk (半熟) turns up in some. For Fernanda, look for かたゆで on the label, or take the oden egg."
+        },
+        {
+          "name": "Yoghurt and miso soup",
+          "name_ja": "ヨーグルト・みそ汁",
+          "what": "Greek yoghurt (Oikos is common), yoghurt drinks and a cup of miso with tofu.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Salads and cut fruit",
+          "name_ja": "サラダ・カットフルーツ",
+          "what": "Cabbage salad, glass-noodle (harusame) salad or potato salad (Japanese ポテトサラダ is a classic). Cut fruit too.",
+          "where": "All, and more at Natural Lawson",
+          "price": "to confirm",
+          "pregnancy": "ok",
+          "tip": "In pregnancy, ready salads and cut fruit are a slight Listeria risk. Pick the freshest date and eat it straight away."
+        }
+      ]
+    },
+    {
+      "title": "For Fernanda: what's fine and what isn't",
+      "body": "The konbini is a safe place: almost nothing is raw, and raw egg isn't on the shelves. The watch-outs are few and listed below. If unsure, look for 生 (raw) or 加熱 (cooked) on the label, or ask: 「これは生ですか？」 (kore wa nama desu ka?).",
+      "items": [
+        {
+          "name": "Fine",
+          "name_ja": "OK",
+          "what": "Grilled-salmon, tuna-mayo, kombu, okaka and ume onigiri; tamago sando; FamiChiki and karaage; nikuman and anman; oden; salad chicken; pudding and roll cake; barley tea.",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Raw roe",
+          "name_ja": "明太子・たらこ・いくら",
+          "what": "Onigiri, pasta and mentaiko-mayo. Cured, uncooked roe is a Listeria risk and very salty.",
+          "pregnancy": "avoid",
+          "tip": "The exception is a label saying 焼きたらこ (grilled)."
+        },
+        {
+          "name": "Smoked salmon and natural cheese",
+          "name_ja": "スモークサーモン・ナチュラルチーズ",
+          "what": "In sandwiches, wraps and wine snacks (camembert, brie). The Japanese health ministry (MHLW) leaflet lists both as Listeria risks.",
+          "pregnancy": "avoid",
+          "tip": "Processed cheese (プロセスチーズ) and cheese melted in a hot dish are fine."
+        },
+        {
+          "name": "Caffeine",
+          "name_ja": "缶コーヒー・エナジードリンク・緑茶",
+          "what": "Canned coffee, energy drinks and strong green tea.",
+          "pregnancy": "careful",
+          "tip": "Up to ~200 mg a day. Swap for 麦茶 (barley) or ルイボス (rooibos)."
+        },
+        {
+          "name": "Sake-lees amazake and alcoholic drinks",
+          "name_ja": "酒粕甘酒・チューハイ",
+          "what": "酒粕 amazake has alcohol, and chūhai cans sit next to the juices with very similar labels. Look for 「お酒」 or 「アルコール分」 on the can.",
+          "pregnancy": "avoid",
+          "tip": "米麹 amazake is fine."
+        }
+      ]
+    },
+    {
+      "title": "How to use a konbini",
+      "body": "The survival manual, from the till to the toilet.",
+      "items": [
+        {
+          "name": "Paying",
+          "name_ja": "お支払い",
+          "what": "Tap Suica, PASMO or ICOCA (IC card) on the reader: the fastest way. Credit cards work too. Put cash in the tray (トレー), not in the assistant's hand. Many stores have tills where you feed the notes in yourself.",
+          "tip": "To pay by IC card, say 「Suicaで」 (Suica de)."
+        },
+        {
+          "name": "Chopsticks, spoon and bag",
+          "name_ja": "お箸・スプーン・袋",
+          "what": "They'll ask 「お箸おつけしますか？」 (chopsticks?). Bags cost ¥3–5 since 2020; say 「袋お願いします」 (fukuro onegaishimasu) if you want one."
+        },
+        {
+          "name": "Rubbish",
+          "name_ja": "ゴミ箱",
+          "what": "There are almost no bins in the street. Keep your rubbish and bin it at a konbini, separating PET bottles (ペットボトル), cans (缶), burnables (燃えるゴミ) and plastic. In some cities the bins are inside the store.",
+          "tip": "Use the bin for things you bought there. Don't dump the hotel rubbish."
+        },
+        {
+          "name": "Toilet",
+          "name_ja": "トイレ",
+          "what": "Many stores let you use the toilet, and it's polite to buy something. Ask 「トイレをお借りしてもいいですか？」 (toire o okari shite mo ii desu ka?). Some in central Tokyo close theirs for security.",
+          "tip": "A lifesaver for Fernanda on day trips."
+        },
+        {
+          "name": "Cash machine (ATM)",
+          "name_ja": "セブン銀行ATM",
+          "what": "7-Eleven's (Seven Bank) takes foreign Visa, Mastercard, Amex, JCB, UnionPay and Discover and has a menu in Portuguese. The limit is ¥100,000 per withdrawal. Visa and Mastercard work 24 hours; other cards roughly 00:10–23:50. Lawson and FamilyMart have ATMs too, but 7-Eleven is the safest bet.",
+          "price": "Seven Bank fee: to confirm (varies by card)",
+          "tip": "Decline conversion to reais on screen (choose to be charged in yen)."
+        },
+        {
+          "name": "Printing",
+          "name_ja": "マルチコピー機",
+          "what": "The multi-copier prints ticket or booking PDFs from an app or a USB stick. At 7-Eleven, it's through the ネットプリント (Netprint) app.",
+          "price": "to confirm"
+        },
+        {
+          "name": "Sending bags ahead (takkyūbin)",
+          "name_ja": "宅急便",
+          "what": "Send the big cases from one hotel to the next and travel by train with a backpack. Yamato (the black cat) takes parcels up to 200 cm (sum of sides) and 30 kg, with ¥100 off per parcel if dropped at a konbini. 7-Eleven and FamilyMart work with Yamato; Lawson and Ministop with Japan Post (ゆうパック). Some konbini won't take parcels over 180 cm. It takes one to two days.",
+          "price": "By size: check on Yamato's site",
+          "must": true,
+          "tip": "Easiest: ask hotel reception, who fill in the form. Deliveries slow down at the year-end, so for our 27 Dec and 30 Dec moves send two days ahead and confirm the arrival date."
+        },
+        {
+          "name": "Tickets",
+          "name_ja": "チケット",
+          "what": "Museums, parks (Ghibli, Disney), shows and highway buses can be bought or collected at Lawson's Loppi terminal or the 7-Eleven and FamilyMart multi-copiers, paying at the till. Screens are in Japanese; bring the booking number."
+        }
+      ]
+    },
+    {
+      "title": "New Year: the konbini saves 1 January",
+      "body": "Between 31 Dec and 3 Jan nearly everything closes, and the konbini stays open (some close or shorten hours; check the one by our Kyoto house). New Year food appears on the shelves: mochi, kamaboko, kuromame and sometimes ready-made ozōni. All three chains sell osechi to order, for collection at the store.",
+      "items": [
+        {
+          "name": "Konbini osechi",
+          "name_ja": "コンビニおせち",
+          "what": "The ordered New Year box. For 2027, according to macaroni (Oct 2026): Lawson 和洋おせち一段重 (¥12,950 in store) and MOTTAINAIおせち (¥5,680), ordered in store by ~25 Dec; 7-Eleven 和のおせち一段重 (¥6,912), store pickup, order by 28 Dec; FamilyMart 「祝春」 in individual portions (¥12,420), order by 22 Dec, collect 31 Dec.",
+          "where": "Lawson, 7-Eleven, FamilyMart (order by app or in store)",
+          "price": "¥5,680–15,336 (macaroni, Oct 2026; check the chain's site)",
+          "pregnancy": "careful",
+          "tip": "Osechi has kazunoko (herring roe), ikura and sometimes smoked salmon, plus kamaboko, which is cooked. Fernanda sticks to kuromame, kuri-kinton, datemaki, kamaboko and nimono. It only makes sense with a store near where we sleep on 31 Dec: our Kyoto house."
+        },
+        {
+          "name": "Ozōni and mochi",
+          "name_ja": "お雑煮・切り餅",
+          "what": "New Year soup with mochi. Konbini sell cup or ready-pack ozōni and mochi for toasting.",
+          "where": "All, around New Year",
+          "price": "to confirm",
+          "pregnancy": "ok",
+          "tip": "For the parents and Fernanda: cut the mochi small and chew well. Choking on mochi is a real worry at Japanese New Year."
+        },
+        {
+          "name": "Konbini toshikoshi soba",
+          "name_ja": "年越しそば",
+          "what": "On 31 Dec, ready soba and cup soba with fried tofu (きつね) or tempura appear. Plan B if the queue at Matsuba is too long.",
+          "where": "All",
+          "price": "to confirm",
+          "pregnancy": "ok"
+        }
+      ]
+    },
+    {
+      "title": "Supermarkets and drugstores",
+      "body": "For a cheap dinner in the room: supermarkets put discount stickers (20%引, 30%引, 半額) on sushi, bentō and fried food from late afternoon, most heavily around 19:00–20:00. Drugstores (Matsumoto Kiyoshi, Welcia, Sundrug) sell drinks and snacks cheaper than konbini.",
+      "items": [
+        {
+          "name": "Life and OK Store",
+          "name_ja": "ライフ・オーケー",
+          "what": "Good-value neighbourhood supermarkets. OK is famous as Tokyo's cheapest, and for its counter sushi and pizza.",
+          "where": "Tokyo and Kansai (Life); Greater Tokyo (OK)"
+        },
+        {
+          "name": "Seijo Ishii",
+          "name_ja": "成城石井",
+          "what": "A gourmet supermarket with famous ready dishes (the lasagne and the potato salad).",
+          "where": "Big stations all over Japan"
+        },
+        {
+          "name": "Kinokuniya",
+          "name_ja": "紀ノ国屋",
+          "what": "Tokyo's luxury supermarket (Aoyama), with bread, fruit and imports.",
+          "where": "Tokyo"
+        },
+        {
+          "name": "Hankyu Oasis",
+          "name_ja": "阪急オアシス",
+          "what": "A Kansai chain with a good fish counter and sōzai.",
+          "where": "Osaka, Kyoto and Kobe"
+        },
+        {
+          "name": "Supermarket sushi on the sticker",
+          "name_ja": "半額シール",
+          "what": "Half-price sushi after 20:00 is a Japanese student tradition.",
+          "pregnancy": "careful",
+          "tip": "For Fernanda, only the cooked pieces (boiled ebi, tamago, unagi, inari). Raw fish that's sat on a counter all day is worse than a sushi bar's."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.family.co.jp/goods/friedfoods.html",
+    "https://www.sej.co.jp/products/a/onigiri/",
+    "https://www.sej.co.jp/products/a/chukaman/",
+    "https://www.lawson.co.jp/recommend/original/oden/",
+    "https://www.lawson.co.jp/recommend/original/dessert/",
+    "https://www.sevenbank.co.jp/intlcard/",
+    "https://www.sevenbank.co.jp/intlcard/card.html",
+    "https://www.kuronekoyamato.co.jp/ytc/customer/send/services/takkyubin/",
+    "https://www.appbank.net/2026/01/27/casual-food/2917402.php",
+    "https://www.pricey.jp/web/articles/2708",
+    "https://webtan.impress.co.jp/n/2025/07/03/49625",
+    "https://www.commercepick.com/archives/67540",
+    "https://biz-journal.jp/2023/02/post_332446.html",
+    "https://macaro-ni.jp/12613",
+    "https://macaro-ni.jp/178469",
+    "https://ja.wikipedia.org/wiki/セイコーマート",
+    "https://www.morinaga.co.jp/amazake/",
+    "https://event.rakuten.co.jp/family/story/article/2022/pregnancy-mentaiko/",
+    "https://www.mhlw.go.jp/topics/syokuchu/dl/ninpu.pdf",
+    "https://www.youtube.com/watch?v=TO2pblb_OzA"
+  ]
+}
