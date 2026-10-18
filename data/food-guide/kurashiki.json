@@ -82,7 +82,10 @@
       "name_ja": "倉敷美観地区",
       "kind": "bairro",
       "story_pt": "O canal com salgueiros e armazéns brancos, o Museu Ōhara e casas de comerciantes viradas cafés e lojas.",
-      "eat_pt": ["Café no Kurashiki Coffee Kan", "Parfait e curry no Miyake Shōten", "Jantar de peixe no Hamayoshi"],
+      "eat_pt": [
+        "Café no Kurashiki Coffee Kan",
+        "Parfait e curry no Miyake Shōten"
+      ],
       "tips_pt": "Muito bonito de manhã cedo e no fim da tarde. Muitas lojas fecham às 17h.",
       "dec_jan_pt": "Movimentado no Ano-Novo; horários a confirmar.",
       "query": "Kurashiki Bikan Historical Quarter"
@@ -92,7 +95,10 @@
       "name_ja": "倉敷駅",
       "kind": "estação",
       "story_pt": "A 10 minutos a pé do Bikan, com galerias cobertas no caminho e a Furuichi logo ali.",
-      "eat_pt": ["Bukkake udon na Furuichi", "Kappa para o almoço"],
+      "eat_pt": [
+        "Bukkake udon na Furuichi",
+        "Kappa para o almoço"
+      ],
       "tips_pt": "Almoce na ida para o Bikan.",
       "dec_jan_pt": "A confirmar.",
       "query": "Kurashiki Station"
@@ -105,7 +111,11 @@
       "area": "Kurashiki · estação",
       "genre_pt": "Udon",
       "price_pt": "≈¥1.000",
-      "tabelog": { "score": 3.60, "reviews": 1049, "url": "https://tabelog.com/en/okayama/A3302/A330201/33000046/" },
+      "tabelog": {
+        "score": 3.6,
+        "reviews": 1049,
+        "url": "https://tabelog.com/en/okayama/A3302/A330201/33000046/"
+      },
       "why_pt": "A casa onde a bukkake udon nasceu, segundo o próprio Tabelog. Barata, rápida e aberta o dia inteiro.",
       "order_pt": "Kizami bukkake (¥890) ou bukkake de carne; inari-zushi.",
       "pregnancy_pt": "Ok; evite cobertura de ovo cru.",
@@ -120,8 +130,13 @@
       "area": "Kurashiki · Bikan",
       "genre_pt": "Kissaten",
       "price_pt": "≈¥1.000",
-      "tabelog": { "score": 3.69, "reviews": 783, "url": "https://tabelog.com/en/okayama/A3302/A330201/33000383/", "awards": "Kissaten 百名店 2021, 2022, 2026" },
-      "why_pt": "Café de torra própria coado em flanela, num balcão de madeira escura do Bikan. Pausa obrigatória para o Pedro.",
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 783,
+        "url": "https://tabelog.com/en/okayama/A3302/A330201/33000383/",
+        "awards": "Kissaten 百名店 2021, 2022, 2026"
+      },
+      "why_pt": "Café de torra própria coado em flanela, 百名店 três vezes, no Bikan. Pausa obrigatória para o Pedro.",
       "order_pt": "Soft Blend ou Mandheling Noir; o Granita di Caffè.",
       "pregnancy_pt": "Uma xícara está ok.",
       "group_pt": "42 lugares: dá para os seis fora do pico.",
@@ -132,10 +147,14 @@
     {
       "name": "Hamayoshi",
       "name_ja": "浜吉",
-      "area": "Kurashiki · Bikan",
+      "area": "Kurashiki",
       "genre_pt": "Peixe / kaiseki",
       "price_pt": "Almoço ¥2.000–2.999 · jantar ¥6.000–9.999",
-      "tabelog": { "score": 3.59, "reviews": 270, "url": "https://tabelog.com/en/okayama/A3302/A330201/33000045/" },
+      "tabelog": {
+        "score": 3.59,
+        "reviews": 270,
+        "url": "https://tabelog.com/en/okayama/A3302/A330201/33000045/"
+      },
       "why_pt": "O jantar do mar interior em Kurashiki: mamakari de três jeitos e sawara grelhada, com sala para o grupo.",
       "order_pt": "Omakase kaiseki (¥6.000); mamakari e sawara yūan-yaki.",
       "pregnancy_pt": "Ela troca sashimi e mamakari crua por sawara grelhada e pratos cozidos; avise na reserva.",
@@ -150,7 +169,12 @@
       "area": "Kurashiki",
       "genre_pt": "Shokudō / tonkatsu",
       "price_pt": "¥1.000–2.000",
-      "tabelog": { "score": 3.59, "reviews": 1579, "url": "https://tabelog.com/en/okayama/A3302/A330201/33000185/", "awards": "Shokudō 百名店 2024, 2026; Tonkatsu 百名店 2017–2019, 2021" },
+      "tabelog": {
+        "score": 3.59,
+        "reviews": 1579,
+        "url": "https://tabelog.com/en/okayama/A3302/A330201/33000185/",
+        "awards": "Shokudō 百名店 2024, 2026; Tonkatsu 百名店 2017–2019, 2021"
+      },
       "why_pt": "Shokudō de bairro com dois títulos de 百名店: almoço honesto, sem cara de turismo.",
       "order_pt": "Tonkatsu teishoku.",
       "pregnancy_pt": "Ok.",
@@ -165,7 +189,12 @@
       "area": "Kurashiki · Bikan",
       "genre_pt": "Café / curry",
       "price_pt": "¥1.000–1.999",
-      "tabelog": { "score": 3.60, "reviews": 651, "url": "https://tabelog.com/en/okayama/A3302/A330201/33000295/", "awards": "Cafe WEST 百名店 2025" },
+      "tabelog": {
+        "score": 3.6,
+        "reviews": 651,
+        "url": "https://tabelog.com/en/okayama/A3302/A330201/33000295/",
+        "awards": "Cafe WEST 百名店 2025"
+      },
       "why_pt": "Café numa casa de comerciante do Bikan, com parfaits de fruta da estação e curry.",
       "order_pt": "Parfait da estação, curry.",
       "pregnancy_pt": "Ok.",
@@ -176,8 +205,23 @@
     }
   ],
   "shops": [
-    { "name": "Boulangerie mugi", "name_ja": "ムギ", "what_pt": "Padaria do Bread WEST 百名店 2026; Tabelog 3.60 (541), https://tabelog.com/en/okayama/A3302/A330201/33008388/.", "buy_pt": "Focaccia de manjericão, anpan, pão de cranberry e nozes.", "price_pt": "¥150–250 a peça", "dec_jan_pt": "7h30–17h; só dinheiro. Ano-Novo a confirmar.", "query": "Boulangerie mugi Kurashiki" },
-    { "name": "Kurashiki Coffee Kan (grãos)", "name_ja": "倉敷珈琲館", "what_pt": "Vende os grãos da torra da casa.", "buy_pt": "Um pacote de café para levar.", "dec_jan_pt": "10h–17h.", "query": "Kurashiki Coffee Kan beans" }
+    {
+      "name": "Boulangerie mugi",
+      "name_ja": "ムギ",
+      "what_pt": "Padaria do Bread WEST 百名店 2026; Tabelog 3.60 (541), https://tabelog.com/en/okayama/A3302/A330201/33008388/.",
+      "buy_pt": "Focaccia de manjericão, anpan, pão de cranberry e nozes.",
+      "price_pt": "¥150–250 a peça",
+      "dec_jan_pt": "7h30–17h; só dinheiro. Ano-Novo a confirmar.",
+      "query": "Boulangerie mugi Kurashiki"
+    },
+    {
+      "name": "Kurashiki Coffee Kan (grãos)",
+      "name_ja": "倉敷珈琲館",
+      "what_pt": "Vende os grãos da torra da casa.",
+      "buy_pt": "Um pacote de café para levar.",
+      "dec_jan_pt": "10h–17h.",
+      "query": "Kurashiki Coffee Kan beans"
+    }
   ],
   "sources": [
     "https://tabelog.com/en/okayama/A3302/A330201/rank/",

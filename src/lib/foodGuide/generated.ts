@@ -243,6 +243,18 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     }
   },
   {
+    "slug": "takamatsu",
+    "name": "Takamatsu",
+    "region": "Kagawa",
+    "tagline_pt": "A capital da 'prefeitura do udon': fábricas de macarrão que abrem às 9h, fecham quando acaba a massa e cobram menos de ¥500.",
+    "counts": {
+      "meibutsu": 7,
+      "areas": 2,
+      "places": 6,
+      "shops": 2
+    }
+  },
+  {
     "slug": "fukuoka",
     "name": "Fukuoka",
     "region": "Kyushu",
@@ -408,6 +420,7 @@ export const CITY_LOADERS: Record<string, () => Promise<FoodCity>> = {
   "onomichi": () => import("../../../data/food-guide/onomichi.json").then((m) => m.default as FoodCity),
   "okayama": () => import("../../../data/food-guide/okayama.json").then((m) => m.default as FoodCity),
   "kurashiki": () => import("../../../data/food-guide/kurashiki.json").then((m) => m.default as FoodCity),
+  "takamatsu": () => import("../../../data/food-guide/takamatsu.json").then((m) => m.default as FoodCity),
   "fukuoka": () => import("../../../data/food-guide/fukuoka.json").then((m) => m.default as FoodCity),
   "yufuin": () => import("../../../data/food-guide/yufuin.json").then((m) => m.default as FoodCity),
   "beppu": () => import("../../../data/food-guide/beppu.json").then((m) => m.default as FoodCity),
