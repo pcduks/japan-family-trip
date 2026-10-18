@@ -73,7 +73,11 @@
       "name_ja": "岡山駅",
       "kind": "estação",
       "story_pt": "Entroncamento do Shinkansen e das linhas para Kurashiki e Shikoku. Barazushi, ekiben e frutaria a poucos minutos.",
-      "eat_pt": ["Barazushi na Azuma Zushi", "Ekiben Matsuri-zushi", "Parfait no harebare (4 min)"],
+      "eat_pt": [
+        "Barazushi na Azuma Zushi",
+        "Ekiben Matsuri-zushi",
+        "Parfait no harebare (4 min)"
+      ],
       "tips_pt": "Dá para comer bem sem sair da estação num dia de trânsito.",
       "dec_jan_pt": "Lojas da estação abertas no Ano-Novo com horário reduzido (a confirmar).",
       "query": "Okayama Station"
@@ -83,7 +87,10 @@
       "name_ja": "表町・後楽園",
       "kind": "bairro",
       "story_pt": "O centro antigo, com galerias cobertas, entre o castelo e o jardim Kōrakuen.",
-      "eat_pt": ["Doces e kibi-dango", "Izakaya à noite (Kisetsu Ryōri Katayama, Sakaiya)"],
+      "eat_pt": [
+        "Doces e kibi-dango",
+        "Izakaya à noite (Kisetsu Ryōri Katayama, Sakaiya)"
+      ],
       "tips_pt": "Combine Kōrakuen de manhã e almoço por aqui.",
       "dec_jan_pt": "A confirmar.",
       "query": "Omotecho Okayama"
@@ -96,7 +103,11 @@
       "area": "Okayama · estação",
       "genre_pt": "Sushi / barazushi",
       "price_pt": "Barazushi ≈¥2.300",
-      "tabelog": { "score": 3.49, "reviews": 897, "url": "https://tabelog.com/en/okayama/A3301/A330101/33001111/" },
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 897,
+        "url": "https://tabelog.com/en/okayama/A3301/A330101/33001111/"
+      },
       "why_pt": "Casa de 1912 e a barazushi mais prática da cidade, ao lado do trem.",
       "order_pt": "Barazushi.",
       "pregnancy_pt": "Peça a versão de coberturas cozidas ou anago.",
@@ -110,7 +121,11 @@
       "area": "Okayama · estação",
       "genre_pt": "Fruit parlour",
       "price_pt": "A confirmar",
-      "tabelog": { "score": 3.51, "reviews": 217, "url": "https://tabelog.com/en/okayama/A3301/A330101/33018099/" },
+      "tabelog": {
+        "score": 3.51,
+        "reviews": 217,
+        "url": "https://tabelog.com/en/okayama/A3301/A330101/33018099/"
+      },
       "why_pt": "Parfait de fruta de Okayama a 4 minutos da estação.",
       "order_pt": "Parfait da estação.",
       "pregnancy_pt": "Ok.",
@@ -124,7 +139,12 @@
       "name_ja": "季節料理かたやま",
       "area": "Okayama",
       "genre_pt": "Izakaya",
-      "tabelog": { "score": 3.69, "reviews": 338, "url": "https://tabelog.com/en/okayama/A3301/A330101/33009794/", "awards": "Izakaya WEST 百名店 2026" },
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 338,
+        "url": "https://tabelog.com/en/okayama/A3301/A330101/33009794/",
+        "awards": "Izakaya WEST 百名店 2026"
+      },
       "why_pt": "Izakaya de cozinha da estação, 百名店: o jantar de peixe do mar interior.",
       "order_pt": "Peixe do dia grelhado ou cozido, pratos da estação.",
       "pregnancy_pt": "Ela evita o sashimi e pede grelhados e cozidos.",
@@ -138,7 +158,12 @@
       "name_ja": "酒囲屋本店",
       "area": "Okayama",
       "genre_pt": "Izakaya",
-      "tabelog": { "score": 3.64, "reviews": 435, "url": "https://tabelog.com/en/okayama/A3301/A330101/33006896/", "awards": "Izakaya WEST 百名店 2026" },
+      "tabelog": {
+        "score": 3.64,
+        "reviews": 435,
+        "url": "https://tabelog.com/en/okayama/A3301/A330101/33006896/",
+        "awards": "Izakaya WEST 百名店 2026"
+      },
       "why_pt": "O outro izakaya 百名店 da cidade, com mais avaliações.",
       "order_pt": "Pratos de peixe local.",
       "pregnancy_pt": "Grelhados e cozidos.",
@@ -152,8 +177,13 @@
       "name_ja": "はすのみ",
       "area": "Okayama",
       "genre_pt": "Chinês",
-      "tabelog": { "score": 4.08, "reviews": 186, "url": "https://tabelog.com/en/okayama/A3301/A330101/33007719/", "awards": "Chinese WEST 百名店 2026" },
-      "why_pt": "Nota acima de 4.0, rara: o jantar sério de Okayama, segundo o Tabelog.",
+      "tabelog": {
+        "score": 4.08,
+        "reviews": 186,
+        "url": "https://tabelog.com/en/okayama/A3301/A330101/33007719/",
+        "awards": "Chinese WEST 百名店 2026"
+      },
+      "why_pt": "Nota acima de 4.0, rara: o jantar sério de Okayama. (O ranking do Tabelog só mostra o nome em romaji; quase certamente é a はすのみ do 百名店. Confira ao reservar.)",
       "order_pt": "Curso da casa.",
       "pregnancy_pt": "Cozinha chinesa é quase toda cozida: ok.",
       "group_pt": "A confirmar.",
@@ -163,9 +193,31 @@
     }
   ],
   "shops": [
-    { "name": "Kōeidō", "name_ja": "廣榮堂", "what_pt": "A casa ligada à origem do kibi-dango (era Ansei), hoje dividida em Kōeidō Honten e Kōeidō Takeda.", "buy_pt": "Kibi-dango em caixa.", "price_pt": "≈¥500–1.000", "dec_jan_pt": "A confirmar.", "query": "Koeido kibi dango Okayama" },
-    { "name": "Souris La Seine", "name_ja": "スーリィ・ラ・セーヌ", "what_pt": "Pâtisserie do Sweets WEST 百名店 2026; Tabelog 3.66 (473), https://tabelog.com/en/okayama/A3301/A330101/33000060/.", "buy_pt": "Bolos de fruta para o hotel.", "dec_jan_pt": "A confirmar.", "query": "Souris La Seine Okayama" },
-    { "name": "Ekiben Matsuri-zushi (Miyoshino)", "name_ja": "祭ずし（三好野本店）", "what_pt": "O ekiben de barazushi de Okayama.", "buy_pt": "Para comer no Shinkansen.", "dec_jan_pt": "A confirmar.", "query": "Matsuri zushi ekiben Okayama" }
+    {
+      "name": "Kōeidō",
+      "name_ja": "廣榮堂",
+      "what_pt": "A casa ligada à origem do kibi-dango (era Ansei), hoje dividida em Kōeidō Honten e Kōeidō Takeda.",
+      "buy_pt": "Kibi-dango em caixa.",
+      "price_pt": "≈¥500–1.000",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Koeido kibi dango Okayama"
+    },
+    {
+      "name": "Souris La Seine",
+      "name_ja": "スーリィ・ラ・セーヌ",
+      "what_pt": "Pâtisserie do Sweets WEST 百名店 2026; Tabelog 3.66 (473), https://tabelog.com/en/okayama/A3301/A330101/33000060/.",
+      "buy_pt": "Bolos de fruta para o hotel.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Souris La Seine Okayama"
+    },
+    {
+      "name": "Ekiben Matsuri-zushi (Miyoshino)",
+      "name_ja": "祭ずし（三好野本店）",
+      "what_pt": "O ekiben de barazushi de Okayama.",
+      "buy_pt": "Para comer no Shinkansen.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Matsuri zushi ekiben Okayama"
+    }
   ],
   "sources": [
     "https://ja.wikipedia.org/wiki/ばらずし_(岡山県)",

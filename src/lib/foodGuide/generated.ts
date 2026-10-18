@@ -231,6 +231,18 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     }
   },
   {
+    "slug": "kurashiki",
+    "name": "Kurashiki",
+    "region": "Setouchi",
+    "tagline_pt": "Cidade de armazéns brancos à beira do canal: udon 'bukkake' que nasceu aqui, café de torra própria e peixe do mar interior.",
+    "counts": {
+      "meibutsu": 7,
+      "areas": 2,
+      "places": 5,
+      "shops": 2
+    }
+  },
+  {
     "slug": "fukuoka",
     "name": "Fukuoka",
     "region": "Kyushu",
@@ -395,6 +407,7 @@ export const CITY_LOADERS: Record<string, () => Promise<FoodCity>> = {
   "miyajima": () => import("../../../data/food-guide/miyajima.json").then((m) => m.default as FoodCity),
   "onomichi": () => import("../../../data/food-guide/onomichi.json").then((m) => m.default as FoodCity),
   "okayama": () => import("../../../data/food-guide/okayama.json").then((m) => m.default as FoodCity),
+  "kurashiki": () => import("../../../data/food-guide/kurashiki.json").then((m) => m.default as FoodCity),
   "fukuoka": () => import("../../../data/food-guide/fukuoka.json").then((m) => m.default as FoodCity),
   "yufuin": () => import("../../../data/food-guide/yufuin.json").then((m) => m.default as FoodCity),
   "beppu": () => import("../../../data/food-guide/beppu.json").then((m) => m.default as FoodCity),
