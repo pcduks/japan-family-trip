@@ -219,6 +219,18 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     }
   },
   {
+    "slug": "okayama",
+    "name": "Okayama",
+    "region": "Setouchi",
+    "tagline_pt": "Terra do Momotarō e das frutas: sushi espalhado que escondia luxo debaixo do arroz e o bolinho que virou lenda.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 2,
+      "places": 5,
+      "shops": 3
+    }
+  },
+  {
     "slug": "fukuoka",
     "name": "Fukuoka",
     "region": "Kyushu",
@@ -382,6 +394,7 @@ export const CITY_LOADERS: Record<string, () => Promise<FoodCity>> = {
   "hiroshima": () => import("../../../data/food-guide/hiroshima.json").then((m) => m.default as FoodCity),
   "miyajima": () => import("../../../data/food-guide/miyajima.json").then((m) => m.default as FoodCity),
   "onomichi": () => import("../../../data/food-guide/onomichi.json").then((m) => m.default as FoodCity),
+  "okayama": () => import("../../../data/food-guide/okayama.json").then((m) => m.default as FoodCity),
   "fukuoka": () => import("../../../data/food-guide/fukuoka.json").then((m) => m.default as FoodCity),
   "yufuin": () => import("../../../data/food-guide/yufuin.json").then((m) => m.default as FoodCity),
   "beppu": () => import("../../../data/food-guide/beppu.json").then((m) => m.default as FoodCity),

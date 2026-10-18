@@ -1,0 +1,176 @@
+{
+  "slug": "okayama",
+  "name": "Okayama",
+  "tagline_pt": "Terra do Momotarō e das frutas: sushi espalhado que escondia luxo debaixo do arroz e o bolinho que virou lenda.",
+  "history_pt": [
+    "Okayama, o antigo feudo de Bizen, tem clima seco e ensolarado (a 'terra do bom tempo') e planícies férteis: arroz, pêssego branco, uva muscat e o mar interior logo ao lado. A lenda da barazushi vem daí. Quando o senhor Ikeda Mitsumasa decretou austeridade, com um caldo e um prato só por refeição (ichijū issai), o povo misturou tudo num prato único de arroz avinagrado: sawara, mamakari, camarão, congro grelhado, lula, polvo, ovo e raiz de lótus. Era um prato só, mas parecia um banquete.",
+    "O kibi-dango é o doce da lenda de Momotarō, o menino do pêssego que pagou seus companheiros com dango. O doce de Okayama é outro: um gyūhi (mochi macio) da era Ansei (1854–59), associado à casa Kōeidō. Na guerra sino-japonesa de 1894–95, os soldados passavam pela estação de Okayama, e o dono da Kōeidō foi recebê-los no porto vestido de Momotarō, com bandeiras de 'o melhor kibi-dango do Japão'. Foi assim que doce e lenda se colaram. Hoje quase não leva milho-painço (kibi)."
+  ],
+  "winter_pt": "Dezembro é fim da temporada da uva muscat e começo do morango; o pêssego branco é de verão, então não espere pêssego fresco. Sawara e mamakari em conserva aparecem o ano todo na barazushi.",
+  "meibutsu": [
+    {
+      "name_pt": "Barazushi de Okayama",
+      "name_ja": "ばら寿司（祭ずし）",
+      "romaji": "barazushi",
+      "what_pt": "Arroz avinagrado com shiitake e kanpyō misturados, coberto de sawara, mamakari, camarão, anago, lula, ovo e lótus. A barazushi é festa num prato só.",
+      "where_pt": "Azuma Zushi (estação) ou ekiben 'Matsuri-zushi' na estação.",
+      "price_pt": "≈¥2.300",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Mistura peças cruas (sawara, lula, camarão) e cozidas. Ela pede a versão de coberturas cozidas ou de anago, ou tira as cruas."
+    },
+    {
+      "name_pt": "Kibi-dango",
+      "name_ja": "吉備団子",
+      "romaji": "kibi-dango",
+      "what_pt": "Bolinhos achatados de gyūhi (mochi macio e doce), em caixinhas. Leve, bom com chá.",
+      "where_pt": "Kōeidō, lojas da estação.",
+      "price_pt": "≈¥500–1.000 a caixa",
+      "must": true
+    },
+    {
+      "name_pt": "Parfait de frutas",
+      "name_ja": "フルーツパフェ",
+      "romaji": "furūtsu pafe",
+      "what_pt": "Taça montada com as frutas da estação de Okayama. Em dezembro: muscat no fim, morango no começo.",
+      "where_pt": "harebare, Souris La Seine.",
+      "price_pt": "¥1.500–3.000",
+      "must": true
+    },
+    {
+      "name_pt": "Mamakari",
+      "name_ja": "ままかり",
+      "romaji": "mamakari",
+      "what_pt": "Sardinhinha do mar interior marinada em vinagre, sobre arroz ou em sushi. O nome brinca que é tão boa que você pede arroz emprestado ao vizinho.",
+      "where_pt": "Izakaya locais e barazushi.",
+      "price_pt": "¥500–1.000",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "É peixe cru curado em vinagre: fica a critério dela."
+    },
+    {
+      "name_pt": "Demi-katsudon",
+      "name_ja": "デミカツ丼",
+      "romaji": "demi-katsudon",
+      "what_pt": "O katsudon de Okayama: tonkatsu sobre arroz coberto de molho demi-glace em vez de ovo. Bom para ela, já que não leva ovo mole.",
+      "where_pt": "Shokudō e casas de katsudon do centro.",
+      "price_pt": "≈¥1.000",
+      "must": false
+    },
+    {
+      "name_pt": "Udon de Okayama",
+      "name_ja": "うどん",
+      "romaji": "udon",
+      "what_pt": "Okayama fica a uma ponte de Kagawa e come muito udon.",
+      "where_pt": "Tanuki Ya (Tabelog 3.70, https://tabelog.com/en/okayama/A3301/A330101/33000212/).",
+      "price_pt": "<¥1.000",
+      "must": false
+    }
+  ],
+  "areas": [
+    {
+      "name": "Estação de Okayama",
+      "name_ja": "岡山駅",
+      "kind": "estação",
+      "story_pt": "Entroncamento do Shinkansen e das linhas para Kurashiki e Shikoku. Barazushi, ekiben e frutaria a poucos minutos.",
+      "eat_pt": ["Barazushi na Azuma Zushi", "Ekiben Matsuri-zushi", "Parfait no harebare (4 min)"],
+      "tips_pt": "Dá para comer bem sem sair da estação num dia de trânsito.",
+      "dec_jan_pt": "Lojas da estação abertas no Ano-Novo com horário reduzido (a confirmar).",
+      "query": "Okayama Station"
+    },
+    {
+      "name": "Omotechō e Kōrakuen",
+      "name_ja": "表町・後楽園",
+      "kind": "bairro",
+      "story_pt": "O centro antigo, com galerias cobertas, entre o castelo e o jardim Kōrakuen.",
+      "eat_pt": ["Doces e kibi-dango", "Izakaya à noite (Kisetsu Ryōri Katayama, Sakaiya)"],
+      "tips_pt": "Combine Kōrakuen de manhã e almoço por aqui.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Omotecho Okayama"
+    }
+  ],
+  "places": [
+    {
+      "name": "Azuma Zushi Okayama-eki-ten",
+      "name_ja": "吾妻寿司 岡山駅店",
+      "area": "Okayama · estação",
+      "genre_pt": "Sushi / barazushi",
+      "price_pt": "Barazushi ≈¥2.300",
+      "tabelog": { "score": 3.49, "reviews": 897, "url": "https://tabelog.com/en/okayama/A3301/A330101/33001111/" },
+      "why_pt": "Casa de 1912 e a barazushi mais prática da cidade, ao lado do trem.",
+      "order_pt": "Barazushi.",
+      "pregnancy_pt": "Peça a versão de coberturas cozidas ou anago.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Azuma Zushi Okayama Station"
+    },
+    {
+      "name": "harebare (antigo Kannonyama Fruit Parlour OKAYAMA)",
+      "area": "Okayama · estação",
+      "genre_pt": "Fruit parlour",
+      "price_pt": "A confirmar",
+      "tabelog": { "score": 3.51, "reviews": 217, "url": "https://tabelog.com/en/okayama/A3301/A330101/33018099/" },
+      "why_pt": "Parfait de fruta de Okayama a 4 minutos da estação.",
+      "order_pt": "Parfait da estação.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "harebare Okayama fruit parlour"
+    },
+    {
+      "name": "Kisetsu Ryōri Katayama",
+      "name_ja": "季節料理かたやま",
+      "area": "Okayama",
+      "genre_pt": "Izakaya",
+      "tabelog": { "score": 3.69, "reviews": 338, "url": "https://tabelog.com/en/okayama/A3301/A330101/33009794/", "awards": "Izakaya WEST 百名店 2026" },
+      "why_pt": "Izakaya de cozinha da estação, 百名店: o jantar de peixe do mar interior.",
+      "order_pt": "Peixe do dia grelhado ou cozido, pratos da estação.",
+      "pregnancy_pt": "Ela evita o sashimi e pede grelhados e cozidos.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "Reserve.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kisetsu Ryori Katayama Okayama"
+    },
+    {
+      "name": "Sakaiya Honten",
+      "name_ja": "酒囲屋本店",
+      "area": "Okayama",
+      "genre_pt": "Izakaya",
+      "tabelog": { "score": 3.64, "reviews": 435, "url": "https://tabelog.com/en/okayama/A3301/A330101/33006896/", "awards": "Izakaya WEST 百名店 2026" },
+      "why_pt": "O outro izakaya 百名店 da cidade, com mais avaliações.",
+      "order_pt": "Pratos de peixe local.",
+      "pregnancy_pt": "Grelhados e cozidos.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "Reserve.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Sakaiya Honten Okayama"
+    },
+    {
+      "name": "Hasunomi",
+      "name_ja": "はすのみ",
+      "area": "Okayama",
+      "genre_pt": "Chinês",
+      "tabelog": { "score": 4.08, "reviews": 186, "url": "https://tabelog.com/en/okayama/A3301/A330101/33007719/", "awards": "Chinese WEST 百名店 2026" },
+      "why_pt": "Nota acima de 4.0, rara: o jantar sério de Okayama, segundo o Tabelog.",
+      "order_pt": "Curso da casa.",
+      "pregnancy_pt": "Cozinha chinesa é quase toda cozida: ok.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "Reserve com antecedência.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Hasunomi Okayama Chinese"
+    }
+  ],
+  "shops": [
+    { "name": "Kōeidō", "name_ja": "廣榮堂", "what_pt": "A casa ligada à origem do kibi-dango (era Ansei), hoje dividida em Kōeidō Honten e Kōeidō Takeda.", "buy_pt": "Kibi-dango em caixa.", "price_pt": "≈¥500–1.000", "dec_jan_pt": "A confirmar.", "query": "Koeido kibi dango Okayama" },
+    { "name": "Souris La Seine", "name_ja": "スーリィ・ラ・セーヌ", "what_pt": "Pâtisserie do Sweets WEST 百名店 2026; Tabelog 3.66 (473), https://tabelog.com/en/okayama/A3301/A330101/33000060/.", "buy_pt": "Bolos de fruta para o hotel.", "dec_jan_pt": "A confirmar.", "query": "Souris La Seine Okayama" },
+    { "name": "Ekiben Matsuri-zushi (Miyoshino)", "name_ja": "祭ずし（三好野本店）", "what_pt": "O ekiben de barazushi de Okayama.", "buy_pt": "Para comer no Shinkansen.", "dec_jan_pt": "A confirmar.", "query": "Matsuri zushi ekiben Okayama" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/ばらずし_(岡山県)",
+    "https://ja.wikipedia.org/wiki/ばら寿司",
+    "https://ja.wikipedia.org/wiki/吉備団子",
+    "https://tabelog.com/en/okayama/A3301/A330101/rank/"
+  ]
+}
