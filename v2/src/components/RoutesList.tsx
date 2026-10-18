@@ -4,6 +4,7 @@ import Link from "next/link";
 import { guideFor } from "@/lib/autoGuide";
 import { budgetOf, fmtSgd } from "@/lib/budget";
 import { checkVersion } from "@/lib/rules";
+import { FeelTable } from "./FeelTable";
 import { STYLE_LABEL, styleOf } from "@/lib/styles";
 import type { Region, Version } from "@/lib/types";
 import { describeDiff, paceLabel, statsOf } from "@/lib/versions";
@@ -42,6 +43,12 @@ export function RoutesList() {
           ))}
         </ul>
       </Section>
+
+      {changes.length ? (
+        <Section title="How each would feel">
+          <FeelTable columns={[{ label: "Our route", v: plan }, ...changes.map((v) => ({ label: addedNames(plan, v, snapshot.regions), v }))]} />
+        </Section>
+      ) : null}
 
       <Section title="Make your own change">
         <div className="flex flex-wrap gap-2">
@@ -84,6 +91,12 @@ export function RoutesList() {
       ) : null}
     </Page>
   );
+}
+
+/** The places a change brings in, for a column heading: "Takayama", "Nara + Hakone". */
+function addedNames(plan: Version, v: Version, regions: Region[]): string {
+  const added = v.stays.filter((s) => !plan.stays.some((p) => p.region === s.region)).map((s) => shortNames(regions).find((r) => r.id === s.region)?.name ?? s.region);
+  return added.length ? Array.from(new Set(added)).join(" + ") : "Same places";
 }
 
 /** A route read as a change to ours: what moves, and what that does to packing, warnings and cost. */

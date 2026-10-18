@@ -89,6 +89,15 @@ export function hospitalFor(region: string): Hospital | null {
   return RR.hospitals[region] ?? null;
 }
 
+/** The most nights a place can fill on this route: full days + 1, one more for a named day out, hubs counting their day trips. */
+export function nightsItCanFill(region: string, stays: Pick<Stay, "region">[]): { cap: number; extra: Capacity["extra"] | null } | null {
+  const c = RR.capacity[region];
+  if (!c) return null;
+  // A small place's day out only counts when the route does not already stop there.
+  const extra = !c.hub && c.extra && !stays.some((x) => x.region === c.extra!.region) ? c.extra : null;
+  return { cap: c.hub ? c.full_days + (c.day_trips?.length ?? 0) + 1 : (c.nights ?? Math.floor(c.full_days + 1)) + (extra ? 1 : 0), extra };
+}
+
 export function capacityOf(region: string): Capacity | null {
   return RR.capacity[region] ?? null;
 }
@@ -171,9 +180,7 @@ export function checkStays(stays: Stay[], pace: Pace, ctx: RulesContext): Findin
   stays.forEach((s, i) => {
     const c = RR.capacity[s.region];
     if (!c) return;
-    // A small place's day out only counts when the route does not already stop there.
-    const extra = !c.hub && c.extra && !stays.some((x) => x.region === c.extra!.region) ? c.extra : null;
-    const cap = c.hub ? c.full_days + (c.day_trips?.length ?? 0) + 1 : (c.nights ?? Math.floor(c.full_days + 1)) + (extra ? 1 : 0);
+    const { cap, extra } = nightsItCanFill(s.region, stays)!;
     if (s.nights > cap) {
       const days = c.full_days === 1 ? "one full day" : `about ${c.full_days} full days`;
       out.push({ rule: "capacity", severity: "warn", stayIndex: i, message: c.hub ? `${name(regions, s.region)} has ${s.nights} nights: ${days} in the city and ${c.day_trips?.length ?? 0} easy day trips. Every day needs a plan.` : `${name(regions, s.region)} has ${s.nights} nights, but ${days} to fill in our dates${extra ? `, plus ${extra.what}` : ""}. More than ${cap} leaves empty days; a quiet day sits better in a big city.` });

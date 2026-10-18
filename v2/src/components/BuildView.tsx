@@ -15,6 +15,7 @@ import { PictureScroll } from "./PictureScroll";
 import { Planner } from "./Planner";
 import { useStore } from "./providers";
 import { TimelineLane } from "./Timeline";
+import { FeelTable } from "./FeelTable";
 import { Back, FindingList, Page, Section } from "./ui";
 
 interface Base {
@@ -261,6 +262,14 @@ function Builder() {
               {fmtSgd(Math.abs(budget - planBudget))} vs the route)
             </p>
             <FindingList findings={findings.filter((f) => f.severity !== "info").slice(0, 4)} compact />
+            {plan ? (
+              <details className="text-sm">
+                <summary className="cursor-pointer font-semibold">How it would feel, next to our route</summary>
+                <div className="pt-2">
+                  <FeelTable columns={[{ label: "Our route", v: plan }, { label: "This change", v: live }]} />
+                </div>
+              </details>
+            ) : null}
           </div>
           <Planner key={base.key} version={baseVersion} onDraft={setDraft} keepTotal={nights} />
         </div>
