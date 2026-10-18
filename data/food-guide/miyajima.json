@@ -1,0 +1,163 @@
+{
+  "slug": "miyajima",
+  "name": "Miyajima",
+  "tagline_pt": "A ilha do torii no mar: ostras grelhadas na rua, congro sobre arroz e o bolinho de folha de bordo que nasceu aqui.",
+  "history_pt": [
+    "Miyajima (Itsukushima) é ilha sagrada há mais de mil anos, e por muito tempo ninguém podia nascer nem ser enterrado nela. A comida é de peregrino e de baía: o anago (congro) pescado no Seto, grelhado no molho e posto sobre arroz cozido no caldo da cabeça e dos ossos. A Ueno, em Miyajimaguchi, faz isso desde 1901 e vendia como ekiben na estação.",
+    "O momiji manjū nasceu na ilha: em 1906 o doceiro Takatsu Tsunesuke fez, a pedido da dona do ryokan Iwasō, um bolinho em forma de folha de bordo, lembrando o vale de Momijidani. A história de que Itō Hirobumi inspirou o doce com uma piada sobre a mão de uma moça é lenda sem registro. Em 2002 a Momiji-dō lançou o age-momiji, frito na hora.",
+    "As ostras de Jigozen, do outro lado do estreito, são criadas por três anos e grelhadas na casca nas barracas da rua Omotesandō."
+  ],
+  "winter_pt": "Dezembro é o pico das ostras (temporada de novembro a março). O torii e a ilha ficam lotados de 31/12 a 3/1, com o hatsumōde no santuário.",
+  "meibutsu": [
+    {
+      "name_pt": "Anago-meshi",
+      "name_ja": "あなごめし",
+      "romaji": "anago-meshi",
+      "what_pt": "Congro grelhado no molho em fatias sobre arroz temperado com o caldo do próprio peixe. Mais leve e menos gorduroso que a enguia.",
+      "where_pt": "Anagomeshi Ueno (Miyajimaguchi) ou Fujitaya (na ilha).",
+      "price_pt": "¥2.000–3.000",
+      "must": true
+    },
+    {
+      "name_pt": "Ostras grelhadas",
+      "name_ja": "焼がき",
+      "romaji": "yaki-gaki",
+      "what_pt": "Ostras de três anos de Jigozen grelhadas na casca até abrirem, com um fio de ponzu.",
+      "where_pt": "Yakigaki no Hayashi, Kakiya.",
+      "price_pt": "4 por ¥750 (Hayashi)",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Grelhada bem cozida, kaki-furai (frita) e kaki-meshi estão ok. Ostra crua (生がき) não."
+    },
+    {
+      "name_pt": "Age-momiji",
+      "name_ja": "揚げもみじ",
+      "romaji": "age-momiji",
+      "what_pt": "Momiji manjū empanado e frito na hora, quente por fora, cremoso por dentro.",
+      "where_pt": "Momiji-dō honten e Niban-ya.",
+      "price_pt": "≈¥200",
+      "must": true
+    },
+    {
+      "name_pt": "Momiji manjū",
+      "name_ja": "もみじ饅頭",
+      "romaji": "momiji manjū",
+      "what_pt": "Bolinho assado em forma de folha de bordo, com anko, creme, matcha ou chocolate.",
+      "where_pt": "Iwamura Momiji-ya, Momiji-dō.",
+      "price_pt": "≈¥100–200 cada",
+      "must": false
+    },
+    {
+      "name_pt": "Kaki-furai",
+      "name_ja": "カキフライ",
+      "romaji": "kaki furai",
+      "what_pt": "Ostra empanada em panko e frita, com molho tártaro. A ostra perfeita para a grávida.",
+      "where_pt": "Kakiya e restaurantes da Omotesandō.",
+      "price_pt": "¥1.000–2.000",
+      "must": false
+    },
+    {
+      "name_pt": "Shamoji (colher de arroz)",
+      "name_ja": "杓子",
+      "romaji": "shakushi",
+      "what_pt": "Não se come, mas é o símbolo da ilha: a colher de madeira para arroz foi inventada em Miyajima, e a maior do mundo está na Omotesandō.",
+      "where_pt": "Lojas da Omotesandō.",
+      "price_pt": "¥500+",
+      "must": false
+    }
+  ],
+  "areas": [
+    {
+      "name": "Omotesandō Shōtengai",
+      "name_ja": "表参道商店街",
+      "kind": "rua",
+      "story_pt": "A rua coberta que leva do cais ao santuário, com barracas de ostra, momiji e anago.",
+      "eat_pt": ["Ostras grelhadas no Hayashi", "Kaki-furai no Kakiya", "Age-momiji no Momiji-dō"],
+      "tips_pt": "Coma antes das 11h ou depois das 15h, quando os grupos de excursão saem. Cuidado com os cervos: eles roubam papel e comida.",
+      "dec_jan_pt": "Lotada de 31/12 a 3/1. Lojas abertas no Ano-Novo (horário a confirmar).",
+      "query": "Miyajima Omotesando shopping street"
+    },
+    {
+      "name": "Miyajimaguchi",
+      "name_ja": "宮島口",
+      "kind": "estação",
+      "story_pt": "O cais do continente: estação JR e Hiroden, ferry e a Ueno.",
+      "eat_pt": ["Anago-meshi na Ueno", "Bentō de anago para o ferry"],
+      "tips_pt": "Faça a anago-meshi na ida ou na volta da ilha.",
+      "dec_jan_pt": "Ueno sem folga fixa; Ano-Novo a confirmar.",
+      "query": "Miyajimaguchi"
+    }
+  ],
+  "places": [
+    {
+      "name": "Anagomeshi Ueno, Miyajimaguchi honten",
+      "name_ja": "あなごめしうえの 宮島口本店",
+      "area": "Miyajimaguchi",
+      "genre_pt": "Anago-meshi",
+      "price_pt": "¥2.000–2.999",
+      "tabelog": { "score": 3.66, "reviews": 3727, "url": "https://tabelog.com/en/hiroshima/A3402/A340205/34000065/" },
+      "why_pt": "A casa de 1901 que fez da anago-meshi o prato da ilha. Congro macio, arroz que já é um prato por si.",
+      "order_pt": "Anago-meshi.",
+      "pregnancy_pt": "Ok (cozido).",
+      "group_pt": "7 mesas para 4: os seis em duas mesas lado a lado, ou bentō para o ferry.",
+      "booking_pt": "Online.",
+      "dec_jan_pt": "Aberto o ano todo, sem folga fixa. Horário de Ano-Novo a confirmar.",
+      "query": "Anagomeshi Ueno Miyajimaguchi"
+    },
+    {
+      "name": "Yakigaki no Hayashi",
+      "name_ja": "焼がきのはやし",
+      "area": "Miyajima · Omotesandō",
+      "genre_pt": "Ostras",
+      "price_pt": "4 ostras ¥750",
+      "tabelog": { "score": 3.73, "reviews": 1061, "url": "https://tabelog.com/en/hiroshima/A3402/A340202/34002301/" },
+      "why_pt": "Número 1 da ilha no Tabelog: ostra de Jigozen de três anos, grelhada na hora.",
+      "order_pt": "Yaki-gaki, kaki-furai, kaki-meshi.",
+      "pregnancy_pt": "Grelhada (bem cozida) e frita ok; nada de crua.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Yakigaki no Hayashi Miyajima"
+    },
+    {
+      "name": "Kakiya",
+      "name_ja": "牡蠣屋",
+      "area": "Miyajima · Omotesandō",
+      "genre_pt": "Ostras",
+      "price_pt": "A confirmar",
+      "tabelog": { "score": 3.57, "reviews": 2121, "url": "https://tabelog.com/en/hiroshima/A3402/A340202/34003363/" },
+      "why_pt": "Casa moderna só de ostras; dezembro é o pico.",
+      "order_pt": "Set de ostras com kaki-furai e grelhadas.",
+      "pregnancy_pt": "Sem crua; frita e grelhada ok.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kakiya Miyajima"
+    },
+    {
+      "name": "Fujitaya",
+      "name_ja": "ふじたや",
+      "area": "Miyajima",
+      "genre_pt": "Anago-meshi",
+      "price_pt": "A confirmar",
+      "tabelog": { "score": 3.56, "reviews": 965, "url": "https://tabelog.com/en/hiroshima/A3402/A340202/34002045/" },
+      "why_pt": "A anago-meshi da ilha, para quem não passou na Ueno.",
+      "order_pt": "Anago-meshi.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Fujitaya Miyajima anagomeshi"
+    }
+  ],
+  "shops": [
+    { "name": "Momiji-dō honten", "name_ja": "紅葉堂 本店", "what_pt": "Inventor do age-momiji (2002). Wagashi WEST 百名店 2026; Tabelog 3.65 (1.904), https://tabelog.com/en/hiroshima/A3402/A340202/34010095/.", "buy_pt": "Age-momiji quente, para comer na hora.", "price_pt": "≈¥200", "dec_jan_pt": "A confirmar.", "query": "Momijido honten Miyajima" },
+    { "name": "Momiji-dō Niban-ya", "name_ja": "紅葉堂弐番屋", "what_pt": "Segunda loja da Momiji-dō, Wagashi WEST 百名店 2026; Tabelog 3.61 (785), https://tabelog.com/en/hiroshima/A3402/A340202/34001086/.", "buy_pt": "Age-momiji quando a matriz tiver fila.", "dec_jan_pt": "A confirmar.", "query": "Momijido Nibanya Miyajima" },
+    { "name": "Iwamura Momiji-ya", "name_ja": "岩村もみじ屋", "what_pt": "Momiji manjū assado na hora, Wagashi WEST 百名店 2026; Tabelog 3.63 (656), https://tabelog.com/en/hiroshima/A3402/A340202/34001087/.", "buy_pt": "Caixa de momiji manjū para presente.", "dec_jan_pt": "A confirmar.", "query": "Iwamura Momijiya Miyajima" }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/もみじ饅頭",
+    "https://ja.wikipedia.org/wiki/広島かき",
+    "https://tabelog.com/en/hiroshima/A3402/A340202/rank/"
+  ]
+}

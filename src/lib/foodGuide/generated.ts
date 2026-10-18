@@ -183,6 +183,30 @@ export const FOOD_CITIES: FoodCityMeta[] = [
     }
   },
   {
+    "slug": "hiroshima",
+    "name": "Hiroshima",
+    "region": "Chugoku",
+    "tagline_pt": "A cidade que se reergueu numa chapa de ferro: okonomiyaki em camadas, ostras da baía e balcões de bairro.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 3,
+      "places": 3,
+      "shops": 2
+    }
+  },
+  {
+    "slug": "miyajima",
+    "name": "Miyajima",
+    "region": "Hiroshima",
+    "tagline_pt": "A ilha do torii no mar: ostras grelhadas na rua, congro sobre arroz e o bolinho de folha de bordo que nasceu aqui.",
+    "counts": {
+      "meibutsu": 6,
+      "areas": 2,
+      "places": 4,
+      "shops": 3
+    }
+  },
+  {
     "slug": "fukuoka",
     "name": "Fukuoka",
     "region": "Kyushu",
@@ -343,6 +367,8 @@ export const CITY_LOADERS: Record<string, () => Promise<FoodCity>> = {
   "osaka": () => import("../../../data/food-guide/osaka.json").then((m) => m.default as FoodCity),
   "nara": () => import("../../../data/food-guide/nara.json").then((m) => m.default as FoodCity),
   "kobe": () => import("../../../data/food-guide/kobe.json").then((m) => m.default as FoodCity),
+  "hiroshima": () => import("../../../data/food-guide/hiroshima.json").then((m) => m.default as FoodCity),
+  "miyajima": () => import("../../../data/food-guide/miyajima.json").then((m) => m.default as FoodCity),
   "fukuoka": () => import("../../../data/food-guide/fukuoka.json").then((m) => m.default as FoodCity),
   "yufuin": () => import("../../../data/food-guide/yufuin.json").then((m) => m.default as FoodCity),
   "beppu": () => import("../../../data/food-guide/beppu.json").then((m) => m.default as FoodCity),

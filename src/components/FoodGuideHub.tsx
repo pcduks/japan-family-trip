@@ -6,6 +6,7 @@ import type { Motif } from "./EkiStamp";
 import { usePlans } from "./usePlans";
 
 const TOPIC_STAMP: Record<string, { motif: Motif; ink: string; status: string }> = {
+  calendario: { motif: "bell", ink: "var(--vermilion)", status: "Datas-limite de reserva e o que muda de 20/12 a 9/1" },
   depachika: { motif: "bowl", ink: "var(--amber)", status: "Andares de comida das lojas de departamento" },
   ekiben: { motif: "train", ink: "var(--indigo)", status: "Estações, ekiben e o que comer no trem" },
   konbini: { motif: "coin", ink: "var(--pine)", status: "7-Eleven, FamilyMart, Lawson" },
@@ -22,6 +23,11 @@ const REGION_GROUP: [RegExp, string][] = [
   [/Tōhoku/, "Tōhoku"],
 ];
 const groupOf = (region: string) => REGION_GROUP.find(([re]) => re.test(region))?.[1] ?? "Outros";
+
+const topicRank = (slug: string) => {
+  const i = Object.keys(TOPIC_STAMP).indexOf(slug);
+  return i < 0 ? 99 : i;
+};
 
 function cityStatus(c: FoodCityMeta) {
   const bits = [c.counts.meibutsu && `${c.counts.meibutsu} pratos`, c.counts.places && `${c.counts.places} restaurantes`].filter(Boolean);
@@ -53,7 +59,7 @@ export function FoodGuideHub({ cities, topics }: { cities: FoodCityMeta[]; topic
 
       {topics.length ? (
         <Group title="Como comer bem">
-          {topics.map((t) => {
+          {[...topics].sort((a, b) => topicRank(a.slug) - topicRank(b.slug)).map((t) => {
             const s = TOPIC_STAMP[t.slug] ?? { motif: "bowl" as Motif, ink: "var(--ink)", status: `${t.items} dicas` };
             return <StampCard key={t.slug} href={`/comida/${t.slug}`} motif={s.motif} ink={s.ink} title={t.title_pt} status={s.status} />;
           })}
