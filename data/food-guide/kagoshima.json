@@ -1,0 +1,217 @@
+{
+  "slug": "kagoshima",
+  "name": "Kagoshima",
+  "tagline_pt": "Terra de Satsuma, de frente para o vulcão: porco preto, peixe frito doce e shōchū de batata-doce quente.",
+  "history_pt": [
+    "Kagoshima é o antigo feudo de Satsuma, dos Shimazu, que dominavam Amami e comerciavam com Ryūkyū (Okinawa). Por esse caminho chegaram o porco, a batata-doce e a satsuma-age. Satsuma já criava e vendia porco no período Edo, quando o resto do Japão quase não comia carne. Depois da guerra anglo-satsuma, a raça Berkshire inglesa foi cruzada com o porco preto local: é a origem do kurobuta.",
+    "A batata-doce chegou de Ryūkyū a Yamakawa em 1705, e o solo vulcânico de shirasu, pobre para o arroz, fez dela a base da comida e da bebida. O imo-shōchū usa kōji preto, que segura a fermentação no calor do sul. Satsuma shōchū tem indicação geográfica desde 2005. Aqui se bebe quente, com água (oyuwari).",
+    "A satsuma-age, chamada aqui de tsuke-age, descende do chiki-agi de Ryūkyū: pasta de peixe frita sem massa, levemente doce. Tudo em Kagoshima puxa para o doce, do shōyu ao missô."
+  ],
+  "winter_pt": "Inverno ameno. Temporada de kurobuta shabu e de panelas, de mikan e de shōchū novo quente. O Sakurajima solta cinza em qualquer estação: confira o vento.",
+  "meibutsu": [
+    {
+      "name_pt": "Kurobuta shabu-shabu",
+      "name_ja": "黒豚しゃぶしゃぶ",
+      "romaji": "kurobuta shabushabu",
+      "what_pt": "Fatias finas de porco preto de Kagoshima passadas no caldo. A gordura é doce e derrete.",
+      "where_pt": "Ajimori ou Ichiniisan Tenmonkan.",
+      "price_pt": "Jantar ≈¥6.000–8.000",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "A casa serve o porco com ovo cru para mergulhar: ela pede ponzu ou tare e cozinha o porco até perder o rosa."
+    },
+    {
+      "name_pt": "Tonkatsu de kurobuta",
+      "name_ja": "黒豚とんかつ",
+      "romaji": "kurobuta tonkatsu",
+      "what_pt": "O porco preto empanado: mais suculento e doce que o tonkatsu comum. Mark Wiens começou o 'dia do kurobuta' com um.",
+      "where_pt": "Kurobuta Fukuya (Tenmonkan).",
+      "price_pt": "¥1.500–3.000",
+      "must": true
+    },
+    {
+      "name_pt": "Satsuma-age (tsuke-age)",
+      "name_ja": "さつま揚げ（つけ揚げ）",
+      "romaji": "satsuma-age",
+      "what_pt": "Bolinhos de pasta de peixe fritos sem massa, levemente doces, com variações de bardana, lula, ovo cozido ou camarão. Coma quente, recém-frito.",
+      "where_pt": "Lojas da Tenmonkan e da estação Kagoshima-Chūō.",
+      "price_pt": "¥100–300 a peça",
+      "must": true
+    },
+    {
+      "name_pt": "Imo-shōchū",
+      "name_ja": "芋焼酎",
+      "romaji": "imo shōchū",
+      "what_pt": "Destilado de batata-doce com aroma terroso e adocicado. No inverno se bebe oyuwari, misturado com água quente.",
+      "where_pt": "Qualquer izakaya de Tenmonkan.",
+      "price_pt": "¥500–800 o copo",
+      "must": true,
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Álcool: ela fica de fora."
+    },
+    {
+      "name_pt": "Tonkotsu de Kagoshima",
+      "name_ja": "豚骨（とんこつ）",
+      "romaji": "tonkotsu",
+      "what_pt": "Não é ramen: costela de porco cozida por horas com missô, shōchū e açúcar mascavo, até soltar do osso.",
+      "where_pt": "Izakaya de comida local.",
+      "price_pt": "A confirmar",
+      "must": false
+    },
+    {
+      "name_pt": "Shirokuma",
+      "name_ja": "白くま",
+      "romaji": "shirokuma",
+      "what_pt": "Raspadinha com leite condensado e frutas, o doce-símbolo da cidade.",
+      "where_pt": "shirokuma cafe (Tenmonkan).",
+      "price_pt": "≈¥800–1.000",
+      "must": false
+    }
+  ],
+  "areas": [
+    {
+      "name": "Tenmonkan",
+      "name_ja": "天文館",
+      "kind": "bairro",
+      "story_pt": "O centro comercial e noturno, com galerias cobertas. O nome vem de um observatório astronômico que os Shimazu ergueram aqui no período Edo. Mark Wiens comeu kurobuta por aqui em 2023 e enfrentou 1 h de fila no kaiten-zushi Mekkemon, no porto (https://www.youtube.com/watch?v=ESDc9g-QP10; Tabelog não verificado).",
+      "eat_pt": [
+        "Kurobuta shabu no Ajimori",
+        "Tonkatsu de kurobuta",
+        "Shirokuma",
+        "Izakaya de shōchū"
+      ],
+      "tips_pt": "Concentre jantares e doces aqui; tudo a pé.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Tenmonkan Kagoshima"
+    },
+    {
+      "name": "Estação Kagoshima-Chūō",
+      "name_ja": "鹿児島中央駅",
+      "kind": "estação",
+      "story_pt": "A chegada do Shinkansen, com mercado de omiyage, satsuma-age e a rua de izakaya ao lado.",
+      "eat_pt": [
+        "Satsuma-age quente",
+        "Ekiben de kurobuta"
+      ],
+      "tips_pt": "Compre satsuma-age para o trem.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kagoshima Chuo Station"
+    }
+  ],
+  "places": [
+    {
+      "name": "Kurobuta Ryōri Ajimori",
+      "name_ja": "黒豚料理 あぢもり",
+      "area": "Kagoshima · Tenmonkan",
+      "genre_pt": "Kurobuta shabu-shabu",
+      "price_pt": "Jantar ≈¥6.000–7.999 (+5% de serviço)",
+      "tabelog": {
+        "score": 3.67,
+        "reviews": 1164,
+        "url": "https://tabelog.com/en/kagoshima/A4601/A460101/46000029/",
+        "awards": "Sukiyaki/Shabu-shabu 百名店 2024"
+      },
+      "why_pt": "Aberto em 1978 e, segundo o Tabelog, o criador do kurobuta shabu. Sala de tatami para o grupo e porco que justifica a viagem.",
+      "order_pt": "Curso de kurobuta shabu.",
+      "pregnancy_pt": "Troque o ovo cru por ponzu e cozinhe bem o porco.",
+      "group_pt": "155 lugares, salas de tatami para 2–8: os seis juntos.",
+      "booking_pt": "Jantar só em curso, com reserva.",
+      "dec_jan_pt": "Fecha quartas. Ano-Novo a confirmar.",
+      "query": "Ajimori Kagoshima"
+    },
+    {
+      "name": "Tonkatsu to, Shabushabu. Kurobuta Fukuya",
+      "area": "Kagoshima · Tenmonkan",
+      "genre_pt": "Tonkatsu de kurobuta",
+      "tabelog": {
+        "score": 3.75,
+        "reviews": 700,
+        "url": "https://tabelog.com/en/kagoshima/A4601/A460101/46014561/"
+      },
+      "why_pt": "O tonkatsu de kurobuta mais bem avaliado da cidade no ranking do Tabelog (out/2026).",
+      "order_pt": "Rosu-katsu (lombo) de kurobuta.",
+      "pregnancy_pt": "Ok (frito e bem cozido).",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kurobuta Fukuya Kagoshima tonkatsu"
+    },
+    {
+      "name": "Ichiniisan Tenmonkan-ten",
+      "name_ja": "いちにいさん 天文館店",
+      "area": "Kagoshima · Tenmonkan",
+      "genre_pt": "Kurobuta shabu-shabu",
+      "tabelog": {
+        "score": 3.72,
+        "reviews": 537,
+        "url": "https://tabelog.com/en/kagoshima/A4601/A460101/46000026/",
+        "awards": "Sukiyaki/Shabu-shabu 百名店 2024"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Mark Wiens comeu o kurobuta shabu daqui no seu 'dia do kurobuta' em Kagoshima (2023), junto com tonkatsu de kurobuta e o Izakaya Tsuwabuki.",
+          "url": "https://www.youtube.com/watch?v=1vlsRKEvWaQ"
+        }
+      ],
+      "why_pt": "A alternativa ao Ajimori no mesmo 百名店, com nota um pouco maior no Tabelog. Mark Wiens comeu aqui.",
+      "order_pt": "Kurobuta shabu.",
+      "pregnancy_pt": "Porco bem cozido; sem ovo cru.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Ichiniisan Kagoshima shabu"
+    },
+    {
+      "name": "shirokuma cafe",
+      "area": "Kagoshima · Tenmonkan",
+      "genre_pt": "Café / shirokuma",
+      "tabelog": {
+        "score": 3.72,
+        "reviews": 2842,
+        "url": "https://tabelog.com/en/kagoshima/A4601/A460101/46000044/"
+      },
+      "why_pt": "O endereço da shirokuma no ranking do Tabelog, com quase 3 mil avaliações. Sobremesa depois do kurobuta.",
+      "order_pt": "Shirokuma (uma grande para dividir).",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "Sem reserva (a confirmar).",
+      "dec_jan_pt": "A confirmar.",
+      "query": "shirokuma cafe Tenmonkan Kagoshima",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Kumasotei and Shirokuma Cafe”, abr 2020, segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
+    }
+  ],
+  "shops": [
+    {
+      "name": "Satsuma-age das lojas tradicionais",
+      "name_ja": "さつま揚げ",
+      "what_pt": "Várias fabricantes vendem frito na hora na Tenmonkan e na estação.",
+      "buy_pt": "Uma sacola variada quente; versão embalada para levar.",
+      "price_pt": "¥100–300 a peça",
+      "dec_jan_pt": "Muito vendida no fim de ano (a confirmar).",
+      "query": "satsuma age shop Kagoshima Chuo"
+    },
+    {
+      "name": "Lojas de shōchū",
+      "name_ja": "焼酎専門店",
+      "what_pt": "Lojas especializadas em shōchū de Kagoshima; muitas deixam provar.",
+      "buy_pt": "Uma garrafa de imo-shōchū para os pais.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "shochu shop Kagoshima Tenmonkan"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/黒豚",
+    "https://ja.wikipedia.org/wiki/芋焼酎",
+    "https://ja.wikipedia.org/wiki/さつま揚げ",
+    "https://www.youtube.com/watch?v=1vlsRKEvWaQ",
+    "https://www.youtube.com/watch?v=ESDc9g-QP10",
+    "https://tabelog.com/en/kagoshima/A4601/A460101/rank/"
+  ]
+}

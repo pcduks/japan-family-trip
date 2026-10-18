@@ -1,0 +1,192 @@
+{
+  "slug": "depachika",
+  "title_pt": "Depachika",
+  "intro_pt": [
+    "Depachika (デパ地下, \"depa-chika\") é o subsolo de comida das lojas de departamento: um mercado de luxo com centenas de balcões independentes de bentô, sōzai (pratos prontos), doces japoneses e ocidentais, peixe, carne, saquê e chá. É onde a família japonesa compra o jantar de sexta, o presente para a sogra e a osechi do Ano-Novo.",
+    "Para nós, seis pessoas, é a melhor arma do roteiro: jantar excelente sem reserva, sem balcão de 8 lugares e sem fila de restaurante. Um bentô de nome famoso custa ¥1.400–1.800 e é melhor do que muito restaurante médio. E entre 1 e 3 de janeiro, quando a cidade fecha, os depachika são dos primeiros a reabrir.",
+    "Preços e horários abaixo vêm de sites oficiais e da imprensa japonesa (verificados em out/2026) ou estão marcados como \"a confirmar\". Os preços mudam: Asakusa Imahan e Benmatsu revisaram preços em 2026."
+  ],
+  "sections": [
+    {
+      "title_pt": "O que é, e de onde veio",
+      "body_pt": "As lojas de departamento japonesas nasceram de lojas de quimono: o Mitsukoshi (que vem da Echigoya, de 1673) se declarou \"department store\" em 1904. Comida veio depois, e a ferrovia foi decisiva: o Hankyu de Umeda, aberto em 1929, foi a primeira loja de departamento de terminal ferroviário do mundo e, sem tradição em quimono, apostou em comida (seu refeitório vendia 13 mil pratos de curry num dia antes da guerra). Segundo a Wikipédia japonesa, o primeiro andar de comida no subsolo foi o do Matsuzakaya de Nagoya, em 1936. O subsolo pegou por razões práticas: instalações mais baratas e ligação direta com metrô e estacionamento, o que faz o cliente subir pela loja (o \"efeito chafariz\", 噴水効果). A palavra デパ地下 se espalhou pela TV e revistas em 2000, com a abertura da Tokyu Food Show em Shibuya. Em Osaka, o Hanshin construiu a fama de \"melhor depachika do Japão\" (日本一のデパ地下) apostando em comida do dia a dia. Hoje os depachika concorrem em exclusividades, doces de chefs e bentôs de restaurantes famosos.",
+      "items": []
+    },
+    {
+      "title_pt": "Como funciona um depachika",
+      "body_pt": "Quase sempre B1 e B2, às vezes também o térreo (doces e presentes). Cada balcão é uma loja própria: você escolhe, paga ali mesmo e leva a sacola. Os andares se dividem em zonas, com placas em japonês; vale saber os nomes.",
+      "items": [
+        { "name": "Sōzai (pratos prontos)", "name_ja": "惣菜", "what_pt": "Saladas, frituras, peixe grelhado, carne cozida, comida chinesa e ocidental, vendidos por 100 g ou por unidade. Peça em gramas: \"hyaku guramu kudasai\" (100 g, por favor). A balança costuma passar um pouco (110–120 g).", "price_pt": "Salada boa ~¥300–500/100 g (estimativa; a confirmar no balcão)", "must": true, "tip_pt": "Uma porção individual de acompanhamento é ~100 g. Para seis, 400–600 g de cada prato basta." },
+        { "name": "Bentô", "name_ja": "弁当", "what_pt": "Marmitas prontas de restaurantes e casas tradicionais: sukiyaki, unagi, tempurá, chirashi, tonkatsu. O preço central fica em ¥1.000–1.700 (é a faixa da ranking anual do Daimaru Tokyo).", "price_pt": "¥1.000–1.800; bentôs de grife ¥2.500–5.000", "must": true },
+        { "name": "Wagashi (doces japoneses)", "name_ja": "和菓子", "what_pt": "Yōkan, monaka, daifuku, dorayaki, namagashi da estação. As grandes casas (Toraya, Tsuruya Yoshinobu, Okano Eisen) têm balcões aqui.", "price_pt": "¥200–600 por peça; caixas ¥1.500–5.000 (faixa típica, a confirmar)" },
+        { "name": "Yōgashi (doces ocidentais)", "name_ja": "洋菓子", "what_pt": "Bolos, biscoitos finos, baumkuchen, pudim. É onde moram as filas e as edições limitadas.", "pregnancy": "cuidado", "tip_pt": "Veja a seção de gravidez: rum, licor e queijos." },
+        { "name": "Frescos", "name_ja": "生鮮食品", "what_pt": "Peixe, carne wagyu, frutas de presente (morangos de ¥5.000), verduras. Bom de olhar; útil se houver cozinha (machiya, apartamento).", "tip_pt": "Peixe e sushi frescos são os primeiros a esgotar à tarde." },
+        { "name": "Saquê, chá e tsukudani", "name_ja": "酒・茶・佃煮", "what_pt": "Balcões de saquê com degustação (às vezes paga), chá de casas antigas e conservas como tsukudani (cozidos em shoyu e açúcar) e tsukemono (picles).", "tip_pt": "Picles e tsukudani viajam bem e são ótimos presentes." }
+      ]
+    },
+    {
+      "title_pt": "Descontos de fim de dia (値引き)",
+      "body_pt": "Perto do fechamento, alguns balcões colam etiquetas de desconto (値引きシール, 割引) em bentôs, sushi e sōzai: 20% e 30% são comuns, e às vezes 半額 (metade do preço). A imprensa japonesa descreve o padrão geral como \"remarcações a partir de ~19h e cortes maiores na última hora\". Não existe regra oficial: cada balcão decide, e casas de prestígio (Toraya, Imahan) quase nunca remarcam. Na prática: chegue 60–45 min antes do fechamento (a maioria fecha às 20h; a confirmar por loja), dê uma volta, e volte aos balcões que já começaram. Sushi e peixe cru acabam primeiro. É ótimo para um jantar no hotel, mas não planeje um jantar especial em cima de sobras.",
+      "items": [
+        { "name": "Como ler as etiquetas", "name_ja": "2割引 / 3割引 / 半額", "what_pt": "2割引 = 20% off; 3割引 = 30% off; 半額 = metade do preço. \"○円引き\" = desconto fixo em ienes.", "price_pt": "20–50% de desconto (varia; a confirmar)", "tip_pt": "Em 31/12 os horários encurtam e as remarcações começam mais cedo (a confirmar)." }
+      ]
+    },
+    {
+      "title_pt": "Etiqueta, pagamento e embalagem",
+      "body_pt": "Prove o que oferecerem (試食, shishoku), um por pessoa, agradeça e siga em frente; provar à vontade sem intenção de comprar é mal visto. Algumas degustações de saquê e presunto são pagas. Não coma andando pelo andar. Pagamento: cada balcão tem caixa própria, e cartão de crédito é aceito quase sempre (IC de transporte, como Suica, em muitas lojas). Ao comprar algo frio, o atendente vai perguntar 「お持ち歩きのお時間は？」 (quanto tempo até chegar em casa?): responda em minutos (\"sanjuppun\", 30 min; \"ichijikan\", 1 hora) e ele põe 保冷剤 (horeizai, gelo em gel) na sacola. Sacolas (袋, fukuro) podem ser cobradas desde a lei de 2020: leve uma bolsa dobrável. Tax-free de alimentos exige compra mínima e embalagem lacrada que não pode ser aberta no Japão; não serve para o piquenique.",
+      "items": [
+        { "name": "Frases úteis", "name_ja": "これを二つください / 袋をお願いします / 保冷剤をお願いします", "what_pt": "\"Kore o futatsu kudasai\" (dois deste, por favor); \"Fukuro o onegai shimasu\" (uma sacola, por favor); \"Hoereizai o onegai shimasu\" (gelo, por favor); \"Hashi o roku-zen\" (seis pares de hashi).", "tip_pt": "Peça hashi (箸), colherinhas e lenços umedecidos (おしぼり) no balcão do bentô; costumam ser grátis." }
+      ]
+    },
+    {
+      "title_pt": "Onde comer o que comprou",
+      "body_pt": "No Japão não se come andando. Opções, da melhor para a pior no inverno:",
+      "items": [
+        { "name": "Quarto de hotel ou apartamento", "what_pt": "O jeito japonês de fazer: bentôs, sōzai e sobremesa na mesa, chá de saquinho. Com seis pessoas, use o quarto maior ou a sala do apartamento.", "must": true, "tip_pt": "Peça ao atendente 温めますか? (aquecer?) só em konbini; depachika não aquece. Escolha pratos que são bons frios (bentô japonês é feito para isso)." },
+        { "name": "Cantinhos eat-in", "name_ja": "イートイン", "what_pt": "Vários depachika têm balcões para comer ali (sushi, unagi, tempurá no Mitsukoshi Nihonbashi B1; a Snack Park do Hanshin em Osaka).", "tip_pt": "Mesas para seis são raras; contem com 3+3." },
+        { "name": "Terraços (屋上)", "name_ja": "屋上庭園", "what_pt": "Mitsukoshi Nihonbashi, Takashimaya Nihonbashi e Isetan Shinjuku têm jardins no terraço com bancos. Em dezembro faz 5–10 °C e escurece às 16h30: piquenique só no almoço, em dia de sol.", "tip_pt": "Horários de inverno dos terraços: a confirmar. Não ficam abertos depois do fechamento da loja." },
+        { "name": "Trem-bala", "what_pt": "O Daimaru Tokyo fica dentro da Estação de Tóquio (lado Yaesu): compre o almoço ali e coma no shinkansen. Comer no shinkansen é normal; no metrô, não.", "where_pt": "Daimaru Tokyo B1" }
+      ]
+    },
+    {
+      "title_pt": "Orçamento: jantar-piquenique para seis",
+      "body_pt": "Cálculo com base nos preços verificados do ranking do Daimaru Tokyo 2025 e dos sites das casas. Mais barato perto do fechamento.",
+      "items": [
+        { "name": "Versão esperta", "what_pt": "6 bentôs da faixa central (¥1.400–1.600: Kakiyasu, Benmatsu, Kameido Masumoto, Maisen) + 2 sōzai para dividir + 1 caixa de doces.", "price_pt": "¥12.000–15.000 (≈ ¥2.000–2.500 por pessoa; estimativa)", "must": true },
+        { "name": "Versão festa", "what_pt": "Bentô de sukiyaki do Asakusa Imahan (¥2.916+) para todos, karaage e saladas, tsukemono do Ginza Wakana, wagashi da Toraya e uma garrafa de saquê para quem bebe.", "price_pt": "¥25.000–35.000 (estimativa)" },
+        { "name": "Versão Osaka barata", "what_pt": "Ikayaki do Hanshin, nikuman do 551 (6 por ¥1.500), um sōzai e frutas.", "price_pt": "¥5.000–8.000 (estimativa)" }
+      ]
+    },
+    {
+      "title_pt": "O que procurar nas etiquetas",
+      "body_pt": "Três palavras valem ouro. 期間限定 (kikan gentei): só nesta temporada; em dez–jan, morango, yuzu, castanha, e os doces de Ano-Novo como hanabira-mochi. 店舗限定 / ○○店限定 (exclusivo desta loja): itens que uma casa só vende num depachika. 季節限定 / 冬季限定: inverno. Também: 本日のおすすめ (sugestão do dia), 数量限定 (quantidade limitada, chegue cedo), できたて (feito agora). Para saber o que está em alta, os japoneses seguem os rankings anuais dos próprios depachika (o do Daimaru Tokyo sai em abril), revistas como Hanako e dancyu, a lista 和菓子 百名店 do Tabelog e programas de TV como 「マツコの知らない世界」 (no episódio de shūmai, a 551 Hōrai de Osaka foi destaque).",
+      "items": []
+    },
+    {
+      "title_pt": "Bentô e sōzai: os balcões que valem a viagem",
+      "body_pt": "A referência japonesa mais concreta é o ranking anual de vendas do Daimaru Tokyo (bentôs de ¥1.000–1.700, vendas de jan–dez/2025, publicado em 2/4/2026): 1. Takimoto, 2. Hirashima, 3. Ation, 4. Kakiyasu Gyūmeshi, 5. Seiyō Ginza, 6. Kameido Masumoto, 7. Maisen, 8. Kaneko Hannosuke, 9. Kanezaki, 10. Benmatsu.",
+      "items": [
+        { "name": "Asakusa Imahan", "name_ja": "浅草今半", "what_pt": "Casa de sukiyaki desde 1895. O bentô de sukiyaki é o clássico de presente: fatias de wagyu no warishita doce-salgado sobre arroz. Também o 牛肉弁当 (carne picada no molho) e o tsukudani de carne, seu produto-símbolo.", "where_pt": "Mitsukoshi Nihonbashi B1 (balcão oficial); aparece em rodízio no 味百選 do Takashimaya Shinjuku", "price_pt": "すき焼弁当 ¥2.916–4.860; 重ねすき焼弁当 ¥2.700; 牛肉弁当 ¥1.674 (site oficial, out/2026; preços revisados em 1/10/2026)", "must": true, "pregnancy": "ok", "tip_pt": "O 牛玉弁当 (¥1.674) leva ovo; se for mole, ela pega o 牛肉弁当. Ningyōchō Imahan (人形町今半) é outra empresa, também de 1895, também com bentô de sukiyaki." },
+        { "name": "Nihonbashi Benmatsu Sōhonten", "name_ja": "日本橋弁松総本店", "what_pt": "Bentô ao estilo Edo: o restaurante Higuchiya abriu em 1810 para os peixeiros de Nihonbashi e virou casa só de bentô, \"Benmatsu\", em 1850. Sabor doce e carregado (濃ゆい味, \"o sabor de Edo\"), feito para durar: tamagoyaki, kamaboko, nimono, peixe no shoyu. Tudo cozido.", "where_pt": "Daimaru Tokyo, Mitsukoshi Nihonbashi e outros (lista na loja; a confirmar por loja)", "price_pt": "並六 白付 ¥1.458 (Daimaru Tokyo, 2025)", "must": true, "pregnancy": "ok", "tip_pt": "É sabor de história, não de modernidade: uns acham doce demais. Peça o 白 (arroz branco) ou o 赤 (okowa de feijão)." },
+        { "name": "Kiyōken", "name_ja": "崎陽軒", "what_pt": "O bentô mais famoso de Yokohama, desde 1954: arroz em formato de tawara, cinco shūmai de porco, atum grelhado, kamaboko, karaage, tamagoyaki, broto de bambu e damasco. Pensado para ser bom frio.", "where_pt": "Balcões em quase todos os depachika e estações de Tóquio", "price_pt": "シウマイ弁当 ¥1.180 (site oficial)", "must": true, "pregnancy": "ok", "tip_pt": "O melhor custo-benefício da lista. Para seis, leve também uma caixa de shūmai à parte." },
+        { "name": "Kakiyasu", "name_ja": "柿安", "what_pt": "Casa de carne de Kuwana (Mie). Três marcas no depachika: 柿安牛めし (arroz com carne wagyu, 4º no ranking Daimaru 2025), 柿安ダイニング (sōzai feitos na hora, com um 無限牛鍋弁当) e o açougue.", "where_pt": "Daimaru Tokyo e praticamente todos os grandes depachika", "price_pt": "黒毛和牛 牛めし ¥1.598 (Daimaru Tokyo, 2025)", "must": true, "pregnancy": "ok" },
+        { "name": "RF1", "name_ja": "アール・エフ・ワン", "what_pt": "A rede de saladas da Rock Field, em todo depachika. Veredito honesto: competente, fresca e cara por grama. É a salada colorida que a família japonesa leva para equilibrar o bentô, não um destino. Lança novidades toda primeira quinta-feira do mês.", "where_pt": "Todas as grandes lojas", "price_pt": "Por 100 g; a confirmar no balcão", "pregnancy": "cuidado", "tip_pt": "Evite as saladas com salmão defumado frio ou rosbife malpassado; as de legumes e frango cozido são tranquilas." },
+        { "name": "Jojoen", "name_ja": "叙々苑", "what_pt": "A grife de yakiniku de Tóquio em bentô: carne grelhada com o molho da casa sobre arroz. Bom para os pais e o irmão carnívoros.", "where_pt": "Rodízio no 味百選 do Takashimaya Shinjuku; outras lojas a confirmar", "price_pt": "カルビ弁当 ~¥2.200–2.900 (valores relatados na imprensa, sem data; a confirmar)", "pregnancy": "ok" },
+        { "name": "Kameido Masumoto", "name_ja": "亀戸升本", "what_pt": "Bentô de amêijoa (asari) da baixa Tóquio: 「すみだ川 あさり飯」, 6º no ranking Daimaru 2025. Amêijoa cozida no arroz.", "where_pt": "Daimaru Tokyo, Isetan Shinjuku", "price_pt": "¥1.458 (Daimaru Tokyo, 2025)", "pregnancy": "ok", "tip_pt": "Marisco cozido é permitido na gravidez." },
+        { "name": "Tori Sanwa", "name_ja": "鶏三和", "what_pt": "Casa de frango de Nagoya, desde 1900, especialista em 名古屋コーチン (galinha caipira de Nagoya). No depachika: karaage, tebasaki e oyako-don.", "where_pt": "Vários depachika de Tóquio e Kansai (a confirmar por loja)", "price_pt": "a confirmar", "pregnancy": "cuidado", "tip_pt": "Oyako-don japonês leva ovo meio mole: ela fica com o karaage ou o tebasaki." },
+        { "name": "Minokichi", "name_ja": "美濃吉", "what_pt": "Restaurante de Kyoto de 1716 (310 anos em 2026). Nos depachika vende bentôs kyō-ryōri delicados, peixe no missô branco (saikyō-yaki) e unagi.", "where_pt": "Depachika de Kyoto e Tóquio (a confirmar por loja)", "price_pt": "a confirmar", "pregnancy": "ok" },
+        { "name": "Ginza Wakana", "name_ja": "銀座若菜", "what_pt": "Tsukemono (picles) de Tóquio, empresa de 1956. O 「真鯛のミルフィーユ」 (pargo em camadas com nabo) ganhou o prêmio do ministro no Tsukemono Grand Prix 2022; os clientes recomendam o 江戸ごぼう e o 江戸歌舞伎漬け.", "where_pt": "Ginza Mitsukoshi B2 e outros", "price_pt": "a confirmar", "pregnancy": "ok", "tip_pt": "Um potinho de picles transforma seis bentôs num jantar." },
+        { "name": "Nihonbashi Funasa", "name_ja": "日本橋 鮒佐", "what_pt": "Tsukudani desde 1862, apresentado pela TV Tokyo como \"o original\" do tsukudani. Pequenos peixes, algas e legumes cozidos lentamente em shoyu. O 水ブキ (broto de fuki) da estação foi destaque.", "where_pt": "Loja própria em Nihonbashi Muromachi 1-12-13, a 2 min do Mitsukoshi (não é balcão de depachika)", "price_pt": "a confirmar", "pregnancy": "ok", "tip_pt": "Presente que viaja: salgado, dura semanas fechado." },
+        { "name": "Takimoto (Dream Pretty Mille-feuille)", "name_ja": "創作鮨処タキモト", "what_pt": "Nº 1 em vendas do Daimaru Tokyo por cinco anos seguidos: um bentô de sushi em camadas, coberto de peixe cru e ovas.", "where_pt": "Daimaru Tokyo B1", "price_pt": "¥1.795 (2025)", "pregnancy": "evitar", "tip_pt": "Peixe cru e ovas cruas: ela pega o 穴子 (enguia-do-mar cozida) do Hirashima ou um bentô do Benmatsu." }
+      ]
+    },
+    {
+      "title_pt": "Doces que valem a fila",
+      "body_pt": "Para comer de sobremesa e para levar para casa.",
+      "items": [
+        { "name": "Toraya", "name_ja": "とらや", "what_pt": "Casa de wagashi fundada em Kyoto no fim do período Muromachi, fornecedora da corte. O yōkan (doce de feijão firme) é o padrão de comparação do Japão. Em janeiro, procure os doces de Ano-Novo e as caixas do signo do ano.", "where_pt": "Balcões em Isetan Shinjuku (com café 虎屋菓寮), Mitsukoshi, Takashimaya e outros", "price_pt": "Caixas de 小形羊羹 a confirmar", "must": true, "pregnancy": "ok" },
+        { "name": "Kūya", "name_ja": "空也", "what_pt": "O monaka (biscoito de arroz recheado de anko) mais disputado de Tóquio. Tabelog 3,80 (2.294 avaliações), 百名店 de wagashi 2026.", "where_pt": "Só a loja de Ginza 6-7-19 (não tem balcão em depachika, nem vende online)", "price_pt": "Caixa de 10: ¥1.200 (simples) ou ¥1.300 (de presente), preços após alta de fev/2025 (a confirmar)", "must": true, "pregnancy": "ok", "tip_pt": "Reserve por telefone dias antes: 03-3571-3304 (relatado; a confirmar). Fecha domingos e feriados; fim de ano a confirmar. Vende de 10 em 10." },
+        { "name": "Ginza Kikunoya", "name_ja": "銀座菊廼舎", "what_pt": "Casa de Ginza (provavelmente de 1890) famosa pelo 冨貴寄 (fukiyose): latinha de wagashi secos coloridos, com versões da estação. Um dos presentes mais bonitos de Tóquio.", "where_pt": "Loja de Ginza e balcões em depachika (a confirmar por loja)", "price_pt": "a confirmar", "pregnancy": "ok" },
+        { "name": "Yoku Moku", "name_ja": "ヨックモック", "what_pt": "Os cigares (charutinhos de biscoito amanteigado) que toda família japonesa já recebeu de presente. Seguro e fácil.", "where_pt": "Em praticamente todos os depachika", "price_pt": "a confirmar", "pregnancy": "ok" },
+        { "name": "Okano Eisen (Toranomon)", "name_ja": "虎ノ門 岡埜榮泉", "what_pt": "Mame-daifuku (mochi com feijão e anko). O balcão do Takashimaya Shinjuku está na lista 和菓子 百名店 2026 do Tabelog.", "where_pt": "Takashimaya Shinjuku", "price_pt": "a confirmar", "pregnancy": "ok", "tip_pt": "Mochi é pegajoso: os pais devem comer em pedaços pequenos." }
+      ]
+    },
+    {
+      "title_pt": "Tóquio, loja a loja",
+      "body_pt": "Ordem para foodies, com base em vendas, enquete do ITmedia (2022) e descrições da Mynavi (abr/2026). Horário padrão ~10h–20h (a confirmar por loja).",
+      "items": [
+        { "name": "Isetan Shinjuku", "name_ja": "伊勢丹新宿店 本館B1", "what_pt": "A loja nº 1 do Japão em vendas e o \"lançador de tendências\" da comida (Mynavi): os melhores frescos e ingredientes raros, comprados por cozinheiros profissionais. Mynavi cita Torisen (bentô de frango), Kameido Masumoto, Mikasa Kaikan, o dorayaki da Suzukake e a castella CONGALI do Bunmeidō.", "where_pt": "Shinjuku-sanchōme", "must": true, "tip_pt": "No fim do ano monta o 大歳の市 (feira de Ano-Novo, até 31/12 em 2025). Terraço アイ・ガーデン: horário de inverno a confirmar." },
+        { "name": "Mitsukoshi Nihonbashi", "name_ja": "日本橋三越本店 本館B1", "what_pt": "O mais equilibrado e o mais clássico, na loja-mãe de 1904. Balcões para comer sushi, unagi e tempurá. 菓遊庵: wagashi regionais do Japão inteiro, ótimo para presentes das regiões que não vamos visitar. Asakusa Imahan e Benmatsu estão aqui.", "where_pt": "Mitsukoshimae", "must": true, "tip_pt": "Combine com Funasa (tsukudani), Ninben (katsuobushi) e Nagato (wagashi) a pé." },
+        { "name": "Mitsukoshi Ginza", "name_ja": "銀座三越 B2–B3", "what_pt": "Depachika compacto e elegante no cruzamento de Ginza; Ginza Wakana fica no B2.", "where_pt": "Ginza", "tip_pt": "Bom para comprar doces antes de ir a Kūya ou Kikunoya." },
+        { "name": "Takashimaya Nihonbashi", "name_ja": "日本橋髙島屋S.C.", "what_pt": "Grande andar de sōzai; é onde a chef e ex-sommelier da loja Yukari Sakamoto faz seus tours de depachika. Prédio histórico com terraço-jardim.", "where_pt": "Nihonbashi", "tip_pt": "Fechado 1 e 2/1 (política da empresa); reabre 3/1." },
+        { "name": "Takashimaya Shinjuku", "name_ja": "新宿髙島屋 B1", "what_pt": "Corredores largos (bom com grávida e carrinhos de compras). O 味百選 alterna bentôs de Jojoen e Asakusa Imahan; o mame-daifuku do Okano Eisen está aqui.", "where_pt": "Shinjuku (lado sul)", "tip_pt": "Fechado 1–2/1." },
+        { "name": "Daimaru Tokyo", "name_ja": "大丸東京店 ほっぺタウン", "what_pt": "Dentro da Estação de Tóquio, com uma \"rua do bentô\" de 60 m. O ranking anual de bentôs sai daqui (veja a seção de bentô). O melhor lugar do Japão para comprar comida antes do shinkansen.", "where_pt": "Estação de Tóquio, saída Yaesu Norte", "must": true, "tip_pt": "Entre 10h30 e 12h é lotado de viajantes; compre cedo ou na véspera, perto do fechamento." },
+        { "name": "Tokyu FoodShow", "name_ja": "東急フードショー", "what_pt": "O depachika que popularizou a palavra em 2000. Hoje é um hall de passagem para quem pega trem em Shibuya: prático, não é destino.", "where_pt": "Shibuya (estação)" },
+        { "name": "Matsuya Ginza", "name_ja": "松屋銀座 B1", "what_pt": "Bom para doces de Ginza e presentes; avaliação japonesa específica não encontrada.", "where_pt": "Ginza", "tip_pt": "Reabre em 3/1 (padrão 2026; a confirmar)." },
+        { "name": "Seibu Ikebukuro", "name_ja": "西武池袋本店", "what_pt": "Vencedor da enquete do ITmedia (2022) de \"depachika mais completo de Kantō\". Fora da nossa rota; só se estivermos em Ikebukuro.", "where_pt": "Ikebukuro" }
+      ]
+    },
+    {
+      "title_pt": "Osaka, loja a loja",
+      "body_pt": "Osaka é \"kuidaore\" (comer até falir), e os depachika de Umeda são o melhor exemplo. Horários e Ano-Novo a confirmar.",
+      "items": [
+        { "name": "Hanshin Umeda", "name_ja": "阪神梅田本店 B1", "what_pt": "\"Shoku no Hanshin\" (o Hanshin da comida) e, para muitos, o melhor depachika do Japão. Reconstruído entre 2018 e 2022. A Snack Park, praça de comida rápida de balcão, existe desde a abertura (1957, como \"Oyatsu Center\").", "where_pt": "Umeda", "must": true, "tip_pt": "Abre 10h–20h; Snack Park 10h–22h (site oficial). Reabre 3/1 (padrão recente; a confirmar)." },
+        { "name": "Ikayaki do Hanshin", "name_ja": "阪神名物いか焼き", "what_pt": "Lula picada na massa, prensada numa chapa quente: fina, mastigável, com molho. Chega a vender 10 mil por dia (Daily Sports, jul/2026). A デラバン leva ovo, o 和風デラ é a versão japonesa.", "where_pt": "Snack Park, Hanshin Umeda B1", "price_pt": "いか焼き ~¥187, デラバン ~¥242, 和風デラ ~¥253 (Mapple, sem data; a confirmar)", "must": true, "pregnancy": "ok", "tip_pt": "Fila anda rápido. O ovo da デラバン é cozido na chapa: liberado." },
+        { "name": "Hankyu Umeda", "name_ja": "阪急うめだ本店 B1", "what_pt": "A primeira loja de terminal ferroviário do mundo (1929). Famoso pelos doces e por exclusividades (うめだ阪急店限定). No B1: 551 Hōrai e Club Harie.", "where_pt": "Umeda", "must": true, "tip_pt": "Em 2025 abriu em 3/1, 30 min mais cedo por causa da fila." },
+        { "name": "551 Hōrai", "name_ja": "551蓬莱", "what_pt": "O butaman (pão de porco no vapor) de Osaka, destaque no episódio de shūmai de 「マツコの知らない世界」. Os moradores comem toda semana.", "where_pt": "Hankyu Umeda B1, Takashimaya Namba e estações", "price_pt": "豚まん 2 por ¥500, 4 por ¥1.000, 6 por ¥1.500 (site oficial)", "must": true, "pregnancy": "ok", "tip_pt": "Coma quente. Esgota no fim do dia." },
+        { "name": "Daimaru Shinsaibashi", "name_ja": "大丸心斎橋店", "what_pt": "Prédio art déco restaurado (reaberto em 2019) no meio de Shinsaibashi; depachika completo e conveniente para Namba e Dōtonbori.", "where_pt": "Shinsaibashi", "tip_pt": "Daimaru costuma reabrir 2/1 (a confirmar)." },
+        { "name": "Takashimaya Osaka (Namba)", "name_ja": "大阪髙島屋", "what_pt": "Loja nº 1 do grupo Takashimaya em vendas (desde 2018). Bentôs de Hari-jū (carne, desde 1919) e Hokkyokusei (omurice) já foram destaque no Kansai Walker.", "where_pt": "Namba", "tip_pt": "Fechado 1–2/1." }
+      ]
+    },
+    {
+      "title_pt": "Kyoto, loja a loja",
+      "body_pt": "Em Kyoto, o depachika é o atalho para tsukemono, wagashi e bentôs de ryōtei que custariam dez vezes mais à mesa.",
+      "items": [
+        { "name": "Takashimaya Kyoto", "name_ja": "京都髙島屋S.C.", "what_pt": "O mais completo de Kyoto para doces, chá, tsukudani e tsukemono (Nishiri tem marca própria aqui). Bentôs de ryōtei; o Kyoto Nakasei (京都中勢以) (carne maturada de Fushimi) vende um bentô de soboro de carne.", "where_pt": "Shijō-Kawaramachi", "price_pt": "Bentô Nakasei ¥1.188 em 2019 (a confirmar)", "tip_pt": "Fechado 1–2/1." },
+        { "name": "Daimaru Kyoto", "name_ja": "大丸京都店", "what_pt": "Na Shijō-dōri, a 5 min do Mercado Nishiki: perfeito para completar o que faltou no mercado. Tem balcão do Izuu (saba-zushi, Tabelog 3,51 no balcão).", "where_pt": "Shijō-Karasuma", "tip_pt": "10h–20h (Tokubai). Daimaru reabre 2/1 em geral (a confirmar)." },
+        { "name": "JR Kyoto Isetan", "name_ja": "ジェイアール京都伊勢丹", "what_pt": "Dentro da Estação de Kyoto, com um corner de bentôs de casas antigas e famosas (老舗・名店弁当). Balcão do Izuu (Tabelog 3,57). O lugar para comprar o almoço do shinkansen.", "where_pt": "Estação de Kyoto", "must": true },
+        { "name": "Izuu", "name_ja": "いづう", "what_pt": "O saba-zushi definitivo de Kyoto: cavala curada no sal e vinagre, sobre arroz, envolta em kombu.", "where_pt": "JR Kyoto Isetan, Daimaru Kyoto", "price_pt": "a confirmar", "pregnancy": "cuidado", "tip_pt": "A cavala é curada, não cozida. Ela pode preferir o 穴子 (anago) ou um inari." }
+      ]
+    },
+    {
+      "title_pt": "Outras cidades (resumo)",
+      "body_pt": "Se a votação levar a família para estas bases. Ainda sem fonte japonesa verificada sobre balcões específicos.",
+      "items": [
+        { "name": "Iwataya e Hakata Hankyu (Fukuoka)", "name_ja": "岩田屋本店 / 博多阪急", "what_pt": "Iwataya (Tenjin) é a loja tradicional de Fukuoka; o Hakata Hankyu fica na estação de Hakata, ideal para mentaiko e bentô antes do trem.", "tip_pt": "Iwataya fecha 1/1 e abre 2/1 (padrão 2026). Mentaiko é ova crua: ela compra o cozido ou grelhado (焼き明太子)." },
+        { "name": "Meitetsu M'za (Kanazawa)", "name_ja": "めいてつ・エムザ 黒門小路", "what_pt": "Em frente ao Mercado Ōmichō. O 黒門小路 (1º andar) reúne mais de 170 marcas de Ishikawa, com exclusivos de casas antigas: wagashi, kaga-bōcha, picles de nabo com peixe (kabura-zushi).", "tip_pt": "Kabura-zushi é peixe fermentado cru: evitar na gravidez." },
+        { "name": "Fujisaki (Sendai)", "name_ja": "藤崎", "what_pt": "A loja de departamento local de Sendai (desde 1819): gyūtan, zunda-mochi e sasakamaboko de casas de Miyagi.", "tip_pt": "Datas de Ano-Novo a confirmar." }
+      ]
+    },
+    {
+      "title_pt": "Ano-Novo: osechi, fukubukuro e hatsuuri",
+      "body_pt": "O depachika é o coração das compras de fim de ano. 28–31/12 são os dias mais lotados do ano (filas para osechi, kamaboko, kuromame, kazunoko); 24/12 o andar fica cheio de gente buscando bolo de Natal. 31/12 fecha mais cedo (~18h; a confirmar). 1/1 está tudo fechado.",
+      "items": [
+        { "name": "Osechi por encomenda", "name_ja": "おせち料理 予約", "what_pt": "Caixas laqueadas com a ceia de Ano-Novo. Mitsukoshi e Isetan online: pedidos até seg 21/12/2026 às 10h (entrega exige endereço japonês; o hotel pode receber). Takashimaya na loja: pedidos 24/9–24/12, retirada em 31/12 (Nihonbashi 11h30–16h; Shinjuku 11h–16h).", "price_pt": "~¥20.000–60.000 por caixa", "tip_pt": "Para seis, mais esperto: uma caixa pequena + itens avulsos comprados em 30/12 no 大歳の市 do Isetan. Precisa de geladeira." },
+        { "name": "Hatsuuri (primeiras vendas)", "name_ja": "初売り", "what_pt": "Previsão para 2027: Mitsukoshi e Isetan abrem 2/1 às 10h; Daimaru, Tokyu e Seibu em 2/1; Takashimaya (todas as lojas) só em 3/1 (confirmado pela empresa); Hankyu, Hanshin, Matsuya Ginza e GINZA SIX em 3/1 (padrão recente). A tendência do setor é empurrar para o dia 3.", "tip_pt": "Verifique cada loja em meados de dezembro, quando sai o aviso oficial." },
+        { "name": "Fukubukuro de comida", "name_ja": "食品福袋", "what_pt": "Sacolas-surpresa de chá, wagashi, pães e doces, vendidas nos próprios balcões no primeiro dia de vendas. Filas para as famosas começam por volta das 8h.", "price_pt": "~¥1.000–5.000 (a confirmar)", "tip_pt": "Os itens de 2027 ainda não foram anunciados (out/2026). Grávida não fica em fila de 2 horas no frio: mandem o irmão." }
+      ]
+    },
+    {
+      "title_pt": "Gravidez: o que ela evita e o que pega no lugar",
+      "body_pt": "Quase tudo no depachika é cozido e está liberado. Fique de olho nestes itens:",
+      "items": [
+        { "name": "Bentô de sashimi, chirashi e sushi cru", "name_ja": "海鮮ちらし・刺身弁当", "what_pt": "Takimoto, Hirashima 海鮮ちらし, Shiretoko Sushi. Obstetras japoneses não proíbem peixe cru fresco, mas o bentô fica horas fora da geladeira.", "pregnancy": "evitar", "tip_pt": "No lugar: anago (enguia-do-mar cozida), unagi, saikyō-yaki, tempurá, Benmatsu, Kiyōken." },
+        { "name": "Ovas cruas", "name_ja": "いくら・明太子・たらこ", "what_pt": "Ikura, mentaiko e tarako aparecem em bentôs e onigiri.", "pregnancy": "cuidado", "tip_pt": "Prefira 焼きたらこ / 焼き明太子 (grelhado)." },
+        { "name": "Ovo cru ou mole", "name_ja": "温玉・半熟卵・牛玉", "what_pt": "Ovo onsen e oyako-don meio mole. Tamagoyaki e a デラバン do Hanshin são bem cozidos.", "pregnancy": "cuidado", "tip_pt": "Escolha bentôs sem 温玉." },
+        { "name": "Carne malpassada e defumados frios", "name_ja": "ローストビーフ・スモークサーモン・生ハム", "what_pt": "Rosbife, salmão defumado e presunto cru nas saladas de RF1 e delis.", "pregnancy": "evitar", "tip_pt": "Sukiyaki, yakiniku e karaage, bem cozidos, estão liberados." },
+        { "name": "Queijos nos yōgashi", "name_ja": "レアチーズ・ナチュラルチーズ", "what_pt": "Cheesecakes japoneses usam cream cheese pasteurizado. O risco é queijo natural não pasteurizado em delis importadoras.", "pregnancy": "cuidado", "tip_pt": "Na dúvida, pergunte 「加熱殺菌済みですか？」 (é pasteurizado?)." },
+        { "name": "Álcool nos doces", "name_ja": "ラム・洋酒・酒粕・奈良漬", "what_pt": "Rum em doces de passas e bolos de frutas, brandy em castella, licor em bombons, saquê-kasu em 酒饅頭 e 奈良漬 (picles curtidos em borra de saquê, com álcool de verdade).", "pregnancy": "cuidado", "tip_pt": "Procure na etiqueta 洋酒 ou アルコール. Troque por yōkan, monaka, dorayaki ou fukiyose." }
+      ]
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/デパ地下",
+    "https://ja.wikipedia.org/wiki/阪急うめだ本店",
+    "https://ja.wikipedia.org/wiki/阪神百貨店",
+    "https://ja.wikipedia.org/wiki/日本橋弁松総本店",
+    "https://travel.watch.impress.co.jp/docs/news/2098587.html",
+    "https://tetsudo-ch.com/12879294.html",
+    "https://kiyoken.com/products/obento/shiben.html",
+    "https://www.asakusaimahan.co.jp/bento/buy/",
+    "https://www.imahan.com/",
+    "https://www.benmatsu.com/",
+    "https://www.551horai.co.jp/menu/butaman/",
+    "https://www.daily.co.jp/leisure/kansai/2026/07/03/0020548329.shtml",
+    "https://www.hanshin-dept.jp/hshonten/",
+    "https://www.toraya-group.co.jp/",
+    "https://www.ginza-kikunoya.co.jp/",
+    "https://www.rf-one.com/",
+    "https://www.kakiyasuhonten.co.jp/",
+    "https://www.minokichi.co.jp/",
+    "https://www.sanwa-grp.co.jp/",
+    "https://www.tv-tokyo.co.jp/adomachi/backnumber/20140510/101922.html",
+    "https://tabelog.com/en/tokyo/A1301/A130101/13002591/",
+    "https://news.mynavi.jp/article/20260424-4240736/",
+    "https://nlab.itmedia.co.jp/research/articles/780841/",
+    "https://www.wwdjapan.com/articles/2026794",
+    "https://www.walkerplus.com/trend/matome/615.html",
+    "https://financial-field.com/living/entry-487581",
+    "https://mitsukoshi.mistore.jp/osechi/nihombashi/index.html",
+    "https://www.takashimaya.co.jp/store/special/osechi/"
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "slug": "kumamoto",
+  "name": "Kumamoto",
+  "tagline_pt": "Cidade de castelo e de criadores de cavalo: ramen com alho torrado, sopa chinesa de bifum e raiz de lótus recheada de mostarda.",
+  "history_pt": [
+    "Kumamoto foi o grande feudo dos Hosokawa, à sombra do castelo de Katō Kiyomasa. Uma lenda conta que, em 1632, o monge Gentaku receitou raiz de lótus ao frágil senhor Hosokawa Tadatoshi. O lótus vinha do fosso do castelo, plantado como reserva de guerra. O senhor achou 'impuro, nascido na lama', e o cozinheiro Heigorō encheu os buracos com missô e mostarda, empanou e fritou. O corte lembrava o brasão dos Hosokawa, e a receita ficou secreta até a era Meiji. É o karashi renkon.",
+    "A região de Aso criou cavalos por séculos. Hoje Kumamoto responde por cerca de 40% da carne de cavalo abatida no Japão, e basashi (cavalo cru com shōyu doce, alho e gengibre) é comida de festa. O taipien chegou com chineses de Fujian na era Meiji: em Fuzhou era sopa com ovo de pata; aqui virou bifum (harusame) com legumes e um ovo frito por cima, e entrou até na merenda escolar.",
+    "O ramen de Kumamoto descende do tonkotsu de Kurume, mas é mais encorpado, com macarrão um pouco mais grosso e o toque da casa: lascas de alho frito e mayu (óleo de alho queimado)."
+  ],
+  "winter_pt": "Inverno é temporada de panelas de cavalo (sakura-nabe), de mikan e de ikinari dango quente nas lojinhas. Kumamoto é fria e seca em dezembro.",
+  "meibutsu": [
+    {
+      "name_pt": "Basashi (cavalo cru)",
+      "name_ja": "馬刺し",
+      "romaji": "basashi",
+      "what_pt": "Fatias de cavalo cru (magro, marmorizado ou kōne, a gordura da crina) com shōyu adocicado, alho e gengibre ralados.",
+      "where_pt": "Suganoya.",
+      "price_pt": "¥1.500–4.000 o prato",
+      "must": true,
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Carne crua, risco de toxoplasmose: fora para ela, junto com o yukke de cavalo. Ela pede sakura-nabe (panela de cavalo), cavalo grelhado ou ensopado de tendão."
+    },
+    {
+      "name_pt": "Ramen de Kumamoto",
+      "name_ja": "熊本ラーメン",
+      "romaji": "Kumamoto rāmen",
+      "what_pt": "Tonkotsu encorpado com lascas de alho frito e mayu (óleo de alho queimado). Não tem kaedama: peça o grande.",
+      "where_pt": "Kokutei honten.",
+      "price_pt": "≈¥1.000",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Ok. Só sem ovo de gema mole."
+    },
+    {
+      "name_pt": "Taipien",
+      "name_ja": "太平燕",
+      "romaji": "taipīen",
+      "what_pt": "Sopa leve de bifum com frutos do mar, legumes e um ovo frito por cima. Comida de conforto de Kumamoto e boa para a grávida.",
+      "where_pt": "Kōrantei Shimotōri.",
+      "price_pt": "≈¥1.000–1.500",
+      "must": true
+    },
+    {
+      "name_pt": "Karashi renkon",
+      "name_ja": "辛子蓮根",
+      "romaji": "karashi renkon",
+      "what_pt": "Raiz de lótus recheada de missô com mostarda, empanada e frita, servida em fatias. Arde no nariz como wasabi.",
+      "where_pt": "Izakaya, depachika e lojas de omiyage da estação.",
+      "price_pt": "¥1.000–2.000 a peça",
+      "must": true
+    },
+    {
+      "name_pt": "Sakura-nabe (panela de cavalo)",
+      "name_ja": "桜鍋",
+      "romaji": "sakura-nabe",
+      "what_pt": "Cavalo cozido em caldo adocicado, à moda sukiyaki.",
+      "where_pt": "Suganoya.",
+      "price_pt": "Em curso de ¥8.000–10.000",
+      "must": false,
+      "pregnancy_pt": "Peça a carne bem cozida e sem ovo cru para mergulhar."
+    },
+    {
+      "name_pt": "Ikinari dango",
+      "name_ja": "いきなり団子",
+      "romaji": "ikinari dango",
+      "what_pt": "Fatia de batata-doce e pasta de feijão embrulhadas em massa e cozidas no vapor. Lanche de rua quente.",
+      "where_pt": "Galerias Shimotōri e Sakuranobaba Jōsaien.",
+      "price_pt": "≈¥150–250",
+      "must": false
+    }
+  ],
+  "areas": [
+    {
+      "name": "Shimotōri e Kamitōri",
+      "name_ja": "下通・上通",
+      "kind": "rua",
+      "story_pt": "As galerias cobertas do centro, onde fica a vida noturna de Kumamoto: izakaya de cavalo, casas chinesas de taipien e lojas de doces.",
+      "eat_pt": [
+        "Taipien no Kōrantei",
+        "Basashi e sakura-nabe no Suganoya (Karashimachō, ali perto)",
+        "Ikinari dango"
+      ],
+      "tips_pt": "Coberta, boa para dia de chuva. O jantar é por aqui.",
+      "dec_jan_pt": "Lojas abertas com horário reduzido no Ano-Novo (a confirmar).",
+      "query": "Shimotori Kumamoto"
+    },
+    {
+      "name": "Sakuranobaba Jōsaien",
+      "name_ja": "桜の馬場 城彩苑",
+      "kind": "rua",
+      "story_pt": "Rua de comidas e lembranças ao pé do castelo, montada como cidade de Edo. Turístico, mas prático para provar tudo antes do castelo.",
+      "eat_pt": [
+        "Karashi renkon",
+        "Ikinari dango",
+        "Croquete de cavalo"
+      ],
+      "tips_pt": "Bom para os pais almoçarem leve depois do castelo.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Sakuranobaba Josaien"
+    },
+    {
+      "name": "Estação Kumamoto",
+      "name_ja": "熊本駅",
+      "kind": "estação",
+      "story_pt": "A estação reformada tem mercado de omiyage e ramen; o Kokutei fica a 5 minutos.",
+      "eat_pt": [
+        "Kokutei",
+        "Karashi renkon para levar"
+      ],
+      "tips_pt": "Faça o ramen antes do Shinkansen.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kumamoto Station"
+    }
+  ],
+  "places": [
+    {
+      "name": "Kumamoto Ramen Kokutei honten",
+      "name_ja": "熊本ラーメン 黒亭 本店",
+      "area": "Kumamoto · Nihongiguchi",
+      "genre_pt": "Ramen de Kumamoto",
+      "price_pt": "≈¥1.000",
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 2616,
+        "url": "https://tabelog.com/en/kumamoto/A4301/A430101/43000091/",
+        "awards": "Ramen WEST 百名店 2025"
+      },
+      "why_pt": "O ramen de alho torrado na sua forma clássica. Peça o grande, porque não tem kaedama. O outro 百名店 2025 da cidade é o Hinokuni Bunryū sōhonten.",
+      "order_pt": "Ramen grande (大盛り), com ovo cozido ou sem ovo.",
+      "pregnancy_pt": "Ok, sem ovo cru nem gema mole.",
+      "group_pt": "31 lugares: os seis cabem depois de uma espera curta.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "10h30–20h30 todos os dias. Ano-Novo a confirmar.",
+      "query": "Kokutei honten Kumamoto"
+    },
+    {
+      "name": "Kōrantei Shimotōri honten",
+      "name_ja": "紅蘭亭 下通本店",
+      "area": "Kumamoto · Shimotōri",
+      "genre_pt": "Chinês / taipien",
+      "price_pt": "≈¥1.000–1.500",
+      "tabelog": {
+        "score": 3.49,
+        "url": "https://tabelog.com/kumamoto/A4301/A430101/43000046/"
+      },
+      "why_pt": "Casa de 1934 e uma das que disputam a origem do taipien. Alternativas do Chinese WEST 百名店 2026: Kairakuen e Tōkagen.",
+      "order_pt": "Taipien.",
+      "pregnancy_pt": "Ok (tudo cozido).",
+      "group_pt": "Restaurante grande: os seis juntos.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kourantei Shimotori Kumamoto"
+    },
+    {
+      "name": "Suganoya Shinshigai-ten",
+      "name_ja": "菅乃屋 新市街店",
+      "area": "Kumamoto · Karashimachō",
+      "genre_pt": "Izakaya de cavalo",
+      "price_pt": "≈¥8.000–9.999",
+      "tabelog": {
+        "score": 3.5,
+        "reviews": 332,
+        "url": "https://tabelog.com/en/kumamoto/A4301/A430101/43005409/"
+      },
+      "why_pt": "O jantar de cavalo para os seis: os cortes crus para quem pode e panelas e grelhados para ela.",
+      "order_pt": "Basashi variado para cinco; sakura-nabe ou hari-hari nabe para todos.",
+      "pregnancy_pt": "Nada de basashi nem yukke. Ela fica com nabe, cavalo grelhado ou ensopado de tendão.",
+      "group_pt": "Salas horigotatsu para até 14.",
+      "booking_pt": "Online.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Suganoya Shinshigai Kumamoto"
+    },
+    {
+      "name": "Katsuretsu-tei",
+      "name_ja": "勝烈亭",
+      "area": "Kumamoto",
+      "genre_pt": "Tonkatsu",
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 1760,
+        "url": "https://tabelog.com/en/kumamoto/A4301/A430101/43000307/"
+      },
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (abr 2020), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "Tonkatsu de Kumamoto com quase 1.800 avaliações.",
+      "pregnancy_pt": "Tudo frito e cozido: tranquilo.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Katsuretsutei Kumamoto"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Karashi renkon (lojas tradicionais)",
+      "name_ja": "辛子蓮根",
+      "what_pt": "Várias casas da cidade vendem a raiz inteira, embalada a vácuo.",
+      "buy_pt": "Uma peça inteira para fatiar no hotel.",
+      "price_pt": "¥1.000–2.000",
+      "dec_jan_pt": "Muito vendido no fim de ano (a confirmar).",
+      "query": "karashi renkon shop Kumamoto"
+    },
+    {
+      "name": "Mercado de omiyage da estação Kumamoto",
+      "name_ja": "熊本駅 おみやげ",
+      "what_pt": "Concentra os doces e conservas da prefeitura.",
+      "buy_pt": "Ikinari dango, karashi renkon, mikan.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kumamoto Station souvenirs"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/辛子蓮根",
+    "https://ja.wikipedia.org/wiki/太平燕",
+    "https://ja.wikipedia.org/wiki/馬刺し",
+    "https://award.tabelog.com/hyakumeiten/ramen_west/2025"
+  ]
+}

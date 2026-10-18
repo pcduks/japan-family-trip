@@ -1,0 +1,344 @@
+{
+  "slug": "etiquette",
+  "title_pt": "Etiqueta à mesa",
+  "intro_pt": [
+    "O Japão não espera que estrangeiros saibam tudo, e um 「すみません」 sorridente resolve muita coisa. Mas algumas regras pesam de verdade: faltar a uma reserva, falar alto ou fazer fila do jeito errado. E quem conhece os códigos é tratado de outro jeito.",
+    "Para seis brasileiros, os maiores choques culturais são: não se dá gorjeta, não se fala alto no trem nem no balcão, faltar sem avisar é ofensa grave e dividir a conta item por item não é costume."
+  ],
+  "sections": [
+    {
+      "title_pt": "Máquina de tíquete (食券機)",
+      "body_pt": "Em ramen, soba de estação, curry e gyūdon, você paga numa máquina na entrada antes de sentar. A ordem é: 1) coloque o dinheiro (muitas só aceitam notas de ¥1.000 e moedas; as novas aceitam IC card), 2) aperte o botão do prato (o canto superior esquerdo costuma ser o carro-chefe), 3) pegue o tíquete e o troco, 4) entregue o tíquete no balcão.",
+      "items": [
+        {
+          "name": "Extras e tamanhos",
+          "name_ja": "大盛り・トッピング",
+          "what_pt": "大盛 (ōmori) é porção grande, 並 (nami) normal e 小 (shō) pequena. Toppings como ovo (味玉), chāshū e alga são botões à parte.",
+          "tip_pt": "Fotografe a máquina e use o tradutor da câmera. Ou aponte para o botão e pergunte a quem está atrás: 「おすすめは？」 (osusume wa?)."
+        },
+        {
+          "name": "Ajitama",
+          "name_ja": "味玉",
+          "what_pt": "Ovo marinado de gema mole do ramen.",
+          "pregnancy": "evitar",
+          "tip_pt": "Gema mole não é para ela. Não aperte o botão do 味玉, ou diga 「味玉なしで」 (ajitama nashi de)."
+        }
+      ]
+    },
+    {
+      "title_pt": "Filas",
+      "body_pt": "Japonês faz fila com prazer. Ela se forma em linha reta, encostada na parede, e às vezes é marcada no chão. Não guarde lugar: em muitos ramen a regra é 「全員揃ってからお並びください」 (só entre na fila com o grupo todo presente). Alguns lugares dão senha ou pedem que você escreva o nome numa lista na porta (pode escrever em letras romanas, com o número de pessoas).",
+      "items": [
+        {
+          "name": "Grupo de seis",
+          "name_ja": "6名",
+          "what_pt": "Em balcão de ramen ou udon, prepare-se para sentar separado ou entrar em ondas de 2+2+2. Se o atendente perguntar 「バラバラでもいいですか？」 (barabara demo ii desu ka?), quer saber se vocês aceitam sentar separados. Responda 「はい、大丈夫です」 (hai, daijōbu desu)."
+        }
+      ]
+    },
+    {
+      "title_pt": "Oshibori, hashi e barulho",
+      "body_pt": "O pano úmido (おしぼり), quente no inverno, é para as mãos. Senhores japoneses passam no rosto, mas evite isso em restaurante bom. Depois, dobre o pano e deixe de lado. Fazer barulho ao sugar o macarrão (ramen, soba, udon) é normal e até elogio; para a comida em geral, não. Assoar o nariz à mesa é deselegante: levante e vá ao banheiro.",
+      "items": [
+        {
+          "name": "Não espetar o hashi no arroz",
+          "name_ja": "立て箸",
+          "what_pt": "Hashi em pé no arroz lembra a oferenda aos mortos no funeral. É o tabu nº 1.",
+          "tip_pt": "Use o descanso (箸置き), ou apoie o hashi atravessado na borda do prato."
+        },
+        {
+          "name": "Não passar comida de hashi para hashi",
+          "name_ja": "箸渡し",
+          "what_pt": "Também lembra o funeral, quando se passam os ossos do falecido. Para dar um pedaço a alguém, coloque no pratinho da pessoa."
+        },
+        {
+          "name": "Outros deslizes",
+          "name_ja": "刺し箸・寄せ箸・迷い箸・ねぶり箸",
+          "what_pt": "Espetar a comida com o hashi, puxar a tigela com ele, ficar passeando com o hashi sobre os pratos sem decidir, lamber o hashi e apontar com ele para alguém.",
+          "tip_pt": "Para pegar comida da travessa comum, use os hashi de servir (取り箸) ou vire os seus ao contrário (逆さ箸; tolerado em família, mas o 取り箸 é melhor)."
+        },
+        {
+          "name": "Levantar a tigela",
+          "name_ja": "器を持つ",
+          "what_pt": "Com tigelas pequenas (arroz e missô), é correto levantar até perto da boca. Pratos grandes ficam na mesa. Tomar o caldo direto da tigela é normal, e o lámen tem colher (れんげ)."
+        },
+        {
+          "name": "Itadakimasu e gochisōsama",
+          "name_ja": "いただきます・ごちそうさまでした",
+          "what_pt": "Diga antes de comer, de mãos juntas, e ao sair. O cozinheiro do balcão adora."
+        }
+      ]
+    },
+    {
+      "title_pt": "Izakaya: otōshi e taxa de mesa",
+      "body_pt": "No izakaya, assim que você pede a bebida chega um petisco que você não pediu: é o お通し (otōshi; em Kansai, 突き出し, tsukidashi). Ele é cobrado e funciona como couvert por pessoa. Pela Wikipedia japonesa, redes cobram ~¥300 e alguns lugares não cobram (Torikizoku, por exemplo). Em izakaya independente, o valor varia: a confirmar no cardápio. Recusar depende da casa e soa mal; aceite como couvert.",
+      "items": [
+        {
+          "name": "Otōshi",
+          "name_ja": "お通し",
+          "what_pt": "Pode ser edamame, tofu, um cozido ou um sashimi.",
+          "price_pt": "~¥300–600 por pessoa (a confirmar)",
+          "pregnancy": "cuidado",
+          "tip_pt": "Se vier peixe cru ou ova, a grávida pode pedir para trocar: 「妊娠中なので、生ものじゃないものに替えられますか？」."
+        },
+        {
+          "name": "Taxas de serviço e de mesa",
+          "name_ja": "サービス料・席料・チャージ",
+          "what_pt": "Hotéis e restaurantes formais somam 10–15% de serviço. Bares podem cobrar チャージ (taxa de assento), e ryōtei, 席料 (taxa de sala privada). Está na conta, não é gorjeta."
+        },
+        {
+          "name": "Primeira rodada",
+          "name_ja": "とりあえずビール",
+          "what_pt": "O ritual é todos pedirem a primeira bebida juntos e brindar com 「乾杯！」 (kanpai!) antes de beber. Entre amigos, se serve o copo do outro, não o seu."
+        }
+      ]
+    },
+    {
+      "title_pt": "Gorjeta, dinheiro e cartão",
+      "body_pt": "Não existe gorjeta. Deixar dinheiro na mesa faz o garçom correr atrás de você para devolver. O preço do cardápio inclui imposto (税込) na maioria dos casos. Desde 2021 o preço total com imposto é obrigatório na etiqueta, mas cardápios de bares às vezes mostram 税別 (sem imposto, +10%).",
+      "items": [
+        {
+          "name": "Dinheiro",
+          "name_ja": "現金のみ",
+          "what_pt": "Ramen, soba, izakaya de bairro, barracas de mercado e templos ainda são muitas vezes 「現金のみ」 (só dinheiro). Leve ¥10.000–20.000 por casal todo dia.",
+          "tip_pt": "Saque no caixa da 7-Eleven (veja o tópico Konbini)."
+        },
+        {
+          "name": "Cartão e IC card",
+          "name_ja": "カード・交通系IC",
+          "what_pt": "Restaurantes de médio e alto padrão, redes, lojas de departamento e konbini aceitam cartão. Suica/PASMO pagam em quase toda rede. Pergunte 「カード使えますか？」 (kādo tsukaemasu ka?)."
+        },
+        {
+          "name": "Ryokan: kokorozuke",
+          "name_ja": "心付け",
+          "what_pt": "Em ryokan tradicional, alguns japoneses dão um envelope (¥1.000–3.000) à camareira que serve o jantar no quarto. É opcional e nunca esperado de estrangeiros; se quiser dar, use envelope, nunca dinheiro solto."
+        }
+      ]
+    },
+    {
+      "title_pt": "Pagar e dividir a conta",
+      "body_pt": "Na maioria dos restaurantes, a conta (伝票) fica na mesa e você paga no caixa da saída (レジ), não na mesa. Peça com 「お会計お願いします」 (o-kaikei onegaishimasu) ou cruzando os indicadores em X. Dividir item por item (別会計, betsu-kaikei) é mal visto em casa cheia, e alguns lugares recusam. O jeito japonês é um pagar e acertar depois (割り勘, warikan).",
+      "items": [
+        {
+          "name": "Conta separada",
+          "name_ja": "別々で",
+          "what_pt": "Se precisarem de duas contas (3+3), avisem ao pedir, não na hora de pagar: 「会計は2つに分けられますか？」 (kaikei wa futatsu ni wakeraremasu ka?)."
+        }
+      ]
+    },
+    {
+      "title_pt": "Reservas e o pecado do no-show",
+      "body_pt": "Faltar sem avisar (無断キャンセル) é um problema nacional: restaurantes de balcão compram o peixe pelo número de pessoas, e o Ministério da Economia (METI) publicou em 2018 uma orientação apoiando a cobrança do valor integral. É por isso que muitos lugares só aceitam estrangeiros com cartão de garantia ou via concierge.",
+      "items": [
+        {
+          "name": "Como reservar",
+          "name_ja": "予約",
+          "what_pt": "Pelo Tabelog (com taxa de ¥440 por pessoa, não reembolsável, para reservas do exterior), TableCheck, OMAKASE, pelo concierge do hotel ou por telefone com alguém que fale japonês.",
+          "tip_pt": "Na reserva, informe tudo: seis pessoas, uma grávida, o que ela não come e se os pais precisam de cadeira (não tatame)."
+        },
+        {
+          "name": "Taxa de cancelamento",
+          "name_ja": "キャンセル料",
+          "what_pt": "O padrão em menus fechados é 50% na véspera e 100% no dia. Grupos de 5 ou mais costumam ter escala mais dura (ex.: 60% com 4 dias, 70% com 3, 100% com 2 dias, no OMAKASE).",
+          "must": true,
+          "tip_pt": "Se alguém do grupo adoecer, ligue assim que souber. Reduzir de 6 para 5 também é cancelamento parcial."
+        },
+        {
+          "name": "Pontualidade",
+          "name_ja": "時間厳守",
+          "what_pt": "Em balcão de sushi ou kaiseki, o serviço começa ao mesmo tempo para todos. Chegue 5 minutos antes; 15 minutos de atraso podem anular a reserva. Se for atrasar, ligue: 「すみません、10分ほど遅れます」 (sumimasen, juppun hodo okuremasu).",
+          "must": true
+        },
+        {
+          "name": "Confirme a reserva",
+          "name_ja": "予約確認",
+          "what_pt": "Alguns lugares ligam ou mandam e-mail uma semana antes e cancelam se não conseguirem falar com você. Deixe um contato que atenda."
+        }
+      ]
+    },
+    {
+      "title_pt": "Balcão de sushi",
+      "body_pt": "No balcão, o itamae serve uma peça por vez, e ela está no ponto exato agora. O que importa:",
+      "items": [
+        {
+          "name": "Sem perfume",
+          "name_ja": "香水",
+          "what_pt": "Perfume, creme perfumado e cigarro na roupa atrapalham o aroma do peixe para todos do balcão. É a regra mais citada pelos chefs.",
+          "must": true
+        },
+        {
+          "name": "Coma logo",
+          "name_ja": "すぐ食べる",
+          "what_pt": "Coma em até ~10 segundos. Não deixe a peça esperando a foto. Pode comer com a mão ou com hashi, em uma mordida."
+        },
+        {
+          "name": "Fotos",
+          "name_ja": "写真",
+          "what_pt": "Pergunte antes: 「写真を撮ってもいいですか？」 (shashin o totte mo ii desu ka?). Algumas casas proíbem. Sem flash, sem som e sem fotografar outros clientes."
+        },
+        {
+          "name": "Shōyu e wasabi",
+          "name_ja": "醤油・わさび",
+          "what_pt": "Na omakase, o chef já temperou: geralmente não se usa shōyu. Quando usar, molhe a ponta do peixe, nunca o arroz. Não misture wasabi no shōyu. O gengibre (ガリ) serve para limpar o paladar entre as peças."
+        },
+        {
+          "name": "Conversa e ritmo",
+          "name_ja": "会話",
+          "what_pt": "Pode conversar com o chef, que gosta de saber que vocês são do Brasil. Falem baixo entre vocês. Não peça peças fora da ordem no meio da omakase; os extras (追加) vêm no fim."
+        },
+        {
+          "name": "Grávida no balcão",
+          "name_ja": "妊娠中",
+          "what_pt": "Informe na reserva (não na hora) e peça 加熱・〆もの中心 (mais peças cozidas e curadas): anago, hamaguri cozido, camarão cozido, abalone no vapor, tamago e kanpyō-maki.",
+          "pregnancy": "cuidado",
+          "tip_pt": "Peixe branco fresco é liberado pelos obstetras japoneses. Evite uni, ikura, ostra e camarão cru, e limite o atum-azul gordo (大トロ)."
+        }
+      ]
+    },
+    {
+      "title_pt": "Regras da casa de ramen",
+      "body_pt": "Casa de ramen é para comer rápido e sair. As regras mais comuns:",
+      "items": [
+        {
+          "name": "Uma tigela por pessoa",
+          "name_ja": "1人1杯",
+          "what_pt": "Cada pessoa sentada pede ao menos um prato. Não dá para dividir uma tigela entre dois."
+        },
+        {
+          "name": "Sem demora",
+          "name_ja": "長居禁止",
+          "what_pt": "Terminou, levante. Conversa longa e celular depois de comer seguram a fila lá fora. Devolva a tigela no balcão alto (お盆を上に) e limpe a mesa com o pano, se houver."
+        },
+        {
+          "name": "Kaedama",
+          "name_ja": "替え玉",
+          "what_pt": "Em ramen de Hakata (tonkotsu), peça mais macarrão no mesmo caldo: diga 「替え玉ください」 (kaedama kudasai) antes do caldo acabar."
+        },
+        {
+          "name": "Ponto do macarrão",
+          "name_ja": "麺の硬さ",
+          "what_pt": "Do mais duro ao mais mole: バリカタ (barikata), カタ (kata), 普通 (futsū), やわ (yawa)."
+        }
+      ]
+    },
+    {
+      "title_pt": "Crianças, idosos e cadeiras",
+      "body_pt": "Famílias são bem-vindas em restaurantes de rede, de lojas de departamento, de shopping, de hotel e na maioria das casas de udon, tonkatsu e okonomiyaki. Balcões de sushi e kaiseki caros às vezes têm idade mínima: pergunte. Para os pais e para a grávida, o desconforto é sentar no chão.",
+      "items": [
+        {
+          "name": "Tatame ou cadeira",
+          "name_ja": "座敷・掘りごたつ・テーブル席",
+          "what_pt": "座敷 (zashiki) é sentar no chão, sobre almofada. 掘りごたつ (horigotatsu) é tatame com um buraco para as pernas, quase como uma cadeira. テーブル席 (tēburu-seki) é mesa com cadeira. Peça 「椅子席をお願いします」 (isu-seki o onegaishimasu) na reserva.",
+          "must": true,
+          "tip_pt": "Com 30 semanas, horigotatsu ou cadeira. Nada de seiza (sentar sobre os calcanhares)."
+        },
+        {
+          "name": "Sapatos",
+          "name_ja": "靴を脱ぐ",
+          "what_pt": "Ao subir no tatame, descalce os sapatos e deixe-os virados para a saída. Leve meias sem furo! Há chinelos para o banheiro; não ande com eles no tatame."
+        },
+        {
+          "name": "Prioridade",
+          "name_ja": "優先",
+          "what_pt": "Em trens há assentos prioritários (優先席) para grávidas e idosos. O chaveiro rosa 「マタニティマーク」 (Maternity Mark) é dado de graça nos guichês de estação de muitas linhas e sinaliza a gravidez sem precisar dizer nada."
+        }
+      ]
+    },
+    {
+      "title_pt": "Fumo",
+      "body_pt": "Desde abril de 2020 (Lei de Promoção da Saúde revisada), fumar dentro de restaurantes é proibido em princípio, só permitido em salas próprias para fumantes. Menores de 20 anos não podem entrar nessas salas. A exceção são bares e izakaya pequenos e antigos, que podem permitir o fumo com um aviso na porta. Tóquio é ainda mais rígida. Na rua, muitas cidades proíbem fumar andando; use os fumódromos.",
+      "items": [
+        {
+          "name": "Aviso na porta",
+          "name_ja": "喫煙可・禁煙・分煙",
+          "what_pt": "喫煙可 (pode fumar), 禁煙 (proibido) e 分煙 (área separada). Com a grávida, evite lugares com 喫煙可 na entrada, comuns em izakaya pequenos e bares de Osaka e Fukuoka.",
+          "must": true,
+          "tip_pt": "Na reserva, pergunte: 「禁煙ですか？」 (kin'en desu ka?)."
+        }
+      ]
+    },
+    {
+      "title_pt": "Jantar em ryokan com onsen",
+      "body_pt": "O jantar do ryokan (kaiseki) costuma estar incluído e ter hora marcada. Ele é o grande programa da noite e salva o Ano-Novo.",
+      "items": [
+        {
+          "name": "Horários",
+          "name_ja": "夕食の時間",
+          "what_pt": "Faça o check-in até 17–18h. No check-in, você escolhe o turno do jantar (normalmente 18:00 ou 18:30, às vezes 17:30 ou 19:30). Chegar tarde pode significar perder o jantar, e o ryokan não serve depois das ~20h. Avise qualquer atraso por telefone.",
+          "must": true
+        },
+        {
+          "name": "Yukata",
+          "name_ja": "浴衣",
+          "what_pt": "Pode (e deve) ir de yukata ao refeitório e ao onsen dentro do ryokan. Lado esquerdo sobre o direito: o contrário é como se veste o morto. No frio, ponha o casaco (羽織 ou 丹前) por cima.",
+          "tip_pt": "A grávida pode pedir um yukata maior (大きいサイズ)."
+        },
+        {
+          "name": "Restrições no ryokan",
+          "name_ja": "食事制限",
+          "what_pt": "Avise a gravidez ao reservar, pelo menos uma semana antes. O kaiseki de inverno tem sashimi, kani, ovas e às vezes carne crua, e eles trocam se souberem antes.",
+          "pregnancy": "cuidado",
+          "tip_pt": "Envie por e-mail a frase de reserva da seção de frases abaixo."
+        },
+        {
+          "name": "Onsen e gravidez",
+          "name_ja": "温泉と妊娠",
+          "what_pt": "Desde 2014, o Ministério do Meio Ambiente japonês tirou a gravidez da lista de contraindicações gerais do onsen. Mesmo assim: água não muito quente, banhos curtos, nada de ir sozinha e cuidado com o chão escorregadio. Confirme com o obstetra.",
+          "pregnancy": "cuidado"
+        },
+        {
+          "name": "Café da manhã",
+          "name_ja": "朝食",
+          "what_pt": "Também tem hora marcada (7–9h). Às vezes vem ovo cru para o arroz (卵かけご飯) ou onsen-tamago de gema mole.",
+          "pregnancy": "cuidado",
+          "tip_pt": "Para ela, peça ovo cozido duro: 「ゆで卵にしていただけますか？」 (yude-tamago ni shite itadakemasu ka?)."
+        }
+      ]
+    },
+    {
+      "title_pt": "Frases úteis",
+      "body_pt": "Mostre a tela se a pronúncia travar. A frase de reserva da gravidez vale ouro: mande por e-mail e repita na mesa.",
+      "items": [
+        { "name": "Sumimasen!", "name_ja": "すみません！", "what_pt": "Com licença! (para chamar o garçom; erguer a mão é normal)" },
+        { "name": "Roku-mei desu.", "name_ja": "6名です。", "what_pt": "Somos seis." },
+        { "name": "Yoyaku shite imasu, ___ desu.", "name_ja": "予約している___です。", "what_pt": "Tenho reserva no nome de ___." },
+        { "name": "Eigo no menyū wa arimasu ka?", "name_ja": "英語のメニューはありますか？", "what_pt": "Tem cardápio em inglês?" },
+        { "name": "Osusume wa nan desu ka?", "name_ja": "おすすめは何ですか？", "what_pt": "O que você recomenda?" },
+        { "name": "Kore o futatsu kudasai.", "name_ja": "これを2つください。", "what_pt": "Dois deste, por favor." },
+        { "name": "O-mizu o kudasai.", "name_ja": "お水をください。", "what_pt": "Água, por favor (é grátis)." },
+        { "name": "O-kaikei onegaishimasu.", "name_ja": "お会計お願いします。", "what_pt": "A conta, por favor." },
+        { "name": "Kādo tsukaemasu ka?", "name_ja": "カード使えますか？", "what_pt": "Aceita cartão?" },
+        { "name": "Isu-seki o onegaishimasu.", "name_ja": "椅子席をお願いします。", "what_pt": "Mesa com cadeira, por favor." },
+        { "name": "Kin'en-seki wa arimasu ka?", "name_ja": "禁煙席はありますか？", "what_pt": "Tem área de não fumantes?" },
+        { "name": "Gochisōsama deshita. Oishikatta desu!", "name_ja": "ごちそうさまでした。美味しかったです！", "what_pt": "Obrigado pela refeição. Estava delicioso!" },
+        {
+          "name": "Dōkōsha ga ichimei ninshin-chū no tame, nama no kairui, nama-tamago, rea no oniku wa hikaete imasu. Kanetsu shita mono ni kaete itadaku koto wa kanō deshō ka.",
+          "name_ja": "同行者が一名妊娠中のため、生の貝類・生卵・レアのお肉は控えています。加熱したものに替えていただくことは可能でしょうか。",
+          "what_pt": "Uma pessoa do grupo está grávida e não come frutos do mar crus, ovo cru nem carne malpassada. Seria possível trocar por pratos cozidos? (frase da reserva)",
+          "must": true,
+          "pregnancy": "cuidado"
+        },
+        { "name": "Ninshin-chū desu.", "name_ja": "妊娠中です。", "what_pt": "Estou grávida.", "must": true, "pregnancy": "cuidado" },
+        { "name": "Kore wa nama desu ka?", "name_ja": "これは生ですか？", "what_pt": "Isto é cru?", "pregnancy": "cuidado" },
+        { "name": "Shikkari hi o tōshite itadakemasu ka.", "name_ja": "しっかり火を通していただけますか。", "what_pt": "Pode cozinhar bem?", "pregnancy": "cuidado" },
+        { "name": "Yoku-yaki de onegai shimasu.", "name_ja": "よく焼きでお願いします。", "what_pt": "Bem passado, por favor (yakiniku e yakitori).", "pregnancy": "cuidado" },
+        { "name": "Nama-tamago nashi de onegai shimasu.", "name_ja": "生卵なしでお願いします。", "what_pt": "Sem ovo cru, por favor (sukiyaki).", "pregnancy": "cuidado" },
+        { "name": "O-sake (arukōru) wa haitte imasu ka?", "name_ja": "お酒（アルコール）は入っていますか？", "what_pt": "Tem álcool?", "pregnancy": "cuidado" },
+        { "name": "Chīzu, nama-hamu, sumōku sāmon wa nuite kudasai.", "name_ja": "チーズ・生ハム・スモークサーモンは抜いてください。", "what_pt": "Sem queijo, presunto cru e salmão defumado, por favor.", "pregnancy": "cuidado" },
+        { "name": "Hon-maguro wa sukoshi dake de.", "name_ja": "本マグロは少しだけで。", "what_pt": "Só um pouco de atum-azul.", "pregnancy": "cuidado" },
+        { "name": "Ajitama nashi de.", "name_ja": "味玉なしで。", "what_pt": "Sem o ovo de gema mole (ramen).", "pregnancy": "cuidado" },
+        { "name": "Kōji no amazake desu ka?", "name_ja": "麹の甘酒ですか？", "what_pt": "Este amazake é de koji (sem álcool)? (nos templos no Ano-Novo)", "pregnancy": "cuidado" }
+      ]
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/お通し",
+    "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000189195.html",
+    "https://jyudokitsuen.mhlw.go.jp/",
+    "https://www.mhlw.go.jp/topics/syokuchu/dl/ninpu.pdf",
+    "https://www.businesswire.com/news/home/20240626189960/en",
+    "https://www.tablecheck.com/en/shops/katsukami/reserve",
+    "https://omakase.in/r/hc778124",
+    "https://unseen-japan.com/japan-restaurant-no-shows-tourists"
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "slug": "takamatsu",
+  "name": "Takamatsu",
+  "tagline_pt": "A capital da 'prefeitura do udon': fábricas de macarrão que abrem às 9h, fecham quando acaba a massa e cobram menos de ¥500.",
+  "history_pt": [
+    "Kagawa (a antiga Sanuki) é a menor prefeitura do Japão e a que mais consome trigo para udon. Os ingredientes estavam todos à mão: clima seco e pouca chuva, bom para o trigo; sal das salinas do Seto; e iriko (sardinha seca) da ilha de Ibuki para o caldo. A lenda diz que o monge Kūkai, nascido aqui, trouxe o udon da China, mas não há prova. O que se sabe é que no período Edo já se vendia udon aos peregrinos do santuário Konpira, e na era Meiji havia vendedores ambulantes.",
+    "O formato que faz a viagem valer nasceu nos anos 1960: as lojas 'self' e os seimenjo, fábricas de macarrão que vendiam para restaurantes e começaram a servir quem aparecesse na porta. Nos anos 1990 os guias do Mentsūdan transformaram a visita a esses lugares em esporte nacional, e em 2011 Kagawa se declarou 'Udon-ken' (prefeitura do udon).",
+    "Regra de ouro: o udon sanuki tem koshi, uma firmeza elástica que vem de sovar (antigamente com os pés). Para o jantar, a outra invenção local é o honetsuki-dori de Marugame, a coxa de frango com osso assada no forno com alho e pimenta."
+  ],
+  "winter_pt": "Dezembro é ideal para udon quente (kake, kama-age). Kagawa come o toshiake udon (年明けうどん, udon de Ano-Novo) a partir de 1/1, e cerca de 100 lojas participam, então algumas abrem em 2–3/1.",
+  "meibutsu": [
+    {
+      "name_pt": "Kake udon",
+      "name_ja": "かけうどん",
+      "romaji": "kake udon",
+      "what_pt": "Udon em caldo quente de iriko: o teste de qualquer loja. Peça 小 (shō, pequeno) para provar várias.",
+      "where_pt": "Gamō, Ueharaya, Udon Baka Ichidai.",
+      "price_pt": "¥200–400",
+      "must": true
+    },
+    {
+      "name_pt": "Kama-tama",
+      "name_ja": "釜玉",
+      "romaji": "kama-tama",
+      "what_pt": "Udon recém-cozido, quente, misturado com ovo cru e shōyu: a carbonara de Kagawa. O Udon Baka Ichidai é famoso pelo kama-butter (com manteiga e pimenta).",
+      "where_pt": "Udon Baka Ichidai, Yamagoe.",
+      "price_pt": "¥300–600",
+      "must": true,
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Ovo cru: ela pula. Pede kake, bukkake, zaru ou kama-age, ou kama-tama com onsen tamago bem firme se a loja tiver."
+    },
+    {
+      "name_pt": "Bukkake e zaru",
+      "name_ja": "ぶっかけ・ざる",
+      "romaji": "bukkake / zaru",
+      "what_pt": "Udon com caldo concentrado jogado por cima (bukkake) ou frio para mergulhar (zaru). É no frio que dá para sentir o koshi.",
+      "where_pt": "Qualquer seimenjo.",
+      "price_pt": "¥300–500",
+      "must": false
+    },
+    {
+      "name_pt": "Kama-age",
+      "name_ja": "釜揚げ",
+      "romaji": "kama-age",
+      "what_pt": "Udon direto da panela, na água do cozimento, para mergulhar num caldo quente. Macio e reconfortante no inverno.",
+      "where_pt": "Seimenjo e lojas self.",
+      "price_pt": "¥300–500",
+      "must": false
+    },
+    {
+      "name_pt": "Tempurá e oden do balcão",
+      "name_ja": "天ぷら・おでん",
+      "romaji": "tenpura / oden",
+      "what_pt": "Nas lojas self você mesmo pega tempurás (chikuwa, legumes) e oden do balcão e paga no fim.",
+      "where_pt": "Lojas self.",
+      "price_pt": "¥100–200 cada",
+      "must": true
+    },
+    {
+      "name_pt": "Honetsuki-dori",
+      "name_ja": "骨付鳥",
+      "romaji": "honetsuki-dori",
+      "what_pt": "Coxa de frango com osso assada com alho e pimenta, pingando gordura. Oya (galinha velha, firme) ou hina (franga, macia).",
+      "where_pt": "Ikkaku (Marugame ou Takamatsu).",
+      "price_pt": "≈¥1.000–1.500 a coxa",
+      "must": true
+    },
+    {
+      "name_pt": "Toshiake udon",
+      "name_ja": "年明けうどん",
+      "romaji": "toshiake udon",
+      "what_pt": "Udon branco com cobertura vermelha (como kamaboko ou umeboshi) para começar o ano, comido de 1 a 15/1.",
+      "where_pt": "Lojas participantes; confira cada uma no fim de dezembro.",
+      "price_pt": "A confirmar",
+      "must": false
+    }
+  ],
+  "areas": [
+    {
+      "name": "Rota dos seimenjo (Sakaide, Ayagawa, Mannō)",
+      "name_ja": "讃岐うどん巡り",
+      "kind": "rua",
+      "story_pt": "As melhores lojas ficam fora da cidade, entre arrozais e galpões. O 'udon-meguri' é visitar três ou quatro numa manhã.",
+      "eat_pt": [
+        "Gamō (Sakaide)",
+        "Hinode Seimenjo (só 11h30–12h30)",
+        "Yamagoe (Ayagawa)",
+        "Mishima Seimenjo (Mannō)"
+      ],
+      "tips_pt": "Alugue carro ou um táxi por meio dia. Comece às 9h, peça 小 em cada loja e dividam as tigelas. Só dinheiro. Etiqueta de loja self: pegue a bandeja, diga o tamanho e o tipo, escalde o macarrão você mesmo se for o sistema da casa, ponha o caldo, pegue tempurá, pague no caixa e devolva a tigela no final.",
+      "dec_jan_pt": "Yamagoe fecha no fim de ano e no Ano-Novo; outras datas variam por loja.",
+      "query": "Sanuki udon seimenjo Sakaide"
+    },
+    {
+      "name": "Centro de Takamatsu e Ritsurin",
+      "name_ja": "高松中心部・栗林",
+      "kind": "bairro",
+      "story_pt": "Galerias cobertas do centro e o jardim Ritsurin, com udon 百名店 a pé.",
+      "eat_pt": [
+        "Udon Baka Ichidai (kama-butter)",
+        "Ueharaya (perto do Ritsurin)",
+        "Ōshima"
+      ],
+      "tips_pt": "O Baka Ichidai abre às 6h: café da manhã de udon.",
+      "dec_jan_pt": "Baka Ichidai abre 31/12 e 2/1; fecha só 1/1.",
+      "query": "Takamatsu shopping arcade"
+    }
+  ],
+  "places": [
+    {
+      "name": "Gamō",
+      "name_ja": "がもう",
+      "area": "Sakaide",
+      "genre_pt": "Udon (self)",
+      "price_pt": "<¥500",
+      "tabelog": {
+        "score": 3.91,
+        "reviews": 3067,
+        "url": "https://tabelog.com/en/kagawa/A3702/A370201/37000019/",
+        "awards": "Udon KAGAWA 百名店 2024; WEST 2020/22; Udon 2017–19; Tabelog Award Bronze 2017, 2021–2025"
+      },
+      "why_pt": "A loja de udon com Tabelog Award seguidamente: galpão rural, caldo de iriko limpo e macarrão macio e firme.",
+      "order_pt": "Kake 小 com algo do balcão (tempurá ou age).",
+      "pregnancy_pt": "Ok (sem ovo cru).",
+      "group_pt": "12 lugares e bancos do lado de fora: os seis comem.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Ter–sex 8h30–14h, sáb 8h30–13h; fecha domingo e segunda. Ano-Novo a confirmar.",
+      "query": "Gamo udon Sakaide",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Gamou”, abr 2017 (1 vez), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
+    },
+    {
+      "name": "Hinode Seimenjo",
+      "name_ja": "日の出製麺所",
+      "area": "Sakaide",
+      "genre_pt": "Udon (fábrica)",
+      "price_pt": "<¥500",
+      "tabelog": {
+        "score": 3.88,
+        "reviews": 2601,
+        "url": "https://tabelog.com/en/kagawa/A3702/A370201/37000016/",
+        "awards": "Udon KAGAWA 百名店 2024; WEST 2020/22; Udon 2017–19"
+      },
+      "why_pt": "Uma fábrica de verdade que só serve uma hora por dia.",
+      "order_pt": "Udon do dia.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "16 lugares: apertado, chegue cedo.",
+      "booking_pt": "Sem reserva. Só 11h30–12h30.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Hinode Seimenjo Sakaide"
+    },
+    {
+      "name": "Yamagoe Udon",
+      "name_ja": "山越うどん",
+      "area": "Ayagawa",
+      "genre_pt": "Udon (self)",
+      "price_pt": "<¥500",
+      "tabelog": {
+        "score": 3.82,
+        "reviews": 2889,
+        "url": "https://tabelog.com/en/kagawa/A3702/A370202/37000080/",
+        "awards": "Udon KAGAWA 百名店 2024 e séries anteriores"
+      },
+      "why_pt": "Famosa pelo kama-tama, com quintal para comer e espaço para o grupo.",
+      "order_pt": "Kama-tama (não para ela); kake ou kama-age para ela.",
+      "pregnancy_pt": "Ela evita o kama-tama de ovo cru.",
+      "group_pt": "90 lugares: fácil.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "9h–13h30; fecha quarta e domingo e no fim de ano/Ano-Novo.",
+      "query": "Yamagoe Udon Ayagawa"
+    },
+    {
+      "name": "Teuchi Jūdan Udon Baka Ichidai",
+      "name_ja": "手打十段 うどんバカ一代",
+      "area": "Takamatsu",
+      "genre_pt": "Udon (self)",
+      "price_pt": "<¥700",
+      "tabelog": {
+        "score": 3.79,
+        "reviews": 5474,
+        "url": "https://tabelog.com/en/kagawa/A3701/A370101/37000242/",
+        "awards": "Udon KAGAWA 百名店 2024 e séries anteriores"
+      },
+      "why_pt": "Na cidade, aberto das 6h às 18h e quase o ano inteiro: a aposta segura do Ano-Novo.",
+      "order_pt": "Kama-butter (ovo cru, manteiga e pimenta) para quem pode; kake para ela.",
+      "pregnancy_pt": "Kama-butter leva ovo cru: ela pede kake ou kama-age.",
+      "group_pt": "37 lugares: tranquilo.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "6h–18h; 31/12 6h–16h; fecha só 1/1; 2/1 10h–16h.",
+      "query": "Udon Baka Ichidai Takamatsu"
+    },
+    {
+      "name": "Ueharaya honten",
+      "name_ja": "上原屋本店",
+      "area": "Takamatsu · Ritsurin",
+      "genre_pt": "Udon (self)",
+      "price_pt": "<¥500",
+      "tabelog": {
+        "score": 3.79,
+        "reviews": 1394,
+        "url": "https://tabelog.com/en/kagawa/A3701/A370101/37000048/",
+        "awards": "Udon KAGAWA 百名店 2024 e séries anteriores"
+      },
+      "why_pt": "Self clássico ao lado do jardim Ritsurin: você mesmo escalda o macarrão e põe o caldo.",
+      "order_pt": "Kake com tempurá.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "48 lugares: tranquilo.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Seg–sáb 9h30–14h30; fecha domingo. Ano-Novo a confirmar.",
+      "query": "Ueharaya honten Ritsurin"
+    },
+    {
+      "name": "Honetsukidori Ikkaku Marugame honten",
+      "name_ja": "骨付鳥 一鶴 丸亀本店",
+      "area": "Marugame",
+      "genre_pt": "Honetsuki-dori",
+      "price_pt": "A confirmar",
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 1761,
+        "url": "https://tabelog.com/en/kagawa/A3702/A370202/37000066/",
+        "awards": "Toriryōri 百名店 2025"
+      },
+      "why_pt": "O jantar de Kagawa: coxa assada pingando gordura com alho, para comer com a mão.",
+      "order_pt": "Uma oya e uma hina para comparar; tori-meshi.",
+      "pregnancy_pt": "Ok (bem assado).",
+      "group_pt": "111 lugares: os seis juntos.",
+      "booking_pt": "Online.",
+      "dec_jan_pt": "Fecha terças. Ano-Novo a confirmar.",
+      "query": "Ikkaku Marugame honten",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve no Ikkaku 2 vezes em Kagawa (abr 2017, jun 2020), sem filial indicada (Marugame ou Takamatsu).",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        },
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Comeu na filial de Shinsaibashi (Osaka) em 2015: “the juiciest chicken in Osaka”, frango velho e novo.",
+          "url": "https://migrationology.com/ikkaku-chicken-osaka/"
+        }
+      ]
+    }
+  ],
+  "shops": [
+    {
+      "name": "Udon seco e caldo de iriko",
+      "name_ja": "讃岐うどん（乾麺）・いりこだし",
+      "what_pt": "Lembrança obrigatória: macarrão seco ou semi-fresco e caldo de iriko em garrafa.",
+      "buy_pt": "Kit de sanuki udon nas lojas da estação Takamatsu.",
+      "price_pt": "¥500–1.500",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Takamatsu Station udon souvenir"
+    },
+    {
+      "name": "Mishima Seimenjo",
+      "name_ja": "三嶋製麺所",
+      "what_pt": "Fábrica em Mannō, primeiro da lista KAGAWA 2024; Tabelog 3.77 (654), https://tabelog.com/en/kagawa/A3703/A370302/37000140/.",
+      "buy_pt": "Udon para comer ali (10 lugares) ou macarrão para levar.",
+      "dec_jan_pt": "≈9h–16h; fecha sexta. Ano-Novo a confirmar.",
+      "query": "Mishima Seimenjo Manno"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/讃岐うどん",
+    "https://award.tabelog.com/hyakumeiten/udon_kagawa"
+  ]
+}

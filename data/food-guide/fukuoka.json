@@ -1,0 +1,430 @@
+{
+  "slug": "fukuoka",
+  "name": "Fukuoka",
+  "tagline_pt": "Cidade de comerciantes que come rápido, barato e tarde: ramen de osso de porco, panela de frango e barraquinha na beira do rio.",
+  "history_pt": [
+    "Hakata é porto há mais de mil anos: o Kōrokan recebia embaixadas da China Tang, mercadores Song viviam ali no período Heian e, no século XVI, comerciantes como Shimai Sōshitsu e Kamiya Sōtan praticamente governavam a cidade. Em 1601 os Kuroda ergueram o castelo de Fukuoka do outro lado do rio: de um lado samurais, do outro mercadores. Na fusão de 1889 o nome 'Fukuoka' ganhou num empate; a estação ficou 'Hakata'. A comida segue a cabeça do mercador: rápida, barata, feita para quem trabalha.",
+    "O tonkotsu nasceu em Kurume, 40 km ao sul: em 1937 Miyamoto Tokio vendia um caldo claro de osso de porco na barraca Nankin Senryō, e em 1947, na loja Sankyū, um fogo esquecido deixou o caldo turvo e leitoso. Em Hakata, as barracas de 1946 (Akanoren, Hakuryūken) firmaram o estilo. Quando o mercado de peixe foi para Nagahama em 1955, as barracas foram junto e criaram o macarrão fininho que cozinha em segundos para o peixeiro com pressa, e o kaedama: pedir mais macarrão no mesmo caldo.",
+    "O mentaiko é coreano de origem: Kawahara Toshio, que comeu myeongran-jeot (ova de escamudo salgada) em Busan quando jovem, lançou o seu 'mentaiko' em 10/1/1949 na feira Tōka Ebisu e se recusou a patentear: 'qualquer um pode fazer, como picles'. Por isso a cidade tem dezenas de marcas. O mizutaki vem de Hayashida Heizaburō, de Nagasaki, que juntou o consommé ocidental e o caldo branco chinês aprendidos em Hong Kong e abriu o Suigetsu em 1905.",
+    "Os yatai são a alma da noite: cerca de 100 barracas em Nakasu, Tenjin e Nagahama, cerca de 40% das do Japão. Depois de décadas de regra 'uma geração só' (1994), a cidade as legalizou (2000), fixou tamanho e horário por lei (2013) e passou a escolher novos donos por concurso público (desde 2017). Regras da prefeitura: preço exposto, nada de 'preço do dia', e proibido servir comida crua."
+  ],
+  "winter_pt": "Dezembro é temporada de mizutaki e motsunabe, de ostras grelhadas nos kaki-goya (barracões de ostra) de Itoshima e de fugu. Yatai fecham com chuva e vento; poucas abrem de 31/12 a 3/1.",
+  "meibutsu": [
+    {
+      "name_pt": "Ramen tonkotsu de Hakata",
+      "name_ja": "博多ラーメン",
+      "romaji": "Hakata rāmen",
+      "what_pt": "Caldo de osso de porco, macarrão fino e reto. Escolha a firmeza: barikata (bem duro), kata, futsū. Acabou o macarrão e sobrou caldo? Peça kaedama (替え玉, ~¥150).",
+      "where_pt": "Hakata Issou (espuma), Ganso Nagahamaya (o original), Shin-Shin (família, tarde), Hakuryūken (1946).",
+      "price_pt": "¥550–1.200",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "O caldo é cozido, tudo bem. Só o ajitama (ovo marinado) tem gema mole: peça sem."
+    },
+    {
+      "name_pt": "Mizutaki (panela de frango)",
+      "name_ja": "水炊き",
+      "romaji": "mizutaki",
+      "what_pt": "Caldo branco de frango cozido por horas. Primeiro se bebe o caldo puro com sal, depois entram frango e legumes com ponzu e yuzu-koshō, e no fim zōsui (arroz no caldo).",
+      "where_pt": "Toriden ou Mizutaki Nagano, em Nakasu-Kawabata.",
+      "price_pt": "¥4.000–10.000",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Recuse sashimi ou tataki de frango de entrada. No zōsui, peça よく火を通して (bem cozido) para o ovo."
+    },
+    {
+      "name_pt": "Motsunabe",
+      "name_ja": "もつ鍋",
+      "romaji": "motsunabe",
+      "what_pt": "Panela de miúdos de boi com repolho, nirá e alho, em caldo de shōyu ou missô. Termina com champon-men no caldo.",
+      "where_pt": "Maedaya (salas para 6) ou Yamanaka.",
+      "price_pt": "¥6.000–8.000",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "A panela é ok. Evite os acompanhamentos crus (basashi, carne crua)."
+    },
+    {
+      "name_pt": "Mentaiko",
+      "name_ja": "辛子明太子",
+      "romaji": "karashi mentaiko",
+      "what_pt": "Ova de escamudo curada com pimenta, herança coreana. Vai no arroz, no onigiri, no espaguete e na tamagoyaki.",
+      "where_pt": "Fukuya (a original), Yanagibashi, depachika da estação Hakata.",
+      "price_pt": "¥1.000–3.000 a caixa",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "É ova crua curada: fica a critério dela. Yaki-mentaiko (grelhado) e mentaiko cozido no prato são tranquilos."
+    },
+    {
+      "name_pt": "Gomasaba",
+      "name_ja": "ごまさば",
+      "romaji": "gomasaba",
+      "what_pt": "Cavala crua em molho de gergelim e shōyu, sobre arroz ou com chá (ochazuke).",
+      "where_pt": "Hakata Gomasaba-ya (Akasaka).",
+      "price_pt": "¥1.100–1.600",
+      "must": false,
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Cavala crua é o peixe cru de maior risco (anisakis). Ela pede yaki-saba (grelhada) ou saba no misoni, que a mesma casa serve."
+    },
+    {
+      "name_pt": "Udon macio de Hakata",
+      "name_ja": "博多うどん",
+      "romaji": "Hakata udon",
+      "what_pt": "O oposto do sanuki: macarrão mole, quase fofo, em dashi delicado, com gobo-ten (tempurá de bardana) por cima. Almoço leve perfeito para a grávida e para os pais.",
+      "where_pt": "Hagakure Udon, Karo no Uron.",
+      "price_pt": "¥520–1.000",
+      "must": true
+    },
+    {
+      "name_pt": "Yatai (barraquinhas de rua)",
+      "name_ja": "屋台",
+      "romaji": "yatai",
+      "what_pt": "Balcão de 8–10 lugares na calçada: oden, yakitori, ramen, yaki-ramen, gyōza. Sente, peça uma cerveja e dois pratos, e passe para a próxima.",
+      "where_pt": "Nakasu (beira do rio), Tenjin, Nagahama; Suzaki Yatai Kajishika.",
+      "price_pt": "¥1.500–4.000 por pessoa",
+      "must": true,
+      "pregnancy_pt": "Comida crua é proibida nos yatai. Só confira se o tsukune vem sem gema crua."
+    },
+    {
+      "name_pt": "Champon de Fukuoka",
+      "name_ja": "ちゃんぽん",
+      "romaji": "chanpon",
+      "what_pt": "O primo de Nagasaki, aqui em caldo de porco cozido por meio dia, cheio de legumes.",
+      "where_pt": "Ide Champon (Mark Wiens filmou).",
+      "price_pt": "≈¥800–1.000",
+      "must": false
+    }
+  ],
+  "areas": [
+    {
+      "name": "Yatai de Nakasu e Tenjin",
+      "name_ja": "中洲・天神の屋台",
+      "kind": "rua",
+      "story_pt": "Cerca de 100 barracas montam ao entardecer e desmontam de madrugada (lei de 2013: 17h–4h). A beira do rio em Nakasu é a mais fotogênica e mais turística; Tenjin e Nagahama são mais de bairro. Mark Wiens fez um tour aqui em 2023: Kokinchan (o yaki-ramen original), Mamichan (gyōza), Kiryū (ramen) e Kawachan (yakitori).",
+      "eat_pt": [
+        "Yaki-ramen na Kokinchan",
+        "Oden e yakitori",
+        "Gyōza de uma mordida",
+        "Suzaki Yatai Kajishika (百名店 Izakaya 2026), longe do circuito turístico"
+      ],
+      "tips_pt": "Pergunte antes de sentar se há taxa de assento ou otōshi. Seis não cabem juntos: dividam 3+3 em barracas vizinhas. A Nakasu Yatai Kibun (百名店) tem relato de não aceitar estrangeiros, então nem tente. Chuva e vento fecham tudo.",
+      "dec_jan_pt": "Sem calendário oficial: cada barraca decide. Muitas até ~30/12; poucas entre 31/12 e 3/1.",
+      "query": "Nakasu yatai Fukuoka"
+    },
+    {
+      "name": "Nagahama",
+      "name_ja": "長浜",
+      "kind": "bairro",
+      "story_pt": "O bairro do mercado de peixe, onde o ramen de mercado de 1955 criou o macarrão fino e o kaedama. O Ganso Nagahamaya ainda abre às 6h para quem sai do mercado.",
+      "eat_pt": [
+        "Ramen 'beta-nama' no Ganso Nagahamaya",
+        "Gomasaba em Akasaka, ali perto (não para ela)"
+      ],
+      "tips_pt": "Ticket na máquina, só dinheiro. Mesas para 6–8.",
+      "dec_jan_pt": "Ganso Nagahamaya fechado de 31/12 a 5/1.",
+      "query": "Ganso Nagahamaya Fukuoka"
+    },
+    {
+      "name": "Yanagibashi Rengō Ichiba",
+      "name_ja": "柳橋連合市場",
+      "kind": "mercado",
+      "story_pt": "O 'cozinha de Hakata': cerca de 100 m de bancas de peixe, kamaboko e mentaiko onde os restaurantes compram.",
+      "eat_pt": [
+        "Mentaiko para levar",
+        "Kamaboko e frituras de peixe",
+        "Café da manhã de peixe nas lanchonetes do mercado"
+      ],
+      "tips_pt": "Melhor de manhã, das 8h às 11h. Fecha domingos e feriados.",
+      "dec_jan_pt": "Lotado de 28 a 30/12 com as compras de Ano-Novo. Datas de recesso a confirmar (092-761-5717).",
+      "query": "Yanagibashi Rengo Ichiba"
+    },
+    {
+      "name": "Estação Hakata",
+      "name_ja": "博多駅",
+      "kind": "estação",
+      "story_pt": "A estação concentra ramen, depachika e omiyage. Hakata Issou e Hakata Ikkousha estão a poucos minutos a pé.",
+      "eat_pt": [
+        "Hakata Issou",
+        "Mentaiko e mizutaki em lata no depachika",
+        "Hagakure Udon"
+      ],
+      "tips_pt": "Bom para encaixar um ramen no dia de trem.",
+      "dec_jan_pt": "Lojas da estação funcionam no Ano-Novo com horário reduzido (a confirmar).",
+      "query": "Hakata Station"
+    }
+  ],
+  "places": [
+    {
+      "name": "Hakata Issou, Hakata-eki Higashi honten",
+      "name_ja": "博多一双 博多駅東本店",
+      "area": "Fukuoka · Hakata-eki Higashi",
+      "genre_pt": "Ramen tonkotsu",
+      "price_pt": "¥1.000–1.999",
+      "tabelog": {
+        "score": 3.72,
+        "reviews": 5763,
+        "url": "https://tabelog.com/en/fukuoka/A4001/A400101/40032701/",
+        "awards": "Ramen WEST 百名店 2020–2025"
+      },
+      "why_pt": "O 'cappuccino de tonkotsu': caldo emulsionado até virar espuma, de um cozinheiro formado no Ikkousha. Se for um ramen só em Fukuoka, é este.",
+      "order_pt": "Ramen com kata; kaedama no fim.",
+      "pregnancy_pt": "Ok. Só sem o ajitama (gema mole).",
+      "group_pt": "21 lugares: dividam 3+3 ou 2+2+2 conforme vagar.",
+      "booking_pt": "Sem reserva. Fila de 20–45 min no pico.",
+      "dec_jan_pt": "11h–24h, folgas irregulares. Ano-Novo a confirmar.",
+      "query": "Hakata Issou Hakata Station East"
+    },
+    {
+      "name": "Ganso Nagahamaya",
+      "name_ja": "元祖長浜屋",
+      "area": "Fukuoka · Nagahama",
+      "genre_pt": "Ramen de Nagahama",
+      "price_pt": "¥550",
+      "tabelog": {
+        "score": 3.63,
+        "reviews": 2915,
+        "url": "https://tabelog.com/en/fukuoka/A4001/A400104/40006844/"
+      },
+      "why_pt": "Uma aula de história numa tigela: caldo ralo e porcino, tudo é o macarrão e o ritual. O Pedro precisa provar, mas talvez não ame. Atenção: o 元祖ラーメン長浜家 é outra loja.",
+      "order_pt": "Um item só. Diga 'beta-nama' para gordura extra e macarrão quase cru. Kaedama.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "32 lugares com mesas para 6–8: os seis sentam juntos.",
+      "booking_pt": "Sem reserva, ticket na máquina, só dinheiro.",
+      "dec_jan_pt": "6h–1h45. Fechado de 31/12 a 5/1.",
+      "query": "Ganso Nagahamaya"
+    },
+    {
+      "name": "Hakuryūken",
+      "name_ja": "博龍軒",
+      "area": "Fukuoka · Maidashi (Kyūdai-byōin-mae)",
+      "genre_pt": "Ramen de Hakata (1946)",
+      "price_pt": "≈¥1.000",
+      "tabelog": {
+        "score": 3.56,
+        "reviews": 306,
+        "url": "https://tabelog.com/en/fukuoka/A4001/A400201/40002391/"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Mark Wiens fez aqui o 'dia do macarrão' em Fukuoka, junto com o udon do Shungetsuan e o Ide Champon.",
+          "url": "https://www.youtube.com/watch?v=2hzdBm0saZU"
+        }
+      ],
+      "why_pt": "Uma das barracas fundadoras de 1946, com macarrão chato e fino feito na casa e caldo turvo, acastanhado, mais suave que o branco leitoso de hoje.",
+      "order_pt": "Ramen.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "11 lugares no balcão: dividam.",
+      "booking_pt": "Sem reserva. Fecha quando acaba.",
+      "dec_jan_pt": "10h30–15h30, fecha segunda e quinta. Ano-Novo a confirmar.",
+      "query": "Hakuryuken Maidashi Fukuoka"
+    },
+    {
+      "name": "Mizutaki Nagano",
+      "name_ja": "水たき 長野",
+      "area": "Fukuoka · Nakasu-Kawabata",
+      "genre_pt": "Mizutaki",
+      "price_pt": "≈¥4.000–7.999",
+      "tabelog": {
+        "score": 3.61,
+        "reviews": 1678,
+        "url": "https://tabelog.com/en/fukuoka/A4001/A400102/40000010/"
+      },
+      "why_pt": "Quase um século de mizutaki à moda antiga e com bom preço. É o prato que o povo de Fukuoka leva a família para comer, e uma panela para 6 é exatamente este grupo. Para algo mais polido, Toriden (3.66, https://tabelog.com/en/fukuoka/A4001/A400102/40037654/).",
+      "order_pt": "Mizutaki completo com zōsui no final.",
+      "pregnancy_pt": "Panela ok depois de ferver. Sem sashimi de frango; zōsui bem cozido.",
+      "group_pt": "Salas privadas para 6 (taxa de 10%).",
+      "booking_pt": "Online.",
+      "dec_jan_pt": "Fecha domingos. Ano-Novo a confirmar.",
+      "query": "Mizutaki Nagano Fukuoka"
+    },
+    {
+      "name": "Hakata Motsunabe Maedaya Sō-honten",
+      "name_ja": "博多もつ鍋 前田屋 総本店",
+      "area": "Fukuoka · Hakata",
+      "genre_pt": "Motsunabe",
+      "price_pt": "Jantar ≈¥6.000–7.999",
+      "tabelog": {
+        "score": 3.63,
+        "reviews": 1403,
+        "url": "https://tabelog.com/en/fukuoka/A4001/A400101/40049686/"
+      },
+      "why_pt": "Motsunabe benfeito numa sala fechada para seis, a noite mais fácil do grupo em Fukuoka.",
+      "order_pt": "Motsunabe de shōyu ou missô; champon-men no final.",
+      "pregnancy_pt": "Panela ok. Evite os 'sashi' crus (cavalo, boi).",
+      "group_pt": "Salas para 4/6/8.",
+      "booking_pt": "Online, turno de 2 h.",
+      "dec_jan_pt": "Almoço diário de 26 a 30/12. Ano-Novo a confirmar.",
+      "query": "Maedaya Motsunabe Hakata"
+    },
+    {
+      "name": "Hagakure Udon",
+      "name_ja": "葉隠うどん",
+      "area": "Fukuoka · Hakata",
+      "genre_pt": "Udon de Hakata",
+      "price_pt": "<¥1.000",
+      "tabelog": {
+        "score": 3.74,
+        "reviews": 2088,
+        "url": "https://tabelog.com/en/fukuoka/A4001/A400101/40004342/",
+        "awards": "Udon 百名店 2018, 2019; WEST 2020, 2022, 2024"
+      },
+      "why_pt": "Udon macio em dashi delicado: o contrário do sanuki, e o almoço ideal para a grávida e para os pais. Alternativa: Karo no Uron (3.68, sem fotos, fecha terça).",
+      "order_pt": "Gobo-ten udon.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "21 lugares: dividam.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Fecha domingos, feriados e no Ano-Novo.",
+      "query": "Hagakure Udon Hakata"
+    },
+    {
+      "name": "Tenzushi Kyōmachi",
+      "name_ja": "天寿し 京町店",
+      "area": "Kitakyūshū · Kokura",
+      "genre_pt": "Sushi",
+      "tabelog": {
+        "score": 4.55,
+        "reviews": 1031,
+        "url": "https://tabelog.com/en/fukuoka/A4004/A400401/40000721/",
+        "awards": "Award Gold (7 edições, segundo checagem de 18/10/2026; outro levantamento lista Silver 2026); Sushi WEST 百名店 2025"
+      },
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 5 vezes (set 2015 – abr 2020), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note_pt": "Na lista de sushi “do nível que buscamos” dos tours.",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        }
+      ],
+      "why_pt": "O sushi que faz gente atravessar o Japão até Kokura; o Jason Wang voltou cinco vezes.",
+      "pregnancy_pt": "Quase tudo cru: avise ao reservar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Tenzushi Kokura"
+    },
+    {
+      "name": "Sushi Sakai",
+      "name_ja": "鮨 さかい",
+      "area": "Fukuoka · Nakasu",
+      "genre_pt": "Sushi",
+      "tabelog": {
+        "score": 4.54,
+        "reviews": 799,
+        "url": "https://tabelog.com/en/fukuoka/A4001/A400103/40034544/",
+        "awards": "Award Gold ×5, Silver ×3"
+      },
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 2 vezes (abr 2016 e abr 2017), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "O sushi mais bem avaliado dentro de Fukuoka.",
+      "pregnancy_pt": "Quase tudo cru: avise ao reservar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Sushi Sakai Nakasu"
+    },
+    {
+      "name": "Sushi Gyoten",
+      "name_ja": "鮨 行天",
+      "area": "Fukuoka",
+      "genre_pt": "Sushi",
+      "tabelog": {
+        "score": 4.4,
+        "reviews": 302,
+        "url": "https://tabelog.com/en/fukuoka/A4001/A400104/40032025/",
+        "awards": "Award Bronze 2026"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note_pt": "Postou daqui em out 2015 (post embutido no Tokyo Table Trip).",
+          "url": "https://tokyotabletrip.com/en/353"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “GyoTen”, set 2015 (1 vez), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "Sushi jovem de Fukuoka, do tipo que a Meg diz valer a viagem para fora de Tóquio.",
+      "pregnancy_pt": "Quase tudo cru: avise ao reservar.",
+      "group_pt": "10 lugares no balcão.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Sushi Gyoten Fukuoka"
+    },
+    {
+      "name": "Ganso Motoyoshiya",
+      "name_ja": "元祖本吉屋",
+      "area": "Yanagawa (bate-volta de Fukuoka)",
+      "genre_pt": "Unagi seiro-mushi",
+      "tabelog": {
+        "score": 3.69,
+        "url": "https://tabelog.com/en/fukuoka/A4008/A400806/40001048/"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Desde 1681; o set de seiro-mushi com três enguias foi “outstanding” (2023, viagem organizada pela Visit Kyushu).",
+          "url": "https://www.youtube.com/watch?v=PMzfTPgM5pg"
+        }
+      ],
+      "why_pt": "Enguia no vapor sobre arroz, a especialidade de Yanagawa, na casa mais antiga.",
+      "order_pt": "Seiro-mushi.",
+      "pregnancy_pt": "Enguia cozida: liberada.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Ganso Motoyoshiya Yanagawa"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Fukuya",
+      "name_ja": "ふくや",
+      "what_pt": "A casa de Kawahara Toshio, que inventou o mentaiko japonês em 1949.",
+      "buy_pt": "Mentaiko em caixa; versões em tubo e furikake para viagem.",
+      "price_pt": "≈¥1.000–3.000",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Fukuya Nakasu honten"
+    },
+    {
+      "name": "Yanagibashi Rengō Ichiba",
+      "name_ja": "柳橋連合市場",
+      "what_pt": "O mercado dos cozinheiros de Hakata.",
+      "buy_pt": "Mentaiko, kamaboko, peixe seco.",
+      "dec_jan_pt": "Lotado de 28 a 30/12. Recesso a confirmar.",
+      "query": "Yanagibashi Rengo Ichiba"
+    },
+    {
+      "name": "Jacques Ōhori",
+      "name_ja": "ジャック 大濠店",
+      "what_pt": "Pâtisserie no 百名店 Sweets WEST 2026.",
+      "buy_pt": "Bolos franceses para a sobremesa no hotel.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Jacques Ohori Fukuoka"
+    },
+    {
+      "name": "Chocolate Shop honten",
+      "name_ja": "チョコレートショップ 本店",
+      "what_pt": "Chocolateria clássica de Hakata, 百名店 Sweets WEST 2026.",
+      "buy_pt": "Bolo de chocolate e caixas para presente.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Chocolate Shop Hakata honten"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/博多ラーメン",
+    "https://ja.wikipedia.org/wiki/辛子明太子",
+    "https://ja.wikipedia.org/wiki/水炊き",
+    "https://ja.wikipedia.org/wiki/屋台",
+    "https://ja.wikipedia.org/wiki/博多",
+    "https://www.city.fukuoka.lg.jp/keizai/yatai/charm/yataiQA.html",
+    "https://award.tabelog.com/hyakumeiten/ramen_west/2025",
+    "https://tabelog.com/en/fukuoka/A4001/A400201/40002391/",
+    "https://www.youtube.com/watch?v=0II-qU0ADr4",
+    "https://www.youtube.com/watch?v=2hzdBm0saZU",
+    "https://www.youtube.com/watch?v=eXjxldwpL5E"
+  ]
+}

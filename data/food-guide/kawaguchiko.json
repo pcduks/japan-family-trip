@@ -1,0 +1,218 @@
+{
+  "slug": "kawaguchiko",
+  "name": "Lake Kawaguchiko",
+  "tagline_pt": "Terra de Kai ao pé do Fuji: macarrão grosso no missô e udon duro de cidade têxtil.",
+  "history_pt": [
+    "Kawaguchiko fica na antiga província de Kai (Yamanashi), terra de Takeda Shingen. Arroz rendia mal; e quando a criação do bicho-da-seda transformou arrozais em amoreiras, o trigo plantado no inverno virou a base. Daí vem o hōtō: macarrão grosso e chato, sem sal na massa, que vai cru direto para a panela de missô e engrossa o caldo com a abóbora que se desmancha.",
+    "Conta-se que Shingen cortava os ingredientes com a espada, mas a Wikipedia japonesa trata isso como folclore turístico do pós-guerra. O nome vem provavelmente de 餺飥 (hakutaku), um prato de massa citado em dicionários da era Heian.",
+    "Em Fujiyoshida, ao lado, a comida do dia é o Yoshida udon. Na cidade da tecelagem de seda, as mulheres teciam e os homens cozinhavam um udon duro e saciante para elas comerem sem parar. Também alimentava os peregrinos do Fuji. Hoje são mais de 60 casas, quase todas só no almoço, muitas em casas de família."
+  ],
+  "winter_pt": "Inverno é a estação do hōtō com abóbora, inhame e cogumelos. Dezembro e janeiro trazem os dias mais limpos para ver o Fuji.",
+  "meibutsu": [
+    {
+      "name_pt": "Hōtō",
+      "name_ja": "ほうとう",
+      "romaji": "hōtō",
+      "what_pt": "Macarrão grosso cozido na panela de ferro em caldo de missô com abóbora, legumes e cogumelos.",
+      "where_pt": "Kiji-tei; Kosaku (onde Mark Wiens comeu).",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Yoshida udon",
+      "name_ja": "吉田のうどん",
+      "romaji": "Yoshida no udon",
+      "what_pt": "Udon muito firme, com repolho cozido, aburaage e carne (tradicionalmente de cavalo, cozida), temperado com suridane, pasta de pimenta e gergelim.",
+      "where_pt": "Miura Udon, 麺許皆伝, 桜井うどん em Fujiyoshida.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Faisão",
+      "name_ja": "きじ料理",
+      "romaji": "kiji ryōri",
+      "what_pt": "Faisão em hōtō e outros pratos, especialidade de uma casa de mais de 50 anos.",
+      "where_pt": "Kiji-tei.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Shingen-mochi",
+      "name_ja": "信玄餅",
+      "romaji": "Shingen-mochi",
+      "what_pt": "Bolinhos de mochi com kinako e melado preto, a lembrança clássica de Yamanashi.",
+      "where_pt": "Lojas de lembranças e estações.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Vinho de Kōshū",
+      "name_ja": "甲州ワイン",
+      "romaji": "Kōshū wine",
+      "what_pt": "Yamanashi é a capital do vinho japonês, com a uva branca Kōshū.",
+      "where_pt": "Lojas de bebidas.",
+      "must": false,
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Álcool. Ela pula; suco de uva local no lugar."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Arredores da estação Kawaguchiko",
+      "name_ja": "河口湖駅周辺",
+      "kind": "estação",
+      "story_pt": "Onde ficam os grandes salões de hōtō e a Kiji-tei.",
+      "eat_pt": [
+        "Hōtō"
+      ],
+      "tips_pt": "Os salões de hōtō (Fudō e outros) ficam em 3,41–3,49 no Tabelog: são fáceis, não excelentes.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Kawaguchiko Station"
+    },
+    {
+      "name": "Centro de Fujiyoshida",
+      "name_ja": "富士吉田",
+      "kind": "bairro",
+      "story_pt": "Antiga cidade da seda e dos peregrinos, com dezenas de casas de udon.",
+      "eat_pt": [
+        "Yoshida udon"
+      ],
+      "tips_pt": "Só almoço; muitas fecham aos domingos.",
+      "dec_jan_pt": "Muitas fecham no Ano-Novo; a confirmar casa a casa.",
+      "query": "Fujiyoshida udon"
+    }
+  ],
+  "places": [
+    {
+      "name": "Kiji-tei",
+      "name_ja": "きじ亭",
+      "area": "Kawaguchiko · 10 min a pé da estação",
+      "genre_pt": "Faisão, hōtō",
+      "price_pt": "¥2–4k",
+      "tabelog": {
+        "score": 3.67,
+        "reviews": 208,
+        "url": "https://tabelog.com/yamanashi/A1903/A190303/19000366/",
+        "awards": "nenhum"
+      },
+      "why_pt": "O matome de hōtō de Yamanashi no Tabelog põe esta casa de faisão no topo, acima dos salões turísticos.",
+      "order_pt": "Hōtō de faisão.",
+      "pregnancy_pt": "Tudo cozido. Liberado.",
+      "group_pt": "Sala privativa para 10–20; 6 cabem se reservar.",
+      "booking_pt": "On-line, aceita das 9:00 às 10:00 nos dias úteis. Só 5 grupos por dia.",
+      "dec_jan_pt": "Só almoço; fecha terça e quarta. Ano-Novo a confirmar.",
+      "query": "Kiji-tei Kawaguchiko"
+    },
+    {
+      "name": "Kosaku",
+      "name_ja": "小作",
+      "area": "Kawaguchiko",
+      "genre_pt": "Hōtō",
+      "tabelog": {
+        "score": 3.49,
+        "url": "https://tabelog.com/en/yamanashi/A1903/A190303/19000046/"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Comeu hōtō aqui num vídeo de bate-volta pelas montanhas de Kantō.",
+          "url": "https://www.youtube.com/watch?v=bgzyczSWOu8"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Koshu Houtou Kosaku”, set 2016 (1 vez), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why_pt": "Um dos grandes salões de hōtō, abaixo de 3,5, mas fácil para grupo.",
+      "order_pt": "Hōtō de abóbora.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "Salão grande (a confirmar).",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Kosaku hoto Kawaguchiko"
+    },
+    {
+      "name": "Miura Udon",
+      "name_ja": "みうらうどん",
+      "area": "Fujiyoshida",
+      "genre_pt": "Yoshida udon",
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 1651,
+        "url": "https://tabelog.com/yamanashi/A1903/A190301/19000359/",
+        "awards": "うどん 百名店 2020, 2022, 2024"
+      },
+      "why_pt": "O que a gente do Fuji come no almoço, de verdade.",
+      "order_pt": "Udon quente com repolho e carne, suridane.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "45 lugares com mesas de 6; cabem.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "10:00–14:00; fecha às quartas. Ano-Novo a confirmar.",
+      "query": "Miura Udon Fujiyoshida"
+    },
+    {
+      "name": "Menkyo Kaiden",
+      "name_ja": "麺許皆伝",
+      "area": "Fujiyoshida",
+      "genre_pt": "Yoshida udon",
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 824,
+        "url": "https://tabelog.com/yamanashi/A1903/A190301/19000136/",
+        "awards": "うどん EAST 百名店 2024"
+      },
+      "why_pt": "Segunda opção de Yoshida udon do 百名店.",
+      "order_pt": "Udon da casa.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Menkyo Kaiden Fujiyoshida"
+    },
+    {
+      "name": "Sakurai Udon",
+      "name_ja": "桜井うどん",
+      "area": "Fujiyoshida",
+      "genre_pt": "Yoshida udon",
+      "tabelog": {
+        "score": 3.62,
+        "reviews": 554,
+        "url": "https://tabelog.com/yamanashi/A1903/A190301/19000357/",
+        "awards": "うどん EAST 百名店 2024"
+      },
+      "why_pt": "Terceira do 百名店, estilo casa de família.",
+      "order_pt": "Udon quente.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Sakurai Udon Fujiyoshida"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Shingen-mochi",
+      "name_ja": "信玄餅",
+      "what_pt": "Vendido em lojas de lembranças e estações de Yamanashi.",
+      "buy_pt": "Caixinhas para presente.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Shingen mochi"
+    },
+    {
+      "name": "Suridane",
+      "name_ja": "すりだね",
+      "what_pt": "A pasta de pimenta das casas de Yoshida udon; algumas vendem em pote.",
+      "buy_pt": "Um pote para casa.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "suridane Yoshida udon"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "docs/research/food/11-critics-international.md",
+    "https://www.youtube.com/watch?v=bgzyczSWOu8",
+    "https://ja.wikipedia.org/wiki/ほうとう",
+    "https://ja.wikipedia.org/wiki/吉田のうどん"
+  ]
+}

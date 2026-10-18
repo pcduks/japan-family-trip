@@ -1,0 +1,608 @@
+{
+  "slug": "konbini",
+  "title_pt": "Konbini",
+  "intro_pt": [
+    "Konbini (コンビニ) é a loja de conveniência japonesa, mas esqueça a do posto de gasolina: tem comida fresca entregue duas a três vezes por dia, café moído na hora, banheiro, caixa eletrônico, impressora, correio e venda de ingressos. Abre 24 horas, quase sempre também no 1º de janeiro. Para seis pessoas com uma grávida, é o seu café da manhã barato, o lanche no trem e o plano B do Ano-Novo.",
+    "As três grandes dividem o país: 7-Eleven (セブン-イレブン), FamilyMart (ファミリーマート, a \"Famima\") e Lawson (ローソン). Os japoneses têm time: numa pesquisa da LINE Research de maio de 2025 (5.255 pessoas), 41,6% escolheram a 7-Eleven como favorita, 23,2% a Lawson e 21,5% a FamilyMart. Entre adolescentes, a Famima vence.",
+    "Regra de bolso: onigiri, bentō e comida \"de verdade\" na 7-Eleven; frango frito e sanduíche na Famima; doce e onigiri premium na Lawson. Mas vale entrar em todas: os lançamentos da semana são metade da graça."
+  ],
+  "sections": [
+    {
+      "title_pt": "As redes e a fama de cada uma",
+      "body_pt": "Como os japoneses enxergam cada rede, segundo pesquisas e a imprensa de varejo de lá. Os preços sobem quase todo ano, então use os valores como referência.",
+      "items": [
+        {
+          "name": "7-Eleven",
+          "name_ja": "セブン-イレブン",
+          "what_pt": "A maior e a favorita no geral (41,6% na LINE Research 2025). Fama de ter os melhores onigiri, bentō e sōzai (pratos prontos), e a linha 7 Premium. É a mais barata das três nos onigiri básicos. O programa 「マツコの知らない世界」 fez um episódio só sobre ela, e o onigiri de beni-shake grelhado no carvão que apareceu lá virou estrela.",
+          "where_pt": "Em todo lugar; costuma ser a mais perto da estação.",
+          "must": true,
+          "tip_pt": "É também o melhor caixa eletrônico para cartão estrangeiro (Seven Bank)."
+        },
+        {
+          "name": "FamilyMart",
+          "name_ja": "ファミリーマート",
+          "what_pt": "Famosa pelo FamiChiki (frango frito do balcão), pelos sanduíches e pelos bentō com mistura caprichada (karaage). Favorita dos adolescentes nas pesquisas. Investiu em máquinas novas de onigiri e, desde jan/2026, vende onigiri congelado.",
+          "where_pt": "Todo o Japão.",
+          "must": true
+        },
+        {
+          "name": "Lawson",
+          "name_ja": "ローソン",
+          "what_pt": "Líder em doces: na pesquisa MyVoice de maio/2025, cerca de 35% de quem compra doce de konbini prefere a Lawson (a linha Uchi Café). Tem o Karaage-kun desde 1986 e o onigiri premium 「金しゃり」. Num teste de oyakodon da Business Journal, ganhou no sabor, mas era a mais cara.",
+          "where_pt": "Todo o Japão.",
+          "must": true,
+          "tip_pt": "Ainda é a rede que mais mantém oden no balcão no inverno."
+        },
+        {
+          "name": "Natural Lawson",
+          "name_ja": "ナチュラルローソン",
+          "what_pt": "A Lawson \"saudável\", com loja roxa: granola, saladas, pão integral, snacks sem aditivos. Boa para a grávida e para os pais. Tem menos frituras e não vende oden.",
+          "where_pt": "Principalmente em Tóquio (escritórios e bairros como Ebisu, Shibuya, Akasaka)."
+        },
+        {
+          "name": "Ministop",
+          "name_ja": "ミニストップ",
+          "what_pt": "Rede menor (do grupo Aeon), conhecida pelo soft-serve feito na hora no balcão e pelos sabores sazonais. Na pesquisa de onigiri de 2025 foi a mais barata das quatro.",
+          "where_pt": "Mais comum em Kantō e Kyūshū.",
+          "price_pt": "Soft-serve: a confirmar",
+          "tip_pt": "Se passar por uma, peça a ソフトクリーム バニラ."
+        },
+        {
+          "name": "Seicomart (Secoma)",
+          "name_ja": "セイコーマート",
+          "what_pt": "Rede de Hokkaidō, primeira em satisfação do cliente (JCSI) quase todo ano desde 2011. A cozinha da loja (Hot Chef) faz katsudon e batata frita na hora. Não deve cruzar o roteiro (tem cerca de 1.090 lojas em Hokkaidō e 102 em Ibaraki e Saitama), mas, se aparecer uma, entre.",
+          "where_pt": "Hokkaidō; algumas em Ibaraki e Saitama."
+        }
+      ]
+    },
+    {
+      "title_pt": "Onigiri: como abrir e quais pegar",
+      "body_pt": "Para abrir o onigiri de alga separada: puxe a fita do meio (①) para baixo e em volta, depois puxe o plástico do lado esquerdo (②) e o do direito (③). A alga fica crocante e por fora. Na pesquisa da Associação do Onigiri (おにぎり協会), 「おにぎり調査2025」, a tuna-mayo foi a mais vendida nas quatro redes, seguida dos clássicos de salmão e kombu.",
+      "items": [
+        {
+          "name": "Tuna-mayo",
+          "name_ja": "ツナマヨネーズ",
+          "what_pt": "O nº 1 em todas as redes. Atum em lata com maionese. Atum em lata é cozido, então está liberado.",
+          "where_pt": "Todas",
+          "price_pt": "¥178 (7-Eleven), ¥181 (Lawson), ¥198 (FamilyMart), preços de 2025",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Salmão grelhado",
+          "name_ja": "鮭（焼鮭・紅しゃけ）",
+          "what_pt": "O favorito afetivo dos japoneses. É salmão salgado e grelhado, desfiado. Na 7-Eleven, procure o de beni-shake grelhado no carvão.",
+          "where_pt": "Todas",
+          "price_pt": "¥213 (7-Eleven), ¥221 (Lawson), ¥235 (FamilyMart), segundo levantamento do início de 2026 em Kantō",
+          "must": true,
+          "pregnancy": "ok",
+          "tip_pt": "Salmão de onigiri é grelhado. Não confundir com o defumado (スモークサーモン) dos sanduíches."
+        },
+        {
+          "name": "Kombu",
+          "name_ja": "昆布",
+          "what_pt": "Alga kombu cozida no shōyu com açúcar (tsukudani). Doce-salgado, clássico de avô.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Okaka",
+          "name_ja": "おかか",
+          "what_pt": "Lascas de bonito seco (katsuobushi) com shōyu. Simples e viciante.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Umeboshi",
+          "name_ja": "梅",
+          "what_pt": "Ameixa em conserva, azedíssima. Divide opiniões, mas é o clássico das marmitas. Bom para enjoo.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Mentaiko / tarako",
+          "name_ja": "明太子・たらこ",
+          "what_pt": "Ovas de bacalhau curadas (o mentaiko é apimentado). Na maioria das vezes vêm cruas (生), mas há versões grelhadas (焼きたらこ). Muito salgadas.",
+          "where_pt": "Todas",
+          "pregnancy": "evitar",
+          "tip_pt": "Ovas cruas trazem risco de Listeria. Ela só deve pegar as escritas 焼き (grelhadas). Variações como ツナ明太マヨ também levam ova; leia o rótulo."
+        },
+        {
+          "name": "Ikura",
+          "name_ja": "いくら",
+          "what_pt": "Ovas de salmão marinadas, cruas. Aparecem nas linhas premium.",
+          "where_pt": "Todas, em linhas premium",
+          "pregnancy": "cuidado",
+          "tip_pt": "Risco baixo, mas real, de Listeria. Melhor trocar pelo de salmão grelhado."
+        },
+        {
+          "name": "Onigiri premium da Lawson",
+          "name_ja": "金しゃりおにぎり",
+          "what_pt": "Linha mais cara da Lawson, com arroz mais solto e recheio farto. Boa para comparar com o básico.",
+          "where_pt": "Lawson",
+          "price_pt": "a confirmar"
+        }
+      ]
+    },
+    {
+      "title_pt": "Sanduíches: o culto do tamago sando",
+      "body_pt": "O sanduíche de ovo de konbini (たまごサンド) virou peregrinação: pão de forma branquíssimo e macio, ovo cozido picado com maionese japonesa. Kenji López-Alt fez um teste cego entre as três redes (vídeo de 19/08/2026). O ovo é cozido, então está liberado na gravidez.",
+      "items": [
+        {
+          "name": "Tamago sando",
+          "name_ja": "たまごサンド",
+          "what_pt": "Os japoneses brigam entre a da 7-Eleven (mais ovo picado) e a da Famima/Lawson (mais cremosa). Compre as três e vote em família.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Mix sando / katsu sando",
+          "name_ja": "ミックスサンド・カツサンド",
+          "what_pt": "Presunto e ovo, ou tonkatsu com molho. O katsu é cozido.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Fruit sando",
+          "name_ja": "フルーツサンド",
+          "what_pt": "Creme chantilly com morango, kiwi ou tangerina. É sobremesa, mas o japonês come no café da manhã.",
+          "where_pt": "Todas, conforme a estação",
+          "price_pt": "a confirmar"
+        },
+        {
+          "name": "Sanduíche com salmão defumado ou queijo cru",
+          "name_ja": "スモークサーモン・カマンベール",
+          "what_pt": "Aparece em wraps e baguetes \"gourmet\".",
+          "where_pt": "Todas",
+          "pregnancy": "evitar",
+          "tip_pt": "Salmão defumado a frio e queijo natural mole (camembert, brie) são do grupo de risco de Listeria. Pegue o de ovo ou o de katsu."
+        }
+      ]
+    },
+    {
+      "title_pt": "Balcão quente: frango frito e vapor",
+      "body_pt": "Perto do caixa ficam a estufa de frituras (ホットスナック) e a de vapor (中華まん). Aponte e diga o nome, ou o número da etiqueta. No inverno, nikuman é o lanche oficial de quem sai do trem no frio.",
+      "items": [
+        {
+          "name": "FamiChiki",
+          "name_ja": "ファミチキ",
+          "what_pt": "Coxa de frango desossada, empanada e suculenta, num saquinho que já serve de embalagem. É o ícone da Famima. Também há as versões レッド (apimentada) e pizza.",
+          "where_pt": "FamilyMart",
+          "price_pt": "¥248 (site oficial, out/2026)",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Karaage-kun",
+          "name_ja": "からあげクン",
+          "what_pt": "Cinco bolinhas de karaage numa caixinha com mascote. Vende desde 1986. A レギュラー (normal) é a clássica, e sempre há um sabor do mês.",
+          "where_pt": "Lawson",
+          "price_pt": "a confirmar (era ¥238 desde 2022)",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Nikuman",
+          "name_ja": "肉まん",
+          "what_pt": "Pão chinês no vapor recheado de carne de porco. Fofo e quente, perfeito para segurar no frio.",
+          "where_pt": "Todas (out–mar)",
+          "price_pt": "7-Eleven: ¥168 (ごろっと肉まん) e ¥251 (大入り豚まん), site oficial, out/2026",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Anman",
+          "name_ja": "あんまん",
+          "what_pt": "A versão doce, com pasta de feijão azuki (a da 7-Eleven tem gergelim).",
+          "where_pt": "Todas",
+          "price_pt": "7-Eleven: ¥161 (site oficial, out/2026)",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Pizzaman",
+          "name_ja": "ピザまん",
+          "what_pt": "Recheio de molho de tomate com queijo. Favorito das crianças japonesas.",
+          "where_pt": "Todas",
+          "price_pt": "7-Eleven: ¥171 (site oficial, out/2026)",
+          "pregnancy": "ok",
+          "tip_pt": "O queijo vai ao vapor e sai fervendo, então está liberado."
+        }
+      ]
+    },
+    {
+      "title_pt": "Oden de konbini (inverno)",
+      "body_pt": "Panela de caldo de dashi com nabo, ovo, tofu frito e bolinhos de peixe, perto do caixa. Hoje nem toda loja tem, e a Lawson é a que mais mantém. Como pedir: pegue o pote (ou peça ao atendente), diga os itens com 「これと、これ」 (kore to, kore) apontando, peça 「おつゆ多めで」 (otsuyu ōme de, \"bastante caldo\") e 「からし」 (karashi, mostarda) se quiser.",
+      "items": [
+        {
+          "name": "Daikon",
+          "name_ja": "大根（つゆしみ大根）",
+          "what_pt": "Rodela de nabo que passou o dia absorvendo caldo. É o item nº 1 do oden.",
+          "where_pt": "Lawson e algumas 7-Eleven/FamilyMart",
+          "price_pt": "Lawson ¥160 (site oficial)",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Ovo",
+          "name_ja": "たまご",
+          "what_pt": "Ovo cozido duro, marrom de caldo.",
+          "where_pt": "Lawson e outras",
+          "price_pt": "Lawson ¥160 (site oficial)",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Gyūsuji",
+          "name_ja": "牛すじ",
+          "what_pt": "Espetinho de tendão bovino cozido até amolecer.",
+          "where_pt": "Lawson",
+          "price_pt": "Lawson ¥198 (site oficial)",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Atsuage, konnyaku e chikuwa",
+          "name_ja": "厚揚げ・こんにゃく・ちくわ",
+          "what_pt": "Tofu frito grosso, gelatina de konjac e tubo de pasta de peixe.",
+          "where_pt": "Lawson e outras",
+          "price_pt": "Lawson: atsuage ¥135, konnyaku ¥140 (site oficial)",
+          "pregnancy": "ok"
+        }
+      ]
+    },
+    {
+      "title_pt": "Bebidas quentes e frias",
+      "body_pt": "No inverno, uma prateleira aquecida (ホット) perto do caixa tem chá, café e sopas de milho em garrafinha. Serve de aquecedor de mão. Nas máquinas, o botão vermelho (あったか~い) é quente e o azul (つめた~い) é gelado.",
+      "items": [
+        {
+          "name": "Chás japoneses quentes",
+          "name_ja": "ホットのお茶（緑茶・ほうじ茶・麦茶）",
+          "what_pt": "Verde (お~いお茶, 伊右衛門), hōjicha (torrado, pouca cafeína) e mugicha (cevada, sem cafeína).",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "must": true,
+          "pregnancy": "ok",
+          "tip_pt": "Para a grávida: mugicha (麦茶) e rooibos não têm cafeína. Hōjicha tem pouca."
+        },
+        {
+          "name": "Café em lata e café moído",
+          "name_ja": "缶コーヒー・セブンカフェ",
+          "what_pt": "O café da máquina do balcão (7 Café, Famima Café, Machi Café na Lawson) é bom e barato. Pague no caixa, pegue o copo e aperte o botão.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "cuidado",
+          "tip_pt": "Conte a cafeína: o limite usual na gravidez é ~200 mg/dia, o que dá uma ou duas latas ou copos. Latas grandes de \"black\" podem ter mais. Veja カフェイン no rótulo."
+        },
+        {
+          "name": "Calpis",
+          "name_ja": "カルピス",
+          "what_pt": "Bebida láctea fermentada doce, um clássico japonês. Há versão quente (ホットカルピス) no inverno.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Amazake",
+          "name_ja": "甘酒",
+          "what_pt": "Bebida doce de arroz, quente no inverno e onipresente no Ano-Novo. São dois tipos: de koji de arroz (米麹), sem álcool, e de borra de saquê (酒粕), com álcool abaixo de 1%.",
+          "where_pt": "Todas, inclusive na prateleira quente",
+          "price_pt": "a confirmar",
+          "pregnancy": "cuidado",
+          "tip_pt": "Ela só deve beber se o rótulo disser 米麹 ou ノンアルコール. A Morinaga avisa que a versão de 酒粕 deve ser evitada por grávidas e crianças."
+        },
+        {
+          "name": "Sopa de milho / de missô em copo",
+          "name_ja": "コーンスープ・カップみそ汁",
+          "what_pt": "Lata de sopa de milho quente, ou copo de missô instantâneo com água quente da chaleira da loja.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok"
+        }
+      ]
+    },
+    {
+      "title_pt": "Bentō, massas e refeição completa",
+      "body_pt": "Bentō, massa e donburi ficam na geladeira. No caixa, perguntam 「温めますか？」 (atatamemasu ka?, \"quer esquentar?\"). Responda 「はい、お願いします」 (hai, onegaishimasu) ou 「大丈夫です」 (daijōbu desu, \"não precisa\"). Em muitas lojas, você mesmo esquenta no micro-ondas ao lado do caixa.",
+      "items": [
+        {
+          "name": "Bentō de karaage ou de salmão",
+          "name_ja": "唐揚げ弁当・鮭弁当",
+          "what_pt": "O almoço clássico. O da Famima é famoso pelo karaage, e a 7-Eleven tem a melhor variedade de pratos.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Massa japonesa",
+          "name_ja": "パスタ（ナポリタン・たらこ）",
+          "what_pt": "A napolitan (molho de ketchup com salsicha) é \"comida de café da avó\" e vale provar.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "cuidado",
+          "tip_pt": "A de tarako ou mentaiko leva ova crua misturada na hora. Ela deve evitar ou esquentar até ferver."
+        },
+        {
+          "name": "Oyakodon / katsudon",
+          "name_ja": "親子丼・カツ丼",
+          "what_pt": "Tigela de arroz com frango e ovo, ou com porco empanado.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "cuidado",
+          "tip_pt": "O ovo de konbini sai cozido de fábrica, mas pode ficar mole. Para ela, esquente bem no micro-ondas."
+        }
+      ]
+    },
+    {
+      "title_pt": "Doces",
+      "body_pt": "A Lawson é a campeã de doces nas pesquisas, mas a 7-Eleven e a Famima também lançam doces toda semana. No inverno aparecem morango, castanha, matcha e chocolate (este ano, a Lawson tem colaboração com a Godiva a partir de 20/10).",
+      "items": [
+        {
+          "name": "Premium Roll Cake",
+          "name_ja": "プレミアムロールケーキ",
+          "what_pt": "O doce que fez a fama da Uchi Café: pão-de-ló fofo com um \"poço\" de creme de leite. Come-se de colher.",
+          "where_pt": "Lawson",
+          "price_pt": "¥214 (site oficial, out/2026)",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "MILK roll cake / doces Uchi Café × Milk",
+          "name_ja": "Uchi Café×Milk MILKロールケーキ",
+          "what_pt": "Linha de creme de leite de Hokkaidō: rolo, chou, crepe e dorayaki.",
+          "where_pt": "Lawson",
+          "price_pt": "¥257–297 (site oficial, out/2026)",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Pudim da 7-Eleven",
+          "name_ja": "セブンプレミアム プリン",
+          "what_pt": "Pudim no estilo japonês, firme e com calda queimada. Japoneses discutem qual rede tem o melhor.",
+          "where_pt": "7-Eleven",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Soft-serve da Ministop",
+          "name_ja": "ソフトクリーム",
+          "what_pt": "Feito na máquina, na hora, no balcão.",
+          "where_pt": "Ministop",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok"
+        }
+      ]
+    },
+    {
+      "title_pt": "Café da manhã e opções saudáveis",
+      "body_pt": "Hotel com café caro? Monte o café na konbini por ¥600–900 por pessoa: um onigiri, um ovo, um iogurte e um chá quente. Para a grávida e os pais, este é o kit de proteína.",
+      "items": [
+        {
+          "name": "Salad chicken",
+          "name_ja": "サラダチキン",
+          "what_pt": "Peito de frango cozido sous-vide, em sabores (natural, ervas, defumado). Rico em proteína.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "must": true,
+          "pregnancy": "ok",
+          "tip_pt": "É cozido e pasteurizado na embalagem. Se ela quiser mais segurança, 20 segundos no micro-ondas resolvem."
+        },
+        {
+          "name": "Ovo cozido",
+          "name_ja": "ゆでたまご・味付たまご",
+          "what_pt": "Ovo cozido com sal, ou o ajitsuke (marinado no shōyu). O de konbini é duro.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok",
+          "tip_pt": "Gema mole (半熟) aparece em alguns. Para ela, prefira o rótulo かたゆで ou o ovo do oden."
+        },
+        {
+          "name": "Iogurte e sopa de missô",
+          "name_ja": "ヨーグルト・みそ汁",
+          "what_pt": "Iogurte grego (a marca Oikos é comum), bebida de iogurte e copo de missô com tofu.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Saladas e frutas cortadas",
+          "name_ja": "サラダ・カットフルーツ",
+          "what_pt": "Salada de repolho, de macarrão (harusame) ou de batata (a ポテトサラダ japonesa é um clássico). Também há frutas cortadas.",
+          "where_pt": "Todas, e mais na Natural Lawson",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok",
+          "tip_pt": "Na gravidez, salada pronta e fruta cortada são de risco leve de Listeria. Escolha as de data mais recente e coma logo."
+        }
+      ]
+    },
+    {
+      "title_pt": "Gravidez: o que pode e o que não pode na konbini",
+      "body_pt": "Konbini é um lugar seguro: quase nada é cru, e ovo cru não existe na prateleira. Os pontos de atenção são poucos e estão listados abaixo. Na dúvida, procure 生 (cru) ou 加熱 (cozido) no rótulo, ou pergunte: 「これは生ですか？」 (kore wa nama desu ka?).",
+      "items": [
+        {
+          "name": "Pode tranquila",
+          "name_ja": "OK",
+          "what_pt": "Onigiri de salmão grelhado, tuna-mayo, kombu, okaka e ume; tamago sando; FamiChiki e karaage; nikuman e anman; oden; salad chicken; pudim e roll cake; chá de cevada.",
+          "pregnancy": "ok"
+        },
+        {
+          "name": "Ovas cruas",
+          "name_ja": "明太子・たらこ・いくら",
+          "what_pt": "Onigiri, massa e mentaiko-mayo. Ovas curadas sem cozimento trazem risco de Listeria e muito sal.",
+          "pregnancy": "evitar",
+          "tip_pt": "A exceção é quando o rótulo diz 焼きたらこ (grelhada)."
+        },
+        {
+          "name": "Salmão defumado e queijo natural",
+          "name_ja": "スモークサーモン・ナチュラルチーズ",
+          "what_pt": "Ficam em sanduíches, wraps e petiscos de vinho (camembert, brie). O folheto do Ministério da Saúde japonês (MHLW) cita os dois como risco de Listeria.",
+          "pregnancy": "evitar",
+          "tip_pt": "Queijo processado (プロセスチーズ) e queijo derretido em prato quente estão liberados."
+        },
+        {
+          "name": "Cafeína",
+          "name_ja": "缶コーヒー・エナジードリンク・緑茶",
+          "what_pt": "Café em lata, energético e chá verde forte.",
+          "pregnancy": "cuidado",
+          "tip_pt": "Até ~200 mg/dia. Troque por 麦茶 (cevada) ou ルイボス (rooibos)."
+        },
+        {
+          "name": "Amazake de borra de saquê e bebidas com álcool",
+          "name_ja": "酒粕甘酒・チューハイ",
+          "what_pt": "O amazake de 酒粕 tem álcool, e as latas de chūhai ficam ao lado dos sucos com rótulos muito parecidos. Procure 「お酒」 ou 「アルコール分」 na lata.",
+          "pregnancy": "evitar",
+          "tip_pt": "Amazake de 米麹 está liberado."
+        }
+      ]
+    },
+    {
+      "title_pt": "Como usar a konbini",
+      "body_pt": "O manual de sobrevivência, do caixa ao banheiro.",
+      "items": [
+        {
+          "name": "Pagar",
+          "name_ja": "お支払い",
+          "what_pt": "Passe o Suica, PASMO ou ICOCA (IC card) na leitora: é o jeito mais rápido. Cartão de crédito também é aceito. Coloque o dinheiro na bandeja (トレー), não na mão do atendente. Muitas lojas têm caixa onde você mesmo insere as notas.",
+          "tip_pt": "Para pagar com IC card, diga 「Suicaで」 (Suica de)."
+        },
+        {
+          "name": "Hashi, colher e sacola",
+          "name_ja": "お箸・スプーン・袋",
+          "what_pt": "Vão perguntar 「お箸おつけしますか？」 (quer hashi?). A sacola é paga (¥3–5) desde 2020; diga 「袋お願いします」 (fukuro onegaishimasu) se quiser uma."
+        },
+        {
+          "name": "Lixo",
+          "name_ja": "ゴミ箱",
+          "what_pt": "Quase não há lixeira na rua. Guarde o lixo e jogue na konbini, separando PET (ペットボトル), latas (缶), queimáveis (燃えるゴミ) e plástico. Em algumas cidades, as lixeiras ficam dentro da loja.",
+          "tip_pt": "Use a lixeira para o lixo do que você comprou ali. Não descarregue o lixo do hotel."
+        },
+        {
+          "name": "Banheiro",
+          "name_ja": "トイレ",
+          "what_pt": "Muitas lojas liberam o banheiro, e é educado comprar algo. Pergunte 「トイレをお借りしてもいいですか？」 (toire o okari shite mo ii desu ka?). Algumas no centro de Tóquio fecham por segurança.",
+          "tip_pt": "Ótimo para a grávida em passeio."
+        },
+        {
+          "name": "Caixa eletrônico (ATM)",
+          "name_ja": "セブン銀行ATM",
+          "what_pt": "O da 7-Eleven (Seven Bank) aceita Visa, Mastercard, Amex, JCB, UnionPay e Discover estrangeiros e tem menu em português. O limite é de ¥100.000 por saque. Visa e Mastercard funcionam 24h; as outras bandeiras, das 00:10 às 23:50 aproximadamente. Lawson e FamilyMart também têm ATM, mas a 7-Eleven é a aposta mais segura.",
+          "price_pt": "Taxa do Seven Bank: a confirmar (varia por bandeira)",
+          "tip_pt": "Recuse a conversão para reais na tela (escolha cobrar em ienes)."
+        },
+        {
+          "name": "Impressão",
+          "name_ja": "マルチコピー機",
+          "what_pt": "A multifuncional imprime PDF de ingresso ou de reserva via app ou pendrive. Na 7-Eleven, é pelo app ネットプリント (Netprint).",
+          "price_pt": "a confirmar"
+        },
+        {
+          "name": "Mandar mala (takkyūbin)",
+          "name_ja": "宅急便",
+          "what_pt": "Para a viagem: despache as malas grandes de um hotel para o próximo e viaje de trem só com mochila. A Yamato (gato preto) aceita volumes de até 200 cm (soma dos lados) e 30 kg, com ¥100 de desconto por volume se deixado em konbini. A 7-Eleven e a FamilyMart trabalham com a Yamato; a Lawson e a Ministop, com a Japan Post (ゆうパック). Algumas konbini não aceitam volumes acima de 180 cm. Leva um a dois dias.",
+          "price_pt": "Por tamanho: a confirmar no site da Yamato",
+          "must": true,
+          "tip_pt": "Mais fácil: peça na recepção do hotel, que preenche o formulário. No fim de ano a entrega atrasa, então mande dois dias antes e confirme a data de chegada."
+        },
+        {
+          "name": "Ingressos",
+          "name_ja": "チケット",
+          "what_pt": "Museus, parques (Ghibli, Disney), shows e ônibus de estrada podem ser comprados ou retirados no terminal Loppi da Lawson ou na multifuncional da 7-Eleven e da FamilyMart, pagando no caixa. As telas são em japonês; leve o número da reserva."
+        }
+      ]
+    },
+    {
+      "title_pt": "Ano-Novo: a konbini salva o 1º de janeiro",
+      "body_pt": "Entre 31/12 e 3/1 quase tudo fecha, e a konbini continua aberta (algumas lojas fecham ou reduzem o horário; confirme a do seu hotel). Na prateleira aparecem comidas de Ano-Novo: mochi, kamaboko, kuromame e às vezes ozōni pronto. As três redes vendem osechi por encomenda, para retirar na loja.",
+      "items": [
+        {
+          "name": "Osechi de konbini",
+          "name_ja": "コンビニおせち",
+          "what_pt": "A caixa de Ano-Novo encomendada. Para 2027, de acordo com a macaroni (out/2026): Lawson 和洋おせち一段重 (¥12.950 na loja) e MOTTAINAIおせち (¥5.680), com encomenda na loja até ~25/12; 7-Eleven 和のおせち一段重 (¥6.912), com retirada na loja e encomenda até 28/12; FamilyMart 「祝春」 em porções individuais (¥12.420), com encomenda até 22/12 e retirada em 31/12.",
+          "where_pt": "Lawson, 7-Eleven, FamilyMart (encomenda no app ou na loja)",
+          "price_pt": "¥5.680–15.336 (macaroni, out/2026; confirmar no site da rede)",
+          "pregnancy": "cuidado",
+          "tip_pt": "Osechi tem kazunoko (ovas de arenque), ikura e às vezes salmão defumado e kamaboko, que é cozido. Ela fica com kuromame, kuri-kinton, datemaki, kamaboko e nimono. Só faz sentido se houver uma loja perto da hospedagem de 31/12."
+        },
+        {
+          "name": "Ozōni e mochi",
+          "name_ja": "お雑煮・切り餅",
+          "what_pt": "Sopa de Ano-Novo com mochi. Na konbini há ozōni de copo ou de embalagem pronta e mochi para tostar.",
+          "where_pt": "Todas, perto do Ano-Novo",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok",
+          "tip_pt": "Para os pais e a grávida: corte o mochi em pedaços pequenos e mastigue bem. Engasgar com mochi é uma preocupação real no Ano-Novo japonês."
+        },
+        {
+          "name": "Toshikoshi soba de konbini",
+          "name_ja": "年越しそば",
+          "what_pt": "Em 31/12 aparecem soba prontos e cup soba de raposa (きつね) ou de tempurá. É o plano B se a fila do soba-ya estiver longa.",
+          "where_pt": "Todas",
+          "price_pt": "a confirmar",
+          "pregnancy": "ok"
+        }
+      ]
+    },
+    {
+      "title_pt": "Supermercados e drogarias",
+      "body_pt": "Para o jantar barato no quarto: supermercados colam adesivos de desconto (20%引, 30%引, 半額) em sushi, bentō e frituras a partir do fim da tarde, mais forte por volta das 19–20h. Drogarias (Matsumoto Kiyoshi, Welcia, Sundrug) vendem bebidas e snacks mais baratos que a konbini.",
+      "items": [
+        {
+          "name": "Life e OK Store",
+          "name_ja": "ライフ・オーケー",
+          "what_pt": "Supermercados de bairro com bom preço. O OK é famoso por ser o mais barato de Tóquio e pelo sushi e pizza de balcão.",
+          "where_pt": "Tóquio e Kansai (Life); Grande Tóquio (OK)"
+        },
+        {
+          "name": "Seijo Ishii",
+          "name_ja": "成城石井",
+          "what_pt": "Supermercado gourmet com pratos prontos famosos (a lasanha e a salada de batata).",
+          "where_pt": "Estações grandes, em todo o Japão"
+        },
+        {
+          "name": "Kinokuniya",
+          "name_ja": "紀ノ国屋",
+          "what_pt": "Supermercado de luxo de Tóquio (Aoyama), com pão, frutas e importados.",
+          "where_pt": "Tóquio"
+        },
+        {
+          "name": "Hankyu Oasis",
+          "name_ja": "阪急オアシス",
+          "what_pt": "Rede de Kansai com bom balcão de peixe e sōzai.",
+          "where_pt": "Osaka, Kyoto e Kobe"
+        },
+        {
+          "name": "Sushi de supermercado no adesivo",
+          "name_ja": "半額シール",
+          "what_pt": "Sushi pela metade do preço depois das 20h é tradição de estudante japonês.",
+          "pregnancy": "cuidado",
+          "tip_pt": "Para ela, só o que for cozido (ebi cozido, tamago, unagi, inari). Peixe cru que passou o dia no balcão é pior que o do sushi-ya."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.family.co.jp/goods/friedfoods.html",
+    "https://www.sej.co.jp/products/a/onigiri/",
+    "https://www.sej.co.jp/products/a/chukaman/",
+    "https://www.lawson.co.jp/recommend/original/oden/",
+    "https://www.lawson.co.jp/recommend/original/dessert/",
+    "https://www.sevenbank.co.jp/intlcard/",
+    "https://www.sevenbank.co.jp/intlcard/card.html",
+    "https://www.kuronekoyamato.co.jp/ytc/customer/send/services/takkyubin/",
+    "https://www.appbank.net/2026/01/27/casual-food/2917402.php",
+    "https://www.pricey.jp/web/articles/2708",
+    "https://webtan.impress.co.jp/n/2025/07/03/49625",
+    "https://www.commercepick.com/archives/67540",
+    "https://biz-journal.jp/2023/02/post_332446.html",
+    "https://macaro-ni.jp/12613",
+    "https://macaro-ni.jp/178469",
+    "https://ja.wikipedia.org/wiki/セイコーマート",
+    "https://www.morinaga.co.jp/amazake/",
+    "https://event.rakuten.co.jp/family/story/article/2022/pregnancy-mentaiko/",
+    "https://www.mhlw.go.jp/topics/syokuchu/dl/ninpu.pdf",
+    "https://www.youtube.com/watch?v=TO2pblb_OzA"
+  ]
+}

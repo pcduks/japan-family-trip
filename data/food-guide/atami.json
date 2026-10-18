@@ -1,0 +1,209 @@
+{
+  "slug": "atami",
+  "name": "Atami (Izu)",
+  "tagline_pt": "A fonte termal dos xoguns e a capital do peixe seco ao sol.",
+  "history_pt": [
+    "Atami era a fonte termal dos xoguns: sob Tokugawa Ietsuna, a água daqui era levada em barris até o castelo de Edo. Depois virou o balneário de Tóquio, com hotéis de lua-de-mel, decadência nos anos 1990 e uma volta recente.",
+    "A comida é a do mar de Sagami e da península de Izu. Shizuoka é um dos maiores produtores de himono do Japão: peixe aberto, mergulhado em salmoura e seco ao vento. O aji (carapau) é o clássico; em Shizuoka a salmoura curta deixa a carne firme e suculenta na grelha. Ajiro, uma estação adiante, é o porto pesqueiro da cidade."
+  ],
+  "winter_pt": "Inverno é época de kinmedai (alfonsino) gordo de Izu, cozido no shoyu. Himono sai o ano todo. Ameixeiras do jardim de Atami começam a florir em janeiro.",
+  "meibutsu": [
+    {
+      "name_pt": "Himono",
+      "name_ja": "干物",
+      "romaji": "himono",
+      "what_pt": "Peixe aberto, salgado e seco: aji, kamasu, kinmedai. Grelhado no café da manhã com arroz e missoshiru.",
+      "where_pt": "Lojas de himono da Heiwa-dōri; Washokudokoro Kobayashi; yoshi-魚-亭.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Kinmedai cozido",
+      "name_ja": "金目鯛の煮付け",
+      "romaji": "kinmedai no nitsuke",
+      "what_pt": "Peixe vermelho de olho dourado cozido em shoyu e açúcar.",
+      "where_pt": "Washokudokoro Kobayashi.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Kaisen-don",
+      "name_ja": "海鮮丼",
+      "romaji": "kaisen-don",
+      "what_pt": "Tigela de peixe cru do dia.",
+      "where_pt": "Kamatsuru.",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Peça só peixe, sem camarão cru e mariscos."
+    },
+    {
+      "name_pt": "Ramen de Ajiro",
+      "name_ja": "中華そば",
+      "romaji": "chūka soba",
+      "what_pt": "Shoyu claro de casa de pescadores, a nota mais alta da cidade.",
+      "where_pt": "Chūka Soba Uosei.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Soba",
+      "name_ja": "そば",
+      "romaji": "soba",
+      "what_pt": "Soba de casa local.",
+      "where_pt": "Soba Asada.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Onsen manjū",
+      "name_ja": "温泉まんじゅう",
+      "romaji": "onsen manjū",
+      "what_pt": "Bolinho no vapor com feijão doce, lembrança de toda vila termal.",
+      "where_pt": "Ruas comerciais perto da estação.",
+      "must": false,
+      "pregnancy": "ok"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Heiwa-dōri e Nakamise",
+      "name_ja": "平和通り・仲見世",
+      "kind": "rua",
+      "story_pt": "Galerias cobertas logo na saída da estação, com himono, doces e lembranças.",
+      "eat_pt": [
+        "Himono para levar",
+        "Onsen manjū"
+      ],
+      "tips_pt": "Lotadas no fim de semana; o resto da cidade é ladeira.",
+      "dec_jan_pt": "Abertas no Ano-Novo com horários reduzidos (a confirmar).",
+      "query": "Atami Heiwa-dori"
+    },
+    {
+      "name": "Porto de Ajiro",
+      "name_ja": "網代",
+      "kind": "porto",
+      "story_pt": "Vila de pescadores uma estação ao sul.",
+      "eat_pt": [
+        "Ramen na Uosei"
+      ],
+      "tips_pt": "Reserve a Uosei pelo Instagram.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Ajiro Atami"
+    }
+  ],
+  "places": [
+    {
+      "name": "Chūka Soba Uosei",
+      "name_ja": "中華そば うお静",
+      "area": "Ajiro, 1 estação depois de Atami",
+      "genre_pt": "Ramen",
+      "price_pt": "¥1–2k",
+      "tabelog": {
+        "score": 4.05,
+        "reviews": 365,
+        "url": "https://tabelog.com/shizuoka/A2205/A220502/22041254/",
+        "awards": "ラーメン EAST 百名店 2025"
+      },
+      "why_pt": "Ramen acima de 4,0 é raríssimo. Vale a viagem de uma estação.",
+      "order_pt": "Chūka soba.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "10 lugares: divida.",
+      "booking_pt": "Reserva pelo Instagram, obrigatória aos sábados.",
+      "dec_jan_pt": "Fecha domingo e segunda, mais dias irregulares. Ano-Novo a confirmar.",
+      "query": "Uosei Ajiro"
+    },
+    {
+      "name": "Washokudokoro Kobayashi",
+      "name_ja": "和食処 こばやし",
+      "area": "Atami · 3 min da estação",
+      "genre_pt": "Teishoku de frutos do mar",
+      "price_pt": "¥2–4k",
+      "tabelog": {
+        "score": 3.7,
+        "reviews": 988,
+        "url": "https://tabelog.com/shizuoka/A2205/A220502/22001229/"
+      },
+      "why_pt": "O teishoku de peixe da cidade, com sala de tatame para a família.",
+      "order_pt": "Himono teishoku ou kinmedai nitsuke.",
+      "pregnancy_pt": "Himono e nitsuke são cozidos: liberado.",
+      "group_pt": "Sala de tatame no 3º andar: 6 com folga.",
+      "booking_pt": "Só a sala do 3º andar aceita reserva.",
+      "dec_jan_pt": "Fecha às terças. Ano-Novo a confirmar.",
+      "query": "Kobayashi Atami"
+    },
+    {
+      "name": "Kamatsuru",
+      "name_ja": "釜鶴",
+      "area": "Atami",
+      "genre_pt": "Kaisen-don",
+      "tabelog": {
+        "score": 3.69,
+        "url": "https://tabelog.com/shizuoka/A2205/A220502/22000010/"
+      },
+      "why_pt": "Na lista de Atami do Tabelog, não verificado em detalhe.",
+      "order_pt": "Kaisen-don.",
+      "pregnancy_pt": "Só peixe, sem crustáceo e marisco crus.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Kamatsuru Atami"
+    },
+    {
+      "name": "yoshi-魚-亭",
+      "name_ja": "yoshi-魚-亭",
+      "area": "Atami",
+      "genre_pt": "Izakaya de himono",
+      "tabelog": {
+        "score": 3.68,
+        "url": "https://tabelog.com/shizuoka/A2205/A220502/22027897/"
+      },
+      "why_pt": "Izakaya de himono na lista de Atami; não verificado em detalhe.",
+      "order_pt": "Himono grelhado.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "yoshi uotei Atami"
+    },
+    {
+      "name": "Soba Asada",
+      "name_ja": "そば 浅田",
+      "area": "Atami",
+      "genre_pt": "Soba",
+      "tabelog": {
+        "score": 3.65,
+        "url": "https://tabelog.com/shizuoka/A2205/A220502/22027903/"
+      },
+      "why_pt": "Soba bem pontuado na lista de Atami; não verificado em detalhe.",
+      "order_pt": "Soba.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Soba Asada Atami"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Lojas de himono da Heiwa-dōri",
+      "name_ja": "平和通りの干物店",
+      "what_pt": "Várias lojas de peixe seco na galeria da estação.",
+      "buy_pt": "Aji e kinmedai embalados a vácuo; grelhe no ryokan ou leve para Tóquio.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Atami himono shop"
+    },
+    {
+      "name": "Onsen manjū",
+      "name_ja": "温泉まんじゅう",
+      "what_pt": "Docerias perto da estação.",
+      "buy_pt": "Manjū quente.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Atami onsen manju"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "https://ja.wikipedia.org/wiki/熱海市",
+    "https://ja.wikipedia.org/wiki/干物"
+  ]
+}

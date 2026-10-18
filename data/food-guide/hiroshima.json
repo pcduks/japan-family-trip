@@ -1,0 +1,205 @@
+{
+  "slug": "hiroshima",
+  "name": "Hiroshima",
+  "tagline_pt": "A cidade que se reergueu numa chapa de ferro: okonomiyaki em camadas, ostras da baía e balcões de bairro.",
+  "history_pt": [
+    "Antes da guerra, as crianças de Hiroshima compravam issen yōshoku, 'comida ocidental de um centavo': uma panqueca fina de farinha com cebolinha dobrada ao meio. Logo depois da bomba, uma barraca parecida apareceu no mercado negro em frente à estação. Muitas mulheres que perderam o marido na guerra ou na bomba abriram uma chapa na sala de casa, e por isso tantas lojas se chamam 'fulana-chan'.",
+    "Com a falta de comida, o repolho barato do ano inteiro substituiu a cebolinha. A massa não é misturada aos ingredientes: vira uma base fina, o repolho é empilhado por cima, tudo é virado e cozido no vapor sob a massa. Por volta de 1955 entrou o macarrão (soba ou udon), e o estilo de Hiroshima estava pronto. Em 1950 a Sasaki Shōten (hoje Otafuku) começou a fazer o molho e, em 1952, lançou o primeiro 'molho de okonomiyaki' do Japão. As barracas da avenida Chūō viraram a Okonomimura em 1967.",
+    "A baía de Hiroshima cultiva ostras desde o século XVI. Com as balsas de bambu de 1953 a produção explodiu, e hoje a prefeitura produz metade a 60% das ostras do Japão. Do período Edo até o Taishō, os 'kaki-bune' (barcos de ostra) de Hiroshima vendiam ostras ancorados nos rios de Osaka."
+  ],
+  "winter_pt": "Dezembro e janeiro são o auge das ostras (temporada de novembro a março). Ostra frita, grelhada, no arroz e na okonomiyaki. Festivais de ostra na baía começam em janeiro.",
+  "meibutsu": [
+    {
+      "name_pt": "Okonomiyaki de Hiroshima",
+      "name_ja": "広島お好み焼き",
+      "romaji": "Hiroshima okonomiyaki",
+      "what_pt": "Camadas: massa fina, montanha de repolho, porco, macarrão e ovo, prensadas na chapa e cobertas de molho Otafuku. Come-se na chapa com a espátula (hera).",
+      "where_pt": "Hassho, Tatsu ou Denkō Sekka (na estação).",
+      "price_pt": "¥1.000–1.800",
+      "must": true,
+      "pregnancy_pt": "Ok: o ovo vai cozido na chapa. Evite só cobertura de ostra crua ou ovo cru."
+    },
+    {
+      "name_pt": "Ostras de Hiroshima",
+      "name_ja": "広島かき",
+      "romaji": "Hiroshima kaki",
+      "what_pt": "Grandes e cremosas, no auge em dezembro. Kaki-furai (empanadas e fritas), grelhadas na casca, no arroz (kaki-meshi) ou cruas.",
+      "where_pt": "Miyajima (Yakigaki no Hayashi, Kakiya) ou como cobertura de okonomiyaki.",
+      "price_pt": "¥750–3.000",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Nada de ostra crua (生がき). Fritas, grelhadas e no arroz estão liberadas."
+    },
+    {
+      "name_pt": "Tsukemen de Hiroshima",
+      "name_ja": "広島つけ麺",
+      "romaji": "Hiroshima tsukemen",
+      "what_pt": "Macarrão frio para mergulhar num molho vermelho de pimenta; você escolhe o grau de ardência.",
+      "where_pt": "Casas especializadas no centro.",
+      "price_pt": "≈¥1.000",
+      "must": false
+    },
+    {
+      "name_pt": "Momiji manjū",
+      "name_ja": "もみじ饅頭",
+      "romaji": "momiji manjū",
+      "what_pt": "Bolinho em forma de folha de bordo recheado de anko, criado em Miyajima em 1906. Lembrancinha de toda Hiroshima.",
+      "where_pt": "Miyajima (Momiji-dō, Iwamura) e estação.",
+      "price_pt": "≈¥100–200 cada",
+      "must": false
+    },
+    {
+      "name_pt": "Anago-meshi",
+      "name_ja": "あなごめし",
+      "romaji": "anago-meshi",
+      "what_pt": "Congro grelhado no molho sobre arroz cozido no caldo. O ekiben de Miyajimaguchi, também vendido na estação.",
+      "where_pt": "Anagomeshi Ueno (Miyajimaguchi).",
+      "price_pt": "¥2.000–3.000",
+      "must": true
+    },
+    {
+      "name_pt": "Oyster okonomiyaki",
+      "name_ja": "かき入りお好み焼き",
+      "romaji": "kaki-iri okonomiyaki",
+      "what_pt": "A okonomiyaki do inverno: ostras grelhadas por cima. A melhor forma de ostra para a grávida.",
+      "where_pt": "Balcões de okonomiyaki em dezembro e janeiro.",
+      "price_pt": "+¥500–800",
+      "must": false,
+      "pregnancy_pt": "Ok se bem grelhadas; peça よく焼いて."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Okonomimura",
+      "name_ja": "お好み村",
+      "kind": "yokochō",
+      "story_pt": "Prédio com dezenas de balcões de okonomiyaki em três andares, herdeiro das barracas de 1950. Famoso, mas o próprio Tabelog deixa a Okonomimura de fora da sua lista de 2025 das 21 okonomiyaki que os locais recomendam, e as filiais ali ficam em torno de 3.4.",
+      "eat_pt": [
+        "Okonomiyaki em qualquer balcão, se estiver perto e com fome"
+      ],
+      "tips_pt": "É bom para ver. Para comer, vá a um balcão de bairro.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Okonomimura Hiroshima"
+    },
+    {
+      "name": "Estação de Hiroshima (ekie)",
+      "name_ja": "広島駅 ekie",
+      "kind": "estação",
+      "story_pt": "O shopping da estação tem okonomiyaki 百名店 e as lembranças da prefeitura.",
+      "eat_pt": [
+        "Denkō Sekka",
+        "Anago-meshi da Ueno para o trem",
+        "Momiji manjū"
+      ],
+      "tips_pt": "Plano B para os seis no dia de viagem.",
+      "dec_jan_pt": "Aberto no Ano-Novo com horário reduzido (a confirmar).",
+      "query": "ekie Hiroshima Station"
+    },
+    {
+      "name": "Nagarekawa e Yagenbori",
+      "name_ja": "流川・薬研堀",
+      "kind": "bairro",
+      "story_pt": "O bairro de bares e izakaya do centro, com balcões de okonomiyaki que abrem até tarde.",
+      "eat_pt": [
+        "Yagenbori Hassho",
+        "Ostras nos izakaya"
+      ],
+      "tips_pt": "Jantar e depois um balcão.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Yagenbori Hiroshima"
+    }
+  ],
+  "places": [
+    {
+      "name": "Okonomiyaki Hassho, Kanayama-chō",
+      "name_ja": "お好み焼き 八昌",
+      "area": "Hiroshima · Kanayama-chō",
+      "genre_pt": "Okonomiyaki",
+      "price_pt": "≈¥1.500",
+      "tabelog": {
+        "score": 3.73,
+        "reviews": 1314,
+        "url": "https://tabelog.com/en/hiroshima/A3401/A340108/34019405/",
+        "awards": "Okonomiyaki 百名店 2018, 2019, 2022–2025"
+      },
+      "why_pt": "Repolho cozido no vapor até ficar doce, massa fina e crocante: o padrão que os locais usam para medir os outros. O Yagenbori Hassho (3.70, 百名店 2025) é a linha mais antiga e abre à noite.",
+      "order_pt": "Soba-iri com ovo; em dezembro, com ostras.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "32 lugares (20 em mesa): os seis cabem.",
+      "booking_pt": "Sem reserva; fila antes de abrir.",
+      "dec_jan_pt": "Qua–dom, 10h–17h. Ano-Novo a confirmar.",
+      "query": "Hassho Kanayamacho Hiroshima"
+    },
+    {
+      "name": "Okonomiyaki Tatsu",
+      "name_ja": "お好み焼き 辰",
+      "area": "Hiroshima · Enkōbashi (perto da estação)",
+      "genre_pt": "Okonomiyaki",
+      "price_pt": "A confirmar",
+      "tabelog": {
+        "score": 3.77,
+        "reviews": 490,
+        "url": "https://tabelog.com/en/hiroshima/A3401/A340104/34020336/",
+        "awards": "Okonomiyaki 百名店 2023, 2024, 2025"
+      },
+      "why_pt": "A nota mais alta da cidade num balcão minúsculo com uma mesa de tatami que é exatamente para seis.",
+      "order_pt": "Okonomiyaki da casa.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "9 lugares: reserve a mesa de tatami para 6.",
+      "booking_pt": "Reserve a mesa de tatami.",
+      "dec_jan_pt": "Fecha segunda e terça. Ano-Novo a confirmar.",
+      "query": "Okonomiyaki Tatsu Hiroshima"
+    },
+    {
+      "name": "Denkō Sekka ekie",
+      "name_ja": "電光石火 ekie広島店",
+      "area": "Hiroshima · estação",
+      "genre_pt": "Okonomiyaki",
+      "price_pt": "A confirmar",
+      "tabelog": {
+        "score": 3.49,
+        "url": "https://tabelog.com/en/hiroshima/A3401/A340121/34027532/",
+        "awards": "Okonomiyaki 百名店 2025"
+      },
+      "why_pt": "A saída fácil no dia de trem: 百名店, dentro da estação e com espaço para o grupo. (≈2.000 avaliações.)",
+      "order_pt": "Okonomiyaki da casa.",
+      "pregnancy_pt": "Peça o ovo bem cozido (よく焼いて).",
+      "group_pt": "50 lugares: os seis juntos.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Denko Sekka ekie Hiroshima",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (nov 2019), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
+    }
+  ],
+  "shops": [
+    {
+      "name": "Otafuku (molho)",
+      "name_ja": "オタフクソース",
+      "what_pt": "O molho de okonomiyaki criado em Hiroshima em 1952.",
+      "buy_pt": "Um frasco de molho para fazer em casa.",
+      "dec_jan_pt": "Vendido em supermercados.",
+      "query": "Otafuku sauce Hiroshima"
+    },
+    {
+      "name": "Anagomeshi Ueno (bentō)",
+      "name_ja": "あなごめしうえの",
+      "what_pt": "A anago-meshi para levar, feita desde 1901.",
+      "buy_pt": "Bentō para o ferry ou o Shinkansen.",
+      "price_pt": "¥2.000–3.000",
+      "dec_jan_pt": "Sem folga fixa. Ano-Novo a confirmar.",
+      "query": "Anagomeshi Ueno bento"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/お好み焼き",
+    "https://ja.wikipedia.org/wiki/広島かき",
+    "https://ja.wikipedia.org/wiki/もみじ饅頭",
+    "https://tabelog.com/en/matome/27738/"
+  ]
+}

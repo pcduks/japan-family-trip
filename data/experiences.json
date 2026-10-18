@@ -7790,7 +7790,7 @@
     "id": "TK-07",
     "name_pt": "Primeiro leilão de atum em Toyosu",
     "name_en": "Toyosu first tuna auction (5 Jan)",
-    "promise_pt": "O primeiro leilão de atum do ano às 5h; a gestante vê do 2º andar.",
+    "promise_pt": "O primeiro leilão de atum do ano às 5h, visto da janela de vidro do 2º andar.",
     "region": "Tokyo",
     "place_slug": null,
     "bases": [
@@ -7819,8 +7819,8 @@
     "cost_pp_jpy": 0,
     "hours": 2,
     "booking": {
-      "lead_days": 30,
-      "how": "deck lottery early Dec; 2F window none"
+      "lead_days": 0,
+      "how": "none (second-floor glass window only; the deck takes no lottery entries for the first auction)"
     },
     "uniqueness": 4,
     "split_group": true,

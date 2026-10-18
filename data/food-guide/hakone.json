@@ -1,0 +1,219 @@
+{
+  "slug": "hakone",
+  "name": "Hakone",
+  "tagline_pt": "Passo da velha estrada Tōkaidō: soba de água de montanha, ovo preto do vulcão e a melhor enguia da região.",
+  "history_pt": [
+    "Hakone era o passo mais duro da Tōkaidō, a estrada entre Edo e Kyoto, com um posto de controle do xogunato. Viajantes paravam em casas de chá na subida; a Amazake-chaya, na velha estrada de pedra, ainda serve amazake e mochi.",
+    "A cozinha é de vila termal: jantar kaiseki no ryokan, tofu e yuba feitos com a água boa da montanha em Yumoto, soba, e na porta de entrada, em Odawara, o kamaboko da cidade-castelo e a enguia. Em Ōwakudani, os ovos cozidos na água vulcânica saem pretos (reação de Maillard, não enxofre) e prometem 'sete anos a mais de vida'."
+  ],
+  "winter_pt": "Dias claros e frios com Fuji à vista. Atenção: a corrida Hakone Ekiden fecha estradas em 2–3/1. Tangerinas (mikan) da costa de Odawara estão na estação.",
+  "meibutsu": [
+    {
+      "name_pt": "Enguia (unagi)",
+      "name_ja": "うなぎ",
+      "romaji": "unagi",
+      "what_pt": "Enguia grelhada no molho doce sobre arroz.",
+      "where_pt": "Unagi-tei Tomoei, em Kazamatsuri, o restaurante de nota mais alta da área.",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Cozida, pode. O fígado (kimo) é rico em vitamina A: ela limita."
+    },
+    {
+      "name_pt": "Soba de Hakone",
+      "name_ja": "箱根のそば",
+      "romaji": "soba",
+      "what_pt": "Soba frio de casa de montanha.",
+      "where_pt": "Takeyabu Hakone.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Ovo preto de Ōwakudani",
+      "name_ja": "黒たまご",
+      "romaji": "kuro-tamago",
+      "what_pt": "Ovo cozido na água da fonte vulcânica, casca preta.",
+      "where_pt": "Ōwakudani.",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Cozido duro. Liberado."
+    },
+    {
+      "name_pt": "Yuba e tofu",
+      "name_ja": "湯葉・豆腐",
+      "romaji": "yuba, tōfu",
+      "what_pt": "Película de leite de soja e tofu feitos com a água de Hakone.",
+      "where_pt": "Yuba-don Naokichi, em Yumoto.",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "O yuba-don é finalizado com ovo mole: peça o ovo bem firme."
+    },
+    {
+      "name_pt": "Amazake e mochi da estrada velha",
+      "name_ja": "甘酒・力餅",
+      "romaji": "amazake, chikara-mochi",
+      "what_pt": "A bebida quente de arroz e kōji que os viajantes tomavam na subida.",
+      "where_pt": "Amazake-chaya.",
+      "must": false,
+      "pregnancy": "ok",
+      "pregnancy_pt": "O amazake de kōji não tem álcool; confirme na casa."
+    },
+    {
+      "name_pt": "Kamaboko de Odawara",
+      "name_ja": "小田原かまぼこ",
+      "romaji": "Odawara kamaboko",
+      "what_pt": "Pasta de peixe cozida no vapor, firme e branca.",
+      "where_pt": "Lojas de Odawara.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Kaiseki de ryokan",
+      "name_ja": "懐石",
+      "romaji": "kaiseki",
+      "what_pt": "O jantar em etapas incluído na diária.",
+      "where_pt": "O seu ryokan. Mark Wiens se hospedou no Yoshiike Ryokan (kaiseki e onsen privativo).",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Avise antes: sem marisco cru e sem shirako; carne bem cozida."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Hakone-Yumoto",
+      "name_ja": "箱根湯本",
+      "kind": "rua",
+      "story_pt": "Rua de lojas na estação de entrada, com doces, tofu e kamaboko.",
+      "eat_pt": [
+        "Yuba-don",
+        "Doces na Chimoto e Kikukawa"
+      ],
+      "tips_pt": "Lotada de tarde; vá cedo.",
+      "dec_jan_pt": "Movimento grande no Ano-Novo; trânsito do Ekiden em 2–3/1.",
+      "query": "Hakone Yumoto shopping street"
+    },
+    {
+      "name": "Ōwakudani",
+      "name_ja": "大涌谷",
+      "kind": "bairro",
+      "story_pt": "Vale de fumarolas vulcânicas no alto.",
+      "eat_pt": [
+        "Kuro-tamago"
+      ],
+      "tips_pt": "O acesso pode fechar por gases; confira antes.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Owakudani"
+    },
+    {
+      "name": "Odawara e Kazamatsuri",
+      "name_ja": "小田原・風祭",
+      "kind": "bairro",
+      "story_pt": "Cidade-castelo na porta de Hakone.",
+      "eat_pt": [
+        "Enguia na Tomoei",
+        "Kamaboko"
+      ],
+      "tips_pt": "Almoço de enguia na ida.",
+      "dec_jan_pt": "Tomoei fecha quinta e sexta; Ano-Novo a confirmar.",
+      "query": "Kazamatsuri Odawara"
+    }
+  ],
+  "places": [
+    {
+      "name": "Unagi-tei Tomoei",
+      "name_ja": "うなぎ亭 友栄",
+      "area": "Odawara · Kazamatsuri",
+      "genre_pt": "Unagi",
+      "price_pt": "¥8–15k",
+      "tabelog": {
+        "score": 4.41,
+        "reviews": 3715,
+        "url": "https://tabelog.com/kanagawa/A1410/A141001/14001626/",
+        "awards": "Tabelog Award Silver 2023–26, Bronze 2019–22; うなぎ 百名店 2018–2026"
+      },
+      "why_pt": "O restaurante de nota mais alta da área de Hakone. Vale a parada só por ele.",
+      "order_pt": "Unajū.",
+      "pregnancy_pt": "Liberado; limite o kimo.",
+      "group_pt": "69 lugares com salas para 6; cabem.",
+      "booking_pt": "Reserva de enguia por telefone até 2 meses antes.",
+      "dec_jan_pt": "10:00–16:00; fecha quinta e sexta. Ano-Novo a confirmar.",
+      "query": "Unagi-tei Tomoei Odawara",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Registro “Tomoei” em Odawara, set 2016 (1 vez), segundo o City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
+    },
+    {
+      "name": "Takeyabu Hakone",
+      "name_ja": "竹やぶ 箱根店",
+      "area": "Kojiri, perto do teleférico Ubako",
+      "genre_pt": "Soba",
+      "price_pt": "¥2–3k",
+      "tabelog": {
+        "score": 3.68,
+        "reviews": 824,
+        "url": "https://tabelog.com/kanagawa/A1410/A141001/14001257/",
+        "awards": "そば 百名店 2021, 2022, EAST 2024, 2025"
+      },
+      "why_pt": "Soba de casa séria no alto do lago.",
+      "order_pt": "Seiro soba.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "22 lugares; 6 cabem.",
+      "booking_pt": "On-line.",
+      "dec_jan_pt": "Fecha às quartas. Ano-Novo a confirmar.",
+      "query": "Takeyabu Hakone"
+    },
+    {
+      "name": "Yuba-don Naokichi",
+      "name_ja": "湯葉丼 直吉",
+      "area": "Hakone-Yumoto",
+      "genre_pt": "Tofu, yuba",
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 1408,
+        "url": "https://tabelog.com/kanagawa/A1410/A141001/14007598/"
+      },
+      "why_pt": "Abaixo de 3,5 (dado de snippet de busca), mas é o almoço leve de Yumoto.",
+      "order_pt": "Yuba-don.",
+      "pregnancy_pt": "Peça o ovo bem firme.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Yuba-don Naokichi Hakone"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Chimoto Ekimae-dōri",
+      "name_ja": "ちもと 駅前通り店",
+      "what_pt": "Doceria de Yumoto, Tabelog 3,71, 和菓子 EAST 百名店 2026.",
+      "buy_pt": "Doces para levar.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Chimoto Hakone Yumoto"
+    },
+    {
+      "name": "Kikukawa Shōten",
+      "name_ja": "菊川商店",
+      "what_pt": "Doceria de Yumoto, Tabelog 3,67, 和菓子 EAST 百名店 2026.",
+      "buy_pt": "Doces quentes de rua.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Kikukawa Shoten Hakone"
+    },
+    {
+      "name": "Amazake-chaya",
+      "name_ja": "甘酒茶屋",
+      "what_pt": "Casa de chá na velha estrada, Tabelog 3,67, 和菓子 EAST 百名店 2026.",
+      "buy_pt": "Amazake e chikara-mochi.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Amazake Chaya Hakone"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "docs/research/food/11-critics-international.md",
+    "https://www.youtube.com/watch?v=hJht8LYvHwk",
+    "https://ja.wikipedia.org/wiki/大涌谷"
+  ]
+}
