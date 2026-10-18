@@ -16,7 +16,9 @@
       "what": "Thick noodles cooked in an iron pot in miso broth with pumpkin, vegetables and mushrooms.",
       "where": "Kiji-tei; Kosaku (where Mark Wiens ate).",
       "must": true,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Thick flat noodles simmered in miso with pumpkin and vegetables.",
+      "story": "Legend says Takeda Shingen cut the ingredients with his sword, but that's post-war tourist folklore. The real story is wheat: in Kai, rice grew poorly and silk farming turned paddies into mulberry fields, so winter wheat became the staple. Hōtō noodles have no salt in the dough and go raw into the miso pot, where they and the softening pumpkin thicken the broth. Eat it hot from the iron pot."
     },
     {
       "name": "Yoshida udon",
@@ -25,7 +27,9 @@
       "what": "Very firm udon with boiled cabbage, aburaage and meat (traditionally horse, cooked), seasoned with suridane, a chilli-and-sesame paste.",
       "where": "Miura Udon, 麺許皆伝, 桜井うどん in Fujiyoshida.",
       "must": true,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Very firm udon with cabbage, fried tofu and meat, plus chilli paste.",
+      "story": "In Fujiyoshida, a silk-weaving town, the women wove and the men cooked, making a hard, filling udon so everyone could eat without stopping work. It also fed the pilgrims heading up Fuji. Today over 60 shops serve it, almost all at lunch only, many in family homes. Expect very firm noodles with boiled cabbage, aburaage and meat. Stir in suridane, the chilli-and-sesame paste, to taste."
     },
     {
       "name": "Pheasant",
@@ -34,7 +38,8 @@
       "what": "Pheasant in hōtō and other dishes, the speciality of a house more than 50 years old.",
       "where": "Kiji-tei.",
       "must": false,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Pheasant in hōtō, the speciality of a 50-year-old house."
     },
     {
       "name": "Shingen-mochi",
@@ -43,7 +48,8 @@
       "what": "Little mochi with kinako and black-sugar syrup, Yamanashi's classic souvenir.",
       "where": "Souvenir shops and stations.",
       "must": false,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Little mochi with roasted soy flour and black-sugar syrup."
     },
     {
       "name": "Kōshū wine",
@@ -53,7 +59,8 @@
       "where": "Liquor shops.",
       "must": false,
       "pregnancy": "avoid",
-      "pregnancy_note": "Alcohol. Fernanda skips it and has local grape juice instead."
+      "pregnancy_note": "Alcohol. Fernanda skips it and has local grape juice instead.",
+      "glance": "Japanese white wine from Yamanashi's own Kōshū grape."
     }
   ],
   "areas": [
@@ -67,7 +74,8 @@
       ],
       "tips": "The hōtō halls (Fudō and others) sit at 3.41–3.49 on Tabelog: easy, not excellent.",
       "dec_jan": "We're here 5–7 Jan, just after New Year; whether everything has reopened is to confirm.",
-      "query": "Kawaguchiko Station"
+      "query": "Kawaguchiko Station",
+      "glance": "Home of the big hōtō halls and the pheasant house Kiji-tei."
     },
     {
       "name": "Central Fujiyoshida",
@@ -79,7 +87,8 @@
       ],
       "tips": "Lunch only; many close on Sundays.",
       "dec_jan": "Many close over New Year: check shop by shop that they've reopened by 5–7 Jan. None of our days is a Sunday.",
-      "query": "Fujiyoshida udon"
+      "query": "Fujiyoshida udon",
+      "glance": "Old silk and pilgrim town with dozens of lunch-only udon shops."
     }
   ],
   "places": [
@@ -101,7 +110,19 @@
       "group": "Private room for 10–20; seven fit if we book.",
       "booking": "Online, taken 9:00–10:00 on weekdays. Only 5 groups a day.",
       "dec_jan": "Lunch only; closed Tuesdays and Wednesdays, so for us only Thu 7 Jan, our leaving day. Post-New Year hours to confirm.",
-      "query": "Kiji-tei Kawaguchiko"
+      "query": "Kiji-tei Kawaguchiko",
+      "pregnancy": "ok",
+      "seven": "room",
+      "closed_weekdays": [
+        "Tue",
+        "Wed"
+      ],
+      "meals": [
+        "lunch"
+      ],
+      "booking_channel": "online",
+      "booking_opens": "Weekdays 9:00–10:00 only",
+      "glance": "Pheasant hōtō from a 50-year-old house; Tabelog's top hōtō."
     },
     {
       "name": "Kosaku",
@@ -130,7 +151,10 @@
       "group": "Big hall (to confirm).",
       "booking": "To confirm.",
       "dec_jan": "Hours on 5–7 Jan to confirm.",
-      "query": "Kosaku hoto Kawaguchiko"
+      "query": "Kosaku hoto Kawaguchiko",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "glance": "A big, easy hōtō hall where Mark Wiens ate."
     },
     {
       "name": "Miura Udon",
@@ -149,7 +173,17 @@
       "group": "45 seats at tables of 6: ask to squeeze a seventh in, or split 4+3.",
       "booking": "No reservations.",
       "dec_jan": "10:00–14:00; closed Wednesdays (6 Jan), so Tue 5 or Thu 7 Jan. Post-New Year hours to confirm.",
-      "query": "Miura Udon Fujiyoshida"
+      "query": "Miura Udon Fujiyoshida",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "meals": [
+        "lunch"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "The Fuji locals' lunch: firm Yoshida udon with chilli paste."
     },
     {
       "name": "Menkyo Kaiden",
@@ -168,7 +202,9 @@
       "group": "To confirm.",
       "booking": "To confirm.",
       "dec_jan": "Hours on 5–7 Jan to confirm.",
-      "query": "Menkyo Kaiden Fujiyoshida"
+      "query": "Menkyo Kaiden Fujiyoshida",
+      "pregnancy": "ok",
+      "glance": "The second Yoshida udon pick from Tabelog's top-100 list."
     },
     {
       "name": "Sakurai Udon",
@@ -187,7 +223,9 @@
       "group": "To confirm.",
       "booking": "To confirm.",
       "dec_jan": "Hours on 5–7 Jan to confirm.",
-      "query": "Sakurai Udon Fujiyoshida"
+      "query": "Sakurai Udon Fujiyoshida",
+      "pregnancy": "ok",
+      "glance": "Yoshida udon in a family-home setting, also on the top-100 list."
     }
   ],
   "shops": [

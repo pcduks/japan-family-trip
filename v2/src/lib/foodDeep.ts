@@ -21,6 +21,15 @@ import tokyo from "../../data/food-deep/tokyo.json";
 import yudanaka from "../../data/food-deep/yudanaka.json";
 
 export type Pregnancy = "ok" | "careful" | "avoid";
+/** Can the seven of us sit together: tables, a room, the counter bought out, two tables (4+3), unclear, or not. */
+export type Seven = "yes" | "room" | "counter" | "split" | "ask" | "no";
+export type Channel = "online" | "phone" | "walk-in" | "hotel" | "queue";
+export type Meal = "lunch" | "dinner";
+export type Weekday = "Sun" | "Mon" | "Tue" | "Wed" | "Thu" | "Fri" | "Sat";
+
+export type DeepPlace = NonNullable<DeepCity["places"]>[number];
+export type DeepDish = NonNullable<DeepCity["meibutsu"]>[number];
+export type DeepArea = NonNullable<DeepCity["areas"]>[number];
 
 export interface DeepCity {
   slug: string;
@@ -28,8 +37,8 @@ export interface DeepCity {
   tagline?: string;
   history?: string[];
   winter?: string;
-  meibutsu?: { name: string; name_ja?: string; romaji?: string; what: string; where?: string; price?: string; must?: boolean; pregnancy?: Pregnancy; pregnancy_note?: string }[];
-  areas?: { name: string; name_ja?: string; kind?: string; story: string; eat?: string[]; tips?: string; dec_jan?: string; query?: string }[];
+  meibutsu?: { name: string; name_ja?: string; romaji?: string; what: string; where?: string; price?: string; must?: boolean; pregnancy?: Pregnancy; pregnancy_note?: string; glance?: string; story?: string }[];
+  areas?: { name: string; name_ja?: string; kind?: string; story: string; eat?: string[]; tips?: string; dec_jan?: string; query?: string; glance?: string }[];
   places?: {
     name: string;
     name_ja?: string;
@@ -45,6 +54,15 @@ export interface DeepCity {
     booking?: string;
     dec_jan?: string;
     query?: string;
+    pregnancy?: Pregnancy;
+    seven?: Seven;
+    closed_weekdays?: Weekday[];
+    closed_dates?: string[];
+    meals?: Meal[];
+    booking_channel?: Channel;
+    booking_opens?: string;
+    website?: string;
+    glance?: string;
   }[];
   shops?: { name: string; name_ja?: string; what: string; buy?: string; price?: string; dec_jan?: string; query?: string }[];
   sources?: string[];
@@ -97,6 +115,9 @@ export const TOPIC_TABS: { id: string; label: string }[] = [
 ];
 
 const PREG: Pregnancy[] = ["ok", "careful", "avoid"];
+const SEVEN: Seven[] = ["yes", "room", "counter", "split", "ask", "no"];
+const CHANNEL: Channel[] = ["online", "phone", "walk-in", "hotel", "queue"];
+const WEEKDAYS: Weekday[] = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 /** Schema problems in the deep guide; empty when it's fine. */
 export function checkDeep(): string[] {
@@ -113,6 +134,15 @@ export function checkDeep(): string[] {
       const s = p.tabelog?.score;
       if (s != null && (typeof s !== "number" || s < 2.5 || s > 5)) out.push(`${slug}.places[${i}] tabelog ${s}`);
       if (p.tabelog?.url && !/^https:\/\/(s\.)?tabelog\.com\//.test(p.tabelog.url)) out.push(`${slug}.places[${i}] tabelog url ${p.tabelog.url}`);
+      const at = `${slug}.places[${i}] ${p.name}`;
+      if (p.pregnancy && !PREG.includes(p.pregnancy)) out.push(`${at}: pregnancy ${p.pregnancy}`);
+      if (p.seven && !SEVEN.includes(p.seven)) out.push(`${at}: seven ${p.seven}`);
+      if (p.booking_channel && !CHANNEL.includes(p.booking_channel)) out.push(`${at}: booking_channel ${p.booking_channel}`);
+      p.closed_weekdays?.forEach((d) => !WEEKDAYS.includes(d) && out.push(`${at}: closed_weekdays ${d}`));
+      p.closed_dates?.forEach((d) => !(/^\d{4}-\d{2}-\d{2}$/.test(d) && d >= "2026-12-20" && d <= "2027-01-09") && out.push(`${at}: closed_dates ${d}`));
+      p.meals?.forEach((m) => !["lunch", "dinner"].includes(m) && out.push(`${at}: meals ${m}`));
+      if (p.website && !/^https?:\/\//.test(p.website)) out.push(`${at}: website ${p.website}`);
+      if (p.glance && p.glance.split(/\s+/).length > 16) out.push(`${at}: glance too long`);
     });
     c.shops?.forEach((s, i) => (!s.name || !s.what) && out.push(`${slug}.shops[${i}] needs name and what`));
   }

@@ -10,7 +10,7 @@ describe("deep food guide", () => {
     expect(checkDeep()).toEqual([]);
   });
   it("indexes every file in data/food-deep", () => {
-    const cities = readdirSync(DIR).filter((f) => f.endsWith(".json")).map((f) => f.replace(/\.json$/, ""));
+    const cities = readdirSync(DIR).filter((f) => f.endsWith(".json") && f !== "photos.json").map((f) => f.replace(/\.json$/, ""));
     expect(Object.keys(DEEP_CITIES).sort()).toEqual(cities.sort());
     const topics = readdirSync(join(DIR, "topics")).filter((f) => f.endsWith(".json")).map((f) => f.replace(/\.json$/, ""));
     expect(Object.keys(DEEP_TOPICS).sort()).toEqual(topics.sort());

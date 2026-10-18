@@ -16,7 +16,9 @@
       "where": "Our ryokan.",
       "must": true,
       "pregnancy": "careful",
-      "pregnancy_note": "For Fernanda: ask before we arrive. No crustacean or shellfish sashimi, meat well cooked, no raw egg."
+      "pregnancy_note": "For Fernanda: ask before we arrive. No crustacean or shellfish sashimi, meat well cooked, no raw egg.",
+      "glance": "Mountain multi-course dinner at our ryokan: river fish, beef, nabe.",
+      "story": "Legend says the monk Gyōki found Shibu's spring 1,300 years ago, and Takeda Shingen used it to heal his wounded. Here, eating revolves around the ryokan: nothing in the village streets scores above about 3.4 on Tabelog. Tonight is mountain kaiseki, course by course: river fish, Shinshū beef, mushrooms, a nabe pot, and soba to finish. Ask ahead for Fernanda: no raw shellfish, meat well cooked, no raw egg."
     },
     {
       "name": "Shinshū soba",
@@ -25,7 +27,9 @@
       "what": "Cold soba on a bamboo sieve, made from stone-ground buckwheat.",
       "where": "Iwamoto Sobaya (by car).",
       "must": true,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Cold buckwheat noodles from stone-ground flour, on a bamboo sieve.",
+      "story": "This is mountain Shinshū, where soba, oyaki and nozawana are everyday food. The valley's most famous soba house, Yama no Mi, closes once the snow comes, from late November to late April, so in winter we drive to Iwamoto Sobaya, which has a tatami room and takes cash only. The noodles are made from stone-ground buckwheat and served cold on a bamboo sieve: dip a small bundle in the sauce and slurp."
     },
     {
       "name": "Hot-spring egg",
@@ -35,7 +39,8 @@
       "where": "Ryokans and the spa villages.",
       "must": false,
       "pregnancy": "careful",
-      "pregnancy_note": "The yolk is undercooked. For Fernanda: only if it's properly firm."
+      "pregnancy_note": "The yolk is undercooked. For Fernanda: only if it's properly firm.",
+      "glance": "Egg slow-cooked in hot-spring water: soft white, creamy yolk."
     },
     {
       "name": "Yamanouchi apples",
@@ -44,7 +49,8 @@
       "what": "The valley orchards are still selling apples in December.",
       "where": "Fruit shops and small grocers.",
       "must": false,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Apples from the valley orchards, still on sale in December."
     },
     {
       "name": "Oyaki and nozawana",
@@ -53,7 +59,8 @@
       "what": "Shinshū's snacks: a stuffed dumpling and a green pickle.",
       "where": "Souvenir shops in the villages.",
       "must": false,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Shinshū snacks: a stuffed dumpling and a green pickle."
     },
     {
       "name": "Shiga Kōgen beer and sake",
@@ -63,7 +70,8 @@
       "where": "Tamamura Honten.",
       "must": false,
       "pregnancy": "avoid",
-      "pregnancy_note": "Alcohol. Fernanda skips it."
+      "pregnancy_note": "Alcohol. Fernanda skips it.",
+      "glance": "Craft beer and sake from the valley's own brewery."
     }
   ],
   "areas": [
@@ -78,7 +86,8 @@
       ],
       "tips": "The evening stroll in yukata is the thing to do.",
       "dec_jan": "We're here 24–27 Dec, with Christmas Eve dinner at our ryokan. The ryokans are open; they're at their most expensive over New Year, which we miss.",
-      "query": "Shibu Onsen"
+      "query": "Shibu Onsen",
+      "glance": "A stone lane of wooden ryokans and nine public baths."
     },
     {
       "name": "Yudanaka",
@@ -90,7 +99,8 @@
       ],
       "tips": "Eat before heading up: there's nothing on the way.",
       "dec_jan": "To confirm for 24–27 Dec.",
-      "query": "Yudanaka Station"
+      "query": "Yudanaka Station",
+      "glance": "End of the line and base for the Jigokudani monkeys."
     }
   ],
   "places": [
@@ -111,7 +121,32 @@
       "group": "To confirm.",
       "booking": "To confirm.",
       "dec_jan": "Closed late November to late April, so closed for our whole stay (24–27 Dec). Its page mentions a winter spot on the ski slopes, not verified. Probably no use to us.",
-      "query": "Yama no Mi soba Yamanouchi"
+      "query": "Yama no Mi soba Yamanouchi",
+      "pregnancy": "ok",
+      "closed_dates": [
+        "2026-12-20",
+        "2026-12-21",
+        "2026-12-22",
+        "2026-12-23",
+        "2026-12-24",
+        "2026-12-25",
+        "2026-12-26",
+        "2026-12-27",
+        "2026-12-28",
+        "2026-12-29",
+        "2026-12-30",
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03",
+        "2027-01-04",
+        "2027-01-05",
+        "2027-01-06",
+        "2027-01-07",
+        "2027-01-08",
+        "2027-01-09"
+      ],
+      "glance": "The valley's best soba, but shut all winter."
     },
     {
       "name": "Iwamoto Sobaya",
@@ -129,7 +164,13 @@
       "group": "30 seats on tatami; tell them we're seven.",
       "booking": "To confirm. Cash only.",
       "dec_jan": "Closed Thursdays, so not on Christmas Eve (Thu 24 Dec, our arrival day). Fri 25 to Sun 27 Dec aren't closing days, but confirm year-end hours.",
-      "query": "Iwamoto Sobaya Yamanouchi"
+      "query": "Iwamoto Sobaya Yamanouchi",
+      "pregnancy": "ok",
+      "seven": "yes",
+      "closed_weekdays": [
+        "Thu"
+      ],
+      "glance": "The valley soba that's open in winter, with a tatami room."
     }
   ],
   "shops": [

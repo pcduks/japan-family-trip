@@ -18,7 +18,9 @@
       "where": "Steak House Kitchen Hida, Shuntei Nakagawa, Bourbon. Mark Wiens spent 24 hours eating Hida beef (Kyōya, Maruaki and others).",
       "must": true,
       "pregnancy": "careful",
-      "pregnancy_note": "For Fernanda: well done, and skip the raw egg with sukiyaki."
+      "pregnancy_note": "For Fernanda: well done, and skip the raw egg with sukiyaki.",
+      "glance": "Gifu's black Wagyu: as steak, sukiyaki or grilled on miso.",
+      "story": "One bull made this brand. In 1981 a bull called Yasufuku was bought from Hyōgo, of the Tajima line, and he sired about 39,000 offspring. Hida beef is black Wagyu fattened in Gifu for at least 14 months and graded 3 or above; since 2023 it has had geographical-indication status. Have it as steak, sukiyaki or grilled on hōba-miso. For Fernanda: well done, and no raw egg."
     },
     {
       "name": "Hida beef nigiri",
@@ -28,7 +30,8 @@
       "where": "Sanmachi stalls.",
       "must": false,
       "pregnancy": "avoid",
-      "pregnancy_note": "Rare meat. Fernanda skips it; the others can have it for the photo."
+      "pregnancy_note": "Rare meat. Fernanda skips it; the others can have it for the photo.",
+      "glance": "A seared beef slice over rice; a Sanmachi street-stall photo."
     },
     {
       "name": "Hōba-miso",
@@ -37,7 +40,9 @@
       "what": "Miso with spring onion and mushroom grilled on a magnolia leaf on a table burner, eaten with rice. Sometimes topped with Hida beef.",
       "where": "Ryokan breakfast; Kyōya (Mark Wiens had the beef version); the markets sell kits.",
       "must": true,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Miso and mushrooms grilled on a magnolia leaf, eaten with rice.",
+      "story": "Takayama sits in a high, snowy basin, and this dish comes from the cold: people used to warm miso on a leaf over the irori, the sunken hearth. Today it arrives on a small table burner: miso with spring onion and mushroom on a dried magnolia leaf, sometimes topped with Hida beef. Let it bubble, then scoop it onto your rice. Ryokan breakfasts serve it, and the markets sell kits."
     },
     {
       "name": "Takayama ramen",
@@ -46,7 +51,9 @@
       "what": "Light soy broth, thin wavy noodles. Born at a street stall in 1938.",
       "where": "Masago Soba (the 元祖). Mark Wiens tried Tsuzumi.",
       "must": true,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Light soy broth with thin wavy noodles, born at a 1938 stall.",
+      "story": "Takayama ramen began at a street stall in 1938, and Tabelog reviewers still call Masago Soba, the stall that became a shop, the original. Locally it's called chūka soba. Expect a light soy-sauce broth and thin, wavy noodles, and a bill under ¥1,000. Masago has tables of four, so we sit 4+3. Mark Wiens tried another shop, Tsuzumi. Slurp the noodles while they're hot."
     },
     {
       "name": "Hida mitarashi dango",
@@ -56,7 +63,9 @@
       "where": "Jinya Dango; market stalls.",
       "price": "≈ ¥100 a skewer (to confirm)",
       "must": true,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Grilled rice dumplings on a skewer, brushed with soy only.",
+      "story": "Tokyo's mitarashi dango comes in a sweet syrup. Takayama's doesn't: here it even has its own name, midarashi, and it's brushed with soy sauce only, so it's savoury. Rice balls on a skewer are grilled and glazed with soy. Buy them hot at the morning-market stalls or at Jinya Dango, about ¥100 a skewer (to confirm), and eat them while they're warm."
     },
     {
       "name": "Pickled red turnip",
@@ -65,7 +74,8 @@
       "what": "Hida red turnip, pickled: crunchy and sour. A market classic.",
       "where": "Miyagawa and Jinya-mae markets.",
       "must": false,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Crunchy, sour pickled red turnip; a morning-market classic."
     },
     {
       "name": "Sanmachi new sake",
@@ -75,7 +85,8 @@
       "where": "Sanmachi breweries.",
       "must": false,
       "pregnancy": "avoid",
-      "pregnancy_note": "Alcohol. For Fernanda: kōji amazake (alcohol-free); the kind made from sake lees (sakekasu) contains alcohol."
+      "pregnancy_note": "Alcohol. For Fernanda: kōji amazake (alcohol-free); the kind made from sake lees (sakekasu) contains alcohol.",
+      "glance": "New-season sake poured at the Sanmachi breweries in winter."
     },
     {
       "name": "Shōjin ryōri",
@@ -84,7 +95,8 @@
       "what": "Vegetarian temple cooking: tofu and mountain vegetables.",
       "where": "Hida Takayama Kakushō.",
       "must": false,
-      "pregnancy": "ok"
+      "pregnancy": "ok",
+      "glance": "Vegetarian temple cooking: tofu and mountain vegetables."
     }
   ],
   "areas": [
@@ -101,7 +113,8 @@
       ],
       "tips": "In winter many stalls start at 7:00; open until ~12:00. Heavy snow can cancel it.",
       "dec_jan": "On the Takayama alternative (28–30 Dec) our market mornings are Tue 29 Dec and early on the 30th before we leave: the year-end 'toshinose' market, with New Year decorations. Whether it runs 1–3 Jan (to confirm) doesn't affect us.",
-      "query": "Miyagawa Morning Market Takayama"
+      "query": "Miyagawa Morning Market Takayama",
+      "glance": "Riverside morning market since 1953: pickles, dango, miso, apples."
     },
     {
       "name": "Jinya-mae Market",
@@ -113,7 +126,8 @@
       ],
       "tips": "Pair it with Miyagawa the same morning.",
       "dec_jan": "To confirm for 29–30 Dec.",
-      "query": "Jinya-mae Morning Market"
+      "query": "Jinya-mae Morning Market",
+      "glance": "A small morning market by the shogunate's old government house."
     },
     {
       "name": "Sanmachi",
@@ -127,7 +141,8 @@
       ],
       "tips": "Very busy at midday; go early. The nigiri stalls are a tourist showcase.",
       "dec_jan": "Brewery tastings over 29 Dec–3 Jan to confirm; for us that's 29 Dec only.",
-      "query": "Sanmachi Takayama"
+      "query": "Sanmachi Takayama",
+      "glance": "Old merchant streets with breweries under green cedar balls."
     }
   ],
   "places": [
@@ -149,7 +164,18 @@
       "group": "24 seats at tables; book for seven.",
       "booking": "Online.",
       "dec_jan": "Lunch and dinner; closed Wednesdays (30 Dec, our leaving day), so dinner on Mon 28 or Tue 29 Dec. Year-end hours to confirm.",
-      "query": "Kitchen Hida Takayama"
+      "query": "Kitchen Hida Takayama",
+      "pregnancy": "careful",
+      "seven": "yes",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "booking_channel": "online",
+      "glance": "The Hida beef steakhouse Japanese diners trust."
     },
     {
       "name": "Shuntei Nakagawa",
@@ -169,7 +195,14 @@
       "group": "16 seats at tables; ask for seven together, or split 4+3.",
       "booking": "Online, with a strict cancellation fee.",
       "dec_jan": "Closed Tuesdays (29 Dec) and the 3rd Wednesday (not on our dates), so Mon 28 Dec is our one evening. Year-end hours to confirm.",
-      "query": "Shuntei Nakagawa Takayama"
+      "query": "Shuntei Nakagawa Takayama",
+      "pregnancy": "careful",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Tue"
+      ],
+      "booking_channel": "online",
+      "glance": "Smaller, cheaper Hida beef cooked on the griddle."
     },
     {
       "name": "Hida Takayama Kakushō",
@@ -189,7 +222,10 @@
       "group": "80 seats with private rooms; ask for a room for seven.",
       "booking": "Reservation only.",
       "dec_jan": "Hours on 28–30 Dec to confirm.",
-      "query": "Kakusho Takayama"
+      "query": "Kakusho Takayama",
+      "pregnancy": "ok",
+      "seven": "room",
+      "glance": "Temple vegetarian course: the most relaxed special meal for Fernanda."
     },
     {
       "name": "Taruhei",
@@ -209,7 +245,17 @@
       "group": "Has tatami; ask for a zashiki for seven.",
       "booking": "Call or book.",
       "dec_jan": "Closed Sundays, which doesn't touch 28–30 Dec. Year-end hours to confirm.",
-      "query": "Taruhei Takayama"
+      "query": "Taruhei Takayama",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "meals": [
+        "dinner"
+      ],
+      "booking_channel": "phone",
+      "glance": "An izakaya of Hida home cooking, with tatami rooms."
     },
     {
       "name": "Masago Soba",
@@ -229,7 +275,14 @@
       "group": "25 seats at tables of 4: two tables, 4+3.",
       "booking": "No reservations.",
       "dec_jan": "Closed Wednesdays (30 Dec), so 28 or 29 Dec. Year-end hours to confirm.",
-      "query": "Masago Soba Takayama"
+      "query": "Masago Soba Takayama",
+      "pregnancy": "ok",
+      "seven": "split",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "The 1938 original of light, soy-broth Takayama ramen."
     },
     {
       "name": "Kunihachi Shokudō",
@@ -249,7 +302,14 @@
       "group": "52 seats; say we're seven.",
       "booking": "No reservations.",
       "dec_jan": "Closed Wednesdays (30 Dec), so 28 or 29 Dec. Year-end hours to confirm.",
-      "query": "Kunihachi Shokudo"
+      "query": "Kunihachi Shokudo",
+      "pregnancy": "careful",
+      "seven": "yes",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Hida beef at canteen prices, where the locals eat."
     }
   ],
   "shops": [

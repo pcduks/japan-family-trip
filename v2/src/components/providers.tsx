@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { localStore, useLocalStore, useSystemDark } from "@/lib/localStore";
 import type { RulesContext } from "@/lib/rules";
-import type { Comment, PlanHistoryEntry, Reaction, Role, Snapshot, Stay, Suggestion, SuggestionDiff, Version, Vote, VoteKind } from "@/lib/types";
+import type { Comment, FoodBooking, PlanHistoryEntry, Reaction, Role, Snapshot, Stay, Suggestion, SuggestionDiff, Version, Vote, VoteKind } from "@/lib/types";
 import { describeDiff, newId } from "@/lib/versions";
 import { afterAccept, mergeOnto, sameRoute, stopNames, validRoute } from "@/lib/merge";
 
@@ -41,8 +41,9 @@ interface DemoState {
   planOverride: Version | null;
   rankRevealed: boolean;
   doneDeadlines: string[];
+  foodBookings: FoodBooking[];
 }
-const EMPTY_DEMO: DemoState = { versions: [], votes: [], suggestions: [], comments: [], reactions: [], history: [], planOverride: null, rankRevealed: false, doneDeadlines: [] };
+const EMPTY_DEMO: DemoState = { versions: [], votes: [], suggestions: [], comments: [], reactions: [], history: [], planOverride: null, rankRevealed: false, doneDeadlines: [], foodBookings: [] };
 const demoStore = localStore<DemoState>("jp-demo", EMPTY_DEMO, (raw) => ({ ...EMPTY_DEMO, ...(raw as Partial<DemoState>) }));
 const demoMe = localStore<string | null>("jp-demo-me", null);
 
@@ -71,6 +72,9 @@ export interface Store {
   withdrawSuggestion: (id: string) => Promise<void>;
   revertHistory: (id: string) => Promise<string | null>;
   setDeadlineDone: (id: string, done: boolean) => Promise<void>;
+  /** Planner only: one booking per food place; saving again replaces it. */
+  setFoodBooking: (b: Omit<FoodBooking, "id">) => Promise<string | null>;
+  clearFoodBooking: (targetId: string) => Promise<void>;
   addComment: (targetType: Comment["target_type"], targetId: string, body: string) => Promise<void>;
   toggleReaction: (targetType: string, targetId: string, kind: Reaction["kind"]) => Promise<void>;
 }
@@ -167,7 +171,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     // Demo: overlay local edits on the bundled file.
     const versions = initial.versions.map((v) => (v.status === "plan" && demoState.planOverride ? demoState.planOverride : v)).concat(demoState.versions);
     const deadlines = initial.deadlines.map((d) => (d.id && demoState.doneDeadlines.includes(d.id) ? { ...d, done: true } : d));
-    return { ...initial, versions, deadlines, votes: demoState.votes, suggestions: demoState.suggestions, comments: demoState.comments, reactions: demoState.reactions, history: demoState.history };
+    return { ...initial, versions, deadlines, food_bookings: demoState.foodBookings, votes: demoState.votes, suggestions: demoState.suggestions, comments: demoState.comments, reactions: demoState.reactions, history: demoState.history };
   }, [sb, remote, initial, demoState]);
 
   const rankRevealed = sb
@@ -350,6 +354,28 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     [sb, run],
   );
 
+  const setFoodBooking = useCallback(
+    async (b: Omit<FoodBooking, "id">): Promise<string | null> => {
+      if (!sb) {
+        patchDemo((d) => {
+          const old = d.foodBookings.find((x) => x.target_id === b.target_id);
+          return { ...d, foodBookings: [...d.foodBookings.filter((x) => x.target_id !== b.target_id), { ...b, id: old?.id ?? newId() }] };
+        });
+        return null;
+      }
+      return run("setFoodBooking", { booking: b });
+    },
+    [sb, run],
+  );
+
+  const clearFoodBooking = useCallback(
+    async (targetId: string) => {
+      if (!sb) return patchDemo((d) => ({ ...d, foodBookings: d.foodBookings.filter((x) => x.target_id !== targetId) }));
+      await run("clearFoodBooking", { targetId });
+    },
+    [sb, run],
+  );
+
   const addComment = useCallback(
     async (targetType: Comment["target_type"], targetId: string, body: string) => {
       const who = me;
@@ -398,6 +424,8 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     withdrawSuggestion,
     revertHistory,
     setDeadlineDone,
+    setFoodBooking,
+    clearFoodBooking,
     addComment,
     toggleReaction,
   };

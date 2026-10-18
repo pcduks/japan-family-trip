@@ -17,7 +17,9 @@
       "where": "Hassho, Tatsu or Denkō Sekka (in the station).",
       "price": "¥1,000–1,800",
       "must": true,
-      "pregnancy_note": "For Fernanda: fine, the egg is cooked on the griddle. Avoid only raw-oyster or raw-egg toppings."
+      "pregnancy_note": "For Fernanda: fine, the egg is cooked on the griddle. Avoid only raw-oyster or raw-egg toppings.",
+      "glance": "Layered savoury pancake: batter, cabbage, pork, noodles, egg, sauce.",
+      "story": "After the bomb, many women who had lost their husbands set up a griddle in their front room, which is why so many shops are called 'so-and-so-chan'. Hiroshima okonomiyaki is built in layers, not mixed: a thin batter base, a mountain of cabbage, pork, noodles and egg, pressed on the griddle and finished with Otafuku sauce. Eat it straight off the griddle with the little spatula, the hera."
     },
     {
       "name": "Hiroshima oysters",
@@ -28,7 +30,9 @@
       "price": "¥750–3,000",
       "must": true,
       "pregnancy": "careful",
-      "pregnancy_note": "For Fernanda: no raw oysters (生がき). Fried, grilled and in rice are all fine."
+      "pregnancy_note": "For Fernanda: no raw oysters (生がき). Fried, grilled and in rice are all fine.",
+      "glance": "Big, creamy bay oysters, at their best in December.",
+      "story": "Hiroshima Bay has farmed oysters since the 16th century, and bamboo rafts from 1953 made production explode: the prefecture now grows half to 60% of Japan's oysters. From the Edo period to the Taishō, Hiroshima's oyster boats even moored on Osaka's rivers to sell them. December is peak. Have them fried as kaki-furai, grilled in the shell or cooked in rice. Fernanda skips only the raw ones."
     },
     {
       "name": "Hiroshima tsukemen",
@@ -37,7 +41,8 @@
       "what": "Cold noodles to dip in a red chilli sauce; you choose how hot.",
       "where": "Specialist shops in the centre.",
       "price": "≈¥1,000",
-      "must": false
+      "must": false,
+      "glance": "Cold noodles dipped in red chilli sauce; you choose the heat."
     },
     {
       "name": "Momiji manjū",
@@ -46,7 +51,8 @@
       "what": "A maple-leaf-shaped cake filled with anko, created on Miyajima in 1906. Everyone's Hiroshima souvenir.",
       "where": "Miyajima (Momiji-dō, Iwamura) and the station.",
       "price": "≈¥100–200 each",
-      "must": false
+      "must": false,
+      "glance": "A maple-leaf cake filled with sweet bean paste, born on Miyajima."
     },
     {
       "name": "Anago-meshi",
@@ -55,7 +61,9 @@
       "what": "Conger eel grilled in sauce over rice cooked in broth. The Miyajimaguchi ekiben, also sold at the station.",
       "where": "Anagomeshi Ueno (Miyajimaguchi).",
       "price": "¥2,000–3,000",
-      "must": true
+      "must": true,
+      "glance": "Grilled conger eel over broth-cooked rice; the Miyajimaguchi bentō.",
+      "story": "Ueno has been making anago-meshi at Miyajimaguchi since 1901. Conger eel is grilled in sauce and laid over rice cooked in broth. It's the Miyajimaguchi ekiben, the station bentō, and it's also sold at Hiroshima Station. Buy a box and eat it on the ferry to Miyajima or on the Shinkansen. It's all cooked, so it's fine for Fernanda."
     },
     {
       "name": "Oyster okonomiyaki",
@@ -65,7 +73,8 @@
       "where": "Okonomiyaki counters in December and January.",
       "price": "+¥500–800",
       "must": false,
-      "pregnancy_note": "For Fernanda: fine if well grilled; ask for よく焼いて."
+      "pregnancy_note": "For Fernanda: fine if well grilled; ask for よく焼いて.",
+      "glance": "Winter okonomiyaki topped with grilled oysters; Fernanda's way in."
     }
   ],
   "areas": [
@@ -79,7 +88,8 @@
       ],
       "tips": "Good to look at. To eat, go to a neighbourhood counter.",
       "dec_jan": "New Year hours to confirm in early December.",
-      "query": "Okonomimura Hiroshima"
+      "query": "Okonomimura Hiroshima",
+      "glance": "The famous okonomiyaki building: good to look at, eat elsewhere."
     },
     {
       "name": "Hiroshima Station (ekie)",
@@ -93,7 +103,8 @@
       ],
       "tips": "Plan B for all seven of us on a travel day.",
       "dec_jan": "Open over New Year with shorter hours (to confirm in early December). Our travel days here are 4 and 6 Jan.",
-      "query": "ekie Hiroshima Station"
+      "query": "ekie Hiroshima Station",
+      "glance": "Station mall with top-100 okonomiyaki and souvenirs; the group fallback."
     },
     {
       "name": "Nagarekawa and Yagenbori",
@@ -106,7 +117,8 @@
       ],
       "tips": "Dinner, then a counter.",
       "dec_jan": "New Year hours to confirm in early December.",
-      "query": "Yagenbori Hiroshima"
+      "query": "Yagenbori Hiroshima",
+      "glance": "Bar and izakaya district with okonomiyaki counters open late."
     }
   ],
   "places": [
@@ -128,7 +140,18 @@
       "group": "32 seats (20 at tables): ask for seven together, or split 4+3.",
       "booking": "No bookings; queue before opening.",
       "dec_jan": "Open Wed–Sun, 10:00–17:00, so closed Mon 4 and Tue 5 Jan, our two days here; only possible on the morning of Wed 6 Jan before we leave. New Year hours to confirm in early December. Yagenbori Hassho, open in the evening, is the likelier bet (its days to check).",
-      "query": "Hassho Kanayamacho Hiroshima"
+      "query": "Hassho Kanayamacho Hiroshima",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Mon",
+        "Tue"
+      ],
+      "meals": [
+        "lunch"
+      ],
+      "booking_channel": "queue",
+      "glance": "The okonomiyaki locals measure all the others by."
     },
     {
       "name": "Okonomiyaki Tatsu",
@@ -148,7 +171,14 @@
       "group": "9 seats: book the tatami table for 6 and ask whether a seventh fits, or seat one at the counter.",
       "booking": "Book the tatami table.",
       "dec_jan": "Closed Mondays and Tuesdays: 4 and 5 Jan, our two Hiroshima days. Only possible on 6 Jan before the train, if it's open then; New Year hours to confirm in early December.",
-      "query": "Okonomiyaki Tatsu Hiroshima"
+      "query": "Okonomiyaki Tatsu Hiroshima",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Mon",
+        "Tue"
+      ],
+      "glance": "The city's top okonomiyaki score, at a tiny counter."
     },
     {
       "name": "Denkō Sekka ekie",
@@ -174,7 +204,11 @@
           "note": "Went once (Nov 2019), according to the City Foodsters visit log.",
           "url": "https://www.cityfoodsters.com/restaurants/"
         }
-      ]
+      ],
+      "pregnancy": "careful",
+      "seven": "yes",
+      "booking_channel": "walk-in",
+      "glance": "Easy top-100 okonomiyaki inside the station, with room for everyone."
     }
   ],
   "shops": [

@@ -52,6 +52,14 @@ export function WhatsNext() {
               </span>
               <span className="min-w-0 flex-1">
                 {d.item}
+                {d.place ? (
+                  <>
+                    {" "}
+                    <Link href={`/food/${d.place.split("/")[0]}?place=${d.place.split("/")[1]}`} className="text-muted">
+                      open
+                    </Link>
+                  </>
+                ) : null}
                 {d.source ? (
                   <>
                     {" "}
