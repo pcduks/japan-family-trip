@@ -37,7 +37,7 @@ export function DishStory({ city, dish: d, index, total, photo, onClose, onNext 
         {photo ? (
           <figure className="grid gap-1">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={photo.url} alt={d.name} className="max-h-[38dvh] w-full rounded-2xl object-cover" />
+            <img src={photo.url} alt={d.name} className="max-h-[38dvh] w-full rounded-2xl object-cover" onError={(e) => (e.currentTarget.style.display = "none")} />
             <figcaption className="text-[0.68rem] text-muted">
               {[photo.author, photo.license].filter(Boolean).join(" · ")}
               {photo.source ? (

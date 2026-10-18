@@ -224,7 +224,7 @@ export function DishTile({ dish, photo, onClick, href }: { dish: Pick<DeepDish, 
     <>
       {photo ? (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={photo.url} alt="" loading="lazy" className="h-24 w-full rounded-lg object-cover" />
+        <img src={photo.url} alt="" loading="lazy" className="h-24 w-full rounded-lg object-cover" onError={(e) => (e.currentTarget.style.display = "none")} />
       ) : null}
       {dish.must ? (
         <span aria-label="Must try" className="jp absolute top-2 right-2 grid size-[26px] -rotate-6 place-items-center rounded-full border-[1.5px] border-accent bg-paper/90 text-[13px] text-accent">

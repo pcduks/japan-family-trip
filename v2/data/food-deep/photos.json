@@ -1,1 +1,330 @@
-{}
+{
+  "tokyo/Edo-mae nigiri": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Yamazaki_sushi_at_Tsukiji_fish_market%2C_Chuo_City%3B_November_2013_%2812%29.jpg/960px-Yamazaki_sushi_at_Tsukiji_fish_market%2C_Chuo_City%3B_November_2013_%2812%29.jpg",
+    "width": 960,
+    "height": 638,
+    "author": "chee.hong",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Yamazaki_sushi_at_Tsukiji_fish_market,_Chuo_City;_November_2013_(12).jpg"
+  },
+  "tokyo/Edo-mae tempura": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Tempura_01.jpg/960px-Tempura_01.jpg",
+    "width": 960,
+    "height": 1280,
+    "author": "Yaco*",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tempura_01.jpg"
+  },
+  "tokyo/Edo soba (and toshikoshi soba on 31 Dec)": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Soba_%40Yabu%2C_Kanda_%286639249067%29.jpg/960px-Soba_%40Yabu%2C_Kanda_%286639249067%29.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Naotake Murayama",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Soba_@Yabu,_Kanda_(6639249067).jpg"
+  },
+  "tokyo/Eel kabayaki": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tokyo_Chikuyotei_Unadon01s2100.jpg/960px-Tokyo_Chikuyotei_Unadon01s2100.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "663highland",
+    "license": "CC BY 2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Chikuyotei_Unadon01s2100.jpg"
+  },
+  "tokyo/Monjayaki": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Monjayaki_on_Flower_Road%2C_Koiwa.jpg/960px-Monjayaki_on_Flower_Road%2C_Koiwa.jpg",
+    "width": 960,
+    "height": 723,
+    "author": "SphericalKat",
+    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Monjayaki_on_Flower_Road,_Koiwa.jpg"
+  },
+  "tokyo/Tokyo oden": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Oden_%2825570126098%29.jpg/960px-Oden_%2825570126098%29.jpg",
+    "width": 960,
+    "height": 636,
+    "author": "pelican",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Oden_(25570126098).jpg"
+  },
+  "tokyo/Tonkatsu": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Tonkatsu_by_ayustety_in_Tokyo.jpg/960px-Tonkatsu_by_ayustety_in_Tokyo.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "ayustety",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tonkatsu_by_ayustety_in_Tokyo.jpg"
+  },
+  "tokyo/Yōshoku: omurice, hayashi rice, korokke, katsu curry": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Omurice_by_Taimeiken.jpg/960px-Omurice_by_Taimeiken.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Kanesue",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Omurice_by_Taimeiken.jpg"
+  },
+  "tokyo/Dorayaki and monaka": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Dorayaki_004.jpg/960px-Dorayaki_004.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Ocdp",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dorayaki_004.jpg"
+  },
+  "tokyo/New Year food: osechi, ozōni and kagami-mochi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Japanese_Osechi.jpg/960px-Japanese_Osechi.jpg",
+    "width": 960,
+    "height": 824,
+    "author": "Misogi",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Japanese_Osechi.jpg"
+  },
+  "yudanaka/Ryokan dinner": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Dinner_-Wakura_Onsen.jpg/960px-Dinner_-Wakura_Onsen.jpg",
+    "width": 960,
+    "height": 624,
+    "author": "光幸",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dinner_-Wakura_Onsen.jpg"
+  },
+  "yudanaka/Shinshū soba": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/160429_Shinshu_soba_Nagano_Japan01s8.jpg/960px-160429_Shinshu_soba_Nagano_Japan01s8.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "663highland",
+    "license": "CC BY 2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:160429_Shinshu_soba_Nagano_Japan01s8.jpg"
+  },
+  "nagano/Togakushi soba": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/160430_Togakushi_soba_Nagano_Japan01s.jpg/960px-160430_Togakushi_soba_Nagano_Japan01s.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "663highland",
+    "license": "CC BY 2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:160430_Togakushi_soba_Nagano_Japan01s.jpg"
+  },
+  "nagano/Oyaki": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Oyaki_001.jpg/960px-Oyaki_001.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Ocdp",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Oyaki_001.jpg"
+  },
+  "nagano/Shukubō shōjin ryōri": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fukuchiin_shojin_ryori_appetizer.jpg/960px-Fukuchiin_shojin_ryori_appetizer.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Jpatokal",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fukuchiin_shojin_ryori_appetizer.jpg"
+  },
+  "kanazawa/Kōbako crab": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Kobako_Crab_%2823789370165%29.jpg/960px-Kobako_Crab_%2823789370165%29.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "pelican",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kobako_Crab_(23789370165).jpg"
+  },
+  "kanazawa/Jibuni": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Jibuni_01.jpg/960px-Jibuni_01.jpg",
+    "width": 960,
+    "height": 589,
+    "author": "Asacyan",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jibuni_01.jpg"
+  },
+  "kanazawa/Kanazawa oden": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/%E9%87%91%E6%B2%A2%E3%81%8A%E3%81%A7%E3%82%93%E5%8B%9D%E4%B8%8020241030_06.jpg/960px-%E9%87%91%E6%B2%A2%E3%81%8A%E3%81%A7%E3%82%93%E5%8B%9D%E4%B8%8020241030_06.jpg",
+    "width": 960,
+    "height": 1707,
+    "author": "経済特区",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E9%87%91%E6%B2%A2%E3%81%8A%E3%81%A7%E3%82%93%E5%8B%9D%E4%B8%8020241030_06.jpg"
+  },
+  "kyoto/Obanzai": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Obanzai-kyotofood-2018-12-30.jpg/960px-Obanzai-kyotofood-2018-12-30.jpg",
+    "width": 960,
+    "height": 641,
+    "author": "Nesnad",
+    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Obanzai-kyotofood-2018-12-30.jpg"
+  },
+  "kyoto/Hot tofu (yudōfu) and yuba": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Yud%C5%8Dfu_001.jpg/960px-Yud%C5%8Dfu_001.jpg",
+    "width": 960,
+    "height": 638,
+    "author": "cobacco (hiro kobashi)",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Yud%C5%8Dfu_001.jpg"
+  },
+  "kyoto/Herring soba": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Nishin_Soba_at_Honke_Owariya.jpg/960px-Nishin_Soba_at_Honke_Owariya.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Fred Cherrygarden",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nishin_Soba_at_Honke_Owariya.jpg"
+  },
+  "kyoto/Pressed mackerel sushi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Sabazushi.jpg/960px-Sabazushi.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "7'o'7",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sabazushi.jpg"
+  },
+  "kyoto/Kyoto pickles": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Tsukemono_shop_by_Gavin_Anderson_in_Nishiki_Ichiba%2C_Kyoto.jpg/960px-Tsukemono_shop_by_Gavin_Anderson_in_Nishiki_Ichiba%2C_Kyoto.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Gavin Anderson",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tsukemono_shop_by_Gavin_Anderson_in_Nishiki_Ichiba,_Kyoto.jpg"
+  },
+  "kyoto/Wagashi and tea": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Matcha_and_wagashi.jpg/960px-Matcha_and_wagashi.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Matsue",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Matcha_and_wagashi.jpg"
+  },
+  "nara/Persimmon-leaf sushi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Kakinoha_%28persimmon_leaf%29_sushi_in_Nara.jpg/960px-Kakinoha_%28persimmon_leaf%29_sushi_in_Nara.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "ZhengZhou",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kakinoha_(persimmon_leaf)_sushi_in_Nara.jpg"
+  },
+  "nara/Sake-lees pickles": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/%E5%A5%88%E8%89%AF%E6%BC%AC_%2833123893341%29.jpg/960px-%E5%A5%88%E8%89%AF%E6%BC%AC_%2833123893341%29.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "bangdoll",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E5%A5%88%E8%89%AF%E6%BC%AC_(33123893341).jpg"
+  },
+  "nara/Miwa sōmen": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miwa_somen_01.jpg/960px-Miwa_somen_01.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "ちぃこ",
+    "license": "CC BY 2.1 jp",
+    "source": "https://commons.wikimedia.org/wiki/File:Miwa_somen_01.jpg"
+  },
+  "nara/Mugwort mochi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Yomogi-dango_002.jpg/960px-Yomogi-dango_002.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Ocdp",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Yomogi-dango_002.jpg"
+  },
+  "kawaguchiko/Hōtō": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Houtou.jpg/960px-Houtou.jpg",
+    "width": 960,
+    "height": 761,
+    "author": "Jungle",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Houtou.jpg"
+  },
+  "kawaguchiko/Yoshida udon": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Yoshida_udon_001.jpg/960px-Yoshida_udon_001.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Ocdp",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Yoshida_udon_001.jpg"
+  },
+  "takayama/Hida beef": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hida_beef_with_Hoba-miso.jpg/960px-Hida_beef_with_Hoba-miso.jpg",
+    "width": 960,
+    "height": 1054,
+    "author": "Gofukuji",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hida_beef_with_Hoba-miso.jpg"
+  },
+  "takayama/Hōba-miso": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Breakfast_at_Sumiyoshi_ryokan_%283810540426%29.jpg/960px-Breakfast_at_Sumiyoshi_ryokan_%283810540426%29.jpg",
+    "width": 960,
+    "height": 615,
+    "author": "Andrea Schaffer",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Breakfast_at_Sumiyoshi_ryokan_(3810540426).jpg"
+  },
+  "takayama/Takayama ramen": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Takayama_ramen_001.jpg/960px-Takayama_ramen_001.jpg",
+    "width": 960,
+    "height": 714,
+    "author": "Ocdp",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Takayama_ramen_001.jpg"
+  },
+  "takayama/Hida mitarashi dango": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Midarashi_dango%2C_local_food_in_Takayama%2C_Takayama%2C_2016.jpg/960px-Midarashi_dango%2C_local_food_in_Takayama%2C_Takayama%2C_2016.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "大野 一将",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Midarashi_dango,_local_food_in_Takayama,_Takayama,_2016.jpg"
+  },
+  "hakone/Eel (unagi)": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Unadon_%2815664670489%29.jpg/960px-Unadon_%2815664670489%29.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Jun Seita",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Unadon_(15664670489).jpg"
+  },
+  "hakone/Hakone soba": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Zaru-Soba-1.jpg/960px-Zaru-Soba-1.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Evelyn-rose",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Zaru-Soba-1.jpg"
+  },
+  "hakone/Ōwakudani black egg": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Kuro-Tamago.JPG/960px-Kuro-Tamago.JPG",
+    "width": 960,
+    "height": 720,
+    "author": "AmwayIsACult",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kuro-Tamago.JPG"
+  },
+  "hakone/Ryokan kaiseki": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Kaiseki_001.jpg/960px-Kaiseki_001.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Yuya Tamai",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kaiseki_001.jpg"
+  },
+  "hiroshima/Hiroshima okonomiyaki": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Prepared_okonomiyaki_in_Hiroshima.jpg/960px-Prepared_okonomiyaki_in_Hiroshima.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "EllieBellie25",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Prepared_okonomiyaki_in_Hiroshima.jpg"
+  },
+  "hiroshima/Hiroshima oysters": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Grilled_oysters_Food_in_Miyajima_-_DSC02189.JPG/960px-Grilled_oysters_Food_in_Miyajima_-_DSC02189.JPG",
+    "width": 960,
+    "height": 720,
+    "author": "Daderot",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Grilled_oysters_Food_in_Miyajima_-_DSC02189.JPG"
+  },
+  "hiroshima/Anago-meshi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/%E3%81%82%E3%81%AA%E3%81%94%E3%82%81%E3%81%97%EF%BC%88%E5%AE%AE%E5%B3%B6%E5%8F%A3%E9%A7%85%EF%BC%89.jpg/960px-%E3%81%82%E3%81%AA%E3%81%94%E3%82%81%E3%81%97%EF%BC%88%E5%AE%AE%E5%B3%B6%E5%8F%A3%E9%A7%85%EF%BC%89.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "くろふね",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E3%81%82%E3%81%AA%E3%81%94%E3%82%81%E3%81%97%EF%BC%88%E5%AE%AE%E5%B3%B6%E5%8F%A3%E9%A7%85%EF%BC%89.jpg"
+  }
+}
