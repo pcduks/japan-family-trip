@@ -84,7 +84,7 @@ export function Board() {
   const regionIds = Array.from(new Set(versions.flatMap((v) => v.stays.map((s) => s.region))));
   return (
     <Page wide>
-      <Back href="/routes">Routes</Back>
+      <Back href="/routes">What if</Back>
       <PageHeader eyebrow={`${snapshot.trip.nights} nights · ${snapshot.travellers.length} travellers · 20 Dec – 9 Jan`} title="Side by side">
         Every route on the same calendar. Same colour, same place. Tap one for the stops, where to sleep, the budget and the reasons.
       </PageHeader>

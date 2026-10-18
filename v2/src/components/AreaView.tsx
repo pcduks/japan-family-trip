@@ -38,7 +38,7 @@ export function AreaView({ id }: { id: string }) {
   if (!region || !a)
     return (
       <Page>
-        <Back href="/places">Places</Back>
+        <Back href="/places">Japan</Back>
         <p className="text-muted">No such area.</p>
       </Page>
     );
@@ -87,7 +87,7 @@ export function AreaView({ id }: { id: string }) {
 
   return (
     <Page wide>
-      <Back href="/places">Places</Back>
+      <Back href="/places">Japan</Back>
       <PlacePhoto placeId={a.known_for.find((k) => k.place)?.place} regionId={id} className="hero-fade -mx-4 aspect-[4/3] sm:mx-0 sm:aspect-[5/2] sm:rounded-2xl sm:shadow-[var(--glow)]">
         <div className="absolute inset-x-4 bottom-4 z-10 grid gap-1 text-white">
           <p className="flex items-center gap-2 text-[0.72rem] font-semibold tracking-wide uppercase opacity-90">

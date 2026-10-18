@@ -147,7 +147,7 @@ export function copyVersion(source: Version, ownerId: string, name: string, trip
  * Tokyo nights, taking the nights from the longest stay.
  */
 export function swapInRegion(plan: Version, region: Region, versions: Version[], ownerId: string, tripStart: string): { version: Version; how: string } {
-  const existing = versions.find((v) => v.status !== "personal" && v.stays.some((s) => s.region === region.id));
+  const existing = versions.find((v) => (v.status === "plan" || v.status === "alternative") && v.stays.some((s) => s.region === region.id));
   if (existing) {
     const v = copyVersion(existing, ownerId, `${existing.name} (my copy)`, tripStart);
     return { version: v, how: `Copied “${existing.name}”, which already includes ${region.name}.` };

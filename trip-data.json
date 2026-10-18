@@ -8772,7 +8772,7 @@
    "id": "gero-new-year",
    "name": "New Year's Eve at a Gero ryokan",
    "pace": "balanced",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -8969,7 +8969,7 @@
    "id": "gentle",
    "name": "Gentle",
    "pace": "gentle",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9022,7 +9022,7 @@
    "id": "full",
    "name": "Full",
    "pace": "full",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9107,7 +9107,7 @@
    "id": "snow-monkeys",
    "name": "Plan + snow monkeys",
    "pace": "balanced",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9183,7 +9183,7 @@
    "id": "art-not-fuji",
    "name": "Art instead of Fuji",
    "pace": "balanced",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9251,7 +9251,7 @@
    "id": "kinosaki",
    "name": "Crab and onsen instead of Fuji",
    "pace": "balanced",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9319,7 +9319,7 @@
    "id": "fuji-lake",
    "name": "Hakone instead of the lake",
    "pace": "balanced",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9387,7 +9387,7 @@
    "id": "golden-route-winter",
    "name": "The Golden Route in winter",
    "pace": "balanced",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9456,7 +9456,7 @@
    "id": "two-cities-deep",
    "name": "Two cities, done slowly",
    "pace": "gentle",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9493,7 +9493,7 @@
    "id": "deep-snow-country",
    "name": "Deep snow country",
    "pace": "balanced",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9554,7 +9554,7 @@
    "id": "western-onsen-trail",
    "name": "The western onsen trail",
    "pace": "balanced",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9615,7 +9615,7 @@
    "id": "slow-kyoto-and-the-sea",
    "name": "Kyoto house and the sea",
    "pace": "gentle",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9652,7 +9652,7 @@
    "id": "west-castles-inland-sea",
    "name": "Castles, Shrines and the Inland Sea",
    "pace": "balanced",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9713,7 +9713,7 @@
    "id": "winter-food-trail",
    "name": "The Winter Food Trail",
    "pace": "full",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9782,7 +9782,7 @@
    "id": "fuji-pacific-shore",
    "name": "Fuji and the Pacific Shore",
    "pace": "balanced",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9843,7 +9843,7 @@
    "id": "tohoku-snow-samurai",
    "name": "Snow, Samurai and the Far North",
    "pace": "balanced",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {
@@ -9904,7 +9904,7 @@
    "id": "kii-coast-classic",
    "name": "Kyoto, the Kii coast and Nara",
    "pace": "balanced",
-   "status": "alternative",
+   "status": "legacy",
    "owner": "planners",
    "stays": [
     {

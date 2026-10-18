@@ -95,11 +95,18 @@ export function RouteView({ id }: { id?: string }) {
     editor.start({ suggestion: s, review: true });
     window.history.replaceState(null, "", "/");
   }, [snapshot.suggestions, isPlanner, editor]);
+  // "Edit the route" or "Suggest a change" on What if lands here as /?edit=1.
+  useEffect(() => {
+    if (id || new URLSearchParams(window.location.search).get("edit") !== "1") return;
+    window.history.replaceState(null, "", "/");
+    const sent = snapshot.suggestions.find((x) => x.author_id === me?.travellerId && x.status === "open");
+    editor.start(sent && !isPlanner && !draftCount ? { suggestion: sent } : undefined);
+  }, [id, snapshot.suggestions, me, isPlanner, draftCount, editor]);
   if (!plan) return null;
   if (id && !found)
     return (
       <Page>
-        <Back href="/routes">Routes</Back>
+        <Back href="/routes">What if</Back>
         <Empty>No route with that name. It may have been deleted, or it is still private to the person drafting it.</Empty>
       </Page>
     );
@@ -201,10 +208,10 @@ export function RouteView({ id }: { id?: string }) {
           ) : null}
         </div>
       ) : null}
-      {isPlan ? null : <Back href="/routes">Routes</Back>}
+      {isPlan ? null : <Back href="/routes">What if</Back>}
       {editing ? null : (
       <section className="grid gap-2">
-        <p className="eyebrow">{isPlan ? `The route · ${fmtRange(snapshot.trip.start, snapshot.trip.end)}` : mine ? `${author ? `${author}’s` : "A family"} route · ${fmtStamp(v.updated_at)}` : `Another route · ${STYLE_LABEL[styleOf(v.id)] ?? ""} · ${paceLabel(v.pace)}`}</p>
+        <p className="eyebrow">{isPlan ? `The route · ${fmtRange(snapshot.trip.start, snapshot.trip.end)}` : mine ? `${author ? `${author}’s` : "A family"} route · ${fmtStamp(v.updated_at)}` : v.status === "legacy" ? "An earlier idea · kept for reference, it no longer passes our checks" : `A change to our route · ${STYLE_LABEL[styleOf(v.id)] ?? ""} · ${paceLabel(v.pace)}`}</p>
         <h1 className="display text-[2.3rem] leading-[1.02] sm:text-5xl">{g.theme}</h1>
         <p className="max-w-prose text-ink-2">{g.tagline}</p>
         {isPlan && g.written && g.story ? (

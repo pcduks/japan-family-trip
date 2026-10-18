@@ -44,8 +44,9 @@ describe("rules on the seeded versions", () => {
     }
   });
 
-  it("every researched alternative keeps to the calendar and has its own story", () => {
-    for (const v of data.versions.filter((x) => x.status === "alternative")) {
+  it("only the route's own changes are offered; every researched route, current or earlier, keeps its story", () => {
+    expect(data.versions.filter((x) => x.status === "alternative").map((x) => x.id).sort()).toEqual(["kyoto-nara-hakone", "kyoto-new-year-hakone", "kyoto-new-year-takayama"]);
+    for (const v of data.versions.filter((x) => x.status === "alternative" || x.status === "legacy")) {
       // The main route's variants keep long moves out of the New Year crowds; the older routes show their warnings.
       if (v.id.startsWith("kyoto-new-year") || v.id === "kyoto-nara-hakone") {
         const peak = checkVersion(v, ctx).filter((x) => x.rule === "no_peak_moves" && x.severity === "warn");

@@ -144,7 +144,7 @@ export function PlacesList() {
 
   return (
     <Page wide>
-      <Back href="/places">Places</Back>
+      <Back href="/places">Japan</Back>
       <PageHeader eyebrow={`${snapshot.places.length} places · ${regions.length} areas · ${plannedCount} on the route`} title="Places">
         Every place, by area: tap one to open it, or search. A green badge means the route’s days go there. Each place has its hours, closures and effort for Fernanda; photos and reviews come from Google when you open one.
       </PageHeader>
