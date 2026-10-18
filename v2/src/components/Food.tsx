@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import type { ReactNode } from "react";
 import foodGuide from "../../data/food-guide.json";
 import { fmtDay } from "@/lib/dates";
+import { DEEP_ONLY_TABS, FOOD_REGION, TOPIC_TABS } from "@/lib/foodDeep";
 import { routeVisits } from "@/lib/days";
 import type { Place } from "@/lib/types";
 import { useStore } from "./providers";
@@ -29,24 +30,28 @@ const GUIDE = foodGuide as unknown as {
   regions: Record<string, FoodRegion>;
 };
 
-/** Which region's food section covers a place's region (Gero sits with Takayama, Nara with Kyoto). */
-const FOOD_REGION: Record<string, string> = { tokyo: "tokyo", kanazawa: "kanazawa", shirakawago: "kanazawa", takayama: "takayama", gero: "takayama", okuhida: "takayama", kyoto: "kyoto", nara: "kyoto", kawaguchiko: "kawaguchiko", hakone: "hakone" };
-
+const REGION_TABS = Object.entries(GUIDE.regions).flatMap(([id, r]) => [
+  { id, label: r.title },
+  ...DEEP_ONLY_TABS.filter((t) => t.after === id).map((t) => ({ id: t.id, label: t.label })),
+]);
 
 const TABS = [
   { id: "", label: "How we eat" },
-  ...Object.entries(GUIDE.regions).map(([id, r]) => ({ id, label: r.title })),
+  TOPIC_TABS[0],
+  ...REGION_TABS,
+  ...TOPIC_TABS.slice(1),
   { id: "her", label: "For Fernanda" },
   { id: "ryokan", label: "Ryokan meals" },
   { id: "ours", label: "Our Tokyo list" },
 ];
 
-export function Food() {
+/** `deep` is the open tab's deep guide (a city or a how-to), rendered on the server by the page. */
+export function Food({ deep }: { deep?: ReactNode }) {
   const { snapshot } = useStore();
   const params = useSearchParams();
   const wanted = params.get("region");
-  const [picked, setPicked] = useState<{ forParam: string | null; id: string } | null>(null);
-  const active = picked && picked.forParam === wanted ? picked.id : wanted ? (FOOD_REGION[wanted] ?? wanted) : "";
+  const router = useRouter();
+  const active = wanted ? (FOOD_REGION[wanted] ?? wanted) : "";
   const meals = snapshot.places.filter((p) => p.size === "meal" || p.kind === "food");
   const ownList = snapshot.food_list;
   // One thing at a time: the first tab is how we eat, what she can eat and the ryokan meals; each city has its own.
@@ -56,12 +61,12 @@ export function Food() {
   return (
     <Page wide>
       <PageHeader eyebrow={`Where we eat · ${meals.length} places · ${ownList.length} of our own`} title="Food">
-        Three weeks, sixty-odd meals, one of us pregnant and two of us new to all of it. Start with how we eat; each city has its own tab with what it is about at the table and who recommends each restaurant.
+        Three weeks, sixty-odd meals, one of us pregnant and two of us new to all of it. Start with how we eat and what to book by when. Each city has its own tab: why it eats the way it does, what to try, the markets, and restaurants checked on Tabelog with the critics who went. Depachika, station food, konbini and manners have their own tabs.
       </PageHeader>
 
       <div className="no-scrollbar sticky top-0 z-10 -mx-4 flex gap-2 overflow-x-auto bg-bg px-4 py-2">
         {TABS.map((t) => (
-          <button key={t.id} className={`chip shrink-0 ${active === t.id ? "bg-accent text-accent-ink" : ""}`} aria-pressed={active === t.id} onClick={() => setPicked({ forParam: wanted, id: t.id })}>
+          <button key={t.id} className={`chip shrink-0 ${active === t.id ? "bg-accent text-accent-ink" : ""}`} aria-pressed={active === t.id} onClick={() => router.replace(t.id ? `/food?region=${t.id}` : "/food", { scroll: false })}>
             {GUIDE.regions[t.id] ? <RegionDot id={t.id} size={8} /> : null} {t.label}
           </button>
         ))}
@@ -160,6 +165,8 @@ export function Food() {
           </section>
         );
       })}
+
+      {deep}
 
       {show("her") ? (
         <Section title="What Fernanda can eat" id="her" aside="29–32 weeks">
