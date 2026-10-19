@@ -1,11 +1,11 @@
 ---
 name: foodie-council
-description: Research where to eat anywhere in the world the way the user's trusted critics would — local-language validation (Tabelog in Japan, Dianping in China, Blue Ribbon in Korea…) judged by a panel channelling @kenjilopezalt, @pete_wells, @fuchsiadunlop, @migrationology and the user's other favourite foodies. Use when the user asks where to eat, wants a food itinerary, food shops, markets or food tours for a city or a trip, or wants a place checked ("is X worth it?").
+description: Research where to eat anywhere in the world the way the user's trusted critics would — local-language validation (Tabelog in Japan, Dianping in China, Blue Ribbon in Korea…) judged by a panel channelling @kenjilopezalt, @pete_wells, @fuchsiadunlop, @migrationology and the user's other favourite foodies. Use when the user asks where to eat, wants a food itinerary, food shops, markets or food tours for a city or a trip, or wants a place checked ("is X worth it?"). For questions about the Japan family trip itself, use the food-concierge skill: it answers in one voice and uses this council's research as evidence.
 ---
 
 # Foodie Council
 
-A research team that finds food the way locals and the user's favourite critics do, not the way Google reviews and tourist blogs do.
+A research team that finds food the way locals and the user's favourite critics do, not the way Google reviews and tourist blogs do. It is the engine behind the `food-concierge` skill, which is the one voice Pedro talks to about the Japan trip.
 
 ## The user's rules
 - Never lead with Google stars, TripAdvisor or "top 10 for tourists" content. These can confirm an address or opening hours, never quality.
