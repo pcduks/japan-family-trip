@@ -191,7 +191,7 @@
           "name_ja": "妊娠中",
           "what": "Say it at booking (not on the night) and ask for 加熱・〆もの中心 (mostly cooked and cured pieces): anago, simmered hamaguri, boiled prawn, steamed abalone, tamago and kanpyō-maki.",
           "pregnancy": "careful",
-          "tip": "Fresh white fish is allowed by Japanese obstetricians. Avoid uni, ikura, oysters and raw prawn, and go easy on fatty bluefin (大トロ)."
+          "tip": "Fresh white fish is allowed by Japanese obstetricians. A few pieces at a good counter. Avoid uni, ikura, oysters and raw prawn, and skip bluefin and bigeye tuna (大トロ included), swordfish and kinmedai."
         }
       ]
     },
@@ -325,7 +325,7 @@
         { "name": "Nama-tamago nashi de onegai shimasu.", "name_ja": "生卵なしでお願いします。", "what": "No raw egg, please (sukiyaki).", "pregnancy": "careful" },
         { "name": "O-sake (arukōru) wa haitte imasu ka?", "name_ja": "お酒（アルコール）は入っていますか？", "what": "Is there alcohol in it?", "pregnancy": "careful" },
         { "name": "Chīzu, nama-hamu, sumōku sāmon wa nuite kudasai.", "name_ja": "チーズ・生ハム・スモークサーモンは抜いてください。", "what": "No cheese, cured ham or smoked salmon, please.", "pregnancy": "careful" },
-        { "name": "Hon-maguro wa sukoshi dake de.", "name_ja": "本マグロは少しだけで。", "what": "Just a little bluefin.", "pregnancy": "careful" },
+        { "name": "Hon-maguro wa nuki de onegai shimasu.", "name_ja": "本マグロは抜きでお願いします。", "what": "No bluefin tuna, please.", "pregnancy": "careful" },
         { "name": "Ajitama nashi de.", "name_ja": "味玉なしで。", "what": "No soft-yolk egg (ramen).", "pregnancy": "careful" },
         { "name": "Kōji no amazake desu ka?", "name_ja": "麹の甘酒ですか？", "what": "Is this kōji amazake (alcohol-free)? (at shrines over New Year)", "pregnancy": "careful" }
       ]

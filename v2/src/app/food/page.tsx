@@ -1,11 +1,23 @@
 import { redirect } from "next/navigation";
 import { Suspense } from "react";
-import { FoodHome } from "@/components/food/FoodHome";
+import { FoodHome, type CityCard } from "@/components/food/FoodHome";
+import { slug } from "@/lib/food";
 import { DEEP_CITIES, DEEP_FOR_TAB, DEEP_TOPICS, FOOD_REGION } from "@/lib/foodDeep";
-import { DISH_PHOTOS, dishLite, placeLite } from "@/lib/foodView";
+import { DISH_PHOTOS } from "@/lib/foodView";
 
-const PLACES = Object.values(DEEP_CITIES).flatMap((c) => (c.places ?? []).map((p) => placeLite(c.slug, p)));
-const DISHES = Object.values(DEEP_CITIES).flatMap((c) => (c.meibutsu ?? []).map((d) => dishLite(c.slug, d, DISH_PHOTOS[`${c.slug}/${d.name}`] ?? null)));
+/** Each city as a postcard: its line and its must-try dishes with their photos. */
+const CITIES: Record<string, CityCard> = Object.fromEntries(
+  Object.values(DEEP_CITIES).map((c) => [
+    c.slug,
+    {
+      slug: c.slug,
+      name: c.name,
+      tagline: c.tagline,
+      places: c.places?.length ?? 0,
+      dishes: (c.meibutsu ?? []).filter((d) => d.must).map((d) => ({ name: d.name, name_ja: d.name_ja, slug: slug(d.name), photo: DISH_PHOTOS[`${c.slug}/${d.name}`] ?? null })),
+    },
+  ]),
+);
 
 export default async function FoodPage({ searchParams }: PageProps<"/food">) {
   const sp = await searchParams;
@@ -20,7 +32,7 @@ export default async function FoodPage({ searchParams }: PageProps<"/food">) {
   }
   return (
     <Suspense>
-      <FoodHome places={PLACES} dishes={DISHES} />
+      <FoodHome cities={CITIES} />
     </Suspense>
   );
 }

@@ -35,12 +35,12 @@
       "Oden, nabe, hot pot, kamameshi",
       "Soba, udon, ramen (go easy on the broth for the salt)",
       "Cooked crab, grilled fish, grilled eel without the liver",
+      "Kōbako crab is boiled, so the meat and roe are fine; skip kani-sashi (raw crab)",
       "Yudofu, tofu kaiseki, miso soup, natto",
       "Wagashi, mochi, matcha (one or two cups a day), pasteurised dairy"
     ],
     "careful": [
       "Raw fish: only at a reputable counter, same day, a few pieces; skip bluefin and bigeye tuna, swordfish and kinmedai (mercury); yellowfin, salmon, mackerel and shrimp are unrestricted",
-      "Kobako crab: eat the cooked meat, skip the raw roe and innards",
       "Kaiseki at the ryokan: tell them when booking and the sashimi course becomes a cooked one",
       "Caffeine: about two small coffees a day in total; matcha counts"
     ],
@@ -127,15 +127,15 @@
     "kanazawa": {
       "title": "Kanazawa",
       "dishes": [
-        "Kobako crab (Nov–Dec only)",
+        "Kobako crab (6 Nov to historically ~29 Dec (2026 date to confirm))",
         "Kanazawa oden",
         "Jibuni duck stew",
         "Nodoguro",
         "Kaga kaiseki",
         "Gold-leaf soft-serve"
       ],
-      "intro": "Kanazawa in late December is crab season. The female kōbako crab is fished only until the year-end, and Ishikawa usually closes its season around 29 Dec (the 2026 date is to confirm), so our crab meals are 27 and 28 Dec. The town's other dish is oden in a clear dashi broth, at Miyuki (private rooms for 10–20) and Akadama (96 seats over two floors). Oden is the best thing here for Fernanda, because everything in the pot is cooked. Tsubajin, a 270-year-old ryotei with private rooms, is the celebration dinner if we want one.",
-      "for_her": "Oden, jibuni, tempura, katsu curry and boiled kōbako. Ask for nama-mono nashi (nothing raw). At the crab table she takes the cooked meat and skips the raw roe, the innards and kani-sashi (raw crab). At the market sushi bars, boiled crab and fish nigiri, not shellfish.",
+      "intro": "Kanazawa in late December is crab season. The female kōbako crab is fished only until the year-end, and Ishikawa closes its season historically ~29 Dec (2026 date to confirm), so our crab meals are 27 and 28 Dec. The town's other dish is oden in a clear dashi broth, at Miyuki (private rooms for 10–20) and Akadama (96 seats over two floors). Oden is the best thing here for Fernanda, because everything in the pot is cooked. Tsubajin, a 270-year-old ryotei with private rooms, is the celebration dinner if we want one.",
+      "for_her": "Oden, jibuni, tempura, katsu curry and boiled kōbako. Ask for nama-mono nashi (nothing raw). Kōbako is boiled whole, so the meat and roe are fine; she skips only kani-sashi (raw crab). At the market sushi bars, boiled crab is fine; raw fish nigiri, a few pieces; no shellfish.",
       "dates": "Three nights, Sun 27 to Wed 30 Dec. Sun 27 Dec: Kabuna, Miyuki and Otome Zushi are closed; Yamasan Sushi at Ōmichō (no fixed closing day) and Akadama are open. Mon 28 Dec: Akadama is closed, and it's the last safe kōbako night, so book the crab dinner. Tue 29 Dec: Ikiiki-tei is closed and independents start closing for New Year. Wed 30 Dec: Tsubajin is closed, Ōmichō is at its year-end peak, and we take the train to Kyoto. Ōmichō closes 1–3 Jan, after we've gone.",
       "guides": [
         {
@@ -234,7 +234,7 @@
         "Kamameshi and fresh mochi in Nara"
       ],
       "intro": "Kyoto's food is quieter than Tokyo's: simmered tofu by the temples, a kaiseki lunch that costs far less than dinner, udon, and sweets with matcha. We have six nights, 30 Dec to 5 Jan, in a rental house with a kitchen. That matters, because most of the city's restaurants close around 1–3 Jan. We arrive on 30 Dec, the last big day at Nishiki, so we stock up then for osechi and white-miso ozōni at home. Nara is a day trip on Mon 4 Jan: rice cooked in an iron pot and mochi pounded in front of you.",
-      "for_her": "Wagyu well done. Yudofu, soba, udon and kamameshi are all cooked. For the kaiseki lunch at Ukihashi, ask for no raw courses when booking. Saba-zushi is cured, not cooked, so she takes anago or inari. At the shrine stalls ask 「麹の甘酒ですか?」, because sake-lees amazake has alcohol.",
+      "for_her": "Wagyu well done. Yudofu, soba, udon and kamameshi are all cooked. For the kaiseki lunch at Ukihashi, ask for no raw courses when booking. Saba-zushi is cured, not cooked, so it is her call; anago or inari are the cooked swaps. At the shrine stalls ask 「麹の甘酒ですか?」, because sake-lees amazake has alcohol.",
       "dates": "Wed 30 Dec to Tue 5 Jan. 30 Dec: Nishiki at its peak; buy pickles (Murakami-jū closes 1–3 Jan) and the ozōni makings, and have Matsuba nishin soba before the 31st queue. Okutan is open; Nanzenji Junsei is not (Wednesday). 31 Dec: toshikoshi soba; Okutan and Omen are closed (Thursday). 1 Jan: the dead day, so the house kitchen and konbini. Mouriya is listed as open 1–3 Jan, Ukihashi as open over New Year, and Inoda as open all year. 2 Jan: Daimaru reopens (to confirm). 3 Jan: Takashimaya reopens. Mon 4 Jan, Nara: Kamameshi Shizuka (closed Tuesdays) and Nakatanidō are open; Kagizen in Kyoto is closed (Monday). 5 Jan: buy the train lunch at JR Kyoto Isetan B1.",
       "guides": [
         {

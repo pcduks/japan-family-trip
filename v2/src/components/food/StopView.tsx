@@ -3,21 +3,22 @@
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
-import { fmtDay, fmtRange, todayIso, weekday } from "@/lib/dates";
+import { addDays, fmtRange, weekday } from "@/lib/dates";
+import { kanji } from "@/lib/journey";
 import { slug } from "@/lib/food";
 import type { DeepCity, DeepDish, DeepPlace } from "@/lib/foodDeep";
-import { datesIn, stopNumber, glanceOf, mapsUrl, openOn, routeNights, SEVEN_MARK, shortArea, shortPrice, type Photo } from "@/lib/foodView";
+import { datesIn, glanceOf, mapsUrl, openOn, routeNights, shortPrice, stopNumber, type Photo } from "@/lib/foodView";
 import { useStore } from "../providers";
-import { RegionDot } from "../ui";
-import { FernandaMark, Monograms, OpenMark, SevenMark, TabelogTile } from "./Marks";
-import { BookingStatus, PlaceSheet } from "./PlaceSheet";
+import { RegionCover } from "../RegionCover";
+import { FernandaMark, TabelogTile } from "./Marks";
+import { PlaceSheet } from "./PlaceSheet";
 import { DishStory } from "./DishStory";
 
-type View = "eat" | "try" | "streets" | "story";
+type View = "eat" | "try" | "explore" | "story";
 const VIEWS: { id: View; label: string }[] = [
   { id: "eat", label: "Eat" },
   { id: "try", label: "Try" },
-  { id: "streets", label: "Streets" },
+  { id: "explore", label: "Explore" },
   { id: "story", label: "Story" },
 ];
 
@@ -46,29 +47,37 @@ export function StopView({ city, photos }: { city: DeepCity; photos: Record<stri
 
   const stopNo = stopNumber(stays, city.slug);
   const nights = routeNights(stays).filter((n) => n.cities.includes(city.slug));
+  // Each stay from arrival to the morning we leave.
   const ranges = nights.reduce<{ from: string; to: string }[]>((acc, n) => {
     const last = acc[acc.length - 1];
-    if (last && n.first === false) last.to = n.date;
-    else acc.push({ from: n.date, to: n.date });
+    if (last && !n.first) last.to = addDays(n.date, 1);
+    else acc.push({ from: n.date, to: addDays(n.date, 1) });
     return acc;
   }, []);
+  const region = nights[0]?.region ?? city.slug;
+  const jp = kanji(region === city.slug ? region : city.slug) ?? kanji(region);
 
   const place = placeSlug ? city.places?.find((p) => slug(p.name) === placeSlug) : undefined;
   const dishes = city.meibutsu ?? [];
   const dishIdx = dishSlug ? dishes.findIndex((d) => slug(d.name) === dishSlug) : -1;
 
   return (
-    <main className="mx-auto grid max-w-2xl gap-4 px-4 pt-3 pb-8">
-      <header className="grid gap-1">
-        <Link href="/food" className="text-sm text-muted no-underline">
-          ← Food
-        </Link>
-        <p className="eyebrow flex items-center gap-1.5">
-          <RegionDot id={stays.find((s) => datesIn([s], city.slug).length)?.region ?? city.slug} size={8} />
-          {stopNo ? `Stop ${stopNo} · ${ranges.map((r) => fmtRange(r.from, r.to)).join(" and ")}` : "Not on the route"}
-        </p>
-        <h1 className="display text-[2.2rem] leading-[1.05]">{city.name}</h1>
-        {city.tagline ? <p className="text-ink-2">{city.tagline}</p> : null}
+    <main className="mx-auto grid max-w-2xl gap-4 px-4 pt-0 pb-10">
+      <header className="-mx-4 sm:mx-0">
+        <RegionCover regionId={region} priority position="center 70%" className="aspect-[4/3] sm:aspect-[2/1] sm:rounded-b-3xl" sizes="(max-width: 672px) 100vw, 672px">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-black/20" />
+          <Link href="/food" className="absolute top-3 left-4 grid min-h-10 place-items-center rounded-full bg-black/35 px-3 text-sm font-semibold text-white no-underline backdrop-blur">
+            ← Food
+          </Link>
+          <div className="absolute inset-x-4 bottom-4 grid gap-1 text-white">
+            <p className="text-[0.72rem] font-semibold tracking-[0.12em] uppercase opacity-90">{stopNo ? `Stop ${stopNo} · ${ranges.map((r) => fmtRange(r.from, r.to)).join(" and ")}` : "Not on our route"}</p>
+            <h1 className="flex flex-wrap items-baseline gap-x-3">
+              <span className="display text-[2.4rem] leading-none">{city.name}</span>
+              {jp ? <span className="jp text-[1.3rem] opacity-90">{jp}</span> : null}
+            </h1>
+            {city.tagline ? <p className="max-w-md text-[0.95rem] opacity-95">{city.tagline}</p> : null}
+          </div>
+        </RegionCover>
       </header>
 
       <div className="sticky top-0 z-10 -mx-4 bg-bg px-4 pt-1 pb-2">
@@ -81,9 +90,9 @@ export function StopView({ city, photos }: { city: DeepCity; photos: Record<stri
         </div>
       </div>
 
-      {view === "eat" ? <EatList city={city} dates={dates} initial={params.get("date")} onOpen={(p) => setParam({ place: slug(p.name) })} /> : null}
+      {view === "eat" ? <EatList city={city} dates={dates} onOpen={(p) => setParam({ place: slug(p.name) })} /> : null}
       {view === "try" ? <TryGrid city={city} photos={photos} onOpen={(d) => setParam({ dish: slug(d.name) })} /> : null}
-      {view === "streets" ? <Streets city={city} /> : null}
+      {view === "explore" ? <Streets city={city} /> : null}
       {view === "story" ? <Story city={city} /> : null}
 
       {place ? <PlaceSheet city={city} place={place} dates={dates} onClose={() => setParam({ place: null })} /> : null}
@@ -104,90 +113,92 @@ export function StopView({ city, photos }: { city: DeepCity; photos: Record<stri
 
 /* ------------------------------------------------------------ Eat */
 
-function EatList({ city, dates, initial, onOpen }: { city: DeepCity; dates: string[]; initial: string | null; onOpen: (p: DeepPlace) => void }) {
-  const { snapshot } = useStore();
-  const today = todayIso();
-  const [picked, setDay] = useState<string | null>(null);
+const TOP = 8;
+
+function EatList({ city, dates, onOpen }: { city: DeepCity; dates: string[]; onOpen: (p: DeepPlace) => void }) {
   const [fine, setFine] = useState(false);
   const [seven, setSeven] = useState(false);
-  // The date asked for (from Tonight), else today when we are there, else the first night.
-  const day = picked ?? (initial && dates.includes(initial) ? initial : dates.includes(today) ? today : (dates[0] ?? null));
-  const bookings = new Map(snapshot.food_bookings.map((b) => [b.target_id, b]));
-  const places = city.places ?? [];
-  const rows = places
-    .map((p) => ({ p, open: day ? openOn(p, day) : ("open" as const), b: bookings.get(`${city.slug}/${slug(p.name)}`) }))
-    .filter(({ p }) => !fine || p.pregnancy === "ok")
-    .filter(({ p }) => !seven || (p.seven ? SEVEN_MARK[p.seven].fits : false))
-    .sort((a, b) => Number(!!b.b) - Number(!!a.b) || rank(a.open) - rank(b.open) || (b.p.tabelog?.score ?? 0) - (a.p.tabelog?.score ?? 0));
-  const shown = rows.length;
+  const [all, setAll] = useState(false);
+  const places = (city.places ?? [])
+    .filter((p) => !fine || p.pregnancy === "ok")
+    .filter((p) => !seven || p.seven === "yes" || p.seven === "room" || p.seven === "counter")
+    .sort((a, b) => (b.tabelog?.score ?? 0) - (a.tabelog?.score ?? 0));
+  const shown = all ? places : places.slice(0, TOP);
 
   return (
     <section className="grid gap-3" aria-label="Where to eat">
-      <div className="grid gap-2">
-        {dates.length ? (
-          <div className="no-scrollbar -mx-4 flex gap-1.5 overflow-x-auto px-4" role="group" aria-label="Our date">
-            {dates.map((d) => (
-              <button key={d} className={`chip shrink-0 min-h-9 ${day === d ? "bg-ink text-bg" : ""}`} aria-pressed={day === d} onClick={() => setDay(d)}>
-                {fmtDay(d)}
-              </button>
-            ))}
-          </div>
-        ) : null}
-        <div className="flex flex-wrap gap-1.5" role="group" aria-label="Filters">
-          <button className={`chip min-h-9 ${fine ? "border-ok bg-ok/15 text-ok" : ""}`} aria-pressed={fine} onClick={() => setFine(!fine)}>
-            ● Fine for Fernanda
-          </button>
-          <button className={`chip min-h-9 ${seven ? "border-ink bg-ink text-bg" : ""}`} aria-pressed={seven} onClick={() => setSeven(!seven)}>
-            ⑦ Fits seven
-          </button>
-          <span className="self-center text-xs text-muted">{shown === places.length ? `${shown} places` : `${shown} of ${places.length}`}</span>
-        </div>
+      <p className="text-[0.9rem] text-ink-2">The places locals rate highest on Tabelog, Japan’s own review site, checked against the critics we follow. Best first.</p>
+      <div className="flex flex-wrap gap-1.5" role="group" aria-label="Filters">
+        <button className={`chip min-h-9 ${fine ? "border-ok bg-ok/15 text-ok" : ""}`} aria-pressed={fine} onClick={() => setFine(!fine)}>
+          ● Fine for Fernanda
+        </button>
+        <button className={`chip min-h-9 ${seven ? "border-ink bg-ink text-bg" : ""}`} aria-pressed={seven} onClick={() => setSeven(!seven)}>
+          Seats all seven
+        </button>
       </div>
 
-      {rows.length ? (
+      {shown.length ? (
         <ul className="card divide-y divide-rule overflow-hidden">
-          {rows.map(({ p, open, b }) => (
-            <li key={p.name}>
-              <button onClick={() => onOpen(p)} className={`grid w-full grid-cols-[44px_1fr] gap-3 px-3 py-3 text-left hover:bg-bg-2 ${open === "closed" ? "opacity-60" : ""}`}>
-                <TabelogTile score={p.tabelog?.score} awards={p.tabelog?.awards} />
-                <span className="grid min-w-0 gap-0.5">
-                  <span className="flex min-w-0 items-baseline gap-2">
-                    <b className={`truncate font-display text-[1.08rem] font-semibold ${open === "closed" ? "line-through" : ""}`}>{p.name}</b>
-                    {p.name_ja ? <span className="jp truncate text-sm text-ink-2">{p.name_ja}</span> : null}
+          {shown.map((p) => {
+            const closed = dates.filter((d) => openOn(p, d) === "closed");
+            const allClosed = dates.length > 0 && closed.length === dates.length;
+            return (
+              <li key={p.name}>
+                <button onClick={() => onOpen(p)} className={`grid w-full grid-cols-[44px_1fr] gap-3 px-3.5 py-3.5 text-left hover:bg-bg-2 ${allClosed ? "opacity-55" : ""}`}>
+                  <TabelogTile score={p.tabelog?.score} awards={p.tabelog?.awards} />
+                  <span className="grid min-w-0 gap-0.5">
+                    <span className="flex min-w-0 items-baseline gap-2">
+                      <b className="truncate font-display text-[1.1rem] font-semibold">{p.name}</b>
+                      {p.name_ja ? <span className="jp truncate text-sm text-ink-2">{p.name_ja}</span> : null}
+                    </span>
+                    <span className="line-clamp-2 text-[0.86rem] text-ink-2">{glanceOf(p)}</span>
+                    <span className="flex flex-wrap items-center gap-x-2.5 gap-y-0.5 text-[0.78rem] text-muted">
+                      <FernandaMark level={p.pregnancy} />
+                      <span>{[p.genre, shortPrice(p.price)].filter(Boolean).join(" · ")}</span>
+                      {allClosed ? <span>closed on our dates</span> : closed.length ? <span>closed {closed.map((d) => weekday(d)).join(", ")}</span> : null}
+                    </span>
                   </span>
-                  <span className="truncate text-[0.8rem] text-muted">{[p.genre, shortArea(p.area), shortPrice(p.price)].filter(Boolean).join(" · ")}</span>
-                  <span className="flex flex-wrap items-center gap-x-2.5 gap-y-0.5 text-[0.8rem]">
-                    <FernandaMark level={p.pregnancy} />
-                    <SevenMark seven={p.seven} />
-                    {day ? <OpenMark open={open} day={weekday(day)} /> : null}
-                    <Monograms critics={p.critics} />
-                    {b ? <BookingStatus b={b} /> : null}
-                  </span>
-                </span>
-              </button>
-            </li>
-          ))}
+                </button>
+              </li>
+            );
+          })}
         </ul>
       ) : (
         <p className="rounded-xl border border-dashed border-rule px-4 py-6 text-center text-muted">Nothing matches. Turn a filter off.</p>
       )}
+      {places.length > TOP ? (
+        <button className="btn btn-sm justify-self-center" onClick={() => setAll(!all)} aria-expanded={all}>
+          {all ? "Show the top 8" : `All ${places.length} places`}
+        </button>
+      ) : null}
+
+      <details className="text-[0.82rem] text-ink-2">
+        <summary className="cursor-pointer font-semibold text-muted">What the marks mean</summary>
+        <ul className="mt-2 grid gap-1.5">
+          <li>
+            <b>3.75</b> Tabelog score, out of 5. In Japan 3.5 is very good, 4 is exceptional. 賞 Tabelog award, 百 one of its top 100 for the genre.
+          </li>
+          <li>
+            <span className="text-ok">● Fine</span> for Fernanda as normally ordered · <span className="text-ask">◆ Ask</span> raw dishes come, ask for cooked swaps · <span className="text-danger">⊘ Skip</span> the point of the place is raw.
+          </li>
+        </ul>
+      </details>
 
       {city.shops?.length ? (
-        <div className="grid gap-2">
-          <h2 className="text-[1.25rem]">Shops and takeaway</h2>
+        <div className="grid gap-2 pt-2">
+          <h2 className="text-[1.3rem]">Shops and takeaway</h2>
           <ul className="card divide-y divide-rule">
             {city.shops.map((s) => (
-              <li key={s.name} className="grid gap-0.5 px-3 py-2.5 text-sm">
-                <span className="flex items-baseline justify-between gap-2">
-                  <span className="min-w-0">
-                    <b>{s.name}</b> {s.name_ja ? <span className="jp text-ink-2">{s.name_ja}</span> : null}
+              <li key={s.name}>
+                <a href={mapsUrl(s.query ?? `${s.name} ${city.name}`)} target="_blank" rel="noreferrer" className="grid gap-0.5 px-3.5 py-3 text-sm no-underline hover:bg-bg-2">
+                  <span className="flex items-baseline justify-between gap-2">
+                    <span className="min-w-0">
+                      <b>{s.name}</b> {s.name_ja ? <span className="jp text-ink-2">{s.name_ja}</span> : null}
+                    </span>
+                    <span className="shrink-0 text-xs font-semibold text-accent">Map ›</span>
                   </span>
-                  <a href={mapsUrl(s.query ?? `${s.name} ${city.name}`)} target="_blank" rel="noreferrer" className="shrink-0 text-xs font-semibold text-accent">
-                    Map
-                  </a>
-                </span>
-                <span className="text-ink-2">{s.buy ?? glanceOf(s)}</span>
-                {s.dec_jan ? <span className="text-xs text-muted">{s.dec_jan}</span> : null}
+                  <span className="text-ink-2">{s.buy ?? glanceOf(s)}</span>
+                </a>
               </li>
             ))}
           </ul>
@@ -195,10 +206,6 @@ function EatList({ city, dates, initial, onOpen }: { city: DeepCity; dates: stri
       ) : null}
     </section>
   );
-}
-
-function rank(o: string): number {
-  return o === "open" ? 0 : o === "check" ? 1 : 2;
 }
 
 /* ------------------------------------------------------------ Try */

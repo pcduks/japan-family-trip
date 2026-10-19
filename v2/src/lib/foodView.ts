@@ -5,8 +5,7 @@
  */
 import photos from "../../data/food-deep/photos.json";
 import { addDays, weekday } from "./dates";
-import { DEEP_CITIES, DEEP_FOR_TAB, FOOD_REGION, type DeepCity, type DeepPlace, type Pregnancy, type Seven } from "./foodDeep";
-import { placeId, slug } from "./food";
+import { DEEP_FOR_TAB, FOOD_REGION, type DeepPlace, type Pregnancy, type Seven } from "./foodDeep";
 import type { Stay } from "./types";
 
 /** The guide cities a route region eats from (Yudanaka with Nagano, Kyoto with Nara). */
@@ -31,13 +30,6 @@ export function routeNights(stays: Stay[]): Night[] {
     for (let d = s.from; d < s.to; d = addDays(d, 1)) out.push({ date: d, region: s.region, stop: i, cities: citiesFor(s.region), first: d === s.from, last: addDays(d, 1) === s.to });
   });
   return out;
-}
-
-/** The route's stops as guide cities, in order and without repeats; then the guide's other cities. */
-export function cityOrder(stays: Stay[]): { onRoute: string[]; others: string[] } {
-  const onRoute: string[] = [];
-  for (const s of stays) for (const c of citiesFor(s.region)) if (!onRoute.includes(c) && DEEP_CITIES[c]) onRoute.push(c);
-  return { onRoute, others: Object.keys(DEEP_CITIES).filter((c) => !onRoute.includes(c)) };
 }
 
 /** The route stop number (1-based) a guide city belongs to, or null when it is not on the route. */
@@ -114,58 +106,6 @@ export function glanceOf(p: { glance?: string; why?: string; what?: string }): s
   return first.length > 110 ? first.slice(0, 108) + "…" : first;
 }
 
-/** A place row's data, small enough to send every city's places to the home screen. */
-export interface PlaceLite {
-  id: string;
-  city: string;
-  slug: string;
-  name: string;
-  name_ja?: string;
-  area?: string;
-  genre?: string;
-  price?: string;
-  score: number | null;
-  pregnancy?: Pregnancy;
-  seven?: Seven;
-  closed_weekdays?: DeepPlace["closed_weekdays"];
-  closed_dates?: string[];
-  meals?: DeepPlace["meals"];
-  glance: string;
-}
-
-export function placeLite(city: string, p: DeepPlace): PlaceLite {
-  return {
-    id: placeId(city, p.name),
-    city,
-    slug: slug(p.name),
-    name: p.name,
-    name_ja: p.name_ja,
-    area: p.area,
-    genre: p.genre,
-    price: p.price,
-    score: p.tabelog?.score ?? null,
-    pregnancy: p.pregnancy,
-    seven: p.seven,
-    closed_weekdays: p.closed_weekdays,
-    closed_dates: p.closed_dates,
-    meals: p.meals,
-    glance: glanceOf(p),
-  };
-}
-
-export interface DishLite {
-  id: string;
-  city: string;
-  slug: string;
-  name: string;
-  name_ja?: string;
-  romaji?: string;
-  glance: string;
-  must: boolean;
-  pregnancy?: Pregnancy;
-  photo: Photo | null;
-}
-
 export interface Photo {
   url: string;
   width?: number;
@@ -177,10 +117,6 @@ export interface Photo {
 
 /** Dish photos from Wikimedia Commons, keyed `<city>/<dish name>`. */
 export const DISH_PHOTOS = photos as unknown as Record<string, Photo>;
-
-export function dishLite(city: string, d: NonNullable<DeepCity["meibutsu"]>[number], photo: Photo | null): DishLite {
-  return { id: `${city}/${slug(d.name)}`, city, slug: slug(d.name), name: d.name, name_ja: d.name_ja, romaji: d.romaji, glance: glanceOf(d), must: !!d.must, pregnancy: d.pregnancy, photo };
-}
 
 /** "Area · Kyoto · Higashiyama (Maruyama)" → "Higashiyama (Maruyama)". */
 export function shortArea(area?: string): string {

@@ -209,7 +209,7 @@
           "price": "to confirm",
           "must": true,
           "pregnancy": "careful",
-          "tip": "The trout is cured in salt and vinegar, not cooked: Fernanda skips it; the rest share a round."
+          "tip": "The trout is cured in salt and vinegar, not cooked: as with saba-zushi, it's Fernanda's call; the rest share a round."
         },
         {
           "name": "Echizen Kanimeshi",
@@ -226,7 +226,7 @@
           "where": "Hiraso (平宗) and others: Nara, Kyoto and Shin-Osaka stations",
           "price": "to confirm",
           "pregnancy": "careful",
-          "tip": "Cured fish, not cooked: Fernanda avoids it."
+          "tip": "Cured fish, not cooked: as with saba-zushi, it's Fernanda's call."
         },
         {
           "name": "Fukagawa-meshi",
@@ -314,7 +314,7 @@
           "where": "Ekiben-ya Matsuri",
           "price": "¥1,480 (Getnavi, Feb 2025; to confirm)",
           "pregnancy": "careful",
-          "tip": "Marinated or seared raw fish: Fernanda skips it."
+          "tip": "Marinated raw fish, not cooked: as with saba-zushi, it's Fernanda's call."
         },
         {
           "name": "Maguro Ikura Bentō",
