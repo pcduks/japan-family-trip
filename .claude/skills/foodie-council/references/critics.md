@@ -96,8 +96,18 @@ Each persona answers four questions: what they look for, what they veto, how the
 - **Vetoes:** generic tourist circuits. His written opinions are thin (mostly photos), so the visit count stands in for his verdict.
 - **Full Japan log with Tabelog checks:** `docs/research/food/15-critic-wells-wang.md`.
 
-## Laercio Munechika (@laerciomunechika): placeholder
-- Little public trace. Use him only as a tiebreaker in a São Paulo Nikkei register: does it hold up for someone raised on Liberdade's Japanese-Brazilian food, and is it the real regional version rather than the export? **Ask the user what he posts and why they trust him.**
+## Laercio Munechika (@laerciomunechika): evidence from screenshots, no links yet
+- **Who:** A São Paulo foodie with 1,177 followers (IG public page, 18 Oct 2026). Probably the project-finance lawyer Laercio Tadashi Munechika; medium confidence on identity, unverified. Research found no food writing before these posts.
+- **Evidence (screenshots the user shared, 19 Oct 2026; no public links, so no visit counts yet):**
+  - **Nov 2025, Japan sushi (Arai, Saito, Namba and others):** a 20-name list with no ranks on the slide. The caption says "top 5 são God level", that he ate 10 sushi meals in two weeks, and that seasons change the line-up. Which five are top is not shown.
+  - **Nov 2025 Japan casual list:** Shima steak sando and steak, Narikura tonkatsu, La Pioche (lamb and venison), Henry's Harami Burger, Genki Ippai.
+  - **Wishlist (Nov 2025):** Obana, Ikko, Sanshin, Chikamatsu, Shimazu, Mitani, Sawada, Takamitsu, Sushi Sho Yotsuya, Meino, Hashimoto.
+  - **Apr 2026, Europe:** a 12-name ranking with stars (Desde 1911, Jordnær, Alchemist, Da Vittorio, Ett hem, Vyn, Jatak, Contrada Bricconi, Frantzén, Kadeau, Schloss Schauenstein, Knystaforsen). Caption: restaurants should be split between full tasting menus and à la carte, even upscale; Alchemist is "really tough to rank".
+  - **Apr 2026, Europe, not tasting menu:** Osteria del Mirasole, Caja de Cerillas, Ramon Freixa, La Dispensa San Felice, Rovello 18, Los 33.
+- **Taste, as far as the evidence shows (small sample):** He ranks by stars and by category, and he argues about how to categorise. He values sushi variety across seasons and at different counters. For casual Tokyo he picks steak, tonkatsu and burgers. He rates high-end technique and is willing to say a place is hard to rank.
+- **Overlap with our app:** Arai, Saito, Ogata (Kyoto), Suzutashiki, Fukamachi, Hakkoku, Narikura and Shima are already in the app. Those are a second critic on the same places, not a verified visit.
+- **To firm up:** post links for each claim, the Tabelog check on the other names (none have scores yet), and which five are his Japan top five.
+- **Use:** Tiebreaker on sushi and casual Tokyo. Weight low on kaiseki until he posts more.
 
 ---
 
