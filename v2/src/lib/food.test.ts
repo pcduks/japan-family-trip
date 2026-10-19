@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { badBooking, encodeNotes, FOOD_DEADLINES, rowToFoodBooking, slug, withFoodDeadlines } from "./food";
+import { FOOD_DEADLINES, slug, withFoodDeadlines } from "./food";
 import { DEEP_CITIES } from "./foodDeep";
 import { critic, openOn, routeNights, stopNumber } from "./foodView";
 import { tripData } from "./data/file";
@@ -28,17 +28,6 @@ describe("food places and dates", () => {
     expect(merged.filter((d) => d.id === "food-otome-zushi")).toHaveLength(1);
     expect(merged.find((d) => d.id === "food-otome-zushi")).toMatchObject({ done: true, place: "kanazawa/otome-zushi" });
     expect(merged).toHaveLength(FOOD_DEADLINES.length + 1);
-  });
-  it("round-trips a booking through the notes column", () => {
-    const b = rowToFoodBooking({ id: "1", target_id: "kanazawa/otome-zushi", name: "Otome Zushi", status: "booked", url: null, notes: encodeNotes({ date: "2026-12-28", meal: "dinner", time: "18:30", party: 7, ref: "48213", note: null }) });
-    expect(b).toMatchObject({ date: "2026-12-28", meal: "dinner", time: "18:30", party: 7, ref: "48213", status: "booked" });
-    expect(rowToFoodBooking({ id: "2", target_id: "a/b", name: "x", status: "weird", notes: "free text" })).toMatchObject({ status: "idea", note: "free text", date: null });
-  });
-  it("refuses a malformed booking", () => {
-    expect(badBooking({ target_id: "kanazawa/otome-zushi", name: "Otome", status: "held" })).toBeNull();
-    expect(badBooking({ target_id: "../x", name: "x", status: "held" })).not.toBeNull();
-    expect(badBooking({ target_id: "a/b", name: "x", status: "booked", date: "28 Dec" })).not.toBeNull();
-    expect(badBooking({ target_id: "a/b", name: "x", status: "booked", url: "javascript:alert(1)" })).not.toBeNull();
   });
 });
 

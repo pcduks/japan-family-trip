@@ -43,56 +43,67 @@ export function TopicGuide({ topic, skipFirst = false }: { topic: DeepTopic; ski
       ja={JA[topic.slug]}
       intro={
         <>
-          {topic.intro?.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
+          {topic.intro?.[0] ? <p>{topic.intro[0]}</p> : null}
+          {topic.intro && topic.intro.length > 1 ? (
+            <details className="text-[0.95rem]">
+              <summary className="cursor-pointer text-sm font-semibold text-accent">Read more</summary>
+              <div className="mt-2 grid gap-2">
+                {topic.intro.slice(1).map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
+            </details>
+          ) : null}
           {skipFirst ? (
             <p className="text-sm">
-              The dates to book by are on <Link href="/food/book">Book by…</Link>
+              When tables open is on <Link href="/food/book">When to book</Link>.
             </p>
           ) : null}
         </>
       }
     >
-      {sections.length > 2 ? (
-        <nav aria-label="Sections" className="no-scrollbar sticky top-0 z-10 -mx-4 flex gap-1.5 overflow-x-auto bg-bg px-4 py-2">
-          {sections.map((s) => (
-            <a key={s.title} href={`#${slug(s.title)}`} className="chip shrink-0 min-h-9 no-underline">
-              {s.title.split(/[:(]/)[0].trim()}
-            </a>
-          ))}
-        </nav>
-      ) : null}
-      {sections.map((s) => (
-        <section key={s.title} id={slug(s.title)} className="grid scroll-mt-14 gap-2">
-          <h2 className="text-[1.35rem]">{s.title}</h2>
-          {s.body ? <p className="max-w-prose text-ink-2">{s.body}</p> : null}
-          {s.items?.length ? (
-            <ul className="card divide-y divide-rule">
-              {s.items.map((it) => (
-                <li key={it.name} className="grid gap-1 px-3 py-3 text-sm">
-                  <span className="flex items-start justify-between gap-2">
-                    <span className="min-w-0">
-                      <b className="font-display text-[1.05rem]">{it.name}</b> {it.name_ja ? <span className="jp text-ink-2">{it.name_ja}</span> : null}
-                    </span>
-                    <span className="flex shrink-0 items-center gap-2 text-xs">
-                      {it.pregnancy ? <FernandaMark level={it.pregnancy} /> : null}
-                      {it.must ? (
-                        <span aria-label="Must" className="jp grid size-[22px] -rotate-6 place-items-center rounded-full border-[1.5px] border-accent text-[11px] text-accent">
-                          必
+      <div className="grid gap-2.5">
+        {sections.map((s, i) => (
+          <details key={s.title} id={slug(s.title)} open={i === 0} className="card group scroll-mt-4 overflow-hidden">
+            <summary className="flex cursor-pointer list-none items-start justify-between gap-3 px-4 py-3.5">
+              <span className="grid gap-0.5">
+                <b className="font-display text-[1.15rem] leading-snug">{s.title}</b>
+                {s.items?.length ? <span className="text-xs text-muted">{s.items.length} to know</span> : null}
+              </span>
+              <span aria-hidden="true" className="mt-1 text-muted transition-transform group-open:rotate-180">
+                ▾
+              </span>
+            </summary>
+            <div className="grid gap-3 border-t border-rule px-4 pt-3 pb-4">
+              {s.body ? <p className="max-w-prose text-[0.95rem] text-ink-2">{s.body}</p> : null}
+              {s.items?.length ? (
+                <ul className="grid gap-3">
+                  {s.items.map((it) => (
+                    <li key={it.name} className="grid gap-1 text-sm">
+                      <span className="flex items-start justify-between gap-2">
+                        <span className="min-w-0">
+                          <b className="text-[1rem]">{it.name}</b> {it.name_ja ? <span className="jp text-ink-2">{it.name_ja}</span> : null}
                         </span>
-                      ) : null}
-                    </span>
-                  </span>
-                  {it.what ? <span className="text-ink-2">{it.what}</span> : null}
-                  {it.where || it.price ? <span className="text-xs text-muted">{[it.where, it.price].filter(Boolean).join(" · ")}</span> : null}
-                  {it.tip ? <span className="rounded-lg bg-bg-2 px-2.5 py-1.5 text-[0.82rem]">{it.tip}</span> : null}
-                </li>
-              ))}
-            </ul>
-          ) : null}
-        </section>
-      ))}
+                        <span className="flex shrink-0 items-center gap-2 text-xs">
+                          {it.pregnancy ? <FernandaMark level={it.pregnancy} /> : null}
+                          {it.must ? (
+                            <span aria-label="Must" className="jp grid size-[22px] -rotate-6 place-items-center rounded-full border-[1.5px] border-accent text-[11px] text-accent">
+                              必
+                            </span>
+                          ) : null}
+                        </span>
+                      </span>
+                      {it.what ? <span className="text-ink-2">{it.what}</span> : null}
+                      {it.where || it.price ? <span className="text-xs text-muted">{[it.where, it.price].filter(Boolean).join(" · ")}</span> : null}
+                      {it.tip ? <span className="rounded-lg bg-bg-2 px-2.5 py-1.5 text-[0.82rem]">{it.tip}</span> : null}
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </div>
+          </details>
+        ))}
+      </div>
       {topic.sources?.length ? (
         <details className="text-sm text-muted">
           <summary className="cursor-pointer">Sources ({topic.sources.length})</summary>

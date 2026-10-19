@@ -6,6 +6,7 @@ import { useState } from "react";
 const PHRASES: { ja: string; en: string; pt: string }[] = [
   { ja: "妊娠中です。\n生もの抜きで\nお願いします。", en: "I’m pregnant. Nothing raw, please.", pt: "Estou grávida. Nada cru, por favor." },
   { ja: "7人です。", en: "We are seven.", pt: "Somos sete." },
+  { ja: "妊婦なので、\nお酒は飲めません。", en: "She’s pregnant: no alcohol, please.", pt: "Ela está grávida: sem álcool, por favor." },
   { ja: "よく焼きで\nお願いします。", en: "Well done, please.", pt: "Bem passado, por favor." },
   { ja: "生卵なしで\nお願いします。", en: "No raw egg, please.", pt: "Sem ovo cru, por favor." },
   { ja: "椅子の席は\nありますか？", en: "Do you have seats with chairs?", pt: "Tem mesa com cadeiras?" },
@@ -21,7 +22,8 @@ export function ShowStaff() {
   const [i, setI] = useState(0);
   const p = PHRASES[i];
   return (
-    <main className="mx-auto flex min-h-[calc(100dvh-8rem)] max-w-xl flex-col gap-5 bg-card px-5 pt-4 pb-6">
+    <main className="fixed inset-0 z-50 overflow-y-auto bg-card">
+      <div className="mx-auto flex min-h-dvh max-w-xl flex-col gap-5 px-5 pt-[max(1rem,env(safe-area-inset-top))] pb-[max(1.5rem,env(safe-area-inset-bottom))]">
       <div className="flex items-center justify-between">
         <button onClick={() => (history.length > 1 ? router.back() : router.push("/food"))} className="min-h-10 text-sm font-semibold">
           ✕ Close
@@ -53,6 +55,7 @@ export function ShowStaff() {
             ),
           )}
         </div>
+      </div>
       </div>
     </main>
   );

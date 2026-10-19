@@ -2,7 +2,6 @@
 
 import * as Dialog from "@radix-ui/react-dialog";
 import Image from "next/image";
-import { DayEat } from "./food/DayEat";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { regionArt } from "@/lib/art";
 import { regionColor } from "@/lib/colors";
@@ -237,7 +236,6 @@ export function PictureScroll({ version, onStop }: { version: Version; onStop?: 
                 ) : null}
                 <p className="text-[1.02rem] leading-relaxed text-ink">{open.title}</p>
                 {open.items.length ? <DayItems items={open.items} /> : null}
-                <DayEat date={open.date} ryokan={version.stays[open.stayIndex]?.lodging === "ryokan"} />
                 {open.forHer ? (
                   <p className="text-sm text-ink-2">
                     <b className="text-ink">For Fernanda:</b> {open.forHer}

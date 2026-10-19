@@ -5,7 +5,7 @@
  */
 import type { DB } from "../supabase/types";
 import { daysBetween } from "../dates";
-import { rowToFoodBooking, withFoodDeadlines } from "../food";
+import { withFoodDeadlines } from "../food";
 import type { Comment, Day, Place, PlanHistoryEntry, Reaction, Region, Snapshot, Stay, Suggestion, Traveller, Version, Vote } from "../types";
 import { bundledPlanDays, splitDayTitle, tripData } from "./file";
 
@@ -36,7 +36,6 @@ export function fileSnapshot(): Snapshot {
     history: [],
     days: bundledPlanDays(),
     food_list: d.tokyo_personal_food_list,
-    food_bookings: [],
     related_docs: d.related_docs,
     source: "file",
   };
@@ -143,7 +142,7 @@ export function rowToRegion(r: Row): Region {
 export async function loadSnapshot(sb: DB | null): Promise<Snapshot> {
   const base = fileSnapshot();
   if (!sb) return base;
-  const [travellers, regions, places, versions, stays, votes, suggestions, comments, reactions, history, deadlines, days, bookings] = await Promise.all([
+  const [travellers, regions, places, versions, stays, votes, suggestions, comments, reactions, history, deadlines, days] = await Promise.all([
     sb.from("travellers").select("id,name,role,notes").neq("id", "claude").order("id"),
     sb.from("regions").select("*"),
     sb.from("places").select("*, closures(*)").order("sort"),
@@ -156,7 +155,6 @@ export async function loadSnapshot(sb: DB | null): Promise<Snapshot> {
     sb.from("plan_history").select("*").order("at", { ascending: false }).limit(50),
     sb.from("deadlines").select("*").order("date"),
     sb.from("days").select("*, day_items(*)").order("date"),
-    sb.from("bookings").select("*").eq("target_type", "food").order("created_at"),
   ]);
   const regionRows = check<Row[]>("regions", regions);
   const placeRows = check<Row[]>("places", places);
@@ -187,8 +185,6 @@ export async function loadSnapshot(sb: DB | null): Promise<Snapshot> {
       const rows = check<Row[]>("deadlines", deadlines);
       return rows.length ? withFoodDeadlines(rows.map((d) => ({ id: d.id as string, date: d.date as string, item: d.item as string, source: (d.source as string | null) ?? null, done: (d.done as boolean) ?? false }))) : base.deadlines;
     })(),
-    // The bookings table predates the Food tab: if it cannot be read, the rest of the trip still loads.
-    food_bookings: bookings.error ? [] : ((bookings.data ?? []) as Row[]).map(rowToFoodBooking),
     days: (() => {
       const rows = check<Row[]>("days", days);
       if (!rows.length) return base.days;

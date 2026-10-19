@@ -791,7 +791,7 @@
           "url": "https://www.cityfoodsters.com/restaurants/"
         }
       ],
-      "pregnancy": "ok",
+      "pregnancy": "careful",
       "seven": "ask",
       "closed_weekdays": [
         "Tue",
@@ -1019,7 +1019,7 @@
       "group": "250 seats, rooms for 6+: ask for one that takes seven.",
       "dec_jan": "30–31 Dec: open on its usual schedule. 1–3 Jan: New Year hours to confirm in early December. 4 Jan: closed (Monday, its day off). 5 Jan: open on its usual schedule.",
       "query": "Torisei Fushimi",
-      "pregnancy": "ok",
+      "pregnancy": "careful",
       "seven": "ask",
       "closed_weekdays": [
         "Mon"

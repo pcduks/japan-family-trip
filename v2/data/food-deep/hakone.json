@@ -16,7 +16,7 @@
       "where": "Unagi-tei Tomoei, in Kazamatsuri, the highest-rated restaurant in the area.",
       "must": true,
       "pregnancy": "ok",
-      "pregnancy_note": "Cooked, so fine. The liver (kimo) is rich in vitamin A: Fernanda keeps it small.",
+      "pregnancy_note": "Cooked, so fine. The liver (kimo) is rich in vitamin A: Fernanda skips it.",
       "glance": "Eel grilled in a sweet sauce over rice; the area's star.",
       "story": "The best-rated restaurant around Hakone isn't in Hakone at all. It's Tomoei, an eel house in Kazamatsuri, Odawara, at 4.41 on Tabelog with over 3,700 reviews. Unagi is eel grilled in a sweet sauce and laid over rice; order the unajū. It's cooked, so it's fine for Fernanda, though she should keep the liver (kimo) small, because it's rich in vitamin A."
     },
@@ -146,7 +146,7 @@
       },
       "why": "The highest-rated restaurant in the Hakone area. Worth the stop on its own.",
       "order": "Unajū.",
-      "pregnancy_note": "Fine; for Fernanda, go easy on the kimo.",
+      "pregnancy_note": "Fine; for Fernanda, skip the kimo (eel liver, too much vitamin A).",
       "group": "69 seats with rooms for 6: ask whether a seventh chair fits, or split 4+3.",
       "booking": "Eel reservations by phone, up to 2 months ahead.",
       "dec_jan": "10:00–16:00; closed Thursdays and Fridays. For us: Tue 5 or Wed 6 Jan, not Thu 7. Post-New Year hours to confirm.",

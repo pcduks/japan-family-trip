@@ -46,7 +46,7 @@
           "where": "Online · closed Wednesdays, Sundays and holidays",
           "must": true,
           "pregnancy": "careful",
-          "tip": "27 Dec is a Sunday, so 28 Dec is the safe night: it is also the last safe day for kōbako. New Year dates are unverified, so 29 Dec may already fall in the shutdown. For Fernanda, pre-arrange swaps for raw shellfish and shirako; buri and boiled kōbako are fine."
+          "tip": "27 Dec is a Sunday, so 28 Dec is the safe night: it is also the last safe day for kōbako. New Year dates are unverified, so 29 Dec may already fall in the shutdown. For Fernanda, pre-arrange swaps for raw shellfish and shirako; boiled kōbako is fine; raw buri, a few pieces."
         },
         {
           "name": "Now · email Yukari Sakamoto",
@@ -69,7 +69,7 @@
         {
           "name": "Wed 18 Nov, 17:00–19:00 JST · Torishiki by phone",
           "name_ja": "鳥しき",
-          "what": "The \"Mount Everest of yakitori\" (4.43) opens its January 2027 phone window on 18 Nov, 17:00–19:00 Japan time. That covers our 7–8 Jan in Tokyo.",
+          "what": "The \"Mount Everest of yakitori\" (4.43) opens its January 2027 phone window on 18 Nov (to confirm), 17:00–19:00 Japan time. That covers our 7–8 Jan in Tokyo.",
           "where": "Phone only · it needs a Japanese speaker or the concierge",
           "must": true,
           "tip": "Ask whether they can take seven. For Fernanda: everything よく焼き (well done), no rare sticks."
@@ -125,7 +125,7 @@
         {
           "name": "By 28 Dec · last kōbako crab",
           "name_ja": "香箱ガニ",
-          "what": "Female snow crab is only fished until the year-end. Ishikawa has historically closed the season on 29 Dec (the 2026 date is unverified), so our kōbako meals are 27 and 28 Dec in Kanazawa.",
+          "what": "Female snow crab is only fished until the year-end. Ishikawa closes the season historically ~29 Dec (2026 date to confirm), so our kōbako meals are 27 and 28 Dec in Kanazawa.",
           "where": "Kanazawa",
           "must": true,
           "pregnancy": "ok",
@@ -239,8 +239,8 @@
           "name": "Sun 27 Dec · arrival",
           "what": "Kabuna, Oden Miyuki, Otome Zushi and Tokkuriya are closed on Sundays. Open: Yamasan Sushi at Ōmichō (9:00–16:00, no fixed closing day, 32 seats with tatami) for a kōbako and buri lunch, and Akadama oden (96 seats over two floors; opens at noon at weekends, closed Mondays).",
           "where": "Ōmichō · Katamachi",
-          "pregnancy": "ok",
-          "tip": "At Yamasan, Fernanda orders boiled crab and fish nigiri, not shellfish."
+          "pregnancy": "careful",
+          "tip": "At Yamasan, Fernanda has the boiled crab; raw fish nigiri, a few pieces; no shellfish."
         },
         {
           "name": "Mon 28 Dec · the last safe kōbako day",
@@ -261,7 +261,7 @@
         },
         {
           "name": "Tue 29 Dec · the shutdown begins",
-          "what": "Independents start closing (29/30 Dec – 3/4 Jan). Historically the last kōbako day in Ishikawa. Ikiiki-tei is closed (Tuesday).",
+          "what": "Independents start closing (29/30 Dec – 3/4 Jan). The last kōbako day in Ishikawa: historically ~29 Dec (2026 date to confirm). Ikiiki-tei is closed (Tuesday).",
           "where": "Kanazawa",
           "tip": "Lifelines: hotels, chains, konbini."
         },

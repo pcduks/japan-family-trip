@@ -60,16 +60,16 @@ export function AppHeader() {
   };
   return (
     <header className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 pb-1" style={{ paddingTop: "max(0.75rem, env(safe-area-inset-top))" }}>
-      <Link href="/" className="flex items-center gap-2 no-underline">
-        <span className="grid size-8 place-items-center rounded-lg bg-accent text-sm font-bold text-accent-ink">冬</span>
-        <span className="display text-[1.15rem] whitespace-nowrap">
+      <Link href="/" className="flex min-w-0 items-center gap-2 no-underline">
+        <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-accent text-sm font-bold text-accent-ink">冬</span>
+        <span className="display truncate text-[1.15rem] whitespace-nowrap">
           <span className="sm:hidden">Japan ’26</span>
           <span className="hidden sm:inline">Japan, winter 2026</span>
         </span>
         {demo ? <span className="chip">demo</span> : null}
       </Link>
-      <span className="flex items-center gap-2">
-      <Link href="/inbox" aria-label={waiting ? `Inbox, ${waiting} waiting` : "Inbox"} className="relative grid size-10 place-items-center rounded-full border border-rule bg-card no-underline">
+      <span className="flex min-w-0 items-center gap-2">
+      <Link href="/inbox" aria-label={waiting ? `Inbox, ${waiting} waiting` : "Inbox"} className="relative grid size-10 shrink-0 place-items-center rounded-full border border-rule bg-card no-underline">
         <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="M4 13l2.5-7h11L20 13v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zM4 13h4.5l1 2h5l1-2H20" />
         </svg>
@@ -77,9 +77,9 @@ export function AppHeader() {
       </Link>
       <Dialog.Root open={open} onOpenChange={setOpen}>
         <Dialog.Trigger asChild>
-          <button className="flex items-center gap-2 rounded-full border border-rule bg-card py-1 pr-3 pl-1 text-sm" aria-label="Settings">
+          <button className="flex min-w-0 items-center gap-2 rounded-full border border-rule bg-card py-1 pr-3 pl-1 text-sm" aria-label={me ? `Settings, signed in as ${me.name}` : "Settings"}>
             {me ? <Avatar traveller={me.travellerId} travellers={snapshot.travellers} /> : null}
-            <span className="font-semibold">{me?.name ?? "—"}</span>
+            <span className="truncate font-semibold">{me?.name ?? "—"}</span>
           </button>
         </Dialog.Trigger>
         <Dialog.Portal>

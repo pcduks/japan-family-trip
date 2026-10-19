@@ -1,5 +1,5 @@
-import type { Pregnancy, Seven } from "@/lib/foodDeep";
-import { critic, PREG_MARK, SEVEN_MARK, type Open } from "@/lib/foodView";
+import type { Pregnancy } from "@/lib/foodDeep";
+import { PREG_MARK } from "@/lib/foodView";
 
 /** The Tabelog score as a tile: filled from 4.00, outlined 3.70–3.99, ink 3.50–3.69, quiet below. */
 export function TabelogTile({ score, awards, size = 44 }: { score: number | null | undefined; awards?: string; size?: number }) {
@@ -29,53 +29,6 @@ export function FernandaMark({ level, long = false }: { level?: Pregnancy; long?
   return (
     <span className={`font-semibold whitespace-nowrap ${m.cls}`} aria-label={`For Fernanda: ${m.label}`}>
       {m.glyph} {long ? `Fernanda: ${m.label.toLowerCase()}` : m.label}
-    </span>
-  );
-}
-
-export function SevenMark({ seven }: { seven?: Seven }) {
-  if (!seven) return <span className="whitespace-nowrap text-muted">⑦ ?</span>;
-  const m = SEVEN_MARK[seven];
-  return (
-    <span className={`whitespace-nowrap ${m.fits ? "" : "text-muted"}`} aria-label={m.long}>
-      {m.short}
-    </span>
-  );
-}
-
-export function OpenMark({ open, day }: { open: Open; day: string }) {
-  if (open === "open")
-    return (
-      <span className="whitespace-nowrap text-ok" aria-label={`Open ${day}`}>
-        ✓ {day}
-      </span>
-    );
-  if (open === "closed")
-    return (
-      <span className="whitespace-nowrap text-muted line-through" aria-label={`Closed ${day}`}>
-        {day}
-      </span>
-    );
-  return (
-    <span className="whitespace-nowrap text-muted" aria-label={`Check ${day}`}>
-      {day}?
-    </span>
-  );
-}
-
-const MONO_COLORS = ["#2a3f6f", "#8a5a2b", "#2b6f5e", "#6f2a4f", "#4f5b2a"];
-
-export function Monograms({ critics }: { critics?: { who: string }[] }) {
-  if (!critics?.length) return null;
-  const seen = new Set<string>();
-  const list = critics.map((c) => critic(c.who)).filter((c) => (seen.has(c.name) ? false : (seen.add(c.name), true)));
-  return (
-    <span className="flex -space-x-1.5" aria-label={`Critics: ${list.map((c) => c.name).join(", ")}`}>
-      {list.slice(0, 3).map((c, i) => (
-        <span key={c.name} title={c.name} className="grid size-[22px] place-items-center rounded-full border-2 border-card text-[9px] font-bold text-white" style={{ background: MONO_COLORS[i % MONO_COLORS.length] }}>
-          {c.initials}
-        </span>
-      ))}
     </span>
   );
 }

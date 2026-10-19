@@ -7,19 +7,19 @@
     "Gold is the other legacy. About 99% of Japan's gold leaf is beaten here (Kanazawa-haku). The domain kept beating gold in secret while the shogunate held the monopoly, and the humid climate and the region's lacquer and Buddhist-altar workshops did the rest. Hence the gold-leaf ice cream in Higashi Chaya: it's decoration, it tastes of nothing.",
     "The Sea of Japan feeds the city. Ōmichō market dates itself from 1721 (its roots go back to a fire in 1690 that brought the fishmongers together there), supplied the domain's kitchen and today has close to 170 stalls. From the land come the Kaga yasai: 15 certified vegetables, grown since before 1945 and still planted in Kanazawa, such as gensuke radish, Kaga lotus root and purple kinjisō."
   ],
-  "winter": "December is kōbako-gani month: the female snow crab, with roe inside and out. The season opens on 6 Nov and Ishikawa usually closes it for females around 29 Dec (the 2026 date is to confirm), so kōbako means being here before ~28 Dec. For us that means our first two nights, 27 and 28 Dec, with the 29th a maybe. The male (加能ガニ) runs until March. It's also the season for fatty buri, kabura-zushi and gensuke radish in the oden.",
+  "winter": "December is kōbako-gani month: the female snow crab, with roe inside and out. The season opens on 6 Nov and Ishikawa closes it for females historically ~29 Dec (2026 date to confirm), so kōbako means being here before ~28 Dec. For us that means our first two nights, 27 and 28 Dec, with the 29th a maybe. The male (加能ガニ) runs until March. It's also the season for fatty buri, kabura-zushi and gensuke radish in the oden.",
   "meibutsu": [
     {
       "name": "Kōbako crab",
       "name_ja": "香箱ガニ",
       "romaji": "kōbako-gani",
-      "what": "A small female zuwai crab, boiled whole: orange inner roe (uchiko), granular outer roe (sotoko) and the miso. Taken apart in its shell and eaten with tosa vinegar. Only around from 6 Nov to near the end of the year.",
+      "what": "A small female zuwai crab, boiled whole: orange inner roe (uchiko), granular outer roe (sotoko) and the miso. Taken apart in its shell and eaten with tosa vinegar. Only around from 6 Nov to historically ~29 Dec (2026 date to confirm).",
       "where": "Yamasan Sushi and Kabuna; in winter Miyuki's oden adds kani-men; Otome Zushi at the top end.",
       "must": true,
       "pregnancy": "ok",
       "pregnancy_note": "For Fernanda: cooked, so fine. Only skip kani-sashi (raw crab) if it turns up.",
       "glance": "Small female snow crab, boiled, packed with two kinds of roe.",
-      "story": "This crab has a deadline. Ishikawa opens the season on 6 November and usually closes it for females around 29 December, so our first nights here are the window. Kōbako is the small female snow crab, boiled whole. Inside the shell you'll find orange inner roe, granular outer roe and the crab's miso. Take it apart piece by piece and dip it in tosa vinegar. It's cooked, so Fernanda joins in."
+      "story": "This crab has a deadline. Ishikawa opens the season on 6 November and closes it for females historically ~29 Dec (2026 date to confirm), so our first nights here are the window. Kōbako is the small female snow crab, boiled whole. Inside the shell you'll find orange inner roe, granular outer roe and the crab's miso. Take it apart piece by piece and dip it in tosa vinegar. It's cooked, so Fernanda joins in."
     },
     {
       "name": "Jibuni",
@@ -52,8 +52,9 @@
       "what": "Fatty winter yellowtail from the Sea of Japan, as sashimi, sushi, teriyaki or buri-daikon.",
       "where": "Ōmichō stalls, Yamasan, Kabuna.",
       "must": false,
-      "pregnancy": "ok",
-      "glance": "Fatty winter yellowtail, raw or cooked, at its December peak."
+      "pregnancy": "careful",
+      "glance": "Fatty winter yellowtail, raw or cooked, at its December peak.",
+      "pregnancy_note": "Cooked (teriyaki, buri-daikon) is fine; raw as sashimi or sushi: a few pieces at a good counter."
     },
     {
       "name": "Kabura-zushi",
@@ -199,12 +200,12 @@
       },
       "why": "The market sushi place with room for a group. The best bet for a lunch of kōbako and buri.",
       "order": "Boiled kōbako and buri nigiri.",
-      "pregnancy_note": "Plenty is cooked. For Fernanda: boiled crab and fish nigiri, not shellfish.",
+      "pregnancy_note": "Boiled kōbako and other cooked pieces are fine. Raw buri and other fish nigiri: a few pieces; no shellfish.",
       "group": "32 seats on tatami and at tables; book for seven and check they'll seat us together.",
       "booking": "Online booking for a few groups a day.",
-      "dec_jan": "9:00–16:00, no fixed closing day, so it works on Sun 27 Dec, when the Katamachi places are shut: our kōbako lunch on arrival day, before the season ends (~29 Dec) and before the market rush. Year-end hours to confirm.",
+      "dec_jan": "9:00–16:00, no fixed closing day, so it works on Sun 27 Dec, when the Katamachi places are shut: our kōbako lunch on arrival day, before the season ends (historically ~29 Dec (2026 date to confirm)) and before the market rush. Year-end hours to confirm.",
       "query": "Yamasan Sushi Omicho",
-      "pregnancy": "ok",
+      "pregnancy": "careful",
       "seven": "yes",
       "closed_weekdays": [],
       "meals": [
@@ -227,10 +228,10 @@
       },
       "why": "Kanazawa's historic benchmark: Hokuriku fish handled with restraint. Lunch is the cheapest way in.",
       "order": "Omakase; in winter, buri and kōbako.",
-      "pregnancy_note": "For Fernanda: ask ahead to swap raw shellfish and shirako (likely in December) for cooked pieces. Buri and boiled kōbako are fine.",
+      "pregnancy_note": "For Fernanda: ask ahead to swap raw shellfish and shirako (likely in December) for cooked pieces. Boiled kōbako is fine; raw buri and other nigiri, a few pieces.",
       "group": "17 seats: a 9-seat counter and an 8-seat tatami room. For seven, book the tatami room (7 of its 8 seats), or 4+3 across counter sittings.",
       "booking": "Online, opens 2 months ahead. Book in late October.",
-      "dec_jan": "Lunch and dinner; closed Wednesdays, Sundays and holidays, so only Mon 28 (dinner, after Shirakawa-go) and Tue 29 Dec work for us. With kōbako ending ~29 Dec, the 28th is the safer night. Year-end hours to confirm.",
+      "dec_jan": "Lunch and dinner; closed Wednesdays, Sundays and holidays, so only Mon 28 (dinner, after Shirakawa-go) and Tue 29 Dec work for us. With kōbako ending historically ~29 Dec (2026 date to confirm), the 28th is the safer night. Year-end hours to confirm.",
       "query": "Otome Zushi Kanazawa",
       "critics": [
         {
@@ -300,7 +301,7 @@
       "pregnancy_note": "All cooked. For Fernanda: skip only raw shellfish sides.",
       "group": "Private rooms for 10–20; seven fit.",
       "booking": "Online; required for 3 or more.",
-      "dec_jan": "16:00–22:00; closed Sundays, holidays and the 2nd Monday of the month (11 Jan 2027 closed, after we've gone). So not Sun 27 Dec; Mon 28 and Tue 29 Dec aren't closing days, and kani-men only while kōbako lasts (~29 Dec). Year-end hours to confirm.",
+      "dec_jan": "16:00–22:00; closed Sundays, holidays and the 2nd Monday of the month (11 Jan 2027 closed, after we've gone). So not Sun 27 Dec; Mon 28 and Tue 29 Dec aren't closing days, and kani-men only while kōbako lasts (historically ~29 Dec (2026 date to confirm)). Year-end hours to confirm.",
       "query": "Oden Miyuki Kanazawa",
       "pregnancy": "ok",
       "seven": "room",

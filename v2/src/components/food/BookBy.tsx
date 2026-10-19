@@ -2,10 +2,8 @@
 
 import Link from "next/link";
 import { daysBetween, fmtDay, todayIso } from "@/lib/dates";
-import { isConfirmed } from "@/lib/food";
-import type { Deadline, FoodBooking } from "@/lib/types";
+import type { Deadline } from "@/lib/types";
 import { useStore } from "../providers";
-import { BookingStatus } from "./PlaceSheet";
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -14,7 +12,7 @@ function sheetHref(id: string): string {
   return `/food/${city}?place=${s}`;
 }
 
-/** Every food date to book by, grouped by when, and the tables already ours. */
+/** When each table opens or must be booked, in order. The booking itself happens on each restaurant's own channel. */
 export function BookBy() {
   const { snapshot, isPlanner, setDeadlineDone } = useStore();
   const today = todayIso();
@@ -23,7 +21,6 @@ export function BookBy() {
   const later = food.filter((d) => !d.done && d.date > today);
   const done = food.filter((d) => d.done);
   const months = later.reduce<Map<string, Deadline[]>>((m, d) => m.set(d.date.slice(0, 7), [...(m.get(d.date.slice(0, 7)) ?? []), d]), new Map());
-  const bookings = snapshot.food_bookings.slice().sort((a, b) => (a.date ?? "9").localeCompare(b.date ?? "9"));
 
   const row = (d: Deadline) => <DeadlineRow key={d.id} d={d} today={today} canTick={isPlanner} onTick={(v) => d.id && setDeadlineDone(d.id, v)} />;
 
@@ -33,38 +30,16 @@ export function BookBy() {
         <Link href="/food" className="text-sm text-muted no-underline">
           ← Food
         </Link>
-        <p className="eyebrow">
-          {now.length + later.length} to do · {done.length} done
-        </p>
-        <h1 className="display text-[2.2rem] leading-[1.05]">Book by…</h1>
-        <p className="text-sm text-ink-2">
-          Say we are seven, and mention the pregnancy when booking, never on the night. {isPlanner ? "Tick each one off when it's done." : ""}
-        </p>
+        <h1 className="display text-[2.2rem] leading-[1.05]">When to book</h1>
+        <p className="text-[0.95rem] text-ink-2">The few places worth planning around, in the order their tables open. When booking, say we are seven and mention the pregnancy then, not on the night.</p>
       </header>
 
-      {now.length ? <Group title="Open now">{now.map(row)}</Group> : null}
+      {now.length ? <Group title="Now">{now.map(row)}</Group> : null}
       {[...months.entries()].map(([ym, list]) => (
         <Group key={ym} title={MONTHS[Number(ym.slice(5)) - 1]}>
           {list.map(row)}
         </Group>
       ))}
-
-      <section className="grid gap-2" aria-labelledby="ours">
-        <h2 id="ours" className="text-[1.3rem]">
-          Our tables
-        </h2>
-        {bookings.length ? (
-          <ul className="card divide-y divide-rule">
-            {bookings.map((b) => (
-              <BookingRow key={b.id} b={b} />
-            ))}
-          </ul>
-        ) : (
-          <p className="rounded-xl border border-dashed border-rule px-4 py-5 text-center text-sm text-muted">
-            Nothing picked or booked yet. {isPlanner ? "Open a restaurant and set where it stands." : ""}
-          </p>
-        )}
-      </section>
 
       {done.length ? (
         <details>
@@ -118,20 +93,6 @@ function DeadlineRow({ d, today, canTick, onTick }: { d: Deadline; today: string
           ) : null}
         </span>
       </span>
-    </li>
-  );
-}
-
-function BookingRow({ b }: { b: FoodBooking }) {
-  return (
-    <li>
-      <Link href={sheetHref(b.target_id)} className="flex items-center justify-between gap-2 px-3 py-2.5 text-sm no-underline hover:bg-bg-2">
-        <span className="grid min-w-0">
-          <b className="truncate">{b.name}</b>
-          {b.ref && isConfirmed(b) ? <span className="text-xs text-muted">Ref {b.ref}</span> : null}
-        </span>
-        <BookingStatus b={b} />
-      </Link>
     </li>
   );
 }
