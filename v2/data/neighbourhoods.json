@@ -1,0 +1,832 @@
+{
+  "researched": "2026-10-21",
+  "stops": {
+    "tokyo": {
+      "pick": "nihombashi-kyobashi",
+      "why_pick": "The Ginza subway line runs right through Nihombashi and Kyobashi to Asakusa, Ueno, Ginza, Omotesando and Shibuya with no changes, so every day on the plan is one train or a short flat walk. The Marunouchi lights are a 10-minute walk, and on 24 Dec the Hokuriku shinkansen leaves from Tokyo Station, 5–12 minutes away on foot. It is also calmer and a little cheaper than Ginza itself.",
+      "areas": [
+        {
+          "id": "nihombashi-kyobashi",
+          "name": "Nihombashi / Kyobashi (Yaesu side of Tokyo Station)",
+          "search": "Nihonbashi, Tokyo",
+          "lat": 35.6795,
+          "lng": 139.7715,
+          "what_its_like": "Old business and department-store district east of Tokyo Station. Flat, wide pavements, quiet after 9 pm, lots of modern mid-range hotels.",
+          "good_for_us": [
+            "Flat walk to Tokyo Station for the 24 Dec train",
+            "Ginza line straight to Asakusa, Ueno and Shibuya",
+            "Big modern hotels with lifts and real beds",
+            "Department-store food halls for easy dinners"
+          ],
+          "watch_out": [
+            "Fewer late-night restaurants than Ginza",
+            "Some subway exits are stairs only, so look for the lift exits"
+          ],
+          "to_the_plans": "Marunouchi lights 10 min walk; Ginza 10–15 min walk or 1 stop; Tsukiji outer market 10 min by taxi; Asakusa 15–20 min and Ueno about 10 min on the Ginza line; Omotesando/Shibuya about 20–25 min on the Ginza line; Tokyo Station 5–12 min walk; Haneda about 30 min by van.",
+          "station": "Nihombashi or Kyobashi (Ginza line), 2–5 min; Tokyo Station Yaesu exit 5–12 min",
+          "price": "middle"
+        },
+        {
+          "id": "ginza",
+          "name": "Ginza / Higashi-Ginza",
+          "search": "Ginza, Tokyo",
+          "lat": 35.6705,
+          "lng": 139.7665,
+          "what_its_like": "Tokyo's smart shopping street, busy by day and lively for dinner. Flat grid, very safe, lots of choice for meals.",
+          "good_for_us": [
+            "Tsukiji outer market about 7–10 min on foot; Hama-rikyu about 15 min",
+            "St. Luke's International Hospital (obstetrics, 24-hour emergency) is about 5–10 min by taxi",
+            "Ginza line direct to Asakusa and Shibuya"
+          ],
+          "watch_out": [
+            "Rooms cost more than in Nihombashi",
+            "Tokyo Station is 15–20 min on foot, so take a taxi on 24 Dec"
+          ],
+          "to_the_plans": "Tsukiji 7–10 min walk; Marunouchi lights 10–15 min walk; Asakusa about 17 min and Shibuya about 16 min on the Ginza line; Tokyo Station 5–10 min by taxi; Haneda 25–35 min by van.",
+          "station": "Ginza or Higashi-Ginza, 2–5 min",
+          "price": "higher"
+        },
+        {
+          "id": "ueno",
+          "name": "Ueno",
+          "search": "Ueno, Tokyo",
+          "lat": 35.7115,
+          "lng": 139.7760,
+          "what_its_like": "Busy, down-to-earth area around Ueno Park and its museums, next to the Ameyoko street market.",
+          "good_for_us": [
+            "Museums and Ueno Park on the doorstep for 22 Dec",
+            "Asakusa is 5 min on the Ginza line",
+            "The Hokuriku shinkansen to Nagano stops at Ueno"
+          ],
+          "watch_out": [
+            "Far from Tsukiji, Ginza and the Marunouchi lights",
+            "Ueno Station is huge and has lots of stairs; JR Ueno and Keisei Ueno are different stations",
+            "Furthest of the three from Haneda (about 40–50 min by van)"
+          ],
+          "to_the_plans": "Museums 5–10 min walk; Asakusa 5 min by train; Ginza about 12 min and Shibuya about 30 min on the Ginza line; Tsukiji 25–30 min; Haneda 40–50 min by van.",
+          "station": "Ueno (JR, Ginza and Hibiya lines), 3–10 min",
+          "price": "lower"
+        }
+      ],
+      "tips": [
+        "On 23 Dec the hotel front desk can send the big cases to Kyoto. Ask them to set the delivery for 30 Dec, and make sure someone at the Kyoto place can receive them. A self-check-in house may not be able to.",
+        "Ask for rooms on a high floor near the lift, and check that the hotel has twin or double beds for every couple plus a single for Tatiana. Tokyo rooms are small, so look at the square metres.",
+        "Check which subway exit has a lift (Kyobashi and Nihombashi both have some). Plan the Tsukiji and Haneda trips by taxi or van rather than by subway transfers."
+      ],
+      "sources": [
+        { "label": "St. Luke's International Hospital – childbirth (English)", "url": "https://hospital.luke.ac.jp/eng/for-patients/childbirth/childbirth.html" },
+        { "label": "Where to stay in Tokyo – Snow Monkey Resorts guide", "url": "https://www.snowmonkeyresorts.com/smr/tokyo/where-to-stay-in-tokyo/" },
+        { "label": "Toei Subway – airport access", "url": "https://www.kotsu.metro.tokyo.jp/eng/guides/airportaccess/" }
+      ]
+    },
+    "tokyo:2": {
+      "pick": "ginza",
+      "why_pick": "Kabuki-za is in Higashi-Ginza, so after the show it is a 2–10 minute walk home. The Hibiya line runs straight to Ueno for the late museum evening, and from Shinjuku on 7 Jan the Marunouchi line goes to Ginza with no change. Haneda is about 25–35 minutes by van on the Saturday, and the area will already feel familiar from 21 Dec.",
+      "areas": [
+        {
+          "id": "ginza",
+          "name": "Ginza / Higashi-Ginza (near Kabuki-za)",
+          "search": "Higashi-Ginza, Tokyo",
+          "lat": 35.6700,
+          "lng": 139.7670,
+          "what_its_like": "Flat, polished shopping streets with lots of restaurants for a farewell dinner. Quieter at night than Shinjuku or Shibuya.",
+          "good_for_us": [
+            "Short flat walk to Kabuki-za",
+            "Direct Hibiya line to Ueno; direct Marunouchi line from Shinjuku",
+            "Lots of choice for the farewell dinner",
+            "St. Luke's Hospital is 5–10 min away by taxi"
+          ],
+          "watch_out": [
+            "Costs more than the station areas",
+            "The Airport Express on the Asakusa line skips Higashi-Ginza, so a van or taxi is easier with big cases"
+          ],
+          "to_the_plans": "Kabuki-za 2–10 min walk; Shinjuku about 16 min on the Marunouchi line; Tokyo National Museum about 15 min on the Hibiya line plus a 10-min walk; Haneda 25–35 min by van.",
+          "station": "Higashi-Ginza (Hibiya and Asakusa lines) or Ginza, 2–5 min",
+          "price": "higher"
+        },
+        {
+          "id": "nihombashi-kyobashi",
+          "name": "Nihombashi / Kyobashi (same as the first stay)",
+          "search": "Nihonbashi, Tokyo",
+          "lat": 35.6795,
+          "lng": 139.7715,
+          "what_its_like": "The same calm business district as the first stay, by now known to everyone.",
+          "good_for_us": [
+            "Familiar, and you could even rebook the same hotel",
+            "Asakusa line from Nihombashi runs through to Haneda",
+            "Ginza line to Ueno in about 10 min"
+          ],
+          "watch_out": [
+            "Kabuki-za is 15–20 min on foot or a short taxi ride",
+            "From Shinjuku it's one change, or a 20–30 min taxi ride"
+          ],
+          "to_the_plans": "Kabuki-za 15–20 min walk or 5 min by taxi; Ueno about 10 min on the Ginza line; Shinjuku 20–25 min; Haneda about 30 min by van or 30–40 min by Asakusa/Keikyu train.",
+          "station": "Nihombashi (Ginza, Tozai, Asakusa lines), 2–5 min",
+          "price": "middle"
+        },
+        {
+          "id": "shinagawa",
+          "name": "Shinagawa (Takanawa side)",
+          "search": "Shinagawa, Tokyo",
+          "lat": 35.6287,
+          "lng": 139.7390,
+          "what_its_like": "Huge station surrounded by large hotels. Convenient, but it doesn't feel like much of a neighbourhood.",
+          "good_for_us": [
+            "Keikyu trains to Haneda take about 15 min",
+            "Big hotels with lifts and larger rooms",
+            "Direct JR Yamanote line from Shinjuku"
+          ],
+          "watch_out": [
+            "Kabuki-za and Ueno are both 20–30 min away",
+            "Few nice evening streets for a farewell walk"
+          ],
+          "to_the_plans": "Kabuki-za 20–25 min (JR to Shimbashi plus subway, or taxi); Ueno 25 min on JR; Shinjuku 20 min on the Yamanote; Haneda about 15 min by Keikyu or 20 min by van.",
+          "station": "Shinagawa (JR, Keikyu), 2–5 min",
+          "price": "middle"
+        },
+        {
+          "id": "hamamatsucho",
+          "name": "Hamamatsucho / Shimbashi",
+          "search": "Hamamatsucho, Tokyo",
+          "lat": 35.6555,
+          "lng": 139.7570,
+          "what_its_like": "Office district between Ginza and the bay, with newer hotels and the airport monorail.",
+          "good_for_us": [
+            "Tokyo Monorail to Haneda in about 15–20 min",
+            "Kabuki-za is 2 stops on the Asakusa line or about 20 min on foot"
+          ],
+          "watch_out": [
+            "Quiet and plain in the evening",
+            "The monorail stations have long corridors, so a van is still easier with big cases"
+          ],
+          "to_the_plans": "Kabuki-za 10 min by subway; Ueno 20 min on JR; Shinjuku 25–30 min; Haneda 15–20 min by monorail or van.",
+          "station": "Hamamatsucho (JR, monorail) / Daimon, 2–5 min",
+          "price": "middle"
+        }
+      ],
+      "tips": [
+        "Tell the hotel that cases are arriving from Kyoto before you do (sent 4 Jan). Get the guest names and arrival date on the label, and ask in writing that they will hold them.",
+        "For Sat 9 Jan, book a van for 7 people plus big cases. The front desk can also send cases ahead to the Haneda airport counters the day before, if you'd rather travel light.",
+        "Kabuki-za finishes late. A hotel within a 10-minute flat walk means Carlos, Nadir and Fernanda don't have to find a taxi."
+      ],
+      "sources": [
+        { "label": "Toei Subway – airport access", "url": "https://www.kotsu.metro.tokyo.jp/eng/guides/airportaccess/" },
+        { "label": "St. Luke's International Hospital – childbirth (English)", "url": "https://hospital.luke.ac.jp/eng/for-patients/childbirth/childbirth.html" },
+        { "label": "Where to stay in Tokyo – Snow Monkey Resorts guide", "url": "https://www.snowmonkeyresorts.com/smr/tokyo/where-to-stay-in-tokyo/" }
+      ]
+    },
+    "yudanaka": {
+      "pick": "shibu",
+      "why_pick": "Only guests of Shibu inns get the key to the nine public baths, and the lantern lane is right outside the door, so staying here is what makes the plan work. Shibu is just 5 minutes by taxi from Yudanaka station and close to the monkey-park trailhead. Choose a modern inn with a lift, Western beds and rooms with their own bath. Some of the oldest wooden inns have steep stairs.",
+      "areas": [
+        {
+          "id": "shibu",
+          "name": "Shibu Onsen (lantern lane)",
+          "search": "Shibu Onsen, Yamanouchi",
+          "lat": 36.7344,
+          "lng": 138.4306,
+          "what_its_like": "A small, old hot-spring village of wooden inns along one narrow, gently sloping lane, where guests stroll in yukata between the nine little bathhouses.",
+          "good_for_us": [
+            "Inn guests get the master key to all nine baths",
+            "The lantern lane at night is right on the doorstep",
+            "Closest real village to the monkey park (5–10 min by car to the trailhead)",
+            "Small enough to walk around"
+          ],
+          "watch_out": [
+            "The lane slopes and can be icy, so wear proper shoes rather than geta",
+            "Many inns are old and full of stairs. Some, like Kanaguya, are beautiful but awkward for Fernanda",
+            "Fewer rooms with beds, so ask for them specifically",
+            "Walking from Yudanaka station takes about 30 min, so take a taxi (about ¥1,200) or the inn's shuttle"
+          ],
+          "to_the_plans": "Yudanaka station 5 min by taxi or bus; monkey park trailhead 5–10 min by car, then about 30 min on the forest path; Obuse 25–40 min by Nagaden from Yudanaka; Shiga Kogen buses from Yudanaka station.",
+          "station": "Yudanaka (Nagaden), 5 min by taxi / about 30 min on foot",
+          "price": "middle"
+        },
+        {
+          "id": "yudanaka",
+          "name": "Yudanaka Onsen (around the station)",
+          "search": "Yudanaka Onsen, Yamanouchi",
+          "lat": 36.7418,
+          "lng": 138.4144,
+          "what_its_like": "The bigger, more practical spa town where the Nagaden line ends. It's a bit dated, without Shibu's charm, but has the most choice.",
+          "good_for_us": [
+            "Some inns are a 2–7 min walk from the station",
+            "The most inns with Western beds; Hakura, for example, is set up for guests with limited mobility",
+            "Buses to the monkey park and Shiga Kogen start here",
+            "Shops and a few restaurants"
+          ],
+          "watch_out": [
+            "No key to Shibu's nine baths (only the big Oyu bath is open to visitors, by day)",
+            "Shibu's lantern lane is 15–25 min away on foot",
+            "Less special for a Christmas Eve ryokan night"
+          ],
+          "to_the_plans": "Station 2–10 min walk; Shibu 5 min by taxi; monkey park about 20 min by bus or taxi plus the 30-min trail; Obuse 25–40 min by train; Shiga Kogen by bus from the station.",
+          "station": "Yudanaka (Nagaden), 2–10 min walk",
+          "price": "lower"
+        },
+        {
+          "id": "kanbayashi",
+          "name": "Kanbayashi Onsen (near the monkey park)",
+          "search": "Kanbayashi Onsen, Yamanouchi",
+          "lat": 36.7296,
+          "lng": 138.4419,
+          "what_its_like": "A handful of inns in the forest at the start of the monkey-park trail. Very quiet, with no real village.",
+          "good_for_us": [
+            "Shortest trip to the monkeys, so you can go early before the crowds",
+            "Some upmarket inns (Senjukaku, for example) run a shuttle from Yudanaka station",
+            "The Shiga Kogen bus stops here"
+          ],
+          "watch_out": [
+            "Very few inns, and they sell out first",
+            "No shops or evening life, and dark at night",
+            "No key to Shibu's nine baths",
+            "The furthest from the hospital in Nakano"
+          ],
+          "to_the_plans": "Monkey park 5 min to the trailhead plus a 30-min forest path; Shibu 5 min by car; Yudanaka station about 10 min by bus or taxi.",
+          "station": "Yudanaka (Nagaden), about 10 min by bus or taxi",
+          "price": "higher"
+        }
+      ],
+      "tips": [
+        "Ask each inn for: a room with Western beds, a lift (or a ground-floor room), and a private bath in the room or a private family bath you can book. Ask for an English menu for the Christmas Eve dinner. The best small inns fill up first for winter.",
+        "The monkey trail is a 30-minute forest walk, and it is often icy in December. Rent boot spikes at the trailhead. Fernanda should decide with her doctor. Winter cars can't reach the park.",
+        "Onsen are no longer officially off-limits in pregnancy (Japan dropped that warning in 2014), but avoid very hot water and long soaks. Shibu's public baths can be very hot, so the private bath is the safer choice.",
+        "The nearest hospital with obstetrics is Hokushin General Hospital in Nakano, about 15 min by taxi. Nagano Red Cross Hospital in Nagano city is a regional maternity centre, about 45–50 min away."
+      ],
+      "sources": [
+        { "label": "Shibu Onsen – japan-guide.com", "url": "https://www.japan-guide.com/e/e6029.html" },
+        { "label": "Yudanaka, Shibu and where to stay – Snow Monkey Resorts", "url": "https://www.snowmonkeyresorts.com/smr/yudanakaonsen/things-to-do-around-yudanaka-shibu-onsen-where-to-stay" },
+        { "label": "Jigokudani Snow Monkey Park guide – Go Nagano", "url": "https://www.go-nagano.net/en/theme/id=17978" },
+        { "label": "Best ryokans near the snow monkeys (2026)", "url": "https://www.japanryokanguide.com/en/blog/best-ryokans-snow-monkey-japan" },
+        { "label": "Onsen while pregnant", "url": "https://www.japanryokanguide.com/en/blog/onsen-while-pregnant" }
+      ]
+    },
+    "kanazawa": {
+      "pick": "omicho",
+      "why_pick": "Omicho and Musashi sit halfway between the station and the sights, on flat ground. It is 5 minutes by taxi to the station for the 8:40 Shirakawa-go bus, 10–15 minutes on foot to Higashi Chaya and 15–20 minutes to Kenroku-en and the 21st Century Museum. The market is right there for breakfast and for crab on the 28th, and the area has plenty of apartment-style rooms with washing machines.",
+      "areas": [
+        {
+          "id": "omicho",
+          "name": "Omicho Market / Musashigatsuji",
+          "search": "Omicho Market, Kanazawa",
+          "lat": 36.5716,
+          "lng": 136.6545,
+          "what_its_like": "A central, everyday crossroads around the covered fish market. Busy by day and quiet at night.",
+          "good_for_us": [
+            "Flat walks to Higashi Chaya, the castle park and Nagamachi",
+            "Seafood breakfast and crab at the market",
+            "Lots of buses pass through, and taxis are easy to find",
+            "Mid-range apartment hotels with washing machines"
+          ],
+          "watch_out": [
+            "The market is packed in the last days of December, when people shop for New Year",
+            "Kenroku-en is a slight uphill walk; take the bus or a taxi for Carlos, Nadir and Fernanda"
+          ],
+          "to_the_plans": "Kanazawa station about 15 min flat walk or 5 min by taxi; Higashi Chaya 10–15 min walk; Kenroku-en and the 21st Century Museum 15–20 min walk or 5 min by bus; Nagamachi 10–15 min walk.",
+          "station": "Kanazawa, about 15 min walk; Musashigatsuji bus stop, 1–3 min",
+          "price": "middle"
+        },
+        {
+          "id": "station",
+          "name": "Kanazawa Station (east exit)",
+          "search": "Kanazawa Station, Kanazawa",
+          "lat": 36.5778,
+          "lng": 136.6490,
+          "what_its_like": "Modern hotels and shopping around the big station. Practical, with not much charm.",
+          "good_for_us": [
+            "Off the train and into the hotel on 27 Dec, and an easy start on 30 Dec",
+            "The Nohi bus to Shirakawa-go leaves from the station's east exit bus terminal",
+            "Flat and covered, with lifts everywhere",
+            "Ishikawa Prefectural Central Hospital (a major maternity centre) is about 10–15 min by taxi"
+          ],
+          "watch_out": [
+            "Sights are a 25–30 min walk away, so you'll be on buses every day",
+            "Evenings feel like a business district"
+          ],
+          "to_the_plans": "Kenroku-en and the 21st Century Museum 15 min by bus or 25–30 min walk; Higashi Chaya 10 min by bus; Omicho 15 min walk; Shirakawa-go bus at the door.",
+          "station": "Kanazawa, 0–5 min",
+          "price": "middle"
+        },
+        {
+          "id": "higashi-chaya",
+          "name": "Higashi Chaya (old teahouse district)",
+          "search": "Higashi Chaya, Kanazawa",
+          "lat": 36.5726,
+          "lng": 136.6667,
+          "what_its_like": "Preserved wooden teahouse lanes by the Asano river. Magical early and late, crowded in the middle of the day.",
+          "good_for_us": [
+            "Restored machiya rentals with a kitchen and washer",
+            "Gold-leaf shops on the doorstep",
+            "Quiet nights"
+          ],
+          "watch_out": [
+            "Machiya usually have steep stairs and bedrooms upstairs",
+            "Stone lanes can be slippery in winter rain or snow",
+            "Further from the station (10 min by taxi) for the early bus"
+          ],
+          "to_the_plans": "Omicho 10–15 min walk; Kenroku-en 15–20 min walk or bus; station 10 min by taxi or 25–30 min on foot.",
+          "station": "Kanazawa, 10 min by taxi; Hashiba-cho bus stop, 3–5 min",
+          "price": "higher"
+        },
+        {
+          "id": "korinbo",
+          "name": "Korinbo / Katamachi (Kenroku-en side, near Nagamachi)",
+          "search": "Korinbo, Kanazawa",
+          "lat": 36.5615,
+          "lng": 136.6535,
+          "what_its_like": "The downtown of department stores, bars and restaurants. Katamachi is the nightlife street, and the Nagamachi samurai lanes are just behind it.",
+          "good_for_us": [
+            "Kenroku-en and the 21st Century Museum 5–10 min on foot",
+            "Nagamachi 5–10 min",
+            "The best choice of dinner places",
+            "Big hotels with lifts"
+          ],
+          "watch_out": [
+            "Furthest from the station (15 min by bus)",
+            "Katamachi can be noisy late at night"
+          ],
+          "to_the_plans": "Kenroku-en 5–10 min; 21st Century Museum about 5 min; Nagamachi 5–10 min; Omicho 15 min walk; Higashi Chaya 20 min walk or bus; station 10–15 min by taxi.",
+          "station": "Kanazawa, 10–15 min by bus or taxi",
+          "price": "middle"
+        }
+      ],
+      "tips": [
+        "Book the Nohi bus to Shirakawa-go as soon as seats open, because reservations are required on most runs. Or book a private van for 7, which also means Fernanda doesn't have to stand around in the snow.",
+        "For an apartment, check: a washer (and ideally a dryer, since December is wet), the number of real beds, a lift, and heating in each room.",
+        "The nearest hospitals with obstetrics are Ishikawa Prefectural Central Hospital (north of the station) and Kanazawa University Hospital (east of Kenroku-en). Both are within 10–20 min by taxi of these areas.",
+        "Many Omicho shops close for the New Year holidays, but you leave on the 30th, so 29 Dec should be fine. Arrive early because it gets very busy."
+      ],
+      "sources": [
+        { "label": "Getting around Kanazawa – Visit Kanazawa", "url": "https://www.visitkanazawa.jp/en/getting-around-kanazawa" },
+        { "label": "Kanazawa hotels and areas – japan-guide.com", "url": "https://www.japan-guide.com/e/e2167.html" },
+        { "label": "Kanazawa–Shirakawa-go bus – Japan Bus Online", "url": "https://japanbusonline.com/en/CourseSearch/11900040002" },
+        { "label": "Ishikawa Prefectural Central Hospital – Ministry of Health birth facility listing", "url": "https://birth-navi.mhlw.go.jp/facilities/10327" }
+      ]
+    },
+    "kyoto": {
+      "pick": "gion-kawaramachi",
+      "why_pick": "The flat streets between the Kamo river and Yasaka Shrine are a 5–15 minute walk from the Okera fire, Nishiki market and Gion. Carlos, Nadir and Fernanda can walk home at 21:00 without taking a single step uphill. Keihan trains from Gion-Shijo run all night on New Year's Eve, and taxis can still reach this side, unlike the lanes up in Higashiyama, which are closed to cars from 21:00 on 31 Dec until 17:00 on 1 Jan.",
+      "areas": [
+        {
+          "id": "gion-kawaramachi",
+          "name": "Gion-Shijo / Kawaramachi (the flat side, west of Yasaka)",
+          "search": "Gion-Shijo Station, Kyoto",
+          "lat": 35.0030,
+          "lng": 135.7710,
+          "what_its_like": "The lively heart of Kyoto: Shijo-dori, Pontocho, Kiyamachi and the south end of Gion, all on flat ground. The quieter lanes are south of Shijo, towards Matsubara and Gojo, and around Miyagawacho.",
+          "good_for_us": [
+            "Yasaka Shrine 8–12 min flat walk; Kodai-ji about 15 min; Chion-in 10–15 min",
+            "Nishiki market 5–10 min",
+            "Keihan line runs all night on New Year's Eve (from Gion-Shijo and Kiyomizu-Gojo)",
+            "Keihan to Uji without going through Kyoto Station",
+            "Kyoto Daiichi Red Cross Hospital (top-level maternity centre) is 3 Keihan stops away at Tofukuji, or about 10 min by taxi"
+          ],
+          "watch_out": [
+            "Kiyamachi and Pontocho are noisy bar streets, so choose a lane further south",
+            "Shijo-dori between Kawabata and Higashioji is closed to cars 23:00–04:00 on New Year's Eve",
+            "Whole houses for 7 here are mostly machiya, so check the stairs",
+            "Kyoto Station is 15 min by taxi; with cabin bags, take Keihan to Tofukuji and change to JR"
+          ],
+          "to_the_plans": "Yasaka 8–12 min walk; Kiyomizu-dera 25–30 min (uphill at the end) or 10 min by taxi; Nishiki 5–10 min; Kyoto National Museum 15–20 min walk; Uji about 35 min by Keihan; Kyoto Station 15 min by taxi.",
+          "station": "Gion-Shijo (Keihan) or Kyoto-Kawaramachi (Hankyu), 2–10 min",
+          "price": "higher"
+        },
+        {
+          "id": "higashiyama",
+          "name": "Higashiyama (Gion / Kodai-ji / Kiyomizu side)",
+          "search": "Higashiyama, Kyoto",
+          "lat": 35.0010,
+          "lng": 135.7790,
+          "what_its_like": "Lanes of temples and wooden houses on the hillside: Ishibe-koji, Nene-no-michi, Ninenzaka and Sannenzaka. Beautiful at dawn and after dark.",
+          "good_for_us": [
+            "Kiyomizu-dera early with no crowds",
+            "Walk out of the door to the Okera fire and to Kodai-ji or Chion-in at midnight",
+            "Lots of atmosphere for a once-in-a-lifetime New Year"
+          ],
+          "watch_out": [
+            "Slopes and stone steps everywhere (Ninenzaka and Sannenzaka are stairs)",
+            "The streets around Maruyama Park, Chion-in, Kodai-ji and Ninenzaka are closed to cars from 21:00 on 31 Dec to 17:00 on 1 Jan (and 9:00–17:00 on 2–3 Jan), so no taxi to the door",
+            "Huge crowds right outside on 31 Dec and 1 Jan",
+            "Far from the subway; buses are packed; the costliest area",
+            "Whole houses are usually old machiya with steep stairs"
+          ],
+          "to_the_plans": "Yasaka and Kodai-ji 5–10 min walk; Kiyomizu-dera 10–20 min uphill; Nishiki 20 min; Kyoto Station 15–20 min by taxi (when cars are allowed in); Uji and Nara mean getting to Gion-Shijo or Kyoto Station first.",
+          "station": "Gion-Shijo (Keihan), 10–20 min walk; Higashiyama (Tozai line) for the north end",
+          "price": "higher"
+        },
+        {
+          "id": "shijo-karasuma",
+          "name": "Shijo-Karasuma (city centre)",
+          "search": "Shijo Karasuma, Kyoto",
+          "lat": 35.0035,
+          "lng": 135.7595,
+          "what_its_like": "Kyoto's flat business and shopping centre, with quiet machiya side streets just behind the main roads.",
+          "good_for_us": [
+            "Kyoto Station is 2 subway stops away, easy with cabin bags",
+            "Nishiki market 5 min",
+            "Plenty of big hotels with lifts, plus licensed whole houses on the side streets",
+            "Buses to Kitano Tenmangu"
+          ],
+          "watch_out": [
+            "Yasaka is a 25-min flat walk, about 35 min on a crowded New Year's Eve",
+            "Further from the midnight-bell temples (40 min or more back from Kodai-ji)"
+          ],
+          "to_the_plans": "Yasaka 25–30 min walk; Nishiki 5 min; Kyoto Station about 5 min by subway; Kitano Tenmangu 20–25 min by bus; Uji 30–40 min (subway plus JR or Keihan); Nara via Kyoto Station.",
+          "station": "Shijo (subway) / Karasuma (Hankyu), 2–8 min",
+          "price": "middle"
+        },
+        {
+          "id": "kyoto-station",
+          "name": "Kyoto Station area",
+          "search": "Kyoto Station, Kyoto",
+          "lat": 34.9870,
+          "lng": 135.7590,
+          "what_its_like": "Flat, modern and practical, with big hotels and the station's shopping right there. Not much atmosphere.",
+          "good_for_us": [
+            "Day trips start here: JR Nara line to Uji, Kintetsu to Nara, shinkansen to Himeji",
+            "The 5 Jan train to Mishima leaves from here",
+            "Chishaku-in's midnight bell is about 25 min on foot",
+            "Kyoto Daiichi Red Cross Hospital is 1 JR stop or 10 min by taxi"
+          ],
+          "watch_out": [
+            "Yasaka is about 40 min on foot. On New Year's Eve, take the Keihan line from Gion-Shijo to Shichijo (it runs all night), then walk 15 min",
+            "Taxis are very hard to get around midnight on 31 Dec",
+            "Feels far from Gion in the evenings"
+          ],
+          "to_the_plans": "Yasaka 40 min walk or 15 min by taxi; Kyoto National Museum and Chishaku-in 20–25 min walk; Uji 17–30 min by JR; Nara 35–50 min by Kintetsu; shinkansen 5–10 min walk.",
+          "station": "Kyoto (JR, Kintetsu, subway), 2–10 min",
+          "price": "middle"
+        }
+      ],
+      "tips": [
+        "Check the licence before you book any house. Kyoto lists licensed places, and a legal one shows a Hotel and Ryokan Act permit number or a home-sharing number starting with M26. A home-share in a residential-only zone may only take guests from mid-January to mid-March, so over New Year it would be illegal. Prefer a property with a full lodging permit.",
+        "Ask the machiya host: how many bedrooms are downstairs with real beds (Fernanda and Carlos and Nadir should be on the ground floor), how steep the stairs are, whether there's heating in every room (old houses are cold in January), whether there's a bath tub, and whether there's a washer.",
+        "Whole houses for 7 over New Year are among the first things to sell out in Kyoto, so book now. Kyoto's lodging tax rose in March 2026 and is charged per person, per night (¥200–¥10,000 depending on the price).",
+        "Chion-in's New Year's Eve bell needs a paid ticket booked in advance (it was ¥3,000 for 2025–26, with online sales from 1 Dec). Kodai-ji gives out numbered tickets from 22:00, and Eikando lets in whoever queues between 23:00 and 00:30."
+      ],
+      "sources": [
+        { "label": "Kyoto New Year's Eve: transport, Okera mairi and bell temples (watabi)", "url": "https://watabi.org/en/articles/kyoto-new-year-guide" },
+        { "label": "Year-end and New Year traffic restrictions around Yasaka Shrine and Chion-in (map)", "url": "https://www.higashihonganji.or.jp/sys/wassets/uploads/2023/12/%E4%BA%A4%E9%80%9A%E8%A6%8F%E5%88%B6%E5%9B%B3%EF%BC%88%E5%85%AB%E5%9D%82%E7%A5%9E%E7%A4%BE%E3%83%BB%E7%9F%A5%E6%81%A9%E9%99%A2%E5%91%A8%E8%BE%BA%EF%BC%89.pdf" },
+        { "label": "City of Kyoto – list of licensed lodgings", "url": "https://www.city.kyoto.lg.jp/hokenfukushi/page/0000194935.html" },
+        { "label": "Kyoto home-sharing portal (rules, residential-zone period)", "url": "https://minpakuportal.city.kyoto.lg.jp/wp-content/uploads/2025/04/11_kyoumatiya.pdf" },
+        { "label": "Kyoto accommodation tax change, March 2026", "url": "https://kyoto.travel/en/news/tax-change/" },
+        { "label": "Kyoto Daiichi Red Cross Hospital – Ministry of Health birth facility listing", "url": "https://birth-navi.mhlw.go.jp/facilities/10511" }
+      ]
+    },
+    "kawaguchiko": {
+      "pick": "east-shore",
+      "why_pick": "From the hotels on the east shore, across the big bridge from the station, rooms facing west look straight over the water to Fuji, which is perfect at dawn. They are still only about 5 minutes by taxi or hotel shuttle from the station and the ropeway. The Red Line sightseeing bus runs past to the Itchiku Kubota museum, so the group can manage without a car.",
+      "areas": [
+        {
+          "id": "east-shore",
+          "name": "East shore – Kawaguchiko Onsen (Asakawa side)",
+          "search": "Asakawa, Fujikawaguchiko",
+          "lat": 35.5130,
+          "lng": 138.7720,
+          "what_its_like": "The main row of onsen hotels and ryokan on the north-east shore, looking south-west across the lake to Fuji.",
+          "good_for_us": [
+            "Fuji across the lake from west- and south-facing rooms and baths",
+            "Big hotels with lifts and rooms with Western beds or a mix of beds and tatami",
+            "5 min by taxi to the station; many hotels run a shuttle",
+            "Red Line bus to the museums on the north shore"
+          ],
+          "watch_out": [
+            "Not every room faces Fuji, so book a room type that says 'Mt Fuji view'",
+            "Some hotels sit up short hills, so use the shuttle",
+            "Few restaurants outside the hotels; book half-board"
+          ],
+          "to_the_plans": "Kawaguchiko station 5 min by taxi or 15–25 min on foot; Panoramic Ropeway 5 min by taxi; Itchiku Kubota museum 10–15 min by Red Line bus; hoto restaurants near the station 5 min by taxi.",
+          "station": "Kawaguchiko (Fujikyu), 5 min by taxi or shuttle",
+          "price": "higher"
+        },
+        {
+          "id": "station-funatsu",
+          "name": "Station and ropeway area (Funatsu, south-east shore)",
+          "search": "Kawaguchiko Station, Fujikawaguchiko",
+          "lat": 35.5000,
+          "lng": 138.7685,
+          "what_its_like": "The small town around the station, with most of the restaurants and the ropeway at the lake edge.",
+          "good_for_us": [
+            "Walk to the station for the Fuji Excursion on 7 Jan and for the bus in from Mishima",
+            "Ropeway and hoto restaurants a short flat walk away",
+            "Most choice of places to eat",
+            "Yamanashi Red Cross Hospital is in Funatsu"
+          ],
+          "watch_out": [
+            "Fuji is often behind buildings. Lake-view rooms here face north, away from Fuji",
+            "Restaurants close early (around 19:00–20:00)"
+          ],
+          "to_the_plans": "Station 1–10 min walk; ropeway 10–15 min walk; Itchiku Kubota museum 20–25 min by Red Line bus; Fuji Excursion from the station.",
+          "station": "Kawaguchiko (Fujikyu), 1–10 min walk",
+          "price": "middle"
+        },
+        {
+          "id": "north-shore",
+          "name": "North shore (Oishi / Kawaguchi)",
+          "search": "Oishi Park, Fujikawaguchiko",
+          "lat": 35.5250,
+          "lng": 138.7520,
+          "what_its_like": "Quiet countryside shore with the famous view of Fuji across the whole lake.",
+          "good_for_us": [
+            "The best, most open Fuji view",
+            "Itchiku Kubota Art Museum is close by"
+          ],
+          "watch_out": [
+            "Few hotels, and fewer still with lifts and beds",
+            "20–30 min by bus to the station; the sightseeing buses stop early in winter",
+            "Almost nowhere to eat at night; taxis are needed",
+            "Furthest from a hospital"
+          ],
+          "to_the_plans": "Itchiku Kubota museum 5–15 min; station and ropeway 20–30 min by bus or 15 min by taxi.",
+          "station": "Kawaguchiko (Fujikyu), 15 min by taxi",
+          "price": "higher"
+        },
+        {
+          "id": "south-shore",
+          "name": "South shore (Kodachi, west of the station)",
+          "search": "Kodachi, Fujikawaguchiko",
+          "lat": 35.5065,
+          "lng": 138.7540,
+          "what_its_like": "A quieter stretch of guesthouses and smaller hotels with Fuji rising behind them.",
+          "good_for_us": [
+            "Usually cheaper",
+            "Green Line bus along the shore"
+          ],
+          "watch_out": [
+            "Lake views face north, away from Fuji. You see the mountain from the back or the road, not across the water",
+            "Mostly smaller places with stairs"
+          ],
+          "to_the_plans": "Station 10 min by taxi or Green Line bus; ropeway 10 min by taxi; Itchiku Kubota museum 15–20 min by taxi.",
+          "station": "Kawaguchiko (Fujikyu), 10 min by bus or taxi",
+          "price": "lower"
+        }
+      ],
+      "tips": [
+        "Book a room type labelled 'Mt Fuji view' (or 'lake and Fuji view'), and ask for a high floor. Fuji is clearest in the early morning in January.",
+        "Ask for Western beds, and for an in-room or private bath. Many lake hotels have rooms with their own onsen bath, which suits Fernanda better than a shared bath.",
+        "There are three sightseeing bus lines: Red (east and north shores), Green (south shore to Lake Saiko) and Blue (Narusawa). They run only by day in winter, so plan on taxis after dark.",
+        "For hospitals, Yamanashi Red Cross (Funatsu) has an obstetrics clinic, but call to ask whether it handles births. Fujiyoshida Municipal Medical Center is 15–20 min by taxi."
+      ],
+      "sources": [
+        { "label": "Lake Kawaguchiko – japan-guide.com", "url": "https://www.japan-guide.com/e/e6906.html" },
+        { "label": "Where to stay in Fujikawaguchiko", "url": "https://bucketlistbri.com/where-to-stay-fujikawaguchiko/" },
+        { "label": "Fuji Five Lakes sightseeing buses (Japan Tourism Agency)", "url": "https://www.mlit.go.jp/tagengo-db/R1-00168.html" },
+        { "label": "Itchiku Kubota Art Museum – Fujikawaguchiko tourism", "url": "https://en.kawaguchiko.net/?p=8127" },
+        { "label": "Yamanashi Red Cross Hospital – Ministry of Health birth facility listing", "url": "https://birth-navi.mhlw.go.jp/facilities/10404" }
+      ]
+    },
+    "takayama": {
+      "pick": "between",
+      "why_pick": "The strip between the station's east exit and the Miyagawa river (around Kokubunji-dori and Hanakawa-cho) is flat, 5–10 minutes from both the trains and the old town. Big hotels there have lifts and real beds. You get the old town by morning without a long walk with bags, which matters when the streets are icy in December and January.",
+      "areas": [
+        {
+          "id": "between",
+          "name": "Between the station and the old town (Kokubunji-dori / Hanakawa)",
+          "search": "Kokubunji-dori, Takayama",
+          "lat": 36.1415,
+          "lng": 137.2555,
+          "what_its_like": "An ordinary, flat town-centre grid with mid-range hotels, some with their own onsen baths.",
+          "good_for_us": [
+            "Flat 5–10 min to the station and to Sanmachi",
+            "Mid-range hotels with lifts, Western beds and private bath options",
+            "Takayama Red Cross Hospital (the region's main emergency hospital, with obstetrics) is close by"
+          ],
+          "watch_out": [
+            "Less atmosphere than staying in the old town",
+            "Pavements can be icy in winter"
+          ],
+          "to_the_plans": "Station 5–10 min walk; Sanmachi and the morning markets 5–10 min; Takayama Jinya 10 min.",
+          "station": "Takayama (JR) and the Nohi bus centre, 5–10 min",
+          "price": "middle"
+        },
+        {
+          "id": "station",
+          "name": "Takayama Station (east exit)",
+          "search": "Takayama Station, Takayama",
+          "lat": 36.1410,
+          "lng": 137.2515,
+          "what_its_like": "Chain and business hotels beside the station and bus centre. Practical, with not much charm.",
+          "good_for_us": [
+            "Trains and buses (to Shirakawa-go and Kanazawa) right outside",
+            "Cheapest choice of modern rooms",
+            "Shortest walk on arrival and departure"
+          ],
+          "watch_out": [
+            "Old town is 10–15 min on foot; in heavy snow that walk is no fun",
+            "Few ryokan"
+          ],
+          "to_the_plans": "Sanmachi 10–15 min walk; station 0–5 min.",
+          "station": "Takayama (JR), 0–5 min",
+          "price": "lower"
+        },
+        {
+          "id": "old-town",
+          "name": "Old town (Sanmachi-suji)",
+          "search": "Sanmachi Suji, Takayama",
+          "lat": 36.1396,
+          "lng": 137.2600,
+          "what_its_like": "The dark-wood merchant streets with sake breweries, magical early in the morning before the tour groups.",
+          "good_for_us": [
+            "Step out into the old lanes at 7 am",
+            "Traditional ryokan with Hida beef kaiseki dinners"
+          ],
+          "watch_out": [
+            "Old-town addresses cost noticeably more",
+            "Many ryokan have futons and stairs, so ask for beds and a lift",
+            "Early-morning delivery noise",
+            "East of the river, the Higashiyama side climbs uphill and is badly lit at night"
+          ],
+          "to_the_plans": "Sanmachi 0–5 min; station 10–15 min walk or 5 min by taxi.",
+          "station": "Takayama (JR), 10–15 min walk",
+          "price": "higher"
+        }
+      ],
+      "tips": [
+        "Ask a ryokan for Western-bed rooms, a lift and an in-room bath. Many old-town inns use futons on tatami.",
+        "The New Year period is the exception to cheap winter rates, so book early. Snow lies on the ground from late December.",
+        "Takayama Red Cross Hospital in Tenmancho is the main hospital for the whole Hida region."
+      ],
+      "sources": [
+        { "label": "Takayama: where to stay – Japan Alps guide", "url": "https://www.japan-alps.com/takayama-where-to-stay/" },
+        { "label": "Takayama – japan-guide.com", "url": "https://www.japan-guide.com/e/e5903.html" }
+      ]
+    },
+    "hakone": {
+      "pick": "yumoto",
+      "why_pick": "Hakone-Yumoto is only 15 minutes from Odawara, where the shinkansen from Kyoto stops, and it is the closest part of Hakone to Odawara's maternity hospital. Many ryokan here offer beds and in-room baths, and taxis wait at the station. The Romancecar goes direct to Shinjuku when you leave. The higher villages (Miyanoshita, Gora) are steep, and Sengokuhara can only be reached by bus.",
+      "areas": [
+        {
+          "id": "yumoto",
+          "name": "Hakone-Yumoto",
+          "search": "Hakone-Yumoto, Hakone",
+          "lat": 35.2332,
+          "lng": 139.1035,
+          "what_its_like": "The busy gateway hot-spring town along two rivers, full of ryokan, souvenir shops and places to eat.",
+          "good_for_us": [
+            "Shortest trip from Odawara (15 min) with cabin bags",
+            "The most ryokan to choose from, at every price",
+            "Taxi rank at the station, restaurants and shops",
+            "Odawara Municipal Hospital (regional maternity centre) is about 20–25 min by taxi",
+            "Direct Romancecar to Shinjuku"
+          ],
+          "watch_out": [
+            "Busy with day-trippers",
+            "Some inns are across the river or up steep driveways, so pick one with a shuttle or take a taxi",
+            "Every sightseeing trip starts with the slow mountain train uphill"
+          ],
+          "to_the_plans": "Odawara 15 min by train; Gora and the Open-Air Museum 35–40 min by mountain train; Lake Ashi 40 min by bus; Shinjuku about 85–90 min by Romancecar.",
+          "station": "Hakone-Yumoto (Odakyu / Hakone Tozan), 0–15 min walk or short taxi",
+          "price": "middle"
+        },
+        {
+          "id": "miyanoshita",
+          "name": "Miyanoshita",
+          "search": "Miyanoshita, Hakone",
+          "lat": 35.2440,
+          "lng": 139.0665,
+          "what_its_like": "A small, old-fashioned resort on the slope around the historic Fujiya Hotel, quieter than Yumoto.",
+          "good_for_us": [
+            "Central for the loop through Gora and Lake Ashi",
+            "Classic hotels with Western beds"
+          ],
+          "watch_out": [
+            "Steep main street and station on a hillside",
+            "Few restaurants",
+            "Mountain train from Yumoto takes about 25 min, plus a change at Yumoto"
+          ],
+          "to_the_plans": "Yumoto 25 min by train; Gora 10–15 min; Lake Ashi 25 min by bus.",
+          "station": "Miyanoshita (Hakone Tozan), 5–10 min uphill walk",
+          "price": "higher"
+        },
+        {
+          "id": "gora",
+          "name": "Gora",
+          "search": "Gora, Hakone",
+          "lat": 35.2506,
+          "lng": 139.0482,
+          "what_its_like": "The hub of the Hakone loop at the top of the mountain railway, with many upmarket ryokan with private open-air baths.",
+          "good_for_us": [
+            "Open-Air Museum and the cable car to Owakudani start here",
+            "Lots of rooms with a private onsen bath"
+          ],
+          "watch_out": [
+            "Very steep streets around the station",
+            "45–60 min from Odawara, with crowded switchback trains",
+            "Further from the hospital",
+            "Owakudani's volcanic gas: pregnant women are advised not to go into the valley"
+          ],
+          "to_the_plans": "Open-Air Museum 5–10 min; cable car at the station; Yumoto 35–40 min; Odawara 50–60 min.",
+          "station": "Gora (Hakone Tozan), 2–10 min, often uphill",
+          "price": "higher"
+        },
+        {
+          "id": "sengokuhara",
+          "name": "Sengokuhara",
+          "search": "Sengokuhara, Hakone",
+          "lat": 35.2606,
+          "lng": 139.0045,
+          "what_its_like": "A wide, flat highland valley with museums and resort hotels.",
+          "good_for_us": [
+            "Flat walks around the hotels",
+            "Spacious resort rooms with beds"
+          ],
+          "watch_out": [
+            "No train: 30–40 min by bus from Yumoto, longer from Odawara",
+            "Really needs a car or taxis",
+            "Furthest from a hospital"
+          ],
+          "to_the_plans": "Yumoto 30–40 min by bus; Lake Ashi (Togendai) 10–15 min by bus; Gora 15–20 min by bus.",
+          "station": "No station; Hakone-Yumoto is 30–40 min by bus",
+          "price": "higher"
+        }
+      ],
+      "tips": [
+        "Ask the ryokan for Western beds and an in-room bath. Hakone has many rooms with a private open-air bath, and they sell out early in January.",
+        "Pregnant women are advised not to enter the Owakudani valley because of volcanic gas. Fernanda could ride the ropeway over it, or skip it and do Lake Ashi.",
+        "Hakone's luggage service takes bags from Hakone-Yumoto station to partner inns in the morning, so you don't have to carry them up the mountain."
+      ],
+      "sources": [
+        { "label": "Where to stay in Hakone – Hakone tourism", "url": "https://hakone-japan.com/plan-your-trip/stories/helpful-info/where-to-stay-in-hakone/" },
+        { "label": "Hakone areas compared (2026)", "url": "https://samuraicarjapanjdm.jp/hakone-where-to-stay/" },
+        { "label": "Hakone luggage transport service – Hakone Navi", "url": "https://www.hakonenavi.jp/hakone-luggage-transport-service/en" },
+        { "label": "Odawara Municipal Hospital – Ministry of Health birth facility listing", "url": "https://birth-navi.mhlw.go.jp/facilities/10494" },
+        { "label": "Ōwakudani – Wikipedia (volcanic gas advice)", "url": "https://en.wikipedia.org/wiki/%C5%8Cwakudani" }
+      ]
+    },
+    "nara": {
+      "pick": "kintetsu-park",
+      "why_pick": "Kintetsu Nara station sits at the edge of Nara Park, so Kofuku-ji, the deer and Todai-ji are a flat 5–20 minute walk away, and the group can go back for a rest in the middle of the day. Kintetsu trains run straight into Kyoto Station in about 35 minutes for the 5 Jan shinkansen, and the station has lifts.",
+      "areas": [
+        {
+          "id": "kintetsu-park",
+          "name": "Kintetsu Nara / Nara Park edge (Higashimuki, Noborioji)",
+          "search": "Kintetsu Nara Station, Nara",
+          "lat": 34.6845,
+          "lng": 135.8272,
+          "what_its_like": "Small, walkable centre at the top of the covered Higashimuki shopping street, a few steps from the park.",
+          "good_for_us": [
+            "Flat walk to Kofuku-ji (5–10 min) and Todai-ji (15–20 min)",
+            "Direct Kintetsu trains to Kyoto Station for leaving on 5 Jan",
+            "Covered shopping arcade for rainy days"
+          ],
+          "watch_out": [
+            "Very busy with New Year visitors on 3–5 Jan",
+            "Kasuga Taisha is a 25–30 min walk on gravel paths, gently uphill, so take a taxi there"
+          ],
+          "to_the_plans": "Kofuku-ji 5–10 min; Todai-ji 15–20 min; Kasuga Taisha 25–30 min walk or 5–10 min by taxi; Kyoto Station about 35 min by Kintetsu limited express.",
+          "station": "Kintetsu Nara, 1–10 min",
+          "price": "middle"
+        },
+        {
+          "id": "naramachi",
+          "name": "Naramachi (old merchant quarter)",
+          "search": "Naramachi, Nara",
+          "lat": 34.6780,
+          "lng": 135.8300,
+          "what_its_like": "Quiet lanes of old wooden houses just south of the park, with cafés and small guesthouses.",
+          "good_for_us": [
+            "Lovely in the evening once the day crowds have gone",
+            "Whole-house rentals and small inns"
+          ],
+          "watch_out": [
+            "Old houses usually mean steep stairs and futons",
+            "10–15 min walk to Kintetsu Nara with bags"
+          ],
+          "to_the_plans": "Kofuku-ji 10 min; Todai-ji 20–25 min; Kintetsu Nara 10–15 min; JR Nara 15–20 min.",
+          "station": "Kintetsu Nara, 10–15 min walk",
+          "price": "middle"
+        },
+        {
+          "id": "jr-nara",
+          "name": "JR Nara Station area",
+          "search": "JR Nara Station, Nara",
+          "lat": 34.6810,
+          "lng": 135.8197,
+          "what_its_like": "Flat, modern area of business hotels on the west side of the centre.",
+          "good_for_us": [
+            "The JR Nara line runs Kyoto–Uji–Nara, so you can stop in Uji on the way in on 3 Jan",
+            "Bigger modern hotels with lifts",
+            "Usually cheaper"
+          ],
+          "watch_out": [
+            "The park is 20–30 min on foot (bus or taxi 5–10 min)",
+            "JR to Kyoto is slower than Kintetsu (45–75 min)"
+          ],
+          "to_the_plans": "Kofuku-ji 15–20 min walk; Todai-ji 25–30 min or 10 min by bus; Uji 20–30 min by JR; Kyoto Station 45–75 min by JR.",
+          "station": "JR Nara, 1–5 min",
+          "price": "lower"
+        }
+      ],
+      "tips": [
+        "Book reserved seats on the Kintetsu limited express to Kyoto for 5 Jan, timed to connect with the shinkansen. Allow 15 min to change at Kyoto Station.",
+        "Ask for Western beds and a lift. Many central Nara inns are small and old. The bigger hotels near both stations are safer for Fernanda.",
+        "The nearest big hospital with a maternity centre is Nara Prefecture General Medical Center, about 15–20 min by taxi."
+      ],
+      "sources": [
+        { "label": "Where to stay in Nara", "url": "https://japanactivity.com/where-to-stay-in-nara" },
+        { "label": "Nara – japan-guide.com", "url": "https://www.japan-guide.com/e/e4100.html" },
+        { "label": "Nara Prefecture General Medical Center – Ministry of Health birth facility listing", "url": "https://birth-navi.mhlw.go.jp/facilities/10429" }
+      ]
+    }
+  }
+}

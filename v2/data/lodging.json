@@ -310,8 +310,8 @@
     },
     "kyoto": {
       "type": "rental",
-      "why": "A house in Higashiyama for New Year's Eve: the Okera fire and the bells are a walk away, and buses and the subway do not run all night. A living room and a kitchen cover the days when most restaurants are closed. It also holds the big cases from about 26 Dec.",
-      "fit": "One townhouse for 7 with three bedrooms and beds on the ground floor for Fernanda, or a ryokan for 30–31 Dec with the New Year's Eve dinner plus a second base for 1–5 Jan (about a 10-minute taxi). Ask for the licence number.",
+      "why": "A house on the flat streets just west of Yasaka Shrine (Gion-Shijo and Kawaramachi) for New Year's Eve: the Okera fire and the bells are a walk away, taxis can still reach the door, and the Keihan line runs all night. Higher up in Higashiyama the lanes close to cars from 21:00 on 31 Dec to 17:00 on 1 Jan, and the streets are slopes and steps. A living room and a kitchen cover the days when most restaurants are closed. Ask it to accept the big cases on 30 Dec; someone has to sign for them.",
+      "fit": "One townhouse for 7 with three bedrooms and beds on the ground floor for Fernanda, or a ryokan for 30–31 Dec with the New Year's Eve dinner plus a second base for 1–5 Jan (about a 10-minute taxi). Ask for the licence number: a home-share in a residential-only zone may only take guests from mid-January to mid-March, so over New Year it would be illegal.",
       "outlook": "The hardest booking of the trip. Houses and apartment hotels were open in October; the famous machiya brands are tight; Nazuna's New Year dinner-plan rooms are gone. Prices are for six; ask again for seven.",
       "tiers": {
         "budget": [
@@ -335,7 +335,7 @@
           "area": "Higashiyama, 5 min from Kiyomizu-dera",
           "what": "A townhouse for up to 8, with 3 bedrooms.",
           "price": "Not checked; ask",
-          "fit": "Ask about beds on the ground floor, heating and check-in on 30 Dec.",
+          "fit": "In the lanes that close to cars on New Year's Eve, up a slope. Ask about beds on the ground floor, heating and check-in on 30 Dec.",
           "verified": false
         },
         {
@@ -345,7 +345,7 @@
           "area": "Higashiyama, by Kodai-ji",
           "what": "The former HOTEL VMG Resort Kyoto: a whole villa or suites, a short walk from Kodai-ji's bell.",
           "price": "¥250,000–600,000 for six (to check for seven)",
-          "fit": "Ask about beds and stairs.",
+          "fit": "In the lanes that close to cars on New Year's Eve. Ask about beds and stairs.",
           "verified": false
         },
         {

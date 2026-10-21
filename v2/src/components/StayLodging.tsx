@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { fmtJpyShort, fmtSgd, forSeven, jpyToSgd, perCouple, stayCost } from "@/lib/budget";
 import { lodgingFor, LODGING_TYPES, searchLinks, TIER_LABEL } from "@/lib/lodging";
+import { areaLinks, areasFor, pickOf, type Neighbourhood } from "@/lib/neighbourhoods";
 import type { Region, Stay } from "@/lib/types";
 
 /**
@@ -10,8 +11,10 @@ import type { Region, Stay } from "@/lib/types";
  * candidates from the research with links and prices (researched for six), and
  * search links with our dates and seven guests filled in.
  */
-export function StayLodging({ stay, region, defaultOpen = false }: { stay: Stay; region: Region | undefined; defaultOpen?: boolean }) {
+export function StayLodging({ stay, region, stopKey, defaultOpen = false }: { stay: Stay; region: Region | undefined; stopKey?: string; defaultOpen?: boolean }) {
   const [open, setOpen] = useState(defaultOpen);
+  const where = areasFor(stopKey ?? stay.region);
+  const pick = where ? pickOf(where) : undefined;
   const info = lodgingFor(stay.region);
   const cost = stayCost(stay);
   const links = searchLinks(stay, region);
@@ -22,6 +25,7 @@ export function StayLodging({ stay, region, defaultOpen = false }: { stay: Stay;
       <button className="flex w-full items-center justify-between gap-2 text-left" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
         <span>
           <b>Where to stay:</b> {type.label.toLowerCase()}
+          {pick ? <> in {pick.name.replace(/ \(.*\)$/, "").split(",")[0]}</> : null}
           {cost.inferred ? <span className="text-muted"> (assumed)</span> : null} · about {fmtJpyShort(cost.perNight)} a night for seven
           {cost.upliftNights ? <span className="text-muted">, more over New Year</span> : null} · <b>{fmtSgd(jpyToSgd(perCouple(cost.total)))}</b> per couple
         </span>
@@ -31,6 +35,7 @@ export function StayLodging({ stay, region, defaultOpen = false }: { stay: Stay;
       </button>
       {open ? (
         <div className="grid gap-3">
+          {where && pick ? <PartOfTown where={where} pick={pick} stay={stay} /> : null}
           {info ? (
             <>
               <p className="text-ink-2">
@@ -86,5 +91,95 @@ export function StayLodging({ stay, region, defaultOpen = false }: { stay: Stay;
         </div>
       ) : null}
     </div>
+  );
+}
+
+const PRICE: Record<Neighbourhood["price"], string> = { lower: "cheaper for the town", middle: "middle of the range", higher: "dearer for the town" };
+
+/** Which part of town: our pick first, the others folded, each with searches that land there. */
+function PartOfTown({ where, pick, stay }: { where: NonNullable<ReturnType<typeof areasFor>>; pick: Neighbourhood; stay: Stay }) {
+  const others = where.areas.filter((a) => a.id !== pick.id);
+  return (
+    <section className="grid gap-2" aria-label="Which part of town">
+      <p className="eyebrow">Which part of town</p>
+      <div className="card grid gap-1.5 p-3">
+        <p className="flex flex-wrap items-baseline gap-x-2">
+          <b className="text-ink">{pick.name}</b>
+          <span className="chip">Our pick</span>
+        </p>
+        <p className="text-ink-2">{where.why_pick}</p>
+        <AreaDetail a={pick} stay={stay} />
+      </div>
+      {others.map((a) => (
+        <details key={a.id} className="card p-3">
+          <summary className="cursor-pointer">
+            <b>{a.name}</b> <span className="text-muted">· {a.what_its_like}</span>
+          </summary>
+          <div className="grid gap-1.5 pt-2">
+            <AreaDetail a={a} stay={stay} />
+          </div>
+        </details>
+      ))}
+      {where.tips.length ? (
+        <div className="grid gap-1">
+          <p className="font-semibold">When you book</p>
+          <ul className="grid list-disc gap-0.5 pl-5 text-ink-2">
+            {where.tips.map((t) => (
+              <li key={t}>{t}</li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {where.sources.length ? (
+        <p className="text-xs text-muted">
+          From{" "}
+          {where.sources.map((s, i) => (
+            <span key={s.url}>
+              {i ? ", " : ""}
+              <a href={s.url} target="_blank" rel="noreferrer">
+                {s.label}
+              </a>
+            </span>
+          ))}
+          .
+        </p>
+      ) : null}
+    </section>
+  );
+}
+
+function AreaDetail({ a, stay }: { a: Neighbourhood; stay: Stay }) {
+  return (
+    <>
+      <p className="text-ink-2">{a.what_its_like}</p>
+      {a.good_for_us.length ? (
+        <ul className="grid gap-0.5">
+          {a.good_for_us.map((g) => (
+            <li key={g} className="text-ok">
+              <span className="text-ink-2">+ {g}</span>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      {a.watch_out.length ? (
+        <ul className="grid gap-0.5">
+          {a.watch_out.map((w) => (
+            <li key={w} className="text-ink-2">
+              <span className="text-warn">!</span> {w}
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      <p className="text-xs text-muted">
+        {a.station} · {a.to_the_plans} · {PRICE[a.price]}
+      </p>
+      <p className="flex flex-wrap gap-2">
+        {areaLinks(a, stay).map((l) => (
+          <a key={l.label} href={l.url} target="_blank" rel="noreferrer" className="btn btn-sm">
+            {l.label}
+          </a>
+        ))}
+      </p>
+    </>
   );
 }
