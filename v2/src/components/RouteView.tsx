@@ -357,7 +357,7 @@ export function RouteView({ id }: { id?: string }) {
                       <span className="px-3 pt-1 pb-2.5 text-xs font-semibold text-accent group-open:hidden">Where to stay, the trade-offs and the places ▾</span>
                     </summary>
                     <div className="grid gap-2 border-t border-rule px-3 py-3 text-sm">
-                      <StayLodging stay={s} region={snapshot.regions.find((r) => r.id === s.region)} />
+                      <StayLodging stay={s} stopKey={keys[i]} region={snapshot.regions.find((r) => r.id === s.region)} />
                       {outside != null ? <p className="text-xs text-muted">About {outside} h outdoors a day on this stop’s days.</p> : null}
                       {tr ? (
                         <div className="grid gap-1">

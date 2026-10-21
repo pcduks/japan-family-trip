@@ -463,7 +463,7 @@ function StayCard({ sortId, stay: s, region, move, findings, note, pace, allStay
               ) : null}
               <StayNights stay={s} pace={pace} allStays={allStays} mustDos={mustDos} />
               <input placeholder="A note for this stop (New Year’s Eve, via Shirakawa-go…)" value={s.note ?? ""} onChange={(e) => onNote(e.target.value || null)} aria-label="Note" />
-              <StayLodging stay={s} region={region} />
+              <StayLodging stay={s} region={region} stopKey={(() => { const n = allStays.slice(0, allStays.indexOf(s) + 1).filter((x) => x.region === s.region).length; return n > 1 ? `${s.region}:${n}` : s.region; })()} />
               <button className="btn btn-sm justify-self-start text-danger" onClick={onRemove} aria-label={`Remove ${region?.name ?? s.region}`}>
                 Remove this stop
               </button>
