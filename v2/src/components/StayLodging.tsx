@@ -25,7 +25,7 @@ export function StayLodging({ stay, region, stopKey, defaultOpen = false }: { st
       <button className="flex w-full items-center justify-between gap-2 text-left" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
         <span>
           <b>Where to stay:</b> {type.label.toLowerCase()}
-          {pick ? <> in {pick.name.split(",")[0]}</> : null}
+          {pick ? <> in {pick.name.replace(/ \(.*\)$/, "").split(",")[0]}</> : null}
           {cost.inferred ? <span className="text-muted"> (assumed)</span> : null} · about {fmtJpyShort(cost.perNight)} a night for seven
           {cost.upliftNights ? <span className="text-muted">, more over New Year</span> : null} · <b>{fmtSgd(jpyToSgd(perCouple(cost.total)))}</b> per couple
         </span>
