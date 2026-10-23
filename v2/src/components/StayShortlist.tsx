@@ -1,11 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {
-  lodgingTarget,
-  type Shortlist,
-  type ShortlistPlace,
-} from "@/lib/shortlists";
+import { lodgingTarget, type Shortlist, type ShortlistPlace } from "@/lib/shortlists";
 import { Comments } from "./Comments";
 import { useStore } from "./providers";
 
@@ -20,13 +16,7 @@ const TIER: Record<ShortlistPlace["tier"], string> = {
  * how we would sleep, what matters for Fernanda, New Year, price and links.
  * Everyone can mark a place and talk it over; the enquiry email is ready to copy.
  */
-export function StayShortlist({
-  list,
-  stopKey,
-}: {
-  list: Shortlist;
-  stopKey: string;
-}) {
+export function StayShortlist({ list, stopKey }: { list: Shortlist; stopKey: string }) {
   const [all, setAll] = useState(false);
   const shown = all ? list.candidates : list.candidates.slice(0, 4);
   return (
@@ -41,10 +31,7 @@ export function StayShortlist({
         ))}
       </ul>
       {list.candidates.length > shown.length ? (
-        <button
-          className="btn btn-sm justify-self-start"
-          onClick={() => setAll(true)}
-        >
+        <button className="btn btn-sm justify-self-start" onClick={() => setAll(true)}>
           Show {list.candidates.length - shown.length} more
         </button>
       ) : null}
@@ -56,6 +43,12 @@ export function StayShortlist({
         })}
         . Prices and rooms change fast; the links show today’s.
       </p>
+      {list.notes?.map((n) => (
+        <details key={n.title} className="card p-3">
+          <summary className="cursor-pointer font-semibold">{n.title}</summary>
+          <p className="pt-2 text-ink-2">{n.text}</p>
+        </details>
+      ))}
       <Enquiry en={list.enquiry.en} ja={list.enquiry.ja} />
       <details className="card p-3">
         <summary className="cursor-pointer font-semibold">Talk it over</summary>
@@ -67,37 +60,14 @@ export function StayShortlist({
   );
 }
 
-function PlaceCard({
-  p,
-  n,
-  stopKey,
-}: {
-  p: ShortlistPlace;
-  n: number;
-  stopKey: string;
-}) {
+function PlaceCard({ p, n, stopKey }: { p: ShortlistPlace; n: number; stopKey: string }) {
   const { snapshot, me, toggleReaction } = useStore();
   const target = lodgingTarget(stopKey, p.id);
-  const who = (kind: "heart" | "not_for_us") =>
-    snapshot.reactions.filter(
-      (r) =>
-        r.target_type === "lodging" &&
-        r.target_id === target &&
-        r.kind === kind,
-    );
-  const names = (rs: { traveller_id: string }[]) =>
-    rs
-      .map(
-        (r) =>
-          snapshot.travellers
-            .find((t) => t.id === r.traveller_id)
-            ?.name.split(" ")[0] ?? r.traveller_id,
-      )
-      .join(", ");
+  const who = (kind: "heart" | "not_for_us") => snapshot.reactions.filter((r) => r.target_type === "lodging" && r.target_id === target && r.kind === kind);
+  const names = (rs: { traveller_id: string }[]) => rs.map((r) => snapshot.travellers.find((t) => t.id === r.traveller_id)?.name.split(" ")[0] ?? r.traveller_id).join(", ");
   const likes = who("heart");
   const nots = who("not_for_us");
-  const mine = (rs: { traveller_id: string }[]) =>
-    rs.some((r) => r.traveller_id === me?.travellerId);
+  const mine = (rs: { traveller_id: string }[]) => rs.some((r) => r.traveller_id === me?.travellerId);
   const facts: [string, string][] = [
     ["Rooms", p.rooms_for_us],
     ["Beds", p.beds],
@@ -130,9 +100,7 @@ function PlaceCard({
         </p>
       ) : null}
       <details>
-        <summary className="cursor-pointer text-xs text-muted">
-          Rooms, beds, price and rules
-        </summary>
+        <summary className="cursor-pointer text-xs text-muted">Rooms, beds, price and rules</summary>
         <dl className="grid grid-cols-[auto_1fr] gap-x-2 gap-y-0.5 pt-1 text-xs">
           {facts.map(([k, v]) => (
             <div key={k} className="contents">
@@ -144,40 +112,24 @@ function PlaceCard({
       </details>
       <p className="flex flex-wrap gap-2">
         {p.book.map((l) => (
-          <a
-            key={l.url}
-            href={l.url}
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-sm"
-          >
+          <a key={l.url} href={l.url} target="_blank" rel="noreferrer" className="btn btn-sm">
             {l.label}
           </a>
         ))}
       </p>
       {me ? (
         <p className="flex flex-wrap items-center gap-2 text-xs">
-          <button
-            className={`btn btn-sm ${mine(likes) ? "btn-primary" : ""}`}
-            aria-pressed={mine(likes)}
-            onClick={() => toggleReaction("lodging", target, "heart")}
-          >
+          <button className={`btn btn-sm ${mine(likes) ? "btn-primary" : ""}`} aria-pressed={mine(likes)} onClick={() => toggleReaction("lodging", target, "heart")}>
             ♥ We like it
           </button>
-          <button
-            className="btn btn-sm"
-            aria-pressed={mine(nots)}
-            onClick={() => toggleReaction("lodging", target, "not_for_us")}
-          >
+          <button className="btn btn-sm" aria-pressed={mine(nots)} onClick={() => toggleReaction("lodging", target, "not_for_us")}>
             {mine(nots) ? "✓ " : ""}Not for us
           </button>
         </p>
       ) : null}
       {likes.length || nots.length ? (
         <p className="text-xs text-muted">
-          {likes.length ? (
-            <span className="text-ok">♥ {names(likes)}</span>
-          ) : null}
+          {likes.length ? <span className="text-ok">♥ {names(likes)}</span> : null}
           {likes.length && nots.length ? " · " : ""}
           {nots.length ? <span>Not for {names(nots)}</span> : null}
         </p>
@@ -197,13 +149,11 @@ function Enquiry({ en, ja }: { en: string; ja: string }) {
   }
   return (
     <details className="card p-3">
-      <summary className="cursor-pointer font-semibold">
-        Email to send a place
-      </summary>
+      <summary className="cursor-pointer font-semibold">Email to send a place</summary>
       <div className="grid gap-2 pt-2">
         <p className="text-xs text-muted">
-          Put the place’s name where it says [PLACE]. Small Japanese inns answer
-          the Japanese one faster; send both in one email.
+          Put the place’s name where it says [PLACE]. Small Japanese inns answer the Japanese one faster; send both in one email. Book only on the place’s own site or a big booking site, and never pay
+          through a link someone sends you: fake “confirm your booking” messages went out this autumn after a ryokan booking system was hacked.
         </p>
         {(
           [
@@ -218,9 +168,7 @@ function Enquiry({ en, ja }: { en: string; ja: string }) {
                 {copied === label ? "Copied" : "Copy"}
               </button>
             </div>
-            <p className="rounded-lg bg-bg p-2 text-xs whitespace-pre-wrap text-ink-2">
-              {text}
-            </p>
+            <p className="rounded-lg bg-bg p-2 text-xs whitespace-pre-wrap text-ink-2">{text}</p>
           </div>
         ))}
       </div>

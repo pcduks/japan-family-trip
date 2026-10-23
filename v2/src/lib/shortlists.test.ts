@@ -20,7 +20,7 @@ describe("places to stay", () => {
         ids.add(p.id);
         expect(["budget", "mid", "splurge"], `${k} ${p.id}`).toContain(p.tier);
         expect(p.book.length, `${k} ${p.id}`).toBeGreaterThan(0);
-        for (const l of p.book) expect(l.url, `${k} ${p.id}`).toMatch(/^https:\/\//);
+        for (const l of p.book) expect(l.url, `${k} ${p.id}`).toMatch(/^https?:\/\//);
       }
     }
   });

@@ -33,6 +33,8 @@ export interface Shortlist {
   summary: string;
   candidates: ShortlistPlace[];
   enquiry: { en: string; ja: string };
+  /** Things worth knowing at this stop that are not about one place. */
+  notes?: { title: string; text: string }[];
 }
 
 const LISTS = data as Record<string, Shortlist>;
