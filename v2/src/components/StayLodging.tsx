@@ -4,7 +4,9 @@ import { useState } from "react";
 import { fmtJpyShort, fmtSgd, forSeven, jpyToSgd, perCouple, stayCost } from "@/lib/budget";
 import { lodgingFor, LODGING_TYPES, searchLinks, TIER_LABEL } from "@/lib/lodging";
 import { areaLinks, areasFor, pickOf, type Neighbourhood } from "@/lib/neighbourhoods";
+import { shortlistFor } from "@/lib/shortlists";
 import type { Region, Stay } from "@/lib/types";
+import { StayShortlist } from "./StayShortlist";
 
 /**
  * Where to stay for one stay: the recommended type and why, the named
@@ -16,6 +18,8 @@ export function StayLodging({ stay, region, stopKey, defaultOpen = false }: { st
   const where = areasFor(stopKey ?? stay.region);
   const pick = where ? pickOf(where) : undefined;
   const info = lodgingFor(stay.region);
+  const key = stopKey ?? stay.region;
+  const list = shortlistFor(key);
   const cost = stayCost(stay);
   const links = searchLinks(stay, region);
   const type = LODGING_TYPES[cost.lodging];
@@ -36,6 +40,7 @@ export function StayLodging({ stay, region, stopKey, defaultOpen = false }: { st
       {open ? (
         <div className="grid gap-3">
           {where && pick ? <PartOfTown where={where} pick={pick} stay={stay} /> : null}
+          {list ? <StayShortlist list={list} stopKey={key} /> : null}
           {info ? (
             <>
               <p className="text-ink-2">
@@ -52,25 +57,27 @@ export function StayLodging({ stay, region, stopKey, defaultOpen = false }: { st
                   </span>
                 ))}
               </p>
-              <ul className="grid gap-2 sm:grid-cols-2">
-                {info.candidates.map((c) => (
-                  <li key={c.name} className="card grid gap-1 p-3">
-                    <div className="flex items-start justify-between gap-2">
-                      <a href={c.url} target="_blank" rel="noreferrer" className="font-semibold no-underline">
-                        {c.name}
-                      </a>
-                      <span className="chip shrink-0">{TIER_LABEL[c.tier]}</span>
-                    </div>
-                    <p className="text-xs text-muted">{c.area}</p>
-                    <p className="text-ink-2">{c.what}</p>
-                    <p>
-                      <b>{c.price}</b>
-                      {c.verified ? <span className="text-xs text-ok"> · verified</span> : <span className="text-xs text-muted"> · typical</span>}
-                    </p>
-                    <p className="text-xs text-ink-2">{c.fit}</p>
-                  </li>
-                ))}
-              </ul>
+              {list ? null : (
+                <ul className="grid gap-2 sm:grid-cols-2">
+                  {info.candidates.map((c) => (
+                    <li key={c.name} className="card grid gap-1 p-3">
+                      <div className="flex items-start justify-between gap-2">
+                        <a href={c.url} target="_blank" rel="noreferrer" className="font-semibold no-underline">
+                          {c.name}
+                        </a>
+                        <span className="chip shrink-0">{TIER_LABEL[c.tier]}</span>
+                      </div>
+                      <p className="text-xs text-muted">{c.area}</p>
+                      <p className="text-ink-2">{c.what}</p>
+                      <p>
+                        <b>{c.price}</b>
+                        {c.verified ? <span className="text-xs text-ok"> · verified</span> : <span className="text-xs text-muted"> · typical</span>}
+                      </p>
+                      <p className="text-xs text-ink-2">{c.fit}</p>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </>
           ) : (
             <p className="text-muted">No places to stay picked for this base yet. The budget assumes a {type.label.toLowerCase()} at {fmtJpyShort(cost.perNight)} a night for seven.</p>
@@ -94,7 +101,11 @@ export function StayLodging({ stay, region, stopKey, defaultOpen = false }: { st
   );
 }
 
-const PRICE: Record<Neighbourhood["price"], string> = { lower: "cheaper for the town", middle: "middle of the range", higher: "dearer for the town" };
+const PRICE: Record<Neighbourhood["price"], string> = {
+  lower: "cheaper for the town",
+  middle: "middle of the range",
+  higher: "dearer for the town",
+};
 
 /** Which part of town: our pick first, the others folded, each with searches that land there. */
 function PartOfTown({ where, pick, stay }: { where: NonNullable<ReturnType<typeof areasFor>>; pick: Neighbourhood; stay: Stay }) {
