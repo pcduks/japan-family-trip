@@ -6,6 +6,7 @@
 import type { DB } from "../supabase/types";
 import { daysBetween } from "../dates";
 import { withFoodDeadlines } from "../food";
+import { withSeatReminders } from "../seats";
 import type { Comment, Day, Place, PlanHistoryEntry, Reaction, Region, Snapshot, Stay, Suggestion, Traveller, Version, Vote } from "../types";
 import { bundledPlanDays, splitDayTitle, tripData } from "./file";
 
@@ -23,7 +24,7 @@ export function fileSnapshot(): Snapshot {
     trip: d.trip,
     pace: d.pace,
     calendar: d.calendar,
-    deadlines: withFoodDeadlines(d.deadlines.map((x, i) => ({ ...x, id: x.id ?? `dl-${x.date}-${i}`, done: false }))),
+    deadlines: withSeatReminders(withFoodDeadlines(d.deadlines.map((x, i) => ({ ...x, id: x.id ?? `dl-${x.date}-${i}`, done: false })))),
     regions: d.regions,
     places: d.places,
     versions: d.versions,
@@ -183,7 +184,7 @@ export async function loadSnapshot(sb: DB | null): Promise<Snapshot> {
     history: check<PlanHistoryEntry[]>("history", history),
     deadlines: (() => {
       const rows = check<Row[]>("deadlines", deadlines);
-      return rows.length ? withFoodDeadlines(rows.map((d) => ({ id: d.id as string, date: d.date as string, item: d.item as string, source: (d.source as string | null) ?? null, done: (d.done as boolean) ?? false }))) : base.deadlines;
+      return rows.length ? withSeatReminders(withFoodDeadlines(rows.map((d) => ({ id: d.id as string, date: d.date as string, item: d.item as string, source: (d.source as string | null) ?? null, done: (d.done as boolean) ?? false })))) : base.deadlines;
     })(),
     days: (() => {
       const rows = check<Row[]>("days", days);

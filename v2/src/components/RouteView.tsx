@@ -28,6 +28,7 @@ import { RegionCover } from "./RegionCover";
 import { StayLodging } from "./StayLodging";
 import { Back, Empty, Page, RegionDot, Section } from "./ui";
 import { WhatsNext } from "./WhatsNext";
+import { SeatTipLine } from "./SeatTips";
 import { EditBand, EditBar, MySuggestion, NightSheet, NyeSheet, Sheet, Toast, useDraftCount, useRouteEditor } from "./RouteEdit";
 import { nyeIndex } from "@/lib/nightMoves";
 import { stopKeys } from "@/lib/merge";
@@ -284,13 +285,16 @@ export function RouteView({ id }: { id?: string }) {
                 <li key={s.id ?? i} className="grid gap-1.5" data-stop={i} id={`stop-${i}`}>
                   {leg ? (
                     <p className="flex items-center gap-2.5 pl-3 text-xs text-muted">
-                      <span aria-hidden="true" className="h-5 border-l-2 border-dotted border-ink/40" />
-                      <span>
-                        <b className="text-ink">
-                          {leg.curated ? "" : "about "}
-                          {fmtLegHours(leg.hours)}
-                        </b>{" "}
-                        · {leg.how}
+                      <span aria-hidden="true" className="min-h-5 self-stretch border-l-2 border-dotted border-ink/40" />
+                      <span className="grid gap-1">
+                        <span>
+                          <b className="text-ink">
+                            {leg.curated ? "" : "about "}
+                            {fmtLegHours(leg.hours)}
+                          </b>{" "}
+                          · {leg.how}
+                        </span>
+                        <SeatTipLine from={leg.from} to={leg.to} />
                       </span>
                     </p>
                   ) : null}

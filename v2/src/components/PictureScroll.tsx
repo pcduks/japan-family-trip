@@ -10,10 +10,12 @@ import { outdoorHours } from "@/lib/exposure";
 import { fujiChance, JOURNEY, kanji, legsOf, snowLevel } from "@/lib/journey";
 import { fmtClock, fmtHours, sunTimes } from "@/lib/sun";
 import { planDays } from "@/lib/days";
+import { mainSeatTip } from "@/lib/seats";
 import type { DayItem, Place, Snapshot, Stay, Version } from "@/lib/types";
 import Link from "next/link";
 import { fmtLegHours } from "./JourneyMap";
 import { useStore } from "./providers";
+import { SeatTips } from "./SeatTips";
 
 const W = 132; // one day
 const RIBBON = 34;
@@ -34,7 +36,7 @@ interface DayView {
   title: string;
   items: DayItem[];
   forHer: string | null;
-  move: { from: string; hours: number; how: string; bus: boolean } | null;
+  move: { from: string; hours: number; how: string; bus: boolean; seat: string | null } | null;
   rise: number;
   set: number;
   daylight: number;
@@ -153,12 +155,13 @@ export function PictureScroll({ version, onStop }: { version: Version; onStop?: 
               onClick={() => setOpen(d)}
               className={`emaki-day absolute flex flex-col gap-1.5 px-2.5 pt-3 pb-2 text-left ${d.closed ? "emaki-day-ny" : ""}`}
               style={{ left: i * W, width: W, top: RIBBON + ART, height: 236, ["--c" as string]: regionColor(d.region) }}
-              aria-label={`${fmtDay(d.date)}, ${regionName(d.region)}: ${d.kind}. ${d.title}`}
+              aria-label={`${fmtDay(d.date)}, ${regionName(d.region)}: ${d.kind}. ${d.move?.seat ? `${d.move.seat} on the train. ` : ""}${d.title}`}
             >
               {d.move ? (
-                <span className="emaki-move absolute -top-3.5 left-2 flex items-center gap-1 rounded-full border border-rule bg-card px-2 py-0.5 text-[0.68rem] font-semibold shadow-sm">
+                <span className="emaki-move absolute -top-3.5 left-2 flex items-center gap-1 rounded-full whitespace-nowrap border border-rule bg-card px-2 py-0.5 text-[0.68rem] font-semibold shadow-sm">
                   {d.move.bus ? <BusIcon /> : <TrainIcon />}
                   {fmtLegHours(d.move.hours)}
+                  {d.move.seat ? <span className="ml-0.5 rounded-full bg-indigo px-1.5 text-card">{d.move.seat}</span> : null}
                 </span>
               ) : null}
               <span className="flex items-baseline gap-1.5">
@@ -234,6 +237,7 @@ export function PictureScroll({ version, onStop }: { version: Version; onStop?: 
                     <b>{fmtLegHours(open.move.hours)}</b> from {regionName(open.move.from)} · {open.move.how}
                   </p>
                 ) : null}
+                {open.move ? <SeatTips from={open.move.from} to={open.region} /> : null}
                 <p className="text-[1.02rem] leading-relaxed text-ink">{open.title}</p>
                 {open.items.length ? <DayItems items={open.items} /> : null}
                 {open.forHer ? (
@@ -419,7 +423,15 @@ function buildDays(version: Version, snapshot: Snapshot): DayView[] {
       title: cleanTitle(pd.title),
       items: pd.items,
       forHer: pd.forHer,
-      move: leg ? { from: leg.fromRegion, hours: leg.hours, how: leg.how, bus: leg.segments.some((s) => s.mode === "bus") && leg.segments.every((s) => s.mode === "bus" || s.mode === "local") } : null,
+      move: leg
+        ? {
+            from: leg.fromRegion,
+            hours: leg.hours,
+            how: leg.how,
+            bus: leg.segments.some((s) => s.mode === "bus") && leg.segments.every((s) => s.mode === "bus" || s.mode === "local"),
+            seat: mainSeatTip(leg.fromRegion, stay.region)?.tip.badge ?? null,
+          }
+        : null,
       rise: sun.rise,
       set: sun.set,
       daylight: sun.daylight,

@@ -1,0 +1,171 @@
+{
+  "_about": "Where to sit on the train for the views (checked 27 Oct 2026). Keyed by the line a move rides, never by date, so a tip shows on whichever route is being viewed: a move matches a tip when it goes from a place in one of the tip's `ends` to a place in the other, either way (\"*\" is any other place). Each end maps a place to the station you board at, which picks the timing in `when_from`; `when_default` is [leaving from the first end, leaving from the second]. `weight` orders the tips on a move, ties in file order (the first seat tip is the one shown on the day and added to the booking reminders). `stations` turns the station names in the booking reminders (\"Tokyo → Nagano\") into places, so the reminders get the seat letter too. `reminders` are extra booking dates, merged into What's next by the loader (src/lib/data/loader.ts) the way data/food-deadlines.json is.",
+  "checked": "2026-10-27",
+  "rule": "On the shinkansen the seat letters stay on the same side of the track in both directions: the seats turn round, the letters do not.",
+  "tips": [
+    {
+      "id": "hokuriku-tateyama",
+      "line": "Hokuriku shinkansen",
+      "kind": "seat",
+      "weight": 3,
+      "badge": "Seat E",
+      "headline": "Sit in seat E (D in the Green Car) for the Northern Alps",
+      "ask": "Ask for seat E (D in the Green Car) for the Tateyama range before Toyama",
+      "where": "The Tateyama range of the Northern Alps, between Kurobe-Unazukionsen and Toyama.",
+      "when_from": {},
+      "when_default": [null, null],
+      "detail": null,
+      "ends": [
+        { "tokyo": "Tokyo", "yokohama": "Tokyo", "karuizawa": "Karuizawa", "nagano": "Nagano", "yudanaka": "Nagano" },
+        { "kanazawa": "Kanazawa" }
+      ],
+      "sources": [
+        { "label": "Toretabi", "url": "https://www.toretabi.jp/railway_info/entry-5848.html" },
+        { "label": "Tabifukurou", "url": "https://tabifukurou.com/hokurikushinkansen_view" }
+      ]
+    },
+    {
+      "id": "hokuriku-asama",
+      "line": "Hokuriku shinkansen",
+      "kind": "seat",
+      "weight": 2,
+      "badge": "Seat A",
+      "headline": "Sit in seat A (A in the Green Car too) for Mt Asama",
+      "ask": "Ask for seat A (A in the Green Car too) for Mt Asama after Karuizawa",
+      "where": "Mt Asama fills the windows just after Karuizawa, and again near Sakudaira.",
+      "when_from": {},
+      "when_default": [null, null],
+      "detail": null,
+      "ends": [
+        { "tokyo": "Tokyo", "yokohama": "Tokyo", "karuizawa": "Karuizawa" },
+        { "nagano": "Nagano", "yudanaka": "Nagano", "kanazawa": "Kanazawa" }
+      ],
+      "sources": [
+        { "label": "Toretabi", "url": "https://www.toretabi.jp/railway_info/entry-5848.html" },
+        { "label": "Tabifukurou", "url": "https://tabifukurou.com/hokurikushinkansen_view" }
+      ]
+    },
+    {
+      "id": "hokuriku-itoigawa",
+      "line": "Hokuriku shinkansen",
+      "kind": "seat",
+      "weight": 1,
+      "badge": "Seat A",
+      "headline": "Seat A also gets a short look at the Sea of Japan",
+      "ask": "Seat A gets a short look at the Sea of Japan near Itoigawa",
+      "where": "Near Itoigawa, over the town. A minor one.",
+      "when_from": {},
+      "when_default": [null, null],
+      "detail": null,
+      "ends": [
+        { "tokyo": "Tokyo", "yokohama": "Tokyo", "karuizawa": "Karuizawa", "nagano": "Nagano", "yudanaka": "Nagano" },
+        { "kanazawa": "Kanazawa" }
+      ],
+      "sources": [
+        { "label": "Tabifukurou", "url": "https://tabifukurou.com/hokurikushinkansen_view" }
+      ]
+    },
+    {
+      "id": "nagaden-yukemuri",
+      "line": "Nagano Electric Railway (Nagaden)",
+      "kind": "seat",
+      "weight": 2,
+      "badge": "Front seats",
+      "headline": "Take the Yukemuri and sit up front, in the observation seats",
+      "ask": "Reserve the Yukemuri's front observation seats",
+      "where": "The Yukemuri limited express (an old Odakyu Romancecar) has front observation seats 1A–1D and 3A–3D: 8 seats, and we are 7.",
+      "when_from": {},
+      "when_default": [null, null],
+      "detail": "Reserved, ¥300 each, on the Nagaden website from 0:00 JST 31 days before, for trains leaving 9:00–17:59; confirm the rule on nagaden-net.co.jp. The rear observation seats are unreserved: queue early. The Snow Monkey express has no observation seats.",
+      "ends": [
+        { "yudanaka": "Yudanaka" },
+        { "*": "Nagano" }
+      ],
+      "sources": [
+        { "label": "Tabi-mag", "url": "https://tabi-mag.jp/observationseat-yukemuri/" }
+      ]
+    },
+    {
+      "id": "tokaido-fuji",
+      "line": "Tokaido shinkansen",
+      "kind": "seat",
+      "weight": 3,
+      "badge": "Seat E",
+      "headline": "Sit in seat E (D in the Green Car) for Mt Fuji",
+      "ask": "Ask for seat E (D in the Green Car) for Mt Fuji",
+      "where": "Fuji is in view for about 10 minutes between Mishima and Shin-Fuji.",
+      "when_from": {
+        "Tokyo": "about 40–45 min after Tokyo",
+        "Shin-Yokohama": "about 20–35 min after Shin-Yokohama",
+        "Odawara": "about 15–25 min after Odawara",
+        "Mishima": "right after Mishima",
+        "Kyoto": "about 1 h 25 – 1 h 40 after Kyoto, just after Shizuoka"
+      },
+      "when_default": ["just after Mishima", "just after Shizuoka"],
+      "detail": "Mornings are clearest; Fuji often clouds over by midday.",
+      "ends": [
+        { "tokyo": "Tokyo", "yokohama": "Shin-Yokohama", "kamakura": "Shin-Yokohama", "hakone": "Odawara", "atami": "Atami", "kawaguchiko": "Mishima", "shuzenji": "Mishima" },
+        { "nagoya": "Nagoya", "ise-shima": "Nagoya", "takayama": "Nagoya", "gero": "Nagoya", "kyoto": "Kyoto", "nara": "Kyoto", "kinosaki": "Kyoto", "osaka": "Shin-Osaka", "koyasan": "Shin-Osaka", "shirahama": "Shin-Osaka", "arima": "Shin-Kobe", "okayama": "Okayama", "matsue": "Okayama", "hiroshima": "Hiroshima", "miyajima": "Hiroshima", "fukuoka": "Hakata" }
+      ],
+      "sources": [
+        { "label": "Japan Shinkansen guide", "url": "https://japanshinkansen.pages.dev/guide/mount-fuji-shinkansen-seats" },
+        { "label": "Tetsudo.com", "url": "https://www.tetsudo.com/column/1320/" }
+      ]
+    },
+    {
+      "id": "tokaido-luggage",
+      "line": "Tokaido shinkansen",
+      "kind": "note",
+      "weight": 0,
+      "badge": "Big cases",
+      "headline": "Big cases need a reserved last-row seat",
+      "ask": null,
+      "where": "A case over 160 cm (length + width + height, up to 250 cm) needs a reserved last-row “oversized baggage” seat: free when you book it, ¥1,000 on board without it.",
+      "when_from": {},
+      "when_default": [null, null],
+      "detail": "Nozomi is all-reserved 25 Dec 2026 – 5 Jan 2027; Hikari and Kodama keep unreserved cars.",
+      "ends": [
+        { "tokyo": "Tokyo", "yokohama": "Shin-Yokohama", "kamakura": "Shin-Yokohama", "hakone": "Odawara", "atami": "Atami", "kawaguchiko": "Mishima", "shuzenji": "Mishima" },
+        { "nagoya": "Nagoya", "ise-shima": "Nagoya", "takayama": "Nagoya", "gero": "Nagoya", "kyoto": "Kyoto", "nara": "Kyoto", "kinosaki": "Kyoto", "osaka": "Shin-Osaka", "koyasan": "Shin-Osaka", "shirahama": "Shin-Osaka", "arima": "Shin-Kobe", "okayama": "Okayama", "matsue": "Okayama", "hiroshima": "Hiroshima", "miyajima": "Hiroshima", "fukuoka": "Hakata" }
+      ],
+      "sources": [
+        { "label": "Tetsudo Channel", "url": "https://tetsudo-ch.com/13020406.html" }
+      ]
+    }
+  ],
+  "stations": {
+    "Tokyo": "tokyo",
+    "Ueno": "tokyo",
+    "Shinjuku": "tokyo",
+    "Shinagawa": "tokyo",
+    "Yokohama": "yokohama",
+    "Shin-Yokohama": "yokohama",
+    "Odawara": "hakone",
+    "Hakone": "hakone",
+    "Mishima": "kawaguchiko",
+    "Kawaguchiko": "kawaguchiko",
+    "Atami": "atami",
+    "Nagoya": "nagoya",
+    "Kyoto": "kyoto",
+    "Shin-Osaka": "osaka",
+    "Osaka": "osaka",
+    "Karuizawa": "karuizawa",
+    "Nagano": "nagano",
+    "Yudanaka": "yudanaka",
+    "Kanazawa": "kanazawa"
+  },
+  "reminders": [
+    {
+      "id": "seat-nagaden-2026-12-24",
+      "date": "2026-11-23",
+      "item": "0:00 JST (still 22 Nov outside Japan): reserve the Nagaden Yukemuri front observation seats (1A–1D, 3A–3D, ¥300 each) for 24 Dec, Nagano → Yudanaka, on the Nagaden website. Only trains leaving 9:00–17:59; confirm the rule on nagaden-net.co.jp",
+      "source": "https://tabi-mag.jp/observationseat-yukemuri/"
+    },
+    {
+      "id": "seat-nagaden-2026-12-26",
+      "date": "2026-11-25",
+      "item": "0:00 JST (still 24 Nov outside Japan): reserve the Nagaden Yukemuri front observation seats (1A–1D, 3A–3D, ¥300 each) for 26 Dec, Yudanaka → Nagano, on the Nagaden website. Only trains leaving 9:00–17:59; confirm the rule on nagaden-net.co.jp",
+      "source": "https://tabi-mag.jp/observationseat-yukemuri/"
+    }
+  ]
+}
