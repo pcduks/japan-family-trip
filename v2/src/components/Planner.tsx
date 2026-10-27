@@ -17,6 +17,7 @@ import { checkVersion, type Finding } from "@/lib/rules";
 import type { Lodging, Pace, Region, Stay, Version } from "@/lib/types";
 import { copyVersion, movesOf, newId, rebalance, relayout } from "@/lib/versions";
 import { useStore } from "./providers";
+import { SeatTipLine } from "./SeatTips";
 import { RegionCover } from "./RegionCover";
 import { StayLodging } from "./StayLodging";
 import { StayNights } from "./StayNights";
@@ -260,7 +261,7 @@ export function Planner({ version, onSuggest, onDraft, keepTotal }: { version: V
                 stay={s}
                 index={i}
                 region={region}
-                move={move ? { hours: move.hours, how: move.how, curated: move.curated, date: move.date } : null}
+                move={move ? { from: move.from, to: move.to, hours: move.hours, how: move.how, curated: move.curated, date: move.date } : null}
                 findings={stayFindings}
                 note={stayNote(draft.id, draft.stays, i)}
                 pace={draft.pace}
@@ -358,7 +359,7 @@ interface CardProps {
   stay: Stay;
   index: number;
   region: Region | undefined;
-  move: { hours: number; how: string; curated: boolean; date: string } | null;
+  move: { from: string; to: string; hours: number; how: string; curated: boolean; date: string } | null;
   findings: Finding[];
   note: string | null;
   pace: Pace;
@@ -391,6 +392,7 @@ function StayCard({ sortId, stay: s, region, move, findings, note, pace, allStay
         <p className="flex flex-wrap items-center gap-x-2 pl-3 text-sm text-muted">
           ↓ {move.hours}
           {move.curated ? "" : "~"} h · {move.how} · {fmtDay(move.date)}
+          <SeatTipLine from={move.from} to={move.to} className="basis-full text-xs" />
         </p>
       ) : null}
       <div className="card overflow-hidden" style={{ borderLeft: `5px solid ${color}` }}>

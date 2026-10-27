@@ -7,6 +7,7 @@ import "server-only";
 import type { DB } from "./supabase/types";
 import type { Comment, Reaction, Stay, SuggestionDiff, Version, VoteKind } from "./types";
 import { foodDeadline } from "./food";
+import { seatReminder } from "./seats";
 import type { Viewer } from "./supabase/server";
 import { describeDiff } from "./versions";
 import { rowToStay } from "./data/loader";
@@ -164,8 +165,8 @@ export async function runAction(sb: DB, me: Viewer, action: string, p: Record<st
     case "setDeadlineDone": {
       if (me.role !== "planner") throw new ActionError("Planners only", 403);
       const id = String(p.id ?? "");
-      // Food dates live in the app's data until first ticked; ticking stores them.
-      const food = foodDeadline(id);
+      // Food and seat dates live in the app's data until first ticked; ticking stores them.
+      const food = foodDeadline(id) ?? seatReminder(id);
       if (food) fail(await sb.from("deadlines").upsert({ id, date: food.date, item: food.item, source: food.source ?? null, done: p.done === true }, { onConflict: "id" }), "deadlines");
       else fail(await sb.from("deadlines").update({ done: p.done === true }).eq("id", id), "deadlines");
       return;
