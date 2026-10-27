@@ -1,0 +1,620 @@
+<style>
+/* Layout: a field guide. One masthead, a tab strip, and a day-by-day itinerary of meal cards. */
+#dash-root .fg { display: grid; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); }
+#dash-root .fg-eyebrow { font-size: var(--cds-font-size-caption); letter-spacing: .08em; text-transform: uppercase; color: var(--color-fg-muted); }
+#dash-root .fg-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.05; margin: 4px 0 6px; text-wrap: balance; }
+#dash-root .fg-take { color: var(--color-fg-muted); max-width: 62ch; margin: 0; }
+#dash-root .fg-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: var(--cds-gap-md); margin-top: var(--cds-gap-md); }
+#dash-root .fg-kpi { border-top: 2px solid var(--color-fg); padding-top: var(--cds-gap-xs); min-width: 0; }
+#dash-root .fg-kpi b { display: block; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; }
+#dash-root .fg-kpi span { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+#dash-root .fg-kpi.alert { border-top-color: var(--color-bad); }
+
+#dash-root .fg-bar { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; justify-content: space-between; border-bottom: 1px solid var(--color-border-line); padding-bottom: var(--cds-gap-xs); }
+#dash-root .fg-tabs { display: flex; flex-wrap: wrap; gap: 2px; }
+#dash-root .fg-tab { font: inherit; font-size: var(--cds-font-size-body); background: none; border: 0; border-bottom: 2px solid transparent; padding: 8px 10px; color: var(--color-fg-muted); cursor: pointer; }
+#dash-root .fg-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); }
+#dash-root .fg-tab:focus-visible, #dash-root .fg-chip:focus-visible, #dash-root button:focus-visible, #dash-root select:focus-visible, #dash-root input:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+#dash-root select, #dash-root input[type=search] { font: inherit; font-size: var(--cds-font-size-body); padding: 6px 8px; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-panel); color: var(--color-fg); max-width: 100%; min-width: 0; }
+#dash-root label.fg-field { display: grid; gap: 2px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); min-width: 0; }
+#dash-root .fg-filters { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: end; }
+#dash-root .fg-check { display: flex; gap: 6px; align-items: center; font-size: var(--cds-font-size-caption); color: var(--color-fg); }
+
+#dash-root .fg-route { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+#dash-root .fg-stop { font: inherit; display: grid; text-align: left; gap: 0; padding: 6px 10px 6px 12px; border: 1px solid var(--color-border-line); border-left: 4px solid var(--city); border-radius: var(--cds-radius); background: var(--color-panel); color: var(--color-fg); cursor: pointer; }
+#dash-root .fg-stop[aria-pressed="true"] { border-color: var(--city); box-shadow: inset 0 0 0 1px var(--city); }
+#dash-root .fg-stop b { font-weight: var(--cds-font-weight-medium); }
+#dash-root .fg-stop span { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+
+#dash-root .fg-days { display: grid; gap: var(--cds-gap-md); }
+#dash-root .fg-day { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: var(--cds-gap-md); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); scroll-margin-top: 12px; }
+#dash-root .fg-day.today { box-shadow: inset 4px 0 0 var(--color-fg); }
+#dash-root .fg-date { display: grid; align-content: start; gap: 2px; border-right: 1px solid var(--color-border-line); padding-right: var(--cds-gap-sm); }
+#dash-root .fg-date .n { font-family: var(--font-anthropic-serif); font-size: 2.6rem; line-height: 1; font-variant-numeric: tabular-nums; }
+#dash-root .fg-date .m { font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .08em; color: var(--color-fg-muted); }
+#dash-root .fg-date .city { margin-top: 6px; font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); color: var(--city); }
+#dash-root .fg-dayhead { display: grid; gap: 2px; margin-bottom: var(--cds-gap-sm); }
+#dash-root .fg-dayhead .kind { font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .08em; color: var(--color-fg-muted); }
+#dash-root .fg-dayhead .title { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); text-wrap: balance; }
+#dash-root .fg-meals { display: grid; gap: var(--cds-gap-sm); }
+#dash-root .fg-meal { display: grid; grid-template-columns: 2.2rem minmax(0, 1fr); gap: var(--cds-gap-sm); padding-top: var(--cds-gap-sm); border-top: 1px dashed var(--color-border-line); }
+#dash-root .fg-glyph { width: 2.2rem; height: 2.2rem; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--color-border-line); font-size: 1rem; }
+#dash-root .fg-glyph small { display: block; font-size: 9px; letter-spacing: .04em; color: var(--color-fg-muted); text-transform: uppercase; }
+#dash-root .fg-pick { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+#dash-root .fg-pick .name { font-weight: var(--cds-font-weight-medium); }
+#dash-root .fg-pick a { color: inherit; text-decoration: underline; text-decoration-color: var(--color-border-line); text-underline-offset: 3px; }
+#dash-root .fg-line { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 2px 0 0; max-width: 72ch; }
+#dash-root .fg-line b { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+#dash-root .fg-line.her b { color: var(--color-ok); }
+
+#dash-root .fg-pill { display: inline-block; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--color-border-line); font-size: var(--cds-font-size-caption); white-space: nowrap; color: var(--color-fg-muted); }
+#dash-root .fg-pill.score { color: var(--color-fg); font-variant-numeric: tabular-nums; }
+#dash-root .fg-pill.t-easy { border-color: var(--color-ok); color: var(--color-ok); }
+#dash-root .fg-pill.t-effort, #dash-root .fg-pill.t-split, #dash-root .fg-pill.t-walk { border-color: var(--color-warn); color: var(--color-warn); }
+#dash-root .fg-pill.t-hard, #dash-root .fg-pill.t-no { border-color: var(--color-bad); color: var(--color-bad); }
+#dash-root .fg-pill.p-ok { border-color: var(--color-ok); color: var(--color-ok); }
+#dash-root .fg-pill.p-careful { border-color: var(--color-warn); color: var(--color-warn); }
+#dash-root .fg-pill.p-avoid { border-color: var(--color-bad); color: var(--color-bad); }
+#dash-root .fg-pill.warn { border-color: var(--color-warn); color: var(--color-warn); }
+#dash-root .fg-tag { display: inline-block; padding: 1px 7px; border-radius: 4px; background: var(--color-bg); border: 1px solid var(--color-border-line); font-size: var(--cds-font-size-caption); }
+
+#dash-root .fg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: var(--cds-gap-md); }
+#dash-root .fg-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-top: 3px solid var(--city, var(--color-border-line)); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: grid; gap: 6px; align-content: start; min-width: 0; }
+#dash-root .fg-card h3 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); line-height: 1.25; }
+#dash-root .fg-card h3 a { color: inherit; text-decoration: none; }
+#dash-root .fg-card h3 a:hover { text-decoration: underline; }
+#dash-root .fg-ja { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+#dash-root .fg-row { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+#dash-root .fg-small { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0; }
+#dash-root .fg-small b { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+#dash-root .fg-why { font-size: var(--cds-font-size-body); margin: 0; }
+#dash-root .fg-count { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+#dash-root .fg-h2 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: var(--cds-gap-md) 0 var(--cds-gap-xs); }
+#dash-root .fg-h2:first-child { margin-top: 0; }
+#dash-root .fg-lede { color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-sm); max-width: 66ch; }
+#dash-root .fg-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0; }
+#dash-root .fg-list li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: var(--cds-gap-sm); padding: var(--cds-gap-sm) 0; border-top: 1px solid var(--color-border-line); }
+#dash-root .fg-list .when { font-variant-numeric: tabular-nums; font-size: var(--cds-font-size-caption); }
+#dash-root .fg-list .when b { display: block; font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); }
+#dash-root .fg-bullets { margin: 0; padding-left: 1.1em; font-size: var(--cds-font-size-caption); }
+#dash-root .fg-bullets li { margin: 2px 0; }
+#dash-root details.fg-acc { border-top: 1px solid var(--color-border-line); padding: var(--cds-gap-sm) 0; }
+#dash-root details.fg-acc summary { cursor: pointer; font-weight: var(--cds-font-weight-medium); }
+#dash-root .fg-acc-body { display: grid; gap: var(--cds-gap-sm); margin-top: var(--cds-gap-sm); }
+#dash-root .fg-sub { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--cds-gap-sm); }
+#dash-root .fg-chip { font: inherit; font-size: var(--cds-font-size-caption); padding: 4px 10px; border-radius: 999px; border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg); cursor: pointer; }
+#dash-root .fg-chip[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+#dash-root .fg-empty { color: var(--color-fg-muted); padding: var(--cds-gap-md) 0; }
+#dash-root .fg-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); border-left: 2px solid var(--color-border-line); padding-left: var(--cds-gap-sm); max-width: 72ch; }
+#dash-root [hidden] { display: none !important; }
+@media (max-width: 34rem) {
+  #dash-root .fg-day { grid-template-columns: 1fr; }
+  #dash-root .fg-date { border-right: 0; border-bottom: 1px solid var(--color-border-line); padding: 0 0 var(--cds-gap-xs); display: flex; gap: 8px; align-items: baseline; }
+  #dash-root .fg-date .n { font-size: 2rem; }
+  #dash-root .fg-list li { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="fg">
+  <header class="fg-head" id="top">
+    <div class="fg-eyebrow">20 Dec 2026 – 9 Jan 2027 · seven of us · one voice</div>
+    <h1>Japan food guide</h1>
+    <p class="fg-take" id="fg-take">Every meal on the route, checked on Tabelog and against Fernanda’s rules.</p>
+    <div class="fg-kpis" id="fg-kpis"></div>
+  </header>
+
+  <div class="fg-bar">
+    <nav class="fg-tabs" role="tablist" aria-label="Guide sections" id="fg-tabs">
+      <button class="fg-tab" role="tab" data-tab="days" id="t-days">Day by day</button>
+      <button class="fg-tab" role="tab" data-tab="solo" id="t-solo">Solo week · 26–30 Oct</button>
+      <button class="fg-tab" role="tab" data-tab="book" id="t-book">Book</button>
+      <button class="fg-tab" role="tab" data-tab="find" id="t-find">Find a place</button>
+      <button class="fg-tab" role="tab" data-tab="dishes" id="t-dishes">What to eat</button>
+      <button class="fg-tab" role="tab" data-tab="areas" id="t-areas">Neighbourhoods</button>
+      <button class="fg-tab" role="tab" data-tab="shops" id="t-shops">Shops & food halls</button>
+      <button class="fg-tab" role="tab" data-tab="know" id="t-know">Know-how</button>
+    </nav>
+    <label class="fg-field">City
+      <select id="fg-city"><option value="">Whole trip</option></select>
+    </label>
+  </div>
+
+  <section id="p-days" data-panel="days" aria-labelledby="t-days">
+    <div class="fg-route" id="fg-route" data-source="days" aria-label="Route"></div>
+    <p class="fg-note" id="fg-days-note">Each day lists the concierge’s picks for the slots that need a decision. Ryokan and hotel meals are shown so the day reads whole. Tap a stop to see only that city.</p>
+    <div class="fg-days" id="fg-days" data-source="days"></div>
+  </section>
+
+  <section id="p-solo" data-panel="solo" aria-labelledby="t-solo" hidden>
+    <h2 class="fg-h2">Tokyo solo week, based in Shibuya</h2>
+    <p class="fg-lede">Dinner Monday to Thursday and lunch on Friday, for one. Each day leads with the top pick, then ranked backups, then everything else open that day. Every place is open on its day by its listed closing days; irregular days off are not shown.</p>
+    <div class="fg-filters">
+      <label class="fg-check"><input type="checkbox" id="solo-near"> Shibuya and one stop only</label>
+    </div>
+    <div class="fg-days" id="fg-solo" data-source="solo"></div>
+  </section>
+
+  <section id="p-book" data-panel="book" aria-labelledby="t-book" hidden>
+    <h2 class="fg-h2">Book by</h2>
+    <p class="fg-lede">The booking calendar, corrected where the data had a closed day or the wrong channel. Every booking says seven, and that one guest is pregnant.</p>
+    <ol class="fg-list" id="fg-deadlines" data-source="deadlines"></ol>
+    <h2 class="fg-h2">Tables in the plan</h2>
+    <p class="fg-lede">Every pick from the day-by-day plan that needs a booking, in date order, with how hard it is for seven.</p>
+    <ol class="fg-list" id="fg-tables" data-source="days"></ol>
+    <h2 class="fg-h2">Don’t bother</h2>
+    <p class="fg-lede">Famous, and not realistic for seven on these dates. Kept here so nobody spends an evening on them.</p>
+    <div class="fg-grid" id="fg-nope" data-source="places"></div>
+  </section>
+
+  <section id="p-find" data-panel="find" aria-labelledby="t-find" hidden>
+    <div class="fg-filters">
+      <label class="fg-field">Meal <select id="f-meal"><option value="">Any meal</option></select></label>
+      <label class="fg-field">Food <select id="f-kind"><option value="">Any food</option></select></label>
+      <label class="fg-field">Style <select id="f-style"><option value="">Any price</option></select></label>
+      <label class="fg-field">Character <select id="f-tag"><option value="">Anything</option></select></label>
+      <label class="fg-field">For seven <select id="f-tier"><option value="">Any</option></select></label>
+      <label class="fg-field">Critic <select id="f-critic"><option value="">Any or none</option></select></label>
+      <label class="fg-field">Fernanda <select id="f-preg"><option value="">Any level</option><option value="ok">OK as is</option><option value="careful">Careful: order around it</option><option value="avoid">Avoid</option></select></label>
+      <label class="fg-field">Sort <select id="f-sort"><option value="score">Tabelog, high to low</option><option value="city">Route order</option><option value="name">Name</option></select></label>
+      <label class="fg-field">Search <input type="search" id="f-q" placeholder="Name, dish, area"></label>
+      <label class="fg-check"><input type="checkbox" id="f-open" checked> Open on our dates</label>
+    </div>
+    <p class="fg-count" id="f-count"></p>
+    <div class="fg-grid" id="fg-places" data-source="places"></div>
+  </section>
+
+  <section id="p-dishes" data-panel="dishes" aria-labelledby="t-dishes" hidden>
+    <p class="fg-lede">Each stop’s signature dishes, with where to eat them and what Fernanda can have. Must-tries come first.</p>
+    <div class="fg-grid" id="fg-dishes" data-source="dishes"></div>
+  </section>
+
+  <section id="p-areas" data-panel="areas" aria-labelledby="t-areas" hidden>
+    <p class="fg-lede">Markets, old streets and yokochō: where to walk and what to eat there.</p>
+    <div class="fg-grid" id="fg-areas" data-source="areas"></div>
+  </section>
+
+  <section id="p-shops" data-panel="shops" aria-labelledby="t-shops" hidden>
+    <h2 class="fg-h2">Shops and markets</h2>
+    <p class="fg-lede">Knives, pickles, sweets, sake and the shops to buy them from.</p>
+    <div class="fg-grid" id="fg-shops" data-source="shops"></div>
+    <h2 class="fg-h2">Department-store food halls</h2>
+    <p class="fg-lede">Depachika are the easy dinner for seven: no booking, no queue, all cooked.</p>
+    <div id="fg-depa" data-source="knowhow"></div>
+  </section>
+
+  <section id="p-know" data-panel="know" aria-labelledby="t-know" hidden>
+    <div class="fg-sub" id="fg-topics" role="group" aria-label="Topic"></div>
+    <div id="fg-know" data-source="knowhow"></div>
+  </section>
+</div>
+
+<script>
+(function () {
+  var S = { tab: 'days', city: '', stop: '', topic: 'For Fernanda', ready: false };
+  var $ = function (id) { return document.getElementById(id); };
+  function h(tag, attrs) {
+    var el = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) {
+      var v = attrs[k];
+      if (v == null || v === false) return;
+      if (k === 'text') el.textContent = v;
+      else if (k === 'style') el.setAttribute('style', v);
+      else if (k.slice(0, 2) === 'on') el.addEventListener(k.slice(2), v);
+      else el.setAttribute(k, v === true ? '' : v);
+    });
+    for (var i = 2; i < arguments.length; i++) {
+      var c = arguments[i];
+      if (c == null || c === false) continue;
+      if (Array.isArray(c)) c.forEach(function (x) { if (x != null && x !== false) el.appendChild(typeof x === 'string' ? document.createTextNode(x) : x); });
+      else el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+    }
+    return el;
+  }
+  function clear(el) { while (el.firstChild) el.removeChild(el.firstChild); return el; }
+  function link(text, url) { return url ? h('a', { href: url, target: '_blank', rel: 'noopener' }, text) : document.createTextNode(text); }
+  var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  var WDN = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  function parseDay(s) { var p = s.split('-'); return new Date(Date.UTC(+p[0], +p[1] - 1, +p[2])); }
+  function todayUTC() { var n = new Date(); return new Date(Date.UTC(n.getFullYear(), n.getMonth(), n.getDate())); }
+  function daysUntil(s) { return Math.round((parseDay(s) - todayUTC()) / 864e5); }
+
+  var CITY_ORDER = ['Tokyo', 'Nagano', 'Yudanaka', 'Kanazawa', 'Kyoto', 'Nara', 'Kawaguchiko', 'Takayama', 'Hakone', 'Hiroshima'];
+  function cityColor(city) {
+    var base = city.split(' & ')[0];
+    var i = CITY_ORDER.indexOf(base);
+    return dash.colors[(i < 0 ? 7 : i) % dash.colors.length];
+  }
+  function cityMatch(rowCity) {
+    if (!S.city) return true;
+    return rowCity === S.city || rowCity.split(' & ').indexOf(S.city) >= 0;
+  }
+
+  var TIER_CLASS = { 'Easy for seven': 't-easy', 'Doable with effort': 't-effort', 'Split the group': 't-split',
+    'Walk-in or queue': 't-walk', 'Very hard: try once': 't-hard', "Don't bother": 't-no', 'Takeaway': 't-walk' };
+  function tierPill(t) { return t ? h('span', { class: 'fg-pill ' + (TIER_CLASS[t] || ''), text: t }) : null; }
+  var PREG_TEXT = { ok: 'Fernanda: OK', careful: 'Fernanda: careful', avoid: 'Fernanda: avoid' };
+  function pregPill(p) { return h('span', { class: 'fg-pill p-' + (PREG_TEXT[p] ? p : 'x'), text: PREG_TEXT[p] || 'Fernanda: not checked' }); }
+  function scorePill(score, reviews, url) {
+    if (score == null || score === '') return h('span', { class: 'fg-pill', text: 'Tabelog unverified' });
+    var label = 'Tabelog ' + Number(score).toFixed(2) + (reviews ? ' · ' + d3.format(',')(reviews) : '');
+    return url ? h('a', { class: 'fg-pill score', href: url, target: '_blank', rel: 'noopener', text: label }) : h('span', { class: 'fg-pill score', text: label });
+  }
+  var GLYPH = { Breakfast: ['朝', 'Breakfast'], Lunch: ['昼', 'Lunch'], Dinner: ['夜', 'Dinner'], Snack: ['甘', 'Snack'] };
+
+  dash.calc('summary', {
+    title: 'Guide headline figures',
+    description: 'Counts of days, places on the route, places with a Tabelog score, and deadlines still ahead or passed.',
+    inputs: ['days', 'places', 'deadlines'],
+    fn: function (days, places, deadlines) {
+      var dates = {};
+      days.forEach(function (d) { dates[d.date] = 1; });
+      var onRoute = places.filter(function (p) { return p.on_route; });
+      return [{
+        days: Object.keys(dates).length,
+        picks: days.length,
+        places: onRoute.length,
+        scored: onRoute.filter(function (p) { return p.tabelog != null; }).length,
+        deadlines: deadlines.length
+      }];
+    }
+  });
+
+  function renderHead(sum, deadlines) {
+    var k = clear($('fg-kpis'));
+    var upcoming = deadlines.filter(function (x) { return daysUntil(x.date) >= 0; })
+      .sort(function (a, b) { return a.date < b.date ? -1 : 1; });
+    var passed = deadlines.filter(function (x) { return daysUntil(x.date) < 0; }).length;
+    var next = upcoming[0];
+    function tile(field, label, extra) {
+      return h('div', { class: 'fg-kpi' + (extra || '') },
+        h('b', { 'data-source': 'summary', 'data-field': field, 'data-row': '0', text: String(sum[field]) }),
+        h('span', { text: label }));
+    }
+    k.appendChild(tile('days', 'days, ' + sum.picks + ' picks'));
+    k.appendChild(tile('places', 'places on the route'));
+    k.appendChild(tile('scored', 'with a Tabelog score'));
+    k.appendChild(h('div', { class: 'fg-kpi' + (passed ? ' alert' : '') },
+      h('b', { text: String(passed) }), h('span', { text: 'booking dates already passed' })));
+    if (next) {
+      var n = daysUntil(next.date);
+      $('fg-take').textContent = 'Next booking date: ' + next.day + ' (' + (n === 0 ? 'today' : 'in ' + n + ' day' + (n === 1 ? '' : 's')) + '): ' + next.item;
+    }
+  }
+
+  function renderRoute(days) {
+    var stops = [];
+    days.forEach(function (d) {
+      var last = stops[stops.length - 1];
+      if (last && last.city === d.city) { if (last.dates.indexOf(d.day) < 0) last.dates.push(d.day); }
+      else stops.push({ city: d.city, dates: [d.day] });
+    });
+    var r = clear($('fg-route'));
+    stops.forEach(function (s, i) {
+      var first = s.dates[0], lastd = s.dates[s.dates.length - 1];
+      var key = s.city + '#' + i;
+      r.appendChild(h('button', {
+        class: 'fg-stop', style: '--city:' + cityColor(s.city), 'aria-pressed': S.stop === key ? 'true' : 'false',
+        onclick: function () { S.stop = S.stop === key ? '' : key; S.stopDates = S.stop ? s.dates : null; renderDays(); renderRoute(days); }
+      }, h('b', { text: s.city }), h('span', { text: first === lastd ? first : first + ' – ' + lastd })));
+    });
+  }
+
+  function renderDays() {
+    var days = dash.data('days').data;
+    var box = clear($('fg-days'));
+    var byDate = d3.group(days, function (d) { return d.date; });
+    var today = todayUTC();
+    var shown = 0;
+    byDate.forEach(function (items, date) {
+      var d0 = items[0];
+      if (!cityMatch(d0.city)) return;
+      if (S.stopDates && S.stopDates.indexOf(d0.day) < 0) return;
+      shown++;
+      var dt = parseDay(date);
+      var isToday = +dt === +today;
+      var card = h('article', { class: 'fg-day' + (isToday ? ' today' : ''), id: 'day-' + date, style: '--city:' + cityColor(d0.city) },
+        h('div', { class: 'fg-date' },
+          h('span', { class: 'n', text: String(dt.getUTCDate()) }),
+          h('span', { class: 'm', text: WDN[dt.getUTCDay()].slice(0, 3) + ' · ' + MON[dt.getUTCMonth()] }),
+          h('span', { class: 'city', text: d0.city })),
+        h('div', null,
+          h('div', { class: 'fg-dayhead' },
+            h('span', { class: 'kind', text: (isToday ? 'Today · ' : '') + (d0.plan_kind || '') }),
+            h('span', { class: 'title', text: d0.plan_title })),
+          h('div', { class: 'fg-meals' }, items.map(function (m) {
+            var g = GLYPH[m.slot] || ['食', m.slot];
+            return h('div', { class: 'fg-meal' },
+              h('div', { class: 'fg-glyph', title: m.slot, 'aria-hidden': 'true' }, h('span', null, g[0], h('small', { text: g[1] }))),
+              h('div', null,
+                h('div', { class: 'fg-pick' },
+                  h('span', { class: 'name' }, link(m.pick, m.tabelog_url)),
+                  m.tabelog != null ? scorePill(m.tabelog, m.reviews, null) : null,
+                  tierPill(m.tier),
+                  m.check ? h('span', { class: 'fg-pill warn', text: m.check }) : null),
+                h('p', { class: 'fg-line', text: m.why }),
+                h('p', { class: 'fg-line her' }, h('b', { text: 'For Fernanda: ' }), m.fernanda),
+                h('p', { class: 'fg-line' }, h('b', { text: 'How: ' }), m.how)));
+          }))));
+      box.appendChild(card);
+    });
+    if (!shown) box.appendChild(h('p', { class: 'fg-empty', text: 'No days in this city on the route.' }));
+  }
+
+  function renderBook() {
+    var dl = dash.data('deadlines').data.slice().sort(function (a, b) { return a.date < b.date ? -1 : 1; });
+    var ol = clear($('fg-deadlines'));
+    dl.forEach(function (x) {
+      var n = daysUntil(x.date);
+      var state = n < 0 ? ['Passed: check it’s booked', 't-no'] : n <= 7 ? ['In ' + n + ' day' + (n === 1 ? '' : 's'), 't-effort'] : ['In ' + n + ' days', ''];
+      ol.appendChild(h('li', null,
+        h('div', { class: 'when' }, h('b', { text: x.day }), h('span', { class: 'fg-pill ' + state[1], text: state[0] })),
+        h('div', null, h('div', { text: x.item }),
+          h('p', { class: 'fg-small' }, h('b', { text: 'How: ' }), x.how || '—', x.corrected ? '  · corrected from the app data' : ''))));
+    });
+
+    var seen = {};
+    var tables = dash.data('days').data.filter(function (m) {
+      if (!m.place_id || seen[m.place_id + m.date]) return false;
+      if (['Walk-in or queue', 'Takeaway', ''].indexOf(m.tier) >= 0) return false;
+      if (!cityMatch(m.city)) return false;
+      seen[m.place_id + m.date] = 1;
+      return /book/i.test(m.how);
+    });
+    var t = clear($('fg-tables'));
+    tables.forEach(function (m) {
+      t.appendChild(h('li', null,
+        h('div', { class: 'when' }, h('b', { text: m.day }), h('span', { text: m.slot })),
+        h('div', null,
+          h('div', { class: 'fg-pick' }, h('span', { class: 'name' }, link(m.pick, m.tabelog_url)), tierPill(m.tier)),
+          h('p', { class: 'fg-small', text: m.how }))));
+    });
+    if (!tables.length) t.appendChild(h('li', null, h('span', { class: 'fg-empty', text: 'Nothing to book here.' })));
+
+    var nope = clear($('fg-nope'));
+    dash.data('places').data.filter(function (p) {
+      return (p.tier === "Don't bother" || p.tier === 'Very hard: try once') && p.on_route && cityMatch(p.city);
+    }).forEach(function (p) { nope.appendChild(placeCard(p, true)); });
+  }
+
+  function placeCard(p, brief) {
+    var crit = [];
+    try { crit = JSON.parse(p.critic_notes || '[]'); } catch (e) { crit = []; }
+    var tags = (p.tags || '').split(' | ').filter(Boolean);
+    return h('article', { class: 'fg-card', style: '--city:' + cityColor(p.city) },
+      h('div', { class: 'fg-row' }, h('span', { class: 'fg-small', text: p.city + (p.area ? ' · ' + p.area.replace(p.city + ' · ', '') : '') })),
+      h('h3', null, link(p.name, p.tabelog_url)),
+      p.name_ja ? h('span', { class: 'fg-ja', text: p.name_ja + ' · ' + p.genre }) : h('span', { class: 'fg-ja', text: p.genre }),
+      h('div', { class: 'fg-row' }, scorePill(p.tabelog, p.reviews, p.tabelog_url), tierPill(p.tier), pregPill(p.pregnancy)),
+      brief ? h('p', { class: 'fg-why', text: p.tier_note || p.why }) : h('p', { class: 'fg-why', text: p.why }),
+      !brief && tags.length ? h('div', { class: 'fg-row' }, tags.map(function (x) { return h('span', { class: 'fg-tag', text: x }); })) : null,
+      !brief ? h('p', { class: 'fg-small' }, h('b', { text: p.meals.replace(/ \| /g, ' · ') }), ' · ' + p.style + (p.price ? ' · ' + p.price : '')) : null,
+      !brief && p.awards ? h('p', { class: 'fg-small', text: p.awards }) : null,
+      !brief && p.order ? h('p', { class: 'fg-small' }, h('b', { text: 'Order: ' }), p.order) : null,
+      !brief && p.pregnancy_note ? h('p', { class: 'fg-small' }, h('b', { text: 'For Fernanda: ' }), p.pregnancy_note) : null,
+      !brief && p.group ? h('p', { class: 'fg-small' }, h('b', { text: 'For seven: ' }), p.group) : null,
+      !brief ? h('p', { class: 'fg-small' }, h('b', { text: 'Open on our dates: ' }), p.open_on || '—', p.hours_to_confirm ? ' (holiday hours to confirm)' : '') : null,
+      !brief && (p.booking || p.booking_channel) ? h('p', { class: 'fg-small' }, h('b', { text: 'Book: ' }), p.booking || p.booking_channel) : null,
+      !brief && crit.length ? h('p', { class: 'fg-small' }, h('b', { text: 'Critics: ' }), crit.map(function (c, i) {
+        return h('span', null, i ? '; ' : '', c.url ? h('a', { href: c.url, target: '_blank', rel: 'noopener', text: c.who }) : c.who);
+      })) : null);
+  }
+
+  function fillSelect(id, values) {
+    var el = $(id), keep = el.value, first = el.options[0];
+    clear(el); el.appendChild(first);
+    values.forEach(function (v) { el.appendChild(h('option', { value: v, text: v })); });
+    if (values.indexOf(keep) >= 0) el.value = keep;
+  }
+  function uniq(rows, key, split) {
+    var s = {};
+    rows.forEach(function (r) { (split ? (r[key] || '').split(' | ') : [r[key]]).forEach(function (v) { if (v) s[v] = 1; }); });
+    return Object.keys(s).sort();
+  }
+
+  function renderFind() {
+    var P = dash.data('places').data;
+    var f = { meal: $('f-meal').value, kind: $('f-kind').value, style: $('f-style').value, tag: $('f-tag').value,
+      tier: $('f-tier').value, critic: $('f-critic').value, preg: $('f-preg').value, q: $('f-q').value.trim().toLowerCase(), open: $('f-open').checked, sort: $('f-sort').value };
+    var rows = P.filter(function (p) {
+      if (!cityMatch(p.city)) return false;
+      if (f.open && !(p.on_route && (p.open_count > 0))) return false;
+      if (f.meal && p.meals.split(' | ').indexOf(f.meal) < 0) return false;
+      if (f.kind && p.kind !== f.kind) return false;
+      if (f.style && p.style !== f.style) return false;
+      if (f.tag && (p.tags || '').split(' | ').indexOf(f.tag) < 0) return false;
+      if (f.tier && p.tier !== f.tier) return false;
+      if (f.critic && (p.critics || '').split(' | ').indexOf(f.critic) < 0) return false;
+      if (f.preg && p.pregnancy !== f.preg) return false;
+      if (f.q && [p.name, p.name_ja, p.area, p.genre, p.why, p.order, p.critics].join(' ').toLowerCase().indexOf(f.q) < 0) return false;
+      return true;
+    });
+    rows.sort(function (a, b) {
+      if (f.sort === 'name') return a.name.localeCompare(b.name);
+      if (f.sort === 'city') return a.city_order - b.city_order || (b.tabelog || 0) - (a.tabelog || 0);
+      return (b.tabelog || 0) - (a.tabelog || 0);
+    });
+    $('f-count').textContent = rows.length + ' of ' + P.length + ' places' + (f.open ? ', open on our dates' : '') + '.';
+    var g = clear($('fg-places'));
+    rows.forEach(function (p) { g.appendChild(placeCard(p, false)); });
+    if (!rows.length) g.appendChild(h('p', { class: 'fg-empty', text: 'Nothing matches. Loosen a filter, or untick “Open on our dates”.' }));
+  }
+
+  function renderDishes() {
+    var g = clear($('fg-dishes'));
+    dash.data('dishes').data.filter(function (d) { return d.on_route && cityMatch(d.city); })
+      .sort(function (a, b) { return a.city_order - b.city_order || (b.must - a.must); })
+      .forEach(function (d) {
+        g.appendChild(h('article', { class: 'fg-card', style: '--city:' + cityColor(d.city) },
+          h('div', { class: 'fg-row' }, h('span', { class: 'fg-small', text: d.city }), d.must ? h('span', { class: 'fg-tag', text: 'Must try' }) : null),
+          h('h3', { text: d.name }),
+          h('span', { class: 'fg-ja', text: [d.name_ja, d.romaji].filter(Boolean).join(' · ') }),
+          h('p', { class: 'fg-why', text: d.what }),
+          d.where ? h('p', { class: 'fg-small' }, h('b', { text: 'Where: ' }), d.where) : null,
+          d.price ? h('p', { class: 'fg-small' }, h('b', { text: 'Price: ' }), d.price) : null,
+          h('div', { class: 'fg-row' }, pregPill(d.pregnancy)),
+          d.pregnancy_note ? h('p', { class: 'fg-small', text: d.pregnancy_note }) : null));
+      });
+  }
+
+  function renderAreas() {
+    var g = clear($('fg-areas'));
+    dash.data('areas').data.filter(function (a) { return a.on_route && cityMatch(a.city); })
+      .sort(function (a, b) { return a.city_order - b.city_order; })
+      .forEach(function (a) {
+        var eat = (a.eat || '').split(' | ').filter(Boolean);
+        var tips = (a.tips || '').split(' | ').filter(Boolean);
+        g.appendChild(h('article', { class: 'fg-card', style: '--city:' + cityColor(a.city) },
+          h('div', { class: 'fg-row' }, h('span', { class: 'fg-small', text: a.city }), a.kind ? h('span', { class: 'fg-tag', text: a.kind }) : null),
+          h('h3', { text: a.name }),
+          a.name_ja ? h('span', { class: 'fg-ja', text: a.name_ja }) : null,
+          h('p', { class: 'fg-why', text: a.glance || a.story }),
+          eat.length ? h('div', null, h('p', { class: 'fg-small' }, h('b', { text: 'Eat here' })), h('ul', { class: 'fg-bullets' }, eat.map(function (x) { return h('li', { text: x }); }))) : null,
+          tips.length ? h('div', null, h('p', { class: 'fg-small' }, h('b', { text: 'Tips' })), h('ul', { class: 'fg-bullets' }, tips.map(function (x) { return h('li', { text: x }); }))) : null,
+          a.dec_jan ? h('p', { class: 'fg-small' }, h('b', { text: 'Our dates: ' }), a.dec_jan) : null));
+      });
+  }
+
+  function knowItem(k) {
+    return h('div', null,
+      k.name ? h('div', { class: 'fg-pick' }, h('span', { class: 'name', text: k.name }), k.name_ja ? h('span', { class: 'fg-ja', text: k.name_ja }) : null) : null,
+      k.what ? h('p', { class: 'fg-line', style: 'color: var(--color-fg)', text: k.what }) : null,
+      k.where ? h('p', { class: 'fg-line' }, h('b', { text: 'Where: ' }), k.where) : null,
+      k.price ? h('p', { class: 'fg-line' }, h('b', { text: 'Price: ' }), k.price) : null,
+      k.tip ? h('p', { class: 'fg-line' }, h('b', { text: 'Tip: ' }), k.tip) : null);
+  }
+  function renderSections(container, rows, openFirst) {
+    var bySec = d3.group(rows, function (k) { return k.section; });
+    var i = 0;
+    bySec.forEach(function (items, sec) {
+      container.appendChild(h('details', { class: 'fg-acc', open: openFirst && i === 0 },
+        h('summary', { text: sec }),
+        h('div', { class: 'fg-acc-body' }, items.map(knowItem))));
+      i++;
+    });
+  }
+
+  function renderShops() {
+    var g = clear($('fg-shops'));
+    dash.data('shops').data.filter(function (s) { return s.on_route && cityMatch(s.city); })
+      .sort(function (a, b) { return a.city_order - b.city_order; })
+      .forEach(function (s) {
+        g.appendChild(h('article', { class: 'fg-card', style: '--city:' + cityColor(s.city) },
+          h('span', { class: 'fg-small', text: s.city }),
+          h('h3', { text: s.name }),
+          s.name_ja ? h('span', { class: 'fg-ja', text: s.name_ja }) : null,
+          h('p', { class: 'fg-why', text: s.what }),
+          s.buy ? h('p', { class: 'fg-small' }, h('b', { text: 'Buy: ' }), s.buy) : null,
+          s.dec_jan ? h('p', { class: 'fg-small' }, h('b', { text: 'Our dates: ' }), s.dec_jan) : null));
+      });
+    var depa = clear($('fg-depa'));
+    var want = /store by store|Kanazawa|Bentō and sōzai|Sweets worth|New Year|Where to eat|Budget/;
+    renderSections(depa, dash.data('knowhow').data.filter(function (k) {
+      if (k.topic !== 'Depachika' || !want.test(k.section)) return false;
+      if (/Osaka/.test(k.section)) return false;
+      if (S.city && /store by store|Kanazawa/.test(k.section) && k.section.indexOf(S.city) < 0) return false;
+      return true;
+    }), true);
+  }
+
+  function renderKnow() {
+    var K = dash.data('knowhow').data;
+    var topics = uniq(K, 'topic');
+    var order = ['For Fernanda', 'How we eat', 'Konbini', 'Ekiben & stations', 'Depachika', 'Manners', 'Calendar & New Year'];
+    topics.sort(function (a, b) { return order.indexOf(a) - order.indexOf(b); });
+    var bar = clear($('fg-topics'));
+    topics.forEach(function (t) {
+      bar.appendChild(h('button', { class: 'fg-chip', 'aria-pressed': S.topic === t ? 'true' : 'false',
+        onclick: function () { S.topic = t; renderKnow(); } , text: t }));
+    });
+    var box = clear($('fg-know'));
+    renderSections(box, K.filter(function (k) { return k.topic === S.topic; }), true);
+  }
+
+  function renderSolo() {
+    var rows = dash.data('solo').data;
+    var near = $('solo-near').checked;
+    var box = clear($('fg-solo'));
+    var byDay = d3.group(rows, function (r) { return r.date + '|' + r.meal; });
+    byDay.forEach(function (list, key) {
+      var shown = list.filter(function (r) { return !near || r.distance_order <= 1; });
+      var picks = shown.filter(function (r) { return r.pick; });
+      var rest = shown.filter(function (r) { return !r.pick; });
+      var d0 = list[0];
+      var dt = parseDay(d0.date);
+      function line(r, big) {
+        return h('div', { class: 'fg-meal' },
+          h('div', { class: 'fg-glyph', 'aria-hidden': 'true' }, h('span', null, r.meal === 'Lunch' ? '昼' : '夜', h('small', { text: r.pick === 'Top pick' ? 'Top' : (r.pick ? r.pick.replace('Option ', '#') : '') }))),
+          h('div', null,
+            h('div', { class: 'fg-pick' },
+              h('span', { class: 'name', style: big ? 'font-size: var(--cds-font-size-heading)' : null }, link(r.name, r.tabelog_url)),
+              r.name_ja ? h('span', { class: 'fg-ja', text: r.name_ja }) : null,
+              scorePill(r.tabelog, r.reviews, null),
+              h('span', { class: 'fg-pill ' + (r.distance_order <= 1 ? 't-easy' : r.distance_order === 2 ? '' : 't-effort'), text: r.distance })),
+            h('p', { class: 'fg-line' }, h('b', { text: r.genre }), r.area ? ' · ' + r.area : '', r.price ? ' · ' + r.price : ''),
+            r.note ? h('p', { class: 'fg-line', text: r.note }) : null,
+            r.booking ? h('p', { class: 'fg-line' }, h('b', { text: 'Book: ' }), r.booking) : null));
+      }
+      box.appendChild(h('article', { class: 'fg-day', style: '--city:' + cityColor('Tokyo') },
+        h('div', { class: 'fg-date' },
+          h('span', { class: 'n', text: String(dt.getUTCDate()) }),
+          h('span', { class: 'm', text: WDN[dt.getUTCDay()].slice(0, 3) + ' · ' + MON[dt.getUTCMonth()] }),
+          h('span', { class: 'city', text: d0.meal })),
+        h('div', null,
+          h('div', { class: 'fg-meals' },
+            picks.length ? picks.map(function (r, i) { return line(r, i === 0); }) : h('p', { class: 'fg-empty', text: 'No ranked pick this close to Shibuya: untick the filter.' })),
+          rest.length ? h('details', { class: 'fg-acc' },
+            h('summary', { text: 'Also open that ' + (d0.meal === 'Lunch' ? 'lunchtime' : 'evening') + ' (' + rest.length + ')' }),
+            h('div', { class: 'fg-acc-body' }, rest.map(function (r) { return line(r, false); }))) : null)));
+    });
+  }
+
+  function showTab(tab, fromLink) {
+    S.tab = tab;
+    document.querySelectorAll('#dash-root .fg-tab').forEach(function (b) { b.setAttribute('aria-selected', b.getAttribute('data-tab') === tab ? 'true' : 'false'); });
+    document.querySelectorAll('#dash-root [data-panel]').forEach(function (p) { p.hidden = p.getAttribute('data-panel') !== tab; });
+    if (!fromLink) dash.setLink('t-' + tab);
+  }
+
+  function renderAll() {
+    var sum = dash.data('summary').data;
+    renderHead(sum && sum[0] ? sum[0] : { days: '—', picks: '—', places: '—', scored: '—' }, dash.data('deadlines').data);
+    renderRoute(dash.data('days').data);
+    renderDays(); renderSolo(); renderBook(); renderFind(); renderDishes(); renderAreas(); renderShops(); renderKnow();
+  }
+
+  function setup() {
+    var P = dash.data('places').data;
+    var cities = CITY_ORDER.filter(function (c) { return P.some(function (p) { return p.city === c && p.on_route; }); });
+    fillSelect('fg-city', cities);
+    fillSelect('f-meal', ['Breakfast', 'Lunch', 'Dinner', 'Snack']);
+    fillSelect('f-kind', uniq(P, 'kind'));
+    fillSelect('f-style', ['Casual', 'Mid-range', 'Fancy', 'Price unverified']);
+    fillSelect('f-tag', uniq(P, 'tags', true));
+    fillSelect('f-critic', uniq(P, 'critics', true));
+    fillSelect('f-tier', ['Easy for seven', 'Doable with effort', 'Split the group', 'Walk-in or queue', 'Takeaway', 'Very hard: try once', "Don't bother", 'Group fit unverified']);
+    document.querySelectorAll('#dash-root .fg-tab').forEach(function (b) { b.addEventListener('click', function () { showTab(b.getAttribute('data-tab')); }); });
+    $('fg-city').addEventListener('change', function () { S.city = this.value; S.stop = ''; S.stopDates = null; renderAll(); });
+    ['f-meal', 'f-kind', 'f-style', 'f-tag', 'f-tier', 'f-critic', 'f-preg', 'f-sort', 'f-open'].forEach(function (id) { $(id).addEventListener('change', renderFind); });
+    $('f-q').addEventListener('input', renderFind);
+    $('solo-near').addEventListener('change', renderSolo);
+    var named = location.hash.slice(1);
+    var tabFromLink = named && named.indexOf('t-') === 0 ? named.slice(2) : '';
+    showTab(document.querySelector('#dash-root [data-panel="' + tabFromLink + '"]') ? tabFromLink : 'days', true);
+    S.ready = true;
+  }
+
+  dash.onData(function () {
+    var ids = ['days', 'solo', 'places', 'deadlines', 'dishes', 'areas', 'shops', 'knowhow'];
+    var states = ids.map(function (id) { return dash.data(id).status; });
+    if (states.some(function (s) { return s === 'error' || s === 'connect'; })) {
+      $('fg-take').textContent = 'Part of the guide didn’t load. Open Sources to see which.';
+      return;
+    }
+    if (states.some(function (s) { return s !== 'ok'; })) return;
+    if (!S.ready) setup();
+    renderAll();
+    var todayCard = document.getElementById('day-' + todayUTC().toISOString().slice(0, 10));
+    if (todayCard && !S.scrolled && S.tab === 'days') { S.scrolled = true; todayCard.scrollIntoView({ block: 'start' }); }
+  });
+})();
+</script>
