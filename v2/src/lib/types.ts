@@ -305,6 +305,8 @@ export interface Snapshot {
   tokyo_pins: Record<string, number>;
   /** The family's tips (city pages): one place each, kept in drops and drop_places. */
   tips: Tip[];
+  /** City pages: the meal picked for each day, lunch and dinner, by pin id (settings key "city_meals"). */
+  meals: Record<string, { lunch?: string; dinner?: string }>;
   /** Where the data came from, so the UI can say so. */
   source: "supabase" | "file";
 }

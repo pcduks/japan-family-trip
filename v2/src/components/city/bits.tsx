@@ -1,6 +1,6 @@
 "use client";
 
-import { LAYER_HEX, LAYER_INK, LAYER_LABEL, type Layer, type Pin } from "@/lib/city";
+import { LAYER_HEX, LAYER_INK, LAYER_LABEL, LAYER_ON_INK, type Layer, type Pin } from "@/lib/city";
 import { CAT_LABEL } from "@/lib/tokyo";
 import { CatIcon } from "../tokyo/CatIcon";
 import { photoSrc } from "./usePins";
@@ -45,6 +45,25 @@ export function layerHex(layer: Layer, theme: "light" | "dark"): string {
   return LAYER_HEX[theme][layer];
 }
 
+/** A layer toggle for the map's corner: its dot and name, filled when on, hollow when off. */
+export function LayerToggle({ layer, on, onClick, theme }: { layer: Layer; on: boolean; onClick: () => void; theme: "light" | "dark" }) {
+  const ink = LAYER_HEX[theme][layer];
+  return (
+    <button
+      type="button"
+      aria-pressed={on}
+      onClick={onClick}
+      title={on ? `Hide ${LAYER_LABEL[layer]}` : `Show ${LAYER_LABEL[layer]}`}
+      className="pointer-events-auto inline-flex h-9 items-center gap-1 rounded-full border px-2 text-[0.72rem] font-bold whitespace-nowrap shadow-sm transition-colors"
+      style={on ? { background: ink, borderColor: ink, color: LAYER_ON_INK[theme] } : { background: "color-mix(in srgb, var(--card) 92%, transparent)", borderColor: ink, color: "var(--ink)" }}
+    >
+      <span aria-hidden="true" className="inline-block size-2.5 rounded-full" style={on ? { background: LAYER_ON_INK[theme] } : { border: `2px solid ${ink}` }} />
+      {SHORT_LABEL[layer]}
+    </button>
+  );
+}
+const SHORT_LABEL: Record<Layer, string> = { plan: "Plan", walk: "Walks", guide: "Food", ours: "Family" };
+
 export function Segmented<T extends string>({ value, options, onChange, label }: { value: T; options: { id: T; label: string }[]; onChange: (v: T) => void; label: string }) {
   return (
     <div role="tablist" aria-label={label} className="grid auto-cols-fr grid-flow-col rounded-full bg-bg-2 p-1">
@@ -71,8 +90,8 @@ export function PinTile({ pin, photo, saved, onOpen, line, size = "md" }: { pin:
         </span>
       )}
       <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent px-2 pt-8 pb-2 text-white">
-        <span className={`block leading-tight font-semibold ${size === "sm" ? "text-[0.78rem]" : "text-[0.9rem]"} line-clamp-2`}>{pin.name}</span>
-        {text ? <span className="mt-0.5 block truncate text-[0.68rem] opacity-85">{text}</span> : null}
+        <span className={`block leading-tight font-semibold ${size === "sm" ? "text-[0.82rem]" : "text-[0.95rem]"} line-clamp-2`}>{pin.name}</span>
+        {text ? <span className={`mt-0.5 block truncate ${size === "sm" ? "text-[0.7rem]" : "text-[0.76rem]"} opacity-85`}>{text}</span> : null}
       </span>
       <span className="absolute top-1.5 left-1.5 grid size-6 place-items-center rounded-full border-2 border-white/90 text-white shadow" style={{ background: LAYER_INK[pin.layer] }} aria-hidden="true">
         <CatIcon cat={pin.cat} size={12} />

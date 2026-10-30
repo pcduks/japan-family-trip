@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { fileSnapshot } from "./data/loader";
-import { allPins, catFromText, cityAreas, cityDays, cityStays, cleanTip, fitOf, guidePins, heartsByTarget, isInstagramUrl, isMapsUrl, nameFromMapsUrl, ourPins, parseSavedCsv, planPins, savedBy, targetOf, tipFromRow, walkPins, whenOf, type Tip } from "./city";
+import { allPins, catFromText, cityAreas, cityDays, cityStays, cleanTip, fitOf, guidePins, heartsByTarget, isInstagramUrl, isMapsUrl, mealSuggestions, mealsFromSetting, nameFromMapsUrl, ourPins, parseSavedCsv, planPins, savedBy, targetOf, tipFromRow, walkPins, whenOf, withMeal, type Tip } from "./city";
 
 const snap = fileSnapshot();
 
@@ -126,5 +126,29 @@ describe("tips in and out", () => {
       { title: "Bar Benfiddich", note: "Herbal cocktails, book", url: "https://www.google.com/maps/place/Bar+Benfiddich/data=x" },
       { title: "Kakimori", note: "ink", url: "https://maps.app.goo.gl/q" },
     ]);
+  });
+});
+
+describe("meals", () => {
+  it("reads and writes the picks setting", () => {
+    expect(mealsFromSetting(null)).toEqual({});
+    expect(mealsFromSetting({ picks: { "2026-12-22": { lunch: "guide:tokyo/x", dinner: 3, tea: "y" }, bad: { lunch: "z" } } })).toEqual({ "2026-12-22": { lunch: "guide:tokyo/x" } });
+    const m = withMeal({}, "2026-12-22", "dinner", "tip:1");
+    expect(m).toEqual({ "2026-12-22": { dinner: "tip:1" } });
+    expect(withMeal(m, "2026-12-22", "dinner", null)).toEqual({});
+  });
+  it("suggests guide places that are open that day and serve that meal, nearest first, and knows what the guide knows", () => {
+    const guide = guidePins("tokyo");
+    const mikawa = guide.find((p) => p.name === "Mikawa Zezankyo")!;
+    expect(mikawa.food?.closed_weekdays).toEqual(["Wed"]);
+    expect(mikawa.food?.seven).toBe("counter");
+    const fits = guide.filter((p) => p.cat === "food").slice(0, 12).map((pin, i) => ({ pin, km: 0.1 * (i + 1), near: "Senso-ji" }));
+    const wed = mealSuggestions("2026-12-23", fits, "dinner", 20);
+    expect(wed.some((m) => m.pin.name === "Mikawa Zezankyo")).toBe(false);
+    const tue = mealSuggestions("2026-12-22", fits, "dinner", 20);
+    expect(tue.map((m) => m.km)).toEqual([...tue.map((m) => m.km)].sort((a, b) => a - b));
+    expect(mealSuggestions("2026-12-22", fits, "lunch", 2).length).toBeLessThanOrEqual(2);
+    const sushiArai = guide.find((p) => p.name === "Sushi Arai");
+    expect(sushiArai?.food?.deadline?.date).toBe("2026-10-18");
   });
 });

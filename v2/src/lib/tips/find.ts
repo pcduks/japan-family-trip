@@ -63,7 +63,8 @@ export async function findTips(input: FindInput): Promise<FindResult> {
   const where = cityName(input.city);
   const text = (input.text ?? "").trim();
   if (input.lines?.length) return fromLines(input.lines, bias, where);
-  const urls = [...new Set(text.match(URL_RE) ?? [])];
+  // Three links at most, and only public web hosts: this server fetches them.
+  const urls = [...new Set(text.match(URL_RE) ?? [])].filter(publicUrl).slice(0, 3);
   const rest = text.replace(URL_RE, " ").replace(/[ \t]+/g, " ").trim();
   const hints: string[] = [];
   const guesses: Guess[] = [];
@@ -175,15 +176,45 @@ async function fromLines(lines: NonNullable<FindInput["lines"]>, bias: ReturnTyp
 
 /* --------------------------------------------------------------- links */
 
+/** Only http(s) links to public hosts leave this server: no IP literals, localhost, private names or metadata endpoints. */
+export function publicUrl(url: string): boolean {
+  try {
+    const u = new URL(url);
+    if (u.protocol !== "https:" && u.protocol !== "http:") return false;
+    const h = u.hostname.toLowerCase();
+    if (!h.includes(".") || /^\[|^\d+\.\d+\.\d+\.\d+$/.test(h)) return false;
+    if (/(^|\.)(localhost|local|internal|lan|home|corp|arpa)$/.test(h) || /metadata|169\.254/.test(h)) return false;
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 async function expand(url: string): Promise<string> {
   let u = url;
   for (let i = 0; i < 5; i++) {
+    if (!publicUrl(u)) return url;
     const res = await fetch(u, { method: "GET", redirect: "manual", headers: { "User-Agent": UA }, signal: AbortSignal.timeout(6000) }).catch(() => null);
     const loc = res?.headers.get("location");
     if (!res || !loc || res.status < 300 || res.status >= 400) return u;
     u = new URL(loc, u).toString();
   }
   return u;
+}
+
+/** The first bytes of a page's body, without reading the whole thing. */
+async function readSome(res: Response, max = 200_000): Promise<string> {
+  const reader = res.body?.getReader();
+  if (!reader) return "";
+  const dec = new TextDecoder();
+  let out = "";
+  while (out.length < max) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    out += dec.decode(value, { stream: true });
+  }
+  reader.cancel().catch(() => undefined);
+  return out.slice(0, max);
 }
 
 async function fromMapsUrl(url: string): Promise<{ guess: Guess | null; hit: SpotHit | null }> {
@@ -223,9 +254,9 @@ function decodeEntities(s: string): string {
 /** An Instagram post's caption from its page metadata, when Instagram serves it without a login. */
 async function instagramCaption(url: string): Promise<string | null> {
   try {
-    const res = await fetch(url.split("?")[0], { headers: { "User-Agent": UA, Accept: "text/html" }, signal: AbortSignal.timeout(7000), cache: "no-store" });
+    const res = await fetch(url.split("?")[0], { headers: { "User-Agent": UA, Accept: "text/html" }, signal: AbortSignal.timeout(7000), cache: "no-store", redirect: "manual" });
     if (!res.ok) return null;
-    const html = await res.text();
+    const html = await readSome(res);
     const parts = [meta(html, "og:title"), meta(html, "og:description"), meta(html, "description")].filter((x): x is string => !!x && x.length > 12);
     const joined = [...new Set(parts)].join("\n");
     return /log in|login/i.test(joined) && joined.length < 80 ? null : joined || null;
@@ -236,9 +267,10 @@ async function instagramCaption(url: string): Promise<string | null> {
 
 async function pageMeta(url: string): Promise<string | null> {
   try {
-    const res = await fetch(url, { headers: { "User-Agent": UA, Accept: "text/html" }, signal: AbortSignal.timeout(7000), cache: "no-store" });
+    if (!publicUrl(url)) return null;
+    const res = await fetch(url, { headers: { "User-Agent": UA, Accept: "text/html" }, signal: AbortSignal.timeout(7000), cache: "no-store", redirect: "manual" });
     if (!res.ok) return null;
-    const html = (await res.text()).slice(0, 200_000);
+    const html = await readSome(res);
     const title = meta(html, "og:title") ?? html.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1] ?? null;
     const desc = meta(html, "og:description") ?? meta(html, "description");
     return [title, desc].filter(Boolean).join("\n") || null;

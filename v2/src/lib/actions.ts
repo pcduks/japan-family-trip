@@ -6,7 +6,7 @@ import "server-only";
  */
 import type { DB } from "./supabase/types";
 import type { Comment, Reaction, Stay, SuggestionDiff, TipExtracted, Version, VoteKind } from "./types";
-import { cleanTip } from "./city";
+import { MEALS_KEY, MEAL_SLOTS, cleanTip, isCat, mealsFromSetting, withMeal, type MealSlot } from "./city";
 import { foodDeadline } from "./food";
 import type { Viewer } from "./supabase/server";
 import { describeDiff } from "./versions";
@@ -233,20 +233,39 @@ export async function runAction(sb: DB, me: Viewer, action: string, p: Record<st
       const drop = Array.isArray(row.drops) ? row.drops[0] : row.drops;
       if (me.role !== "planner" && drop?.author_id !== me.travellerId) throw new ActionError("Only whoever added a tip, or a planner, can change it", 403);
       if (action === "deleteTip") {
+        if ((row.extracted as Record<string, unknown>).kind !== "tip") throw new ActionError("That drop is not a tip", 400);
         fail(await sb.from("drop_places").delete().eq("id", id), "drop_places");
         return;
       }
       const cur = row.extracted as Record<string, unknown>;
+      if (cur.kind !== "tip") throw new ActionError("That drop is not a tip", 400);
       const next = { ...cur };
       if ("note" in p) next.note = typeof p.note === "string" && p.note.trim() ? p.note.trim().slice(0, 500) : null;
-      if ("cat" in p && typeof p.cat === "string") next.cat = p.cat.slice(0, 20);
+      if ("cat" in p) {
+        if (!isCat(p.cat)) throw new ActionError("Unknown type");
+        next.cat = p.cat;
+      }
       if ("planned_for" in p) {
         const d = p.planned_for;
         if (d != null && !(typeof d === "string" && /^\d{4}-\d{2}-\d{2}$/.test(d))) throw new ActionError("A date is required");
         next.planned_for = d ?? null;
       }
-      if ("city" in p && typeof p.city === "string" && /^[a-z0-9-]{2,40}$/.test(p.city)) next.city = p.city;
+      if ("city" in p) {
+        if (typeof p.city !== "string" || !regions.some((r) => r.id === p.city)) throw new ActionError("Unknown city");
+        next.city = p.city;
+      }
       fail(await sb.from("drop_places").update({ extracted: next }).eq("id", id), "drop_places");
+      return;
+    }
+    case "setMeal": {
+      const date = String(p.date ?? "");
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) throw new ActionError("A date is required");
+      const slot = p.slot as MealSlot;
+      if (!MEAL_SLOTS.includes(slot)) throw new ActionError("Lunch or dinner");
+      const pin = p.pin == null ? null : String(p.pin).slice(0, 200);
+      const { data } = await sb.from("settings").select("value").eq("key", MEALS_KEY).maybeSingle();
+      const picks = withMeal(mealsFromSetting((data as Row | null)?.value), date, slot, pin);
+      fail(await sb.from("settings").upsert({ key: MEALS_KEY, value: { picks }, updated_at: now }, { onConflict: "key" }), "settings");
       return;
     }
     case "toggleReaction": {

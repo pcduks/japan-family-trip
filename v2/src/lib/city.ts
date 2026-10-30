@@ -8,21 +8,33 @@
 import cityAreasData from "../../data/city-areas.json";
 import neighbourhoods from "../../data/neighbourhoods.json";
 import { planDays, type PlannedDay } from "./days";
-import { DEEP_CITIES, type DeepCity } from "./foodDeep";
-import { citiesFor } from "./foodView";
+import { FOOD_DEADLINES, slug as foodSlug } from "./food";
+import { DEEP_CITIES, type Channel, type DeepCity, type Meal, type Pregnancy, type Seven, type Weekday } from "./foodDeep";
+import { citiesFor, openOn, type Open } from "./foodView";
 import { HOODS, WALKS, distanceKm, type Hood, type Spot, type SpotCat } from "./tokyo";
-import type { Comment, FoodListItem, Place, Reaction, Snapshot, Tip, TipExtracted, TipSource, Version } from "./types";
+import type { Comment, Deadline, FoodListItem, Place, Reaction, Snapshot, Tip, TipExtracted, TipSource, Version } from "./types";
 
 export type Layer = "plan" | "walk" | "guide" | "ours";
 export type When = "morning" | "afternoon" | "evening" | "any";
 
-export const LAYER_LABEL: Record<Layer, string> = { plan: "Plan", walk: "Walks", guide: "Food guide", ours: "Ours" };
-/** Layer inks: CSS for the page, hex per theme for the Google map. */
-export const LAYER_INK: Record<Layer, string> = { plan: "var(--indigo)", walk: "var(--accent)", guide: "#b8731b", ours: "#7048e8" };
+export const LAYER_LABEL: Record<Layer, string> = { plan: "Plan", walk: "Walks", guide: "Food guide", ours: "Family" };
+/** Layer inks: CSS for the page, hex per theme for the Google map. The family is the brand, so its layer takes the shrine red. */
+export const LAYER_INK: Record<Layer, string> = { plan: "var(--indigo)", walk: "var(--pine)", guide: "var(--amber)", ours: "var(--accent)" };
 export const LAYER_HEX: Record<"light" | "dark", Record<Layer, string>> = {
-  light: { plan: "#2a3f6f", walk: "#c8402a", guide: "#b8731b", ours: "#7048e8" },
-  dark: { plan: "#9db4e8", walk: "#ff7a5c", guide: "#f0b25a", ours: "#b197fc" },
+  light: { plan: "#2a3f6f", walk: "#2f7d5b", guide: "#b8731b", ours: "#c8402a" },
+  dark: { plan: "#9db4e8", walk: "#7fd1a3", guide: "#f0b25a", ours: "#ff7a5c" },
 };
+/** Text on a layer's ink, per theme: the dark-mode inks are pastel, so they take dark text. */
+export const LAYER_ON_INK: Record<"light" | "dark", string> = { light: "#fff", dark: "#1a1410" };
+
+/** The circle to search in for a pin: its area when named, else the city. */
+export function biasFor(pin: Pick<Pin, "area" | "layer">, areas: CityArea[], city: { lat: number; lng: number }): { lat: number; lng: number; radiusM: number } {
+  if (pin.area) {
+    const a = areas.find((x) => x.name === pin.area || pin.area!.startsWith(x.name) || x.name.startsWith(pin.area!));
+    if (a) return { lat: a.lat, lng: a.lng, radiusM: pin.layer === "walk" ? 1800 : 2500 };
+  }
+  return { lat: city.lat, lng: city.lng, radiusM: 25000 };
+}
 
 export const WHEN_LABEL: Record<When, string> = { morning: "Morning", afternoon: "Afternoon", evening: "Evening", any: "Any time" };
 
@@ -50,6 +62,22 @@ export interface Pin {
   date?: string | null;
   /** Who added it (tips). */
   author?: string | null;
+  /** What the food guide knows, for the meal slots (guide places only). */
+  food?: PinFood;
+}
+
+/** The food guide's facts a meal pick needs: when it is open, which meal, whether seven fit, how to book. */
+export interface PinFood {
+  meals?: Meal[];
+  closed_weekdays?: Weekday[];
+  closed_dates?: string[];
+  seven?: Seven;
+  pregnancy?: Pregnancy;
+  channel?: Channel;
+  booking?: string;
+  price?: string;
+  /** The booking deadline from data/food-deadlines.json, when there is one. */
+  deadline?: Pick<Deadline, "id" | "date" | "how">;
 }
 
 /* ------------------------------------------------------------- tips */
@@ -233,8 +261,20 @@ export function guidePins(region: string): Pin[] {
   for (const city of citiesFor(region)) {
     const c: DeepCity | undefined = DEEP_CITIES[city];
     if (!c) continue;
-    for (const p of c.places ?? [])
-      out.push({ id: `guide:${city}/${slugify(p.name)}`, layer: "guide", name: p.name, cat: catFromText(p.genre, p.name), query: p.query ?? `${p.name}, ${c.name}, Japan`, line: p.glance ?? firstSentence(p.why), area: shortArea(p.area), ref: { kind: "deep", city, name: p.name } });
+    for (const p of c.places ?? []) {
+      const dl = FOOD_DEADLINES.find((d) => d.place === `${city}/${foodSlug(p.name)}`);
+      out.push({
+        id: `guide:${city}/${slugify(p.name)}`,
+        layer: "guide",
+        name: p.name,
+        cat: catFromText(p.genre, p.name),
+        query: p.query ?? `${p.name}, ${c.name}, Japan`,
+        line: p.glance ?? firstSentence(p.why),
+        area: shortArea(p.area),
+        ref: { kind: "deep", city, name: p.name },
+        food: { meals: p.meals, closed_weekdays: p.closed_weekdays, closed_dates: p.closed_dates, seven: p.seven, pregnancy: p.pregnancy, channel: p.booking_channel, booking: p.booking, price: p.price, deadline: dl ? { id: dl.id, date: dl.date, how: dl.how } : undefined },
+      });
+    }
     for (const s of c.shops ?? [])
       out.push({ id: `shop:${city}/${slugify(s.name)}`, layer: "guide", name: s.name, cat: catFromText("shop", s.what, s.name), query: s.query ?? `${s.name}, ${c.name}, Japan`, line: firstSentence(s.what), area: null, ref: { kind: "shop", city, name: s.name } });
   }
@@ -282,6 +322,76 @@ export function listPin(f: FoodListItem): Pin {
 
 export function allPins(region: string, snap: Snap, tips: Tip[]): Pin[] {
   return [...planPins(region, snap), ...walkPins(region), ...guidePins(region), ...ourPins(region, snap, tips)];
+}
+
+/* ------------------------------------------------------------ meals */
+
+export type MealSlot = "lunch" | "dinner";
+export const MEAL_SLOTS: MealSlot[] = ["lunch", "dinner"];
+export const MEAL_LABEL: Record<MealSlot, string> = { lunch: "Lunch", dinner: "Dinner" };
+
+/** The family's meal picks per day, beside the plan: settings key "city_meals", { picks: { [date]: { lunch?: pinId, dinner?: pinId } } }. */
+export type Meals = Record<string, Partial<Record<MealSlot, string>>>;
+export const MEALS_KEY = "city_meals";
+
+export function mealsFromSetting(value: unknown): Meals {
+  const picks = (value as { picks?: unknown } | null)?.picks;
+  if (!picks || typeof picks !== "object") return {};
+  const out: Meals = {};
+  for (const [date, v] of Object.entries(picks as Record<string, unknown>)) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !v || typeof v !== "object") continue;
+    const day: Partial<Record<MealSlot, string>> = {};
+    for (const slot of MEAL_SLOTS) {
+      const id = (v as Record<string, unknown>)[slot];
+      if (typeof id === "string" && id) day[slot] = id;
+    }
+    if (Object.keys(day).length) out[date] = day;
+  }
+  return out;
+}
+
+export function withMeal(meals: Meals, date: string, slot: MealSlot, pin: string | null): Meals {
+  const day = { ...(meals[date] ?? {}) };
+  if (pin) day[slot] = pin;
+  else delete day[slot];
+  const out = { ...meals };
+  if (Object.keys(day).length) out[date] = day;
+  else delete out[date];
+  return out;
+}
+
+/** Can this pin be a meal? Restaurants and markets; bars for dinner. */
+export function mealFits(pin: Pin, slot: MealSlot): boolean {
+  if (pin.cat === "food" || pin.cat === "market") return true;
+  return slot === "dinner" && pin.cat === "bar";
+}
+
+export interface MealSuggestion {
+  pin: Pin;
+  km: number;
+  near: string;
+  open: Open;
+  /** No booking needed, as far as the guide knows. */
+  walkIn: boolean;
+}
+
+/**
+ * The best places for a meal near what is on a day: from the pins within a
+ * short walk, those the guide says are open that day and serve that meal,
+ * nearest first, places that need no booking first among equals.
+ */
+export function mealSuggestions(date: string, fits: { pin: Pin; km: number; near: string }[], slot: MealSlot, limit = 3): MealSuggestion[] {
+  const out: MealSuggestion[] = [];
+  for (const f of fits) {
+    const p = f.pin;
+    if (!mealFits(p, slot)) continue;
+    if (p.food?.meals && !p.food.meals.includes(slot)) continue;
+    const open: Open = p.food ? openOn(p.food, date) : "check";
+    if (open === "closed") continue;
+    if (p.food?.seven === "no") continue;
+    out.push({ pin: p, km: f.km, near: f.near, open, walkIn: p.food?.channel === "walk-in" || (!p.food?.channel && !p.food?.booking) });
+  }
+  return out.sort((a, b) => a.km - b.km).slice(0, limit);
 }
 
 /* ------------------------------------------------- hearts and notes */

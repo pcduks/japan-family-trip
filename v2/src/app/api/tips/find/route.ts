@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
   if (!/^[a-z0-9-]{2,40}$/.test(city)) return NextResponse.json({ error: "A city is required" }, { status: 400 });
   const text = typeof body?.text === "string" ? body.text.slice(0, 6000) : "";
   const images = (Array.isArray(body?.images) ? body.images : [])
-    .filter((i): i is DropImage => !!i && typeof i === "object" && MEDIA.includes((i as DropImage).mediaType) && typeof (i as DropImage).base64 === "string" && (i as DropImage).base64.length < 8_000_000)
+    .filter((i): i is DropImage => !!i && typeof i === "object" && MEDIA.includes((i as DropImage).mediaType) && typeof (i as DropImage).base64 === "string" && (i as DropImage).base64.length < 3_000_000)
     .slice(0, 4);
   const b = body?.bias as { lat?: unknown; lng?: unknown; radiusM?: unknown } | undefined;
   const bias = b && typeof b.lat === "number" && typeof b.lng === "number" ? { lat: b.lat, lng: b.lng, radiusM: typeof b.radiusM === "number" ? b.radiusM : undefined } : undefined;

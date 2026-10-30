@@ -11,6 +11,7 @@ import { fujiChance, JOURNEY, kanji, legsOf, snowLevel } from "@/lib/journey";
 import { fmtClock, fmtHours, sunTimes } from "@/lib/sun";
 import { planDays } from "@/lib/days";
 import { walkByN } from "@/lib/tokyo";
+import { allPins, MEAL_SLOTS } from "@/lib/city";
 import type { DayItem, Place, Snapshot, Stay, Version } from "@/lib/types";
 import Link from "next/link";
 import { fmtLegHours } from "./JourneyMap";
@@ -71,6 +72,20 @@ export function PictureScroll({ version, onStop }: { version: Version; onStop?: 
   const days = useMemo(() => buildDays(version, snapshot),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [sig, snapshot.days, snapshot.places, snapshot.versions]);
+  /* The meals picked on the city pages, by date: only the regions with a pick are looked through. */
+  const mealNames = useMemo(() => {
+    const out = new Map<string, string[]>();
+    const dates = Object.keys(snapshot.meals);
+    if (!dates.length) return out;
+    const regionOf = new Map(days.map((d) => [d.date, d.region]));
+    const names = new Map<string, string>();
+    for (const r of new Set(dates.map((d) => regionOf.get(d)).filter((x): x is string => !!x))) for (const p of allPins(r, snapshot, snapshot.tips)) names.set(p.id, p.name);
+    for (const date of dates) {
+      const picked = MEAL_SLOTS.map((slot) => snapshot.meals[date]?.[slot]).map((id) => (id ? names.get(id) : undefined)).filter((x): x is string => !!x);
+      if (picked.length) out.set(date, picked);
+    }
+    return out;
+  }, [snapshot, days]);
   const chapters = useMemo(() => {
     const out: { stay: Stay; index: number; start: number; len: number }[] = [];
     version.stays.forEach((stay, index) => {
@@ -170,6 +185,11 @@ export function PictureScroll({ version, onStop }: { version: Version; onStop?: 
               {d.special ? <span className="text-[0.68rem] font-bold text-accent">{d.special}</span> : null}
               <span className={`text-[0.68rem] font-bold tracking-wide uppercase ${/move|fly|arrive/i.test(d.kind) ? "text-indigo" : /easy|free/i.test(d.kind) ? "text-ok" : "text-ink-2"}`}>{d.kind}</span>
               <span className="line-clamp-4 text-[0.78rem] leading-snug text-ink-2">{d.title}</span>
+              {mealNames.get(d.date)?.length ? (
+                <span className="truncate text-[0.7rem] font-semibold text-accent" title="Meals picked on the city page">
+                  {mealNames.get(d.date)!.join(" · ")}
+                </span>
+              ) : null}
               {d.region === "tokyo" && snapshot.tokyo_pins[d.date] != null ? (
                 <span className="truncate text-[0.7rem] font-semibold text-accent" title="Pinned on Tokyo on foot">
                   {snapshot.tokyo_pins[d.date] ? `Walk ${snapshot.tokyo_pins[d.date]}: ${walkByN(snapshot.tokyo_pins[d.date])?.title}` : "Rest day, from Tokyo on foot"}

@@ -173,9 +173,9 @@ function Body({ city, cityName, days, bias, onClose, start }: { city: string; ci
       <div className="grid gap-4 overflow-y-auto px-5 pt-1 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
         <div className="grid gap-0.5">
           <p className="eyebrow" style={{ color: LAYER_INK.ours }}>
-            Ours · {cityName}
+            Family · {cityName}
           </p>
-          <Dialog.Title className="font-display text-[1.7rem] leading-[1.1] font-semibold">{step === "find" ? "Drop a tip" : step === "confirm" ? (rows.length === 1 ? "Is this the one?" : `${rows.length} places found`) : "Added to Ours"}</Dialog.Title>
+          <Dialog.Title className="font-display text-[1.7rem] leading-[1.1] font-semibold">{step === "find" ? "Drop a tip" : step === "confirm" ? (rows.length === 1 ? "Is this the one?" : `${rows.length} places found`) : "Added"}</Dialog.Title>
         </div>
 
         {step === "find" ? (
@@ -258,11 +258,11 @@ function Body({ city, cityName, days, bias, onClose, start }: { city: string; ci
                 <li key={i} className={`grid gap-2 rounded-2xl border p-3 ${r.skip ? "border-dashed border-rule opacity-60" : "border-rule"}`}>
                   <div className="flex items-start justify-between gap-2">
                     <div className="min-w-0">
-                      <p className="truncate font-semibold">{r.candidates[r.pick]?.name ?? r.guess.name}</p>
+                      <p className="truncate font-semibold">{titleCase(r.candidates[r.pick]?.name ?? r.guess.name)}</p>
                       {!r.candidates.length ? <p className="text-xs text-muted">Not found on Google. Skipped unless you keep it.</p> : r.candidates[r.pick]?.name.toLowerCase() !== r.guess.name.toLowerCase() ? <p className="truncate text-xs text-muted">You wrote “{r.guess.name}”</p> : null}
                     </div>
                     <Chip pressed={!r.skip} onClick={() => setRows((cur) => cur.map((x, j) => (j === i ? { ...x, skip: !x.skip } : x)))}>
-                      {r.skip ? "Skipped" : "Adding"}
+                      {r.skip ? "Skip" : "Keep"}
                     </Chip>
                   </div>
                   {r.candidates.length > 1 ? (
@@ -318,7 +318,7 @@ function Body({ city, cityName, days, bias, onClose, start }: { city: string; ci
                 Back
               </button>
               <button type="button" className="btn btn-primary flex-1" disabled={!!busy || !kept} onClick={save}>
-                {busy ?? `Add ${kept} to Ours`}
+                {busy ?? (kept === 1 ? "Add it" : `Add ${kept}`)}
               </button>
             </div>
           </>
@@ -327,7 +327,7 @@ function Body({ city, cityName, days, bias, onClose, start }: { city: string; ci
         {step === "done" ? (
           <>
             <p className="text-ink-2">
-              {added.length === 1 ? <b>{added[0]}</b> : <b>{added.length} places</b>} now sit on the {cityName} map in purple, with where {added.length === 1 ? "it fits" : "they fit"} and when {added.length === 1 ? "it goes" : "they go"}. Tap one to change its line, type or day.
+              {added.length === 1 ? <b>{titleCase(added[0])}</b> : <b>{added.length} places</b>} {added.length === 1 ? "is" : "are"} on the {cityName} map now, in red, with where {added.length === 1 ? "it fits" : "they fit"} and when {added.length === 1 ? "it goes" : "they go"}. Tap one to change its line, type or day.
             </p>
             <div className="flex gap-2">
               <button
@@ -353,6 +353,12 @@ function Body({ city, cityName, days, bias, onClose, start }: { city: string; ci
       </div>
     </>
   );
+}
+
+/** Google sometimes shouts: "FUGLEN ASAKUSA" → "Fuglen Asakusa". Mixed case stays as it is. */
+export function titleCase(s: string): string {
+  if (s !== s.toUpperCase() || !/[A-Z]/.test(s)) return s;
+  return s.toLowerCase().replace(/(^|[\s\-(/])([a-z])/g, (m, a, b) => a + b.toUpperCase());
 }
 
 function Thumb({ photo, cat }: { photo: string | undefined; cat: SpotCat }) {
