@@ -6,6 +6,7 @@
 import type { DB } from "../supabase/types";
 import { daysBetween } from "../dates";
 import { withFoodDeadlines } from "../food";
+import { PINS_KEY, pinsFromSetting } from "../tokyo";
 import type { Comment, Day, Place, PlanHistoryEntry, Reaction, Region, Snapshot, Stay, Suggestion, Traveller, Version, Vote } from "../types";
 import { bundledPlanDays, splitDayTitle, tripData } from "./file";
 
@@ -37,6 +38,7 @@ export function fileSnapshot(): Snapshot {
     days: bundledPlanDays(),
     food_list: d.tokyo_personal_food_list,
     related_docs: d.related_docs,
+    tokyo_pins: {},
     source: "file",
   };
 }
@@ -142,7 +144,7 @@ export function rowToRegion(r: Row): Region {
 export async function loadSnapshot(sb: DB | null): Promise<Snapshot> {
   const base = fileSnapshot();
   if (!sb) return base;
-  const [travellers, regions, places, versions, stays, votes, suggestions, comments, reactions, history, deadlines, days] = await Promise.all([
+  const [travellers, regions, places, versions, stays, votes, suggestions, comments, reactions, history, deadlines, days, walks] = await Promise.all([
     sb.from("travellers").select("id,name,role,notes").neq("id", "claude").order("id"),
     sb.from("regions").select("*"),
     sb.from("places").select("*, closures(*)").order("sort"),
@@ -155,6 +157,7 @@ export async function loadSnapshot(sb: DB | null): Promise<Snapshot> {
     sb.from("plan_history").select("*").order("at", { ascending: false }).limit(50),
     sb.from("deadlines").select("*").order("date"),
     sb.from("days").select("*, day_items(*)").order("date"),
+    sb.from("settings").select("value").eq("key", PINS_KEY).maybeSingle(),
   ]);
   const regionRows = check<Row[]>("regions", regions);
   const placeRows = check<Row[]>("places", places);
@@ -202,6 +205,7 @@ export async function loadSnapshot(sb: DB | null): Promise<Snapshot> {
         };
       });
     })(),
+    tokyo_pins: pinsFromSetting((walks as { data: { value?: unknown } | null }).data?.value),
     source: "supabase",
   };
 }

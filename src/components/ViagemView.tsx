@@ -2,7 +2,6 @@
 
 import { useMemo } from "react";
 import { coupleBalances } from "@/lib/family";
-import { isTokyoMark } from "@/lib/tokyo";
 import { useTable } from "@/lib/tables";
 import { useStore } from "./providers";
 import { PageHeader, StampCard } from "./ui";
@@ -20,8 +19,7 @@ export function ViagemView() {
   const food = trip.places.filter((p) => p.kind === "food");
   const myPacking = packing.filter((p) => p.traveller_id === me?.travellerId);
   const packed = myPacking.filter((p) => p.checked).length;
-  const wantCount = marks.filter((m) => m.traveller_id === me?.travellerId && m.status === "want" && !isTokyoMark(m.place_slug)).length;
-  const tokyoWants = marks.filter((m) => m.status === "want" && isTokyoMark(m.place_slug)).length;
+  const wantCount = marks.filter((m) => m.traveller_id === me?.travellerId && m.status === "want").length;
 
   const contas = useMemo(() => {
     if (!expenses.length) return "Nenhum gasto ainda";
@@ -45,7 +43,6 @@ export function ViagemView() {
         <StampCard href="/compare" motif="train" ink="var(--indigo)" title="Rotas" status="Lado a lado" />
       </Group>
       <Group title="Lá no Japão">
-        <StampCard wide href="/tokyo" motif="tower" ink="var(--vermilion)" title="Tokyo a pé" status={tokyoWants ? `10 rotas no mapa · a família quer ir a ${tokyoWants} lugares` : "10 rotas por 28 bairros, no mapa"} />
         <StampCard href="/guides/tokyo" motif="tower" ink="var(--vermilion)" title="Tokyo" status="Dias, bairros e noites" />
         <StampCard href="/guides/kyoto" motif="torii" ink="var(--plum)" title="Kyoto" status="Templos, Gion e jantares" />
         <StampCard href="/plan/bookings" motif="gassho" ink="var(--pine)" title="Onde ficamos" status={chosen ? `${chosen.stays.length} bases` : "Depois da votação"} />

@@ -64,6 +64,55 @@ export async function textSearch(
   return (body.places ?? []).map((p) => ({ id: p.id, name: p.displayName?.text ?? "", address: p.formattedAddress, lat: p.location?.latitude, lng: p.location?.longitude }));
 }
 
+/** A guide spot found by Text Search: enough to pin it and show a thumbnail. Bills as Text Search Pro. */
+export interface SpotHit {
+  placeId: string;
+  name: string;
+  lat: number;
+  lng: number;
+  address?: string;
+  type?: string;
+  googleMapsUri?: string;
+  photo?: string;
+}
+
+const SPOT_FIELDS = ["places.id", "places.displayName", "places.location", "places.formattedAddress", "places.primaryTypeDisplayName", "places.googleMapsUri", "places.photos"].join(",");
+/** Google allows place ids to be stored indefinitely and coordinates for 30 days. */
+const SPOT_CACHE_SECONDS = 60 * 60 * 24 * 30;
+
+/**
+ * Resolve a free-text query to one place with coordinates and a first photo,
+ * biased to a small circle (a neighbourhood centre) so "Alaska" finds the
+ * thrift shop in Shimokitazawa. Kept in the data cache for 30 days.
+ */
+export async function searchSpot(query: string, bias?: { lat: number; lng: number; radiusM?: number }): Promise<SpotHit | null> {
+  const body: Record<string, unknown> = { textQuery: query, languageCode: "en", regionCode: "JP", pageSize: 1 };
+  if (bias) body.locationBias = { circle: { center: { latitude: bias.lat, longitude: bias.lng }, radius: bias.radiusM ?? 1500 } };
+  const res = await fetch(`${BASE}/places:searchText`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "X-Goog-Api-Key": key(), "X-Goog-FieldMask": SPOT_FIELDS },
+    body: JSON.stringify(body),
+    // POST requests are only cached when asked to; this one is safe to keep.
+    cache: "force-cache",
+    next: { revalidate: SPOT_CACHE_SECONDS },
+  });
+  if (!res.ok) throw await googleError(res);
+  const data = (await res.json()) as { places?: Record<string, unknown>[] };
+  const p = data.places?.[0];
+  const loc = p?.location as { latitude: number; longitude: number } | undefined;
+  if (!p || !loc) return null;
+  return {
+    placeId: p.id as string,
+    name: (p.displayName as { text?: string })?.text ?? query,
+    lat: loc.latitude,
+    lng: loc.longitude,
+    address: p.formattedAddress as string | undefined,
+    type: (p.primaryTypeDisplayName as { text?: string })?.text,
+    googleMapsUri: p.googleMapsUri as string | undefined,
+    photo: ((p.photos as { name: string }[] | undefined) ?? [])[0]?.name,
+  };
+}
+
 /** Essentials-tier details: just the coordinates (cheap; used once at seed time). */
 export async function placeLocation(placeId: string): Promise<{ lat: number; lng: number } | null> {
   const res = await fetch(`${BASE}/places/${encodeURIComponent(placeId)}`, {
@@ -82,7 +131,9 @@ const attribution = (a: RawAttribution | undefined): GoogleAttribution => ({
   photoUri: a?.photoUri,
 });
 
-const DETAILS_FIELDS = ["id", "displayName", "formattedAddress", "rating", "userRatingCount", "googleMapsUri", "regularOpeningHours.weekdayDescriptions", "photos", "reviews"].join(",");
+const DETAILS_FIELDS = ["id", "displayName", "formattedAddress", "location", "rating", "userRatingCount", "googleMapsUri", "websiteUri", "priceLevel", "regularOpeningHours", "editorialSummary", "photos", "reviews"].join(",");
+
+const PRICE: Record<string, number> = { PRICE_LEVEL_FREE: 0, PRICE_LEVEL_INEXPENSIVE: 1, PRICE_LEVEL_MODERATE: 2, PRICE_LEVEL_EXPENSIVE: 3, PRICE_LEVEL_VERY_EXPENSIVE: 4 };
 
 /**
  * Place Details (New). Held in the Next.js data cache for PLACES_CACHE_SECONDS
@@ -105,6 +156,11 @@ export async function placeDetails(placeId: string): Promise<PlaceDetails> {
     userRatingCount: p.userRatingCount,
     googleMapsUri: p.googleMapsUri,
     weekdayHours: p.regularOpeningHours?.weekdayDescriptions,
+    openNow: p.regularOpeningHours?.openNow,
+    location: p.location ? { lat: p.location.latitude, lng: p.location.longitude } : undefined,
+    website: p.websiteUri,
+    priceLevel: PRICE[p.priceLevel as string],
+    summary: p.editorialSummary?.text,
     photos: (p.photos ?? []).slice(0, 8).map((ph: Record<string, unknown>) => ({
       name: ph.name as string,
       widthPx: ph.widthPx as number,

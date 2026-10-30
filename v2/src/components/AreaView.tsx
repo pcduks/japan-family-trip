@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { EkiStamp } from "./EkiStamp";
 import { useState } from "react";
 import foodGuide from "../../data/food-guide.json";
 import why from "../../data/why.json";
@@ -123,6 +124,19 @@ export function AreaView({ id }: { id: string }) {
           </Link>
         ) : null}
       </section>
+
+      {id === "tokyo" ? (
+        <Link href="/tokyo" className="card flex items-center gap-3 p-3 no-underline">
+          <EkiStamp motif="tower" ink="var(--accent)" size={48} rotate={-8} label="" />
+          <span className="min-w-0 flex-1">
+            <span className="display block text-[1.25rem] leading-tight">Tokyo on foot</span>
+            <span className="text-sm text-muted">Ten one-day walks through 28 neighbourhoods, on the map, pinned to our Tokyo days</span>
+          </span>
+          <span aria-hidden="true" className="text-xl text-muted">
+            →
+          </span>
+        </Link>
+      ) : null}
 
       <Section title="What people come for">
         <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4">

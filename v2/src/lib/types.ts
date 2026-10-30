@@ -239,7 +239,7 @@ export interface SuggestionDiff {
 export interface Comment {
   id: string;
   author_id: string;
-  target_type: "version" | "stay" | "day" | "place" | "drop" | "region" | "wish";
+  target_type: "version" | "stay" | "day" | "place" | "drop" | "region" | "wish" | "walk";
   target_id: string;
   body: string;
   created_at: string;
@@ -301,6 +301,8 @@ export interface Snapshot {
   days: Day[];
   food_list: FoodListItem[];
   related_docs: Record<string, string>;
+  /** Tokyo on foot: the walk the family pinned to each Tokyo day (settings key "tokyo_walks"). */
+  tokyo_pins: Record<string, number>;
   /** Where the data came from, so the UI can say so. */
   source: "supabase" | "file";
 }
@@ -337,6 +339,13 @@ export interface PlaceDetails {
   userRatingCount?: number;
   googleMapsUri?: string;
   weekdayHours?: string[];
+  openNow?: boolean;
+  location?: { lat: number; lng: number };
+  website?: string;
+  /** 0 (free) to 4 (very expensive), when Google says. */
+  priceLevel?: number;
+  /** Google's one-line editorial summary. */
+  summary?: string;
   photos: PlacePhoto[];
   reviews: PlaceReview[];
   fetchedAt: string;

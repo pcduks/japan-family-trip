@@ -121,16 +121,9 @@ export interface PlaceDetails {
   placeId: string;
   displayName: string;
   address?: string;
-  location?: { lat: number; lng: number };
   rating?: number;
   userRatingCount?: number;
   googleMapsUri?: string;
-  website?: string;
-  /** 0 (free) to 4 (very expensive), when Google knows it. */
-  priceLevel?: number;
-  openingHours?: { openNow?: boolean; weekday: string[] };
-  /** Google's one-line editorial summary, in English. */
-  summary?: string;
   photos: GooglePhoto[];
   reviews: GoogleReview[];
 }

@@ -3,7 +3,6 @@
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { foodMarkId, type FoodMark } from "@/lib/family";
-import { isTokyoMark } from "@/lib/tokyo";
 import { mapsSearchUrl } from "@/lib/links";
 import { deleteRow, insertRow, upsertRow, useTable } from "@/lib/tables";
 import type { Place } from "@/lib/types";
@@ -29,8 +28,7 @@ type Tab = "all" | "want" | "been";
 /** The family food list: want to go, been there (with a rating), pick for me, add from a Maps link. */
 export function FoodView({ initialPlace }: { initialPlace: string | null }) {
   const { trip, me } = useStore();
-  const { rows: allMarks } = useTable("food_marks");
-  const marks = useMemo(() => allMarks.filter((m) => !isTokyoMark(m.place_slug)), [allMarks]);
+  const { rows: marks } = useTable("food_marks");
   const food = useMemo(() => trip.places.filter((p) => p.kind === "food"), [trip.places]);
   const [tab, setTab] = useState<Tab>("all");
   const [group, setGroup] = useState("Tudo");

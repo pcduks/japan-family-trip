@@ -19,7 +19,7 @@ export function resolveSpot(spot: Spot): Promise<SpotHit | null> {
   return p;
 }
 
-/** A few at a time, so a route's forty spots don't open forty connections at once. */
+/** A few at a time, so a walk's forty spots don't open forty connections at once. */
 export async function inBatches<T, R>(items: T[], size: number, f: (t: T) => Promise<R>): Promise<R[]> {
   const out: R[] = [];
   for (let i = 0; i < items.length; i += size) out.push(...(await Promise.all(items.slice(i, i + size).map(f))));

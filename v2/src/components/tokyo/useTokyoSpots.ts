@@ -5,9 +5,9 @@ import type { SpotHit } from "@/lib/google/places";
 import type { PlaceDetails } from "@/lib/types";
 
 /*
- * Pins for a route's spots come from /api/tokyo/spots?route=N and are kept
- * for the session; details for one spot come from /api/tokyo/spot/:id when a
- * sheet opens. Both are quiet when Google isn't configured (the page still
+ * Pins for a walk's spots come from /api/tokyo/spots?walk=N and are kept for
+ * the session; details for one spot come from /api/tokyo/spot/:id when its
+ * sheet opens. Both stay quiet when Google isn't configured (the page still
  * works with neighbourhood pins and Google Maps links).
  */
 
@@ -24,15 +24,15 @@ const emit = () => {
   listeners.forEach((l) => l());
 };
 
-export function loadRouteSpots(n: number): Promise<void> {
+export function loadWalkSpots(n: number): Promise<void> {
   if (loaded.has(n) || unavailable) return Promise.resolve();
   let p = loading.get(n);
   if (!p) {
-    p = fetch(`/api/tokyo/spots?route=${n}`)
+    p = fetch(`/api/tokyo/spots?walk=${n}`)
       .then(async (res) => {
         const body = await res.json().catch(() => ({}));
         if (res.status === 503 || (!res.ok && /not set|not configured/i.test(body.error ?? ""))) {
-          unavailable = body.error ?? "Google não configurado";
+          unavailable = body.error ?? "Google is not configured";
           return;
         }
         if (!res.ok) throw new Error(body.error ?? `Request failed (${res.status})`);
@@ -62,11 +62,11 @@ function getSnapshot(): Snapshot {
 }
 const SERVER: Snapshot = { hits: {}, loaded: new Set(), busy: false, unavailable: null };
 
-/** Pins for the routes asked for (loads them on first use). */
-export function useTokyoSpots(routes: number[]): Snapshot {
-  const key = routes.join(",");
+/** Pins for the walks asked for (loads them on first use). */
+export function useTokyoSpots(walks: number[]): Snapshot {
+  const key = walks.join(",");
   useEffect(() => {
-    routes.forEach((n) => void loadRouteSpots(n));
+    walks.forEach((n) => void loadWalkSpots(n));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key]);
   return useSyncExternalStore(
@@ -114,3 +114,5 @@ export function useSpotDetails(id: string | null): DetailsState {
   if (!id) return { status: "idle" };
   return result?.id === id ? result.state : { status: "loading" };
 }
+
+export const photoSrc = (name: string, w = 800) => `/api/photo/${name}?w=${w}`;

@@ -1,6 +1,5 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import { todayInJapan } from "@/lib/plan";
 import { deleteRow, insertRow, useOutboxCount, useTable } from "@/lib/tables";
@@ -16,8 +15,7 @@ export function AnotarView() {
   const { chosen, routeFor } = usePlans();
   const { rows } = useTable("notes");
   const pending = useOutboxCount();
-  const prompt = useSearchParams().get("prompt");
-  const [text, setText] = useState(prompt ? `${prompt}\n` : "");
+  const [text, setText] = useState("");
   const [saved, setSaved] = useState(false);
   const P = useMemo(() => placeMap(trip), [trip]);
   const today = todayInJapan();

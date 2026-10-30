@@ -18,7 +18,6 @@ import {
   type PlanDay,
 } from "@/lib/plan";
 import { useTable } from "@/lib/tables";
-import { isTokyoMark } from "@/lib/tokyo";
 import { placeStamp, stampLabel } from "@/lib/stamps";
 import { TRIP_END, TRIP_START, daysBetween, formatDay, formatHours, formatLong, placeMap, stampDate, tripDates, weekday } from "@/lib/trip";
 import type { Place } from "@/lib/types";
@@ -54,7 +53,7 @@ export function TodayView() {
   const iVoted = !!me && votes.some((v) => v.travellerId === me.travellerId);
   const myPacking = packing.filter((r) => r.traveller_id === me?.travellerId);
   const packed = myPacking.filter((r) => r.checked).length;
-  const myWants = marks.filter((m) => m.traveller_id === me?.travellerId && m.status === "want" && !isTokyoMark(m.place_slug)).length;
+  const myWants = marks.filter((m) => m.traveller_id === me?.travellerId && m.status === "want").length;
   const needLodging = plan ? staysNeedingLodging(plan, bookings).length : 0;
 
   const todos: { href: string; label: string; detail: string; done: boolean }[] = [

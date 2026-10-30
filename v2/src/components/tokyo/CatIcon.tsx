@@ -1,6 +1,6 @@
 import type { SpotCat } from "@/lib/tokyo";
 
-/** Small line glyphs per spot category, drawn in a 24×24 box; stroke follows currentColor. */
+/** Small line glyphs per spot category, drawn in a 24×24 box; the stroke follows currentColor. */
 const PATHS: Record<SpotCat, string> = {
   cafe: "M4 8h12v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8zM16 10h2a2 2 0 0 1 0 4h-2M8 3v2M12 3v2",
   bakery: "M4 12a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v6H4zM9 8v10M15 8v10",

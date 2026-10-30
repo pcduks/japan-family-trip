@@ -420,6 +420,11 @@ export function RouteView({ id }: { id?: string }) {
                           </ul>
                         </div>
                       ) : null}
+                      {s.region === "tokyo" ? (
+                        <Link href="/tokyo" className="block">
+                          Tokyo on foot: ten walks on the map, one for each of these days →
+                        </Link>
+                      ) : null}
                       <Link href={`/areas/${s.region}`}>More about {regionName(s.region)} →</Link>
                     </div>
                   </details>
