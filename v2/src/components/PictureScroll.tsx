@@ -172,7 +172,7 @@ export function PictureScroll({ version, onStop }: { version: Version; onStop?: 
               <span className="line-clamp-4 text-[0.78rem] leading-snug text-ink-2">{d.title}</span>
               {d.region === "tokyo" && snapshot.tokyo_pins[d.date] != null ? (
                 <span className="truncate text-[0.7rem] font-semibold text-accent" title="Pinned on Tokyo on foot">
-                  Walk {snapshot.tokyo_pins[d.date] || "0"}: {walkByN(snapshot.tokyo_pins[d.date])?.title ?? "Rest day"}
+                  {snapshot.tokyo_pins[d.date] ? `Walk ${snapshot.tokyo_pins[d.date]}: ${walkByN(snapshot.tokyo_pins[d.date])?.title}` : "Rest day, from Tokyo on foot"}
                 </span>
               ) : null}
               <span className="mt-auto grid gap-1.5">
