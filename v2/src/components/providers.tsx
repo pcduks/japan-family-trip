@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { localStore, useLocalStore, useSystemDark } from "@/lib/localStore";
 import type { RulesContext } from "@/lib/rules";
 import type { Comment, PlanHistoryEntry, Reaction, Role, Snapshot, Stay, Suggestion, SuggestionDiff, Tip, TipExtracted, Version, Vote, VoteKind } from "@/lib/types";
@@ -133,6 +133,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
 
   /* shared data */
   const [remote, setRemote] = useState<Snapshot>(initial);
+  const lastText = useRef<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const demoState = useLocalStore(demoStore);
@@ -146,8 +147,12 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
         router.push("/login");
         return;
       }
-      const j = (await r.json()) as { snapshot?: Snapshot; rankRevealed?: boolean; error?: string };
+      const text = await r.text();
+      const j = JSON.parse(text) as { snapshot?: Snapshot; rankRevealed?: boolean; error?: string };
       if (!r.ok || !j.snapshot) throw new Error(j.error ?? "Could not load");
+      // A poll that changed nothing must not re-render every page: keep the old snapshot's identity.
+      if (text === lastText.current) return;
+      lastText.current = text;
       setRemote(j.snapshot);
       setRankRevealedRemote(Boolean(j.rankRevealed));
       setError(null);

@@ -46,6 +46,19 @@ Where it fits and when it goes are computed, not typed: nearest neighbourhood, t
 - The + Tip sheet: Paste, Screenshot, Saved list. Everything is confirmed as a real Google place with a photo before it is saved; the type is guessed from Google's type and can be changed; a line and a day are optional.
 - Tested on a phone as three people: the planner dropping a Maps link and a name and seeing them land on Tue 22 near Senso-ji; a relative opening Kyoto and reading it by area; a first visit, which gets a one-line hint that goes away once read.
 
+## The phone layout, after three reviews (30 Oct 2026)
+
+Three reviews of the first version (UX, visual design, engineering; run on a 390×844 viewport) agreed on the cause of "not easy to navigate on a phone": a pinned 40% map plus the bottom nav and a floating button left half a screen for the list, the map swallowed the first swipe, five rows of controls sat between the postcard and anything useful, and 300 pins drew as one blob. The page now works like a map app on a phone:
+
+- The postcard is a 21:9 strip; the map comes right after it at 46% of the screen and is not pinned. One finger scrolls past it, two fingers pan it; the ⤢ button opens it full screen (over the nav), with its controls inside it.
+- The map owns its controls: the four layer toggles in its top corner (filled when on, hollow when off), where-am-I, the status pill, and the red + Tip button. Nothing floats over the list.
+- One sticky bar under the map: Our days · Areas · Types, and "Map ↑" to get back to it. The type filters sit with the list they filter.
+- Tapping a day card scrolls to that day and fits the map to it; a deep link to a day lands on the day.
+- Above 120 pins the map draws one bubble per area with a count, in the ink of the layer that dominates there; tapping a bubble opens that area. Pins are 26px, 36px when selected.
+- Tiles in "Nearby that day" are two per row with the distance line; areas and types keep three.
+- The family's layer is the shrine red, the walks a pine green, so the primary action matches the brand in both themes.
+- Under the hood: the page recomputes only when the slices it reads change (a vote no longer rebuilds it), pins are asked for one batch at a time with the current view first, misses are remembered, and the resolve API takes pin ids rather than free text.
+
 ## How it generalises
 
 The page is `/city/[region]` for every stop on the route. Layers are data: a city with no walks simply has no Walks layer; the food guide covers ten cities; tips carry a city. Tokyo is first because it has all four layers and the most tips.

@@ -16,13 +16,24 @@ import type { Comment, FoodListItem, Place, Reaction, Snapshot, Tip, TipExtracte
 export type Layer = "plan" | "walk" | "guide" | "ours";
 export type When = "morning" | "afternoon" | "evening" | "any";
 
-export const LAYER_LABEL: Record<Layer, string> = { plan: "Plan", walk: "Walks", guide: "Food guide", ours: "Ours" };
-/** Layer inks: CSS for the page, hex per theme for the Google map. */
-export const LAYER_INK: Record<Layer, string> = { plan: "var(--indigo)", walk: "var(--accent)", guide: "#b8731b", ours: "#7048e8" };
+export const LAYER_LABEL: Record<Layer, string> = { plan: "Plan", walk: "Walks", guide: "Food guide", ours: "Family" };
+/** Layer inks: CSS for the page, hex per theme for the Google map. The family is the brand, so its layer takes the shrine red. */
+export const LAYER_INK: Record<Layer, string> = { plan: "var(--indigo)", walk: "var(--pine)", guide: "var(--amber)", ours: "var(--accent)" };
 export const LAYER_HEX: Record<"light" | "dark", Record<Layer, string>> = {
-  light: { plan: "#2a3f6f", walk: "#c8402a", guide: "#b8731b", ours: "#7048e8" },
-  dark: { plan: "#9db4e8", walk: "#ff7a5c", guide: "#f0b25a", ours: "#b197fc" },
+  light: { plan: "#2a3f6f", walk: "#2f7d5b", guide: "#b8731b", ours: "#c8402a" },
+  dark: { plan: "#9db4e8", walk: "#7fd1a3", guide: "#f0b25a", ours: "#ff7a5c" },
 };
+/** Text on a layer's ink, per theme: the dark-mode inks are pastel, so they take dark text. */
+export const LAYER_ON_INK: Record<"light" | "dark", string> = { light: "#fff", dark: "#1a1410" };
+
+/** The circle to search in for a pin: its area when named, else the city. */
+export function biasFor(pin: Pick<Pin, "area" | "layer">, areas: CityArea[], city: { lat: number; lng: number }): { lat: number; lng: number; radiusM: number } {
+  if (pin.area) {
+    const a = areas.find((x) => x.name === pin.area || pin.area!.startsWith(x.name) || x.name.startsWith(pin.area!));
+    if (a) return { lat: a.lat, lng: a.lng, radiusM: pin.layer === "walk" ? 1800 : 2500 };
+  }
+  return { lat: city.lat, lng: city.lng, radiusM: 25000 };
+}
 
 export const WHEN_LABEL: Record<When, string> = { morning: "Morning", afternoon: "Afternoon", evening: "Evening", any: "Any time" };
 

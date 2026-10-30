@@ -26,11 +26,9 @@ export function CityIndex() {
   return (
     <main className="mx-auto grid max-w-3xl gap-5 px-4 pt-3 pb-8">
       <header className="grid gap-1.5">
-        <p className="eyebrow">One page per stop</p>
+        <p className="eyebrow">Every stop on the route</p>
         <h1 className="display text-[2.1rem] leading-[1.05]">Our cities</h1>
-        <p className="max-w-2xl text-ink-2">
-          Everything we know about each place on one map: the plan’s days, the walks, the food guide, and what the family saved and dropped. Tap a place for where it fits and when it goes.{ours ? ` ${ours} of the pins are ours so far.` : ""}
-        </p>
+        <p className="max-w-2xl text-ink-2">One map per city: the plan, the walks, the food guide and the family’s own finds.{ours ? ` ${ours} places are ours so far.` : ""}</p>
       </header>
       <ol className="grid gap-4 sm:grid-cols-2">
         {stops.map((s) => (

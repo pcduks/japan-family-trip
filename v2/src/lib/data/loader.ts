@@ -218,6 +218,7 @@ export async function loadSnapshot(sb: DB | null): Promise<Snapshot> {
 export function tipsFromRows(rows: Row[]): Tip[] {
   const out: Tip[] = [];
   for (const r of rows) {
+    if ((r.extracted as { kind?: unknown } | null)?.kind !== "tip") continue;
     const drop = (Array.isArray(r.drops) ? r.drops[0] : r.drops) as { author_id?: string; created_at?: string } | null | undefined;
     const t = tipFromRow({ id: r.id as string, drop_id: r.drop_id as string, extracted: r.extracted }, { author_id: drop?.author_id ?? "", created_at: drop?.created_at ?? "" });
     if (t) out.push(t);

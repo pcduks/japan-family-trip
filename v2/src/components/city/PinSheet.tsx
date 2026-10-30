@@ -119,7 +119,7 @@ function Body(p: PinSheetProps & { pin: Pin }) {
         {/* where it fits, when it goes */}
         <FitChips pin={pin} fit={p.fit} onDay={onDay ?? null} days={p.days} />
 
-        {pin.line && !editing ? <p className="font-display text-[1.08rem] leading-relaxed">{pin.line}</p> : null}
+        {pin.line && !editing && pin.ref.kind !== "list" ? <p className="font-display text-[1.08rem] leading-relaxed">{pin.line}</p> : null}
         {author ? (
           <p className="flex items-center gap-2 text-sm text-ink-2">
             <Avatar traveller={author.id} travellers={snapshot.travellers} size={22} />
@@ -150,15 +150,19 @@ function Body(p: PinSheetProps & { pin: Pin }) {
         <dl className="grid gap-3 text-[0.92rem]">
           {google?.weekdayHours?.length ? (
             <Fact k="Hours">
-              {google.openNow != null ? <span className={`block font-semibold ${google.openNow ? "text-ok" : "text-accent"}`}>{google.openNow ? "Open now" : "Closed now"}</span> : null}
-              <ul className="grid gap-0.5">
-                {google.weekdayHours.map((line, i) => (
-                  // Google lists Monday first; JS weekday 0 is Sunday.
-                  <li key={line} className={(i + 1) % 7 === jaDay ? "font-semibold text-ink" : ""}>
-                    {line}
-                  </li>
-                ))}
-              </ul>
+              {google.openNow != null ? <span className={`font-semibold ${google.openNow ? "text-ok" : "text-accent"}`}>{google.openNow ? "Open now" : "Closed now"} · </span> : null}
+              {/* Google lists Monday first; JS weekday 0 is Sunday. */}
+              <span className="text-ink">{google.weekdayHours[(jaDay + 6) % 7]?.replace(/^\w+day: /, "today ")}</span>
+              <details className="mt-1">
+                <summary className="cursor-pointer text-xs text-muted">All week</summary>
+                <ul className="mt-1 grid gap-0.5">
+                  {google.weekdayHours.map((line, i) => (
+                    <li key={line} className={(i + 1) % 7 === jaDay ? "font-semibold text-ink" : ""}>
+                      {line}
+                    </li>
+                  ))}
+                </ul>
+              </details>
             </Fact>
           ) : null}
           {google?.address || hit?.address || tip?.address ? <Fact k="Where">{google?.address ?? hit?.address ?? tip?.address}</Fact> : null}
@@ -273,26 +277,26 @@ function FitChips({ pin, fit, onDay, days }: { pin: Pin; fit: Fit | null; onDay:
   const fitDays = (fit?.days ?? []).filter((d) => d.date !== pin.date).slice(0, 3);
   if (!onDay && !fitDays.length && !fit?.walks.length && !when) return null;
   return (
-    <ul className="flex flex-wrap gap-1.5 text-[0.8rem]" aria-label="Where it fits">
+    <ul className="no-scrollbar -mx-5 flex gap-1.5 overflow-x-auto px-5 text-[0.8rem]" aria-label="Where it fits">
       {onDay ? (
-        <li className="inline-flex items-center gap-1 rounded-full px-2.5 py-1 font-semibold text-white" style={{ background: LAYER_INK[pin.layer] }}>
+        <li className="inline-flex shrink-0 items-center gap-1 rounded-full px-2.5 py-1 font-semibold text-white" style={{ background: LAYER_INK[pin.layer] }}>
           {pin.layer === "plan" ? "On the plan" : "Put on"} · {fmtDay(onDay.date)}
         </li>
       ) : null}
       {fitDays.map((d) => (
-        <li key={d.date} className="inline-flex items-center gap-1 rounded-full border border-rule bg-bg-2 px-2.5 py-1 font-semibold" title={`${Math.round(d.km * 1000)} m from ${d.near}`}>
+        <li key={d.date} className="inline-flex shrink-0 items-center gap-1 rounded-full border border-rule bg-bg-2 px-2.5 py-1 font-semibold whitespace-nowrap" title={`${Math.round(d.km * 1000)} m from ${d.near}`}>
           Fits {fmtDay(d.date)} <span className="font-normal text-muted">· near {shortName(d.near)}</span>
         </li>
       ))}
       {fit?.walks.map((n) => (
         <li key={n}>
-          <Link href={`/tokyo?walk=${n}`} className="inline-flex items-center gap-1 rounded-full border border-rule bg-bg-2 px-2.5 py-1 font-semibold no-underline">
+          <Link href={`/tokyo?walk=${n}`} className="inline-flex shrink-0 items-center gap-1 rounded-full border border-rule bg-bg-2 px-2.5 py-1 font-semibold whitespace-nowrap no-underline">
             On walk {n}
           </Link>
         </li>
       ))}
-      {when && when !== "any" ? <li className="inline-flex items-center rounded-full border border-dashed border-rule px-2.5 py-1 text-muted">{WHEN_LABEL[when]}</li> : null}
-      {!onDay && !fitDays.length && days.length && pin.layer !== "plan" ? <li className="inline-flex items-center rounded-full border border-dashed border-rule px-2.5 py-1 text-muted">Not near any of our days yet</li> : null}
+      {when && when !== "any" ? <li className="inline-flex shrink-0 items-center rounded-full border border-dashed border-rule px-2.5 py-1 text-muted">{WHEN_LABEL[when]}</li> : null}
+      {!onDay && !fitDays.length && days.length && pin.layer !== "plan" ? <li className="inline-flex shrink-0 items-center rounded-full border border-dashed border-rule px-2.5 py-1 whitespace-nowrap text-muted">Not near any of our days yet</li> : null}
     </ul>
   );
 }
