@@ -5,7 +5,8 @@ import "server-only";
  * to /api/act; the switch below is the whole contract.
  */
 import type { DB } from "./supabase/types";
-import type { Comment, Reaction, Stay, SuggestionDiff, Version, VoteKind } from "./types";
+import type { Comment, Reaction, Stay, SuggestionDiff, TipExtracted, Version, VoteKind } from "./types";
+import { cleanTip } from "./city";
 import { foodDeadline } from "./food";
 import type { Viewer } from "./supabase/server";
 import { describeDiff } from "./versions";
@@ -207,6 +208,45 @@ export async function runAction(sb: DB, me: Viewer, action: string, p: Record<st
       const { data } = await sb.from("settings").select("value").eq("key", PINS_KEY).maybeSingle();
       const pins = withPin(pinsFromSetting((data as Row | null)?.value), date, walk);
       fail(await sb.from("settings").upsert({ key: PINS_KEY, value: { pins }, updated_at: now }, { onConflict: "key" }), "settings");
+      return;
+    }
+    case "addTips": {
+      const tips = (Array.isArray(p.tips) ? p.tips : []).map((t) => cleanTip(t)).filter((t): t is TipExtracted => !!t);
+      if (!tips.length) throw new ActionError("Nothing to add");
+      const caption = typeof p.caption === "string" && p.caption.trim() ? p.caption.trim().slice(0, 500) : null;
+      const { data, error } = await sb
+        .from("drops")
+        .insert({ author_id: me.travellerId, caption, text: typeof p.text === "string" ? p.text.slice(0, 6000) : null, url: typeof p.url === "string" ? p.url.slice(0, 500) : null, processing_status: "done" })
+        .select("id")
+        .single();
+      if (error) throw new ActionError(`drops: ${error.message}`, 500);
+      const dropId = (data as Row).id as string;
+      fail(await sb.from("drop_places").insert(tips.map((t) => ({ drop_id: dropId, extracted: { ...t, kind: "tip" }, match_confidence: t.google_place_id ? "high" : "none", confirmed_by: me.travellerId }))), "drop_places");
+      return;
+    }
+    case "updateTip":
+    case "deleteTip": {
+      const id = String(p.id ?? "");
+      const { data } = await sb.from("drop_places").select("id,extracted,drops(author_id)").eq("id", id).maybeSingle();
+      const row = data as (Row & { drops?: { author_id?: string } | { author_id?: string }[] | null }) | null;
+      if (!row) throw new ActionError("No such tip", 404);
+      const drop = Array.isArray(row.drops) ? row.drops[0] : row.drops;
+      if (me.role !== "planner" && drop?.author_id !== me.travellerId) throw new ActionError("Only whoever added a tip, or a planner, can change it", 403);
+      if (action === "deleteTip") {
+        fail(await sb.from("drop_places").delete().eq("id", id), "drop_places");
+        return;
+      }
+      const cur = row.extracted as Record<string, unknown>;
+      const next = { ...cur };
+      if ("note" in p) next.note = typeof p.note === "string" && p.note.trim() ? p.note.trim().slice(0, 500) : null;
+      if ("cat" in p && typeof p.cat === "string") next.cat = p.cat.slice(0, 20);
+      if ("planned_for" in p) {
+        const d = p.planned_for;
+        if (d != null && !(typeof d === "string" && /^\d{4}-\d{2}-\d{2}$/.test(d))) throw new ActionError("A date is required");
+        next.planned_for = d ?? null;
+      }
+      if ("city" in p && typeof p.city === "string" && /^[a-z0-9-]{2,40}$/.test(p.city)) next.city = p.city;
+      fail(await sb.from("drop_places").update({ extracted: next }).eq("id", id), "drop_places");
       return;
     }
     case "toggleReaction": {

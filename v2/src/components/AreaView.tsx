@@ -125,6 +125,23 @@ export function AreaView({ id }: { id: string }) {
         ) : null}
       </section>
 
+      {inRoute ? (
+        <Link href={`/city/${id}`} className="card flex items-center gap-3 p-3 no-underline">
+          <span className="grid size-12 shrink-0 place-items-center rounded-full text-white" style={{ background: "#7048e8" }} aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+            </svg>
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="display block text-[1.25rem] leading-tight">Our {region.name}</span>
+            <span className="text-sm text-muted">Every place we know about, on one map, by day, by area, by type. Drop your own tips.</span>
+          </span>
+          <span aria-hidden="true" className="text-xl text-muted">
+            →
+          </span>
+        </Link>
+      ) : null}
+
       {id === "tokyo" ? (
         <Link href="/tokyo" className="card flex items-center gap-3 p-3 no-underline">
           <EkiStamp motif="tower" ink="var(--accent)" size={48} rotate={-8} label="" />
