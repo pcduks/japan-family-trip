@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { LAYER_INK, allPins, cityAreas, cityDays, cityStays, fitOf, heartsByTarget, nearestArea, savedBy, type CityArea, type Fit, type Layer, type Pin } from "@/lib/city";
+import { LAYER_INK, MEAL_LABEL, MEAL_SLOTS, allPins, cityAreas, cityDays, cityStays, fitOf, heartsByTarget, mealSuggestions, nearestArea, savedBy, type CityArea, type Fit, type Layer, type Meals, type MealSlot, type Pin } from "@/lib/city";
 import type { PlannedDay } from "@/lib/days";
 import { fmtDay, fmtRange } from "@/lib/dates";
 import { kanji } from "@/lib/journey";
@@ -57,14 +57,14 @@ type Hits = Record<string, { photo?: string }>;
 type DayFit = { pin: Pin; near: string; km: number };
 
 export function CityView({ region, initialPin, initialDay, initialLens }: { region: string; initialPin: string | null; initialDay: string | null; initialLens: Lens | null }) {
-  const { snapshot, me, resolvedTheme } = useStore();
+  const { snapshot, me, resolvedTheme, setMeal } = useStore();
   const today = todayInJapan();
   const regionRow = snapshot.regions.find((r) => r.id === region);
   const name = regionRow?.name ?? region;
   const centre = useMemo(() => ({ lat: regionRow?.lat ?? 35.68, lng: regionRow?.lng ?? 139.72 }), [regionRow]);
 
   /* the data, from the slices of the snapshot it depends on (a poll that changes votes must not rebuild the page) */
-  const { versions, regions, places, days: dayRows, calendar, food_list, tips, reactions } = snapshot;
+  const { versions, regions, places, days: dayRows, calendar, food_list, tips, reactions, meals } = snapshot;
   const slice = useMemo(() => ({ versions, regions, places, days: dayRows, calendar, food_list }), [versions, regions, places, dayRows, calendar, food_list]);
   const days = useMemo(() => cityDays(region, slice), [region, slice]);
   const stays = useMemo(() => cityStays(region, slice), [region, slice]);
@@ -443,7 +443,7 @@ export function CityView({ region, initialPin, initialDay, initialLens }: { regi
 
             {lens === "days" ? (
               days.length ? (
-                <DaysLens days={days} day={day} setDay={pickDay} today={today} theDay={theDay} dayPins={dayPins} dayFits={dayFits} dayCounts={dayCounts} hits={hits} savedCount={savedCount} show={show} region={region} onAdd={() => setAdding(true)} tokyoPins={snapshot.tokyo_pins} filter={filter} setFilter={setFilter} />
+                <DaysLens days={days} day={day} setDay={pickDay} today={today} theDay={theDay} dayPins={dayPins} dayFits={dayFits} dayCounts={dayCounts} hits={hits} savedCount={savedCount} show={show} region={region} onAdd={() => setAdding(true)} tokyoPins={snapshot.tokyo_pins} filter={filter} setFilter={setFilter} meals={meals} byId={byId} clearMeal={(d, slot) => setMeal(d, slot, null)} canPick={!!me} />
               ) : (
                 <p className="rounded-2xl border border-dashed border-rule p-5 text-center text-muted">{name} is not on the route right now, so there are no days to fit things to. Areas and types still work.</p>
               )
@@ -464,7 +464,7 @@ export function CityView({ region, initialPin, initialDay, initialLens }: { regi
         </div>
       </div>
 
-      <PinSheet pin={open} hit={open ? hits[open.id] : undefined} fit={openFit} alsoIn={open ? (alsoIn.get(open.id) ?? []) : []} hearts={hearts} days={days} city={region} onClose={closePin} onOpen={show} />
+      <PinSheet pin={open} hit={open ? hits[open.id] : undefined} fit={openFit} alsoIn={open ? (alsoIn.get(open.id) ?? []) : []} hearts={hearts} days={days} meals={meals} currentDay={lens === "days" ? day : null} city={region} onClose={closePin} onOpen={show} />
       <AddTipSheet open={adding} onClose={() => setAdding(false)} city={region} cityName={name} days={days} bias={focus} />
     </main>
   );
@@ -472,8 +472,13 @@ export function CityView({ region, initialPin, initialDay, initialLens }: { regi
 
 /* ------------------------------------------------------------ days */
 
-function DaysLens({ days, day, setDay, today, theDay, dayPins, dayFits, dayCounts, hits, savedCount, show, region, onAdd, tokyoPins, filter, setFilter }: { days: PlannedDay[]; day: string; setDay: (d: string) => void; today: string; theDay: PlannedDay | null; dayPins: Pin[]; dayFits: DayFit[]; dayCounts: Map<string, { plan: number; ours: number; fits: number }>; hits: Hits; savedCount: (p: Pin) => number; show: (id: string) => void; region: string; onAdd: () => void; tokyoPins: Record<string, number>; filter: Filter; setFilter: (f: Filter) => void }) {
+function DaysLens({ days, day, setDay, today, theDay, dayPins, dayFits, dayCounts, hits, savedCount, show, region, onAdd, tokyoPins, filter, setFilter, meals, byId, clearMeal, canPick }: { days: PlannedDay[]; day: string; setDay: (d: string) => void; today: string; theDay: PlannedDay | null; dayPins: Pin[]; dayFits: DayFit[]; dayCounts: Map<string, { plan: number; ours: number; fits: number }>; hits: Hits; savedCount: (p: Pin) => number; show: (id: string) => void; region: string; onAdd: () => void; tokyoPins: Record<string, number>; filter: Filter; setFilter: (f: Filter) => void; meals: Meals; byId: Map<string, Pin>; clearMeal: (date: string, slot: MealSlot) => void; canPick: boolean }) {
   const [all, setAll] = useState(false);
+  const mealNames = (date: string) =>
+    MEAL_SLOTS.map((slot) => {
+      const id = meals[date]?.[slot];
+      return id ? (byId.get(id)?.name ?? null) : null;
+    }).filter((x): x is string => !!x);
   const planPins = dayPins.filter((p) => p.layer === "plan");
   const oursOnDay = dayPins.filter((p) => p.layer !== "plan");
   const walkN = region === "tokyo" && theDay ? tokyoPins[theDay.date] : undefined;
@@ -493,7 +498,7 @@ function DaysLens({ days, day, setDay, today, theDay, dayPins, dayFits, dayCount
                   {d.date === today ? <span className="shrink-0 text-accent">today</span> : null}
                 </span>
                 <span className={`line-clamp-2 text-[0.8rem] leading-snug ${on ? "" : "text-ink-2"}`}>{d.title}</span>
-                <span className={`mt-auto pt-1 text-[0.72rem] font-semibold ${on ? "opacity-85" : "text-muted"}`}>{c?.fits ? `${c.fits} nearby` : c?.plan ? `${c.plan} on the plan` : d.kind}</span>
+                <span className={`mt-auto truncate pt-1 text-[0.72rem] font-semibold ${on ? "opacity-85" : mealNames(d.date).length ? "text-accent" : "text-muted"}`}>{mealNames(d.date).length ? mealNames(d.date).join(" · ") : c?.fits ? `${c.fits} nearby` : c?.plan ? `${c.plan} on the plan` : d.kind}</span>
               </button>
             </li>
           );
@@ -542,6 +547,55 @@ function DaysLens({ days, day, setDay, today, theDay, dayPins, dayFits, dayCount
           ) : (
             <p className="text-sm text-muted">The plan puts nothing on this day yet.</p>
           )}
+
+          <div className="grid gap-2" aria-label="Meals">
+            <p className="eyebrow">Meals</p>
+            {MEAL_SLOTS.map((slot) => {
+              const pickId = meals[theDay.date]?.[slot];
+              const pick = pickId ? byId.get(pickId) : undefined;
+              const sugg = pick ? [] : mealSuggestions(theDay.date, dayFits, slot, 3);
+              const near = planPins[0]?.name ?? oursOnDay[0]?.name ?? null;
+              return (
+                <div key={slot} className="grid gap-2 rounded-2xl border border-rule p-3">
+                  <div className="flex items-baseline justify-between gap-2">
+                    <span className="text-[0.72rem] font-bold tracking-[0.08em] uppercase" style={{ color: pick ? "var(--accent)" : "var(--muted)" }}>
+                      {MEAL_LABEL[slot]}
+                      {!pick && sugg.length && near ? <span className="font-normal normal-case tracking-normal text-muted"> near {shortName(sugg[0].near)}</span> : null}
+                    </span>
+                    {pick && canPick ? (
+                      <button type="button" className="text-xs font-semibold text-muted underline" onClick={() => clearMeal(theDay.date, slot)}>
+                        clear
+                      </button>
+                    ) : null}
+                  </div>
+                  {pick ? (
+                    <>
+                      <PinRow pin={pick} onOpen={() => show(pick.id)} saved={savedCount(pick)} line={mealLine(pick, theDay.date)} />
+                      {pick.food?.deadline ? (
+                        <Link href="/food/book" className="justify-self-start rounded-full border border-rule bg-bg-2 px-2.5 py-1 text-xs font-semibold no-underline">
+                          Book by {fmtDay(pick.food.deadline.date, false)}
+                          {pick.food.deadline.how ? ` · ${pick.food.deadline.how}` : ""} →
+                        </Link>
+                      ) : null}
+                    </>
+                  ) : sugg.length ? (
+                    <>
+                      <ul className="grid grid-cols-3 gap-2">
+                        {sugg.map((m) => (
+                          <li key={m.pin.id}>
+                            <PinTile pin={m.pin} photo={m.pin.photo ?? hits[m.pin.id]?.photo} saved={savedCount(m.pin)} onOpen={() => show(m.pin.id)} size="sm" line={`${fmtKm(m.km)} · ${m.walkIn ? "walk in" : m.open === "open" ? "open" : "check hours"}`} />
+                          </li>
+                        ))}
+                      </ul>
+                      <p className="text-xs text-muted">Tap one, then “{MEAL_LABEL[slot]} · {fmtDay(theDay.date, false)}” on its card.</p>
+                    </>
+                  ) : (
+                    <p className="text-xs text-muted">{planPins.length || oursOnDay.length ? "Nothing the guide knows is open for this nearby. Turn on the food guide, or drop a tip." : "Put something on this day and the places to eat near it show up here."}</p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
 
           {oursOnDay.length ? (
             <div className="grid gap-2">
@@ -597,6 +651,16 @@ function DaysLens({ days, day, setDay, today, theDay, dayPins, dayFits, dayCount
       ) : null}
     </section>
   );
+}
+
+/** One line for a picked meal: what the guide knows about that day. */
+function mealLine(pin: Pin, date: string): string {
+  const f = pin.food;
+  if (!f) return [CAT_LABEL[pin.cat], pin.line].filter(Boolean).join(" · ");
+  const open = f.closed_dates?.includes(date) || f.closed_weekdays?.includes(new Date(date + "T00:00:00Z").toLocaleDateString("en", { weekday: "short", timeZone: "UTC" }) as never) ? "closed that day" : f.closed_weekdays ? "open that day" : "check hours";
+  const seven = f.seven === "yes" || f.seven === "room" || f.seven === "counter" ? "seats seven" : f.seven === "split" ? "two tables" : f.seven === "ask" ? "ask about seven" : null;
+  const book = f.channel === "walk-in" ? "walk in" : f.channel ? `book ${f.channel === "phone" ? "by phone" : f.channel === "online" ? "online" : f.channel === "hotel" ? "through the hotel" : "by queuing"}` : f.booking ? "booking" : null;
+  return [open, seven, book].filter(Boolean).join(" · ");
 }
 
 /** "Winter illuminations (Marunouchi, Roppongi…)" → "Winter illuminations". */

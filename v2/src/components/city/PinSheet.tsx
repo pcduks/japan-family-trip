@@ -3,7 +3,8 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import Link from "next/link";
 import { useState } from "react";
-import { LAYER_INK, LAYER_LABEL, WHEN_LABEL, isCat, savedBy, slugify, targetOf, type Fit, type Layer, type Pin } from "@/lib/city";
+import { LAYER_INK, LAYER_LABEL, MEAL_LABEL, MEAL_SLOTS, WHEN_LABEL, isCat, mealFits, savedBy, slugify, targetOf, type Fit, type Layer, type Meals, type Pin } from "@/lib/city";
+import { CHANNEL_LABEL, SEVEN_MARK, openOn } from "@/lib/foodView";
 import type { PlannedDay } from "@/lib/days";
 import { fmtDay } from "@/lib/dates";
 import type { SpotHit } from "@/lib/google/places";
@@ -23,6 +24,9 @@ export interface PinSheetProps {
   alsoIn: Layer[];
   hearts: Map<string, string[]>;
   days: PlannedDay[];
+  meals: Meals;
+  /** The day the page is on, so its chips come first. */
+  currentDay: string | null;
   city: string;
   onClose: () => void;
   /** Open another pin from inside this one (a day's neighbour). */
@@ -47,7 +51,7 @@ export function PinSheet(p: PinSheetProps) {
 
 function Body(p: PinSheetProps & { pin: Pin }) {
   const { pin, hit } = p;
-  const { snapshot, me, isPlanner, toggleReaction, addComment, updateTip, deleteTip } = useStore();
+  const { snapshot, me, isPlanner, toggleReaction, addComment, updateTip, deleteTip, setMeal } = useStore();
   const tip: Tip | null = pin.ref.kind === "tip" ? (snapshot.tips.find((t) => t.id === (pin.ref as { id: string }).id) ?? null) : null;
   const placeId = tip?.google_place_id ?? hit?.placeId ?? null;
   const details = usePlaceDetails(placeId);
@@ -117,7 +121,7 @@ function Body(p: PinSheetProps & { pin: Pin }) {
         <Photos name={pin.name} first={firstPhoto} photos={photos} status={details.status} error={details.status === "error" ? details.error : null} />
 
         {/* where it fits, when it goes */}
-        <FitChips pin={pin} fit={p.fit} onDay={onDay ?? null} days={p.days} />
+        <FitChips pin={pin} fit={p.fit} onDay={onDay ?? null} days={p.days} mealOn={MEAL_SLOTS.flatMap((slot) => Object.entries(p.meals).filter(([, v]) => v[slot] === pin.id).map(([date]) => ({ date, slot })))} />
 
         {pin.line && !editing && pin.ref.kind !== "list" ? <p className="font-display text-[1.08rem] leading-relaxed">{pin.line}</p> : null}
         {author ? (
@@ -137,6 +141,8 @@ function Body(p: PinSheetProps & { pin: Pin }) {
         {google?.summary ? <p className="text-[0.92rem] text-ink-2">{google.summary}</p> : null}
 
         {canEdit && tip ? <TipEditor tip={tip} days={p.days} editing={editing} setEditing={setEditing} onSave={(patch) => updateTip(tip.id, patch)} /> : null}
+
+        {me && p.days.length && MEAL_SLOTS.some((slot) => mealFits(pin, slot)) ? <MealPicker pin={pin} days={p.days} meals={p.meals} currentDay={p.currentDay} onPick={setMeal} /> : null}
 
         {saved.length ? (
           <p className="flex flex-wrap items-center gap-1.5 text-sm text-ink-2">
@@ -272,10 +278,10 @@ function Body(p: PinSheetProps & { pin: Pin }) {
 }
 
 /** "Fits Tue 22 · near Senso-ji", "On walk 3", "Morning": the computed fit, as chips. */
-function FitChips({ pin, fit, onDay, days }: { pin: Pin; fit: Fit | null; onDay: PlannedDay | null; days: PlannedDay[] }) {
+function FitChips({ pin, fit, onDay, days, mealOn }: { pin: Pin; fit: Fit | null; onDay: PlannedDay | null; days: PlannedDay[]; mealOn: { date: string; slot: "lunch" | "dinner" }[] }) {
   const when = fit?.when ?? null;
-  const fitDays = (fit?.days ?? []).filter((d) => d.date !== pin.date).slice(0, 3);
-  if (!onDay && !fitDays.length && !fit?.walks.length && !when) return null;
+  const fitDays = (fit?.days ?? []).filter((d) => d.date !== pin.date && !mealOn.some((m) => m.date === d.date)).slice(0, 3);
+  if (!onDay && !fitDays.length && !fit?.walks.length && !when && !mealOn.length) return null;
   return (
     <ul className="no-scrollbar -mx-5 flex gap-1.5 overflow-x-auto px-5 text-[0.8rem]" aria-label="Where it fits">
       {onDay ? (
@@ -283,6 +289,11 @@ function FitChips({ pin, fit, onDay, days }: { pin: Pin; fit: Fit | null; onDay:
           {pin.layer === "plan" ? "On the plan" : "Put on"} · {fmtDay(onDay.date)}
         </li>
       ) : null}
+      {mealOn.map((m) => (
+        <li key={`${m.date}${m.slot}`} className="inline-flex shrink-0 items-center gap-1 rounded-full bg-accent px-2.5 py-1 font-semibold whitespace-nowrap text-accent-ink">
+          {MEAL_LABEL[m.slot]} · {fmtDay(m.date)}
+        </li>
+      ))}
       {fitDays.map((d) => (
         <li key={d.date} className="inline-flex shrink-0 items-center gap-1 rounded-full border border-rule bg-bg-2 px-2.5 py-1 font-semibold whitespace-nowrap" title={`${Math.round(d.km * 1000)} m from ${d.near}`}>
           Fits {fmtDay(d.date)} <span className="font-normal text-muted">· near {shortName(d.near)}</span>
@@ -298,6 +309,41 @@ function FitChips({ pin, fit, onDay, days }: { pin: Pin; fit: Fit | null; onDay:
       {when && when !== "any" ? <li className="inline-flex shrink-0 items-center rounded-full border border-dashed border-rule px-2.5 py-1 text-muted">{WHEN_LABEL[when]}</li> : null}
       {!onDay && !fitDays.length && days.length && pin.layer !== "plan" ? <li className="inline-flex shrink-0 items-center rounded-full border border-dashed border-rule px-2.5 py-1 whitespace-nowrap text-muted">Not near any of our days yet</li> : null}
     </ul>
+  );
+}
+
+/** Make a place a day's lunch or dinner, with what the guide knows about it. */
+function MealPicker({ pin, days, meals, currentDay, onPick }: { pin: Pin; days: PlannedDay[]; meals: Meals; currentDay: string | null; onPick: (date: string, slot: "lunch" | "dinner", id: string | null) => Promise<void> }) {
+  const f = pin.food;
+  const ordered = currentDay ? [...days.filter((d) => d.date === currentDay), ...days.filter((d) => d.date !== currentDay)] : days;
+  const facts = f
+    ? [
+        f.seven ? SEVEN_MARK[f.seven].long : null,
+        f.channel ? CHANNEL_LABEL[f.channel] : f.booking ? "Bookings: see the guide" : null,
+        f.deadline ? `Book by ${fmtDay(f.deadline.date, false)}` : null,
+        f.pregnancy === "careful" ? "Ask about raw dishes for Fernanda" : f.pregnancy === "avoid" ? "Not one for Fernanda" : null,
+      ].filter((x): x is string => !!x)
+    : [];
+  return (
+    <section className="grid gap-2 rounded-2xl border border-rule p-3" aria-label="Make it a meal">
+      {MEAL_SLOTS.filter((slot) => mealFits(pin, slot)).map((slot) => (
+        <div key={slot} className="flex items-center gap-1.5">
+          <span className="eyebrow w-14 shrink-0">{MEAL_LABEL[slot]}</span>
+          <div className="no-scrollbar flex gap-1.5 overflow-x-auto">
+            {ordered.map((d) => {
+              const on = meals[d.date]?.[slot] === pin.id;
+              const closed = f ? openOn(f, d.date) === "closed" : false;
+              return (
+                <Chip key={d.date} pressed={on} disabled={closed} title={closed ? "Closed that day" : undefined} onClick={() => onPick(d.date, slot, on ? null : pin.id)} tone="var(--accent)">
+                  {fmtDay(d.date, false)}
+                </Chip>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+      {facts.length ? <p className="text-xs text-muted">{facts.join(" · ")}</p> : null}
+    </section>
   );
 }
 

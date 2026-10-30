@@ -8,6 +8,7 @@ import type { Comment, PlanHistoryEntry, Reaction, Role, Snapshot, Stay, Suggest
 import { describeDiff, newId } from "@/lib/versions";
 import { afterAccept, mergeOnto, sameRoute, stopNames, validRoute } from "@/lib/merge";
 import { withPin } from "@/lib/tokyo";
+import { withMeal, type MealSlot, type Meals } from "@/lib/city";
 
 /* ------------------------------------------------------------ prefs */
 
@@ -44,8 +45,9 @@ interface DemoState {
   doneDeadlines: string[];
   tokyoPins: Record<string, number>;
   tips: Tip[];
+  meals: Meals;
 }
-const EMPTY_DEMO: DemoState = { versions: [], votes: [], suggestions: [], comments: [], reactions: [], history: [], planOverride: null, rankRevealed: false, doneDeadlines: [], tokyoPins: {}, tips: [] };
+const EMPTY_DEMO: DemoState = { versions: [], votes: [], suggestions: [], comments: [], reactions: [], history: [], planOverride: null, rankRevealed: false, doneDeadlines: [], tokyoPins: {}, tips: [], meals: {} };
 const demoStore = localStore<DemoState>("jp-demo", EMPTY_DEMO, (raw) => ({ ...EMPTY_DEMO, ...(raw as Partial<DemoState>) }));
 const demoMe = localStore<string | null>("jp-demo-me", null);
 
@@ -83,6 +85,8 @@ export interface Store {
   /** Change a tip's note, type, day or city (its author or a planner). */
   updateTip: (id: string, patch: Partial<Pick<Tip, "note" | "cat" | "planned_for" | "city">>) => Promise<string | null>;
   deleteTip: (id: string) => Promise<string | null>;
+  /** City pages: pick a place for a day's lunch or dinner (any pin id), or clear it with null. Anyone can. */
+  setMeal: (date: string, slot: MealSlot, pin: string | null) => Promise<void>;
 }
 
 const Ctx = createContext<Store | null>(null);
@@ -182,7 +186,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     // Demo: overlay local edits on the bundled file.
     const versions = initial.versions.map((v) => (v.status === "plan" && demoState.planOverride ? demoState.planOverride : v)).concat(demoState.versions);
     const deadlines = initial.deadlines.map((d) => (d.id && demoState.doneDeadlines.includes(d.id) ? { ...d, done: true } : d));
-    return { ...initial, versions, deadlines, votes: demoState.votes, suggestions: demoState.suggestions, comments: demoState.comments, reactions: demoState.reactions, history: demoState.history, tokyo_pins: demoState.tokyoPins, tips: demoState.tips };
+    return { ...initial, versions, deadlines, votes: demoState.votes, suggestions: demoState.suggestions, comments: demoState.comments, reactions: demoState.reactions, history: demoState.history, tokyo_pins: demoState.tokyoPins, tips: demoState.tips, meals: demoState.meals };
   }, [sb, remote, initial, demoState]);
 
   const rankRevealed = sb
@@ -439,6 +443,15 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     [sb, run, me],
   );
 
+  const setMeal = useCallback(
+    async (date: string, slot: MealSlot, pin: string | null) => {
+      if (!me) return;
+      if (!sb) return patchDemo((d) => ({ ...d, meals: withMeal(d.meals, date, slot, pin) }));
+      await run("setMeal", { date, slot, pin });
+    },
+    [sb, run, me],
+  );
+
   const value: Store = {
     snapshot,
     demo,
@@ -468,6 +481,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     addTips,
     updateTip,
     deleteTip,
+    setMeal,
   };
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }

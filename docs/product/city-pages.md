@@ -59,6 +59,10 @@ Three reviews of the first version (UX, visual design, engineering; run on a 390
 - The family's layer is the shrine red, the walks a pine green, so the primary action matches the brand in both themes.
 - Under the hood: the page recomputes only when the slices it reads change (a vote no longer rebuilds it), pins are asked for one batch at a time with the current view first, misses are remembered, and the resolve API takes pin ids rather than free text.
 
+## Meals (30 Oct 2026)
+
+The food guide joins the days without becoming part of the plan. Each day has a Lunch and a Dinner slot beside the plan's items. Empty, the slot suggests the three nearest guide places that are open that day, serve that meal and can seat seven, nearest first, walk-in places first among equals. Tap one, tap "Lunch · 22 Dec" on its card, and it becomes the day's lunch: on the day card, on the Trip page's day, with its booking deadline. Picks are shared and one tap to change. The plan's own items stay the planners'.
+
 ## How it generalises
 
 The page is `/city/[region]` for every stop on the route. Layers are data: a city with no walks simply has no Walks layer; the food guide covers ten cities; tips carry a city. Tokyo is first because it has all four layers and the most tips.

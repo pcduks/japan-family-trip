@@ -6,7 +6,7 @@ import "server-only";
  */
 import type { DB } from "./supabase/types";
 import type { Comment, Reaction, Stay, SuggestionDiff, TipExtracted, Version, VoteKind } from "./types";
-import { cleanTip, isCat } from "./city";
+import { MEALS_KEY, MEAL_SLOTS, cleanTip, isCat, mealsFromSetting, withMeal, type MealSlot } from "./city";
 import { foodDeadline } from "./food";
 import type { Viewer } from "./supabase/server";
 import { describeDiff } from "./versions";
@@ -255,6 +255,17 @@ export async function runAction(sb: DB, me: Viewer, action: string, p: Record<st
         next.city = p.city;
       }
       fail(await sb.from("drop_places").update({ extracted: next }).eq("id", id), "drop_places");
+      return;
+    }
+    case "setMeal": {
+      const date = String(p.date ?? "");
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) throw new ActionError("A date is required");
+      const slot = p.slot as MealSlot;
+      if (!MEAL_SLOTS.includes(slot)) throw new ActionError("Lunch or dinner");
+      const pin = p.pin == null ? null : String(p.pin).slice(0, 200);
+      const { data } = await sb.from("settings").select("value").eq("key", MEALS_KEY).maybeSingle();
+      const picks = withMeal(mealsFromSetting((data as Row | null)?.value), date, slot, pin);
+      fail(await sb.from("settings").upsert({ key: MEALS_KEY, value: { picks }, updated_at: now }, { onConflict: "key" }), "settings");
       return;
     }
     case "toggleReaction": {
