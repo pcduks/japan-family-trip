@@ -1,0 +1,1454 @@
+{
+  "source": "The Local Approved Ten-Day Tokyo Itinerary (Neighborhood Guide), bought for the family. 28 neighbourhoods, 10 flexible one-day walks. Spot tuples are [name, category, note?, mapsQuery?].",
+  "zones": {
+    "centre": { "name": "Central", "ink": "accent" },
+    "east": { "name": "East", "ink": "indigo" },
+    "west": { "name": "West", "ink": "ok" },
+    "south": { "name": "South", "ink": "purple" }
+  },
+  "hoods": {
+    "nakameguro": { "name": "Nakameguro", "ja": "中目黒", "zone": "south", "lat": 35.6441, "lng": 139.6988, "station": "Nakameguro Station", "vibe": "Cafés over the tracks and small shops along the Meguro river." },
+    "daikanyama": { "name": "Daikanyama", "ja": "代官山", "zone": "south", "lat": 35.6484, "lng": 139.7034, "station": "Daikanyama Station", "vibe": "Design shops, the Tsutaya bookshop and a Taisho-era house." },
+    "ebisu": { "name": "Ebisu", "ja": "恵比寿", "zone": "south", "lat": 35.6467, "lng": 139.7101, "station": "Ebisu Station", "vibe": "Offices by day, izakayas and cocktail bars by night." },
+    "tomigaya": { "name": "Tomigaya", "ja": "富ヶ谷", "zone": "centre", "lat": 35.6693, "lng": 139.6900, "station": "Yoyogi-koen Station", "vibe": "Shibuya's quiet pocket, full of bakeries and cafés." },
+    "harajuku": { "name": "Harajuku", "ja": "原宿", "zone": "centre", "lat": 35.6702, "lng": 139.7027, "station": "Harajuku Station", "vibe": "The Meiji shrine, Cat Street and the backstreets." },
+    "shibuya": { "name": "Shibuya", "ja": "渋谷", "zone": "centre", "lat": 35.6580, "lng": 139.7016, "station": "Shibuya Station", "vibe": "The crossing, the observation decks and the Hikarie food hall." },
+    "asakusa": { "name": "Asakusa", "ja": "浅草", "zone": "east", "lat": 35.7119, "lng": 139.7965, "station": "Asakusa Station", "vibe": "Tokyo's oldest temple, with the Skytree across the river." },
+    "yanaka": { "name": "Yanaka", "ja": "谷中", "zone": "east", "lat": 35.7262, "lng": 139.7667, "station": "Nezu Station", "vibe": "Red torii, quiet residential streets and the Yanaka Ginza." },
+    "ueno": { "name": "Ueno Park", "ja": "上野", "zone": "east", "lat": 35.7148, "lng": 139.7737, "station": "Ueno Station", "vibe": "The big museums and the Shinobazu pond." },
+    "kiyosumi": { "name": "Kiyosumi", "ja": "清澄白河", "zone": "east", "lat": 35.6818, "lng": 139.7999, "station": "Kiyosumi-shirakawa Station", "vibe": "Tokyo's coffee district and a preserved garden." },
+    "ningyocho": { "name": "Ningyocho", "ja": "人形町", "zone": "east", "lat": 35.6862, "lng": 139.7826, "station": "Suitengumae Station", "vibe": "Century-old sweet shops and old Tokyo." },
+    "ginza": { "name": "Ginza", "ja": "銀座", "zone": "centre", "lat": 35.6717, "lng": 139.7650, "station": "Ginza Station", "vibe": "Eight-floor stationers, kissaten and creative conveyor-belt sushi." },
+    "shinjuku": { "name": "Shinjuku", "ja": "新宿", "zone": "centre", "lat": 35.6896, "lng": 139.7006, "station": "Shinjuku Station", "vibe": "The Gyoen park, old kissaten and department stores." },
+    "hatagaya": { "name": "Hatagaya", "ja": "幡ヶ谷", "zone": "west", "lat": 35.6770, "lng": 139.6760, "station": "Hatagaya Station", "vibe": "Three overlooked neighbourhoods of thoughtful cafés and shops." },
+    "shimokitazawa": { "name": "Shimokitazawa", "ja": "下北沢", "zone": "west", "lat": 35.6613, "lng": 139.6681, "station": "Shimokitazawa Station", "vibe": "Vintage shops, independent cafés and creative energy." },
+    "kichijoji": { "name": "Kichijōji", "ja": "吉祥寺", "zone": "west", "lat": 35.7031, "lng": 139.5797, "station": "Kichijoji Station", "vibe": "The Inokashira pond and an underground café from another decade." },
+    "nakano": { "name": "Nakano", "ja": "中野", "zone": "west", "lat": 35.7074, "lng": 139.6659, "station": "Nakano Station", "vibe": "Nakano Broadway and lantern-lined alleys of izakayas." },
+    "jiyugaoka": { "name": "Jiyugaoka", "ja": "自由が丘", "zone": "south", "lat": 35.6076, "lng": 139.6690, "station": "Jiyugaoka Station", "vibe": "Tree-lined streets with a European air on the Toyoko line." },
+    "gakugeidai": { "name": "Gakugei-dai", "ja": "学芸大学", "zone": "south", "lat": 35.6285, "lng": 139.6855, "station": "Gakugei-daigaku Station", "vibe": "Everyday Tokyo: greengrocers, students and bookshops." },
+    "yutenji": { "name": "Yutenji", "ja": "祐天寺", "zone": "south", "lat": 35.6378, "lng": 139.6920, "station": "Yutenji Station", "vibe": "A quiet residential stretch between Gakugei-dai and Nakameguro." },
+    "aoyama": { "name": "Aoyama", "ja": "青山", "zone": "centre", "lat": 35.6652, "lng": 139.7124, "station": "Omotesando Station", "vibe": "Refined architecture, bakeries and the Nezu Museum garden." },
+    "roppongi": { "name": "Roppongi", "ja": "六本木", "zone": "centre", "lat": 35.6627, "lng": 139.7312, "station": "Roppongi Station", "vibe": "Contemporary art, special dinners and jazz." },
+    "kuramae": { "name": "Kuramae", "ja": "蔵前", "zone": "east", "lat": 35.7037, "lng": 139.7906, "station": "Kuramae Station", "vibe": "The makers' neighbourhood: stationery, baskets and leather." },
+    "jimbocho": { "name": "Jimbocho", "ja": "神保町", "zone": "centre", "lat": 35.6958, "lng": 139.7576, "station": "Jimbocho Station", "vibe": "Secondhand bookshops, curry and classic kissaten." },
+    "akihabara": { "name": "Akihabara", "ja": "秋葉原", "zone": "centre", "lat": 35.6984, "lng": 139.7731, "station": "Akihabara Station", "vibe": "Neon, the Mansei bridge and shops from another world." },
+    "tsukiji": { "name": "Tsukiji", "ja": "築地", "zone": "centre", "lat": 35.6654, "lng": 139.7707, "station": "Tsukiji Station", "vibe": "The fish market, with the Hamarikyu garden next door." },
+    "imperial": { "name": "Imperial Palace", "ja": "皇居", "zone": "centre", "lat": 35.6885, "lng": 139.7580, "station": "Takebashi Station", "vibe": "Wide paths, gardens and the modern art museum." },
+    "kagurazaka": { "name": "Kagurazaka", "ja": "神楽坂", "zone": "centre", "lat": 35.7024, "lng": 139.7400, "station": "Iidabashi Station", "vibe": "Narrow backstreets, bistros and a French note in old Tokyo." },
+    "kappabashi": { "name": "Kappabashi", "ja": "かっぱ橋", "zone": "east", "lat": 35.7133, "lng": 139.7883, "station": "Tawaramachi Station", "vibe": "The kitchenware street." }
+  },
+  "routes": [
+    {
+      "n": 1,
+      "hoods": ["nakameguro", "daikanyama", "ebisu"],
+      "tagline": "Sipping at cafés, local bakeries, nature walks, a traditional home, bookshops and lively izakayas",
+      "reflect": "Was there a dish or flavour from today that you'd like to try recreating, or learn more about?",
+      "blocks": [
+        {
+          "when": "morning",
+          "moves": [
+            {
+              "hood": "nakameguro",
+              "title": "Travel to Nakameguro and enjoy the local cafés",
+              "text": "Nakameguro Station is where you discover local life and plenty of neighbourhood cafés. Enjoy a latte and watch the trains go by upstairs at Onibus. Along the river, visit Sidewalk Stand for house-roasted coffee and hot sandwiches, or Neel and Sawamura for coffee and a sit-down breakfast menu.",
+              "spots": [
+                ["Nakameguro Station", "transit", "Where the day starts"],
+                ["Onibus", "cafe", "A latte upstairs, watching the trains go by", "Onibus Coffee Nakameguro"],
+                ["Sidewalk Stand", "cafe", "House-roasted coffee and hot sandwiches"],
+                ["Neel", "cafe", "Coffee and a sit-down breakfast"],
+                ["Sawamura", "bakery", "Breakfast menu", "Sawamura Nakameguro bakery"]
+              ]
+            },
+            {
+              "hood": "nakameguro",
+              "title": "Explore the main “dori” shopping street",
+              "text": "Around the corner from Onibus is the neighbourhood's main shopping street, charming and full of shops and restaurants. Stop by Trasparente for freshly baked Japanese breads: shokupan, melon pan and curry pan.",
+              "spots": [["Trasparente", "bakery", "Shokupan, melon pan and curry pan"]]
+            },
+            {
+              "hood": "nakameguro",
+              "title": "Wander along the Meguro river and its shops",
+              "text": "Lots of local shops along the river: bamboo shoots for outdoor wear, Olgou and Kindal for used clothing, Coverchord and 1LDK for cool menswear, SML and Kinto for ceramics and tableware.",
+              "spots": [
+                ["bamboo shoots", "shop", "Outdoor wear"],
+                ["Olgou", "shop", "Used clothing"],
+                ["Kindal", "shop", "Used clothing", "Kindal Nakameguro"],
+                ["Coverchord", "shop", "Menswear"],
+                ["1LDK", "shop", "Menswear", "1LDK Nakameguro"],
+                ["SML", "shop", "Ceramics and tableware", "SML Nakameguro"],
+                ["Kinto", "shop", "Ceramics and tableware", "KINTO Nakameguro store"]
+              ]
+            },
+            {
+              "hood": "nakameguro",
+              "title": "Sit on a bench in the neighbourhood parks",
+              "text": "Meguro Sky Garden is a free little oasis built above a car park with incredible views of the city; look for the elevator at street level. Nearby, Sugekari Park and the connected Saigōyama Park have seasonal blooms and city views. On clear days you can see Mt Fuji from all three!",
+              "spots": [
+                ["Meguro Sky Garden", "park", "A garden over the motorway; take the street-level elevator"],
+                ["Sugekari Park", "park", "Seasonal blooms and views"],
+                ["Saigōyama Park", "park", "Joined to Sugekari; Fuji on a clear day"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "afternoon",
+          "moves": [
+            {
+              "hood": "daikanyama",
+              "title": "Walk into Daikanyama for a neighbourhood lunch",
+              "text": "Stand-outs for lunch: Tokyo Kenkyo for Japanese sandwiches including the popular egg sando, Omusubi Cafe for a classic Japanese lunch set, or Grigio, a cosy Italian-inspired restaurant.",
+              "spots": [
+                ["Tokyo Kenkyo", "food", "Japanese sandwiches; the egg sando"],
+                ["Omusubi Cafe", "food", "Classic Japanese lunch set"],
+                ["Grigio", "food", "Cosy Italian"]
+              ]
+            },
+            {
+              "hood": "daikanyama",
+              "title": "Flip through Japanese magazines at Tsutaya Books",
+              "text": "You can easily spend an hour flipping through the magazines at Tsutaya Books in the T-Site complex. Check out the Anjin bar upstairs for a midday cocktail or tea.",
+              "spots": [
+                ["Tsutaya Books", "book", "Magazines at T-Site", "Daikanyama T-Site Tsutaya Books"],
+                ["Anjin", "bar", "Upstairs bar: a midday cocktail or tea", "Anjin Daikanyama T-Site"]
+              ]
+            },
+            {
+              "hood": "daikanyama",
+              "title": "Shop at local favourites",
+              "text": "Hollywood Ranch Market, Nanamica and their exclusive The North Face shop, Okura for indigo pieces, and iihoshi porcelain and Allegory Home Tools for ceramics and small home goods.",
+              "spots": [
+                ["Hollywood Ranch Market", "shop", "A Daikanyama classic"],
+                ["Nanamica", "shop", "Clothing, with an exclusive The North Face shop", "Nanamica Daikanyama"],
+                ["The North Face Shop", "shop", "Nanamica's exclusive shop", "The North Face Daikanyama"],
+                ["Okura", "shop", "Indigo pieces", "Okura Daikanyama indigo"],
+                ["iihoshi porcelain", "shop", "Porcelain", "iihoshi porcelain Daikanyama"],
+                ["Allegory Home Tools", "shop", "Ceramics and small home goods"]
+              ]
+            },
+            {
+              "hood": "daikanyama",
+              "title": "Visit a preserved Japanese home and garden",
+              "text": "Walk through Kyu Asakura House, a beautifully preserved Taisho-era residence with traditional wooden architecture, tatami rooms and a serene Japanese garden. Shoes come off at the entrance; put them in the storage area.",
+              "spots": [["Kyu Asakura House", "culture", "Taisho-era house; shoes off at the door"]]
+            }
+          ]
+        },
+        {
+          "when": "evening",
+          "moves": [
+            {
+              "hood": "ebisu",
+              "leg": "13 min walk",
+              "title": "Make your way to Ebisu",
+              "text": "A business district by day, Ebisu transforms at night with a lively scene of izakayas and stylish cocktail bars. First, stroll along the river and swing by Inari Tea for an intimate tea experience, or Taiyaki Hiiragi for toasty red-bean-filled fish cakes with ice cream. If you need to store shopping bags, most stations have coin lockers by the hour.",
+              "spots": [
+                ["Inari Tea", "cafe", "An intimate tea", "Inari Tea Nakameguro"],
+                ["Taiyaki Hiiragi", "sweets", "Taiyaki with red bean and ice cream", "Taiyaki Hiiragi Ebisu"]
+              ]
+            },
+            {
+              "hood": "ebisu",
+              "title": "A couple of shops you can't miss",
+              "text": "P.F.S Parts Center, a modern industrial hardware store; The Harvest Kitchen General Store for classic ceramics and tableware; Sukima for Japanese leather goods by Hender Scheme; Igamono for Japanese ceramics.",
+              "spots": [
+                ["P.F.S Parts Center", "shop", "Modern industrial hardware", "P.F.S. Parts Center Ebisu"],
+                ["The Harvest Kitchen General Store", "shop", "Ceramics and tableware"],
+                ["Sukima", "shop", "Hender Scheme leather", "Sukima Hender Scheme Ebisu"],
+                ["Igamono", "shop", "Japanese ceramics", "Igamono Ebisu"]
+              ]
+            },
+            {
+              "hood": "ebisu",
+              "title": "Dinner in the neighbourhood",
+              "text": "For a lively dinner, Ebisu Yokocho: a nostalgic alley packed with izakayas serving grilled skewers, sashimi and cold beer. 67 Gyoza stands out for crispy cast-iron gyoza. For something quieter, Itasoba Kaoriya for traditional soba, CEDROS for California-style seafood, or Ta-im for Israeli staples.",
+              "spots": [
+                ["Ebisu Yokocho", "food", "An alley of izakayas: skewers, sashimi, beer"],
+                ["67 Gyoza", "food", "Crispy cast-iron gyoza"],
+                ["Itasoba Kaoriya", "food", "Traditional soba, quieter"],
+                ["CEDROS", "food", "California-style seafood"],
+                ["Ta-im", "food", "Israeli staples"]
+              ]
+            },
+            {
+              "hood": "ebisu",
+              "title": "Sip at some local bars",
+              "text": "Winestand Waltz is a hidden, intimate wine bar; Bar Trench for craft cocktails; A10 for cocktails in a secret setting; Wine Bar Q or Spincoaster for a cosy bar playing records.",
+              "spots": [
+                ["Winestand Waltz", "bar", "Hidden wine bar"],
+                ["Bar Trench", "bar", "Craft cocktails"],
+                ["A10", "bar", "Cocktails in a secret setting", "Bar A10 Ebisu"],
+                ["Wine Bar Q", "bar", "Wine and records"],
+                ["Spincoaster", "bar", "A bar playing records", "Spincoaster Music Bar Ebisu"]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "hoods": ["tomigaya", "harajuku", "shibuya"],
+      "tagline": "Local bakeries, a park stroll, a Shinto shrine, the outskirts of Harajuku and observation decks",
+      "reflect": "What was the most unexpected joy or surprise you experienced today?",
+      "blocks": [
+        {
+          "when": "morning",
+          "moves": [
+            {
+              "hood": "tomigaya",
+              "title": "Travel to Yoyogi-koen and explore Tomigaya",
+              "text": "Tomigaya is a laid-back pocket of Shibuya where Tokyo's creative crowd gathers: a short walk from the chaos of the crossing, but its own little world. For a quick coffee, Camelback Coffee or Little Nap. For a sit-down breakfast, Mukai for traditional donburi or Path for French-inspired dishes.",
+              "spots": [
+                ["Yoyogi-koen Station", "transit", "Where the day starts"],
+                ["Camelback Coffee", "cafe", "A quick coffee"],
+                ["Little Nap", "cafe", "A quick coffee", "Little Nap Coffee Stand"],
+                ["Mukai", "food", "Traditional donburi", "Mukai Tomigaya donburi"],
+                ["Path", "food", "French-inspired breakfast", "Path Tomigaya"]
+              ]
+            },
+            {
+              "hood": "tomigaya",
+              "title": "Grab a pastry to go from the local bakeries",
+              "text": "Tomigaya has excellent bakeries: 365 Days for artisan breads, Levain for rustic sourdough, Nata de Cristiano for Portuguese custard tarts, and Harritts Donuts, a tucked-away neighbourhood favourite.",
+              "spots": [
+                ["365 Days", "bakery", "Artisan breads", "365 Nichi bakery Tomigaya"],
+                ["Levain", "bakery", "Rustic sourdough", "Levain bakery Tomigaya"],
+                ["Nata de Cristiano", "bakery", "Portuguese custard tarts"],
+                ["Harritts Donuts", "bakery", "A tucked-away donut shop", "Haritts Donuts Tomigaya"]
+              ]
+            },
+            {
+              "hood": "harajuku",
+              "title": "Walk through Yoyogi Park",
+              "text": "Walk towards the Harajuku entrance and enjoy the pond, the rose garden and the seasonal blooms along the way.",
+              "spots": [["Yoyogi Park", "park", "Enter by the Harajuku gate; pond and rose garden", "Yoyogi Park Harajuku Gate"]]
+            },
+            {
+              "hood": "harajuku",
+              "title": "Explore Meiji Jingu",
+              "text": "Wander the beautiful Meiji Jingu Shrine area and look at the seasonal flowers in the Iris Field Garden (the irises peak in June; in winter it is the calm of the forest).",
+              "spots": [
+                ["Meiji Jingu Shrine", "culture", "The shrine in the forest"],
+                ["Iris Field Garden", "park", "The shrine's inner garden", "Meiji Jingu Gyoen Inner Garden"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "afternoon",
+          "moves": [
+            {
+              "hood": "harajuku",
+              "title": "Wander the outskirts of Harajuku",
+              "text": "Harajuku is more than Takeshita Street. Wander the area and stop by café-shop Think of Things, Labour & Wait for enamelware, Horaiya for coffee, and Beams Boy (women's) and Beams (men's) for popular Japanese clothing brands.",
+              "spots": [
+                ["Think of Things", "cafe", "Café and shop"],
+                ["Labour & Wait", "shop", "Enamelware", "Labour and Wait Tokyo"],
+                ["Horaiya", "cafe", "Coffee", "Horaiya coffee Harajuku"],
+                ["Beams Boy", "shop", "Women's", "BEAMS BOY Harajuku"],
+                ["Beams", "shop", "Men's", "BEAMS Harajuku"]
+              ]
+            },
+            {
+              "hood": "harajuku",
+              "title": "Lunch in the neighbourhood",
+              "text": "Rojiura Curry Samurai for Japanese curry, Afuri for the famous yuzu ramen, Maisen for tonkatsu, Menchirashi for udon, Mr Farmer for wholesome salads, or Sahsya Kanetanaka for modern Japanese.",
+              "spots": [
+                ["Rojiura Curry Samurai", "food", "Japanese curry", "Rojiura Curry Samurai Harajuku"],
+                ["Afuri", "food", "The yuzu ramen", "AFURI Harajuku"],
+                ["Maisen", "food", "Tonkatsu", "Tonkatsu Maisen Aoyama Honten"],
+                ["Menchirashi", "food", "Udon"],
+                ["Mr Farmer", "food", "Salads", "Mr. FARMER Omotesando"],
+                ["Sahsya Kanetanaka", "food", "Modern Japanese", "Sahsya Kanetanaka Omotesando"]
+              ]
+            },
+            {
+              "hood": "harajuku",
+              "title": "Explore Cat Street and Takeshita Street",
+              "text": "Both are busy, but worth it. UNBY for camping goods, Cibone for modern homewares, Higuma Donuts or The Little Bakery, Tideway for handmade leather goods, Ragtag for secondhand clothing, 3Coins for ¥300 finds, a purikura photo booth, and Iyoshi Cola for Japanese natural soda. Then a 10-minute walk to Shibuya.",
+              "spots": [
+                ["UNBY", "shop", "Camping goods", "UNBY Harajuku"],
+                ["Cibone", "shop", "Modern homewares", "CIBONE Omotesando"],
+                ["Higuma Donuts", "bakery", "Donuts", "Higuma Doughnuts Omotesando"],
+                ["The Little Bakery", "bakery", "A bakery", "The Little Bakery Tokyo Harajuku"],
+                ["Tideway", "shop", "Handmade leather", "Tideway leather Harajuku"],
+                ["Ragtag", "shop", "Secondhand clothing", "RAGTAG Harajuku"],
+                ["3Coins", "shop", "¥300 finds", "3COINS Harajuku"],
+                ["Purikura", "culture", "Japanese photo booth", "Purikura no Mecca Harajuku"],
+                ["Iyoshi Cola", "sweets", "Japanese natural soda", "Iyoshi Cola Shibuya"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "evening",
+          "moves": [
+            {
+              "hood": "shibuya",
+              "leg": "10 min walk",
+              "title": "Explore a depachika food hall",
+              "text": "The depachika, the department-store basement food hall, is in most big stores. The one in the Hikarie building (B3) is full of prepared savoury treats: onigiri, grilled skewers and bentos. On B2 are the traditional sweets, mochi and dorayaki. Great for snacks and souvenirs.",
+              "spots": [["Hikarie Building", "market", "B3 savoury and bentos; B2 sweets", "Shibuya Hikarie ShinQs"]]
+            },
+            {
+              "hood": "shibuya",
+              "title": "View Shibuya from the observation decks",
+              "text": "On the roof of Shibuya Scramble Square, Shibuya Sky is the highest point in Shibuya, a 360-degree open-air view of the skyline; reserve tickets in advance. If it is sold out, or for a free rooftop, the local secret is the roof of Parco, a trendy department store full of shops and food.",
+              "spots": [
+                ["Shibuya Sky", "view", "The highest point; book ahead", "Shibuya Sky Scramble Square"],
+                ["Parco", "view", "Free rooftop, shops and food", "Shibuya PARCO rooftop"]
+              ]
+            },
+            {
+              "hood": "shibuya",
+              "title": "Dinner in the neighbourhood",
+              "text": "D47 Shokudo, on the 8th floor of the Hikarie, has an epic view of the crossing in a calm setting; the menu is dishes from Japan's 47 prefectures. Also nearby: Kiwamiya for hamburger steak, Suage Soup Curry, Niigata Katsudon, Toritake, Matsue for sushi, Ryan for soba and Tsujita for tsukemen dipping ramen.",
+              "spots": [
+                ["D47 Shokudo", "food", "8th floor of the Hikarie; dishes from 47 prefectures"],
+                ["Kiwamiya", "food", "Hamburger steak", "Kiwamiya hamburg Shibuya"],
+                ["Suage Soup Curry", "food", "Hokkaido soup curry", "Suage Shibuya"],
+                ["Niigata Katsudon", "food", "Katsudon", "Niigata Katsudon Tarekatsu Shibuya"],
+                ["Toritake", "food", "Yakitori", "Toritake Shibuya"],
+                ["Matsue", "food", "Sushi", "Sushi Matsue Shibuya"],
+                ["Ryan", "food", "Soba", "Soba Ryan Shibuya"],
+                ["Tsujita", "food", "Tsukemen", "Tsujita Shibuya"]
+              ]
+            },
+            {
+              "hood": "shibuya",
+              "title": "Wander the crossing and around it",
+              "text": "Walking Shibuya crossing at night is iconic. Wander through Nonbei Yokocho and Miyashita Park, where you can sit on the rooftop with the locals. If you're up for more: Chatei Hatou, a hidden late-night retro café; INC, a low-key cocktail bar; or Jazz Bar Kohaku for live jazz.",
+              "spots": [
+                ["Nonbei Yokocho", "bar", "An alley of tiny bars"],
+                ["Miyashita Park", "park", "The rooftop with the locals"],
+                ["Chatei Hatou", "cafe", "Late-night retro café"],
+                ["INC", "bar", "Low-key cocktails", "INC cocktail bar Shibuya"],
+                ["Jazz Bar Kohaku", "bar", "Live jazz", "Jazz bar Kohaku Shibuya"]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "hoods": ["asakusa", "yanaka", "ueno"],
+      "tagline": "Iconic temples, traditional souvenirs, museums, the kitchen-supply street and classic Japanese meals",
+      "reflect": "What new cultural insight or tradition did you learn today?",
+      "blocks": [
+        {
+          "when": "morning",
+          "moves": [
+            {
+              "hood": "asakusa",
+              "title": "From Asakusa Station to the local cafés",
+              "text": "Known for its Scandinavian-Japanese aesthetic, Fuglen serves expertly brewed coffee and delicious waffles. Nearby, Cafe Tomorrow has more traditional breakfast sets and opens by 6:30.",
+              "spots": [
+                ["Asakusa Station", "transit", "Where the day starts"],
+                ["Fuglen", "cafe", "Coffee and waffles, Scandinavian style", "Fuglen Asakusa"],
+                ["Cafe Tomorrow", "cafe", "Traditional breakfast sets, open by 6:30", "Cafe Tomorrow Asakusa"]
+              ]
+            },
+            {
+              "hood": "asakusa",
+              "title": "Explore the Sensō-ji grounds",
+              "text": "Tokyo's oldest and most iconic temple. The shops on Nakamise-dori open from 9am. Nearby specialty shops: Mokuhankan for traditional woodblock prints, Kanaya Brush, a traditional brush shop, Iyoshi Cola for natural soda, and Yonoya Comb Store, full of handmade combs.",
+              "spots": [
+                ["Senso-ji", "culture", "Tokyo's oldest temple"],
+                ["Nakamise-dori", "market", "Shops open from 9am", "Nakamise Shopping Street Asakusa"],
+                ["Mokuhankan", "shop", "Woodblock prints", "Mokuhankan Woodblock Print Shop"],
+                ["Kanaya Brush", "shop", "Traditional brushes", "Kanaya Brush Asakusa"],
+                ["Iyoshi Cola", "sweets", "Japanese natural soda", "Iyoshi Cola Asakusa"],
+                ["Yonoya Comb Store", "shop", "Handmade combs", "Yonoya Kushiho Asakusa"]
+              ]
+            },
+            {
+              "hood": "asakusa",
+              "title": "Wander to Sumida Park (3 min)",
+              "text": "Sumida Park gives you the Sumida River and an amazing view of the Tokyo Skytree. On the way, stop by the classic Fukuchan for yakisoba, or Kamakura Sweets and Kukurihime Cafe for traditional Japanese sweets.",
+              "spots": [
+                ["Sumida Park", "park", "The river and the Skytree"],
+                ["Fukuchan", "food", "Classic yakisoba", "Fukuchan yakisoba Asakusa"],
+                ["Kamakura Sweets", "sweets", "Japanese sweets", "Kamakura Asakusa sweets"],
+                ["Kukurihime Cafe", "sweets", "Japanese sweets", "Kukurihime Cafe Asakusa"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "afternoon",
+          "moves": [
+            {
+              "hood": "yanaka",
+              "leg": "20 min train with one change, or a 14 min taxi: “Nezu-eki kudasai”",
+              "title": "Discover Nezu Shrine and its quiet streets",
+              "text": "Nezu Shrine is known for its red torii gates and tranquil garden. Nearby, Tokyo Bike rents beautifully designed bicycles by the hour or day. This area is best explored slowly, on foot or by bike: quiet residential streets, traditional tofu and rice shops, glimpses of everyday Tokyo. Check out Succession bakery across the street and Tasogaredō for handmade ceramics.",
+              "spots": [
+                ["Nezu Station", "transit", "Arrival", "Nezu Station Tokyo"],
+                ["Nezu Shrine", "culture", "Red torii and a garden"],
+                ["Tokyo Bike", "shop", "Bicycle hire", "tokyobike Yanaka"],
+                ["Succession", "bakery", "Bakery across the street", "Succession bakery Yanaka"],
+                ["Tasogaredō", "shop", "Handmade ceramics", "Tasogaredo Yanaka ceramics"]
+              ]
+            },
+            {
+              "hood": "yanaka",
+              "title": "A quiet neighbourhood walk to lunch",
+              "text": "Kayaba Coffee House is a local favourite known for its egg sandwich; sit upstairs in the traditional tatami room. Or Sampota Cafe Nombiriya for a cosy vintage-diner feel, or Sushi Noike for a traditional sushi lunch set.",
+              "spots": [
+                ["Kayaba Coffee House", "cafe", "The egg sandwich; tatami room upstairs", "Kayaba Coffee Yanaka"],
+                ["Sampota Cafe Nombiriya", "cafe", "Vintage diner"],
+                ["Sushi Noike", "food", "Sushi lunch set"]
+              ]
+            },
+            {
+              "hood": "yanaka",
+              "title": "Explore the Yanaka Ginza shopping street",
+              "text": "Independent shops, snack bars and old-fashioned storefronts. Kanekichien for Japanese teas and ceramics, Yanaka Matsunoya for handmade baskets and everyday tools, Nito for retro café treats, and Beer Pub Ishii or Yanaka Beer Hall for local draft beer and shareable snacks.",
+              "spots": [
+                ["Yanaka Ginza", "market", "The shopping street"],
+                ["Kanekichien", "shop", "Teas and ceramics", "Kanekichien Yanaka tea"],
+                ["Yanaka Matsunoya", "shop", "Baskets and everyday tools"],
+                ["Nito", "cafe", "Retro café treats", "Nito Yanaka cafe"],
+                ["Beer Pub Ishii", "bar", "Local draft beer", "Beer Pub Ishii Yanaka"],
+                ["Yanaka Beer Hall", "bar", "Beer and snacks"]
+              ]
+            },
+            {
+              "hood": "ueno",
+              "leg": "From Nippori, one stop to Uguisudani (1 min), or a short walk",
+              "title": "From the end of Yanaka Ginza to Ueno Park",
+              "text": "Several large museums: the Tokyo National Museum, the Tokyo Metropolitan Art Museum and the National Museum of Nature & Science. Stop for a traditional teahouse experience at Tohaku Chakan.",
+              "spots": [
+                ["Nippori Station", "transit", "At the end of Yanaka Ginza", "JR Nippori Station"],
+                ["Tokyo National Museum", "culture", "Japan's biggest museum"],
+                ["Tokyo Metropolitan Art Museum", "culture", "Exhibitions"],
+                ["National Museum of Nature & Science", "culture", "Nature and science", "National Museum of Nature and Science Ueno"],
+                ["Tohaku Chakan", "cafe", "A traditional teahouse", "Tohaku Chakan Tokyo National Museum"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "evening",
+          "moves": [
+            {
+              "hood": "ueno",
+              "title": "Explore the Ueno Park pond",
+              "text": "You could spend hours in the museums, but if you're ready for a slower pace, make your way to Shinobazu-no-Ike Pond to enjoy the water lilies and some people-watching by the lake.",
+              "spots": [["Shinobazu-no-Ike Pond", "park", "The park's pond", "Shinobazu Pond Ueno"]]
+            },
+            {
+              "hood": "kappabashi",
+              "leg": "20 min walk or 13 min train",
+              "title": "Travel to Kappabashi kitchen street",
+              "text": "Kappabashi is lined with shops for kitchenware and restaurant supplies: cookware, utensils, realistic food displays and custom lanterns. To narrow it down: KAMA-ASA for Japanese knives and their supply shop next door, FU WA RI for ceramics and wooden tableware, and Dengama for one-of-a-kind pieces.",
+              "spots": [
+                ["Kappabashi", "market", "The kitchenware street", "Kappabashi Kitchen Town"],
+                ["KAMA-ASA", "shop", "Japanese knives", "Kama-Asa Shoten Kappabashi"],
+                ["FU WA RI", "shop", "Ceramics and wooden tableware", "FUWARI Kappabashi tableware"],
+                ["Dengama", "shop", "One-of-a-kind pieces", "Dengama Kappabashi"]
+              ]
+            },
+            {
+              "hood": "kappabashi",
+              "title": "Dinner at a traditional restaurant",
+              "text": "Sometarō Okonomiyaki is a neighbourhood favourite for okonomiyaki, the savoury pancake of cabbage and batter with pork belly, seafood or cheese. Sushi Ken is another popular choice for traditional sushi. If you're up for a slightly longer walk, Kuramae Iseya is well worth it for beautifully prepared tempura.",
+              "spots": [
+                ["Sometarō Okonomiyaki", "food", "The neighbourhood's okonomiyaki", "Sometaro Okonomiyaki Asakusa"],
+                ["Sushi Ken", "food", "Traditional sushi", "Sushi Ken Asakusa"],
+                ["Kuramae Iseya", "food", "Tempura, worth the walk", "Iseya tempura Kuramae"]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "hoods": ["kiyosumi", "ningyocho", "ginza"],
+      "tagline": "Independent coffee shops, a traditional garden, old Tokyo charm and classy neighbourhood gems",
+      "reflect": "Were there any new experiences from today that you'd like to bring into your daily life?",
+      "blocks": [
+        {
+          "when": "morning",
+          "moves": [
+            {
+              "hood": "kiyosumi",
+              "title": "Travel to Kiyosumi-Shirakawa",
+              "text": "A small coffee district and home to the beautifully preserved Kiyosumi Gardens. A neighbourhood made for slow mornings, scenic river strolls and a break from the city's pace.",
+              "spots": [["Kiyosumi-shirakawa Station", "transit", "Where the day starts"]]
+            },
+            {
+              "hood": "kiyosumi",
+              "title": "Enjoy the neighbourhood coffee shops",
+              "text": "Monz Cafe is a local favourite for sweet treats; Blue Bottle's warehouse location is one of the city's most beautiful; Koffee Mameya is sleek and modern; Iki Roastery serves great food along the river; Cafe Kokun has a nostalgic kissaten atmosphere.",
+              "spots": [
+                ["Monz Cafe", "cafe", "Sweet treats; a local favourite"],
+                ["Blue Bottle", "cafe", "The beautiful warehouse location", "Blue Bottle Coffee Kiyosumi Shirakawa"],
+                ["Koffee Mameya", "cafe", "Sleek and modern", "Koffee Mameya Kakeru Kiyosumi"],
+                ["Iki Roastery", "cafe", "Food along the river", "iki Roastery & Eatery"],
+                ["Cafe Kokun", "cafe", "Nostalgic kissaten", "Cafe Kokun Kiyosumi"]
+              ]
+            },
+            {
+              "hood": "kiyosumi",
+              "title": "Explore the neighbourhood landmarks",
+              "text": "Kiyosumi Gardens is a must for seasonal blooms, along with the local museums: the Fukagawa Edo Museum and MOT, the Museum of Contemporary Art.",
+              "spots": [
+                ["Kiyosumi Gardens", "park", "A traditional garden"],
+                ["Fukagawa Edo Museum", "culture", "Edo-period Tokyo"],
+                ["MOT", "culture", "Museum of Contemporary Art", "Museum of Contemporary Art Tokyo"]
+              ]
+            },
+            {
+              "hood": "kiyosumi",
+              "title": "Still up for more exploring?",
+              "text": "Rent a bike at Tokyo Bike and explore the area. Stop by the nearby Fujimaru Winery, enjoy traditional Japanese seafood at Kappou Miyako, unwind at the Tokiwa-Yu sento bathhouse, or browse ceramics at Canna, All and Potpurri.",
+              "spots": [
+                ["Tokyo Bike", "shop", "Bicycle hire", "tokyobike Kiyosumi Shirakawa"],
+                ["Fujimaru Winery", "bar", "An urban winery", "Fujimaru Winery Kiyosumi"],
+                ["Kappou Miyako", "food", "Traditional seafood", "Kappou Miyako Kiyosumi"],
+                ["Tokiwa-Yu", "spa", "Sento bathhouse", "Tokiwa-yu sento Kiyosumi"],
+                ["Canna", "shop", "Ceramics", "Canna Kiyosumi ceramics"],
+                ["All", "shop", "Ceramics", "All 清澄白河 器"],
+                ["Potpurri", "shop", "Ceramics", "Potpurri Kiyosumi"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "afternoon",
+          "moves": [
+            {
+              "hood": "ningyocho",
+              "leg": "One stop, 3 min, to Suitengumae",
+              "title": "Travel to Ningyocho",
+              "text": "A neighbourhood full of old Tokyo charm: family-run traditional sweet shops, century-old restaurants and alleyways that feel like walking through a history book.",
+              "spots": [["Suitengumae Station", "transit", "Arrival"]]
+            },
+            {
+              "hood": "ningyocho",
+              "title": "A classic Japanese lunch",
+              "text": "Edoji is a quiet neighbourhood gem for grilled meats and seasonal vegetables. Shinodazushi specialises in inarizushi, tofu pockets filled with seasoned sushi rice, and traditional sushi bento boxes.",
+              "spots": [
+                ["Edoji", "food", "Grilled meats and seasonal vegetables", "Edoji Ningyocho"],
+                ["Shinodazushi", "food", "Inarizushi and sushi bentos", "Shinodazushi Ningyocho"]
+              ]
+            },
+            {
+              "hood": "ningyocho",
+              "title": "Try the neighbourhood's traditional sweets",
+              "text": "Hatsune is a longtime favourite for classic Japanese desserts like parfaits and anmitsu. To take away: Itakuraya for their Seven Lucky Gods red-bean ningyoyaki, or Yanagiya for classic fish-shaped taiyaki.",
+              "spots": [
+                ["Hatsune", "sweets", "Parfaits and anmitsu", "Hatsune Ningyocho"],
+                ["Itakuraya", "sweets", "Seven Lucky Gods ningyoyaki", "Itakuraya Ningyocho"],
+                ["Yanagiya", "sweets", "Classic taiyaki", "Yanagiya taiyaki Ningyocho"]
+              ]
+            },
+            {
+              "hood": "ningyocho",
+              "title": "Japanese tea or a midday beer",
+              "text": "Morinoen specialises in hojicha roasted green tea; Xiaomei Tea House has Chinese teas and tea tools. For a midday beer, Number 6 nearby, or Craft Beer Market for Japanese beers.",
+              "spots": [
+                ["Morinoen", "cafe", "Hojicha", "Morinoen Ningyocho"],
+                ["Xiaomei Tea House", "cafe", "Chinese teas", "Xiaomei Tea House Ningyocho"],
+                ["Number 6", "bar", "A beer", "Number 6 craft beer Ningyocho"],
+                ["Craft Beer Market", "bar", "Japanese beers", "Craft Beer Market Ningyocho"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "evening",
+          "moves": [
+            {
+              "hood": "ginza",
+              "leg": "29 min walk or 17 min train",
+              "title": "Make your way to Ginza",
+              "text": "Ginza is known for high-end shopping and retro charm, but at night it takes on a different energy: neon-lit streets, businesspeople buzzing between late-night bars, retro kissaten and Michelin-rated restaurants.",
+              "spots": [["Ginza Station", "transit", "Arrival"]]
+            },
+            {
+              "hood": "ginza",
+              "title": "Visit Ginza's specialty shops",
+              "text": "Among the familiar brands, a few you won't find anywhere else: Itoya, an upscale eight-floor stationery store; Takumi for handmade ceramics and Japanese home goods; Cibone Case on the 4th floor of Ginza Six, with modern decor; and Kyukyodo for quality Japanese paper and writing tools. The Muji Ginza flagship is worth visiting for its space alone, plus its specialty products, restaurant, bakery and hotel.",
+              "spots": [
+                ["Itoya", "shop", "Eight floors of stationery", "Itoya Ginza"],
+                ["Takumi", "shop", "Handmade ceramics and crafts", "Takumi craft shop Ginza"],
+                ["Cibone Case", "shop", "4th floor of Ginza Six", "CIBONE CASE Ginza Six"],
+                ["Kyukyodo", "shop", "Japanese paper", "Kyukyodo Ginza"],
+                ["Muji Ginza", "shop", "The flagship, with a bakery and hotel", "MUJI Ginza flagship"]
+              ]
+            },
+            {
+              "hood": "ginza",
+              "title": "Dinner in the neighbourhood",
+              "text": "Nemuro Hanamaru is a favourite for creative, seasonal conveyor-belt sushi; join the waitlist as early as possible with their remote QR system, as waits often reach two hours. Reserve Hachigou Ramen in advance for an elevated ramen; Oborodzuki for tsukemen; Yosuke Sato for udon; Torigin Honten for yakitori; Tamei-an for oyakodon and tempura in a classic setting.",
+              "spots": [
+                ["Nemuro Hanamaru", "food", "Conveyor-belt sushi; join the QR waitlist early", "Nemuro Hanamaru Ginza"],
+                ["Hachigou Ramen", "food", "Elevated ramen; reserve", "Ginza Hachigou ramen"],
+                ["Oborodzuki", "food", "Tsukemen", "Oborodzuki tsukemen Ginza"],
+                ["Yosuke Sato", "food", "Udon", "Yosuke Sato udon Ginza"],
+                ["Torigin Honten", "food", "Yakitori", "Torigin Honten Ginza"],
+                ["Tamei-an", "food", "Oyakodon and tempura", "Tamei-an Ginza"]
+              ]
+            },
+            {
+              "hood": "ginza",
+              "title": "Late-night coffee shops or bars",
+              "text": "Ginza is known for its late-night kissaten: Ginza West for classic desserts and tea, Tsubakiya Coffee or Ginza Ranzu for specialty coffee and sweets. For a drink, Mixology Salon for tea-based cocktails, or Bar Sherlock and Bar Chamucos for cocktails with homemade fruit syrups.",
+              "spots": [
+                ["Ginza West", "cafe", "Classic desserts and tea", "Ginza West Honten"],
+                ["Tsubakiya Coffee", "cafe", "Specialty coffee and sweets", "Tsubakiya Coffee Ginza"],
+                ["Ginza Ranzu", "cafe", "Specialty coffee and sweets"],
+                ["Mixology Salon", "bar", "Tea-based cocktails", "Mixology Salon Ginza Six"],
+                ["Bar Sherlock", "bar", "Homemade fruit syrups", "Bar Sherlock Ginza"],
+                ["Bar Chamucos", "bar", "Homemade fruit syrups", "Bar Chamucos Ginza"]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "hoods": ["shinjuku", "hatagaya", "tomigaya"],
+      "tagline": "Small cafés, the Shinjuku park, independent shops, cosy bars and unexpected creative cuisines",
+      "reflect": "Did you discover a spot today that you could see yourself returning to? Why?",
+      "blocks": [
+        {
+          "when": "morning",
+          "moves": [
+            {
+              "hood": "shinjuku",
+              "title": "Travel to Shinjuku",
+              "text": "Shinjuku is best known for nightlife, but there's plenty for the day. Verve Coffee near the station opens at 7am with excellent coffee and waffles. Cafe Aaliya opens at 9am near the entrance to Shinjuku Gyoen, and Coffee Times is a classic kissaten known for buttered toast and its old-school smoking atmosphere.",
+              "spots": [
+                ["Shinjuku Station", "transit", "Where the day starts"],
+                ["Verve Coffee", "cafe", "Opens at 7am; coffee and waffles", "Verve Coffee Roasters Shinjuku"],
+                ["Cafe Aaliya", "cafe", "Opens at 9am, near the Gyoen", "Cafe Aaliya Shinjuku"],
+                ["Coffee Times", "cafe", "Classic kissaten; buttered toast", "Coffee Times Shinjuku kissaten"]
+              ]
+            },
+            {
+              "hood": "shinjuku",
+              "title": "Explore Shinjuku Gyoen",
+              "text": "One of Tokyo's most beautiful parks. Seasonal gardens, small ponds, a greenhouse, spacious lawns, teahouses and small cafés. It's easy to spend a couple of hours here.",
+              "spots": [["Shinjuku Gyoen", "park", "Gardens, a greenhouse and teahouses", "Shinjuku Gyoen National Garden"]]
+            },
+            {
+              "hood": "shinjuku",
+              "title": "Brunch in the neighbourhood",
+              "text": "Daian is a longtime favourite for its handmade soba and house-made soba tea.",
+              "spots": [["Daian", "food", "Handmade soba", "Daian soba Shinjuku"]]
+            },
+            {
+              "hood": "shinjuku",
+              "title": "Specialty shops and department stores",
+              "text": "Sekaido, a well-known multi-storey art and stationery store; NEWoMan for contemporary fashion and design; Isetan, one of Tokyo's most iconic department stores; Beams for curated, design-forward gifts.",
+              "spots": [
+                ["Sekaido", "shop", "Art and stationery over several floors", "Sekaido Shinjuku"],
+                ["NEWoMan", "shop", "Fashion and design", "NEWoMan Shinjuku"],
+                ["Isetan", "shop", "The iconic department store", "Isetan Shinjuku"],
+                ["Beams", "shop", "Design-forward gifts", "BEAMS Japan Shinjuku"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "afternoon",
+          "moves": [
+            {
+              "hood": "hatagaya",
+              "leg": "33 min walk or 3 min train, Shinjuku to Hatagaya",
+              "title": "Start the walk through Hatagaya",
+              "text": "This begins a walk through Hatagaya, Nishihara and Yoyogi-Uehara: three overlooked neighbourhoods of independent shops, thoughtful cafés and local favourites, just beyond busy Shinjuku and Shibuya.",
+              "spots": [["Hatagaya Station", "transit", "Arrival"]]
+            },
+            {
+              "hood": "hatagaya",
+              "title": "The local take on global cuisines",
+              "text": "Despite its quiet residential feel, the neighbourhood is full of international flavours: Freeman Shokudo or Hoff for American-inspired comfort food, Dubois for French, Tortilla Club for Mexican tacos, Tsuta for creative ramen.",
+              "spots": [
+                ["Freeman Shokudo", "food", "American comfort food", "Freeman Shokudo Hatagaya"],
+                ["Hoff", "food", "American comfort food", "Hoff Hatagaya"],
+                ["Dubois", "food", "French", "Dubois Hatagaya"],
+                ["Tortilla Club", "food", "Tacos", "Tortilla Club Hatagaya"],
+                ["Tsuta", "food", "Creative ramen", "Tsuta ramen Yoyogi-Uehara"]
+              ]
+            },
+            {
+              "hood": "hatagaya",
+              "title": "Shop at independent local shops",
+              "text": "Rototo for socks made in Nara, Ella Records for a thoughtfully curated vinyl collection, and Bullpen and Roundabout for unique homewares and interior pieces.",
+              "spots": [
+                ["Rototo", "shop", "Socks made in Nara", "RoToTo Hatagaya"],
+                ["Ella Records", "shop", "Vinyl", "Ella Records Hatagaya"],
+                ["Bullpen", "shop", "Homewares", "Bullpen Hatagaya"],
+                ["Roundabout", "shop", "Homewares and interiors", "Roundabout Yoyogi-Uehara"]
+              ]
+            },
+            {
+              "hood": "hatagaya",
+              "title": "A coffee, wine or sweet break (or all three)",
+              "text": "Nadoya no Katte and Paddler's Coffee are neighbourhood favourites; Kasiki serves beautifully crafted ice cream; Haritts Donuts is known for baked donuts tucked away in a quiet alley. For something different, No. pairs coffee cocktails with a cosy bookstore, and Wineshop Flow has an excellent wine selection and bottle shop.",
+              "spots": [
+                ["Nadoya no Katte", "cafe", "A neighbourhood favourite", "Nadoya no Katte Hatagaya"],
+                ["Paddler's Coffee", "cafe", "A neighbourhood favourite", "Paddlers Coffee Nishihara"],
+                ["Kasiki", "sweets", "Crafted ice cream", "Kasiki ice cream Nishihara"],
+                ["Haritts Donuts", "bakery", "Baked donuts in a quiet alley", "Haritts donuts Yoyogi-Uehara"],
+                ["No.", "cafe", "Coffee cocktails in a bookstore", "No. coffee bar bookstore Yoyogi-Uehara"],
+                ["Wineshop Flow", "bar", "Wine and bottles", "Wineshop Flow Yoyogi-Uehara"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "evening",
+          "moves": [
+            {
+              "hood": "tomigaya",
+              "leg": "Walk on to Tomigaya",
+              "title": "Tomigaya, Shibuya's quieter side",
+              "text": "Tomigaya is where many of Tokyo's creatives come to slow down. Its relaxed atmosphere, independent shops, neighbourhood restaurants and intimate bars make it a wonderful place to spend the evening.",
+              "spots": []
+            },
+            {
+              "hood": "tomigaya",
+              "title": "Neighbourhood specialty shops",
+              "text": "Lost & Found for Japanese tools and vintage-inspired glassware, Kihara for locally made pottery, Pivoine for French-inspired vintage clothing and home goods, and Shibuya Publishing & Books for artist pop-ups, curated books and unique stationery.",
+              "spots": [
+                ["Lost & Found", "shop", "Tools and glassware", "Lost and Found Tomigaya"],
+                ["Kihara", "shop", "Local pottery", "Kihara Tomigaya"],
+                ["Pivoine", "shop", "French-inspired vintage", "Pivoine Tomigaya"],
+                ["Shibuya Publishing & Books", "book", "Books, pop-ups and stationery"]
+              ]
+            },
+            {
+              "hood": "tomigaya",
+              "title": "The thriving dinner scene",
+              "text": "Kakan serves comforting Chinese dishes, Katsudon-ya Zuicho is known for juicy katsudon, ChowChow is cosy Italian, and Mimet pairs French-inspired cuisine with house-made desserts.",
+              "spots": [
+                ["Kakan", "food", "Comforting Chinese", "Kakan Tomigaya"],
+                ["Katsudon-ya Zuicho", "food", "Juicy katsudon", "Zuicho katsudon Tomigaya"],
+                ["ChowChow", "food", "Cosy Italian", "ChowChow Tomigaya"],
+                ["Mimet", "food", "French, with house desserts", "Mimet Tomigaya"]
+              ]
+            },
+            {
+              "hood": "tomigaya",
+              "title": "End the evening at a neighbourhood bar",
+              "text": "Ahiru Store is a charming wine and snack bar; Cidernaut specialises in craft cider and seasonal dishes; Bellwood serves inventive cocktails in a speakeasy setting; Studio Mule is a wine and vinyl listening bar.",
+              "spots": [
+                ["Ahiru Store", "bar", "Wine and snacks", "Ahiru Store Tomigaya"],
+                ["Cidernaut", "bar", "Craft cider", "Cidernaut Tomigaya"],
+                ["Bellwood", "bar", "Speakeasy cocktails", "The Bellwood Shibuya"],
+                ["Studio Mule", "bar", "Wine and vinyl", "Studio Mule Tomigaya"]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "hoods": ["shimokitazawa", "kichijoji", "nakano"],
+      "tagline": "Thrift shops, a relaxing pond, an underground café, the anime shopping centre and a neon-lit neighbourhood",
+      "reflect": "Were there any spots that inspired you creatively, through art, design or nature?",
+      "blocks": [
+        {
+          "when": "morning",
+          "moves": [
+            {
+              "hood": "shimokitazawa",
+              "title": "From Shimokitazawa Station to a local café",
+              "text": "Shimokitazawa is known for its creative energy, vintage shops and independent cafés. Most stores open around 11am, but it's one of Tokyo's best neighbourhoods to wander slowly. Brooklyn Roasting Co. sits just outside the station; Sidewalk Coffee Roasters inside the Mustard Hotel opens at 7am with simple breakfast bagels; Ogawa Coffee Lab and Coffee Country Tokyo open by 9am nearby.",
+              "spots": [
+                ["Shimokitazawa Station", "transit", "Where the day starts"],
+                ["Brooklyn Roasting Co.", "cafe", "Just outside the station", "Brooklyn Roasting Company Shimokitazawa"],
+                ["Sidewalk Coffee Roasters", "cafe", "In the Mustard Hotel; bagels from 7am", "Sidewalk Coffee Roasters Mustard Hotel Shimokitazawa"],
+                ["Ogawa Coffee Lab", "cafe", "Open by 9am", "Ogawa Coffee Laboratory Shimokitazawa"],
+                ["Coffee Country Tokyo", "cafe", "Open by 9am"]
+              ]
+            },
+            {
+              "hood": "shimokitazawa",
+              "title": "Breakfast or bakeries in the neighbourhood",
+              "text": "Universal Bakes Nicome, above Ogawa Coffee Lab, serves handmade pastries. RoJean offers comforting dishes like grilled cheese and soup, and Sandwich Club is open by 7am and specialises in a Japanese-style egg sando.",
+              "spots": [
+                ["Universal Bakes Nicome", "bakery", "Above Ogawa Coffee Lab"],
+                ["RoJean", "food", "Grilled cheese and soup", "RoJean Shimokitazawa"],
+                ["Sandwich Club", "food", "Egg sando; open by 7am", "Sandwich Club Shimokitazawa"]
+              ]
+            },
+            {
+              "hood": "shimokitazawa",
+              "title": "Shop one-of-a-kind thrift stores",
+              "text": "Shimokitazawa is packed with vintage shops, so it's hard to know where to begin. Alaska, Top of the Hill and Furugiya Memento all have thoughtfully curated selections; Flamingo is a well-known Tokyo chain and Meadow by Flamingo offers a more mature curation.",
+              "spots": [
+                ["Alaska", "shop", "Curated vintage", "Alaska vintage Shimokitazawa"],
+                ["Top of the Hill", "shop", "Curated vintage", "Top of the Hill vintage Shimokitazawa"],
+                ["Furugiya Memento", "shop", "Curated vintage", "Memento vintage Shimokitazawa"],
+                ["Flamingo", "shop", "The Tokyo vintage chain", "Flamingo Shimokitazawa"],
+                ["Meadow by Flamingo", "shop", "A more mature curation"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "afternoon",
+          "moves": [
+            {
+              "hood": "kichijoji",
+              "leg": "13 min on the express from Shimokitazawa to Kichijōji",
+              "title": "Begin at Inokashira Park",
+              "text": "Kichijōji is one of Tokyo's most beloved neighbourhoods. Begin at Inokashira Park, where walking paths wind around the pond past swan boats, a tranquil shrine and small coffee stands like Blue Sky Coffee.",
+              "spots": [
+                ["Kichijoji Station", "transit", "Arrival"],
+                ["Inokashira Park", "park", "The pond and the swan boats"],
+                ["Inokashira Benzaiten", "culture", "The shrine by the pond", "Inokashira Benzaiten shrine"],
+                ["Blue Sky Coffee", "cafe", "A coffee stand in the park", "Blue Sky Coffee Inokashira Park"]
+              ]
+            },
+            {
+              "hood": "kichijoji",
+              "title": "Neighbourhood lunch gems",
+              "text": "Hikiniku to Come is known for juicy hamburger steak with rice; Kanekoya specialises in high-quality tempura; Iseya has been grilling yakitori since 1928; Tarekatsu is a favourite for crispy pork cutlets with seasonal vegetables, rice and miso soup.",
+              "spots": [
+                ["Hikiniku to Come", "food", "Hamburger steak with rice", "Hikiniku to Come Kichijoji"],
+                ["Kanekoya", "food", "Tempura", "Kanekoya tempura Kichijoji"],
+                ["Iseya", "food", "Yakitori since 1928", "Iseya Kichijoji yakitori"],
+                ["Tarekatsu", "food", "Crispy pork cutlets", "Tarekatsu Kichijoji"]
+              ]
+            },
+            {
+              "hood": "kichijoji",
+              "title": "Local neighbourhood favourites",
+              "text": "PukuPuku for affordable vintage ceramics, 36 Sublo for thoughtfully curated stationery, Outbound and Sippo for Japanese homewares, clothing and accessories.",
+              "spots": [
+                ["PukuPuku", "shop", "Affordable vintage ceramics", "PukuPuku Kichijoji"],
+                ["36 Sublo", "shop", "Stationery", "36 Sublo Kichijoji"],
+                ["Outbound", "shop", "Homewares and accessories", "Outbound Kichijoji"],
+                ["Sippo", "shop", "Homewares and clothing", "Sippo Kichijoji"]
+              ]
+            },
+            {
+              "hood": "kichijoji",
+              "title": "A tea or coffee break",
+              "text": "Coffee Hall Kugutsusō is a hidden underground café that's been a neighbourhood favourite for decades; Chai Break is perfect for a takeaway chai before another walk around the pond.",
+              "spots": [
+                ["Coffee Hall Kugutsusō", "cafe", "The underground café, for decades", "Kugutsuso coffee hall Kichijoji"],
+                ["Chai Break", "cafe", "A takeaway chai", "Chai Break Kichijoji"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "evening",
+          "moves": [
+            {
+              "hood": "nakano",
+              "leg": "13 min on the local train from Kichijōji to Nakano",
+              "title": "Arrive in Nakano",
+              "text": "Nakano is a more down-to-earth side of Tokyo. As evening sets in, its cosy izakayas, neon-lit streets and nostalgic atmosphere make it a favourite among locals, yet it's often overlooked by visitors staying nearby in Shinjuku.",
+              "spots": [["Nakano Station", "transit", "Arrival"]]
+            },
+            {
+              "hood": "nakano",
+              "title": "Browse Nakano Broadway",
+              "text": "One of Tokyo's most iconic shopping complexes: anime collectibles, vintage toys, used electronics, watches, records, books and secondhand clothing. It feels uniquely Tokyo and is worth a little browse.",
+              "spots": [["Nakano Broadway", "shop", "Anime, toys, records, watches"]]
+            },
+            {
+              "hood": "nakano",
+              "title": "Dinner and a neon-lit evening walk",
+              "text": "The streets around Nakano Broadway are packed with lively restaurants, tiny bars and lantern-lined alleys, best explored without much of a plan. Maguro Mart for exceptional tuna, Tototo for Japanese-style pizza, and Aonisai for a creative izakaya with excellent sake.",
+              "spots": [
+                ["Maguro Mart", "food", "Exceptional tuna", "Maguro Mart Nakano"],
+                ["Tototo", "food", "Japanese-style pizza", "Tototo Nakano"],
+                ["Aonisai", "food", "A creative izakaya; good sake", "Aonisai Nakano"]
+              ]
+            },
+            {
+              "hood": "nakano",
+              "title": "Late-night cafés and bars",
+              "text": "Back inside Nakano Broadway, Coffee Zingaro is a colourful café made with Takashi Murakami, and Daily Chiko is famous for its towering soft-serve cones. For one last stop, Bright Brown is a cosy neighbourhood jazz and blues bar.",
+              "spots": [
+                ["Coffee Zingaro", "cafe", "The Takashi Murakami café", "Coffee Zingaro Nakano Broadway"],
+                ["Daily Chiko", "sweets", "Towering soft-serve cones", "Daily Chiko Nakano Broadway"],
+                ["Bright Brown", "bar", "Jazz and blues", "Bright Brown jazz bar Nakano"]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "hoods": ["jiyugaoka", "gakugeidai", "nakameguro"],
+      "tagline": "A day along the Toyoko line: gentle strolls, local daily life, bookshops and high-quality Japanese food",
+      "reflect": "Is there someone you met today, a shopkeeper or a local, who left an impression on you?",
+      "blocks": [
+        {
+          "when": "morning",
+          "moves": [
+            {
+              "hood": "jiyugaoka",
+              "title": "Travel to Jiyugaoka",
+              "text": "Spend the morning wandering Jiyūgaoka, a relaxed neighbourhood known for its tree-lined streets, independent shops and European-inspired atmosphere. The perfect place to slow down and see a quieter side of Tokyo.",
+              "spots": [["Jiyugaoka Station", "transit", "Where the day starts"]]
+            },
+            {
+              "hood": "jiyugaoka",
+              "title": "The neighbourhood's favourite cafés",
+              "text": "Onibus opens at 9am and has become a favourite among Tokyo's coffee lovers. Chanako Coffee Roastery and Alpha Beta Club are two more excellent morning options, each with thoughtfully roasted coffee and simple breakfast bites.",
+              "spots": [
+                ["Onibus", "cafe", "Opens at 9am", "Onibus Coffee Jiyugaoka"],
+                ["Chanako Coffee Roastery", "cafe", "House-roasted coffee", "Chanako Coffee Jiyugaoka"],
+                ["Alpha Beta Club", "cafe", "Coffee and simple bites", "Alpha Beta Club Jiyugaoka"]
+              ]
+            },
+            {
+              "hood": "jiyugaoka",
+              "title": "Breakfast nearby",
+              "text": "Latte Graphic is a neighbourhood favourite for Australian-inspired breakfasts; Flipper's is known for its famously fluffy pancakes; for freshly baked pastries and sandwiches, Bread, Espresso, Jiyugaoka is well worth a stop.",
+              "spots": [
+                ["Latte Graphic", "cafe", "Australian-style breakfast", "Latte Graphic Jiyugaoka"],
+                ["Flipper's", "sweets", "The fluffy pancakes", "Flippers Jiyugaoka pancakes"],
+                ["Bread, Espresso, Jiyugaoka", "bakery", "Pastries and sandwiches", "Bread Espresso & Jiyugaoka"]
+              ]
+            },
+            {
+              "hood": "jiyugaoka",
+              "title": "Browse the neighbourhood's specialty shops",
+              "text": "Today's Special is filled with tableware, kitchen tools, plants and gifts; Timeless Comfort specialises in ceramics and homewares; Popeye's Camera is a favourite for film photography supplies and camera gear. Although it opens later, Kosoan is a traditional teahouse that feels worlds away from central Tokyo.",
+              "spots": [
+                ["Today's Special", "shop", "Tableware, kitchen, plants and gifts", "Today's Special Jiyugaoka"],
+                ["Timeless Comfort", "shop", "Ceramics and homewares", "Timeless Comfort Jiyugaoka"],
+                ["Popeye's Camera", "shop", "Film photography", "Popeye Camera Jiyugaoka"],
+                ["Kosoan", "cafe", "A traditional teahouse; opens later", "Kosoan tea house Jiyugaoka"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "afternoon",
+          "moves": [
+            {
+              "hood": "gakugeidai",
+              "leg": "3 min train, Jiyugaoka to Gakugei-daigaku",
+              "title": "Arrive in Gakugei-dai",
+              "text": "A glimpse into everyday Tokyo. Fruit and vegetable stands spill onto the pavements, students make their way home from school, small independent businesses line the streets. It may seem unassuming at first, but it quietly rewards anyone willing to wander.",
+              "spots": [["Gakugei-daigaku Station", "transit", "Arrival"]]
+            },
+            {
+              "hood": "gakugeidai",
+              "title": "Lunch in the neighbourhood",
+              "text": "Stand Banh Mi is a longtime favourite for modern Vietnamese sandwiches; Midorie serves seasonal deli-style plates built around fresh vegetables.",
+              "spots": [
+                ["Stand Banh Mi", "food", "Vietnamese sandwiches", "Stand Banh Mi Gakugei-daigaku"],
+                ["Midorie", "food", "Deli plates built on vegetables", "Midorie Gakugei-daigaku"]
+              ]
+            },
+            {
+              "hood": "gakugeidai",
+              "title": "Browse the independent shops",
+              "text": "Book & Sons is a curated bookstore for art and design, with a rotating gallery upstairs. Around the corner, Sunny Boy Books has a wonderful selection of secondhand books, Tokyo Recycle imption is filled with vintage homewares, and Yuyujin showcases beautifully curated pottery.",
+              "spots": [
+                ["Book & Sons", "book", "Art and design, gallery upstairs", "Book and Sons Gakugei-daigaku"],
+                ["Sunny Boy Books", "book", "Secondhand books", "Sunny Boy Books Gakugei-daigaku"],
+                ["Tokyo Recycle imption", "shop", "Vintage homewares", "Tokyo Recycle imption Gakugei-daigaku"],
+                ["Yuyujin", "shop", "Pottery", "Yuyujin Gakugei-daigaku"]
+              ]
+            },
+            {
+              "hood": "gakugeidai",
+              "title": "A coffee or sweet break",
+              "text": "Matterhorn is a longtime neighbourhood favourite for cakes, cookies and seasonal desserts, takeaway or seated. Higuma Doughnuts serves warm made-to-order doughnuts, while Woodberry Coffee and WR. are excellent cafés tucked beneath the train tracks.",
+              "spots": [
+                ["Matterhorn", "sweets", "Cakes and cookies", "Matterhorn Gakugei-daigaku"],
+                ["Higuma Doughnuts", "bakery", "Warm made-to-order doughnuts", "Higuma Doughnuts Gakugei-daigaku"],
+                ["Woodberry Coffee", "cafe", "Under the tracks", "Woodberry Coffee Gakugei-daigaku"],
+                ["WR.", "cafe", "Under the tracks", "WR. coffee Gakugei-daigaku"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "evening",
+          "moves": [
+            {
+              "hood": "nakameguro",
+              "leg": "30 min walk through Yutenji, or 3 min train",
+              "title": "Travel to Nakameguro",
+              "text": "Walking toward Nakameguro you pass through Yutenji, another quiet residential neighbourhood full of independent shops and small eateries. A calm place for slow wandering.",
+              "spots": [["Yutenji", "transit", "A quiet neighbourhood on the way", "Yutenji Station"]]
+            },
+            {
+              "hood": "nakameguro",
+              "title": "Dinner with the locals",
+              "text": "Nakameguro is filled with excellent restaurants. Jazzy Beats serves modern, high-quality ramen; Kakura is known for its house-made Japanese curry; Seirinkan has a reputation for some of Tokyo's best pizza; Source specialises in okonomiyaki; Kushiwakamaru is a lively yakitori restaurant with a classic izakaya atmosphere straight out of a Japanese film. Join the waitlist early on their clipboard, as it fills up quickly.",
+              "spots": [
+                ["Jazzy Beats", "food", "Modern ramen", "Jazzy Beats ramen Nakameguro"],
+                ["Kakura", "food", "House-made Japanese curry", "Kakura curry Nakameguro"],
+                ["Seirinkan", "food", "The famous pizza", "Seirinkan Nakameguro"],
+                ["Source", "food", "Okonomiyaki", "Source okonomiyaki Nakameguro"],
+                ["Kushiwakamaru", "food", "Yakitori; clipboard waitlist early", "Kushiwakamaru Nakameguro"]
+              ]
+            },
+            {
+              "hood": "nakameguro",
+              "title": "Browse vintage and specialty shops",
+              "text": "Jantiques is one of Tokyo's best vintage shops; Cul De Sac specialises in Japanese hinoki wood products; Migratory curates tableware and local clothing brands; Fabrik crafts leather goods on site; Okashi Machioka has one of the neighbourhood's best selections of Japanese candy and packaged snacks.",
+              "spots": [
+                ["Jantiques", "shop", "One of Tokyo's best vintage shops", "Jantiques Nakameguro"],
+                ["Cul De Sac", "shop", "Hinoki wood products", "Cul de Sac Japon Nakameguro"],
+                ["Migratory", "shop", "Tableware and local brands", "Migratory Nakameguro"],
+                ["Fabrik", "shop", "Leather made on site", "Fabrik leather Nakameguro"],
+                ["Okashi Machioka", "shop", "Japanese candy and snacks", "Okashi no Machioka Nakameguro"]
+              ]
+            },
+            {
+              "hood": "nakameguro",
+              "title": "End the evening with a drink or dessert",
+              "text": "Oasis is a favourite for craft beer; Epulor for craft cocktails and snacks in a vinyl bar; Rokusho is a hidden tequila bar tucked into a residential street; Huit for a late-night dessert and tea in a charming setting along the Meguro river.",
+              "spots": [
+                ["Oasis", "bar", "Craft beer", "Oasis craft beer Nakameguro"],
+                ["Epulor", "bar", "Cocktails in a vinyl bar", "Epulor Nakameguro"],
+                ["Rokusho", "bar", "A hidden tequila bar", "Rokusho tequila bar Nakameguro"],
+                ["Huit", "cafe", "Late dessert by the river", "Huit cafe Nakameguro"]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "hoods": ["aoyama", "roppongi"],
+      "tagline": "An elegant day of neighbourhood gems, artisan bakeries, contemporary art and a memorable evening in Roppongi",
+      "reflect": "What did you notice when you slowed down? What sight, sound or smell stood out most today?",
+      "blocks": [
+        {
+          "when": "morning",
+          "moves": [
+            {
+              "hood": "aoyama",
+              "title": "From Omotesando Station to a local café",
+              "text": "Aoyama is where refined architecture meets quiet luxury: polished yet calm. Start the day at Koffee Mameya for beautifully prepared coffee in a minimalist setting, or Chavaty for handmade scones and specialty tea drinks.",
+              "spots": [
+                ["Omotesando Station", "transit", "Where the day starts"],
+                ["Koffee Mameya", "cafe", "Minimalist coffee", "Koffee Mameya Omotesando"],
+                ["Chavaty", "cafe", "Scones and tea drinks", "Chavaty Omotesando"]
+              ]
+            },
+            {
+              "hood": "aoyama",
+              "title": "Brunch options nearby",
+              "text": "i2 Cafe is known for Dutch baby pancakes and specialty toasts; Little Pool Coffee for Japanese omurice; Sahsya Kanetanaka for beautifully presented Japanese set meals.",
+              "spots": [
+                ["i2 Cafe", "cafe", "Dutch baby pancakes and toasts", "i2 Cafe Omotesando"],
+                ["Little Pool Coffee", "cafe", "Omurice", "Little Pool Coffee Omotesando"],
+                ["Sahsya Kanetanaka", "food", "Japanese set meals", "Sahsya Kanetanaka Omotesando"]
+              ]
+            },
+            {
+              "hood": "aoyama",
+              "title": "Flip through Japanese books and magazines",
+              "text": "Aoyama Book Center is a longtime favourite tucked behind the United Nations University, with an inspiring selection of Japanese books and magazines. On a weekend, the Aoyama Farmer's Market just outside is well worth a stop for local snacks, produce and handmade goods.",
+              "spots": [
+                ["Aoyama Book Center", "book", "Behind the UN University"],
+                ["Aoyama Farmer's Market", "market", "Weekends, outside the UN University", "Farmers Market at UNU Aoyama"]
+              ]
+            },
+            {
+              "hood": "aoyama",
+              "title": "One of Tokyo's best bakeries",
+              "text": "Stop by Amam Dacotan or Breadworks Omotesando for fresh pastries before continuing your walk.",
+              "spots": [
+                ["Amam Dacotan", "bakery", "The queue-worthy bakery", "Amam Dacotan Omotesando"],
+                ["Breadworks Omotesando", "bakery", "Fresh pastries"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "afternoon",
+          "moves": [
+            {
+              "hood": "aoyama",
+              "title": "Get lost in the Spiral building",
+              "text": "Spiral Market is a multi-storey cultural space with a rotating gallery, café, shop and a collection of independent shops. While you're here, stop by Call Cafe or book a tea tasting at Sakurai Tea Experience, known for beautifully prepared teas and tea-based cocktails.",
+              "spots": [
+                ["Spiral Market", "shop", "A cultural space with a gallery", "Spiral Building Aoyama"],
+                ["Call Cafe", "cafe", "On the 5th floor of the Spiral", "家と庭 call minä perhonen"],
+                ["Sakurai Tea Experience", "cafe", "A tea tasting; book ahead", "Sakurai Japanese Tea Experience"]
+              ]
+            },
+            {
+              "hood": "aoyama",
+              "title": "An introduction to ikebana",
+              "text": "The Ohara School of Ikebana is one of Japan's most respected schools of flower arranging and offers introductory classes for visitors. Sign up in advance.",
+              "spots": [["Ohara School of Ikebana", "culture", "An introductory class; sign up ahead", "Ohara School of Ikebana Aoyama"]]
+            },
+            {
+              "hood": "aoyama",
+              "title": "Lunch in the neighbourhood",
+              "text": "Yanmo is a cosy basement restaurant known for grilled fish set meals; A to Z Cafe serves quality lunch sets in a relaxed setting; Cicada is a longtime favourite for Mediterranean cuisine; tucked away off the main street, Hachi is known for its wagyu dishes.",
+              "spots": [
+                ["Yanmo", "food", "Grilled fish sets, in a basement", "Yanmo Aoyama"],
+                ["A to Z Cafe", "food", "Relaxed lunch sets", "A to Z Cafe Aoyama"],
+                ["Cicada", "food", "Mediterranean", "Cicada Omotesando"],
+                ["Hachi", "food", "Wagyu", "Hachi wagyu Aoyama"]
+              ]
+            },
+            {
+              "hood": "aoyama",
+              "title": "Explore the nearby museums",
+              "text": "The Nezu Museum is celebrated for its striking architecture, its collection of Japanese and East Asian art and one of Tokyo's most peaceful gardens. Nearby, the Taro Okamoto Memorial Museum preserves the artist's former home and studio, filled with vibrant sculptures and mid-century furniture.",
+              "spots": [
+                ["Nezu Museum", "culture", "Asian art and a beautiful garden"],
+                ["Taro Okamoto Memorial Museum", "culture", "The artist's home and studio"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "evening",
+          "moves": [
+            {
+              "hood": "aoyama",
+              "title": "Visit the independent shops",
+              "text": "Tucked away from the main path, Pejite is a favourite for one-of-a-kind ceramics; Encounter Madu and Utsuwa Omusubu specialise in tableware, teaware and home goods; Tsutaya for ikebana tools, vases and tea ceremony pieces.",
+              "spots": [
+                ["Pejite", "shop", "One-of-a-kind ceramics", "Pejite Aoyama"],
+                ["Encounter Madu", "shop", "Tableware and teaware", "Encounter Madu Aoyama"],
+                ["Utsuwa Omusubu", "shop", "Tableware and home goods", "Utsuwa Omusubu Aoyama"],
+                ["Tsutaya", "shop", "Ikebana and tea ceremony pieces", "Tsutaya ikebana shop Aoyama"]
+              ]
+            },
+            {
+              "hood": "roppongi",
+              "leg": "Walk over through the Aoyama Cemetery",
+              "title": "Make your way to Roppongi",
+              "text": "Roppongi is known for nightlife, but it has a polished, contemporary side. Walk over from Aoyama through the Aoyama Cemetery, surprisingly peaceful with its tree-lined paths, and stop at the National Art Center, 21_21 Design Sight or Tokyo Midtown for contemporary art and shops.",
+              "spots": [
+                ["Aoyama Cemetery", "park", "Peaceful tree-lined paths on the way"],
+                ["National Art Center", "culture", "Contemporary art", "The National Art Center Tokyo"],
+                ["21_21 Design Sight", "culture", "Design"],
+                ["Tokyo Midtown", "shop", "Art and shops"]
+              ]
+            },
+            {
+              "hood": "roppongi",
+              "title": "A traditional dinner setting",
+              "text": "Jomon is a lively neighbourhood favourite for grilled skewers; Butagumi specialises in exceptional tonkatsu in a traditional setting; Nishiazabu Taku has an intimate sushi counter on a quiet street, perfect for a special evening (reservations recommended).",
+              "spots": [
+                ["Jomon", "food", "Grilled skewers", "Jomon Roppongi"],
+                ["Butagumi", "food", "Exceptional tonkatsu", "Butagumi Nishiazabu"],
+                ["Nishiazabu Taku", "food", "An intimate sushi counter; reserve", "Sushi Taku Nishiazabu"]
+              ]
+            },
+            {
+              "hood": "roppongi",
+              "title": "End the evening with music or dessert",
+              "text": "Soul Bar George's is an intimate listening bar with a jukebox of Motown and oldies. For live jazz, Blue Note is one of the city's most iconic venues; reserve tickets in advance. If you'd rather end over tea and dessert, Ginza West is a retro late-night café with tea and homemade cakes.",
+              "spots": [
+                ["Soul Bar George's", "bar", "A Motown jukebox", "Soul Bar George's Roppongi"],
+                ["Blue Note", "bar", "Live jazz; reserve", "Blue Note Tokyo"],
+                ["Ginza West", "cafe", "Tea and cakes till late", "Ginza West Aoyama Garden"]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "hoods": ["kuramae", "jimbocho", "akihabara"],
+      "tagline": "Charming bakeries and cafés, unique shops, traditional curry and a bridge with neon-lit river views",
+      "reflect": "Which moment felt the most uniquely “Tokyo”, one you can't find in any other big city?",
+      "blocks": [
+        {
+          "when": "morning",
+          "moves": [
+            {
+              "hood": "kuramae",
+              "title": "Travel to Kuramae",
+              "text": "One of Tokyo's best neighbourhoods for discovering local makers. Small bakeries, artisan workshops, independent cafés and thoughtfully designed shops give the area a creative yet unpretentious atmosphere.",
+              "spots": [["Kuramae Station", "transit", "Where the day starts"]]
+            },
+            {
+              "hood": "kuramae",
+              "title": "Early-morning cafés and breakfast spots",
+              "text": "Lonich offers a unique coffee omakase; Daily's Muffin serves savoury and sweet muffins; En specialises in Japanese breakfast plates and thick-cut toast; Pelican is a longtime favourite for charcoal-grilled shokupan sandwiches and toasts.",
+              "spots": [
+                ["Lonich", "cafe", "A coffee omakase", "Lonich coffee Kuramae"],
+                ["Daily's Muffin", "bakery", "Savoury and sweet muffins", "Daily's Muffin Kuramae"],
+                ["En", "food", "Japanese breakfast plates", "En Kuramae breakfast"],
+                ["Pelican", "bakery", "Charcoal-grilled shokupan", "Pelican Cafe Asakusa"]
+              ]
+            },
+            {
+              "hood": "kuramae",
+              "title": "Browse a few independent shops",
+              "text": "Kakimori is known for beautifully crafted stationery, custom inks and personalised notebooks. Mizukiya Baba Shoten specialises in handmade baskets; Kimura Shop is a charming stop for traditional kites and toys; REN showcases handcrafted leather goods.",
+              "spots": [
+                ["Kakimori", "shop", "Custom notebooks and inks", "Kakimori Kuramae"],
+                ["Mizukiya Baba Shoten", "shop", "Handmade baskets", "Mizukiya Baba Shoten Kuramae"],
+                ["Kimura Shop", "shop", "Kites and toys", "Kimura kite shop Kuramae"],
+                ["REN", "shop", "Handcrafted leather", "REN leather Kuramae"]
+              ]
+            },
+            {
+              "hood": "kuramae",
+              "title": "A takeaway treat from a local bakery",
+              "text": "Yogashi Lemon Pie is a charming tiny pie shop; Shinonome Seipansho is an excellent stop for freshly baked pastries. Before leaving, pick up beautifully packaged cookies from Kashiya Shinonome and tea from Nakamura Tea Life.",
+              "spots": [
+                ["Yogashi Lemon Pie", "sweets", "Lemon pies", "Yogashi Lemon Pie Kuramae"],
+                ["Shinonome Seipansho", "bakery", "Freshly baked pastries", "Shinonome Seipansho Kuramae"],
+                ["Kashiya Shinonome", "sweets", "Packaged cookies", "Kashiya Shinonome Kuramae"],
+                ["Nakamura Tea Life", "shop", "Tea", "Nakamura Tea Life Store Kuramae"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "afternoon",
+          "moves": [
+            {
+              "hood": "jimbocho",
+              "leg": "14 min train with one change, Kuramae to Jimbocho",
+              "title": "Travel to Jimbocho",
+              "text": "One of Tokyo's great book neighbourhoods, where secondhand bookstores, retro kissaten and a slower pace give the area a timeless charm.",
+              "spots": [["Jimbocho Station", "transit", "Arrival"]]
+            },
+            {
+              "hood": "jimbocho",
+              "title": "Lunch nearby",
+              "text": "Jimbocho is known for its long-standing Japanese curry restaurants. Curry Bondy is a neighbourhood institution; Rice Curry Manten and Ethiopia are two more local favourites.",
+              "spots": [
+                ["Curry Bondy", "food", "The curry institution", "Bondy curry Jimbocho"],
+                ["Rice Curry Manten", "food", "Curry", "Rice Curry Manten Jimbocho"],
+                ["Ethiopia", "food", "Curry", "Curry Ethiopia Jimbocho"]
+              ]
+            },
+            {
+              "hood": "jimbocho",
+              "title": "Browse the bookstores and shops",
+              "text": "Bumpodo for art and stationery, Magnif for vintage magazines, and Komiyama for art and photo books.",
+              "spots": [
+                ["Bumpodo", "shop", "Art and stationery", "Bumpodo Jimbocho"],
+                ["Magnif", "book", "Vintage magazines", "Magnif Jimbocho"],
+                ["Komiyama", "book", "Art and photo books", "Komiyama Tokyo Jimbocho"]
+              ]
+            },
+            {
+              "hood": "jimbocho",
+              "title": "Recharge at a classic kissaten",
+              "text": "Jimbocho's classic cafés are reason enough to visit. Dill Coffee Parlor has an old-school coffeehouse atmosphere; Koseto for coffee and cakes with a whimsical feel; Jazz BIGBOY for the vinyl; Milonga Nueva for a hidden, cosy hideaway.",
+              "spots": [
+                ["Dill Coffee Parlor", "cafe", "Old-school coffeehouse", "Dill Coffee Parlor Jimbocho"],
+                ["Koseto", "cafe", "Coffee and cakes", "Koseto Jimbocho"],
+                ["Jazz BIGBOY", "cafe", "A vinyl café", "Jazz Bigboy Jimbocho"],
+                ["Milonga Nueva", "cafe", "A cosy hideaway", "Milonga Nueva Jimbocho"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "evening",
+          "moves": [
+            {
+              "hood": "akihabara",
+              "leg": "Walk, or a short train ride",
+              "title": "Make your way to Akihabara",
+              "text": "Best known for electronics and anime culture, Akihabara takes on a completely different atmosphere after dark, with glowing neon signs and memorable stops beyond the main attractions.",
+              "spots": [["Akihabara Station", "transit", "Arrival"]]
+            },
+            {
+              "hood": "akihabara",
+              "title": "Explore the Mansei bridge area",
+              "text": "The Manseibashi bridge is well worth a stop, especially after dark, when neon reflects across the river and passing trains make one of Tokyo's most cinematic views. Stop by Hitachino Brewery for a drink on the riverside terrace before continuing.",
+              "spots": [
+                ["Manseibashi Bridge", "view", "Neon on the river, trains overhead", "Manseibashi Akihabara"],
+                ["Hitachino Brewery", "bar", "A riverside terrace", "Hitachino Brewing Lab Kanda Manseibashi"]
+              ]
+            },
+            {
+              "hood": "akihabara",
+              "title": "Browse Akihabara's unique shops",
+              "text": "Maach Ecute Kanda Manseibashi is a former train station now full of shops, restaurants and a museum. Tokyo Radio Department Store fascinates electronics enthusiasts; Super Potato is packed with vintage video games and collectibles; Akihabara Gachapon Hall is the place to try Japan's capsule-toy machines.",
+              "spots": [
+                ["Maach Ecute Kanda Manseibashi", "shop", "A former station of shops"],
+                ["Tokyo Radio Department Store", "shop", "Electronics", "Tokyo Radio Department Store Akihabara"],
+                ["Super Potato", "shop", "Vintage video games", "Super Potato Akihabara"],
+                ["Akihabara Gachapon Hall", "shop", "Capsule-toy machines", "Akihabara Gachapon Kaikan"]
+              ]
+            },
+            {
+              "hood": "akihabara",
+              "title": "A casual dinner",
+              "text": "Ginzo is tucked beneath the train tracks, serving fresh sushi to the rumble of trains overhead. Tempura Hisago is a longtime favourite for classic tempura; Tonkatsu Marugo is known for exceptional tonkatsu.",
+              "spots": [
+                ["Ginzo", "food", "Sushi under the tracks", "Sushi Ginzo Akihabara"],
+                ["Tempura Hisago", "food", "Classic tempura", "Tempura Hisago Akihabara"],
+                ["Tonkatsu Marugo", "food", "Exceptional tonkatsu", "Tonkatsu Marugo Akihabara"]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "hoods": ["tsukiji", "imperial", "kagurazaka"],
+      "tagline": "The iconic seafood market, quiet garden moments, classic midday meals and traditional shops",
+      "reflect": "How did today's walk connect you with the city? Did the pace feel right? What would you change next time?",
+      "blocks": [
+        {
+          "when": "morning",
+          "moves": [
+            {
+              "hood": "tsukiji",
+              "title": "Start at Shimbashi, in the Hamarikyu Gardens",
+              "text": "Before Tsukiji, spend the morning wandering Hamarikyu Gardens, where seasonal flowers and walking paths make a peaceful escape from the city. Visit the Nakajima Tea House for traditional matcha and sweets.",
+              "spots": [
+                ["Shimbashi Station", "transit", "Where the day starts"],
+                ["Hamarikyu Gardens", "park", "An Edo-period garden"],
+                ["Nakajima Tea House", "cafe", "Matcha and sweets on the pond", "Nakajima no Ochaya Hamarikyu"]
+              ]
+            },
+            {
+              "hood": "tsukiji",
+              "title": "Stroll through the Tsukiji seafood market",
+              "text": "Tsukiji is still one of Tokyo's most exciting food destinations. It gets busy, but the generations-old vendors, sizzling food stalls and morning energy make it well worth experiencing at least once.",
+              "spots": [["Tsukiji", "market", "The outer market", "Tsukiji Outer Market"]]
+            },
+            {
+              "hood": "tsukiji",
+              "title": "Step away from the crowds",
+              "text": "After the main market, slow things down with breakfast at Tsumugi, where traditional Japanese morning sets are served in a peaceful setting (reservations recommended). Turret Coffee is a neighbourhood favourite for espresso drinks; Atelier Matcha specialises in beautifully prepared matcha.",
+              "spots": [
+                ["Tsumugi", "food", "Japanese breakfast sets in the temple; reserve", "Tsukiji Honganji Cafe Tsumugi"],
+                ["Turret Coffee", "cafe", "Espresso", "Turret Coffee Tsukiji"],
+                ["Atelier Matcha", "cafe", "Matcha", "Atelier Matcha Tsukiji"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "afternoon",
+          "moves": [
+            {
+              "hood": "imperial",
+              "leg": "Tsukiji to Takebashi, 20 min with one change",
+              "title": "Quiet moments surrounded by nature",
+              "text": "The Imperial Palace area is a change of pace from the rest of the city: wide walking paths, landscaped gardens and plenty of open space, plus the National Museum of Modern Art and Chidorigafuchi Park.",
+              "spots": [
+                ["Takebashi Station", "transit", "Arrival"],
+                ["The Imperial Palace", "park", "Wide paths and gardens", "Imperial Palace East Gardens"],
+                ["National Museum of Modern Art", "culture", "Modern art", "National Museum of Modern Art Tokyo"],
+                ["Chidorigafuchi Park", "park", "The palace moat", "Chidorigafuchi Park Tokyo"]
+              ]
+            },
+            {
+              "hood": "kagurazaka",
+              "leg": "Takebashi to Iidabashi, 2 stops, 3 min",
+              "title": "Arrive in Kagurazaka",
+              "text": "Tucked into a quieter side of Shinjuku-ku, Kagurazaka is a charming mix of old Tokyo and subtle European influence, with the river nearby. Narrow backstreets, small bistros and hidden shops: an absolute hidden gem.",
+              "spots": [["Iidabashi Station", "transit", "Arrival"]]
+            },
+            {
+              "hood": "kagurazaka",
+              "title": "Settle in for a classic midday meal",
+              "text": "Once home to geisha houses and traditional restaurants, Kagurazaka still carries a quiet refinement. Ishiusubiki Teuchi Kyōrakutei for handmade soba, Kurobatei for udon, Wacha for traditional tea and light snacks, or Brasserie Gus for a French-inspired lunch in a charming setting.",
+              "spots": [
+                ["Ishiusubiki Teuchi Kyōrakutei", "food", "Handmade soba", "Kyorakutei soba Kagurazaka"],
+                ["Kurobatei", "food", "Udon", "Kurobatei udon Kagurazaka"],
+                ["Wacha", "cafe", "Tea and light snacks", "Wacha Kagurazaka"],
+                ["Brasserie Gus", "food", "A French lunch", "Brasserie Gus Kagurazaka"]
+              ]
+            },
+            {
+              "hood": "kagurazaka",
+              "title": "Ten minutes' walk to a traditional garden",
+              "text": "Since you're nearby, Koishikawa Korakuen Garden is a short walk away and keeps the traditional atmosphere going. Admire the seasonal plants, or stop for lunch in the garden at Kantoku-tei.",
+              "spots": [
+                ["Koishikawa Korakuen Garden", "park", "A traditional garden"],
+                ["Kantoku-tei", "food", "Lunch inside the garden", "Kantokutei Koishikawa Korakuen"]
+              ]
+            }
+          ]
+        },
+        {
+          "when": "evening",
+          "moves": [
+            {
+              "hood": "kagurazaka",
+              "title": "A break at the local favourite cafés",
+              "text": "Akha Ama Coffee or Elm Green are great for a coffee and a handmade slice of cake; Arbor Coffee is known for seasonal drinks and Japanese purin. Stop by Weekenders Coffee for coffee and books.",
+              "spots": [
+                ["Akha Ama Coffee", "cafe", "Coffee and cake", "Akha Ama Coffee Kagurazaka"],
+                ["Elm Green", "cafe", "Coffee and cake", "Elm Green Kagurazaka"],
+                ["Arbor Coffee", "cafe", "Seasonal drinks and purin", "Arbor Coffee Kagurazaka"],
+                ["Weekenders Coffee", "cafe", "Coffee and books", "Weekenders Coffee Kagurazaka"]
+              ]
+            },
+            {
+              "hood": "kagurazaka",
+              "title": "Browse the traditional neighbourhood shops",
+              "text": "Rakuzan is a wonderful place to bring home high-quality Japanese teas; Akomeya and Koharuan specialise in pantry goods, kitchenware and everyday essentials. Hidden in the residential side, うつわや 釉 (Utsuwaya Yu) and Jokogumo showcase handcrafted ceramics, and the Cat Post Office is a quirky stop for cat lovers.",
+              "spots": [
+                ["Rakuzan", "shop", "Japanese teas", "Rakuzan tea Kagurazaka"],
+                ["Akomeya", "shop", "Pantry and kitchenware", "AKOMEYA TOKYO la kagu Kagurazaka"],
+                ["Koharuan", "shop", "Pantry and everyday things", "Koharuan Kagurazaka"],
+                ["うつわや 釉 (Utsuwaya Yu)", "shop", "Handcrafted ceramics", "うつわや 釉 神楽坂"],
+                ["Jokogumo", "shop", "Handcrafted ceramics", "Jokogumo Kagurazaka"],
+                ["Cat Post Office", "shop", "For cat lovers", "Neko no Yubinkyoku Kagurazaka"]
+              ]
+            },
+            {
+              "hood": "kagurazaka",
+              "title": "Dinner in the neighbourhood",
+              "text": "Ryūhō is a longtime neighbourhood favourite for Chinese cuisine, Stefano for comforting Italian, and Sakura is well known for its excellent tonkatsu.",
+              "spots": [
+                ["Ryūhō", "food", "Chinese", "Ryuho Chinese Kagurazaka"],
+                ["Stefano", "food", "Comforting Italian", "Stefano Kagurazaka"],
+                ["Sakura", "food", "Tonkatsu", "Tonkatsu Sakura Kagurazaka"]
+              ]
+            },
+            {
+              "hood": "kagurazaka",
+              "title": "End the night with a drink or dessert",
+              "text": "Kagurazaka Saryō is perfect for traditional Japanese desserts; Aux Merveilleux specialises in delicate French pastries. To toast the end of the trip, K.West and Bar Ahiru-Sha are both excellent vinyl bars, and Mushin offers wine and light bites in an intimate setting.",
+              "spots": [
+                ["Kagurazaka Saryō", "sweets", "Japanese desserts", "Kagurazaka Saryo"],
+                ["Aux Merveilleux", "sweets", "French pastries", "Aux Merveilleux de Fred Kagurazaka"],
+                ["K.West", "bar", "A vinyl bar", "K.West bar Kagurazaka"],
+                ["Bar Ahiru-Sha", "bar", "A vinyl bar", "Bar Ahiru-sha Kagurazaka"],
+                ["Mushin", "bar", "Wine and light bites", "Mushin wine bar Kagurazaka"]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rest": {
+    "title": "Rest day",
+    "tagline": "Self-care ideas for the day nobody wants to walk",
+    "note": "Some need a reservation; check the website first.",
+    "spots": [
+      { "name": "Olive Spa Ebisu", "hood": "ebisu", "cat": "spa", "text": "A classic for a reason: the go-to for a luxurious reset. Private rooms, deep relaxation treatments and their signature heated stone therapy make it feel like an escape from Tokyo's non-stop energy." },
+      { "name": "Shibuya Saunas", "hood": "shibuya", "cat": "spa", "text": "A hidden oasis in the middle of Shibuya, blending sleek modern design with traditional sauna culture. Dry heat or a cold plunge: perfect for winding down after a long day of exploring." },
+      { "name": "Waho-an Nature", "hood": "harajuku", "cat": "spa", "text": "Omotenashi, Japan's signature hospitality, done properly: holistic treatments blending shiatsu, acupuncture and herbal therapies to help you realign and recharge.", "query": "Waho-an Nature Tokyo" },
+      { "name": "Head Spa Kuu", "hood": "shibuya", "cat": "spa", "text": "A full sensory experience using gentle water therapy and deep scalp treatments. Perfect for relieving stress, and you leave with extra-glossy hair.", "query": "Head Spa Kuu Tokyo" },
+      { "name": "Assort Tokyo", "hood": "aoyama", "cat": "spa", "text": "Known for expert cuts and effortless styles, this international salon is a trusted go-to for travellers looking for a refresh with a Tokyo touch.", "query": "ASSORT TOKYO hair salon" },
+      { "name": "Thermae-Yu", "hood": "shinjuku", "cat": "spa", "text": "Natural hot-spring water in the middle of Shinjuku. Book an evening.", "query": "Thermae-Yu Shinjuku" },
+      { "name": "Bunka Yokusen", "hood": "nakameguro", "cat": "spa", "text": "There are countless smaller neighbourhood sento (communal hot baths). This one has modern updates, cool merch and jazz on the speakers, and is popular with the younger crowd.", "query": "Bunka Yokusen sento Ikejiri" }
+    ]
+  }
+}

@@ -12,6 +12,7 @@ import { describeDiff } from "./versions";
 import { rowToStay } from "./data/loader";
 import { tripData } from "./data/file";
 import { afterAccept, mergeOnto, sameRoute, stopNames, validRoute } from "./merge";
+import { PINS_KEY, pinsFromSetting, withPin } from "./tokyo";
 
 type Row = Record<string, unknown>;
 
@@ -196,6 +197,16 @@ export async function runAction(sb: DB, me: Viewer, action: string, p: Record<st
       const body = String(p.body ?? "").trim();
       if (!body) return;
       fail(await sb.from("comments").insert({ author_id: me.travellerId, target_type: p.targetType as Comment["target_type"], target_id: String(p.targetId ?? ""), body }), "comments");
+      return;
+    }
+    case "pinTokyoWalk": {
+      const date = String(p.date ?? "");
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) throw new ActionError("A date is required");
+      const walk = p.walk == null ? null : Number(p.walk);
+      if (walk != null && !(Number.isInteger(walk) && walk >= 0 && walk <= 10)) throw new ActionError("Unknown walk");
+      const { data } = await sb.from("settings").select("value").eq("key", PINS_KEY).maybeSingle();
+      const pins = withPin(pinsFromSetting((data as Row | null)?.value), date, walk);
+      fail(await sb.from("settings").upsert({ key: PINS_KEY, value: { pins }, updated_at: now }, { onConflict: "key" }), "settings");
       return;
     }
     case "toggleReaction": {

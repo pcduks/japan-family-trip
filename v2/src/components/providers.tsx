@@ -7,6 +7,7 @@ import type { RulesContext } from "@/lib/rules";
 import type { Comment, PlanHistoryEntry, Reaction, Role, Snapshot, Stay, Suggestion, SuggestionDiff, Version, Vote, VoteKind } from "@/lib/types";
 import { describeDiff, newId } from "@/lib/versions";
 import { afterAccept, mergeOnto, sameRoute, stopNames, validRoute } from "@/lib/merge";
+import { withPin } from "@/lib/tokyo";
 
 /* ------------------------------------------------------------ prefs */
 
@@ -41,8 +42,9 @@ interface DemoState {
   planOverride: Version | null;
   rankRevealed: boolean;
   doneDeadlines: string[];
+  tokyoPins: Record<string, number>;
 }
-const EMPTY_DEMO: DemoState = { versions: [], votes: [], suggestions: [], comments: [], reactions: [], history: [], planOverride: null, rankRevealed: false, doneDeadlines: [] };
+const EMPTY_DEMO: DemoState = { versions: [], votes: [], suggestions: [], comments: [], reactions: [], history: [], planOverride: null, rankRevealed: false, doneDeadlines: [], tokyoPins: {} };
 const demoStore = localStore<DemoState>("jp-demo", EMPTY_DEMO, (raw) => ({ ...EMPTY_DEMO, ...(raw as Partial<DemoState>) }));
 const demoMe = localStore<string | null>("jp-demo-me", null);
 
@@ -73,6 +75,8 @@ export interface Store {
   setDeadlineDone: (id: string, done: boolean) => Promise<void>;
   addComment: (targetType: Comment["target_type"], targetId: string, body: string) => Promise<void>;
   toggleReaction: (targetType: string, targetId: string, kind: Reaction["kind"]) => Promise<void>;
+  /** Tokyo on foot: pin a walk (1–10, 0 for the rest day) to a Tokyo day, or clear it with null. */
+  pinTokyoWalk: (date: string, walk: number | null) => Promise<void>;
 }
 
 const Ctx = createContext<Store | null>(null);
@@ -167,7 +171,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     // Demo: overlay local edits on the bundled file.
     const versions = initial.versions.map((v) => (v.status === "plan" && demoState.planOverride ? demoState.planOverride : v)).concat(demoState.versions);
     const deadlines = initial.deadlines.map((d) => (d.id && demoState.doneDeadlines.includes(d.id) ? { ...d, done: true } : d));
-    return { ...initial, versions, deadlines, votes: demoState.votes, suggestions: demoState.suggestions, comments: demoState.comments, reactions: demoState.reactions, history: demoState.history };
+    return { ...initial, versions, deadlines, votes: demoState.votes, suggestions: demoState.suggestions, comments: demoState.comments, reactions: demoState.reactions, history: demoState.history, tokyo_pins: demoState.tokyoPins };
   }, [sb, remote, initial, demoState]);
 
   const rankRevealed = sb
@@ -375,6 +379,15 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     [sb, run, snapshot.reactions, me],
   );
 
+  const pinTokyoWalk = useCallback(
+    async (date: string, walk: number | null) => {
+      if (!me) return;
+      if (!sb) return patchDemo((d) => ({ ...d, tokyoPins: withPin(d.tokyoPins, date, walk) }));
+      await run("pinTokyoWalk", { date, walk });
+    },
+    [sb, run, me],
+  );
+
   const value: Store = {
     snapshot,
     demo,
@@ -400,6 +413,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     setDeadlineDone,
     addComment,
     toggleReaction,
+    pinTokyoWalk,
   };
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }

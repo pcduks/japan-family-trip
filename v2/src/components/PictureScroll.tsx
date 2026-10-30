@@ -10,6 +10,7 @@ import { outdoorHours } from "@/lib/exposure";
 import { fujiChance, JOURNEY, kanji, legsOf, snowLevel } from "@/lib/journey";
 import { fmtClock, fmtHours, sunTimes } from "@/lib/sun";
 import { planDays } from "@/lib/days";
+import { walkByN } from "@/lib/tokyo";
 import type { DayItem, Place, Snapshot, Stay, Version } from "@/lib/types";
 import Link from "next/link";
 import { fmtLegHours } from "./JourneyMap";
@@ -169,6 +170,11 @@ export function PictureScroll({ version, onStop }: { version: Version; onStop?: 
               {d.special ? <span className="text-[0.68rem] font-bold text-accent">{d.special}</span> : null}
               <span className={`text-[0.68rem] font-bold tracking-wide uppercase ${/move|fly|arrive/i.test(d.kind) ? "text-indigo" : /easy|free/i.test(d.kind) ? "text-ok" : "text-ink-2"}`}>{d.kind}</span>
               <span className="line-clamp-4 text-[0.78rem] leading-snug text-ink-2">{d.title}</span>
+              {d.region === "tokyo" && snapshot.tokyo_pins[d.date] != null ? (
+                <span className="truncate text-[0.7rem] font-semibold text-accent" title="Pinned on Tokyo on foot">
+                  {snapshot.tokyo_pins[d.date] ? `Walk ${snapshot.tokyo_pins[d.date]}: ${walkByN(snapshot.tokyo_pins[d.date])?.title}` : "Rest day, from Tokyo on foot"}
+                </span>
+              ) : null}
               <span className="mt-auto grid gap-1.5">
                 <Daylight rise={d.rise} set={d.set} />
                 <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.68rem] text-muted">
