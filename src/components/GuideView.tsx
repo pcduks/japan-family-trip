@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { GUIDES, type GuideSlot } from "@/lib/guides";
 import { mapsSearchUrl, youtubeSearchUrl } from "@/lib/links";
@@ -40,6 +41,16 @@ export function GuideView({ city }: { city: "tokyo" | "kyoto" }) {
           Roteiros com pausas para descanso, os bairros que valem o tempo e noites que funcionam para seis. Qualquer dia daqui entra no
           plano pela aba Dias.
         </p>
+        {city === "tokyo" ? (
+          <Link href="/tokyo" className="card flex items-center gap-3 p-3 no-underline">
+            <EkiStamp motif="map" ink="var(--vermilion)" size={44} rotate={-8} label="" />
+            <span className="min-w-0 flex-1">
+              <span className="block font-display text-[1.3rem] leading-tight">Tokyo a pé</span>
+              <span className="text-sm text-muted">Dez caminhadas por 28 bairros, no mapa, com os dias do plano</span>
+            </span>
+            <span aria-hidden="true" className="text-xl text-muted">→</span>
+          </Link>
+        ) : null}
       </div>
 
       <section className="grid gap-3" aria-labelledby="gd-h">

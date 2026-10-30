@@ -1,5 +1,5 @@
 /* Seis pelo Japão service worker (P3.2): the itinerary works offline after one online visit. */
-const VERSION = "v2";
+const VERSION = "v3";
 const STATIC = `static-${VERSION}`;
 const PAGES = `pages-${VERSION}`;
 const DATA = `data-${VERSION}`;
@@ -55,7 +55,7 @@ self.addEventListener("fetch", (event) => {
 
   if (url.pathname.startsWith("/_next/static/") || /\.(?:svg|png|ico|woff2?)$/.test(url.pathname)) {
     event.respondWith(cacheFirst(req));
-  } else if (url.pathname.startsWith("/api/places/")) {
+  } else if (url.pathname.startsWith("/api/places/") || url.pathname.startsWith("/api/tokyo/")) {
     event.respondWith(networkFirst(req, DATA));
   } else if (req.mode === "navigate" || req.headers.get("RSC") === "1" || req.headers.get("accept")?.includes("text/html")) {
     event.respondWith(networkFirst(req, PAGES));

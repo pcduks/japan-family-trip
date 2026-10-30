@@ -16,7 +16,7 @@ const I = {
   passport: "M6 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm6 5.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM9 17.5h6",
 };
 
-const TRIP_PATHS = ["/viagem", "/food", "/mala", "/contas", "/guides", "/documents", "/plan", "/mesa", "/compare", "/curate", "/more"];
+const TRIP_PATHS = ["/viagem", "/tokyo", "/food", "/mala", "/contas", "/guides", "/documents", "/plan", "/mesa", "/compare", "/curate", "/more"];
 
 function NavItem({ href, label, icon, active }: { href: string; label: string; icon: string; active: boolean }) {
   return (
