@@ -1,0 +1,48 @@
+{
+  "_about": "Named areas for the city pages beyond the stay areas in neighbourhoods.json: well-known districts a tip is likely to land in. Coordinates are the district's centre.",
+  "kyoto": [
+    { "id": "arashiyama", "name": "Arashiyama", "lat": 35.0094, "lng": 135.6722 },
+    { "id": "fushimi", "name": "Fushimi Inari", "lat": 34.9671, "lng": 135.7727 },
+    { "id": "kinkakuji", "name": "Kinkaku-ji and Kita", "lat": 35.0394, "lng": 135.7292 },
+    { "id": "ginkakuji", "name": "Ginkaku-ji and the Philosopher's Path", "lat": 35.027, "lng": 135.7982 },
+    { "id": "nijo", "name": "Nijo and Karasuma Oike", "lat": 35.0116, "lng": 135.7523 },
+    { "id": "kyoto-station", "name": "Kyoto Station", "lat": 34.9858, "lng": 135.7588 }
+  ],
+  "nara": [
+    { "id": "nara-park", "name": "Nara Park", "lat": 34.685, "lng": 135.843 },
+    { "id": "naramachi", "name": "Naramachi", "lat": 34.678, "lng": 135.83 }
+  ],
+  "kanazawa": [
+    { "id": "higashi-chaya", "name": "Higashi Chaya", "lat": 36.5726, "lng": 136.6667 },
+    { "id": "kenrokuen", "name": "Kenroku-en and the castle", "lat": 36.5622, "lng": 136.6626 },
+    { "id": "omicho", "name": "Omicho Market", "lat": 36.5713, "lng": 136.6564 },
+    { "id": "nagamachi", "name": "Nagamachi", "lat": 36.5609, "lng": 136.65 },
+    { "id": "kanazawa-station", "name": "Kanazawa Station", "lat": 36.578, "lng": 136.6478 }
+  ],
+  "takayama": [
+    { "id": "sanmachi", "name": "Sanmachi old town", "lat": 36.1413, "lng": 137.2594 },
+    { "id": "takayama-station", "name": "Takayama Station", "lat": 36.1419, "lng": 137.2521 }
+  ],
+  "hakone": [
+    { "id": "hakone-yumoto", "name": "Hakone-Yumoto", "lat": 35.2322, "lng": 139.1057 },
+    { "id": "gora", "name": "Gora", "lat": 35.2487, "lng": 139.0507 },
+    { "id": "moto-hakone", "name": "Lake Ashi and Moto-Hakone", "lat": 35.2017, "lng": 139.027 }
+  ],
+  "kawaguchiko": [
+    { "id": "kawaguchiko-station", "name": "Kawaguchiko Station", "lat": 35.4998, "lng": 138.7649 },
+    { "id": "oishi", "name": "Oishi Park and the north shore", "lat": 35.5213, "lng": 138.7405 }
+  ],
+  "yudanaka": [
+    { "id": "shibu-onsen", "name": "Shibu Onsen", "lat": 36.7372, "lng": 138.4297 },
+    { "id": "yudanaka-station", "name": "Yudanaka Station", "lat": 36.7409, "lng": 138.4142 },
+    { "id": "jigokudani", "name": "Jigokudani monkey park", "lat": 36.7328, "lng": 138.4627 }
+  ],
+  "tokyo": [
+    { "id": "shinjuku-west", "name": "Shinjuku", "lat": 35.6896, "lng": 139.7006 },
+    { "id": "roppongi", "name": "Roppongi", "lat": 35.6627, "lng": 139.7314 },
+    { "id": "odaiba", "name": "Odaiba", "lat": 35.6275, "lng": 139.7747 },
+    { "id": "ikebukuro", "name": "Ikebukuro", "lat": 35.7295, "lng": 139.7109 },
+    { "id": "akihabara", "name": "Akihabara", "lat": 35.6984, "lng": 139.7731 },
+    { "id": "ebisu", "name": "Ebisu", "lat": 35.6467, "lng": 139.71 }
+  ]
+}

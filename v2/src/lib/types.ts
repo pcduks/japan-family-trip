@@ -239,7 +239,7 @@ export interface SuggestionDiff {
 export interface Comment {
   id: string;
   author_id: string;
-  target_type: "version" | "stay" | "day" | "place" | "drop" | "region" | "wish" | "walk";
+  target_type: "version" | "stay" | "day" | "place" | "drop" | "region" | "wish" | "walk" | "pin";
   target_id: string;
   body: string;
   created_at: string;
@@ -303,9 +303,43 @@ export interface Snapshot {
   related_docs: Record<string, string>;
   /** Tokyo on foot: the walk the family pinned to each Tokyo day (settings key "tokyo_walks"). */
   tokyo_pins: Record<string, number>;
+  /** The family's tips (city pages): one place each, kept in drops and drop_places. */
+  tips: Tip[];
   /** Where the data came from, so the UI can say so. */
   source: "supabase" | "file";
 }
+
+/* ------------------------------------------------------------ tips */
+
+export type TipSource = "maps" | "instagram" | "text" | "screenshot" | "list";
+
+/** A family tip: one place dropped by someone, found on Google, stored in drops/drop_places (PRD §6). */
+export interface Tip {
+  id: string;
+  drop_id: string;
+  author_id: string;
+  /** The region id of the stop it belongs to. */
+  city: string;
+  name: string;
+  cat: string;
+  note: string | null;
+  lat: number | null;
+  lng: number | null;
+  google_place_id: string | null;
+  photo: string | null;
+  maps_uri: string | null;
+  type: string | null;
+  address: string | null;
+  source: TipSource;
+  source_url: string | null;
+  source_handle: string | null;
+  /** A day the family put it on, if any. */
+  planned_for: string | null;
+  created_at: string;
+}
+
+/** What is stored in drop_places.extracted for a tip. */
+export type TipExtracted = Omit<Tip, "id" | "drop_id" | "author_id" | "created_at">;
 
 /* ---------------------------------------------------------- Google */
 

@@ -113,6 +113,59 @@ export async function searchSpot(query: string, bias?: { lat: number; lng: numbe
   };
 }
 
+/** Up to `n` candidates for a free-text query, for a person to pick from (Text Search Pro, not cached: queries are one-offs). */
+export async function searchCandidates(query: string, bias?: { lat: number; lng: number; radiusM?: number }, n = 3): Promise<SpotHit[]> {
+  const body: Record<string, unknown> = { textQuery: query, languageCode: "en", regionCode: "JP", pageSize: Math.min(Math.max(n, 1), 5) };
+  if (bias) body.locationBias = { circle: { center: { latitude: bias.lat, longitude: bias.lng }, radius: bias.radiusM ?? 20000 } };
+  const res = await fetch(`${BASE}/places:searchText`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "X-Goog-Api-Key": key(), "X-Goog-FieldMask": SPOT_FIELDS },
+    body: JSON.stringify(body),
+    cache: "no-store",
+  });
+  if (!res.ok) throw await googleError(res);
+  const data = (await res.json()) as { places?: Record<string, unknown>[] };
+  return (data.places ?? []).flatMap((p) => {
+    const loc = p.location as { latitude: number; longitude: number } | undefined;
+    if (!loc) return [];
+    return [
+      {
+        placeId: p.id as string,
+        name: (p.displayName as { text?: string })?.text ?? query,
+        lat: loc.latitude,
+        lng: loc.longitude,
+        address: p.formattedAddress as string | undefined,
+        type: (p.primaryTypeDisplayName as { text?: string })?.text,
+        googleMapsUri: p.googleMapsUri as string | undefined,
+        photo: ((p.photos as { name: string }[] | undefined) ?? [])[0]?.name,
+      },
+    ];
+  });
+}
+
+/** One place by id, as a pin: for a Maps link that names a place id or coordinates. */
+export async function spotById(placeId: string): Promise<SpotHit | null> {
+  const res = await fetch(`${BASE}/places/${encodeURIComponent(placeId)}?languageCode=en`, {
+    headers: { "X-Goog-Api-Key": key(), "X-Goog-FieldMask": SPOT_FIELDS.replace(/places\./g, "") },
+    cache: "no-store",
+  });
+  if (res.status === 404) return null;
+  if (!res.ok) throw await googleError(res);
+  const p = (await res.json()) as Record<string, unknown>;
+  const loc = p.location as { latitude: number; longitude: number } | undefined;
+  if (!loc) return null;
+  return {
+    placeId: p.id as string,
+    name: (p.displayName as { text?: string })?.text ?? "",
+    lat: loc.latitude,
+    lng: loc.longitude,
+    address: p.formattedAddress as string | undefined,
+    type: (p.primaryTypeDisplayName as { text?: string })?.text,
+    googleMapsUri: p.googleMapsUri as string | undefined,
+    photo: ((p.photos as { name: string }[] | undefined) ?? [])[0]?.name,
+  };
+}
+
 /** Essentials-tier details: just the coordinates (cheap; used once at seed time). */
 export async function placeLocation(placeId: string): Promise<{ lat: number; lng: number } | null> {
   const res = await fetch(`${BASE}/places/${encodeURIComponent(placeId)}`, {

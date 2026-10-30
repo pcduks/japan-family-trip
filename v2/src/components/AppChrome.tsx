@@ -36,7 +36,7 @@ export function BottomNav() {
     <nav aria-label="Main" className="fixed inset-x-0 bottom-0 z-30 border-t border-rule bg-bg/95 backdrop-blur" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
       <ul className="mx-auto flex max-w-xl items-stretch justify-around px-1">
         <NavItem href="/" label="Trip" icon={I.trip} active={path === "/" || is("/plan") || is("/guide")} />
-        <NavItem href="/places" label="Japan" icon={I.places} active={is("/places") || is("/areas") || is("/tokyo")} />
+        <NavItem href="/places" label="Japan" icon={I.places} active={is("/places") || is("/areas") || is("/tokyo") || is("/city")} />
         <NavItem href="/routes" label="What if" icon={I.versions} active={is("/routes") || is("/build") || is("/board")} />
         <NavItem href="/food" label="Food" icon={I.food} active={is("/food")} />
       </ul>
@@ -125,6 +125,9 @@ export function AppHeader() {
                 </Link>
                 <Link href="/guide" className="btn btn-sm" onClick={() => setOpen(false)}>
                   How this works
+                </Link>
+                <Link href="/city" className="btn btn-sm" onClick={() => setOpen(false)}>
+                  Our cities
                 </Link>
                 <Link href="/tokyo" className="btn btn-sm" onClick={() => setOpen(false)}>
                   Tokyo on foot

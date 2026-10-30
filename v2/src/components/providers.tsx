@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { localStore, useLocalStore, useSystemDark } from "@/lib/localStore";
 import type { RulesContext } from "@/lib/rules";
-import type { Comment, PlanHistoryEntry, Reaction, Role, Snapshot, Stay, Suggestion, SuggestionDiff, Version, Vote, VoteKind } from "@/lib/types";
+import type { Comment, PlanHistoryEntry, Reaction, Role, Snapshot, Stay, Suggestion, SuggestionDiff, Tip, TipExtracted, Version, Vote, VoteKind } from "@/lib/types";
 import { describeDiff, newId } from "@/lib/versions";
 import { afterAccept, mergeOnto, sameRoute, stopNames, validRoute } from "@/lib/merge";
 import { withPin } from "@/lib/tokyo";
@@ -43,8 +43,9 @@ interface DemoState {
   rankRevealed: boolean;
   doneDeadlines: string[];
   tokyoPins: Record<string, number>;
+  tips: Tip[];
 }
-const EMPTY_DEMO: DemoState = { versions: [], votes: [], suggestions: [], comments: [], reactions: [], history: [], planOverride: null, rankRevealed: false, doneDeadlines: [], tokyoPins: {} };
+const EMPTY_DEMO: DemoState = { versions: [], votes: [], suggestions: [], comments: [], reactions: [], history: [], planOverride: null, rankRevealed: false, doneDeadlines: [], tokyoPins: {}, tips: [] };
 const demoStore = localStore<DemoState>("jp-demo", EMPTY_DEMO, (raw) => ({ ...EMPTY_DEMO, ...(raw as Partial<DemoState>) }));
 const demoMe = localStore<string | null>("jp-demo-me", null);
 
@@ -77,6 +78,11 @@ export interface Store {
   toggleReaction: (targetType: string, targetId: string, kind: Reaction["kind"]) => Promise<void>;
   /** Tokyo on foot: pin a walk (1–10, 0 for the rest day) to a Tokyo day, or clear it with null. */
   pinTokyoWalk: (date: string, walk: number | null) => Promise<void>;
+  /** City pages: add tips found on Google (one drop, several places). Resolves to null when saved, else why not. */
+  addTips: (tips: TipExtracted[], about: { caption?: string; text?: string; url?: string }) => Promise<string | null>;
+  /** Change a tip's note, type, day or city (its author or a planner). */
+  updateTip: (id: string, patch: Partial<Pick<Tip, "note" | "cat" | "planned_for" | "city">>) => Promise<string | null>;
+  deleteTip: (id: string) => Promise<string | null>;
 }
 
 const Ctx = createContext<Store | null>(null);
@@ -171,7 +177,7 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     // Demo: overlay local edits on the bundled file.
     const versions = initial.versions.map((v) => (v.status === "plan" && demoState.planOverride ? demoState.planOverride : v)).concat(demoState.versions);
     const deadlines = initial.deadlines.map((d) => (d.id && demoState.doneDeadlines.includes(d.id) ? { ...d, done: true } : d));
-    return { ...initial, versions, deadlines, votes: demoState.votes, suggestions: demoState.suggestions, comments: demoState.comments, reactions: demoState.reactions, history: demoState.history, tokyo_pins: demoState.tokyoPins };
+    return { ...initial, versions, deadlines, votes: demoState.votes, suggestions: demoState.suggestions, comments: demoState.comments, reactions: demoState.reactions, history: demoState.history, tokyo_pins: demoState.tokyoPins, tips: demoState.tips };
   }, [sb, remote, initial, demoState]);
 
   const rankRevealed = sb
@@ -388,6 +394,46 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     [sb, run, me],
   );
 
+  const addTips = useCallback(
+    async (tips: TipExtracted[], about: { caption?: string; text?: string; url?: string }): Promise<string | null> => {
+      const who = me;
+      if (!who) return "Sign in first";
+      if (!tips.length) return "Nothing to add";
+      if (!sb) {
+        const dropId = newId();
+        const at = new Date().toISOString();
+        patchDemo((d) => ({ ...d, tips: [...d.tips, ...tips.map((t): Tip => ({ ...t, id: newId(), drop_id: dropId, author_id: who.travellerId, created_at: at }))] }));
+        return null;
+      }
+      return run("addTips", { tips, caption: about.caption, text: about.text, url: about.url }, true);
+    },
+    [sb, run, me],
+  );
+
+  const updateTip = useCallback(
+    async (id: string, patch: Partial<Pick<Tip, "note" | "cat" | "planned_for" | "city">>): Promise<string | null> => {
+      if (!me) return "Sign in first";
+      if (!sb) {
+        patchDemo((d) => ({ ...d, tips: d.tips.map((t) => (t.id === id ? { ...t, ...patch } : t)) }));
+        return null;
+      }
+      return run("updateTip", { id, ...patch }, true);
+    },
+    [sb, run, me],
+  );
+
+  const deleteTip = useCallback(
+    async (id: string): Promise<string | null> => {
+      if (!me) return "Sign in first";
+      if (!sb) {
+        patchDemo((d) => ({ ...d, tips: d.tips.filter((t) => t.id !== id) }));
+        return null;
+      }
+      return run("deleteTip", { id }, true);
+    },
+    [sb, run, me],
+  );
+
   const value: Store = {
     snapshot,
     demo,
@@ -414,6 +460,9 @@ export function Providers({ snapshot: initial, viewer, children }: { snapshot: S
     addComment,
     toggleReaction,
     pinTokyoWalk,
+    addTips,
+    updateTip,
+    deleteTip,
   };
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }
