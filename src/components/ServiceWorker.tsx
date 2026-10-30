@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useSyncExternalStore } from "react";
+import { FOOD_CITIES, FOOD_TOPICS } from "@/lib/foodGuide/generated";
 
 /** Pages saved for offline use as soon as the app is opened online. */
-const WARM = ["/", "/today", "/viagem", "/food", "/mala", "/anotar", "/passaporte", "/socorro", "/contas", "/votar", "/plan/days", "/plan/bookings", "/guides/tokyo", "/guides/kyoto", "/tokyo"];
+const WARM = ["/", "/today", "/viagem", "/food", "/mala", "/anotar", "/passaporte", "/socorro", "/contas", "/votar", "/plan/days", "/plan/bookings", "/guides/tokyo", "/guides/kyoto", "/comida", ...FOOD_CITIES.map((c) => `/comida/${c.slug}`), ...FOOD_TOPICS.map((t) => `/comida/${t.slug}`), "/tokyo"];
 
 export function ServiceWorker({ signedIn }: { signedIn: boolean }) {
   useEffect(() => {

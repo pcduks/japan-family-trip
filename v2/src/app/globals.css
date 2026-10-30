@@ -1,0 +1,598 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/*
+ * Winter postcards. Light: snow-white paper with a faint grain, ink text,
+ * shrine-red accent, indigo links. Dark: a night sky over snow.
+ * Region colours live in src/lib/colors.ts and never change.
+ */
+:root {
+  --bg: #f5f2ec;
+  --bg-2: #ebe6dc;
+  --card: #fffdf8;
+  --ink: #1f1d1a;
+  --ink-2: #4a4641;
+  --muted: #7a756d;
+  --rule: #e1dbcf;
+  --accent: #c8402a;
+  --accent-ink: #fff8f2;
+  --indigo: #2a3f6f;
+  --ok: #2b8a3e;
+  --warn: #d9480f;
+  --danger: #c92a2a;
+  --info: #1c5fa8;
+  /* Food: Fernanda's "ask" mark, and the dish tiles' paper. */
+  --ask: #b0400c;
+  --paper: #f0e6d6;
+  --ny: rgba(200, 64, 42, 0.1);
+  --shadow: 0 1px 2px rgba(31, 29, 26, 0.04), 0 10px 28px -18px rgba(31, 29, 26, 0.35);
+  --glow: 0 24px 60px -30px rgba(42, 63, 111, 0.45);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #111522;
+  --bg-2: #181d2c;
+  --card: #1b2131;
+  --ink: #efeadf;
+  --ink-2: #cdc7ba;
+  --muted: #9a97a0;
+  --rule: #2d3447;
+  --accent: #ff7a5c;
+  --accent-ink: #1a1410;
+  --indigo: #9db4e8;
+  --ok: #69db7c;
+  --warn: #ffa94d;
+  --danger: #ff8787;
+  --info: #74c0fc;
+  --ask: #ffb066;
+  --paper: #2a2620;
+  --ny: rgba(255, 122, 92, 0.14);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.45), 0 12px 30px -18px rgba(0, 0, 0, 0.9);
+  --glow: 0 24px 60px -30px rgba(157, 180, 232, 0.35);
+  color-scheme: dark;
+}
+
+/* Large-text mode: everything is rem-based, so this scales the whole UI. */
+:root[data-text="large"] {
+  font-size: 120%;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-indigo: var(--indigo);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --color-info: var(--info);
+  --color-ask: var(--ask);
+  --color-paper: var(--paper);
+  --font-sans: var(--font-body), "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  --font-display: var(--font-display-face), "Hiragino Mincho ProN", "Iowan Old Style", Georgia, serif;
+  --font-stamp: var(--font-body), system-ui, sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    background: var(--bg);
+    color: var(--ink);
+  }
+  html {
+    /* Keep focused and scrolled-to elements clear of the fixed bottom nav. */
+    scroll-padding-bottom: 6rem;
+  }
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: clip;
+    /* A faint paper grain, fixed so it never scrolls with the page. */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .4  0 0 0 0 .35  0 0 0 0 .25  0 0 0 .045 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+  :root[data-theme="dark"] body {
+    background-image: none;
+  }
+  /* A single-column grid must never grow past its container (large text, long words). */
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    text-wrap: balance;
+    font-variation-settings: "opsz" 72, "SOFT" 50;
+  }
+  a {
+    color: inherit;
+    text-underline-offset: 3px;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--accent) 25%, transparent);
+  }
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+    color: inherit;
+  }
+  input,
+  select,
+  textarea {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 0.6rem 0.85rem;
+    min-height: 2.9rem;
+  }
+}
+
+@layer components {
+  .jp {
+    font-family: var(--font-jp), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    min-height: 2.9rem;
+    padding: 0.55rem 1.1rem;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    background: var(--card);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.08s ease, background 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover {
+    box-shadow: var(--shadow);
+  }
+  .btn:active {
+    transform: scale(0.98);
+  }
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-ink);
+    border-color: transparent;
+  }
+  .btn-sm {
+    min-height: 2.3rem;
+    padding: 0.3rem 0.85rem;
+    font-size: 0.92rem;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid var(--rule);
+    background: var(--bg-2);
+  }
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .display {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+  }
+  .seg {
+    display: inline-flex;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--bg-2);
+    padding: 3px;
+  }
+  .seg > button {
+    white-space: nowrap;
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    min-height: 2.25rem;
+    font-weight: 600;
+    color: var(--muted);
+  }
+  .seg > button[aria-pressed="true"] {
+    background: var(--card);
+    color: var(--ink);
+    box-shadow: var(--shadow);
+  }
+  /* Edge-to-edge photo with a soft fade for text on top. */
+  .hero-fade::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.62) 100%);
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+@keyframes stamp-in {
+  0% {
+    opacity: 0;
+    transform: rotate(var(--stamp-rot, -5deg)) scale(1.5);
+  }
+  70% {
+    opacity: 1;
+    transform: rotate(var(--stamp-rot, -5deg)) scale(0.96);
+  }
+  100% {
+    transform: rotate(var(--stamp-rot, -5deg)) scale(1);
+  }
+}
+.stamp-in {
+  animation: stamp-in 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 0.35s ease both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
+
+/* Rendered markdown (the plan report). */
+.prose {
+  line-height: 1.6;
+}
+.prose > * + * {
+  margin-top: 0.9em;
+}
+.prose h1 {
+  font-size: 1.9rem;
+  margin-top: 0;
+}
+.prose h2 {
+  font-size: 1.45rem;
+  margin-top: 1.8em;
+}
+.prose h3 {
+  font-size: 1.15rem;
+  margin-top: 1.4em;
+}
+.prose a {
+  color: var(--indigo);
+  text-decoration: underline;
+}
+.prose ul,
+.prose ol {
+  padding-left: 1.3em;
+}
+.prose ul {
+  list-style: disc;
+}
+.prose ol {
+  list-style: decimal;
+}
+.prose li + li {
+  margin-top: 0.25em;
+}
+.prose blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 0.9em;
+  color: var(--ink-2);
+}
+.prose strong {
+  font-weight: 700;
+}
+.prose em {
+  color: var(--ink-2);
+}
+.prose .table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-inline: -1rem;
+  padding-inline: 1rem;
+}
+.prose table {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 100%;
+}
+.prose th,
+.prose td {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.45rem 0.6rem;
+  vertical-align: top;
+  text-align: left;
+  min-width: 7rem;
+}
+.prose th {
+  font-weight: 700;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.prose td:first-child {
+  font-weight: 600;
+}
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+.prose input[type="checkbox"] {
+  min-height: 0;
+  margin-right: 0.4em;
+}
+
+/*
+ * The journey map: sea with seigaiha waves, paper land printed slightly off
+ * register, snow country stippled, ink lines, a seal per stop.
+ */
+:root {
+  --jm-sea: #dfe6ea;
+  --jm-wave: rgba(42, 63, 111, 0.16);
+  --jm-sealabel: rgba(42, 63, 111, 0.5);
+  --jm-land: #fbf8f1;
+  --jm-snowland: #f1f4f7;
+  --jm-snowdot: rgba(42, 63, 111, 0.16);
+  --jm-offset: rgba(42, 63, 111, 0.22);
+  --jm-border: rgba(31, 29, 26, 0.38);
+  --jm-lake: #cfdbe2;
+  --jm-ink: #1f1d1a;
+  --jm-mountain: #c9c1b1;
+  --jm-snowcap: #ffffff;
+  --jm-fuji: #7b8fb4;
+}
+:root[data-theme="dark"] {
+  --jm-sea: #0d1220;
+  --jm-wave: rgba(157, 180, 232, 0.14);
+  --jm-sealabel: rgba(157, 180, 232, 0.5);
+  --jm-land: #1d2436;
+  --jm-snowland: #222b40;
+  --jm-snowdot: rgba(220, 230, 255, 0.2);
+  --jm-offset: rgba(0, 0, 0, 0.55);
+  --jm-border: rgba(239, 234, 223, 0.32);
+  --jm-lake: #16203a;
+  --jm-ink: #efeadf;
+  --jm-mountain: #3a4258;
+  --jm-snowcap: #e9eef8;
+  --jm-fuji: #5d6f97;
+}
+.journey {
+  background: var(--jm-sea);
+  box-shadow: var(--glow);
+  isolation: isolate;
+}
+.jm-seal {
+  fill: var(--c);
+  transition: fill 0.35s, stroke 0.35s;
+}
+.jm-num {
+  transition: fill 0.35s;
+}
+.jm-stamp[data-arrived="0"] .jm-seal {
+  fill: var(--jm-land);
+  stroke: var(--c);
+  stroke-width: 2.2;
+}
+.jm-stamp[data-arrived="0"] .jm-num {
+  fill: var(--c);
+}
+.jm-stamp[data-arrived="0"] .jm-seal-ring {
+  opacity: 0;
+}
+.jm-stamp[data-here="1"] .jm-halo {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: jm-pulse 1.9s ease-out infinite;
+}
+.jm-stamp:focus-visible {
+  outline: none;
+}
+.jm-stamp:focus-visible .jm-seal {
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+@keyframes jm-pulse {
+  0% {
+    opacity: 0.45;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.9);
+  }
+}
+.jm-train[data-mode="bus"] .jm-rail,
+.jm-train:not([data-mode="bus"]) .jm-bus {
+  display: none;
+}
+.jm-train {
+  transition: opacity 0.25s;
+}
+.jm-fuji-inner {
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.jm-fuji[data-near="1"] .jm-fuji-inner {
+  transform: scale(1.45);
+}
+.jm-snowfall span {
+  position: absolute;
+  top: -6px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow:
+    0 0 0 1px rgba(42, 63, 111, 0.28),
+    0 1px 4px rgba(42, 63, 111, 0.35);
+  opacity: 0;
+  animation-name: jm-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes jm-fall {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate3d(-18px, 320px, 0);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jm-stamp[data-here="1"] .jm-halo,
+  .jm-snowfall span {
+    animation: none;
+  }
+}
+
+/* The picture scroll (emakimono): a chapter painting per stop, a panel per day. */
+:root {
+  --emaki-night: #e3ddd1;
+  --emaki-gold-a: #f3dc9b;
+  --emaki-gold-b: #d9b35a;
+}
+:root[data-theme="dark"] {
+  --emaki-night: #262d40;
+  --emaki-gold-a: #6b5726;
+  --emaki-gold-b: #8c6f2c;
+}
+.emaki {
+  scroll-snap-type: x proximity;
+  mask-image: linear-gradient(to right, transparent 0, #000 14px, #000 calc(100% - 22px), transparent 100%);
+}
+.emaki-chapter {
+  border-left: 1px solid color-mix(in srgb, var(--ink) 20%, transparent);
+}
+.emaki-chapter:first-of-type {
+  border-radius: 16px 0 0 0;
+}
+.emaki-wash {
+  background:
+    linear-gradient(to bottom, rgba(10, 12, 20, 0.55), rgba(10, 12, 20, 0.05) 55%, rgba(10, 12, 20, 0.2)),
+    linear-gradient(to right, color-mix(in srgb, var(--c) 30%, transparent), transparent 60%);
+}
+.emaki-kanji {
+  writing-mode: vertical-rl;
+  font-family: var(--font-jp), var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: 0.12em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+}
+.emaki-day {
+  scroll-snap-align: start;
+  background: var(--card);
+  border-left: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  transition: background 0.2s;
+}
+.emaki-day:hover {
+  background: color-mix(in srgb, var(--c) 6%, var(--card));
+}
+.emaki-day:focus-visible {
+  outline-offset: -3px;
+}
+.emaki-day-ny {
+  background:
+    linear-gradient(to bottom, color-mix(in srgb, var(--emaki-gold-a) 38%, transparent), transparent 46%),
+    var(--card);
+}
+.emaki-gold {
+  color: #4a3510;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.55), transparent 22%),
+    radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.35), transparent 18%),
+    linear-gradient(100deg, var(--emaki-gold-a), var(--emaki-gold-b) 45%, var(--emaki-gold-a) 70%, var(--emaki-gold-b));
+  box-shadow: inset 0 0 0 1px rgba(120, 86, 20, 0.25);
+}
+:root[data-theme="dark"] .emaki-gold {
+  color: #fbecc4;
+}
+
+/* Bottom sheets slide up from the edge. */
+.sheet[data-state="open"] {
+  animation: sheet-in 0.32s cubic-bezier(0.2, 0.9, 0.25, 1);
+}
+.sheet-overlay[data-state="open"] {
+  animation: fade-in 0.25s ease-out;
+}
+@keyframes sheet-in {
+  from {
+    transform: translateY(40%);
+    opacity: 0.4;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sheet[data-state="open"],
+  .sheet-overlay[data-state="open"] {
+    animation: none;
+  }
+}
+:root {
+  --jm-lit: color-mix(in srgb, var(--accent) 20%, #fbf8f1);
+}
+:root[data-theme="dark"] {
+  --jm-lit: color-mix(in srgb, var(--accent) 22%, #1d2436);
+}
+.journey svg:not([data-ready]) .jm-drawn,
+.journey svg:not([data-ready]) .jm-train {
+  opacity: 0;
+}

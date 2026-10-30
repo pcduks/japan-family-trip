@@ -1,0 +1,294 @@
+{
+  "slug": "kobe",
+  "name": "Kobe",
+  "tagline_pt": "O porto que abriu em 1868 e aprendeu a comer carne, pão e bolinho chinês antes do resto do Japão.",
+  "history_pt": [
+    "O porto de Kobe abriu ao comércio exterior em 1868. Os estrangeiros chegaram quando o Japão ainda quase não comia carne, e a história local conta que foram os britânicos que provaram o boi de trabalho de Tajima e o elogiaram. O primeiro governador de Hyōgo, Itō Hirobumi, também gostava da carne de Tajima e Sanda.",
+    "\"Kobe Beef\" não é raça nem fazenda: é um selo criado em 1983 para carcaças de gado Tajima de Hyōgo que passam no padrão (marmoreio BMS 6 ou mais desde 2002, rendimento A ou B). Virou Indicação Geográfica em 2015.",
+    "Os chineses não podiam morar no assentamento estrangeiro e ficaram logo a oeste dele: nasceu Nankinmachi, hoje ~200 m por 110 m com mais de 100 lojas. Do mesmo porto vieram as padarias: o alemão Heinrich Freundlieb, ex-prisioneiro da Primeira Guerra, abriu a sua em Kobe em 1924, e a loja atual ocupa a antiga igreja Kobe Union.",
+    "O Kobe operário fica em Nagata, bairro de fábricas onde os trabalhadores levavam o arroz da marmita para fritar com yakisoba na chapa do okonomiyaki: a sobameshi. A Okonomiyaki Aomori foi a primeira a pôr o nome no cardápio, por volta de 1985."
+  ],
+  "winter_pt": "Inverno é bom para teppanyaki e para o bolinho quente de Nankinmachi. O festival do Ano-Novo Lunar de Nankinmachi (Shunsetsu-sai) cai depois da viagem; em Arima, o onsen de inverno vem com tansan senbei recém-assado.",
+  "meibutsu": [
+    {
+      "name_pt": "Carne Kobe",
+      "name_ja": "神戸ビーフ",
+      "romaji": "Kōbe bīfu",
+      "what_pt": "Gado Tajima de Hyōgo certificado. Na chapa (teppan) ou na brasa; o ponto tradicional é malpassado a ao ponto para menos.",
+      "where_pt": "Aragawa (brasa, luxo), Wakkoku (teppan privativo para 6), Kawamura (almoço).",
+      "price_pt": "Almoço ¥4–5 mil · Jantar ¥10–59 mil",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Ela pede bem passado (\"ウェルダンで\"). Alho frito e legumes da chapa ok."
+    },
+    {
+      "name_pt": "Sobameshi",
+      "name_ja": "そばめし",
+      "romaji": "sobameshi",
+      "what_pt": "Yakisoba picado e frito com arroz na chapa, com molho. Em Nagata, muitas vezes com bokkake (tendão de boi e konnyaku cozidos doce).",
+      "where_pt": "Okonomiyaki Aomori (Nagata), a casa que batizou o prato.",
+      "price_pt": "¥1–2 mil",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Butaman",
+      "name_ja": "豚饅頭",
+      "romaji": "butaman",
+      "what_pt": "Pãozinho de porco pequeno e suculento, recheio temperado com shōyu. O Rōshōki se diz o criador do butaman japonês, a partir do baozi de Tianjin.",
+      "where_pt": "Rōshōki, no centro de Nankinmachi.",
+      "price_pt": "Menos de ¥1.000",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Pão e doces do porto",
+      "name_ja": "神戸のパン",
+      "romaji": "Kōbe no pan",
+      "what_pt": "Kobe tem tradição de padaria desde o porto; a Freundlieb (1924) é a mais simbólica.",
+      "where_pt": "Freundlieb, na antiga igreja Kobe Union (Kitano). Não verificada no Tabelog nesta pesquisa.",
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Biscoito de água gaseificada",
+      "name_ja": "炭酸せんべい",
+      "romaji": "tansan senbei",
+      "what_pt": "Wafer fino e leve de farinha, amido e açúcar, feito com a água gaseificada da fonte de Arima. Surgiu depois que, em 1875, a água foi considerada potável.",
+      "where_pt": "Lojas da ladeira Yumoto-zaka, em Arima Onsen (nenhuma verificada no Tabelog).",
+      "price_pt": "a confirmar",
+      "pregnancy": "ok"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Nankinmachi",
+      "name_ja": "南京町",
+      "kind": "bairro",
+      "story_pt": "A Chinatown de Kobe, nascida a oeste do assentamento estrangeiro depois de 1868. ~200 m por 110 m, mais de 100 lojas; depois do terremoto de 1995 os petiscos de rua viraram atração.",
+      "eat_pt": [
+        "Butaman do Rōshōki",
+        "Para sentar: a lista 中国料理 WEST 百名店 2026 inclui o Shuntoku (順徳), em Motomachi (não checado aqui)"
+      ],
+      "tips_pt": "Pule os xiaolongbao de barraca e os palitos de pato. Rōshōki vende até acabar: vá cedo.",
+      "dec_jan_pt": "Rōshōki fecha segunda e publica folgas mensais no site. Ano-Novo a confirmar.",
+      "query": "Nankinmachi Kobe"
+    },
+    {
+      "name": "Kitano e Sannomiya",
+      "name_ja": "北野・三宮",
+      "kind": "bairro",
+      "story_pt": "Kitano é a encosta das casas dos estrangeiros (ijinkan); Sannomiya é o centro. Aqui ficam as churrascarias sérias de Kobe beef e também as fábricas de turista.",
+      "eat_pt": [
+        "Kobe beef na brasa no Aragawa",
+        "Teppan privativo no Wakkoku Kitano-zaka",
+        "Almoço de teppan no Kawamura"
+      ],
+      "tips_pt": "Armadilha: balcões de \"Kobe beef\" a passos da estação com cardápio só em inglês. O almoço é a forma sensata de provar.",
+      "dec_jan_pt": "Wakkoku fecha só 31 dez e 1 jan. Mouriya abre ao meio-dia em 1 jan.",
+      "query": "Kitano Sannomiya Kobe"
+    },
+    {
+      "name": "Nagata",
+      "name_ja": "長田",
+      "kind": "bairro",
+      "story_pt": "Bairro operário de fábricas (calçado de borracha) a oeste do centro, berço da sobameshi e do bokkake.",
+      "eat_pt": [
+        "Sobameshi e okonomiyaki com bokkake no Aomori"
+      ],
+      "tips_pt": "Longe do roteiro turístico; vale como meio dia de Kobe de verdade.",
+      "dec_jan_pt": "Aomori fecha segunda e terça (28–29 dez, 4 jan).",
+      "query": "Nagata Kobe okonomiyaki"
+    },
+    {
+      "name": "Arima Onsen",
+      "name_ja": "有馬温泉",
+      "kind": "bairro",
+      "story_pt": "Uma das fontes termais mais antigas do Japão, atrás do monte Rokkō. A fonte gaseificada (tansansen) virou biscoito.",
+      "eat_pt": [
+        "Tansan senbei quente nas lojas da ladeira Yumoto-zaka"
+      ],
+      "tips_pt": "Ela deve evitar banho muito quente e longo; o pé no ashiyu é mais seguro. Ladeiras íngremes.",
+      "dec_jan_pt": "Ryokan lotam no Ano-Novo; lojas a confirmar.",
+      "query": "Arima Onsen tansan senbei"
+    }
+  ],
+  "places": [
+    {
+      "name": "Aragawa",
+      "name_ja": "麤皮",
+      "area": "Kobe · Nakayamate (Sannomiya)",
+      "genre_pt": "Steakhouse (Kobe/Sanda na brasa)",
+      "price_pt": "Almoço ¥40–49 mil · Jantar ¥50–59 mil",
+      "tabelog": {
+        "score": 4.06,
+        "reviews": 309,
+        "url": "https://tabelog.com/hyogo/A2801/A280101/28000962/",
+        "awards": "Award Bronze 2017, Silver 2018–2019, Bronze 2021 e 2026; ステーキ 百名店 2021; ステーキ・鉄板焼き WEST 百名店 2024, 2025"
+      },
+      "why_pt": "Sem show de chapa: uma peça da melhor carne na brasa, serviço à antiga. É a Kobe beef que o crítico japonês nomeia, e o preço assusta.",
+      "order_pt": "O bife da casa.",
+      "pregnancy_pt": "Servido mal a ao ponto para menos; ela pede bem passado. Pense se vale o preço do prato dela.",
+      "group_pt": "Sala privativa no 2º andar até 10: perfeita para 6.",
+      "booking_pt": "Telefone.",
+      "dec_jan_pt": "Fecha domingo (e segunda, salvo feriado prolongado). Ano-Novo a confirmar.",
+      "query": "Aragawa Kobe",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (jun 2020), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
+    },
+    {
+      "name": "Aburi Niku Kōbō Wakkoku Kitano-zaka",
+      "name_ja": "炙り肉工房 和黒 北野坂本店",
+      "area": "Kobe · Kitano-zaka",
+      "genre_pt": "Teppanyaki (Kobe beef)",
+      "price_pt": "a confirmar",
+      "tabelog": {
+        "score": 3.62,
+        "reviews": 375,
+        "url": "https://tabelog.com/hyogo/A2801/A280101/28000954/",
+        "awards": "ステーキ 百名店 2021; ステーキ・鉄板焼き 百名店 2022; ステーキ・鉄板焼き WEST 百名店 2024, 2025"
+      },
+      "why_pt": "A Kobe beef realista: teppan privativo para seis com qualidade 百名店, sem a conta do Aragawa.",
+      "pregnancy_pt": "Carne dela bem passada; alho e legumes ok.",
+      "group_pt": "Balcões de teppan para 6, 8 e 10 reserváveis inteiros: reserve o de 6.",
+      "booking_pt": "Aceita reserva.",
+      "dec_jan_pt": "Fecha só 31 dez e 1 jan: aberto 29–30 dez e 2–4 jan. A melhor opção de Kobe beef no Ano-Novo.",
+      "query": "Wakkoku Kitanozaka Kobe"
+    },
+    {
+      "name": "Bifuteki no Kawamura Sannomiya Honten",
+      "name_ja": "ビフテキのカワムラ 三宮本店",
+      "area": "Kobe · Sannomiya",
+      "genre_pt": "Teppanyaki e steak",
+      "price_pt": "Almoço ¥4–5 mil · Jantar ¥10–15 mil",
+      "tabelog": {
+        "score": 3.55,
+        "reviews": 233,
+        "url": "https://tabelog.com/hyogo/A2801/A280101/28002105/",
+        "awards": "ステーキ・鉄板焼き WEST 百名店 2024, 2025"
+      },
+      "why_pt": "O almoço num 百名店 é a forma sã de provar Kobe beef.",
+      "order_pt": "Set de almoço.",
+      "pregnancy_pt": "Bem passado.",
+      "group_pt": "Salas privativas para 8: cabe 6.",
+      "booking_pt": "Aceita reserva.",
+      "dec_jan_pt": "Fecha segunda (28 dez, 4 jan). Ano-Novo a confirmar.",
+      "query": "Kawamura steak Sannomiya"
+    },
+    {
+      "name": "Kobe Steak Restaurant Mouriya Honten",
+      "name_ja": "モーリヤ 本店",
+      "area": "Kobe · Sannomiya",
+      "genre_pt": "Steak (voltado a turista)",
+      "tabelog": {
+        "score": 3.39,
+        "reviews": 193,
+        "url": "https://tabelog.com/hyogo/A2801/A280101/28000615/"
+      },
+      "why_pt": "Antiga e honesta, mas não é onde o japonês que ama carne vai. A única virtude: abre ao meio-dia em 1 jan. Use só se precisar de Kobe beef no dia 1.",
+      "pregnancy_pt": "Bem passado.",
+      "dec_jan_pt": "Abre 12h em 1 jan.",
+      "query": "Mouriya Honten Kobe"
+    },
+    {
+      "name": "Okonomiyaki Aomori",
+      "name_ja": "お好み焼 青森",
+      "area": "Kobe · Nagata (Komagabayashi)",
+      "genre_pt": "Okonomiyaki e sobameshi",
+      "price_pt": "¥1–2 mil",
+      "tabelog": {
+        "score": 3.51,
+        "reviews": 644,
+        "url": "https://tabelog.com/hyogo/A2801/A280110/28000773/",
+        "awards": "お好み焼き 百名店 2018, 2019, 2022, 2023, 2024"
+      },
+      "why_pt": "Comida operária de Kobe, longe de Kitano, na casa que pôs \"sobameshi\" no cardápio pela primeira vez (~1985). O único okonomiyaki 百名店 de Nagata.",
+      "order_pt": "Sobameshi e okonomiyaki com bokkake.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "19 lugares: 4+2 ou 3+3.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Fecha segunda e terça (28–29 dez, 4 jan). Ano-Novo a confirmar.",
+      "query": "Okonomiyaki Aomori Nagata"
+    },
+    {
+      "name": "Rōshōki",
+      "name_ja": "元祖豚饅頭 老祥記",
+      "area": "Kobe · Nankinmachi",
+      "genre_pt": "Butaman",
+      "price_pt": "Menos de ¥1.000",
+      "tabelog": {
+        "score": 3.68,
+        "reviews": 2638,
+        "url": "https://tabelog.com/hyogo/A2801/A280102/28000947/"
+      },
+      "why_pt": "Pãezinhos pequenos e suculentos no meio da Chinatown: baratos e muito Kobe. A casa mais avaliada de Nankinmachi no Tabelog.",
+      "order_pt": "Butaman, alguns por pessoa.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "16 lugares; quase todo mundo leva.",
+      "booking_pt": "Sem reserva; fila.",
+      "dec_jan_pt": "Fecha segunda; vende até acabar. Folgas mensais no site (https://roushouki.com/).",
+      "query": "Roshoki Nankinmachi",
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Butaman “pretty tasty” no dia em Kobe (2015).",
+          "url": "https://www.youtube.com/watch?v=JR6FyQfwynI"
+        }
+      ]
+    },
+    {
+      "name": "Sumiyaki Shio Horumon “A”",
+      "name_ja": "炭焼塩ホルモン『あ』",
+      "area": "Kobe · Sannomiya",
+      "genre_pt": "Horumon (miúdos na brasa)",
+      "tabelog": {
+        "score": 3.84,
+        "reviews": 271,
+        "url": "https://tabelog.com/en/hyogo/A2801/A280101/28035865/",
+        "awards": "Yakiniku WEST 百名店 2025, 2026"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note_pt": "Esôfago e quarto estômago grelhados no sal (2015).",
+          "url": "https://www.youtube.com/watch?v=JR6FyQfwynI"
+        }
+      ],
+      "why_pt": "Miúdos no carvão, só com sal: a maior nota da lista do Mark em Kobe.",
+      "pregnancy_pt": "Grelhe bem as porções dela.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Sumiyaki Shio Horumon A Sannomiya"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Rōshōki (para viagem)",
+      "name_ja": "老祥記",
+      "what_pt": "Butaman para levar.",
+      "buy_pt": "Uma caixa para o trem de volta.",
+      "dec_jan_pt": "Fecha segunda.",
+      "query": "Roshoki Kobe"
+    },
+    {
+      "name": "Freundlieb",
+      "name_ja": "フロインドリーブ",
+      "what_pt": "Padaria alemã de Kobe desde 1924, na antiga igreja Kobe Union (não checada no Tabelog).",
+      "buy_pt": "Pães e biscoitos para o café da manhã.",
+      "dec_jan_pt": "a confirmar.",
+      "query": "Freundlieb Kobe"
+    }
+  ],
+  "sources": [
+    "docs/research/food/22-kansai.md",
+    "https://ja.wikipedia.org/wiki/神戸ビーフ",
+    "https://ja.wikipedia.org/wiki/南京町_(神戸市)",
+    "https://ja.wikipedia.org/wiki/そばめし",
+    "https://ja.wikipedia.org/wiki/フロインドリーブ",
+    "https://ja.wikipedia.org/wiki/炭酸せんべい",
+    "https://roushouki.com/"
+  ]
+}

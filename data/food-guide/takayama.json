@@ -1,0 +1,300 @@
+{
+  "slug": "takayama",
+  "name": "Takayama / Hida",
+  "tagline_pt": "Cidade de montanha de mercadores: carne Hida, missô na folha, saquê novo e mercados de manhã.",
+  "history_pt": [
+    "Takayama fica numa bacia alta e nevada dos Alpes, isolada por séculos. Em 1692 o xogunato tomou a região para si, por causa da madeira e das minas, e a cidade virou um centro de mercadores ricos, carpinteiros famosos e cervejarias de saquê. As ruas de Sanmachi ainda guardam as casas desse tempo.",
+    "Os mercados da manhã vêm do período Edo, perto do templo Takayama Betsuin. O mercado atual à beira do rio Miyagawa existe desde 1953, e o da frente do Jinya completa a dupla. Vendem conservas de nabo vermelho de Hida, maçã, missô, mochi e dango.",
+    "A carne Hida é Wagyu preto engordado em Gifu por pelo menos 14 meses, com nota de qualidade 3 ou mais. O touro Yasufuku, comprado de Hyogo (linhagem Tajima) em 1981, gerou cerca de 39 mil descendentes e fez a marca. Desde 2023 tem indicação geográfica.",
+    "O frio explica o resto: o hōba-miso, missô com cebolinha e cogumelo assado numa folha seca de magnólia sobre o fogareiro, vem do costume de esquentar missô na folha sobre o irori no inverno. O mitarashi daqui (みだらし) é dango só com shoyu, salgado, sem o xarope doce de Tóquio."
+  ],
+  "winter_pt": "Neve, saquê novo (shinshu) nas cervejarias, com a bola de cedro verde (sugidama) que vai escurecendo conforme o saquê amadurece. Hōba-miso no café da manhã do ryokan. Nos últimos dias do ano, o mercado Miyagawa vira o 'toshinose', com enfeites de Ano-Novo e hanamochi.",
+  "meibutsu": [
+    {
+      "name_pt": "Carne Hida",
+      "name_ja": "飛騨牛",
+      "romaji": "Hida-gyū",
+      "what_pt": "Wagyu de Gifu: em steak, sukiyaki, yakiniku ou assada no hōba-miso.",
+      "where_pt": "Steak House Kitchen Hida, Shuntei Nakagawa, Bourbon. Mark Wiens passou 24 h comendo carne Hida (Kyōya, Maruaki e outros).",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Peça bem passada e pule o ovo cru do sukiyaki."
+    },
+    {
+      "name_pt": "Nigiri de carne Hida",
+      "name_ja": "飛騨牛握り",
+      "romaji": "Hida-gyū nigiri",
+      "what_pt": "Fatia de carne selada por cima do arroz, vendida nas barracas de Sanmachi. Não está em nenhuma lista do Tabelog.",
+      "where_pt": "Barracas de Sanmachi.",
+      "must": false,
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Carne mal passada. Ela pula; os outros, se quiserem a foto."
+    },
+    {
+      "name_pt": "Hōba-miso",
+      "name_ja": "朴葉味噌",
+      "romaji": "hōba-miso",
+      "what_pt": "Missô com cebolinha e cogumelo assado sobre folha de magnólia no fogareiro de mesa; come-se com arroz. Às vezes com carne Hida por cima.",
+      "where_pt": "Café da manhã do ryokan; Kyōya (Mark Wiens comeu a versão com carne); mercados vendem kits.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Ramen de Takayama",
+      "name_ja": "高山ラーメン",
+      "romaji": "Takayama ramen (chūka soba)",
+      "what_pt": "Caldo de shoyu leve, macarrão fino ondulado. Nasceu em barraca em 1938.",
+      "where_pt": "Masago Soba (o 元祖). Mark Wiens provou o Tsuzumi.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Mitarashi dango de Hida",
+      "name_ja": "みだらし団子",
+      "romaji": "midarashi dango",
+      "what_pt": "Bolinhas de arroz no espeto, grelhadas e pinceladas só com shoyu. Salgado, não doce.",
+      "where_pt": "Jinya Dango; barracas dos mercados.",
+      "price_pt": "≈ ¥100 o espeto (a confirmar)",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Conserva de nabo vermelho",
+      "name_ja": "赤かぶ漬け",
+      "romaji": "aka-kabu zuke",
+      "what_pt": "O nabo vermelho de Hida em conserva, crocante e ácido. Clássico dos mercados.",
+      "where_pt": "Mercados Miyagawa e Jinya-mae.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Saquê novo de Sanmachi",
+      "name_ja": "新酒",
+      "romaji": "shinshu",
+      "what_pt": "Em dez–jan as cervejarias de Sanmachi estão produzindo e servem degustação do saquê novo.",
+      "where_pt": "Cervejarias de Sanmachi.",
+      "must": false,
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Álcool. Para ela, amazake de kōji (sem álcool); o de borra de saquê (sakekasu) tem álcool."
+    },
+    {
+      "name_pt": "Shōjin ryōri",
+      "name_ja": "精進料理",
+      "romaji": "shōjin ryōri",
+      "what_pt": "Cozinha vegetariana de templo, tofu e legumes da montanha.",
+      "where_pt": "Hida Takayama Kakushō.",
+      "must": false,
+      "pregnancy": "ok"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Mercado da manhã Miyagawa",
+      "name_ja": "宮川朝市",
+      "kind": "mercado",
+      "story_pt": "Cerca de 50–70 barracas à beira do rio desde 1953, herdeiras dos mercados Edo.",
+      "eat_pt": [
+        "Mitarashi dango",
+        "Aka-kabu e conservas",
+        "Kit de hōba-miso",
+        "Maçã e mochi"
+      ],
+      "tips_pt": "No inverno muitas barracas começam às 7:00; até ~12:00. Neve forte pode cancelar.",
+      "dec_jan_pt": "Últimos dias do ano: mercado 'toshinose' com enfeites de Ano-Novo. Funcionamento em 1–3/1 a confirmar.",
+      "query": "Miyagawa Morning Market Takayama"
+    },
+    {
+      "name": "Mercado Jinya-mae",
+      "name_ja": "陣屋前朝市",
+      "kind": "mercado",
+      "story_pt": "Mercado menor em frente ao antigo posto de governo do xogunato.",
+      "eat_pt": [
+        "Legumes, conservas, doces"
+      ],
+      "tips_pt": "Combine com o Miyagawa na mesma manhã.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Jinya-mae Morning Market"
+    },
+    {
+      "name": "Sanmachi",
+      "name_ja": "三町",
+      "kind": "rua",
+      "story_pt": "Ruas de casas de mercadores e cervejarias com sugidama na porta.",
+      "eat_pt": [
+        "Degustação de saquê novo",
+        "Nigiri de carne Hida (só para quem não está grávida)",
+        "Dango"
+      ],
+      "tips_pt": "Muito cheio ao meio-dia; vá cedo. As barracas de nigiri são vitrine turística.",
+      "dec_jan_pt": "Degustação nas cervejarias em 29/12–3/1 a confirmar.",
+      "query": "Sanmachi Takayama"
+    }
+  ],
+  "places": [
+    {
+      "name": "Steak House Kitchen Hida",
+      "name_ja": "ステーキハウス キッチン飛騨",
+      "area": "Takayama · 9 min da estação",
+      "genre_pt": "Steak de carne Hida",
+      "price_pt": "¥6–15k",
+      "tabelog": {
+        "score": 3.76,
+        "reviews": 465,
+        "url": "https://tabelog.com/gifu/A2104/A210401/21000080/",
+        "awards": "ステーキ EAST 百名店 2025"
+      },
+      "why_pt": "A churrascaria em que os japoneses confiam para carne Hida, longe das barracas de Sanmachi.",
+      "order_pt": "Steak de carne Hida.",
+      "pregnancy_pt": "Peça bem passado; a casa atende sem problema.",
+      "group_pt": "24 lugares em mesas; 6 cabem.",
+      "booking_pt": "On-line.",
+      "dec_jan_pt": "Almoço e jantar; fecha às quartas. Ano-Novo a confirmar.",
+      "query": "Kitchen Hida Takayama"
+    },
+    {
+      "name": "Shuntei Nakagawa",
+      "name_ja": "旬亭 なか川",
+      "area": "Takayama",
+      "genre_pt": "Teppanyaki, steak, yōshoku",
+      "price_pt": "¥3–10k",
+      "tabelog": {
+        "score": 3.63,
+        "reviews": 124,
+        "url": "https://tabelog.com/gifu/A2104/A210401/21001776/",
+        "awards": "ステーキ EAST 百名店 2025"
+      },
+      "why_pt": "Alternativa menor e mais em conta para carne Hida na chapa.",
+      "order_pt": "Teppanyaki de carne Hida.",
+      "pregnancy_pt": "Bem passado.",
+      "group_pt": "16 lugares em mesas; 6 cabem.",
+      "booking_pt": "On-line, com taxa de cancelamento rígida.",
+      "dec_jan_pt": "Fecha às terças e na 3ª quarta. Ano-Novo a confirmar.",
+      "query": "Shuntei Nakagawa Takayama"
+    },
+    {
+      "name": "Hida Takayama Kakushō",
+      "name_ja": "飛騨高山 角正",
+      "area": "Takayama",
+      "genre_pt": "Shōjin ryōri",
+      "price_pt": "¥15–30k",
+      "tabelog": {
+        "score": 3.6,
+        "reviews": 38,
+        "url": "https://tabelog.com/gifu/A2104/A210401/21000680/",
+        "awards": "日本料理 EAST 百名店 2025"
+      },
+      "why_pt": "Cozinha de templo vegetariana: a refeição de luxo mais tranquila para a grávida.",
+      "order_pt": "O curso de shōjin.",
+      "pregnancy_pt": "Tudo cozido e vegetal. Ótimo para ela.",
+      "group_pt": "80 lugares com salas privativas; 6 cabem.",
+      "booking_pt": "Só com reserva.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Kakusho Takayama"
+    },
+    {
+      "name": "Taruhei",
+      "name_ja": "樽平",
+      "area": "Takayama · 5 min da estação",
+      "genre_pt": "Izakaya de cozinha de Hida",
+      "price_pt": "¥5–8k",
+      "tabelog": {
+        "score": 3.62,
+        "reviews": 224,
+        "url": "https://tabelog.com/gifu/A2104/A210401/21006202/",
+        "awards": "居酒屋 EAST 百名店 2024"
+      },
+      "why_pt": "Izakaya de pratos locais de Hida, com zashiki.",
+      "order_pt": "Hōba-miso, pratos de Hida.",
+      "pregnancy_pt": "Evite pratos crus de carne.",
+      "group_pt": "Tem tatame; peça um zashiki para 6.",
+      "booking_pt": "Ligue ou reserve.",
+      "dec_jan_pt": "Fecha aos domingos. Ano-Novo a confirmar.",
+      "query": "Taruhei Takayama"
+    },
+    {
+      "name": "Masago Soba",
+      "name_ja": "まさごそば",
+      "area": "Takayama",
+      "genre_pt": "Ramen (chūka soba)",
+      "price_pt": "< ¥1k",
+      "tabelog": {
+        "score": 3.62,
+        "reviews": 814,
+        "url": "https://tabelog.com/gifu/A2104/A210401/21000021/",
+        "awards": "nenhum"
+      },
+      "why_pt": "Os avaliadores do Tabelog chamam de 元祖 do ramen de Takayama: barraca de 1938 que virou loja.",
+      "order_pt": "Chūka soba.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "25 lugares com mesas de 4; 6 cabem.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Fecha às quartas. Ano-Novo a confirmar.",
+      "query": "Masago Soba Takayama"
+    },
+    {
+      "name": "Kunihachi Shokudō",
+      "name_ja": "国八食堂",
+      "area": "Arredores de Takayama (de carro)",
+      "genre_pt": "Shokudō, carne Hida e tofu",
+      "price_pt": "¥1–2k",
+      "tabelog": {
+        "score": 3.67,
+        "reviews": 732,
+        "url": "https://tabelog.com/gifu/A2104/A210401/21001354/",
+        "awards": "食堂 百名店 2024, 2026"
+      },
+      "why_pt": "Carne Hida a preço de refeitório, onde come quem mora aqui.",
+      "order_pt": "Teishoku de carne Hida.",
+      "pregnancy_pt": "Carne bem passada.",
+      "group_pt": "52 lugares; 6 cabem.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Fecha às quartas. Ano-Novo a confirmar.",
+      "query": "Kunihachi Shokudo"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Jinya Dango",
+      "name_ja": "陣屋だんご店",
+      "what_pt": "Mitarashi dango de shoyu. Tabelog 3,57, 和菓子 EAST 百名店 2023, 2026.",
+      "buy_pt": "Espetos de dango quentes.",
+      "dec_jan_pt": "9:00–15:00; fecha de terça a quinta. Ano-Novo a confirmar.",
+      "query": "Jinya Dango Takayama"
+    },
+    {
+      "name": "Iwaki",
+      "name_ja": "いわき",
+      "what_pt": "Casa de wagashi na lista 和菓子 EAST 百名店 2026.",
+      "buy_pt": "Doces de Hida.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Iwaki wagashi Takayama"
+    },
+    {
+      "name": "Hidagyū Maruaki",
+      "name_ja": "飛騨牛 丸明",
+      "what_pt": "Açougue e restaurante de carne Hida. Mark Wiens fechou o dia de carne Hida aqui (A5 em shabu e yakiniku, ¥13.360). Tabelog não verificado.",
+      "buy_pt": "Carne para ver no balcão; o restaurante é a refeição.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Hidagyu Maruaki Takayama"
+    },
+    {
+      "name": "Cervejarias de Sanmachi",
+      "name_ja": "三町の酒蔵",
+      "what_pt": "Cervejarias de saquê com sugidama verde na entrada.",
+      "buy_pt": "Garrafas de saquê novo; amazake de kōji para ela.",
+      "dec_jan_pt": "Degustação no Ano-Novo a confirmar.",
+      "query": "Sanmachi sake brewery Takayama"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "docs/research/food/11-critics-international.md",
+    "https://www.youtube.com/watch?v=7dYaVC-5LmE",
+    "https://www.youtube.com/watch?v=hGBXlqIcSqM",
+    "https://ja.wikipedia.org/wiki/飛騨牛",
+    "https://ja.wikipedia.org/wiki/朴葉味噌",
+    "https://ja.wikipedia.org/wiki/宮川朝市",
+    "https://ja.wikipedia.org/wiki/杉玉",
+    "https://ja.wikipedia.org/wiki/みたらし団子"
+  ]
+}

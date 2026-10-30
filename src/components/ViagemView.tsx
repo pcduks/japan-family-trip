@@ -39,6 +39,7 @@ export function ViagemView() {
       <PageHeader eyebrow="Tudo o que a viagem precisa" title="A viagem" hand="um lugar para cada coisa" />
       <Group title="Antes de ir">
         <StampCard wide href="/food" motif="bowl" ink="var(--amber)" title="Comida" status={`${food.length} lugares de Tokyo${wantCount ? ` · você quer ir a ${wantCount}` : ""}`} />
+        <StampCard wide href="/comida" motif="bowl" ink="var(--vermilion)" title="Guia de comida" status="Pratos, história, depachika, ekiben, konbini e restaurantes validados" />
         <StampCard href="/mala" motif="suitcase" ink="var(--pine)" title="Mala" status={myPacking.length ? `${packed} de ${myPacking.length} na mala` : "Monte sua lista"} />
         <StampCard href="/desejos" motif="ballot" ink="var(--vermilion)" title="Desejos" status="O que você quer viver" />
         <StampCard href="/compare" motif="train" ink="var(--indigo)" title="Rotas" status="Lado a lado" />

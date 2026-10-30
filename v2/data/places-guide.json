@@ -1,0 +1,2051 @@
+{
+  "_about": "What each researched place is famous for, what to expect, and reference links. Written Oct 2026.",
+  "reputations": {
+    "classic": "A classic, for good reason",
+    "real": "Less known, the real thing",
+    "photo": "Famous online; go for the picture, do not plan a day around it",
+    "both": "Famous online and worth it",
+    "food": "A well-regarded place to eat"
+  },
+  "places": {
+    "tokyo-tsukiji": {
+      "famous_for": "Tokyo's old fish-market district, now a street-food and kitchenware market of about 400 shops.",
+      "expect": "The wholesale market moved to Toyosu in 2018, but the outer lanes kept the grilled scallops, tamagoyaki, knife shops and tea stalls. Walk, snack and shop for about 90 minutes. It is busiest from 9 to 11 and packed on weekends and the last days of December, when Tokyo shops for New Year. Many shops close Sundays and Wednesdays. Cooked skewers and egg rolls are fine for her; skip the raw bowls.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.tsukiji.or.jp/english/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3021.html"
+        }
+      ]
+    },
+    "tokyo-toyosu-auction": {
+      "famous_for": "Watching the tuna auction at the world's biggest fish market from a glass gallery before dawn.",
+      "expect": "The auction runs from about 5:30 to 6:30 on the fourth floor of a very clean, very cold building. You stand behind glass and watch the bidders' hand signs; a guide explains who is buying what, and most tours end with breakfast at the market's sushi or tempura counters. You need to leave the hotel around 4:30. The market is closed Wednesdays, Sundays and over New Year.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Tour with guide (Headout)",
+          "url": "https://www.headout.com/walking-tours/tokyo-toyosu-tuna-auction-observation-walking-tour-with-breakfast-reservation-e-48830/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3013.html"
+        }
+      ]
+    },
+    "tokyo-hamarikyu": {
+      "famous_for": "A feudal lord's seaside garden with a tidal pond, framed by Shiodome skyscrapers.",
+      "expect": "Flat gravel paths loop a saltwater pond fed by the bay, past a 300-year-old pine and a teahouse on an island that serves matcha and a sweet for about 1,000 yen. An hour is enough, two if you stop for tea. Entry is 300 yen. In December the pines wear their rope cones against snow. Closed 29 December to 1 January. Pairs with Tsukiji, a ten-minute walk away.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.tokyo-park.or.jp/teien/en/hama-rikyu/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3025.html"
+        },
+        {
+          "label": "City gardens leaflet (PDF)",
+          "url": "https://www.kensetsu.metro.tokyo.lg.jp/documents/d/kensetsu/070106teienpanhueigo"
+        }
+      ]
+    },
+    "tokyo-rikugien": {
+      "famous_for": "A 1702 strolling garden built around scenes from classical poems, with the city's last maple colour.",
+      "expect": "A one-hour loop around a pond on mostly level paths, with a small hill for the view and a teahouse serving matcha. Maple colour holds into early December; by late December it is bare branches, camellias and quiet. Entry 300 yen. Rarely crowded outside the autumn light-up. Closed 29 December to 1 January. Komagome station is a five-minute walk.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.tokyo-park.or.jp/teien/en/rikugien/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3026.html"
+        },
+        {
+          "label": "City gardens leaflet (PDF)",
+          "url": "https://www.kensetsu.metro.tokyo.lg.jp/documents/d/kensetsu/070106teienpanhueigo"
+        }
+      ]
+    },
+    "tokyo-koishikawa": {
+      "famous_for": "Tokyo's oldest garden (1629), with Chinese-style bridges and wintersweet blooming in January.",
+      "expect": "A compact garden next to Tokyo Dome: pond, stone paths, a steep arched Full Moon Bridge and small hills that mimic famous landscapes. Allow an hour. In early January the yellow wintersweet is out and the garden smells of it; plum follows in February. Entry 300 yen. The humpback bridges and uneven stones are the only awkward part, and they can be skipped. Closed 29 December to 1 January.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.tokyo-park.or.jp/teien/en/koishikawa/"
+        },
+        {
+          "label": "japan-guide search",
+          "url": "https://www.japan-guide.com/search/?q=Koishikawa+Korakuen"
+        },
+        {
+          "label": "City gardens leaflet (PDF)",
+          "url": "https://www.kensetsu.metro.tokyo.lg.jp/documents/d/kensetsu/070106teienpanhueigo"
+        }
+      ]
+    },
+    "tokyo-shinjuku-gyoen": {
+      "famous_for": "A huge former imperial park with Japanese, English and French gardens and a warm greenhouse.",
+      "expect": "Fifty-eight hectares of lawns, ponds and wide paved paths; most people wander for one to two hours and sit a lot. The glasshouse is a good place to warm up on a cold day. Entry 500 yen, closed Mondays and 29 December to 3 January. It is calm in winter compared with cherry-blossom season. Benches everywhere, which helps her, and the Shinjuku Gate is a ten-minute walk from the station.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://fng.or.jp/shinjuku/en"
+        },
+        {
+          "label": "japan-guide: Tokyo parks and gardens",
+          "url": "https://www.japan-guide.com/e/e3034.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Shinjuku+Gyoen"
+        }
+      ]
+    },
+    "tokyo-meiji": {
+      "famous_for": "Tokyo's grandest Shinto shrine, inside a 100,000-tree forest next to Harajuku.",
+      "expect": "From the Harajuku gate it is a ten-minute walk on wide gravel under tall trees to the main courtyard, where you can watch offerings and often a wedding procession on weekends. Free; the inner garden costs 500 yen. Allow an hour, then step out into Omotesando. Early January is the busiest week of the year here, with millions of New Year visitors through 3 January; by 7 January it has calmed but is still lively. Go early.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.meijijingu.or.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3002.html"
+        },
+        {
+          "label": "GO TOKYO: New Year shrine visits",
+          "url": "https://www.gotokyo.org/en/spot/ev110/index.html"
+        }
+      ]
+    },
+    "tokyo-nezu": {
+      "famous_for": "A private collection of East Asian art in a Kengo Kuma building, with a hillside garden of teahouses.",
+      "expect": "Small, calm and well lit: one or two galleries of lacquer, bronzes and tea utensils, then a wooded garden with stone lanterns, ponds and four teahouses. About 90 minutes with a coffee in the glass-walled cafe. The winter tea-gathering display runs to 17 January. Timed tickets must be booked online, usually 1,500 yen. The garden paths slope and have steps; the galleries are level. Closed Mondays and over New Year.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.nezu-muse.or.jp/en/index.html"
+        },
+        {
+          "label": "japan-guide search",
+          "url": "https://www.japan-guide.com/search/?q=Nezu+Museum"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Nezu+Museum+Tokyo"
+        }
+      ]
+    },
+    "tokyo-edo-tokyo": {
+      "famous_for": "Life-size reconstructions of old Edo and Tokyo, including a full-scale half of Nihonbashi bridge.",
+      "expect": "Reopened in 2026 after a four-year renovation. You cross the wooden bridge into a hall of models: a kabuki theatre front, merchant houses, a Meiji newspaper office, postwar apartments. Two to three hours go easily, with lifts between floors and plenty of seating. Entry about 800 yen, cheaper over 65. Closed Mondays. It sits next to the sumo stadium in Ryogoku, so pair it with the Hokusai Museum or a chanko lunch.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.edo-tokyo-museum.or.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3070.html"
+        }
+      ]
+    },
+    "tokyo-hokusai": {
+      "famous_for": "Hokusai's woodblock prints in a mirrored aluminium building in the district where he was born.",
+      "expect": "A small museum: one permanent floor with touch screens, a life-size model of the artist at work and rotating originals, plus a temporary show. The Great Wave is usually shown as a high-quality facsimile with originals rotated in for conservation. An hour is plenty; 400 yen for the permanent exhibition. Closed Mondays. A seven-minute walk from the Edo-Tokyo Museum, so do both in one afternoon.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://hokusai-museum.jp/?lang=en"
+        },
+        {
+          "label": "japan-guide: ukiyo-e",
+          "url": "https://www.japan-guide.com/e/e2291.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Sumida+Hokusai+Museum"
+        }
+      ]
+    },
+    "tokyo-nmwa": {
+      "famous_for": "Le Corbusier's only building in Japan, a World Heritage Site, holding the Matsukata collection of European art.",
+      "expect": "Rodin bronzes stand free in the forecourt; inside are Monet, Renoir and old masters on a ramp-and-balcony plan. The Turner exhibition runs 24 October to 21 February and needs an advance ticket of about 2,200 yen; the permanent collection is 500 yen. Allow two hours. Open to 20:00 on Fridays and Saturdays, when it is quietest. Closed Mondays and 28 December to 1 January. Five minutes from Ueno station, all on the flat.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.nmwa.go.jp/en/"
+        },
+        {
+          "label": "Turner exhibition (Tokyo Art Beat)",
+          "url": "https://www.tokyoartbeat.com/en/events/-/Turner-Painting-the-Sublime-in-Dialogue-with-Contemporary-Art/DD-504118/2026-10-24"
+        },
+        {
+          "label": "japan-guide: Ueno Park",
+          "url": "https://www.japan-guide.com/e/e3019.html"
+        }
+      ]
+    },
+    "tokyo-tobikan": {
+      "famous_for": "Ueno's exhibition hall for blockbuster loan shows, this winter the Musee d'Orsay masterworks.",
+      "expect": "There is no permanent collection; you come for the touring show. The Orsay exhibition (14 November to 28 March) will be popular, so book a timed slot and go at opening or in the last 90 minutes. About 90 minutes inside, mostly on one level with lifts. The building is closed 21 to 28 December, so this is a January visit. Cafe and a good shop; Ueno Park's other museums are a few minutes away.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.tobikan.jp/en/exhibition/index.html"
+        },
+        {
+          "label": "japan-guide: Ueno Park",
+          "url": "https://www.japan-guide.com/e/e3019.html"
+        }
+      ]
+    },
+    "tokyo-tnm": {
+      "famous_for": "Japan's oldest and largest museum: the best collection of Japanese art, swords, kimono and Buddhist sculpture.",
+      "expect": "The main building alone takes two hours; the Horyuji Treasures gallery is a quiet highlight and the Toyokan covers Asia. Entry 1,000 yen, open to 20:00 on Fridays and Saturdays. From 2 January the museum puts up a New Year display with ink paintings and a national treasure or two. Much of the main building is closed 22 to 25 December, so plan it for 7 or 8 January. Big site, but with lifts, benches and a restaurant.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.tnm.jp/?lang=en"
+        },
+        {
+          "label": "japan-guide: Tokyo museums",
+          "url": "https://www.japan-guide.com/e/e3054.html"
+        },
+        {
+          "label": "japan-guide: Ueno Park",
+          "url": "https://www.japan-guide.com/e/e3019.html"
+        }
+      ]
+    },
+    "tokyo-mori": {
+      "famous_for": "A contemporary art museum on the 53rd floor of Roppongi Hills, sharing a ticket with the city view.",
+      "expect": "Large, well-produced exhibitions; this winter it is Mariko Mori's retrospective. Ninety minutes for the show, then the Tokyo City View deck one floor down, with Fuji in the panorama on a clear morning and the city lights after dark. Open until 22:00 most days, so it works as an evening. Tickets about 2,000 yen online or at the door. All indoors with lifts, so easy for her.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.mori.art.museum/en/"
+        },
+        {
+          "label": "Tokyo City View",
+          "url": "https://global-tcv.roppongihills.com/en/"
+        },
+        {
+          "label": "japan-guide: Roppongi",
+          "url": "https://www.japan-guide.com/e/e3031.html"
+        }
+      ]
+    },
+    "tokyo-2121": {
+      "famous_for": "A small design gallery by Tadao Ando and Issey Miyake, half sunk into the lawn at Tokyo Midtown.",
+      "expect": "One or two rooms below ground with a single themed show, this season on architecture, running to 11 January. Forty-five minutes to an hour. Entry about 1,400 yen. It is quiet on weekday mornings and the concrete building is worth seeing in itself. Closed Tuesdays and 27 December to 3 January. Midtown has warm cafes and a food basement next door for lunch.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://2121designsight.jp/en/"
+        },
+        {
+          "label": "japan-guide: Roppongi",
+          "url": "https://www.japan-guide.com/e/e3031.html"
+        }
+      ]
+    },
+    "tokyo-teamlab-borderless": {
+      "famous_for": "Room after room of projected, moving digital art with no map and no fixed route.",
+      "expect": "Plan on two hours wandering dark corridors where flowers, waterfalls and lanterns flow across walls, floors and you. The crowds are real but the scale absorbs them; the first slot of the day is best. Timed online tickets only, about 3,800 to 4,800 yen. The floors are mirrored and some rooms slope, so flat shoes and a hand on the rail for her; there is no water here, unlike Planets. In Azabudai Hills, with cafes above ground.",
+      "reputation": "both",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.teamlab.art/e/borderless-azabudai/"
+        },
+        {
+          "label": "Ticket site",
+          "url": "https://borderless-azabudai.ticket.teamlab.art/"
+        },
+        {
+          "label": "japan-guide: Azabudai Hills",
+          "url": "https://www.japan-guide.com/e/e3058.html"
+        }
+      ]
+    },
+    "tokyo-teamlab-planets": {
+      "famous_for": "Barefoot digital art: wading through knee-deep water with koi projected around your legs.",
+      "expect": "You leave shoes and socks in a locker, borrow shorts and walk through water, mirror rooms and a garden of hanging orchids. About 90 minutes, with timed tickets of about 3,800 yen. One of the most photographed places in Tokyo, and most people say it lives up to it. teamLab's own notice says pregnant visitors are not permitted in some areas, and wet floors are slippery, so this one is for the others; Borderless is the dry alternative.",
+      "reputation": "both",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.teamlab.art/e/planets/"
+        },
+        {
+          "label": "japan-guide: Toyosu",
+          "url": "https://www.japan-guide.com/e/e3013.html"
+        }
+      ]
+    },
+    "tokyo-ghibli": {
+      "famous_for": "Studio Ghibli's own museum in Mitaka, designed by Miyazaki, with an exclusive short film.",
+      "expect": "Small, hand-made and deliberately maze-like: original drawings, a room on how animation works, a cat bus for children, a short film in a tiny cinema and the robot soldier on the roof (stairs only). No photos inside. Two hours is typical. Tickets go on sale on the 10th of the previous month and sell out within minutes, so set an alarm. Closed Tuesdays. Twenty minutes by train from Shinjuku, then a walk through Inokashira Park.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.ghibli-museum.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3041.html"
+        },
+        {
+          "label": "How to get tickets",
+          "url": "https://jw-webmagazine.com/tips/best-ways-to-get-ghibli-museum-tickets/"
+        }
+      ]
+    },
+    "tokyo-tmg": {
+      "famous_for": "Free observation decks 202 metres up the city hall towers, with Fuji on clear winter mornings.",
+      "expect": "A lift goes straight to the 45th floor; there is a cafe and souvenir counter and views across the whole city. Go between 9:30 and 11 on a cold, clear morning for Fuji, or after dark for the lights. Twenty to thirty minutes is enough. The two decks close on different weekdays and both close over New Year, so check which one is open. Nothing to climb, nothing to pay; a ten-minute walk from Shinjuku station's west exit.",
+      "reputation": "both",
+      "links": [
+        {
+          "label": "Official visitor guide",
+          "url": "https://www.yokoso.metro.tokyo.lg.jp/en/"
+        },
+        {
+          "label": "Time Out Tokyo",
+          "url": "https://www.timeout.com/tokyo/museums/tokyo-metropolitan-government-building-observatories"
+        },
+        {
+          "label": "japan-guide: observation decks",
+          "url": "https://www.japan-guide.com/e/e3057.html"
+        }
+      ]
+    },
+    "tokyo-takao": {
+      "famous_for": "Tokyo's favourite day-hike mountain, with a temple on the slope and Fuji from the top.",
+      "expect": "An hour by train from Shinjuku, then a six-minute cable car to the halfway point. A paved path with a few flights of steps leads about a kilometre to Yakuo-in temple; the summit is another 20 minutes up. On clear December days Fuji stands behind the ridges, and around 16 to 26 December the sun sets exactly on its peak, drawing big crowds. Allow half a day. She can do the cable car and temple and turn back.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3029.html"
+        },
+        {
+          "label": "Cable car (Mt Takao Magazine)",
+          "url": "https://en.mttakaomagazine.com/spot/cablecar"
+        },
+        {
+          "label": "Time Out Tokyo",
+          "url": "https://www.timeout.com/tokyo/things-to-do/mt-takao"
+        }
+      ]
+    },
+    "tokyo-illuminations": {
+      "famous_for": "Streets of LED-lit trees in Marunouchi, Roppongi and Ebisu from November into the New Year.",
+      "expect": "These are evening strolls of 20 to 40 minutes, not destinations: Marunouchi's Naka-dori in warm gold (usually to mid-February), Keyakizaka in Roppongi with Tokyo Tower at the end (to 25 December) and the Baccarat chandelier at Yebisu Garden Place (into January). Best around 17:30 to 19:00, before dinner. Flat pavements and plenty of cafes to warm up. 2026 dates are published in October and November.",
+      "reputation": "photo",
+      "links": [
+        {
+          "label": "japan-guide: Tokyo illuminations",
+          "url": "https://www.japan-guide.com/e/e2303.html"
+        },
+        {
+          "label": "LIVE JAPAN",
+          "url": "https://livejapan.com/en/in-tokyo/in-pref-tokyo/in-tokyo_train_station/article-a0000611/"
+        }
+      ]
+    },
+    "tokyo-asakusa": {
+      "famous_for": "Senso-ji, Tokyo's oldest temple, reached through the Thunder Gate and the Nakamise souvenir street.",
+      "expect": "Walk through Kaminarimon, up 250 metres of snack and souvenir stalls to the big red temple, draw a fortune, then explore the side streets for tempura, rice crackers and old shops. Two hours, more with lunch. The crowds are heavy from 10 to 16; before 9 the street is empty and the temple is lit beautifully after dark. Free. Flat, but a long day on your feet. The riverside has the Skytree view.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.senso-ji.jp/english/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3004.html"
+        }
+      ]
+    },
+    "tokyo-maisen": {
+      "famous_for": "Tonkatsu in a converted 1930s bathhouse near Omotesando.",
+      "expect": "Thick breaded pork cutlets fried in a light crust, served with shredded cabbage, rice and miso soup; the kurobuta loin set is the one to order. Big, bright rooms with a high ceiling, so a table for six is easy outside the 12 to 13:30 rush. About 2,000 to 4,000 yen a head. Open daily 11:00 to 22:45. Everything is cooked through, which makes it an easy choice for her.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Time Out Tokyo",
+          "url": "https://www.timeout.com/tokyo/restaurants/maisen"
+        },
+        {
+          "label": "japan-guide: tonkatsu",
+          "url": "https://www.japan-guide.com/e/e2339.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Maisen+Aoyama+Tokyo"
+        }
+      ]
+    },
+    "tokyo-tsunahachi": {
+      "famous_for": "Shinjuku's tempura institution since 1923, fried in front of you at the counter.",
+      "expect": "Sit at the counter or at tables and get prawns, fish and vegetables piece by piece, with tea-salt and dipping sauce. Lunch sets start around 1,500 yen and dinner courses run 4,000 to 8,000; the main shop on Shinjuku 3-chome has several floors and takes bookings. Open 11:00 to 22:30. Expect a short queue at lunch. All fried, nothing raw, and chairs with backs.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.tunahachi.co.jp/en/"
+        },
+        {
+          "label": "Time Out Tokyo",
+          "url": "https://www.timeout.com/tokyo/restaurants/tsunahachi"
+        },
+        {
+          "label": "Truly Tokyo",
+          "url": "https://trulytokyo.com/tsunahachi/"
+        }
+      ]
+    },
+    "tokyo-imahan": {
+      "famous_for": "Wagyu sukiyaki and shabu-shabu in tatami rooms, run by the same family since 1895.",
+      "expect": "A server cooks the beef at your table in a shallow iron pan with sugar and soy, then vegetables and tofu follow. Lunch courses from about 5,000 yen, dinner 10,000 to 20,000. The Ningyocho main shop has private rooms that suit six, and some rooms have leg wells under the table. Book by phone. She can ask for the beef well done and skip the raw-egg dip. Closed over New Year.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.imahan.com/"
+        },
+        {
+          "label": "Time Out Tokyo",
+          "url": "https://www.timeout.com/tokyo/restaurants/ningyocho-imahan"
+        },
+        {
+          "label": "GLTJP",
+          "url": "https://cdn.gltjp.com/en/directory/item/13270/"
+        }
+      ]
+    },
+    "tokyo-isehiro": {
+      "famous_for": "Tokyo's oldest yakitori restaurant, grilling chicken over charcoal in Kyobashi since 1921.",
+      "expect": "A set course of eight to ten skewers, from breast and thigh to liver and meatballs, grilled over binchotan and served in order. Lunch is a bargain at about 2,000 yen for a skewer bowl; dinner courses from 8,000. A narrow wooden building with a counter downstairs and a small tatami room above; phone ahead for six. Closed Sundays. Ask for her skewers well done and skip the liver.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.isehiro.co.jp/"
+        },
+        {
+          "label": "Exploring Old Tokyo",
+          "url": "https://old-tokyo.info/isehiro-tokyos-oldest-yakitori-joint/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Isehiro+Kyobashi"
+        }
+      ]
+    },
+    "tokyo-matsuya": {
+      "famous_for": "Hand-cut soba in a wooden shop from 1884 that survived the war, near Kanda.",
+      "expect": "Cold soba on a bamboo tray or hot soba in broth with duck, tempura or egg, served fast at shared tables under a low ceiling. Around 1,000 to 2,000 yen; cash only. There is usually a short queue at lunch that moves quickly. Loud, friendly and very old Tokyo. Closed Sundays and holidays. Nearby Kanda Yabu Soba is the other famous name if the queue is long.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Time Out Tokyo",
+          "url": "https://www.timeout.com/tokyo/restaurants/kanda-matsuya"
+        },
+        {
+          "label": "japan-guide: soba",
+          "url": "https://www.japan-guide.com/e/e2341.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kanda+Matsuya"
+        }
+      ]
+    },
+    "tokyo-unafuji": {
+      "famous_for": "Nagoya-style grilled eel over charcoal, with a Michelin Bib Gourmand, inside Tokyo Midtown Yaesu.",
+      "expect": "Order hitsumabushi: a wooden tub of rice topped with crisp-edged eel that you eat three ways, plain, with condiments and with broth. About 5,000 to 8,000 yen. The branch is on a restaurant floor by Tokyo Station, so it is modern, has chairs and takes a group. Open daily 11:00 to 23:00, with queues at lunch. For her, skip the eel-liver add-on, which is very high in vitamin A.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Time Out Tokyo",
+          "url": "https://www.timeout.com/tokyo/restaurants/sumiyaki-unafuji-tokyo-midtown-yaesu"
+        },
+        {
+          "label": "japan-guide: unagi",
+          "url": "https://www.japan-guide.com/e/e2344.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Sumiyaki+Unafuji+Tokyo+Midtown+Yaesu"
+        }
+      ]
+    },
+    "tokyo-isetan": {
+      "famous_for": "The best department-store food basement in Tokyo: bento, sweets, fruit and famous bakeries under one roof.",
+      "expect": "Two basement floors of counters selling boxed meals, tempura, salads, cakes and wagashi, with staff who wrap everything beautifully. It is a takeaway place; a few counters have seats. Go after 18:00 for discounts on bento, and before 20:00 when it closes. Perfect for a hotel-room dinner on an arrival night. Closed 1 January; 2 January reopens with lucky-bag crowds. Easy, warm and flat.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "japan.travel: depachika guide",
+          "url": "https://www.japan.travel/en/story/depachika-guide/"
+        },
+        {
+          "label": "japan-guide: department stores",
+          "url": "https://www.japan-guide.com/e/e2072.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Isetan+Shinjuku"
+        }
+      ]
+    },
+    "tokyo-kayaba": {
+      "famous_for": "A 1938 corner coffee house in Yanaka, saved and reopened with its original wooden fittings.",
+      "expect": "Thick-cut egg sandwiches, pudding, coffee and a cream soda in a tiny two-storey building with tatami upstairs. Ten tables, so expect a wait at weekends; weekday mornings are calm. Around 1,000 yen for coffee and a sandwich. A good stop between the Ueno museums and the Yanaka cemetery and shopping street, all within a ten-minute walk. Hours vary, so check.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Time Out Tokyo: kissaten",
+          "url": "https://www.timeout.com/tokyo/restaurants/best-kissaten-coffee-shops-in-tokyo"
+        },
+        {
+          "label": "japan-guide: Yanaka",
+          "url": "https://www.japan-guide.com/e/e3068.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kayaba+Coffee+Yanaka"
+        }
+      ]
+    },
+    "kz-kenrokuen": {
+      "famous_for": "One of Japan's three great gardens, famous in winter for the rope cones that protect its pines from snow.",
+      "expect": "A strolling garden of ponds, streams, bridges and the two-legged Kotoji lantern that is on every poster. Ninety minutes at an easy pace. The yukitsuri ropes go up from November, and with snow on them the garden is at its best. Entry 320 yen, and free from 6:00 until opening, when it is nearly empty. Paths are gravel with gentle slopes and get icy; take it slowly after a freeze. Open every day of the year.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.pref.ishikawa.jp/siro-niwa/kenrokuen/e/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e4200.html"
+        },
+        {
+          "label": "Visit Kanazawa",
+          "url": "https://visitkanazawa.jp/en/"
+        }
+      ]
+    },
+    "kz-castle": {
+      "famous_for": "The rebuilt white turrets and long storehouse of the Maeda lords' castle, across the road from Kenroku-en.",
+      "expect": "Free grounds with wide lawns, lead-tiled roofs and the Gyokusen'inmaru garden below the walls, which is lit with music on winter evenings including the year-end holiday. Forty-five minutes outside; the reconstructed turrets cost 320 yen and show the joinery inside. The site is large and level with one gentle climb from the Kenroku-en side. Best combined with the garden in one morning. Grounds open 8:00 to 17:00.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.pref.ishikawa.jp/siro-niwa/english/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e4202.html"
+        }
+      ]
+    },
+    "kz-21c": {
+      "famous_for": "A round glass museum by SANAA, best known for Leandro Erlich's Swimming Pool that you stand inside.",
+      "expect": "The free outer zone has the pool view from above, James Turrell's sky room and the lawn sculptures; the paid exhibitions (450 yen and up) change through the year. To stand under the water you need a same-day timed slot, booked from 9:00. Ninety minutes to two hours, all on one level. Busy at weekends; Friday and Saturday evenings to 20:00 are calmer. Closed Mondays and 29 December to 1 January.",
+      "reputation": "both",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.kanazawa21.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e4209.html"
+        }
+      ]
+    },
+    "kz-dtsuzuki": {
+      "famous_for": "A quiet concrete building by Yoshio Taniguchi around a still water mirror, dedicated to the Zen philosopher.",
+      "expect": "Three small rooms on the life of D.T. Suzuki, then a contemplative space that opens onto the water garden, where a ripple runs across the surface every few minutes. Most people stay 30 to 45 minutes and leave calmer than they arrived. Entry 310 yen. Ten minutes on foot from the 21st Century Museum. Flat and indoors apart from the garden path. Closed Mondays and 29 December to 3 January.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.kanazawa-museum.jp/daisetz/english/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e4211.html"
+        }
+      ]
+    },
+    "kz-nomura": {
+      "famous_for": "A restored samurai residence in the Nagamachi district with a celebrated small garden of stream and carp.",
+      "expect": "Shoes off, then a walk through tatami rooms with painted screens to a veranda over a garden squeezed into a courtyard: a waterfall, old pines and carp that come to the edge. Thirty to forty minutes; entry 550 yen. There is a tea room upstairs serving matcha with a view. The earthen-walled lanes outside are part of the visit. Closed 26 and 27 December, so go on 24 or 25.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.nomurake.com/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e4204.html"
+        }
+      ]
+    },
+    "kz-higashi": {
+      "famous_for": "Kanazawa's best-preserved geisha quarter of 1820s wooden teahouses, one of which you can tour.",
+      "expect": "Two or three lantern-lined streets of latticed houses, now gold-leaf shops, cafes and a few working teahouses. Shima is an original teahouse kept as a museum (500 yen), with a steep staircase to the upstairs rooms. Allow 90 minutes with a stop for gold-leaf ice cream or tea. Mornings before 10 are quiet for photos; midday is busy with tour groups. Mostly flat, with the Asano river bridge to cross from town.",
+      "reputation": "both",
+      "links": [
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e4206.html"
+        },
+        {
+          "label": "Visit Kanazawa",
+          "url": "https://visitkanazawa.jp/en/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Shima+teahouse+Higashi+Chaya+Kanazawa"
+        }
+      ]
+    },
+    "kz-artmuseum": {
+      "famous_for": "Ishikawa's craft collection: Kutani porcelain and the national-treasure pheasant incense burner by Ninsei.",
+      "expect": "A conventional, uncrowded museum next to Kenroku-en with old Kutani ware, lacquer, Kaga embroidery and a room for the Ninsei pheasant. An hour is enough. Entry around 370 yen for the collection. The ground-floor patisserie by Hironobu Tsujiguchi is a good excuse for cake and tea. Lifts throughout. Closed 29 December to 3 January and for exhibition changes.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.ishibi.pref.ishikawa.jp/en/"
+        },
+        {
+          "label": "japan-guide: Kanazawa museums",
+          "url": "https://www.japan-guide.com/e/e4210.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Ishikawa+Prefectural+Museum+of+Art"
+        }
+      ]
+    },
+    "kz-omicho": {
+      "famous_for": "Kanazawa's 300-year-old covered market, with crab and seafood stalls at their peak in winter.",
+      "expect": "About 170 stalls of snow crab, oysters, dried fish, vegetables and small eateries; stalls grill scallops and crab legs to eat standing up. An hour to browse, longer to eat. Busiest late morning and jammed on 28 to 31 December with New Year shopping. Covered and flat. Cooked crab and grilled things are fine for her; skip the raw bowls and the female crab's roe. Most stalls shut around 16:00 and the market closes 1 to 4 January.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://ohmicho-ichiba.com/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e4207.html"
+        }
+      ]
+    },
+    "kz-myoryuji": {
+      "famous_for": "The 'ninja temple': a 1643 temple riddled with hidden stairs, trapdoors and secret rooms.",
+      "expect": "Guided tours only, in Japanese with an English booklet, through a building that looks like two storeys from outside and hides seven levels and 29 staircases. About 45 minutes; 1,200 yen; book by phone a day or two ahead. Small children are not admitted. The stairs are steep, narrow and often ladder-like, which rules it out for her at this stage. Fifteen minutes by bus from the station, in the Teramachi temple district.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e4205.html"
+        },
+        {
+          "label": "japan-guide: ninja",
+          "url": "https://www.japan-guide.com/e/e2295.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Myoryuji+Ninja+Temple+Kanazawa"
+        }
+      ]
+    },
+    "kz-goldleaf": {
+      "famous_for": "Decorating your own box, chopsticks or plate with the gold leaf that Kanazawa has made for 400 years.",
+      "expect": "Seated at a table in the Hakuza shop in Higashi Chaya, you cut a stencil, brush on glue, lay the leaf and burnish it; the staff guide every step. Forty-five to sixty minutes, from about 1,980 yen, and you take the piece home. Booking required; sessions run 10:00 to 15:00. Good for a snowy afternoon and easy for her. The shop's gold-lined storehouse next door is worth a look.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Visit Kanazawa",
+          "url": "https://visitkanazawa.jp/en/activities/detail_2384.html"
+        },
+        {
+          "label": "Hakuza",
+          "url": "https://www.hakuza.co.jp/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Hakuza+Higashi+Chaya+Kanazawa"
+        }
+      ]
+    },
+    "kz-geiko": {
+      "famous_for": "An hour of geiko dance, shamisen and drinking games in a real Higashi Chaya teahouse, open to visitors.",
+      "expect": "Normally you need an introduction to enter a teahouse; this programme sells tickets to a performance for about 40 people with an English host. The geiko dance, play music, explain their training and invite a few guests to try the drum games. About 60 to 75 minutes. Seating is on cushions on tatami and the room is upstairs by a steep staircase, so ask about a chair for her when booking. Saturday 26 December at 13:00.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Visit Kanazawa",
+          "url": "https://visitkanazawa.jp/en/activities/detail_491.html"
+        },
+        {
+          "label": "japan-guide: geisha",
+          "url": "https://www.japan-guide.com/e/e2102.html"
+        }
+      ]
+    },
+    "kz-wagashi": {
+      "famous_for": "Making Kanazawa's delicate tea sweets at Koshiyama Kanseido, a confectioner founded in 1888.",
+      "expect": "An hour at a table shaping three or four seasonal nerikiri from coloured bean paste, with a craftsman showing each fold, then tea and your sweets to take away. About 1,500 to 2,500 yen; reserve in advance. Warm, seated and quiet, so it suits a cold afternoon and her. The shop itself sells beautiful boxed sweets for gifts; Kanazawa is one of Japan's three great wagashi cities.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Ishikawa Travel",
+          "url": "https://www.ishikawatravel.jp/en/spots/japanese-confectionary-experience/"
+        },
+        {
+          "label": "Koshiyama Kanseido",
+          "url": "https://www.koshiyamakanseido.jp/"
+        },
+        {
+          "label": "japan-guide: wagashi",
+          "url": "https://www.japan-guide.com/e/e2312.html"
+        }
+      ]
+    },
+    "kz-kaga": {
+      "famous_for": "A cluster of old spa towns, Yamashiro, Yamanaka and Katayamazu, half an hour south of Kanazawa.",
+      "expect": "Take the shinkansen 20 minutes to Kaga Onsen, then a bus to Yamashiro, where the public bathhouses Soyu and the tiled Kosoyu sit on a small square with cafes and a lacquer museum. A half day: one bath, a walk and lunch. Baths cost a few hundred yen; bring a small towel. For her, a short dip with the water no hotter than 40 degrees, or just the footbath. Quiet in winter and a different pace from the city.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site (Kaga tourism)",
+          "url": "https://www.tabimati.net/"
+        },
+        {
+          "label": "Visit Kanazawa: onsen ryokan",
+          "url": "https://visitkanazawa.jp/en/feature/detail_132.html"
+        },
+        {
+          "label": "Yamashiro Onsen tourist association",
+          "url": "https://www.yamashiro-spa.or.jp/"
+        }
+      ]
+    },
+    "kz-tsubajin": {
+      "famous_for": "Kanazawa's oldest restaurant, serving Kaga kaiseki in a hillside ryotei since 1752.",
+      "expect": "A multi-course dinner of local dishes, the duck stew jibuni among them, in private tatami rooms overlooking the city. Lunch courses start around 8,000 yen, dinner 15,000 to 30,000. Reserve by phone (076-241-2181) and ask for chairs or a leg-well table and a cooked-only menu for her; they are used to both. Closed Wednesdays. The celebration dinner of the stay, not a casual meal.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.tsubajin.co.jp/"
+        },
+        {
+          "label": "Magical Trip",
+          "url": "https://www.magical-trip.com/media/tsubajin-kanazawa-enjoy-kanazawas-oldest-ryotei-270-year-historic-kaga-cuisine-2025/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Tsubajin+Kanazawa"
+        }
+      ]
+    },
+    "kz-akadama": {
+      "famous_for": "Kanazawa oden, simmered in a light broth, at the city's best-known oden house since 1927.",
+      "expect": "Point at what you want in the steaming tank: daikon, eggs, tofu, fish cakes and local extras like wheat gluten and crab shells stuffed with meat. About 3,000 to 5,000 yen with drinks. The Katamachi main shop has 87 seats across a counter, tables and a tatami room upstairs, so six fit if you phone (076-223-3330). Closed Mondays. Everything is cooked for hours, ideal for her.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Visit Kanazawa",
+          "url": "https://visitkanazawa.jp/en/restaurants/detail_50237.html"
+        },
+        {
+          "label": "Official site",
+          "url": "https://www.oden-akadama.com/"
+        },
+        {
+          "label": "Tabelog",
+          "url": "https://tabelog.com/en/ishikawa/A1701/A170101/17000401/"
+        }
+      ]
+    },
+    "kz-miyuki": {
+      "famous_for": "A small, well-loved oden counter in Katamachi, open since 1967 and always busy.",
+      "expect": "Around 20 seats at a U-shaped counter, locals drinking sake and a pot of oden that has been going all evening. Cheap by Kanazawa standards, about 2,000 to 3,500 yen. No reservations: a queue forms before the 16:00 opening and again around 19:00, and six will probably be split. Closed Sundays. Fun and quick rather than comfortable; stools, not chairs.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Magical Trip",
+          "url": "https://www.magical-trip.com/media/ultimate-guide-to-miyuki-kanazawa-historic-oden-restaurant-since-1967-best-menu-access-info/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Miyuki+oden+Katamachi+Kanazawa"
+        }
+      ]
+    },
+    "kz-kuroyuri": {
+      "famous_for": "Oden and local dishes inside Kanazawa Station, run since 1953 and handy before a train.",
+      "expect": "In the station's Hyakubangai mall: a counter and tables, a big oden tank and a menu of Kanazawa standards such as kuruma-fu gluten, jibuni and grilled fish. About 1,500 to 3,000 yen. Open 11:00 to 22:00 straight through, which makes it the easy option on an arrival or departure day. It gets a queue at mealtimes, so arrive before 12:00 or after 13:30.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Tabelog",
+          "url": "https://tabelog.com/en/ishikawa/A1701/A170101/17000022/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kuroyuri+oden+Kanazawa+Station"
+        }
+      ]
+    },
+    "kz-kagaya": {
+      "famous_for": "Cooked Kaga set meals near the station, with grilled nodoguro, the prized local blackthroat seaperch.",
+      "expect": "Set lunches and dinners of grilled fish, tempura, jibuni and small side dishes, with sashimi available but not required. About 2,500 to 6,000 yen. Tables and chairs, and it takes bookings by phone (076-263-2221), which matters for six. Open 11:00 to 21:00. A sensible place for the night you arrive, a few minutes from the station hotels.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Magical Trip: Kanazawa restaurants",
+          "url": "https://www.magical-trip.com/media/top-16-must-try-restaurants-in-kanazawa-2025-sushi-kaiseki-local-favorites/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kagaya+restaurant+Kanazawa+Station"
+        }
+      ]
+    },
+    "kz-morimori": {
+      "famous_for": "Kanazawa's favourite conveyor-belt sushi, with market-fresh fish and a long queue at Omicho.",
+      "expect": "Take a numbered ticket, wait 30 to 60 minutes, then sit at the counter or small booths and order from the screen; plates run 150 to 800 yen and a filling lunch is about 3,000. The menu also has tempura, grilled fish, miso soup and cooked rolls, so she is not stuck. Six will be seated in two or three groups. The Omicho branch is open 8:00 to 17:00; the station branch stays open to 22:00.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Magical Trip",
+          "url": "https://www.magical-trip.com/media/mori-mori-sushi-omicho-kanazawa-seafood-guide-2025-enjoy-authentic-rotating-sushi-restaurant-in-kanazawa/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Morimori+Sushi+Omicho+Kanazawa"
+        }
+      ]
+    },
+    "kz-otome": {
+      "famous_for": "A two-Michelin-star sushi counter, among the most sought-after seats in Kanazawa.",
+      "expect": "An omakase of about 20 pieces at a short counter, with fish from the Sea of Japan and the chef working in front of you. Around 25,000 to 35,000 yen per person; reservations open months ahead and are hard to get. The counter seats a handful, so this is a dinner for two, not a table of six, and raw fish is the whole point, so not for her. Closed Wednesdays, Sundays and holidays.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Magical Trip: Kanazawa restaurants",
+          "url": "https://www.magical-trip.com/media/top-16-must-try-restaurants-in-kanazawa-2025-sushi-kaiseki-local-favorites/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Otome+Sushi+Kanazawa"
+        }
+      ]
+    },
+    "kz-turban": {
+      "famous_for": "Kanazawa curry, a thick dark roux with a pork cutlet and cabbage, from the family that invented it in 1971.",
+      "expect": "A fast, cheap local lunch: curry on a stainless-steel plate eaten with a fork, cutlet on top, cabbage on the side, for about 1,000 yen. The original shop near Korinbo is small with counter and a few tables, so six go in shifts or at an off-peak hour. Ten minutes from eating to leaving. Hours and closing days are irregular; check before you go.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Magical Trip: Kanazawa restaurants",
+          "url": "https://www.magical-trip.com/media/top-16-must-try-restaurants-in-kanazawa-2025-sushi-kaiseki-local-favorites/"
+        },
+        {
+          "label": "japan-guide: Japanese curry",
+          "url": "https://www.japan-guide.com/e/e2351.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Turban+Curry+Honten+Kanazawa"
+        }
+      ]
+    },
+    "sg-village": {
+      "famous_for": "A World Heritage village of steep thatched farmhouses, at its most famous under deep snow.",
+      "expect": "Ogimachi is a working village of 59 gassho-zukuri houses, a few of them open as museums; Wada House (400 yen) shows the silkworm lofts up ladder-like stairs. Two to three hours covers the village, the deck and lunch of soba or Hida beef. Snow is likely in late December and the paths are icy and uneven: waterproof boots and slip-on spikes for her. Buses from Kanazawa need reservations and can be delayed by snow. Expect crowds at midday.",
+      "reputation": "both",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://shirakawa-go.gr.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5951.html"
+        },
+        {
+          "label": "Nohi Bus timetable",
+          "url": "https://www.nouhibus.co.jp/route_bus/shirakawago_en/"
+        }
+      ]
+    },
+    "sg-viewpoint": {
+      "famous_for": "The postcard view of the whole village and its thatched roofs from the hill above.",
+      "expect": "From the Shiroyama deck you look straight down on the farmhouses in the valley; with snow it is the photo everyone comes for, and in person it is as good. A shuttle bus runs from near Wada House every 20 minutes between 10:00 and 14:40 (none from 12:00 to 13:00) for a small fare; the walking trail up is often closed in snow. Fifteen minutes up there is enough, and it is cold and windy, so dress for it.",
+      "reputation": "both",
+      "links": [
+        {
+          "label": "Official FAQ (shuttle and luggage)",
+          "url": "https://shirakawa-go.gr.jp/en/faq/5/"
+        },
+        {
+          "label": "japan-guide: Shirakawa-go",
+          "url": "https://www.japan-guide.com/e/e5950.html"
+        },
+        {
+          "label": "Shirakawa-go in December",
+          "url": "https://www.snowmonkeyresorts.com/news/shirakawago-in-december/"
+        }
+      ]
+    },
+    "tk-folkvillage": {
+      "famous_for": "An open-air museum of 30 thatched farmhouses moved from Hida villages, set around a pond on a hillside.",
+      "expect": "You walk between the houses, step inside to see hearths, looms and tools, and watch craftspeople at work in a few of them. Ninety minutes to two hours. In snow it looks like a small Shirakawa-go with far fewer people. Entry 700 yen; open 8:30 to 17:00 every day of the year. The paths climb and get icy, so boots and care for her; the loop can be shortened. Ten minutes by bus from Takayama station.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.hidanosato.com/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5901.html"
+        }
+      ]
+    },
+    "tk-jinya": {
+      "famous_for": "The only surviving Edo-period provincial government office, with its courtrooms and rice storehouse intact.",
+      "expect": "Shoes off for a walk through tatami offices, interrogation rooms with a display of punishments, kitchens and a huge rice warehouse that is now a small museum. Forty-five minutes to an hour; entry 440 yen. The floors are cold in winter, so thick socks. Flat throughout. Closed 29 December to 3 January, so see it on the afternoon of 28 December. The Jinya-mae morning market sets up at the gate.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://jinya.gifu.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5902.html"
+        }
+      ]
+    },
+    "tk-floats": {
+      "famous_for": "Four of the ornate festival floats from Takayama's famous spring and autumn festivals, shown up close.",
+      "expect": "The floats are several storeys tall, carved, lacquered and gilded, and the hall rotates which four are on show. An audio guide explains the mechanical puppets. Thirty to forty-five minutes; the 1,000 yen ticket also covers the Sakurayama Nikkokan, a model of the Nikko shrines next door. Indoors and warm, which makes it a good snowy-day choice. Open 9:00 to 16:30; New Year hours not confirmed.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5905.html"
+        },
+        {
+          "label": "Hida Takayama tourism",
+          "url": "https://www.hida.jp/english/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Takayama+Matsuri+Yatai+Kaikan"
+        }
+      ]
+    },
+    "tk-kusakabe": {
+      "famous_for": "An 1879 merchant's house with soaring beams, one of the finest townhouses in the old quarter.",
+      "expect": "The entrance hall opens to the roof, with dark beams and skylights above a sunken hearth; behind are living rooms, a storehouse of folk crafts and a small garden. Thirty minutes, 500 yen, shoes off, and tea is sometimes served. Flat, with a short steep stair to an upper room that can be skipped. Closed Tuesdays in winter, which rules out 29 December. The similar Yoshijima House is next door.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.kusakabe-mingeikan.com/"
+        },
+        {
+          "label": "japan-guide: Takayama old town",
+          "url": "https://www.japan-guide.com/e/e5903.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kusakabe+Heritage+House+Takayama"
+        }
+      ]
+    },
+    "tk-markets": {
+      "famous_for": "Two riverside morning markets selling pickles, miso, apples and crafts, held every day since the Edo period.",
+      "expect": "The Miyagawa market lines the river for a few hundred metres and the Jinya-mae market fills the square by the government office. Stalls open about 8:00 and pack up by noon; in winter there are fewer of them, but the pickles, hot amazake and sarubobo dolls are there. From 27 to 31 December extra stalls sell New Year pine and rope decorations. Half an hour each, flat, and the riverside can be icy.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5907.html"
+        },
+        {
+          "label": "Hida Takayama tourism",
+          "url": "https://www.hida.jp/english/"
+        }
+      ]
+    },
+    "tk-breweries": {
+      "famous_for": "The Sanmachi old town, where seven sake breweries hang cedar balls over their doors.",
+      "expect": "Three streets of dark wooden merchant houses, now shops, cafes and breweries that offer tastings of five or six sakes for a few hundred yen. An hour or two of wandering, best before 10 or after 15 when the day-trippers thin out. Most breweries open about 9:00 to 17:00; year-end hours are not confirmed. For her, the shops sell hot amazake, a sweet unfiltered rice drink that is alcohol-free. Flat streets, icy edges.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "japan.travel",
+          "url": "https://www.japan.travel/en/spot/153/"
+        },
+        {
+          "label": "japan-guide: Takayama old town",
+          "url": "https://www.japan-guide.com/e/e5903.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Funasaka+Sake+Brewery+Takayama"
+        }
+      ]
+    },
+    "tk-furukawa": {
+      "famous_for": "A quieter canal town 15 minutes by train from Takayama, with white storehouses along the Seto river.",
+      "expect": "A half-day escape: the canal lane, a candle shop, two sake breweries, a festival hall with the town's own floats and almost no crowds. The famous carp are moved out of the canal from late November to spring, so do not expect them. Two hours plus the train. Flat and compact. The town appeared in the anime Your Name, which brings a few fans. Hours of the small museums vary in winter.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site (Hida City tourism)",
+          "url": "https://www.hida-kankou.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5975.html"
+        }
+      ]
+    },
+    "ok-ropeway": {
+      "famous_for": "Japan's only double-decker ropeway, rising to 2,156 metres for a close view of the Northern Alps.",
+      "expect": "Two cable cars climb from the valley to a summit station with an open deck facing the Hotaka peaks, under deep snow at around minus ten. Round trip about 3,800 yen; 90 minutes by bus from Takayama each way. The view depends entirely on the weather, so check the live camera before leaving. The deck is icy and the altitude noticeable; she should take it slowly and ask her doctor first. Open 9:00 to 15:30 in winter.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://shinhotaka-ropeway.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5943.html"
+        },
+        {
+          "label": "Okuhida tourism",
+          "url": "https://okuhida.or.jp/en/"
+        }
+      ]
+    },
+    "gr-baths": {
+      "famous_for": "One of Japan's three great hot springs, with free footbaths around town and a pass to three ryokan baths.",
+      "expect": "Gero is a small spa town on a river. Buy the 1,300 yen Yumeguri Tegata wooden pass at any ryokan or the tourist office; it admits you to three participating baths and is valid for six months. In between, there are half a dozen free footbaths, including one by the station and one with a cafe. The water is clear, alkaline and smooth. For her, footbaths freely and short soaks at 40 degrees or below. Allow a lazy half day.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site (Gero tourism)",
+          "url": "https://www.gero-spa.com/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5990.html"
+        }
+      ]
+    },
+    "gr-gassho": {
+      "famous_for": "Ten thatched farmhouses moved from Shirakawa-go to a hillside park above Gero, with crafts and a long slide.",
+      "expect": "A compact open-air museum you can see in an hour: houses with hearths, a folk museum, a pottery and paper-making workshop and a 175-metre roller slide that children love. Entry 800 yen. Open 9:00 to 16:00 on 31 December and 1 and 2 January, which is useful when much else is shut. Paths climb gently and may be snowy. Ten minutes on foot or a short bus ride from the station.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.gero-gassho.jp/lg_en/"
+        },
+        {
+          "label": "japan-guide: Gero Onsen",
+          "url": "https://www.japan-guide.com/e/e5990.html"
+        }
+      ]
+    },
+    "tk-maruaki": {
+      "famous_for": "Hida beef grilled at your table, from a butcher-restaurant that sells the meat it serves.",
+      "expect": "Yakiniku sets of marbled Hida beef cuts to grill yourself, plus shabu-shabu and steak. Dinner runs about 5,500 to 9,000 yen a head; lunch sets are cheaper. Large, with tables and tatami rooms, and it takes dinner reservations, which matter in a town this size. Open all year except New Year's Day. For her, grill the slices through and skip the beef sushi starters. Near the old town.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "FUN! JAPAN",
+          "url": "https://www.fun-japan.jp/en/articles/9937"
+        },
+        {
+          "label": "Japan Alps: what to eat in Takayama",
+          "url": "https://www.japan-alps.com/takayama-food/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Maruaki+Takayama"
+        }
+      ]
+    },
+    "tk-kyoya": {
+      "famous_for": "Hida beef and hoba miso cooked over charcoal in a farmhouse dining room with an open hearth.",
+      "expect": "Sit at low tables around sunken hearths under dark beams and grill miso, vegetables and beef on a magnolia leaf, the signature dish of the region. About 3,000 to 6,000 yen. Book ahead; the room is popular and small. Usually closed Tuesdays, so not on 29 December. Floor seating with leg wells, which she will manage, and everything is cooked at the table. A ten-minute walk north of the old town.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Inside Kyoto: where to eat in Takayama",
+          "url": "https://www.insidekyoto.com/best-places-to-eat-in-takayama"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kyoya+restaurant+Takayama"
+        }
+      ]
+    },
+    "tk-kitchenhida": {
+      "famous_for": "Hida beef steak cooked on the teppan at a long-running steakhouse in the old town.",
+      "expect": "A proper sit-down steak dinner: sirloin or fillet in several grades, seared on the hot plate and served with soup, salad and rice. About 6,000 to 15,000 yen depending on the cut. Chairs and tables, English menu, and it takes reservations for dinner. She can ask for well done; the kitchen is used to it. Closing day is unclear, so confirm before you book.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Inside Kyoto: where to eat in Takayama",
+          "url": "https://www.insidekyoto.com/best-places-to-eat-in-takayama"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kitchen+Hida+Takayama"
+        }
+      ]
+    },
+    "tk-menyashirakawa": {
+      "famous_for": "Takayama ramen, thin curly noodles in a light soy broth, from the town's most popular small shop.",
+      "expect": "About ten seats, one bowl that matters at around 900 yen, and a queue that forms before opening. Order at the counter, eat in ten minutes and move on. Six will not sit together; go in pairs, or send two people to fetch takeaway. Closed Tuesdays. The broth is chicken and soy, nothing raw, so fine for her. Near the station, a few minutes from the old town.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Tabelog",
+          "url": "https://tabelog.com/en/gifu/A2104/A210401/21019966/"
+        },
+        {
+          "label": "Machiya Inn: Takayama ramen",
+          "url": "https://machiya-inn-japan.com/blog/?p=10209"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Menya+Shirakawa+Takayama"
+        }
+      ]
+    },
+    "tk-seto": {
+      "famous_for": "Stone-milled buckwheat soba near Takayama Jinya, with hot duck soba in winter.",
+      "expect": "A small family shop grinding its own flour: cold soba on a tray, hot soba with duck and leeks, and tempura on the side, around 1,000 to 1,800 yen. Open 11:00 to 16:00 and closed Wednesdays, so it is a lunch stop only. A dozen or so seats, so six may wait or split. Everything is cooked and the duck soba is a good warm-up after the morning market.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "FUN! JAPAN",
+          "url": "https://www.fun-japan.jp/en/articles/9937"
+        },
+        {
+          "label": "japan-guide: soba",
+          "url": "https://www.japan-guide.com/e/e2341.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Zaru+Soba+Seto+Takayama"
+        }
+      ]
+    },
+    "tk-heianraku": {
+      "famous_for": "A tiny family-run restaurant of home-style Chinese-Japanese cooking, warm and well known to travellers.",
+      "expect": "A husband-and-wife place with a handful of tables, serving gyoza, fried rice, mapo tofu, vegetable dishes and good vegetarian options for about 1,000 to 2,000 yen. The welcome is the reason people come back. Call ahead; six will fill most of the room. Closed Tuesdays. Everything is cooked, so an easy, cheap dinner for her. In the old town, close to the breweries.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Inside Kyoto: where to eat in Takayama",
+          "url": "https://www.insidekyoto.com/best-places-to-eat-in-takayama"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Heianraku+Takayama"
+        }
+      ]
+    },
+    "tk-center4": {
+      "famous_for": "Hida beef burgers in a cabin-like diner full of American memorabilia, a Takayama favourite.",
+      "expect": "Thick patties of Hida beef on a toasted bun with fries, plus regular burgers and shakes, for about 1,500 to 2,500 yen. Small, about 20 seats, with a queue at lunch; six will probably be two tables. Closed Wednesdays. Ask for hers well done; the standard patty is served pink. A relaxed change from Japanese food on the second day, a short walk from the old town.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Inside Kyoto: where to eat in Takayama",
+          "url": "https://www.insidekyoto.com/best-places-to-eat-in-takayama"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Center4+Hamburgers+Takayama"
+        }
+      ]
+    },
+    "ky-higashiyama": {
+      "famous_for": "Kiyomizu-dera's wooden stage over the hillside and the preserved sloping lanes that lead up to it.",
+      "expect": "Start at the temple when it opens at 6:00 and you will have the stage and the city view almost to yourselves; by 10 the lanes of Ninenzaka and Sannenzaka are shoulder to shoulder. Entry 500 yen. Two to three hours including shops and a tea stop. It is all uphill on the way in, with stone steps that are slippery when wet or icy, so slow going for her. Very crowded 1 to 3 January.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.kiyomizudera.or.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3901.html"
+        },
+        {
+          "label": "Inside Kyoto",
+          "url": "https://www.insidekyoto.com/kiyomizu-dera-temple"
+        }
+      ]
+    },
+    "ky-arashiyama": {
+      "famous_for": "The towering bamboo path and Tenryu-ji's 14th-century pond garden, Kyoto's most photographed corner.",
+      "expect": "The bamboo grove is a 500-metre path, free and open all hours, and it is magical only when empty: arrive before 8:30 or it is a slow shuffle behind phones. Then Tenryu-ji's garden (500 yen), laid out in 1339 against the hills, which is the real reason to come. Two to three hours with the river and Togetsukyo bridge. Flat and paved. Shops open around 10.",
+      "reputation": "both",
+      "links": [
+        {
+          "label": "Tenryu-ji official site",
+          "url": "https://www.tenryuji.com/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3912.html"
+        },
+        {
+          "label": "Inside Kyoto: bamboo grove",
+          "url": "https://www.insidekyoto.com/arashiyama-bamboo-grove"
+        }
+      ]
+    },
+    "ky-fushimi": {
+      "famous_for": "Thousands of orange torii gates forming tunnels up a wooded mountain, open day and night.",
+      "expect": "Free and never closed, so go at first light, when the lower tunnels are empty. The walk to the Yotsutsuji viewpoint takes 30 to 45 minutes on paved steps and is enough; the full loop is two to three hours. From 1 to 3 January this is the busiest shrine in western Japan, so pick 4 or 5 January and be there by 7:00. Steady stairs: she can turn back at Yotsutsuji or stop at the main hall.",
+      "reputation": "both",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://inari.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3915.html"
+        },
+        {
+          "label": "Inside Kyoto",
+          "url": "https://www.insidekyoto.com/fushimi-inari-taisha-shrine"
+        }
+      ]
+    },
+    "ky-knm": {
+      "famous_for": "Kyoto's national collection of Buddhist art, scrolls and ceramics in a modern Taniguchi building.",
+      "expect": "The exhibits rotate, so you see a few hundred superb pieces rather than thousands: sculpture on the ground floor, paintings and calligraphy above. From 2 January there is a small New Year display for the Year of the Sheep. Ninety minutes; entry around 700 yen. Open 2 and 3 January, closed on the 4th. Lifts and benches throughout, and the brick Meiji building outside is worth a photo. Opposite Sanjusangendo.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site: New Year exhibition",
+          "url": "https://www.kyohaku.go.jp/eng/exhibitions/feature/b/2026_sheep/"
+        },
+        {
+          "label": "Official site",
+          "url": "https://www.kyohaku.go.jp/eng/"
+        },
+        {
+          "label": "Inside Kyoto",
+          "url": "https://www.insidekyoto.com/kyoto-national-museum"
+        }
+      ]
+    },
+    "ky-railway": {
+      "famous_for": "Fifty-plus locomotives and trains, from a working steam roundhouse to a shinkansen, near Kyoto Station.",
+      "expect": "A big, bright museum with a shinkansen nose to walk through, a driving simulator, a model railway show and a 1914 roundhouse where steam engines still pull a short ride (300 yen). Two to three hours; entry 1,500 yen. Children and engineers love it; everyone else enjoys it more than expected. Open 2 to 4 January, 10:00 to 17:00. Flat with lifts and a top-floor terrace for watching real trains.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.kyotorailwaymuseum.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3972.html"
+        },
+        {
+          "label": "Inside Kyoto",
+          "url": "https://www.insidekyoto.com/kyoto-railway-museum"
+        }
+      ]
+    },
+    "ky-kyocera": {
+      "famous_for": "Kyoto's 1933 city art museum, renovated with a sunken glass entrance, hosting the big juried Nitten exhibition.",
+      "expect": "The Nitten is Japan's largest annual juried show: hundreds of recent paintings, sculptures, calligraphy and crafts, chosen by the establishment, so expect polish rather than surprises. Ninety minutes is plenty. The building and its garden by the Heian Shrine canal are a pleasure in themselves. Open 3 January in the New Year window, 10:00 to 18:00. Flat, with lifts and a cafe.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site: Nitten exhibition",
+          "url": "https://kyotocity-kyocera.museum/en/exhibition/20261219-20270116"
+        },
+        {
+          "label": "Official site",
+          "url": "https://kyotocity-kyocera.museum/en/"
+        }
+      ]
+    },
+    "ky-nijo": {
+      "famous_for": "The shogun's Kyoto palace, with squeaking nightingale floors and gold-leaf screens in every room.",
+      "expect": "Shoes off through the Ninomaru palace, a chain of audience halls where the floors chirp underfoot and painted tigers and pines cover the walls, then gardens and the castle moat outside. Ninety minutes to two hours; 1,300 yen including the palace. The palace buildings are closed 1 to 3 January and reopen on the 4th; the grounds open 8:45. Flat, but a lot of gravel and standing. Go at opening to beat the groups.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://nijo-jocastle.city.kyoto.lg.jp/?lang=en"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3918.html"
+        },
+        {
+          "label": "Inside Kyoto",
+          "url": "https://www.insidekyoto.com/nijo-jo-castle"
+        }
+      ]
+    },
+    "ky-nanzenji": {
+      "famous_for": "A great Zen temple with a huge gate, a red-brick Meiji aqueduct and rock gardens, below the eastern hills.",
+      "expect": "The grounds are free and open 1 to 4 January from 8:40. Walk under the aqueduct, see the Hojo's dry garden (600 yen) and the small subtemples; the Sanmon gate can be climbed for 600 yen but the stairs are steep and not needed for her. Ninety minutes, then yudofu lunch at one of the tofu restaurants at the gate. Quiet compared with Kiyomizu, especially before 10. Flat gravel paths.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://nanzenji.or.jp/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3905.html"
+        },
+        {
+          "label": "Inside Kyoto",
+          "url": "https://www.insidekyoto.com/nanzen-ji-temple"
+        }
+      ]
+    },
+    "ky-ginkakuji": {
+      "famous_for": "The Silver Pavilion's raked sand garden and moss, then a two-kilometre canal walk south.",
+      "expect": "A short one-way loop (500 yen) past the sand cone and the pavilion, up a hillside path for the view and back through moss; 30 to 45 minutes, with the hill section skippable. Then the Philosopher's Path follows a canal for 30 minutes to Nanzen-ji, past cafes and small temples. Bare trees and few people in winter, which is its own pleasure. Opens 9:00; New Year hours are the same but busier on 1 to 3 January.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.shokoku-ji.jp/en/ginkakuji/"
+        },
+        {
+          "label": "japan-guide: Ginkaku-ji",
+          "url": "https://www.japan-guide.com/e/e3907.html"
+        },
+        {
+          "label": "japan-guide: Philosopher's Path",
+          "url": "https://www.japan-guide.com/e/e3906.html"
+        }
+      ]
+    },
+    "ky-ohara": {
+      "famous_for": "A mountain village north of Kyoto with Sanzen-in's moss garden and stone Buddhas, often under snow.",
+      "expect": "An hour by bus from Kyoto Station, then a ten-minute uphill lane of pickle and craft shops to Sanzen-in (700 yen), where you sit on the veranda facing the moss garden and then walk among small stone statues. Jakko-in is a further 20-minute walk. A half day to most of a day. The lane and garden paths are stepped and can be icy, so she should go slowly; the bus is the tiring part. No closing days.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.sanzenin.or.jp/"
+        },
+        {
+          "label": "japan-guide: Sanzen-in",
+          "url": "https://www.japan-guide.com/e/e3955.html"
+        },
+        {
+          "label": "japan-guide: Ohara",
+          "url": "https://www.japan-guide.com/e/e3932.html"
+        }
+      ]
+    },
+    "ky-nishiki": {
+      "famous_for": "Kyoto's 400-metre covered food street of pickles, tofu, sweets, knives and snacks.",
+      "expect": "About 130 shops under a stained-glass roof; you browse, taste and buy, and eat standing at the shop that sold it to you (walking while eating is frowned on). An hour. The last days of December are a crush of New Year shoppers; many shops close 1 to 3 January, so go on the 4th. Flat and sheltered from rain. Grilled fish, dashi egg rolls and sweets are fine for her; the raw-seafood skewers are not.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.kyoto-nishiki.or.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3931.html"
+        },
+        {
+          "label": "Inside Kyoto",
+          "url": "https://www.insidekyoto.com/nishiki-market"
+        }
+      ]
+    },
+    "ky-newyear": {
+      "famous_for": "Kyoto's first days of the year: shrine visits, calligraphy, Noh and lucky tea at temples across the city.",
+      "expect": "On 2 January Kitano Tenmangu holds its first-calligraphy festival, with a tea room nearby. On 3 January Yasaka Shrine has a free Noh performance at 9:00 and a court-costume card game at 13:00. Rokuharamitsu-ji serves lucky tea with a plum and kelp from 1 to 3 January. Each is 30 to 60 minutes of standing in a crowd, so pick one or two. Shrines are open through the night and busiest from mid-morning. Dress warmly.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Kyoto New Year guide (Watabi)",
+          "url": "https://watabi.org/en/articles/kyoto-new-year-guide"
+        },
+        {
+          "label": "Inside Kyoto: New Year's in Kyoto",
+          "url": "https://www.insidekyoto.com/new-years-in-kyoto"
+        },
+        {
+          "label": "japan-guide: Kitano Tenmangu",
+          "url": "https://www.japan-guide.com/e/e3939.html"
+        }
+      ]
+    },
+    "ky-shunkoin": {
+      "famous_for": "Zen meditation and a tea break with an English-speaking priest in a Myoshinji subtemple.",
+      "expect": "About 90 minutes: an introduction to Zen, two short seated meditations and a tour of the temple's garden and screen paintings, followed by matcha. Chairs are available for anyone who cannot sit cross-legged, which solves it for her. Around 3,000 yen; reserve online. Sessions are usually in the morning. Myoshinji's walled lanes are worth 20 minutes before or after. Northwest of the centre, near Hanazono station.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site: Zen meditation",
+          "url": "https://shunkoin.com/?p=90"
+        },
+        {
+          "label": "Official site",
+          "url": "https://shunkoin.com/"
+        },
+        {
+          "label": "japan-guide: Myoshinji",
+          "url": "https://www.japan-guide.com/e/e3961.html"
+        }
+      ]
+    },
+    "ky-bunraku": {
+      "famous_for": "Japan's traditional puppet theatre at its home stage in Osaka, with a festive New Year programme.",
+      "expect": "Three puppeteers in black work each life-size puppet while a chanter and shamisen player tell the story from the side. The New Year run starts about 3 January; each performance lasts three to four hours, but you can buy a ticket for a single act of about an hour. Rent the English earphone guide. Fully seated and warm. The National Bunraku Theatre is 50 minutes from Kyoto by train, in Nipponbashi.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "New Year performance notice",
+          "url": "https://www.arc.ritsumei.ac.jp/lib/english/bunraku/eventinfo/bunraku_new_year_performance.html"
+        },
+        {
+          "label": "Japan Arts Council",
+          "url": "https://www.ntj.jac.go.jp/en/"
+        },
+        {
+          "label": "japan-guide: National Bunraku Theatre",
+          "url": "https://www.japan-guide.com/e/e4003.html"
+        }
+      ]
+    },
+    "ky-himeji": {
+      "famous_for": "Japan's largest and finest original castle, the white 1609 keep that survived war and earthquakes.",
+      "expect": "An hour from Kyoto by shinkansen, then a 15-minute walk up the main street. Inside the keep you climb six floors of steep wooden stairs in socks and queue on busy days; entry 1,000 yen. Three hours with the grounds and the Koko-en garden next door. The grounds, baileys and garden are flat and worth the trip on their own, so she can skip the keep. Open from 1 January; crowded on the first three days.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.himejicastle.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e3501.html"
+        },
+        {
+          "label": "Visit Hyogo",
+          "url": "https://www.hyogo-tourism.jp/world/spot/detail_1054.html"
+        }
+      ]
+    },
+    "nara-todaiji": {
+      "famous_for": "The 15-metre bronze Great Buddha inside one of the largest wooden buildings in the world.",
+      "expect": "Walk through the deer park and the Nandaimon gate with its two giant guardian statues to the hall, which still stops people in the doorway. Entry 800 yen; an hour, more with the museum. Children crawl through the pillar hole said to equal the Buddha's nostril. Flat gravel; the deer are pushy around anyone holding crackers, so she should watch rather than feed. Open 8:00 to 17:00 and busy from mid-morning.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.todaiji.or.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e4100.html"
+        },
+        {
+          "label": "japan-guide: Nara Park",
+          "url": "https://www.japan-guide.com/e/e4103.html"
+        }
+      ]
+    },
+    "nara-kasuga": {
+      "famous_for": "Nara's great vermilion shrine, approached through a forest lined with 3,000 stone and bronze lanterns.",
+      "expect": "A gentle 20-minute walk uphill from Todai-ji under old trees and moss-covered lanterns, or a bus to the shrine stop to save the climb. The outer areas are free; the inner precinct (700 yen) has corridors hung with bronze lanterns and a dark room where some are lit all year. An hour. The lanterns are all lit only in February and August. Open 7:00 to 17:00; busy with New Year visitors in the first week of January.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.kasugataisha.or.jp/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e4102.html"
+        }
+      ]
+    },
+    "nara-naramachi": {
+      "famous_for": "Nara's old merchant quarter of lattice-fronted townhouses, small temples and craft shops.",
+      "expect": "A flat grid of quiet lanes south of the shopping arcade: a restored merchant house you can enter for free, Gango-ji temple (500 yen), cafes in old houses and the red cloth monkeys hanging outside doors. One to two hours, best after the park when you want somewhere calm. Nakatanidou's pounded mochi, near the arcade, is the snack. Most shops open from about 10 to 17; some close on 4 January.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e4108.html"
+        },
+        {
+          "label": "Nara Travelers Guide",
+          "url": "https://narashikanko.or.jp/en/"
+        }
+      ]
+    },
+    "ky-ukihashi": {
+      "famous_for": "A reliable kaiseki lunch on the 15th floor of the Hotel Granvia, above Kyoto Station.",
+      "expect": "Seasonal multi-course set lunches from about 3,300 yen up to 22,000, served in a calm dining room with chairs, big windows and private rooms that seat six. It was open over New Year last year, which makes it the safe choice for 1 or 2 January. Book online or by phone (075-342-5527) and ask for a cooked-only course for her; hotel kitchens handle this easily. Ninety minutes.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Reserve (TableCheck)",
+          "url": "https://www.tablecheck.com/en/shops/granvia-kyoto-ukihashi/reserve"
+        },
+        {
+          "label": "Tabelog",
+          "url": "https://tabelog.com/en/kyoto/A2601/A260101/26001871/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Ukihashi+Hotel+Granvia+Kyoto"
+        }
+      ]
+    },
+    "ky-mouriya": {
+      "famous_for": "Kobe beef cooked on the teppan in front of you, from a Kobe house founded in 1885, in Gion.",
+      "expect": "Sit at the counter while the chef sears certified Kobe beef, vegetables and garlic rice; lunch sets from about 9,000 yen, dinner 15,000 and up. Online booking for up to eight, and it is open 1 to 3 January with a 10 per cent holiday surcharge, which is rare and useful. Ninety minutes. Chairs, not floor seating. Ask for her steak cooked through; the standard is rare.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Reserve (TableCheck)",
+          "url": "https://www.tablecheck.com/en/shops/mouriya-gion/reserve"
+        },
+        {
+          "label": "Official site",
+          "url": "https://www.mouriya.co.jp/en/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Mouriya+Gion+Kyoto"
+        }
+      ]
+    },
+    "ky-okutan": {
+      "famous_for": "Yudofu, tofu simmered at the table, in a garden restaurant by Nanzen-ji that claims nearly 400 years.",
+      "expect": "One set menu of about 4,000 yen: a pot of tofu in kelp broth, sesame tofu, vegetable tempura, grilled tofu with miso and rice, served at low tables in tatami rooms facing a mossy garden. Cash only. Expect a queue at lunch; arriving at the 11:00 opening helps. Closed Thursdays; New Year hours to check. Warm, cooked and gentle, a good match for her after the temple.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Bring You",
+          "url": "https://bring-you.info/en/tofuokutan"
+        },
+        {
+          "label": "Frommer's",
+          "url": "https://www.frommers.com/destinations/kyoto/restaurants/okutan-"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Okutan+Nanzenji+Kyoto"
+        }
+      ]
+    },
+    "ky-omen": {
+      "famous_for": "Thick udon served with a bowl of seasonal vegetables and a sesame dipping broth, near Ginkaku-ji.",
+      "expect": "The house dish is about 1,300 yen: noodles hot or cold, a plate of vegetables, ginger and sesame to add to the broth. Tempura and small plates round it out. A roomy, wooden restaurant that seats six without fuss on a weekday; walk in, or wait 15 minutes at peak. Closed Thursdays. The natural finish to the Philosopher's Path. Everything cooked.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.omen.co.jp/"
+        },
+        {
+          "label": "Inside Kyoto",
+          "url": "https://www.insidekyoto.com/omen-restaurant-kyoto"
+        },
+        {
+          "label": "Leaf Kyoto",
+          "url": "https://www.leafkyoto.net/en/store/231120-kyoto-omen/"
+        }
+      ]
+    },
+    "ky-shoraian": {
+      "famous_for": "Tofu kaiseki in a hillside villa above the Oi river in Arashiyama, reached by a forest path.",
+      "expect": "Lunch courses from about 4,600 yen of tofu in many forms, yuba, seasonal vegetables and rice, served in rooms with river views; the owner is a calligrapher and his work hangs everywhere. Book ahead by phone (075-861-0123) and confirm New Year opening. From Togetsukyo bridge it is a ten-minute walk along the river and up a short, steep path, which she can take slowly. Two hours.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.shoraian.jp/"
+        },
+        {
+          "label": "Japan Journeys",
+          "url": "https://japanjourneys.jp/kyoto/dining/restaurants/arashiyama/shoraian-tofu-kaiseki"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Shoraian+Arashiyama+Kyoto"
+        }
+      ]
+    },
+    "ky-inoda": {
+      "famous_for": "Kyoto's classic coffee house since 1940, where breakfast comes with ham, eggs and a famous blend.",
+      "expect": "The main shop on Sakaimachi has over 200 seats across a retro dining room and a garden annexe, so six get a table even on a busy morning. The 'Kyoto Morning' breakfast set is about 1,500 yen; coffee comes with milk and sugar already in unless you say otherwise. Open 7:00 to 18:00 every day, including New Year, which is rare in Kyoto. A good first stop on 1 January.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.inoda-coffee.co.jp/english/shop/"
+        },
+        {
+          "label": "Inside Kyoto",
+          "url": "https://www.insidekyoto.com/inoda-coffee-honten"
+        }
+      ]
+    },
+    "ky-kagizen": {
+      "famous_for": "A Gion confectioner from the Edo period, famous for kuzukiri, cold arrowroot noodles with black sugar syrup.",
+      "expect": "Buy sweets at the front or sit in the tearoom at the back for kuzukiri (about 1,200 yen) or matcha with a seasonal wagashi, under a ceiling by folk-craft designers. Thirty to forty-five minutes. Queues at weekends; weekday afternoons are fine. Closed Mondays. On Shijo near Yasaka Shrine, so it fits a Gion walk. All sweets, nothing raw.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.kagizen.co.jp/"
+        },
+        {
+          "label": "Inside Kyoto",
+          "url": "https://www.insidekyoto.com/kagizen-yoshifusa"
+        },
+        {
+          "label": "Time Out",
+          "url": "https://www.timeout.com/osaka/restaurants/kagizen-yoshifusa"
+        }
+      ]
+    },
+    "hk-oam": {
+      "famous_for": "A hillside sculpture park with Henry Moore, Miro, a stained-glass tower and a whole Picasso pavilion.",
+      "expect": "You wander lawns and terraces between large outdoor sculptures, with the hills behind; children climb inside a few of them. The Picasso building holds 300 works and there is a hot-spring footbath for tired legs. Two hours; entry 2,000 yen; open 9:00 to 17:00 every day of the year. The paths slope and have steps, and the spiral staircase inside the glass tower is optional. Next to Chokoku-no-mori station on the mountain railway.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.hakone-oam.or.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5208.html"
+        }
+      ]
+    },
+    "hk-pola": {
+      "famous_for": "A glass-and-steel museum in a beech forest, with Monet, Renoir, Cezanne and Picasso from a cosmetics fortune.",
+      "expect": "A strong Impressionist collection in calm, well-lit rooms, plus a short forest trail with sculptures outside. Ninety minutes to two hours; entry 2,200 yen; open 9:00 to 17:00 with occasional closures between shows. The building is all lifts and ramps, with a good restaurant. Reached by a bus from Gora or Sengokuhara, which is the main effort. Rarely crowded on winter weekdays.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.polamuseum.or.jp/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5214.html"
+        }
+      ]
+    },
+    "hk-okada": {
+      "famous_for": "Five floors of Chinese, Korean and Japanese art, with a cafe where you sit in a hot-spring footbath.",
+      "expect": "A private collection of screens, ceramics and Buddhist art, beautifully displayed and with no photography allowed; phones go in a locker. Two hours, more if you linger in the footbath cafe (500 yen) facing a huge mural. Entry 2,800 yen, the highest in Hakone, and worth it for art lovers. Lifts throughout. Closed 31 December and 1 January. In Kowakudani, on the bus route between Gora and the lake.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.okada-museum.com/en/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5220.html"
+        }
+      ]
+    },
+    "hk-narukawa": {
+      "famous_for": "Modern Japanese-style paintings and a lounge with the best indoor view of Fuji over Lake Ashi.",
+      "expect": "A small museum of nihonga, delicate paintings on silk and paper, that most people visit for the panorama lounge: floor-to-ceiling glass facing the lake, the red torii of Hakone Shrine and Fuji behind. Forty-five minutes to an hour; entry 1,500 yen; cafe with the same view. By the Moto-Hakone pier, so it fits after the boat. Lifts, warm and a good place for her to wait while others climb Onshi park.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5221.html"
+        },
+        {
+          "label": "Hakone Navi",
+          "url": "https://www.hakonenavi.jp/international/en/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Narukawa+Art+Museum+Hakone"
+        }
+      ]
+    },
+    "hk-loop": {
+      "famous_for": "The circuit of mountain railway, cable car, ropeway over a steaming volcanic valley and a boat across Lake Ashi.",
+      "expect": "A full day in sequence: train to Gora, cable car to Sounzan, ropeway over Owakudani's sulphur vents (eat a black egg) to Togendai, then the pirate-style boat 30 minutes to Moto-Hakone. All seated; the Hakone Free Pass covers it. Fuji shows from the ropeway and boat on clear mornings. The ropeway stops in strong wind, and the operator bars people with asthma or heart problems because of the gas; she should ask her doctor. Ropeway 9:00 to 16:15 in winter.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "japan-guide: Hakone loop",
+          "url": "https://www.japan-guide.com/e/e5210.html"
+        },
+        {
+          "label": "japan-guide: Owakudani",
+          "url": "https://www.japan-guide.com/e/e5203.html"
+        },
+        {
+          "label": "Hakone Navi (official transport)",
+          "url": "https://www.hakonenavi.jp/international/en/"
+        }
+      ]
+    },
+    "hk-onshi": {
+      "famous_for": "The former imperial villa grounds on a lakeside headland, with the classic Fuji-over-Lake-Ashi view.",
+      "expect": "Free gardens on a promontory between Hakone-machi and Moto-Hakone. The view everyone photographs is from the lookout building at the top, reached by about 200 stone steps; it is the picture, and in person it is a good one on a clear morning. Thirty to forty-five minutes. Open 9:00 to 16:30 and closed 19 December to 3 January, so open on 5 and 6 January. The steps are the issue for her; the lakeside path at the bottom is flat.",
+      "reputation": "photo",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.kanagawa-park.or.jp/onsisite/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e5207.html"
+        },
+        {
+          "label": "Hakone Japan",
+          "url": "https://hakone-japan.com/discover/national-park/area-information/onshi-hakone-koen-park/"
+        }
+      ]
+    },
+    "hk-yosegi": {
+      "famous_for": "Making a coaster from yosegi, the geometric wood mosaic that is Hakone's own craft.",
+      "expect": "At a workshop in Hatajuku or Yumoto you arrange small blocks of coloured woods into a pattern, glue them and sand the piece, guided by a craftsman. Thirty to sixty minutes, seated, from about 1,000 to 2,000 yen, and you keep the result. The shops also sell the famous puzzle boxes. Reserve for six. Good for a wet afternoon and no strain for her. Hatajuku is on the bus between Yumoto and the lake.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Hakone Japan: yosegi experience",
+          "url": "https://hakone-japan.com/yosegizaiku/experience/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Yosegi+zaiku+workshop+Hatajuku+Hakone"
+        }
+      ]
+    },
+    "hk-hatsuhana": {
+      "famous_for": "Hakone-Yumoto's famous soba, served with grated mountain yam, in a shop open since 1934.",
+      "expect": "The signature is seiro soba with raw yam and egg on the side, about 1,200 to 2,000 yen; hot soba and tempura versions exist too. A large shop by the river near Yumoto station, with queues at lunch that move steadily. Closed Wednesdays, so go on arrival on Tuesday 5 January. For her, the hot soba or tempura set avoids the raw egg and yam.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.hatsuhana.co.jp/"
+        },
+        {
+          "label": "GLTJP",
+          "url": "https://www.gltjp.com/en/directory/item/11669"
+        },
+        {
+          "label": "Japaholic",
+          "url": "https://en.japaholic.com/even-a-member-of-japans-royal-family-has-eaten-at-this-soba-restaurant/"
+        }
+      ]
+    },
+    "hk-fujiya": {
+      "famous_for": "The 1930 main dining room of Japan's grand old resort hotel, famous for its curry and carved ceiling.",
+      "expect": "The Fujiya opened in 1878 and the dining room is a period piece: high ceiling, carved birds and flowers, waiters in white. Lunch is the affordable way in, with the beef curry and a set menu around 3,000 to 6,000 yen; dinner is a formal French course. Book, and dress smart casual. Lunch 11:30 to 15:30, dinner from 17:30. The Kikka-so villa serves Japanese meals. Miyanoshita station is a short, steep walk below.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Official site: restaurants",
+          "url": "https://fhr.fujiyahotel.jp/restaurant/"
+        },
+        {
+          "label": "Official site: hotel",
+          "url": "https://www.fujiyahotel.jp/en/"
+        }
+      ]
+    },
+    "tokyo-kabuki": {
+      "famous_for": "Watching one act of kabuki from the fourth floor of the Kabuki-za in Ginza for an hour or so.",
+      "expect": "Single-act tickets let you see 30 to 90 minutes of a full-day programme for about 1,000 to 2,500 yen, from upper seats with a decent view. Book online in advance; the counter sells what is left on the day. Rent the English earphone guide, which explains the plot as it happens. The January programme is festive and starts around 2 January; in December there is a separate bill. The theatre has lifts and the seats are ordinary chairs.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site (Kabuki Web)",
+          "url": "https://www.kabukiweb.net/"
+        },
+        {
+          "label": "japan-guide: kabuki",
+          "url": "https://www.japan-guide.com/e/e2090.html"
+        },
+        {
+          "label": "Single-act tickets explained",
+          "url": "https://japanroyalservice.com/blog/kabuki-single-act-tickets-tokyo"
+        }
+      ]
+    },
+    "tokyo-sumo": {
+      "famous_for": "The year's first Grand Sumo tournament at Ryogoku Kokugikan, 10 to 24 January.",
+      "expect": "The arena opens around 8:30 but the top division wrestles from about 15:40 to 18:00, which is when the hall fills and the atmosphere builds. Choose arena chairs (easier for her) over the floor-level box seats, where four people sit on cushions. Tickets go on sale in early December and weekend days sell out fast. Rent the radio commentary, buy a bento and plan three hours. Opening day falls on Sunday 10 January.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site (Japan Sumo Association)",
+          "url": "https://www.sumo.or.jp/En/"
+        },
+        {
+          "label": "japan-guide: sumo",
+          "url": "https://www.japan-guide.com/e/e2080.html"
+        },
+        {
+          "label": "January 2027 guide",
+          "url": "https://selfguidejapan.com/blog/grand-sumo-january-2027"
+        }
+      ]
+    },
+    "tokyo-asageiko": {
+      "famous_for": "Watching wrestlers train at dawn in a sumo stable, a few metres from the ring.",
+      "expect": "Practice runs from about 7:30 to 10:00. You sit still and silent on the floor along the wall for 60 to 90 minutes while wrestlers stretch, shove and spar; it is intense and surprisingly moving. Most stables now require a guided booking of about 10,000 yen. There are no chairs, so it is hard on her back at this stage; the Arashio stable in Nihonbashi lets passers-by watch from the street window for free.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Guided tour (Visit Sumida)",
+          "url": "https://visit-sumida.jp/?p=9291"
+        },
+        {
+          "label": "japan-guide: Ryogoku sumo town",
+          "url": "https://www.japan-guide.com/e/e3022.html"
+        }
+      ]
+    },
+    "tokyo-sushiclass": {
+      "famous_for": "A guided walk through Tsukiji Outer Market followed by making your own sushi.",
+      "expect": "A morning of three to four hours: the guide leads you through the market stalls with tastings, then a chef teaches you to shape nigiri and roll maki, which becomes lunch. About 15,000 yen each. Group sizes are small, so six may fill the class. Standing in the market, then seated in the kitchen. She can make hers with cooked prawn, egg and vegetables and skip the raw fish.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Tour and class (Japan Food Guide)",
+          "url": "https://japan-food.guide/en/activities/59"
+        },
+        {
+          "label": "japan-guide: Tsukiji Outer Market",
+          "url": "https://www.japan-guide.com/e/e3021.html"
+        }
+      ]
+    },
+    "tokyo-indigo": {
+      "famous_for": "Dyeing your own handkerchief or tote bag in natural indigo at a small Asakusa workshop.",
+      "expect": "You tie and fold the cloth, dip it in the vat a few times, rinse and watch it turn from green to deep blue. Sixty to ninety minutes, seated at a table, from about 2,000 yen depending on the item. Reserve ahead and wear clothes that can take a splash; gloves are provided. Within a short walk of Senso-ji, so it combines with an Asakusa morning. Calm and easy for her.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "GO TOKYO workshop page",
+          "url": "https://www.gotokyo.org/en/workshop/sd036/index.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Wanariya+Asakusa+indigo"
+        }
+      ]
+    },
+    "kw-oishi": {
+      "famous_for": "A flat lakeside park on Kawaguchiko's north shore with Fuji straight across the water.",
+      "expect": "A free promenade along the shore with flower beds, a cafe and a shop selling blueberry soft-serve; Fuji fills the view with nothing in the way. Thirty to forty-five minutes, or longer on a bench. Go early in the morning for the calmest water and clearest mountain; cloud builds by midday even in January. Always open. The easiest Fuji view of the trip for her: paved, level, with parking and toilets. Reached by the sightseeing bus red line.",
+      "reputation": "both",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://en.kawaguchiko.net/park-en/oishi-park"
+        },
+        {
+          "label": "japan-guide: Lake Kawaguchiko",
+          "url": "https://www.japan-guide.com/e/e6906.html"
+        }
+      ]
+    },
+    "kw-ropeway": {
+      "famous_for": "A three-minute cable car to a viewing deck above the lake, with Fuji in full from top to bottom.",
+      "expect": "The ropeway, long known as Kachi Kachi Yama, lifts you to 1,075 metres, where a deck, a small shrine and a cafe face the mountain; a folk tale about a rabbit and a raccoon dog decorates everything. About an hour including the queue; return ticket around 1,000 yen. Open 9:00 to 17:00 in winter and stops in strong wind. Seated in the cabin, with a few steps on the deck. Pairs with the boat from the same shore.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.mtfujiropeway.jp/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e6916.html"
+        }
+      ]
+    },
+    "kw-cruise": {
+      "famous_for": "A 20-minute sightseeing boat on Lake Kawaguchi with Fuji rising behind the north shore.",
+      "expect": "Boats leave from the pier near the ropeway roughly every 30 minutes, 9:00 to 16:30, for about 1,000 yen. You sit on an open upper deck or in the warm cabin while the boat makes a loop; the Fuji view from the water is wide and unobstructed. It is short, so combine it with the ropeway and lunch nearby. Calm water, easy boarding, no stairs required if you stay below.",
+      "reputation": "classic",
+      "links": [
+        {
+          "label": "Official site (Fujigoko Kisen)",
+          "url": "https://www.fujigokokisen.jp/"
+        },
+        {
+          "label": "japan-guide: Lake Kawaguchiko",
+          "url": "https://www.japan-guide.com/e/e6906.html"
+        }
+      ]
+    },
+    "kw-chureito": {
+      "famous_for": "The red five-storey pagoda with Fuji behind it: the most reproduced photograph of Japan.",
+      "expect": "The pagoda is a 1963 war memorial in Arakurayama Sengen Park, and the famous angle is from a platform behind it, up 398 steps from the shrine. The climb takes 15 to 20 minutes and the view is exactly the postcard; in winter there are no blossoms but far smaller crowds. Free, always open. The steps are steep and can be icy, so she stays at the shrine below. Ten minutes on foot from Shimoyoshida station.",
+      "reputation": "photo",
+      "links": [
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e6917.html"
+        },
+        {
+          "label": "Fujiyoshida tourism (official)",
+          "url": "https://fujiyoshida.net/en/"
+        }
+      ]
+    },
+    "kw-kubota": {
+      "famous_for": "Kimono dyed as landscapes of Fuji and the seasons, in a Gaudi-like building on the north shore.",
+      "expect": "Itchiku Kubota revived a lost 16th-century dyeing technique and spent his life on a series of kimono that hang together as one panorama. The main hall is a pyramid of cypress beams; outside are gardens, a waterfall and a cafe. An hour; entry 1,300 yen; open 10:00 to 16:30. The best thing to do here on a cloudy day. Lifts and short paths. January closing days differ between sources, so check before going.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.itchiku-museum.com/"
+        },
+        {
+          "label": "japan-guide",
+          "url": "https://www.japan-guide.com/e/e6912.html"
+        }
+      ]
+    },
+    "kw-onsen-foot": {
+      "famous_for": "Free hot-spring footbaths along the north shore and a small European music-box museum with Fuji views.",
+      "expect": "The Music Forest is a cluster of European-style buildings with a rose garden, dancing fountains, automatons and hourly concerts on a giant fairground organ; 1,800 yen and about 90 minutes, mostly indoors. Open 10:00 to 17:00. Nearby, a few footbaths on the lakeside let you sit with your feet in hot water and the mountain in front of you; bring a small towel. A gentle afternoon that suits her completely.",
+      "reputation": "real",
+      "links": [
+        {
+          "label": "japan-guide: Music Forest",
+          "url": "https://www.japan-guide.com/e/e6913.html"
+        },
+        {
+          "label": "Music Forest official site",
+          "url": "https://kawaguchikomusicforest.jp/"
+        },
+        {
+          "label": "japan-guide: Fuji Five Lakes onsen",
+          "url": "https://www.japan-guide.com/e/e6902.html"
+        }
+      ]
+    },
+    "kw-hoto-fudou": {
+      "famous_for": "Hoto, Yamanashi's thick flat noodles stewed with pumpkin and vegetables in miso, in a white dome.",
+      "expect": "One main dish, about 1,320 yen, served boiling in an iron pot big enough to be a meal on its own; add horse sashimi or pickles if you like. The Higashi-Koiji branch is a cloud-shaped concrete building with about 300 seats, so six sit together with no booking. Cash only. Open 11:00 to 20:00. Fully cooked and vegetable-heavy, a good warm lunch for her. A short taxi or bus from the station.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "LIVE JAPAN: hoto in Kawaguchiko",
+          "url": "https://livejapan.com/en/in-tokyo/in-pref-fuji_mountain/in-mount_fuji/article-a0005559/"
+        },
+        {
+          "label": "japan-guide: hoto noodles",
+          "url": "https://www.japan-guide.com/e/e6926.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Houtou+Fudou+Higashi+Koiji"
+        }
+      ]
+    },
+    "kw-kosaku": {
+      "famous_for": "The other big hoto house, a Kofu chain with pork, bean and mushroom versions and a long tatami hall.",
+      "expect": "Hoto in iron pots from about 1,400 yen, with pork, wild vegetables, oysters or sweet azuki beans as variations, plus set meals and side dishes. The Kawaguchiko branch is near the station in a farmhouse-style building with tables and a big tatami room, and it handles groups. Open 11:00 to 19:00. Queues at weekend lunch. Everything simmered, so fine for her.",
+      "reputation": "food",
+      "links": [
+        {
+          "label": "Official site",
+          "url": "https://www.kosaku.co.jp/"
+        },
+        {
+          "label": "japan-guide: hoto noodles",
+          "url": "https://www.japan-guide.com/e/e6926.html"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Hoto+Kosaku+Kawaguchiko"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "slug": "zao",
+  "name": "Zaō Onsen",
+  "tagline_pt": "Vila de esqui e fonte ácida: aqui se come no hotel, e a comida boa desce a montanha.",
+  "history_pt": [
+    "Zaō Onsen se chamava Takayu. A lenda diz que a fonte, de água sulfurosa e muito ácida, foi achada por volta do ano 110, por um seguidor do herói Yamato Takeru. Virou Zaō Onsen em 1950, depois que o monte Zaō ganhou um concurso nacional de paisagens, e hoje vive do esqui e dos juhyō, as árvores cobertas de gelo.",
+    "A vila tem pratos próprios de estação de esqui: o karakara-jiru, sopa picante de inhame e porco com borra de saquê e pimenta (o artista Okamoto Tarō, que esquiava aqui, ajudou a batizar), e o igamochi, mochi recheado de feijão. Nada da vila foi verificado no Tabelog para este guia: o jantar é no hotel, e os restaurantes de nota ficam em Yamagata, a 40 minutos."
+  ],
+  "winter_pt": "Temporada de esqui e de juhyō. Sopas quentes, jingisukan e imoni de inverno. Os restaurantes avaliados ficam lá embaixo, na cidade de Yamagata ou perto da estação de Zaō.",
+  "meibutsu": [
+    {
+      "name_pt": "Karakara-jiru",
+      "name_ja": "からから汁",
+      "romaji": "karakara-jiru",
+      "what_pt": "Sopa de inhame e porco com borra de saquê e pimenta vermelha.",
+      "where_pt": "Restaurantes da vila (não verificados no Tabelog).",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "A borra de saquê pode reter um pouco de álcool mesmo cozida. Ela prova uma colher ou pula."
+    },
+    {
+      "name_pt": "Igamochi",
+      "name_ja": "稲花餅",
+      "romaji": "igamochi",
+      "what_pt": "Mochi recheado de feijão doce, lembrança da vila.",
+      "where_pt": "Docerias da vila.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Jingisukan",
+      "name_ja": "ジンギスカン",
+      "romaji": "jingisukan",
+      "what_pt": "Cordeiro grelhado na chapa em domo.",
+      "where_pt": "Robata, em Yamagata.",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Bem passado."
+    },
+    {
+      "name_pt": "Tama-konnyaku",
+      "name_ja": "玉こんにゃく",
+      "romaji": "tama-konnyaku",
+      "what_pt": "Espetinho de konnyaku no shoyu com mostarda.",
+      "where_pt": "Barracas e lojas.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Imoni",
+      "name_ja": "芋煮",
+      "romaji": "imoni",
+      "what_pt": "Panela de inhame e carne no shoyu, à moda de Yamagata.",
+      "where_pt": "Hotéis e izakaya de Yamagata.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Tempura e soba",
+      "name_ja": "天ぷら・そば",
+      "romaji": "tenpura, soba",
+      "what_pt": "A melhor refeição perto da montanha é de tempura e soba, junto à estação de Zaō.",
+      "where_pt": "Tsukumo.",
+      "must": true,
+      "pregnancy": "ok"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Vila de Zaō Onsen",
+      "name_ja": "蔵王温泉",
+      "kind": "bairro",
+      "story_pt": "Vila termal ao pé das pistas, com banhos públicos e lojas na Juhyō-dōri.",
+      "eat_pt": [
+        "Karakara-jiru",
+        "Igamochi",
+        "Tama-konnyaku"
+      ],
+      "tips_pt": "Coma no hotel à noite; de dia, lanche e desça para Yamagata.",
+      "dec_jan_pt": "Alta temporada no Ano-Novo; hotéis cheios.",
+      "query": "Zao Onsen"
+    },
+    {
+      "name": "Estação de Zaō / Narisawa",
+      "name_ja": "蔵王駅・成沢",
+      "kind": "estação",
+      "story_pt": "Na planície, não na montanha: onde fica a Tsukumo.",
+      "eat_pt": [
+        "Tempura e soba"
+      ],
+      "tips_pt": "Só fins de semana e feriados.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Zao Station Yamagata"
+    }
+  ],
+  "places": [
+    {
+      "name": "Tsukumo",
+      "name_ja": "つくも",
+      "area": "Narisawa, Yamagata, junto à estação de Zaō (não na vila)",
+      "genre_pt": "Tempura e soba",
+      "price_pt": "¥5–6k",
+      "tabelog": {
+        "score": 3.71,
+        "reviews": 178,
+        "url": "https://tabelog.com/yamagata/A0601/A060101/6000521/",
+        "awards": "天ぷら 百名店 2022, 2023, 2025"
+      },
+      "why_pt": "A melhor refeição verificada perto de Zaō: tempura de 百名店.",
+      "order_pt": "Tempura e soba.",
+      "pregnancy_pt": "Frito e cozido. Liberado.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Só sábado, domingo e feriados. Ano-Novo a confirmar.",
+      "query": "Tsukumo Narisawa Yamagata"
+    },
+    {
+      "name": "Robata",
+      "name_ja": "ロバタ",
+      "area": "Yamagata",
+      "genre_pt": "Jingisukan",
+      "tabelog": {
+        "score": 3.65,
+        "url": "https://tabelog.com/yamagata/A0601/A060101/6000693/"
+      },
+      "why_pt": "O jingisukan bem pontuado mais próximo; não verificado em detalhe.",
+      "order_pt": "Jingisukan.",
+      "pregnancy_pt": "Bem passado.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Robata jingisukan Yamagata"
+    },
+    {
+      "name": "Kanazawaya Gyūniku-ten",
+      "name_ja": "金澤屋牛肉店",
+      "area": "Yamagata",
+      "genre_pt": "Sukiyaki de carne de Yamagata",
+      "price_pt": "Almoço ¥1–4k, jantar ¥6–10k",
+      "tabelog": {
+        "score": 3.56,
+        "reviews": 164,
+        "url": "https://tabelog.com/yamagata/A0601/A060101/6007058/",
+        "awards": "すき焼き・しゃぶしゃぶ 百名店 2024"
+      },
+      "why_pt": "Dia de juhyō, noite de sukiyaki em Yamagata.",
+      "order_pt": "Sukiyaki.",
+      "pregnancy_pt": "Sem ovo cru.",
+      "group_pt": "6 cabem.",
+      "booking_pt": "Reserve.",
+      "dec_jan_pt": "Fecha às terças. Ano-Novo a confirmar.",
+      "query": "Kanazawaya Yamagata"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Igamochi",
+      "name_ja": "稲花餅",
+      "what_pt": "Doce da vila vendido nas lojas de lembranças.",
+      "buy_pt": "Igamochi para o lanche.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Zao igamochi"
+    },
+    {
+      "name": "Tama-konnyaku",
+      "name_ja": "玉こんにゃく",
+      "what_pt": "Barracas e lojas da vila.",
+      "buy_pt": "Espetinho quente depois do esqui.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "tama konnyaku Zao"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "https://ja.wikipedia.org/wiki/蔵王温泉",
+    "https://ja.wikipedia.org/wiki/玉こんにゃく",
+    "https://ja.wikipedia.org/wiki/芋煮会"
+  ]
+}

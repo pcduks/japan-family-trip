@@ -1,0 +1,23 @@
+{
+  "_about": "Food booking dates, merged into the trip's deadlines by the loader (src/lib/data/loader.ts) so What's next and the Food tab's Book by list show them. Built from data/food-deep/topics/calendar.json, 'Book by: the deadlines'. `place` is a food place id (<city>/<slug of its name>).",
+  "deadlines": [
+    { "id": "food-tokyo-big-night", "date": "2026-10-18", "item": "Book Tokyo's one big night for 20–23 Dec or 7–8 Jan: Sushi Arai, Kagurazaka Ishikawa or Myōjaku (rooms for 6: ask about a seventh chair)", "how": "Each place's own channel", "place": "tokyo/sushi-arai" },
+    { "id": "food-akasaka-kikunoi", "date": "2026-10-18", "item": "Ask Akasaka Kikunoi for 20–23 Dec (room for 6: ask whether seven fit)", "how": "Tabelog or phone", "place": "tokyo/akasaka-kikunoi" },
+    { "id": "food-sazenka-dec", "date": "2026-10-18", "item": "Sazenka: see what's left on 20, 22 or 23 Dec (closed Mondays) and ask about seven", "how": "Tabelog or official site", "place": "tokyo/sazenka" },
+    { "id": "food-kanazawa-dinners", "date": "2026-10-18", "item": "Book Kanazawa dinners for 27–29 Dec: Kabuna (room for 6, ask about seven) and Oden Miyuki (rooms for 10–20)", "how": "Phone", "place": "kanazawa/kabuna" },
+    { "id": "food-yukari-sakamoto", "date": "2026-10-18", "item": "Email Yukari Sakamoto about her depachika and market tour (weekday mornings: 21–23 Dec or 8 Jan)", "how": "Email", "source": "https://foodsaketokyo.com" },
+    { "id": "food-otome-zushi", "date": "2026-10-28", "item": "Otome Zushi (Kanazawa): online booking opens for dinner on 28 Dec; the tatami room takes seven", "how": "Online, 2 months ahead", "place": "kanazawa/otome-zushi" },
+    { "id": "food-sazenka-jan", "date": "2026-11-01", "item": "Sazenka and other 1st-of-the-month places: booking opens for January, for 7–8 Jan in Tokyo", "how": "Each place's own channel", "place": "tokyo/sazenka" },
+    { "id": "food-torishiki", "date": "2026-11-18", "item": "Torishiki: phone booking opens for January (18 Nov to confirm), 17:00–19:00 Japan time, for 7–8 Jan: ask whether they take seven", "how": "Phone, Japanese speaker or concierge", "place": "tokyo/torishiki" },
+    { "id": "food-soba-fujioka", "date": "2026-11-25", "item": "Soba Fujioka (Nagano): booking opens a month ahead for lunch on 25 or 26 Dec; 6-seat table, ask about a seventh", "how": "Reservation, cash only", "place": "nagano/soba-fujioka" },
+    { "id": "food-kyoto-osechi", "date": "2026-11-25", "item": "Order a Kyoto osechi box for 1 Jan (Takashimaya, Daimaru or a ryōtei)", "how": "In store" },
+    { "id": "food-kiji-tei", "date": "2026-12-01", "item": "Kiji-tei (Kawaguchiko): book lunch on Thu 7 Jan in the private room; phone 9:00–10:00 on business days", "how": "Phone", "place": "kawaguchiko/kiji-tei" },
+    { "id": "food-january-one-month", "date": "2026-12-01", "item": "One-month places: booking opens for January, the best window for elite Tokyo counters on 7–8 Jan", "how": "Each place's own channel" },
+    { "id": "food-toyosu-lottery", "date": "2026-12-02", "item": "Toyosu tuna-auction deck lottery opens (about 2–8 Dec) for 7 or 8 Jan: two applications for seven (5+2 or 4+3)", "how": "Online lottery" },
+    { "id": "food-new-year-hours", "date": "2026-12-07", "item": "Check New Year hours for the Kanazawa and Kyoto list; have the hotel phone in mid-December", "how": "Shop social media, concierge" },
+    { "id": "food-ginza-hachigo", "date": "2026-12-19", "item": "Ginza Hachigo: booking opens at 9:00 for next week's seats (21–24 Dec); book two seatings (4+3)", "how": "The shop's own channel", "place": "tokyo/ginza-hachigo" },
+    { "id": "food-konbini-osechi", "date": "2026-12-22", "item": "Konbini osechi: FamilyMart by 22 Dec, Lawson by about 25 Dec, 7-Eleven by 28 Dec", "how": "In store or app" },
+    { "id": "food-izuu", "date": "2026-12-28", "item": "Phone Izuu from 08:00 for saba-zushi to collect in Kyoto on 30 or 31 Dec", "how": "Phone", "place": "kyoto/izuu" },
+    { "id": "food-matsuba", "date": "2026-12-30", "item": "Matsuba nishin soba this afternoon, or at opening on the 31st", "how": "Walk in", "place": "kyoto/sohonke-nishin-soba-matsuba" }
+  ]
+}

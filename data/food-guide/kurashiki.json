@@ -1,0 +1,241 @@
+{
+  "slug": "kurashiki",
+  "name": "Kurashiki",
+  "tagline_pt": "Cidade de armazéns brancos à beira do canal: udon 'bukkake' que nasceu aqui, café de torra própria e peixe do mar interior.",
+  "history_pt": [
+    "Kurashiki quer dizer, mais ou menos, 'lugar dos armazéns'. No período Edo era território direto do xogunato, um entreposto de arroz e algodão. Os barcos subiam o canal até os armazéns de paredes brancas e telhas pretas que hoje formam o Bikan Chiku. Na era Meiji a fiação de algodão fez a fortuna dos Ōhara, que trouxeram arte europeia para o Museu Ōhara.",
+    "A mesa é a de Okayama: barazushi, mamakari em vinagre, sawara grelhada e frutas. A cidade tem a sua própria contribuição, a bukkake udon: udon frio com um caldo concentrado jogado por cima, criado na Furuichi, perto da estação, e hoje comida de todo o Japão."
+  ],
+  "winter_pt": "Inverno seco e frio. O canal fica tranquilo sem a multidão do verão. Época de sawara, de ostras do mar interior e de mamakari em conserva.",
+  "meibutsu": [
+    {
+      "name_pt": "Bukkake udon",
+      "name_ja": "ぶっかけうどん",
+      "romaji": "bukkake udon",
+      "what_pt": "Udon com caldo concentrado jogado por cima ('bukkake'), com nabo ralado, cebolinha e tempurá. Pode ser frio ou quente.",
+      "where_pt": "Furuichi Nakaten.",
+      "price_pt": "≈¥890–1.000",
+      "must": true
+    },
+    {
+      "name_pt": "Mamakari",
+      "name_ja": "ままかり",
+      "romaji": "mamakari",
+      "what_pt": "Sardinhinha do mar interior em vinagre, servida como sashimi, conserva ou sushi.",
+      "where_pt": "Hamayoshi.",
+      "price_pt": "A confirmar",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Peixe cru curado: fica a critério dela. A sawara grelhada é a troca segura."
+    },
+    {
+      "name_pt": "Sawara",
+      "name_ja": "鰆",
+      "romaji": "sawara",
+      "what_pt": "Cavala-espanhola, o peixe de Okayama, grelhada no estilo yūan (marinada de shōyu e cítrico).",
+      "where_pt": "Hamayoshi.",
+      "price_pt": "A confirmar",
+      "must": false
+    },
+    {
+      "name_pt": "Café de torra própria",
+      "name_ja": "自家焙煎珈琲",
+      "romaji": "jika baisen kōhī",
+      "what_pt": "Café coado em filtro de flanela (nel drip), torrado na casa, num kissaten clássico do Bikan.",
+      "where_pt": "Kurashiki Coffee Kan.",
+      "price_pt": "≈¥1.000",
+      "must": true
+    },
+    {
+      "name_pt": "Tonkatsu e teishoku de shokudō",
+      "name_ja": "とんかつ・定食",
+      "romaji": "tonkatsu teishoku",
+      "what_pt": "Shokudō antigo que é 百名店 duas vezes: de tonkatsu e de 'restaurante de bairro'.",
+      "where_pt": "Kappa.",
+      "price_pt": "¥1.000–2.000",
+      "must": false
+    },
+    {
+      "name_pt": "Pão de padaria artesanal",
+      "name_ja": "パン",
+      "romaji": "pan",
+      "what_pt": "Focaccia, pão de nozes e anpan de uma padaria 百名店 para o café da manhã.",
+      "where_pt": "Boulangerie mugi.",
+      "price_pt": "¥150–250 a peça",
+      "must": false
+    },
+    {
+      "name_pt": "Barazushi",
+      "name_ja": "ばら寿司",
+      "romaji": "barazushi",
+      "what_pt": "O sushi espalhado de Okayama, que também se come aqui.",
+      "where_pt": "Restaurantes de comida local do Bikan.",
+      "price_pt": "≈¥2.000–3.000",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Tem peças cruas: peça coberturas cozidas."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Bikan Chiku",
+      "name_ja": "倉敷美観地区",
+      "kind": "bairro",
+      "story_pt": "O canal com salgueiros e armazéns brancos, o Museu Ōhara e casas de comerciantes viradas cafés e lojas.",
+      "eat_pt": [
+        "Café no Kurashiki Coffee Kan",
+        "Parfait e curry no Miyake Shōten"
+      ],
+      "tips_pt": "Muito bonito de manhã cedo e no fim da tarde. Muitas lojas fecham às 17h.",
+      "dec_jan_pt": "Movimentado no Ano-Novo; horários a confirmar.",
+      "query": "Kurashiki Bikan Historical Quarter"
+    },
+    {
+      "name": "Estação de Kurashiki",
+      "name_ja": "倉敷駅",
+      "kind": "estação",
+      "story_pt": "A 10 minutos a pé do Bikan, com galerias cobertas no caminho e a Furuichi logo ali.",
+      "eat_pt": [
+        "Bukkake udon na Furuichi",
+        "Kappa para o almoço"
+      ],
+      "tips_pt": "Almoce na ida para o Bikan.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Kurashiki Station"
+    }
+  ],
+  "places": [
+    {
+      "name": "Bukkake Udon Furuichi Nakaten",
+      "name_ja": "ぶっかけうどん ふるいち 仲店",
+      "area": "Kurashiki · estação",
+      "genre_pt": "Udon",
+      "price_pt": "≈¥1.000",
+      "tabelog": {
+        "score": 3.6,
+        "reviews": 1049,
+        "url": "https://tabelog.com/en/okayama/A3302/A330201/33000046/"
+      },
+      "why_pt": "A casa onde a bukkake udon nasceu, segundo o próprio Tabelog. Barata, rápida e aberta o dia inteiro.",
+      "order_pt": "Kizami bukkake (¥890) ou bukkake de carne; inari-zushi.",
+      "pregnancy_pt": "Ok; evite cobertura de ovo cru.",
+      "group_pt": "130 lugares: os seis juntos.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "9h–21h todos os dias. Ano-Novo a confirmar.",
+      "query": "Furuichi Nakaten Kurashiki"
+    },
+    {
+      "name": "Kurashiki Coffee Kan",
+      "name_ja": "倉敷珈琲館",
+      "area": "Kurashiki · Bikan",
+      "genre_pt": "Kissaten",
+      "price_pt": "≈¥1.000",
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 783,
+        "url": "https://tabelog.com/en/okayama/A3302/A330201/33000383/",
+        "awards": "Kissaten 百名店 2021, 2022, 2026"
+      },
+      "why_pt": "Café de torra própria coado em flanela, 百名店 três vezes, no Bikan. Pausa obrigatória para o Pedro.",
+      "order_pt": "Soft Blend ou Mandheling Noir; o Granita di Caffè.",
+      "pregnancy_pt": "Uma xícara está ok.",
+      "group_pt": "42 lugares: dá para os seis fora do pico.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "10h–17h todos os dias. Ano-Novo a confirmar.",
+      "query": "Kurashiki Coffee Kan"
+    },
+    {
+      "name": "Hamayoshi",
+      "name_ja": "浜吉",
+      "area": "Kurashiki",
+      "genre_pt": "Peixe / kaiseki",
+      "price_pt": "Almoço ¥2.000–2.999 · jantar ¥6.000–9.999",
+      "tabelog": {
+        "score": 3.59,
+        "reviews": 270,
+        "url": "https://tabelog.com/en/okayama/A3302/A330201/33000045/"
+      },
+      "why_pt": "O jantar do mar interior em Kurashiki: mamakari de três jeitos e sawara grelhada, com sala para o grupo.",
+      "order_pt": "Omakase kaiseki (¥6.000); mamakari e sawara yūan-yaki.",
+      "pregnancy_pt": "Ela troca sashimi e mamakari crua por sawara grelhada e pratos cozidos; avise na reserva.",
+      "group_pt": "Sala no 2º andar para 4–30: os seis juntos.",
+      "booking_pt": "Online (o telefone pode não atender).",
+      "dec_jan_pt": "Fecha segundas. Ano-Novo a confirmar.",
+      "query": "Hamayoshi Kurashiki"
+    },
+    {
+      "name": "Kappa",
+      "name_ja": "かっぱ",
+      "area": "Kurashiki",
+      "genre_pt": "Shokudō / tonkatsu",
+      "price_pt": "¥1.000–2.000",
+      "tabelog": {
+        "score": 3.59,
+        "reviews": 1579,
+        "url": "https://tabelog.com/en/okayama/A3302/A330201/33000185/",
+        "awards": "Shokudō 百名店 2024, 2026; Tonkatsu 百名店 2017–2019, 2021"
+      },
+      "why_pt": "Shokudō de bairro com dois títulos de 百名店: almoço honesto, sem cara de turismo.",
+      "order_pt": "Tonkatsu teishoku.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "36 lugares (22 em mesa): os seis cabem.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Qua–dom, 11h20–14h e 17h–19h30; fecha segunda e terça. Ano-Novo a confirmar.",
+      "query": "Kappa Kurashiki tonkatsu",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note_pt": "Esteve lá 1 vez (nov 2019), segundo o diário de visitas do City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ]
+    },
+    {
+      "name": "Machiya Kissa Miyake Shōten",
+      "name_ja": "町家喫茶 三宅商店",
+      "area": "Kurashiki · Bikan",
+      "genre_pt": "Café / curry",
+      "price_pt": "¥1.000–1.999",
+      "tabelog": {
+        "score": 3.6,
+        "reviews": 651,
+        "url": "https://tabelog.com/en/okayama/A3302/A330201/33000295/",
+        "awards": "Cafe WEST 百名店 2025"
+      },
+      "why_pt": "Café numa casa de comerciante do Bikan, com parfaits de fruta da estação e curry.",
+      "order_pt": "Parfait da estação, curry.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "42 lugares e salas para 2–20: os seis juntos.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "Aberto o ano todo; horário varia por estação.",
+      "query": "Miyake Shoten Kurashiki"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Boulangerie mugi",
+      "name_ja": "ムギ",
+      "what_pt": "Padaria do Bread WEST 百名店 2026; Tabelog 3.60 (541), https://tabelog.com/en/okayama/A3302/A330201/33008388/.",
+      "buy_pt": "Focaccia de manjericão, anpan, pão de cranberry e nozes.",
+      "price_pt": "¥150–250 a peça",
+      "dec_jan_pt": "7h30–17h; só dinheiro. Ano-Novo a confirmar.",
+      "query": "Boulangerie mugi Kurashiki"
+    },
+    {
+      "name": "Kurashiki Coffee Kan (grãos)",
+      "name_ja": "倉敷珈琲館",
+      "what_pt": "Vende os grãos da torra da casa.",
+      "buy_pt": "Um pacote de café para levar.",
+      "dec_jan_pt": "10h–17h.",
+      "query": "Kurashiki Coffee Kan beans"
+    }
+  ],
+  "sources": [
+    "https://tabelog.com/en/okayama/A3302/A330201/rank/",
+    "https://tabelog.com/en/okayama/A3302/A330201/33000046/",
+    "https://tabelog.com/en/okayama/A3302/A330201/33000045/",
+    "https://tabelog.com/en/okayama/A3302/A330201/33000185/",
+    "https://tabelog.com/en/okayama/A3302/A330201/33000383/",
+    "https://ja.wikipedia.org/wiki/ばらずし_(岡山県)"
+  ]
+}

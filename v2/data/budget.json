@@ -1,0 +1,283 @@
+{
+  "_about": "Assumptions behind the per-couple budget. JPY unless stated. Lodging is per night for a group of six (as researched) at the mid tier, scaled for seven by seven_factor, of docs/research/07-lodging.md; the New Year uplift follows its ground rules. Fares are per person, reserved seats, from the plan doc's transport legs. Food and activity rates are the planners' estimates for this group. Change a number here and every version's budget follows.",
+  "currency": {
+    "jpy_per_sgd": 125,
+    "as_of": "2026-10-13",
+    "note": "OFX and clock7 quoted ¥125–127 per S$ from April to July 2026; rounded down to ¥125 for a small margin."
+  },
+  "target_per_couple_sgd": 15000,
+  "couples": 3,
+  "_seven": "Seven travel: three couples and Tatiana. Lodging rates below were researched for six, so seven_factor scales them: a fourth hotel room, ryokan priced per person, a bigger house or an extra bed. Lodging is split per head, so a couple pays 2/7.",
+  "seven_factor": { "hotel": 1.33, "ryokan": 1.17, "rental": 1.15 },
+  "people": 7,
+  "lodging_per_night_for_six": {
+    "tokyo": {
+      "hotel": 110000,
+      "rental": 110000,
+      "ryokan": 200000
+    },
+    "kanazawa": {
+      "hotel": 100000,
+      "rental": 110000,
+      "ryokan": 250000
+    },
+    "takayama": {
+      "hotel": 100000,
+      "rental": 90000,
+      "ryokan": 300000
+    },
+    "gero": {
+      "hotel": 90000,
+      "rental": 90000,
+      "ryokan": 210000
+    },
+    "kyoto": {
+      "hotel": 110000,
+      "rental": 120000,
+      "ryokan": 300000
+    },
+    "hakone": {
+      "hotel": 120000,
+      "rental": 120000,
+      "ryokan": 270000
+    },
+    "kinosaki": {
+      "hotel": 100000,
+      "rental": 100000,
+      "ryokan": 250000
+    },
+    "yudanaka": {
+      "hotel": 90000,
+      "rental": 90000,
+      "ryokan": 190000
+    },
+    "okuhida": {
+      "hotel": 120000,
+      "rental": 120000,
+      "ryokan": 220000
+    },
+    "okayama": {
+      "hotel": 90000,
+      "rental": 90000,
+      "ryokan": 200000
+    },
+    "hiroshima": {
+      "hotel": 85000,
+      "rental": 85000,
+      "ryokan": 200000
+    },
+    "kawaguchiko": {
+      "hotel": 110000,
+      "rental": 110000,
+      "ryokan": 220000
+    },
+    "miyajima": {
+      "hotel": 110000,
+      "rental": 100000,
+      "ryokan": 210000
+    },
+    "shirahama": {
+      "hotel": 100000,
+      "rental": 90000,
+      "ryokan": 220000
+    },
+    "nagano": {
+      "hotel": 75000,
+      "rental": 80000,
+      "ryokan": 180000
+    },
+    "arima": {
+      "hotel": 120000,
+      "rental": 110000,
+      "ryokan": 260000
+    },
+    "osaka": {
+      "hotel": 95000,
+      "rental": 95000,
+      "ryokan": 220000
+    },
+    "nara": {
+      "hotel": 90000,
+      "rental": 110000,
+      "ryokan": 230000
+    },
+    "kamakura": {
+      "hotel": 100000,
+      "rental": 100000,
+      "ryokan": 220000
+    },
+    "matsue": {
+      "hotel": 70000,
+      "rental": 70000,
+      "ryokan": 220000
+    },
+    "fukuoka": {
+      "hotel": 85000,
+      "rental": 70000,
+      "ryokan": 180000
+    },
+    "nagoya": {
+      "hotel": 85000,
+      "rental": 65000,
+      "ryokan": 180000
+    },
+    "atami": {
+      "hotel": 100000,
+      "rental": 90000,
+      "ryokan": 220000
+    },
+    "ise-shima": {
+      "hotel": 110000,
+      "rental": 90000,
+      "ryokan": 230000
+    },
+    "morioka": {
+      "hotel": 60000,
+      "rental": 55000,
+      "ryokan": 170000
+    },
+    "tsunagi": {
+      "hotel": 90000,
+      "rental": 90000,
+      "ryokan": 200000
+    },
+    "south-tohoku": {
+      "hotel": 70000,
+      "rental": 65000,
+      "ryokan": 200000
+    },
+    "north-tohoku": {
+      "hotel": 60000,
+      "rental": 50000,
+      "ryokan": 180000
+    },
+    "shuzenji": {
+      "hotel": 90000,
+      "rental": 90000,
+      "ryokan": 250000
+    }
+  },
+  "default_lodging_per_night_for_six": {
+    "hotel": 90000,
+    "rental": 95000,
+    "ryokan": 220000
+  },
+  "onsen_regions": [
+    "gero",
+    "hakone",
+    "kinosaki",
+    "yudanaka",
+    "okuhida",
+    "kusatsu",
+    "ginzan",
+    "shuzenji",
+    "kawaguchiko",
+    "shirahama",
+    "arima",
+    "matsue",
+    "atami",
+    "tsunagi"
+  ],
+  "new_year_uplift": {
+    "full": {
+      "dates": [
+        "2026-12-31",
+        "2027-01-01"
+      ],
+      "ryokan": 0.6,
+      "hotel": 0.4,
+      "rental": 0.4
+    },
+    "half": {
+      "dates": [
+        "2026-12-30",
+        "2027-01-02"
+      ],
+      "ryokan": 0.3,
+      "hotel": 0.2,
+      "rental": 0.2
+    }
+  },
+  "food_per_person_per_day": {
+    "gentle": 7500,
+    "balanced": 8500,
+    "full": 9500
+  },
+  "food_per_person_on_a_ryokan_day": 2500,
+  "activities_per_person_per_day": {
+    "gentle": 1800,
+    "balanced": 2500,
+    "full": 3500
+  },
+  "local_transport_per_person_per_day": 1200,
+  "fares_per_person": {
+    "tokyo>kanazawa": 14380,
+    "kanazawa>takayama": 5200,
+    "kanazawa>shirakawago": 2600,
+    "shirakawago>takayama": 2600,
+    "takayama>gero": 3000,
+    "gero>kyoto": 11000,
+    "kyoto>hakone": 13000,
+    "hakone>tokyo": 3000,
+    "tokyo>kyoto": 14170,
+    "kyoto>tokyo": 14170,
+    "kanazawa>kyoto": 8000,
+    "takayama>kyoto": 11000,
+    "kyoto>okayama": 7900,
+    "okayama>tokyo": 17700,
+    "kyoto>hiroshima": 11400,
+    "hiroshima>hakone": 18500,
+    "kyoto>kinosaki": 5500,
+    "kinosaki>tokyo": 20000,
+    "tokyo>yudanaka": 9600,
+    "yudanaka>kanazawa": 10500,
+    "takayama>okuhida": 2200,
+    "okuhida>gero": 5200,
+    "okuhida>kyoto": 13000,
+    "tokyo>hakone": 3000,
+    "tokyo>takayama": 15000,
+    "tokyo>gero": 14000,
+    "kanazawa>gero": 8000,
+    "gero>hakone": 16000,
+    "kyoto>nara": 1300,
+    "kyoto>kawaguchiko": 13300,
+    "kawaguchiko>tokyo": 4200,
+    "tokyo>kawaguchiko": 4200,
+    "hakone>kawaguchiko": 2500,
+    "hiroshima>miyajima": 620,
+    "miyajima>osaka": 11700,
+    "osaka>tokyo": 15100,
+    "tokyo>nagano": 8800,
+    "nagano>takayama": 10500,
+    "okuhida>kanazawa": 8600,
+    "kinosaki>arima": 5800,
+    "arima>tokyo": 15300,
+    "kyoto>kamakura": 13500,
+    "hiroshima>matsue": 11800,
+    "matsue>okayama": 6400,
+    "kanazawa>osaka": 10000,
+    "osaka>arima": 1400,
+    "arima>fukuoka": 16000,
+    "fukuoka>nagoya": 19200,
+    "nagoya>tokyo": 11500,
+    "kawaguchiko>atami": 4600,
+    "atami>shuzenji": 900,
+    "shuzenji>ise-shima": 11000,
+    "ise-shima>tokyo": 15000,
+    "tokyo>south-tohoku": 11500,
+    "south-tohoku>morioka": 6900,
+    "morioka>tsunagi": 1000,
+    "tsunagi>north-tohoku": 7500,
+    "north-tohoku>tokyo": 19500,
+    "kyoto>shirahama": 6500,
+    "shirahama>nara": 5900,
+    "nara>tokyo": 15900
+  },
+  "fare_per_hour_fallback": 3600,
+  "luggage_per_case_per_move": 2500,
+  "cases_per_couple": 2,
+  "extras_per_couple": {
+    "jpy": 25000,
+    "what": "SIM cards or eSIMs, luggage forwarding slack, a jumbo taxi or two, small gifts"
+  }
+}

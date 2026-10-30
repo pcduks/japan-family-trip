@@ -1,0 +1,12 @@
+/node_modules
+/.next/
+/out/
+*.tsbuildinfo
+next-env.d.ts
+.env*
+!.env.example
+/data/travellers.json
+.vercel
+/src/data/trip-data.json
+/src/data/plan-doc.json
+/src/data/catalog.json

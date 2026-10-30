@@ -1,0 +1,256 @@
+{
+  "slug": "kawaguchiko",
+  "name": "Lake Kawaguchiko",
+  "tagline": "Kai country at the foot of Fuji: thick noodles in miso, and a hard udon from a textile town.",
+  "history": [
+    "Kawaguchiko is in the old province of Kai (Yamanashi), Takeda Shingen's land. Rice grew poorly, and when silkworm farming turned paddies into mulberry fields, winter wheat became the staple. Hence hōtō: thick, flat noodles with no salt in the dough that go raw straight into the miso pot, thickening the broth along with the pumpkin as it breaks down.",
+    "The story goes that Shingen cut the ingredients with his sword, but Japanese Wikipedia treats that as post-war tourist folklore. The name probably comes from 餺飥 (hakutaku), a noodle dish cited in Heian-era dictionaries.",
+    "Next door in Fujiyoshida, the everyday food is Yoshida udon. In the silk-weaving town the women wove and the men cooked a hard, filling udon so they could eat without stopping work. It also fed the Fuji pilgrims. Today there are over 60 shops, almost all lunch-only, many in family homes."
+  ],
+  "winter": "Winter is hōtō season, with pumpkin, taro and mushrooms. December and January bring the clearest days for seeing Fuji.",
+  "meibutsu": [
+    {
+      "name": "Hōtō",
+      "name_ja": "ほうとう",
+      "romaji": "hōtō",
+      "what": "Thick noodles cooked in an iron pot in miso broth with pumpkin, vegetables and mushrooms.",
+      "where": "Kiji-tei; Kosaku (where Mark Wiens ate).",
+      "must": true,
+      "pregnancy": "ok",
+      "glance": "Thick flat noodles simmered in miso with pumpkin and vegetables.",
+      "story": "Legend says Takeda Shingen cut the ingredients with his sword, but that's post-war tourist folklore. The real story is wheat: in Kai, rice grew poorly and silk farming turned paddies into mulberry fields, so winter wheat became the staple. Hōtō noodles have no salt in the dough and go raw into the miso pot, where they and the softening pumpkin thicken the broth. Eat it hot from the iron pot."
+    },
+    {
+      "name": "Yoshida udon",
+      "name_ja": "吉田のうどん",
+      "romaji": "Yoshida no udon",
+      "what": "Very firm udon with boiled cabbage, aburaage and meat (traditionally horse, cooked), seasoned with suridane, a chilli-and-sesame paste.",
+      "where": "Miura Udon, 麺許皆伝, 桜井うどん in Fujiyoshida.",
+      "must": true,
+      "pregnancy": "ok",
+      "glance": "Very firm udon with cabbage, fried tofu and meat, plus chilli paste.",
+      "story": "In Fujiyoshida, a silk-weaving town, the women wove and the men cooked, making a hard, filling udon so everyone could eat without stopping work. It also fed the pilgrims heading up Fuji. Today over 60 shops serve it, almost all at lunch only, many in family homes. Expect very firm noodles with boiled cabbage, aburaage and meat. Stir in suridane, the chilli-and-sesame paste, to taste."
+    },
+    {
+      "name": "Pheasant",
+      "name_ja": "きじ料理",
+      "romaji": "kiji ryōri",
+      "what": "Pheasant in hōtō and other dishes, the speciality of a house more than 50 years old.",
+      "where": "Kiji-tei.",
+      "must": false,
+      "pregnancy": "ok",
+      "glance": "Pheasant in hōtō, the speciality of a 50-year-old house."
+    },
+    {
+      "name": "Shingen-mochi",
+      "name_ja": "信玄餅",
+      "romaji": "Shingen-mochi",
+      "what": "Little mochi with kinako and black-sugar syrup, Yamanashi's classic souvenir.",
+      "where": "Souvenir shops and stations.",
+      "must": false,
+      "pregnancy": "ok",
+      "glance": "Little mochi with roasted soy flour and black-sugar syrup."
+    },
+    {
+      "name": "Kōshū wine",
+      "name_ja": "甲州ワイン",
+      "romaji": "Kōshū wine",
+      "what": "Yamanashi is the capital of Japanese wine, made from the white Kōshū grape.",
+      "where": "Liquor shops.",
+      "must": false,
+      "pregnancy": "avoid",
+      "pregnancy_note": "Alcohol. Fernanda skips it and has local grape juice instead.",
+      "glance": "Japanese white wine from Yamanashi's own Kōshū grape."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Around Kawaguchiko Station",
+      "name_ja": "河口湖駅周辺",
+      "kind": "station",
+      "story": "Where the big hōtō halls and Kiji-tei are.",
+      "eat": [
+        "Hōtō"
+      ],
+      "tips": "The hōtō halls (Fudō and others) sit at 3.41–3.49 on Tabelog: easy, not excellent.",
+      "dec_jan": "We're here 5–7 Jan, just after New Year; whether everything has reopened is to confirm.",
+      "query": "Kawaguchiko Station",
+      "glance": "Home of the big hōtō halls and the pheasant house Kiji-tei."
+    },
+    {
+      "name": "Central Fujiyoshida",
+      "name_ja": "富士吉田",
+      "kind": "neighbourhood",
+      "story": "The old silk and pilgrim town, with dozens of udon shops.",
+      "eat": [
+        "Yoshida udon"
+      ],
+      "tips": "Lunch only; many close on Sundays.",
+      "dec_jan": "Many close over New Year: check shop by shop that they've reopened by 5–7 Jan. None of our days is a Sunday.",
+      "query": "Fujiyoshida udon",
+      "glance": "Old silk and pilgrim town with dozens of lunch-only udon shops."
+    }
+  ],
+  "places": [
+    {
+      "name": "Kiji-tei",
+      "name_ja": "きじ亭",
+      "area": "Kawaguchiko · 10 min walk from the station",
+      "genre": "Pheasant, hōtō",
+      "price": "¥2–4k",
+      "tabelog": {
+        "score": 3.67,
+        "reviews": 208,
+        "url": "https://tabelog.com/yamanashi/A1903/A190303/19000366/",
+        "awards": "none"
+      },
+      "why": "Tabelog's Yamanashi hōtō roundup puts this pheasant house at the top, above the tourist halls.",
+      "order": "Pheasant hōtō.",
+      "pregnancy_note": "All cooked. Fine for Fernanda.",
+      "group": "Private room for 10–20; seven fit if we book.",
+      "booking": "Online, taken 9:00–10:00 on weekdays. Only 5 groups a day.",
+      "dec_jan": "Lunch only; closed Tuesdays and Wednesdays, so for us only Thu 7 Jan, our leaving day. Post-New Year hours to confirm.",
+      "query": "Kiji-tei Kawaguchiko",
+      "pregnancy": "ok",
+      "seven": "room",
+      "closed_weekdays": [
+        "Tue",
+        "Wed"
+      ],
+      "meals": [
+        "lunch"
+      ],
+      "booking_channel": "online",
+      "booking_opens": "Weekdays 9:00–10:00 only",
+      "glance": "Pheasant hōtō from a 50-year-old house; Tabelog's top hōtō."
+    },
+    {
+      "name": "Kosaku",
+      "name_ja": "小作",
+      "area": "Kawaguchiko",
+      "genre": "Hōtō",
+      "tabelog": {
+        "score": 3.49,
+        "url": "https://tabelog.com/en/yamanashi/A1903/A190303/19000046/"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Ate hōtō here in a day-trip video through the Kantō mountains.",
+          "url": "https://www.youtube.com/watch?v=bgzyczSWOu8"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Logged as “Koshu Houtou Kosaku”, Sep 2016 (once), per City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "One of the big hōtō halls: under 3.5, but easy for a group.",
+      "order": "Pumpkin hōtō.",
+      "pregnancy_note": "Fine.",
+      "group": "Big hall (to confirm).",
+      "booking": "To confirm.",
+      "dec_jan": "Hours on 5–7 Jan to confirm.",
+      "query": "Kosaku hoto Kawaguchiko",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "glance": "A big, easy hōtō hall where Mark Wiens ate."
+    },
+    {
+      "name": "Miura Udon",
+      "name_ja": "みうらうどん",
+      "area": "Fujiyoshida",
+      "genre": "Yoshida udon",
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 1651,
+        "url": "https://tabelog.com/yamanashi/A1903/A190301/19000359/",
+        "awards": "うどん 百名店 2020, 2022, 2024"
+      },
+      "why": "What people around Fuji really eat for lunch.",
+      "order": "Hot udon with cabbage and meat, plus suridane.",
+      "pregnancy_note": "Fine.",
+      "group": "45 seats at tables of 6: ask to squeeze a seventh in, or split 4+3.",
+      "booking": "No reservations.",
+      "dec_jan": "10:00–14:00; closed Wednesdays (6 Jan), so Tue 5 or Thu 7 Jan. Post-New Year hours to confirm.",
+      "query": "Miura Udon Fujiyoshida",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "meals": [
+        "lunch"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "The Fuji locals' lunch: firm Yoshida udon with chilli paste."
+    },
+    {
+      "name": "Menkyo Kaiden",
+      "name_ja": "麺許皆伝",
+      "area": "Fujiyoshida",
+      "genre": "Yoshida udon",
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 824,
+        "url": "https://tabelog.com/yamanashi/A1903/A190301/19000136/",
+        "awards": "うどん EAST 百名店 2024"
+      },
+      "why": "The second Yoshida udon pick from the 百名店.",
+      "order": "The house udon.",
+      "pregnancy_note": "Fine.",
+      "group": "To confirm.",
+      "booking": "To confirm.",
+      "dec_jan": "Hours on 5–7 Jan to confirm.",
+      "query": "Menkyo Kaiden Fujiyoshida",
+      "pregnancy": "ok",
+      "glance": "The second Yoshida udon pick from Tabelog's top-100 list."
+    },
+    {
+      "name": "Sakurai Udon",
+      "name_ja": "桜井うどん",
+      "area": "Fujiyoshida",
+      "genre": "Yoshida udon",
+      "tabelog": {
+        "score": 3.62,
+        "reviews": 554,
+        "url": "https://tabelog.com/yamanashi/A1903/A190301/19000357/",
+        "awards": "うどん EAST 百名店 2024"
+      },
+      "why": "The third from the 百名店, family-home style.",
+      "order": "Hot udon.",
+      "pregnancy_note": "Fine.",
+      "group": "To confirm.",
+      "booking": "To confirm.",
+      "dec_jan": "Hours on 5–7 Jan to confirm.",
+      "query": "Sakurai Udon Fujiyoshida",
+      "pregnancy": "ok",
+      "glance": "Yoshida udon in a family-home setting, also on the top-100 list."
+    }
+  ],
+  "shops": [
+    {
+      "name": "Shingen-mochi",
+      "name_ja": "信玄餅",
+      "what": "Sold in Yamanashi's souvenir shops and stations.",
+      "buy": "Little boxes as gifts.",
+      "dec_jan": "To confirm.",
+      "query": "Shingen mochi"
+    },
+    {
+      "name": "Suridane",
+      "name_ja": "すりだね",
+      "what": "The chilli paste of the Yoshida udon shops; some sell it in jars.",
+      "buy": "A jar to take home.",
+      "dec_jan": "To confirm.",
+      "query": "suridane Yoshida udon"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "docs/research/food/11-critics-international.md",
+    "https://www.youtube.com/watch?v=bgzyczSWOu8",
+    "https://ja.wikipedia.org/wiki/ほうとう",
+    "https://ja.wikipedia.org/wiki/吉田のうどん"
+  ]
+}

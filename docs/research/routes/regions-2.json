@@ -1,0 +1,1420 @@
+{
+  "matsue": {
+    "area": {
+      "prefecture": "Shimane",
+      "tags": [
+        "onsen",
+        "museums",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "Matsue Castle",
+          "blurb": "One of the twelve original keeps, black-timbered, with Lake Shinji from the top floor. Open every day of the year."
+        },
+        {
+          "title": "The Adachi garden",
+          "blurb": "Ranked Japan's finest garden for over twenty years, seen through the museum's windows like paintings, with Yokoyama Taikan's works inside."
+        },
+        {
+          "title": "Izumo Taisha",
+          "blurb": "One of Japan's oldest and greatest shrines, with its vast straw rope, an hour away on the little Ichibata line."
+        },
+        {
+          "title": "Lake Shinji at sunset",
+          "blurb": "One of the country's celebrated sunsets, from the flat promenade by the prefectural art museum."
+        },
+        {
+          "title": "Kotatsu boats on the moat",
+          "blurb": "A slow ride round the castle moats at a heated table, ducking under low bridges."
+        }
+      ],
+      "window": [
+        "The castle is open every day, New Year included, and the Adachi Museum says the same; the history museum and the Lafcadio Hearn house close for New Year.",
+        "Izumo Taisha takes its big crowds on 1–3 Jan, so 30 Dec is the calm day to go.",
+        "Winter here is grey and damp more often than snowy; snow on the Chugoku mountains can delay the Yakumo.",
+        "About 2 h 30 from Okayama, so about four hours from Kyoto or Hiroshima."
+      ],
+      "feel": "A small castle town between a lake and a lagoon: willow-lined moats, samurai lanes and a sunset people travel for. Quiet, unshowy, and the right size for a slow New Year.",
+      "getting_there": "The Yakumo limited express from Okayama, about 2 h 30 over the mountains. Okayama is 45 minutes from Shin-Osaka and 35 from Hiroshima by shinkansen.",
+      "for_her": "Flat lakeside and moat walks, a heated boat, and lakeside onsen inns with private baths. The castle keep has steep wooden stairs, so the grounds may be enough for Fernanda. Matsue Red Cross Hospital, with a perinatal centre that answers at night and over New Year, is about ten minutes away by taxi.",
+      "zone": "west"
+    },
+    "lodging": {
+      "type": "ryokan",
+      "why": "With restaurants shut over New Year, a lakeside onsen inn makes it easy: dinner and breakfast included, osechi on 1 Jan, and Lake Shinji outside the window. Choose a room with its own bath for Fernanda.",
+      "fit": "Three rooms and a single, or two rooms for three and one for a couple. Naniwa Issui and Minamikan have rooms with private baths; Hotel Ichibata has lake-side triples, beds and a lift.",
+      "outlook": "Probably open. Matsue is far quieter over New Year than the famous onsen towns, but the few rooms with their own baths go first. Check 31 Dec in a browser.",
+      "tiers": {
+        "budget": [
+          130000,
+          200000
+        ],
+        "mid": [
+          200000,
+          330000
+        ],
+        "top": [
+          350000,
+          550000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hotel Ichibata",
+          "url": "https://www.ikyu.com/en-us/00031299/",
+          "tier": "budget",
+          "area": "Shinjiko Onsen, on the lake",
+          "what": "132 rooms, with lake-side triples of 36 m² and a top-floor onsen looking over the lake; a minute from the Ichibata line station.",
+          "price": "Lake-side triples from about ¥18,000 a room without meals; about ¥130,000–200,000 for six with dinner over New Year (estimate)",
+          "fit": "Beds, lift. No private baths: Fernanda would use the shared bath at quiet hours or the room's tub.",
+          "verified": true
+        },
+        {
+          "name": "Naniwa Issui",
+          "url": "https://selected-ryokan.com/ryokan/naniwa-issui_izumo-tamatsukuri-lake-shinji_shimane_chugoku.html",
+          "tier": "mid",
+          "area": "Shinjiko Onsen, on the lake",
+          "what": "25 rooms facing the lake; seven with their own open-air hot-spring bath, plus four designer Minamo rooms with baths; kaiseki of lake fish.",
+          "price": "¥25,700–62,200 per person with dinner and breakfast, so about ¥155,000–375,000 for six; New Year plans cost more",
+          "fit": "Ask for the rooms with private baths, and beds where they have them.",
+          "verified": true
+        },
+        {
+          "name": "Minamikan",
+          "url": "https://www.minami-g.co.jp/minamikan/",
+          "tier": "top",
+          "area": "By the lake, five minutes' walk from the castle",
+          "what": "A garden inn of 19 rooms, some with a bath looking over Lake Shinji; known for its sea-bream rice.",
+          "price": "Not published; expect ¥350,000 or more for six with meals over New Year (estimate)",
+          "fit": "Small and traditional; ask about beds and stairs.",
+          "verified": true
+        }
+      ]
+    },
+    "stay": {
+      "best": "3 nights (4 over New Year)",
+      "date_notes": [
+        "Every day: Matsue Castle and the Adachi Museum of Art are open, New Year included.",
+        "29 Dec–1 Jan: the Matsue History Museum is closed; the Hearn house and museum close for New Year too.",
+        "30 Dec: the last calm day at Izumo Taisha before the New Year crowds.",
+        "31 Dec: New Year's Eve dinner at the inn; most restaurants in town close.",
+        "1–3 Jan: Izumo Taisha is at its busiest; go early or not at all.",
+        "Winter: the Horikawa kotatsu boats run, but check 31 Dec and 1 Jan; they stop in strong wind or high water."
+      ],
+      "nights": {
+        "1": {
+          "why": "An evening by the lake and one morning: the castle, or the sunset if the train is on time. The Yakumo takes 2 h 30 each way, so one night barely repays the trip.",
+          "longer": "A second night gives a full day for the Adachi garden or Izumo Taisha.",
+          "shorter": "A single night is a long way to go for a sunset.",
+          "idle": "none",
+          "note": "Mostly train."
+        },
+        "2": {
+          "why": "One full day: the castle, Shiomi Nawate and a kotatsu boat in the morning, the Adachi garden in the afternoon, Lake Shinji at sunset. Izumo Taisha has to wait.",
+          "longer": "A third night adds Izumo Taisha and its warigo soba, an hour away on the Ichibata line.",
+          "shorter": "One night is a sunset and a train.",
+          "idle": "none",
+          "note": "Full; the journeys in and out are long."
+        },
+        "3": {
+          "why": "Two full days: the Adachi garden on one, Izumo Taisha on the other, the castle and the moats in between. The right length outside New Year.",
+          "longer": "A fourth night gives an easy day after the long arrival, or an afternoon at Tamatsukuri Onsen, 20 minutes away.",
+          "shorter": "Two nights loses Izumo Taisha or the Adachi garden.",
+          "idle": "none",
+          "note": "Two good days with the long arrival behind you."
+        },
+        "4": {
+          "why": "The New Year shape: an easy day after the four-hour arrival, the Adachi garden, Izumo Taisha on 30 Dec before the crowds, and a slow 31 Dec of castle, boat and bath before the inn's dinner. Fernanda gets a quiet day either side of the long trains.",
+          "longer": "A fifth night would be a true rest day with little new to see.",
+          "shorter": "Three nights means leaving on a peak day, or losing the Adachi garden or Izumo Taisha.",
+          "idle": "some",
+          "note": "31 Dec is light by design."
+        },
+        "5": {
+          "why": "Too long for a small town in winter unless the point is rest; the extra day is a bath day at Tamatsukuri Onsen or a second look at the lake.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already generous.",
+          "idle": "real",
+          "note": "One idle day, two in bad weather."
+        }
+      }
+    },
+    "rates": {
+      "hotel": 70000,
+      "rental": 70000,
+      "ryokan": 220000
+    },
+    "kanji": "松江",
+    "snow": 1,
+    "prefectures": [
+      "shimane"
+    ],
+    "side": "t",
+    "onsen": true
+  },
+  "fukuoka": {
+    "area": {
+      "prefecture": "Fukuoka",
+      "tags": [
+        "food",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "The yatai",
+          "blurb": "About a hundred open-air stalls in Nakasu and Tenjin, eight or ten seats each, for ramen, oden and yakitori."
+        },
+        {
+          "title": "Tonkotsu ramen",
+          "blurb": "Hakata's pork-bone ramen, at the counters where the style began or the Ramen Stadium in Canal City."
+        },
+        {
+          "title": "Mizutaki and motsunabe",
+          "blurb": "The city's two hot pots, chicken and offal, both cooked through at the table."
+        },
+        {
+          "title": "Dazaifu Tenmangu",
+          "blurb": "The scholars' shrine among plum trees, 30 minutes away, with umegae-mochi baked at the gate."
+        },
+        {
+          "title": "Yanagawa",
+          "blurb": "A punted boat with a kotatsu through a castle town's canals, then eel steamed in a bamboo box."
+        }
+      ],
+      "window": [
+        "Almost every yatai is shut on 31 Dec and 1 Jan; about half are back on 2–3 Jan and most by 4 Jan.",
+        "Dazaifu takes about two million people over 1–3 Jan; from 4 Jan it is calm again.",
+        "Mild and dry, about 10 °C by day. The city's museums close for New Year, roughly 28 Dec–4 Jan.",
+        "Hakata Hankyu has opened its New Year sale on 1 Jan in past years; most department stores reopen on the 2nd."
+      ],
+      "feel": "A big, flat, easy city by the sea where food is the point: steam from the stalls along the river, ramen at midnight, hot pot at lunch. Relaxed and mild, and a long way from the rest of the trip.",
+      "getting_there": "Nozomi from Shin-Osaka about 2 h 30, from Kyoto about 2 h 45. From Tokyo it is five hours by train, or a flight.",
+      "for_her": "Flat, mild and compact, with taxis everywhere, and mizutaki is about the ideal meal. She may want to skip the raw squid and sashimi at the stalls. Kyushu University Hospital has obstetrics, and Fukuoka University Hospital's perinatal centre takes emergencies around the clock.",
+      "zone": "south"
+    },
+    "lodging": {
+      "type": "rental",
+      "why": "Over 1–3 Jan most stalls and many restaurants are shut, so a kitchen and a living room help. An apartment near Hakata or Tenjin also puts the yatai a short walk away once they reopen. Three hotel rooms and a single are the easy fallback.",
+      "fit": "An apartment for six to eight with a fourth bed or sofa bed, or three rooms and a single at a station hotel.",
+      "outlook": "Open. Fukuoka is quiet over New Year and city prices barely move; the new Richmond family rooms may go quickly.",
+      "tiers": {
+        "budget": [
+          40000,
+          70000
+        ],
+        "mid": [
+          75000,
+          120000
+        ],
+        "top": [
+          140000,
+          240000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "HOTEL All Stay Hakata Kukodori",
+          "url": "https://www.expedia.com/go/hotel/info/57669052",
+          "tier": "budget",
+          "area": "Hakata, towards the airport",
+          "what": "Seven apartments with kitchenettes and washer-dryers, the largest 71 m² for up to eleven; contactless check-in.",
+          "price": "Roughly ¥40,000–70,000 for the apartment (estimate)",
+          "fit": "Everyone in one unit. No front desk, so no luggage forwarding from the door.",
+          "verified": false
+        },
+        {
+          "name": "Richmond Hotel Fukuoka Tenjin",
+          "url": "https://travel.rakuten.co.jp/HOTEL/56733/56733_std.html",
+          "tier": "budget",
+          "area": "Tenjin, three minutes from Tenjin-Minami station",
+          "what": "Closed for a full refit and due to reopen on 24 Dec 2026, reportedly with new 48 m² family rooms for up to six (four beds, two of them sofa beds).",
+          "price": "Not yet published; Richmond rates are usually modest (estimate ¥50,000–80,000 for six)",
+          "fit": "Beds, lift, front desk. Brand new, but confirm the family rooms exist before counting on them.",
+          "verified": false
+        },
+        {
+          "name": "Hotel Nikko Fukuoka",
+          "url": "https://www.ikyu.com/en-us/00000082/",
+          "tier": "mid",
+          "area": "Three minutes from Hakata station by underground passage",
+          "what": "A large, well-run hotel; twins of 29–35 m² from about ¥27,000 a room.",
+          "price": "About ¥90,000–120,000 for three twins and a single",
+          "fit": "Beds, lift, a front desk for taxis and bags, and under cover all the way to the shinkansen.",
+          "verified": true
+        }
+      ]
+    },
+    "stay": {
+      "best": "3 nights (4 over New Year)",
+      "date_notes": [
+        "Until 30 Dec: the yatai are out most evenings and Yanagibashi market is busy with New Year shopping.",
+        "31 Dec–1 Jan: almost every yatai and most independent restaurants are shut; Canal City and the station chains stay open.",
+        "1–3 Jan: Dazaifu Tenmangu takes about two million people; go from 4 Jan, early.",
+        "2 Jan: department-store sales and food halls reopen; Hakata Hankyu has opened on 1 Jan in past years.",
+        "3 Jan: Tamaseseri at Hakozaki shrine, men in loincloths tussling for a wooden ball; watch from the edge.",
+        "About 28 Dec–4 Jan: the city's museums are closed."
+      ],
+      "nights": {
+        "1": {
+          "why": "A stopover: one evening of ramen or the stalls, then the train out. Fukuoka is 2 h 30 from Osaka and five hours from Tokyo, so one night barely repays the trip.",
+          "longer": "A second night gives one full food day.",
+          "shorter": "A single night is a long way to go for a bowl of ramen.",
+          "idle": "none",
+          "note": "Mostly train."
+        },
+        "2": {
+          "why": "One full day: a market morning, Ohori Park or Canal City, mizutaki for lunch, the yatai at night. Dazaifu or Yanagawa has to wait.",
+          "longer": "A third night adds Dazaifu or Yanagawa's kotatsu boats.",
+          "shorter": "One night is dinner and the train.",
+          "idle": "none",
+          "note": "Full, and easy on the legs."
+        },
+        "3": {
+          "why": "Two full days: the city's food on one, Dazaifu or Yanagawa on the other. In December everything is open; over 1–3 Jan the stalls and many restaurants are shut.",
+          "longer": "A fourth night lets the city wake up after New Year, or adds an easy day.",
+          "shorter": "Two nights loses the day out.",
+          "idle": "none",
+          "note": "Comfortable."
+        },
+        "4": {
+          "why": "The New Year shape: arrive on the quiet 1 Jan and stay through the busy 2–4 Jan while the city reopens. An easy 2 Jan of food halls and Ohori Park, Yanagawa on the 3rd, and on the 4th the yatai back and Dazaifu calm.",
+          "longer": "A fifth night buys Nagasaki or Karatsu once the trains calm down.",
+          "shorter": "Three nights means moving on 4 Jan, a peak day.",
+          "idle": "some",
+          "note": "2 Jan is slow; the city is still half asleep."
+        },
+        "5": {
+          "why": "Fukuoka plus a day out to Nagasaki, about 1 h 30 with one change, or the pottery town of Karatsu. Good for Fernanda; João and Carolina may want more.",
+          "longer": "A sixth night is too long so far from the rest of the route.",
+          "shorter": "Four nights drops the day out.",
+          "idle": "some",
+          "note": "One easy day."
+        }
+      }
+    },
+    "rates": {
+      "hotel": 85000,
+      "rental": 70000,
+      "ryokan": 180000
+    },
+    "kanji": "福岡",
+    "snow": 0,
+    "prefectures": [
+      "fukuoka"
+    ],
+    "side": "l",
+    "onsen": false
+  },
+  "nagoya": {
+    "area": {
+      "prefecture": "Aichi",
+      "tags": [
+        "food",
+        "museums"
+      ],
+      "known_for": [
+        {
+          "title": "Hitsumabushi",
+          "blurb": "Grilled eel on rice eaten three ways; Atsuta Houraiken has served it since 1873."
+        },
+        {
+          "title": "Red miso and fried wings",
+          "blurb": "Miso-katsu, miso-nikomi udon and tebasaki chicken wings, all cooked and all filling."
+        },
+        {
+          "title": "The Honmaru Palace",
+          "blurb": "Nagoya Castle's rebuilt palace of painted screens and gold, all on one level."
+        },
+        {
+          "title": "Atsuta Shrine",
+          "blurb": "Home of one of the imperial regalia, in a grove of great camphor trees."
+        },
+        {
+          "title": "SCMaglev and Railway Park",
+          "blurb": "JR Central's train museum, with old shinkansen, steam engines and the maglev. Closed on Tuesdays."
+        }
+      ],
+      "window": [
+        "Nagoya Castle closes 29 Dec–1 Jan; the wooden keep itself is shut for rebuilding, but the palace is open.",
+        "Atsuta Shrine takes over two million visitors on 1–3 Jan; from about 5 Jan it is calm.",
+        "Atsuta Houraiken's main shop closes on Wednesdays and the 2nd and 4th Thursdays; the department-store branches are the fallback.",
+        "Dry, cold and usually sunny."
+      ],
+      "feel": "Japan's fourth city, flat and practical, with a big appetite: eel, red miso and fried wings, the Osu shopping arcades, and a castle palace in gold. A good place to break a long journey and eat well.",
+      "getting_there": "On the Tokaido shinkansen: 1 h 40 from Tokyo, 35 minutes from Kyoto, about 3 h 20 from Hakata. The Kintetsu to Ise-Shima leaves from next door.",
+      "for_her": "Flat, with lifts, taxis and big hotels joined to the station. Everything above is cooked. Nagoya University Hospital and Nagoya City University Hospital are 15–20 minutes by taxi.",
+      "zone": "near"
+    },
+    "lodging": {
+      "type": "hotel",
+      "why": "One or two nights on the way through, so a hotel on top of the station: no taxis with bags, and the train out is a lift ride away.",
+      "fit": "Three rooms and a single, or a corner room for three and two twins. GRAND BASE has apartments that sleep seven.",
+      "outlook": "Open. Nagoya is a business city and quiet in the first week of January.",
+      "tiers": {
+        "budget": [
+          40000,
+          65000
+        ],
+        "mid": [
+          70000,
+          110000
+        ],
+        "top": [
+          130000,
+          220000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Nagoya JR Gate Tower Hotel",
+          "url": "https://www.ikyu.com/en-us/00002368/",
+          "tier": "mid",
+          "area": "Above JR Nagoya station",
+          "what": "350 rooms on floors 15–24; doubles from about ¥27,500 and 28 m² twins from about ¥33,000 a room. Some rooms look down on the shinkansen tracks.",
+          "price": "About ¥100,000–130,000 for three twins and a single",
+          "fit": "Beds, lift, under one roof with the trains. Maglev construction may be audible in some rooms.",
+          "verified": true
+        },
+        {
+          "name": "Nagoya Marriott Associa Hotel",
+          "url": "https://www.marriott.com/en-us/hotels/ngodt-nagoya-marriott-associa-hotel/rooms",
+          "tier": "top",
+          "area": "JR Central Towers, above the station",
+          "what": "Rooms on floors 20–49 and a 54 m² family room for four.",
+          "price": "About ¥150,000–220,000 for six (estimate)",
+          "fit": "Beds, lift, and the view.",
+          "verified": true
+        },
+        {
+          "name": "GRAND BASE Nagoya Ekinishi",
+          "url": "https://www.hotels.com/ho1562650400/grand-base-nagoya-ekinishi-nagoya-japan",
+          "tier": "budget",
+          "area": "West side, about ten minutes' walk from the station",
+          "what": "Apartments with kitchens and washing machines; a 40 m² unit for seven and larger three-bedroom units.",
+          "price": "Roughly ¥40,000–65,000 for the apartment (estimate)",
+          "fit": "Everyone together; take a taxi from the station with the bags.",
+          "verified": false
+        }
+      ]
+    },
+    "stay": {
+      "best": "2 nights",
+      "date_notes": [
+        "29 Dec–1 Jan: Nagoya Castle and the Honmaru Palace are closed; the keep is shut for rebuilding all year.",
+        "1–3 Jan: Atsuta Shrine and Osu Kannon are a crush.",
+        "Tuesdays: the SCMaglev and Railway Park is closed (Tue 5 Jan).",
+        "Wednesdays and the 2nd and 4th Thursdays: Atsuta Houraiken's main shop is closed (Wed 6 Jan).",
+        "From about 5 Jan: restaurants and museums are back to normal."
+      ],
+      "nights": {
+        "1": {
+          "why": "A stopping place: an evening of tebasaki and miso, then on. It splits a long ride, such as Hakata to Tokyo, into two easy halves.",
+          "longer": "A second night gives one full day: Atsuta, eel and the castle palace.",
+          "shorter": "A single night is the least it can be.",
+          "idle": "none",
+          "note": "No time for the city, and that is the point."
+        },
+        "2": {
+          "why": "One full day: Atsuta Shrine in the morning, hitsumabushi for lunch, the Honmaru Palace in the afternoon, miso-nikomi udon at night.",
+          "longer": "A third night adds Inuyama's original castle or the railway museum.",
+          "shorter": "One night is a dinner stop.",
+          "idle": "none",
+          "note": "One busy day with little walking."
+        },
+        "3": {
+          "why": "Two days: the city on one; on the other, Inuyama Castle, one of the twelve originals, 30 minutes by Meitetsu (steep inside, so Fernanda may wait below), or the Toyota museum and the railway park.",
+          "longer": "A fourth night only makes sense as a base for Ise, which is better slept in.",
+          "shorter": "Two nights loses the day out.",
+          "idle": "some",
+          "note": "Comfortable; Nagoya does not need three days."
+        },
+        "4": {
+          "why": "Only as a base for day trips: Inuyama, Ise Jingu (about 1 h 40 by Kintetsu) and the Toyota sites. Sleeping in Ise-Shima is kinder than a long day trip.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is enough.",
+          "idle": "some",
+          "note": "One quiet day."
+        },
+        "5": {
+          "why": "Not sensible: a week of day trips from a city that is good for two days.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "Two idle days."
+        }
+      }
+    },
+    "rates": {
+      "hotel": 85000,
+      "rental": 65000,
+      "ryokan": 180000
+    },
+    "kanji": "名古屋",
+    "snow": 0,
+    "prefectures": [
+      "aichi"
+    ],
+    "side": "r",
+    "onsen": false
+  },
+  "atami": {
+    "area": {
+      "prefecture": "Shizuoka (Izu)",
+      "tags": [
+        "onsen",
+        "museums",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "Fireworks over the bay",
+          "blurb": "Twenty minutes from 20:20 on 25 Dec, the last of the year, watched from the flat beach promenade."
+        },
+        {
+          "title": "MOA Museum of Art",
+          "blurb": "Japanese and Chinese art and a golden tea room on the hilltop, reached by long escalators, with the sea below."
+        },
+        {
+          "title": "Kiunkaku",
+          "blurb": "A 1919 villa of gardens and Western rooms where Japan's great novelists stayed."
+        },
+        {
+          "title": "Capybaras in the bath",
+          "blurb": "At Izu Shaboten Zoo they soak in a yuzu-scented hot bath at 10:30 and 13:30 over the holidays."
+        },
+        {
+          "title": "The Jogasaki coast",
+          "blurb": "Black lava cliffs and a suspension bridge over the surf, near Izu-Kogen."
+        }
+      ],
+      "window": [
+        "25 Dec: the last winter fireworks over the bay, 20:20–20:40.",
+        "Kiunkaku closes on Wednesdays and over the year-end, about 26–30 Dec, so 25 Dec is the day for it.",
+        "The MOA Museum closes on Thursdays; its New Year dates are not yet published.",
+        "Mild, dry and sunny, about 12 °C by day; the plum garden and Kawazu's early cherries come after us."
+      ],
+      "feel": "A steep little resort tumbling down to a sandy bay: old shopping streets, steam from the hot springs and the sea in nearly every view. Livelier than Shuzenji and warmer than Tokyo.",
+      "getting_there": "45 minutes from Tokyo by Kodama or Hikari. From Lake Kawaguchi, about 2 h 45 by bus to Mishima and one stop on the shinkansen.",
+      "for_her": "The town is steep, but the seafront is flat, taxis are cheap and the MOA's escalators do the climbing. Choose a hotel with a private bath or quiet bath hours. IUHW Atami Hospital in town has obstetrics; Juntendo University Shizuoka Hospital, a major perinatal centre, is 35–40 minutes by car.",
+      "zone": "near"
+    },
+    "lodging": {
+      "type": "hotel",
+      "why": "For a few nights by the sea, a resort hotel with Japanese-Western family rooms is simpler and cheaper than a ryokan, and dinner can be in town or at the hotel.",
+      "fit": "One large Japanese-Western room for six or seven plus a single, or two family rooms.",
+      "outlook": "Open for the days before New Year; the bay hotels fill for the 25 Dec fireworks, and 31 Dec–2 Jan is tight and dear.",
+      "tiers": {
+        "budget": [
+          55000,
+          90000
+        ],
+        "mid": [
+          90000,
+          150000
+        ],
+        "top": [
+          160000,
+          280000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "KKR Hotel Atami",
+          "url": "https://www.jalan.net/yad327366",
+          "tier": "budget",
+          "area": "Kasuga-cho, near the beach",
+          "what": "A public servants' mutual-aid hotel that also takes the public; a 46 m² Japanese-Western room with a bedroom and six tatami, listed for up to seven.",
+          "price": "About ¥60,000–100,000 for six with breakfast (estimate)",
+          "fit": "Beds and futon in one room, lift. Check that non-members can book these dates.",
+          "verified": false
+        },
+        {
+          "name": "Hotel Sunmi Club",
+          "url": "https://www.ikyu.com/en-us/00906937/",
+          "tier": "mid",
+          "area": "Wadahama, ten minutes by car south of the station",
+          "what": "47 m² Japanese rooms (ten tatami plus six) for up to six, or Japanese-Western rooms with twin beds for up to five; sea-view open-air baths.",
+          "price": "Rooms from about ¥17,000–25,000 for two; about ¥90,000–130,000 for six with breakfast (estimate)",
+          "fit": "Lift. No private baths, so the shared baths at quiet hours.",
+          "verified": true
+        },
+        {
+          "name": "RISONARE Atami",
+          "url": "https://hoshinoresorts.com/en/hotels/risonareatami/",
+          "tier": "top",
+          "area": "Hillside above the town, free shuttle 15 minutes from the station",
+          "what": "Hoshino Resorts' family hotel: 81 rooms, all over 60 m², some for up to six; a seafood buffet or kaiseki with kinmedai. A desk by the station sends bags up.",
+          "price": "About ¥160,000–280,000 for six with dinner (estimate)",
+          "fit": "Beds, lift and room to spread out.",
+          "verified": true
+        }
+      ]
+    },
+    "stay": {
+      "best": "2 nights (3 with Izu-Kogen)",
+      "date_notes": [
+        "25 Dec, 20:20–20:40: the last winter fireworks over the bay.",
+        "Wednesdays, and about 26–30 Dec: Kiunkaku is closed.",
+        "Thursdays: the MOA Museum is closed; check its New Year dates.",
+        "22 Dec–11 Jan: capybaras in the yuzu bath at Izu Shaboten Zoo, 10:30 and 13:30.",
+        "31 Dec–3 Jan: the hotels are at their fullest and dearest, and Kinomiya shrine's giant camphor draws New Year crowds.",
+        "Mid-January: the plum garden opens, after us."
+      ],
+      "nights": {
+        "1": {
+          "why": "An evening by the sea, with the fireworks if it is 25 Dec. Atami is 45 minutes from Tokyo, so one night works as a stop on the way into Izu.",
+          "longer": "A second night gives a day for the MOA Museum and Kiunkaku.",
+          "shorter": "A single night is a bath and a seafront walk.",
+          "idle": "none",
+          "note": "Easy and short."
+        },
+        "2": {
+          "why": "One full day: the MOA Museum in the morning, Kiunkaku and the old shopping streets after lunch, a warm walk along the bay.",
+          "longer": "A third night adds Izu-Kogen: the capybaras and the Jogasaki cliffs.",
+          "shorter": "One night is an evening.",
+          "idle": "none",
+          "note": "Gentle and full."
+        },
+        "3": {
+          "why": "Two full days: Atami's museums and seafront on one, Izu-Kogen's zoo and sea cliffs on the other, 25 minutes down the Ito line. With the fireworks on the 25th, the right length.",
+          "longer": "A fourth night adds Odawara Castle, or Hatsushima island if the sea is calm.",
+          "shorter": "Two nights loses Izu-Kogen.",
+          "idle": "none",
+          "note": "Two easy days."
+        },
+        "4": {
+          "why": "Atami plus day trips: Odawara Castle, Hakone's museums, or the Mishima Skywalk with Fuji behind it. Fine as a slow base.",
+          "longer": "Nothing nearby that Shuzenji or Hakone do not do better.",
+          "shorter": "Three nights is the usual stay.",
+          "idle": "some",
+          "note": "One easy day."
+        },
+        "5": {
+          "why": "Too long for a small resort unless the point is rest; over New Year it is busy and dear.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "One or two idle days."
+        }
+      }
+    },
+    "rates": {
+      "hotel": 100000,
+      "rental": 90000,
+      "ryokan": 220000
+    },
+    "kanji": "熱海",
+    "snow": 0,
+    "prefectures": [
+      "shizuoka"
+    ],
+    "side": "r",
+    "onsen": true
+  },
+  "ise-shima": {
+    "area": {
+      "prefecture": "Mie",
+      "tags": [
+        "food",
+        "classics",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "Ise Jingu",
+          "blurb": "The Outer and Inner shrines in ancient cedar forest, rebuilt every twenty years: Japan's most sacred place."
+        },
+        {
+          "title": "Okage Yokocho",
+          "blurb": "The old pilgrims' street by the Inner Shrine, and akafuku rice cakes under red bean paste."
+        },
+        {
+          "title": "Mikimoto Pearl Island",
+          "blurb": "Where cultured pearls began, with ama women divers in white."
+        },
+        {
+          "title": "Spiny lobster",
+          "blurb": "Ise-ebi is in season from October to April, grilled or in a hot pot, with Matoya oysters alongside."
+        },
+        {
+          "title": "Ago Bay",
+          "blurb": "Pearl rafts and pine islands from the flat deck at Yokoyama."
+        }
+      ],
+      "window": [
+        "1–3 Jan: Ise Jingu takes hundreds of thousands, with waits of up to two hours on New Year's morning; company groups follow on the first working days, so dawn is the time.",
+        "Many restaurants close 1–3 Jan; hotel restaurants carry on, and the lobster is in season.",
+        "Mild and sunny, rarely below freezing, no snow.",
+        "About 1 h 40 from Nagoya by Kintetsu limited express; the reserved seats sell out on holidays."
+      ],
+      "feel": "Japan's most sacred shrine in a cedar forest, then a coast of quiet bays, pearl rafts and fishing towns. Calm, warm and unhurried, with some of the best seafood of the trip.",
+      "getting_there": "Kintetsu limited express from Nagoya to Toba, about 1 h 40, or about two hours from Kyoto or Osaka.",
+      "for_her": "The shrines are long gravel walks under trees, flat but tiring; a taxi between the Outer and Inner shrines helps. Lobster and oysters cooked rather than raw. Ise Red Cross Hospital, a regional perinatal centre, is about 20 minutes from Toba.",
+      "zone": "west"
+    },
+    "lodging": {
+      "type": "hotel",
+      "why": "The bay-view hotels in Toba have Japanese-Western rooms for families, restaurants that keep going over New Year, and the station a short shuttle away.",
+      "fit": "Two rooms for three and one for a couple, or a tatami room for five and a twin.",
+      "outlook": "Probably open from 1 Jan; the New Year nights themselves are dear, and the Kintetsu seats can sell out before the rooms do.",
+      "tiers": {
+        "budget": [
+          60000,
+          100000
+        ],
+        "mid": [
+          100000,
+          170000
+        ],
+        "top": [
+          180000,
+          320000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Toba Grand Hotel",
+          "url": "https://www.kankomie.or.jp/report/429",
+          "tier": "budget",
+          "area": "Kohama, five minutes by car from Toba station, with a shuttle",
+          "what": "Sea-view baths, 12-tatami ocean-view rooms for five on the top floor, and dinners with Ise lobster in the room or at a buffet.",
+          "price": "About ¥70,000–110,000 for six with breakfast (estimate)",
+          "fit": "Lift; mostly tatami and futon.",
+          "verified": true
+        },
+        {
+          "name": "Toba Hotel International",
+          "url": "https://www.tobahotel.co.jp/",
+          "tier": "mid",
+          "area": "On the hill above Toba Bay, near the station",
+          "what": "Ocean Wing and Harbour Wing rooms and suites, some Japanese-Western for up to five; French and Japanese restaurants.",
+          "price": "About ¥100,000–170,000 for six (estimate)",
+          "fit": "Beds, lift. Some rooms face the hill, so ask for the bay.",
+          "verified": true
+        },
+        {
+          "name": "Shima Kanko Hotel The Classic",
+          "url": "https://www.miyakohotels.ne.jp/shima/",
+          "tier": "top",
+          "area": "Kashikojima, 40 minutes south of Toba by Kintetsu",
+          "what": "The grand old hotel over Ago Bay, known for its French cooking with Ise lobster and abalone; The Bay Suites next door.",
+          "price": "About ¥200,000–320,000 for four rooms (estimate)",
+          "fit": "Beds, lift; the rooms are for two, so four rooms.",
+          "verified": true
+        }
+      ]
+    },
+    "stay": {
+      "best": "3 nights (4 over New Year)",
+      "date_notes": [
+        "31 Dec–1 Jan: Ise Jingu stays open through New Year's Eve night; waits of up to two hours on New Year's morning.",
+        "1–3 Jan: the shrines and Okage Yokocho at their most crowded; on 4–5 Jan company groups come, so go at dawn.",
+        "1–3 Jan: many restaurants close; hotel restaurants and the Okage Yokocho stalls carry on.",
+        "Every day: Toba Aquarium is open, but very busy 1–3 Jan.",
+        "Mikimoto Pearl Island has not published its New Year hours.",
+        "October to April: spiny lobster season."
+      ],
+      "nights": {
+        "1": {
+          "why": "One evening and one morning: Ise Jingu at opening, akafuku, and away. A long way to come for a shrine visit.",
+          "longer": "A second night gives the coast: Toba's pearls and aquarium.",
+          "shorter": "A single night is the shrine and nothing else.",
+          "idle": "none",
+          "note": "Mostly train."
+        },
+        "2": {
+          "why": "One full day: both shrines and Okage Yokocho in the morning, Pearl Island or the aquarium in the afternoon, lobster for dinner.",
+          "longer": "A third night adds Ago Bay and Kashikojima.",
+          "shorter": "One night is the shrine alone.",
+          "idle": "none",
+          "note": "Full."
+        },
+        "3": {
+          "why": "Two full days: Ise Jingu and Okage Yokocho on one; Toba, Ago Bay and the Yokoyama lookout on the other. The right length outside New Year.",
+          "longer": "A fourth night buys an easy day by the sea, or Futami's wedded rocks.",
+          "shorter": "Two nights rushes the coast.",
+          "idle": "none",
+          "note": "Two good days, all mild."
+        },
+        "4": {
+          "why": "The New Year shape: arrive on the quiet 1 Jan, keep 2–3 Jan for Toba and Ago Bay while the shrine is crowded, and see Ise Jingu at dawn on 4 Jan, the day before you leave.",
+          "longer": "A fifth night is a long, quiet day: pleasant, but little new.",
+          "shorter": "Three nights means moving on a peak day, or seeing the shrine in the crush.",
+          "idle": "some",
+          "note": "2 Jan is an easy day after the long move."
+        },
+        "5": {
+          "why": "Too long for this coast in winter unless the point is a seaside rest.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already generous.",
+          "idle": "real",
+          "note": "One or two idle days."
+        }
+      }
+    },
+    "rates": {
+      "hotel": 110000,
+      "rental": 90000,
+      "ryokan": 230000
+    },
+    "kanji": "伊勢志摩",
+    "snow": 0,
+    "prefectures": [
+      "mie"
+    ],
+    "side": "b",
+    "onsen": false
+  },
+  "morioka": {
+    "area": {
+      "prefecture": "Iwate",
+      "tags": [
+        "snow",
+        "food",
+        "museums"
+      ],
+      "known_for": [
+        {
+          "title": "Wanko soba",
+          "blurb": "Bite-sized bowls of soba refilled until you put the lid on: a cheerful group meal."
+        },
+        {
+          "title": "Two more noodles",
+          "blurb": "Jajamen with miso paste, and chewy cold reimen; Morioka is proud of all three."
+        },
+        {
+          "title": "Kakunodate",
+          "blurb": "Black samurai fences holding the snow, 45 minutes away by the Komachi."
+        },
+        {
+          "title": "Chuson-ji",
+          "blurb": "The gold-leafed Konjikido hall of 1124 in a snowy cedar forest at Hiraizumi, about an hour south."
+        },
+        {
+          "title": "The old centre",
+          "blurb": "The castle-ruin park, the red-brick Iwate Bank of 1911, and craft shops by the river."
+        }
+      ],
+      "window": [
+        "Snow is likely by Christmas and the pavements ice over, so cleats and taxis.",
+        "In Kakunodate the Aoyagi house stays open in winter; the Kawarada house shuts 28 Dec–4 Jan.",
+        "Chuson-ji is open all year, 8:30–16:30 in winter, at the top of a long slope.",
+        "Shops close on 1 Jan, and Morioka Hachimangu draws the whole city on 1–3 Jan."
+      ],
+      "feel": "A small, low, walkable city of rivers and bridges with Mt Iwate behind it, red-brick banks and old craft shops. Friendly, cheap and quiet, and an easy hub for the snowy towns around it.",
+      "getting_there": "Hayabusa from Tokyo, about 2 h 15; 40 minutes from Sendai, about an hour from Shin-Aomori.",
+      "for_her": "Flat streets, but ice from late December: cleats, slow steps and taxis. Station hotels with lifts. Iwate Medical University Hospital, with a perinatal centre, is at Yahaba, about 25 minutes by taxi.",
+      "zone": "north"
+    },
+    "lodging": {
+      "type": "hotel",
+      "why": "A city base for day trips by shinkansen: a hotel joined to the station keeps the cold morning starts short and off the ice.",
+      "fit": "Three rooms and a single, or two triples and a twin.",
+      "outlook": "Open. Morioka is quiet and cheap in December and the city hotels do not sell out.",
+      "tiers": {
+        "budget": [
+          30000,
+          50000
+        ],
+        "mid": [
+          50000,
+          80000
+        ],
+        "top": [
+          85000,
+          130000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hotel Metropolitan Morioka (main building)",
+          "url": "https://www.ikyu.com/en-us/00002108/",
+          "tier": "mid",
+          "area": "Joined to Morioka station through the Fesan building",
+          "what": "190 rooms, some renovated in 2025; the station is a minute away indoors.",
+          "price": "About ¥45,000–70,000 for three twins and a single (estimate)",
+          "fit": "Beds, lift, and no ice between the room and the trains.",
+          "verified": true
+        },
+        {
+          "name": "Hotel Metropolitan Morioka New Wing",
+          "url": "https://www.expedia.co.uk/Morioka-Hotels-Hotel-Metropolitan-Morioka-New-Wing.h72185.Hotel-Information",
+          "tier": "mid",
+          "area": "Three minutes' walk from the station",
+          "what": "The newer, larger wing, with triples of about 30 m²: two beds and a sofa bed.",
+          "price": "About ¥60,000–90,000 for two triples and a twin (estimate)",
+          "fit": "Beds, lift.",
+          "verified": false
+        }
+      ]
+    },
+    "stay": {
+      "best": "3 nights (4 with an easy day)",
+      "date_notes": [
+        "28 Dec–4 Jan: Kakunodate's Kawarada house is shut; the Aoyagi house stays open.",
+        "29 Dec–3 Jan: museums and many restaurants close; most wanko soba houses stay open, but check.",
+        "1 Jan: shops close, and Morioka Hachimangu fills with the city's first shrine visit.",
+        "Every day: Chuson-ji at Hiraizumi, 8:30–16:30 in winter.",
+        "30 Dec and 3 Jan: the busiest days on the Tohoku shinkansen; book the Komachi and Hayabusa early."
+      ],
+      "nights": {
+        "1": {
+          "why": "A stopover on the way north: wanko soba and a walk by the river. Morioka's charm is slow, and one night does not show it.",
+          "longer": "A second night gives one day trip: Kakunodate or Hiraizumi.",
+          "shorter": "A single night is a dinner.",
+          "idle": "none",
+          "note": "Short."
+        },
+        "2": {
+          "why": "One full day: the old centre and a wanko soba lunch, or a day out to Kakunodate's samurai lanes.",
+          "longer": "A third night adds Hiraizumi's golden hall.",
+          "shorter": "One night is a meal.",
+          "idle": "none",
+          "note": "Full."
+        },
+        "3": {
+          "why": "Two days out with the evenings in Morioka: Kakunodate on one, Hiraizumi on the other.",
+          "longer": "A fourth night gives an easy day in between, which the ice and cold make welcome.",
+          "shorter": "Two nights loses Hiraizumi or Kakunodate.",
+          "idle": "none",
+          "note": "Busy; the cold tires everyone."
+        },
+        "4": {
+          "why": "Kakunodate, Hiraizumi and an easy Morioka day of noodles, the red-brick bank and the craft shops: the right pace in deep cold, with a rest before New Year.",
+          "longer": "A fifth night adds Koiwai Farm in the snow, or a day at Nyuto's milky baths for João and Carolina.",
+          "shorter": "Three nights drops the easy day.",
+          "idle": "some",
+          "note": "One easy day by design."
+        },
+        "5": {
+          "why": "Morioka plus a third day out: Nyuto Onsen's outdoor baths for the keen bathers, or Koiwai Farm. Five nights is a lot of one small city.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is plenty.",
+          "idle": "some",
+          "note": "One idle day, perhaps two."
+        }
+      }
+    },
+    "rates": {
+      "hotel": 60000,
+      "rental": 55000,
+      "ryokan": 170000
+    },
+    "kanji": "盛岡",
+    "snow": 2,
+    "prefectures": [
+      "iwate"
+    ],
+    "side": "r",
+    "onsen": false
+  },
+  "tsunagi": {
+    "area": {
+      "prefecture": "Iwate",
+      "tags": [
+        "snow",
+        "onsen",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "Mt Iwate over Lake Gosho",
+          "blurb": "The volcano white across the water from the lake-side rooms."
+        },
+        {
+          "title": "Rooms with their own bath",
+          "blurb": "Open-air baths in the room at Taikan and Bessou Kakei: short, private soaks in the snow light."
+        },
+        {
+          "title": "A New Year's Eve kaiseki",
+          "blurb": "Iwate beef, Sanriku fish and toshikoshi soba without leaving the hotel."
+        },
+        {
+          "title": "Morioka on the doorstep",
+          "blurb": "The city is 25 minutes away by shuttle for anyone restless."
+        }
+      ],
+      "window": [
+        "Snow is likely from late December; the village is small and is mostly hotels.",
+        "New Year plans run dinner on 31 Dec and osechi on 1 Jan; the rooms with private baths go first.",
+        "The hotel shuttles from Morioka station must be booked; a taxi takes about 25 minutes."
+      ],
+      "feel": "A handful of big onsen hotels on the shore of a lake, with Mt Iwate standing white across the water. Nothing to do but bathe, eat and look at the mountain, which is the idea.",
+      "getting_there": "About 25 minutes from Morioka station by hotel shuttle or taxi; Morioka is 2 h 15 from Tokyo.",
+      "for_her": "Everything happens indoors, so the ice matters less. A room with its own bath lets her keep soaks short and cool. The nearest obstetric centre, Iwate Medical University Hospital, is 35–45 minutes by taxi, further than from Morioka.",
+      "zone": "north"
+    },
+    "lodging": {
+      "type": "ryokan",
+      "why": "The village is the hotels: dinner, breakfast and the bath are the stay. A room with its own open-air bath means Fernanda never crosses ice to reach one.",
+      "fit": "Two or three rooms; ask for lake-side rooms with private baths, and beds where they have them.",
+      "outlook": "Uncertain for 31 Dec: New Year is the busiest time of the year here, and Taikan's eleven rooms with baths go first.",
+      "tiers": {
+        "budget": [
+          100000,
+          150000
+        ],
+        "mid": [
+          150000,
+          250000
+        ],
+        "top": [
+          280000,
+          450000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hotel Shion",
+          "url": "https://www.ikyu.com/en-us/00001197/",
+          "tier": "budget",
+          "area": "On the lake shore",
+          "what": "Lake-side tatami rooms for up to five, twins on the fourth floor, and 63 m² top-floor rooms for up to six; a lakeside rock bath.",
+          "price": "From about ¥12,000 per person with dinner and breakfast on an early-booking plan; about ¥110,000–160,000 for six over New Year (estimate)",
+          "fit": "Lift. Some premium rooms have their own bath, so ask.",
+          "verified": true
+        },
+        {
+          "name": "Nanbu Yumori-no-yado Taikan",
+          "url": "https://selected-ryokan.com/ryokan/nanbu-yumori-no-yado-taikan_tsunagi-oshuku_iwate_tohoku.html",
+          "tier": "mid",
+          "area": "Tsunagi village, by the lake",
+          "what": "120 rooms, eleven with their own open-air bath; a shuttle from Morioka station by booking.",
+          "price": "¥9,000–88,500 per person with dinner and breakfast; about ¥160,000–250,000 for six in rooms with baths over New Year (estimate)",
+          "fit": "Lift; a big hotel with a buffet or kaiseki.",
+          "verified": true
+        },
+        {
+          "name": "Bessou Kakei",
+          "url": "https://www.ikyu.com/en-us/00002348/",
+          "tier": "top",
+          "area": "Tsunagi, set apart from the big hotels",
+          "what": "Six villa suites of 100 m², each with an open-air rock bath and an indoor bath with a view, for up to three.",
+          "price": "From about ¥43,000 per person with dinner and breakfast; about ¥300,000–450,000 for three villas over New Year (estimate)",
+          "fit": "Private and quiet; ask about beds and steps.",
+          "verified": true
+        }
+      ]
+    },
+    "stay": {
+      "best": "2 nights",
+      "date_notes": [
+        "30 Dec: a peak day on the shinkansen, but the hop from Morioka is 25 minutes by road.",
+        "31 Dec: New Year's Eve dinner and toshikoshi soba at the hotel; nothing else nearby is open.",
+        "1 Jan: osechi for breakfast, and a quiet Hayabusa from Morioka.",
+        "2–3 Jan: the hotels stay full and dear until the holiday ends."
+      ],
+      "nights": {
+        "1": {
+          "why": "One bath, one dinner, and the mountain at breakfast. Close enough to Morioka to work as a single night.",
+          "longer": "A second night gives a whole slow day, which is the point of the place.",
+          "shorter": "A single night is a bath and a dinner.",
+          "idle": "none",
+          "note": "Easy and short."
+        },
+        "2": {
+          "why": "A whole day with nothing to do but soak, read and watch the light on Mt Iwate, and dinner in the hotel. Restful for Fernanda and the parents.",
+          "longer": "A third night is another day of the same; over New Year it pushes the move onto the busy 2 Jan.",
+          "shorter": "One night is the bath and the dinner only.",
+          "idle": "some",
+          "note": "Day two is slow by design."
+        },
+        "3": {
+          "why": "A deep rest, with Morioka as an afternoon out. João and Carolina will be restless.",
+          "longer": "A fourth night adds nothing.",
+          "shorter": "Two nights is the usual stay.",
+          "idle": "some",
+          "note": "Two slow days."
+        },
+        "4": {
+          "why": "Too long for a village of hotels; better to sleep in Morioka and come out for one or two nights.",
+          "longer": "Nothing to add.",
+          "shorter": "Three nights is already long.",
+          "idle": "real",
+          "note": "Two idle days."
+        },
+        "5": {
+          "why": "Not sensible: the same bath and the same view five days running.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already long.",
+          "idle": "real",
+          "note": "Mostly idle."
+        }
+      }
+    },
+    "rates": {
+      "hotel": 90000,
+      "rental": 90000,
+      "ryokan": 200000
+    },
+    "kanji": "繋温泉",
+    "snow": 2,
+    "prefectures": [
+      "iwate"
+    ],
+    "side": "l",
+    "onsen": true
+  },
+  "south-tohoku": {
+    "area": {
+      "prefecture": "Miyagi",
+      "tags": [
+        "food",
+        "classics",
+        "gentle"
+      ],
+      "known_for": [
+        {
+          "title": "Matsushima",
+          "blurb": "Pine-covered islands in a bay, one of Japan's three great views; a seated 50-minute cruise runs every day, New Year included."
+        },
+        {
+          "title": "Gyutan",
+          "blurb": "Grilled beef tongue with barley rice and oxtail soup: Sendai's own dinner."
+        },
+        {
+          "title": "The Pageant of Starlight",
+          "blurb": "The zelkova avenue of Jozenji-dori lit end to end in December."
+        },
+        {
+          "title": "Zuihoden",
+          "blurb": "Date Masamune's gilded, painted mausoleum among tall cedars, up a flight of stone steps."
+        },
+        {
+          "title": "Sendai's New Year sale",
+          "blurb": "On 2 Jan the shops open with gifts for customers, a custom kept since the Edo period."
+        }
+      ],
+      "window": [
+        "The Pageant of Starlight's 2026 dates are not announced; last year it ran 5–28 Dec, and one guide expects 6–25 Dec.",
+        "The Matsushima cruise and Zuigan-ji run every day; the city's museums close roughly 28 Dec–4 Jan, and the oyster huts about 31 Dec–3 Jan.",
+        "Cold and mostly dry, with the odd snowfall; Zao's frozen trees are only half formed before mid-January."
+      ],
+      "feel": "Tohoku's big, green, easy city of tree-lined avenues and covered arcades, with the pine islands of Matsushima 40 minutes away. Comfortable and well fed rather than dramatic.",
+      "getting_there": "Hayabusa from Tokyo, about 1 h 30; Matsushima is 40 minutes by the Senseki line.",
+      "for_her": "Flat avenues, covered arcades and station hotels with lifts; the Matsushima cruise is seated. Oysters grilled rather than raw. Tohoku University Hospital, a comprehensive perinatal centre, is about 15 minutes by taxi.",
+      "zone": "north"
+    },
+    "lodging": {
+      "type": "hotel",
+      "why": "A city base for day trips: a hotel by the station keeps Matsushima's train and the shinkansen a short walk away.",
+      "fit": "Two four-bed family rooms at The Base, or three rooms and a single.",
+      "outlook": "Open. Sendai has plenty of rooms in December; the Pageant weekends are the busiest.",
+      "tiers": {
+        "budget": [
+          35000,
+          60000
+        ],
+        "mid": [
+          60000,
+          95000
+        ],
+        "top": [
+          100000,
+          170000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Hotel Metropolitan The Base Sendai",
+          "url": "https://www.ikyu.com/en-us/00082745/",
+          "tier": "budget",
+          "area": "Two minutes from the station's west exit",
+          "what": "Opened in April 2026: 56 rooms, including four-bed family rooms (flat beds or bunks) with a microwave, fridge and tableware.",
+          "price": "Twins from about ¥12,000; about ¥40,000–65,000 for two four-bed rooms (estimate)",
+          "fit": "Beds, lift; two family rooms sleep all seven. Ask for flat beds, not bunks, for Fernanda and the parents.",
+          "verified": true
+        },
+        {
+          "name": "Hotel Metropolitan Sendai East",
+          "url": "https://www.ikyu.com/en-us/00002418/",
+          "tier": "mid",
+          "area": "By the station's east exit",
+          "what": "282 rooms, with superior triples of 34 m².",
+          "price": "About ¥60,000–90,000 for two triples and a single (estimate)",
+          "fit": "Beds, lift.",
+          "verified": true
+        },
+        {
+          "name": "The Westin Sendai",
+          "url": "https://www.ikyu.com/en-us/00001632/",
+          "tier": "top",
+          "area": "Ichibancho, ten minutes' walk or one subway stop from the station",
+          "what": "Rooms averaging about 43 m² on floors 28–36, high over the city.",
+          "price": "About ¥110,000–170,000 for four rooms (estimate)",
+          "fit": "Beds, lift, big bathrooms.",
+          "verified": true
+        }
+      ]
+    },
+    "stay": {
+      "best": "3 nights",
+      "date_notes": [
+        "December, to about 25–28 Dec: the Pageant of Starlight on Jozenji-dori; the 2026 dates are still to come.",
+        "From about 27 Dec, at weekends and over New Year: the Zao ropeway's frozen-tree light-up has run in past seasons, about 1 h 30 away, with the trees still young.",
+        "Every day, New Year included: the Matsushima cruise and Zuigan-ji; 1 Jan adds a sunrise cruise.",
+        "About 28 Dec–4 Jan: the city's museums are closed; the oyster huts close about 31 Dec–3 Jan.",
+        "2 Jan: Sendai's New Year sale, with gifts for customers."
+      ],
+      "nights": {
+        "1": {
+          "why": "An evening of gyutan, and the lights if they are on. Sendai is 90 minutes from Tokyo, so one night works as a stop on the way north.",
+          "longer": "A second night gives Matsushima.",
+          "shorter": "A single night is dinner and bed.",
+          "idle": "none",
+          "note": "Short."
+        },
+        "2": {
+          "why": "One full day: Matsushima's cruise and Zuigan-ji in the morning, back for the lights and beef tongue at night.",
+          "longer": "A third night adds Zuihoden and the city, or Yamadera for the keen climbers.",
+          "shorter": "One night is a dinner.",
+          "idle": "none",
+          "note": "Full and easy."
+        },
+        "3": {
+          "why": "Two full days: Matsushima on one; Zuihoden, the arcades and a café morning on the other, with Yamadera's thousand steps for João and Carolina only. It also lets the long flight wear off before the snow.",
+          "longer": "A fourth night adds Akiu Onsen or an evening at the Zao ropeway.",
+          "shorter": "Two nights loses the city day.",
+          "idle": "some",
+          "note": "The second day is flexible."
+        },
+        "4": {
+          "why": "Sendai plus a day in the mountains: Zao's frozen trees by ropeway at night, or Ginzan Onsen's snowy street by day, about 2 h 30 each way.",
+          "longer": "A fifth night adds Akiu Onsen.",
+          "shorter": "Three nights is the usual stay.",
+          "idle": "some",
+          "note": "One easy day."
+        },
+        "5": {
+          "why": "Too long for a city that is pleasant rather than packed with sights; over New Year it is quiet.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is already generous.",
+          "idle": "real",
+          "note": "One or two quiet days."
+        }
+      }
+    },
+    "rates": {
+      "hotel": 70000,
+      "rental": 65000,
+      "ryokan": 200000
+    },
+    "kanji": "仙台",
+    "snow": 1,
+    "prefectures": [
+      "miyagi"
+    ],
+    "side": "r",
+    "onsen": false
+  },
+  "north-tohoku": {
+    "area": {
+      "prefecture": "Aomori",
+      "tags": [
+        "snow",
+        "museums",
+        "food"
+      ],
+      "known_for": [
+        {
+          "title": "Aomori Museum of Art",
+          "blurb": "Nara Yoshitomo's eight-metre white dog and Chagall's stage backdrops, next to the Sannai-Maruyama Jomon site."
+        },
+        {
+          "title": "Hirosaki Castle park",
+          "blurb": "Moats, gates and an original keep under deep snow, 40 minutes away, with apple-pie cafés in town."
+        },
+        {
+          "title": "Nebuta Museum Wa Rasse",
+          "blurb": "The giant lantern floats of the summer festival, indoors by the station."
+        },
+        {
+          "title": "The Hakkoda ropeway",
+          "blurb": "Ten minutes up into frost-covered trees, an hour from town; it stops in strong wind."
+        },
+        {
+          "title": "Scallops and nokke-don",
+          "blurb": "Build-your-own rice bowls at the fish market, and grilled scallops and kaiyaki miso for Fernanda."
+        }
+      ],
+      "window": [
+        "Snow is near-certain: Aomori is one of the snowiest cities in the world.",
+        "The Nebuta museum closes 31 Dec–1 Jan; the art museum has reopened on 2 Jan in past years.",
+        "Hakkoda's ropeway runs about 9:00–16:00 in winter; the frost trees fill out from January.",
+        "Three hours from Tokyo by Hayabusa, full on 3 Jan; Hirosaki's snow-lantern festival is in February, after us."
+      ],
+      "feel": "A snowbound port at the top of Honshu, with a castle town and apple orchards behind it and a mountain range of frozen trees an hour away. Big skies, deep snow and very few foreign visitors.",
+      "getting_there": "Hayabusa from Tokyo to Shin-Aomori, about 3 h 15, then a short taxi or train into town. Hirosaki is about 40 minutes by local train.",
+      "for_her": "Deep snow and icy pavements: cleats, taxis and short walks, with the museums for the coldest days. Aomori Prefectural Central Hospital, with a perinatal centre, is in the city.",
+      "zone": "north"
+    },
+    "lodging": {
+      "type": "hotel",
+      "why": "A city hotel near Aomori station keeps the snowy walks short and the trains to Hirosaki and Shin-Aomori close, with restaurants and food halls nearby once the town reopens after 1 Jan.",
+      "fit": "Three rooms and a single, or the Yasukata villa suite for all seven.",
+      "outlook": "Open. Aomori is cheap, and New Year barely moves the prices.",
+      "tiers": {
+        "budget": [
+          30000,
+          55000
+        ],
+        "mid": [
+          55000,
+          85000
+        ],
+        "top": [
+          90000,
+          150000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Tsunageru Aomori Yasukata VillaSuite",
+          "url": "https://www.ikyu.com/en-us/00914999/",
+          "tier": "budget",
+          "area": "Yasukata, about ten minutes' walk from Aomori station",
+          "what": "An 89 m² suite with three bedrooms and a big living room for up to nine, renovated in 2023, with self-catering; also 50 m² Japanese-Western rooms for five.",
+          "price": "From about ¥28,000 a night for the suite, room only",
+          "fit": "All seven together with a kitchen; take a taxi in the snow.",
+          "verified": true
+        },
+        {
+          "name": "Hotel JAL City Aomori",
+          "url": "https://www.ikyu.com/en-us/00080138/",
+          "tier": "mid",
+          "area": "Six minutes' walk from Aomori station, by the bay",
+          "what": "167 rooms, some facing the bay and the Bay Bridge, partly renovated in 2025 with Tsugaru kogin stitching.",
+          "price": "About ¥45,000–75,000 for three twins and a single (estimate)",
+          "fit": "Beds, lift, a front desk.",
+          "verified": true
+        }
+      ]
+    },
+    "stay": {
+      "best": "3 nights (4 over New Year)",
+      "date_notes": [
+        "31 Dec–1 Jan: the Nebuta museum is closed, and most of the city shuts on 1 Jan.",
+        "Around New Year: the Aomori Museum of Art and the Sannai-Maruyama site close; both have reopened on 2 Jan in past years, but check.",
+        "Winter: Hirosaki Castle's keep is closed; the park is free and open.",
+        "Every day the weather allows: the Hakkoda ropeway, about 9:00–16:00, every 15–20 minutes, stopped by winds of 25 m/s or more.",
+        "3 Jan: the Tohoku shinkansen south is at its fullest; book seats the day they go on sale."
+      ],
+      "nights": {
+        "1": {
+          "why": "One evening and a morning at the Nebuta museum before the train back. Three hours from Tokyo is a long way for that.",
+          "longer": "A second night gives the art museum or Hirosaki.",
+          "shorter": "A single night barely repays the trip.",
+          "idle": "none",
+          "note": "Mostly train."
+        },
+        "2": {
+          "why": "One full day: the art museum and Sannai-Maruyama, or Hirosaki's castle park and apple-pie cafés.",
+          "longer": "A third night gives both, or Hakkoda.",
+          "shorter": "One night is the station and the museum.",
+          "idle": "none",
+          "note": "Full."
+        },
+        "3": {
+          "why": "Two full days: Hirosaki on one; the art museum, the Jomon site and the Nebuta museum on the other.",
+          "longer": "A fourth night adds Hakkoda's ropeway, weather permitting, or an easy day.",
+          "shorter": "Two nights loses Hirosaki or the museums.",
+          "idle": "none",
+          "note": "Good days, all short hops."
+        },
+        "4": {
+          "why": "The New Year shape: arrive on the quiet 1 Jan with the city shut, an easy 2 Jan at the museums, Hirosaki on the 3rd, and Hakkoda on the 4th if the wind allows, with the Nebuta museum as the bad-weather plan.",
+          "longer": "A fifth night adds an afternoon at Asamushi Onsen, 20 minutes away, or a slow day.",
+          "shorter": "Three nights means riding south on a peak day, or losing Hakkoda.",
+          "idle": "some",
+          "note": "1 Jan is a quiet arrival with the city closed."
+        },
+        "5": {
+          "why": "Aomori plus Asamushi Onsen or a second go at Hakkoda; a long time in deep cold.",
+          "longer": "Nothing to add.",
+          "shorter": "Four nights is plenty.",
+          "idle": "real",
+          "note": "One idle day, more in a blizzard."
+        }
+      }
+    },
+    "rates": {
+      "hotel": 60000,
+      "rental": 50000,
+      "ryokan": 180000
+    },
+    "kanji": "青森",
+    "snow": 3,
+    "prefectures": [
+      "aomori"
+    ],
+    "side": "r",
+    "onsen": false
+  },
+  "shuzenji": {
+    "lodging": {
+      "type": "ryokan",
+      "why": "Shuzenji is an onsen town where the inn is the evening: dinner, breakfast and a bath. Over New Year, with little open in the village, dinner at the inn every night is the simple answer. Choose a room with its own bath for Fernanda.",
+      "fit": "Two or three rooms at one inn, at least one with beds and a private bath. Arai has a 116 m² river-view room for six.",
+      "outlook": "Tight for 31 Dec–2 Jan: the small inns load New Year plans early and the rooms with baths go first. 28–30 Dec is easier.",
+      "tiers": {
+        "budget": [
+          110000,
+          170000
+        ],
+        "mid": [
+          190000,
+          320000
+        ],
+        "top": [
+          350000,
+          600000
+        ]
+      },
+      "candidates": [
+        {
+          "name": "Breezbay Shuzenji Hotel",
+          "url": "https://www.ikyu.com/en-us/00900615/",
+          "tier": "budget",
+          "area": "Hillside, ten minutes by car from Shuzenji station",
+          "what": "Japanese-Western rooms with twin beds and tatami for up to four; a private bath to book and a large public bath.",
+          "price": "From about ¥12,000 a room without meals; about ¥110,000–170,000 for six with dinner over New Year (estimate)",
+          "fit": "Beds. Outside the village, so taxis for the bamboo path.",
+          "verified": true
+        },
+        {
+          "name": "Tofuya Resort & Spa-Izu",
+          "url": "https://selected-ryokan.com/ryokan/tofuya-resort-spa_izu-shuzenji_shizuoka_tokyo-suburbs.html",
+          "tier": "mid",
+          "area": "Yoshina, in the onsen village",
+          "what": "30 rooms, 23 with their own open-air hot-spring bath, in Japanese, Japanese-Western and Western styles.",
+          "price": "¥30,800–78,200 per person with dinner and breakfast; about ¥190,000–320,000 for six in the standard rooms, more over New Year",
+          "fit": "Ask for Japanese-Western rooms with beds and a bath.",
+          "verified": true
+        },
+        {
+          "name": "Arai Ryokan",
+          "url": "https://www.expedia.com/Izu-Hotels-Arai-Ryokan.h3130597.Hotel-Information",
+          "tier": "top",
+          "area": "On the river in the village centre",
+          "what": "An inn from 1872 whose wooden buildings are listed cultural properties; a 116 m² river-view room for six, renovated in 2023.",
+          "price": "About ¥350,000–550,000 for six with meals over New Year (estimate)",
+          "fit": "Historic: tatami and futon, stairs in parts.",
+          "verified": false
+        }
+      ]
+    },
+    "rates": {
+      "hotel": 90000,
+      "rental": 90000,
+      "ryokan": 250000
+    },
+    "kanji": "修善寺",
+    "snow": 0,
+    "prefectures": [
+      "shizuoka"
+    ],
+    "side": "l",
+    "onsen": true
+  }
+}

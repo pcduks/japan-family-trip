@@ -1,0 +1,46 @@
+{
+  "_about": "What the route checks need beyond trip-data.json (route review of 17 Oct 2026, docs/research/route-review-2026-10-17.md, rules 1, 2, 9, 10). Peak flows come from 03-transport §1 and R1; hospitals from 08-pregnancy §4.3 and expanded.md; full days from the review's §3.2. Minutes by taxi are estimates unless a source is given. Capacity: a small place deserves its full days + 1 nights unless `nights` says otherwise; a named day out (`extra`) earns one more when the route does not already stop there (review §3.2, revised 17 Oct evening).",
+  "peak_flows": {
+    "outbound": { "from": "2026-12-26", "to": "2026-12-30", "worst": ["2026-12-29", "2026-12-30"], "note": "leaving Tokyo and Kansai on the trunk lines" },
+    "return": { "from": "2027-01-02", "to": "2027-01-04", "worst": ["2027-01-03"], "note": "heading back to Tokyo and Kansai on the trunk lines" },
+    "calm": ["2026-12-31", "2027-01-01"]
+  },
+  "city_sides": {
+    "tokyo": ["tokyo", "kamakura", "nikko", "hakone", "kawaguchiko", "karuizawa", "echigo-yuzawa", "atami", "shuzenji"],
+    "kansai": ["kyoto", "osaka", "nara", "arima"]
+  },
+  "capacity": {
+    "tokyo": { "full_days": 4, "hub": true, "day_trips": ["kamakura", "nikko", "echigo-yuzawa", "karuizawa"] },
+    "kyoto": { "full_days": 4, "hub": true, "day_trips": ["nara", "uji", "ohara", "osaka", "himeji"] },
+    "osaka": { "full_days": 2, "hub": true, "day_trips": ["kyoto", "nara", "himeji", "kobe"] },
+    "kanazawa": { "full_days": 2, "hub": false, "nights": 2, "extra": { "what": "the Shirakawa-go day trip", "region": "shirakawago" } },
+    "yudanaka": { "full_days": 1.5, "hub": false, "extra": { "what": "the split ski or Obuse day" } },
+    "nagano": { "full_days": 1.5, "hub": false, "extra": { "what": "the split ski or Obuse day" } },
+    "takayama": { "full_days": 1, "hub": false },
+    "gero": { "full_days": 0.5, "hub": false },
+    "okuhida": { "full_days": 1, "hub": false },
+    "shirakawago": { "full_days": 0.5, "hub": false },
+    "kawaguchiko": { "full_days": 1, "hub": false },
+    "hakone": { "full_days": 1, "hub": false },
+    "nara": { "full_days": 1, "hub": false }
+  },
+  "hospitals": {
+    "tokyo": { "name": "St. Luke's International Hospital", "phone": "03-5550-7120", "perinatal": true, "minutes": 20 },
+    "kyoto": { "name": "Kyoto University Hospital", "phone": "075-751-3111", "perinatal": true, "minutes": 15 },
+    "osaka": { "name": "Yodogawa Christian Hospital", "phone": "06-6322-2250", "perinatal": true, "minutes": 20 },
+    "kanazawa": { "name": "Ishikawa Prefectural Central Hospital", "phone": "076-237-8211", "perinatal": true, "minutes": 15 },
+    "takayama": { "name": "Takayama Red Cross Hospital", "phone": "0577-32-1111", "perinatal": false, "minutes": 10, "note": "Emergency centre with obstetrics, 10 minutes' walk from the station" },
+    "nagano": { "name": "Nagano Red Cross Hospital", "phone": "026-226-4131", "perinatal": true, "minutes": 10 },
+    "yudanaka": { "name": "Hokushin General Hospital, Nakano", "phone": "0269-22-2151", "perinatal": true, "minutes": 20, "source": "https://caloo.jp/hospitals/detail/1206500110" },
+    "matsumoto": { "name": "Shinshu University Hospital", "phone": "0263-37-4600", "perinatal": true, "minutes": 10 },
+    "kawaguchiko": { "name": "Fujiyoshida Municipal Hospital", "phone": "0555-22-4111", "perinatal": true, "minutes": 15, "note": "Regional perinatal centre, obstetric walk-ins accepted" },
+    "hakone": { "name": "Odawara Municipal Hospital", "phone": "0465-34-3175", "perinatal": true, "minutes": 40, "note": "The only 24-hour obstetric emergency near Hakone" },
+    "kinosaki": { "name": "Public Toyooka Hospital", "phone": "0796-22-6111", "perinatal": true, "minutes": 20 },
+    "hiroshima": { "name": "Hiroshima Citizens Hospital", "phone": "082-221-2291", "perinatal": true, "minutes": 15 },
+    "fukuoka": { "name": "Fukuoka University Hospital", "phone": "092-801-1011", "perinatal": true, "minutes": 25 },
+    "hokkaido": { "name": "Hokkaido University Hospital", "phone": "011-716-1161", "perinatal": true, "minutes": 15 },
+    "south-tohoku": { "name": "Tohoku University Hospital", "phone": "022-717-7000", "perinatal": true, "minutes": 15 },
+    "gero": { "name": "Gero Onsen Hospital", "perinatal": false, "minutes": 10, "checked": false, "note": "Lists obstetrics and gynaecology; whether it takes night emergencies is not confirmed" }
+  },
+  "known_by_planners": ["tokyo", "kyoto", "osaka", "hakone", "kamakura", "nikko"]
+}

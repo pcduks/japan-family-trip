@@ -1,0 +1,188 @@
+{
+  "slug": "matsumoto",
+  "name": "Matsumoto",
+  "tagline_pt": "Cidade-castelo do soba, do frango 'de bandido' e do missô de Shinshū.",
+  "history_pt": [
+    "Matsumoto cresceu ao redor do castelo preto, no cruzamento das estradas que desciam dos Alpes. A bacia é fria e seca no inverno, com água de neve das montanhas, o que faz bom missô, bom saquê e bom soba.",
+    "Nagano é terra de soba por necessidade: montanha fria, arroz difícil, trigo-sarraceno que gosta de altitude e neblina. Já no século XVII o Honchō Shokukan punha o trigo-sarraceno de Shinshū acima dos outros, e em 1983 a província declarou o soba feito à mão um 'bem cultural do sabor'.",
+    "A farinha também explica o oyaki, bolinho recheado de verduras que substituía o arroz no inverno. O sanzokuyaki, coxa de frango marinada em alho e frita inteira, é a comida local mais recente: Kawashō, na Asama Onsen, e Sanzoku, em Shiojiri, disputam a invenção."
+  ],
+  "winter_pt": "Maçãs da temporada, conserva nova de nozawana, oyaki quente e soba em casas aquecidas. Dias secos e muito frios.",
+  "meibutsu": [
+    {
+      "name_pt": "Soba de Shinshū",
+      "name_ja": "信州そば",
+      "romaji": "Shinshū soba",
+      "what_pt": "Soba frio na peneira (zaru), molhado no tsuyu, com o caldo do cozimento (sobayu) no fim.",
+      "where_pt": "Nomugi; os 百名店 三城 e 蕎麦倶楽部 佐々木.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Sanzokuyaki",
+      "name_ja": "山賊焼",
+      "romaji": "sanzokuyaki",
+      "what_pt": "Coxa de frango inteira marinada em alho e shoyu, empanada na fécula e frita.",
+      "where_pt": "Kawashō (Asama Onsen), que se diz o original.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Oyaki",
+      "name_ja": "おやき",
+      "romaji": "oyaki",
+      "what_pt": "Bolinho de massa de trigo recheado de nozawana, berinjela, abóbora ou feijão, assado ou cozido no vapor.",
+      "where_pt": "Lojas de Nakamachi e da estação.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Nozawana-zuke",
+      "name_ja": "野沢菜漬け",
+      "romaji": "nozawana-zuke",
+      "what_pt": "Conserva verde de folhas de nabo, o picles de inverno de Nagano.",
+      "where_pt": "Acompanha tudo; lojas de conserva.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Basashi",
+      "name_ja": "馬刺し",
+      "romaji": "basashi",
+      "what_pt": "Carne de cavalo crua em sashimi, comum nos izakaya de Shinshū.",
+      "where_pt": "Izakaya, como Usagiya.",
+      "must": false,
+      "pregnancy": "evitar",
+      "pregnancy_pt": "Carne crua. Ela pede o sanzokuyaki ou pratos cozidos."
+    },
+    {
+      "name_pt": "Missô de Shinshū",
+      "name_ja": "信州味噌",
+      "romaji": "Shinshū miso",
+      "what_pt": "Missô de arroz claro e salgado. Nagano produz a maior parte do missô vendido no Japão.",
+      "where_pt": "Lojas de missô de Nakamachi.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Maçãs de Shinshū",
+      "name_ja": "信州りんご",
+      "romaji": "Shinshū ringo",
+      "what_pt": "Dezembro ainda é temporada de maçã (Fuji e outras).",
+      "where_pt": "Supermercados e lojas de frutas.",
+      "must": false,
+      "pregnancy": "ok"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Nakamachi-dōri",
+      "name_ja": "中町通り",
+      "kind": "rua",
+      "story_pt": "Rua de armazéns de paredes brancas (kura), hoje com lojas de missô, saquê, doces e cafés.",
+      "eat_pt": [
+        "Oyaki",
+        "Missô e saquê para levar"
+      ],
+      "tips_pt": "Melhor de manhã, a pé a partir do castelo.",
+      "dec_jan_pt": "Lojas fecham parte de 1–3/1 (a confirmar).",
+      "query": "Nakamachi Street Matsumoto"
+    },
+    {
+      "name": "Arredores da estação",
+      "name_ja": "松本駅周辺",
+      "kind": "estação",
+      "story_pt": "Onde ficam o Nomugi e o Usagiya, a poucos minutos a pé.",
+      "eat_pt": [
+        "Soba no almoço",
+        "Izakaya de Shinshū no jantar"
+      ],
+      "tips_pt": "Chegue ao Nomugi antes das 11:30.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Matsumoto Station"
+    }
+  ],
+  "places": [
+    {
+      "name": "Nomugi",
+      "name_ja": "野麦",
+      "area": "Matsumoto · 10 min a pé da estação",
+      "genre_pt": "Soba",
+      "price_pt": "¥1–2k",
+      "tabelog": {
+        "score": 3.76,
+        "reviews": 746,
+        "url": "https://tabelog.com/nagano/A2002/A200201/20000101/",
+        "awards": "そば EAST 百名店 2024, 2025"
+      },
+      "why_pt": "Soba de referência da cidade: abre às 11:30 e fecha quando acaba.",
+      "order_pt": "Zaru soba.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "12 lugares em 3 mesas de 4. Para 6: 4+2; chegue antes de abrir.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Fecha terça e quarta. Ano-Novo a confirmar.",
+      "query": "Nomugi soba Matsumoto"
+    },
+    {
+      "name": "Usagiya",
+      "name_ja": "卯屋",
+      "area": "Matsumoto · 3 min da estação",
+      "genre_pt": "Izakaya de cozinha de Shinshū",
+      "price_pt": "¥4–8k",
+      "tabelog": {
+        "score": 3.74,
+        "reviews": 304,
+        "url": "https://tabelog.com/nagano/A2002/A200201/20000086/",
+        "awards": "居酒屋 EAST 百名店 2024–2026"
+      },
+      "why_pt": "O izakaya de Shinshū da cidade, três anos seguidos no 百名店.",
+      "order_pt": "Pratos de Shinshū, conservas, peixe de rio.",
+      "pregnancy_pt": "Pule o basashi e qualquer carne crua.",
+      "group_pt": "Plataforma elevada e sala de tatame (até 20). 6 cabem.",
+      "booking_pt": "On-line.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Usagiya Matsumoto"
+    },
+    {
+      "name": "Kawashō",
+      "name_ja": "河昌",
+      "area": "Matsumoto · Asama Onsen",
+      "genre_pt": "Frango (sanzokuyaki)",
+      "tabelog": {
+        "score": 3.41,
+        "reviews": 156,
+        "url": "https://tabelog.com/nagano/A2002/A200201/20002322/"
+      },
+      "why_pt": "Abaixo da régua, aqui só como o 'original' do sanzokuyaki, segundo matome do Tabelog.",
+      "order_pt": "Sanzokuyaki.",
+      "pregnancy_pt": "Frito e bem cozido. Liberado.",
+      "group_pt": "10 lugares; 6 se dividem.",
+      "booking_pt": "Só almoço nos dias de semana.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Kawasho sanzokuyaki Asama"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Lojas de missô e saquê de Nakamachi",
+      "name_ja": "中町通りの味噌・酒店",
+      "what_pt": "Lojas de produtos de Shinshū nos antigos armazéns.",
+      "buy_pt": "Missô de Shinshū, saquê local.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Nakamachi miso Matsumoto"
+    },
+    {
+      "name": "Oyaki e conservas",
+      "name_ja": "おやき・野沢菜",
+      "what_pt": "Bancas de oyaki e nozawana na cidade e na estação.",
+      "buy_pt": "Oyaki quente para o lanche; nozawana em pacote.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "oyaki Matsumoto"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "https://ja.wikipedia.org/wiki/信州そば",
+    "https://ja.wikipedia.org/wiki/おやき"
+  ]
+}

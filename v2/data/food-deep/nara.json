@@ -1,0 +1,317 @@
+{
+  "slug": "nara",
+  "name": "Nara",
+  "tagline": "The first capital: temple food and pickles, and the birthplace of clear sake and sōmen.",
+  "history": [
+    "Nara was the capital in the 8th century (Heijō-kyō), and much of what Japan eats started in its temples. A wooden tablet dug up at the palace, from Prince Nagaya's household, already lists gourd and aubergine in sake lees: the grandfather of Nara-zuke. The name \"Nara-zuke\" caught on through the physician Itoya Sōsen, who sold white melon (shirouri) in sake-kasu in the Keichō era (1596–1615).",
+    "Shōryaku-ji temple (founded in 992) calls itself \"清酒発祥の地\", the birthplace of refined sake. In the Muromachi era its monks settled the techniques of modern sake: polished rice in both the kōji and the steamed rice (morohaku), three-stage mixing, pasteurisation and the bodaimoto starter. \"Nanto morohaku\", the sake of Nara's temples, was the most prized in the country.",
+    "Nara has no sea. Salted mackerel came up from Kishū along the Kino and Kumano rivers and arrived far too salty; sliced thin over rice and wrapped in a persimmon leaf (which perfumes it and helps it keep), it became kakinoha-zushi, festival food in the Yoshino and Gojō mountains.",
+    "For breakfast, Nara eats chagayu (\"okaisan\"), rice cooked in roasted tea. The records of the monks of Tōdai-ji's Shuni-e (a yearly rite since 752) already mention it. And at the foot of Mount Miwa, home of Ōmiwa shrine, tradition says sōmen was born."
+  ],
+  "winter": "Miwa sōmen is hand-stretched in the hardest cold of winter: December and January are the production season. Nara's ozōni is white miso, but with round grilled mochi (unique in the region), and some families take the mochi out of the broth and roll it in kinako (きな粉雑煮). We're only in Nara on the Kyoto–Nara–Hakone alternative: two nights, 3–5 Jan.",
+  "meibutsu": [
+    {
+      "name": "Persimmon-leaf sushi",
+      "name_ja": "柿の葉寿司",
+      "romaji": "kakinoha-zushi",
+      "what": "Bites of rice with cured mackerel or salmon, each wrapped in a persimmon leaf (you don't eat the leaf). Made to last a few days: train food.",
+      "where": "Tanaka (open every day), Hiraso or Izasa, in Nara.",
+      "price": "to confirm",
+      "must": true,
+      "pregnancy": "careful",
+      "pregnancy_note": "For Fernanda: the fish is cured in salt and vinegar, not cooked, so it's her call. Tanaka sells anago and vegetable pieces as a safe swap.",
+      "glance": "Cured mackerel or salmon on rice, wrapped in a persimmon leaf.",
+      "story": "Nara has no sea. Salted mackerel came up from Kishū along the Kino and Kumano rivers and arrived far too salty. So it was sliced thin, laid over rice and wrapped in a persimmon leaf, which perfumes the fish and helps it keep. It became festival food in the mountains of Yoshino and Gojō, and it still lasts a few days: perfect for the train. Unwrap it; you don't eat the leaf. Fernanda: the anago or vegetable pieces."
+    },
+    {
+      "name": "Sake-lees pickles",
+      "name_ja": "奈良漬",
+      "romaji": "Nara-zuke",
+      "what": "White melon, cucumber or ginger cured for months in sake-kasu until brown, sweet and boozy. Good with plain rice and tea.",
+      "where": "Mori Narazuke-ten (next to Tōdai-ji) and Imanishi Honten.",
+      "price": "to confirm",
+      "must": true,
+      "pregnancy": "avoid",
+      "pregnancy_note": "It keeps its alcohol (Japanese Wikipedia cites ~5%). For Fernanda: skip it or try a sliver; buy it for the parents and Pedro.",
+      "glance": "Vegetables cured for months in sake lees: sweet and boozy.",
+      "story": "A wooden tablet dug up at Nara's 8th-century palace, from Prince Nagaya's household, already lists gourd and aubergine in sake lees. The name Nara-zuke caught on much later, in the Keichō era (1596–1615), through the physician Itoya Sōsen, who sold white melon in sake-kasu. Months in the lees turn melon, cucumber or ginger brown, sweet and boozy. Try it with plain rice and tea. Fernanda skips it: it keeps its alcohol."
+    },
+    {
+      "name": "Tea porridge",
+      "name_ja": "茶粥",
+      "romaji": "chagayu (okaisan)",
+      "what": "Rice cooked in hōjicha, thin and not starchy, salted. Nara's breakfast for centuries; sometimes with sweet potato, chestnut or mochi.",
+      "where": "Breakfast at a Nara ryokan; ask when booking. No restaurant was checked on Tabelog.",
+      "pregnancy": "ok",
+      "pregnancy_note": "For Fernanda: hōjicha is low in caffeine.",
+      "glance": "Thin rice porridge cooked in roasted tea; Nara's old breakfast."
+    },
+    {
+      "name": "Miwa sōmen",
+      "name_ja": "三輪素麺",
+      "romaji": "Miwa sōmen",
+      "what": "Very fine wheat noodles, hand-stretched in winter, that stay firm when cooked. Noodles aged a year (hine) or two (ōhine) are the most prized. In the cold, ask for nyūmen (sōmen in hot broth).",
+      "where": "Around Miwa/Sakurai, near Ōmiwa shrine; to take home, packs in the souvenir shops. No place was checked on Tabelog.",
+      "price": "to confirm",
+      "must": true,
+      "pregnancy": "ok",
+      "glance": "Very fine hand-stretched wheat noodles, made in the winter cold.",
+      "story": "Tradition says sōmen was born at the foot of Mount Miwa, whose Ōmiwa shrine guards the noodle makers; every 5 February it even \"divines\" the season's price. The noodles are hand-stretched in the hardest cold, so December and January are the making season. They're very fine yet stay firm when cooked, and noodles aged a year or two are the most prized. In winter, ask for nyūmen: sōmen in hot broth."
+    },
+    {
+      "name": "Mugwort mochi",
+      "name_ja": "よもぎ餅",
+      "romaji": "yomogi-mochi",
+      "what": "Green mugwort mochi filled with smooth anko and dusted with kinako, eaten warm straight after pounding.",
+      "where": "Nakatanidō (Sanjō-dōri).",
+      "price": "Under ¥1,000",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_note": "Small bites, especially for the parents.",
+      "glance": "Warm green mugwort mochi with anko inside, dusted in kinako.",
+      "story": "At Nakatanidō on Sanjō-dōri the mochi is pounded at high speed, and it has become a tourist show. But Japanese diners are rating the mochi, not the show: thousands of reviews and six top-100 listings. It's green with mugwort, filled with smooth anko and dusted with kinako, best eaten warm, straight after pounding. Buy two each, eat them on the spot, and don't wait for the show. Small bites for the parents."
+    },
+    {
+      "name": "Nara sake",
+      "name_ja": "奈良の酒",
+      "romaji": "Nara no sake",
+      "what": "Sake made with Shōryaku-ji's bodaimoto method, tart and full-bodied. The temple holds its bodaimoto festival in January (in 2027: 9 Jan, the day we fly home).",
+      "where": "Sake shops in town; Shōryaku-ji is up in the hills, by bus.",
+      "pregnancy": "avoid",
+      "pregnancy_note": "For Fernanda: no sake; amazake only if it's the kōji kind (\"麹の甘酒ですか?\").",
+      "glance": "Tart, full-bodied sake made with Shōryaku-ji's bodaimoto method."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Naramachi",
+      "name_ja": "ならまち",
+      "kind": "neighbourhood",
+      "story": "The old merchant quarter south of Sarusawa pond, with long wooden townhouses (machiya). It's where Nara's serious sweets and calm meals are.",
+      "eat": [
+        "Namagashi at Kashiya (Nara's top-rated sweets)",
+        "A Yamato-vegetable lunch at Awa Naramachi (private room for 6–8)"
+      ],
+      "tips": "Much quieter than the deer strip. Kashiya has a steep staircase: buy to take away.",
+      "dec_jan": "Our Nara dates (alternative route) are 3–5 Jan. Kashiya says it opens all year; Awa closes Tuesdays, so it's shut on 5 Jan. New Year hours to confirm in early December.",
+      "query": "Naramachi Nara",
+      "glance": "Quiet merchant quarter for Nara's best sweets and a calm lunch."
+    },
+    {
+      "name": "Sanjō-dōri and Higashimuki",
+      "name_ja": "三条通り・東向商店街",
+      "kind": "street",
+      "story": "The streets linking Kintetsu-Nara station to the park. Souvenir shopping, but with old kakinoha-zushi and Nara-zuke houses along the way.",
+      "eat": [
+        "Warm yomogi-mochi from Nakatanidō",
+        "A box of Tanaka kakinoha-zushi for the train",
+        "Nara-zuke at Mori, near Tōdai-ji"
+      ],
+      "tips": "At Nakatanidō, buy two each and eat them there; don't wait for the pounding show, which has no set times.",
+      "dec_jan": "Nakatanidō closes Tuesdays (5 Jan). Kasuga Taisha and Tōdai-ji are packed 1–3 Jan, so 3 Jan, our arrival day, is still busy; 4 Jan is calmer.",
+      "query": "Sanjo-dori Nara",
+      "glance": "Station-to-park street: warm mochi, kakinoha-zushi and Nara-zuke."
+    },
+    {
+      "name": "Miwa",
+      "name_ja": "三輪",
+      "kind": "neighbourhood",
+      "story": "At the foot of Mount Miwa, home of Ōmiwa shrine, guardian of the sōmen makers. Every 5 February the shrine holds the bokujōsai, which \"divines\" the price of the season's noodles.",
+      "eat": [
+        "Cold sōmen or hot nyūmen at the places on the shrine street (none checked on Tabelog)"
+      ],
+      "tips": "Half a day from Nara on the JR Sakurai line (Miwa station).",
+      "dec_jan": "Ōmiwa is one of the big hatsumōde shrines: very busy 1–3 Jan, so 4 Jan is the better day if we go.",
+      "query": "Omiwa Shrine Miwa somen",
+      "glance": "Sōmen's birthplace at Ōmiwa shrine, half a day by train."
+    }
+  ],
+  "places": [
+    {
+      "name": "Nakatanidō",
+      "name_ja": "中谷堂",
+      "area": "Nara · Sanjō-dōri",
+      "genre": "Wagashi (yomogi-mochi)",
+      "price": "Under ¥1,000",
+      "tabelog": {
+        "score": 3.72,
+        "reviews": 2689,
+        "url": "https://tabelog.com/nara/A2901/A290101/29000222/",
+        "awards": "スイーツ WEST 百名店 2018–2020, 2022; 和菓子・甘味処 WEST 百名店 2023, 2026"
+      },
+      "why": "Yes, the high-speed pounding has become a tourist show. But 3.72 from 2,689 reviews and six 百名店 listings show Japanese diners are rating the mochi, not the show: warm, soft, green, with anko and kinako.",
+      "order": "Yomogi-mochi, two each.",
+      "pregnancy_note": "Fine; small bites.",
+      "group": "Eaten on the spot, standing.",
+      "booking": "No bookings; the shop doesn't publish pounding times.",
+      "dec_jan": "3 Jan: New Year hours to confirm in early December. 4 Jan: open on its usual schedule. 5 Jan: closed (Tuesday, its day off).",
+      "query": "Nakatanido Nara",
+      "pregnancy": "ok",
+      "closed_weekdays": [
+        "Tue"
+      ],
+      "closed_dates": [
+        "2027-01-05"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Warm mugwort mochi with anko and kinako, pounded at high speed."
+    },
+    {
+      "name": "Kashiya",
+      "name_ja": "萬御菓子誂處 樫舎",
+      "area": "Nara · Naramachi",
+      "genre": "Namagashi and kakigōri",
+      "price": "¥1,000–2,000",
+      "tabelog": {
+        "score": 3.83,
+        "reviews": 1109,
+        "url": "https://tabelog.com/nara/A2901/A290101/29002296/",
+        "awards": "スイーツ WEST 百名店 2018–2020, 2022; 和菓子・甘味処 WEST 百名店 2023, 2026"
+      },
+      "why": "The namagashi Nara lovers travel for. Quieter and better than anything on the park strip.",
+      "order": "Seasonal namagashi with matcha.",
+      "pregnancy_note": "For Fernanda: fine, one matcha only. The stairs are steep at 30 weeks: buy to take away.",
+      "group": "13 tatami seats upstairs: split, or take away.",
+      "booking": "Phone bookings get priority.",
+      "dec_jan": "\"Open all year\" (Tabelog), so 3–5 Jan should be fine. New Year hours to confirm in early December.",
+      "query": "Kashiya wagashi Naramachi",
+      "pregnancy": "ok",
+      "seven": "split",
+      "closed_weekdays": [],
+      "booking_channel": "phone",
+      "glance": "Nara's top seasonal namagashi, far better than the deer-park strip."
+    },
+    {
+      "name": "Awa Naramachi",
+      "name_ja": "粟 ならまち店",
+      "area": "Nara · Naramachi",
+      "genre": "Regional cooking (traditional Yamato vegetables)",
+      "price": "Lunch ¥3,000–4,000 · Dinner ¥4,000–5,000",
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 374,
+        "url": "https://tabelog.com/nara/A2901/A290101/29001643/"
+      },
+      "why": "The best sit-down meal in Nara for this family: calm, vegetable-led, and with a private room for 6–8.",
+      "order": "The Yamato vegetable course.",
+      "pregnancy_note": "Almost everything is cooked: fine.",
+      "group": "Private room for 6–8: seven fit.",
+      "booking": "Bookings only.",
+      "dec_jan": "3 Jan: New Year hours to confirm in early December. 4 Jan: open on its usual schedule. 5 Jan: closed (Tuesday, its day off).",
+      "query": "Awa Naramachi",
+      "pregnancy": "ok",
+      "seven": "room",
+      "closed_weekdays": [
+        "Tue"
+      ],
+      "closed_dates": [
+        "2027-01-05"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Calm Yamato heirloom-vegetable course in Naramachi, with a private room."
+    },
+    {
+      "name": "Kakinoha-zushi Honpo Tanaka Nara Honten",
+      "name_ja": "柿の葉すし本舗たなか 奈良本店",
+      "area": "Nara · centre",
+      "genre": "Kakinoha-zushi",
+      "tabelog": {
+        "score": 3.25,
+        "reviews": 477,
+        "url": "https://tabelog.com/nara/A2901/A290101/29006750/"
+      },
+      "why": "A low score is normal for packaged regional food. Buy a box for the train; don't plan a meal around it.",
+      "order": "Mixed box; anago and vegetable for Fernanda.",
+      "pregnancy_note": "For Fernanda: the mackerel and salmon are cured, not cooked, so pick anago and vegetable.",
+      "group": "Takeaway, with a few seats.",
+      "dec_jan": "Open every day 9:30–19:00, so 3–5 Jan should be fine. New Year hours to confirm in early December.",
+      "query": "Kakinoha sushi Tanaka Nara",
+      "pregnancy": "careful",
+      "closed_weekdays": [],
+      "glance": "Persimmon-leaf sushi boxes for the train; anago and vegetable for Fernanda."
+    },
+    {
+      "name": "Hiraso Nara-ten",
+      "name_ja": "平宗 奈良店",
+      "area": "Nara · centre",
+      "genre": "Kakinoha-zushi and meals",
+      "tabelog": {
+        "score": 3.19,
+        "reviews": 303,
+        "url": "https://tabelog.com/nara/A2901/A290101/29000753/"
+      },
+      "why": "A sit-down meal with kakinoha-zushi; takeaway all year.",
+      "pregnancy_note": "For Fernanda: the same care with the cured fish.",
+      "group": "Lunch bookings only for 10+, so we walk in, maybe as 4+3.",
+      "dec_jan": "3 Jan: New Year hours to confirm in early December. 4 Jan: closed (Monday, its day off). 5 Jan: open on its usual schedule.",
+      "query": "Hiraso Nara",
+      "pregnancy": "careful",
+      "seven": "split",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "closed_dates": [
+        "2027-01-04"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Sit-down kakinoha-zushi meals, and takeaway boxes all year."
+    },
+    {
+      "name": "Izasa (Yume-kaze Hiroba)",
+      "name_ja": "ゐざさ",
+      "area": "Nara · Yume-kaze Hiroba",
+      "genre": "Kakinoha-zushi",
+      "tabelog": {
+        "score": 3.16,
+        "url": "https://tabelog.com/nara/A2901/A290101/29001038/"
+      },
+      "why": "The third big name, with tatami seating near Tōdai-ji where a family can sit together.",
+      "pregnancy_note": "For Fernanda: the same care with the cured fish.",
+      "group": "42 tatami seats: ask for seven together.",
+      "dec_jan": "New Year hours to confirm in early December.",
+      "query": "Izasa Yumekaze Hiroba Nara",
+      "pregnancy": "careful",
+      "seven": "ask",
+      "glance": "Kakinoha-zushi on tatami near Tōdai-ji, where the family can sit together."
+    }
+  ],
+  "shops": [
+    {
+      "name": "Mori Narazuke-ten",
+      "name_ja": "森奈良漬店",
+      "what": "An old Nara-zuke house next to Tōdai-ji (Tabelog 3.08, 37 reviews, https://tabelog.com/nara/A2901/A290101/29005147/).",
+      "buy": "Shirouri Nara-zuke for the parents and Pedro.",
+      "dec_jan": "9:00–18:00 every day, so 3–5 Jan should be fine. New Year hours to confirm in early December.",
+      "query": "Mori Narazuke Nara"
+    },
+    {
+      "name": "Imanishi Honten",
+      "name_ja": "今西本店",
+      "what": "Another old Nara-zuke house (Tabelog 3.10, https://tabelog.com/nara/A2901/A290101/29005395/).",
+      "buy": "Nara-zuke.",
+      "dec_jan": "New Year hours to confirm in early December.",
+      "query": "Imanishi Honten Narazuke"
+    },
+    {
+      "name": "Kakinoha-zushi Tanaka",
+      "name_ja": "柿の葉すし本舗たなか",
+      "what": "Kakinoha-zushi boxes to take away.",
+      "buy": "A mixed box for the train.",
+      "dec_jan": "Open every day.",
+      "query": "Kakinoha sushi Tanaka Nara"
+    }
+  ],
+  "sources": [
+    "docs/research/food/22-kansai.md",
+    "https://ja.wikipedia.org/wiki/奈良漬け",
+    "https://ja.wikipedia.org/wiki/正暦寺",
+    "https://shoryakuji.jp/",
+    "https://ja.wikipedia.org/wiki/柿の葉寿司",
+    "https://ja.wikipedia.org/wiki/茶粥",
+    "https://ja.wikipedia.org/wiki/三輪素麺",
+    "https://ja.wikipedia.org/wiki/雑煮"
+  ]
+}

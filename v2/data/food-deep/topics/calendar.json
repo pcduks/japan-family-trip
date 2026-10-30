@@ -1,0 +1,479 @@
+{
+  "slug": "calendar",
+  "title": "Book by… and our food calendar",
+  "intro": [
+    "Our trip runs straight through the Japanese year-end, and that changes every meal. We get a normal Tokyo week (20–24 Dec), Christmas at the snow-monkey ryokan, Kanazawa in the last days of the female-crab season and the market rush (27–30 Dec), then New Year in Kyoto, where independent restaurants close from about 29/30 Dec to 3/4 Jan and 1 Jan is a dead day. Everything is back by 5 Jan, and our last Tokyo days (7–8 Jan) fall in the best window of the whole trip for the top counters.",
+    "Before all that come bookings that open on fixed dates: miss the date and you miss the table. The deadlines come first, then our trip stop by stop, then the New Year dishes and what Fernanda can eat.",
+    "Golden rule: Tabelog's closing days (定休日) ignore New Year. Shops post their 年末年始 notices in early December on Instagram, X or Tabelog. Anything marked \"to confirm\" gets checked again then."
+  ],
+  "sections": [
+    {
+      "title": "Book by: the deadlines",
+      "body": "In date order, from 18 Oct 2026. When booking a counter, mention the pregnancy at booking, never on the night: 「同行者が一名妊娠中のため、生の貝類・生卵・レアのお肉は控えています」. Always say we are seven: many online systems stop at 2–4, and a room for 6 is not a room for 7.",
+      "items": [
+        {
+          "name": "Now · Tokyo's one big night (20–23 Dec or 7–8 Jan)",
+          "what": "Places that open three months ahead are already selling 20 Dec – Jan. This is the moment for our single ¥50k+ night: Sushi Arai (room for 6, ¥10k room fee, groups of 4+), Kagurazaka Ishikawa or Myōjaku (rooms for 6). For all three, ask whether a seventh chair fits the room, or split 4+3. Mikawa Zezankyo (tempura) and Tonkatsu Narikura have 6 counter seats: ask about a seventh, or take two seatings.",
+          "where": "Tabelog online booking (¥440 per person, not refunded), OMAKASE, TableCheck or the hotel concierge",
+          "must": true,
+          "tip": "Pick one expensive night, not several. Mind the closing days: Arai, Mikawa and Nakahara close Wednesdays (23 Dec); Ishikawa and Sazenka close Mondays (21 Dec); Narikura closes Mondays and Tuesdays (21–22 Dec). The exact opening date of each booking window was not captured, so treat them all as open now."
+        },
+        {
+          "name": "Now · Akasaka Kikunoi for 20–23 Dec",
+          "name_ja": "菊乃井",
+          "what": "The benchmark ryōtei. In Tokyo, Akasaka Kikunoi (Tabelog 3.86) has rooms for 6: ask whether seven fit. The Kyoto Honten (4.10, Michelin 3★ 2026) has rooms for 4, 6 and 8, and the room for 8 takes seven, but it closes for the year-end and New Year holidays while we're in Kyoto (exact dates unverified).",
+          "where": "Tokyo: Tabelog. Kyoto: phone or the official site",
+          "must": true,
+          "tip": "Kyoto Honten is only possible on 4 Jan if it has already reopened by then: ask when booking. Ryōtei swap the raw course (mukōzuke) for Fernanda routinely if told at booking."
+        },
+        {
+          "name": "Now · Sazenka in December",
+          "what": "Bookings open on the 1st, two months ahead, so December opened on 1 Oct: check what's left for 20, 22 or 23 Dec (closed Mondays). Its private room is listed as \"6\" in one source and \"4\" in another, so confirm, and ask about seven.",
+          "where": "Tabelog / official site",
+          "tip": "Mostly cooked Chinese through a Japanese lens: easy for Fernanda."
+        },
+        {
+          "name": "Now · Kanazawa crab and sushi for 27–29 Dec",
+          "what": "Sushi Shinosuke (3.78) opens bookings on the 1st, two months ahead, so December is already open; its 10-seat counter means booking 7 of 10 seats or buying it out. For dinner: Kabuna (3.75) has a room for 6 (ask about seven) and is the best group dinner under ¥10k; Oden Miyuki (3.63) has rooms for 10–20 and needs a booking for 3 or more. Yamasan Sushi at Ōmichō (3.65) takes a few groups a day online for a kōbako and buri lunch.",
+          "where": "Online",
+          "must": true,
+          "tip": "Kabuna, Oden Miyuki and Otome Zushi are all closed on Sundays, so 27 Dec (our arrival) is a Yamasan or Akadama day."
+        },
+        {
+          "name": "28–29 Oct · Otome Zushi (Kanazawa)",
+          "name_ja": "乙女寿司",
+          "what": "Kanazawa's benchmark sushi (4.05). Online bookings open 2 months before each date, so for dinner on 28 or 29 Dec the window opens around 28–29 Oct. The 8-seat tatami room takes the seven of us.",
+          "where": "Online · closed Wednesdays, Sundays and holidays",
+          "must": true,
+          "pregnancy": "careful",
+          "tip": "27 Dec is a Sunday, so 28 Dec is the safe night: it is also the last safe day for kōbako. New Year dates are unverified, so 29 Dec may already fall in the shutdown. For Fernanda, pre-arrange swaps for raw shellfish and shirako; boiled kōbako is fine; raw buri, a few pieces."
+        },
+        {
+          "name": "Now · email Yukari Sakamoto",
+          "what": "She runs the best depachika and market tour in Tokyo (2 guests, weekday mornings, from ¥36,000). Our weekday mornings in Tokyo are 21–23 Dec and 8 Jan.",
+          "where": "foodsaketokyo.com"
+        },
+        {
+          "name": "1 Nov · January releases open",
+          "what": "Places that release on the 1st open December (one-month places) and some January slots. Sazenka (1st of the month, two months ahead) opens January, which covers our 7–8 Jan in Tokyo.",
+          "where": "Each place on its own channel",
+          "must": true
+        },
+        {
+          "name": "Late Nov · Soba Fujioka (Nagano)",
+          "name_ja": "蕎麦 ふじおか",
+          "what": "A soba course in the Iizuna highlands (3.88). It books a month ahead, so late November for late-December dates. It opens Friday to Monday, which gives us 25 or 26 Dec from Yudanaka. It has a 6-seat table: ask whether a seventh place fits.",
+          "where": "Reservation only · cash only",
+          "tip": "Winter opening is unverified: check when booking."
+        },
+        {
+          "name": "Wed 18 Nov, 17:00–19:00 JST · Torishiki by phone",
+          "name_ja": "鳥しき",
+          "what": "The \"Mount Everest of yakitori\" (4.43) opens its January 2027 phone window on 18 Nov (to confirm), 17:00–19:00 Japan time. That covers our 7–8 Jan in Tokyo.",
+          "where": "Phone only · it needs a Japanese speaker or the concierge",
+          "must": true,
+          "tip": "Ask whether they can take seven. For Fernanda: everything よく焼き (well done), no rare sticks."
+        },
+        {
+          "name": "Late Nov · Kyoto osechi",
+          "name_ja": "おせち",
+          "what": "Kyoto ryōtei and department stores (Takashimaya, Daimaru) sell osechi boxes to order. The deadline is unverified (\"early to mid December\"), so order by late November if we want one for 1 Jan in Kyoto.",
+          "where": "Kyoto · in store",
+          "price": "Department-store boxes: about ¥20–60k"
+        },
+        {
+          "name": "Nov–Dec · Kiji-tei (Kawaguchiko)",
+          "name_ja": "きじ亭",
+          "what": "Pheasant hōtō (3.67), Kawaguchiko's best. Only 5 groups a day, booked 9:00–10:00 on business days. It's lunch only and closed Tuesdays and Wednesdays, so of our Kawaguchiko days only 7 Jan (Thu) works. The private room for 10–20 takes seven.",
+          "where": "10 min walk from Kawaguchiko Station",
+          "pregnancy": "ok",
+          "tip": "Everything is cooked."
+        },
+        {
+          "name": "1 Dec · January opens at one-month places",
+          "what": "One-month places release January. Our 7–8 Jan in Tokyo sit in the best window of the trip for elite counters, because everything has reopened.",
+          "where": "Each place on its own channel",
+          "must": true
+        },
+        {
+          "name": "About 2–8 Dec · Toyosu tuna-auction deck lottery",
+          "name_ja": "豊洲市場 見学デッキ抽選",
+          "what": "A free lottery to watch the tuna auction from the lower deck on 7 or 8 Jan: 100 people a day, at most 5 per application, so we file two applications for the seven of us (5+2 or 4+3). Meet 05:30 at the 3F PR corner; viewing runs 05:45–06:25. Everyone must be junior-high age or older and carry ID.",
+          "where": "toyosu.jcdlotterysite.jp",
+          "must": true,
+          "tip": "Apply for 8 Jan (Fri): on the morning of the 7th we wake up in Kawaguchiko. The lottery date is an estimate, so check it. For Fernanda, the 05:00 cold matters more than the food: she can sleep in and meet us for a sushi breakfast."
+        },
+        {
+          "name": "Early Dec · check New Year hours",
+          "what": "Shops post 年末年始 notices on Instagram, X and Tabelog. In mid-December, have the hotel phone our Kanazawa and Kyoto list. The new ramen 百名店 list also comes out in early December.",
+          "where": "Shop social media / concierge"
+        },
+        {
+          "name": "Sat 19 Dec, 09:00 · Ginza Hachigo",
+          "name_ja": "銀座 八五",
+          "what": "The best bookable ramen in Tokyo (3.93). Every Saturday at 9:00 it opens the following week. It has only 6 seats, so seven can't sit at once: book two seatings (4+3). Closed Mondays (21 Dec).",
+          "where": "The shop's own channel (not Tabelog or phone)",
+          "tip": "For 7–8 Jan, try Sat 2 Jan at 9:00, if the pattern holds after its New Year break (closed 29 Dec – 3 Jan last season). For Fernanda: 味玉なしで (no soft egg), and ask whether the chāshū is pink."
+        },
+        {
+          "name": "Up to 22, 25 or 28 Dec · konbini osechi",
+          "name_ja": "コンビニおせち",
+          "what": "The cheap New Year box: FamilyMart by 22 Dec (collect 31 Dec, ¥12,420), Lawson by about 25 Dec (¥12,950 or ¥5,680), 7-Eleven by 28 Dec (one tier, ¥6,912). You collect it at the store.",
+          "where": "Any FamilyMart, Lawson or 7-Eleven (in store or by app)",
+          "tip": "It only makes sense from a store near our Kyoto house, so ask whether an order placed in Tokyo or Kanazawa can be collected in Kyoto."
+        },
+        {
+          "name": "By 28 Dec · last kōbako crab",
+          "name_ja": "香箱ガニ",
+          "what": "Female snow crab is only fished until the year-end. Ishikawa closes the season historically ~29 Dec (2026 date to confirm), so our kōbako meals are 27 and 28 Dec in Kanazawa.",
+          "where": "Kanazawa",
+          "must": true,
+          "pregnancy": "ok",
+          "tip": "Boiled kōbako is fine for Fernanda; kani-sashi (raw crab) is not."
+        },
+        {
+          "name": "Mon 28 Dec, from 08:00 · Izuu saba-zushi for Kyoto",
+          "name_ja": "いづう",
+          "what": "Kyoto's definitive mackerel sushi, a New Year and festival food. Takeaway can be reserved by phone from 8 a.m. It's closed Tuesdays (29 Dec), so call from Kanazawa on the 28th to collect on 30 or 31 Dec.",
+          "where": "Gion · by phone",
+          "pregnancy": "careful",
+          "tip": "The mackerel is cured, not cooked: for Fernanda, anago (cooked eel) sushi or inari."
+        },
+        {
+          "name": "30–31 Dec · Murakami-jū tsukemono before it shuts",
+          "name_ja": "村上重本店",
+          "what": "The Nishikiya-machi pickle house known for senmai-zuke (3.16) is closed 1–3 Jan, so buy on 30 or 31 Dec, the day we arrive or the next. Uchida Tsukemono in Nishiki closes on 1 Jan only.",
+          "where": "Nishiki area, Kyoto",
+          "must": true,
+          "pregnancy": "ok"
+        },
+        {
+          "name": "30 Dec or opening on 31 Dec · Matsuba nishin soba",
+          "name_ja": "総本家にしんそば 松葉",
+          "what": "Kyoto's New Year's Eve soba is herring soba, created here. Expect long queues on the 31st: go on the afternoon we arrive (30 Dec) or at opening on the 31st.",
+          "where": "Shijō-Ōhashi, next to Minamiza",
+          "must": true,
+          "pregnancy": "ok"
+        }
+      ]
+    },
+    {
+      "title": "Tokyo, arrival (20–24 Dec)",
+      "body": "A normal Tokyo week with the Christmas lights on. It's our window for the big counters before the year-end break, and none of our Tokyo nights is a Friday or Saturday, when year-end parties (忘年会) fill the izakaya.",
+      "items": [
+        {
+          "name": "Sun 20 Dec · arrival",
+          "what": "The wholesale market (Toyosu and Tsukiji) is closed on Sundays, and so are many places (Narutomi, Kanda Matsuya, Kishidaya, Ogura, Ponchi-ken, Takemura, Isehiro). For a first night: Tonkatsu Suzuki (open all year except 1 Jan) or okonomiyaki at Kiji Marunouchi, right by the shinkansen.",
+          "where": "Tokyo"
+        },
+        {
+          "name": "Mon 21 Dec · market and Kappabashi day",
+          "what": "Toyosu is open, and so are the knife shops (Kama-Asa, Kamata, Tsubaya). The Japan Sake & Shochu Information Center (日本の酒情報館, tastings from ¥100 a cup) opens on weekdays only.",
+          "where": "Kappabashi · Tsukiji · Toranomon",
+          "tip": "Monday closures: Uwo Toku, Ponta Honke, Ginza Hachigo, Café de l'Ambre, Kayaba, Sazenka, Ishikawa, Narikura. Knives go in the checked bag."
+        },
+        {
+          "name": "Tue 22 Dec · second market day",
+          "what": "Another good morning for Tsukiji and Kappabashi. Last day to order FamilyMart osechi.",
+          "where": "Tokyo",
+          "tip": "Tuesday closures: Mizukami, Stamina-en, Obana, Kitagawa, Narikura."
+        },
+        {
+          "name": "Wed 23 Dec · Toyosu closed",
+          "what": "Market holiday: Toyosu closes, and so do the Tsukiji shops that follow its calendar (Fushitaka, Sugimoto knives). Kanda Yabu Soba is closed (Wednesday), and so are Sushi Arai, Mikawa, Nakahara, Tonkatsu Aoki, Kibun, Akira, Maruchiba, Kanemasu, Tagano and Usagiya.",
+          "where": "Tokyo"
+        },
+        {
+          "name": "Thu 24 Dec · train day",
+          "what": "Christmas Eve is couples' night in Japan, with pricey Christmas courses at every counter, but we skip it: we take the shinkansen to Nagano and eat at the ryokan. Buy lunch at Tokyo Station (Ekiben-ya Matsuri from 05:30, Daimaru's bento street).",
+          "where": "Tokyo Station",
+          "tip": "Depachika are packed with people collecting Christmas cakes today."
+        }
+      ]
+    },
+    {
+      "title": "Snow monkeys and Christmas (24–27 Dec)",
+      "body": "Three ryokan nights, so dinner and breakfast are at the inn. Shibu and Yudanaka themselves have nothing above about 3.4 on Tabelog: we eat at the ryokan, and take lunch outside.",
+      "items": [
+        {
+          "name": "Thu 24 Dec · Christmas Eve at the ryokan",
+          "name_ja": "クリスマスイブ",
+          "what": "The ryokan kaiseki is our Christmas dinner. Tell the ryokan about Fernanda when booking: the winter kaiseki has sashimi, crab, roe and sometimes raw meat, and they swap them if told in advance.",
+          "where": "Yudanaka / Shibu",
+          "must": true,
+          "pregnancy": "careful"
+        },
+        {
+          "name": "Christmas cake",
+          "name_ja": "クリスマスケーキ",
+          "what": "Strawberry shortcake is Japan's Christmas sweet. If we want one at the ryokan, it has to travel with us from Tokyo on the 24th: a depachika cake, or a pre-order from Inamura Shōzō (Yanaka, 3.83) by phone or fax.",
+          "where": "Tokyo depachika · cake shops",
+          "pregnancy": "ok",
+          "tip": "For Fernanda, just avoid mousse or tiramisu made with raw egg."
+        },
+        {
+          "name": "25–26 Dec · lunch out",
+          "what": "Iwamoto Sobaya (3.57): 30 seats and a tatami room (ask for seven), cash only, needs a car, closed Thursdays (24 Dec). Yama no Mi (4.06) is closed late November to late April. In Nagano, Soba Fujioka (booked a month ahead, Fri–Mon) and oyaki at Ogawa no Shō Daimon by Zenkō-ji (3.47, closed Wednesdays).",
+          "where": "Yudanaka · Nagano",
+          "pregnancy": "ok",
+          "tip": "Suki-tei (sukiyaki) closes over the year-end, dates not given. Togakushi soba (Uzuraya, closed Tue–Wed) is deep in snow and its winter opening is unverified."
+        },
+        {
+          "name": "Fri 25 Dec · Christmas ends",
+          "what": "Japanese Christmas ends at midnight on the 25th, along with the illuminations. From here on, the country turns to New Year.",
+          "where": "Everywhere"
+        },
+        {
+          "name": "Sun 27 Dec · on to Kanazawa",
+          "what": "Buy train food at Nagano Station's MIDORI: oyaki, Shinshū soba, miso and local sake.",
+          "where": "Nagano Station",
+          "tip": "MIDORI hours to confirm."
+        }
+      ]
+    },
+    {
+      "title": "Kanazawa (27–30 Dec)",
+      "body": "We arrive for the last kōbako days and leave on the peak of the market rush. From 29 Dec, independents start closing.",
+      "items": [
+        {
+          "name": "Sun 27 Dec · arrival",
+          "what": "Kabuna, Oden Miyuki, Otome Zushi and Tokkuriya are closed on Sundays. Open: Yamasan Sushi at Ōmichō (9:00–16:00, no fixed closing day, 32 seats with tatami) for a kōbako and buri lunch, and Akadama oden (96 seats over two floors; opens at noon at weekends, closed Mondays).",
+          "where": "Ōmichō · Katamachi",
+          "pregnancy": "careful",
+          "tip": "At Yamasan, Fernanda has the boiled crab; raw fish nigiri, a few pieces; no shellfish."
+        },
+        {
+          "name": "Mon 28 Dec · the last safe kōbako day",
+          "name_ja": "香箱ガニ",
+          "what": "Book the crab dinner tonight: Otome Zushi for the summit, Kabuna for value. The market rush begins: Ōmichō fills with people buying crab by the crate. It's also the traditional mochi-pounding day (the 29th is avoided because 9 sounds like 苦, \"suffering\") and the day kagami-mochi goes up.",
+          "where": "Kanazawa",
+          "must": true,
+          "pregnancy": "ok",
+          "tip": "No 2026 mochitsuki event was confirmed: ask the hotel. Cut mochi small for Fernanda and the parents; choking on mochi makes the news every New Year. Call Izuu in Kyoto from 8:00."
+        },
+        {
+          "name": "Ikiiki-tei, early",
+          "name_ja": "いきいき亭",
+          "what": "Mark Wiens's \"excellent\" Ōmichō counter (3.65): local-catch bowls, 10 seats, names on the list from 7:00. Seven means 4+3 over two rotations, before 8:00. Closed Tuesdays (29 Dec).",
+          "where": "Ōmichō",
+          "pregnancy": "careful",
+          "tip": "A raw bowl with amaebi, gasuebi, scallop and uni: Fernanda asks for fish only, no shellfish, or eats elsewhere."
+        },
+        {
+          "name": "Tue 29 Dec · the shutdown begins",
+          "what": "Independents start closing (29/30 Dec – 3/4 Jan). The last kōbako day in Ishikawa: historically ~29 Dec (2026 date to confirm). Ikiiki-tei is closed (Tuesday).",
+          "where": "Kanazawa",
+          "tip": "Lifelines: hotels, chains, konbini."
+        },
+        {
+          "name": "Wed 30 Dec · Ōmichō peak, then Kyoto",
+          "what": "Ōmichō's aisles fill on 30–31 Dec. Buy amanattō at Amanattō Kawamura today: its shop closes 31 Dec – 3 Jan (the upstairs salon already closed on 24 Dec). Then Kanazawa Station's Anto for the train to Kyoto.",
+          "where": "Ōmichō · Higashi-chaya · Kanazawa Station",
+          "tip": "Turban Curry closes 30 Dec – 1 Jan. Ōmichō is closed 1–3 Jan."
+        }
+      ]
+    },
+    {
+      "title": "New Year in Kyoto (30 Dec – 5 Jan)",
+      "body": "Most Kyoto restaurants close around 1–3 Jan; a closure is listed here only where the shop or Tabelog says so, and \"open daily\" on Tabelog doesn't guarantee 1–3 Jan. Our house's kitchen, konbini and the department stores (from 2 or 3 Jan) carry us through.",
+      "items": [
+        {
+          "name": "Wed 30 Dec · arrival and Nishiki",
+          "name_ja": "錦市場",
+          "what": "Nishiki is Kyoto's New Year shopping street, and 28–30 Dec is its peak for kazunoko, kuromame, white miso, mochi and kamaboko: shoulder to shoulder. Buy Murakami-jū pickles, and the ozōni makings (saikyō white miso, round mochi, kashira-imo). Matsuba nishin soba this afternoon beats the 31st queue.",
+          "where": "Nishiki · Shijō",
+          "must": true,
+          "tip": "Wednesday closures: Shinpuku Saikan, Menami, Tempura Matsu, Nanzenji Junsei; Nikora, Tempura Yoshikawa, Okakita and Grill Kodakara close Tue–Wed."
+        },
+        {
+          "name": "Thu 31 Dec · Ōmisoka",
+          "name_ja": "大晦日",
+          "what": "Toshikoshi soba day. Matsuba: open daily, long queues, shared tables, so seven may split 4+3. Honke Owariya's listing is on hold: use it only if it's trading. Pick up the Izuu saba-zushi. Smart Coffee is open (closed 1–2 Jan).",
+          "where": "Kyoto",
+          "must": true,
+          "pregnancy": "ok",
+          "tip": "Closed today: Daiichi Asahi (Thursdays), Salon de thé Francois (31 Dec – 2 Jan)."
+        },
+        {
+          "name": "Fri 1 Jan · the dead day",
+          "what": "Osechi and white-miso ozōni at home. Most konbini open (check ours). Hatsumōde stalls at the Kyoto shrines; Heian Shrine draws huge crowds 1–3 Jan.",
+          "where": "Kyoto",
+          "must": true,
+          "tip": "Closed: department-store food halls, Murakami-jū (1–3 Jan), Uchida Tsukemono (1 Jan only), Smart Coffee (1–2 Jan), Francois, Kikunoi."
+        },
+        {
+          "name": "Hatsumōde stalls",
+          "name_ja": "初詣の屋台",
+          "what": "From 1 to 3 Jan the shrines fill with stalls: amazake, yaki-mochi, ikayaki, taiyaki, yakisoba, karaage, takoyaki and roast sweet potato.",
+          "where": "Shrines and temples",
+          "pregnancy": "careful",
+          "tip": "For Fernanda, only what comes off the heat in front of her. For amazake, ask 「麹の甘酒ですか?」."
+        },
+        {
+          "name": "Sat 2 Jan · first sales",
+          "name_ja": "初売り・福袋",
+          "what": "Daimaru usually reopens on 2 Jan (to confirm), with food lucky bags (tea, wagashi, bakery) sold at the counters; queues for the famous ones start around 8:00. Uchida Tsukemono is open again.",
+          "where": "Daimaru Kyoto (Shijō-Karasuma)",
+          "tip": "Takashimaya stays closed 1–2 Jan. Fernanda doesn't do a two-hour cold queue: send someone else."
+        },
+        {
+          "name": "Sun 3 Jan · more reopens",
+          "what": "Takashimaya Kyoto reopens, and so do Smart Coffee and Francois.",
+          "where": "Kyoto",
+          "tip": "Pontochō Masuda and Akagakiya close on Sundays."
+        },
+        {
+          "name": "Mon 4 Jan · Japan goes back to work",
+          "what": "Murakami-jū reopens, and many soba and wagashi shops do too. If Kikunoi Honten has reopened, this is our one chance for it.",
+          "where": "Kyoto",
+          "tip": "Kagizen (kuzu-kiri) closes Mondays."
+        },
+        {
+          "name": "Tue 5 Jan · leaving Kyoto",
+          "what": "Elite counters are fully back from today. Buy the train lunch at JR Kyoto Isetan B1 (old-shop bentō corner, an Izuu counter) or have a 6:00 bowl at Daiichi Asahi by the station.",
+          "where": "Kyoto Station",
+          "tip": "Izuu's Gion shop, Okakita and Nikora close on Tuesdays. Toyosu's first tuna auction is today in Tokyo, without us."
+        }
+      ]
+    },
+    {
+      "title": "Fuji and Tokyo again (5–9 Jan)",
+      "body": "Everything has reopened. Kawaguchiko's two best lunches close midweek, so plan around them; Tokyo's 7–8 Jan are the best booking window of the trip.",
+      "items": [
+        {
+          "name": "5–6 Jan · Kawaguchiko lunches",
+          "what": "Kiji-tei is closed Tue–Wed. Miura Udon (Yoshida udon, 3.66) is open 10:00–14:00 on 5 Jan but closed Wednesdays; it has 45 seats with tables for 6, so ask to put two together or split 4+3. On the 6th try the other Yoshida udon on the list, 麺許皆伝 (3.65) or 桜井うどん (3.62).",
+          "where": "Kawaguchiko · Fujiyoshida",
+          "pregnancy": "ok",
+          "tip": "New Year dates for all of these are unverified: phone ahead."
+        },
+        {
+          "name": "Thu 7 Jan · nanakusa-gayu, then Tokyo",
+          "name_ja": "七草粥",
+          "what": "Seven-herb rice porridge to rest the stomach after the holidays, at hotel breakfasts and some restaurants. Kiji-tei for lunch (open today), then to Tokyo for dinner.",
+          "where": "Hotel · Kawaguchiko · Tokyo",
+          "pregnancy": "ok",
+          "tip": "Thursday closures in Tokyo: Sushi Matsumoto, Restaurant Kamiya. Narikura is open on Thursdays."
+        },
+        {
+          "name": "Fri 8 Jan · Toyosu deck and the last full day",
+          "what": "If we won the lottery: deck viewing 05:45–06:25, then sushi breakfast at Toyosu or Tsukiji. Later: the last splurge dinner, Kappabashi if we missed it, and depachika omiyage.",
+          "where": "Toyosu · 3F · Tokyo",
+          "must": true
+        },
+        {
+          "name": "Sat 9 Jan · departure",
+          "what": "Ekiben at Ekiben-ya Matsuri (GranSta, 05:30–22:00) or Daimaru's bento street; sake at Hasegawa Saketen in GranSta. A three-day weekend starts (Coming-of-Age Day, 11 Jan).",
+          "where": "Tokyo Station",
+          "tip": "The fish market closes 10–11 Jan. Kagami-biraki (11 Jan) is after we leave."
+        }
+      ]
+    },
+    {
+      "title": "New Year dishes",
+      "body": "What gets eaten at the turn of the year, why, and what Fernanda can have.",
+      "items": [
+        {
+          "name": "Osechi",
+          "name_ja": "おせち料理",
+          "what": "Lacquered boxes of several tiers, made before New Year so nobody cooks on the first days. Each item is a wish: kuromame (black beans, health), kazunoko (herring roe, children), datemaki (sweet rolled omelette, learning), kurikinton (sweet potato and chestnut, wealth), kōhaku namasu, nishime, tazukuri and kobumaki.",
+          "where": "Ordered from Kyoto department stores or konbini, or loose items from Nishiki on 30 Dec",
+          "price": "Konbini ¥5,680–12,950 · department store about ¥20–60k",
+          "must": true,
+          "pregnancy": "careful",
+          "tip": "Nearly everything is cooked or cured and fine. Fernanda skips the smoked-salmon rolls (cold-smoked) and the raw abalone or shellfish in luxury boxes; a little ikura only if she wants. For seven, a two-tier box plus loose items works better than the big box. It needs a fridge."
+        },
+        {
+          "name": "Ozōni, Kyoto style",
+          "name_ja": "白味噌雑煮",
+          "what": "The mochi soup of New Year's morning. Kyoto's is white miso with round boiled mochi and kashira-imo (Tokyo's is clear dashi with square grilled mochi). It's eaten at home on 1–3 Jan, so almost no restaurant serves it; none was verified.",
+          "where": "Our Kyoto house, with makings from Nishiki on 30 Dec; or ask a ryokan or hotel whether New Year breakfast includes 白味噌雑煮",
+          "must": true,
+          "pregnancy": "ok",
+          "tip": "Mochi in small pieces and chewed well, for Fernanda and the parents."
+        },
+        {
+          "name": "Toshikoshi soba",
+          "name_ja": "年越しそば",
+          "what": "Soba eaten on the 31st, before midnight: the long noodle is long life, and the clean cut leaves the old year behind. In Kyoto it's nishin soba, topped with sweet-simmered herring.",
+          "where": "Matsuba (Kyoto) · konbini soba as plan B",
+          "price": "¥1,000–2,500",
+          "must": true,
+          "pregnancy": "ok",
+          "tip": "For Fernanda, no tsukimi (raw yolk). Nishin, tempura, kamo-nanban and plain seiro are fine."
+        },
+        {
+          "name": "Saba-zushi",
+          "name_ja": "鯖寿司",
+          "what": "Mackerel pressed sushi on kombu-wrapped rice, Kyoto's festival and New Year food. Izuu (3.69) is the reference; its JR Kyoto Isetan (3.57) and Daimaru (3.51) counters are plan B.",
+          "where": "Izuu, Gion (pre-order for 30–31 Dec)",
+          "pregnancy": "careful",
+          "tip": "Cured, not cooked: Fernanda takes anago or inari."
+        },
+        {
+          "name": "Kagami-mochi",
+          "name_ja": "鏡餅",
+          "what": "Two stacked discs of mochi with a mandarin on top, the household's New Year offering. It goes up around 28 Dec (never on the 29th or 31st) and is broken and eaten at kagami-biraki on 11 Jan, after we leave.",
+          "where": "Supermarkets or depachika (small wrapped versions)",
+          "pregnancy": "ok",
+          "tip": "The small wrapped ones make a good souvenir."
+        },
+        {
+          "name": "Otoso",
+          "name_ja": "お屠蘇",
+          "what": "Sake with medicinal herbs, drunk on the morning of 1 Jan to keep illness away in the new year. Ryokan and hotels serve it with the osechi.",
+          "where": "Hotels, ryokan, family homes",
+          "pregnancy": "avoid",
+          "tip": "It's alcohol: Fernanda skips it and toasts with tea or kōji amazake."
+        },
+        {
+          "name": "Kōji amazake",
+          "name_ja": "米麹の甘酒",
+          "what": "A sweet, hot rice drink fermented with kōji, practically alcohol-free. The safe version of shrine amazake; Ninben's 日本橋だし場 in Tokyo serves a kōji dashi-amazake.",
+          "where": "Shrines, tea houses, Ninben (Tokyo)",
+          "price": "to confirm",
+          "pregnancy": "ok",
+          "tip": "Always ask 「麹の甘酒ですか?」 (is it kōji?)."
+        },
+        {
+          "name": "Sake-lees amazake",
+          "name_ja": "酒粕の甘酒",
+          "what": "Made from sake lees, so it has alcohol (under 1%, says Morinaga, which warns pregnant women and children off it). It's the most common kind at shrine stalls over New Year. The same goes for kasu-jiru (sake-lees soup) and Nara-zuke.",
+          "where": "Hatsumōde stalls",
+          "pregnancy": "avoid",
+          "tip": "If the answer to 「麹の甘酒ですか?」 is no, Fernanda has a hot tea instead."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.shijou.metro.tokyo.lg.jp/documents/d/shijou/r9suisan-csv",
+    "https://www.shijou.metro.tokyo.lg.jp/documents/d/shijou/08suisancsv-csv",
+    "https://www.shijou.metro.tokyo.lg.jp/documents/d/shijou/faq-japanese-pdf",
+    "https://toyosu.jcdlotterysite.jp/",
+    "https://www.takashimaya.co.jp/store/special/osechi/",
+    "https://macaro-ni.jp/178469",
+    "https://www.morinaga.co.jp/amazake/",
+    "https://www.ninben.co.jp/store/honten/",
+    "https://www.hasegawasaketen.com/",
+    "https://www.tsukiji.or.jp/calendar/",
+    "https://www.pref.kyoto.jp/co-kyoto/gourmet/221221.html",
+    "https://www.kikunoi.jp/",
+    "https://tabelog.com/kyoto/A2601/A260301/26001346/",
+    "https://tabelog.com/kyoto/A2601/A260301/26001629/",
+    "https://tabelog.com/kyoto/A2601/A260301/26000585/",
+    "https://tabelog.com/kyoto/A2601/A260201/26007678/",
+    "https://tabelog.com/kyoto/A2601/A260202/26015723/",
+    "https://tabelog.com/ishikawa/A1701/A170101/17000107/",
+    "https://tabelog.com/ishikawa/A1701/A170101/17000173/",
+    "https://tabelog.com/ishikawa/A1701/A170101/17000085/",
+    "https://tabelog.com/ishikawa/A1701/A170101/17000196/",
+    "https://tabelog.com/ishikawa/A1701/A170101/17000514/",
+    "https://banzokubiology.com/omicho-konzatsu/",
+    "https://tabelog.com/nagano/A2001/A200101/20000415/",
+    "https://tabelog.com/yamanashi/A1903/A190303/19000366/",
+    "https://tabelog.com/en/tokyo/A1316/A131601/13041029/",
+    "https://tabelog.com/tokyo/A1301/A130101/13228602/",
+    "https://www.mhlw.go.jp/topics/syokuchu/dl/ninpu.pdf"
+  ]
+}

@@ -1,0 +1,765 @@
+{
+ "miyajima": {
+  "area": {
+   "prefecture": "Hiroshima",
+   "tags": [
+    "classics",
+    "food",
+    "gentle"
+   ],
+   "known_for": [
+    {
+     "title": "The floating torii",
+     "blurb": "Itsukushima's shrine stands on stilts over the sea. Walk out to the great gate at low tide and watch it float at high tide."
+    },
+    {
+     "title": "Chinka-sai",
+     "blurb": "On New Year's Eve about a thousand torches are lit from the shrine's sacred fire on Mikasa-hama beach."
+    },
+    {
+     "title": "The island after dark",
+     "blurb": "Once the day visitors take the ferry back, the lanterns, the deer and the quiet waterfront are yours."
+    },
+    {
+     "title": "Grilled oysters",
+     "blurb": "Winter is oyster season. They come grilled or fried and cooked through, with momiji-manju cakes along Omotesando."
+    }
+   ],
+   "window": [
+    "Mild and calm; snow is rare.",
+    "31 Dec is the island's big night: Chinka-sai at 18:00, then the shrine opens at midnight, with queues of up to two hours for the first visit.",
+    "The inns that serve dinner fill first for 30–31 Dec. Book them before anything else."
+   ],
+   "feel": "A sacred island of deer, red lacquer and pines, ten minutes across the water from Hiroshima. Busy by day and hushed at night.",
+   "getting_there": "About 45 minutes from Hiroshima: JR to Miyajimaguchi, then a 10-minute ferry. About 2 h 30 from Kyoto, four hours from Tokyo.",
+   "for_her": "Flat around the shrine and the town. The top of Mt Misen is a steep trail, so the view from the ropeway is plenty. The ferry is short and sheltered. JA Hiroshima General Hospital in Hatsukaichi, which has obstetrics, is 15–20 minutes from the mainland pier.",
+   "zone": "west"
+  },
+  "lodging": {
+   "type": "ryokan",
+   "why": "The reason to sleep on the island is the evening, after the crowds have gone. On 31 Dec the restaurants close and the inn is where dinner happens. Book a ryokan with dinner and breakfast as one plan for all seven.",
+   "fit": "Two or three rooms: a large Japanese-Western room for four to six, plus a twin. Ask for beds for Fernanda, Carlos and Nadir, and a room near the lift.",
+   "outlook": "Tight for 30 Dec–1 Jan. The island has few large inns and the New Year plans go early. Easy before Christmas. If the island is full, sleep in Hiroshima and come over on the 30th or 31st.",
+   "tiers": {
+    "budget": [
+     100000,
+     150000
+    ],
+    "mid": [
+     150000,
+     240000
+    ],
+    "top": [
+     280000,
+     450000
+    ]
+   },
+   "candidates": [
+    {
+     "name": "Miyajima Grand Hotel Arimoto",
+     "url": "https://www.miyajima-arimoto.co.jp/",
+     "tier": "mid",
+     "area": "Minamimachi, near the shrine",
+     "what": "Calls itself the island's oldest inn, over 400 years old. Japanese-Western rooms of up to 99 m², with two beds and futons for six.",
+     "price": "About ¥130,000–180,000 for six with meals; 50–100% more for 30–31 Dec",
+     "fit": "Beds in the Japanese-Western rooms. Booking sites list a lift; confirm it.",
+     "verified": true
+    },
+    {
+     "name": "Itsukushima Iroha",
+     "url": "https://www.ikyu.com/en-us/00001685/",
+     "tier": "top",
+     "area": "On Omotesando, facing the strait",
+     "what": "Fifteen rooms of about 50 m² for up to four, some with twin beds, and a rooftop bath that looks across the water to the torii.",
+     "price": "From about ¥50,000 per person with dinner and breakfast, so roughly ¥300,000 for six",
+     "fit": "Twin beds, lift.",
+     "verified": true
+    },
+    {
+     "name": "Iwaso",
+     "url": "https://www.ikyu.com/en-us/00001178/",
+     "tier": "top",
+     "area": "Momijidani, about 300 m behind the shrine",
+     "what": "Founded in 1854 and one of the few inns on the island with its own hot spring. There is a main building, a new building and cottages; a corner room in the new building takes two to six.",
+     "price": "From about ¥25,000 per person without meals; with kaiseki, roughly ¥250,000–380,000 for six",
+     "fit": "Japanese rooms with futons. There are lifts, and the new building is step-free from the entrance.",
+     "verified": true
+    }
+   ]
+  },
+  "stay": {
+   "best": "2 nights (1 if Hiroshima is the base)",
+   "date_notes": [
+    "30–31 Dec: Hiroshima's Peace Memorial Museum is closed. The island stays calm until the evening of the 31st.",
+    "31 Dec, 18:00–18:30: Chinka-sai, the torch festival on Mikasa-hama beach. It is crowded near the fire, so watch from the back.",
+    "31 Dec, from about 21:00: people queue at Daisho-in, where the first 108 in line ring the temple bell.",
+    "1 Jan: the shrine opens at midnight, with queues of up to two hours for the first visit. The ropeway runs from 05:00 for sunrise on Mt Misen, at about 07:15.",
+    "1–3 Jan: day crowds come over from Hiroshima, and the island empties after dark.",
+    "Every day: the torii floats at high tide, and you can walk out to it at low tide. Check the tide table.",
+    "Visitors pay a ¥100 island tax with the ferry fare."
+   ],
+   "nights": {
+    "1": {
+     "why": "An afternoon at the shrine, an evening on the waterfront after the day visitors leave, and a quiet morning before they come back. Enough if Hiroshima is the base for the Peace Park.",
+     "longer": "A second night gives a slow day: Momijidani, Daisho-in and the torii at both tides.",
+     "shorter": "No night means a day trip from Hiroshima, about 45 minutes each way, and you miss the quiet evening.",
+     "idle": "none",
+     "note": "Short and lovely; the evening is the point."
+    },
+    "2": {
+     "why": "A calm day on the island and two evenings. On our dates it holds New Year's Eve: a walk, a bath, Chinka-sai at 18:00 and dinner at the inn. Fernanda can see the shrine in daylight on the 30th or 31st and skip the midnight queue; João, Carolina and Tatiana can join the bell queue at Daisho-in.",
+     "longer": "A third night means staying into 1–2 Jan, when the crowds arrive and the trains are full.",
+     "shorter": "One night, arriving on 31 Dec, puts the move on a busy morning.",
+     "idle": "some",
+     "note": "31 Dec is slow on purpose."
+    },
+    "3": {
+     "why": "Time for Mt Misen by ropeway for Carlos, Nadir and the fit ones, Iwakuni's wooden bridge by train, and an easy afternoon. Good before 29 Dec; over New Year the third day is mostly crowds.",
+     "longer": "A fourth night adds nothing the island has not already shown you.",
+     "shorter": "Two nights covers the shrine, the town and a quiet evening.",
+     "idle": "some",
+     "note": "One easy day."
+    },
+    "4": {
+     "why": "Too long for a small island, unless it is a quiet base for Hiroshima and Iwakuni as day trips.",
+     "longer": "Nothing to add.",
+     "shorter": "Three nights is already a slow stay.",
+     "idle": "real",
+     "note": "Two slow days."
+    },
+    "5": {
+     "why": "Not sensible: the same shrine and the same lane five days running, with Hiroshima better as a base.",
+     "longer": "Nothing to add.",
+     "shorter": "Four nights is already long.",
+     "idle": "real",
+     "note": "Mostly idle."
+    }
+   }
+  },
+  "rates": {
+   "hotel": 110000,
+   "rental": 100000,
+   "ryokan": 210000
+  },
+  "kanji": "宮島",
+  "snow": 0,
+  "prefectures": [
+   "hiroshima"
+  ],
+  "side": "l",
+  "onsen": false
+ },
+ "shirahama": {
+  "area": {
+   "prefecture": "Wakayama",
+   "tags": [
+    "onsen",
+    "food",
+    "gentle"
+   ],
+   "known_for": [
+    {
+     "title": "Sakinoyu",
+     "blurb": "One of Japan's oldest baths, open to the sky on the rocks, with the waves breaking just below."
+    },
+    {
+     "title": "The white beach and the cliffs",
+     "blurb": "Shirarahama's pale sand, the sea cave under Sandanbeki by lift, and Senjojiki's wide rock shelves at sunset."
+    },
+    {
+     "title": "Toretore Ichiba",
+     "blurb": "A huge fish hall with tuna cutting, grilled fish and cooked set meals."
+    },
+    {
+     "title": "Kumano",
+     "blurb": "A day inland to Hongu Taisha, the great torii at Oyunohara and the river bath at Kawayu."
+    }
+   ],
+   "window": [
+    "The mildest coast on mainland Japan in winter. Snow is rare and the days are often sunny.",
+    "A favourite New Year escape from Osaka, so hotel dinner plans for 31 Dec are scarce and dearer.",
+    "Adventure World is open every day from 28 Dec to 4 Jan.",
+    "Three hours each way from Kyoto; five or more from Tokyo."
+   ],
+   "feel": "A seaside spa town of big hotels on a white bay: warm sea air and steam rising from the rocks. Easy, sunny and a little old-fashioned.",
+   "getting_there": "About 3 h from Kyoto and 2 h 20 from Shin-Osaka on the Kuroshio limited express, which runs along the coast.",
+   "for_her": "A big hotel with a lift and a private or in-room bath is the easy choice. The seaside bath and the rock shelves are wet and uneven, so hold someone's arm. Kinan Hospital in Tanabe, a regional perinatal centre, is 20–25 minutes by taxi.",
+   "zone": "west"
+  },
+  "lodging": {
+   "type": "ryokan",
+   "why": "Shirahama's big onsen hotels sell half board, and over New Year, when the town's restaurants close, the hotel dinner is the easy answer. Choose one with a lift, beds and a private or in-room bath for Fernanda.",
+   "fit": "Three rooms or suites for two, plus a single, or two Japanese-style rooms for three or four.",
+   "outlook": "Tight for 30 Dec–1 Jan, because the coast is a favourite Kansai New Year escape. Open before Christmas and after 4 Jan.",
+   "tiers": {
+    "budget": [
+     100000,
+     150000
+    ],
+    "mid": [
+     150000,
+     280000
+    ],
+    "top": [
+     350000,
+     600000
+    ]
+   },
+   "candidates": [
+    {
+     "name": "Hotel Kawakyu",
+     "url": "https://www.ikyu.com/en-us/00000557/",
+     "tier": "mid",
+     "area": "On the bay",
+     "what": "A grand palace-style hotel where every room is a suite of 66–70 m² for two or three. Dinner is a buffet, and a few suites have their own open-air bath.",
+     "price": "From about ¥50,000 for two with dinner and breakfast, so roughly ¥150,000–250,000 for six; more at New Year",
+     "fit": "Twin beds in every suite.",
+     "verified": true
+    },
+    {
+     "name": "Shirahama Coganoi Resort & Spa",
+     "url": "https://www.ikyu.com/en-us/00000708/",
+     "tier": "mid",
+     "area": "Above the sea; free shuttle from JR Shirahama",
+     "what": "Kaiseki at its restaurant, with a lighter-portion course. Sea-view rooms with balconies, including a two-room Japanese suite (10 + 6 tatami), and an open-air bath above a wide pool of water.",
+     "price": "Roughly ¥180,000–280,000 for six with meals",
+     "fit": "Twin rooms and Japanese rooms; ask for beds.",
+     "verified": true
+    },
+    {
+     "name": "Nanki-Shirahama Marriott Hotel",
+     "url": "https://www.ikyu.com/en-us/00002411/",
+     "tier": "budget",
+     "area": "Shirahama town",
+     "what": "Japanese-style rooms of 42 m² for up to four, with garden or sea views; some rooms have an onsen bath. Dinner plans in the restaurant.",
+     "price": "From about ¥21,000–26,000 a room without meals; roughly ¥110,000–160,000 for six with dinner",
+     "fit": "Beds in the twin rooms; ask about the Japanese rooms.",
+     "verified": true
+    }
+   ]
+  },
+  "stay": {
+   "best": "3 nights (4 with a Kumano day)",
+   "date_notes": [
+    "28 Dec–4 Jan: Adventure World is open every day, 10:00–17:00.",
+    "Late Dec to 3 Jan: Toretore Ichiba is at its busiest. Go when it opens.",
+    "December to February: Sennin-buro, the giant river bath at Kawayu, is dug each winter. The 2026–27 dates are not out yet.",
+    "1–3 Jan: first-visit crowds at Kumano Hongu Taisha. A weekday in late December is calmer.",
+    "Engetsu island: the sun sets through the arch only around the equinoxes. In winter it drops to one side, which is still a fine sunset.",
+    "Sakinoyu's hours change with the season and it can close for upkeep. Check before you go.",
+    "The way out: about 2 h 20 to Shin-Osaka and 3 h to Kyoto. Tokyo is five hours or more."
+   ],
+   "nights": {
+    "1": {
+     "why": "A sunset and a bath, then a long train back. Shirahama is three hours from Kyoto, so one night is mostly travel.",
+     "longer": "A second night gives a whole day for the cliffs, the market and Sakinoyu.",
+     "shorter": "It is too far for a day trip from Kyoto.",
+     "idle": "none",
+     "note": "Mostly train."
+    },
+    "2": {
+     "why": "One full day on the coast: Toretore market when it opens, Sandanbeki's cave by lift, Senjojiki's rock shelves, the beach and an afternoon soak. Two hotel dinners.",
+     "longer": "A third night adds Adventure World or a slow day.",
+     "shorter": "One night is a long way to go for one evening.",
+     "idle": "none",
+     "note": "A full day and two good evenings."
+    },
+    "3": {
+     "why": "The coast, an easy day (Adventure World, the beach, the hotel's baths) and room to stretch out. Good for Carlos and Nadir; quieter for João and Carolina.",
+     "longer": "A fourth night brings in Kumano: Hongu Taisha, the great torii at Oyunohara and the river bath at Kawayu.",
+     "shorter": "Two nights keeps the coast and loses the easy day.",
+     "idle": "some",
+     "note": "One slow day."
+    },
+    "4": {
+     "why": "The coast, a Kumano day by hired van (about three hours on the road in all) and a slow day. Across 28 Dec–1 Jan it also keeps everyone off the trains on the peak days. Fernanda may prefer the beach and the hotel bath on the Kumano day; Hongu has 158 stone steps.",
+     "longer": "A fifth night is another beach day.",
+     "shorter": "Three nights drops Kumano or the slow day.",
+     "idle": "some",
+     "note": "If it spans New Year's Eve, the 31st is slow on purpose."
+    },
+    "5": {
+     "why": "Too long unless the point is rest. The town is small and quiet in winter.",
+     "longer": "Nothing to add.",
+     "shorter": "Four nights already holds the coast and Kumano.",
+     "idle": "real",
+     "note": "Two idle days."
+    }
+   }
+  },
+  "rates": {
+   "hotel": 100000,
+   "rental": 90000,
+   "ryokan": 220000
+  },
+  "kanji": "白浜",
+  "snow": 0,
+  "prefectures": [
+   "wakayama"
+  ],
+  "side": "r",
+  "onsen": true
+ },
+ "nagano": {
+  "area": {
+   "prefecture": "Nagano",
+   "tags": [
+    "snow",
+    "classics",
+    "museums"
+   ],
+   "known_for": [
+    {
+     "title": "Zenko-ji",
+     "blurb": "A seventh-century temple with a dawn service and a pitch-dark passage under the hall, walked with one hand on the wall."
+    },
+    {
+     "title": "The snow monkeys",
+     "blurb": "Wild macaques in a steaming pool, 45 minutes away by train or bus and then a forest walk."
+    },
+    {
+     "title": "Matsumoto Castle",
+     "blurb": "Japan's black original castle, 50 minutes away on the Shinano express."
+    },
+    {
+     "title": "Obuse",
+     "blurb": "A small town of chestnut sweets, with a museum of Hokusai's late work."
+    }
+   ],
+   "window": [
+    "The city sees light snow; the monkey trail and the ski villages are white.",
+    "Zenko-ji is packed from New Year's Eve to 3 Jan. Before 29 Dec or after 4 Jan it is calm.",
+    "Matsumoto Castle closes for the year end from 29 Dec."
+   ],
+   "feel": "A plain, friendly temple city at the foot of snowy hills. The monkeys, the castle and the ski villages are each under an hour away.",
+   "getting_there": "80–100 minutes from Tokyo and about an hour from Kanazawa on the Hokuriku shinkansen.",
+   "for_her": "Flat around the station and the temple, and a station hotel with a lift. The monkey trail is packed snow and ice, so she may prefer to wait in Shibu Onsen with the foot baths. Nagano Red Cross Hospital has a perinatal centre.",
+   "zone": "alps"
+  },
+  "lodging": {
+   "type": "hotel",
+   "why": "Nagano is a base for day trips, so a hotel by the station makes sense. Trains to the monkeys, Matsumoto and the ski villages leave from the door, and taxis wait outside.",
+   "fit": "Three or four rooms: a twin for each couple and a single for Tatiana. Everything has lifts and beds.",
+   "outlook": "Open before Christmas. The ski weeks and New Year fill sooner.",
+   "tiers": {
+    "budget": [
+     40000,
+     60000
+    ],
+    "mid": [
+     60000,
+     100000
+    ],
+    "top": [
+     110000,
+     180000
+    ]
+   },
+   "candidates": [
+    {
+     "name": "Hotel Metropolitan Nagano",
+     "url": "https://nagano.metropolitan.jp/",
+     "tier": "mid",
+     "area": "Joined to Nagano station",
+     "what": "A JR hotel with twin rooms of about 25 m², several restaurants and a bar, and the shinkansen downstairs.",
+     "price": "About ¥60,000–100,000 for three twins",
+     "fit": "Beds, lift, and no walking on ice to the train.",
+     "verified": true
+    },
+    {
+     "name": "Dormy Inn Nagano",
+     "url": "https://dormy-hotels.com/dormyinn/hotels/nagano/",
+     "tier": "budget",
+     "area": "A few minutes' walk from the station",
+     "what": "A business hotel with a natural hot-spring bath on the top floor, including an open-air pool, and free late-night ramen.",
+     "price": "About ¥40,000–60,000 for three rooms",
+     "fit": "Small rooms, lift. The shared bath is for the others; Fernanda has her room's bathroom.",
+     "verified": false
+    },
+    {
+     "name": "Fuchinobo",
+     "url": "https://www.fun-japan.jp/en/articles/14395",
+     "tier": "budget",
+     "area": "On the approach to Zenko-ji",
+     "what": "One of the 39 temple lodgings at Zenko-ji, with lockable rooms (one has three tatami bedrooms and a sitting room) and the dawn service a short walk away.",
+     "price": "Priced per person; ask by email",
+     "fit": "Futons, and shared baths in the basement. One night for the experience, not for Fernanda.",
+     "verified": true
+    }
+   ]
+  },
+  "stay": {
+   "best": "3 nights",
+   "date_notes": [
+    "Every day, including 31 Dec and 1 Jan: the snow monkey park is open. It is busiest 29 Dec–3 Jan.",
+    "From 29 Dec: Matsumoto Castle closes for the year end. Sources differ on whether it reopens on 1 Jan or 4 Jan.",
+    "31 Dec into 1 Jan: Zenko-ji stays open all night and is packed, and the first-visit crowds are large until 3 Jan.",
+    "Every morning at dawn: Zenko-ji's morning service is open to anyone.",
+    "Obuse's Hokusai Museum: check its year-end closing days.",
+    "15 Jan: Nozawa's fire festival, after we leave."
+   ],
+   "nights": {
+    "1": {
+     "why": "Zenko-ji and the dark passage in the afternoon, dinner on the temple approach, and the snow monkeys the next morning before moving on. Kanazawa is an hour away, Tokyo 80–100 minutes.",
+     "longer": "A second night gives the monkeys a full morning and Shibu's lantern street in the afternoon.",
+     "shorter": "With no night, Nagano can be a stop between Tokyo and Kanazawa, with the bags in lockers.",
+     "idle": "none",
+     "note": "A busy stopover."
+    },
+    "2": {
+     "why": "Zenko-ji on arrival, then the snow monkeys at Jigokudani for the walkers. Fernanda can take the foot baths and a private bath in Shibu Onsen and meet them for lunch.",
+     "longer": "A third night adds Matsumoto Castle or Obuse.",
+     "shorter": "One night squeezes the monkeys into a morning.",
+     "idle": "none",
+     "note": "Two good days."
+    },
+    "3": {
+     "why": "Zenko-ji, the snow monkeys, and a day out to Matsumoto's black castle (50 minutes) or Obuse's Hokusai museum and chestnut sweets. A flat city with trains in every direction and a Red Cross hospital.",
+     "longer": "A fourth night adds a snow day at Nozawa or Togakushi's cedar avenue.",
+     "shorter": "Two nights drops Matsumoto or the monkeys.",
+     "idle": "none",
+     "note": "Every day has a clear plan."
+    },
+    "4": {
+     "why": "Three days plus a snow day at Nozawa or Togakushi: sledding, a ski lesson for João and Carolina, the wooden village baths. Fernanda may prefer a slow day at the hotel or in Obuse.",
+     "longer": "A fifth night is a second snow day.",
+     "shorter": "Three nights keeps the main days out.",
+     "idle": "some",
+     "note": "One easier day."
+    },
+    "5": {
+     "why": "A base for a Nagano week: the monkeys, Matsumoto, Obuse, Nozawa and Togakushi. Across 29 Dec–3 Jan it means Zenko-ji crowds and a closed castle.",
+     "longer": "A sixth night is too many for a station hotel.",
+     "shorter": "Four nights already holds a snow day.",
+     "idle": "some",
+     "note": "Full if you use the trains, slow if you do not."
+    }
+   }
+  },
+  "rates": {
+   "hotel": 75000,
+   "rental": 80000,
+   "ryokan": 180000
+  },
+  "kanji": "長野",
+  "snow": 1,
+  "prefectures": [
+   "nagano"
+  ],
+  "side": "l",
+  "onsen": false
+ },
+ "arima": {
+  "area": {
+   "prefecture": "Hyogo",
+   "tags": [
+    "onsen",
+    "food"
+   ],
+   "known_for": [
+    {
+     "title": "Gold and silver water",
+     "blurb": "Kin-no-yu's iron-red spring, hot and famous, and Gin-no-yu's clear, fizzy water, which is gentler."
+    },
+    {
+     "title": "Ryokan with private baths",
+     "blurb": "Hyoe Koyokaku, Arima Grand Hotel and Taketoritei Maruyama all have baths you can book for yourselves."
+    },
+    {
+     "title": "Irizome-shiki",
+     "blurb": "On 2 Jan, priests, inn-keepers and geisha carry the founders' statues through town and pour the year's first hot water."
+    },
+    {
+     "title": "Kobe and Himeji",
+     "blurb": "Kitano's old merchants' houses and Kobe beef 30 minutes away; Himeji Castle about an hour."
+    }
+   ],
+   "window": [
+    "Mild; snow is rare and light.",
+    "Both public baths close on 1 Jan, and many shops too. That evening the ryokan bath is the bath.",
+    "Ryokan rates run 50–100% higher on 31 Dec–2 Jan."
+   ],
+   "feel": "A steep little spa town in a fold of the Rokko hills: rust-red water, wooden lanes and old sweet shops. An hour from Osaka and a world away.",
+   "getting_there": "About 75 minutes from Kyoto (train to Sannomiya, then the bus), an hour from Osaka by direct bus, and about three hours from Kinosaki.",
+   "for_her": "The lanes are steep, so take taxis between the inn and the baths. The gold spring runs hot; a private bath at the inn is the easy way. Saiseikai Hyogo Prefectural Hospital, a regional perinatal centre, is about 20 minutes by car.",
+   "zone": "near"
+  },
+  "lodging": {
+   "type": "ryokan",
+   "why": "Arima is a ryokan town: the inn's own baths, dinner and breakfast are the stay. Book one with private baths so Fernanda can soak briefly at a temperature she likes; the gold water runs hot.",
+   "fit": "Two or three rooms. Arima Grand Hotel has a Japanese-Western room for six with two beds and four futons, plus a twin for the seventh.",
+   "outlook": "The large houses should have room after 2 Jan. New Year nights (31 Dec–2 Jan) come with special plans and prices, and the small, famous inns go early.",
+   "tiers": {
+    "budget": [
+     130000,
+     180000
+    ],
+    "mid": [
+     180000,
+     300000
+    ],
+    "top": [
+     380000,
+     700000
+    ]
+   },
+   "candidates": [
+    {
+     "name": "Hyoe Koyokaku",
+     "url": "https://www.hyoe.co.jp/",
+     "tier": "mid",
+     "area": "Centre of town, five minutes' walk from the bus terminal",
+     "what": "A large inn with 126 rooms and some 700 years of history. Nine baths of gold and silver water, plus two private open-air baths to book (¥3,200–4,200 for 50 minutes). A corner suite opened in 2024.",
+     "price": "¥25,900–109,000 per person with meals, so about ¥160,000–300,000 for six",
+     "fit": "Mostly Japanese rooms; ask for beds and a room near the lift.",
+     "verified": true
+    },
+    {
+     "name": "Arima Grand Hotel",
+     "url": "https://www.arima-gh.jp/",
+     "tier": "mid",
+     "area": "Above the town",
+     "what": "Japanese-Western rooms for six (two beds and four futons, about 87 m²), private baths and a private spa, and kaiseki plans with Kobe beef.",
+     "price": "About ¥180,000–280,000 for six with meals",
+     "fit": "Two beds in each family room; lift.",
+     "verified": true
+    },
+    {
+     "name": "Taketoritei Maruyama",
+     "url": "https://selected-ryokan.com/ryokan/taketori-tei-maruyama_arima_hyogo_kansai.html",
+     "tier": "top",
+     "area": "Quiet edge of town, short shuttle from the bus terminal",
+     "what": "Thirty rooms, five with open-air baths and eight with indoor baths, and eight private baths free for 45 minutes.",
+     "price": "¥62,200–171,000 per person with meals, so ¥380,000 or more for six",
+     "fit": "A small luxury inn; ask about stairs and beds.",
+     "verified": true
+    }
+   ]
+  },
+  "stay": {
+   "best": "2 nights (3–4 as a base for Kobe and Himeji)",
+   "date_notes": [
+    "29–30 Dec: Himeji Castle is closed. It is open, and busy, on 31 Dec and 1–3 Jan.",
+    "31 Dec–2 Jan: most Kobe beef counters close.",
+    "1 Jan: both public baths, Kin-no-yu and Gin-no-yu, are shut and many shops close. The ryokan bath and dinner are the evening.",
+    "2 Jan: Irizome-shiki, the first-bath ceremony. Check the 2027 time with the tourist office.",
+    "Kin-no-yu closes on the 2nd and 4th Tuesdays and Gin-no-yu on the 1st and 3rd, so Gin-no-yu is shut on Tue 5 Jan.",
+    "New Year: ryokan rates are 50–100% higher on 31 Dec–2 Jan."
+   ],
+   "nights": {
+    "1": {
+     "why": "One bath, one dinner and a morning in the lanes. Arima is about 75 minutes from Kyoto and an hour from Osaka, so one night works on the way through.",
+     "longer": "A second night gives a whole day: the gold and silver baths, the lanes and the sweet shops.",
+     "shorter": "As a day trip from Kyoto or Osaka you miss the ryokan, which is the point.",
+     "idle": "none",
+     "note": "Short and complete."
+    },
+    "2": {
+     "why": "A full day in town: the gold spring for the others, the cooler silver spring, the hill lanes and sweet shops, and two ryokan dinners. Fernanda can keep to the private baths.",
+     "longer": "A third night adds a Kobe day: Kitano's old houses, the harbour and beef.",
+     "shorter": "One night is a single evening.",
+     "idle": "some",
+     "note": "The town takes a morning; the inn fills the rest."
+    },
+    "3": {
+     "why": "Arima, plus Kobe as a day out, 30 minutes away. Over New Year, add the first-bath ceremony on 2 Jan.",
+     "longer": "A fourth night adds Himeji Castle, about an hour away.",
+     "shorter": "Two nights loses Kobe.",
+     "idle": "some",
+     "note": "One full day out and one slow one."
+    },
+    "4": {
+     "why": "Arima as a base for 1–5 Jan: a quiet arrival on the 1st when the public baths are shut, the ceremony on the 2nd, then Kobe and Himeji, and out after the return rush.",
+     "longer": "A fifth night is a second slow day.",
+     "shorter": "Leaving on 4 Jan puts the move on the last peak day.",
+     "idle": "some",
+     "note": "The arrival on 1 Jan is quiet, as expected."
+    },
+    "5": {
+     "why": "Too long for a small hill town. Kobe and Himeji are the only big days out.",
+     "longer": "Nothing to add.",
+     "shorter": "Four nights is already generous.",
+     "idle": "real",
+     "note": "Two slow days."
+    }
+   }
+  },
+  "rates": {
+   "hotel": 120000,
+   "rental": 110000,
+   "ryokan": 260000
+  },
+  "kanji": "有馬",
+  "snow": 0,
+  "prefectures": [
+   "hyogo"
+  ],
+  "side": "t",
+  "onsen": true
+ },
+ "osaka": {
+  "lodging": {
+   "type": "hotel",
+   "why": "Osaka copes with New Year better than Kyoto: the chain restaurants and Dotonbori stay open, and the food halls are back from the 2nd. An apartment hotel in Namba puts Dotonbori, Kuromon and the Kintetsu line to Nara on the doorstep, with a kitchen and a washer for a long stay.",
+   "fit": "One three-bedroom suite for six plus a room for Tatiana, or two triples and a single. Everything has lifts and beds.",
+   "outlook": "Open at all tiers. New Year's Eve and the USJ countdown push Namba prices up on the 31st.",
+   "tiers": {
+    "budget": [
+     45000,
+     75000
+    ],
+    "mid": [
+     75000,
+     130000
+    ],
+    "top": [
+     180000,
+     400000
+    ]
+   },
+   "candidates": [
+    {
+     "name": "MIMARU Osaka Namba Station Annex",
+     "url": "https://mimaruhotels.com/en/hotel/namba-station-annex/",
+     "tier": "mid",
+     "area": "Nippombashi, five minutes from Namba",
+     "what": "The Sky Garden suite: 100 m², three bedrooms with six single beds, a bath and a shower room, two toilets, a kitchen and a washer-dryer. Six minutes to the Kintetsu line for Nara.",
+     "price": "About ¥70,000–120,000 for the suite, plus a room for the seventh",
+     "fit": "Beds, lift, kitchen. Book a second, smaller unit for Tatiana.",
+     "verified": true
+    },
+    {
+     "name": "Cross Hotel Osaka",
+     "url": "https://www.hotels.com/ho258142/cross-hotel-osaka-osaka-japan/",
+     "tier": "budget",
+     "area": "Shinsaibashi-suji, a minute from Dotonbori",
+     "what": "A design hotel with triple rooms of about 27 m² (three beds side by side) and a tub in each bathroom.",
+     "price": "About ¥20,000–35,000 a room",
+     "fit": "Beds, lift. Two triples and a single cover all seven.",
+     "verified": false
+    }
+   ]
+  },
+  "rates": {
+   "hotel": 95000,
+   "rental": 95000,
+   "ryokan": 220000
+  },
+  "snow": 0,
+  "side": "l",
+  "onsen": false
+ },
+ "nara": {
+  "lodging": {
+   "type": "rental",
+   "why": "For more than one night, a house gives a kitchen and a table for seven while restaurants close on 1–3 Jan, and puts you in the park before the day visitors arrive. For a single night, a hotel by the park is simpler.",
+   "fit": "A house with three or four bedrooms and beds; check there is a ground-floor bedroom for Fernanda. Nara has few houses this size, so the fallback is three rooms at a hotel.",
+   "outlook": "Few large houses, so book early for New Year. Hotels have room; the business hotels near the stations are the fallback.",
+   "tiers": {
+    "budget": [
+     50000,
+     80000
+    ],
+    "mid": [
+     90000,
+     160000
+    ],
+    "top": [
+     180000,
+     350000
+    ]
+   },
+   "candidates": [
+    {
+     "name": "KONJAKUSO Nara Kitamachi \"MANAKA\"",
+     "url": "https://www.ikyu.com/en-us/00052798/",
+     "tier": "top",
+     "area": "Kitamachi, near Todai-ji; 10 minutes' walk from Kintetsu Nara",
+     "what": "A whole house of 188 m² with four bedrooms and eight beds, an open-air Shigaraki-ware tub in the courtyard, and a washer-dryer.",
+     "price": "From about ¥111,600 a night for two without meals; expect ¥180,000–300,000 for six",
+     "fit": "Beds; not step-free, so check where the bedrooms are.",
+     "verified": true
+    },
+    {
+     "name": "Nara Hotel",
+     "url": "https://jrwest-hotels.jp/narahotel/",
+     "tier": "top",
+     "area": "On the edge of Nara Park",
+     "what": "A 1909 hotel by Kingo Tatsuno in cypress wood. The West building was renewed in 2026.",
+     "price": "About ¥120,000–250,000 for three rooms",
+     "fit": "Beds. Ask for the West building if the lift matters.",
+     "verified": true
+    },
+    {
+     "name": "Hotel Fujita Nara",
+     "url": "https://en.japantravel.com/nara/hotel-fujita-nara/564",
+     "tier": "budget",
+     "area": "Sanjo-dori, five minutes from JR Nara",
+     "what": "A plain business hotel on the main street to the park, with twins that take an extra bed and a few triples.",
+     "price": "About ¥40,000–70,000 for three rooms",
+     "fit": "Beds, lift.",
+     "verified": true
+    }
+   ]
+  },
+  "rates": {
+   "hotel": 90000,
+   "rental": 110000,
+   "ryokan": 230000
+  },
+  "snow": 0,
+  "onsen": false
+ },
+ "kamakura": {
+  "lodging": {
+   "type": "hotel",
+   "why": "Kamakura is small and goes to bed early, so a hotel with a restaurant matters more than a kitchen. By the sea at Shichirigahama you see Fuji at sunset on clear days; by the station you are closer to the temples. Either way Haneda is about an hour.",
+   "fit": "Three twins and a single. Everything has lifts and beds.",
+   "outlook": "Open for 5–9 Jan, once the New Year crowds have gone. Avoid 1–3 Jan.",
+   "tiers": {
+    "budget": [
+     45000,
+     70000
+    ],
+    "mid": [
+     80000,
+     140000
+    ],
+    "top": [
+     180000,
+     300000
+    ]
+   },
+   "candidates": [
+    {
+     "name": "Kamakura Prince Hotel",
+     "url": "https://www.princehotels.com/kamakura/",
+     "tier": "mid",
+     "area": "Shichirigahama, on the hill above the beach",
+     "what": "97 rooms, all facing the sea; from the third and fourth floors you look to Enoshima and Fuji. French and Japanese restaurants, and a short walk to the Enoden.",
+     "price": "About ¥90,000–150,000 for three twins",
+     "fit": "Beds, lift.",
+     "verified": true
+    },
+    {
+     "name": "Hotel Metropolitan Kamakura",
+     "url": "https://kamakura.metropolitan.jp/",
+     "tier": "budget",
+     "area": "Two minutes from JR Kamakura's east exit",
+     "what": "A modern hotel in Komachi, among the shops near the station.",
+     "price": "Plans from about ¥22,000 a room, so roughly ¥60,000–100,000 for three",
+     "fit": "Beds, lift; the station is on the doorstep for the airport.",
+     "verified": true
+    }
+   ]
+  },
+  "rates": {
+   "hotel": 100000,
+   "rental": 100000,
+   "ryokan": 220000
+  },
+  "snow": 0,
+  "side": "r",
+  "onsen": false
+ }
+}

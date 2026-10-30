@@ -1,0 +1,496 @@
+{
+  "slug": "tokyo",
+  "name": "Tokyo",
+  "tagline_pt": "A cidade que inventou o fast-food de trabalhador — nigiri, tempurá e soba de barraca — e depois o refinou até virar a capital mundial do comer bem.",
+  "history_pt": [
+    "Edo cresceu no século XVII como uma cidade de homens: samurais em rodízio (sankin-kōtai), carpinteiros, carregadores, artesãos, muitos solteiros e sem cozinha em casa. Quem alimentava essa gente eram as barracas (yatai) e os vendedores ambulantes. Daí nasceram os três grandes da comida de Edo — soba, tempurá e sushi — todos rápidos, baratos e comidos em pé.",
+    "O nigiri é dessa linhagem. Por volta de 1824, Hanaya Yohei, em Ryōgoku, vendia peixe da baía de Edo (Edo-mae) sobre arroz avinagrado, em peças duas a três vezes maiores que as de hoje, para quem precisava matar a fome depois do trabalho. Sem geladeira, o peixe era curado: atum marinado no shōyu (zuke), kohada no sal e vinagre, anago e mariscos cozidos com molho tsume. Tempurá era espetinho de frutos do mar empanado vendido em barraca; soba virava refeição de fim de mês dos comerciantes. A enguia (unagi) grelhada com tare doce também era comida de rua, e o costume de comê-la no verão (doyō no ushi) é de Edo.",
+    "A era Meiji (1868–) abriu o país e trouxe o yōshoku, a cozinha ocidental reinventada em Tóquio: o Seiyōken de Tsukiji (1872), o Rengatei de Ginza (1895), que fritou o katsuretsu em muito óleo e abriu caminho para o tonkatsu, depois omurice, hayashi rice e korokke. Em 1910 o Rairaiken, em Asakusa, popularizou o lámen de shōyu, a base do 'Tokyo ramen'.",
+    "O peixe sempre teve um centro: o mercado de Nihonbashi, desde o início de Edo, que o terremoto de 1923 destruiu. Mudou para Tsukiji (oficialmente em 1935) e, em outubro de 2018, para Toyosu; o mercado externo de Tsukiji, com cerca de 460 lojas, ficou onde estava. Hoje a outra grande vitrine é a depachika, o andar de comida no subsolo das lojas de departamento: o nome pegou em 2000, mas é ali que Tóquio compra presentes, bentô, wagashi e, no fim do ano, a osechi."
+  ],
+  "winter_pt": "Dezembro e janeiro são o auge do peixe gordo (kan-buri, atum de inverno, hirame), do ankō (tamboril) em nabe, do oden e dos ensopados, das tangerinas mikan e da batata-doce assada (yaki-imo) vendida na rua. É também a época da comida de Ano-Novo: soba no dia 31, osechi e ozōni de 1 a 3 de janeiro, e mercados de fim de ano lotados de 28 a 30 de dezembro.",
+  "meibutsu": [
+    {
+      "name_pt": "Nigiri Edo-mae",
+      "name_ja": "江戸前寿司",
+      "romaji": "Edo-mae zushi",
+      "what_pt": "O sushi de Tóquio: peixe curado, marinado ou cozido sobre arroz temperado com vinagre (muitas casas usam vinagre de saquê vermelho, akazu). Os clássicos para julgar uma casa são kohada (curado em sal e vinagre), maguro zuke, anago com tsume, kuruma-ebi cozido e tamagoyaki.",
+      "where_pt": "Das casas de balcão de Ginza e Shinbashi ao tachigui (sushi em pé). Para seis, o Kibun Zushi em Asakusa tem mesas e tatame.",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Obstetras japoneses não proíbem sushi fresco, mas ela deve evitar mariscos crus (ostra, vieira, akagai), limitar atum gordo (toro) e encarar uni como decisão pessoal. Peça peças cozidas ou curadas: anago, ebi cozido, tamago, hotate aburi bem selada, kohada (curada) e kanpyō-maki."
+    },
+    {
+      "name_pt": "Tempurá Edo-mae",
+      "name_ja": "江戸前天ぷら",
+      "romaji": "tenpura",
+      "what_pt": "Nasceu como espetinho frito de barraca. O estilo de Tóquio usa óleo de gergelim, que deixa a casca mais dourada e perfumada, e frutos do mar da baía: kuruma-ebi, anago, kisu, mais o kakiage (bolinho de camarão miúdo e mitsuba). Num balcão, vem peça por peça, direto do óleo.",
+      "where_pt": "Balcões em Monzen-Nakachō e Ginza; tendon (tigela) nos clássicos de Asakusa e Nihonbashi.",
+      "must": true
+    },
+    {
+      "name_pt": "Soba de Edo (e o toshikoshi soba de 31/12)",
+      "name_ja": "蕎麦・年越しそば",
+      "romaji": "soba, toshikoshi soba",
+      "what_pt": "Macarrão de trigo-sarraceno, servido frio (seiro/mori) com um molho curto e forte, ou quente (kake, tempurá-soba, kamo-nanban de pato). Nas casas antigas se bebe saquê com petiscos antes (soba-mae). No dia 31 de dezembro todo o Japão come toshikoshi soba: o macarrão se parte fácil e 'corta' o azar do ano.",
+      "where_pt": "Kanda Yabu Soba e Kanda Matsuya (Awajichō), Muromachi Sunaba (Nihonbashi, onde nasceu o tenzaru), Namiki Yabu e Owariya (Asakusa).",
+      "price_pt": "¥1.000–2.000 nas casas clássicas",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Evite só o tsukimi (ovo cru por cima)."
+    },
+    {
+      "name_pt": "Enguia kabayaki",
+      "name_ja": "鰻の蒲焼",
+      "romaji": "unagi no kabayaki",
+      "what_pt": "Enguia aberta pelas costas (ao estilo de Kantō), cozida no vapor antes de ir à brasa com tare doce. Fica mais macia e menos crocante que a de Osaka. Peça unajū (na caixa laqueada) ou una-don.",
+      "where_pt": "Obana (Minami-Senju), Edogawa Ishibashi (com sala para seis), Nodaiwa; em Shibamata, as casas antigas do caminho do templo.",
+      "price_pt": "Obana: ¥8.000–15.000 por pessoa (faixa Tabelog)",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "A enguia grelhada é segura. Recuse kimo-yaki e kimo-sui (fígado de enguia): muita vitamina A."
+    },
+    {
+      "name_pt": "Monjayaki",
+      "name_ja": "もんじゃ焼き",
+      "romaji": "monjayaki",
+      "what_pt": "Massa bem rala com repolho e recheios, despejada dentro de um 'dique' de repolho na chapa. Come-se direto da chapa com uma espátula minúscula (hagashi), raspando a parte tostada. Veio de um petisco de criança das lojinhas de doces; o estilo atual é do pós-guerra. Recheios clássicos: mentaiko com mochi e queijo.",
+      "where_pt": "Rua da monja em Tsukishima (Monja Kondō Honten é a referência).",
+      "price_pt": "¥2.000–3.000 por pessoa",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Tudo vai bem cozido na chapa; deixe o mentaiko cozinhar até ficar opaco."
+    },
+    {
+      "name_pt": "Chanko-nabe",
+      "name_ja": "ちゃんこ鍋",
+      "romaji": "chanko-nabe",
+      "what_pt": "O cozido de panela dos estábulos de sumô: caldo de frango (o frango fica em pé sobre duas pernas e 'nunca põe a mão no chão', como um lutador que não perde), bolinhas de carne, peixe, tofu e muita verdura. Termina com arroz ou macarrão no caldo. Muitos restaurantes são de ex-lutadores.",
+      "where_pt": "Ao redor da estação de Ryōgoku.",
+      "must": false
+    },
+    {
+      "name_pt": "Fukagawa-meshi",
+      "name_ja": "深川めし",
+      "romaji": "Fukagawa-meshi",
+      "what_pt": "Marisco (hoje asari, na origem aoyagi) cozido com cebolinha. Na versão antiga, o caldo vai por cima do arroz (bukkake), refeição rápida dos pescadores de Fukagawa e dos puxadores de riquixá. A versão mais comum hoje cozinha o marisco junto com o arroz (takikomi). Também existe como ekiben na estação de Tóquio.",
+      "where_pt": "Monzen-Nakachō e Kiyosumi-Shirakawa; ekiben em Tokyo Station.",
+      "must": false,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Marisco cozido: tudo bem."
+    },
+    {
+      "name_pt": "Oden de Tóquio",
+      "name_ja": "東京風おでん",
+      "romaji": "oden",
+      "what_pt": "Ensopado de inverno: nabo daikon, ovo cozido, konnyaku e bolinhos de peixe num caldo de dashi com shōyu, mais escuro que o de Kansai. São de Tóquio o chikuwabu (tubo de massa de trigo) e o hanpen (bolinho de peixe fofo). Come-se com mostarda karashi.",
+      "where_pt": "Ōtafuku (Asakusa, centenário), Ogura (Ginza, com sala para seis), Otakō (Nihonbashi).",
+      "price_pt": "Ōtafuku: ¥5.000–6.000 (faixa Tabelog)",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Tonkatsu",
+      "name_ja": "とんかつ",
+      "romaji": "tonkatsu",
+      "what_pt": "Lombo (rōsu) ou filé (hire) de porco empanado em panko e frito, com repolho cortado fino, missoshiru e arroz. Descende do katsuretsu do yōshoku de Ginza; nas casas de topo o porco é de raça e o ponto é rosado.",
+      "where_pt": "Ponchi-ken e Marugo (Kanda), Ponta Honke (Ueno), Aoki (Ginza), Narikura (Minami-Asagaya).",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Nas casas finas o centro sai rosado. Peça 'yoku hi o tōshite kudasai' (bem passado) ou escolha hire-katsu fino."
+    },
+    {
+      "name_pt": "Yōshoku: omurice, hayashi rice, korokke, katsu-curry",
+      "name_ja": "洋食",
+      "romaji": "yōshoku",
+      "what_pt": "Comida 'ocidental' à japonesa nascida em Tóquio na era Meiji: omurice (arroz com ketchup embrulhado em omelete), hayashi rice (carne no molho demi-glace), korokke e menchi-katsu (croquetes), hambāgu, katsu-curry. É a comida de conforto que os avós japoneses lembram.",
+      "where_pt": "Rengatei e Shiseido Parlour (Ginza), Kamiya (Negishi), Kitchen Nankai (Jinbōchō), Grill Swiss (Ginza).",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Muitas omurice vêm com o ovo cremoso por dentro. Peça o ovo firme ('tamago o yoku yaite') ou escolha hayashi rice, korokke, hambāgu bem passado."
+    },
+    {
+      "name_pt": "Lámen de Tóquio (shōyu)",
+      "name_ja": "東京ラーメン",
+      "romaji": "Tōkyō rāmen",
+      "what_pt": "O lámen clássico: caldo claro de frango (às vezes com porco ou niboshi), tare de shōyu, macarrão fino e ondulado, chashu, menma, naruto e cebolinha. Remonta ao Rairaiken de Asakusa (1910). Em Ogikubo, a variante leva mais niboshi.",
+      "where_pt": "Ginza Hachigo, Tagano, Yamaguchi e os clássicos de bairro.",
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "O ovo ajitama vem com gema mole: peça sem ('ajitama nashi') ou só coma se estiver firme."
+    },
+    {
+      "name_pt": "Tsukudani",
+      "name_ja": "佃煮",
+      "romaji": "tsukudani",
+      "what_pt": "Peixinhos, mariscos, kombu ou nori cozidos longamente em shōyu e açúcar até virarem conserva. Nasceu na ilha de Tsukuda, onde pescadores trazidos de Osaka por Tokugawa Ieyasu cozinhavam a sobra da pesca; samurais levavam para casa como presente. Come-se com arroz branco.",
+      "where_pt": "As casas antigas de Tsukuda (ao lado de Tsukishima) e de Nihonbashi; depachika.",
+      "must": false,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Cozido e seguro; é muito salgado."
+    },
+    {
+      "name_pt": "Ningyō-yaki",
+      "name_ja": "人形焼",
+      "romaji": "ningyō-yaki",
+      "what_pt": "Bolinho de massa de castella com anko, assado em fôrmas de ferro. Nasceu em Ningyōchō; em Asakusa as fôrmas têm o Kaminarimon, o pagode e o deus do trovão, e é assado à vista na Nakamise.",
+      "where_pt": "Ningyōchō (casas antigas que ainda usam as fôrmas tradicionais) e Nakamise, em Asakusa.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Kaminari-okoshi",
+      "name_ja": "雷おこし",
+      "romaji": "kaminari-okoshi",
+      "what_pt": "Barrinha crocante de arroz tufado com xarope, amuleto de Asakusa: 'okosu' é erguer a casa e o nome, e o 'kaminari' vem do portão Kaminarimon. Suas raízes vão ao século XVII. Bom presente, dura semanas.",
+      "where_pt": "Tokiwadō Kaminari-okoshi Honpo, ao lado do Kaminarimon.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Dorayaki e monaka",
+      "name_ja": "どら焼き・最中",
+      "romaji": "dorayaki, monaka",
+      "what_pt": "Dorayaki: duas panquecas com anko no meio. Monaka: casca crocante de mochi com recheio de feijão. Tóquio tem as casas de referência do país.",
+      "where_pt": "Usagiya (Ueno) e Kameju (Asakusa) para dorayaki; Kūya (Ginza) para monaka (costuma exigir reserva por telefone).",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Taiyaki",
+      "name_ja": "たい焼き",
+      "romaji": "taiyaki",
+      "what_pt": "Peixinho de massa assado em fôrma, recheado de anko. As casas antigas assam um por um em fôrma individual (ichōyaki), com a borda fina e crocante.",
+      "where_pt": "Naniwaya Sōhonten (Azabu-Jūban, a casa que é considerada a criadora; fecha ter/qua); barracas de templo no Ano-Novo.",
+      "must": false,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Tamagoyaki de Tsukiji",
+      "name_ja": "玉子焼き",
+      "romaji": "tamagoyaki",
+      "what_pt": "Omelete enrolada doce com dashi, do jeito que as casas de sushi de Edo fazem. Em Tsukiji é vendida em espetinho, quente.",
+      "where_pt": "Bancas de tamagoyaki do mercado externo de Tsukiji.",
+      "pregnancy": "ok",
+      "pregnancy_pt": "Bem cozida: uma das coisas mais seguras do mercado."
+    },
+    {
+      "name_pt": "Anko-nabe",
+      "name_ja": "あんこう鍋",
+      "romaji": "ankō-nabe",
+      "what_pt": "Nabe de tamboril, prato de inverno de Tóquio desde Edo. O caldo de missō ou shōyu fica rico com o fígado (ankimo) derretido.",
+      "where_pt": "Isegen (Kanda-Sudachō, desde 1830), na mesma quadra de Matsuya, Yabu e Takemura. Horário de inverno a confirmar.",
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "O peixe cozido é seguro, mas o fígado ankimo tem muita vitamina A: ela deve evitar o ankimo e não exagerar no caldo."
+    },
+    {
+      "name_pt": "Comida de Ano-Novo: osechi, ozōni e kagami-mochi",
+      "name_ja": "おせち・雑煮・鏡餅",
+      "romaji": "osechi, ozōni, kagami-mochi",
+      "what_pt": "Osechi é a caixa laqueada em camadas comida de 1 a 3 de janeiro: kuromame (feijão preto doce), datemaki, kurikinton, kazunoko, kobumaki, nishime. O ozōni de Kantō é caldo claro com mochi quadrado grelhado, frango, komatsuna, kamaboko e mitsuba. O kagami-mochi (dois mochi empilhados com uma tangerina) vai no altar por volta do dia 28 e só é partido em 11 de janeiro.",
+      "where_pt": "Osechi por encomenda nas depachika (Mitsukoshi e Isetan até 21/12, Takashimaya até 24/12) ou montada com itens soltos de Ameyoko e da feira de fim de ano do Isetan.",
+      "price_pt": "Caixas de depachika ¥20.000–60.000",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Evite os rolinhos de salmão defumado a frio e qualquer abalone ou marisco cru das caixas de luxo; ikura com moderação. O resto é cozido. No ozōni, cortem o mochi bem pequeno (pais e grávida): engasgo com mochi é notícia todo Ano-Novo."
+    },
+    {
+      "name_pt": "Amazake de templo",
+      "name_ja": "甘酒",
+      "romaji": "amazake",
+      "what_pt": "Bebida quente e doce de arroz, servida nos templos e santuários no Ano-Novo e no inverno. Kanda Myōjin tem casas de amazake ao pé do portão há gerações.",
+      "where_pt": "Barracas de hatsumōde em Sensō-ji e Meiji Jingū; Kanda Myōjin; dashi-amazake na Ninben (Nihonbashi).",
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Muito amazake de templo é feito de sake-kasu e tem álcool. Pergunte 'kōji no amazake desu ka?': o de kōji não tem álcool e ela pode tomar."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Asakusa e Kappabashi",
+      "name_ja": "浅草・かっぱ橋道具街",
+      "kind": "bairro",
+      "story_pt": "O antigo bairro de diversão de Edo ao redor do Sensō-ji, cheio de casas com mais de cem anos: soba, tempurá, sukiyaki, oden, doces. Foi aqui que nasceu o lámen de Tóquio (Rairaiken, 1910). A dez minutos a pé, Kappabashi tem mais de 170 lojas de utensílios de cozinha para profissionais, desde 1912: facas, panelas, cerâmica e as famosas réplicas de comida em plástico.",
+      "eat_pt": [
+        "Soba no Namiki Yabu (fecha qua/qui) ou no Owariya (tempurá-soba de camarão gigante)",
+        "Oden no Ōtafuku, centenário, com sala para seis",
+        "Sushi de família no Kibun Zushi (mesas e tatame)",
+        "Dorayaki no Kameju (fila); pão na Pelican (Tawaramachi)",
+        "Ningyō-yaki assado na hora e kaminari-okoshi da Tokiwadō na Nakamise",
+        "Sukiyaki no Chinya ou no Yonekyū"
+      ],
+      "tips_pt": "A Nakamise é bonita mas é vitrine de lembrancinha: coma nas ruas laterais. Kappabashi é de dia útil: vá seg 21 ou ter 22/12, ou 5–8/1; muitas lojas fecham aos domingos. Para facas, Kama-Asa, Kamata e Tsubaya; desconfie de 'Damascus VG10' barato sem afiador na loja.",
+      "dec_jan_pt": "Kappabashi fecha mais ou menos de 29/30/12 a 4/5/1. Owariya abre 31/12 das 11h30 às 21h30 e fecha 1/1. Namiki Yabu não abre no dia 31 (é quinta, dia de folga). Sensō-ji tem o hatsumōde mais lotado da cidade de 1 a 3/1, com fileiras de barracas.",
+      "query": "Asakusa Sensoji Nakamise Tokyo"
+    },
+    {
+      "name": "Ueno e Ameyoko",
+      "name_ja": "上野・アメ横",
+      "kind": "mercado",
+      "story_pt": "Ameyoko nasceu como mercado negro do pós-guerra embaixo da linha do trem; o nome vem dos doces (ame) vendidos em 1946 ou dos produtos americanos. Hoje são cerca de 400 lojas de peixe seco, frutos do mar, frutas e bugigangas. No fim de ano ela vira o mercado de Ano-Novo de Tóquio: cerca de 500 mil pessoas por dia, com pregões de caranguejo, tarako e kazunoko.",
+      "eat_pt": [
+        "Dorayaki na Usagiya (Ueno-Hirokōji)",
+        "Katsuretsu frito em banha na Ponta Honke (sala no 3º andar para até 8)",
+        "Yōshoku de alto nível no Kamiya (Negishi; fecha qua/qui)",
+        "Espetinhos e frutas cortadas nas bancas de Ameyoko"
+      ],
+      "tips_pt": "Para os ingredientes bons, os cozinheiros vão a Tsukiji ou às depachika: Ameyoko vale como espetáculo. Desconfie de caranguejo 'para osechi' que é importado congelado. Barganhar faz parte. Combinem um ponto de encontro (saída Shinobazu da estação de Ueno).",
+      "dec_jan_pt": "Mercado de fim de ano de 28 a 31/12, com pico no dia 30 (pior das 11h às 16h). Para a grávida, o fim da tarde do dia 31 é o horário mais calmo; as lojas fecham por volta de 17h–18h.",
+      "query": "Ameyoko Ueno Tokyo"
+    },
+    {
+      "name": "Mercado Externo de Tsukiji",
+      "name_ja": "築地場外市場",
+      "kind": "mercado",
+      "story_pt": "O mercado atacadista saiu de Nihonbashi para Tsukiji depois do terremoto de 1923 e foi para Toyosu em 2018. Ficou o mercado externo: cerca de 460 lojas de varejo e restaurantes que abastecem cozinheiros (katsuobushi, kombu, facas, louça) e servem café da manhã de mercado.",
+      "eat_pt": [
+        "Horumon-don da Kitsuneya (miúdos cozidos no missō Hatchō desde 1947; fecha qua/dom)",
+        "Torimeshi do Torito Bunten, de um atacadista de frango (8h30–13h30)",
+        "Tamagoyaki quente no espeto",
+        "Katsuobushi e kombu da Fushitaka para levar para casa",
+        "Soba fina no Narutomi, ali perto (mesa para seis; fecha sáb/dom)"
+      ],
+      "tips_pt": "Chegue entre 6h e 8h. Pule os espetinhos de wagyu e uni 'para turista'. Grávida: nada de ostra ou vieira crua nas bancas; frutos do mar grelhados só bem passados.",
+      "dec_jan_pt": "Lojas que seguem o calendário do mercado fecham em 23/12 e de 31/12 a 4/1 e abrem no domingo 27/12. De 28 a 30/12 é o maior aperto do ano. No dia 31, a maioria fecha por volta de 14h–15h. Volta a abrir em 5/1.",
+      "query": "Tsukiji Outer Market Tokyo"
+    },
+    {
+      "name": "Mercado de Toyosu",
+      "name_ja": "豊洲市場",
+      "kind": "mercado",
+      "story_pt": "O maior mercado de peixe do mundo desde outubro de 2018. Prédios modernos e fechados: você vê o leilão de atum por um corredor de vidro, não no meio do chão. Restaurantes de mercado (sushi, kaisendon, tonkatsu, café) ficam nos prédios do atacado.",
+      "eat_pt": [
+        "Sushi ou kaisendon de café da manhã nos restaurantes do mercado (filas longas nos mais famosos)",
+        "Chá Uogashi Meicha no balcão do mercado"
+      ],
+      "tips_pt": "O leilão começa por volta de 5h30. O corredor de vidro do 2º andar é grátis e abre às 5h nos dias de mercado. O deck de observação de baixo é por sorteio mensal (máx. 5 pessoas por inscrição, então a família precisa de duas). Passeio 'VIP' para o primeiro leilão é furada.",
+      "dec_jan_pt": "Fecha 20/12, 23/12 e de 31/12 a 4/1. Primeiro leilão do ano (hatsu-seri) em 5/1, mas não há sorteio do deck de 25/12 a 5/1: nesse dia só o corredor de vidro, com muita imprensa. Melhor: deck em 6, 7 ou 8/1 (inscrição no início de dezembro).",
+      "query": "Toyosu Market Tokyo"
+    },
+    {
+      "name": "Nihonbashi",
+      "name_ja": "日本橋",
+      "kind": "bairro",
+      "story_pt": "O marco zero de Edo e o bairro dos comerciantes: aqui ficou o mercado de peixe por três séculos, e ainda estão casas fundadas no século XVIII, como Ninben (katsuobushi, 1699) e Kiya (facas, ~1792). A Mitsukoshi, que nasceu como a loja de tecidos Echigoya, e a Takashimaya ficam a poucos minutos uma da outra.",
+      "eat_pt": [
+        "Dashi de katsuobushi em copo no Nihonbashi Dashi Bar da Ninben",
+        "Tenzaru (soba com tempurá) no Muromachi Sunaba",
+        "Wagashi do Nagato",
+        "Subsolo da Mitsukoshi: balcões de sushi, unagi e tempurá, e o Kayūan, com doces regionais de todo o Japão",
+        "Oden do Otakō"
+      ],
+      "tips_pt": "COREDO Muromachi junta Ninben, Kiya e outras lojas antigas sob o mesmo teto. Kiya afia e grava facas na hora.",
+      "dec_jan_pt": "COREDO (Kiya) fecha só em 1/1. Mitsukoshi fecha 1/1 e abre 2/1 às 10h; Takashimaya fecha 1 e 2/1. Otakō fecha 30 e 31/12 e de 1 a 4/1/2027.",
+      "query": "Nihonbashi Mitsukoshi Tokyo"
+    },
+    {
+      "name": "Ningyōchō",
+      "name_ja": "人形町",
+      "kind": "bairro",
+      "story_pt": "Bairro de teatro e bonecos de Edo (daí o nome), com ruas de casinhas e lojas de família. É o berço do ningyō-yaki. A rua Amazake Yokochō ainda guarda lojas de tofu, chá e doces.",
+      "eat_pt": [
+        "Ningyō-yaki das casas antigas que ainda usam as fôrmas tradicionais",
+        "Sukiyaki no Ningyōchō Imahan Honten (almoço mais barato que o jantar)",
+        "Sukiyaki de luxo no Hiyama",
+        "Oyakodon no Tamahide, onde o prato foi criado (situação e horário a confirmar)"
+      ],
+      "tips_pt": "Um passeio curto de fim de tarde, combinado com Nihonbashi. O Imahan Honten aceita reserva.",
+      "dec_jan_pt": "A confirmar loja a loja. Suitengū, o santuário do bairro, é o santuário dos partos e da gravidez: vale a visita para a futura mãe.",
+      "query": "Ningyocho Amazake Yokocho Tokyo"
+    },
+    {
+      "name": "Kanda e Jinbōchō",
+      "name_ja": "神田・神保町",
+      "kind": "bairro",
+      "story_pt": "Em Kanda-Sudachō, um quarteirão poupado dos bombardeios guarda casas de antes da guerra: Kanda Matsuya (1884), Kanda Yabu Soba (1880), o doce Takemura e a casa de anko-nabe Isegen. Ao lado, Jinbōchō é o bairro dos sebos e das universidades, e por isso de comida barata de estudante: curry, yōshoku e kissaten.",
+      "eat_pt": [
+        "Soba e saquê no Kanda Matsuya ou no Kanda Yabu (o mais fácil para seis juntos)",
+        "Awa-zenzai e agemanjū no Takemura",
+        "Tonkatsu no Ponchi-ken ou no Marugo",
+        "Katsu-curry barato no Kitchen Nankai (fecha dom/feriados)",
+        "Café no Sabouru (kissaten) ou na Glitch (café especial)",
+        "Unagi no Myōjinshita Kandagawa (salas para seis)"
+      ],
+      "tips_pt": "Almoço de soba às 10h30–11h, doce no Takemura, depois sebos. Os doces finos da Sasama ficam a cinco minutos de táxi.",
+      "dec_jan_pt": "31/12: Kanda Yabu abre das 9h30 às 22h30 (regra de 2025) e reserva soba para viagem até 30/12 às 20h; fecha qua 23/12 e volta ao normal em 4/1. Matsuya abre normalmente no dia 31 (filas de 8h às 22h). Kanda Myōjin lota no hatsumōde.",
+      "query": "Kanda Awajicho Matsuya Yabu Soba"
+    },
+    {
+      "name": "Ginza",
+      "name_ja": "銀座",
+      "kind": "bairro",
+      "story_pt": "Reconstruída em tijolo depois do incêndio de 1872, Ginza foi a vitrine da ocidentalização: o Rengatei (1895) criou o katsuretsu moderno, a Shiseido Parlour abriu como soda fountain de farmácia e a Kimuraya fez o anpan famoso. Hoje mistura balcões caríssimos de sushi com yōshoku de avô, kissaten e duas depachika (Mitsukoshi e Matsuya).",
+      "eat_pt": [
+        "Omurice e katsuretsu no Rengatei; croquetes e hayashi rice na Shiseido Parlour (sala para 8)",
+        "Katsu-curry no Grill Swiss",
+        "Monaka do Kūya (reserva por telefone)",
+        "Café envelhecido no Café de l'Ambre (fecha seg)",
+        "Oden no Ogura, com sala para seis",
+        "Lámen de shōyu no Ginza Hachigo; tonkatsu no Aoki",
+        "Chá na Uogashi Meicha (Cha Ginza)"
+      ],
+      "tips_pt": "O Rengatei virou parada de turista, mas o katsuretsu continua honesto. Chūō-dōri vira calçadão nos sábados e domingos à tarde.",
+      "dec_jan_pt": "Ginza Mitsukoshi abre 2/1; Matsuya e GINZA SIX só em 3/1. Ogura abre até 29/12 e volta em 5/1. Uogashi Meicha fechou de 31/12 a 4/1 na última virada. Na noite de 24/12, Ginza é o centro do jantar de casal: reservem cedo.",
+      "query": "Ginza Tokyo"
+    },
+    {
+      "name": "Tsukishima",
+      "name_ja": "月島",
+      "kind": "rua",
+      "story_pt": "Ilha aterrada no fim do século XIX, colada em Tsukuda, a vila dos pescadores que inventaram o tsukudani. A rua Nishinaka-dōri tem cerca de 75 casas de monja, mas poucas são antigas: a maioria virou monja no boom dos anos 1980 e depois que o metrô chegou, em 1988. Atrás da rua sobrevivem casinhas de madeira e becos.",
+      "eat_pt": [
+        "Monja na Monja Kondō Honten (132 lugares, aceita reserva; mentaiko-mochi-queijo é o pedido clássico)",
+        "Nikomi (ensopado de miúdos) no izakaya Kishidaya (16h–21h, fila antes de abrir, fecha dom/seg)",
+        "Tsukudani das casas antigas de Tsukuda, a cinco minutos",
+        "Kanemasu, o balcão em pé dos cozinheiros, em Kachidoki (vai cedo)"
+      ],
+      "tips_pt": "Se ninguém souber fazer o dique, peça para o atendente montar a primeira monja. A grávida deve pular o sashimi de marisco no Kanemasu.",
+      "dec_jan_pt": "Monja Kondō abre todos os dias. Para os outros, a confirmar.",
+      "query": "Tsukishima Monja Street"
+    },
+    {
+      "name": "Ryōgoku",
+      "name_ja": "両国",
+      "kind": "bairro",
+      "story_pt": "O bairro do sumô: o Kokugikan fica aqui desde 1985 (e o primeiro Kokugikan, de 1909, também ficava em Ryōgoku). Os restaurantes de chanko se multiplicaram ao redor da estação, muitos de ex-lutadores. Também foi em Ryōgoku que Hanaya Yohei vendeu os primeiros nigiri.",
+      "eat_pt": [
+        "Chanko-nabe de frango num dos restaurantes ao redor da estação (sala de tatame é comum, bom para seis)",
+        "Ryōgoku Edo Noren, praça de comida no antigo prédio da estação"
+      ],
+      "tips_pt": "Chanko é perfeito para seis num jantar frio: uma panela grande no meio da mesa. Reserve.",
+      "dec_jan_pt": "O torneio de janeiro (Hatsu Basho) começa depois da viagem. Horários de fim de ano dos restaurantes: a confirmar.",
+      "query": "Ryogoku chanko Tokyo"
+    },
+    {
+      "name": "Monzen-Nakachō e Fukagawa",
+      "name_ja": "門前仲町・深川",
+      "kind": "bairro",
+      "story_pt": "Cidade de templo ao redor do santuário Tomioka Hachimangū e do Fukagawa Fudōdō, do outro lado do rio Sumida. Era o bairro de pescadores e madeireiros de Edo, de onde vem o fukagawa-meshi. As ruas comerciais são vivas e baratas, com izakaya de bairro.",
+      "eat_pt": [
+        "Fukagawa-meshi nas casas especializadas da região (também perto de Kiyosumi-Shirakawa)",
+        "Tempurá no Mikawa Zezankyo (Fukuzumi), a referência do tempurá Edo-mae, com sala para seis (só reserva; fecha qua)",
+        "Café de torrefação em Kiyosumi-Shirakawa, a uma estação"
+      ],
+      "tips_pt": "Combine com o Museu de Fukagawa Edo (reconstrução de um bairro de Edo). Os santuários têm feiras (ennichi) em dias fixos do mês; datas a confirmar.",
+      "dec_jan_pt": "Tomioka Hachimangū e Fukagawa Fudōdō lotam no hatsumōde, com barracas. Restaurantes: a confirmar.",
+      "query": "Monzen-nakacho Tomioka Hachimangu"
+    },
+    {
+      "name": "Yanaka Ginza",
+      "name_ja": "谷中銀座商店街",
+      "kind": "rua",
+      "story_pt": "Rua comercial dos anos 1950 com cerca de 60 lojas, no bairro de Yanaka, que escapou dos bombardeios e manteve templos e casinhas. Desce-se para ela pela escada Yūyake Dandan, famosa pelo pôr do sol e pelos gatos.",
+      "eat_pt": [
+        "Menchi-katsu e croquete de açougue comidos na rua",
+        "Café da manhã no Kayaba Coffee (casa de madeira antiga; abre 8h, reserva online, fecha seg)",
+        "Kakigōri no Himitsudō; doces da Inamura Shōzō"
+      ],
+      "tips_pt": "Manhã: Kayaba, cemitério de Yanaka, Yūyake Dandan, Yanaka Ginza. Ruas estreitas e muita gente no fim de semana; dia útil é melhor.",
+      "dec_jan_pt": "Muitas lojas familiares fecham de 31/12 a 3/1: a confirmar.",
+      "query": "Yanaka Ginza Tokyo"
+    },
+    {
+      "name": "Shibamata Taishakuten",
+      "name_ja": "柴又帝釈天",
+      "kind": "rua",
+      "story_pt": "Templo de 1629 no extremo leste de Tóquio, cenário dos filmes do Tora-san ('Otoko wa Tsurai yo'). A rua de acesso desde a estação Keisei Shibamata é um pedaço de Shitamachi antigo: lojas de kusa-dango e senbei e restaurantes de peixe de rio (unagi, carpa) que vêm desde Edo.",
+      "eat_pt": [
+        "Kusa-dango (bolinho de mochi com artemísia e anko) nas casas do caminho, como a Takagiya Rōho",
+        "Unagi nas casas antigas do caminho do templo",
+        "Senbei assado na hora"
+      ],
+      "tips_pt": "Meio dia de passeio: templo (veja os entalhes de madeira), jardim e o rio Edo com o barco Yagiri no Watashi. O Kawajin, a casa de unagi mais famosa da margem, fechou em 2021.",
+      "dec_jan_pt": "Muito cheio no hatsumōde (1–3/1). Barcos e lojas: horários de inverno a confirmar.",
+      "query": "Shibamata Taishakuten sando"
+    },
+    {
+      "name": "Shinjuku: Omoide Yokochō e Golden Gai",
+      "name_ja": "思い出横丁・ゴールデン街",
+      "kind": "yokochō",
+      "story_pt": "Os dois nasceram de mercados negros do pós-guerra. Omoide Yokochō (também chamado Yakitori Yokochō) são uns 70 botecos de yakitori e miúdos grelhados sob a linha do trem. Golden Gai são cerca de 200 bares minúsculos em casinhas de madeira, antigo reduto de escritores e cineastas.",
+      "eat_pt": [
+        "Omoide Yokochō: alguns espetos e uma cerveja, de passagem",
+        "Golden Gai: lámen de niboshi no Nagi (aberto 24h)",
+        "Melhor comida perto: subsolo do Isetan (a depachika mais completa da cidade) e dango no Oiwake Dango"
+      ],
+      "tips_pt": "Veredito honesto: os dois valem como cenário, não como destino de comida. Omoide está tomado por turistas, apertado e com espetos medianos; Golden Gai cobra entrada (charge) em muitos bares, cabe 5 a 8 pessoas por bar e seis juntos raramente entram. Para a grávida, é fumaça e banquinho sem encosto. Passe 30 minutos e jante em outro lugar.",
+      "dec_jan_pt": "Isetan fecha 1/1 e abre 2/1 às 10h; a feira de fim de ano (Ōtoshi no Ichi) foi até 31/12 na última virada. Bares: a confirmar.",
+      "query": "Omoide Yokocho Shinjuku"
+    },
+    {
+      "name": "Shibuya e Ebisu (yokochō)",
+      "name_ja": "渋谷・恵比寿横丁",
+      "kind": "yokochō",
+      "story_pt": "Os yokochō daqui são de outra espécie: Ebisu Yokochō e Shibuya Yokochō são galerias modernas que imitam o clima de beco antigo, com balcões de tudo um pouco. Nonbei Yokochō, ao lado dos trilhos de Shibuya, é o beco antigo de verdade, com bares de 5 lugares.",
+      "eat_pt": [
+        "Kissaten Chatei Hatō (Shibuya, 11h–23h)",
+        "Pão na VIRON Shibuya",
+        "Pizza Marumo (Ebisu, 百名店)",
+        "Tokyu Food Show para bentô prático"
+      ],
+      "tips_pt": "Ebisu Yokochō é animado mas turístico e barulhento; para seis, melhor um restaurante com reserva. Use os yokochō para um drinque, não para o jantar.",
+      "dec_jan_pt": "Tokyu Food Show abre 2/1. Bares: a confirmar.",
+      "query": "Ebisu Yokocho Tokyo"
+    },
+    {
+      "name": "Kichijōji",
+      "name_ja": "吉祥寺",
+      "kind": "yokochō",
+      "story_pt": "Bairro residencial querido de Tóquio, ao lado do parque Inokashira. Harmonica Yokochō, logo na saída norte da estação, é um mercado negro do pós-guerra com quase 100 lojinhas; o nome vem das portinhas em fila, como os furos de uma gaita.",
+      "eat_pt": [
+        "Menchi-katsu do açougue Satou (fila diária; no 2º andar funciona a churrascaria)",
+        "Petiscos e balcões de Harmonica Yokochō",
+        "Yōkan da Ozasa, vendido em quantidade limitada por dia (fila de madrugada; a confirmar)"
+      ],
+      "tips_pt": "Combine com o parque e o Museu Ghibli (Mitaka). Satou: chegue antes do almoço; a fila anda rápido.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Harmonica Yokocho Kichijoji"
+    },
+    {
+      "name": "Nakameguro e Daikanyama",
+      "name_ja": "中目黒・代官山",
+      "kind": "bairro",
+      "story_pt": "Bairros de lojas pequenas ao longo do rio Meguro, sem passado de Edo para contar: aqui a atração é o café e a padaria de terceira onda que Tóquio faz como poucos lugares.",
+      "eat_pt": [
+        "Starbucks Reserve Roastery Tokyo (prédio de Kengo Kuma): vale pela arquitetura",
+        "Cafés de torrefação pequena na beira do rio",
+        "Yakitori no Toriyoshi Nakameguro",
+        "Tonkatsu na Tonki (Meguro), a uma estação"
+      ],
+      "tips_pt": "Passeio de manhã ou fim de tarde, sem pressa. Grávida: um café por dia.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Nakameguro Meguro River cafes"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/江戸前寿司",
+    "https://ja.wikipedia.org/wiki/もんじゃ焼き",
+    "https://ja.wikipedia.org/wiki/深川めし",
+    "https://ja.wikipedia.org/wiki/ちゃんこ鍋",
+    "https://ja.wikipedia.org/wiki/佃煮",
+    "https://ja.wikipedia.org/wiki/雷おこし",
+    "https://ja.wikipedia.org/wiki/人形焼",
+    "https://ja.wikipedia.org/wiki/年越し蕎麦",
+    "https://ja.wikipedia.org/wiki/洋食",
+    "https://ja.wikipedia.org/wiki/東京ラーメン",
+    "https://ja.wikipedia.org/wiki/デパ地下",
+    "https://ja.wikipedia.org/wiki/築地場外市場",
+    "https://ja.wikipedia.org/wiki/アメヤ横丁",
+    "https://ja.wikipedia.org/wiki/かっぱ橋道具街",
+    "https://ja.wikipedia.org/wiki/思い出横丁",
+    "https://ja.wikipedia.org/wiki/新宿ゴールデン街",
+    "https://ja.wikipedia.org/wiki/ハーモニカ横丁",
+    "https://ja.wikipedia.org/wiki/谷中銀座商店街",
+    "https://ja.wikipedia.org/wiki/柴又帝釈天",
+    "https://ja.wikipedia.org/wiki/門前仲町",
+    "https://www.tsukiji.or.jp/calendar/",
+    "https://www.shijou.metro.tokyo.lg.jp/documents/d/shijou/faq-japanese-pdf",
+    "https://www.shijou.metro.tokyo.lg.jp/documents/d/shijou/r9suisan-csv",
+    "https://toyosu.jcdlotterysite.jp/",
+    "https://www.yabusoba.net/year/",
+    "https://magazine.tabelog.com/articles/59198",
+    "https://www.ninben.co.jp/store/honten/",
+    "https://www.kiya-hamono.co.jp/shop/kiya_honten.html",
+    "https://www.gotokyo.org/jp/spot/552/index.html",
+    "docs/research/food/20-tokyo-restaurants.md",
+    "docs/research/food/21-tokyo-shops-markets-tours.md"
+  ]
+}

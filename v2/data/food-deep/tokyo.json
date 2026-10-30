@@ -1,0 +1,2709 @@
+{
+  "slug": "tokyo",
+  "name": "Tokyo",
+  "tagline": "The city that invented fast food for working people (nigiri, tempura and stall soba), then refined it into the world capital of eating well.",
+  "history": [
+    "Edo grew in the 17th century as a city of men: samurai on rotation (sankin-kōtai), carpenters, porters and craftsmen, many of them single and without a kitchen at home. The stalls (yatai) and street vendors fed them. That is where Edo's big three came from (soba, tempura and sushi), all fast, cheap and eaten standing up.",
+    "Nigiri comes from that line. Around 1824 Hanaya Yohei, in Ryōgoku, sold fish from Edo Bay (Edo-mae) on vinegared rice, in pieces two to three times today's size, to people who needed a meal after work. With no fridges, the fish was cured: tuna marinated in shōyu (zuke), kohada in salt and vinegar, anago and shellfish simmered and brushed with tsume sauce. Tempura was battered seafood on skewers sold from stalls; soba was the merchants' end-of-month meal. Eel (unagi) grilled with sweet tare was street food too, and the habit of eating it in summer (doyō no ushi) is from Edo.",
+    "The Meiji era (1868–) opened the country and brought yōshoku, Western cooking reinvented in Tokyo: Seiyōken in Tsukiji (1872), and Rengatei in Ginza (1895), which deep-fried the katsuretsu and paved the way for tonkatsu, then omurice, hayashi rice and korokke. In 1910 Rairaiken, in Asakusa, made shōyu ramen popular, the base of 'Tokyo ramen'.",
+    "Fish always had a centre: the Nihonbashi market, from the start of Edo, until the 1923 earthquake destroyed it. It moved to Tsukiji (officially in 1935) and, in October 2018, to Toyosu; the Tsukiji outer market, with about 460 shops, stayed where it was. Today the other great showcase is the depachika, the food floor in the basement of department stores: the name caught on in 2000, but this is where Tokyo buys gifts, bento, wagashi and, at year's end, osechi."
+  ],
+  "winter": "December and January are the peak for fatty fish (kan-buri, winter tuna, hirame), ankō (monkfish) in nabe, oden and stews, mikan tangerines and roasted sweet potato (yaki-imo) sold in the street. It is also New Year food season: soba on the 31st, osechi and ozōni 1–3 Jan, and year-end markets packed 28–30 Dec. We're in Tokyo 20–24 Dec and 7–9 Jan, so we get the winter fish and oden but not the New Year rush.",
+  "meibutsu": [
+    {
+      "name": "Edo-mae nigiri",
+      "name_ja": "江戸前寿司",
+      "romaji": "Edo-mae zushi",
+      "what": "Tokyo's sushi: fish cured, marinated or simmered, on rice seasoned with vinegar (many places use red sake-lees vinegar, akazu). The classics to judge a counter by are kohada (cured in salt and vinegar), maguro zuke, anago with tsume, boiled kuruma-ebi and tamagoyaki.",
+      "where": "From the counters of Ginza and Shinbashi to tachigui (stand-up sushi). For our group, Kibun Zushi in Asakusa has tables and tatami.",
+      "must": true,
+      "pregnancy": "careful",
+      "pregnancy_note": "Japanese obstetricians don't ban fresh sushi: a few raw pieces at a good counter. Fernanda should avoid raw shellfish (oyster, scallop, akagai) and uni, and skip bluefin and bigeye tuna (toro included), swordfish and kinmedai. Cooked pieces are fine: anago, boiled ebi, tamago, well-seared aburi hotate and kanpyō-maki; cured kohada is her call.",
+      "glance": "Tokyo's sushi: cured, marinated or simmered fish on vinegared rice.",
+      "story": "Around 1824, Hanaya Yohei, in Ryōgoku, sold fish from Edo Bay on vinegared rice to people who needed a meal after work, in pieces two to three times today's size. With no fridges, the fish was cured: tuna marinated in shōyu (zuke), kohada in salt and vinegar, anago simmered and brushed with tsume sauce. Those are still the pieces to judge a counter by. At an omakase, trust the chef: it isn't made to order."
+    },
+    {
+      "name": "Edo-mae tempura",
+      "name_ja": "江戸前天ぷら",
+      "romaji": "tenpura",
+      "what": "It began as fried skewers at street stalls. The Tokyo style uses sesame oil, which gives a more golden, fragrant crust, and seafood from the bay: kuruma-ebi, anago, kisu, plus kakiage (a fritter of small shrimp and mitsuba). At a counter it comes piece by piece, straight from the oil.",
+      "where": "Counters in Monzen-Nakachō and Ginza; tendon (the rice bowl) at the classic places in Asakusa and Nihonbashi.",
+      "must": true,
+      "glance": "Bay seafood fried in sesame oil, served piece by piece.",
+      "story": "Tempura began as Edo street food: battered seafood on skewers, sold from stalls to workers who ate standing up. Tokyo still fries it its own way, in sesame oil, which gives a more golden, fragrant crust, and with seafood from the bay: kuruma-ebi, anago, kisu, and kakiage, a fritter of small shrimp and mitsuba. At a counter it comes one piece at a time, straight from the oil. Dip some pieces in salt, others in tentsuyu with grated daikon."
+    },
+    {
+      "name": "Edo soba (and toshikoshi soba on 31 Dec)",
+      "name_ja": "蕎麦・年越しそば",
+      "romaji": "soba, toshikoshi soba",
+      "what": "Buckwheat noodles, served cold (seiro/mori) with a short, strong dipping sauce, or hot (kake, tempura soba, kamo-nanban with duck). In the old houses people drink sake with small plates first (soba-mae). On 31 December all of Japan eats toshikoshi soba: the noodles break easily and 'cut off' the year's bad luck.",
+      "where": "Kanda Yabu Soba and Kanda Matsuya (Awajichō), Muromachi Sunaba (Nihonbashi, where tenzaru was born), Namiki Yabu and Owariya (Asakusa).",
+      "price": "¥1,000–2,000 at the classic houses",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_note": "Only skip tsukimi (raw egg on top).",
+      "glance": "Buckwheat noodles, cold with a dipping sauce or in hot broth.",
+      "story": "In Edo, soba was the merchants' end-of-month meal, one of the city's three fast foods with sushi and tempura. In the old houses, people still drink sake with small plates first, called soba-mae. Then order seiro: cold buckwheat noodles with a short, strong dipping sauce. Or have it hot, as kake, tempura soba or kamo-nanban with duck. Slurping is polite. And on 31 December all of Japan eats soba: the noodles break easily, cutting off the year's bad luck."
+    },
+    {
+      "name": "Eel kabayaki",
+      "name_ja": "鰻の蒲焼",
+      "romaji": "unagi no kabayaki",
+      "what": "Eel opened along the back (Kantō style) and steamed before it goes on the charcoal with sweet tare. It comes out softer and less crisp than Osaka's. Order unajū (in the lacquered box) or una-don.",
+      "where": "Obana (Minami-Senju), Edogawa Ishibashi (private rooms for 6), Nodaiwa; in Shibamata, the old houses on the temple approach.",
+      "price": "Obana: ¥8,000–15,000 per person (Tabelog range)",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_note": "Grilled eel is safe. Fernanda should turn down kimo-yaki and kimo-sui (eel liver): too much vitamin A.",
+      "glance": "Eel steamed, then grilled over charcoal with sweet sauce, on rice.",
+      "story": "Grilled eel brushed with sweet tare was Edo street food, and the habit of eating it in midsummer, on doyō no ushi, began in Edo too. Tokyo opens the eel along the back and steams it before it goes on the charcoal, so it comes out softer and less crisp than Osaka's. Order unajū, served in a lacquered box over rice, or the simpler una-don. Fernanda just skips the eel liver, kimo-yaki and kimo-sui."
+    },
+    {
+      "name": "Monjayaki",
+      "name_ja": "もんじゃ焼き",
+      "romaji": "monjayaki",
+      "what": "A very runny batter with cabbage and fillings, poured inside a 'dam' of cabbage on the griddle. You eat it straight off the griddle with a tiny spatula (hagashi), scraping up the toasted bits. It grew out of a children's snack at the old sweet shops; today's style is post-war. Classic filling: mentaiko with mochi and cheese.",
+      "where": "Monja Street in Tsukishima (Monja Kondō Honten is the reference).",
+      "price": "¥2,000–3,000 per person",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_note": "Everything cooks through on the griddle; let the mentaiko cook until it turns opaque.",
+      "glance": "Runny batter cooked on a griddle and eaten off a tiny spatula.",
+      "story": "Monja grew out of a children's snack sold at Tokyo's old sweet shops; the style you eat today is post-war. It looks alarming at first: a very runny batter with cabbage and fillings, poured inside a ring, or 'dam', of cabbage on the hot griddle. Nobody serves it on a plate. You eat it straight off the griddle with a tiny spatula, the hagashi, scraping up the toasted bits. The classic filling is mentaiko with mochi and cheese."
+    },
+    {
+      "name": "Chanko-nabe",
+      "name_ja": "ちゃんこ鍋",
+      "romaji": "chanko-nabe",
+      "what": "The hot pot of the sumo stables: chicken broth (a chicken stands on two legs and 'never puts a hand on the ground', like a wrestler who doesn't lose), meatballs, fish, tofu and lots of greens. It ends with rice or noodles in the broth. Many of the restaurants are run by former wrestlers.",
+      "where": "Around Ryōgoku station.",
+      "must": false,
+      "glance": "Sumo wrestlers' chicken hot pot with meatballs, fish and greens."
+    },
+    {
+      "name": "Fukagawa-meshi",
+      "name_ja": "深川めし",
+      "romaji": "Fukagawa-meshi",
+      "what": "Clams (today asari, originally aoyagi) simmered with spring onion. In the old version the broth goes over the rice (bukkake), a quick meal for Fukagawa's fishermen and rickshaw pullers. The more common version today cooks the clams with the rice (takikomi). It also comes as an ekiben at Tokyo Station.",
+      "where": "Monzen-Nakachō and Kiyosumi-Shirakawa; ekiben at Tokyo Station.",
+      "must": false,
+      "pregnancy": "ok",
+      "pregnancy_note": "Cooked clams: fine.",
+      "glance": "Clams simmered with spring onion, over or cooked with rice."
+    },
+    {
+      "name": "Tokyo oden",
+      "name_ja": "東京風おでん",
+      "romaji": "oden",
+      "what": "Winter stew: daikon radish, boiled egg, konnyaku and fishcakes in a dashi-and-shōyu broth, darker than Kansai's. Chikuwabu (a tube of wheat dough) and hanpen (a fluffy fishcake) are Tokyo's own. Eaten with karashi mustard.",
+      "where": "Ōtafuku (Asakusa, over a hundred years old), Ogura (Ginza, rooms for 6), Otakō (Nihonbashi).",
+      "price": "Ōtafuku: ¥5,000–6,000 (Tabelog range)",
+      "must": true,
+      "pregnancy": "ok",
+      "glance": "Daikon, egg and fishcakes simmered in a dark dashi broth.",
+      "story": "December and January are oden season, and Tokyo makes its own version of this winter stew. Daikon radish, boiled eggs, konnyaku and fishcakes simmer in a dashi-and-shōyu broth that is darker than Kansai's. Look for the two pieces that are Tokyo's own: chikuwabu, a tube of wheat dough, and hanpen, a fluffy fishcake. Eat each piece with a dab of karashi mustard, and at a good counter, let the cook choose what comes next."
+    },
+    {
+      "name": "Tonkatsu",
+      "name_ja": "とんかつ",
+      "romaji": "tonkatsu",
+      "what": "Pork loin (rōsu) or fillet (hire) in panko, deep-fried, with finely shredded cabbage, miso soup and rice. It descends from the katsuretsu of Ginza's yōshoku; at the top places the pork is heritage breed and cooked to pink.",
+      "where": "Ponchi-ken and Marugo (Kanda), Ponta Honke (Ueno), Aoki (Ginza), Narikura (Minami-Asagaya).",
+      "must": true,
+      "pregnancy": "careful",
+      "pregnancy_note": "At the fine places the centre comes out pink. For Fernanda, ask 'yoku hi o tōshite kudasai' (well done) or choose a thin hire-katsu.",
+      "glance": "Breaded, deep-fried pork cutlet with shredded cabbage, rice and miso soup.",
+      "story": "Tonkatsu started in Ginza. In 1895 the yōshoku restaurant Rengatei deep-fried a breaded cutlet it called katsuretsu, and paved the way for the dish. Today it's pork loin (rōsu) or fillet (hire) in panko, deep-fried and served with finely shredded cabbage, miso soup and rice. At the top places the pork is a heritage breed, cooked pink in the centre. For Fernanda, ask for it well done: 'yoku hi o tōshite kudasai'."
+    },
+    {
+      "name": "Yōshoku: omurice, hayashi rice, korokke, katsu curry",
+      "name_ja": "洋食",
+      "romaji": "yōshoku",
+      "what": "Japanese-style 'Western' food born in Meiji-era Tokyo: omurice (ketchup rice wrapped in an omelette), hayashi rice (beef in demi-glace), korokke and menchi-katsu (croquettes), hambāgu, katsu curry. It's the comfort food Japanese grandparents remember.",
+      "where": "Rengatei and Shiseido Parlour (Ginza), Kamiya (Negishi), Kitchen Nankai (Jinbōchō), Grill Swiss (Ginza).",
+      "must": true,
+      "pregnancy": "careful",
+      "pregnancy_note": "Many omurice come with the egg soft inside. For Fernanda, ask for the egg set ('tamago o yoku yaite') or choose hayashi rice, korokke or a well-done hambāgu.",
+      "glance": "Japanese takes on Western food: omurice, croquettes, hambāgu, katsu curry.",
+      "story": "When Japan opened up in the Meiji era, Tokyo took Western cooking and reinvented it. Seiyōken opened in Tsukiji in 1872, and Rengatei in Ginza followed in 1895. From there came omurice (ketchup rice wrapped in an omelette), hayashi rice (beef in demi-glace), and korokke croquettes. Add hambāgu and katsu curry and you have the comfort food Japanese grandparents remember. For Fernanda, ask for the omurice egg set: 'tamago o yoku yaite'."
+    },
+    {
+      "name": "Tokyo ramen (shōyu)",
+      "name_ja": "東京ラーメン",
+      "romaji": "Tōkyō rāmen",
+      "what": "The classic ramen: clear chicken broth (sometimes with pork or niboshi), shōyu tare, thin wavy noodles, chashu, menma, naruto and spring onion. It goes back to Rairaiken in Asakusa (1910). In Ogikubo the local version uses more niboshi.",
+      "where": "Ginza Hachigo, Tagano, Yamaguchi and the neighbourhood classics.",
+      "pregnancy": "careful",
+      "pregnancy_note": "The ajitama egg has a soft yolk: Fernanda should order without it ('ajitama nashi') or only eat it if it's set.",
+      "glance": "Classic ramen: clear chicken broth, shōyu, thin wavy noodles."
+    },
+    {
+      "name": "Tsukudani",
+      "name_ja": "佃煮",
+      "romaji": "tsukudani",
+      "what": "Small fish, clams, kombu or nori simmered for a long time in shōyu and sugar until they keep. It was born on Tsukuda island, where fishermen brought from Osaka by Tokugawa Ieyasu cooked the leftover catch; samurai took it home as a gift. Eaten with plain white rice.",
+      "where": "The old shops of Tsukuda (next to Tsukishima) and Nihonbashi; depachika.",
+      "must": false,
+      "pregnancy": "ok",
+      "pregnancy_note": "Cooked and safe; very salty.",
+      "glance": "Tiny fish, clams or kombu simmered in shōyu and sugar."
+    },
+    {
+      "name": "Ningyō-yaki",
+      "name_ja": "人形焼",
+      "romaji": "ningyō-yaki",
+      "what": "Little castella cakes filled with anko, baked in iron moulds. Born in Ningyōchō; in Asakusa the moulds show the Kaminarimon, the pagoda and the thunder god, and they're baked in front of you on Nakamise.",
+      "where": "Ningyōchō (old shops that still use the traditional moulds) and Nakamise, in Asakusa.",
+      "must": false,
+      "pregnancy": "ok",
+      "glance": "Little sponge cakes filled with sweet bean paste."
+    },
+    {
+      "name": "Kaminari-okoshi",
+      "name_ja": "雷おこし",
+      "romaji": "kaminari-okoshi",
+      "what": "A crunchy bar of puffed rice and syrup, Asakusa's lucky charm: 'okosu' means to raise up your house and your name, and 'kaminari' comes from the Kaminarimon gate. Its roots go back to the 17th century. A good gift that keeps for weeks.",
+      "where": "Tokiwadō Kaminari-okoshi Honpo, next to the Kaminarimon.",
+      "must": false,
+      "pregnancy": "ok",
+      "glance": "Crunchy puffed-rice bar, Asakusa's lucky souvenir."
+    },
+    {
+      "name": "Dorayaki and monaka",
+      "name_ja": "どら焼き・最中",
+      "romaji": "dorayaki, monaka",
+      "what": "Dorayaki: two pancakes with anko in the middle. Monaka: a crisp mochi wafer shell filled with bean paste. Tokyo has the country's reference shops.",
+      "where": "Usagiya (Ueno) and Kameju (Asakusa) for dorayaki; Kūya (Ginza) for monaka (usually needs a phone booking).",
+      "must": true,
+      "pregnancy": "ok",
+      "glance": "Bean-paste pancakes, and crisp wafers filled with bean paste."
+    },
+    {
+      "name": "Taiyaki",
+      "name_ja": "たい焼き",
+      "romaji": "taiyaki",
+      "what": "A little fish of batter baked in a mould and filled with anko. The old shops bake them one at a time in single moulds (ichōyaki), with a thin, crisp edge.",
+      "where": "Naniwaya Sōhonten (Azabu-Jūban, considered the originator; closed Tue/Wed); temple stalls at New Year.",
+      "must": false,
+      "pregnancy": "ok",
+      "glance": "Fish-shaped cake filled with sweet bean paste, with a crisp edge."
+    },
+    {
+      "name": "Tsukiji tamagoyaki",
+      "name_ja": "玉子焼き",
+      "romaji": "tamagoyaki",
+      "what": "A sweet rolled omelette with dashi, the way Edo's sushi shops make it. In Tsukiji it's sold hot, on a stick.",
+      "where": "The tamagoyaki stalls of the Tsukiji outer market.",
+      "pregnancy": "ok",
+      "pregnancy_note": "Cooked through: one of the safest things in the market.",
+      "glance": "Sweet rolled omelette made with dashi, sold hot on a stick."
+    },
+    {
+      "name": "Ankō-nabe",
+      "name_ja": "あんこう鍋",
+      "romaji": "ankō-nabe",
+      "what": "Monkfish hot pot, a Tokyo winter dish since Edo. The miso or shōyu broth turns rich with the melted liver (ankimo).",
+      "where": "Isegen (Kanda-Sudachō, since 1830), on the same block as Matsuya, Yabu and Takemura. Winter hours to confirm.",
+      "pregnancy": "careful",
+      "pregnancy_note": "The cooked fish is safe, but ankimo liver is very high in vitamin A: Fernanda should skip the ankimo and go easy on the broth.",
+      "glance": "Monkfish hot pot, made rich by the melted liver."
+    },
+    {
+      "name": "New Year food: osechi, ozōni and kagami-mochi",
+      "name_ja": "おせち・雑煮・鏡餅",
+      "romaji": "osechi, ozōni, kagami-mochi",
+      "what": "Osechi is the tiered lacquer box eaten 1–3 Jan: kuromame (sweet black beans), datemaki, kurikinton, kazunoko, kobumaki, nishime. Kantō ozōni is a clear broth with grilled square mochi, chicken, komatsuna, kamaboko and mitsuba. Kagami-mochi (two stacked mochi with a tangerine) goes on the altar around the 28th and is only broken on 11 January.",
+      "where": "Osechi to order from the depachika (Mitsukoshi and Isetan until 21 Dec, Takashimaya until 24 Dec) or put together from loose items at Ameyoko and Isetan's year-end fair. We spend New Year in Kyoto, so a Tokyo order only works if they deliver there (to confirm); the Tokyo year-end market days (28–31 Dec) happen while we're away.",
+      "price": "Depachika boxes ¥20,000–60,000",
+      "must": true,
+      "pregnancy": "careful",
+      "pregnancy_note": "Fernanda should skip the cold-smoked salmon rolls and any raw abalone or shellfish in the luxury boxes; ikura in moderation. The rest is cooked. In ozōni, cut the mochi very small (for the parents and Fernanda): choking on mochi is in the news every New Year.",
+      "glance": "New Year food: tiered lacquer boxes, mochi soup, stacked mochi."
+    },
+    {
+      "name": "Temple amazake",
+      "name_ja": "甘酒",
+      "romaji": "amazake",
+      "what": "A hot, sweet rice drink served at temples and shrines at New Year and through the winter. Kanda Myōjin has had amazake houses at the foot of its gate for generations.",
+      "where": "Hatsumōde stalls at Sensō-ji and Meiji Jingū; Kanda Myōjin; dashi-amazake at Ninben (Nihonbashi).",
+      "pregnancy": "careful",
+      "pregnancy_note": "A lot of temple amazake is made from sake-kasu and contains alcohol. Ask 'kōji no amazake desu ka?': the kōji kind has no alcohol and Fernanda can drink it.",
+      "glance": "Hot, sweet rice drink served at temples and shrines in winter."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Asakusa and Kappabashi",
+      "name_ja": "浅草・かっぱ橋道具街",
+      "kind": "neighbourhood",
+      "story": "Edo's old pleasure quarter around Sensō-ji, full of places more than a hundred years old: soba, tempura, sukiyaki, oden, sweets. Tokyo ramen was born here (Rairaiken, 1910). Ten minutes' walk away, Kappabashi has more than 170 shops of professional kitchen gear, since 1912: knives, pans, ceramics and the famous plastic food replicas.",
+      "eat": [
+        "Soba at Namiki Yabu (closed Wed/Thu) or Owariya (tempura soba with a giant prawn)",
+        "Oden at Ōtafuku, over a hundred years old, with rooms for 4–6",
+        "Family sushi at Kibun Zushi (tables and tatami)",
+        "Dorayaki at Kameju (queue); bread at Pelican (Tawaramachi)",
+        "Ningyō-yaki baked to order and Tokiwadō's kaminari-okoshi on Nakamise",
+        "Sukiyaki at Chinya or Yonekyū"
+      ],
+      "tips": "Nakamise is pretty but it's a souvenir showcase: eat in the side streets. Kappabashi is a weekday thing: go Mon 21 or Tue 22 Dec, or 7–8 Jan; many shops close on Sundays. For knives, Kama-Asa, Kamata and Tsubaya; be wary of cheap 'Damascus VG10' from a shop with no sharpener.",
+      "dec_jan": "Kappabashi's New Year break (roughly 29/30 Dec to 4/5 Jan) falls while we're away, so 21–23 Dec and 7–8 Jan are normal days. Namiki Yabu is closed Wed/Thu, so not 23 Dec or 7 Jan. Owariya's New Year's Eve hours and Sensō-ji's packed hatsumōde (1–3 Jan) happen while we're in Kyoto.",
+      "query": "Asakusa Sensoji Nakamise Tokyo",
+      "glance": "Old Edo pleasure quarter of century-old restaurants, plus Kappabashi's kitchenware shops."
+    },
+    {
+      "name": "Ueno and Ameyoko",
+      "name_ja": "上野・アメ横",
+      "kind": "market",
+      "story": "Ameyoko began as a post-war black market under the railway; the name comes from the sweets (ame) sold there in 1946, or from the American goods. Today it's about 400 shops of dried fish, seafood, fruit and odds and ends. At year's end it becomes Tokyo's New Year market: about 500,000 people a day, with vendors shouting out crab, tarako and kazunoko.",
+      "eat": [
+        "Dorayaki at Usagiya (Ueno-Hirokōji)",
+        "Katsuretsu fried in lard at Ponta Honke (3rd-floor room for up to 8)",
+        "Top-level yōshoku at Kamiya (Negishi; closed Wed/Thu)",
+        "Skewers and cut fruit at the Ameyoko stalls"
+      ],
+      "tips": "For good ingredients, cooks go to Tsukiji or the depachika: Ameyoko is worth it as a show. Be wary of 'osechi' crab that is imported and frozen. Haggling is part of it. Agree on a meeting point (the Shinobazu exit of Ueno station).",
+      "dec_jan": "The year-end market (28–31 Dec, peaking on the 30th) happens while we're away; on 20–23 Dec and 7–8 Jan it's the ordinary, calmer Ameyoko.",
+      "query": "Ameyoko Ueno Tokyo",
+      "glance": "Post-war market street of dried fish, seafood, fruit and snacks."
+    },
+    {
+      "name": "Tsukiji Outer Market",
+      "name_ja": "築地場外市場",
+      "kind": "market",
+      "story": "The wholesale market moved from Nihonbashi to Tsukiji after the 1923 earthquake and to Toyosu in 2018. The outer market stayed: about 460 retail shops and restaurants that supply cooks (katsuobushi, kombu, knives, tableware) and serve a market breakfast.",
+      "eat": [
+        "Horumon-don at Kitsuneya (offal simmered in Hatchō miso since 1947; closed Wed/Sun)",
+        "Torimeshi at Torito Bunten, run by a chicken wholesaler (8:30–13:30)",
+        "Hot tamagoyaki on a stick",
+        "Katsuobushi and kombu from Fushitaka to take home",
+        "Fine soba at Narutomi, nearby (one table for 6; closed Sat/Sun)"
+      ],
+      "tips": "Arrive between 6:00 and 8:00. Skip the 'tourist' wagyu and uni skewers. For Fernanda: no raw oysters or scallops at the stalls; grilled seafood only if well done.",
+      "dec_jan": "Shops that follow the market calendar close on Wed 23 Dec, so our Tsukiji morning is Mon 21 Dec (Tue 22 also works). Their New Year break (31 Dec–4 Jan) is over by the time we're back: 7–8 Jan are normal days.",
+      "query": "Tsukiji Outer Market Tokyo",
+      "glance": "The outer market: shops for cooks and a market breakfast."
+    },
+    {
+      "name": "Toyosu Market",
+      "name_ja": "豊洲市場",
+      "kind": "market",
+      "story": "The world's biggest fish market since October 2018. Modern, enclosed buildings: you watch the tuna auction from a glass corridor, not from the floor. Market restaurants (sushi, kaisendon, tonkatsu, coffee) are in the wholesale buildings.",
+      "eat": [
+        "Breakfast sushi or kaisendon at the market restaurants (long queues at the famous ones)",
+        "Tea at the Uogashi Meicha counter in the market"
+      ],
+      "tips": "The auction starts around 5:30. The 2nd-floor glass corridor is free and opens at 5:00 on market days. The lower observation deck is by monthly lottery (max. 5 people per application, so the seven of us need two). 'VIP' tours to the first auction of the year are a rip-off.",
+      "dec_jan": "Closed Sun 20 and Wed 23 Dec, so it's Mon 21 or Tue 22 Dec. Closed 31 Dec–4 Jan; the first auction of the year (hatsu-seri, 5 Jan) is while we're at Kawaguchiko. The January deck lottery covers 6, 7 and 8 Jan (applications in early December); for us only Fri 8 Jan works, since we're back from the lake only around midday on the 7th.",
+      "query": "Toyosu Market Tokyo",
+      "glance": "The world's biggest fish market; watch the tuna auction through glass."
+    },
+    {
+      "name": "Nihonbashi",
+      "name_ja": "日本橋",
+      "kind": "neighbourhood",
+      "story": "Edo's point zero and the merchants' quarter: the fish market was here for three centuries, and shops founded in the 18th century are still here, like Ninben (katsuobushi, 1699) and Kiya (knives, ~1792). Mitsukoshi, which began as the Echigoya kimono-fabric shop, and Takashimaya are a few minutes from each other.",
+      "eat": [
+        "Katsuobushi dashi by the cup at Ninben's Nihonbashi Dashi Bar",
+        "Tenzaru (soba with tempura) at Muromachi Sunaba",
+        "Wagashi from Nagato",
+        "Mitsukoshi's basement: sushi, unagi and tempura counters, and Kayūan, with regional sweets from all over Japan",
+        "Oden at Otakō"
+      ],
+      "tips": "COREDO Muromachi puts Ninben, Kiya and other old shops under one roof. Kiya sharpens and engraves knives on the spot.",
+      "dec_jan": "COREDO (Kiya) closes only on 1 Jan; Mitsukoshi closes 1 Jan and Takashimaya 1–2 Jan: all normal on our dates. Otakō is closed 30–31 Dec and 1–4 Jan 2027, which misses us.",
+      "query": "Nihonbashi Mitsukoshi Tokyo",
+      "glance": "Edo's merchant quarter: centuries-old shops and two great depachika."
+    },
+    {
+      "name": "Ningyōchō",
+      "name_ja": "人形町",
+      "kind": "neighbourhood",
+      "story": "Edo's quarter of theatre and puppets (hence the name), with streets of small houses and family shops. It's the birthplace of ningyō-yaki. The Amazake Yokochō street still has tofu, tea and sweet shops.",
+      "eat": [
+        "Ningyō-yaki from the old shops that still use the traditional moulds",
+        "Sukiyaki at Ningyōchō Imahan Honten (lunch is cheaper than dinner)",
+        "Luxury sukiyaki at Hiyama",
+        "Oyakodon at Tamahide, where the dish was created (status and hours to confirm)"
+      ],
+      "tips": "A short late-afternoon walk, paired with Nihonbashi. Imahan Honten takes bookings.",
+      "dec_jan": "Opening days for 20–23 Dec and 7–8 Jan: to confirm shop by shop (Hiyama is closed Sundays). Suitengū, the neighbourhood shrine, is the shrine for childbirth and pregnancy: worth a visit for Fernanda.",
+      "query": "Ningyocho Amazake Yokocho Tokyo",
+      "glance": "Old theatre quarter: ningyō-yaki, sukiyaki, and the pregnancy shrine Suitengū."
+    },
+    {
+      "name": "Kanda and Jinbōchō",
+      "name_ja": "神田・神保町",
+      "kind": "neighbourhood",
+      "story": "In Kanda-Sudachō, a block spared by the bombing keeps pre-war houses: Kanda Matsuya (1884), Kanda Yabu Soba (1880), Takemura sweets and the ankō-nabe house Isegen. Next door, Jinbōchō is the district of second-hand bookshops and universities, and so of cheap student food: curry, yōshoku and kissaten.",
+      "eat": [
+        "Soba and sake at Kanda Matsuya or Kanda Yabu (the biggest, so the easiest for our group to sit together)",
+        "Awa-zenzai and agemanjū at Takemura",
+        "Tonkatsu at Ponchi-ken or Marugo",
+        "Cheap katsu curry at Kitchen Nankai (closed Sun/holidays)",
+        "Coffee at Sabouru (kissaten) or Glitch (speciality coffee)",
+        "Unagi at Myōjinshita Kandagawa (rooms for 6)"
+      ],
+      "tips": "Soba lunch at 10:30–11:00, a sweet at Takemura, then the bookshops. Sasama's fine sweets are five minutes away by taxi.",
+      "dec_jan": "Kanda Yabu is closed on Wednesdays (so not 23 Dec) and is back to normal hours from 4 Jan, so 7–8 Jan are fine. Matsuya and Takemura are closed Sun/Mon, so 22–23 Dec or 7–8 Jan. The New Year's Eve soba queues and Kanda Myōjin's hatsumōde happen while we're in Kyoto.",
+      "query": "Kanda Awajicho Matsuya Yabu Soba",
+      "glance": "Pre-war soba houses in Kanda; cheap student food in Jinbōchō."
+    },
+    {
+      "name": "Ginza",
+      "name_ja": "銀座",
+      "kind": "neighbourhood",
+      "story": "Rebuilt in brick after the 1872 fire, Ginza was the showcase of Westernisation: Rengatei (1895) created the modern katsuretsu, Shiseido Parlour opened as a pharmacy soda fountain and Kimuraya made the famous anpan. Today it mixes wildly expensive sushi counters with grandpa-style yōshoku, kissaten and two depachika (Mitsukoshi and Matsuya).",
+      "eat": [
+        "Omurice and katsuretsu at Rengatei; croquettes and hayashi rice at Shiseido Parlour (room for 8)",
+        "Katsu curry at Grill Swiss",
+        "Monaka from Kūya (book by phone)",
+        "Aged coffee at Café de l'Ambre (closed Mon)",
+        "Oden at Ogura, with rooms for 6",
+        "Shōyu ramen at Ginza Hachigo; tonkatsu at Aoki",
+        "Tea at Uogashi Meicha (Cha Ginza)"
+      ],
+      "tips": "Rengatei has become a tourist stop, but the katsuretsu is still honest. Chūō-dōri becomes a pedestrian street on Saturday and Sunday afternoons.",
+      "dec_jan": "The department stores only close around 1–3 Jan (Mitsukoshi reopens 2 Jan; Matsuya and GINZA SIX on 3 Jan), so all normal on our dates. Ogura is open until 29 Dec and back on 5 Jan: both our windows work. Uogashi Meicha closed 31 Dec–4 Jan last New Year, so fine by 7 Jan. Christmas Eve night is Ginza's big couples' dinner, but we leave Tokyo on the morning of the 24th, so it doesn't touch us.",
+      "query": "Ginza Tokyo",
+      "glance": "Birthplace of yōshoku; now top sushi, kissaten and depachika."
+    },
+    {
+      "name": "Tsukishima",
+      "name_ja": "月島",
+      "kind": "street",
+      "story": "An island of reclaimed land from the late 19th century, joined to Tsukuda, the fishing village that invented tsukudani. Nishinaka-dōri has about 75 monja places, but few are old: most turned to monja in the 1980s boom and after the subway arrived in 1988. Behind the street, small wooden houses and alleys survive.",
+      "eat": [
+        "Monja at Monja Kondō Honten (132 seats, takes bookings; mentaiko-mochi-cheese is the classic order)",
+        "Nikomi (offal stew) at the izakaya Kishidaya (16:00–21:00, queue before opening, closed Sun/Mon)",
+        "Tsukudani from the old shops of Tsukuda, five minutes away",
+        "Kanemasu, the cooks' stand-up counter, in Kachidoki (go early)"
+      ],
+      "tips": "If nobody knows how to build the dam, ask the staff to make the first monja. Fernanda should skip the shellfish sashimi at Kanemasu.",
+      "dec_jan": "Monja Kondō is open every day. Kishidaya is closed Sun/Mon, so 22–23 Dec or 7–8 Jan. The others: to confirm.",
+      "query": "Tsukishima Monja Street",
+      "glance": "Monja street on reclaimed land, beside tsukudani's birthplace."
+    },
+    {
+      "name": "Ryōgoku",
+      "name_ja": "両国",
+      "kind": "neighbourhood",
+      "story": "The sumo district: the Kokugikan has been here since 1985 (and the first Kokugikan, from 1909, was in Ryōgoku too). Chanko restaurants multiplied around the station, many run by former wrestlers. Ryōgoku is also where Hanaya Yohei sold the first nigiri.",
+      "eat": [
+        "Chicken chanko-nabe at one of the restaurants around the station (tatami rooms are common, good for a group)",
+        "Ryōgoku Edo Noren, a food hall in the old station building"
+      ],
+      "tips": "Chanko is perfect for seven on a cold night: a big pot in the middle of the table (or two, if they seat us 4+3). Book.",
+      "dec_jan": "The January tournament (Hatsu Basho) starts after we fly. Restaurant hours for 20–23 Dec and 7–8 Jan: to confirm.",
+      "query": "Ryogoku chanko Tokyo",
+      "glance": "Sumo district of chanko-nabe, where nigiri was first sold."
+    },
+    {
+      "name": "Monzen-Nakachō and Fukagawa",
+      "name_ja": "門前仲町・深川",
+      "kind": "neighbourhood",
+      "story": "A temple town around Tomioka Hachimangū shrine and Fukagawa Fudōdō, across the Sumida river. It was the Edo quarter of fishermen and timber merchants, where fukagawa-meshi comes from. The shopping streets are lively and cheap, with neighbourhood izakaya.",
+      "eat": [
+        "Fukagawa-meshi at the specialist places in the area (also near Kiyosumi-Shirakawa)",
+        "Tempura at Mikawa Zezankyo (Fukuzumi), the reference for Edo-mae tempura, with a private room for 6 (bookings only; closed Wed)",
+        "Roastery coffee in Kiyosumi-Shirakawa, one stop away"
+      ],
+      "tips": "Pair it with the Fukagawa Edo Museum (a rebuilt Edo neighbourhood). The shrines hold fairs (ennichi) on fixed days of the month; dates to confirm.",
+      "dec_jan": "The hatsumōde crowds at Tomioka Hachimangū and Fukagawa Fudōdō are a New Year thing we miss. Mikawa is closed on Wednesdays, so not 23 Dec. Other restaurants: to confirm.",
+      "query": "Monzen-nakacho Tomioka Hachimangu",
+      "glance": "Edo fishermen's temple town: fukagawa-meshi and Mikawa's tempura."
+    },
+    {
+      "name": "Yanaka Ginza",
+      "name_ja": "谷中銀座商店街",
+      "kind": "street",
+      "story": "A 1950s shopping street of about 60 shops, in Yanaka, a district that escaped the bombing and kept its temples and small houses. You walk down to it by the Yūyake Dandan steps, famous for sunsets and cats.",
+      "eat": [
+        "Butcher's menchi-katsu and croquettes eaten in the street",
+        "Breakfast at Kayaba Coffee (an old wooden house; opens 8:00, online booking, closed Mon)",
+        "Kakigōri at Himitsudō; pastries from Inamura Shōzō"
+      ],
+      "tips": "Morning: Kayaba, Yanaka cemetery, Yūyake Dandan, Yanaka Ginza. Narrow streets and crowds at weekends; a weekday is better.",
+      "dec_jan": "Many family shops close 31 Dec–3 Jan (to confirm), which misses us. Kayaba is closed Mondays and Inamura Shōzō Mon/Tue, so Wed 23 Dec or 7–8 Jan suit both.",
+      "query": "Yanaka Ginza Tokyo",
+      "glance": "1950s shopping street in a temple district that escaped the bombing."
+    },
+    {
+      "name": "Shibamata Taishakuten",
+      "name_ja": "柴又帝釈天",
+      "kind": "street",
+      "story": "A temple from 1629 at the far eastern edge of Tokyo, the setting of the Tora-san films ('Otoko wa Tsurai yo'). The approach from Keisei Shibamata station is a piece of old Shitamachi: shops selling kusa-dango and senbei, and river-fish restaurants (unagi, carp) going back to Edo.",
+      "eat": [
+        "Kusa-dango (mochi with mugwort and anko) at the shops along the approach, such as Takagiya Rōho",
+        "Unagi at the old houses on the temple approach",
+        "Senbei toasted to order"
+      ],
+      "tips": "A half-day outing: the temple (look at the wood carvings), the garden and the Edo river with the Yagiri no Watashi ferry. Kawajin, the most famous unagi house on the riverbank, closed in 2021.",
+      "dec_jan": "The hatsumōde crush (1–3 Jan) misses us. Ferry and shop winter hours for our dates: to confirm.",
+      "query": "Shibamata Taishakuten sando",
+      "glance": "Tora-san's temple approach: kusa-dango, senbei and old unagi houses."
+    },
+    {
+      "name": "Shinjuku: Omoide Yokochō and Golden Gai",
+      "name_ja": "思い出横丁・ゴールデン街",
+      "kind": "yokochō",
+      "story": "Both grew out of post-war black markets. Omoide Yokochō (also called Yakitori Yokochō) is some 70 holes-in-the-wall grilling yakitori and offal under the railway. Golden Gai is about 200 tiny bars in small wooden houses, once the haunt of writers and film-makers.",
+      "eat": [
+        "Omoide Yokochō: a few skewers and a beer, in passing",
+        "Golden Gai: niboshi ramen at Nagi (open 24 h)",
+        "Better food nearby: Isetan's basement (the city's most complete depachika) and dango at Oiwake Dango"
+      ],
+      "tips": "Honest verdict: both are worth it as a setting, not as a food destination. Omoide is overrun by tourists, cramped and the skewers are average; many Golden Gai bars charge a cover, each holds 5 to 8 people, and seven of us together will rarely get in. For Fernanda it's smoke and backless stools. Spend 30 minutes and eat elsewhere.",
+      "dec_jan": "Isetan is normal on our dates (it only closes 1 Jan) and is handy on 7 Jan, when the train from Kawaguchiko gets into Shinjuku. Its year-end fair (Ōtoshi no Ichi) ran until 31 Dec last time; whether it's already on during 20–23 Dec: to confirm. Bars: to confirm.",
+      "query": "Omoide Yokocho Shinjuku",
+      "glance": "Post-war alleys of yakitori stalls and tiny bars."
+    },
+    {
+      "name": "Shibuya and Ebisu (yokochō)",
+      "name_ja": "渋谷・恵比寿横丁",
+      "kind": "yokochō",
+      "story": "The yokochō here are a different breed: Ebisu Yokochō and Shibuya Yokochō are modern arcades that imitate the old-alley feel, with counters of a bit of everything. Nonbei Yokochō, by the Shibuya tracks, is the real old alley, with 5-seat bars.",
+      "eat": [
+        "Kissaten Chatei Hatō (Shibuya, 11:00–23:00)",
+        "Bread at VIRON Shibuya",
+        "Pizza Marumo (Ebisu, 百名店)",
+        "Tokyu Food Show for an easy bento"
+      ],
+      "tips": "Ebisu Yokochō is lively but touristy and loud; for seven, a restaurant with a booking is better. Use the yokochō for a drink, not for dinner.",
+      "dec_jan": "Tokyu Food Show reopens 2 Jan after New Year, so it's normal on our dates. Bars: to confirm.",
+      "query": "Ebisu Yokocho Tokyo",
+      "glance": "Modern yokochō arcades, plus the real old Nonbei Yokochō."
+    },
+    {
+      "name": "Kichijōji",
+      "name_ja": "吉祥寺",
+      "kind": "yokochō",
+      "story": "A much-loved residential district of Tokyo, next to Inokashira Park. Harmonica Yokochō, just outside the station's north exit, is a post-war black market with almost 100 little shops; the name comes from the row of tiny doorways, like the holes of a harmonica.",
+      "eat": [
+        "Menchi-katsu from the Satou butcher (daily queue; the yakiniku restaurant is upstairs)",
+        "Small plates and counters in Harmonica Yokochō",
+        "Yōkan from Ozasa, sold in a limited number each day (queue before dawn; to confirm)"
+      ],
+      "tips": "Pair it with the park and the Ghibli Museum (Mitaka). Satou: get there before lunch; the queue moves fast.",
+      "dec_jan": "Opening days for 20–23 Dec and 7–8 Jan: to confirm.",
+      "query": "Harmonica Yokocho Kichijoji",
+      "glance": "Harmonica Yokochō's tiny shops, next to Inokashira Park."
+    },
+    {
+      "name": "Nakameguro and Daikanyama",
+      "name_ja": "中目黒・代官山",
+      "kind": "neighbourhood",
+      "story": "Districts of small shops along the Meguro river, with no Edo past to speak of: the draw here is the third-wave coffee and bakeries Tokyo does like few other places.",
+      "eat": [
+        "Starbucks Reserve Roastery Tokyo (a Kengo Kuma building): worth it for the architecture",
+        "Small-roaster cafés along the river",
+        "Yakitori at Toriyoshi Nakameguro",
+        "Tonkatsu at Tonki (Meguro), one stop away"
+      ],
+      "tips": "A morning or late-afternoon stroll, unhurried. Fernanda: one coffee a day.",
+      "dec_jan": "Opening days for 20–23 Dec and 7–8 Jan: to confirm (Toriyoshi is open every day).",
+      "query": "Nakameguro Meguro River cafes",
+      "glance": "Riverside coffee, bakeries and neighbourhood yakitori; no Edo past."
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/江戸前寿司",
+    "https://ja.wikipedia.org/wiki/もんじゃ焼き",
+    "https://ja.wikipedia.org/wiki/深川めし",
+    "https://ja.wikipedia.org/wiki/ちゃんこ鍋",
+    "https://ja.wikipedia.org/wiki/佃煮",
+    "https://ja.wikipedia.org/wiki/雷おこし",
+    "https://ja.wikipedia.org/wiki/人形焼",
+    "https://ja.wikipedia.org/wiki/年越し蕎麦",
+    "https://ja.wikipedia.org/wiki/洋食",
+    "https://ja.wikipedia.org/wiki/東京ラーメン",
+    "https://ja.wikipedia.org/wiki/デパ地下",
+    "https://ja.wikipedia.org/wiki/築地場外市場",
+    "https://ja.wikipedia.org/wiki/アメヤ横丁",
+    "https://ja.wikipedia.org/wiki/かっぱ橋道具街",
+    "https://ja.wikipedia.org/wiki/思い出横丁",
+    "https://ja.wikipedia.org/wiki/新宿ゴールデン街",
+    "https://ja.wikipedia.org/wiki/ハーモニカ横丁",
+    "https://ja.wikipedia.org/wiki/谷中銀座商店街",
+    "https://ja.wikipedia.org/wiki/柴又帝釈天",
+    "https://ja.wikipedia.org/wiki/門前仲町",
+    "https://www.tsukiji.or.jp/calendar/",
+    "https://www.shijou.metro.tokyo.lg.jp/documents/d/shijou/faq-japanese-pdf",
+    "https://www.shijou.metro.tokyo.lg.jp/documents/d/shijou/r9suisan-csv",
+    "https://toyosu.jcdlotterysite.jp/",
+    "https://www.yabusoba.net/year/",
+    "https://magazine.tabelog.com/articles/59198",
+    "https://www.ninben.co.jp/store/honten/",
+    "https://www.kiya-hamono.co.jp/shop/kiya_honten.html",
+    "https://www.gotokyo.org/jp/spot/552/index.html",
+    "docs/research/food/20-tokyo-restaurants.md",
+    "docs/research/food/21-tokyo-shops-markets-tours.md"
+  ],
+  "places": [
+    {
+      "name": "Mikawa Zezankyo",
+      "name_ja": "みかわ 是山居",
+      "area": "Tokyo · Monzen-nakachō (Fukuzumi)",
+      "genre": "Tempura",
+      "price": "Dinner ¥20,000–29,999",
+      "tabelog": {
+        "score": 4.1,
+        "reviews": 853,
+        "url": "https://tabelog.com/tokyo/A1313/A131303/13090866/",
+        "awards": "Award Bronze 2017–2026 (10 in a row); 百名店 2023, 2025"
+      },
+      "why": "Saotome Tetsuya's tempura is the yardstick other masters measure themselves by. Ten Tabelog awards in a row, and a private room that almost solves our group.",
+      "order": "The full omakase: kuruma-ebi, seasonal fish, winter vegetables, and the kakiage as tendon or tencha to finish.",
+      "pregnancy_note": "Everything is fried, so it's easy for Fernanda. If the uni in shiso comes underdone, ask for it cooked through or skip it.",
+      "group": "Private room upstairs for 6: ask whether a seventh chair fits. Otherwise 7 of the 9 counter seats.",
+      "booking": "Bookings only. Book as soon as the window opens (late Oct–Nov for 20–24 Dec).",
+      "dec_jan": "Closed Wednesdays, so not 23 Dec. Sun 20–Tue 22 Dec and Thu 7–Fri 8 Jan all fall on open weekdays.",
+      "query": "Mikawa Zezankyo Monzen-nakacho Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went 4 times (Dec 2013 – Jun 2016), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "ok",
+      "seven": "counter",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "booking_opens": "late Oct–Nov for 20–24 Dec",
+      "glance": "The yardstick for Edo-mae tempura; ten Tabelog awards running."
+    },
+    {
+      "name": "Tonkatsu Narikura",
+      "name_ja": "とんかつ成蔵",
+      "area": "Tokyo · Minami-Asagaya",
+      "genre": "Tonkatsu",
+      "price": "¥6,000–7,999",
+      "tabelog": {
+        "score": 4.29,
+        "reviews": 2037,
+        "url": "https://tabelog.com/tokyo/A1319/A131905/13236380/",
+        "awards": "Award Bronze 2021–2026; 百名店 2024, 2026"
+      },
+      "why": "The only tonkatsu house with six Tabelog awards in a row. Heritage pork, a pale, thin crust, fried at low temperature: tonkatsu at its most refined.",
+      "order": "SPF pork rosu (loin) and hire (fillet); the day's special heritage loin if there is one.",
+      "pregnancy_note": "The centre usually comes out pink here. For Fernanda, ask for it well done: 「よく火を通してください」.",
+      "group": "A 6-seat counter, so seven can't sit at once: book the whole counter and one of us sits out, or go as two smaller groups on different days.",
+      "booking": "Bookings only.",
+      "dec_jan": "Open Wed/Thu/Sat/Sun/holidays; closed Mon/Tue/Fri. For us: Sun 20 or Wed 23 Dec, or Thu 7 Jan (not 21–22 Dec or Fri 8 Jan).",
+      "query": "Tonkatsu Narikura Minami-Asagaya Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went 4 times (Feb 2016 – Dec 2020), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "careful",
+      "seven": "split",
+      "closed_weekdays": [
+        "Mon",
+        "Tue",
+        "Fri"
+      ],
+      "glance": "Tokyo's most refined tonkatsu: heritage pork, pale crust, gentle frying."
+    },
+    {
+      "name": "Uwo Toku",
+      "name_ja": "うを徳",
+      "area": "Tokyo · Higashi-Mukōjima (Sumida)",
+      "genre": "Sushi",
+      "price": "Dinner ¥15,000–19,999",
+      "tabelog": {
+        "score": 3.94,
+        "reviews": 412,
+        "url": "https://tabelog.com/tokyo/A1312/A131203/13017947/",
+        "awards": "Award Bronze 2017–2022; 百名店 2022, 2025"
+      },
+      "why": "The best-value sushi on the list, in a corner of Sumida tourists don't reach. Six Bronze awards at a third of Ginza prices.",
+      "order": "The omakase; Edo-mae style, with cured and simmered fish (check on the night).",
+      "pregnancy_note": "For Fernanda: a few raw or cured pieces, no raw shellfish, and no bluefin or bigeye tuna. Cooked pieces (anago, ebi, tamago) are fine.",
+      "group": "The sunken kotatsu counter has exactly 6 seats, so seven don't fit together: ask whether they can add a seat, or split 4+3 across two sittings.",
+      "booking": "By phone or Tabelog. Ask for the whole kotatsu counter.",
+      "dec_jan": "Closed Mondays, so not 21 Dec. Open by the weekly pattern on 20, 22 and 23 Dec and 7–8 Jan. (Its 24 Dec slots, 17:30–20:00 last seating, don't matter: we leave that morning.)",
+      "query": "Uwo Toku Higashi-Mukojima Sumida Tokyo",
+      "pregnancy": "careful",
+      "seven": "split",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "booking_channel": "online",
+      "glance": "Best-value sushi on the list, at a kotatsu counter in Sumida."
+    },
+    {
+      "name": "Sushi Arai",
+      "name_ja": "鮨 あらい",
+      "area": "Tokyo · Ginza",
+      "genre": "Sushi",
+      "price": "¥50,000–59,999 (lunch and dinner)",
+      "tabelog": {
+        "score": 4.59,
+        "reviews": 1083,
+        "url": "https://tabelog.com/tokyo/A1301/A130101/13188186/",
+        "awards": "Award Gold 2017, 2020–2026; Silver 2018–19; 百名店 Sushi TOKYO 2022, 2025"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Mark Wiens took over the whole counter on the Hungry Tourist tour.",
+          "url": "https://www.youtube.com/watch?v=Cm2dczXpBG0"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "One of the central stops of the “Tokyo Super Tour”.",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        },
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note": "Posted from the counter on 21/03/2016 (post embedded on Tokyo Table Trip).",
+          "url": "https://tokyotabletrip.com/en/214"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "Califa has been going for 9 years: “one of the most intimate, joyful, precise, and simply oishii sushi experiences in Tokyo”; Yamayuki tuna and the signature triple chutoro (Grand Japan tour).",
+          "url": "https://www.thehungrytourist.com/tours/grand-japan"
+        }
+      ],
+      "why": "The highest-rated sushi with a private room for a group. Rice with a strong personality, and the tuna is the high point. If we do a single ¥50k night, this is it.",
+      "order": "Omakase. The tuna cuts are the signature; kohada and anago show the technique.",
+      "pregnancy_note": "For Fernanda: the tuna is the signature, but she skips bluefin and bigeye (maguro/toro), raw shellfish (akagai, torigai, raw scallop) and uni. Kohada and other cured or raw fish: a few pieces. Anago, kuruma-ebi, tamago and cooked shellfish are fine. Tell them when booking.",
+      "group": "Private room for 6 (¥10,000, groups of 4+): ask whether a seventh chair fits. Otherwise split 4+3 across two counter sittings.",
+      "booking": "Through Tabelog, 1–2 months ahead; book the minute it opens.",
+      "dec_jan": "Closed Wednesdays (so not 23 Dec); Thursdays dinner only, so 7 Jan is a dinner. New Year break not stated: 7–8 Jan to confirm.",
+      "query": "Sushi Arai Ginza Tokyo",
+      "pregnancy": "careful",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "booking_channel": "online",
+      "booking_opens": "1–2 months ahead",
+      "glance": "Our one big sushi night: assertive rice, standout tuna, private room."
+    },
+    {
+      "name": "Ningyōchō Imahan Honten",
+      "name_ja": "人形町今半 本店",
+      "area": "Tokyo · Ningyōchō",
+      "genre": "Sukiyaki / shabu-shabu",
+      "price": "Dinner ¥10,000–14,999 · lunch ¥5,000–5,999",
+      "tabelog": {
+        "score": 3.68,
+        "reviews": 1539,
+        "url": "https://tabelog.com/tokyo/A1302/A130204/13003059/",
+        "awards": "百名店 Hot Pot 2024"
+      },
+      "why": "Family sukiyaki, with the nakai-san cooking the pot in your room. Reliable, open every day, and lunch is half the price.",
+      "order": "Wagyu sukiyaki; or shabu-shabu for anyone who wants something lighter. Lunch is the best value.",
+      "pregnancy_note": "Sukiyaki is dipped in raw egg: for Fernanda ask 「生卵なしで」 (no raw egg) and have her meat cooked longer. Shabu-shabu avoids the problem.",
+      "group": "Rooms for 2–20 people, so seven is easy.",
+      "booking": "Takes bookings. There's a service charge.",
+      "dec_jan": "Open every day, so any of our Tokyo days work.",
+      "query": "Ningyocho Imahan Honten Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went once (Sep 2018), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "careful",
+      "seven": "room",
+      "closed_weekdays": [],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Classic family sukiyaki, cooked for you in your own room."
+    },
+    {
+      "name": "Narutomi",
+      "name_ja": "手打ち蕎麦 成冨",
+      "area": "Tokyo · Tsukiji / Ginza 8-chōme",
+      "genre": "Soba",
+      "price": "Dinner ¥6,000–7,999 · lunch ¥1,000–1,999",
+      "tabelog": {
+        "score": 3.73,
+        "reviews": 787,
+        "url": "https://tabelog.com/tokyo/A1313/A131301/13023064/",
+        "awards": "百名店 EAST 2024, 2025"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Mark Wiens wrote about the jūwari seiro and the scallop tempura with salt: “one of the most simple yet most amazing meals” (2014).",
+          "url": "https://migrationology.com/narutomi-soba-restaurant-tokyo/"
+        },
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Video of the visit.",
+          "url": "https://www.youtube.com/watch?v=nw1whY-8NbY"
+        }
+      ],
+      "why": "Jūwari (100% buckwheat) of rare precision, and a table for six, close to the whole family.",
+      "order": "Jūwari seiro; tempura; in the evening, small plates with sake before the soba.",
+      "pregnancy_note": "Easy for Fernanda. Just avoid tsukimi toppings (raw egg).",
+      "group": "One table for 6: ask whether a seventh chair fits, or split 4+3.",
+      "booking": "Lunch without a booking; dinner booked ahead (aimed at people who drink).",
+      "dec_jan": "Closed Sat/Sun/holidays, so not 20 Dec. 21–23 Dec and 7–8 Jan work. It's a short walk from Tsukiji, so lunch on our Tsukiji day (21 Dec) fits.",
+      "query": "Narutomi soba Tsukiji Tokyo",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Sat",
+        "Sun"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Precise 100% buckwheat soba near Tsukiji; cheap at lunch."
+    },
+    {
+      "name": "Yakiniku Jumbo Shirokane",
+      "name_ja": "焼肉ジャンボ 白金",
+      "area": "Tokyo · Shirokane",
+      "genre": "Yakiniku / wagyu",
+      "price": "Dinner ¥10,000–14,999 · weekend lunch ¥4,000–4,999",
+      "tabelog": {
+        "score": 3.73,
+        "reviews": 1634,
+        "url": "https://tabelog.com/tokyo/A1316/A131602/13026377/",
+        "awards": "Award Bronze 2017–19; 百名店 2023, 2025"
+      },
+      "critics": [
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "“From the one and only Yakiniku Jumbo!”: a fixed stop on the Tokyo tours (posts from Sep and Oct 2024).",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        },
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note": "Took David Chang to Jumbo on Ugly Delicious (season 2, 2020): nohara-yaki, grilled sirloin dipped in raw egg.",
+          "url": "https://www.timeout.com/tokyo/news/every-tokyo-restaurant-in-david-changs-ugly-delicious-season-two-031120"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Logged “Yakiniku Jumbo” twice (Mar 2015, Jan 2019), branch not given; also went 4 times to Jumbo Hanare (Hongō).",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "The famous yakiniku you can book for a group without drama. Carefully cut wagyu and closed rooms.",
+      "order": "The rice cooked in wagyu broth and fat, topped with grilled cubes; the house wagyu cuts.",
+      "pregnancy_note": "Grill Fernanda's meat all the way through; skip anything raw or tataki.",
+      "group": "Rooms for 6: ask whether a seventh chair fits, or take two rooms 4+3.",
+      "booking": "Takes bookings.",
+      "dec_jan": "Open every day (lunch only on Sat/Sun/holidays), so any of our dinners work. Its New Year closure (31 Dec–2 Jan) misses us.",
+      "query": "Yakiniku Jumbo Shirokane Tokyo",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [],
+      "closed_dates": [
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-02"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Famous wagyu yakiniku with closed rooms; easy to book for groups."
+    },
+    {
+      "name": "Kibun Zushi",
+      "name_ja": "紀文寿司",
+      "area": "Tokyo · Asakusa",
+      "genre": "Sushi",
+      "price": "Tabelog range ¥3,000–3,999 (looks low; confirm)",
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 440,
+        "url": "https://tabelog.com/tokyo/A1311/A131102/13016811/",
+        "awards": "百名店 2021, 2025"
+      },
+      "why": "An old Asakusa sushi-ya with real space: counter, tables and tatami. The stress-free sushi night for the whole family.",
+      "order": "The house nigiri; ask for a plate of cooked pieces for Fernanda.",
+      "pregnancy_note": "Standard sushi rules for Fernanda: a few raw pieces, no raw shellfish, no bluefin or bigeye tuna; anago, ebi and tamago are fine.",
+      "group": "36 seats with tables and tatami: room to spare for six, so seven should be fine (say so when booking).",
+      "booking": "Takes bookings.",
+      "dec_jan": "Closed Wednesdays, so not 23 Dec. Fine on 20–22 Dec (our Asakusa day is the 22nd) and 7–8 Jan.",
+      "query": "Kibun Zushi Asakusa Tokyo",
+      "pregnancy": "careful",
+      "seven": "yes",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "glance": "Old Asakusa sushi-ya with tables and tatami; the relaxed family sushi."
+    },
+    {
+      "name": "Tempura Yamanoue Ginza",
+      "name_ja": "てんぷら山の上 Ginza",
+      "area": "Tokyo · Ginza (GINZA SIX)",
+      "genre": "Tempura",
+      "price": "Dinner ¥20,000–29,999 · lunch ¥15,000–19,999",
+      "tabelog": {
+        "score": 3.68,
+        "reviews": 314,
+        "url": "https://tabelog.com/tokyo/A1301/A130101/13207702/",
+        "awards": "百名店 2023, 2025"
+      },
+      "why": "From the Hilltop Hotel's tempura line. The tempura you can book at short notice for a group.",
+      "order": "Tempura course; tencha at the end.",
+      "pregnancy_note": "All cooked: easy for Fernanda.",
+      "group": "50 seats, with private table rooms and private counter rooms. Tell them we're seven when booking.",
+      "booking": "Takes bookings.",
+      "dec_jan": "Open all year (closed only on GINZA SIX closing days), so it's our safe fallback on any Tokyo night, 20–23 Dec or 7–8 Jan.",
+      "query": "Tempura Yamanoue Ginza Six Tokyo",
+      "pregnancy": "ok",
+      "seven": "yes",
+      "closed_weekdays": [],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Hilltop Hotel tempura in GINZA SIX; open all year, private rooms."
+    },
+    {
+      "name": "Ogura",
+      "name_ja": "おぐら",
+      "area": "Tokyo · Ginza",
+      "genre": "Oden",
+      "price": "¥8,000–9,999",
+      "tabelog": {
+        "score": 3.58,
+        "reviews": 471,
+        "url": "https://tabelog.com/en/tokyo/A1301/A130101/13002703/"
+      },
+      "why": "Ginza oden in a closed room: Tokyo's winter dish, and it works in both our Tokyo windows.",
+      "order": "Daikon, egg, chikuwabu, gyūsuji and whatever is in the pot; hot sake for the others.",
+      "pregnancy_note": "All cooked: easy for Fernanda.",
+      "group": "Rooms for 6: ask whether a seventh chair fits, or split 4+3.",
+      "booking": "Takes bookings.",
+      "dec_jan": "Closed Sundays/holidays, so not 20 Dec. Tabelog notice: open until 29 Dec, back on 5 Jan from 16:00, so 21–23 Dec and 7–8 Jan all work.",
+      "query": "Oden Ogura Ginza Tokyo",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "closed_dates": [
+        "2026-12-30",
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03",
+        "2027-01-04"
+      ],
+      "meals": [
+        "dinner"
+      ],
+      "glance": "Ginza oden in a private room: Tokyo's winter dish."
+    },
+    {
+      "name": "Isehiro Kyōbashi",
+      "name_ja": "伊勢廣 京橋本店",
+      "area": "Tokyo · Kyōbashi",
+      "genre": "Yakitori",
+      "price": "Dinner ¥10,000–14,999 · lunch ¥2,000–2,999",
+      "tabelog": {
+        "score": 3.68,
+        "reviews": 1275,
+        "url": "https://tabelog.com/tokyo/A1302/A130202/13251802/",
+        "awards": "百名店 EAST 2024, 2025"
+      },
+      "why": "Old-style Kyōbashi yakitori that takes a group without counter gymnastics. Lunch is a bargain.",
+      "order": "The skewer course; at lunch, yakitori-don.",
+      "pregnancy_note": "For Fernanda, everything well done (「よく焼きで」). Avoid underdone sasami, liver and tsukune with raw yolk.",
+      "group": "80 seats, semi-private rooms for 6: ask whether a seventh fits, or use two rooms (4+3).",
+      "booking": "Takes bookings.",
+      "dec_jan": "Closed Sundays/holidays, so not 20 Dec. 21–23 Dec and 7–8 Jan work.",
+      "query": "Isehiro Kyobashi Honten Tokyo",
+      "pregnancy": "careful",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Old-school Kyōbashi yakitori with rooms; the lunch yakitori-don is a bargain."
+    },
+    {
+      "name": "Stamina-en",
+      "name_ja": "スタミナ苑",
+      "area": "Tokyo · Shikahama (Adachi, far north)",
+      "genre": "Yakiniku / horumon",
+      "price": "¥6,000–7,999",
+      "tabelog": {
+        "score": 4.27,
+        "reviews": 2745,
+        "url": "https://tabelog.com/tokyo/A1323/A132305/13003777/",
+        "awards": "Award Silver 2017, Gold 2018, Silver 2019–2026; 百名店 2023, 2025"
+      },
+      "why": "Tabelog's most-awarded yakiniku, in a residential district where the queue is Japanese. The purest case of “locals know, tourists don't”.",
+      "order": "Horumon (offal) and the house cuts; the kalbi.",
+      "pregnancy_note": "Grill Fernanda's meat all the way through; nothing raw or tataki.",
+      "group": "52 seats; once we're in, ask to sit the seven of us together, or accept 4+3.",
+      "booking": "No bookings, not even by phone. Tabelog suggests queuing from about 14:00 on weekdays (opens 16:00). Fernanda shouldn't stand in the queue: someone holds her place.",
+      "dec_jan": "Closed Tue/Wed, so not 22 or 23 Dec. Sun 20 or Mon 21 Dec, or 7–8 Jan.",
+      "query": "Stamina-en Shikahama Adachi Tokyo",
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note": "Posted from here in Nov 2014 (post embedded on Tokyo Table Trip).",
+          "url": "https://tokyotabletrip.com/en/308"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went once (Mar 2020), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Tue",
+        "Wed"
+      ],
+      "meals": [
+        "dinner"
+      ],
+      "booking_channel": "queue",
+      "glance": "Tabelog's most-awarded yakiniku; no bookings, a long local queue."
+    },
+    {
+      "name": "Obana",
+      "name_ja": "尾花",
+      "area": "Tokyo · Minami-Senju",
+      "genre": "Eel (unagi)",
+      "price": "¥10,000–14,999 · lunch ¥8,000–9,999",
+      "tabelog": {
+        "score": 3.77,
+        "reviews": 1599,
+        "url": "https://tabelog.com/tokyo/A1324/A132401/13003509/",
+        "awards": "Award Bronze 2017–2020; 百名店 2024, 2026"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Mark Wiens: the “most buttery” eel he's ever had.",
+          "url": "https://www.youtube.com/watch?v=N26pjkM_z4A"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went once (Dec 2013), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "The old Kantō unagi house locals queue for. Pair it with Maruchiba straight after.",
+      "order": "Unajū (eel grilled in glaze over rice); shirayaki to compare.",
+      "pregnancy_note": "Eel is cooked. Fernanda skips kimo-yaki and kimo-sui (eel liver, too much vitamin A).",
+      "group": "17 seats; expect to be seated in two parts (4+3).",
+      "booking": "No bookings. Queue before it opens at 11:30.",
+      "dec_jan": "Closed Mon/Tue, so not 21 or 22 Dec. Wed 23 Dec or 7–8 Jan.",
+      "query": "Obana unagi Minami-Senju Tokyo",
+      "pregnancy": "ok",
+      "seven": "split",
+      "closed_weekdays": [
+        "Mon",
+        "Tue"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "booking_channel": "queue",
+      "glance": "Old Kantō-style unagi that locals queue for before 11:30."
+    },
+    {
+      "name": "Edogawa Ishibashi",
+      "name_ja": "石ばし",
+      "area": "Tokyo · Edogawabashi",
+      "genre": "Eel (unagi)",
+      "price": "Price not given on Tabelog",
+      "tabelog": {
+        "score": 3.76,
+        "reviews": 690,
+        "url": "https://tabelog.com/tokyo/A1309/A130905/13003531/",
+        "awards": "Award Bronze 2017–2020; 百名店 2024, 2026"
+      },
+      "why": "First-rank unagi that takes bookings and has rooms. The no-queue alternative to Obana.",
+      "order": "Unajū.",
+      "pregnancy_note": "Cooked eel is fine for Fernanda; skip the liver (kimo).",
+      "group": "Private rooms for 6: ask whether a seventh chair fits, or take two rooms 4+3.",
+      "booking": "Takes bookings.",
+      "dec_jan": "Closed Sun/Mon/holidays, so not 20 or 21 Dec. Tue 22, Wed 23 Dec or 7–8 Jan.",
+      "query": "Edogawa Ishibashi unagi Edogawabashi Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went twice (Jan and May 2019), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Sun",
+        "Mon"
+      ],
+      "glance": "First-rank unagi with bookings and private rooms; no queue."
+    },
+    {
+      "name": "Kagurazaka Ishikawa",
+      "name_ja": "神楽坂 石かわ",
+      "area": "Tokyo · Kagurazaka",
+      "genre": "Kaiseki",
+      "price": "¥50,000–59,999",
+      "tabelog": {
+        "score": 4.41,
+        "reviews": 738,
+        "url": "https://tabelog.com/tokyo/A1309/A130905/13004079/",
+        "awards": "Award Silver 2017–2026; 百名店 2023, 2025"
+      },
+      "critics": [
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "On the list of “the level we look for” (not a confirmed stop).",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went 3 times (Dec 2013 – Sep 2020; two logged as “Ishikawa”, probably the same place), according to City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "If the family does a single kaiseki in Tokyo, this is the reference: ten Silvers in a row.",
+      "order": "The single course, led by the season.",
+      "pregnancy_note": "Tell them when booking: the course has sashimi and maybe shellfish. Ask for cooked swaps for Fernanda.",
+      "group": "A 7-seat counter (book all of it for the seven of us) and 4 rooms, one for 6 (ask about a seventh chair).",
+      "booking": "Takes bookings. Choose just one ¥50k+ night (Arai, Ishikawa, Myōjaku or Sazenka).",
+      "dec_jan": "Closed Sun/Mon/holidays, so not 20 or 21 Dec: Tue 22 or Wed 23 Dec. It also closes for a year-end break; whether that runs into 7–8 Jan is to confirm.",
+      "query": "Kagurazaka Ishikawa Tokyo",
+      "pregnancy": "careful",
+      "seven": "counter",
+      "closed_weekdays": [
+        "Sun",
+        "Mon"
+      ],
+      "glance": "Tokyo's reference kaiseki; ten Silver awards in a row."
+    },
+    {
+      "name": "Akasaka Kikunoi",
+      "name_ja": "赤坂 菊乃井",
+      "area": "Tokyo · Akasaka",
+      "genre": "Kaiseki",
+      "price": "Dinner ¥20,000–29,999 · lunch ¥15,000–19,999",
+      "tabelog": {
+        "score": 3.86,
+        "reviews": 595,
+        "url": "https://tabelog.com/tokyo/A1308/A130801/13002514/",
+        "awards": "Award Bronze 2017–23, 2025–26; 百名店 2023, 2025"
+      },
+      "why": "The Tokyo branch of the Kyoto house. Real kaiseki at half Ishikawa's price.",
+      "order": "The lunch course is the best way in.",
+      "pregnancy_note": "Tell them when booking; ask for cooked swaps for the sashimi and shellfish for Fernanda.",
+      "group": "Rooms for 6: ask whether a seventh chair fits.",
+      "booking": "Takes bookings.",
+      "dec_jan": "Closed Sun/Mon, so not 20 or 21 Dec: Tue 22 or Wed 23 Dec. It also closes over year-end and New Year; whether it's open again by 7–8 Jan is to confirm.",
+      "query": "Akasaka Kikunoi Tokyo",
+      "pregnancy": "careful",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Sun",
+        "Mon"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Kyoto kaiseki house in Tokyo; the lunch course is the way in."
+    },
+    {
+      "name": "Sazenka",
+      "name_ja": "茶禅華",
+      "area": "Tokyo · Minami-Azabu (Hiroo)",
+      "genre": "Chinese",
+      "price": "¥50,000–59,999",
+      "tabelog": {
+        "score": 4.59,
+        "reviews": 922,
+        "url": "https://tabelog.com/tokyo/A1307/A130703/13205298/",
+        "awards": "Award Gold 2018–19, 2021–26; Silver 2020; 百名店 2024, 2026"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note": "Praised the marinated strawberry between courses and the sweet-potato dango.",
+          "url": "https://www.instagram.com/p/C8Zl2FkJywR/"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went 3 times (Apr 2018 – Dec 2022), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "Chinese cooking seen through a Japanese lens, and the genre's top score on Tabelog. Tea instead of wine.",
+      "order": "Single course, with tea pairing.",
+      "pregnancy_note": "Tell them when booking: there are raw or marinated items, so ask for swaps for Fernanda.",
+      "group": "Private room for 6 on the 2nd floor: ask whether a seventh chair fits.",
+      "booking": "Takes bookings; very sought after.",
+      "dec_jan": "Closed Sun/Mon, so not 20 or 21 Dec. Tue 22, Wed 23 Dec or 7–8 Jan.",
+      "query": "Sazenka Minami-Azabu Tokyo",
+      "pregnancy": "careful",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Sun",
+        "Mon"
+      ],
+      "glance": "Chinese cooking through a Japanese lens, with a tea pairing."
+    },
+    {
+      "name": "Myōjaku",
+      "name_ja": "明寂",
+      "area": "Tokyo · Nishi-Azabu / Roppongi",
+      "genre": "Kaiseki",
+      "price": "¥50,000–59,999",
+      "tabelog": {
+        "score": 4.46,
+        "reviews": 332,
+        "url": "https://tabelog.com/tokyo/A1307/A130701/13270958/",
+        "awards": "Award Silver 2025, 2026; 百名店 2023, 2025"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note": "Praised the tomato and broad-bean shiraae and the house karasumi with corn.",
+          "url": "https://www.instagram.com/p/C8Zl2FkJywR/"
+        }
+      ],
+      "why": "The alternative to Ishikawa, vouched for by someone on our critics list. Younger, more personal.",
+      "order": "Single seasonal course.",
+      "pregnancy_note": "Tell them when booking. Karasumi is cured roe: Fernanda's call.",
+      "group": "An 8-seat counter and rooms for 6 and 4. For seven: 7 of the 8 counter seats, or both rooms split 4+3, or the room for 6 if a seventh chair fits.",
+      "booking": "Takes bookings.",
+      "dec_jan": "Closed Sundays, so not 20 Dec. 21–23 Dec and 7–8 Jan work.",
+      "query": "Myojaku Nishi-Azabu Tokyo",
+      "pregnancy": "careful",
+      "seven": "counter",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "glance": "Younger, more personal kaiseki; the alternative to Ishikawa."
+    },
+    {
+      "name": "Akasaka Shisen Hanten",
+      "name_ja": "赤坂 四川飯店",
+      "area": "Tokyo · Hirakawachō",
+      "genre": "Chinese (Sichuan)",
+      "price": "Dinner ¥10,000–14,999 · lunch ¥1,000–1,999",
+      "tabelog": {
+        "score": 3.74,
+        "reviews": 1798,
+        "url": "https://tabelog.com/tokyo/A1308/A130803/13000434/",
+        "awards": "百名店 2024, 2026"
+      },
+      "why": "The Chen family's restaurant, which made mapo tofu popular in Japan. Chūka at the source, with a room for the group.",
+      "order": "Mapo tofu, ebi-chili, tantanmen.",
+      "pregnancy_note": "Easy for Fernanda.",
+      "group": "Rooms for 4 to 30+ people, so seven is fine.",
+      "booking": "Takes bookings.",
+      "dec_jan": "Closed Mondays, so not 21 Dec. It also closes over year-end and New Year; whether it's open again by 7–8 Jan is to confirm.",
+      "query": "Akasaka Shisen Hanten Hirakawacho Tokyo",
+      "pregnancy": "ok",
+      "seven": "room",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "The Chen family's Sichuan house that made mapo tofu famous in Japan."
+    },
+    {
+      "name": "Ponta Honke",
+      "name_ja": "ぽん多本家",
+      "area": "Tokyo · Ueno-Hirokōji",
+      "genre": "Katsuretsu / yōshoku",
+      "price": "Price not given on Tabelog",
+      "tabelog": {
+        "score": 3.77,
+        "reviews": 2064,
+        "url": "https://tabelog.com/tokyo/A1311/A131101/13003587/",
+        "awards": "百名店 2023, 2025"
+      },
+      "why": "The original “katsuretsu”, fried slowly in lard. Perfect after the Ueno museums.",
+      "order": "Katsuretsu; the cream prawn croquette in season.",
+      "pregnancy_note": "Easy for Fernanda.",
+      "group": "Tatami room on the 3rd floor for up to 8, so seven fit.",
+      "booking": "Takes bookings (from 2 people).",
+      "dec_jan": "Closed Mondays, so not 21 Dec. Fine on Tue 22 Dec, our Ueno museum day, and on 7–8 Jan.",
+      "query": "Ponta Honke Ueno Tokyo",
+      "pregnancy": "ok",
+      "seven": "room",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "glance": "The original katsuretsu, slow-fried in lard, near Ueno's museums."
+    },
+    {
+      "name": "Tonkatsu Tonki (Meguro)",
+      "name_ja": "とんかつ とんき 目黒本店",
+      "area": "Tokyo · Meguro",
+      "genre": "Tonkatsu",
+      "price": "¥2,000–2,999",
+      "tabelog": {
+        "score": 3.51,
+        "reviews": 2306,
+        "url": "https://tabelog.com/tokyo/A1316/A131601/13002040/",
+        "awards": "百名店 2019, 2021"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "“For the style and the atmosphere, I really loved Tonki.”",
+          "url": "https://www.youtube.com/watch?v=kYPus4Dq4V0"
+        }
+      ],
+      "why": "The theatre of the white-coated line of cooks slicing and frying, and an easy booking for a group.",
+      "order": "Rosu katsu teishoku, with refills of cabbage and miso soup.",
+      "pregnancy_note": "Old-style frying, well done: the safest katsu on the list for Fernanda.",
+      "group": "Tatami rooms for 6–20, so seven fit.",
+      "booking": "Through the website, groups of 4+ only.",
+      "dec_jan": "Closed Tuesdays and the 3rd Monday; opens 16:00. In December the 3rd Monday is the 21st, so not 21 or 22 Dec: Sun 20 or Wed 23 Dec, or 7–8 Jan.",
+      "query": "Tonki Meguro tonkatsu Tokyo",
+      "pregnancy": "ok",
+      "seven": "room",
+      "closed_weekdays": [
+        "Tue"
+      ],
+      "closed_dates": [
+        "2026-12-21"
+      ],
+      "meals": [
+        "dinner"
+      ],
+      "booking_channel": "online",
+      "glance": "Old-school tonkatsu theatre, with tatami rooms bookable for groups."
+    },
+    {
+      "name": "Tempura Fukamachi",
+      "name_ja": "てんぷら 深町",
+      "area": "Tokyo · Kyōbashi",
+      "genre": "Tempura",
+      "price": "Dinner ¥20,000–29,999 · lunch ¥10,000–14,999",
+      "tabelog": {
+        "score": 4.02,
+        "reviews": 1029,
+        "url": "https://tabelog.com/tokyo/A1302/A130202/13004105/",
+        "awards": "Award Bronze 2017–18, 2021–26; Silver 2019–20; 百名店 2023, 2025"
+      },
+      "why": "An award every year since 2017. Lunch at half the dinner price is one of the best high-end deals in Tokyo.",
+      "order": "Lunch course.",
+      "pregnancy_note": "Easy for Fernanda.",
+      "group": "A 10-seat counter: book 7 seats.",
+      "booking": "Takes bookings (courses only).",
+      "dec_jan": "Closed Mondays, so not 21 Dec. 20, 22, 23 Dec or 7–8 Jan.",
+      "query": "Tempura Fukamachi Kyobashi Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went twice (Mar 2015 and Dec 2017), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "ok",
+      "seven": "counter",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Award-winning tempura; lunch at half the dinner price."
+    },
+    {
+      "name": "Tempura Kondo",
+      "name_ja": "てんぷら 近藤",
+      "area": "Tokyo · Ginza",
+      "genre": "Tempura",
+      "tabelog": {
+        "score": 4.02,
+        "reviews": 1203,
+        "url": "https://tabelog.com/tokyo/A1301/A130101/13004993/",
+        "awards": "Award Bronze 2018–20, 2025–26; 百名店 2022, 2023, 2025"
+      },
+      "critics": [
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "On the tours' list of tempura at “the level we look for”.",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Logged “Kondo”, Jan 2015 (once), according to City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "It was already on the family list, and Tabelog backs it up. Famous for its vegetables: sweet potato and shredded carrot.",
+      "order": "A course with the house vegetables.",
+      "pregnancy_note": "Easy for Fernanda.",
+      "group": "20 counter seats: book 7 together.",
+      "dec_jan": "Closed Sundays, so not 20 Dec. 21–23 Dec and 7–8 Jan work.",
+      "query": "Tempura Kondo Ginza Tokyo",
+      "pregnancy": "ok",
+      "seven": "counter",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "glance": "Ginza tempura famous for its sweet potato and shredded carrot."
+    },
+    {
+      "name": "Sukiyaki Kappō Hiyama",
+      "name_ja": "すき焼割烹 日山",
+      "area": "Tokyo · Ningyōchō",
+      "genre": "Sukiyaki",
+      "price": "Dinner ¥20,000–29,999 · lunch ¥15,000–19,999",
+      "tabelog": {
+        "score": 3.7,
+        "reviews": 598,
+        "url": "https://tabelog.com/tokyo/A1302/A130204/13003043/",
+        "awards": "百名店 Hot Pot 2024"
+      },
+      "why": "Sukiyaki from the butcher's own shop, in a closed room. A step above Imahan on the meat.",
+      "order": "Wagyu sukiyaki.",
+      "pregnancy_note": "For Fernanda ask 「生卵なしで」 (no raw egg) and have her meat cooked longer.",
+      "group": "Rooms for 6: ask whether a seventh chair fits. A 17:00 booking has a 2-hour limit.",
+      "booking": "Takes bookings.",
+      "dec_jan": "Closed Sundays, so not 20 Dec. It takes extra days off around New Year (dates not given): 7–8 Jan to confirm.",
+      "query": "Sukiyaki Hiyama Ningyocho Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Logged “Hiyama”, Dec 2014 (once), according to City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "careful",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Butcher-run luxury sukiyaki in private rooms; a step above Imahan."
+    },
+    {
+      "name": "Sumibi Yakiniku Nakahara",
+      "name_ja": "炭火焼肉 なかはら",
+      "area": "Tokyo · Ichigaya",
+      "genre": "Yakiniku / wagyu",
+      "price": "¥30,000–39,999",
+      "tabelog": {
+        "score": 3.88,
+        "reviews": 773,
+        "url": "https://tabelog.com/tokyo/A1309/A130904/13175110/",
+        "awards": "Award Silver 2017, Bronze 2018–2026; 百名店 2023, 2025"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Mark Wiens: his 8th best meal of 2017 (the wagyu katsu-sando).",
+          "url": "https://www.youtube.com/watch?v=FonKlmYXUPo"
+        },
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Best-of-2017 list.",
+          "url": "https://migrationology.com/best-food-travel-2017/"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "A stop on the Hungry Tourist's “Best of Tokyo” in 2017; it was Mark Wiens's favourite meal of the tour.",
+          "url": "https://migrationology.com/best-tokyo-food-tour/"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went 11 times (Mar 2015 – Jan 2026), the restaurant he has returned to most in Japan.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "Luxury yakiniku where the butchery is the menu.",
+      "order": "The course; the wagyu katsu-sando.",
+      "pregnancy_note": "The course has rare cuts: Fernanda's portions well grilled, and she skips the katsu-sando if it comes pink.",
+      "group": "Has a private room; whether it seats seven: to confirm.",
+      "booking": "Online only (no phone). Two sittings.",
+      "dec_jan": "Closed Wednesdays, so not 23 Dec. 20–22 Dec and 7–8 Jan work.",
+      "query": "Sumibi Yakiniku Nakahara Ichigaya Tokyo",
+      "pregnancy": "careful",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "booking_channel": "online",
+      "glance": "Luxury yakiniku where the butchery is the show; wagyu katsu-sando."
+    },
+    {
+      "name": "Ginza Hachigo",
+      "name_ja": "銀座 八五",
+      "area": "Tokyo · Higashi-Ginza",
+      "genre": "Ramen",
+      "price": "¥1,000–1,999",
+      "tabelog": {
+        "score": 3.93,
+        "reviews": 2541,
+        "url": "https://tabelog.com/tokyo/A1301/A130101/13228602/",
+        "awards": "百名店 2024, 2025"
+      },
+      "why": "One of the top ramen scores in Tokyo: clear chūka-soba from a former French-cuisine chef, in a six-seat room you can book.",
+      "order": "Chūka-soba (the clear broth is the point).",
+      "pregnancy_note": "For Fernanda: ask whether the chāshū is pink; skip the soft egg.",
+      "group": "Only 6 seats, so seven can't sit at once: book the whole counter and one of us eats elsewhere, or split 4+3 across two slots.",
+      "booking": "Bookings for the following week open every Saturday at 9:00 (the shop's own channel, not Tabelog or phone). Walk-ins from 11:00; from 12:00 bookings get priority.",
+      "dec_jan": "Closed Mondays; 11:00–16:00. So not 21 Dec: 22–23 Dec or 7–8 Jan. Last season it closed 29 Dec–3 Jan, which misses us.",
+      "query": "Ginza Hachigo ramen Tokyo",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went twice (Dec 2022 and Jan 2026), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "careful",
+      "seven": "split",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "meals": [
+        "lunch"
+      ],
+      "booking_channel": "online",
+      "booking_opens": "Saturdays 9:00, for the following week",
+      "glance": "Top-scoring clear chūka-soba from a former French chef; bookable."
+    },
+    {
+      "name": "Kanda Matsuya",
+      "name_ja": "神田まつや",
+      "area": "Tokyo · Kanda-Sudachō (Awajichō)",
+      "genre": "Soba",
+      "price": "¥1,000–1,999",
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 3216,
+        "url": "https://tabelog.com/tokyo/A1310/A131002/13000340/",
+        "awards": "百名店 2021, EAST 2024"
+      },
+      "why": "The Meiji-era soba house with its sake-and-soba culture intact. Takemura (sweets) is next door.",
+      "order": "Seiro, nameko-oroshi, kamonanban; a sake with a small plate first.",
+      "pregnancy_note": "Easy for Fernanda; skip tsukimi options (raw egg).",
+      "group": "66 seats at shared tables; six usually sit together after a short queue, so for seven expect to be split 4+3.",
+      "booking": "No bookings.",
+      "dec_jan": "Closed Sun/Mon, so not 20 or 21 Dec: Tue 22, Wed 23 Dec or 7–8 Jan. Its famous New Year's Eve (31 Dec) happens while we're in Kyoto; 1–3 Jan hours are still to confirm but don't affect us.",
+      "query": "Kanda Matsuya soba Awajicho Tokyo",
+      "pregnancy": "ok",
+      "seven": "split",
+      "closed_weekdays": [
+        "Sun",
+        "Mon"
+      ],
+      "booking_channel": "queue",
+      "glance": "Meiji-era soba house: sake and small plates before the noodles."
+    },
+    {
+      "name": "Okonomiyaki Kiji Marunouchi",
+      "name_ja": "お好み焼 きじ 丸の内店",
+      "area": "Tokyo · Tokyo Station",
+      "genre": "Okonomiyaki",
+      "price": "Dinner ¥3,000–3,999 · lunch ¥1,000–1,999",
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 2641,
+        "url": "https://tabelog.com/tokyo/A1302/A130201/13020110/",
+        "awards": "百名店 2024, 2025"
+      },
+      "why": "Osaka okonomiyaki right by the shinkansen. Good on an arrival or departure day.",
+      "order": "Sujiyaki (with beef tendon and spring onion); mix-yaki.",
+      "pregnancy_note": "All cooked: easy for Fernanda.",
+      "group": "46 seats; expect a short wait for seven.",
+      "booking": "No bookings.",
+      "dec_jan": "Open every day (irregular days off). Handy on the 20 Dec arrival evening, or for an early bite before the shinkansen on the morning of 24 Dec if it's open by then (hours to confirm).",
+      "query": "Okonomiyaki Kiji Marunouchi Tokyo",
+      "pregnancy": "ok",
+      "seven": "yes",
+      "closed_weekdays": [],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Osaka okonomiyaki beside the shinkansen; easy on travel days."
+    },
+    {
+      "name": "Monja Kondō Honten",
+      "name_ja": "もんじゃ 近どう 本店",
+      "area": "Tokyo · Tsukishima",
+      "genre": "Monjayaki",
+      "price": "¥2,000–2,999",
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 1134,
+        "url": "https://tabelog.com/en/tokyo/A1313/A131302/13012771/"
+      },
+      "why": "The reference house for monja, a dish that only exists in Tokyo. Monja scores low on Tabelog, and this is among the highest in Tsukishima. Pair it with Kishidaya.",
+      "order": "Mentaiko-mochi-cheese monja; an okonomiyaki to share.",
+      "pregnancy_note": "Cooked on the griddle: easy for Fernanda (cooked mentaiko is fine).",
+      "group": "132 seats, so seven fit.",
+      "booking": "Takes bookings.",
+      "dec_jan": "Open every day, so any of our Tokyo evenings.",
+      "query": "Monja Kondo Honten Tsukishima Tokyo",
+      "pregnancy": "ok",
+      "seven": "yes",
+      "closed_weekdays": [],
+      "glance": "The reference monja house on Tsukishima's monja street."
+    },
+    {
+      "name": "Asakusa Oden Ōtafuku",
+      "name_ja": "大多福",
+      "area": "Tokyo · Asakusa (Senzoku)",
+      "genre": "Oden",
+      "price": "¥5,000–5,999",
+      "tabelog": {
+        "score": 3.52,
+        "reviews": 763,
+        "url": "https://tabelog.com/en/tokyo/A1311/A131102/13003741/"
+      },
+      "why": "A hundred-year-old oden counter, Kantō style. Pure winter.",
+      "order": "Daikon, egg, tofu, sujinikomi; let the itamae choose.",
+      "pregnancy_note": "Easy for Fernanda.",
+      "group": "Rooms for 4–6: ask whether a seventh chair fits, or take two rooms 4+3.",
+      "booking": "Takes bookings. 2-hour limit at busy times; ¥500 table charge.",
+      "dec_jan": "Closed Sundays, so not 20 Dec. Works on 22 Dec, our Asakusa day, and on 21, 23 Dec and 7–8 Jan.",
+      "query": "Otafuku oden Asakusa Senzoku Tokyo",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "glance": "Hundred-year-old Kantō oden counter in Asakusa; pure winter."
+    },
+    {
+      "name": "Maruchiba",
+      "name_ja": "丸千葉",
+      "area": "Tokyo · Nihonzutsumi (Minami-Senju)",
+      "genre": "Izakaya",
+      "price": "¥4,000–4,999",
+      "tabelog": {
+        "score": 3.64,
+        "reviews": 661,
+        "url": "https://tabelog.com/tokyo/A1324/A132401/13050828/",
+        "awards": "百名店 izakaya EAST 2025, 2026"
+      },
+      "why": "The warmest shitamachi izakaya on the list, and it opens early enough to follow on from lunch at Obana.",
+      "order": "Cooked dishes from the day's board; nikomi; fried things.",
+      "pregnancy_note": "Fernanda sticks to the cooked dishes.",
+      "group": "18 at the counter and 12 at tables: for seven, ask for the tables.",
+      "booking": "Book, even on a weekday.",
+      "dec_jan": "Closed Wednesdays; opens 14:00. So not 23 Dec. For an Obana-then-Maruchiba day (Obana is closed Mon/Tue and its queue starts before 11:30), the realistic date is Fri 8 Jan.",
+      "query": "Maruchiba izakaya Minami-Senju Tokyo",
+      "pregnancy": "ok",
+      "seven": "yes",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "meals": [
+        "dinner"
+      ],
+      "glance": "Warm shitamachi izakaya that opens at 14:00, right after Obana."
+    },
+    {
+      "name": "Kishidaya",
+      "name_ja": "岸田屋",
+      "area": "Tokyo · Tsukishima",
+      "genre": "Izakaya",
+      "price": "¥3,000–3,999",
+      "tabelog": {
+        "score": 3.71,
+        "reviews": 1459,
+        "url": "https://tabelog.com/tokyo/A1313/A131302/13002239/",
+        "awards": "百名店 izakaya EAST 2025, 2026"
+      },
+      "why": "One of the “big three” nikomi izakaya of old Tokyo. An all-local crowd.",
+      "order": "Nikomi (beef stew), the house dish.",
+      "pregnancy_note": "Nikomi and cooked dishes are fine for Fernanda; skip the shellfish sashimi.",
+      "group": "19 counter seats: queue before opening, or split 4+3.",
+      "booking": "No bookings; 16:00–21:00.",
+      "dec_jan": "Closed Sun/Mon/holidays, so not 20 or 21 Dec: 22–23 Dec or 7–8 Jan.",
+      "query": "Kishidaya Tsukishima Tokyo",
+      "pregnancy": "ok",
+      "seven": "split",
+      "closed_weekdays": [
+        "Sun",
+        "Mon"
+      ],
+      "meals": [
+        "dinner"
+      ],
+      "booking_channel": "queue",
+      "glance": "One of old Tokyo's big three nikomi izakaya; all locals."
+    },
+    {
+      "name": "Ponchi-ken",
+      "name_ja": "ポンチ軒",
+      "area": "Tokyo · Kanda-Ogawamachi",
+      "genre": "Tonkatsu / yōshoku",
+      "price": "¥2,000–2,999",
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 2227,
+        "url": "https://tabelog.com/tokyo/A1310/A131002/13141456/",
+        "awards": "百名店 2024, 2026"
+      },
+      "why": "Classic Kanda tonkatsu at a fifth of Narikura's price.",
+      "order": "Rosu katsu; the day's special.",
+      "pregnancy_note": "Easy for Fernanda; ask for hers well done.",
+      "group": "Three tables of 4 and one of 2: for seven, two tables of 4 side by side (4+3).",
+      "dec_jan": "Closed Sundays, so not 20 Dec. 21–23 Dec and 7–8 Jan work.",
+      "query": "Ponchiken Kanda Ogawamachi Tokyo",
+      "pregnancy": "careful",
+      "seven": "split",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Classic Kanda tonkatsu at a fifth of Narikura's price."
+    },
+    {
+      "name": "Sushi Mizukami",
+      "name_ja": "鮨 みずかみ",
+      "area": "Tokyo · Hanzōmon (Ichibanchō)",
+      "genre": "Sushi",
+      "price": "¥40,000–49,999",
+      "tabelog": {
+        "score": 4.27,
+        "reviews": 342,
+        "url": "https://tabelog.com/tokyo/A1308/A130803/13220742/",
+        "awards": "Award Bronze 2023–2026; 百名店 2021, 2022, 2025"
+      },
+      "why": "It was already on the family list (it's in Hanzōmon, not Roppongi). Two chefs, eight seats, total precision. Plan B if Arai is full.",
+      "order": "Omakase.",
+      "pregnancy_note": "As at Arai: for Fernanda a few raw or cured pieces, no raw shellfish, no bluefin or bigeye tuna; cooked pieces are fine.",
+      "group": "An 8-seat counter: ask for 7 seats in one sitting, or split 4+3.",
+      "booking": "Through Tabelog; sittings at 17:30 and 19:30.",
+      "dec_jan": "Closed Tue/Wed, so not 22 or 23 Dec: Sun 20 or Mon 21 Dec, or 7–8 Jan.",
+      "query": "Sushi Mizukami Ichibancho Tokyo",
+      "pregnancy": "careful",
+      "seven": "counter",
+      "closed_weekdays": [
+        "Tue",
+        "Wed"
+      ],
+      "meals": [
+        "dinner"
+      ],
+      "booking_channel": "online",
+      "glance": "Eight-seat, two-chef sushi counter; Plan B if Arai is full."
+    },
+    {
+      "name": "Restaurant Kamiya",
+      "name_ja": "レストラン香味屋",
+      "area": "Tokyo · Negishi (Uguisudani)",
+      "genre": "Yōshoku",
+      "price": "Dinner ¥8,000–9,999 · lunch ¥4,000–4,999",
+      "tabelog": {
+        "score": 3.82,
+        "reviews": 1073,
+        "url": "https://tabelog.com/tokyo/A1311/A131104/13003752/",
+        "awards": "百名店 2023, EAST 2025"
+      },
+      "why": "Shitamachi yōshoku at its most polished: Japan's “Western” cooking done as fine dining.",
+      "order": "Menchi-katsu, hambāgu, omurice.",
+      "pregnancy_note": "Menchi-katsu and hambāgu are fine for Fernanda. The omurice may be soft inside: ask.",
+      "group": "88 seats, semi-private; fine for six, and seven should be fine too (say so when booking).",
+      "booking": "Takes bookings.",
+      "dec_jan": "Closed Wed/Thu, so not 23 Dec or 7 Jan. Go 20–22 Dec (22 Dec pairs with Ueno) or Fri 8 Jan.",
+      "query": "Restaurant Kamiya Negishi Tokyo",
+      "pregnancy": "careful",
+      "seven": "yes",
+      "closed_weekdays": [
+        "Wed",
+        "Thu"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Shitamachi yōshoku as fine dining: menchi-katsu, hambāgu, omurice."
+    },
+    {
+      "name": "Motenashi Kuroki",
+      "name_ja": "饗 くろ㐂",
+      "area": "Tokyo · Asakusabashi",
+      "genre": "Ramen",
+      "price": "¥1,000–1,999",
+      "tabelog": {
+        "score": 3.9,
+        "reviews": 1859,
+        "url": "https://tabelog.com/tokyo/A1311/A131103/13290780/",
+        "awards": "百名店 2024, 2025"
+      },
+      "why": "Shio ramen and bowls with a soba feel, close to Tabelog's top tier.",
+      "order": "Shio soba.",
+      "pregnancy_note": "For Fernanda: ask whether the chāshū is pink; skip the soft egg.",
+      "group": "13 at the counter: queue together, may be seated apart.",
+      "booking": "No bookings.",
+      "dec_jan": "Lunch 11:00–15:00 Mon–Sat; closed Sunday. So 21–23 Dec or 7–8 Jan.",
+      "query": "Motenashi Kuroki Asakusabashi Tokyo",
+      "pregnancy": "careful",
+      "seven": "split",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "meals": [
+        "lunch"
+      ],
+      "booking_channel": "queue",
+      "glance": "Near-top-tier shio ramen with a soba feel; lunch only."
+    },
+    {
+      "name": "Sushi Matsumoto",
+      "name_ja": "鮨 まつ本",
+      "area": "Tokyo · Itabashi",
+      "genre": "Sushi",
+      "price": "¥15,000–19,999",
+      "tabelog": {
+        "score": 3.74,
+        "reviews": 377,
+        "url": "https://tabelog.com/tokyo/A1322/A132201/13185463/",
+        "awards": "百名店 2025"
+      },
+      "why": "A neighbourhood counter at 百名店 level for a third of Arai's price.",
+      "order": "Omakase.",
+      "pregnancy_note": "Standard sushi rules for Fernanda.",
+      "group": "8 at the counter, two sittings (17:00 and 20:00): 7 seats, or the whole sitting.",
+      "booking": "Bookings only. 50% charge for cancelling the day before, 100% on the day.",
+      "dec_jan": "Closed Sun/Mon/Thu, so not 20, 21 Dec or 7 Jan. Good for Tue 22, Wed 23 Dec or Fri 8 Jan.",
+      "query": "Sushi Matsumoto Itabashi Tokyo",
+      "pregnancy": "careful",
+      "seven": "counter",
+      "closed_weekdays": [
+        "Sun",
+        "Mon",
+        "Thu"
+      ],
+      "meals": [
+        "dinner"
+      ],
+      "glance": "Top-100 neighbourhood sushi counter at a third of Arai's price."
+    },
+    {
+      "name": "Toriyoshi Nakameguro",
+      "name_ja": "鳥よし 中目黒本店",
+      "area": "Tokyo · Naka-Meguro",
+      "genre": "Yakitori",
+      "tabelog": {
+        "score": 3.72,
+        "reviews": 826,
+        "url": "https://tabelog.com/tokyo/A1317/A131701/13003200/",
+        "awards": "百名店 EAST 2024, 2025"
+      },
+      "why": "Neighbourhood yakitori that sits well with the family's favourites in Naka-Meguro.",
+      "order": "The classic skewers; the oyako-don comes with soft egg.",
+      "pregnancy_note": "For Fernanda everything well done (「よく焼きで」); no pink sasami, liver or raw yolk, so not the oyako-don.",
+      "group": "21 seats: arrive at 16:00 or split 4+3.",
+      "booking": "No bookings. 16:00–22:00 every day.",
+      "dec_jan": "Open every day, so any of our Tokyo evenings.",
+      "query": "Toriyoshi Nakameguro Honten Tokyo",
+      "pregnancy": "careful",
+      "seven": "split",
+      "closed_weekdays": [],
+      "meals": [
+        "dinner"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Naka-Meguro neighbourhood yakitori, open every evening, no bookings."
+    },
+    {
+      "name": "Butagumi Nishi-Azabu",
+      "name_ja": "西麻布 豚組",
+      "area": "Tokyo · Nishi-Azabu",
+      "genre": "Tonkatsu",
+      "tabelog": {
+        "score": 3.59,
+        "reviews": 905,
+        "url": "https://tabelog.com/tokyo/A1307/A130701/13004791/",
+        "awards": "百名店 Tonkatsu 2017–19/21/24/26"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Mark Wiens's favourite gourmet tonkatsu (in the same video as Tonki).",
+          "url": "https://www.youtube.com/watch?v=kYPus4Dq4V0"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went 3 times (Dec 2013 – Feb 2015), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "Already on the family list: a menu of pork by breed, in an old house in Nishi-Azabu.",
+      "order": "Compare two breeds of rosu.",
+      "pregnancy_note": "Ask for Fernanda's well done.",
+      "dec_jan": "Closed Mondays, so not 21 Dec. 20, 22, 23 Dec or 7–8 Jan.",
+      "query": "Butagumi Nishi-Azabu Tokyo",
+      "pregnancy": "careful",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "glance": "Tonkatsu by pork breed, in an old Nishi-Azabu house."
+    },
+    {
+      "name": "Torimeshi Torito Bunten",
+      "name_ja": "鳥めし 鳥藤分店",
+      "area": "Tokyo · Tsukiji outer market",
+      "genre": "Breakfast (chicken rice)",
+      "price": "¥1,000–1,999",
+      "tabelog": {
+        "score": 3.54,
+        "reviews": 1357,
+        "url": "https://tabelog.com/tokyo/A1313/A131301/13037973/",
+        "awards": "百名店 toriryōri 2025"
+      },
+      "why": "The Tsukiji breakfast locals eat, from a chicken wholesaler.",
+      "order": "Torimeshi.",
+      "pregnancy_note": "For Fernanda, torimeshi, not oyakodon (the egg comes half-raw).",
+      "group": "16 seats; a short wait.",
+      "booking": "No bookings. 8:30–13:30.",
+      "dec_jan": "Closed Wed/Sun/holidays and on market days off (23 Dec, and 31 Dec–4 Jan while we're away). So Mon 21 Dec, our Tsukiji morning, or Tue 22 Dec, Thu 7 or Fri 8 Jan.",
+      "query": "Torimeshi Torito Bunten Tsukiji Tokyo",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Wed",
+        "Sun"
+      ],
+      "closed_dates": [
+        "2026-12-23",
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03",
+        "2027-01-04"
+      ],
+      "meals": [
+        "lunch"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Tsukiji's local breakfast: chicken rice from a chicken wholesaler."
+    },
+    {
+      "name": "Kitsuneya",
+      "name_ja": "きつねや",
+      "area": "Tokyo · Tsukiji outer market",
+      "genre": "Horumon-don (market counter)",
+      "price": "~¥900–1,000 (current price to confirm)",
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 2744,
+        "url": "https://tabelog.com/en/tokyo/A1313/A131301/13007656/"
+      },
+      "why": "The one Tsukiji dish that owes nothing to tourism: offal simmered in Hatchō miso since 1947, market workers' food.",
+      "order": "Horumon-don; the house gyūdon.",
+      "pregnancy_note": "Simmered for hours: easy for Fernanda.",
+      "group": "~5 at the counter plus standing tables: eat in shifts.",
+      "booking": "Queue only.",
+      "dec_jan": "Mon/Tue/Thu/Fri/Sat 6:30–13:00; closed Wed/Sun. So Mon 21 or Tue 22 Dec, or 7–8 Jan. Its New Year break probably follows the market's, which ends on 4 Jan (to confirm), so January should be normal by the 7th.",
+      "query": "Kitsuneya Tsukiji horumon Tokyo",
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "A “legendary” horumon-don on his walk through the Tsukiji outer market (2017).",
+          "url": "https://www.youtube.com/watch?v=BqdFvgaiynM"
+        }
+      ],
+      "pregnancy": "ok",
+      "seven": "split",
+      "closed_weekdays": [
+        "Wed",
+        "Sun"
+      ],
+      "meals": [
+        "lunch"
+      ],
+      "booking_channel": "queue",
+      "glance": "Market workers' horumon-don: offal in Hatchō miso since 1947."
+    },
+    {
+      "name": "Kayaba Coffee",
+      "name_ja": "カヤバ珈琲",
+      "area": "Tokyo · Yanaka",
+      "genre": "Kissaten / breakfast",
+      "price": "~¥1,000–2,000",
+      "tabelog": {
+        "score": 3.75,
+        "reviews": 1540,
+        "url": "https://tabelog.com/tokyo/A1311/A131104/13019585/",
+        "awards": "百名店 Kissaten 2022, 2026"
+      },
+      "why": "A kissaten in an old machiya: the best start to a Yanaka morning (with Himitsudō and Inamura Shōzō nearby).",
+      "order": "Tamago sando; the “ruShian” (coffee with chocolate).",
+      "pregnancy_note": "The tamago sando is made with a cooked omelette: fine for Fernanda. One cup of coffee.",
+      "group": "2nd floor with a table for 5 and tables for 4: for seven, the 5-table plus a 4-table, or two 4-tables (4+3).",
+      "booking": "Online booking. Opens 8:00.",
+      "dec_jan": "Closed Mondays, so not 21 Dec. Fine on Tue 22 Dec (our Yanaka break), 23 Dec or 7–8 Jan.",
+      "query": "Kayaba Coffee Yanaka Tokyo",
+      "pregnancy": "ok",
+      "seven": "split",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "booking_channel": "online",
+      "glance": "Old wooden kissaten; tamago sando to start a Yanaka morning."
+    },
+    {
+      "name": "Sawada",
+      "name_ja": "すし処 さわ田",
+      "area": "Tokyo · Ginza",
+      "genre": "Sushi",
+      "price": "Lunch ¥45,100 · dinner ¥56,100 (Apr 2025)",
+      "tabelog": {
+        "score": 4.51,
+        "reviews": 617,
+        "url": "https://tabelog.com/en/tokyo/A1301/A130101/13001043/",
+        "awards": "Award Gold 2021–23, 2025, 2026; Silver 2019, 2020, 2024; 百名店 2021, 2022, 2025"
+      },
+      "critics": [
+        {
+          "who": "@ocritico.antigourmet (Ian Oliver)",
+          "note": "Ian Oliver gave it 10/10 (he paid R$1,700) in his head-to-head with Saito: red-vinegar and sea-salt rice that “attacks the tongue virulently while staying deeply elegant”, fish cured in koji, eel smoked over cherry-wood sawdust. “After it, every other sushi stays silent.” (quotes translated from Portuguese)",
+          "url": "https://www.ocriticoantigourmet.com.br/sawada-vs-saito"
+        }
+      ],
+      "why": "The sushi the toughest critic on our list ranked above Saito, and the only one at that level he showed ordinary people can book. No photos and no English: all that's left is what's on the counter.",
+      "order": "The single omakase. Notice the red-vinegar rice and the smoked eel.",
+      "pregnancy_note": "Almost everything is raw or cured. For Fernanda: tell them beforehand to swap in tamago, eel and cooked pieces; raw fish only a few pieces, with no bluefin or bigeye tuna and no raw shellfish.",
+      "group": "A small counter; number of seats to confirm. For seven, count on splitting the group or only some of us going.",
+      "booking": "Online through OMAKASE. Seats are released “drip by drip”, with no set time: Ian refreshed the page 5 or 6 times and got lucky.",
+      "dec_jan": "Closed Mon/Thu/Sun, so not 20, 21 Dec or 7 Jan. Possible on Tue 22, Wed 23 Dec or Fri 8 Jan; New Year break to confirm for the 8th.",
+      "query": "Sushi Sawada Ginza",
+      "pregnancy": "careful",
+      "seven": "split",
+      "closed_weekdays": [
+        "Mon",
+        "Thu",
+        "Sun"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "booking_channel": "online",
+      "booking_opens": "Unannounced drops; keep refreshing",
+      "glance": "Elite Ginza sushi a critic ranked above Saito; almost all raw."
+    },
+    {
+      "name": "Sushi Saito",
+      "name_ja": "鮨 さいとう",
+      "area": "Tokyo · Roppongi 1-chōme",
+      "genre": "Sushi",
+      "tabelog": {
+        "score": 4.61,
+        "reviews": 1439,
+        "url": "https://tabelog.com/en/tokyo/A1308/A130802/13015251/",
+        "awards": "Award Gold 2019–2026; 百名店 2021, 2022, 2025"
+      },
+      "critics": [
+        {
+          "who": "@ocritico.antigourmet (Ian Oliver)",
+          "note": "Ian Oliver gave it 9.5/10 (he paid R$1,400): shari at 38 °C, vinegar almost imperceptible, akami cut at 1.2 mm and aged 10 days. “One of the most incredible pieces of work gastronomy has ever given me.” (quote translated from Portuguese)",
+          "url": "https://www.ocriticoantigourmet.com.br/sawada-vs-saito"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "A confirmed stop on the Grand Japan tour (birthday dinner). Califa: “Saito has always also been a merry place, full of warmth behind the precision.”",
+          "url": "https://www.thehungrytourist.com/tours/grand-japan"
+        },
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note": "Departures (2020) names Saito among the “impossible” places she manages to get into.",
+          "url": "https://web.archive.org/web/2020/https://www.departures.com/lifestyle/food/tokyo-new-young-chefs-update-modern-japanese-cuisine"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went 9 times (Nov 2015 – Jun 2025), according to City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "Four critics on our list converge here, and so does Tabelog (Gold since 2019). It's the reference for austere Edo-mae: worth knowing it exists, not worth planning the trip around.",
+      "order": "The single omakase.",
+      "pregnancy_note": "Almost all raw: for Fernanda, a few pieces at most (no bluefin or bigeye tuna, no raw shellfish), and tell them when booking.",
+      "group": "A small counter; seven together is unrealistic.",
+      "booking": "Practically impossible without a connection: it no longer takes new bookings by phone. In practice, only with a regular who takes you, or a concierge with a relationship with the house.",
+      "dec_jan": "Closed Sundays and holidays, so not 20 Dec. New Year break to confirm for 7–8 Jan.",
+      "query": "Sushi Saito Roppongi",
+      "pregnancy": "careful",
+      "seven": "no",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "booking_channel": "hotel",
+      "glance": "Tokyo's reference Edo-mae counter; effectively unbookable, kept for reference."
+    },
+    {
+      "name": "Nihonbashi Kakigarachō Sugita",
+      "name_ja": "日本橋蛎殻町 すぎた",
+      "area": "Tokyo · Nihonbashi Kakigarachō (Suitengūmae)",
+      "genre": "Sushi",
+      "tabelog": {
+        "score": 4.65,
+        "reviews": 1016,
+        "url": "https://tabelog.com/en/tokyo/A1302/A130204/13018162/",
+        "awards": "Award Gold 2019–26; 百名店 2021, 2022, 2025"
+      },
+      "critics": [
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "A confirmed stop on Grand Japan. Califa: “one of the counters by which I measure sushi: humility, beauty, discipline, and the privilege of being allowed to sit there.”",
+          "url": "https://www.thehungrytourist.com/tours/grand-japan"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went 9 times as “Sushi Sugita” (Apr 2017 – Jun 2025), plus 3 logged as “Sugita” (up to Apr 2026), according to City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "The highest sushi score on the whole list (4.65) and Califa's yardstick. Like Saito, it stays as a reference.",
+      "order": "The single omakase.",
+      "pregnancy_note": "Almost all raw: for Fernanda, a few pieces at most (no bluefin or bigeye tuna, no raw shellfish), and tell them when booking.",
+      "booking": "Online only (phone line closed); in practice regulars rebook on the way out. Effectively only through a connection.",
+      "dec_jan": "Closed Mondays, so not 21 Dec. New Year break to confirm for 7–8 Jan.",
+      "query": "Kakigaracho Sugita sushi",
+      "pregnancy": "careful",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "booking_channel": "online",
+      "glance": "The list's highest sushi score; regulars only, kept for reference."
+    },
+    {
+      "name": "Den",
+      "name_ja": "傳",
+      "area": "Tokyo · Jingūmae (Gaiemmae)",
+      "genre": "Creative Japanese",
+      "tabelog": {
+        "score": 4.36,
+        "reviews": 340,
+        "url": "https://tabelog.com/en/tokyo/A1306/A130603/13046855/",
+        "awards": "Award Silver 2026"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note": "Went at least 9 times (“9th visit”, Sep 2015, still in Jimbōchō): posted the anago, shiso and beetroot “sandwich” and, in 2016, the black-ant salad.",
+          "url": "https://www.pinterest.com/pin/little_meg_siu_meg-on-instagram-anago-shiso-beetroot-sandwich-jimbocho-den-tokyo-9th-visit-912015-from-the-last-visit-whic--11540542773599736/"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went 7 times at the current address (Apr 2017 – Jan 2026) and 3 at the old one, in Jimbōchō, according to City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "The place Meg and Jason Wang have returned to most, and Tabelog agrees. Japanese cooking with humour, changing every season.",
+      "pregnancy_note": "Tasting menu that may include raw items: tell them about Fernanda when booking.",
+      "group": "Has a private room (with a fee); capacity to confirm for seven.",
+      "booking": "Very sought after; booking channel to confirm.",
+      "dec_jan": "Opening days for 20–23 Dec and 7–8 Jan: to confirm.",
+      "query": "Den Jingumae Tokyo",
+      "pregnancy": "careful",
+      "seven": "ask",
+      "glance": "Playful, seasonal creative Japanese that critics keep going back to."
+    },
+    {
+      "name": "Kanemasu",
+      "name_ja": "かねます",
+      "area": "Tokyo · Kachidoki",
+      "genre": "Stand-up bar (tachinomi)",
+      "tabelog": {
+        "score": 3.74,
+        "reviews": 837,
+        "url": "https://tabelog.com/en/tokyo/A1313/A131302/13002243/",
+        "awards": "立ち飲み 百名店 2025"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note": "Four posts between 2014 and 2015: a counter she kept going back to (posts embedded on Tokyo Table Trip).",
+          "url": "https://tokyotabletrip.com/en/297"
+        }
+      ],
+      "why": "The Kachidoki stand-up bar Meg used to frequent, with a 百名店 tachinomi badge.",
+      "pregnancy_note": "Some of the small plates are raw: Fernanda sticks to the cooked ones. And it's all standing.",
+      "group": "A stand-up bar: seven together is hard; go in twos or threes.",
+      "dec_jan": "Opening days for 20–23 Dec and 7–8 Jan: to confirm.",
+      "query": "Kanemasu Kachidoki",
+      "pregnancy": "careful",
+      "seven": "split",
+      "closed_weekdays": [
+        "Wed",
+        "Sun"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Kachidoki stand-up bar where Tokyo chefs drink; arrive at opening."
+    },
+    {
+      "name": "Suzutashiki",
+      "name_ja": "鈴田式",
+      "area": "Tokyo · Nishi-Azabu",
+      "genre": "Wood-fired washoku (薪焼き)",
+      "price": "¥60,000–79,999",
+      "tabelog": {
+        "score": 4.21,
+        "reviews": 459,
+        "url": "https://tabelog.com/en/tokyo/A1307/A130701/13293100/",
+        "awards": "Award Bronze 2025, 2026; 日本料理 TOKYO 百名店 2025; TOKYO 百名店 2025"
+      },
+      "critics": [
+        {
+          "who": "@hitode47 (Hideto Tashiro)",
+          "note": "This is @hitode47's own restaurant: Hideto Tashiro is the chef (at Suzutashiki since 2019; moved to Nishi-Azabu in Jan 2024). The chef's own place, not an independent recommendation.",
+          "url": "https://hitosara.com/0020007533/"
+        }
+      ],
+      "why": "Washoku over a wood fire: grilled shiitake stuffed with fermented paste, wagyu iimushi, smoked donabe rice with a burning ember inside, smoked ice cream. Tabelog backs it up (4.21, Bronze 2025–26).",
+      "order": "The single omakase, with sake or wine pairing.",
+      "pregnancy_note": "The menu has included smoked caviar, sea urchin on sōmen, tartare temaki and raw fish: ask for cooked swaps for Fernanda when booking. The shiitake, wagyu iimushi, donabe rice and smoked ice cream are fine.",
+      "group": "A private room for 8 fits all seven of us; there's also a room for 6 and 8 counter seats (7 of 8 would work too).",
+      "booking": "Through OMAKASE; two sittings (17:30 and 20:30). In 2023 a blogger reported a year-and-a-half wait: for Dec 2026, only through a cancellation.",
+      "dec_jan": "Opening days for 20–23 Dec and 7–8 Jan: to confirm when booking.",
+      "query": "Suzutashiki Nishi-Azabu",
+      "pregnancy": "careful",
+      "seven": "room",
+      "meals": [
+        "dinner"
+      ],
+      "booking_channel": "online",
+      "glance": "Washoku over a wood fire: smoked donabe rice, smoked ice cream."
+    },
+    {
+      "name": "Shichubo Yung",
+      "name_ja": "私厨房 勇",
+      "area": "Tokyo · Shirokane",
+      "genre": "Chinese (private kitchen, counter)",
+      "price": "Dinner ¥10–15k on Tabelog; ¥15–20k going by reviews",
+      "tabelog": {
+        "score": 3.86,
+        "reviews": 312,
+        "url": "https://tabelog.com/tokyo/A1316/A131602/13168401/",
+        "awards": "Award Bronze 2017–2023; 中国料理 TOKYO 百名店 2021, 2023, 2024, 2026"
+      },
+      "critics": [
+        {
+          "who": "@fuchsiadunlop (Fuchsia Dunlop)",
+          "note": "The only restaurant in Japan Fuchsia Dunlop has mentioned. In Invitation to a Banquet (p. 265) she describes a stir-fry of scallops, wild-rice stem, yellow chives and pumpkin as “an astonishing work of engineering”; on Tyler Cowen's podcast (2023) she called it “absolutely superb”.",
+          "url": "https://conversationswithtyler.com/episodes/fuchsia-dunlop-3/"
+        }
+      ],
+      "why": "Chinese food served the way a sushi counter serves, every ingredient at its point. The critic and Tabelog agree.",
+      "order": "The course; pay attention to the vegetable stir-fries.",
+      "pregnancy_note": "A cooked Chinese course, generally safe for Fernanda. Ask them to leave out raw or “drunken” shellfish and raw-fish starters.",
+      "group": "10 seats: the seven of us would take 7 of them. Book early or ask about exclusive use.",
+      "booking": "Online booking only (phone line closed).",
+      "dec_jan": "Tue–Sun 18:00–22:00; closed Monday, so not 21 Dec. 20, 22, 23 Dec work; New Year break not stated, so 7–8 Jan to confirm.",
+      "query": "Shichubo Yung Shirokane",
+      "pregnancy": "careful",
+      "seven": "counter",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "meals": [
+        "dinner"
+      ],
+      "booking_channel": "online",
+      "glance": "Chinese cooking served like a sushi counter, ingredient by ingredient."
+    },
+    {
+      "name": "Seiyō Ryōri Shima",
+      "name_ja": "西洋料理 島",
+      "area": "Tokyo · Nihonbashi / Kyōbashi",
+      "genre": "Steak (wagyu)",
+      "tabelog": {
+        "score": 3.71,
+        "reviews": 269,
+        "url": "https://tabelog.com/en/tokyo/A1302/A130202/13000495/",
+        "awards": "Award Bronze 2017–20; Steak 百名店 2021–25"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Thick wagyu sirloin and a steak sandwich, about ¥12,000 (2017; meal paid for by the Hungry Tourist tour).",
+          "url": "https://www.youtube.com/watch?v=4sMejozB6XU"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "A fixed stop on the tours. Califa: the master uses A4 or A3, never A5 (“too fatty”), and there's an off-menu wagyu sando, the “Califa Special”.",
+          "url": "https://www.thehungrytourist.com/tours/grand-japan"
+        }
+      ],
+      "why": "The steak sanctuary of two critics on our list. Tabelog is cooler (3.71): Japanese diners like it but don't rave.",
+      "order": "Sirloin; the steak sandwich.",
+      "pregnancy_note": "Ask for Fernanda's meat well done; with that, everything is cooked, so it's one of the easiest luxury nights for her.",
+      "booking": "Online. Mon–Sat, 18:00–21:00.",
+      "dec_jan": "Closed Sunday, so not 20 Dec. 21–23 Dec work; New Year break to confirm for 7–8 Jan.",
+      "query": "Seiyo Ryori Shima Nihonbashi",
+      "pregnancy": "careful",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "meals": [
+        "dinner"
+      ],
+      "booking_channel": "online",
+      "glance": "Critics' steak sanctuary: wagyu sirloin and a steak sandwich."
+    },
+    {
+      "name": "Tempura Motoyoshi",
+      "name_ja": "てんぷら 元吉",
+      "area": "Tokyo · Daikanyama",
+      "genre": "Tempura",
+      "tabelog": {
+        "score": 4.06,
+        "reviews": 147,
+        "url": "https://tabelog.com/en/tokyo/A1303/A130302/13270939/",
+        "awards": "Tempura 百名店 2023, 2025"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "“his tempura is literally flawless”; the best bite was sea urchin on fried shiso (Hungry Tourist tour, 2017, still at the old Aoyama address).",
+          "url": "https://migrationology.com/best-tokyo-food-tour/"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "Califa has been going for 9 years: “Nothing is heavy… Greatness without stiffness.”",
+          "url": "https://www.thehungrytourist.com/tours/grand-japan"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went twice (Jun 2016 and Jun 2020), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "It moved from Aoyama to Daikanyama, and the new address scores 4.06. Tempura is the safest luxury for Fernanda.",
+      "order": "Tempura omakase.",
+      "pregnancy_note": "Everything fried to order. Fernanda skips only the raw sea urchin on shiso.",
+      "booking": "Online; doable.",
+      "dec_jan": "Closed Monday, so not 21 Dec. 20, 22, 23 Dec work; New Year break to confirm for 7–8 Jan.",
+      "query": "Tempura Motoyoshi Daikanyama",
+      "pregnancy": "ok",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "booking_channel": "online",
+      "glance": "Critic-loved Daikanyama tempura; the safest luxury meal for Fernanda."
+    },
+    {
+      "name": "Torishiki",
+      "name_ja": "鳥しき",
+      "area": "Tokyo · Meguro",
+      "genre": "Yakitori",
+      "tabelog": {
+        "score": 4.43,
+        "reviews": 1379,
+        "url": "https://tabelog.com/en/tokyo/A1316/A131601/13041029/",
+        "awards": "Award Gold 2019–22; Silver 2023–26"
+      },
+      "critics": [
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "On the Tokyo tours' list of yakitori at “the level we look for”; Califa filmed it and called it the “Mount Everest of yakitori”.",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went twice (Jun 2016 and May 2019), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "Tokyo's most sought-after yakitori, with a known booking window.",
+      "order": "Skewer omakase.",
+      "pregnancy_note": "Chicken can come pink in the centre (sasami, liver): ask for Fernanda's well done.",
+      "booking": "By phone, 17:00–19:00 (Japan time). The usual pattern is the 1st working day of each month, for the following two months, but its Tabelog page lists the January 2027 window as 18 Nov 2026 (to confirm). Needs a Japanese speaker or a concierge.",
+      "dec_jan": "Opening days for 20–23 Dec and 7–8 Jan: to confirm.",
+      "query": "Torishiki Meguro",
+      "pregnancy": "careful",
+      "booking_channel": "phone",
+      "booking_opens": "Jan window 18 Nov 17:00 JST (to confirm); usually 1st working day monthly",
+      "glance": "Tokyo's most sought-after yakitori; book by phone on 18 Nov (to confirm)."
+    },
+    {
+      "name": "Karashibi Miso Ramen Kikanbo",
+      "name_ja": "鬼金棒",
+      "area": "Tokyo · Kanda (Kajichō)",
+      "genre": "Spicy miso ramen",
+      "tabelog": {
+        "score": 3.72,
+        "reviews": 2848,
+        "url": "https://tabelog.com/en/tokyo/A1310/A131002/13097205/"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Ordered the “devil” level of chilli and sanshō: “one of the most flavorful bowls” (2017).",
+          "url": "https://www.youtube.com/watch?v=jrMsWztL1n8"
+        }
+      ],
+      "why": "Miso ramen with chilli (kara) and sanshō (shibi) at levels you choose. For anyone who likes heat.",
+      "order": "Karashibi miso; pick your kara and shibi levels on the ticket.",
+      "pregnancy_note": "All cooked; Fernanda just goes easy on the chilli if she has heartburn.",
+      "booking": "Ticket machine at the door; queue.",
+      "dec_jan": "Opening days for 20–23 Dec and 7–8 Jan: to confirm.",
+      "query": "Kikanbo Kanda",
+      "pregnancy": "ok",
+      "booking_channel": "queue",
+      "glance": "Spicy miso ramen; you choose the chilli and sanshō levels."
+    },
+    {
+      "name": "Menya Shichisai",
+      "name_ja": "麺屋 七彩",
+      "area": "Tokyo · Hatchōbori",
+      "genre": "Ramen",
+      "tabelog": {
+        "score": 3.78,
+        "reviews": 4766,
+        "url": "https://tabelog.com/en/tokyo/A1302/A130203/13184399/",
+        "awards": "Ramen TOKYO 百名店 2018–2025"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Noodles cut by hand to order: “best of the tour” on his Ginza ramen walk (2017).",
+          "url": "https://www.youtube.com/watch?v=kMVmGjCC8Eo"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went once (Sep 2016), according to his City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "The noodles are cut in front of you, order by order.",
+      "pregnancy_note": "Easy for Fernanda.",
+      "dec_jan": "Opening days for 20–23 Dec and 7–8 Jan: to confirm.",
+      "query": "Menya Shichisai Hatchobori",
+      "pregnancy": "ok",
+      "booking_channel": "queue",
+      "glance": "Ramen with the noodles cut to order in front of you."
+    },
+    {
+      "name": "Yonekyū Honten",
+      "name_ja": "米久本店",
+      "area": "Tokyo · Asakusa",
+      "genre": "Sukiyaki",
+      "tabelog": {
+        "score": 3.61,
+        "reviews": 1314,
+        "url": "https://tabelog.com/en/tokyo/A1311/A131102/13003667/",
+        "awards": "Sukiyaki 百名店 2024"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Sukiyaki in a hundred-year-old tatami house, with a drum at the door (2017). He chose it because it's “an old heritage restaurant that's stood the test of time”.",
+          "url": "https://www.youtube.com/watch?v=f7HIc3B0BLI"
+        }
+      ],
+      "why": "Historic Asakusa sukiyaki; the parents will like the tatami rooms.",
+      "order": "One plate of special beef and one regular, as Mark would do next time.",
+      "pregnancy_note": "Fernanda skips the raw-egg dip and cooks her meat through.",
+      "dec_jan": "Opening days for 20–23 Dec and 7–8 Jan: to confirm (our Asakusa day is 22 Dec).",
+      "query": "Yonekyu Asakusa sukiyaki",
+      "pregnancy": "ok",
+      "booking_channel": "walk-in",
+      "glance": "Historic Asakusa sukiyaki house with tatami rooms."
+    },
+    {
+      "name": "Sanshūya Ginza Honten",
+      "name_ja": "三州屋 銀座本店",
+      "area": "Tokyo · Ginza 2-chōme",
+      "genre": "Fish teishoku",
+      "tabelog": {
+        "score": 3.5,
+        "reviews": 2355,
+        "url": "https://tabelog.com/en/tokyo/A1301/A130101/13002473/",
+        "awards": "Teishoku 百名店 2021"
+      },
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "“one of the best local Japanese restaurants I've ever been to in Tokyo” (2017).",
+          "url": "https://www.youtube.com/watch?v=iszTT9U4OA8"
+        }
+      ],
+      "why": "A fresh-fish lunch with an old-Ginza feel, at neighbourhood prices.",
+      "pregnancy_note": "Fernanda orders grilled, fried or simmered fish instead of sashimi.",
+      "dec_jan": "Opening days for 21–23 Dec and 7–8 Jan: to confirm.",
+      "query": "Sanshuya Ginza",
+      "pregnancy": "ok",
+      "meals": [
+        "lunch"
+      ],
+      "glance": "Old-Ginza fresh-fish lunch at neighbourhood prices."
+    },
+    {
+      "name": "Sushi Hakkoku",
+      "name_ja": "はっこく",
+      "area": "Tokyo · Ginza",
+      "genre": "Sushi",
+      "tabelog": {
+        "score": 3.84,
+        "reviews": 787,
+        "url": "https://tabelog.com/en/tokyo/A1301/A130101/13217157/",
+        "awards": "Award Bronze 2019–25"
+      },
+      "critics": [
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "On the tours' list of sushi at “the level we look for”; Califa filmed with chef Hiro Sato.",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        }
+      ],
+      "why": "The designer sushi on the list that an ordinary family can actually book.",
+      "pregnancy_note": "Tell them when booking and ask for tamago, anago, prawn and cooked fish in place of the raw pieces for Fernanda.",
+      "booking": "Online, up to 2 months ahead; send dietary restrictions in advance.",
+      "dec_jan": "Opening days for 20–23 Dec and 7–8 Jan: to confirm.",
+      "query": "Sushi Hakkoku Ginza",
+      "pregnancy": "careful",
+      "booking_channel": "online",
+      "booking_opens": "2 months ahead",
+      "glance": "Designer sushi that an ordinary family can actually book."
+    }
+  ],
+  "shops": [
+    {
+      "name": "Nihonbashi Kiya (main store)",
+      "name_ja": "日本橋木屋 本店",
+      "what": "Knife-maker since ~1792, in COREDO Muromachi. The one serious knife shop that even opens on 2–3 Jan. Sharpening while you wait.",
+      "buy": "The 團十郎 nakiri (the recommended Chūō-ku souvenir); a gyuto; a copper grater.",
+      "dec_jan": "Open every day except 1 Jan and COREDO inspection days, so all our Tokyo days work. Weekdays 11:00–19:00.",
+      "query": "Nihonbashi Kiya Honten COREDO Muromachi Tokyo"
+    },
+    {
+      "name": "Kama-Asa Shoten",
+      "name_ja": "釜浅商店",
+      "what": "Kappabashi, since 1908. ~80 kinds of knife without the smith's mark (on purpose), plus Nanbu cast iron. Name engraving and good sharpening advice.",
+      "buy": "A V金1号 gyuto (¥16,720–26,180) or 白紙二号; a deba and yanagiba if you want to go further. A #1000/#3000 stone.",
+      "price": "Gyuto ¥16,720–71,390 (online shop, 18 Oct 2026)",
+      "dec_jan": "Shop hours to confirm. Kappabashi's New Year break (~29/30 Dec–4/5 Jan) misses us: go Mon 21 or Tue 22 Dec, or 7–8 Jan.",
+      "query": "Kama-Asa Shoten Kappabashi Tokyo"
+    },
+    {
+      "name": "Tsubaya",
+      "name_ja": "つば屋包丁店",
+      "what": "Nishi-Asakusa, since 1956. 1,000+ knives out of their boxes to hold, including soba-cutting knives. Knives left for sharpening in the morning come back the same day.",
+      "buy": "A soba knife (soba-kiri) for the family cook; sharpening for the knives from home.",
+      "dec_jan": "Opening days for 21–23 Dec and 7–8 Jan: to confirm.",
+      "query": "Tsubaya Hochoten Nishi-Asakusa Tokyo"
+    },
+    {
+      "name": "Ninben + Nihonbashi Dashi Bar",
+      "name_ja": "にんべん 日本橋本店・日本橋だし場",
+      "what": "Katsuobushi since 1699, with a stand-up counter where you drink a cup of dashi. Since 16 Oct 2026 it also serves dashi-amazake and pumpkin potage.",
+      "buy": "Katsuobushi flakes, dashi sachets, furikake.",
+      "dec_jan": "COREDO only closes on 1 Jan, so it should be normal on our dates (Ninben's own dates to confirm).",
+      "query": "Ninben Nihonbashi Honten Dashi Bar Tokyo"
+    },
+    {
+      "name": "Fushitaka",
+      "name_ja": "伏高",
+      "what": "Dashi specialist in the Tsukiji market (6-27-2): katsuobushi, kombu and niboshi supplying ryōtei, izakaya and ramen shops. This is where a cook buys flakes graded by use.",
+      "buy": "Kezuri-bushi for dashi; kombu; niboshi.",
+      "price": "From a few hundred yen a pack",
+      "dec_jan": "6:30–14:30. Closed Sundays, holidays and market days off (23 Dec, and 31 Dec–4 Jan while we're away). So Mon 21 (our Tsukiji morning) or Tue 22 Dec, or 7–8 Jan.",
+      "query": "Fushitaka Tsukiji Tokyo"
+    },
+    {
+      "name": "Uogashi Meicha · Cha Ginza",
+      "name_ja": "うおがし銘茶 茶・銀座",
+      "what": "Ginza tea house (5-5-6) from the Tsukiji wholesalers; it also has counters in Tsukiji, Toyosu and Isetan Shinjuku.",
+      "buy": "Sencha, hōjicha and genmaicha to take home.",
+      "dec_jan": "In December it closes only on Mondays, so not 21 Dec. Last New Year it closed 31 Dec–4 Jan, so it should be open again by 7 Jan. The tea room's status changes: check.",
+      "query": "Uogashi Meicha Cha Ginza Tokyo"
+    },
+    {
+      "name": "Ippodo Tea (Shin-Marunouchi)",
+      "name_ja": "一保堂茶舗 新丸ビル店",
+      "what": "The Kyoto tea house's branch in the Shin-Marunouchi Building, next to Tokyo Station.",
+      "buy": "Matcha, gyokuro and hōjicha; tins for gifts.",
+      "dec_jan": "Hours for 7–8 Jan to confirm. For Fernanda, hōjicha and genmaicha have less caffeine.",
+      "query": "Ippodo Tea Shin-Marunouchi Tokyo"
+    },
+    {
+      "name": "Hasegawa Saketen (GranSta Tokyo)",
+      "name_ja": "はせがわ酒店 グランスタ東京店",
+      "what": "The shop sake people use to find small breweries, inside Tokyo Station. Open right through New Year, which makes it the most dependable stop on our dates.",
+      "buy": "Small-brewery sake to take home; ask for the winter seasonals (shiboritate, nigori). Nothing for Fernanda.",
+      "dec_jan": "In 2025/26 it opened every day, even through New Year (31 Dec 7:00–20:00, 1–3 Jan 8:00–20:00, 4 Jan 7:00–21:00), so all our Tokyo days are safe.",
+      "query": "Hasegawa Saketen GranSta Tokyo Station"
+    },
+    {
+      "name": "Japan Sake and Shochu Information Center",
+      "name_ja": "日本の酒情報館",
+      "what": "Run by the national brewers' association, in Toranomon. ~50 sakes, shōchū and awamori from ¥100 a pour, with no sales push. The cheapest, most neutral tasting in Japan.",
+      "buy": "Flights of 3–4 pours of 30 ml (previously ¥400–700).",
+      "price": "From ¥100",
+      "dec_jan": "Weekdays only, 10:00–18:00; closed weekends, holidays and over New Year. For us: Mon 21–Wed 23 Dec, or Thu 7–Fri 8 Jan.",
+      "query": "Japan Sake and Shochu Information Center Toranomon Tokyo"
+    },
+    {
+      "name": "Isetan Shinjuku (depachika)",
+      "name_ja": "伊勢丹新宿店 本館B1",
+      "what": "The number-one depachika for anyone who cooks: fresh produce and rare ingredients, where the professionals shop. At year's end it holds the 大歳の市, a fair of osechi ingredients (6th floor and B1).",
+      "buy": "Dorayaki from Suzukake, Bunmeido's CONGALI castella, bento from Torisen; bread from RITUEL Le Grain de Blé (百名店 Bread 2026). For New Year: kazunoko, kuromame, kamaboko and datemaki at the 大歳の市.",
+      "dec_jan": "Closed only on 1 Jan, so normal on all our dates; handy on 7 Jan, when the train from Kawaguchiko arrives in Shinjuku. The 大歳の市 ran until 31 Dec in 2025 (9:00–17:00 that day); 2026 dates still to be announced, so whether it's on during 20–23 Dec is to confirm. Online osechi orders close 21 Dec at 10:00, but we'd need it delivered to Kyoto (to confirm).",
+      "query": "Isetan Shinjuku depachika Tokyo"
+    },
+    {
+      "name": "Nihonbashi Mitsukoshi (depachika)",
+      "name_ja": "日本橋三越本店 本館B1",
+      "what": "The most complete, best-balanced depachika, with counters to eat sushi, eel and tempura. 菓遊庵 gathers regional wagashi from all over Japan.",
+      "buy": "Wagashi from regions you won't visit (菓遊庵); osechi.",
+      "dec_jan": "Closed only on 1 Jan, so normal on our dates. Online osechi orders close 21 Dec at 10:00 and need a delivery address in Japan (a hotel concierge can receive it); for us it would have to reach Kyoto for New Year: to confirm.",
+      "query": "Nihonbashi Mitsukoshi depachika Tokyo"
+    },
+    {
+      "name": "Nihonbashi Takashimaya (osechi)",
+      "name_ja": "日本橋髙島屋",
+      "what": "A big floor of sozai (ready dishes). The simplest osechi route for anyone in Tokyo at New Year: order in the store and collect on 31 Dec. We'll be in Kyoto, so for us it's a food hall.",
+      "buy": "A 2-tier osechi box (¥20–60k) topped up with loose items, only if it can reach us in Kyoto.",
+      "price": "Osechi ¥20,000–60,000",
+      "dec_jan": "In-store orders until Thu 24 Dec, but collection is 31 Dec on the 8th floor, 11:30–16:00, when we're in Kyoto; online orders until 25 Dec at 10:00 (delivery to Kyoto to confirm). Closed 1–2 Jan, so normal on 20–23 Dec and 7–8 Jan.",
+      "query": "Nihonbashi Takashimaya Tokyo"
+    },
+    {
+      "name": "Kuya",
+      "name_ja": "空也",
+      "what": "Ginza monaka. Tabelog 3.80 (2,294), 百名店 wagashi 2026.",
+      "buy": "Kuya monaka.",
+      "dec_jan": "A phone booking is said to be needed (to confirm): book a pick-up on 21–23 Dec or 7–8 Jan; opening days to confirm.",
+      "query": "Kuya monaka Ginza Tokyo"
+    },
+    {
+      "name": "Usagiya",
+      "name_ja": "うさぎや",
+      "what": "The dorayaki every other is judged by, in Ueno-Hirokōji. Tabelog 3.85 (4,006).",
+      "buy": "Dorayaki (take several back to the hotel).",
+      "price": "Under ¥1,000",
+      "dec_jan": "Closed Wednesdays, so not 23 Dec: Tue 22 Dec, our Ueno day, works, as do 7–8 Jan. Book if you're collecting after 16:00.",
+      "query": "Usagiya dorayaki Ueno Tokyo"
+    },
+    {
+      "name": "Takemura",
+      "name_ja": "竹むら",
+      "what": "A sweet house in a pre-war wooden building, next to Kanda Matsuya and Kanda Yabu. Tabelog 3.76 (1,680), 百名店 wagashi 2023/2026. Winter food; 44 seats at tables, so six fit easily and seven may need two tables side by side.",
+      "buy": "Awa-zenzai (millet with hot anko) and age-manjū to eat there.",
+      "price": "Under ¥1,000",
+      "dec_jan": "Closed Sun/Mon/holidays, so not 20 or 21 Dec: Tue 22, Wed 23 Dec or 7–8 Jan.",
+      "query": "Takemura Kanda Awajicho Tokyo"
+    },
+    {
+      "name": "Inamura Shōzō",
+      "name_ja": "イナムラショウゾウ",
+      "what": "The best pâtisserie on the Yanaka circuit. Tabelog 3.83 (1,553), 百名店 Sweets 2023/2026. Takeaway only.",
+      "buy": "Cakes and chocolates; Christmas cakes to order.",
+      "price": "¥1,000–1,999",
+      "dec_jan": "Closed Mon/Tue and the 3rd Tuesday, so not 21 or 22 Dec: Sun 20 or Wed 23 Dec, or 7–8 Jan. Christmas cakes are made to order; a pick-up on the 23rd (the 24th is a travel morning for us) would need asking.",
+      "query": "Inamura Shozo Yanaka Tokyo"
+    },
+    {
+      "name": "VIRON Marunouchi",
+      "name_ja": "VIRON 丸の内店",
+      "what": "French bakery next to the Marunouchi hotels. Tabelog 3.86 (2,884), 百名店 Bread 2017–2026.",
+      "buy": "Rétrodor baguette, viennoiserie for breakfast.",
+      "dec_jan": "Hours for our dates to confirm; it would be handy for breakfast before the train on 24 Dec if it opens early enough.",
+      "query": "VIRON Marunouchi Tokyo"
+    },
+    {
+      "name": "Pelican",
+      "name_ja": "パンのペリカン",
+      "what": "A Tawaramachi (Asakusa) bakery that only makes sandwich loaves and rolls. Tabelog 3.79 (2,330).",
+      "buy": "A whole loaf (check whether you need to book by phone).",
+      "dec_jan": "Their year-end calendar goes up on their website: check it for 21–23 Dec and 7–8 Jan.",
+      "query": "Pelican bakery Tawaramachi Tokyo"
+    },
+    {
+      "name": "Kanda Yabu Soba (New Year's Eve soba)",
+      "name_ja": "かんだやぶそば",
+      "what": "Soba house since 1880, 97 seats on two floors, orders sung out. Tabelog 3.49 (2,793), 百名店 2021. The biggest of the old soba houses, so the most likely to seat a group together; it also sells toshikoshi soba to take away.",
+      "buy": "Seiro and tempura soba in the dining room. (The New Year soba to take away, booked by 30 Dec at 20:00 under the 2025 rule, is for people in Tokyo on the 31st; we're in Kyoto.)",
+      "price": "¥1,000–2,000",
+      "dec_jan": "Closed Wednesdays, so not 23 Dec. Normal hours from 4 Jan, so 7–8 Jan are fine. Its big New Year's Eve (in 2025: 9:30–22:30, takeaway counter 9:00–18:00) happens while we're in Kyoto. Check the website in December.",
+      "query": "Kanda Yabu Soba Awajicho Tokyo"
+    },
+    {
+      "name": "Owariya (New Year's Eve soba in Asakusa)",
+      "name_ja": "尾張屋 本店",
+      "what": "Late-Edo Asakusa soba house, famous for its giant prawn. Tabelog 3.49 (1,155). The New Year's Eve choice for anyone near Sensō-ji; for us, a lunch on our Asakusa day (22 Dec).",
+      "buy": "Tempura soba; at the souvenir counter, raw or cooked soba with tempura for three, no booking.",
+      "price": "¥1,000–4,000",
+      "dec_jan": "Its 31 Dec hours (11:30–21:30, Tabelog notice) and 1 Jan closure happen while we're away; regular days off for our dates to confirm. Cash only.",
+      "query": "Owariya Honten Asakusa Tokyo"
+    },
+    {
+      "name": "Tour: Yukari Sakamoto (Food Sake Tokyo)",
+      "what": "A tour of depachika and markets with the best-credentialled guide we found: chef, sommelier, former sake sommelier at Takashimaya Nihonbashi, author of *Food Sake Tokyo*. Depachika, Nihonbashi markets, antenna shops, supermarkets, Tsukiji.",
+      "buy": "Ideal for Pedro and Fernanda: walking only, at an easy pace.",
+      "price": "From ¥36,000 for 2 h; max. 2 people; weekday mornings",
+      "dec_jan": "Weekday mornings: Mon 21–Wed 23 Dec or Fri 8 Jan (on the 7th we're still on the train from the lake, and on the 24th we leave). For all seven, ask about a private booking (not published). Write now.",
+      "query": "Food Sake Tokyo Yukari Sakamoto"
+    },
+    {
+      "name": "Tour: Elizabeth Andoh (A Taste of Culture)",
+      "what": "Tokyo's most serious English-language washoku teacher, author of *WASHOKU* and *KANSHA*. She runs tailor-made workshops; an osechi or ozōni session around 28–30 Dec would be the ideal request, but we're away then, so ask for one on 21–23 Dec or 8 Jan instead.",
+      "buy": "Ask for a private osechi/ozōni workshop for the family.",
+      "dec_jan": "Dec–Jan dates and prices aren't published: ask through the tailor-made programmes page, naming 21–23 Dec or 8 Jan.",
+      "query": "A Taste of Culture Elizabeth Andoh Tokyo"
+    },
+    {
+      "name": "Tour: Tsukiji Cooking",
+      "what": "Market tour + class (sushi, teriyaki fish, miso soup), 10:00–13:00. Competent and easy in English, but a tourist menu and unnamed instructors: it's for the family experience, not for depth.",
+      "buy": "A private class for the family (1–10 people, so all seven fit).",
+      "price": "¥17,600 pp with tour · ¥15,400 class only · private ¥154,000–176,000 (1–10 people); holidays +¥22,000",
+      "dec_jan": "Its 10:00–13:00 slot fits 21–23 Dec or 8 Jan (not 7 Jan, when we're travelling back); dates to confirm. Ask for cooked or seared neta in Fernanda's sushi.",
+      "query": "Tsukiji Cooking Tokyo"
+    },
+    {
+      "name": "Toyosu Market: the tuna auction",
+      "name_ja": "豊洲市場",
+      "what": "A free visit to the tuna auction. The lower deck is by lottery (100 people a day, max. 5 per application: the seven of us need two). There's no lottery for 25 Dec–5 Jan, so the first auction (5 Jan) is only from the 2nd-floor glass corridor, no booking, from 5:00. Any tour selling “deck access” on 5 Jan is a scam.",
+      "buy": "Our options: Mon 21 or Tue 22 Dec (the market is closed on the 20th and 23rd), or the deck on Fri 8 Jan (the January lottery covers 6, 7 and 8 Jan and opens ~2–8 Dec; meeting point 5:30). The 6th and 7th don't work for us: we're at Kawaguchiko.",
+      "price": "Free",
+      "dec_jan": "Closed 1–4 Jan; first market day (初市) Tue 5 Jan, while we're at the lake. For Fernanda the problem is 5 a.m., cold and a lot of standing: she can join the group afterwards for a cooked breakfast.",
+      "query": "Toyosu Market Tokyo"
+    },
+    {
+      "name": "Sunamachi Ginza (osechi shopping)",
+      "name_ja": "砂町銀座商店街",
+      "what": "A shopping street in Kōtō where Japanese families still buy everything for osechi, which Ameyoko no longer is. Highlights: 増英蒲鉾店 (oden ingredients since 1970, constant queue) and 魚勝.",
+      "buy": "Oden-dane and osechi items. Its year-end peak (28–29 Dec mornings) is while we're in Kanazawa, so for us it's a weekday morning on 21–23 Dec.",
+      "dec_jan": "~10:00–19:00; year-end hours to confirm. It's ~20 min on foot from the station: take a taxi.",
+      "query": "Sunamachi Ginza Shotengai Koto Tokyo"
+    }
+  ]
+}

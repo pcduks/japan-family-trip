@@ -1,0 +1,254 @@
+{
+  "slug": "hakone",
+  "name": "Hakone",
+  "tagline": "A pass on the old Tōkaidō road: mountain-water soba, black volcano eggs and the area's best eel.",
+  "history": [
+    "Hakone was the hardest pass on the Tōkaidō, the road between Edo and Kyoto, with a shogunate checkpoint. Travellers stopped at teahouses on the climb; Amazake-chaya, on the old stone road, still serves amazake and mochi.",
+    "The food is hot-spring-village food: kaiseki dinner at the ryokan, tofu and yuba made with the good mountain water in Yumoto, soba, and at the gateway in Odawara, the castle town's kamaboko and eel. At Ōwakudani, eggs boiled in the volcanic water come out black (a Maillard reaction, not sulphur) and promise 'seven extra years of life'."
+  ],
+  "winter": "Clear, cold days with Fuji in view. Note: the Hakone Ekiden race closes roads on 2–3 Jan. Mikan from the Odawara coast are in season.",
+  "meibutsu": [
+    {
+      "name": "Eel (unagi)",
+      "name_ja": "うなぎ",
+      "romaji": "unagi",
+      "what": "Eel grilled in a sweet sauce over rice.",
+      "where": "Unagi-tei Tomoei, in Kazamatsuri, the highest-rated restaurant in the area.",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_note": "Cooked, so fine. The liver (kimo) is rich in vitamin A: Fernanda skips it.",
+      "glance": "Eel grilled in a sweet sauce over rice; the area's star.",
+      "story": "The best-rated restaurant around Hakone isn't in Hakone at all. It's Tomoei, an eel house in Kazamatsuri, Odawara, at 4.41 on Tabelog with over 3,700 reviews. Unagi is eel grilled in a sweet sauce and laid over rice; order the unajū. It's cooked, so it's fine for Fernanda, though she should keep the liver (kimo) small, because it's rich in vitamin A."
+    },
+    {
+      "name": "Hakone soba",
+      "name_ja": "箱根のそば",
+      "romaji": "soba",
+      "what": "Cold soba from a mountain house.",
+      "where": "Takeyabu Hakone.",
+      "must": true,
+      "pregnancy": "ok",
+      "glance": "Cold soba from a mountain house at the top of the lake.",
+      "story": "Hakone was the hardest pass on the Tōkaidō, the old road between Edo and Kyoto, and travellers stopped at teahouses on the climb. Soba belongs to that mountain table. Takeyabu, at Kojiri near the Ubako ropeway, has made Tabelog's top-100 soba list year after year. Order seiro soba: cold noodles on a bamboo tray. Dip a mouthful at a time in the sauce."
+    },
+    {
+      "name": "Ōwakudani black egg",
+      "name_ja": "黒たまご",
+      "romaji": "kuro-tamago",
+      "what": "An egg boiled in the volcanic spring water, with a black shell.",
+      "where": "Ōwakudani.",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_note": "Hard-boiled. Fine for Fernanda.",
+      "glance": "An egg boiled in volcanic spring water until the shell turns black.",
+      "story": "At Ōwakudani, a high valley of volcanic steam vents, eggs are boiled in the spring water and come out with black shells. It's a Maillard reaction, not sulphur. Legend promises seven extra years of life. Peel it and eat it: inside it's a hard-boiled egg, so Fernanda can have one too. Check the valley is open before going, because volcanic gas sometimes closes it."
+    },
+    {
+      "name": "Yuba and tofu",
+      "name_ja": "湯葉・豆腐",
+      "romaji": "yuba, tōfu",
+      "what": "Soy-milk skin and tofu made with Hakone's water.",
+      "where": "Yuba-don Naokichi, in Yumoto.",
+      "must": false,
+      "pregnancy": "careful",
+      "pregnancy_note": "The yuba-don is finished with a soft egg. For Fernanda: ask for the egg cooked firm.",
+      "glance": "Soy-milk skin and tofu made with Hakone's mountain water."
+    },
+    {
+      "name": "Old-road amazake and mochi",
+      "name_ja": "甘酒・力餅",
+      "romaji": "amazake, chikara-mochi",
+      "what": "The hot rice-and-kōji drink travellers had on the climb.",
+      "where": "Amazake-chaya.",
+      "must": false,
+      "pregnancy": "ok",
+      "pregnancy_note": "Kōji amazake has no alcohol; check at the shop.",
+      "glance": "Hot rice-and-kōji drink, as travellers had it on the old road."
+    },
+    {
+      "name": "Odawara kamaboko",
+      "name_ja": "小田原かまぼこ",
+      "romaji": "Odawara kamaboko",
+      "what": "Steamed fish paste, firm and white.",
+      "where": "Odawara shops.",
+      "must": false,
+      "pregnancy": "ok",
+      "glance": "Firm, white steamed fish paste from the castle town of Odawara."
+    },
+    {
+      "name": "Ryokan kaiseki",
+      "name_ja": "懐石",
+      "romaji": "kaiseki",
+      "what": "The multi-course dinner included in the stay.",
+      "where": "Our ryokan. Mark Wiens stayed at Yoshiike Ryokan (kaiseki and a private onsen).",
+      "must": true,
+      "pregnancy": "careful",
+      "pregnancy_note": "For Fernanda: tell them in advance. No raw shellfish, no shirako, meat well cooked.",
+      "glance": "The multi-course dinner included with our ryokan stay.",
+      "story": "Hakone is a hot-spring village, and its great meal is the one you don't leave the building for: kaiseki at the ryokan, included in the stay. It comes as a long run of small courses. Mark Wiens stayed at Yoshiike Ryokan, with kaiseki and a private onsen. Tell our ryokan about Fernanda in advance: no raw shellfish, no shirako, meat well cooked. Then sit back and let it come."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Hakone-Yumoto",
+      "name_ja": "箱根湯本",
+      "kind": "street",
+      "story": "The shopping street at the gateway station, with sweets, tofu and kamaboko.",
+      "eat": [
+        "Yuba-don",
+        "Sweets at Chimoto and Kikukawa"
+      ],
+      "tips": "Packed in the afternoon; go early.",
+      "dec_jan": "Very busy over New Year, and the Ekiden traffic is on 2–3 Jan; on the Hakone alternatives we arrive 5 Jan, after both.",
+      "query": "Hakone Yumoto shopping street",
+      "glance": "The gateway shopping street: sweets, tofu, yuba and kamaboko."
+    },
+    {
+      "name": "Ōwakudani",
+      "name_ja": "大涌谷",
+      "kind": "neighbourhood",
+      "story": "A valley of volcanic steam vents, high up.",
+      "eat": [
+        "Kuro-tamago"
+      ],
+      "tips": "Access can close because of volcanic gas; check before going.",
+      "dec_jan": "To confirm for 5–7 Jan.",
+      "query": "Owakudani",
+      "glance": "A high valley of volcanic steam, famous for black eggs."
+    },
+    {
+      "name": "Odawara and Kazamatsuri",
+      "name_ja": "小田原・風祭",
+      "kind": "neighbourhood",
+      "story": "The castle town at Hakone's door.",
+      "eat": [
+        "Eel at Tomoei",
+        "Kamaboko"
+      ],
+      "tips": "An eel lunch on the way in.",
+      "dec_jan": "Tomoei closes Thursdays and Fridays, so the eel lunch fits on the way in on Tue 5 Jan (or Wed 6), not Thu 7 Jan. Post-New Year hours to confirm.",
+      "query": "Kazamatsuri Odawara",
+      "glance": "The castle town at Hakone's door; eel lunch at Tomoei."
+    }
+  ],
+  "places": [
+    {
+      "name": "Unagi-tei Tomoei",
+      "name_ja": "うなぎ亭 友栄",
+      "area": "Odawara · Kazamatsuri",
+      "genre": "Unagi",
+      "price": "¥8–15k",
+      "tabelog": {
+        "score": 4.41,
+        "reviews": 3715,
+        "url": "https://tabelog.com/kanagawa/A1410/A141001/14001626/",
+        "awards": "Tabelog Award Silver 2023–26, Bronze 2019–22; うなぎ 百名店 2018–2026"
+      },
+      "why": "The highest-rated restaurant in the Hakone area. Worth the stop on its own.",
+      "order": "Unajū.",
+      "pregnancy_note": "Fine; for Fernanda, skip the kimo (eel liver, too much vitamin A).",
+      "group": "69 seats with rooms for 6: ask whether a seventh chair fits, or split 4+3.",
+      "booking": "Eel reservations by phone, up to 2 months ahead.",
+      "dec_jan": "10:00–16:00; closed Thursdays and Fridays. For us: Tue 5 or Wed 6 Jan, not Thu 7. Post-New Year hours to confirm.",
+      "query": "Unagi-tei Tomoei Odawara",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Logged as “Tomoei” in Odawara, Sep 2016 (once), per City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Thu",
+        "Fri"
+      ],
+      "meals": [
+        "lunch"
+      ],
+      "booking_channel": "phone",
+      "booking_opens": "2 months ahead",
+      "glance": "The Hakone area's highest-rated restaurant: unajū worth the detour."
+    },
+    {
+      "name": "Takeyabu Hakone",
+      "name_ja": "竹やぶ 箱根店",
+      "area": "Kojiri, near the Ubako ropeway",
+      "genre": "Soba",
+      "price": "¥2–3k",
+      "tabelog": {
+        "score": 3.68,
+        "reviews": 824,
+        "url": "https://tabelog.com/kanagawa/A1410/A141001/14001257/",
+        "awards": "そば 百名店 2021, 2022, EAST 2024, 2025"
+      },
+      "why": "Serious soba at the top of the lake.",
+      "order": "Seiro soba.",
+      "pregnancy_note": "Fine.",
+      "group": "22 seats; say we're seven.",
+      "booking": "Online.",
+      "dec_jan": "Closed Wednesdays (6 Jan), so Tue 5 or Thu 7 Jan. Post-New Year hours to confirm.",
+      "query": "Takeyabu Hakone",
+      "pregnancy": "ok",
+      "seven": "yes",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "booking_channel": "online",
+      "glance": "Serious soba at the top of the lake, by the ropeway."
+    },
+    {
+      "name": "Yuba-don Naokichi",
+      "name_ja": "湯葉丼 直吉",
+      "area": "Hakone-Yumoto",
+      "genre": "Tofu, yuba",
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 1408,
+        "url": "https://tabelog.com/kanagawa/A1410/A141001/14007598/"
+      },
+      "why": "Under 3.5 (figure from a search snippet), but it's the light lunch in Yumoto.",
+      "order": "Yuba-don.",
+      "pregnancy_note": "For Fernanda: ask for the egg cooked firm.",
+      "group": "To confirm.",
+      "booking": "To confirm.",
+      "dec_jan": "Hours on 5–7 Jan to confirm.",
+      "query": "Yuba-don Naokichi Hakone",
+      "pregnancy": "careful",
+      "glance": "The light yuba-don lunch in Yumoto."
+    }
+  ],
+  "shops": [
+    {
+      "name": "Chimoto Ekimae-dōri",
+      "name_ja": "ちもと 駅前通り店",
+      "what": "A Yumoto sweet shop, Tabelog 3.71, 和菓子 EAST 百名店 2026.",
+      "buy": "Sweets to take away.",
+      "dec_jan": "Hours on 5–7 Jan to confirm.",
+      "query": "Chimoto Hakone Yumoto"
+    },
+    {
+      "name": "Kikukawa Shōten",
+      "name_ja": "菊川商店",
+      "what": "A Yumoto sweet shop, Tabelog 3.67, 和菓子 EAST 百名店 2026.",
+      "buy": "Warm street sweets.",
+      "dec_jan": "Hours on 5–7 Jan to confirm.",
+      "query": "Kikukawa Shoten Hakone"
+    },
+    {
+      "name": "Amazake-chaya",
+      "name_ja": "甘酒茶屋",
+      "what": "A teahouse on the old road, Tabelog 3.67, 和菓子 EAST 百名店 2026.",
+      "buy": "Amazake and chikara-mochi.",
+      "dec_jan": "Hours on 5–7 Jan to confirm.",
+      "query": "Amazake Chaya Hakone"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "docs/research/food/11-critics-international.md",
+    "https://www.youtube.com/watch?v=hJht8LYvHwk",
+    "https://ja.wikipedia.org/wiki/大涌谷"
+  ]
+}

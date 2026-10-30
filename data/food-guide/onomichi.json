@@ -1,0 +1,210 @@
+{
+  "slug": "onomichi",
+  "name": "Onomichi",
+  "tagline_pt": "Cidade de ladeiras e templos no estreito: o ramen de shōyu com gordura de porco boiando é a razão de parar aqui.",
+  "history_pt": [
+    "Onomichi é porto do mar interior, espremido entre o morro dos templos e o estreito que separa a ilha de Mukaishima. O ramen local tem duas linhagens. A primeira vem das barracas do pós-guerra: em 1947 Shu Ashun, de Taiwan, vendia chūka soba num yatai e depois abriu o lendário Shukaen, de caldo de shōyu, macarrão achatado e pedacinhos de gordura de porco (seabura) boiando. O Shukaen fechou em 2019; parentes dos antigos donos abriram o Chūka Soba Shu em 2020.",
+    "A segunda linhagem é comercial. Nos anos 1990 uma fábrica de petiscos de Fukuyama, a Amo Chinmi, vendeu 'ramen de Onomichi' de lembrança, com caldo de frango e peixinho seco, e foi esse estilo que espalhou o nome pelo Japão. Nas casas antigas o prato ainda se chama só chūka soba."
+  ],
+  "winter_pt": "Inverno ameno e seco no mar interior. Época de peixe do Seto (polvo, linguado, tai) e de cítricos das ilhas. Um ramen quente depois de subir a ladeira dos templos é a pedida.",
+  "meibutsu": [
+    {
+      "name_pt": "Ramen de Onomichi",
+      "name_ja": "尾道ラーメン",
+      "romaji": "Onomichi rāmen",
+      "what_pt": "Caldo claro de shōyu, com peixe e frango ou porco, macarrão achatado e cubinhos de gordura de porco boiando. Leve na aparência, gordo na boca.",
+      "where_pt": "Maruboshi, Ichibankan, Tsutafuji, Chūka Soba Shu.",
+      "price_pt": "¥700–1.000",
+      "must": true
+    },
+    {
+      "name_pt": "Onomichi-yaki",
+      "name_ja": "尾道焼き",
+      "romaji": "Onomichi-yaki",
+      "what_pt": "A okonomiyaki local, que costuma levar moela de frango (sunagimo) e lula frita no recheio (confirme no balcão).",
+      "where_pt": "Okonomiyaki Murakami (百名店 2025).",
+      "price_pt": "A confirmar",
+      "must": false
+    },
+    {
+      "name_pt": "Peixe do mar interior",
+      "name_ja": "瀬戸内の魚",
+      "romaji": "Setouchi no sakana",
+      "what_pt": "Polvo, linguado, tai e peixinhos fritos inteiros nos izakaya do porto.",
+      "where_pt": "Izakaya do centro e da estação.",
+      "price_pt": "A confirmar",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Ela fica com o peixe frito, grelhado ou cozido."
+    },
+    {
+      "name_pt": "Cítricos das ilhas",
+      "name_ja": "柑橘",
+      "romaji": "kankitsu",
+      "what_pt": "Limões e mikan das ilhas da Shimanami, em suco, doce e geleia.",
+      "where_pt": "Lojas da Hon-dōri.",
+      "price_pt": "¥300–1.000",
+      "must": false
+    },
+    {
+      "name_pt": "Ramen de lembrança",
+      "name_ja": "尾道ラーメン（おみやげ）",
+      "romaji": "Onomichi rāmen omiyage",
+      "what_pt": "O kit em caixa que espalhou o nome pelo Japão nos anos 1990.",
+      "where_pt": "Lojas de lembrança da estação.",
+      "price_pt": "≈¥1.000",
+      "must": false
+    },
+    {
+      "name_pt": "Chūka soba antigo",
+      "name_ja": "中華そば",
+      "romaji": "chūka soba",
+      "what_pt": "Nas casas mais velhas não há 'ramen de Onomichi', há chūka soba, muitas vezes sem a gordura de porco por cima.",
+      "where_pt": "Tsutafuji, Chūka Soba Shu.",
+      "price_pt": "¥700–900",
+      "must": false
+    }
+  ],
+  "areas": [
+    {
+      "name": "Onomichi Hon-dōri",
+      "name_ja": "尾道本通り商店街",
+      "kind": "rua",
+      "story_pt": "Galeria comprida paralela ao porto, com lojas antigas, cafés e casas de ramen.",
+      "eat_pt": [
+        "Ramen",
+        "Cítricos e doces",
+        "Café no caminho"
+      ],
+      "tips_pt": "Faça ramen às 11h, antes da fila do almoço.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Onomichi Hondori shopping street"
+    },
+    {
+      "name": "Frente da estação e porto",
+      "name_ja": "尾道駅前・海岸通り",
+      "kind": "bairro",
+      "story_pt": "A orla do estreito, com ferry para Mukaishima e casas de ramen a poucos minutos da estação.",
+      "eat_pt": [
+        "Ramen perto da estação",
+        "Lembranças"
+      ],
+      "tips_pt": "Boa base para encaixar o ramen entre trens.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Onomichi Station waterfront"
+    }
+  ],
+  "places": [
+    {
+      "name": "Onomichi Ramen Maruboshi",
+      "area": "Onomichi",
+      "genre_pt": "Ramen de Onomichi",
+      "tabelog": {
+        "score": 3.59,
+        "reviews": 1029,
+        "url": "https://tabelog.com/en/hiroshima/A3406/A340302/34022638/"
+      },
+      "why_pt": "O número 1 do ranking de ramen de Onomichi no Tabelog.",
+      "order_pt": "Ramen.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Onomichi Ramen Maruboshi"
+    },
+    {
+      "name": "Ichibankan",
+      "name_ja": "壱番館",
+      "area": "Onomichi",
+      "genre_pt": "Ramen de Onomichi",
+      "tabelog": {
+        "score": 3.56,
+        "reviews": 1187,
+        "url": "https://tabelog.com/en/hiroshima/A3406/A340302/34000116/",
+        "awards": "Michelin Hiroshima (segundo o Tabelog)"
+      },
+      "why_pt": "Listado no Guia Michelin de Hiroshima, segundo o Tabelog.",
+      "order_pt": "Ramen.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Ichibankan Onomichi ramen"
+    },
+    {
+      "name": "Tsutafuji",
+      "name_ja": "つたふじ",
+      "area": "Onomichi",
+      "genre_pt": "Chūka soba",
+      "tabelog": {
+        "score": 3.53,
+        "reviews": 496,
+        "url": "https://tabelog.com/en/hiroshima/A3406/A340302/34000081/"
+      },
+      "why_pt": "Balcão antigo de chūka soba, só de dia.",
+      "order_pt": "Chūka soba.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "11 lugares no balcão: dividam.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "11h–16h. Ano-Novo a confirmar.",
+      "query": "Tsutafuji Onomichi"
+    },
+    {
+      "name": "Chūka Soba Shu",
+      "name_ja": "中華そば 朱",
+      "area": "Onomichi",
+      "genre_pt": "Chūka soba (linhagem Shukaen)",
+      "tabelog": {
+        "score": 3.53,
+        "reviews": 432,
+        "url": "https://tabelog.com/en/hiroshima/A3406/A340302/34027716/"
+      },
+      "why_pt": "O herdeiro do lendário Shukaen, de parentes dos antigos donos: a parada para quem quer a história.",
+      "order_pt": "Chūka soba.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Chuka Soba Shu Onomichi"
+    },
+    {
+      "name": "Okonomiyaki Murakami",
+      "name_ja": "お好み焼 村上",
+      "area": "Onomichi",
+      "genre_pt": "Onomichi-yaki",
+      "tabelog": {
+        "url": "https://tabelog.com/hiroshima/A3406/A340302/34002148/",
+        "awards": "Okonomiyaki 百名店 2025"
+      },
+      "why_pt": "Onomichi-yaki de 百名店. Nota a confirmar.",
+      "order_pt": "Onomichi-yaki.",
+      "pregnancy_pt": "Ok.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "A confirmar.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Okonomiyaki Murakami Onomichi"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Amo Chinmi (ramen de lembrança)",
+      "name_ja": "阿藻珍味",
+      "what_pt": "A fabricante de Fukuyama que popularizou o 'ramen de Onomichi' em caixa nos anos 1990.",
+      "buy_pt": "Kit de ramen para casa.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Amo Chinmi Onomichi ramen"
+    },
+    {
+      "name": "Lojas de cítricos da Hon-dōri",
+      "name_ja": "本通り商店街",
+      "what_pt": "Cítricos e doces das ilhas.",
+      "buy_pt": "Suco e geleia de limão e mikan.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Onomichi citrus shop"
+    }
+  ],
+  "sources": [
+    "https://ja.wikipedia.org/wiki/尾道ラーメン",
+    "https://tabelog.com/en/ramen/hiroshima/A3406/A340302/rank/"
+  ]
+}

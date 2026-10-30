@@ -1,0 +1,1291 @@
+{
+  "slug": "kyoto",
+  "name": "Kyoto",
+  "tagline": "A thousand years of court, temple and home cooking: the city where water, kombu and the season decide what's on the plate.",
+  "history": [
+    "Kyoto was the capital for over a thousand years, and it sits far from the sea. So its cooking grew from three things: the soft water of its springs and the Kamo river (good for tofu, yuba, tea and sake), the vegetables of the basin (Shōgoin turnip, Kamo aubergine, Kujō spring onion) and fish that arrived salted or dried. Mackerel came from Wakasa along the \"Saba Kaidō\", a day's walk over the mountains, arriving with just the right amount of salt and ending up in Demachi. Dried herring (migaki nishin) and kombu came down from Hokkaidō on the Kitamaebune ships.",
+    "Kyoto's high cuisine, kyō-ryōri, has several roots: the court banquet (daikyō and yūsoku ryōri, with Chinese influence), the vegetarian shōjin ryōri of the Zen temples, the kaiseki of the tea ceremony, and home cooking. The seasoning is light and clear: usukuchi shōyu, kombu and katsuobushi, so the colour of the vegetables shows.",
+    "At the other end is obanzai, everyday Kyoto home cooking: vegetables simmered with abura-age, hijiki, okara, aubergine with herring. The name spread through an Asahi Shimbun column from 4 Jan 1964, but it already appears in an 1849 recipe book (Nenchū Bansairoku). Kyoto people themselves just call it \"okazu\".",
+    "Nishiki Market, \"Kyoto's kitchen\", presents itself as 400 years old (official site; Japanese Wikipedia traces it to the Heian period, supplying fish to the palace). About 130 shops along 390 m. Kyoto is also home to the three Senke schools of the tea ceremony, and so to wagashi made for each season."
+  ],
+  "winter": "December is the month of senmai-zuke (thin-sliced Shōgoin turnip, a winter pickle), yudōfu, kabura-mushi, and nishin soba as the toshikoshi soba on the 31st. At New Year, Kyoto homes eat white-miso ozōni with round, boiled mochi. Nishiki is packed 28–30 Dec with osechi shopping; we arrive on the 30th, the last of those days.",
+  "meibutsu": [
+    {
+      "name": "Obanzai",
+      "name_ja": "おばんざい",
+      "romaji": "obanzai",
+      "what": "Kyoto home cooking: platters on the counter of vegetables simmered in dashi (\"taitan\"), okara, hijiki, aubergine with herring. You order by pointing at the dishes.",
+      "where": "Pontochō Masuda (private room for 8) or Oryōri Menami (room for 4–6).",
+      "price": "Dinner ¥8,000–10,000",
+      "must": true,
+      "pregnancy": "ok",
+      "glance": "Kyoto home cooking: simmered vegetables you pick from counter platters.",
+      "story": "The word obanzai only caught on in 1964, through a column in the Asahi Shimbun, yet it already appears in a Kyoto recipe book from 1849. Kyoto people themselves just call it okazu. It's everyday home cooking: vegetables simmered in dashi, okara, hijiki, aubergine with herring, set out on platters along the counter. There's no need to read a menu: you order by pointing at the dishes. Fernanda can eat almost all of it."
+    },
+    {
+      "name": "Hot tofu (yudōfu) and yuba",
+      "name_ja": "湯豆腐・湯葉",
+      "romaji": "yudōfu, yuba",
+      "what": "Tofu warmed in kombu broth, eaten with shōyu and spring onion; yuba is the skin that forms on soy milk, fresh or dried. A legacy of the temples and Kyoto's soft water.",
+      "where": "Nanzenji Junsei (private rooms) or Okutan Kiyomizu; tofu to eat on the bench at Saga Tōfu Morika. Kenji López-Alt had lunch at Yudofu Sagano (Arashiyama) in 2026; that place wasn't checked on Tabelog.",
+      "price": "¥4,000–6,000",
+      "must": true,
+      "pregnancy": "ok",
+      "glance": "Silky tofu warmed in kombu broth; yuba is soy-milk skin.",
+      "story": "Kyoto sits far from the sea, but it has soft spring water, and soft water makes good tofu. Yudōfu is a legacy of the Zen temples, whose cooking was vegetarian. It's simply tofu warmed in kombu broth: lift a piece out and eat it with shōyu and spring onion. Yuba is the skin that forms on soy milk, served fresh or dried. Kenji López-Alt's point: the merit is in the tofu, not the seasoning."
+    },
+    {
+      "name": "Herring soba",
+      "name_ja": "にしんそば",
+      "romaji": "nishin soba",
+      "what": "Hot soba topped with a dried herring fillet simmered in shōyu and sugar until soft and sweet. Created in 1882 by the second owner of Matsuba; it's Kyoto's toshikoshi soba on the 31st.",
+      "where": "Sōhonke Nishin Soba Matsuba (next to the Minamiza theatre).",
+      "price": "¥1,500–2,500",
+      "must": true,
+      "pregnancy": "ok",
+      "glance": "Hot soba topped with a sweet, soft-simmered dried herring.",
+      "story": "Kyoto is far from the sea, so its fish arrived dried: herring came all the way down from Hokkaidō on the Kitamaebune ships. In 1882 the second owner of Matsuba, a soba shop by the Minamiza theatre, laid a dried herring fillet, simmered in shōyu and sugar until soft and sweet, over hot soba. It became Kyoto's toshikoshi soba, the noodles eaten on 31 December. Eat it hot, by the river, on the last days of the year."
+    },
+    {
+      "name": "Pressed mackerel sushi",
+      "name_ja": "鯖寿司",
+      "romaji": "saba-zushi",
+      "what": "Fatty mackerel cured in salt and vinegar on rice, wrapped in kombu. Festival and New Year food, born of the Saba Kaidō.",
+      "where": "Izuu (Gion), or its branches in the depachika (JR Isetan, Daimaru).",
+      "price": "¥2,000–3,000",
+      "must": true,
+      "pregnancy": "careful",
+      "pregnancy_note": "For Fernanda: the mackerel is cured, not cooked. Japanese obstetricians usually allow it and mercury is low, but it's her call. Alternatives at Izuu: anago (cooked conger eel) sushi or inari.",
+      "glance": "Salt-and-vinegar cured mackerel pressed on rice, wrapped in kombu.",
+      "story": "Mackerel reached Kyoto from Wakasa along the Saba Kaidō, the salted-mackerel road, a day's walk over the mountains. It arrived at Demachi with just the right amount of salt. Cured in salt and vinegar, laid on rice and wrapped in kombu, it became saba-zushi, Kyoto's festival and New Year food. Izuu in Gion has made it since 1781. The fish is cured, not cooked, so Fernanda can choose the cooked anago sushi or inari instead."
+    },
+    {
+      "name": "Kyoto pickles",
+      "name_ja": "京漬物",
+      "romaji": "kyō-tsukemono",
+      "what": "The three classics are senmai-zuke (thin-sliced turnip with kombu, a winter pickle), shiba-zuke (aubergine with red shiso) and suguki. December is senmai-zuke season.",
+      "where": "Uchida Tsukemono and Murakami-jū, in Nishiki.",
+      "price": "¥500–2,000 a pack",
+      "must": true,
+      "pregnancy": "ok",
+      "glance": "Kyoto's pickles; December means thin-sliced turnip senmai-zuke.",
+      "story": "Kyoto's cooking grew from the vegetables of its basin, and in winter the star is the Shōgoin turnip. Thin-sliced and pickled with kombu, it becomes senmai-zuke, and December is exactly its season. The other two classics are shiba-zuke, aubergine with red shiso, and suguki. Pickles are fine for Fernanda, apart from the salt. Buy a pack at Uchida Tsukemono or Murakami-jū in Nishiki, and take some home for the family."
+    },
+    {
+      "name": "Wagashi and tea",
+      "name_ja": "京菓子・抹茶",
+      "romaji": "kyō-gashi, matcha",
+      "what": "Sweets made to go with tea, changing with the season. Kyoto is home to the Senke schools; Uji next door made shade-grown tea (matcha) famous and created gyokuro (a method from 1834).",
+      "where": "Kagizen Yoshifusa (kuzu-kiri), Demachi Futaba (mame-mochi), Fuka (fu-manjū), Ippodo Kaboku and Nakamura Tōkichi (tea).",
+      "price": "¥500–2,000",
+      "must": true,
+      "pregnancy": "careful",
+      "pregnancy_note": "For Fernanda: matcha and gyokuro are high in caffeine. One cup a day; hōjicha the rest of the time.",
+      "glance": "Seasonal sweets made to go with Kyoto and Uji tea.",
+      "story": "Kyoto is home to the three Senke schools of the tea ceremony, so its sweets are made to go with tea and change with the season. The tea comes from Uji next door, where the Ashikaga shōguns planted tea gardens. Shading the bushes gave matcha, and in 1834 Uji created gyokuro. At Ippodo the staff teach you to brew it yourself. Fernanda keeps to one cup of matcha or gyokuro; hōjicha the rest of the time."
+    },
+    {
+      "name": "White-miso ozōni",
+      "name_ja": "白味噌雑煮",
+      "romaji": "shiromiso zōni",
+      "what": "Kyoto's soup for 1 January: sweet white miso (saikyō miso) with round mochi that's boiled, not grilled, and kashira-imo taro. It's made at home; almost no restaurant serves it.",
+      "where": "Ask the ryokan or hotel whether the New Year breakfast includes it; or, if we have a kitchen, buy miso, maru-mochi and kashira-imo at Nishiki on the 30th, the day we arrive.",
+      "pregnancy": "ok",
+      "pregnancy_note": "Mochi: cut it into small pieces, especially for the parents.",
+      "glance": "New Year soup: sweet white miso with round, boiled mochi."
+    },
+    {
+      "name": "Kyoto black ramen",
+      "name_ja": "京都ラーメン",
+      "romaji": "Kyōto rāmen",
+      "what": "Dark shōyu with pork fat, born at stalls near the station (Shinpuku Saikan since 1938). The modern style is the opposite: a kombu and katsuo dashi.",
+      "where": "Shinpuku Saikan and Daiichi Asahi (neighbours, near the station); Menya Inoichi for the new style.",
+      "price": "Under ¥1,000",
+      "pregnancy": "ok",
+      "glance": "Dark shōyu ramen with pork fat, born at station stalls."
+    }
+  ],
+  "areas": [
+    {
+      "name": "Nishiki Market",
+      "name_ja": "錦市場",
+      "kind": "market",
+      "story": "\"Kyoto's kitchen\": about 130 shops in a covered arcade 390 m long. The official site says 400 years. Since about 2015 it has filled with skewer stalls for tourists; the old specialists are still there.",
+      "eat": [
+        "Dashimaki tamago from Miki Keiran (egg cooked through)",
+        "Fu-manjū from Fuka (a wagashi 百名店)",
+        "Senmai-zuke at Uchida Tsukemono",
+        "Nabeyaki udon at Fumiya, just off the market",
+        "Knives at Aritsugu (they engrave your name in kanji)"
+      ],
+      "tips": "Go early (9:00–10:30). Many shops close on Wednesdays and Sundays. Skip the octopus-with-quail-egg skewers, wagyu on a stick, raw oysters and sea urchin, and anything with an English-only menu. Signs ask you not to eat while walking.",
+      "dec_jan": "30 Dec, the day we arrive, is the last of the big New Year shopping days (28–30 Dec: kazunoko, kuromame, white miso, mochi, kamaboko): packed, and the most Kyoto moment of the year. It's a Wednesday, when some shops normally close. 31 Dec: not in our notes. 1–3 Jan: most shops closed. 4–5 Jan: most reopen around the 4th, some not until later; shop-by-shop dates to confirm in early December.",
+      "query": "Nishiki Market Kyoto",
+      "glance": "Kyoto's kitchen: a covered food market; go early, skip the skewers."
+    },
+    {
+      "name": "Gion and Pontochō",
+      "name_ja": "祇園・先斗町",
+      "kind": "neighbourhood",
+      "story": "The teahouse and Minamiza theatre districts. Pontochō is an alley of restaurants facing the Kamo river; Gion has the sweet shops and the ryōtei.",
+      "eat": [
+        "Obanzai at Pontochō Masuda",
+        "Nishin soba at Matsuba",
+        "Saba-zushi at Izuu",
+        "Kuzu-kiri at Kagizen Yoshifusa",
+        "Coffee at Francois (Shijō-Kiyamachi)"
+      ],
+      "tips": "Trap: \"dinner with a maiko\" packages and photo menus at the mouth of Pontochō. Book by phone; the hotel can help.",
+      "dec_jan": "31 Dec: Matsuba is packed for New Year's Eve soba, so go on the 30th. That night the Okera-mairi at Yasaka draws a huge crowd.",
+      "query": "Pontocho Kyoto",
+      "glance": "Teahouse districts: obanzai, nishin soba, saba-zushi and Gion sweets."
+    },
+    {
+      "name": "Demachi",
+      "name_ja": "出町",
+      "kind": "neighbourhood",
+      "story": "The end of the Saba Kaidō, the salted-mackerel road from Wakasa. Today it's a residential area where the Kamo and Takano rivers meet, with a shopping arcade (Demachi Masugata).",
+      "eat": [
+        "Mame-mochi from Demachi Futaba (eat it on the riverbank)"
+      ],
+      "tips": "There's a queue at Futaba in the morning; worth it. The mochi only keeps for the day.",
+      "dec_jan": "Futaba closes Tuesdays and the 4th Wednesday: on its usual week it's open 30 Dec, 31 Dec and 4 Jan, and closed 5 Jan. At year-end families queue for New Year mochi. 1–3 Jan: New Year hours to confirm in early December.",
+      "query": "Demachiyanagi Kyoto",
+      "glance": "End of the mackerel road; mame-mochi on the Kamo riverbank."
+    },
+    {
+      "name": "Fushimi (sake district)",
+      "name_ja": "伏見",
+      "kind": "neighbourhood",
+      "story": "A sake district thanks to the groundwater running down from the Momoyama hills. Wooden storehouses along the canal, the Gekkeikan museum and the Teradaya inn.",
+      "eat": [
+        "Gekkeikan Ōkura Museum with a tasting",
+        "A flight of local sakes at Fushimi Yume Hyakushu",
+        "Lunch at Torisei, the Yamamoto Honke brewery's izakaya (rooms for 6+)"
+      ],
+      "tips": "Do it on your own from Chūshojima; no guide needed. For Fernanda: kōji amazake has no alcohol, sake-kasu amazake does. Ask \"麹の甘酒ですか?\".",
+      "dec_jan": "Gekkeikan closes Tuesdays (closed 5 Jan). Torisei closes Mondays (closed 4 Jan). Yume Hyakushu is shut for the year-end and New Year. Fushimi Inari, nearby, is Japan's busiest shrine on 1–3 Jan. Best day for Fushimi: 30 or 31 Dec. 1–3 Jan: New Year hours to confirm in early December.",
+      "query": "Fushimi sake district Kyoto",
+      "glance": "Canal-side sake district: brewery museum, tasting flights, storehouse lunch."
+    },
+    {
+      "name": "Uji",
+      "name_ja": "宇治",
+      "kind": "neighbourhood",
+      "story": "Tea country since the Muromachi period: the Ashikaga shōguns planted tea gardens here, shade growing (already practised around 1600) gave matcha and, in 1834, gyokuro. Byōdō-in is in the middle of town.",
+      "eat": [
+        "Matcha jelly and cha-soba at Nakamura Tōkichi Uji Honten (a house from 1859)",
+        "Buy tea at the family shops by the river"
+      ],
+      "tips": "Skip the matcha-parfait chains on the Byōdō-in street. The tea fields are dormant in December.",
+      "dec_jan": "Nakamura Tōkichi opens every day (New Year hours to confirm in early December). Uji is packed 1–3 Jan: easier on 30 Dec or 4 Jan.",
+      "query": "Uji Kyoto tea",
+      "glance": "Matcha's hometown: Byōdō-in, old tea houses and riverside tea merchants."
+    }
+  ],
+  "places": [
+    {
+      "name": "Kikunoi Honten",
+      "name_ja": "菊乃井 本店",
+      "area": "Kyoto · Higashiyama (Maruyama)",
+      "genre": "Ryōtei kaiseki",
+      "price": "Tabelog range ¥20,000–39,000 + 15% service",
+      "tabelog": {
+        "score": 4.1,
+        "reviews": 611,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26001346/",
+        "awards": "Award Bronze 2018, 2019, 2021–2026; 日本料理 WEST 百名店 2021, 2023, 2025"
+      },
+      "why": "The benchmark Kyoto measures itself by, and the one kaiseki where a family group gets a tatami room with a garden. It kept 3 stars in the Michelin Guide Kyoto-Osaka 2026 (restaurant's own site).",
+      "order": "The seasonal course; let the house lead.",
+      "pregnancy_note": "For Fernanda: there's sashimi and sometimes raw shellfish or sea urchin. Say so when booking: \"妊娠中のため、生もの・生卵は火を通したものに変更をお願いします\".",
+      "group": "Private rooms for 4, 6 and 8+: book the room for 8+, since the 6-room doesn't obviously take seven.",
+      "booking": "Phone or the official site, well ahead.",
+      "dec_jan": "Closed over the year-end and New Year, so shut for most or all of our stay. 30–31 Dec: closed for the year-end break as far as we know. 1–3 Jan: closed. 4–5 Jan: our only chance, if it has reopened. New Year hours to confirm in early December; the exact dates decide whether 4 Jan works.",
+      "query": "Kikunoi Honten Kyoto",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went once (Mar 2015), according to the City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "careful",
+      "seven": "room",
+      "closed_dates": [
+        "2026-12-30",
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03"
+      ],
+      "booking_channel": "online",
+      "website": "https://www.kikunoi.jp/",
+      "glance": "Kyoto's benchmark ryōtei kaiseki; private tatami rooms with a garden."
+    },
+    {
+      "name": "Kōdaiji Wakuden",
+      "name_ja": "高台寺 和久傳",
+      "area": "Kyoto · Higashiyama",
+      "genre": "Kaiseki",
+      "price": "Lunch ¥30,000–39,000 · Dinner ¥50,000–59,000",
+      "tabelog": {
+        "score": 3.94,
+        "reviews": 269,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26000535/",
+        "awards": "Tabelog Award every year 2017–2026 (Silver 2020); 日本料理 WEST 百名店"
+      },
+      "why": "The luxury alternative to Kikunoi, with six private rooms.",
+      "group": "Private rooms, noted as fitting six: ask whether a seventh chair fits.",
+      "booking": "Phone, ahead of time. Closed Sundays.",
+      "dec_jan": "30 Dec: open on its usual schedule. 31 Dec–2 Jan: New Year hours to confirm in early December. 3 Jan: closed (Sunday). 4–5 Jan: open on its usual schedule.",
+      "query": "Kodaiji Wakuden Kyoto",
+      "pregnancy": "careful",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "closed_dates": [
+        "2027-01-03"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "booking_channel": "phone",
+      "glance": "Luxury kaiseki alternative to Kikunoi, with six private rooms."
+    },
+    {
+      "name": "Pontochō Masuda",
+      "name_ja": "先斗町 ますだ",
+      "area": "Kyoto · Pontochō",
+      "genre": "Obanzai and sake",
+      "price": "Dinner ¥8,000–10,000",
+      "tabelog": {
+        "score": 3.51,
+        "reviews": 118,
+        "url": "https://tabelog.com/kyoto/A2601/A260201/26000698/"
+      },
+      "why": "The platters on the counter are the menu. Honest Kyoto home cooking, in a Pontochō house that hasn't turned into a theme park. Listed in the Japanese Michelin guide as a second-generation obanzai place.",
+      "order": "Okara, hijiki, nishin-nasu (aubergine with herring) and whatever is on the platters.",
+      "pregnancy_note": "Almost everything is cooked. For Fernanda: skip only the kizushi (cured raw mackerel).",
+      "group": "The counter only takes 1–3. For seven: book the private room for 8 (there are rooms for 4, 6, 8 and 10–20).",
+      "booking": "Phone.",
+      "dec_jan": "30 Dec: open on its usual schedule. 31 Dec–2 Jan: New Year hours to confirm in early December. 3 Jan: closed (Sunday). 4–5 Jan: open on its usual schedule.",
+      "query": "Pontocho Masuda Kyoto",
+      "pregnancy": "ok",
+      "seven": "room",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "closed_dates": [
+        "2027-01-03"
+      ],
+      "meals": [
+        "dinner"
+      ],
+      "booking_channel": "phone",
+      "glance": "Kyoto home cooking from platters on the counter; a Pontochō classic."
+    },
+    {
+      "name": "Oryōri Menami",
+      "name_ja": "お料理 めなみ",
+      "area": "Kyoto · Kiyamachi-Sanjō",
+      "genre": "Obanzai and izakaya",
+      "price": "Dinner ¥8,000–10,000",
+      "tabelog": {
+        "score": 3.5,
+        "reviews": 338,
+        "url": "https://tabelog.com/kyoto/A2601/A260201/26001266/"
+      },
+      "why": "Plan B to Masuda: the same repertoire, and one private room for 4–6. Opens at 15:00, good for an early dinner.",
+      "order": "The obanzai on the counter; ask the chef to suggest.",
+      "pregnancy_note": "For Fernanda: skip only the sashimi.",
+      "group": "One room for 4–6 (¥3,300 fee): ask whether a seventh fits, or split 4+3.",
+      "booking": "Phone.",
+      "dec_jan": "Closed 30 Dec (Wednesday, its day off). 31 Dec–3 Jan: New Year hours to confirm in early December. 4–5 Jan: open on its usual schedule.",
+      "query": "Oryori Menami Kyoto",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "closed_dates": [
+        "2026-12-30"
+      ],
+      "meals": [
+        "dinner"
+      ],
+      "booking_channel": "phone",
+      "glance": "Obanzai Plan B to Masuda; opens at 15:00 for early dinners."
+    },
+    {
+      "name": "Akagakiya",
+      "name_ja": "赤垣屋",
+      "area": "Kyoto · Kawabata-Nijō",
+      "genre": "Izakaya (oden, simmered dishes, sake)",
+      "price": "¥3,000–4,000",
+      "tabelog": {
+        "score": 3.71,
+        "reviews": 983,
+        "url": "https://tabelog.com/kyoto/A2601/A260302/26001072/",
+        "awards": "居酒屋 百名店 2021, 2022; 居酒屋 WEST 百名店 2024, 2025, 2026"
+      },
+      "why": "Wood, low light, a long counter and serious sake. The izakaya a Kyoto local picks to show you the real thing.",
+      "order": "Oden, the day's simmered dishes, Fushimi sake.",
+      "pregnancy_note": "For Fernanda: oden and simmered dishes are fine; skip the sashimi.",
+      "group": "Book the zashiki or one of the 2 private rooms and ask for seven; the counter takes no bookings.",
+      "booking": "Phone, for the zashiki or a room.",
+      "dec_jan": "30 Dec: open on its usual schedule. 31 Dec–2 Jan: New Year hours to confirm in early December. 3 Jan: closed (Sunday). 4–5 Jan: open on its usual schedule.",
+      "query": "Akagakiya Kyoto",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "closed_dates": [
+        "2027-01-03"
+      ],
+      "booking_channel": "phone",
+      "glance": "Old wood-and-lamplight izakaya: oden, simmered dishes, serious sake."
+    },
+    {
+      "name": "Nanzenji Junsei",
+      "name_ja": "南禅寺 順正",
+      "area": "Kyoto · Nanzenji",
+      "genre": "Yudōfu and tofu kaiseki",
+      "price": "¥4,000–6,000",
+      "tabelog": {
+        "score": 3.5,
+        "reviews": 834,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26001013/"
+      },
+      "why": "The classic Okutan Nanzenji is on hold on Tabelog; Junsei is the practical yudōfu for all seven of us, with a garden and gentle food for the parents and for Fernanda.",
+      "order": "The yudōfu course with yuba and dengaku.",
+      "pregnancy_note": "Everything is cooked.",
+      "group": "Rooms for 2–15: easy for seven.",
+      "booking": "Some courses can be booked just a few days ahead.",
+      "dec_jan": "Closed 30 Dec (Wednesday, its day off). 31 Dec–3 Jan: New Year hours to confirm in early December. 4–5 Jan: open on its usual schedule.",
+      "query": "Nanzenji Junsei Kyoto",
+      "pregnancy": "ok",
+      "seven": "room",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "closed_dates": [
+        "2026-12-30"
+      ],
+      "glance": "All-cooked yudōfu in a Nanzenji garden, with rooms for all seven."
+    },
+    {
+      "name": "Okutan Kiyomizu",
+      "name_ja": "奥丹 清水",
+      "area": "Kyoto · Kiyomizu",
+      "genre": "Yudōfu",
+      "price": "to confirm",
+      "tabelog": {
+        "score": 3.47,
+        "reviews": 435,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26001625/"
+      },
+      "why": "The Okutan house (founded in 1635, according to Japanese guides), with private rooms and bookings.",
+      "pregnancy_note": "Everything is cooked.",
+      "group": "Private rooms: ask for one for seven.",
+      "booking": "Takes bookings.",
+      "dec_jan": "Closed 31 Dec (Thursday, its day off): go on the 30th. 1–3 Jan: New Year hours to confirm in early December. 4–5 Jan: open on its usual schedule.",
+      "query": "Okutan Kiyomizu Kyoto",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Thu"
+      ],
+      "closed_dates": [
+        "2026-12-31"
+      ],
+      "glance": "Yudōfu from the Okutan house, founded 1635; private rooms, bookable."
+    },
+    {
+      "name": "Sōhonke Nishin Soba Matsuba",
+      "name_ja": "総本家にしんそば 松葉 本店",
+      "area": "Kyoto · Shijō-Ōhashi (Minamiza)",
+      "genre": "Nishin soba",
+      "price": "¥1,500–2,500",
+      "tabelog": {
+        "score": 3.48,
+        "reviews": 855,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26001629/"
+      },
+      "why": "The house that invented nishin soba (1882; the shop dates from 1861, according to Kyoto Prefecture). If we want one year-end ritual in Kyoto, this is it: herring soba by the river.",
+      "order": "Hot nishin soba.",
+      "pregnancy_note": "Fine.",
+      "group": "Shared tables; at peak times, split 4+3.",
+      "booking": "No bookings.",
+      "dec_jan": "Open every day. 30 Dec: open, and the easy day to go. 31 Dec: open, but the New Year's Eve queue is long: go at opening. 1–3 Jan: New Year hours to confirm in early December. 4–5 Jan: open.",
+      "query": "Matsuba nishin soba Kyoto",
+      "critics": [
+        {
+          "who": "@migrationology (Mark Wiens)",
+          "note": "Nishin soba in 2015: “a little expensive… very good quality”.",
+          "url": "https://www.youtube.com/watch?v=WiVaC25Gg0I"
+        }
+      ],
+      "pregnancy": "ok",
+      "seven": "split",
+      "closed_weekdays": [],
+      "booking_channel": "walk-in",
+      "glance": "Herring soba at its birthplace by the river; our year-end ritual."
+    },
+    {
+      "name": "Honke Owariya Honten",
+      "name_ja": "本家尾張屋 本店",
+      "area": "Kyoto · Nijō / Karasuma-Oike",
+      "genre": "Soba and soba-mochi",
+      "price": "¥1,000–3,000",
+      "tabelog": {
+        "score": 3.49,
+        "reviews": 640,
+        "url": "https://tabelog.com/kyoto/A2601/A260202/26000657/"
+      },
+      "why": "Kyoto's oldest soba lineage (Muromachi era), supplier to the Imperial Household. But Tabelog marks it 掲載保留, so its status is uncertain. Check the main shop is trading before going.",
+      "pregnancy_note": "For Fernanda: avoid raw-egg toppings (tsukimi).",
+      "group": "It had 92 seats: plenty of room, though one table for seven isn't certain; split 4+3 if needed.",
+      "booking": "No bookings.",
+      "dec_jan": "First check it's trading at all. If it is, the old record says: 30 Dec open; 31 Dec open, and its big New Year's Eve soba day; 1–2 Jan closed; 3–5 Jan open.",
+      "query": "Honke Owariya Kyoto",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went once (Dec 2013), according to the City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_dates": [
+        "2027-01-01",
+        "2027-01-02"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Kyoto's oldest soba lineage, Imperial supplier; check it's still trading."
+    },
+    {
+      "name": "Sobaya Nikora",
+      "name_ja": "蕎麦屋 にこら",
+      "area": "Kyoto · Imadegawa",
+      "genre": "Handmade soba with small dishes",
+      "price": "Lunch ¥3,000–4,000 · Dinner ¥8,000–10,000",
+      "tabelog": {
+        "score": 3.66,
+        "reviews": 327,
+        "url": "https://tabelog.com/kyoto/A2601/A260202/26000514/",
+        "awards": "そば WEST 百名店 2024, 2025"
+      },
+      "why": "Kyoto's modern soba-ya: small dishes with sake (soba-mae), then the noodles. This is where Pedro eats soba if Owariya is closed.",
+      "order": "Soba-mae small dishes, then seiro.",
+      "pregnancy_note": "Fine.",
+      "group": "20 seats: book for seven, or split 4+3.",
+      "booking": "Takes bookings (¥3,500 minimum at dinner).",
+      "dec_jan": "Closed 30 Dec (Wednesday) and 5 Jan (Tuesday), its regular days off. 31 Dec–3 Jan: New Year hours to confirm in early December. 4 Jan: open on its usual schedule.",
+      "query": "Sobaya Nikora Kyoto",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Tue",
+        "Wed"
+      ],
+      "closed_dates": [
+        "2026-12-30",
+        "2027-01-05"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Modern soba-ya: small dishes with sake, then handmade noodles."
+    },
+    {
+      "name": "Hinode Udon",
+      "name_ja": "日の出うどん",
+      "area": "Kyoto · Nanzenji",
+      "genre": "Curry udon",
+      "price": "¥1,000–2,000",
+      "tabelog": {
+        "score": 3.52,
+        "reviews": 687,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26000815/",
+        "awards": "うどん 百名店 2017; うどん WEST 百名店 2020, 2022, 2024"
+      },
+      "why": "The dashi-thickened curry udon Japanese people queue for, near the Philosopher's Path.",
+      "order": "Curry udon.",
+      "pregnancy_note": "Fine.",
+      "group": "40 seats; after the queue, expect to split 4+3.",
+      "booking": "No bookings; queue. Lunch only (until 15:30).",
+      "dec_jan": "30–31 Dec: it takes irregular days off in December, so check. 1–2 Jan: New Year hours to confirm in early December. 3 Jan: closed (Sunday). 4 Jan: closed (first Monday of the month). 5 Jan: open on its usual schedule, lunch only.",
+      "query": "Hinode Udon Kyoto",
+      "pregnancy": "ok",
+      "seven": "split",
+      "closed_weekdays": [
+        "Sun"
+      ],
+      "closed_dates": [
+        "2027-01-03",
+        "2027-01-04"
+      ],
+      "meals": [
+        "lunch"
+      ],
+      "booking_channel": "queue",
+      "glance": "Dashi-thickened curry udon locals queue for, near the Philosopher's Path."
+    },
+    {
+      "name": "Kyō Udon Okakita",
+      "name_ja": "京うどん 生蕎麦 岡北",
+      "area": "Kyoto · Okazaki (Heian)",
+      "genre": "Kyoto udon",
+      "price": "¥1,000–2,000",
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 1670,
+        "url": "https://tabelog.com/kyoto/A2601/A260302/26000919/",
+        "awards": "うどん 百名店 2017–2019; うどん WEST 百名店 2020, 2024"
+      },
+      "why": "Soft udon in a clear kombu broth, the opposite of chewy Sanuki. Kyoto's reference bowl.",
+      "order": "Kitsune (here \"kētsune\") or kasu-jiru udon.",
+      "pregnancy_note": "For Fernanda: the oyakodon comes with soft egg, so ask for \"よく火を通して\" or skip it. Kasu-jiru is made with sake-kasu: she avoids it.",
+      "group": "36 seats; seven together only off-peak, otherwise 4+3.",
+      "booking": "No bookings.",
+      "dec_jan": "Closed 30 Dec (Wednesday) and 5 Jan (Tuesday), its regular days off. 31 Dec: open on its usual schedule. 1–3 Jan: New Year hours to confirm in early December; Heian Jingū nearby is packed then. 4 Jan: open on its usual schedule.",
+      "query": "Okakita udon Kyoto",
+      "pregnancy": "ok",
+      "seven": "split",
+      "closed_weekdays": [
+        "Tue",
+        "Wed"
+      ],
+      "closed_dates": [
+        "2026-12-30",
+        "2027-01-05"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Kyoto's reference udon: soft noodles in a clear kombu broth."
+    },
+    {
+      "name": "Shinpuku Saikan Honten",
+      "name_ja": "新福菜館 本店",
+      "area": "Kyoto · Kyoto Station",
+      "genre": "Kyoto ramen (dark shōyu) and yakimeshi",
+      "price": "Under ¥1,000",
+      "tabelog": {
+        "score": 3.59,
+        "reviews": 4352,
+        "url": "https://tabelog.com/kyoto/A2601/A260101/26000791/",
+        "awards": "ラーメン WEST 百名店 2020, 2021"
+      },
+      "why": "Kyoto's oldest ramen, a stall from 1938 near the station (ASCII). The right order is the black yakimeshi.",
+      "order": "Chūka soba + yakimeshi.",
+      "pregnancy_note": "Fine.",
+      "group": "51 seats over 2 floors; split 4+3.",
+      "booking": "No bookings.",
+      "dec_jan": "Closed 30 Dec (Wednesday, its day off). 31 Dec–3 Jan: New Year hours to confirm in early December. 4–5 Jan: open on its usual schedule.",
+      "query": "Shinpuku Saikan Honten Kyoto",
+      "pregnancy": "ok",
+      "seven": "split",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "closed_dates": [
+        "2026-12-30"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Kyoto's oldest ramen (1938): dark shōyu, and the black yakimeshi."
+    },
+    {
+      "name": "Honke Daiichi Asahi Honten",
+      "name_ja": "本家 第一旭 本店",
+      "area": "Kyoto · Kyoto Station",
+      "genre": "Shōyu-tonkotsu ramen",
+      "price": "Under ¥1,000",
+      "tabelog": {
+        "score": 3.73,
+        "reviews": 7004,
+        "url": "https://tabelog.com/kyoto/A2601/A260101/26000873/",
+        "awards": "ラーメン WEST 百名店 2019–2025"
+      },
+      "why": "Lighter and porkier than Shinpuku next door, and it opens at 6:00: the classic bowl before a train.",
+      "order": "Ramen.",
+      "pregnancy_note": "Fine.",
+      "group": "31 seats; after the queue, split 4+3 at the tables.",
+      "booking": "No bookings; queue.",
+      "dec_jan": "30 Dec: open (from 6:00). 31 Dec: closed (Thursday, its day off). 1–3 Jan: New Year hours to confirm in early December. 4–5 Jan: open on its usual schedule; handy before our train on the 5th.",
+      "query": "Daiichi Asahi Kyoto",
+      "pregnancy": "ok",
+      "seven": "split",
+      "closed_weekdays": [
+        "Thu"
+      ],
+      "closed_dates": [
+        "2026-12-31"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "booking_channel": "queue",
+      "glance": "Porky shōyu ramen from 6:00, the classic bowl before a train."
+    },
+    {
+      "name": "Menya Inoichi",
+      "name_ja": "麺屋 猪一",
+      "area": "Kyoto · Teramachi",
+      "genre": "Dashi shōyu ramen",
+      "price": "¥1,000–2,000",
+      "tabelog": {
+        "score": 3.71,
+        "reviews": 1146,
+        "url": "https://tabelog.com/kyoto/A2601/A260201/26032368/",
+        "awards": "ラーメン WEST 百名店 2023, 2024, 2025"
+      },
+      "why": "Kyoto's \"refined\" ramen, made with kombu and katsuo. For tsukemen instead: Wajo Ryōmen Sugari (3.67, 2,173 reviews, WEST 百名店 2023–2025, https://tabelog.com/kyoto/A2601/A260202/26006820/, 10 seats).",
+      "pregnancy_note": "Fine.",
+      "group": "16 seats: split 4+3.",
+      "booking": "No bookings.",
+      "dec_jan": "Irregular days off, so none of our days is certain: 30 Dec, 31 Dec, 1–3 Jan and 4–5 Jan all need checking. New Year hours to confirm in early December.",
+      "query": "Menya Inoichi Kyoto",
+      "pregnancy": "ok",
+      "seven": "split",
+      "booking_channel": "walk-in",
+      "glance": "Kyoto's refined new-style ramen in kombu and katsuo dashi."
+    },
+    {
+      "name": "Izuu",
+      "name_ja": "いづう",
+      "area": "Kyoto · Gion",
+      "genre": "Saba-zushi and pressed sushi",
+      "price": "¥2,000–3,000",
+      "tabelog": {
+        "score": 3.69,
+        "reviews": 1177,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26000585/"
+      },
+      "why": "The definitive version of Kyoto's festive food, fatty mackerel on rice wrapped in kombu, since 1781 (Keihan).",
+      "order": "Saba sugata-zushi; anago or inari for Fernanda.",
+      "pregnancy_note": "For Fernanda: the mackerel is cured, not cooked, so it's her call. Safe: anago-zushi and inari.",
+      "group": "16 seats (four tables of 4): two tables (4+3), or take it back to the hotel.",
+      "booking": "No bookings for the dining room; takeaway can be ordered by phone from 8:00.",
+      "dec_jan": "30–31 Dec: open; order takeaway ahead by phone. 1–3 Jan: New Year hours to confirm in early December. 4 Jan: open on its usual schedule. 5 Jan: closed (Tuesday, its day off). Plan B: the JR Isetan and Daimaru branches.",
+      "query": "Izuu saba sushi Gion",
+      "pregnancy": "careful",
+      "seven": "split",
+      "closed_weekdays": [
+        "Tue"
+      ],
+      "closed_dates": [
+        "2027-01-05"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Kyoto's definitive saba-zushi since 1781; festival and New Year food."
+    },
+    {
+      "name": "Tempura Matsu",
+      "name_ja": "天ぷら 松",
+      "area": "Kyoto · Matsuo (Arashiyama)",
+      "genre": "Tempura and kappō",
+      "price": "Lunch ¥20,000–29,000 · Dinner ¥30,000–39,000",
+      "tabelog": {
+        "score": 3.79,
+        "reviews": 316,
+        "url": "https://tabelog.com/kyoto/A2601/A260403/26001461/",
+        "awards": "Award Silver 2017, Bronze 2018–2022; 天ぷら 百名店 2022, 2023, 2025"
+      },
+      "why": "The son of the house plays kappō against the frying: more inventive than standard Gion tempura. Pairs well with a day in Arashiyama.",
+      "pregnancy_note": "For Fernanda: tempura is fine; the kappō side may include sashimi, so say so when booking.",
+      "group": "3 private rooms (up to 8): seven fit.",
+      "booking": "Online (Tabelog) or phone.",
+      "dec_jan": "Closed 30 Dec (Wednesday, its day off). 31 Dec–3 Jan: New Year hours to confirm in early December. 4–5 Jan: open on its usual schedule.",
+      "query": "Tempura Matsu Kyoto",
+      "critics": [
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "A confirmed stop on Grand Japan 2027: kappō with some tempura, and a barbecue in the chef's sister's bamboo grove.",
+          "url": "https://www.thehungrytourist.com/tours/grand-japan"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went once (Mar 2015), according to the City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "careful",
+      "seven": "room",
+      "closed_weekdays": [
+        "Wed"
+      ],
+      "closed_dates": [
+        "2026-12-30"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "booking_channel": "online",
+      "glance": "Inventive tempura and kappō near Arashiyama; private rooms for eight."
+    },
+    {
+      "name": "Tempura Yoshikawa",
+      "name_ja": "天ぷら 吉川",
+      "area": "Kyoto · Tominokōji-Oike",
+      "genre": "Tempura in a ryokan",
+      "price": "Lunch ¥6,000–8,000 · Dinner ¥20,000–29,000",
+      "tabelog": {
+        "score": 3.62,
+        "reviews": 205,
+        "url": "https://tabelog.com/kyoto/A2601/A260202/26001150/",
+        "awards": "天ぷら 百名店 2022, 2023, 2025"
+      },
+      "why": "The most comfortable serious tempura in central Kyoto for all seven of us, with the parents and Fernanda.",
+      "order": "Tempura lunch (best value).",
+      "pregnancy_note": "Fine.",
+      "group": "8 private rooms (2–20) with a garden and their own toilet: seven fit.",
+      "booking": "Bookings only; strict cancellation fee.",
+      "dec_jan": "Closed 30 Dec (Wednesday) and 5 Jan (Tuesday), its regular days off. 31 Dec–3 Jan: New Year hours to confirm in early December. 4 Jan: open on its usual schedule.",
+      "query": "Tempura Yoshikawa Kyoto",
+      "pregnancy": "ok",
+      "seven": "room",
+      "closed_weekdays": [
+        "Tue",
+        "Wed"
+      ],
+      "closed_dates": [
+        "2026-12-30",
+        "2027-01-05"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "glance": "Serious tempura in a garden ryokan; private rooms with their own toilet."
+    },
+    {
+      "name": "Grill Kodakara",
+      "name_ja": "グリル小宝",
+      "area": "Kyoto · Okazaki",
+      "genre": "Yōshoku",
+      "price": "Lunch ¥1,000–2,000 · ¥4,000–5,000",
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 1210,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26000009/",
+        "awards": "洋食 百名店 2020, 2022; 洋食 WEST 百名店 2025"
+      },
+      "why": "The demi-glace is the reason. An easy lunch after Heian Jingū or the museums.",
+      "order": "Omurice, hayashi rice, hambāgu.",
+      "pregnancy_note": "For Fernanda: ask for the omurice egg cooked firm (\"卵はしっかり焼いて\").",
+      "group": "33 seats, tables only: ask for tables together, or split 4+3.",
+      "booking": "No bookings.",
+      "dec_jan": "Closed 30 Dec (Wednesday) and 5 Jan (Tuesday), its regular days off. 31 Dec–3 Jan: New Year hours to confirm in early December. 4 Jan: open on its usual schedule.",
+      "query": "Grill Kodakara Kyoto",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went once (Jun 2020), according to the City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "careful",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Tue",
+        "Wed"
+      ],
+      "closed_dates": [
+        "2026-12-30",
+        "2027-01-05"
+      ],
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Classic Kyoto yōshoku: omurice and hayashi rice in rich demi-glace."
+    },
+    {
+      "name": "Smart Coffee",
+      "name_ja": "スマート珈琲店",
+      "area": "Kyoto · Teramachi",
+      "genre": "Kissaten",
+      "price": "¥1,000–2,000",
+      "tabelog": {
+        "score": 3.71,
+        "reviews": 1808,
+        "url": "https://tabelog.com/kyoto/A2601/A260201/26000647/",
+        "awards": "喫茶店 百名店 2021, 2022, 2026"
+      },
+      "why": "One of Kyoto's two benchmark kissaten; the pancakes and French toast are the institution.",
+      "order": "Hotcakes or French toast with coffee.",
+      "pregnancy_note": "Fine; decaf to confirm.",
+      "group": "38 seats at tables: ask for tables together, or split 4+3.",
+      "booking": "No bookings.",
+      "dec_jan": "30–31 Dec: open. 1–2 Jan: closed. 3–4 Jan: open. 5 Jan: not covered in our notes. Café 8:00–19:00.",
+      "query": "Smart Coffee Kyoto",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_dates": [
+        "2027-01-01",
+        "2027-01-02"
+      ],
+      "meals": [
+        "lunch"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Benchmark Kyoto kissaten; the hotcakes and French toast are the institution."
+    },
+    {
+      "name": "Salon de thé Francois",
+      "name_ja": "フランソア喫茶室",
+      "area": "Kyoto · Shijō-Kiyamachi",
+      "genre": "Kissaten",
+      "price": "¥1,000–2,000",
+      "tabelog": {
+        "score": 3.73,
+        "reviews": 1881,
+        "url": "https://tabelog.com/kyoto/A2601/A260201/26000900/",
+        "awards": "喫茶店 百名店 2021, 2022, 2026"
+      },
+      "why": "An Italian-baroque salon from 1934, a registered cultural property.",
+      "order": "Coffee, and the room.",
+      "pregnancy_note": "Fine.",
+      "group": "80 seats: room for us, maybe over two tables.",
+      "booking": "No bookings.",
+      "dec_jan": "30 Dec: open. 31 Dec–2 Jan: closed. 3–5 Jan: open (it opens all year except 31 Dec, 1 and 2 Jan).",
+      "query": "Francois coffee Kyoto",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [],
+      "closed_dates": [
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-02"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "A 1934 Italian-baroque coffee salon, a registered cultural property."
+    },
+    {
+      "name": "Demachi Futaba",
+      "name_ja": "出町ふたば",
+      "area": "Kyoto · Demachiyanagi",
+      "genre": "Wagashi (takeaway)",
+      "price": "Under ¥1,000",
+      "tabelog": {
+        "score": 3.84,
+        "reviews": 3956,
+        "url": "https://tabelog.com/kyoto/A2601/A260302/26001520/",
+        "awards": "スイーツ WEST 百名店 2018–2020, 2022; 和菓子・甘味処 WEST 百名店 2023, 2026"
+      },
+      "why": "Mame-mochi with salted red peas, Kyoto's best-known mochi of the day. Eat it on the bank of the Kamo.",
+      "order": "Mame-mochi (名代豆餅).",
+      "pregnancy_note": "Fine. Cut it small for the parents.",
+      "group": "Takeaway only.",
+      "booking": "Orders by phone (according to Tabelog); otherwise, queue.",
+      "dec_jan": "30–31 Dec: open on its usual schedule (30 Dec is the 5th Wednesday, not its closing 4th), with families queuing for New Year mochi. 1–3 Jan: New Year hours to confirm in early December. 4 Jan: open on its usual schedule. 5 Jan: closed (Tuesday). The mochi keeps only for the day.",
+      "query": "Demachi Futaba Kyoto",
+      "critics": [
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went once (Dec 2013), according to the City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "pregnancy": "ok",
+      "closed_weekdays": [
+        "Tue"
+      ],
+      "closed_dates": [
+        "2027-01-05"
+      ],
+      "booking_channel": "queue",
+      "glance": "Kyoto's best-known mame-mochi; eat it on the Kamo riverbank."
+    },
+    {
+      "name": "Kagizen Yoshifusa Shijō Honten",
+      "name_ja": "鍵善良房 四条本店",
+      "area": "Kyoto · Gion",
+      "genre": "Wagashi and kanmidokoro",
+      "price": "¥1,000–2,000",
+      "tabelog": {
+        "score": 3.78,
+        "reviews": 1943,
+        "url": "https://tabelog.com/kyoto/A2601/A260301/26001887/",
+        "awards": "スイーツ 百名店 2017; スイーツ WEST 2018–2020, 2022; 和菓子・甘味処 WEST 2023, 2026"
+      },
+      "why": "Kuzu-kiri made to order with Okinawan kuromitsu. The Gion sweet house Kyoto itself respects.",
+      "order": "Kuzu-kiri.",
+      "pregnancy_note": "Fine.",
+      "group": "62 seats: room for seven, maybe over two tables.",
+      "booking": "No bookings.",
+      "dec_jan": "30–31 Dec: open on its usual schedule. 1–3 Jan: New Year hours to confirm in early December. 4 Jan: closed (Monday, its day off). 5 Jan: open on its usual schedule.",
+      "query": "Kagizen Yoshifusa Gion",
+      "pregnancy": "ok",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "closed_dates": [
+        "2027-01-04"
+      ],
+      "booking_channel": "walk-in",
+      "glance": "Kuzu-kiri made to order: the Gion sweet house Kyoto respects."
+    },
+    {
+      "name": "Ippodo Kaboku (tea room)",
+      "name_ja": "一保堂茶舗 喫茶室 嘉木",
+      "area": "Kyoto · Teramachi-Nijō",
+      "genre": "Tea room",
+      "price": "¥1,000–2,000",
+      "tabelog": {
+        "score": 3.39,
+        "reviews": 569,
+        "url": "https://tabelog.com/kyoto/A2601/A260202/26000182/"
+      },
+      "why": "The staff teach you to make gyokuro or matcha yourself, which matters more than the score.",
+      "pregnancy_note": "For Fernanda: gyokuro is high in caffeine, so one cup, or hōjicha.",
+      "group": "39 seats; no bookings.",
+      "dec_jan": "Its regular closing day (2nd Wednesday of the month) doesn't fall on our dates. 30 Dec–5 Jan: New Year hours to confirm in early December, at ippodo-tea.co.jp.",
+      "query": "Ippodo Tea Kyoto",
+      "pregnancy": "careful",
+      "seven": "ask",
+      "booking_channel": "walk-in",
+      "website": "https://www.ippodo-tea.co.jp/",
+      "glance": "Staff teach you to brew gyokuro or matcha yourself."
+    },
+    {
+      "name": "Nakamura Tōkichi Uji Honten",
+      "name_ja": "中村藤吉本店",
+      "area": "Uji",
+      "genre": "Tea house and sweets",
+      "price": "¥1,000–2,000",
+      "tabelog": {
+        "score": 3.54,
+        "reviews": 1675,
+        "url": "https://tabelog.com/kyoto/A2607/A260701/26000722/",
+        "awards": "スイーツ WEST 百名店 2018, 2019; 和菓子・甘味処 WEST 百名店 2023"
+      },
+      "why": "A tea merchant's house from 1859.",
+      "order": "Matcha jelly (namacha jelly) and cha-soba.",
+      "pregnancy_note": "For Fernanda: one matcha serving; hōjicha the rest of the time.",
+      "group": "70 seats; no bookings.",
+      "dec_jan": "Open every day, so 30–31 Dec and 4–5 Jan should be fine. 1–3 Jan: New Year hours to confirm in early December, and Uji is packed then: go on the 30th or the 4th.",
+      "query": "Nakamura Tokichi Uji",
+      "pregnancy": "careful",
+      "seven": "ask",
+      "closed_weekdays": [],
+      "booking_channel": "walk-in",
+      "glance": "Matcha jelly and cha-soba in an 1859 Uji tea merchant's house."
+    },
+    {
+      "name": "Fumiya",
+      "name_ja": "冨美家",
+      "area": "Kyoto · Nishiki",
+      "genre": "Udon (nabeyaki)",
+      "price": "¥1,000–2,000",
+      "tabelog": {
+        "score": 3.53,
+        "reviews": 347,
+        "url": "https://tabelog.com/kyoto/A2601/A260201/26017337/"
+      },
+      "why": "The sit-down break for Nishiki shoppers: the \"Fumiya nabe\", Kyoto nabeyaki udon.",
+      "order": "Fumiya nabe.",
+      "pregnancy_note": "For Fernanda: the egg in the nabe should be cooked through, so ask them to cook it longer.",
+      "group": "Counter and small tables: split 4+3.",
+      "dec_jan": "Our notes have no hours for Fumiya: New Year hours to confirm in early December. Nishiki around it is open on 30 Dec and mostly shut 1–3 Jan, so the 30th is the safe day.",
+      "query": "Fumiya Nishiki Kyoto",
+      "pregnancy": "careful",
+      "seven": "split",
+      "glance": "Kyoto nabeyaki udon, the sit-down break from Nishiki shopping."
+    },
+    {
+      "name": "Torisei Honten",
+      "name_ja": "鳥せい 本店",
+      "area": "Kyoto · Fushimi",
+      "genre": "Brewery izakaya (yakitori)",
+      "price": "to confirm",
+      "tabelog": {
+        "score": 3.41,
+        "reviews": 1073,
+        "url": "https://tabelog.com/kyoto/A2601/A260601/26001213/"
+      },
+      "why": "Yamamoto Honke's izakaya, inside a sake storehouse: the best lunch for the seven of us in Fushimi.",
+      "order": "Yakitori and Yamamoto Honke sake (for those who drink).",
+      "pregnancy_note": "For Fernanda: well-done yakitori is fine; no sake.",
+      "group": "250 seats, rooms for 6+: ask for one that takes seven.",
+      "dec_jan": "30–31 Dec: open on its usual schedule. 1–3 Jan: New Year hours to confirm in early December. 4 Jan: closed (Monday, its day off). 5 Jan: open on its usual schedule.",
+      "query": "Torisei Fushimi",
+      "pregnancy": "careful",
+      "seven": "ask",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "closed_dates": [
+        "2027-01-04"
+      ],
+      "glance": "Brewery izakaya in a Fushimi sake storehouse: yakitori and Yamamoto Honke sake."
+    },
+    {
+      "name": "Fushimi Yume Hyakushu",
+      "name_ja": "伏見夢百衆",
+      "area": "Kyoto · Fushimi",
+      "genre": "Sake bar and café",
+      "tabelog": {
+        "score": 3.44,
+        "reviews": 133,
+        "url": "https://tabelog.com/kyoto/A2601/A260601/26004759/"
+      },
+      "why": "Flights from several Fushimi breweries in a historic building.",
+      "pregnancy_note": "For Fernanda: coffee or kōji amazake.",
+      "dec_jan": "Closed for the year-end and New Year break, which starts before we arrive (the advice was to go before 28 Dec): closed 30 Dec–3 Jan. 4 Jan: closed (Monday). 5 Jan: only if the break is over; to confirm in early December. Realistically, not on this trip.",
+      "query": "Fushimi Yume Hyakushu",
+      "pregnancy": "avoid",
+      "closed_weekdays": [
+        "Mon"
+      ],
+      "closed_dates": [
+        "2026-12-30",
+        "2026-12-31",
+        "2027-01-01",
+        "2027-01-02",
+        "2027-01-03",
+        "2027-01-04"
+      ],
+      "glance": "Tasting flights from many Fushimi breweries in a historic building."
+    },
+    {
+      "name": "Yudofu Sagano",
+      "name_ja": "湯豆腐 嵯峨野",
+      "area": "Kyoto · Arashiyama",
+      "genre": "Yudōfu",
+      "price": "Lunch ¥3,000–5,000",
+      "tabelog": {
+        "score": 3.45,
+        "reviews": 347,
+        "url": "https://tabelog.com/en/kyoto/A2601/A260403/26000814/"
+      },
+      "critics": [
+        {
+          "who": "@kenjilopezalt (J. Kenji López-Alt)",
+          "note": "A multi-course yudōfu lunch filling a whole episode of “Kenji Eats Japan” (Apr 2026): “If you're ever in Kyoto, head to Yudofu Sagano yourself.”",
+          "url": "https://www.youtube.com/watch?v=Oa6LoSXeMZc"
+        }
+      ],
+      "why": "Tofu the way Kenji likes it: the merit is in the tofu, not the seasoning. 3.45 is solid for a tofu specialist.",
+      "order": "The yudōfu course.",
+      "pregnancy_note": "Everything is cooked: perfect for Fernanda and for the parents.",
+      "group": "80 seats and private rooms for 10–20: seven fit easily.",
+      "booking": "Takes bookings. Lunch 11:00–16:30.",
+      "dec_jan": "Variable days off, so none of our days is certain: 30 Dec, 31 Dec, 1–3 Jan and 4–5 Jan all need checking. New Year hours to confirm in early December.",
+      "query": "Yudofu Sagano Arashiyama",
+      "pregnancy": "ok",
+      "seven": "room",
+      "meals": [
+        "lunch"
+      ],
+      "glance": "All-cooked yudōfu course in Arashiyama that Kenji López-Alt loved."
+    },
+    {
+      "name": "Ogata",
+      "name_ja": "緒方",
+      "area": "Kyoto · Shijō",
+      "genre": "Kaiseki",
+      "tabelog": {
+        "score": 4.54,
+        "reviews": 588,
+        "url": "https://tabelog.com/en/kyoto/A2601/A260201/26012136/",
+        "awards": "Award Gold 2019–23, 2026"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note": "A regular “in all 12 seasons”: kinome sushi (“Transcending”), grilled Kamo aubergine (“Heaven”) and the pine needle under the glass so the coaster doesn't stick (Jun 2024).",
+          "url": "https://www.instagram.com/p/C8Zl2FkJywR/"
+        },
+        {
+          "who": "@we.are.hungry.tourists (The Hungry Tourist / David Califa)",
+          "note": "On the tours' list of kaiseki “at the level we look for”.",
+          "url": "https://www.thehungrytourist.com/tours/best-of-tokyo"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went 6 times (Sep 2015 – Dec 2020, three of them in December), according to City Foodsters.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "The Kyoto kaiseki where three critics from our list meet, and gold on Tabelog.",
+      "pregnancy_note": "For Fernanda: say so when booking. Kaiseki includes sashimi, and the kitchen adapts.",
+      "group": "8 counter seats and 1 private room (up to 8): the room fits seven, or book 7 of the 8 counter seats.",
+      "booking": "Online; very hard.",
+      "dec_jan": "Nothing in our notes for 30 Dec–5 Jan yet: New Year hours to confirm in early December.",
+      "query": "Ogata Kyoto kaiseki",
+      "pregnancy": "careful",
+      "seven": "room",
+      "booking_channel": "online",
+      "glance": "Gold-rated kaiseki where three of our trusted critics meet."
+    },
+    {
+      "name": "Washoku Haru",
+      "name_ja": "和食 晴",
+      "area": "Kyoto · Karasuma",
+      "genre": "Izakaya / washoku",
+      "tabelog": {
+        "score": 3.65,
+        "reviews": 326,
+        "url": "https://tabelog.com/en/kyoto/A2601/A260201/26026013/",
+        "awards": "居酒屋 百名店 2026"
+      },
+      "critics": [
+        {
+          "who": "@little_meg_siu_meg (Margaret Lam)",
+          "note": "Three posts between 2016 and 2017: a counter she kept going back to (posts embedded on Tokyo Table Trip).",
+          "url": "https://tokyotabletrip.com/en/300"
+        },
+        {
+          "who": "@jwang815 (Jason Wang)",
+          "note": "Went once (Apr 2020), according to the City Foodsters visit log.",
+          "url": "https://www.cityfoodsters.com/restaurants/"
+        }
+      ],
+      "why": "The Kyoto izakaya Meg kept going back to, with a 百名店 2026.",
+      "pregnancy_note": "For Fernanda: say so, and ask for the simmered dishes.",
+      "group": "11 counter seats: seven of us is most of the counter, so book well ahead, or split.",
+      "dec_jan": "Nothing in our notes for 30 Dec–5 Jan yet: New Year hours to confirm in early December.",
+      "query": "Washoku Haru Kyoto",
+      "pregnancy": "careful",
+      "seven": "counter",
+      "glance": "Counter izakaya Meg kept going back to; Tabelog top-100 2026."
+    },
+    {
+      "name": "WOW WOW TONIGHT",
+      "name_ja": "魚々鶏夜",
+      "area": "Kyoto · Kawaramachi",
+      "genre": "Modern izakaya",
+      "price": "Dinner ¥5,000–6,000 (from reviews)",
+      "tabelog": {
+        "score": 3.24,
+        "reviews": 90,
+        "url": "https://tabelog.com/en/kyoto/A2601/A260201/26035024/"
+      },
+      "critics": [
+        {
+          "who": "@kenjilopezalt (J. Kenji López-Alt)",
+          "note": "“rowdy modern izakaya”: the beef, onion and tofu stew and the duck breast with pickled sanshō became two of his recipes (2026). “If you're in Kyoto, check them out.”",
+          "url": "https://www.youtube.com/watch?v=ZdlZGAuW8Wc"
+        }
+      ],
+      "why": "A weak local score (3.24): Kenji loved it, Japanese diners find it ordinary. Go for the fun and the stew, not the ranking.",
+      "order": "The beef and tofu stew; the duck with sanshō.",
+      "pregnancy_note": "For Fernanda: ask for the duck well done.",
+      "group": "20 table seats on the 2nd floor: book for seven.",
+      "booking": "Takes bookings; dinner 18:00–24:00, last booking at 21:00.",
+      "dec_jan": "Variable days off, so none of our days is certain: 30 Dec, 31 Dec, 1–3 Jan and 4–5 Jan all need checking. New Year hours to confirm in early December.",
+      "query": "Wow Wow Tonight Kyoto izakaya",
+      "pregnancy": "careful",
+      "seven": "yes",
+      "meals": [
+        "dinner"
+      ],
+      "website": "https://www.instagram.com/wow_wow_tonight_kyoto",
+      "glance": "Rowdy modern izakaya Kenji loved: beef-and-tofu stew, duck with sanshō."
+    }
+  ],
+  "shops": [
+    {
+      "name": "Miki Keiran",
+      "name_ja": "三木鶏卵",
+      "what": "Dashimaki tamago in Nishiki (Tabelog 3.45, https://tabelog.com/kyoto/A2601/A260201/26004870/).",
+      "buy": "A roll of dashimaki to eat at the hotel. For Fernanda: the egg is fully cooked, so it's safe.",
+      "dec_jan": "9:00–17:00. New Year hours to confirm in early December. Most of Nishiki closes 1–3 Jan, so buy on the 30th to be safe.",
+      "query": "Miki Keiran Nishiki"
+    },
+    {
+      "name": "Fuka Nishiki",
+      "name_ja": "麩嘉 錦店",
+      "what": "The 百名店 inside Nishiki (3.69, 和菓子・甘味処 WEST 2023, 2026; https://tabelog.com/kyoto/A2601/A260201/26007146/).",
+      "buy": "Fu-manjū (wheat gluten with anko, in a sasa bamboo leaf).",
+      "dec_jan": "30–31 Dec: open on its usual schedule. 1–3 Jan: New Year hours to confirm in early December. 4 Jan: closed (Monday, its day off). 5 Jan: open on its usual schedule.",
+      "query": "Fuka Nishiki fu manju"
+    },
+    {
+      "name": "Uchida Tsukemono (Nishiki)",
+      "name_ja": "京つけもの 打田漬物 錦小路店",
+      "what": "Kyoto pickles (Tabelog 3.15, https://tabelog.com/kyoto/A2601/A260202/26015723/).",
+      "buy": "Senmai-zuke (in season in December), shiba-zuke.",
+      "dec_jan": "Closed only on 1 Jan. Open 30–31 Dec and 2–5 Jan.",
+      "query": "Uchida Tsukemono Nishiki"
+    },
+    {
+      "name": "Murakami-jū Honten",
+      "name_ja": "村上重本店",
+      "what": "A pickle house known for its senmai-zuke (Tabelog 3.16, https://tabelog.com/kyoto/A2601/A260201/26007678/).",
+      "buy": "Senmai-zuke and suguki.",
+      "dec_jan": "Closed 1–3 Jan: buy on 30 or 31 Dec. 4–5 Jan: open again.",
+      "query": "Murakamiju Kyoto"
+    },
+    {
+      "name": "Aritsugu",
+      "name_ja": "有次",
+      "what": "Kyoto's knife house in Nishiki, which says it descends from the swordsmith 藤原有次 (https://www.aritsugu.jp/).",
+      "buy": "A kitchen knife with your name engraved in kanji; they sharpen it on the spot.",
+      "price": "to confirm",
+      "dec_jan": "It posts its days off month by month on its site: check in early December for 30 Dec–5 Jan. Go early; there's a queue from 11:00.",
+      "query": "Aritsugu Nishiki"
+    },
+    {
+      "name": "Tsujiwa Kanaami",
+      "name_ja": "辻和金網",
+      "what": "Handwoven copper wirework (https://www.tsujiwa.com/).",
+      "buy": "Tofu skimmer, tea strainer, grill.",
+      "dec_jan": "New Year hours to confirm in early December. A small shop: go in twos.",
+      "query": "Tsujiwa Kanaami Kyoto"
+    },
+    {
+      "name": "Ippodo Honten",
+      "name_ja": "一保堂茶舗 京都本店",
+      "what": "Historic tea shop (Tabelog 3.12, https://tabelog.com/kyoto/A2601/A260202/26031878/).",
+      "buy": "Gyokuro, sencha, matcha and hōjicha (the hōjicha for Fernanda).",
+      "dec_jan": "New Year hours to confirm in early December.",
+      "query": "Ippodo Tea Kyoto Honten"
+    },
+    {
+      "name": "Gekkeikan Ōkura Sake Museum",
+      "name_ja": "月桂冠大倉記念館",
+      "what": "Museum with a tasting in Fushimi (Tabelog 3.47, https://tabelog.com/kyoto/A2601/A260601/26007339/).",
+      "buy": "Fushimi sake for the parents.",
+      "dec_jan": "30–31 Dec: open on its usual schedule. 1–3 Jan: New Year hours to confirm in early December. 4 Jan: open on its usual schedule. 5 Jan: closed (Tuesday, its day off).",
+      "query": "Gekkeikan Okura Sake Museum"
+    },
+    {
+      "name": "Saga Tōfu Morika",
+      "name_ja": "嵯峨豆腐 森嘉",
+      "what": "The tofu Kyoto's yudōfu restaurants use (Tabelog 3.44, https://tabelog.com/kyoto/A2601/A260403/26002454/).",
+      "buy": "Tofu and ganmodoki to eat cold on the bench (8 seats).",
+      "dec_jan": "Closed 30 Dec (Wednesday, its day off). 31 Dec–3 Jan: New Year hours to confirm in early December. 4–5 Jan: open on its usual schedule.",
+      "query": "Morika tofu Saga Kyoto"
+    }
+  ],
+  "sources": [
+    "docs/research/food/22-kansai.md",
+    "docs/research/food/11-critics-international.md",
+    "https://www.kyoto-nishiki.or.jp/",
+    "https://ja.wikipedia.org/wiki/錦市場",
+    "https://ja.wikipedia.org/wiki/京料理",
+    "https://ja.wikipedia.org/wiki/おばんざい",
+    "https://ja.wikipedia.org/wiki/鯖街道",
+    "https://ja.wikipedia.org/wiki/にしんそば",
+    "https://ja.wikipedia.org/wiki/北前船",
+    "https://ja.wikipedia.org/wiki/雑煮",
+    "https://ja.wikipedia.org/wiki/宇治茶",
+    "https://ja.wikipedia.org/wiki/伏見区",
+    "https://www.pref.kyoto.jp/co-kyoto/gourmet/221221.html",
+    "https://www.keihan.co.jp/navi/famous/famous110.html",
+    "https://www.kikunoi.jp/",
+    "https://guide.michelin.com/jp/ja/kyoto-region/kyoto/restaurant/pontocho-masuda",
+    "https://www.youtube.com/watch?v=Oa6LoSXeMZc"
+  ]
+}

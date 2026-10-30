@@ -1,0 +1,257 @@
+{
+  "slug": "sendai",
+  "name": "Sendai",
+  "tagline_pt": "Cidade de Date Masamune: língua de boi grelhada, edamame doce e kamaboko em folha de bambu.",
+  "history_pt": [
+    "Sendai é a cidade-castelo de Date Masamune, cujo brasão tem folhas de bambu. Fica entre arrozais e uma costa riquíssima: Shiogama, o porto vizinho, é cidade de sushi e de peixe de fundo.",
+    "O gyūtan é do pós-guerra. Sano Keishirō abriu o Tasuke em 1948 e pôs língua de boi no cardápio por volta de 1950. A ocupação americana aumentou o consumo de carne na cidade, e a língua era um corte que os soldados não queriam. O prato virou um conjunto fixo: língua grossa grelhada no carvão, arroz com cevada, sopa de rabo, conserva e missô com pimenta.",
+    "O zunda é edamame amassado com açúcar sobre mochi. A lenda diz que Masamune esmagava o feijão com a espada; os linguistas preferem 'jinda', um tipo antigo de missô. O sasa-kamaboko nasceu de excesso de linguado por volta de 1902–03: pasta de peixe moldada em folha e grelhada, batizada em 1935 pela Abe Kamaboko com a folha de bambu do brasão dos Date."
+  ],
+  "winter_pt": "Inverno é tempo de seri-nabe, panela com a raiz e as folhas da salsa japonesa de Sendai, e de ostras de Miyagi (cozidas para ela). Os balcões de Shiogama estão no auge.",
+  "meibutsu": [
+    {
+      "name_pt": "Gyūtan",
+      "name_ja": "牛たん焼き",
+      "romaji": "gyūtan-yaki",
+      "what_pt": "Língua de boi em fatias grossas, salgada e grelhada no carvão. Vem com arroz de cevada, sopa de rabo e missô com pimenta.",
+      "where_pt": "Aji Tasuke Honten (a casa do inventor) ou Tasuke Bunten.",
+      "must": true,
+      "pregnancy": "ok",
+      "pregnancy_pt": "Grelhado até o fim. Liberado."
+    },
+    {
+      "name_pt": "Zunda mochi",
+      "name_ja": "ずんだ餅",
+      "romaji": "zunda mochi",
+      "what_pt": "Mochi coberto de pasta verde de edamame doce com pitada de sal. Também em milk-shake.",
+      "where_pt": "Casas de wagashi e a estação.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Sasa-kamaboko",
+      "name_ja": "笹かまぼこ",
+      "romaji": "sasa-kamaboko",
+      "what_pt": "Kamaboko em forma de folha de bambu, grelhado. Melhor quente, recém-tostado.",
+      "where_pt": "Lojas da estação; Abe Kamaboko.",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Seri-nabe",
+      "name_ja": "せり鍋",
+      "romaji": "seri-nabe",
+      "what_pt": "Panela de inverno com salsa japonesa inteira, raízes incluídas, em caldo de pato ou frango.",
+      "where_pt": "Izakaya de Sendai (dez–mar).",
+      "must": true,
+      "pregnancy": "ok"
+    },
+    {
+      "name_pt": "Sushi de Shiogama",
+      "name_ja": "塩竈の寿司",
+      "romaji": "Shiogama sushi",
+      "what_pt": "Peixe do porto vizinho, com balcões grandes e baratos para o padrão.",
+      "where_pt": "Sushi Tetsu Honten, Kameki Zushi.",
+      "must": true,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Peixe pode. Evite vieira crua e ostras cruas."
+    },
+    {
+      "name_pt": "Ostras de Miyagi",
+      "name_ja": "牡蠣",
+      "romaji": "kaki",
+      "what_pt": "Ostras da baía de Matsushima, temporada de inverno.",
+      "where_pt": "Izakaya e Shiogama.",
+      "must": false,
+      "pregnancy": "cuidado",
+      "pregnancy_pt": "Cruas, nunca. Fritas (kaki-fry) ou na panela, sim."
+    },
+    {
+      "name_pt": "Ramen de Sendai",
+      "name_ja": "仙台中華そば",
+      "romaji": "Sendai chūka soba",
+      "what_pt": "Ramen de shoyu da casa top da cidade.",
+      "where_pt": "Meiten Kaichi.",
+      "must": false,
+      "pregnancy": "ok"
+    }
+  ],
+  "areas": [
+    {
+      "name": "Estação de Sendai (Gyūtan-dōri e Sushi-dōri)",
+      "name_ja": "仙台駅 牛たん通り・すし通り",
+      "kind": "estação",
+      "story_pt": "O 3º andar da estação tem uma rua de gyūtan e uma de sushi, com as redes conhecidas.",
+      "eat_pt": [
+        "Gyūtan das redes",
+        "Sasa-kamaboko e zunda para levar"
+      ],
+      "tips_pt": "Prático, mas são redes; o original fica em Kokubunchō.",
+      "dec_jan_pt": "Abre no Ano-Novo em geral; a confirmar.",
+      "query": "Sendai Station gyutan dori"
+    },
+    {
+      "name": "Kokubunchō e Ichibanchō",
+      "name_ja": "国分町・一番町",
+      "kind": "bairro",
+      "story_pt": "O centro de bares e izakaya.",
+      "eat_pt": [
+        "Gyūtan no Aji Tasuke",
+        "Seri-nabe"
+      ],
+      "tips_pt": "Aji Tasuke não reserva; chegue cedo.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Kokubuncho Sendai"
+    },
+    {
+      "name": "Shiogama",
+      "name_ja": "塩竈",
+      "kind": "porto",
+      "story_pt": "Porto vizinho com densidade alta de casas de sushi.",
+      "eat_pt": [
+        "Almoço de sushi"
+      ],
+      "tips_pt": "Trem até Hon-Shiogama; combine com Matsushima.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Shiogama sushi"
+    }
+  ],
+  "places": [
+    {
+      "name": "Aji Tasuke Honten",
+      "name_ja": "味太助 本店",
+      "area": "Sendai · Kokubunchō",
+      "genre_pt": "Gyūtan",
+      "price_pt": "¥2–4k",
+      "tabelog": {
+        "score": 3.53,
+        "reviews": 1028,
+        "url": "https://tabelog.com/miyagi/A0401/A040101/4000048/",
+        "awards": "nenhum"
+      },
+      "why_pt": "A casa do inventor, que as avaliações e matome do Tabelog chamam de 発祥の店.",
+      "order_pt": "Gyūtan teishoku.",
+      "pregnancy_pt": "Grelhado até o fim. Liberado.",
+      "group_pt": "60 lugares; 6 cabem.",
+      "booking_pt": "Sem reserva.",
+      "dec_jan_pt": "Fecha às terças. Ano-Novo a confirmar.",
+      "query": "Aji Tasuke Sendai"
+    },
+    {
+      "name": "Tasuke Bunten",
+      "name_ja": "太助 分店",
+      "area": "Sendai",
+      "genre_pt": "Gyūtan",
+      "tabelog": {
+        "score": 3.54,
+        "reviews": 347,
+        "url": "https://tabelog.com/miyagi/A0401/A040101/4023004/"
+      },
+      "why_pt": "Tocado por um discípulo direto do fundador, e aceita reserva.",
+      "order_pt": "Gyūtan teishoku.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "A confirmar.",
+      "booking_pt": "On-line.",
+      "dec_jan_pt": "Fecha às terças. Ano-Novo a confirmar.",
+      "query": "Tasuke Bunten Sendai"
+    },
+    {
+      "name": "Sushi Tetsu Honten",
+      "name_ja": "すし哲 本店",
+      "area": "Shiogama · 3 min de Hon-Shiogama",
+      "genre_pt": "Sushi",
+      "price_pt": "¥5–15k",
+      "tabelog": {
+        "score": 3.68,
+        "reviews": 988,
+        "url": "https://tabelog.com/miyagi/A0404/A040404/4000002/",
+        "awards": "寿司 EAST 百名店 2021, 2025"
+      },
+      "why_pt": "O sushi de porto de Shiogama, grande o bastante para a família toda.",
+      "order_pt": "Nigiri do porto.",
+      "pregnancy_pt": "Peça peixe e cozidos; nada de vieira crua e ostra.",
+      "group_pt": "83 lugares; 6 cabem.",
+      "booking_pt": "Reserve.",
+      "dec_jan_pt": "Fecha às quintas. Ano-Novo a confirmar.",
+      "query": "Sushi Tetsu Shiogama"
+    },
+    {
+      "name": "Kameki Zushi",
+      "name_ja": "亀喜寿司",
+      "area": "Shiogama",
+      "genre_pt": "Sushi",
+      "tabelog": {
+        "score": 3.51,
+        "reviews": 409,
+        "url": "https://tabelog.com/miyagi/A0404/A040404/4000004/",
+        "awards": "寿司 EAST 百名店 2021, 2025"
+      },
+      "why_pt": "A segunda opção de Shiogama, com tatame para 40.",
+      "order_pt": "Nigiri.",
+      "pregnancy_pt": "Como na Sushi Tetsu.",
+      "group_pt": "72 lugares; 6 cabem.",
+      "booking_pt": "Reserve.",
+      "dec_jan_pt": "Fecha às terças. Ano-Novo a confirmar.",
+      "query": "Kameki Zushi Shiogama"
+    },
+    {
+      "name": "Sendai Chūka Soba Meiten Kaichi",
+      "name_ja": "仙台中華そば 銘店嘉一",
+      "area": "Sendai",
+      "genre_pt": "Ramen",
+      "tabelog": {
+        "score": 3.76,
+        "reviews": 1755,
+        "url": "https://tabelog.com/miyagi/A0401/A040101/4009075/",
+        "awards": "ラーメン EAST 百名店 2025"
+      },
+      "why_pt": "O ramen mais bem pontuado da cidade.",
+      "order_pt": "Chūka soba.",
+      "pregnancy_pt": "Liberado.",
+      "group_pt": "A confirmar; ramen costuma dividir.",
+      "booking_pt": "Sem reserva (a confirmar).",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Meiten Kaichi Sendai"
+    }
+  ],
+  "shops": [
+    {
+      "name": "Baisaou",
+      "name_ja": "賣茶翁",
+      "what_pt": "Casa de wagashi, Tabelog 3,81, 和菓子 百名店 2026.",
+      "buy_pt": "Doces de chá.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Baisaou Sendai"
+    },
+    {
+      "name": "Kanmidokoro Hikoichi",
+      "name_ja": "甘味処 彦いち",
+      "what_pt": "Casa de doces na lista 和菓子 百名店 2026.",
+      "buy_pt": "Zunda e doces da casa.",
+      "dec_jan_pt": "Ano-Novo a confirmar.",
+      "query": "Hikoichi Sendai"
+    },
+    {
+      "name": "Abe Kamaboko",
+      "name_ja": "阿部蒲鉾店",
+      "what_pt": "A casa que batizou o sasa-kamaboko em 1935.",
+      "buy_pt": "Sasa-kamaboko para levar ou comer quente.",
+      "dec_jan_pt": "A confirmar.",
+      "query": "Abe Kamaboko Sendai"
+    },
+    {
+      "name": "Murakamiya Mochiten (atenção)",
+      "name_ja": "村上屋餅店",
+      "what_pt": "A clássica casa de zunda mochi aparece no Tabelog com aviso de anúncio suspenso (fechamento ou mudança não confirmados).",
+      "buy_pt": "Não conte com ela; use Baisaou ou Hikoichi.",
+      "dec_jan_pt": "Situação incerta.",
+      "query": "Murakamiya zunda Sendai"
+    }
+  ],
+  "sources": [
+    "docs/research/food/23-alps-hokuriku-fuji-tohoku.md",
+    "https://ja.wikipedia.org/wiki/牛タン焼き",
+    "https://ja.wikipedia.org/wiki/ずんだ",
+    "https://ja.wikipedia.org/wiki/笹かまぼこ"
+  ]
+}
